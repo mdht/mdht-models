@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
  * @generated
  */
 public interface PatientContact extends Support {
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

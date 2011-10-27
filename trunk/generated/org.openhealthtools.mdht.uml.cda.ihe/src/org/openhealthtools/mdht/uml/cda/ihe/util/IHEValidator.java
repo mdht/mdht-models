@@ -3826,10 +3826,6 @@ public class IHEValidator extends EObjectValidator {
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitleValue(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitle(
 				immunizationsSection, diagnostics, context);
 		}
@@ -4528,10 +4524,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(activeProblemsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemSection_validateProblemSectionTitleValue(
-				activeProblemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(
@@ -7158,10 +7150,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitleValue(
-				allergiesReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(
 				allergiesReactionsSection, diagnostics, context);
 		}
@@ -8877,10 +8865,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePayersSection_validatePayersSectionTitleValue(
-				payersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(
 				payersSection, diagnostics, context);
 		}
@@ -10288,10 +10272,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(codedAdvanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitleValue(
-				codedAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(
 				codedAdvanceDirectivesSection, diagnostics, context);
 		}
@@ -10385,10 +10365,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(advanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitleValue(
-				advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(
@@ -13362,10 +13338,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(carePlanSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTitleValue(
-				carePlanSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(
 				carePlanSection, diagnostics, context);
 		}
@@ -13458,10 +13430,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(familyMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitleValue(
-				familyMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionFamilyHistoryObsOrgs(
 				familyMedicalHistorySection, diagnostics, context);
 		}
@@ -13544,10 +13512,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitleValue(
-				socialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(
 				socialHistorySection, diagnostics, context);
 		}
@@ -13619,10 +13583,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(encounterHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTitleValue(
-				encounterHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(
@@ -13813,10 +13773,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(medicalDevicesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTitleValue(
-				medicalDevicesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTemplateId(
@@ -16790,10 +16746,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(
-				codedFamilyMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitleValue(
 				codedFamilyMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

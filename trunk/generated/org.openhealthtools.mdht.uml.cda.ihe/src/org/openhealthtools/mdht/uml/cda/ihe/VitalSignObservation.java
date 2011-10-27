@@ -55,6 +55,13 @@ public interface VitalSignObservation extends ResultObservation, SimpleObservati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignObservation init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -90,11 +97,4 @@ public interface VitalSignObservation extends ResultObservation, SimpleObservati
 	 * @generated
 	 */
 	boolean validateVitalSignObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VitalSignObservation init();
 } // VitalSignObservation

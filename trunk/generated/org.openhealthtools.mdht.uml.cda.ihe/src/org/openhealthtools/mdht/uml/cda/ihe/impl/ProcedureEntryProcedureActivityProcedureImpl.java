@@ -184,10 +184,10 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureText(
-			this, diagnostics, context);
+	@Override
+	public ProcedureEntryProcedureActivityProcedure init() {
+		CDAUtil.init(this);
+		return this;
 	}
 
 	/**
@@ -195,9 +195,9 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureEntryProcedureActivityProcedure init() {
-		CDAUtil.init(this);
-		return this;
+	public boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureText(
+			this, diagnostics, context);
 	}
 } // ProcedureEntryProcedureActivityProcedureImpl
