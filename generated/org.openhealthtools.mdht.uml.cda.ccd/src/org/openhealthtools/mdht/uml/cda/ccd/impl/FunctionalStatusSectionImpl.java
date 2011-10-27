@@ -65,15 +65,6 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFunctionalStatusSectionObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionObservationCode(

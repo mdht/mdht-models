@@ -50,6 +50,17 @@ public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements Ad
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveReferenceHasConformanceTo(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasConformanceTo(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveReferenceHasReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasReference(

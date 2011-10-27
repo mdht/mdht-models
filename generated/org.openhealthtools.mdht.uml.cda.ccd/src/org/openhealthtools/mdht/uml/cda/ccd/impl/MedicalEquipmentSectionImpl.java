@@ -57,15 +57,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionTemplateId(this, diagnostics, context);
 	}

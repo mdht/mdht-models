@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PurposeSection#validatePurposeSectionTitleValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Title Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PurposeSection#validatePurposeSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PurposeSection#validatePurposeSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PurposeSection#validatePurposeSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Title</em>}</li>
@@ -58,61 +57,6 @@ public class PurposeSectionOperations extends SectionOperations {
 	 */
 	protected PurposeSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePurposeSectionTitleValue(PurposeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Title Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePurposeSectionTitleValue(PurposeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.title = 'purpose'";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePurposeSectionTitleValue(PurposeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Title Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePurposeSectionTitleValue(PurposeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'purpose'
-	 * @param purposeSection The receiving '<em><b>Purpose Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validatePurposeSectionTitleValue(PurposeSection purposeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
-			try {
-				VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TITLE_VALUE,
-					CCDPlugin.INSTANCE.getString("PurposeSectionTitleValue"), new Object[] { purposeSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -424,7 +368,7 @@ public class PurposeSectionOperations extends SectionOperations {
 		if (GET_PURPOSE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.PURPOSE_SECTION, CCDPackage.Literals.PURPOSE_SECTION.getEAllOperations().get(61));
+				CCDPackage.Literals.PURPOSE_SECTION, CCDPackage.Literals.PURPOSE_SECTION.getEAllOperations().get(60));
 			try {
 				GET_PURPOSE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PURPOSE_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

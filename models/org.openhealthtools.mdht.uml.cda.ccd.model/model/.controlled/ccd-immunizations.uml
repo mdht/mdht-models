@@ -6,11 +6,12 @@
 &lt;p>This section is optional, however it is strongly recommended that it be present in cases of pediatric care and in other cases when such information is available.&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_54_VkBtJEd-vGNAsDUJvgw" name="titleValue" constrainedElement="_CinbMHDPEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_ZjVtQAC6EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_93lSEBtJEd-vGNAsDUJvgw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'immunization'.</body>
-        <body>self.title = 'immunization'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_fXtO8FUsEeCUesz7J0dFlQ">

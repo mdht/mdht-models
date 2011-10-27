@@ -5,11 +5,12 @@
       <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
     </ownedComment>
     <ownedRule xmi:id="_tK7acMjsEeChgrgmBsw26A" name="titleValue" constrainedElement="_5ET7oGwWEd6q29qQGU-SBA">
+      <ownedComment xmi:id="_QIXyMAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_vIKjMMjsEeChgrgmBsw26A">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive text string containing 'family history'.</body>
-        <body>self.title = 'family history'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_x8Ma8Mj1EeChgrgmBsw26A" name="familyHistoryObsOrgs" constrainedElement="_5ET7oGwWEd6q29qQGU-SBA">
@@ -59,12 +60,18 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6mWAQMj4EeChgrgmBsw26A" name="hasSpecialization" constrainedElement="_Fb8_QMj2EeChgrgmBsw26A">
+      <ownedComment xmi:id="_649-wP5VEeC-q4mFP8AT1w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_A03_EMj5EeChgrgmBsw26A">
         <language>Analysis</language>
         <body>Where the subject of an observation is explicit in a family history observation code (e.g. SNOMED CT concept 417001009 &quot;Family history of tuberous sclerosis&quot;), the subject participant SHALL be equivalent to or further specialize the code</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_FKetYMj5EeChgrgmBsw26A" name="hasAffectedRelative" constrainedElement="_6mWAQMj4EeChgrgmBsw26A">
+      <ownedComment xmi:id="_FBOoMP5WEeC-q4mFP8AT1w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_IYGf8Mj5EeChgrgmBsw26A">
         <language>Analysis</language>
         <body>Where the subject of an observation is not explicit in a family history observation code (e.g. SNOMED CT concept 44054006 &quot;Diabetes Mellitus type 2&quot;), the subject participant SHALL be used to assert the affected relative</body>
@@ -103,6 +110,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hw1icMj8EeChgrgmBsw26A" name="hasPedigreeGraph" constrainedElement="_KswYQMj7EeChgrgmBsw26A">
+      <ownedComment xmi:id="_I8wCkP5WEeC-q4mFP8AT1w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_kjwWAMj8EeChgrgmBsw26A">
         <language>Analysis</language>
         <body>Representation of a pedigree graph SHALL be done using RelatedSubject / code values (e.g. &quot;great grandfather&quot;) to designate a hierarchical family tree.</body>
@@ -148,6 +158,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Q5YTwMkVEeChgrgmBsw26A" name="ageOfRelativeAtObservationTime">
+      <ownedComment xmi:id="_qr7-oPtkEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <constrainedElement xmi:type="uml:Class" href="../ccd.uml#_S7rEABZ1Ed-i6Lz80y5G5g"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q5YTwckVEeChgrgmBsw26A">
         <language>Analysis</language>
@@ -155,6 +168,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Sd5agMkVEeChgrgmBsw26A" name="ageOfRelativeAtDeath">
+      <ownedComment xmi:id="_seTUIPtkEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <constrainedElement xmi:type="uml:Class" href="../ccd.uml#_S7rEABZ1Ed-i6Lz80y5G5g"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Sd5agckVEeChgrgmBsw26A">
         <language>Analysis</language>
@@ -162,6 +178,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fKN78MjwEeChgrgmBsw26A" name="hasInformation">
+      <ownedComment xmi:id="_FGlAQP5sEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ii0PcMjwEeChgrgmBsw26A">
         <language>Analysis</language>
         <body>Contains one or more sources of information</body>
@@ -321,6 +340,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1YzToMkUEeChgrgmBsw26A" name="ageOfRelativeAtDeath">
+      <ownedComment xmi:id="_7jRIIPtkEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <constrainedElement xmi:type="uml:Class" href="../ccd.uml#_S7rEABZ1Ed-i6Lz80y5G5g"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1YzTockUEeChgrgmBsw26A">
         <language>Analysis</language>

@@ -41,12 +41,13 @@
     <ownedRule xmi:id="_xpwBIMgmEeCHk-lvWGDTdA" name="titleValue" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2i7WkMgmEeCHk-lvWGDTdA">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'functional status'.</body>
-        <body>self.title = 'functional status'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_CX4yYMgnEeCHk-lvWGDTdA" name="observationCode" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
+      <ownedComment xmi:id="_koUoMAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_FpXKMMgnEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <language>OCL</language>
@@ -63,6 +64,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rc3LoMgnEeCHk-lvWGDTdA" name="assessmentInstrument" constrainedElement="_dO-JkMgnEeCHk-lvWGDTdA">
+      <ownedComment xmi:id="_s0VhAACzEeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qjV3wMgpEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>If the functional status was collected using a standardized assessment instrument, then the instrument itself SHOULD be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>

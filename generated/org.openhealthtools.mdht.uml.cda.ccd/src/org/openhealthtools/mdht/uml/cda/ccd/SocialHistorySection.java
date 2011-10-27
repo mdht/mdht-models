@@ -36,23 +36,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionTitleValue SocialHistorySectionSocialHistoryObservation' code.code='29762-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionSocialHistoryObservation' code.code='29762-2'"
  * @generated
  */
 public interface SocialHistorySection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'social history'
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.title = \'social history\''"
-	 * @generated
-	 */
-	boolean validateSocialHistorySectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

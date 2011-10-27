@@ -14,11 +14,12 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_xrzYIMg9EeCHk-lvWGDTdA" name="titleValue" constrainedElement="_UOVM0HDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_sinW8PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_z9GFUMg9EeCHk-lvWGDTdA">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'social history'.</body>
-        <body>self.title = 'social history'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2uIswMhBEeCHk-lvWGDTdA" name="maritalStatus" constrainedElement="_UOVM0HDAEd6eItyqb1FoWg">
@@ -36,7 +37,7 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
     <ownedRule xmi:id="_EIjDcMhCEeCHk-lvWGDTdA" name="patientRace" constrainedElement="_Ag6OYMhCEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_FazVgMhCEeCHk-lvWGDTdA">
         <language>Analysis</language>
-        <body>A patientâ€™s race SHOULD be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information MAY be represented as social history observations</body>
+        <body>A patients race SHOULD be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information MAY be represented as social history observations</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HZOxEMhCEeCHk-lvWGDTdA" name="patientRaceCodeSystem" constrainedElement="_EIjDcMhCEeCHk-lvWGDTdA">
@@ -48,7 +49,7 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
     <ownedRule xmi:id="_Q7JzQMhCEeCHk-lvWGDTdA" name="patientEthnicity" constrainedElement="_HZOxEMhCEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SlnJ8MhCEeCHk-lvWGDTdA">
         <language>Analysis</language>
-        <body>A patientâ€™s ethnicity SHOULD be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information MAY be represented as social history observations.</body>
+        <body>A patients ethnicity SHOULD be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information MAY be represented as social history observations.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_TaQ6AMhCEeCHk-lvWGDTdA" name="patientEthnicityCodeSystem" constrainedElement="_Q7JzQMhCEeCHk-lvWGDTdA">
@@ -94,6 +95,9 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_R5zewMhAEeCHk-lvWGDTdA" name="informationSources" constrainedElement="_Wa2uwHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_OE_swP5sEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXN38MhAEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>Contains one or more sources of information</body>

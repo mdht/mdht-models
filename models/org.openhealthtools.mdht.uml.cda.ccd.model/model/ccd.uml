@@ -56,13 +56,17 @@
       <ownedRule xmi:id="_fkuKEBg0Ed-PS-Y_2ABBMQ" name="hasEffectiveTimeSeconds" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_tzLz4Bg0Ed-PS-Y_2ABBMQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>effectiveTime is expressed with precision to include seconds</body>
+          <body>self.effectiveTime.value.size() >= 4</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_m-HZgBg0Ed-PS-Y_2ABBMQ" name="hasEffectiveTimeZone" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_y8mkwBg0Ed-PS-Y_2ABBMQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>effectiveTime includes an explicit time zone offset</body>
+          <body>self.effectiveTime.value.size() >= 19</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_-rpl0Bg0Ed-PS-Y_2ABBMQ" name="oneOrTwoRecordTarget" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
@@ -98,18 +102,27 @@
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_lAdnYHmXEd-pnJdGZX6q4Q" name="entryDerivedNarrative" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
+        <ownedComment xmi:id="_JJ23QAATEeGr8LMv5XjMCA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_uBY1UHmXEd-pnJdGZX6q4Q">
           <language>Analysis</language>
           <body>The value for component / structuredBody / component / section / entry / @typeCode MAY be 'DRIV' &quot;is derived from&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_bb8HsHmYEd-pnJdGZX6q4Q" name="contentReference" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
+        <ownedComment xmi:id="_Ra78oAATEeGr8LMv5XjMCA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fUu-MHmYEd-pnJdGZX6q4Q">
           <language>Analysis</language>
           <body>A CCD entry SHOULD explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &amp;lt;content&amp;gt;).</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_7ZqKsEjfEeCOWNbpDoETQw" name="hasComment" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
+        <ownedComment xmi:id="_rGjykACdEeGr8LMv5XjMCA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_AIJTEEjgEeCOWNbpDoETQw">
           <language>Analysis</language>
           <body>A section MAY contain one or more comments, either as a clinical statement or nested under another clinical statement.</body>
@@ -217,6 +230,9 @@
         <body>Episode observations are used to distinguish among multiple occurrences of a problem or social history item. An episode observation is used to indicate that a problem act represents a new episode, distinct from other episodes of a similar concern.</body>
       </ownedComment>
       <ownedRule xmi:id="_DnqaYBWkEd-6K-YJpbwRmQ" name="valueExpression" constrainedElement="_AwcXkGaKEd6Hk_bPOfEjYA">
+        <ownedComment xmi:id="_lFqUMACqEeGr8LMv5XjMCA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_KSALcBWkEd-6K-YJpbwRmQ">
           <language>Analysis</language>
           <body>Value in an episode observation SHOULD be the following SNOMED CT expression:&#xD;&#xA;&lt;codeblock>&amp;lt;value xsi:type=&quot;CD&quot; code=&quot;404684003&quot; codeSystem=&quot;2.16.840.1.113883.6.96&quot; displayName=&quot;Clinical finding&quot;&amp;gt;&#xD;&#xA;  &amp;lt;qualifier&amp;gt;&#xD;&#xA;    &amp;lt;name code=&quot;246456000&quot; displayName=&quot;Episodicity&quot;/&amp;gt;&#xD;&#xA;    &amp;lt;value code=&quot;288527008&quot; displayName=&quot;New episode&quot;/&amp;gt;&#xD;&#xA;  &amp;lt;/qualifier&amp;gt;&#xD;&#xA;&amp;lt;/value&amp;gt;&lt;/codeblock></body>
@@ -862,7 +878,9 @@
       <ownedRule xmi:id="_50OkgMziEeCvbrjDQpuvkw" name="hasConformanceTo" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_9itocMziEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>An advance directive reference (templateId 2.16.840.1.113883.10.20.1.36) SHALL be represented with Observation / reference / ExternalDocument</body>
+          <body>self.reference->select(r | r.externalDocument.oclIsUndefined())->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_T6zr0MzjEeCvbrjDQpuvkw" name="hasReference" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
@@ -886,10 +904,13 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>The MIME type of a referenced advance directive document MAY be present, and SHALL be represented in Observation / reference / ExternalDocument / text / @mediaType</body>
-          <body>self.reference.externalDocument.text.mimeType.size() > 0</body>
+          <body>not self.reference->select(reference  | reference.externalDocument.text.isDefined('mediaType') ) ->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wJ9CIMzjEeCvbrjDQpuvkw" name="exchangePackage" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <ownedComment xmi:id="_1aDzMAAPEeGr8LMv5XjMCA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0MaK8MzjEeCvbrjDQpuvkw">
           <language>Analysis</language>
           <body>Where the value of Observation / reference / seperatableInd is &quot;false&quot;, the referenced advance directive document SHOULD be included in the CCD exchange package. The exchange mechanism SHOULD be based on Internet standard RFC 2557 &quot;MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)&quot; (http://www.ietf.org/rfc/rfc2557.txt)</body>
@@ -925,6 +946,13 @@
       </ownedEnd>
       <memberEnd href=".controlled/ccd-familyHistory.uml#_CqdbkNJYEeCZxdqWGSM1Gw"/>
       <memberEnd href="#_CqeCodJYEeCZxdqWGSM1Gw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oHZcUACpEeGr8LMv5XjMCA">
+      <ownedEnd xmi:id="_oHZcUQCpEeGr8LMv5XjMCA" association="_oHZcUACpEeGr8LMv5XjMCA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_6mhnYDH6Ed-saqiXO4OYhQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-procedures.uml#_oHYOMACpEeGr8LMv5XjMCA"/>
+      <memberEnd href="#_oHZcUQCpEeGr8LMv5XjMCA"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1373,4 +1401,7 @@
   <CDA:ConstraintValidation xmi:id="_4jNMEMzjEeCvbrjDQpuvkw" base_Constraint="_50OkgMziEeCvbrjDQpuvkw"/>
   <CDA:AssociationValidation xmi:id="_1LO2UNJXEeCZxdqWGSM1Gw" severity="INFO" base_Association="_zvjigdJXEeCZxdqWGSM1Gw"/>
   <CDA:AssociationValidation xmi:id="_FP6a4NJYEeCZxdqWGSM1Gw" severity="WARNING" base_Association="_CqeCoNJYEeCZxdqWGSM1Gw"/>
+  <CDA:AssociationValidation xmi:id="_rm1-sACpEeGr8LMv5XjMCA" severity="INFO" base_Association="_oHZcUACpEeGr8LMv5XjMCA">
+    <ruleId>CONF-443</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

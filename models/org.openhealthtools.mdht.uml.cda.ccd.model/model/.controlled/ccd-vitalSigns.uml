@@ -15,6 +15,9 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_zaNJsBtIEd-vGNAsDUJvgw" name="titleValue" constrainedElement="_GKpeMKPaEd6t_4WfM070fA">
+      <ownedComment xmi:id="_9KcE0PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1jpicBtIEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>title Contains a case-insensitive language-insensitive string containing 'vital signs'.</body>
