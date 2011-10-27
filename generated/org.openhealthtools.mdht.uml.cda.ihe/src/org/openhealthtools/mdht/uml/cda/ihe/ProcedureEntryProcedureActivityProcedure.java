@@ -180,6 +180,13 @@ public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActiv
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureEntryProcedureActivityProcedure init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -190,11 +197,4 @@ public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActiv
 	 */
 	boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureEntryProcedureActivityProcedure init();
 } // ProcedureEntryProcedureActivityProcedure

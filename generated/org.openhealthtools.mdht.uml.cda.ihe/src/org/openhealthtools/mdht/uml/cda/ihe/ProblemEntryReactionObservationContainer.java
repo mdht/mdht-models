@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
  * @generated
  */
 public interface ProblemEntryReactionObservationContainer extends ProblemEntry, ReactionObservation {
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

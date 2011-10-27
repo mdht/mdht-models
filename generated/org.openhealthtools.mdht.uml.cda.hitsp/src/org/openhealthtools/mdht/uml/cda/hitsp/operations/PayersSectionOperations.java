@@ -199,7 +199,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 		if (GET_INSURANCE_PROVIDERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.PAYERS_SECTION, HITSPPackage.Literals.PAYERS_SECTION.getEAllOperations().get(67));
+				HITSPPackage.Literals.PAYERS_SECTION, HITSPPackage.Literals.PAYERS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_INSURANCE_PROVIDERS__EOCL_QRY = helper.createQuery(GET_INSURANCE_PROVIDERS__EOCL_EXP);
 			} catch (ParserException pe) {

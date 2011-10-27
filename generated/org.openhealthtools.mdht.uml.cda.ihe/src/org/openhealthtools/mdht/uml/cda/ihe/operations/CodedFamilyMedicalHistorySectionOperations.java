@@ -201,7 +201,7 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION,
-				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(67));
+				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(66));
 			try {
 				GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP);
 			} catch (ParserException pe) {

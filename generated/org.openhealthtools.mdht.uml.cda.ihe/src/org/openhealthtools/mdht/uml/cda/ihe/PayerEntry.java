@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
  * @generated
  */
 public interface PayerEntry extends PolicyActivity {
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
