@@ -270,6 +270,16 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * @generated
 	 */
 	@Override
+	public boolean validateCoverageActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateCoverageActivityCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public InsuranceProvider init() {
 		CDAUtil.init(this);
 		return this;

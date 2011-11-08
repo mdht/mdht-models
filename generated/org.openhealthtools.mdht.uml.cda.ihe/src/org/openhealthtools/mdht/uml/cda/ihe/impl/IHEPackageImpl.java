@@ -2665,6 +2665,17 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			concernEntryEClass, ecorePackage.getEBoolean(), "validateConcernEntryHasRelatedReferencesTypeCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			concernEntryEClass, ecorePackage.getEBoolean(), "validateConcernEntryTemplateId", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -4867,7 +4878,51 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 
 		op = addEOperation(
 			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHEAdvanceDirectiveObservationHasExternalReference", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
 			"validateIHEAdvanceDirectiveObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHEAdvanceDirectiveObservationRepeatNumber", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHEAdvanceDirectiveObservationInterpretationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHEAdvanceDirectiveObservationTargetSiteCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -7723,7 +7778,7 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 					"templateId.root",
 					"1.3.6.1.4.1.19376.1.5.3.1.4.5.1",
 					"constraints.validation.error",
-					"ConcernEntryTemplateId ConcernEntryEffectiveTimeLowHigh ConcernEntryHasRelatedObservations ConcernEntryRelatedObservationsTypeCode ConcernEntryEffectiveTime" });
+					"ConcernEntryTemplateId ConcernEntryEffectiveTimeLowHigh ConcernEntryHasRelatedObservations ConcernEntryRelatedObservationsTypeCode ConcernEntryHasRelatedReferencesTypeCode ConcernEntryEffectiveTime" });
 		addAnnotation(medicalDocumentEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.1", "constraints.validation.error",
 				"MedicalDocumentTemplateId" });
@@ -8019,11 +8074,18 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(advanceDirectivesSectionEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.34", "constraints.validation.error",
 				"IHEAdvanceDirectivesSectionTemplateId" });
-		addAnnotation(advanceDirectiveObservationEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.96", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.13.7",
-				"constraints.validation.error",
-				"IHEAdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode", "code.codeSystemName",
-				"SNOMEDCT" });
+		addAnnotation(
+			advanceDirectiveObservationEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.4.13.7",
+					"constraints.validation.error",
+					"IHEAdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode IHEAdvanceDirectiveObservationRepeatNumber IHEAdvanceDirectiveObservationInterpretationCode IHEAdvanceDirectiveObservationTargetSiteCode",
+					"code.codeSystemName", "SNOMEDCT", "constraints.validation.info",
+					"IHEAdvanceDirectiveObservationHasExternalReference" });
 		addAnnotation(physicalExamNarrativeSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.24",
 				"code.displayName", "PHYSICAL EXAMINATION", "constraints.validation.error",

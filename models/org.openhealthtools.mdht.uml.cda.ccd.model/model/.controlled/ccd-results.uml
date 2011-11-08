@@ -76,6 +76,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_p9oCwBg5EeCf9aMNaCAtDQ" name="specimenRoleId" constrainedElement="_Ht_RsHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_9-h54APZEeG1AJVFOG_ciw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wtAr4Bg5EeCf9aMNaCAtDQ">
         <language>Analysis</language>
         <body>specimen / specimenRole / id SHOULD be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen.</body>
@@ -90,12 +93,18 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Jl7XQBtEEd-vGNAsDUJvgw" name="componentProcedure" constrainedElement="_Ht_RsHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_AryxYAPaEeG1AJVFOG_ciw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_MwG0QBtEEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>The target of one or more result organizer component relationships MAY be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_cs62QBtEEd-vGNAsDUJvgw" name="componentProcedureReference" constrainedElement="_Ht_RsHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_C7vawAPaEeG1AJVFOG_ciw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_hbpPMBtEEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>A result organizer component / procedure MAY be a reference to a procedure described in the Procedure section.</body>
@@ -159,6 +168,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_RKDlIBtGEd-vGNAsDUJvgw" name="valueUnitOfMeasure" constrainedElement="_MQHZEHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_VwwPUASSEeGsZK4ZHvni_w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UKpBQBtGEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>Where value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression.</body>
@@ -361,6 +373,7 @@
   <CDA:CodeSystemConstraint xmi:id="_52lnkCfbEd-4R4ealYN1gQ" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_GMWwYIjpEd66cKocspyVOg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-389</ruleId>
+    <ruleId>CONF-390</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConformsTo xmi:id="_cdbpcBgTEeCf9aMNaCAtDQ" base_Generalization="_eOylIHDAEd6eItyqb1FoWg">
     <ruleId>CONF-407</ruleId>

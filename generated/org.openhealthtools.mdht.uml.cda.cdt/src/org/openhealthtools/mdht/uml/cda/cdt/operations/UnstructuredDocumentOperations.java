@@ -93,18 +93,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentPatientRoleHasId"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentPatientRoleHasId"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -149,19 +151,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasAddr"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasAddr"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -206,19 +209,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasTelecom"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasTelecom"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -263,19 +267,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganization"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganization"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -320,20 +325,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationId"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationId"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -378,20 +383,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationName"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationName"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -436,20 +441,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -494,20 +499,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationAddr"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationAddr"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -552,18 +557,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasNonXMLBodyText"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasNonXMLBodyText"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -608,19 +615,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextReferenceOrRepresentation"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextReferenceOrRepresentation"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -665,19 +673,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextMediaTypeValueSet"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextMediaTypeValueSet"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -722,18 +731,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentEffectiveTime"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME,
+						 CDTPlugin.INSTANCE.getString("UnstructuredDocumentEffectiveTime"),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}
@@ -778,22 +789,20 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									unstructuredDocument, context) }), new Object[] { unstructuredDocument }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(unstructuredDocument, context) }),
+						 new Object [] { unstructuredDocument }));
 			}
 			return false;
 		}

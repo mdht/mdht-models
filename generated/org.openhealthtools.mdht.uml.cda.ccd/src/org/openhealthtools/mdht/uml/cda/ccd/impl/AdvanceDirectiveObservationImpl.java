@@ -15,7 +15,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveObservationOperations;
@@ -160,28 +159,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AdvanceDirectiveStatusObservation getAdvanceDirectiveStatusObservation() {
 		return AdvanceDirectiveObservationOperations.getAdvanceDirectiveStatusObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveReference getAdvanceDirectiveReference() {
-		return AdvanceDirectiveObservationOperations.getAdvanceDirectiveReference(this);
 	}
 
 	/**

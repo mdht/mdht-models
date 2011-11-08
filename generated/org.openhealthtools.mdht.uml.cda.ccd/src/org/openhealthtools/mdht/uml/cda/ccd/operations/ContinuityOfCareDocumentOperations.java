@@ -53,6 +53,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentServiceEventRequired(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Service Event Required</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentServiceEventClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Service Event Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Service Event Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentLanguageCodeFormat(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Language Code Format</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentNoTemplateIdExtension(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document No Template Id Extension</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentHasEffectiveTimeSeconds(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Has Effective Time Seconds</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument#validateContinuityOfCareDocumentHasEffectiveTimeZone(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Has Effective Time Zone</em>}</li>
@@ -276,6 +277,63 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
 					CCDValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_SERVICE_EVENT_EFFECTIVE_TIME,
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentServiceEventEffectiveTime"),
+					new Object[] { continuityOfCareDocument }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateContinuityOfCareDocumentLanguageCodeFormat(ContinuityOfCareDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Language Code Format</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateContinuityOfCareDocumentLanguageCodeFormat(ContinuityOfCareDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocumentLanguageCodeFormat(ContinuityOfCareDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Language Code Format</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateContinuityOfCareDocumentLanguageCodeFormat(ContinuityOfCareDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')
+	 * @param continuityOfCareDocument The receiving '<em><b>Continuity Of Care Document</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateContinuityOfCareDocumentLanguageCodeFormat(
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
+			try {
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			continuityOfCareDocument)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT,
+					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentLanguageCodeFormat"),
 					new Object[] { continuityOfCareDocument }));
 			}
 			return false;
@@ -1802,7 +1860,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(58));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(59));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1847,7 +1905,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(59));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(60));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1892,7 +1950,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(60));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(61));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1937,7 +1995,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(61));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(62));
 			try {
 				GET_ALERTS_SECTION__EOCL_QRY = helper.createQuery(GET_ALERTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1982,7 +2040,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(62));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(63));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2027,7 +2085,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(63));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(64));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2072,7 +2130,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(64));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(65));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2117,7 +2175,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(65));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(66));
 			try {
 				GET_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2162,7 +2220,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(66));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(67));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2207,7 +2265,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(67));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(68));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2252,7 +2310,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(68));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(69));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2297,7 +2355,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(69));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(70));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2342,7 +2400,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(70));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(71));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2387,7 +2445,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(71));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(72));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2432,7 +2490,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(72));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(73));
 			try {
 				GET_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2477,7 +2535,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(73));
+				CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(74));
 			try {
 				GET_PURPOSE_SECTION__EOCL_QRY = helper.createQuery(GET_PURPOSE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

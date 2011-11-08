@@ -89,20 +89,20 @@ public class PastMedicalHistorySectionConsultOperations extends SectionOperation
 			helper.setContext(CDTPackage.Literals.PAST_MEDICAL_HISTORY_SECTION_CONSULT);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pastMedicalHistorySectionConsult)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySectionConsult)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultTemplateId"),
-					new Object[] { pastMedicalHistorySectionConsult }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEMPLATE_ID,
+						 CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultTemplateId"),
+						 new Object [] { pastMedicalHistorySectionConsult }));
 			}
 			return false;
 		}
@@ -117,9 +117,9 @@ public class PastMedicalHistorySectionConsultOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionConsultCode(PastMedicalHistorySectionConsult, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Consult Code</em>}' invariant operation.
@@ -152,18 +152,20 @@ public class PastMedicalHistorySectionConsultOperations extends SectionOperation
 			helper.setContext(CDTPackage.Literals.PAST_MEDICAL_HISTORY_SECTION_CONSULT);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pastMedicalHistorySectionConsult)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySectionConsult)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE,
-					CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultCode"),
-					new Object[] { pastMedicalHistorySectionConsult }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_CODE,
+						 CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultCode"),
+						 new Object [] { pastMedicalHistorySectionConsult }));
 			}
 			return false;
 		}
@@ -209,18 +211,20 @@ public class PastMedicalHistorySectionConsultOperations extends SectionOperation
 			helper.setContext(CDTPackage.Literals.PAST_MEDICAL_HISTORY_SECTION_CONSULT);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pastMedicalHistorySectionConsult)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySectionConsult)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT,
-					CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultText"),
-					new Object[] { pastMedicalHistorySectionConsult }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PAST_MEDICAL_HISTORY_SECTION_CONSULT__PAST_MEDICAL_HISTORY_SECTION_CONSULT_TEXT,
+						 CDTPlugin.INSTANCE.getString("PastMedicalHistorySectionConsultText"),
+						 new Object [] { pastMedicalHistorySectionConsult }));
 			}
 			return false;
 		}

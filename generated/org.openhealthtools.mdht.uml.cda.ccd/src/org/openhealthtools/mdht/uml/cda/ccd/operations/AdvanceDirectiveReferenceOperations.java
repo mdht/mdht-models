@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.openhealthtools.mdht.uml.cda.operations.ReferenceOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,18 +28,17 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceHasConformanceTo(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Conformance To</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceHasReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceHasURL(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has URL</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceHasMIMEType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has MIME Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceExternalDocumentHasId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference External Document Has Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference#validateAdvanceDirectiveReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Type Code</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperations {
+public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,121 +49,6 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceHasConformanceTo(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Conformance To</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceHasConformanceTo(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(r | r.externalDocument.oclIsUndefined())->isEmpty()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceHasConformanceTo(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Conformance To</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceHasConformanceTo(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.reference->select(r | r.externalDocument.oclIsUndefined())->isEmpty()
-	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateAdvanceDirectiveReferenceHasConformanceTo(
-			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
-			try {
-				VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			advanceDirectiveReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_HAS_CONFORMANCE_TO,
-					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceHasConformanceTo"),
-					new Object[] { advanceDirectiveReference }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceHasReference(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Reference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceHasReference(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference.typeCode->forAll(tc : vocab::x_ActRelationshipExternalReference | tc =  vocab::x_ActRelationshipExternalReference::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceHasReference(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has Reference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceHasReference(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.reference.typeCode->forAll(tc : vocab::x_ActRelationshipExternalReference | tc =  vocab::x_ActRelationshipExternalReference::REFR)
-	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateAdvanceDirectiveReferenceHasReference(
-			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
-			try {
-				VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			advanceDirectiveReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_HAS_REFERENCE,
-					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceHasReference"),
-					new Object[] { advanceDirectiveReference }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceHasURL(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has URL</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -172,7 +56,7 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_URL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference.externalDocument.text.reference->size() > 0";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_URL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.externalDocument.text.reference.hasContent()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceHasURL(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has URL</em>}' invariant operation.
@@ -188,7 +72,7 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference.externalDocument.text.reference->size() > 0
+	 * self.externalDocument.text.reference.hasContent()
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -228,7 +112,7 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_MIME_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.reference->select(reference  | reference.externalDocument.text.isDefined('mediaType') ) ->isEmpty()";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_MIME_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.externalDocument.text.isDefined('mediaType')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceHasMIMEType(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Has MIME Type</em>}' invariant operation.
@@ -244,7 +128,7 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.reference->select(reference  | reference.externalDocument.text.isDefined('mediaType') ) ->isEmpty()
+	 * self.externalDocument.text.isDefined('mediaType')
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -270,6 +154,64 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
 					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_HAS_MIME_TYPE,
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceHasMIMEType"),
+					new Object[] { advanceDirectiveReference }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceExternalDocumentHasId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference External Document Has Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveReferenceExternalDocumentHasId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.externalDocument.id->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceExternalDocumentHasId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference External Document Has Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveReferenceExternalDocumentHasId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.externalDocument.id->isEmpty()
+	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(
+			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
+			try {
+				VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveReference)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID,
+					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceExternalDocumentHasId"),
 					new Object[] { advanceDirectiveReference }));
 			}
 			return false;
@@ -335,54 +277,55 @@ public class AdvanceDirectiveReferenceOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveReferenceTypeCode(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Type Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveReferenceTypeCode(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('typeCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveReferenceTypeCode(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Reference Type Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveReferenceId(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveReferenceTypeCode(AdvanceDirectiveReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
+	 * isDefined('typeCode')
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateAdvanceDirectiveReferenceId(AdvanceDirectiveReference advanceDirectiveReference,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static boolean validateAdvanceDirectiveReferenceTypeCode(
+			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			advanceDirectiveReference)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_ID,
-					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceId"),
+					CCDValidator.ADVANCE_DIRECTIVE_REFERENCE__ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE,
+					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceTypeCode"),
 					new Object[] { advanceDirectiveReference }));
 			}
 			return false;

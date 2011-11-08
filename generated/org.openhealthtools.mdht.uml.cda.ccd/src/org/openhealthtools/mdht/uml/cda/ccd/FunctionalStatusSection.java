@@ -52,7 +52,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getFunctionalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.5' code.displayName='Functional status assessment' constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionObservationCode FunctionalStatusSectionProblemStatusObservation FunctionalStatusSectionResultStatusObservation FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText' code.codeSystemName='LOINC' constraints.validation.warning='FunctionalStatusSectionClinicalStatements' code.code='47420-5' constraints.validation.info='FunctionalStatusSectionObservationCodeValueSet'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.5' code.displayName='Functional status assessment' constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionObservationCode FunctionalStatusSectionProblemStatusObservation FunctionalStatusSectionResultStatusObservation FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText' code.codeSystemName='LOINC' constraints.validation.warning='FunctionalStatusSectionClinicalStatements' code.code='47420-5' constraints.validation.info='FunctionalStatusSectionObservationCodeValueSet FunctionalStatusSectionValueDatatype FunctionalStatusSectionIcfCodeSystem'"
  * @generated
  */
 public interface FunctionalStatusSection extends Section {
@@ -96,6 +96,32 @@ public interface FunctionalStatusSection extends Section {
 	 */
 	boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(o | o.value->select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) ->isEmpty())->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(o | o.value->select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) ->isEmpty())->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateFunctionalStatusSectionValueDatatype(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(o|o.code.codeSystem <> '2.16.840.1.113883.6.254')->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(o|o.code.codeSystem <> \'2.16.840.1.113883.6.254\')->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateFunctionalStatusSectionIcfCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

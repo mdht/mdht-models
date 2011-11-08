@@ -138,19 +138,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryAllergiesReactionsSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryAllergiesReactionsSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -195,18 +196,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryProblemListSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryProblemListSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -251,18 +254,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalCourseSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalCourseSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -307,19 +312,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeMedicationsSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeMedicationsSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -364,19 +370,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryDischargeDiagnosisSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryDischargeDiagnosisSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -421,18 +428,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -477,18 +486,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -533,17 +544,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryDischargeDiet"), new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryDischargeDiet"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -588,18 +602,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryFamilyHistorySection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryFamilyHistorySection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -644,18 +660,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryFunctionalStatusSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryFunctionalStatusSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -700,18 +718,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPresentIllness"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPresentIllness"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -756,19 +776,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargePhysical"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargePhysical"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -813,19 +834,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeStudiesSummarySection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeStudiesSummarySection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -870,18 +892,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryImmunizationsSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryImmunizationsSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -926,17 +950,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SURGERIES_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummarySurgeriesSection"), new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SURGERIES_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummarySurgeriesSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -981,18 +1008,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryReviewOfSystemsSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryReviewOfSystemsSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -1037,18 +1066,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummarySocialHistorySection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummarySocialHistorySection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -1093,18 +1124,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeSummaryVitalSignsSection"),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeSummaryVitalSignsSection"),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}
@@ -1143,12 +1176,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static AllergiesReactionsSection getAllergiesReactionsSection(DischargeSummary dischargeSummary) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(84));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(86));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1188,12 +1220,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static ProblemListSection getProblemListSection(DischargeSummary dischargeSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(85));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(87));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1233,12 +1264,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static HospitalCourseSection getHospitalCourseSection(DischargeSummary dischargeSummary) {
 		if (GET_HOSPITAL_COURSE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(86));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(88));
 			try {
 				GET_HOSPITAL_COURSE_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_COURSE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1279,12 +1309,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			DischargeSummary dischargeSummary) {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(87));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(89));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1324,12 +1353,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static DischargeDiagnosisSection getDischargeDiagnosisSection(DischargeSummary dischargeSummary) {
 		if (GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(88));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(90));
 			try {
 				GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1369,12 +1397,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static PlanOfCareSection getPlanOfCareSection(DischargeSummary dischargeSummary) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(89));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(91));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1414,12 +1441,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static ChiefComplaintSection getChiefComplaintSection(DischargeSummary dischargeSummary) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(90));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1459,12 +1485,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static DischargeDiet getDischargeDiet(DischargeSummary dischargeSummary) {
 		if (GET_DISCHARGE_DIET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(91));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
 			try {
 				GET_DISCHARGE_DIET__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIET__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1504,12 +1529,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static FamilyHistorySection getFamilyHistorySection(DischargeSummary dischargeSummary) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1549,12 +1573,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static FunctionalStatusSection getFunctionalStatusSection(DischargeSummary dischargeSummary) {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1594,12 +1617,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static HistoryOfPresentIllness getHistoryOfPresentIllness(DischargeSummary dischargeSummary) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1639,12 +1661,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static HospitalDischargePhysical getHospitalDischargePhysical(DischargeSummary dischargeSummary) {
 		if (GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
 			try {
 				GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1685,12 +1706,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			DischargeSummary dischargeSummary) {
 		if (GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
 			try {
 				GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1730,12 +1750,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static ImmunizationsSection getImmunizationsSection(DischargeSummary dischargeSummary) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1775,12 +1794,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static SurgeriesSection getSurgeriesSection(DischargeSummary dischargeSummary) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
 			try {
 				GET_SURGERIES_SECTION__EOCL_QRY = helper.createQuery(GET_SURGERIES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1820,12 +1838,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static ReviewOfSystemsSection getReviewOfSystemsSection(DischargeSummary dischargeSummary) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1865,12 +1882,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static SocialHistorySection getSocialHistorySection(DischargeSummary dischargeSummary) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(102));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1910,12 +1926,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static VitalSignsSection getVitalSignsSection(DischargeSummary dischargeSummary) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_SUMMARY,
-				ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_SUMMARY, ToCPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(103));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1961,23 +1976,20 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			helper.setContext(ToCPackage.Literals.DISCHARGE_SUMMARY);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
-					new Object[] { dischargeSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
+						 new Object [] { dischargeSummary }));
 			}
 			return false;
 		}

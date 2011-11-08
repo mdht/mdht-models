@@ -97,14 +97,10 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	public static ToCPackage init() {
-		if (isInited) {
-			return (ToCPackage) EPackage.Registry.INSTANCE.getEPackage(ToCPackage.eNS_URI);
-		}
+		if (isInited) return (ToCPackage)EPackage.Registry.INSTANCE.getEPackage(ToCPackage.eNS_URI);
 
 		// Obtain or create and register package
-		ToCPackageImpl theToCPackage = (ToCPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof ToCPackageImpl
-				? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new ToCPackageImpl());
+		ToCPackageImpl theToCPackage = (ToCPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof ToCPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new ToCPackageImpl());
 
 		isInited = true;
 
@@ -118,15 +114,18 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		theToCPackage.initializePackageContents();
 
 		// Register package validator
-		EValidator.Registry.INSTANCE.put(theToCPackage, new EValidator.Descriptor() {
-			public EValidator getEValidator() {
-				return ToCValidator.INSTANCE;
-			}
-		});
+		EValidator.Registry.INSTANCE.put
+			(theToCPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return ToCValidator.INSTANCE;
+				 }
+			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theToCPackage.freeze();
 
+  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(ToCPackage.eNS_URI, theToCPackage);
 		return theToCPackage;
@@ -174,7 +173,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	public ToCFactory getToCFactory() {
-		return (ToCFactory) getEFactoryInstance();
+		return (ToCFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -192,9 +191,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	public void createPackageContents() {
-		if (isCreated) {
-			return;
-		}
+		if (isCreated) return;
 		isCreated = true;
 
 		// Create classes and their features
@@ -222,9 +219,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	public void initializePackageContents() {
-		if (isInitialized) {
-			return;
-		}
+		if (isInitialized) return;
 		isInitialized = true;
 
 		// Initialize package
@@ -233,9 +228,9 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		CDTPackage theCDTPackage = (CDTPackage) EPackage.Registry.INSTANCE.getEPackage(CDTPackage.eNS_URI);
-		HITSPPackage theHITSPPackage = (HITSPPackage) EPackage.Registry.INSTANCE.getEPackage(HITSPPackage.eNS_URI);
-		IHEPackage theIHEPackage = (IHEPackage) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI);
+		CDTPackage theCDTPackage = (CDTPackage)EPackage.Registry.INSTANCE.getEPackage(CDTPackage.eNS_URI);
+		HITSPPackage theHITSPPackage = (HITSPPackage)EPackage.Registry.INSTANCE.getEPackage(HITSPPackage.eNS_URI);
+		IHEPackage theIHEPackage = (IHEPackage)EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -248,13 +243,9 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		consultationRequestEClass.getESuperTypes().add(theCDTPackage.getGeneralHeaderConstraints());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(
-			dischargeSummaryEClass, DischargeSummary.class, "DischargeSummary", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
+		initEClass(dischargeSummaryEClass, DischargeSummary.class, "DischargeSummary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryAllergiesReactionsSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -263,9 +254,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryProblemListSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryProblemListSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -274,9 +263,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalCourseSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalCourseSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -285,9 +272,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(),
-			"validateDischargeSummaryHospitalDischargeMedicationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalDischargeMedicationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -296,9 +281,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryDischargeDiagnosisSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryDischargeDiagnosisSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -307,9 +290,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryPlanOfCareSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryPlanOfCareSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -318,9 +299,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryChiefComplaintSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryChiefComplaintSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -329,9 +308,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryDischargeDiet", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryDischargeDiet", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -340,9 +317,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryFamilyHistorySection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryFamilyHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -351,9 +326,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryFunctionalStatusSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryFunctionalStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -362,9 +335,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHistoryOfPresentIllness", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHistoryOfPresentIllness", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -373,9 +344,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalDischargePhysical", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalDischargePhysical", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -384,9 +353,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(),
-			"validateDischargeSummaryHospitalDischargeStudiesSummarySection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryHospitalDischargeStudiesSummarySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -395,9 +362,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryImmunizationsSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryImmunizationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -406,9 +371,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummarySurgeriesSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummarySurgeriesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -417,9 +380,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryReviewOfSystemsSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryReviewOfSystemsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -428,9 +389,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummarySocialHistorySection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummarySocialHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -439,9 +398,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryVitalSignsSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeSummaryEClass, ecorePackage.getEBoolean(), "validateDischargeSummaryVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -450,84 +407,45 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getHospitalCourseSection(), "getHospitalCourseSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getHospitalCourseSection(), "getHospitalCourseSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getHospitalDischargeMedicationsSection(),
-			"getHospitalDischargeMedicationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getHospitalDischargeMedicationsSection(), "getHospitalDischargeMedicationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getDischargeDiagnosisSection(), "getDischargeDiagnosisSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getDischargeDiagnosisSection(), "getDischargeDiagnosisSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getChiefComplaintSection(), "getChiefComplaintSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getChiefComplaintSection(), "getChiefComplaintSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theIHEPackage.getDischargeDiet(), "getDischargeDiet", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theIHEPackage.getDischargeDiet(), "getDischargeDiet", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getHistoryOfPresentIllness(), "getHistoryOfPresentIllness", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getHistoryOfPresentIllness(), "getHistoryOfPresentIllness", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theIHEPackage.getHospitalDischargePhysical(), "getHospitalDischargePhysical", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theIHEPackage.getHospitalDischargePhysical(), "getHospitalDischargePhysical", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theCDTPackage.getHospitalDischargeStudiesSummarySection(),
-			"getHospitalDischargeStudiesSummarySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theCDTPackage.getHospitalDischargeStudiesSummarySection(), "getHospitalDischargeStudiesSummarySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getReviewOfSystemsSection(), "getReviewOfSystemsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getReviewOfSystemsSection(), "getReviewOfSystemsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeSummaryEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(dischargeSummaryEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEClass(
-			dischargeInstructionsEClass, DischargeInstructions.class, "DischargeInstructions", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(dischargeInstructionsEClass, DischargeInstructions.class, "DischargeInstructions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsPlanOfCareSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsPlanOfCareSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -536,9 +454,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(),
-			"validateDischargeInstructionsAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -547,9 +463,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsProblemListSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsProblemListSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -558,9 +472,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(),
-			"validateDischargeInstructionsDischargeDiagnosisSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsDischargeDiagnosisSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -569,9 +481,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(),
-			"validateDischargeInstructionsAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -580,9 +490,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(),
-			"validateDischargeInstructionsImmunizationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsImmunizationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -591,9 +499,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeInstructionsEClass, ecorePackage.getEBoolean(),
-			"validateDischargeInstructionsMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -602,41 +508,23 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getAllergiesReactionsSection(),
-			"getAllergiesReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getDischargeDiagnosisSection(),
-			"getDischargeDiagnosisSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getDischargeDiagnosisSection(), "getDischargeDiagnosisSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection",
-			1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			dischargeInstructionsEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(dischargeInstructionsEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEClass(
-			consultationSummaryEClass, ConsultationSummary.class, "ConsultationSummary", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
+		initEClass(consultationSummaryEClass, ConsultationSummary.class, "ConsultationSummary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(),
-			"validateConsultationSummaryAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -645,9 +533,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryMedicationsSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryMedicationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -656,9 +542,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryProblemListSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryProblemListSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -667,9 +551,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummarySurgeriesSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummarySurgeriesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -678,9 +560,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(),
-			"validateConsultationSummaryDiagnosticResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryDiagnosticResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -689,9 +569,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(),
-			"validateConsultationSummaryAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -700,9 +578,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryEncountersSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryEncountersSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -711,9 +587,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryFamilyHistorySection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryFamilyHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -722,9 +596,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(),
-			"validateConsultationSummaryFunctionalStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryFunctionalStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -733,9 +605,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryImmunizationsSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryImmunizationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -744,9 +614,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(),
-			"validateConsultationSummaryMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -755,9 +623,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryPayersSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryPayersSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -766,9 +632,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryPlanOfCareSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryPlanOfCareSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -777,9 +641,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummarySocialHistorySection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummarySocialHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -788,9 +650,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryVitalSignsSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationSummaryEClass, ecorePackage.getEBoolean(), "validateConsultationSummaryVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -799,73 +659,39 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection",
-			1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getMedicationsSection(), "getMedicationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getMedicationsSection(), "getMedicationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getDiagnosticResultsSection(), "getDiagnosticResultsSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getDiagnosticResultsSection(), "getDiagnosticResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getEncountersSection(), "getEncountersSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getEncountersSection(), "getEncountersSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getPayersSection(), "getPayersSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getPayersSection(), "getPayersSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationSummaryEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationSummaryEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEClass(
-			consultationRequestEClass, ConsultationRequest.class, "ConsultationRequest", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
+		initEClass(consultationRequestEClass, ConsultationRequest.class, "ConsultationRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestAllergiesReactionsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -874,9 +700,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestMedicationsSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestMedicationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -885,9 +709,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestProblemListSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestProblemListSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -896,9 +718,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestSurgeriesSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestSurgeriesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -907,9 +727,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestDiagnosticResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestDiagnosticResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -918,9 +736,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestAdvanceDirectivesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -929,9 +745,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestAssessmentAndPlanSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestAssessmentAndPlanSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -940,9 +754,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestHistoryOfPresentIllness", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestHistoryOfPresentIllness", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -951,9 +763,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPhysicalExamSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPhysicalExamSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -962,9 +772,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestReasonForReferralSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestReasonForReferralSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -973,9 +781,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestEncountersSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestEncountersSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -984,9 +790,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestFamilyHistorySection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestFamilyHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -995,9 +799,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestFunctionalStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestFunctionalStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1006,9 +808,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestImmunizationsSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestImmunizationsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1017,9 +817,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestMedicalEquipmentSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1028,9 +826,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPlanOfCareSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPlanOfCareSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1039,9 +835,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestSocialHistorySection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestSocialHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1050,9 +844,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestVitalSignsSection", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1061,9 +853,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestChiefComplaintSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestChiefComplaintSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1072,9 +862,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestGeneralStatusSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestGeneralStatusSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1083,9 +871,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(),
-			"validateConsultationRequestHistoryOfPastIllnessSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestHistoryOfPastIllnessSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1094,9 +880,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPayersSection", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(consultationRequestEClass, ecorePackage.getEBoolean(), "validateConsultationRequestPayersSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1105,93 +889,49 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection",
-			1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getAllergiesReactionsSection(), "getAllergiesReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getMedicationsSection(), "getMedicationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getMedicationsSection(), "getMedicationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getSurgeriesSection(), "getSurgeriesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getDiagnosticResultsSection(), "getDiagnosticResultsSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getDiagnosticResultsSection(), "getDiagnosticResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getAdvanceDirectivesSection(), "getAdvanceDirectivesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getAssessmentAndPlanSection(), "getAssessmentAndPlanSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getAssessmentAndPlanSection(), "getAssessmentAndPlanSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getHistoryOfPresentIllness(), "getHistoryOfPresentIllness", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getHistoryOfPresentIllness(), "getHistoryOfPresentIllness", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getPhysicalExamSection(), "getPhysicalExamSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getPhysicalExamSection(), "getPhysicalExamSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getReasonForReferralSection(), "getReasonForReferralSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getReasonForReferralSection(), "getReasonForReferralSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getEncountersSection(), "getEncountersSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getEncountersSection(), "getEncountersSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getFunctionalStatusSection(), "getFunctionalStatusSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getChiefComplaintSection(), "getChiefComplaintSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getChiefComplaintSection(), "getChiefComplaintSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theCDTPackage.getGeneralStatusSection(), "getGeneralStatusSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theCDTPackage.getGeneralStatusSection(), "getGeneralStatusSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getHistoryOfPastIllnessSection(),
-			"getHistoryOfPastIllnessSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getHistoryOfPastIllnessSection(), "getHistoryOfPastIllnessSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			consultationRequestEClass, theHITSPPackage.getPayersSection(), "getPayersSection", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(consultationRequestEClass, theHITSPPackage.getPayersSection(), "getPayersSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1210,45 +950,38 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	protected void createAnnotationAnnotations() {
-		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
-		addAnnotation(
-			dischargeSummaryEClass,
-			source,
-			new String[] {
-					"templateId.root",
-					"2.16.840.1.113883.3.1275.1.1.1",
-					"constraints.validation.error",
-					"DischargeSummaryTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection",
-					"constraints.validation.warning",
-					"DischargeSummaryChiefComplaintSection DischargeSummaryDischargeDiet DischargeSummaryFamilyHistorySection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllness DischargeSummaryHospitalDischargePhysical DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSection DischargeSummarySurgeriesSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSection" });
-		addAnnotation(
-			dischargeInstructionsEClass,
-			source,
-			new String[] {
-					"templateId.root",
-					"2.16.840.1.113883.3.1275.1.1.2",
-					"constraints.validation.error",
-					"DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection" });
-		addAnnotation(
-			consultationSummaryEClass,
-			source,
-			new String[] {
-					"templateId.root",
-					"2.16.840.1.113883.3.1275.1.1.3",
-					"constraints.validation.error",
-					"ConsultationSummaryTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection",
-					"constraints.validation.warning",
-					"ConsultationSummaryAdvanceDirectivesSection ConsultationSummaryEncountersSection ConsultationSummaryFamilyHistorySection ConsultationSummaryFunctionalStatusSection ConsultationSummaryImmunizationsSection ConsultationSummaryMedicalEquipmentSection ConsultationSummaryPayersSection ConsultationSummaryPlanOfCareSection ConsultationSummarySocialHistorySection ConsultationSummaryVitalSignsSection" });
-		addAnnotation(
-			consultationRequestEClass,
-			source,
-			new String[] {
-					"templateId.root",
-					"2.16.840.1.113883.3.1275.1.1.4",
-					"constraints.validation.error",
-					"ConsultationRequestTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection",
-					"constraints.validation.warning",
-					"ConsultationRequestAssessmentAndPlanSection ConsultationRequestHistoryOfPresentIllness ConsultationRequestPhysicalExamSection ConsultationRequestReasonForReferralSection ConsultationRequestEncountersSection ConsultationRequestFamilyHistorySection ConsultationRequestFunctionalStatusSection ConsultationRequestImmunizationsSection ConsultationRequestMedicalEquipmentSection ConsultationRequestPlanOfCareSection ConsultationRequestSocialHistorySection ConsultationRequestVitalSignsSection ConsultationRequestChiefComplaintSection ConsultationRequestGeneralStatusSection ConsultationRequestHistoryOfPastIllnessSection ConsultationRequestPayersSection" });
+		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";		
+		addAnnotation
+		  (dischargeSummaryEClass, 
+		   source, 
+		   new String[] {
+			 "templateId.root", "2.16.840.1.113883.3.1275.1.1.1",
+			 "constraints.validation.error", "DischargeSummaryTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection",
+			 "constraints.validation.warning", "DischargeSummaryChiefComplaintSection DischargeSummaryDischargeDiet DischargeSummaryFamilyHistorySection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllness DischargeSummaryHospitalDischargePhysical DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSection DischargeSummarySurgeriesSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSection"
+		   });																																																																																																															
+		addAnnotation
+		  (dischargeInstructionsEClass, 
+		   source, 
+		   new String[] {
+			 "templateId.root", "2.16.840.1.113883.3.1275.1.1.2",
+			 "constraints.validation.error", "DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection"
+		   });																																													
+		addAnnotation
+		  (consultationSummaryEClass, 
+		   source, 
+		   new String[] {
+			 "templateId.root", "2.16.840.1.113883.3.1275.1.1.3",
+			 "constraints.validation.error", "ConsultationSummaryTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection",
+			 "constraints.validation.warning", "ConsultationSummaryAdvanceDirectivesSection ConsultationSummaryEncountersSection ConsultationSummaryFamilyHistorySection ConsultationSummaryFunctionalStatusSection ConsultationSummaryImmunizationsSection ConsultationSummaryMedicalEquipmentSection ConsultationSummaryPayersSection ConsultationSummaryPlanOfCareSection ConsultationSummarySocialHistorySection ConsultationSummaryVitalSignsSection"
+		   });																																																																																													
+		addAnnotation
+		  (consultationRequestEClass, 
+		   source, 
+		   new String[] {
+			 "templateId.root", "2.16.840.1.113883.3.1275.1.1.4",
+			 "constraints.validation.error", "ConsultationRequestTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection",
+			 "constraints.validation.warning", "ConsultationRequestAssessmentAndPlanSection ConsultationRequestHistoryOfPresentIllness ConsultationRequestPhysicalExamSection ConsultationRequestReasonForReferralSection ConsultationRequestEncountersSection ConsultationRequestFamilyHistorySection ConsultationRequestFunctionalStatusSection ConsultationRequestImmunizationsSection ConsultationRequestMedicalEquipmentSection ConsultationRequestPlanOfCareSection ConsultationRequestSocialHistorySection ConsultationRequestVitalSignsSection ConsultationRequestChiefComplaintSection ConsultationRequestGeneralStatusSection ConsultationRequestHistoryOfPastIllnessSection ConsultationRequestPayersSection"
+		   });																																																																																																																																					
 	}
 
 	/**
@@ -1258,11 +991,27 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 	 * @generated
 	 */
 	protected void createDuplicatesAnnotations() {
-		String source = "duplicates";
-		addAnnotation(dischargeSummaryEClass, source, new String[] {});
-		addAnnotation(dischargeInstructionsEClass, source, new String[] {});
-		addAnnotation(consultationSummaryEClass, source, new String[] {});
-		addAnnotation(consultationRequestEClass, source, new String[] {});
+		String source = "duplicates";			
+		addAnnotation
+		  (dischargeSummaryEClass, 
+		   source, 
+		   new String[] {
+		   });																																																																																																															
+		addAnnotation
+		  (dischargeInstructionsEClass, 
+		   source, 
+		   new String[] {
+		   });																																													
+		addAnnotation
+		  (consultationSummaryEClass, 
+		   source, 
+		   new String[] {
+		   });																																																																																													
+		addAnnotation
+		  (consultationRequestEClass, 
+		   source, 
+		   new String[] {
+		   });																																																																																																																																				
 	}
 
 } // ToCPackageImpl

@@ -88,20 +88,20 @@ public class AssessmentAndPlanSectionProcNoteOperations extends SectionOperation
 			helper.setContext(CDTPackage.Literals.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE);
 			try {
 				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSectionProcNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSectionProcNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE__ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("AssessmentAndPlanSectionProcNoteTemplateId"),
-					new Object[] { assessmentAndPlanSectionProcNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE__ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_TEMPLATE_ID,
+						 CDTPlugin.INSTANCE.getString("AssessmentAndPlanSectionProcNoteTemplateId"),
+						 new Object [] { assessmentAndPlanSectionProcNote }));
 			}
 			return false;
 		}
@@ -116,9 +116,9 @@ public class AssessmentAndPlanSectionProcNoteOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionProcNoteCode(AssessmentAndPlanSectionProcNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Proc Note Code</em>}' invariant operation.
@@ -151,18 +151,20 @@ public class AssessmentAndPlanSectionProcNoteOperations extends SectionOperation
 			helper.setContext(CDTPackage.Literals.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE);
 			try {
 				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSectionProcNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSectionProcNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE__ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE,
-					CDTPlugin.INSTANCE.getString("AssessmentAndPlanSectionProcNoteCode"),
-					new Object[] { assessmentAndPlanSectionProcNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE__ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE_CODE,
+						 CDTPlugin.INSTANCE.getString("AssessmentAndPlanSectionProcNoteCode"),
+						 new Object [] { assessmentAndPlanSectionProcNote }));
 			}
 			return false;
 		}

@@ -200,7 +200,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY,
-				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY.getEAllOperations().get(69));
+				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY.getEAllOperations().get(70));
 			try {
 				GET_PROBLEM_ENTRIES__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

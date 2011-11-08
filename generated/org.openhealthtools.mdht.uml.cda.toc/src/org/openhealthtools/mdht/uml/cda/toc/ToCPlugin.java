@@ -39,7 +39,7 @@ public final class ToCPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public ToCPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

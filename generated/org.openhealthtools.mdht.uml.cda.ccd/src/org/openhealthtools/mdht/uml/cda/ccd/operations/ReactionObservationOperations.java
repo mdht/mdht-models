@@ -35,6 +35,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation#validateReactionObservationHasReactionIntervention(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Has Reaction Intervention</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation#validateReactionObservationReactionInterventionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Reaction Intervention Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation#validateReactionObservationReactionInterventionType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Reaction Intervention Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation#validateReactionObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Template Id</em>}</li>
@@ -56,6 +57,63 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	protected ReactionObservationOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateReactionObservationHasReactionIntervention(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Has Reaction Intervention</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateReactionObservationHasReactionIntervention(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateReactionObservationHasReactionIntervention(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Has Reaction Intervention</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateReactionObservationHasReactionIntervention(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->isEmpty()
+	 * @param reactionObservation The receiving '<em><b>Reaction Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateReactionObservationHasReactionIntervention(ReactionObservation reactionObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
+			try {
+				VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reactionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_HAS_REACTION_INTERVENTION,
+					CCDPlugin.INSTANCE.getString("ReactionObservationHasReactionIntervention"),
+					new Object[] { reactionObservation }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -486,7 +544,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.REACTION_OBSERVATION,
-				CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(56));
+				CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(57));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

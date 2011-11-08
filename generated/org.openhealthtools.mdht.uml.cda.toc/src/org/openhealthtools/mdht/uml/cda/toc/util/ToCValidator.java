@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
+import org.openhealthtools.mdht.uml.cda.toc.*;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationRequest;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationSummary;
 import org.openhealthtools.mdht.uml.cda.toc.DischargeInstructions;
@@ -627,7 +628,7 @@ public class ToCValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-		return ToCPackage.eINSTANCE;
+	  return ToCPackage.eINSTANCE;
 	}
 
 	/**
@@ -640,13 +641,13 @@ public class ToCValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case ToCPackage.DISCHARGE_SUMMARY:
-				return validateDischargeSummary((DischargeSummary) value, diagnostics, context);
+				return validateDischargeSummary((DischargeSummary)value, diagnostics, context);
 			case ToCPackage.DISCHARGE_INSTRUCTIONS:
-				return validateDischargeInstructions((DischargeInstructions) value, diagnostics, context);
+				return validateDischargeInstructions((DischargeInstructions)value, diagnostics, context);
 			case ToCPackage.CONSULTATION_SUMMARY:
-				return validateConsultationSummary((ConsultationSummary) value, diagnostics, context);
+				return validateConsultationSummary((ConsultationSummary)value, diagnostics, context);
 			case ToCPackage.CONSULTATION_REQUEST:
-				return validateConsultationRequest((ConsultationRequest) value, diagnostics, context);
+				return validateConsultationRequest((ConsultationRequest)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -659,254 +660,73 @@ public class ToCValidator extends EObjectValidator {
 	 */
 	public boolean validateDischargeSummary(DischargeSummary dischargeSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dischargeSummary, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dischargeSummary, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dischargeSummary, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateGeneralHeaderConstraintsTemplateId(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryAllergiesReactionsSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryProblemListSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryHospitalCourseSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargeMedicationsSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryDischargeDiagnosisSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryPlanOfCareSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryChiefComplaintSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryDischargeDiet(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryFamilyHistorySection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryFunctionalStatusSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryHistoryOfPresentIllness(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargePhysical(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargeStudiesSummarySection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryImmunizationsSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummarySurgeriesSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryReviewOfSystemsSection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummarySocialHistorySection(
-				dischargeSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeSummary_validateDischargeSummaryVitalSignsSection(
-				dischargeSummary, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateGeneralHeaderConstraintsTemplateId(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryAllergiesReactionsSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryProblemListSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryHospitalCourseSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargeMedicationsSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryDischargeDiagnosisSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryPlanOfCareSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryChiefComplaintSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryDischargeDiet(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryFamilyHistorySection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryFunctionalStatusSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryHistoryOfPresentIllness(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargePhysical(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryHospitalDischargeStudiesSummarySection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryImmunizationsSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummarySurgeriesSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryReviewOfSystemsSection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummarySocialHistorySection(dischargeSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeSummary_validateDischargeSummaryVitalSignsSection(dischargeSummary, diagnostics, context);
 		return result;
 	}
 
@@ -1126,212 +946,62 @@ public class ToCValidator extends EObjectValidator {
 	 */
 	public boolean validateDischargeInstructions(DischargeInstructions dischargeInstructions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dischargeInstructions, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dischargeInstructions, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dischargeInstructions, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateGeneralHeaderConstraintsTemplateId(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsPlanOfCareSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsAllergiesReactionsSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsProblemListSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsDischargeDiagnosisSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsAdvanceDirectivesSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsImmunizationsSection(
-				dischargeInstructions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDischargeInstructions_validateDischargeInstructionsMedicalEquipmentSection(
-				dischargeInstructions, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateGeneralHeaderConstraintsTemplateId(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsPlanOfCareSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsAllergiesReactionsSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsProblemListSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsDischargeDiagnosisSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsAdvanceDirectivesSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsImmunizationsSection(dischargeInstructions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsMedicalEquipmentSection(dischargeInstructions, diagnostics, context);
 		return result;
 	}
 
@@ -1430,242 +1100,70 @@ public class ToCValidator extends EObjectValidator {
 	 */
 	public boolean validateConsultationSummary(ConsultationSummary consultationSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(consultationSummary, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(consultationSummary, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(consultationSummary, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateGeneralHeaderConstraintsTemplateId(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryAllergiesReactionsSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryMedicationsSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryProblemListSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummarySurgeriesSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryDiagnosticResultsSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryAdvanceDirectivesSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryEncountersSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryFamilyHistorySection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryFunctionalStatusSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryImmunizationsSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryMedicalEquipmentSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryPayersSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryPlanOfCareSection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummarySocialHistorySection(
-				consultationSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationSummary_validateConsultationSummaryVitalSignsSection(
-				consultationSummary, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateGeneralHeaderConstraintsTemplateId(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryAllergiesReactionsSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryMedicationsSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryProblemListSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummarySurgeriesSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryDiagnosticResultsSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryAdvanceDirectivesSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryEncountersSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryFamilyHistorySection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryFunctionalStatusSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryImmunizationsSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryMedicalEquipmentSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryPayersSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryPlanOfCareSection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummarySocialHistorySection(consultationSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationSummary_validateConsultationSummaryVitalSignsSection(consultationSummary, diagnostics, context);
 		return result;
 	}
 
@@ -1852,270 +1350,77 @@ public class ToCValidator extends EObjectValidator {
 	 */
 	public boolean validateConsultationRequest(ConsultationRequest consultationRequest, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(consultationRequest, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(consultationRequest, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(consultationRequest, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateGeneralHeaderConstraintsTemplateId(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestAllergiesReactionsSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestMedicationsSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestProblemListSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestSurgeriesSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestDiagnosticResultsSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestAdvanceDirectivesSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestAssessmentAndPlanSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestHistoryOfPresentIllness(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestPhysicalExamSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestReasonForReferralSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestEncountersSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestFamilyHistorySection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestFunctionalStatusSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestImmunizationsSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestMedicalEquipmentSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestPlanOfCareSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestSocialHistorySection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestVitalSignsSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestChiefComplaintSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestGeneralStatusSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestHistoryOfPastIllnessSection(
-				consultationRequest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationRequest_validateConsultationRequestPayersSection(
-				consultationRequest, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateGeneralHeaderConstraintsTemplateId(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestAllergiesReactionsSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestMedicationsSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestProblemListSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestSurgeriesSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestDiagnosticResultsSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestAdvanceDirectivesSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestAssessmentAndPlanSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestHistoryOfPresentIllness(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestPhysicalExamSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestReasonForReferralSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestEncountersSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestFamilyHistorySection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestFunctionalStatusSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestImmunizationsSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestMedicalEquipmentSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestPlanOfCareSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestSocialHistorySection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestVitalSignsSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestChiefComplaintSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestGeneralStatusSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestHistoryOfPastIllnessSection(consultationRequest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateConsultationRequest_validateConsultationRequestPayersSection(consultationRequest, diagnostics, context);
 		return result;
 	}
 

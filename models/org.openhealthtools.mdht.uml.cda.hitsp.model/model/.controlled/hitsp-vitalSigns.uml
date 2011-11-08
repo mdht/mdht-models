@@ -32,6 +32,9 @@ The differentiation between Vital Signs and Results varies by clinical context. 
       <ownedComment xmi:id="_dQRe4DSfEeC4N-P6mHDwgg">
         <body>Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</body>
       </ownedComment>
+      <ownedComment xmi:id="_HQhZwAY3EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_hZrkQDSfEeC4N-P6mHDwgg">
         <language>Analysis</language>
         <body>Data Element Definitions for Results [Placeholder]</body>

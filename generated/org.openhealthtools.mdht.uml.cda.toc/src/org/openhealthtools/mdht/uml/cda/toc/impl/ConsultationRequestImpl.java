@@ -74,8 +74,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestAllergiesReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestAllergiesReactionsSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestAllergiesReactionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +113,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestDiagnosticResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestDiagnosticResultsSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestDiagnosticResultsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +123,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestAdvanceDirectivesSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -136,8 +133,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestAssessmentAndPlanSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestAssessmentAndPlanSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestAssessmentAndPlanSection(this, diagnostics, context);
 	}
 
 	/**
@@ -147,8 +143,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestHistoryOfPresentIllness(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestHistoryOfPresentIllness(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestHistoryOfPresentIllness(this, diagnostics, context);
 	}
 
 	/**
@@ -168,8 +163,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestReasonForReferralSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestReasonForReferralSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestReasonForReferralSection(this, diagnostics, context);
 	}
 
 	/**
@@ -198,8 +192,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestFunctionalStatusSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestFunctionalStatusSection(this, diagnostics, context);
 	}
 
 	/**
@@ -219,8 +212,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestMedicalEquipmentSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestMedicalEquipmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -258,8 +250,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestChiefComplaintSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestChiefComplaintSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestChiefComplaintSection(this, diagnostics, context);
 	}
 
 	/**
@@ -279,8 +270,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationRequestHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationRequestOperations.validateConsultationRequestHistoryOfPastIllnessSection(
-			this, diagnostics, context);
+		return ConsultationRequestOperations.validateConsultationRequestHistoryOfPastIllnessSection(this, diagnostics, context);
 	}
 
 	/**
@@ -507,7 +497,7 @@ public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	@Override
 	public ConsultationRequest init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ConsultationRequestImpl

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getContinuityOfCareDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Summarization of episode note' templateId.root='2.16.840.1.113883.10.20.1' constraints.validation.error='ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentServiceEventRequired ContinuityOfCareDocumentServiceEventClassCode ContinuityOfCareDocumentServiceEventEffectiveTime ContinuityOfCareDocumentNoTemplateIdExtension ContinuityOfCareDocumentHasEffectiveTimeSeconds ContinuityOfCareDocumentHasEffectiveTimeZone ContinuityOfCareDocumentOneOrTwoRecordTarget ContinuityOfCareDocumentHasAssignedAuthorNullFlavor ContinuityOfCareDocumentCode ContinuityOfCareDocumentLanguageCode' code.codeSystemName='LOINC' constraints.validation.warning='ContinuityOfCareDocumentHasAssignedAuthor ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentAlertsSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentImmunizationsSection ContinuityOfCareDocumentVitalSignsSection ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentPayersSection' code.code='34133-9' constraints.validation.info='ContinuityOfCareDocumentHasInformationRecipient ContinuityOfCareDocumentPurposeSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Summarization of episode note' templateId.root='2.16.840.1.113883.10.20.1' constraints.validation.error='ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentServiceEventRequired ContinuityOfCareDocumentServiceEventClassCode ContinuityOfCareDocumentServiceEventEffectiveTime ContinuityOfCareDocumentLanguageCodeFormat ContinuityOfCareDocumentNoTemplateIdExtension ContinuityOfCareDocumentHasEffectiveTimeSeconds ContinuityOfCareDocumentHasEffectiveTimeZone ContinuityOfCareDocumentOneOrTwoRecordTarget ContinuityOfCareDocumentHasAssignedAuthorNullFlavor ContinuityOfCareDocumentCode ContinuityOfCareDocumentLanguageCode' code.codeSystemName='LOINC' constraints.validation.warning='ContinuityOfCareDocumentHasAssignedAuthor ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentAlertsSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentImmunizationsSection ContinuityOfCareDocumentVitalSignsSection ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentPayersSection' code.code='34133-9' constraints.validation.info='ContinuityOfCareDocumentHasInformationRecipient ContinuityOfCareDocumentPurposeSection'"
  * @generated
  */
 public interface ContinuityOfCareDocument extends ClinicalDocument {
@@ -68,6 +68,19 @@ public interface ContinuityOfCareDocument extends ClinicalDocument {
 	 */
 	boolean validateContinuityOfCareDocumentServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.languageCode.matches(\'code\',\'(([a-z]{2})(\\\\\\\\-[A-Z]{2})?)\')'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentLanguageCodeFormat(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

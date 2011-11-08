@@ -2,6 +2,9 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_IjIO0DxbEd6JwqSGecoePg" name="Medication">
     <ownedRule xmi:id="_K0E2MOxaEd-JOaR14t7EwQ" name="medicationStopped" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
+      <ownedComment xmi:id="_x9FtEAWhEeGEVa6Nn2ESZg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_N9hTYOxaEd-JOaR14t7EwQ">
         <language>Analysis</language>
         <body>The time at which the medication was stopped is determined based on the content of the &amp;lt;high> element of the first &amp;lt;effectiveTime> element.</body>

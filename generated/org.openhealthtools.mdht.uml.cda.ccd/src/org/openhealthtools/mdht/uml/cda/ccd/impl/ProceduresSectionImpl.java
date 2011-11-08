@@ -54,6 +54,16 @@ public class ProceduresSectionImpl extends SectionImpl implements ProceduresSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionHasProcedureActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProceduresSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionTemplateId(this, diagnostics, context);
 	}

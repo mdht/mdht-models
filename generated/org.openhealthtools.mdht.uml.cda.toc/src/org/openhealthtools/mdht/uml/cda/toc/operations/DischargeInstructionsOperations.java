@@ -105,18 +105,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsPlanOfCareSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_PLAN_OF_CARE_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsPlanOfCareSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -161,19 +163,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsAllergiesReactionsSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ALLERGIES_REACTIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsAllergiesReactionsSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -218,18 +221,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsProblemListSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_PROBLEM_LIST_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsProblemListSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -274,19 +279,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsDischargeDiagnosisSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_DISCHARGE_DIAGNOSIS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsDischargeDiagnosisSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -331,19 +337,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsAdvanceDirectivesSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsAdvanceDirectivesSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -388,18 +395,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsImmunizationsSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_IMMUNIZATIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsImmunizationsSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -444,19 +453,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION,
-					ToCPlugin.INSTANCE.getString("DischargeInstructionsMedicalEquipmentSection"),
-					new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION,
+						 ToCPlugin.INSTANCE.getString("DischargeInstructionsMedicalEquipmentSection"),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}
@@ -495,12 +505,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static PlanOfCareSection getPlanOfCareSection(DischargeInstructions dischargeInstructions) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(73));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(75));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -540,12 +549,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static AllergiesReactionsSection getAllergiesReactionsSection(DischargeInstructions dischargeInstructions) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(74));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(76));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -585,12 +593,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static ProblemListSection getProblemListSection(DischargeInstructions dischargeInstructions) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(75));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(77));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -630,12 +637,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static DischargeDiagnosisSection getDischargeDiagnosisSection(DischargeInstructions dischargeInstructions) {
 		if (GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(76));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(78));
 			try {
 				GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -675,12 +681,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static AdvanceDirectivesSection getAdvanceDirectivesSection(DischargeInstructions dischargeInstructions) {
 		if (GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(77));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(79));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -720,12 +725,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static ImmunizationsSection getImmunizationsSection(DischargeInstructions dischargeInstructions) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(78));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(80));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -765,12 +769,11 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	public static MedicalEquipmentSection getMedicalEquipmentSection(DischargeInstructions dischargeInstructions) {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS,
-				ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(79));
+			helper.setOperationContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS, ToCPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(81));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -816,22 +819,20 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 			helper.setContext(ToCPackage.Literals.DISCHARGE_INSTRUCTIONS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.DISCHARGE_INSTRUCTIONS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									dischargeInstructions, context) }), new Object[] { dischargeInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.DISCHARGE_INSTRUCTIONS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeInstructions, context) }),
+						 new Object [] { dischargeInstructions }));
 			}
 			return false;
 		}

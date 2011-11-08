@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+import org.openhealthtools.mdht.uml.cda.impl.ReferenceImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements AdvanceDirectiveReference {
+public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements AdvanceDirectiveReference {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,28 +43,6 @@ public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements Ad
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveReferenceHasConformanceTo(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasConformanceTo(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveReferenceHasReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasReference(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -91,6 +69,17 @@ public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements Ad
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocumentHasId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(
 			this, diagnostics, context);
@@ -101,8 +90,8 @@ public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements Ad
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceId(this, diagnostics, context);
+	public boolean validateAdvanceDirectiveReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTypeCode(this, diagnostics, context);
 	}
 
 	/**

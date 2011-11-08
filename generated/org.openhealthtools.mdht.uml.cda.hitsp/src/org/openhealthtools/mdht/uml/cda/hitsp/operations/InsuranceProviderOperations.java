@@ -54,6 +54,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CoverageEntryOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider#validateInsuranceProviderFinancialResponsibilityPartyTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Financial Responsibility Party Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider#validateInsuranceProviderFinancialResponsibilityPartyAddress(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Financial Responsibility Party Address</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider#validateInsuranceProviderTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider#validateCoverageActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -1297,6 +1298,65 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderTemplateId"), new Object[] { insuranceProvider }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivityCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivityCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
+	 * value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateCoverageActivityCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
+			try {
+				VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.INSURANCE_PROVIDER__COVERAGE_ACTIVITY_CODE,
+					HITSPPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}

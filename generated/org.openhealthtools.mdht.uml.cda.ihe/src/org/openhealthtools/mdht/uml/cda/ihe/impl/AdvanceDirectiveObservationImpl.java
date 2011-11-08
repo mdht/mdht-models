@@ -79,9 +79,53 @@ public class AdvanceDirectiveObservationImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIHEAdvanceDirectiveObservationHasExternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationHasExternalReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateIHEAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEAdvanceDirectiveObservationRepeatNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationRepeatNumber(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEAdvanceDirectiveObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationInterpretationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEAdvanceDirectiveObservationTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateIHEAdvanceDirectiveObservationTargetSiteCode(
 			this, diagnostics, context);
 	}
 

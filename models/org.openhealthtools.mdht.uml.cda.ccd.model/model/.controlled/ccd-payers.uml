@@ -221,15 +221,7 @@
 &#xD;
 Authorizations are represented using an act subordinate to the policy or program that provided it. The policy or program is referred to by the authorization. Authorized treatments can be grouped into an Organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</body>
     </ownedComment>
-    <ownedRule xmi:id="_Oc3JUM88EeCn2rsjYxSTZw" name="entryRelationship" constrainedElement="_8LwHcMJqEd6-XpBv2uxYrQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XvEUgM88EeCn2rsjYxSTZw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>An authorization activity SHALL contain one or more Act / entryRelationship</body>
-        <body>self.entryRelationship->size() > 0</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_X--_0M88EeCn2rsjYxSTZw" name="entryRelationshipTypeCode" constrainedElement="_Oc3JUM88EeCn2rsjYxSTZw">
+    <ownedRule xmi:id="_X--_0M88EeCn2rsjYxSTZw" name="entryRelationshipTypeCode">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_cbSMAM88EeCn2rsjYxSTZw">
         <language>Analysis</language>
         <language>OCL</language>
@@ -240,15 +232,17 @@ Authorizations are represented using an act subordinate to the policy or program
     <ownedRule xmi:id="_fvu_UM88EeCn2rsjYxSTZw" name="entryRelationshipTarget" constrainedElement="_X--_0M88EeCn2rsjYxSTZw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_jAwrMM88EeCn2rsjYxSTZw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The target of an authorization activity with Act / entryRelationship / @typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode = &quot;PRMS&quot; (Promise)</body>
+        <body>self.entryRelationship->forAll(act.moodCode = vocab::x_DocumentActMood::PRMS) or  self.entryRelationship->forAll(encounter.moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.entryRelationship->forAll(observation.moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.entryRelationship->forAll(observationMedia.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(organizer.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(procedure.moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.entryRelationship->forAll(regionOfInterest.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(substanceAdministration.moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.entryRelationship->forAll(supply.moodCode = vocab::x_DocumentSubstanceMood::PRMS)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_lE34AM88EeCn2rsjYxSTZw" name="hasProviders" constrainedElement="_fvu_UM88EeCn2rsjYxSTZw">
+    <ownedRule xmi:id="_lE34AM88EeCn2rsjYxSTZw" name="hasPerformers" constrainedElement="_fvu_UM88EeCn2rsjYxSTZw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mNxZwM88EeCn2rsjYxSTZw">
         <language>Analysis</language>
         <language>OCL</language>
         <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment</body>
-        <body>self.performer->size() > 0</body>
+        <body>self.entryRelationship->forAll(not act.performer->isEmpty() ) or  self.entryRelationship->forAll(not encounter.performer->isEmpty()) or self.entryRelationship->forAll(not observation.performer->isEmpty()) or  self.entryRelationship->forAll(not observationMedia.performer->isEmpty()) or self.entryRelationship->forAll(not organizer.performer->isEmpty()) or self.entryRelationship->forAll(not procedure.performer->isEmpty()) or  self.entryRelationship->forAll(not regionOfInterest.performer->isEmpty()) or self.entryRelationship->forAll(not substanceAdministration.performer->isEmpty()) or  self.entryRelationship->forAll(not supply.performer->isEmpty())</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_-zlsYMJqEd6-XpBv2uxYrQ">
@@ -272,6 +266,12 @@ Authorizations are represented using an act subordinate to the policy or program
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q0nxocJsEd6-XpBv2uxYrQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q0nxosJsEd6-XpBv2uxYrQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xm2NEAbpEeGhIchBK31weg" name="entryRelationship">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZLPYAAbpEeGhIchBK31weg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZLPYAQbpEeGhIchBK31weg" value="1"/>
+      <association href="../ccd.uml#_Xm20IAbpEeGhIchBK31weg"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_OD2tYTOpEd-5f4Yngl7nkw" memberEnd="_OD2tYDOpEd-5f4Yngl7nkw _OD2tYjOpEd-5f4Yngl7nkw">
@@ -340,7 +340,9 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:CDATemplate xmi:id="_EdPcgMJrEd6-XpBv2uxYrQ" base_Class="_6M-toMJqEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.26" assigningAuthorityName="CCD">
     <ruleId>CONF-48</ruleId>
   </CDA:CDATemplate>
-  <CDA:CDATemplate xmi:id="_G4uAcMJrEd6-XpBv2uxYrQ" base_Class="_8LwHcMJqEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.19" assigningAuthorityName="CCD"/>
+  <CDA:CDATemplate xmi:id="_G4uAcMJrEd6-XpBv2uxYrQ" base_Class="_8LwHcMJqEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.19" assigningAuthorityName="CCD">
+    <ruleId>CONF-69</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_919xEMJrEd6-XpBv2uxYrQ" base_Property="_918i8MJrEd6-XpBv2uxYrQ">
     <ruleId>CONF-37</ruleId>
   </CDA:PropertyValidation>
@@ -359,9 +361,15 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:PropertyValidation xmi:id="_qBnnY8JsEd6-XpBv2uxYrQ" base_Property="_qBnAUcJsEd6-XpBv2uxYrQ">
     <ruleId>CONF-50</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_q0o_wsJsEd6-XpBv2uxYrQ" base_Property="_q0nxoMJsEd6-XpBv2uxYrQ"/>
-  <CDA:PropertyValidation xmi:id="_q0o_w8JsEd6-XpBv2uxYrQ" base_Property="_q0oYsMJsEd6-XpBv2uxYrQ"/>
-  <CDA:PropertyValidation xmi:id="_q0o_xcJsEd6-XpBv2uxYrQ" base_Property="_q0o_wMJsEd6-XpBv2uxYrQ"/>
+  <CDA:PropertyValidation xmi:id="_q0o_wsJsEd6-XpBv2uxYrQ" base_Property="_q0nxoMJsEd6-XpBv2uxYrQ">
+    <ruleId>CONF-71</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_q0o_w8JsEd6-XpBv2uxYrQ" base_Property="_q0oYsMJsEd6-XpBv2uxYrQ">
+    <ruleId>CONF-70</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_q0o_xcJsEd6-XpBv2uxYrQ" base_Property="_q0o_wMJsEd6-XpBv2uxYrQ">
+    <ruleId>CONF-72</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_526XsCfbEd-4R4ealYN1gQ" code="48768-6" displayName="Payment sources" base_Property="_Yc-W0cJqEd6-XpBv2uxYrQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-31</ruleId>
@@ -451,8 +459,14 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:ConstraintValidation xmi:id="_AbDtgHpXEd-OuuwcsTsBUQ" base_Constraint="_3qtSMHpWEd-OuuwcsTsBUQ">
     <ruleId>CONF-67</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_ms3wkM88EeCn2rsjYxSTZw" base_Constraint="_Oc3JUM88EeCn2rsjYxSTZw"/>
-  <CDA:ConstraintValidation xmi:id="_nPrisM88EeCn2rsjYxSTZw" base_Constraint="_X--_0M88EeCn2rsjYxSTZw"/>
-  <CDA:ConstraintValidation xmi:id="_nvqqUM88EeCn2rsjYxSTZw" base_Constraint="_fvu_UM88EeCn2rsjYxSTZw"/>
-  <CDA:ConstraintValidation xmi:id="_oIXeMM88EeCn2rsjYxSTZw" severity="INFO" base_Constraint="_lE34AM88EeCn2rsjYxSTZw"/>
+  <CDA:ConstraintValidation xmi:id="_ms3wkM88EeCn2rsjYxSTZw"/>
+  <CDA:ConstraintValidation xmi:id="_nPrisM88EeCn2rsjYxSTZw" base_Constraint="_X--_0M88EeCn2rsjYxSTZw">
+    <ruleId>CONF-74</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_nvqqUM88EeCn2rsjYxSTZw" base_Constraint="_fvu_UM88EeCn2rsjYxSTZw">
+    <ruleId>CONF-75</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_oIXeMM88EeCn2rsjYxSTZw" severity="INFO" base_Constraint="_lE34AM88EeCn2rsjYxSTZw">
+    <ruleId>CONF-76</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

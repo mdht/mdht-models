@@ -36,10 +36,89 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionSocialHistoryObservation' code.code='29762-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionMaritalStatus SocialHistorySectionReligiousAffiliation SocialHistorySectionPatientRace SocialHistorySectionPatientEthnicity SocialHistorySectionSocialHistoryObservation' code.code='29762-2' constraints.validation.info='SocialHistorySectionPatientRaceCodeSystem SocialHistorySectionPatientEthnicityCodeSystem'"
  * @generated
  */
 public interface SocialHistorySection extends Section {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.maritalStatusCode.hasContent() )->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.maritalStatusCode.hasContent() )->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionMaritalStatus(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.religiousAffiliationCode.hasContent() )->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.religiousAffiliationCode.hasContent() )->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionReligiousAffiliation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.raceCode.hasContent() )->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.raceCode.hasContent() )->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionPatientRace(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->forAll(r | r.patientRole.patient.raceCode.codeSystem = '2.16.840.1.113883.5.104' )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->forAll(r | r.patientRole.patient.raceCode.codeSystem = \'2.16.840.1.113883.5.104\' )'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionPatientRaceCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.ethnicGroupCode.hasContent() )->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->select(r | not r.patientRole.patient.ethnicGroupCode.hasContent() )->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionPatientEthnicity(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getClinicalDocument().recordTarget->forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = '2.16.840.1.113883.5.50' )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = \'2.16.840.1.113883.5.50\' )'"
+	 * @generated
+	 */
+	boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

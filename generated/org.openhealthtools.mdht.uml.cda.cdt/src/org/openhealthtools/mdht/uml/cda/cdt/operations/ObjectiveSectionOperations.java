@@ -90,18 +90,20 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.OBJECTIVE_SECTION);
 			try {
 				VALIDATE_OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			objectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(objectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS,
-					CDTPlugin.INSTANCE.getString("ObjectiveSectionHasClinicalStatements"),
-					new Object[] { objectiveSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_HAS_CLINICAL_STATEMENTS,
+						 CDTPlugin.INSTANCE.getString("ObjectiveSectionHasClinicalStatements"),
+						 new Object [] { objectiveSection }));
 			}
 			return false;
 		}
@@ -146,17 +148,20 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.OBJECTIVE_SECTION);
 			try {
 				VALIDATE_OBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			objectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(objectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("ObjectiveSectionTemplateId"), new Object[] { objectiveSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEMPLATE_ID,
+						 CDTPlugin.INSTANCE.getString("ObjectiveSectionTemplateId"),
+						 new Object [] { objectiveSection }));
 			}
 			return false;
 		}
@@ -171,9 +176,9 @@ public class ObjectiveSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = 'OBJEC-X' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = 'OBJEC-X' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateObjectiveSectionCode(ObjectiveSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Objective Section Code</em>}' invariant operation.
@@ -205,17 +210,20 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.OBJECTIVE_SECTION);
 			try {
 				VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			objectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(objectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_CODE,
-					CDTPlugin.INSTANCE.getString("ObjectiveSectionCode"), new Object[] { objectiveSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_CODE,
+						 CDTPlugin.INSTANCE.getString("ObjectiveSectionCode"),
+						 new Object [] { objectiveSection }));
 			}
 			return false;
 		}
@@ -260,17 +268,20 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.OBJECTIVE_SECTION);
 			try {
 				VALIDATE_OBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			objectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(objectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEXT,
-					CDTPlugin.INSTANCE.getString("ObjectiveSectionText"), new Object[] { objectiveSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEXT,
+						 CDTPlugin.INSTANCE.getString("ObjectiveSectionText"),
+						 new Object [] { objectiveSection }));
 			}
 			return false;
 		}
@@ -315,17 +326,20 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.OBJECTIVE_SECTION);
 			try {
 				VALIDATE_OBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			objectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(objectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TITLE,
-					CDTPlugin.INSTANCE.getString("ObjectiveSectionTitle"), new Object[] { objectiveSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TITLE,
+						 CDTPlugin.INSTANCE.getString("ObjectiveSectionTitle"),
+						 new Object [] { objectiveSection }));
 			}
 			return false;
 		}

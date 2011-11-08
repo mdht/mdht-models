@@ -7,6 +7,9 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_MRu7QM9MEeCBIMy4xFlonQ" name="physicalExamCode" constrainedElement="_XaZ6wMf1Ed6VjLXh4DcWSg">
+      <ownedComment xmi:id="_tgR5YAY3EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VO9U8M9MEeCBIMy4xFlonQ">
         <language>Analysis</language>
         <body>Restrict the Condition Type (code) as FINDING (404684003)or FUNCTIONAL LIMITATION (248536006) from the SNOMED CT Code System</body>
