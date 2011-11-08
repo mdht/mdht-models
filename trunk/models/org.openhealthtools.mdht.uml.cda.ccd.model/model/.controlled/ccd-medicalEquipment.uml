@@ -48,12 +48,15 @@
   </uml:Class>
   <CDA:CDATemplate xmi:id="_CJFbUKPcEd6t_4WfM070fA" base_Class="_5hfTYKPbEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.7" assigningAuthorityName="CCD"/>
   <CDA:PropertyValidation xmi:id="_9SkugP_UEd6Y8ICOr4M99Q" base_Property="_CZOzgMikEd6mWrHPmrIIfQ">
-    <ruleId>CONF-CCD-521</ruleId>
+    <ruleId>CONF-374</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_52zqACfbEd-4R4ealYN1gQ" code="46264-8" displayName="History of medical device use" base_Property="_CZOMcMikEd6mWrHPmrIIfQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-CCD-520</ruleId>
+    <ruleId>CONF-372</ruleId>
+    <ruleId>CONF-373</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_rkK9cMqsEeC8XvPcqnB3eA" base_Property="_qXP3UMqsEeC8XvPcqnB3eA"/>
-  <CDA:ConstraintValidation xmi:id="_yMLMMMqsEeC8XvPcqnB3eA" severity="WARNING" base_Constraint="_sORDUMqsEeC8XvPcqnB3eA"/>
+  <CDA:ConstraintValidation xmi:id="_yMLMMMqsEeC8XvPcqnB3eA" severity="WARNING" base_Constraint="_sORDUMqsEeC8XvPcqnB3eA">
+    <ruleId>CONF-375</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

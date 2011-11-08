@@ -35,6 +35,9 @@
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_JDwPIEyYEd-GNbUQBie2ig" name="informationSource" constrainedElement="_wDMM0GEHEd6bFO5yxRh3Nw">
+        <ownedComment xmi:id="_kuH78AWiEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_QUYkIEyYEd-GNbUQBie2ig">
           <language>Analysis</language>
           <body>Contains 0..* InformationSource in ancestor-or-self::./cda:author[1]</body>
@@ -561,6 +564,11 @@
       <generalization xmi:id="_ZNaLkTuHEd-B8KE6Jx0UNQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-payers.uml#_PMrjADXgEd-gpLhSMS7jpQ"/>
       </generalization>
+      <ownedAttribute xmi:id="_v7O5EAF6EeGHGYUZZoAMyw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-payers.uml#_Dm8poDOpEd-5f4Yngl7nkw"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pOKSYDuHEd-B8KE6Jx0UNQ" name="HealthcareProvider">
       <generalization xmi:id="_pOUDYDuHEd-B8KE6Jx0UNQ">
@@ -582,6 +590,9 @@
       <ownedRule xmi:id="_pH_0kEkIEeCOWNbpDoETQw" name="appropriateUse" constrainedElement="_B973gEveEd-GNbUQBie2ig">
         <ownedComment xmi:id="_5_6z8EkIEeCOWNbpDoETQw">
           <body>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_PVkC8AWiEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_rj8SkEkIEeCOWNbpDoETQw">
           <language>Analysis</language>
@@ -1222,6 +1233,9 @@ resolved</body>
         <body>This module contains data describing the patient's Advance Directives and any reference to supporting documentation. This section contains data such as the existence of living wills, healthcare proxies and CPR and resuscitation status. The custodian of these documents may be described.</body>
       </ownedComment>
       <ownedRule xmi:id="_9tliEMzqEeCvbrjDQpuvkw" name="hasDescription" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
+        <ownedComment xmi:id="_0g9_0AY1EeG7pO1MXdunbA">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_BsXr0MzrEeCvbrjDQpuvkw">
           <language>Analysis</language>
           <body>The human readable description of the type of Advance Directive SHALL appear in the narrative text and SHALL be pointed to by the value attribute of the &lt;reference> element inside the &lt;originalText> element of the &lt;code></body>
@@ -1232,10 +1246,13 @@ resolved</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The starting time of the Advance Directive SHALL be recorded in the &lt;low> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
-          <body>self.effectiveTime.low->size() > 0</body>
+          <body>self.effectiveTime.low.hasContent()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_S0JFEMzrEeCvbrjDQpuvkw" name="unknownStartingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
+        <ownedComment xmi:id="_X5qywAY2EeG7pO1MXdunbA">
+          <body>UNIMPLEMENTABLE - Covered in the hasStatingTime using has Content</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_XS024MzrEeCvbrjDQpuvkw">
           <language>Analysis</language>
           <body>If the starting time is unknown, the &lt;low> element SHALL have the nullFlavor attribute set to UNK</body>
@@ -1246,10 +1263,13 @@ resolved</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The ending time of the Advance Directive SHALL be recorded in the &lt;high> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
-          <body>self.effectiveTime.high->size() > 0</body>
+          <body>self.effectiveTime.high.hasContent()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8Duy4MzrEeCvbrjDQpuvkw" name="unknownEndingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
+        <ownedComment xmi:id="_bKqCYAY2EeG7pO1MXdunbA">
+          <body>UNIMPLEMENTABLE - covered in hasEndingTime using hascontent</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_8Duy4czrEeCvbrjDQpuvkw">
           <language>Analysis</language>
           <body>If the ending time is unknown, the &lt;high> element SHALL have the nullFlavor attribute set to UNK.</body>
@@ -1781,4 +1801,10 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_xH01ANAXEeCBBsup3soRig" base_Constraint="_p9TvENAXEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_E7DH4NAYEeCBBsup3soRig" base_Constraint="_8_IaMNAXEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_JTVTsOSFEeCaNryByvFiHA" base_Constraint="_-5a5kOSEEeCaNryByvFiHA"/>
+  <CDA:CodeSystemConstraint xmi:id="_v7QHMAF6EeGHGYUZZoAMyw" code="48768-6" displayName="Payment sources" base_Property="_v7O5EAF6EeGHGYUZZoAMyw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-41</ruleId>
+    <ruleId>CONF-42</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_xQpM0AF6EeGHGYUZZoAMyw" base_Property="_v7O5EAF6EeGHGYUZZoAMyw"/>
 </xmi:XMI>

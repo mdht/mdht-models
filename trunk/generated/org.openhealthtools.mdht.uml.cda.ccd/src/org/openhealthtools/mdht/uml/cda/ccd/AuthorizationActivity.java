@@ -22,23 +22,10 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAuthorizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipTypeCode AuthorizationActivityClassCode AuthorizationActivityMoodCode AuthorizationActivityId' classCode='ACT' moodCode='EVN' constraints.validation.info='AuthorizationActivityHasProviders'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityEntryRelationshipTypeCode AuthorizationActivityEntryRelationshipTarget AuthorizationActivityClassCode AuthorizationActivityMoodCode AuthorizationActivityId' classCode='ACT' moodCode='EVN' constraints.validation.info='AuthorizationActivityHasPerformers'"
  * @generated
  */
 public interface AuthorizationActivity extends Act {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->size() > 0
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->size() > 0'"
-	 * @generated
-	 */
-	boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,14 +44,28 @@ public interface AuthorizationActivity extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->size() > 0
+	 * self.entryRelationship->forAll(act.moodCode = vocab::x_DocumentActMood::PRMS) or  self.entryRelationship->forAll(encounter.moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.entryRelationship->forAll(observation.moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.entryRelationship->forAll(observationMedia.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(organizer.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(procedure.moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.entryRelationship->forAll(regionOfInterest.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(substanceAdministration.moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.entryRelationship->forAll(supply.moodCode = vocab::x_DocumentSubstanceMood::PRMS)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(act.moodCode = vocab::x_DocumentActMood::PRMS) or  self.entryRelationship->forAll(encounter.moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.entryRelationship->forAll(observation.moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.entryRelationship->forAll(observationMedia.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(organizer.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(procedure.moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.entryRelationship->forAll(regionOfInterest.moodCode = vocab::ActMood::PRMS) or self.entryRelationship->forAll(substanceAdministration.moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.entryRelationship->forAll(supply.moodCode = vocab::x_DocumentSubstanceMood::PRMS)'"
 	 * @generated
 	 */
-	boolean validateAuthorizationActivityHasProviders(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAuthorizationActivityEntryRelationshipTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->forAll(not act.performer->isEmpty() ) or  self.entryRelationship->forAll(not encounter.performer->isEmpty()) or self.entryRelationship->forAll(not observation.performer->isEmpty()) or  self.entryRelationship->forAll(not observationMedia.performer->isEmpty()) or self.entryRelationship->forAll(not organizer.performer->isEmpty()) or self.entryRelationship->forAll(not procedure.performer->isEmpty()) or  self.entryRelationship->forAll(not regionOfInterest.performer->isEmpty()) or self.entryRelationship->forAll(not substanceAdministration.performer->isEmpty()) or  self.entryRelationship->forAll(not supply.performer->isEmpty())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(not act.performer->isEmpty() ) or  self.entryRelationship->forAll(not encounter.performer->isEmpty()) or self.entryRelationship->forAll(not observation.performer->isEmpty()) or  self.entryRelationship->forAll(not observationMedia.performer->isEmpty()) or self.entryRelationship->forAll(not organizer.performer->isEmpty()) or self.entryRelationship->forAll(not procedure.performer->isEmpty()) or  self.entryRelationship->forAll(not regionOfInterest.performer->isEmpty()) or self.entryRelationship->forAll(not substanceAdministration.performer->isEmpty()) or  self.entryRelationship->forAll(not supply.performer->isEmpty())'"
+	 * @generated
+	 */
+	boolean validateAuthorizationActivityHasPerformers(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

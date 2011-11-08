@@ -39,6 +39,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xpwBIMgmEeCHk-lvWGDTdA" name="titleValue" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
+      <ownedComment xmi:id="_S9Fz8APZEeG1AJVFOG_ciw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2i7WkMgmEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>Contains a case-insensitive language-insensitive string containing 'functional status'.</body>
@@ -64,7 +67,7 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rc3LoMgnEeCHk-lvWGDTdA" name="assessmentInstrument" constrainedElement="_dO-JkMgnEeCHk-lvWGDTdA">
-      <ownedComment xmi:id="_s0VhAACzEeGr8LMv5XjMCA">
+      <ownedComment xmi:id="_Cmpx8ASSEeGsZK4ZHvni_w">
         <body>UNIMPLEMENTABLE</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qjV3wMgpEeCHk-lvWGDTdA">
@@ -73,18 +76,27 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rXtT8MgpEeCHk-lvWGDTdA" name="assessmentInstrumentQuestion" constrainedElement="_rc3LoMgnEeCHk-lvWGDTdA">
+      <ownedComment xmi:id="_DJrmgASSEeGsZK4ZHvni_w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uLbYwMgpEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>If the functional status was collected using a standardized assessment instrument, then the question within that instrument SHOULD be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96).</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_w1nuIMgpEeCHk-lvWGDTdA" name="assessmentInstrumentAnswers" constrainedElement="_rXtT8MgpEeCHk-lvWGDTdA">
+      <ownedComment xmi:id="_DzW1oASSEeGsZK4ZHvni_w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0NV34MgpEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer SHOULD be represented in the Observation / value of a result observation</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HD_mEMgwEeCHk-lvWGDTdA" name="valueCodeValueSet" constrainedElement="_w1nuIMgpEeCHk-lvWGDTdA">
+      <ownedComment xmi:id="_LjLBAASSEeGsZK4ZHvni_w">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_LOrd0MgwEeCHk-lvWGDTdA">
         <language>Analysis</language>
         <body>If Observation / value in a result observation in the functional status section is of data type CE or CD, then it SHOULD use the same code system used to code the question in Observation / code.</body>
@@ -93,13 +105,17 @@
     <ownedRule xmi:id="_NfOkIMgwEeCHk-lvWGDTdA" name="valueDatatype" constrainedElement="_HD_mEMgwEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_RlEYIMgwEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Observation / value in a result observation in the functional status section MAY be of datatype CE or CD and MAY contain one or more Observation / value / translation, to represent equivalent values from other code systems.</body>
+        <body>self.getObservations()->select(o | o.value->select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) ->isEmpty())->isEmpty()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Uhno0MgwEeCHk-lvWGDTdA" name="icfCodeSystem" constrainedElement="_NfOkIMgwEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_XtiyQMgwEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A problem observation or result observation in the functional status section MAY use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254).</body>
+        <body>self.getObservations()->select(o|o.code.codeSystem &lt;> '2.16.840.1.113883.6.254')->isEmpty()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_kzswMMgwEeCHk-lvWGDTdA" name="problemStatusObservation" constrainedElement="_Uhno0MgwEeCHk-lvWGDTdA">
@@ -135,25 +151,49 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Mlc3EKPdEd6t_4WfM070fA" base_Class="_GoctIKPdEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.5" assigningAuthorityName="CCD"/>
-  <CDA:TextValue xmi:id="_TDhhcMMQEd6-XpBv2uxYrQ" base_Property="_TDg6YMMQEd6-XpBv2uxYrQ"/>
+  <CDA:TextValue xmi:id="_TDhhcMMQEd6-XpBv2uxYrQ" base_Property="_TDg6YMMQEd6-XpBv2uxYrQ">
+    <ruleId>CONF-126</ruleId>
+  </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_521fMCfbEd-4R4ealYN1gQ" code="47420-5" displayName="Functional status assessment" base_Property="_TDg6YcMQEd6-XpBv2uxYrQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-124</ruleId>
+    <ruleId>CONF-125</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="__9ENIHfpEd-6wJLq2P_7OA" severity="WARNING" base_Constraint="_2CeMQHfpEd-6wJLq2P_7OA">
     <ruleId>CONF-123</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_v-VoMMgmEeCHk-lvWGDTdA" base_Property="_vU-iIMgmEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_3UeIQMgmEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_xpwBIMgmEeCHk-lvWGDTdA"/>
+  <CDA:ConstraintValidation xmi:id="_3UeIQMgmEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_xpwBIMgmEeCHk-lvWGDTdA">
+    <ruleId>CONF-127</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_F2528MgnEeCHk-lvWGDTdA" base_Constraint="_CX4yYMgnEeCHk-lvWGDTdA">
     <ruleId>CONF-128</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_hpWDIMgnEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_dO-JkMgnEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_qw39cMgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_rc3LoMgnEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_uexLgMgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_rXtT8MgpEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_2Eql4MgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_w1nuIMgpEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_Laly4MgwEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_HD_mEMgwEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_RKYnQMgwEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_NfOkIMgwEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_X5tmAMgwEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_Uhno0MgwEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_tRnXsMgwEeCHk-lvWGDTdA" base_Constraint="_oEXPsMgwEeCHk-lvWGDTdA"/>
-  <CDA:ConstraintValidation xmi:id="_toSLQMgwEeCHk-lvWGDTdA" base_Constraint="_kzswMMgwEeCHk-lvWGDTdA"/>
+  <CDA:ConstraintValidation xmi:id="_hpWDIMgnEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_dO-JkMgnEeCHk-lvWGDTdA">
+    <ruleId>CONF-129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qw39cMgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_rc3LoMgnEeCHk-lvWGDTdA">
+    <ruleId>CONF-130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_uexLgMgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_rXtT8MgpEeCHk-lvWGDTdA">
+    <ruleId>CONF-131</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2Eql4MgpEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_w1nuIMgpEeCHk-lvWGDTdA">
+    <ruleId>CONF-132</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Laly4MgwEeCHk-lvWGDTdA" severity="WARNING" base_Constraint="_HD_mEMgwEeCHk-lvWGDTdA">
+    <ruleId>CONF-133</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_RKYnQMgwEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_NfOkIMgwEeCHk-lvWGDTdA">
+    <ruleId>CONF-134</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_X5tmAMgwEeCHk-lvWGDTdA" severity="INFO" base_Constraint="_Uhno0MgwEeCHk-lvWGDTdA">
+    <ruleId>CONF-135</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tRnXsMgwEeCHk-lvWGDTdA" base_Constraint="_oEXPsMgwEeCHk-lvWGDTdA">
+    <ruleId>CONF-137</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_toSLQMgwEeCHk-lvWGDTdA" base_Constraint="_kzswMMgwEeCHk-lvWGDTdA">
+    <ruleId>CONF-136</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

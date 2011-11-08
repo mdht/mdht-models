@@ -150,19 +150,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestAllergiesReactionsSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ALLERGIES_REACTIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestAllergiesReactionsSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -207,18 +208,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_MEDICATIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestMedicationsSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_MEDICATIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestMedicationsSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -263,18 +266,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PROBLEM_LIST_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestProblemListSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PROBLEM_LIST_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestProblemListSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -319,18 +324,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_SURGERIES_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestSurgeriesSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_SURGERIES_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestSurgeriesSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -375,19 +382,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestDiagnosticResultsSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_DIAGNOSTIC_RESULTS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestDiagnosticResultsSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -432,19 +440,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestAdvanceDirectivesSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ADVANCE_DIRECTIVES_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestAdvanceDirectivesSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -489,19 +498,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestAssessmentAndPlanSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ASSESSMENT_AND_PLAN_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestAssessmentAndPlanSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -546,19 +556,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestHistoryOfPresentIllness"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_HISTORY_OF_PRESENT_ILLNESS,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestHistoryOfPresentIllness"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -603,18 +614,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestPhysicalExamSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PHYSICAL_EXAM_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestPhysicalExamSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -659,19 +672,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestReasonForReferralSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_REASON_FOR_REFERRAL_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestReasonForReferralSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -716,18 +730,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ENCOUNTERS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestEncountersSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_ENCOUNTERS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestEncountersSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -772,18 +788,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestFamilyHistorySection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_FAMILY_HISTORY_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestFamilyHistorySection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -828,19 +846,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestFunctionalStatusSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_FUNCTIONAL_STATUS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestFunctionalStatusSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -885,18 +904,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestImmunizationsSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_IMMUNIZATIONS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestImmunizationsSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -941,19 +962,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestMedicalEquipmentSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_MEDICAL_EQUIPMENT_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestMedicalEquipmentSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -998,18 +1020,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestPlanOfCareSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PLAN_OF_CARE_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestPlanOfCareSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1054,18 +1078,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestSocialHistorySection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_SOCIAL_HISTORY_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestSocialHistorySection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1110,18 +1136,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_VITAL_SIGNS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestVitalSignsSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_VITAL_SIGNS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestVitalSignsSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1166,18 +1194,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestChiefComplaintSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_CHIEF_COMPLAINT_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestChiefComplaintSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1222,18 +1252,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_GENERAL_STATUS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestGeneralStatusSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_GENERAL_STATUS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestGeneralStatusSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1278,19 +1310,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestHistoryOfPastIllnessSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_HISTORY_OF_PAST_ILLNESS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestHistoryOfPastIllnessSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1335,18 +1368,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_CONSULTATION_REQUEST_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_REQUEST_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_REQUEST_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PAYERS_SECTION,
-					ToCPlugin.INSTANCE.getString("ConsultationRequestPayersSection"),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__CONSULTATION_REQUEST_PAYERS_SECTION,
+						 ToCPlugin.INSTANCE.getString("ConsultationRequestPayersSection"),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}
@@ -1385,12 +1420,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static AllergiesReactionsSection getAllergiesReactionsSection(ConsultationRequest consultationRequest) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(88));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(90));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1430,12 +1464,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static MedicationsSection getMedicationsSection(ConsultationRequest consultationRequest) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(89));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(91));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1475,12 +1508,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static ProblemListSection getProblemListSection(ConsultationRequest consultationRequest) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(90));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(92));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1520,12 +1552,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static SurgeriesSection getSurgeriesSection(ConsultationRequest consultationRequest) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(91));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(93));
 			try {
 				GET_SURGERIES_SECTION__EOCL_QRY = helper.createQuery(GET_SURGERIES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1565,12 +1596,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static DiagnosticResultsSection getDiagnosticResultsSection(ConsultationRequest consultationRequest) {
 		if (GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(92));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(94));
 			try {
 				GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1610,12 +1640,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static AdvanceDirectivesSection getAdvanceDirectivesSection(ConsultationRequest consultationRequest) {
 		if (GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(93));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(95));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1655,12 +1684,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static AssessmentAndPlanSection getAssessmentAndPlanSection(ConsultationRequest consultationRequest) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(94));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(96));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1700,12 +1728,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static HistoryOfPresentIllness getHistoryOfPresentIllness(ConsultationRequest consultationRequest) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(95));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(97));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1745,12 +1772,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static PhysicalExamSection getPhysicalExamSection(ConsultationRequest consultationRequest) {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(96));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(98));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1790,12 +1816,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static ReasonForReferralSection getReasonForReferralSection(ConsultationRequest consultationRequest) {
 		if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(97));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(99));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1835,12 +1860,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static EncountersSection getEncountersSection(ConsultationRequest consultationRequest) {
 		if (GET_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(98));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(100));
 			try {
 				GET_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1880,12 +1904,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static FamilyHistorySection getFamilyHistorySection(ConsultationRequest consultationRequest) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(99));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(101));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1925,12 +1948,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static FunctionalStatusSection getFunctionalStatusSection(ConsultationRequest consultationRequest) {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(100));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(102));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1970,12 +1992,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static ImmunizationsSection getImmunizationsSection(ConsultationRequest consultationRequest) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(101));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(103));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2015,12 +2036,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static MedicalEquipmentSection getMedicalEquipmentSection(ConsultationRequest consultationRequest) {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(102));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(104));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2060,12 +2080,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static PlanOfCareSection getPlanOfCareSection(ConsultationRequest consultationRequest) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(103));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(105));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2105,12 +2124,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static SocialHistorySection getSocialHistorySection(ConsultationRequest consultationRequest) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(104));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(106));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2150,12 +2168,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static VitalSignsSection getVitalSignsSection(ConsultationRequest consultationRequest) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(105));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(107));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2195,12 +2212,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static ChiefComplaintSection getChiefComplaintSection(ConsultationRequest consultationRequest) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(106));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(108));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2240,12 +2256,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static GeneralStatusSection getGeneralStatusSection(ConsultationRequest consultationRequest) {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(107));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(109));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2285,12 +2300,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static HistoryOfPastIllnessSection getHistoryOfPastIllnessSection(ConsultationRequest consultationRequest) {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(108));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(110));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2330,12 +2344,11 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 	public static PayersSection getPayersSection(ConsultationRequest consultationRequest) {
 		if (GET_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ToCPackage.Literals.CONSULTATION_REQUEST,
-				ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(109));
+			helper.setOperationContext(ToCPackage.Literals.CONSULTATION_REQUEST, ToCPackage.Literals.CONSULTATION_REQUEST.getEAllOperations().get(111));
 			try {
 				GET_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2381,23 +2394,20 @@ public class ConsultationRequestOperations extends GeneralHeaderConstraintsOpera
 			helper.setContext(ToCPackage.Literals.CONSULTATION_REQUEST);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationRequest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationRequest)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ToCValidator.DIAGNOSTIC_SOURCE,
-					ToCValidator.CONSULTATION_REQUEST__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationRequest, context) }),
-					new Object[] { consultationRequest }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ToCValidator.DIAGNOSTIC_SOURCE,
+						 ToCValidator.CONSULTATION_REQUEST__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationRequest, context) }),
+						 new Object [] { consultationRequest }));
 			}
 			return false;
 		}

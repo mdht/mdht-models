@@ -58,6 +58,9 @@ of being concerned about a problem, allergy or other issue about the patient con
         <ownedComment xmi:id="_pqCQMFfmEeCQ8PeHNHg5Pw">
           <body>These may be used to represent related statements such related visits.</body>
         </ownedComment>
+        <ownedComment xmi:id="_0-w90AYvEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqETECNREeCxCon8a79rfA">
           <language>Analysis</language>
           <body>Each concern MAY have 0 or more related references. This MAY be any valid CDA clinical statement, and SHOULD be an IHE entry template.</body>
@@ -66,7 +69,9 @@ of being concerned about a problem, allergy or other issue about the patient con
       <ownedRule xmi:id="_qz-60FfmEeCQ8PeHNHg5Pw" name="hasRelatedReferencesTypeCode" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_q0Ir0VfmEeCQ8PeHNHg5Pw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Related References SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
+          <body>self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
@@ -577,6 +582,9 @@ patient's current complaints.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_dViY4PtFEd-xzOM2yZqLUw" name="scannedContentLanguage" constrainedElement="_g76sEPG1Ed-FxO0PukiqhA">
+        <ownedComment xmi:id="_WIKqEAWgEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ljIscPtFEd-xzOM2yZqLUw">
           <language>Analysis</language>
           <body>If the human-readable language of the scanned content is different than that of the wrapper (specified in ClinicalDocument/languageCode), then ClinicalDocument/component/nonXMLBody/languageCode shall be present. Attribute code@code shall be present. Attribute code@codeSystem shall be IETF (Internet Engineering Task Force) RFC 3066 in accordance with the HL7 CDA R2 documentation.</body>
@@ -1182,7 +1190,9 @@ frequency.&#xD;
       <ownedRule xmi:id="_vf1cMMzlEeCvbrjDQpuvkw" name="hasExternalReference" constrainedElement="_JkYOEMzkEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mc1-EMzmEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The advanced directive observation may contain a single reference to an external document. The reference may be recorded using CCD :: Advance Directive Reference (2.16.840.1.113883.10.20.1.36)</body>
+          <body>self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Tv-NcMzmEeCvbrjDQpuvkw" name="removedElements" constrainedElement="_JkYOEMzkEeCvbrjDQpuvkw">
@@ -1219,6 +1229,24 @@ frequency.&#xD;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KVTfQMzlEeCvbrjDQpuvkw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KVTfQczlEeCvbrjDQpuvkw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_dmIPAAYlEeGEVa6Nn2ESZg" name="repeatNumber" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5D488AYrEeGEVa6Nn2ESZg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5D5kAAYrEeGEVa6Nn2ESZg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_jQmhoEo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0kjD0AYrEeGEVa6Nn2ESZg" name="interpretationCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5wmR8AYrEeGEVa6Nn2ESZg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5wm5AAYrEeGEVa6Nn2ESZg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3sHRsAYrEeGEVa6Nn2ESZg" name="targetSiteCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6a3-AAYrEeGEVa6Nn2ESZg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6a3-AQYrEeGEVa6Nn2ESZg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_S5QSwszkEeCvbrjDQpuvkw">
@@ -2328,4 +2356,8 @@ patient's extremities.</body>
   <CDA:AssociationValidation xmi:id="_AEyYEM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_z4LRQM9dEeCBIMy4xFlonQ"/>
   <CDA:AssociationValidation xmi:id="_AZKsoM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_1fa74s9dEeCBIMy4xFlonQ"/>
   <CDA:AssociationValidation xmi:id="_AuvUAM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_2ctqks9dEeCBIMy4xFlonQ"/>
+  <CDA:PropertyValidation xmi:id="_7YB8EAYmEeGEVa6Nn2ESZg" base_Property="_dmIPAAYlEeGEVa6Nn2ESZg"/>
+  <CDA:PropertyValidation xmi:id="_9GdagAYrEeGEVa6Nn2ESZg" base_Property="_0kjD0AYrEeGEVa6Nn2ESZg"/>
+  <CDA:PropertyValidation xmi:id="_9vqIgAYrEeGEVa6Nn2ESZg" base_Property="_3sHRsAYrEeGEVa6Nn2ESZg"/>
+  <CDA:ConstraintValidation xmi:id="_4exO8AYxEeG7pO1MXdunbA" base_Constraint="_qz-60FfmEeCQ8PeHNHg5Pw"/>
 </xmi:XMI>

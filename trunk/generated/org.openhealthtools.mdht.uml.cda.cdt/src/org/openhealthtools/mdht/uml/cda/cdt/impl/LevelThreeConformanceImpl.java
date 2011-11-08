@@ -65,7 +65,7 @@ public class LevelThreeConformanceImpl extends LevelTwoConformanceImpl implement
 	 */
 	@Override
 	public LevelThreeConformance init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // LevelThreeConformanceImpl

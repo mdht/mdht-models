@@ -62,7 +62,7 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.low->size() > 0";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.low.hasContent()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveHasStartingTime(AdvanceDirective, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Has Starting Time</em>}' invariant operation.
@@ -78,7 +78,7 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.low->size() > 0
+	 * self.effectiveTime.low.hasContent()
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -118,7 +118,7 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.high->size() > 0";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.high.hasContent()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveHasEndingTime(AdvanceDirective, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Has Ending Time</em>}' invariant operation.
@@ -134,7 +134,7 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.high->size() > 0
+	 * self.effectiveTime.high.hasContent()
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

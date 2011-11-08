@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -108,6 +109,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
+import org.openhealthtools.mdht.uml.hl7.rim.ActRelationship;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
 import org.openhealthtools.mdht.uml.hl7.rim.Role;
@@ -1103,26 +1105,6 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
-			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: {
-				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
-				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
-				if (result == null) {
-					result = caseObservation(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case CCDPackage.PAYERS_SECTION: {
 				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
@@ -1633,6 +1615,23 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: {
+				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
+				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
+				if (result == null) {
+					result = caseReference(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseActRelationship(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveReference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3092,6 +3091,36 @@ public class CCDSwitch<T> {
 	 * @generated
 	 */
 	public T caseGuardian(Guardian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Act Relationship</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Act Relationship</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseActRelationship(ActRelationship object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReference(Reference object) {
 		return null;
 	}
 

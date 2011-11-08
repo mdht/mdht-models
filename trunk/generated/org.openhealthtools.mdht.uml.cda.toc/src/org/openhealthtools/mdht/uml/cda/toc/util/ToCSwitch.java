@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.toc.*;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationRequest;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationSummary;
 import org.openhealthtools.mdht.uml.cda.toc.DischargeInstructions;
@@ -75,11 +76,13 @@ public class ToCSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		} else {
+		}
+		else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return eSuperTypes.isEmpty()
-					? defaultCase(theEObject)
-					: doSwitch(eSuperTypes.get(0), theEObject);
+			return
+				eSuperTypes.isEmpty() ?
+					defaultCase(theEObject) :
+					doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -93,87 +96,46 @@ public class ToCSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case ToCPackage.DISCHARGE_SUMMARY: {
-				DischargeSummary dischargeSummary = (DischargeSummary) theEObject;
+				DischargeSummary dischargeSummary = (DischargeSummary)theEObject;
 				T result = caseDischargeSummary(dischargeSummary);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseAct(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeSummary);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(dischargeSummary);
+				if (result == null) result = caseClinicalDocument(dischargeSummary);
+				if (result == null) result = caseAct(dischargeSummary);
+				if (result == null) result = caseInfrastructureRoot(dischargeSummary);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ToCPackage.DISCHARGE_INSTRUCTIONS: {
-				DischargeInstructions dischargeInstructions = (DischargeInstructions) theEObject;
+				DischargeInstructions dischargeInstructions = (DischargeInstructions)theEObject;
 				T result = caseDischargeInstructions(dischargeInstructions);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(dischargeInstructions);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(dischargeInstructions);
-				}
-				if (result == null) {
-					result = caseAct(dischargeInstructions);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeInstructions);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(dischargeInstructions);
+				if (result == null) result = caseClinicalDocument(dischargeInstructions);
+				if (result == null) result = caseAct(dischargeInstructions);
+				if (result == null) result = caseInfrastructureRoot(dischargeInstructions);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ToCPackage.CONSULTATION_SUMMARY: {
-				ConsultationSummary consultationSummary = (ConsultationSummary) theEObject;
+				ConsultationSummary consultationSummary = (ConsultationSummary)theEObject;
 				T result = caseConsultationSummary(consultationSummary);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(consultationSummary);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(consultationSummary);
-				}
-				if (result == null) {
-					result = caseAct(consultationSummary);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(consultationSummary);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(consultationSummary);
+				if (result == null) result = caseClinicalDocument(consultationSummary);
+				if (result == null) result = caseAct(consultationSummary);
+				if (result == null) result = caseInfrastructureRoot(consultationSummary);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ToCPackage.CONSULTATION_REQUEST: {
-				ConsultationRequest consultationRequest = (ConsultationRequest) theEObject;
+				ConsultationRequest consultationRequest = (ConsultationRequest)theEObject;
 				T result = caseConsultationRequest(consultationRequest);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(consultationRequest);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(consultationRequest);
-				}
-				if (result == null) {
-					result = caseAct(consultationRequest);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(consultationRequest);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(consultationRequest);
+				if (result == null) result = caseClinicalDocument(consultationRequest);
+				if (result == null) result = caseAct(consultationRequest);
+				if (result == null) result = caseInfrastructureRoot(consultationRequest);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			default:
-				return defaultCase(theEObject);
+			default: return defaultCase(theEObject);
 		}
 	}
 

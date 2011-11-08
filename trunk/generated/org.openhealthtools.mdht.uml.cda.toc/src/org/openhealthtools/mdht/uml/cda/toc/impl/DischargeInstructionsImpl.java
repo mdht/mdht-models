@@ -59,8 +59,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsPlanOfCareSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsPlanOfCareSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +69,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsAllergiesReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsAllergiesReactionsSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsAllergiesReactionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +79,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsProblemListSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsProblemListSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsProblemListSection(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +89,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsDischargeDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsDischargeDiagnosisSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsDischargeDiagnosisSection(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsAdvanceDirectivesSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +109,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsImmunizationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsImmunizationsSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsImmunizationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +119,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	public boolean validateDischargeInstructionsMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeInstructionsOperations.validateDischargeInstructionsMedicalEquipmentSection(
-			this, diagnostics, context);
+		return DischargeInstructionsOperations.validateDischargeInstructionsMedicalEquipmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -209,7 +202,7 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
 	 */
 	@Override
 	public DischargeInstructions init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DischargeInstructionsImpl

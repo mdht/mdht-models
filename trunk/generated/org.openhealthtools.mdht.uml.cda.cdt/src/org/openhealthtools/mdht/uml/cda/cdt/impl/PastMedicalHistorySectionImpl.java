@@ -56,8 +56,7 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	 */
 	public boolean validatePastMedicalHistorySectionHasClinicalStatements(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHasClinicalStatements(
-			this, diagnostics, context);
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHasClinicalStatements(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +65,7 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	 * @generated
 	 */
 	public boolean validatePastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(
-			this, diagnostics, context);
+		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +92,7 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	 * @generated
 	 */
 	public PastMedicalHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PastMedicalHistorySectionImpl

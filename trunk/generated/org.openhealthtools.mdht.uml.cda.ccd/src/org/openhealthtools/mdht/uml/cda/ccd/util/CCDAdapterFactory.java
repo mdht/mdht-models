@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -108,6 +109,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
+import org.openhealthtools.mdht.uml.hl7.rim.ActRelationship;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
 import org.openhealthtools.mdht.uml.hl7.rim.Role;
@@ -403,11 +405,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
-			return createAdvanceDirectiveReferenceAdapter();
-		}
-
-		@Override
 		public Adapter casePayersSection(PayersSection object) {
 			return createPayersSectionAdapter();
 		}
@@ -543,6 +540,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
+			return createAdvanceDirectiveReferenceAdapter();
+		}
+
+		@Override
 		public Adapter caseCCDRegistryDelegate(CCDRegistryDelegate object) {
 			return createCCDRegistryDelegateAdapter();
 		}
@@ -645,6 +647,16 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseGuardian(Guardian object) {
 			return createGuardianAdapter();
+		}
+
+		@Override
+		public Adapter caseActRelationship(ActRelationship object) {
+			return createActRelationshipAdapter();
+		}
+
+		@Override
+		public Adapter caseReference(Reference object) {
+			return createReferenceAdapter();
 		}
 
 		@Override
@@ -2012,6 +2024,34 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGuardianAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.ActRelationship <em>Act Relationship</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.hl7.rim.ActRelationship
+	 * @generated
+	 */
+	public Adapter createActRelationshipAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Reference <em>Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Reference
+	 * @generated
+	 */
+	public Adapter createReferenceAdapter() {
 		return null;
 	}
 

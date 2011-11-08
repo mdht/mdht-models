@@ -204,7 +204,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN.getEAllOperations().get(69));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN.getEAllOperations().get(70));
 			try {
 				GET_ALLERGY_INTOLERANCES__EOCL_QRY = helper.createQuery(GET_ALLERGY_INTOLERANCES__EOCL_EXP);
 			} catch (ParserException pe) {

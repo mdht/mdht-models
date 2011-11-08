@@ -186,18 +186,33 @@
   <CDA:CDATemplate xmi:id="_ug3cYHfaEd6ZeOKq_2_a9g" base_Class="_rJDcIHDAEd6eItyqb1FoWg" templateId="2.16.840.1.113883.10.20.1.3" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_dumwMHo3Ed6UPbrR4QTFoQ" base_Class="_mO8KEHJWEd6cacuAk5qrhg" templateId="2.16.840.1.113883.10.20.1.21" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_4sxEkIiBEd66cKocspyVOg" base_Class="_2QJRIIiBEd66cKocspyVOg" templateId="2.16.840.1.113883.10.20.1.45" assigningAuthorityName="CCD"/>
-  <CDA:PropertyValidation xmi:id="_j7IQkJm3Ed6BO7rW3XxHIA" severity="INFO" base_Property="_D4_loIj0Ed66cKocspyVOg"/>
-  <CDA:PropertyValidation xmi:id="_9SP-YP_UEd6Y8ICOr4M99Q" base_Property="_qATQsIjwEd66cKocspyVOg"/>
-  <CDA:PropertyValidation xmi:id="_9SRzkP_UEd6Y8ICOr4M99Q" base_Property="_lpoEAIjzEd66cKocspyVOg"/>
-  <CDA:ValueSetConstraint xmi:id="_52PCQCfbEd-4R4ealYN1gQ" identifier="2.16.840.1.113883.1.11.13955" name="EncounterCode" base_Property="_D4--kIj0Ed66cKocspyVOg" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_j7IQkJm3Ed6BO7rW3XxHIA" severity="INFO" base_Property="_D4_loIj0Ed66cKocspyVOg">
+    <ruleId>CONF-464</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_9SP-YP_UEd6Y8ICOr4M99Q" base_Property="_qATQsIjwEd66cKocspyVOg">
+    <ruleId>CONF-456</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_9SRzkP_UEd6Y8ICOr4M99Q" base_Property="_lpoEAIjzEd66cKocspyVOg">
+    <ruleId>CONF-461</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_52PCQCfbEd-4R4ealYN1gQ" identifier="2.16.840.1.113883.1.11.13955" name="EncounterCode" base_Property="_D4--kIj0Ed66cKocspyVOg" severity="WARNING">
+    <ruleId>CONF-462</ruleId>
+    <ruleId>CONF-463</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52KJwCfbEd-4R4ealYN1gQ" code="46240-8" displayName="History of encounters" base_Property="_qAT3wIjwEd66cKocspyVOg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-454</ruleId>
+    <ruleId>CONF-455</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_P40uMJvkEd-L4qx175J3dg" base_Property="_IdRekIjzEd66cKocspyVOg">
     <ruleId>CONF-473</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_b3zosJvkEd-L4qx175J3dg" base_Property="_lpnc8ojzEd66cKocspyVOg"/>
-  <CDA:PropertyValidation xmi:id="_cdJKYJvkEd-L4qx175J3dg" base_Property="_lpnc8IjzEd66cKocspyVOg"/>
+  <CDA:PropertyValidation xmi:id="_b3zosJvkEd-L4qx175J3dg" base_Property="_lpnc8ojzEd66cKocspyVOg">
+    <ruleId>CONF-459</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cdJKYJvkEd-L4qx175J3dg" base_Property="_lpnc8IjzEd66cKocspyVOg">
+    <ruleId>CONF-460</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_RXNr8FS5EeCnnNnsbG2N3Q" base_Constraint="_Nnza8FS5EeCnnNnsbG2N3Q">
     <ruleId>CONF-474</ruleId>
   </CDA:ConstraintValidation>
@@ -219,10 +234,19 @@
   <CDA:ConformsTo xmi:id="_VlvlEFS9EeCnnNnsbG2N3Q" base_Generalization="_lD-rMIjxEd66cKocspyVOg">
     <ruleId>CONF-472</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_34pqEMKZEeCl2eGe9IRxKw" base_Property="_3E4DwMKZEeCl2eGe9IRxKw"/>
-  <CDA:ConstraintValidation xmi:id="_mf-msMKcEeCl2eGe9IRxKw" severity="WARNING" base_Constraint="_iTvPwMKcEeCl2eGe9IRxKw"/>
+  <CDA:PropertyValidation xmi:id="_34pqEMKZEeCl2eGe9IRxKw" base_Property="_3E4DwMKZEeCl2eGe9IRxKw">
+    <ruleId>CONF-453</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_mf-msMKcEeCl2eGe9IRxKw" severity="WARNING" base_Constraint="_iTvPwMKcEeCl2eGe9IRxKw">
+    <ruleId>CONF-457</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_SOIQkMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_OCVlkMK8EeCl2eGe9IRxKw"/>
   <CDA:ConstraintValidation xmi:id="_yINAgMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_efzdkMK8EeCl2eGe9IRxKw"/>
   <CDA:ConstraintValidation xmi:id="_ye96sMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_lNKGYMK8EeCl2eGe9IRxKw"/>
-  <CDA:ConstraintValidation xmi:id="_MMQYQMK9EeCl2eGe9IRxKw" base_Constraint="_JSRTYMK9EeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_MMQYQMK9EeCl2eGe9IRxKw" base_Constraint="_JSRTYMK9EeCl2eGe9IRxKw">
+    <ruleId>CONF-470</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConformsTo xmi:id="_3HaRAAcOEeG7RIZ2nvEt0A" base_Generalization="_vuapUHJjEd6cacuAk5qrhg">
+    <ruleId>CONF-458</ruleId>
+  </CDA:ConformsTo>
 </xmi:XMI>

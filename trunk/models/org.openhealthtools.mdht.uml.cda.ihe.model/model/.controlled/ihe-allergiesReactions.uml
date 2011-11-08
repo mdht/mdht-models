@@ -26,6 +26,9 @@
 entry, with exceptions noted below.</body>
     </ownedComment>
     <ownedRule xmi:id="_ic1iUFfpEeCQ8PeHNHg5Pw" name="codeVocab" constrainedElement="_gkbLsHrEEd68l9lQ-TLEBQ">
+      <ownedComment xmi:id="_253OAAYuEeGEVa6Nn2ESZg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qDVZoFfpEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
         <body>Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.</body>
@@ -48,6 +51,9 @@ entry, with exceptions noted below.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_X-iaoFftEeCQ8PeHNHg5Pw" name="valueCodeCodeSystem" constrainedElement="_CrT08FfqEeCQ8PeHNHg5Pw">
+      <ownedComment xmi:id="_-2fGUAYuEeGEVa6Nn2ESZg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iFRaEFftEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
         <body>If &amp;lt;value&amp;gt; is coded, the code and codeSystem attributes must be present. If uncoded, all attributes other than xsi:type='CD' must be absent.</body>

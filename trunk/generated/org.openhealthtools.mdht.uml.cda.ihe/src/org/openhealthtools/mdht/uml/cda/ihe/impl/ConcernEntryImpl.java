@@ -82,6 +82,16 @@ public class ConcernEntryImpl extends ProblemActImpl implements ConcernEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConcernEntryHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConcernEntryOperations.validateConcernEntryHasRelatedReferencesTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConcernEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConcernEntryOperations.validateConcernEntryTemplateId(this, diagnostics, context);
 	}

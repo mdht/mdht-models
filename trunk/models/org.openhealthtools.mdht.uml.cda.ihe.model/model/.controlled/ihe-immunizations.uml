@@ -18,12 +18,18 @@ past. It shall include entries for medication administration as described in the
       <ownedComment xmi:id="_NyD1QFTcEeCUesz7J0dFlQ">
         <body>In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</body>
       </ownedComment>
+      <ownedComment xmi:id="_Vv2qwAYvEeGEVa6Nn2ESZg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PiREEFTbEeCUesz7J0dFlQ">
         <language>Analysis</language>
         <body>In a CDA document, the URI given in the value attribute of the &lt;reference> element points to an element in the narrative content that contains the complete text describing the immunization activity.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9TxzQFavEeCddY1UIvGtQg" name="substanceAdministrationCode" constrainedElement="_aFDTUDuJEd-B8KE6Jx0UNQ">
+      <ownedComment xmi:id="_TJY-0AYvEeGEVa6Nn2ESZg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_KiYikFawEeCddY1UIvGtQg">
         <language>Analysis</language>
         <body>CPT-4 codes may be used for immunization procedures</body>

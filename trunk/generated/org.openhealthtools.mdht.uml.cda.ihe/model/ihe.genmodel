@@ -91,6 +91,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryRelatedObservationsTypeCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryRelatedObservationsTypeCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ConcernEntry/ConcernEntryHasRelatedReferencesTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryHasRelatedReferencesTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryHasRelatedReferencesTypeCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ConcernEntry/ConcernEntryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ConcernEntry/ConcernEntryTemplateId/context"/>
@@ -920,9 +924,25 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//AdvanceDirectiveObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationHasExternalReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationHasExternalReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationHasExternalReference/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationRepeatNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationRepeatNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationInterpretationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTargetSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTargetSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AdvanceDirectiveObservation/IHEAdvanceDirectiveObservationTargetSiteCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//PhysicalExamNarrativeSection">

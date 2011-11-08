@@ -88,18 +88,20 @@ public class ReasonForVisitSectionConsultOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.REASON_FOR_VISIT_SECTION_CONSULT);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSectionConsult)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSectionConsult)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.REASON_FOR_VISIT_SECTION_CONSULT__REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("ReasonForVisitSectionConsultTemplateId"),
-					new Object[] { reasonForVisitSectionConsult }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.REASON_FOR_VISIT_SECTION_CONSULT__REASON_FOR_VISIT_SECTION_CONSULT_TEMPLATE_ID,
+						 CDTPlugin.INSTANCE.getString("ReasonForVisitSectionConsultTemplateId"),
+						 new Object [] { reasonForVisitSectionConsult }));
 			}
 			return false;
 		}
@@ -114,9 +116,9 @@ public class ReasonForVisitSectionConsultOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForVisitSectionConsultCode(ReasonForVisitSectionConsult, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Visit Section Consult Code</em>}' invariant operation.
@@ -149,18 +151,20 @@ public class ReasonForVisitSectionConsultOperations extends SectionOperations {
 			helper.setContext(CDTPackage.Literals.REASON_FOR_VISIT_SECTION_CONSULT);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSectionConsult)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CONSULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSectionConsult)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.REASON_FOR_VISIT_SECTION_CONSULT__REASON_FOR_VISIT_SECTION_CONSULT_CODE,
-					CDTPlugin.INSTANCE.getString("ReasonForVisitSectionConsultCode"),
-					new Object[] { reasonForVisitSectionConsult }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.REASON_FOR_VISIT_SECTION_CONSULT__REASON_FOR_VISIT_SECTION_CONSULT_CODE,
+						 CDTPlugin.INSTANCE.getString("ReasonForVisitSectionConsultCode"),
+						 new Object [] { reasonForVisitSectionConsult }));
 			}
 			return false;
 		}

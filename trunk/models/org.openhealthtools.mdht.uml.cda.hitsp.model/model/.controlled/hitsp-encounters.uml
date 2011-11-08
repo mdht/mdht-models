@@ -35,24 +35,36 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fyWWYMNzEeCZQPUDKP01pg" name="healthcareFacilityAddressState" constrainedElement="_MZPpIMNyEeCZQPUDKP01pg">
+      <ownedComment xmi:id="_sSiwYAY2EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mqq5EMNzEeCZQPUDKP01pg">
         <language>Analysis</language>
         <body>The state part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wf5RwMNzEeCZQPUDKP01pg" name="healthcareFacilityAddressCountry" constrainedElement="_MZPpIMNyEeCZQPUDKP01pg">
+      <ownedComment xmi:id="_sv1JUAY2EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wf5RwcNzEeCZQPUDKP01pg">
         <language>Analysis</language>
         <body>The country part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_BzuKAMN0EeCZQPUDKP01pg" name="healthcareFacilityAddressPostal" constrainedElement="_MZPpIMNyEeCZQPUDKP01pg">
+      <ownedComment xmi:id="_tQHL4AY2EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BzuKAcN0EeCZQPUDKP01pg">
         <language>Analysis</language>
         <body>The postal code part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_KqGU0MN0EeCZQPUDKP01pg" name="orderToAdmitGuidance" constrainedElement="_x6SxkKsQEd-yFfcbpgNFIA">
+      <ownedComment xmi:id="_z51R4AY2EeG7pO1MXdunbA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_NVZdcMN0EeCZQPUDKP01pg">
         <language>Analysis</language>
         <body>The order to admit time reflects the time of participation of the provider referring the patient to an inpatient setting. The encounter type should reflect that this is an inpatient encounter.</body>

@@ -4699,13 +4699,19 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			insuranceProviderEClass,
 			source,
 			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.5",
+					"code.displayName",
+					"Payment sources",
 					"constraints.validation.error",
-					"InsuranceProviderTemplateId InsuranceProviderPaymentProviders InsuranceProviderHealthInsuranceType InsuranceProviderInsuranceInformation InsuranceProviderPatientInformation InsuranceProviderMemberId InsuranceProviderRelationshipToSubscriber InsuranceProviderRelationshipToSubscriberCodeSystem InsuranceProviderPatientName InsuranceProviderSubscriberId InsuranceProviderSubscriberAddress InsuranceProviderFinancialResponsibilityPartyType InsuranceProviderFinancialResponsibilityPartyTypeCode",
+					"InsuranceProviderTemplateId InsuranceProviderPaymentProviders InsuranceProviderHealthInsuranceType InsuranceProviderInsuranceInformation InsuranceProviderPatientInformation InsuranceProviderMemberId InsuranceProviderRelationshipToSubscriber InsuranceProviderRelationshipToSubscriberCodeSystem InsuranceProviderPatientName InsuranceProviderSubscriberId InsuranceProviderSubscriberAddress InsuranceProviderFinancialResponsibilityPartyType InsuranceProviderFinancialResponsibilityPartyTypeCode CoverageActivityCode",
+					"code.codeSystemName",
+					"LOINC",
 					"constraints.validation.warning",
 					"InsuranceProviderPayerEntryID InsuranceProviderHealthPlanCoverageStartTime InsuranceProviderHealthPlanCoverageStopTime InsuranceProviderMemberIdRoot InsuranceProviderSubscriberInformation InsuranceProviderSubscriberIdRoot InsuranceProviderFinancialResponsibilityPartyAddress",
-					"constraints.validation.info",
+					"code.code", "48768-6", "constraints.validation.info",
 					"InsuranceProviderInsuranceInfoSourceID InsuranceProviderInsuranceInfoSourceAddr" });
 		addAnnotation(surgeriesSectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.108", "constraints.validation.error",
@@ -4899,6 +4905,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addAnnotation(conditionEntryEClass, source, new String[] {});
 		addAnnotation(advanceDirectiveEClass, source, new String[] {});
 		addAnnotation(immunizationEClass, source, new String[] {});
+		addAnnotation(insuranceProviderEClass, source, new String[] {});
 		addAnnotation(vitalSignEClass, source, new String[] {});
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {});
 		addAnnotation(medicationTaperedDoseEClass, source, new String[] {});

@@ -103,6 +103,17 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateContinuityOfCareDocumentLanguageCodeFormat(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCodeFormat(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentNoTemplateIdExtension(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentNoTemplateIdExtension(

@@ -298,38 +298,112 @@
     <ownedEnd xmi:id="_RAdi4jhTEd-XUbK0vNqSPQ" type="_o9nLAKPTEd6t_4WfM070fA" association="_RAdi4ThTEd-XUbK0vNqSPQ"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_3ZQ8QKPTEd6t_4WfM070fA" base_Class="_o9nLAKPTEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.10" assigningAuthorityName="CCD"/>
-  <CDA:TextValue xmi:id="_2FLDYMJtEd6-XpBv2uxYrQ" base_Property="_2FKcUMJtEd6-XpBv2uxYrQ"/>
-  <CDA:CDATemplate xmi:id="_iPutgMJuEd6-XpBv2uxYrQ" base_Class="_azWbgMJuEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="CCD" contextDependent="true"/>
-  <CDA:PropertyValidation xmi:id="_I6_gkMJzEd6-XpBv2uxYrQ" base_Property="_I6-5gMJzEd6-XpBv2uxYrQ"/>
+  <CDA:TextValue xmi:id="_2FLDYMJtEd6-XpBv2uxYrQ" base_Property="_2FKcUMJtEd6-XpBv2uxYrQ">
+    <ruleId>CONF-483</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_iPutgMJuEd6-XpBv2uxYrQ" base_Class="_azWbgMJuEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="CCD" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_I6_gkMJzEd6-XpBv2uxYrQ" base_Property="_I6-5gMJzEd6-XpBv2uxYrQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_52uxgCfbEd-4R4ealYN1gQ" code="18776-5" displayName="Treatment plan" base_Property="_2FKcUcJtEd6-XpBv2uxYrQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-481</ruleId>
+    <ruleId>CONF-482</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_SGBPIDHkEd-saqiXO4OYhQ" base_Property="_NnywUDHkEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_vH_UEDHlEd-saqiXO4OYhQ" base_Property="_tIW-oDHlEd-saqiXO4OYhQ"/>
-  <CDA:CDATemplate xmi:id="_vjW6EDHoEd-saqiXO4OYhQ" base_Class="_7I79cDHlEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="" contextDependent="true"/>
-  <CDA:CDATemplate xmi:id="_DLmsADHpEd-saqiXO4OYhQ" base_Class="_EGZnsDHmEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true"/>
-  <CDA:CDATemplate xmi:id="_SoR_8DHqEd-saqiXO4OYhQ" base_Class="_1z0WEDHpEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="" contextDependent="true"/>
-  <CDA:CDATemplate xmi:id="_TShPwDHqEd-saqiXO4OYhQ" base_Class="_9Yav8DHpEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true"/>
-  <CDA:CDATemplate xmi:id="_UevyUDHqEd-saqiXO4OYhQ" base_Class="_A9YrgDHqEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true"/>
+  <CDA:PropertyValidation xmi:id="_SGBPIDHkEd-saqiXO4OYhQ" base_Property="_NnywUDHkEd-saqiXO4OYhQ">
+    <ruleId>CONF-480</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vH_UEDHlEd-saqiXO4OYhQ" base_Property="_tIW-oDHlEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_vjW6EDHoEd-saqiXO4OYhQ" base_Class="_7I79cDHlEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_DLmsADHpEd-saqiXO4OYhQ" base_Class="_EGZnsDHmEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_SoR_8DHqEd-saqiXO4OYhQ" base_Class="_1z0WEDHpEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_TShPwDHqEd-saqiXO4OYhQ" base_Class="_9Yav8DHpEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_UevyUDHqEd-saqiXO4OYhQ" base_Class="_A9YrgDHqEd-saqiXO4OYhQ" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true">
+    <ruleId>CONF-485</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_hmP-oDHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_fizVoDHqEd-saqiXO4OYhQ"/>
   <CDA:AssociationValidation xmi:id="_hmRMwDHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_gMsnMDHqEd-saqiXO4OYhQ"/>
   <CDA:AssociationValidation xmi:id="_hmRz0DHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_gpJSoDHqEd-saqiXO4OYhQ"/>
   <CDA:AssociationValidation xmi:id="_hmTB8DHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_hHCvkDHqEd-saqiXO4OYhQ"/>
   <CDA:AssociationValidation xmi:id="_hmUQEDHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_hipGcDHqEd-saqiXO4OYhQ"/>
   <CDA:AssociationValidation xmi:id="_hmVeMDHrEd-saqiXO4OYhQ" severity="INFO" base_Association="_iUZTgDHqEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_hnmCcDHrEd-saqiXO4OYhQ" base_Property="_7I79cjHlEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_hnnQkDHrEd-saqiXO4OYhQ" base_Property="_F3ubYDHmEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_hnoesDHrEd-saqiXO4OYhQ" base_Property="_3d__8DHpEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_hnps0DHrEd-saqiXO4OYhQ" base_Property="_-UxqgDHpEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_hnriADHrEd-saqiXO4OYhQ" base_Property="_BpoGcDHqEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_plLkEDHrEd-saqiXO4OYhQ" base_Property="_F3vCcDHmEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_qJytADHrEd-saqiXO4OYhQ" base_Property="_DWAvwDHqEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_rb08oDHrEd-saqiXO4OYhQ" base_Property="_3eAnADHpEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_r9I58DHrEd-saqiXO4OYhQ" base_Property="_-UyRkDHpEd-saqiXO4OYhQ"/>
-  <CDA:PropertyValidation xmi:id="_saxRIDHrEd-saqiXO4OYhQ" base_Property="_BpotgDHqEd-saqiXO4OYhQ"/>
+  <CDA:PropertyValidation xmi:id="_hnmCcDHrEd-saqiXO4OYhQ" base_Property="_7I79cjHlEd-saqiXO4OYhQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hnnQkDHrEd-saqiXO4OYhQ" base_Property="_F3ubYDHmEd-saqiXO4OYhQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hnoesDHrEd-saqiXO4OYhQ" base_Property="_3d__8DHpEd-saqiXO4OYhQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hnps0DHrEd-saqiXO4OYhQ" base_Property="_-UxqgDHpEd-saqiXO4OYhQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hnriADHrEd-saqiXO4OYhQ" base_Property="_BpoGcDHqEd-saqiXO4OYhQ">
+    <ruleId>CONF-486</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_plLkEDHrEd-saqiXO4OYhQ" base_Property="_F3vCcDHmEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qJytADHrEd-saqiXO4OYhQ" base_Property="_DWAvwDHqEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rb08oDHrEd-saqiXO4OYhQ" base_Property="_3eAnADHpEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_r9I58DHrEd-saqiXO4OYhQ" base_Property="_-UyRkDHpEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_saxRIDHrEd-saqiXO4OYhQ" base_Property="_BpotgDHqEd-saqiXO4OYhQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_TT6zQDhTEd-XUbK0vNqSPQ" base_Association="_RAdi4ThTEd-XUbK0vNqSPQ"/>
-  <CDA:ConstraintValidation xmi:id="_NxhzYMIBEeCSK-pDGcrZ1w" severity="WARNING" base_Constraint="_L97HwMIBEeCSK-pDGcrZ1w"/>
-  <CDA:ConstraintValidation xmi:id="_o0J2wMICEeCSK-pDGcrZ1w" base_Constraint="_hzmlIMICEeCSK-pDGcrZ1w"/>
-  <CDA:ConstraintValidation xmi:id="_sPJ-AMICEeCSK-pDGcrZ1w" base_Constraint="_qPDugMICEeCSK-pDGcrZ1w"/>
-  <CDA:ConstraintValidation xmi:id="_ugWkkMICEeCSK-pDGcrZ1w" base_Constraint="_tTS7kMICEeCSK-pDGcrZ1w"/>
+  <CDA:ConstraintValidation xmi:id="_NxhzYMIBEeCSK-pDGcrZ1w" severity="WARNING" base_Constraint="_L97HwMIBEeCSK-pDGcrZ1w">
+    <ruleId>CONF-484</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_o0J2wMICEeCSK-pDGcrZ1w" base_Constraint="_hzmlIMICEeCSK-pDGcrZ1w">
+    <ruleId>CONF-491</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_sPJ-AMICEeCSK-pDGcrZ1w" base_Constraint="_qPDugMICEeCSK-pDGcrZ1w">
+    <ruleId>CONF-491</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ugWkkMICEeCSK-pDGcrZ1w" base_Constraint="_tTS7kMICEeCSK-pDGcrZ1w">
+    <ruleId>CONF-491</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_FXkugAcQEeG7RIZ2nvEt0A" base_Constraint="_QLZmcDHtEd-saqiXO4OYhQ">
+    <ruleId>CONF-488</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_GvT9gAcQEeG7RIZ2nvEt0A" base_Constraint="_PNzgUDHuEd-saqiXO4OYhQ">
+    <ruleId>CONF-490</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_IagUAAcQEeG7RIZ2nvEt0A" base_Constraint="_rXlD4DHtEd-saqiXO4OYhQ">
+    <ruleId>CONF-488</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Kwi-UAcQEeG7RIZ2nvEt0A" base_Constraint="_v3_UADHtEd-saqiXO4OYhQ">
+    <ruleId>CONF-488</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_MdmWAAcQEeG7RIZ2nvEt0A" base_Constraint="_4p844DHtEd-saqiXO4OYhQ">
+    <ruleId>CONF-489</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_OOvjgAcQEeG7RIZ2nvEt0A" base_Constraint="_CMr98DHvEd-saqiXO4OYhQ">
+    <ruleId>CONF-489</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_anH1cAcQEeG7RIZ2nvEt0A" base_Constraint="_vmuWwMICEeCSK-pDGcrZ1w">
+    <ruleId>CONF-491</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_a9uXkAcQEeG7RIZ2nvEt0A" base_Constraint="_0cB40MICEeCSK-pDGcrZ1w">
+    <ruleId>CONF-491</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

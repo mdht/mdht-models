@@ -43,6 +43,7 @@
   <CDA:CodeSystemConstraint xmi:id="_52L-8CfbEd-4R4ealYN1gQ" code="11369-6" displayName="History of immunizations" base_Property="_ZeXjEcikEd6mWrHPmrIIfQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-377</ruleId>
+    <ruleId>CONF-378</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_DW_N4Hi8Ed-6wJLq2P_7OA" severity="WARNING">
     <ruleId>CONF-376</ruleId>

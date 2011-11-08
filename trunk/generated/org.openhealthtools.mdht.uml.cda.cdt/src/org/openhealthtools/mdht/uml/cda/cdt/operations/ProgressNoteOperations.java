@@ -104,9 +104,9 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSectionProcNote))"
-			+ "   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote))"
-			+ "      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection)))";
+	protected static final String VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSectionProcNote))"+
+"   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote))"+
+"      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressNoteAssessmentAndPlan(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Assessment And Plan</em>}' invariant operation.
@@ -138,17 +138,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN,
-					CDTPlugin.INSTANCE.getString("ProgressNoteAssessmentAndPlan"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteAssessmentAndPlan"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -163,9 +166,9 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote)) in"
-			+ "  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection))"
-			+ "    in (assessmentExists or planExists) implies (assessmentExists and planExists)";
+	protected static final String VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote)) in"+
+"  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection))"+
+"    in (assessmentExists or planExists) implies (assessmentExists and planExists)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressNoteBothAssessmentAndPlan(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Both Assessment And Plan</em>}' invariant operation.
@@ -197,17 +200,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN,
-					CDTPlugin.INSTANCE.getString("ProgressNoteBothAssessmentAndPlan"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_BOTH_ASSESSMENT_AND_PLAN,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteBothAssessmentAndPlan"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -222,8 +228,8 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() "
-			+ "  and not doc.serviceEvent.oclIsUndefined())";
+	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() "+
+"  and not doc.serviceEvent.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressNoteHasServiceEvent(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Has Service Event</em>}' invariant operation.
@@ -254,17 +260,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEvent"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEvent"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -279,8 +288,8 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()"
-			+ "  and doc.serviceEvent.code.code = '371532007' and doc.serviceEvent.code.codeSystem = '2.16.840.1.113883.6.96' )";
+	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()"+
+"  and doc.serviceEvent.code.code = '371532007' and doc.serviceEvent.code.codeSystem = '2.16.840.1.113883.6.96' )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressNoteHasServiceEventCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Has Service Event Code</em>}' invariant operation.
@@ -311,17 +320,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEventCode"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT_CODE,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEventCode"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -336,8 +348,8 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()"
-			+ " and not doc.serviceEvent.effectiveTime.oclIsUndefined() and not doc.serviceEvent.effectiveTime.low.oclIsUndefined() )";
+	protected static final String VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()"+
+" and not doc.serviceEvent.effectiveTime.oclIsUndefined() and not doc.serviceEvent.effectiveTime.low.oclIsUndefined() )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressNoteHasServiceEventEffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Has Service Event Effective Time</em>}' invariant operation.
@@ -368,18 +380,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEventEffectiveTime"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_SERVICE_EVENT_EFFECTIVE_TIME,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasServiceEventEffectiveTime"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -424,17 +438,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasComponentOfElement"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_COMPONENT_OF_ELEMENT,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasComponentOfElement"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -479,18 +496,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterId"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_ID,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterId"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -535,19 +554,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterEffectiveTime"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterEffectiveTime"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -592,19 +612,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterEffectiveTimeLow"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME_LOW,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterEffectiveTimeLow"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -649,19 +670,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID,
-					CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterFacilityId"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_ENCOMPASSING_ENCOUNTER_FACILITY_ID,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteHasEncompassingEncounterFacilityId"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -706,17 +728,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_ALERTS_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteAlertsSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_ALERTS_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteAlertsSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -761,17 +786,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteChiefComplaintSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteChiefComplaintSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -816,17 +844,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteMedicationsSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteMedicationsSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -871,17 +902,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteObjectiveSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteObjectiveSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -926,18 +960,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNotePhysicalExaminationSection"),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAMINATION_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNotePhysicalExaminationSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -982,17 +1018,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteProblemSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteProblemSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1037,17 +1076,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteResultsSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteResultsSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1092,17 +1134,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteVitalSignsSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteVitalSignsSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1147,17 +1192,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteReviewOfSystemsSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteReviewOfSystemsSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1202,17 +1250,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION,
-					CDTPlugin.INSTANCE.getString("ProgressNoteSubjectiveSection"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION,
+						 CDTPlugin.INSTANCE.getString("ProgressNoteSubjectiveSection"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1251,11 +1302,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static AssessmentAndPlanSectionProcNote getAssessmentAndPlanSection(ProgressNote progressNote) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(86));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(88));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1295,11 +1346,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static AssessmentSectionProcNote getAssessmentSection(ProgressNote progressNote) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(87));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(89));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1339,11 +1390,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static PlanOfCareSection getPlanSection(ProgressNote progressNote) {
 		if (GET_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(88));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(90));
 			try {
 				GET_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1383,11 +1434,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static AlertsSection getAlertsSection(ProgressNote progressNote) {
 		if (GET_ALERTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(89));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(91));
 			try {
 				GET_ALERTS_SECTION__EOCL_QRY = helper.createQuery(GET_ALERTS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1427,11 +1478,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static ChiefComplaintSectionProcNote getChiefComplaintSection(ProgressNote progressNote) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(90));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(92));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1471,11 +1522,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static MedicationsSection getMedicationsSection(ProgressNote progressNote) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(91));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(93));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1515,11 +1566,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static ObjectiveSection getObjectiveSection(ProgressNote progressNote) {
 		if (GET_OBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(92));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(94));
 			try {
 				GET_OBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_OBJECTIVE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1559,11 +1610,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static PhysicalExaminationSection getPhysicalExaminationSection(ProgressNote progressNote) {
 		if (GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(93));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(95));
 			try {
 				GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAMINATION_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1603,11 +1654,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static ProblemSection getProblemSection(ProgressNote progressNote) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(94));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(96));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1647,11 +1698,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static ResultsSection getResultsSection(ProgressNote progressNote) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(95));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(97));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1691,11 +1742,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static VitalSignsSection getVitalSignsSection(ProgressNote progressNote) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(96));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(98));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1735,11 +1786,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static ReviewOfSystemsSectionIHE getReviewOfSystemsSection(ProgressNote progressNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(97));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(99));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1779,11 +1830,11 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	public static SubjectiveSection getSubjectiveSection(ProgressNote progressNote) {
 		if (GET_SUBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(98));
+			helper.setOperationContext(CDTPackage.Literals.PROGRESS_NOTE, CDTPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(100));
 			try {
 				GET_SUBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_SUBJECTIVE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1829,22 +1880,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(progressNote, context) }),
-					new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(progressNote, context) }),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}
@@ -1859,9 +1908,9 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
@@ -1893,17 +1942,20 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			helper.setContext(CDTPackage.Literals.PROGRESS_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			progressNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { progressNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDTValidator.DIAGNOSTIC_SOURCE,
+						 CDTValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
+						 CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
+						 new Object [] { progressNote }));
 			}
 			return false;
 		}

@@ -198,7 +198,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.DISCHARGE_SUMMARY,
-				IHEPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(73));
+				IHEPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(75));
 			try {
 				GET_ACTIVE_PROBLEMS_SECTION__EOCL_QRY = helper.createQuery(GET_ACTIVE_PROBLEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

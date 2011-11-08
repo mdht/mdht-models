@@ -67,8 +67,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationSummaryAllergiesReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryAllergiesReactionsSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryAllergiesReactionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +106,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationSummaryDiagnosticResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryDiagnosticResultsSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryDiagnosticResultsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +116,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryAdvanceDirectivesSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -148,8 +145,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationSummaryFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryFunctionalStatusSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryFunctionalStatusSection(this, diagnostics, context);
 	}
 
 	/**
@@ -169,8 +165,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateConsultationSummaryMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryMedicalEquipmentSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryMedicalEquipmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -362,7 +357,7 @@ public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	@Override
 	public ConsultationSummary init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ConsultationSummaryImpl

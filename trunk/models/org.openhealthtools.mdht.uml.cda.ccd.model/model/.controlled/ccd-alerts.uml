@@ -175,7 +175,9 @@
   <CDA:PropertyValidation xmi:id="_AxkJUBTbEd-6K-YJpbwRmQ" base_Property="_AD_RoBTbEd-6K-YJpbwRmQ">
     <ruleId>CONF-256</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_lNJ8oBTbEd-6K-YJpbwRmQ" base_Constraint="_P7PeMBTbEd-6K-YJpbwRmQ"/>
+  <CDA:ConstraintValidation xmi:id="_lNJ8oBTbEd-6K-YJpbwRmQ" base_Constraint="_P7PeMBTbEd-6K-YJpbwRmQ">
+    <ruleId>CONF-257</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_BgWFcBTcEd-6K-YJpbwRmQ" severity="WARNING" base_Association="_5QGGgBTbEd-6K-YJpbwRmQ">
     <ruleId>CONF-256</ruleId>
   </CDA:AssociationValidation>
@@ -190,6 +192,7 @@
   </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_cAlggBW5Ed-6K-YJpbwRmQ" severity="INFO" base_Association="_aCZVgRW5Ed-6K-YJpbwRmQ">
     <ruleId>CONF-270</ruleId>
+    <ruleId>CONF-271</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_dkY4wBW9Ed-6K-YJpbwRmQ" severity="WARNING" base_Constraint="_byigoBW9Ed-6K-YJpbwRmQ">
     <ruleId>CONF-273</ruleId>
@@ -200,7 +203,9 @@
   <CDA:ConstraintValidation xmi:id="_p7iUQBXAEd-6K-YJpbwRmQ" severity="WARNING" base_Constraint="_ofo-ABXAEd-6K-YJpbwRmQ">
     <ruleId>CONF-279</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:EntryRelationship xmi:id="_sb1RUBXBEd-6K-YJpbwRmQ" severity="INFO" base_Association="_SKqqoBXBEd-6K-YJpbwRmQ" typeCode="MFST"/>
+  <CDA:EntryRelationship xmi:id="_sb1RUBXBEd-6K-YJpbwRmQ" severity="INFO" base_Association="_SKqqoBXBEd-6K-YJpbwRmQ" typeCode="MFST">
+    <ruleId>CONF-281</ruleId>
+  </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="__f8oMBXREd-6K-YJpbwRmQ" severity="INFO" base_Property="_UKs-0BW4Ed-6K-YJpbwRmQ">
     <ruleId>CONF-266</ruleId>
   </CDA:PropertyValidation>

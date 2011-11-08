@@ -1207,7 +1207,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(90));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1253,7 +1253,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(91));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
 			try {
 				GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1299,7 +1299,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1344,7 +1344,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1389,7 +1389,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1434,7 +1434,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
 			try {
 				GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1479,7 +1479,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
 			try {
 				GET_DISCHARGE_DIET__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIET__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1525,7 +1525,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1570,7 +1570,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
 			try {
 				GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1615,7 +1615,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1660,7 +1660,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(102));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1705,7 +1705,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(103));
 			try {
 				GET_HOSPITAL_COURSE_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_COURSE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1750,7 +1750,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(102));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(104));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1795,7 +1795,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(103));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(105));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1840,7 +1840,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(104));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(106));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1885,7 +1885,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(105));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(107));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1930,7 +1930,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(106));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(108));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1975,7 +1975,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(107));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(109));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2020,7 +2020,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DISCHARGE_SUMMARY,
-				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(108));
+				HITSPPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(110));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -72,9 +72,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsIdRootFormat">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsIdRootFormat/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsIdRootFormat/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCodeForm">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCodeForm/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCodeForm/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber/diagnostics"/>

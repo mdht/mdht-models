@@ -12,6 +12,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.toc.*;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationRequest;
 import org.openhealthtools.mdht.uml.cda.toc.ConsultationSummary;
 import org.openhealthtools.mdht.uml.cda.toc.DischargeInstructions;
@@ -63,7 +64,7 @@ public class ToCAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject) object).eClass().getEPackage() == modelPackage;
+			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -75,51 +76,43 @@ public class ToCAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	protected ToCSwitch<Adapter> modelSwitch = new ToCSwitch<Adapter>() {
-		@Override
-		public Adapter caseDischargeSummary(DischargeSummary object) {
-			return createDischargeSummaryAdapter();
-		}
-
-		@Override
-		public Adapter caseDischargeInstructions(DischargeInstructions object) {
-			return createDischargeInstructionsAdapter();
-		}
-
-		@Override
-		public Adapter caseConsultationSummary(ConsultationSummary object) {
-			return createConsultationSummaryAdapter();
-		}
-
-		@Override
-		public Adapter caseConsultationRequest(ConsultationRequest object) {
-			return createConsultationRequestAdapter();
-		}
-
-		@Override
-		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-			return createInfrastructureRootAdapter();
-		}
-
-		@Override
-		public Adapter caseAct(Act object) {
-			return createActAdapter();
-		}
-
-		@Override
-		public Adapter caseClinicalDocument(ClinicalDocument object) {
-			return createClinicalDocumentAdapter();
-		}
-
-		@Override
-		public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-			return createGeneralHeaderConstraintsAdapter();
-		}
-
-		@Override
-		public Adapter defaultCase(EObject object) {
-			return createEObjectAdapter();
-		}
-	};
+			@Override
+			public Adapter caseDischargeSummary(DischargeSummary object) {
+				return createDischargeSummaryAdapter();
+			}
+			@Override
+			public Adapter caseDischargeInstructions(DischargeInstructions object) {
+				return createDischargeInstructionsAdapter();
+			}
+			@Override
+			public Adapter caseConsultationSummary(ConsultationSummary object) {
+				return createConsultationSummaryAdapter();
+			}
+			@Override
+			public Adapter caseConsultationRequest(ConsultationRequest object) {
+				return createConsultationRequestAdapter();
+			}
+			@Override
+			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+				return createInfrastructureRootAdapter();
+			}
+			@Override
+			public Adapter caseAct(Act object) {
+				return createActAdapter();
+			}
+			@Override
+			public Adapter caseClinicalDocument(ClinicalDocument object) {
+				return createClinicalDocumentAdapter();
+			}
+			@Override
+			public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+				return createGeneralHeaderConstraintsAdapter();
+			}
+			@Override
+			public Adapter defaultCase(EObject object) {
+				return createEObjectAdapter();
+			}
+		};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -131,7 +124,7 @@ public class ToCAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject) target);
+		return modelSwitch.doSwitch((EObject)target);
 	}
 
 	/**

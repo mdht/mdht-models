@@ -279,6 +279,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_AzO1gEqjEeCJlNjgFmcEiA" name="hasSameProductInstance" constrainedElement="_s53hACp6EeCuGIaOlnUvyw">
+      <ownedComment xmi:id="_nG6B4APZEeG1AJVFOG_ciw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GhTLkEqjEeCJlNjgFmcEiA">
         <language>Analysis</language>
         <body>Supply / participant / participantRole / id SHOULD be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance.</body>
@@ -795,7 +798,9 @@
   <CDA:ConstraintValidation xmi:id="_xiATED6tEeCAHY6aowfd8Q" severity="WARNING" base_Constraint="_T-9E4D6tEeCAHY6aowfd8Q">
     <ruleId>CONF-367</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_H1KnMEqjEeCJlNjgFmcEiA" severity="WARNING" base_Constraint="_AzO1gEqjEeCJlNjgFmcEiA"/>
+  <CDA:ConstraintValidation xmi:id="_H1KnMEqjEeCJlNjgFmcEiA" severity="WARNING" base_Constraint="_AzO1gEqjEeCJlNjgFmcEiA">
+    <ruleId>CONF-370</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_tBNAAEqjEeCJlNjgFmcEiA" severity="WARNING" base_Constraint="_pekmwEqjEeCJlNjgFmcEiA">
     <ruleId>CONF-451</ruleId>
   </CDA:ConstraintValidation>

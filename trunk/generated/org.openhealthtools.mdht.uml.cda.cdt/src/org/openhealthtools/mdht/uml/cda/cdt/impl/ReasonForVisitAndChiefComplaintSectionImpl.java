@@ -57,8 +57,7 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateReasonForVisitAndChiefComplaintSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(
-			this, diagnostics, context);
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateReasonForVisitAndChiefComplaintSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(
-			this, diagnostics, context);
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +76,7 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public ReasonForVisitAndChiefComplaintSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReasonForVisitAndChiefComplaintSectionImpl

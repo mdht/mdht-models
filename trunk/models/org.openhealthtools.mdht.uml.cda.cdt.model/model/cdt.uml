@@ -164,10 +164,15 @@ address element within this DSTU.</body>
       <ownedRule xmi:id="_DHSw0HMxEd-9_cvcE5QEwg" name="idRootFormat" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_I855UHMxEd-9_cvcE5QEwg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The id/@root attribute is a syntactically correct UUID or OID.</body>
+          <body>self.id.matches('root','([0-2])(.([1-9][0-9]*|0))+') or self.id.matches('root','([A-Fa-f0-9]{8})(\\\\-[A-Fa-f0-9]{4}){3}(\\\\-[A-Fa-f0-9]{12})')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OvdGwHMxEd-9_cvcE5QEwg" name="uuidFormat" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_Cni_kAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_RMYcMHMxEd-9_cvcE5QEwg">
           <language>Analysis</language>
           <body>UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9].</body>
@@ -184,6 +189,9 @@ page can be accessed at: http://www.hl7.org/oid.&lt;/p>&#xD;
 a small fee anywhere in the world and is located at:&#xD;
 http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. &lt;/p>&#xD;
 &lt;p>The manner in which the OID root is obtained is not constrained by this DSTU.&lt;/p></body>
+        </ownedComment>
+        <ownedComment xmi:id="_DeZIAAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZFE2wHMxEd-9_cvcE5QEwg">
           <language>Analysis</language>
@@ -205,16 +213,24 @@ compatibility with other standards and Implementation Guides.</body>
       <ownedRule xmi:id="_vaVCcHPqEd-9_cvcE5QEwg" name="languageCodeForm" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0QybEHPqEd-9_cvcE5QEwg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>languageCode has the form nn, or nn-CC.</body>
+          <body>self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_70rDQHPqEd-9_cvcE5QEwg" name="languageCodeLanguage" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_FvWeAAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_FbZs8HPrEd-9_cvcE5QEwg">
           <language>Analysis</language>
           <body>The nn portion of languageCode is a legal ISO-639-1 language code in lowercase.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_-dxzgHPqEd-9_cvcE5QEwg" name="languageCodeCountry" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_GSV2UAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_N91oEHPrEd-9_cvcE5QEwg">
           <language>Analysis</language>
           <body>The CC portion languageCode, if present, SHALL be an ISO-3166 country code in uppercase.</body>
@@ -289,6 +305,9 @@ element.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Y6zoUAbdEeC15aCUY_wo_g" name="hasGuardianForMinors" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_SPiBEAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iWqzEAcPEeC15aCUY_wo_g">
           <language>Analysis</language>
           <body>The guardian element is present when the patient is a minor child.</body>
@@ -370,7 +389,7 @@ care event that occurred within an acute care facility.) In these cases, the&#xD
 assignedEntity element is used.</body>
         </ownedComment>
         <ownedComment xmi:id="_a1RdMAcaEeC15aCUY_wo_g">
-          <body>TODO: how to determin if informant is a healthcare provider?  condition for implementing OCL</body>
+          <body>UNIMPLEMENTABLE</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_7BitMAcWEeC15aCUY_wo_g">
           <language>Analysis</language>
@@ -384,6 +403,9 @@ relatedEntity element. The code element of the relatedEntity describes the relat
 between the informant and the patient.&lt;/p>&#xD;
 &lt;p>The relationship between the informant and the patient needs to be described to help&#xD;
 the receiver of the clinical document understand the information in the document.&lt;/p></body>
+        </ownedComment>
+        <ownedComment xmi:id="_ZhM34AWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_8L5yEAcXEeC15aCUY_wo_g">
           <language>Analysis</language>
@@ -401,6 +423,9 @@ the receiver of the clinical document understand the information in the document
           <body>Individuals with no prior personal relationship to the patient (e.g., a witness to a&#xD;
 significant health care event) may provide information about the patient.</body>
         </ownedComment>
+        <ownedComment xmi:id="_fMltYAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_deplIAcYEeC15aCUY_wo_g">
           <language>Analysis</language>
           <body>When an informant is an unrelated person not otherwise specified, the&#xD;&#xA;value relatedEntity/@classCode SHALL be set to CON to indicate that this person is a&#xD;&#xA;contact.</body>
@@ -414,12 +439,18 @@ can be represented within the context of the document, the information will be&#
 represented using the relatedEntity element and the value of relatedEntity/@classCode&#xD;
 will be set to PROV.</body>
         </ownedComment>
+        <ownedComment xmi:id="_hlHD8AWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3tJc4AcZEeC15aCUY_wo_g">
           <language>Analysis</language>
           <body>When the informant is a healthcare provider without an assigned role,&#xD;&#xA;the informant SHALL be represented using the relatedEntity element and the value of&#xD;&#xA;relatedEntity/@classCode SHALL be set to PROV.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_tJssQAcZEeC15aCUY_wo_g" name="healthcareProviderRelatedEntityCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_j4vTcAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_J8YNcAcaEeC15aCUY_wo_g">
           <language>Analysis</language>
           <body>When the informant is a healthcare provider, the value of relatedEntity/code SHOULD be present and indicate the type of healthcare provider.</body>
@@ -580,18 +611,27 @@ content, essentially acting as a version identifier.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XtmggGeLEd-ilOLYnIx0jA" name="HistoryAndPhysical">
       <ownedRule xmi:id="_Mq2uAGj6Ed-tUpkWYQgJlQ" name="codeTranslation" constrainedElement="_wZajoGgzEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_q7aE8AWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mq2uAWj6Ed-tUpkWYQgJlQ">
           <language>Analysis</language>
           <body>Implementations MAY use local codes in translation elements to specify a local code that is equivalent to the document type.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_mbTNQGj6Ed-tUpkWYQgJlQ" name="assignedAuthorCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_srjz8AWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_mbTNQWj6Ed-tUpkWYQgJlQ">
           <language>Analysis</language>
           <body>If pre-coordinated document type codes are used, values used in the&#xD;&#xA;assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;&#xA;conflict with ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nKM6oGj6Ed-tUpkWYQgJlQ" name="encompassingEncounterCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_uI24YAWfEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_nKM6oWj6Ed-tUpkWYQgJlQ">
           <language>Analysis</language>
           <body>If pre-coordinated document type codes are used, values used in&#xD;&#xA;encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;&#xA;ClinicalDocument/code.</body>
@@ -699,18 +739,27 @@ content, essentially acting as a version identifier.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_f4_NkGeLEd-ilOLYnIx0jA" name="ConsultationNote">
       <ownedRule xmi:id="_xRmv4GgzEd-ilOLYnIx0jA" name="codeTranslation" constrainedElement="_wZajoGgzEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_rHaLgAWdEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_27voMGgzEd-ilOLYnIx0jA">
           <language>Analysis</language>
           <body>Implementations MAY use local codes in translation elements to specify&#xD;&#xA;a local code that is equivalent to the document type. An example of this is shown&#xD;&#xA;below.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wMCEYGgyEd-ilOLYnIx0jA" name="assignedAuthorCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_jSKGgAWdEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_yiSxIGgyEd-ilOLYnIx0jA">
           <language>Analysis</language>
           <body>If pre-coordinated document type codes are used, values used in the&#xD;&#xA;assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;&#xA;conflict with ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PoC_UGgzEd-ilOLYnIx0jA" name="encompassingEncounterCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_nEK_kAWdEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YVURcGgzEd-ilOLYnIx0jA">
           <language>Analysis</language>
           <body>If pre-coordinated document type codes are used, values used in&#xD;&#xA;encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;&#xA;ClinicalDocument/code.</body>
@@ -1483,6 +1532,9 @@ denied experiencing.</body>
         <body>The Chief Complaint section records the patient's chief complaint (the patient's own description). The Chief Complaint section may be a subsection of the Medical History section.</body>
       </ownedComment>
       <ownedRule xmi:id="_L717UMv0Ed-hi-1hHmWxvw" name="sectionNotPresent" constrainedElement="_uRytQMvzEd-hi-1hHmWxvw">
+        <ownedComment xmi:id="_fjIQAAWdEeGEVa6Nn2ESZg">
+          <body>UNIMPLEMENTABLE</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ReTeUMv0Ed-hi-1hHmWxvw">
           <language>Analysis</language>
           <body>If the Chief Complaint section is NOT present, there MAY be a statement in the Medical History section providing the patient's chief compliant.</body>

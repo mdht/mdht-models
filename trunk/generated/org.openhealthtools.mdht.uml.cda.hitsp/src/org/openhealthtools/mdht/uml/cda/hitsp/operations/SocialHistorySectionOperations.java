@@ -202,7 +202,7 @@ public class SocialHistorySectionOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.SOCIAL_HISTORY_SECTION,
-				HITSPPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(64));
+				HITSPPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(70));
 			try {
 				GET_SOCIAL_HISTORIES__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORIES__EOCL_EXP);
 			} catch (ParserException pe) {
