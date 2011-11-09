@@ -10,10 +10,12 @@
 
     <target name="transformFlatten" description="Flatten inherited templates.">
         <cdatools model="${modelPath.uml}">
+        	<!--
         	<modelElement qname="ccd::StatusObservation" />
         	<modelElement qname="ihe::ProblemStatusObservation" />
         	<modelElement qname="hitsp::Result" />
             <modelElement qname="hitsp::Medication" />
+            -->
         	
             <flattenModel includeBaseModel="false" outputModel="${consolidatedModelPath.uml}" 
             	vocabModel="${vocabModelPath.uml}"/>
