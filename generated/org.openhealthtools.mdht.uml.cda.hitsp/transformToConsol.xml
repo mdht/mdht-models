@@ -1,0 +1,20 @@
+<project name="CDA Model Flattening"  basedir="." default="transformFlatten">
+
+	<property name="modelPath.uml" location="${basedir}.model/model/hitsp.uml"/>
+	<property name="consolidatedModelPath.uml" location="../org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml"/>
+	<property name="vocabModelPath.uml" location="../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml"/>
+	
+	<import file="transform.xml"/>
+
+    <target name="transformFlatten" description="Flatten inherited templates.">
+        <cdatools model="${modelPath.uml}">
+        	<model file="../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml" />
+        	
+            <flattenModel includeBaseModel="false" outputModel="${consolidatedModelPath.uml}" 
+            	vocabModel="${vocabModelPath.uml}"/>
+        </cdatools>
+
+    	<antcall target="refresh"/>
+    </target>
+
+</project>
