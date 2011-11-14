@@ -289,7 +289,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0";
+	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalReferenceHasReferenceExternalDocumentText(ExternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Reference Has Reference External Document Text</em>}' invariant operation.
@@ -305,7 +305,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0
+	 * self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0
 	 * @param externalReference The receiving '<em><b>External Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
