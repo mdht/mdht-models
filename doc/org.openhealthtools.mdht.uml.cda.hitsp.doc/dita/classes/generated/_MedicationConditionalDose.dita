@@ -101,8 +101,7 @@ resolved</li></ul></li>
 recorded<ul><li><codeblock>[OCL]: not self.entryRelationship.substanceAdministration-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)<ul><li><codeblock>[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)<ul><li><codeblock>[OCL]: not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul><li><codeblock>[OCL]: self.getClinicalDocument().authorization-&gt;exists(auth : cda::Authorization | 
-   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul><li><codeblock>[OCL]: self.getClinicalDocument().authorization-&gt;size() &gt; 0 and self.getClinicalDocument().authorization.consent-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-315)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
 or not self.getSection().informant-&gt;isEmpty()
 or not self.getClinicalDocument().informant-&gt;isEmpty()
@@ -150,7 +149,7 @@ the CDA narrative describing those preconditions.<ul><li><codeblock>[OCL]: not s
 moodCode attribute of EVN.<ul><li>The prescription activity may have a &lt;sequenceNumber> element to indicate the fill number. A
 value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
 prescription.</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)</li>
+<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)<ul><li>UNIMPLEMENTABLE</li></ul></li>
 <li><b>SHALL</b> satisfy: The HL7 data type for PIVL_TS uses the institutionSpecified attribute to indicate whether it is the interval (time between dosing), or frequency (number of doses in a time period) that is important. If instititutionSpecified is not present or is set to false, then the time between dosing is important (every 8 hours). If true, then the frequency of administration is important (e.g., 3 times per day). (2.2.2.8.4)<ul><li>defines a specific administration or
 use time. Can be a text string (Morning, Evening,
 Before Meals, 1 Hour After Meals, 3 Hours After
@@ -181,7 +180,7 @@ intended to be addressed by the ordered product. For
 example: for chest pain, for pain, for high blood
 pressure</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation))</codeblock></li></ul></li>
 <li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and not po.text.reference.oclIsUndefined())</codeblock></li></ul></li>
-<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</codeblock></li></ul></li>
+<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.6.96')</codeblock></li></ul></li>
 <li>Patient Instructions <b>SHALL</b> be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3) (C83-[DE-8.22-CDA-1])<ul><li><p>
 Instructions to the patient that are not traditionally part
 of the Sig. For example, "keep in the refrigerator."
@@ -203,70 +202,25 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul><ul><li><codeblock>[OC
 <li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</codeblock></li></ul></li>
 <li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name-&gt;size() &gt; 0)))</codeblock></li></ul></li>
 <li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode =vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0)))</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.6.96')))</codeblock></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::MedicationConditionalDose</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> SBADM</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_DocumentSubstanceMood</entry><entry></entry><entry> EVN</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>administrationUnitCode</entry><entry>administrationUnitCode</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>C154-[DE-8.11-1]</entry><entry> </entry></row> 
-<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>C154-[DE-8.09-1]</entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>C83-[DE-8.12-CDA-1]</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
-<row><entry>doseQuantity</entry><entry>doseQuantity</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-308</entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-306</entry><entry> </entry></row> 
-<row><entry>maxDoseQuantity</entry><entry>maxDoseQuantity</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>RTO_PQ_PQ</entry><entry>CONF-312</entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>rateQuantity</entry><entry>rateQuantity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_PQ</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>routeCode</entry><entry>routeCode</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF-309CONF-310</entry><entry>HL7 RouteOfAdministration 2.16.840.1.113883.5.112 </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-307</entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.3.88.11.83.8</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>consumable</entry><entry>consumable</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Consumable</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>internalReference</entry><entry>internalReference</entry><entry>1..*</entry><entry></entry><entry>YES</entry><entry>InternalReference</entry><entry></entry><entry> </entry></row> 
-<row><entry>medicationOrderInformation</entry><entry>medicationOrderInformation</entry><entry>1..*</entry><entry></entry><entry>YES</entry><entry>MedicationOrderInformation</entry><entry></entry><entry> </entry></row> 
-<row><entry>medicationSeriesNumberObservation</entry><entry>medicationSeriesNumberObservation</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationSeriesNumberObservation</entry><entry>CONF-338CONF-339</entry><entry> </entry></row> 
-<row><entry>medicationStatusObservation</entry><entry>medicationStatusObservation</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationStatusObservation</entry><entry>CONF-350</entry><entry> </entry></row> 
-<row><entry>medicationType</entry><entry>medicationType</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>MedicationType</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>PatientInstruction</entry><entry>CONF-330CONF-333</entry><entry> </entry></row> 
-<row><entry>patientMedicalInstructions</entry><entry>patientMedicalInstructions</entry><entry>1..*</entry><entry></entry><entry>YES</entry><entry>PatientMedicalInstructions</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>Performer2</entry><entry>CONF-313</entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>productInstance</entry><entry>productInstance</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProductInstance</entry><entry>CONF-368</entry><entry> </entry></row> 
-<row><entry>reactionObservation</entry><entry>reactionObservation</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ReactionObservation</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>supplyEntry</entry><entry>supplyEntry</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>SupplyEntry</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.24"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.10"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
-  <id root="892073322"/>
-  <code code="284646573"/>
+  <id root="994707793"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <statusCode code="completed"/>
-  <effectiveTime value="20110830"/>
-  <routeCode code="Value"/>
-  <approachSiteCode code="779552760"/>
+  <effectiveTime value="20111114"/>
+  <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+  <approachSiteCode code="1172751441"/>
   <doseQuantity/>
   <rateQuantity/>
   <maxDoseQuantity/>
   <administrationUnitCode code="Value"/>
   <consumable/>
 </substanceadministration>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Medication Conditional Dose</ph></p>
-<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.3.88.11.83.8</tt>]</p>
 </body>
 </topic>

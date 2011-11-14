@@ -19,24 +19,44 @@
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../FamilyMedicalHistorySection.dita">Family Medical History Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.14</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10157-6" </tt><i>History of family member diseases</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10157-6" </tt><i>History of family member diseases</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-185, CONF-186)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-187)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.15</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive text string containing 'family history'.</li>
-<li>Family History Section <b>SHOULD</b> include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which <b>MAY</b> be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23)</li>
-<li>The family history section <b>SHALL NOT</b> contain Section / subject.</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive text string containing 'family history'. (CONF-188)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>Family History Section <b>SHOULD</b> include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which <b>MAY</b> be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23) (CONF-184)<ul><li><codeblock>[OCL]: self.entry.observation-&gt;exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer-&gt;exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))</codeblock></li></ul></li>
+<li>The family history section <b>SHALL NOT</b> contain Section / subject. (CONF-189)<ul><li><codeblock>[OCL]: self.subject.oclIsUndefined()</codeblock></li></ul></li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Coded Family Medical History Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.3.15</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.4"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.15"/>
+  <id root="779446119"/>
+  <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
+  <title/>
+  <text/>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.23"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
+      <id root="140156556"/>
+      <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <component>
+        <observation/>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

@@ -96,9 +96,13 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 </ul>
 </li>
 
-<li class="li">The methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in code (CONF-415)</li>
+<li class="li">The methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in code (CONF-415)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li">Where value is a physical quantity, the unit of measure <strong class="ph b">SHALL</strong> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
+<li class="li">Where value is a physical quantity, the unit of measure <strong class="ph b">SHALL</strong> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.referenceRange-&gt;isEmpty()</pre>
 </li>
@@ -122,6 +126,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Data Element Definitions for Results [Placeholder]<ul class="ul"><li class="li">Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
@@ -134,12 +139,12 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.14"/&gt;
-  &lt;id root="521796036"/&gt;
+  &lt;id root="1081154975"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -148,7 +153,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   &lt;/effectiveTime&gt;
   &lt;interpretationCode code="Value"/&gt;
   &lt;methodCode code="Value"/&gt;
-  &lt;targetSiteCode code="568878188"/&gt;
+  &lt;targetSiteCode code="1969185596"/&gt;
 &lt;/observation&gt;</pre>
 
 </div>

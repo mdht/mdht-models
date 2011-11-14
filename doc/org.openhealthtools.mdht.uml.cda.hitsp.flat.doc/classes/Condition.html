@@ -101,7 +101,9 @@ historical purposes.
 </ul>
 </li>
 
-<li class="li">A problem act <strong class="ph b">MAY</strong> reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for "Act / entryRelationship / @typeCode" to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-152)</li>
+<li class="li">A problem act <strong class="ph b">MAY</strong> reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for "Act / entryRelationship / @typeCode" to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-152)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li">The target of a problem act with Act / entryRelationship / @typeCode="SUBJ" <strong class="ph b">SHOULD</strong> be a problem observation (in the Problem section) or alert observation (in the Alert section), but <strong class="ph b">MAY</strong> be some other clinical statement. (CONF-153)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
   (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</pre>
@@ -146,10 +148,14 @@ historical purposes.
 </li>
 
 <li class="li">Each concern <strong class="ph b">MAY</strong> have 0 or more related references. This <strong class="ph b">MAY</strong> be any valid CDA clinical statement, and <strong class="ph b">SHOULD</strong> be an IHE entry template.<ul class="ul"><li class="li">These may be used to represent related statements such related visits.</li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
-<li class="li">Related References <strong class="ph b">SHALL</strong> be represented using entryRelationship with typeCode = 'REFR'.</li>
+<li class="li">Related References <strong class="ph b">SHALL</strong> be represented using entryRelationship with typeCode = 'REFR'.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.reference-&gt;forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The treating provider or providers <strong class="ph b">SHALL</strong> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.performer-&gt;isEmpty()</pre>
 </li>
@@ -180,7 +186,7 @@ historical purposes.
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.7"/&gt;
-  &lt;id root="407972766"/&gt;
+  &lt;id root="783527991"/&gt;
   &lt;code nullFlavor="NA"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -191,13 +197,22 @@ historical purposes.
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
-      &lt;id root="830293690"/&gt;
-      &lt;code code="765781764"/&gt;
+      &lt;id root="1802234164"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
         &lt;high value="2011"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
 &lt;/act&gt;</pre>

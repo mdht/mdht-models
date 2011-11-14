@@ -60,7 +60,9 @@
     &lt;name code="246456000" displayName="Episodicity"/&gt;
     &lt;value code="288527008" displayName="New episode"/&gt;
   &lt;/qualifier&gt;
-&lt;/value&gt;&lt;/codeblock&gt; (CONF-175)</li>
+&lt;/value&gt;&lt;/codeblock&gt; (CONF-175)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Source of exactly one entryRelationship whose typeCode is 'SUBJ'. This is used to link the episode observation to the target problem act or social history observation. (CONF-176)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, ccd::ProblemAct)-&gt;size() = 1
   or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, ccd::SocialHistoryObservation)-&gt;size() = 1</pre>
@@ -86,8 +88,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
-  &lt;id root="333049170"/&gt;
-  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
+  &lt;id root="2067235187"/&gt;
+  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;

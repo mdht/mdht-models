@@ -49,11 +49,21 @@
 <li><b>SHALL</b> contain  [0..0] <tt><b>targetSiteCode</b></tt>
 </li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Pregnancy Observation</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.5</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+  <id root="1575319212"/>
+  <code code="1027855884"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <repeatNumber/>
+  <interpretationCode code="Value"/>
+  <methodCode code="Value"/>
+  <targetSiteCode code="1506555919"/>
+</observation>]]></codeblock>
 </body>
 </topic>

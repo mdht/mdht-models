@@ -73,7 +73,9 @@
 </ul>
 </li>
 
-<li class="li">The value for participant / participantRole / code in a policy activity's covered party <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
+<li class="li">The value for participant / participantRole / code in a policy activity's covered party <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li">A covered party in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV
   implies not part.time.oclIsUndefined())</pre>
@@ -115,8 +117,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
-  &lt;id root="1224284175"/&gt;
-  &lt;code code="2084076660"/&gt;
+  &lt;id root="966459209"/&gt;
+  &lt;code code="265160177"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;

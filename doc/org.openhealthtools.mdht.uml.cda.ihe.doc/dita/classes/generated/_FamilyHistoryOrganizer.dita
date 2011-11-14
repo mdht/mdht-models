@@ -17,53 +17,73 @@
 <li>Contains exactly one [1..1] <xref href="../FamilyHistoryObservation.dita">Family History Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.3</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)
 </li>
-<li>One RelatedSubject/subject/sdtc:id element <b>SHOULD</b> be present. It is used to identify the patient relation to create a pedigree graph.</li>
-<li>The participant element <b>MAY</b> be present to record the relationship of the subject to other family members to create a pedigree graph.</li>
-<li><b>SHALL</b> satisfy: Participant shall contain a participantRole/@classCode = "PRS" element showing the relationship of the subject to other family members</li>
-<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/code element shall be present, and gives the relationship of the participant to the subject. The code attribute shall be present, and shall contain a value from the HL7 FamilyMember vocabulary</li>
-<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'</li>
+<li>One subject/RelatedSubject/subject/sdtc:id element <b>SHOULD</b> be present. It is used to identify the patient relation to create a pedigree graph.</li>
+<li>The participant element <b>MAY</b> be present to record the relationship of the subject to other family members to create a pedigree graph.<ul><li><codeblock>[OCL]: self.participant-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Participant shall contain a participantRole/@classCode = "PRS" element showing the relationship of the subject to other family members<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::PRS)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/code element shall be present, and gives the relationship of the participant to the subject. The code attribute shall be present, and shall contain a value from the HL7 FamilyMember vocabulary<ul><li><codeblock>[OCL]: self.participant.participantRole.code-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity/sdtc:id shall be present. It must have the same root and extension attributes of the subject element of a separate family history organizer.</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistoryOrganizer.html">CCD Family History Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.23</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-201)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-202)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-203, CONF-204)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistoryObservation.dita">Family History Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.3</tt>)</li></ol></li>
-<li>A family history organizer <b>SHALL</b> contain one or more Organizer / component.</li>
-<li>The target of a family history organizer Organizer / component relationship <b>SHOULD</b> be a family history observation, but <b>MAY</b> be some other clinical statement</li>
-<li>A family history organizer <b>SHALL</b> contain exactly one subject participant, representing the family member who is the subject of the family history observations</li>
-<li>A subject participant <b>SHALL</b> contain exactly one RelatedSubject, representing the relationship of the subject to the patient</li>
-<li>The value for RelatedSubject / @classCode <b>SHALL</b> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC</li>
-<li>RelatedSubject <b>SHALL</b> contain exactly one RelatedSubject / code</li>
-<li>The value for "RelatedSubject / code" <b>SHOULD</b> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</li>
-<li>Representation of a pedigree graph <b>SHALL</b> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree.</li>
-<li>RelatedSubject <b>SHOULD</b> contain exactly one RelatedSubject / subject</li>
-<li>RelatedSubject / subject <b>SHOULD</b> contain exactly one RelatedSubject / subject / administrativeGenderCode.</li>
+<li>A family history organizer <b>SHALL</b> contain one or more Organizer / component. (CONF-205)<ul><li><codeblock>[OCL]: self.component-&gt;size() &gt;= 1</codeblock></li></ul></li>
+<li>The target of a family history organizer Organizer / component relationship <b>SHOULD</b> be a family history observation, but <b>MAY</b> be some other clinical statement<ul><li><codeblock>[OCL]: self.component-&gt;exists (comp : cda::Component4 | comp.observation-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::FamilyHistoryObservation)))</codeblock></li></ul></li>
+<li>A family history organizer <b>SHALL</b> contain exactly one subject participant, representing the family member who is the subject of the family history observations (CONF-208)<ul><li><codeblock>[OCL]: self.subject-&gt;size() = 1</codeblock></li></ul></li>
+<li>A subject participant <b>SHALL</b> contain exactly one RelatedSubject, representing the relationship of the subject to the patient (CONF-212)<ul><li><codeblock>[OCL]: self.subject.relatedSubject-&gt;size() = 1</codeblock></li></ul></li>
+<li>The value for RelatedSubject / @classCode <b>SHALL</b> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC (CONF-213)<ul><li><codeblock>[OCL]: self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</codeblock></li></ul></li>
+<li>RelatedSubject <b>SHALL</b> contain exactly one RelatedSubject / code<ul><li><codeblock>[OCL]: self.subject.relatedSubject.code-&gt;size() = 1</codeblock></li></ul></li>
+<li>The value for "RelatedSubject / code" <b>SHOULD</b> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC (CONF-215)<ul><li><codeblock>[OCL]: self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579' or self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.20.21'</codeblock></li></ul></li>
+<li>Representation of a pedigree graph <b>SHALL</b> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree. (CONF-216)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>RelatedSubject <b>SHOULD</b> contain exactly one RelatedSubject / subject (CONF-217)<ul><li><codeblock>[OCL]: self.subject.relatedSubject.subject-&gt;size() = 1</codeblock></li></ul></li>
+<li>RelatedSubject / subject <b>SHOULD</b> contain exactly one RelatedSubject / subject / administrativeGenderCode. (CONF-218)<ul><li><codeblock>[OCL]: self.subject.relatedSubject.subject.administrativeGenderCode-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)<ul><li><codeblock>[OCL]: not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</li>
-<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</li>
-<li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime</li>
-<li><b>MAY</b> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</li>
-<li>One RelatedSubject/subject/sdtc:id element <b>SHOULD</b> be present. It is used to identify the patient relation to create a pedigree graph.</li>
-<li>The participant element <b>MAY</b> be present to record the relationship of the subject to other family members to create a pedigree graph.</li>
-<li><b>SHALL</b> satisfy: Participant shall contain a participantRole/@classCode = "PRS" element showing the relationship of the subject to other family members</li>
-<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/code element shall be present, and gives the relationship of the participant to the subject. The code attribute shall be present, and shall contain a value from the HL7 FamilyMember vocabulary</li>
-<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'</li>
+<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd<ul><li>UNIMPLEMENTABLE The CCD requirements are convuluted on time and indicator but are more precises under consolidated.</li></ul></li>
+<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime<ul><li>UNIMPLEMENTABLE The CCD requirements are convuluted on time and indicator but are more precises under consolidated.</li></ul></li>
+<li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>MAY</b> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>One subject/RelatedSubject/subject/sdtc:id element <b>SHOULD</b> be present. It is used to identify the patient relation to create a pedigree graph.</li>
+<li>The participant element <b>MAY</b> be present to record the relationship of the subject to other family members to create a pedigree graph.<ul><li><codeblock>[OCL]: self.participant-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Participant shall contain a participantRole/@classCode = "PRS" element showing the relationship of the subject to other family members<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::PRS)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/code element shall be present, and gives the relationship of the participant to the subject. The code attribute shall be present, and shall contain a value from the HL7 FamilyMember vocabulary<ul><li><codeblock>[OCL]: self.participant.participantRole.code-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The Participant/ParticipantRole/PlayingEntity/sdtc:id shall be present. It must have the same root and extension attributes of the subject element of a separate family history organizer.</li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Family History Organizer</ph></p>
-<p id="shortdesc">[Organizer: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.15</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.1.23"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
+  <id root="881174773"/>
+  <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.22"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"/>
+      <id root="1374131335"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 </body>
 </topic>

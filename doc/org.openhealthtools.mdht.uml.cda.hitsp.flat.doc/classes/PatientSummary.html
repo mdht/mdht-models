@@ -101,13 +101,13 @@ treatment or implementation of confidentiality.</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-184), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="FamilyHistorySection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.125]">Family History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.4</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-232), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.126]">Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.15</tt>)</li>
 </ol>
@@ -143,7 +143,7 @@ treatment or implementation of confidentiality.</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-376), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ImmunizationsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.117]">Immunizations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.6</tt>)</li>
 </ol>
@@ -155,19 +155,19 @@ treatment or implementation of confidentiality.</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-371), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="MedicalEquipmentSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.128]">Medical Equipment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.7</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-123), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="FunctionalStatusSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.109]">Functional Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.5</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-77), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.116]">Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.1</tt>)</li>
 </ol>
@@ -364,16 +364,25 @@ document may come from sources or contain information that the author cannot val
 </ul>
 </li>
 
-<li class="li">languageCode has the form nn, or nn-CC. The nn portion <strong class="ph b">SHALL</strong> be an ISO-639-1 language code in lower case. The CC portion, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in upper case (CONF-6)</li>
+<li class="li">languageCode has the form nn, or nn-CC. The nn portion <strong class="ph b">SHALL</strong> be an ISO-639-1 language code in lower case. The CC portion, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in upper case (CONF-6)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL NOT</strong> contain templateId / @extension (CONF-8)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.templateId-&gt;forAll(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1' implies id.extension.oclIsUndefined())</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.effectiveTime.value.size() &gt;= 4</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.effectiveTime.value.size() &gt;= 19</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or two recordTarget (CONF-11)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.recordTarget-&gt;size() = 1 or self.recordTarget-&gt;size() =2</pre>
 </li>
@@ -398,11 +407,17 @@ document may come from sources or contain information that the author cannot val
 </ul>
 </li>
 
-<li class="li">The value for component / structuredBody / component / section / entry / @typeCode <strong class="ph b">MAY</strong> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)</li>
+<li class="li">The value for component / structuredBody / component / section / entry / @typeCode <strong class="ph b">MAY</strong> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li">A CCD entry <strong class="ph b">SHOULD</strong> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)</li>
+<li class="li">A CCD entry <strong class="ph b">SHOULD</strong> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li">A section <strong class="ph b">MAY</strong> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)</li>
+<li class="li">A section <strong class="ph b">MAY</strong> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-HP-6)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: -- implemented in Java using XPath selector</pre>
 </li>
@@ -501,9 +516,14 @@ address element within this DSTU.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The id/@root attribute is a syntactically correct UUID or OID. (CONF-HP-17)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The id/@root attribute is a syntactically correct UUID or OID. (CONF-HP-17)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.id.matches('root','([0-2])(.([1-9][0-9]*|0))+') or self.id.matches('root','([A-Fa-f0-9]{8})(\\\\-[A-Fa-f0-9]{4}){3}(\\\\-[A-Fa-f0-9]{12})')</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9]. (CONF-HP-18)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9]. (CONF-HP-18)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li">OIDs are represented in dotted decimal notation, where each decimal number is either 0, or starts with a nonzero digit. More formally, an OID <strong class="ph b">SHALL</strong> be in the form ([0-2])(.([1-9][0-9]*|0))+. (CONF-HP-19)<ul class="ul"><li class="li"><p class="p">Organizations that wish to use OIDs should properly register their OID root and ensure
 uniqueness of the OID roots used in identifiers. A large number of mechanisms exist
@@ -517,6 +537,7 @@ http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. </p>
 
 <p class="p">The manner in which the OID root is obtained is not constrained by this DSTU.</p>
 </li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
@@ -528,11 +549,18 @@ compatibility with other standards and Implementation Guides.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: languageCode has the form nn, or nn-CC. (CONF-HP-25)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: languageCode has the form nn, or nn-CC. (CONF-HP-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase. (CONF-HP-26)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase. (CONF-HP-26)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li">The CC portion languageCode, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in uppercase. (CONF-HP-27)</li>
+<li class="li">The CC portion languageCode, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in uppercase. (CONF-HP-27)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li">Both setId and versionNumber <strong class="ph b">SHALL</strong> be present or both <strong class="ph b">SHALL</strong> be absent. (CONF-HP-28)<ul class="ul"><li class="li">The ClinicalDocument/setId element uses the instance identifier (II) data type. The root
 attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the
@@ -592,7 +620,9 @@ ethnicGroupCode <strong class="ph b">MAY</strong> be present. If maritalStatusCo
 raceCode and ethnicGroupCode elements are present, they <strong class="ph b">SHOULD</strong> be encoded using
 the appropriate HL7 vocabularies. (CONF-HP-34)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The guardian element is present when the patient is a minor child. (CONF-HP-35)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The guardian element is present when the patient is a minor child. (CONF-HP-35)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">MAY</strong> satisfy: The providerOrganization element is present. (CONF-HP-36)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</pre>
 </li>
@@ -646,7 +676,7 @@ informant <strong class="ph b">SHALL</strong> be represented using the assignedE
 created. (e.g., a nurse's aide who provides information about a recent significant health
 care event that occurred within an acute care facility.) In these cases, the
 assignedEntity element is used.</li>
-<li class="li">TODO: how to determin if informant is a healthcare provider?  condition for implementing OCL</li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
@@ -658,6 +688,7 @@ between the informant and the patient.</p>
 <p class="p">The relationship between the informant and the patient needs to be described to help
 the receiver of the clinical document understand the information in the document.</p>
 </li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
@@ -669,6 +700,7 @@ SNOMED, any subtype of "Person in the family" (303071001). (CONF-HP-46)</li>
 value relatedEntity/@classCode <strong class="ph b">SHALL</strong> be set to CON to indicate that this person is a
 contact. (CONF-HP-47)<ul class="ul"><li class="li">Individuals with no prior personal relationship to the patient (e.g., a witness to a
 significant health care event) may provide information about the patient.</li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
@@ -679,10 +711,13 @@ provide information. To record an informant that does not have an assigned role 
 can be represented within the context of the document, the information will be
 represented using the relatedEntity element and the value of relatedEntity/@classCode
 will be set to PROV.</li>
+<li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
-<li class="li">When the informant is a healthcare provider, the value of relatedEntity/code <strong class="ph b">SHOULD</strong> be present and indicate the type of healthcare provider. (CONF-HP-49)</li>
+<li class="li">When the informant is a healthcare provider, the value of relatedEntity/code <strong class="ph b">SHOULD</strong> be present and indicate the type of healthcare provider. (CONF-HP-49)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li">The ClinicalDocument/informationRecipient element <strong class="ph b">MAY</strong> be present.
 When informationRecipient is used, at least one
@@ -729,7 +764,9 @@ least to the year, <strong class="ph b">SHOULD</strong> be precise to the day, a
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains 0..* InformationSource in ancestor-or-self::./cda:author[1] (C32-[CT1-8])</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains 0..* InformationSource in ancestor-or-self::./cda:author[1] (C32-[CT1-8])<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains 0..* LanguageSpoken in cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication (C32-[CT1-10])</li>
 
@@ -751,7 +788,7 @@ least to the year, <strong class="ph b">SHOULD</strong> be precise to the day, a
   &lt;templateId root="2.16.840.1.113883.10.20.3"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.32.1"/&gt;
-  &lt;id root="1510230328"/&gt;
+  &lt;id root="1356083902"/&gt;
   &lt;code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of episode note"/&gt;
   &lt;title/&gt;
   &lt;effectiveTime/&gt;
@@ -770,11 +807,26 @@ least to the year, <strong class="ph b">SHOULD</strong> be precise to the day, a
           &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34"/&gt;
           &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35"/&gt;
           &lt;templateId root="2.16.840.1.113883.3.88.11.83.116"/&gt;
-          &lt;id root="742369455"/&gt;
+          &lt;id root="2036080008"/&gt;
           &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
           &lt;title/&gt;
           &lt;languageCode/&gt;
+          &lt;entry&gt;
+            &lt;observation/&gt;
+          &lt;/entry&gt;
         &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section/&gt;

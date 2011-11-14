@@ -16,7 +16,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)
 <ol>
-<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li></ol></li>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)<ul><li>UNIMPLEMENTABLE</li></ul></li></ol></li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-140), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
@@ -28,45 +28,25 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)
 <ol>
-<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li></ol></li>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)<ul><li>UNIMPLEMENTABLE</li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-140), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)<ul><li>UNIMPLEMENTABLE</li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProblemSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.1.11]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-141CONF-142</entry><entry>LOINC 2.16.840.1.113883.6.1 11450-4</entry></row> 
-<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.11</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-143</entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>problemAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.1.27]</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProblemAct</entry><entry>CONF-140</entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF-140</entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.11"/>
-  <id root="1197391935"/>
+  <id root="1038425210"/>
   <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
   <title/>
   <text/>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.27"/>
-      <id root="343956487"/>
+      <id root="762627003"/>
       <code nullFlavor="NA"/>
       <text/>
       <effectiveTime>
@@ -79,9 +59,5 @@
     </act>
   </entry>
 </section>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Problem Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.11</tt>]</p>
 </body>
 </topic>

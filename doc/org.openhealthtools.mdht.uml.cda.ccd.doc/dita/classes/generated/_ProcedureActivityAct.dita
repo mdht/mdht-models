@@ -12,81 +12,121 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-428)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-433, CONF-434)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-432)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-429)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
+<ul><li>Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt> (CONF-437), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer2</b></tt> (CONF-438), such that
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is x_ActClassDocumentEntryAct
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentActMood
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-428)
 </li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-429)
 </li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt>, where its type is <xref href="../EncounterLocation.dita">Encounter Location</xref> (CONF-437)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-433, CONF-434)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
+<ul><li>Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-432)
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt> (CONF-437), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>patientInstruction</b></tt>, where its type is <xref href="../PatientInstruction.dita">Patient Instruction</xref> (CONF-441, CONF-333)
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer2</b></tt> (CONF-438), such that
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
 <ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
-<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt>, where its type is <xref href="../AgeObservation.dita">Age Observation</xref> (CONF-445)
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445), such that
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>medicationActivity</b></tt>, where its type is <xref href="../MedicationActivity.dita">Medication Activity</xref> (CONF-446)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446), such that
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
-<li>The value for code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
-<li><b>MAY</b> satisfy: contain one or more performer, to represent those practioners who performed the procedure. (CONF-438)</li>
-<li><b>MAY</b> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
-<li>entryRelationship / @typeCode="RSON" in a procedure activity <b>SHALL</b> have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-440)</li>
-<li><b>MAY</b> satisfy: have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent (CONF-442)</li>
-<li><b>SHALL</b> satisfy: contains one or more sources of information (CONF-447)</li>
-<li><b>MAY</b> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
-<li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)<ul><li>UNIMPLEMENTABLE</li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProcedureActivityAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.1.29]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry></entry><entry> APT</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> completed</entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.29</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF-445</entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>encounterLocation</entry><entry>encounterLocation</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterLocation</entry><entry>CONF-437</entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF-446</entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>PatientInstruction</entry><entry>CONF-441CONF-333</entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.29"/>
-  <id root="524782149"/>
-  <code code="1683102901"/>
+  <id root="888622953"/>
+  <code code="1175023912"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>
   </effectiveTime>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.27"/>
+      <id root="351165966"/>
+      <code nullFlavor="NA"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <substanceAdministration/>
+  </entryRelationship>
+  <entryRelationship>
+    <act/>
+  </entryRelationship>
 </act>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Procedure Activity Act</ph></p>
-<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.29</tt>]</p>
 </body>
 </topic>

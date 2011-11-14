@@ -37,35 +37,42 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-238)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-239)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-240)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i"/> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i"/> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-241, CONF-242)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-246), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistoryStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.56]">Social History Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.56</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-249), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="EpisodeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.41]">Episode Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.41</tt>)</li>
 </ol>
 </li>
 
-<li class="li">The value for Observation / code in a social history observation <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017</li>
+<li class="li">The value for Observation / code in a social history observation <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <strong class="ph b">SHALL</strong> be expressed using a valid Unified Code for Units of Measure (UCUM) expression</li>
+<li class="li">Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <strong class="ph b">SHALL</strong> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information (CONF-245)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 </ol>
 
@@ -77,15 +84,31 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.33"/&gt;
-  &lt;id root="1548090314"/&gt;
-  &lt;code code="1875043274"/&gt;
+  &lt;id root="346061771"/&gt;
+  &lt;code code="1203750133"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.56"/&gt;
+      &lt;id root="327161458"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
 &lt;/observation&gt;</pre>
 
 </div>

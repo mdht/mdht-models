@@ -37,10 +37,10 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="42348-3" </tt><em class="ph i">Advance directives</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="42348-3" </tt><em class="ph i">Advance directives</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-78, CONF-79)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-80)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
@@ -52,7 +52,9 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'.</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'. (CONF-81)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 </ol>
 
@@ -66,21 +68,24 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.1"/&gt;
-  &lt;id root="753009024"/&gt;
+  &lt;id root="1530694453"/&gt;
   &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
   &lt;title/&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.17"/&gt;
-      &lt;id root="1717697110"/&gt;
-      &lt;code code="520371600"/&gt;
+      &lt;id root="1316482905"/&gt;
+      &lt;code code="862749367"/&gt;
       &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
         &lt;high value="2011"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>

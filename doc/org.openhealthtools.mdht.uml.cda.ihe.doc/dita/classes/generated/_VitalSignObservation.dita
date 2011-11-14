@@ -50,8 +50,8 @@ constraints from CCD.</p>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)
 <ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
 <li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</codeblock></li></ul></li>
-<li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
-<li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
+<li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)<ul><li>UNIMPLEMENTABLE</li></ul></li>
 <li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL NOT</b> contain referenceRange / observationRange / code, as this attribute is not used by the HL7 Clinical Statement or Lab Committee models. (CONF-420)<ul><li><codeblock>[OCL]: self.referenceRange-&gt;forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-421)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
@@ -62,43 +62,12 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ihe::VitalSignObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.4.13.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-408</entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>6.3.4.22.3</entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
-<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-411</entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-409</entry><entry> </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>6.3.4.22.5</entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>6.3.4.22.6</entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-410</entry><entry> completed</entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>6.3.4.22.7</entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 1.3.6.1.4.1.19376.1.5.3.1.4.13.2</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PQ</entry><entry>6.3.4.22.4</entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.31"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-  <id root="3565782"/>
+  <id root="1079599911"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -107,11 +76,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   </effectiveTime>
   <interpretationCode code="Value"/>
   <methodCode code="Value"/>
-  <targetSiteCode code="237001224"/>
+  <targetSiteCode code="323667547"/>
 </observation>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Vital Sign Observation</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.2</tt>]</p>
 </body>
 </topic>
