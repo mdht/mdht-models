@@ -84,11 +84,11 @@ public interface ExternalReference extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0
+	 * self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0'"
 	 * @generated
 	 */
 	boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,

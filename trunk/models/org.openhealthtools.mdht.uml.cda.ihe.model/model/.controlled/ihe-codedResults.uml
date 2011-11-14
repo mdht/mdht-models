@@ -75,7 +75,7 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>the reference/externalDocument/text is present to provide a link to the original document</body>
-        <body>self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0</body>
+        <body>self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_hBLMcRj6EeCf9aMNaCAtDQ">
