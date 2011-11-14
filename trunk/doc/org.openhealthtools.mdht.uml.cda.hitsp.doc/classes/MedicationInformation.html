@@ -51,17 +51,17 @@ vocabulary</li>
 
 <li class="li">If the code for the generic product is unknown, the code and codeSystem attributes <strong class="ph b">MAY</strong> be omitted (C83-[DE-8.13-CDA-2])</li>
 
-<li class="li">The coded product name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic (C154-[DE-8.13-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'</pre>
+<li class="li">The coded product name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic (C154-[DE-8.13-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic (C154-[DE-8.13-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'</pre>
+<li class="li">When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Drug Class Value Set, version: 20081218, Dynamic (C154-[DE-8.13-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">When only the medication ingredient name is know, the coded product name <strong class="ph b">MAY</strong> be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic (C154-[DE-8.13-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'</pre>
+<li class="li">When only the medication ingredient name is know, the coded product name <strong class="ph b">MAY</strong> be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic (C154-[DE-8.13-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'</pre>
 </li>
 </ul>
 </li>
@@ -74,7 +74,7 @@ trademarked entity from a controlled vocabulary</li>
 </ul>
 </li>
 
-<li class="li">The brand name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic (C154-[DE-8.14-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'</pre>
+<li class="li">The brand name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic (C154-[DE-8.14-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'</pre>
 </li>
 </ul>
 </li>
@@ -108,7 +108,13 @@ the text associated with the coded concept</li>
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.53"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.2"/&gt;
+  &lt;id root="1190228740"/&gt;
+&lt;/manufacturedproduct&gt;</pre>
 
 </div>
 

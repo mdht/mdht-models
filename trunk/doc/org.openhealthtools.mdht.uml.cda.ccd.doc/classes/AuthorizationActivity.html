@@ -41,13 +41,31 @@ Authorizations are represented using an act subordinate to the policy or program
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-70)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-72)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-71)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-73), such that
+</li>
+
+<li class="li">The value for Act / entryRelationship / @typeCode in an authorization activity <strong class="ph b">SHALL</strong> be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC (CONF-74)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship.typeCode-&gt;exists( tc : vocab::x_ActRelationshipEntryRelationship | tc = vocab::x_ActRelationshipEntryRelationship::SUBJ)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The target of an authorization activity with Act / entryRelationship / @typeCode="SUBJ" <strong class="ph b">SHALL</strong> be a clinical statement with moodCode = "PRMS" (Promise) (CONF-75)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(act.moodCode = vocab::x_DocumentActMood::PRMS) or  self.entryRelationship-&gt;forAll(encounter.moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.entryRelationship-&gt;forAll(observation.moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.entryRelationship-&gt;forAll(observationMedia.moodCode = vocab::ActMood::PRMS) or self.entryRelationship-&gt;forAll(organizer.moodCode = vocab::ActMood::PRMS) or self.entryRelationship-&gt;forAll(procedure.moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.entryRelationship-&gt;forAll(regionOfInterest.moodCode = vocab::ActMood::PRMS) or self.entryRelationship-&gt;forAll(substanceAdministration.moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.entryRelationship-&gt;forAll(supply.moodCode = vocab::x_DocumentSubstanceMood::PRMS)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The target of an authorization activity <strong class="ph b">MAY</strong> contain one or more performer, to indicate the providers that have been authorized to provide treatment (CONF-76)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(not act.performer-&gt;isEmpty() ) or  self.entryRelationship-&gt;forAll(not encounter.performer-&gt;isEmpty()) or self.entryRelationship-&gt;forAll(not observation.performer-&gt;isEmpty()) or  self.entryRelationship-&gt;forAll(not observationMedia.performer-&gt;isEmpty()) or self.entryRelationship-&gt;forAll(not organizer.performer-&gt;isEmpty()) or self.entryRelationship-&gt;forAll(not procedure.performer-&gt;isEmpty()) or  self.entryRelationship-&gt;forAll(not regionOfInterest.performer-&gt;isEmpty()) or self.entryRelationship-&gt;forAll(not substanceAdministration.performer-&gt;isEmpty()) or  self.entryRelationship-&gt;forAll(not supply.performer-&gt;isEmpty())</pre>
+</li>
+</ul>
 </li>
 
 </ol>
@@ -62,8 +80,8 @@ Authorizations are represented using an act subordinate to the policy or program
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.19"/&gt;
-  &lt;id root="1069178672"/&gt;
-  &lt;code code="321759196"/&gt;
+  &lt;id root="2081926134"/&gt;
+  &lt;code code="1590166361"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;

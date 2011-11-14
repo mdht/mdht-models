@@ -56,7 +56,10 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-285, CONF-286)
 </li>
 
-<li class="li">A reaction observation <strong class="ph b">MAY</strong> contain one or more reation interventions. (CONF-280)</li>
+<li class="li">A reaction observation <strong class="ph b">MAY</strong> contain one or more reation interventions. (CONF-280)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention <strong class="ph b">SHALL</strong> be "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-296)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</pre>
 </li>
@@ -80,8 +83,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-  &lt;id root="235881650"/&gt;
-  &lt;code code="1295842240"/&gt;
+  &lt;id root="2020290277"/&gt;
+  &lt;code code="2144010405"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
@@ -90,8 +93,8 @@
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-      &lt;id root="1791544194"/&gt;
-      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+      &lt;id root="1574202514"/&gt;
+      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;

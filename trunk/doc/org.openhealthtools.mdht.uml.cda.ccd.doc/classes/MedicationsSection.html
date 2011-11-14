@@ -52,7 +52,9 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-302)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 </ol>
 </li>
 
@@ -77,7 +79,9 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 </ol>
 
@@ -91,10 +95,36 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.8"/&gt;
-  &lt;id root="1917380016"/&gt;
+  &lt;id root="1394694804"/&gt;
   &lt;code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/&gt;
   &lt;title/&gt;
   &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+      &lt;id root="2065056780"/&gt;
+      &lt;code code="759423299"/&gt;
+      &lt;text/&gt;
+      &lt;effectiveTime value="20111114"/&gt;
+      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+      &lt;consumable/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;supply/&gt;
+  &lt;/entry&gt;
 &lt;/section&gt;</pre>
 
 </div>

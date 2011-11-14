@@ -162,8 +162,7 @@ may contain other information (take with food, et cetera).</li></ul></li>
 <li>Contains exactly one [1..1] <xref href="../SupplyEntry.dita">Supply Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.3</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)<ul><li><codeblock>[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)<ul><li><codeblock>[OCL]: not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul><li><codeblock>[OCL]: self.getClinicalDocument().authorization-&gt;exists(auth : cda::Authorization | 
-   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul><li><codeblock>[OCL]: self.getClinicalDocument().authorization-&gt;size() &gt; 0 and self.getClinicalDocument().authorization.consent-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-315)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
 or not self.getSection().informant-&gt;isEmpty()
 or not self.getClinicalDocument().informant-&gt;isEmpty()
@@ -212,25 +211,6 @@ moodCode attribute of EVN.<ul><li>The prescription activity may have a &lt;seque
 value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
 prescription.</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</codeblock></li></ul></li>
 </ol>
-
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.1.24"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-  <id root="243384677"/>
-  <code code="1111999968"/>
-  <statusCode code="completed"/>
-  <effectiveTime value="20110830"/>
-  <routeCode code="Value"/>
-  <approachSiteCode code="267251964"/>
-  <doseQuantity/>
-  <rateQuantity/>
-  <maxDoseQuantity/>
-  <consumable/>
-</substanceadministration>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Medication</ph></p>
-<p id="shortdesc">[SubstanceAdministration: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>]</p>
+<codeblock id="example"><![CDATA[]]></codeblock>
 </body>
 </topic>

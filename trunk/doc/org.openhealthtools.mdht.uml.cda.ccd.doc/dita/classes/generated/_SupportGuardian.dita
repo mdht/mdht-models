@@ -17,11 +17,9 @@
 <li><b>SHALL</b> conform to <xref href="../Support.dita">Support</xref></li>
 <li></li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Support Guardian</ph></p>
-<p id="shortdesc">[Guardian: templateId <tt>null</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<guardian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="657057686"/>
+</guardian>]]></codeblock>
 </body>
 </topic>

@@ -39,10 +39,10 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10157-6" </tt><em class="ph i">History of family member diseases</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10157-6" </tt><em class="ph i">History of family member diseases</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-185, CONF-186)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-187)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
@@ -54,11 +54,19 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'family history'.</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'family history'. (CONF-188)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li">Family History Section <strong class="ph b">SHOULD</strong> include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which <strong class="ph b">MAY</strong> be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23)</li>
+<li class="li">Family History Section <strong class="ph b">SHOULD</strong> include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which <strong class="ph b">MAY</strong> be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23) (CONF-184)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entry.observation-&gt;exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer-&gt;exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">The family history section <strong class="ph b">SHALL NOT</strong> contain Section / subject.</li>
+<li class="li">The family history section <strong class="ph b">SHALL NOT</strong> contain Section / subject. (CONF-189)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
 
 </ol>
 
@@ -72,10 +80,25 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.4"/&gt;
-  &lt;id root="1212364277"/&gt;
+  &lt;id root="1346176078"/&gt;
   &lt;code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/&gt;
   &lt;title/&gt;
   &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.23"/&gt;
+      &lt;id root="1627039708"/&gt;
+      &lt;code code="1421753572"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+    &lt;/organizer&gt;
+  &lt;/entry&gt;
 &lt;/section&gt;</pre>
 
 </div>

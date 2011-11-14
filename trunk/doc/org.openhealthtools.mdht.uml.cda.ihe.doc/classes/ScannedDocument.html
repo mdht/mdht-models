@@ -194,7 +194,9 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: If the human-readable language of the scanned content is different than that of the wrapper (specified in ClinicalDocument/languageCode), then ClinicalDocument/component/nonXMLBody/languageCode shall be present. Attribute code@code shall be present. Attribute code@codeSystem shall be IETF (Internet Engineering Task Force) RFC 3066 in accordance with the HL7 CDA R2 documentation.</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: If the human-readable language of the scanned content is different than that of the wrapper (specified in ClinicalDocument/languageCode), then ClinicalDocument/component/nonXMLBody/languageCode shall be present. Attribute code@code shall be present. Attribute code@codeSystem shall be IETF (Internet Engineering Task Force) RFC 3066 in accordance with the HL7 CDA R2 documentation.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The component/nonXMLBody/text element is present and encoded using xs:base64Binary encoding. Its #CDATA will contain the scanned content.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component.nonXMLBody.text.oclIsUndefined()</pre>
 </li>
@@ -222,7 +224,28 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.2.20"/&gt;
+  &lt;id root="172780035"/&gt;
+  &lt;code code="Value"/&gt;
+  &lt;title/&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="Value"/&gt;
+  &lt;languageCode/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component/&gt;
+&lt;/ClinicalDocument&gt;</pre>
 
 </div>
 

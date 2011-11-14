@@ -24,11 +24,15 @@ marketed (e.g., prescription, over the counter drug)</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.19 Medication Type</tt><b> STATIC</b> 1 (C83-[DE-8.19-CDA-5], C154-[DE-8.19-1])
 </li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Medication Type</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.3.88.11.83.8.1</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.3.88.11.83.8.1"/>
+  <id root="595750243"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</observation>]]></codeblock>
 </body>
 </topic>

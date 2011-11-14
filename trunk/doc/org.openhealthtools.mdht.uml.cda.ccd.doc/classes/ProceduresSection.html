@@ -51,8 +51,13 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-422)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ol class="ol" type="i">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+<ol class="ol" type="i">
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-419)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entry-&gt;select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 </ol>
@@ -70,7 +75,7 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.12"/&gt;
-  &lt;id root="239443064"/&gt;
+  &lt;id root="1038411927"/&gt;
   &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/&gt;
   &lt;title/&gt;
   &lt;text/&gt;

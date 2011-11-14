@@ -57,11 +57,11 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-39, CONF-40)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-43, CONF-45, CONF-46), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP (has component)</em></li>
 
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../PolicyActivity.html">Policy Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.26</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../PayerEntry.html">Payer Entry</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.18</tt>)</li>
 </ol>
 </li>
 
@@ -81,6 +81,152 @@
 </ul>
 </li>
 
+<li class="li">Information for payment providers <strong class="ph b">SHALL</strong> be recorded as a policy act inside the coverage act.</li>
+
+<li class="li">All Insurance Provider modules <strong class="ph b">SHALL</strong> declare conformance to the IHE Payer Entry by including a &lt;templateID&gt; element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.18<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;exists(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The id/@root attribute of a Payer Entry <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority. Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of the same group or contract number<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | not a.id.root-&gt;isEmpty())</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The code/@code element <strong class="ph b">SHOULD</strong> be present in a Payer Entry and <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.3221.5.2, Health Insurance Type Value Set, 20081218, STATIC<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.6.255.1336' and (a.code.code='12' or a.code.code='13' or a.code.code='14' or a.code.code='15' or a.code.code='16' or a.code.code='41' or a.code.code='42' or a.code.code='43' or a.code.code='47' or a.code.code='AP' or a.code.code='C1' or a.code.code='CO' or a.code.code='CP' or a.code.code='D' or a.code.code='DB' or a.code.code='EP' or a.code.code='FF' or a.code.code='GP' or a.code.code='HM' or a.code.code='HN' or a.code.code='HS' or a.code.code='IN' or a.code.code='IP' or a.code.code='LC' or a.code.code='LD' or a.code.code='LI' or a.code.code='LT' or a.code.code='MA' or a.code.code='MB' or a.code.code='MC' or a.code.code='MH' or a.code.code='MI' or a.code.code='MP' or a.code.code='OT' or a.code.code='PE' or a.code.code='PL' or a.code.code='PP' or a.code.code='PR' or a.code.code='PS' or a.code.code='QM' or a.code.code='RP' or a.code.code='SP' or a.code.code='TF' or a.code.code='WC' or a.code.code='WU'))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">performer/@typeCode='PRF'/assignedEntity <strong class="ph b">SHALL</strong> be present to record Payer Information/Health Insurance Information<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">performer/@typeCode='PRF'/assignedEntity/id elements <strong class="ph b">MAY</strong> be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.
+The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">MAY</strong> be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The state part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">The date when the plan began covering the member <strong class="ph b">SHOULD</strong> be recorded in the &lt;low&gt; element of the &lt;time&gt; element beneath the participant/@typeCode='COV' element<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The date when the plan stops covering the member <strong class="ph b">SHOULD</strong> be recorded in the &lt;high&gt; element of the &lt;time&gt; element beneath the participant/@typeCode='COV' element<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">participant/@typeCode='COV'/participantRole/@classCode='PAT' <strong class="ph b">SHALL</strong> be present to record Patient information.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The member identifier number <strong class="ph b">SHALL</strong> be recorded in the extension attribute of the &lt;id&gt; element found in the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The root attribute of a participant/@typeCode='COV'/participantRole/@classCode='PAT'/id element <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority</li>
+
+<li class="li">Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of a member identifier from the same health plan</li>
+
+<li class="li">The relationship to the subscriber <strong class="ph b">SHALL</strong> be present and <strong class="ph b">SHALL</strong> be recorded in the &lt;code&gt; element underneath the &lt;participantRole&gt; element recording the member information<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The Patient Relationship to Subscriber <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.18877, Coverage Role Type Value, V3NE08, STATIC<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.5.111' and (par.participantRole.code.code = 'FAMDEP' or par.participantRole.code.code='HANDIC' or par.participantRole.code.code ='INJ' or par.participantRole.code.code='SELF' or par.participantRole.code.code='SPON' or par.participantRole.code.code ='STUD' or par.participantRole.code.code='FSTUD' or par.participantRole.code.code='PSTUD')))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">If the member name as recorded by the health plan differs from the patient name as recorded in the registration/medication summary (e.g., due to marriage or for other reasons), then the member name <strong class="ph b">SHALL</strong> be recorded in the &lt;name&gt; element of the &lt;playingEntity&gt; element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth <strong class="ph b">SHALL</strong> be recorded in the &lt;sdtc:birthTime&gt; element of the &lt;playingEntity&gt; element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element</li>
+
+<li class="li">The &lt;participant/@typeCode='HLD'&gt; element <strong class="ph b">SHOULD</strong> be present to record Subscriber Information.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">When the Subscriber is the patient, the &lt;participant/@typeCode='HLD'&gt; element describing the subscriber <strong class="ph b">SHALL NOT</strong> be present. This information will be recorded instead in the data elements used to record member information</li>
+
+<li class="li">The participant/@typeCode='HLD'/participantRole/id element <strong class="ph b">SHALL</strong> be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The root attribute <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority. Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of a subscriber identifier from the same health plan<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be present to record the Subscriber Address.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The state part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The postal code part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">The subscriber date of birth <strong class="ph b">SHALL</strong> be recorded in the &lt;sdtc:birthTime&gt; element of the &lt;playingEntity&gt; element beneath the &lt;performer/@typeCode='HLD'/participantRole&gt; element.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: performer/assignedEntity/code element is used to denote the financial Responsibility Party Type.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">performer/assignedEntity/code/@code attribute <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.10416, Financially Responsible Party Type Value Set, V3NE08, STATIC<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.5.110'))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">When the code of the encompassing act is PP, the code attribute value <strong class="ph b">SHALL</strong> be set to GUAR or PAT to represent a guarantor or self-paying patient respectively</li>
+
+<li class="li">The code attribute <strong class="ph b">SHALL</strong> be set to PAYOR when the code of the encompassing act is other than PP</li>
+
+<li class="li">performer/assignedEntity/addr <strong class="ph b">SHOULD</strong> be present to record Financial Responsibility Party Address<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))-&gt;forAll(a : cda::Act | a.performer-&gt;exists(per : cda::Performer2 | per.assignedEntity.addr-&gt;size() &gt; 0))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The state part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The postal code part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
 </ol>
 
 <p class="p"> </p>
@@ -94,7 +240,7 @@
   &lt;templateId root="2.16.840.1.113883.10.20.1.20"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.17"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.5"/&gt;
-  &lt;id root="301971587"/&gt;
+  &lt;id root="2088071209"/&gt;
   &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;

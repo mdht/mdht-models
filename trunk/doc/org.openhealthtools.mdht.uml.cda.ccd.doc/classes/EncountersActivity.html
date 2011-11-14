@@ -37,19 +37,19 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ENC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ENC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-459)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-460)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-461)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.13955 EncounterCode</tt><strong class="ph b"> STATIC</strong>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.13955 EncounterCode</tt><strong class="ph b"> STATIC</strong> (CONF-462, CONF-463)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-464)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
@@ -66,19 +66,30 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt> (CONF-471), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterLocation.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.45]">Encounter Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.45</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</li>
+<li class="li"><strong class="ph b">MAY</strong> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] performer, used to define the practioners involved in an encounter</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] performer, used to define the practioners involved in an encounter<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;size() &gt;= 0</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</li>
+<li class="li"><strong class="ph b">MAY</strong> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer.assignedEntity.code-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information (CONF-470)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 </ol>
 
@@ -92,12 +103,26 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.21"/&gt;
-  &lt;id root="12691828"/&gt;
-  &lt;code code="1756286772"/&gt;
+  &lt;id root="1766240225"/&gt;
+  &lt;code code="1528505427"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;id root="1009967752"/&gt;
+      &lt;code code="2026321176"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
 &lt;/encounter&gt;</pre>
 
 </div>

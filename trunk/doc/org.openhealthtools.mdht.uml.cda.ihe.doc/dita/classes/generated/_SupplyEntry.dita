@@ -26,22 +26,21 @@ prescription can be filled.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationFullfillmentInstructions.dita">Medication Fullfillment Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3.1</tt>)</li></ol></li>
-<li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.</li>
-<li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this
-information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</li>
-<li><b>SHALL</b> satisfy: The &lt;assignedAuthor&gt; element shall be present in author, and identifies the author.</li>
+<li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.<ul><li><codeblock>[OCL]: (self.classCode=vocab::ActClassSupply::SPLY and self.moodCode=vocab::x_DocumentSubstanceMood::INT) implies self.author-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.<ul><li><codeblock>[OCL]: self.author.time-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;assignedAuthor&gt; element shall be present in author, and identifies the author.<ul><li><codeblock>[OCL]: self.author.assignedAuthor-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present in assignedAuthor<ul><li>These identifiers identify the author of the act.
 When the author is the prescribing physician they may include local identifiers or regional
-identifiers necessary for prescribing.</li></ul></li>
+identifiers necessary for prescribing.</li></ul><ul><li><codeblock>[OCL]: self.author.assignedAuthor.id-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present in assignedAuthor. This element
-shall contain a &lt;name&gt; element to identify the prescriber or their organization.</li>
+shall contain a &lt;name&gt; element to identify the prescriber or their organization.<ul><li><codeblock>[OCL]: (self.author.assignedAuthor.assignedPerson-&gt;size() &gt; 0 and self.author.assignedAuthor.assignedPerson.name-&gt;size() &gt; 0) or (self.author.assignedAuthor.representedOrganization-&gt;size() &gt; 0 and self.author.assignedAuthor.representedOrganization.name-&gt;size() &gt; 0)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The &lt;time&gt; element shall be present in performer to indicate when the prescription was filled
-(moodCode='EVN'). If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</li>
+(moodCode='EVN'). If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The &lt;time&gt; element should be present to indicate when the prescription is intended to be filled
-(moodCode='INT').</li>
-<li><b>SHALL</b> satisfy: The performer/assignedEntity element shall be present, and identifies the filler of the prescription.</li>
-<li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present. These identify the performer.</li>
-<li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present. This element shall contain a &lt;name&gt; element to identify the filler or their organization.</li>
+(moodCode='INT').<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The performer/assignedEntity element shall be present, and identifies the filler of the prescription.<ul><li><codeblock>[OCL]: self.performer.assignedEntity-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present. These identify the performer.<ul><li><codeblock>[OCL]: self.performer.assignedEntity.id-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present. This element shall contain a &lt;name&gt; element to identify the filler or their organization.<ul><li><codeblock>[OCL]: (self.performer.assignedEntity.assignedPerson-&gt;size() &gt; 0 and self.performer.assignedEntity.assignedPerson.name-&gt;size() &gt; 0 ) or (self.performer.assignedEntity.representedOrganization-&gt;size() &gt; 0 and self.performer.assignedEntity.representedOrganization.name-&gt;size() &gt; 0)</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupplyActivity.html">CCD Supply Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.34</tt>)</li>
@@ -85,29 +84,45 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)<ul><li><codeblock>[OCL]: not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)</codeblock></li></ul></li>
-<li>Supply / participant / participantRole / id <b>SHOULD</b> be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance.</li>
-<li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.</li>
-<li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this
-information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</li>
-<li><b>SHALL</b> satisfy: The &lt;assignedAuthor&gt; element shall be present in author, and identifies the author.</li>
+<li>Supply / participant / participantRole / id <b>SHOULD</b> be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance. (CONF-370)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.<ul><li><codeblock>[OCL]: (self.classCode=vocab::ActClassSupply::SPLY and self.moodCode=vocab::x_DocumentSubstanceMood::INT) implies self.author-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.<ul><li><codeblock>[OCL]: self.author.time-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;assignedAuthor&gt; element shall be present in author, and identifies the author.<ul><li><codeblock>[OCL]: self.author.assignedAuthor-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present in assignedAuthor<ul><li>These identifiers identify the author of the act.
 When the author is the prescribing physician they may include local identifiers or regional
-identifiers necessary for prescribing.</li></ul></li>
+identifiers necessary for prescribing.</li></ul><ul><li><codeblock>[OCL]: self.author.assignedAuthor.id-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present in assignedAuthor. This element
-shall contain a &lt;name&gt; element to identify the prescriber or their organization.</li>
+shall contain a &lt;name&gt; element to identify the prescriber or their organization.<ul><li><codeblock>[OCL]: (self.author.assignedAuthor.assignedPerson-&gt;size() &gt; 0 and self.author.assignedAuthor.assignedPerson.name-&gt;size() &gt; 0) or (self.author.assignedAuthor.representedOrganization-&gt;size() &gt; 0 and self.author.assignedAuthor.representedOrganization.name-&gt;size() &gt; 0)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The &lt;time&gt; element shall be present in performer to indicate when the prescription was filled
-(moodCode='EVN'). If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</li>
+(moodCode='EVN'). If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The &lt;time&gt; element should be present to indicate when the prescription is intended to be filled
-(moodCode='INT').</li>
-<li><b>SHALL</b> satisfy: The performer/assignedEntity element shall be present, and identifies the filler of the prescription.</li>
-<li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present. These identify the performer.</li>
-<li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present. This element shall contain a &lt;name&gt; element to identify the filler or their organization.</li>
+(moodCode='INT').<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The performer/assignedEntity element shall be present, and identifies the filler of the prescription.<ul><li><codeblock>[OCL]: self.performer.assignedEntity-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present. These identify the performer.<ul><li><codeblock>[OCL]: self.performer.assignedEntity.id-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present. This element shall contain a &lt;name&gt; element to identify the filler or their organization.<ul><li><codeblock>[OCL]: (self.performer.assignedEntity.assignedPerson-&gt;size() &gt; 0 and self.performer.assignedEntity.assignedPerson.name-&gt;size() &gt; 0 ) or (self.performer.assignedEntity.representedOrganization-&gt;size() &gt; 0 and self.performer.assignedEntity.representedOrganization.name-&gt;size() &gt; 0)</codeblock></li></ul></li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Supply Entry</ph></p>
-<p id="shortdesc">[Supply: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.3</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.34"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+  <id root="2025129823"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20111114"/>
+  <repeatNumber/>
+  <quantity/>
+  <entryRelationship>
+    <act moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.1.43"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+      <id root="1386658146"/>
+      <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+</supply>]]></codeblock>
 </body>
 </topic>

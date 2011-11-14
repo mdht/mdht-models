@@ -51,7 +51,10 @@
 
 <li class="li">value/@representation element of the observationMedia element <strong class="ph b">SHALL</strong> be B64, and the data for the image <strong class="ph b">SHALL</strong> be included within the value element</li>
 
-<li class="li">RelatedSubject/Code (Family Member Relationship to Patient) <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.19579, Family Member Value Set, STATIC, V3NE08</li>
+<li class="li">subject/RelatedSubject/Code (Family Member Relationship to Patient) <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.19579, Family Member Value Set, STATIC, V3NE08<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">One RelatedSubject/subject/sdtc:id element <strong class="ph b">SHALL</strong> be present.<ul class="ul"><li class="li">Each family member in a family history must be identified to allow for reconciliation of updated family histories when exchanged between providers</li>
 </ul>
@@ -59,9 +62,15 @@
 
 <li class="li">RelatedSubject/subject/name <strong class="ph b">SHOULD</strong> be present.<ul class="ul"><li class="li">The family member name need not be the actual name of the family member. It may be a string (such as aunt1 or aunt2) to help the patient and providers distinguish between different family members with the same relationship to the patient</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.subject.name-&gt;size() &gt; 0</pre>
+</li>
+</ul>
 </li>
 
-<li class="li">RelatedSubject/subject/administrationGenderCode <strong class="ph b">SHALL</strong> be code as 2.16.840.1.113883.1.11.1, Adminstrative Gender Value Set, STATIC, 20081218</li>
+<li class="li">RelatedSubject/subject/administrativeGenderCode <strong class="ph b">SHALL</strong> be code as 2.16.840.1.113883.1.11.1, Adminstrative Gender Value Set, STATIC, 20081218<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.5.1' and (self.subject.relatedSubject.subject.administrativeGenderCode.code = 'F' or self.subject.relatedSubject.subject.administrativeGenderCode.code='M' or self.subject.relatedSubject.subject.administrativeGenderCode.code='UN')</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The race of the family member, when recorded, <strong class="ph b">SHALL</strong> appear in an RelatedSubject/subject/sdtc:raceCode element.</li>
 
@@ -71,7 +80,10 @@
 
 <li class="li">Ethnicity <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.15836, Ethnicity Value Set, Dynamic</li>
 
-<li class="li">Family History Condition data elements <strong class="ph b">SHALL</strong> declare conformance to the IHE Family History Observation entry by including a &lt;templateID&gt; element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.13.3</li>
+<li class="li">Family History Condition data elements <strong class="ph b">SHALL</strong> declare conformance to the IHE Family History Observation entry by including a &lt;templateID&gt; element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.13.3<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ihe::FamilyHistoryObservation))</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: The age of onset of disease or age at death of a family member should be computable from the family member date of birth and the effective time of the observation of the disease or the death. When that data are not available, the age of the patient at the time of the observation shall be recorded within a condition or test result observation using the CCD Age Observation</li>
 
@@ -103,7 +115,33 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.23"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.18"/&gt;
+  &lt;id root="45610000"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;component&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
+      &lt;id root="1510586575"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+&lt;/organizer&gt;</pre>
 
 </div>
 

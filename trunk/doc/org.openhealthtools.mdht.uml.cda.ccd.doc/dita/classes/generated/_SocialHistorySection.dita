@@ -21,72 +21,67 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-235)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'.</li>
-<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>A patient’s race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race)</li>
-<li>A patient’s ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations.</li>
-<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity).</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations (CONF-250)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.maritalStatusCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations (CONF-251)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.religiousAffiliationCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>A patients race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations (CONF-252)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.raceCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.raceCode.codeSystem = '2.16.840.1.113883.5.104' )</codeblock></li></ul></li>
+<li>A patients ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations. (CONF-254)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.ethnicGroupCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = '2.16.840.1.113883.5.50' )</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-235)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'.</li>
-<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>A patient’s race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations</li>
-<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race)</li>
-<li>A patient’s ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations.</li>
-<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity).</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>Marital status <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <b>MAY</b> be represented as social history observations (CONF-250)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.maritalStatusCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>Religious affiliation <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <b>MAY</b> be represented as social history observations (CONF-251)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.religiousAffiliationCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>A patients race <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <b>MAY</b> be represented as social history observations (CONF-252)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.raceCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.raceCode.codeSystem = '2.16.840.1.113883.5.104' )</codeblock></li></ul></li>
+<li>A patients ethnicity <b>SHOULD</b> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <b>MAY</b> be represented as social history observations. (CONF-254)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.ethnicGroupCode.hasContent() )-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <b>MAY</b> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)<ul><li><codeblock>[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = '2.16.840.1.113883.5.50' )</codeblock></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.1.15]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 29762-2</entry></row> 
-<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.15</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>socialHistoryObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.1.33]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.15"/>
-  <id root="597512114"/>
+  <id root="199682421"/>
   <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
   <title/>
   <text/>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.33"/>
+      <id root="3274948"/>
+      <code code="546177710"/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
 </section>]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Social History Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.15</tt>]</p>
 </body>
 </topic>

@@ -16,19 +16,6 @@
 <ol id="aggregate">
 <li></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ihe::LanguageCommunication</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::languagecommunication[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.2.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>modeCode</entry><entry>modeCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>preferenceInd</entry><entry>preferenceInd</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>BL</entry><entry></entry><entry> </entry></row> 
-<row><entry>proficiencyLevelCode</entry><entry>proficiencyLevelCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 1.3.6.1.4.1.19376.1.5.3.1.2.1</entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[Unable to create XML Snippet]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Language Communication</ph></p>
-<p id="shortdesc">[LanguageCommunication: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.2.1</tt>]</p>
 </body>
 </topic>

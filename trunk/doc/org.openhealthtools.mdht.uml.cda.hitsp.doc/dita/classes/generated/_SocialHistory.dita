@@ -55,28 +55,37 @@ frequency.
 363908000 Drug Use CD  N/A
 228272008 Other Social History ANY N/A
 </p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryStatusObservation.dita">Social History Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.56</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
-<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017</li>
-<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression</li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information</li>
-<li><b>SHOULD</b> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation</li>
+<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</codeblock></li></ul></li>
+<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>SHOULD</b> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation<ul><li><codeblock>[OCL]: self.repeatNumber-&gt;size() = 0</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The &lt;interpretationCode&gt; element should not be used in
-a social history observation</li>
+a social history observation<ul><li><codeblock>[OCL]: self.interpretationCode-&gt;size() = 0</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The &lt;methodCode&gt; element should not be used in
-a social history observation</li>
-<li><b>SHOULD</b> satisfy: The &lt;targetSiteCode&gt; element should not be used in
-a social history observation</li>
+a social history observation<ul><li><codeblock>[OCL]: self.methodCode-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: The targetSiteCode element should not be used in
+a social history observation<ul><li><codeblock>[OCL]: self.targetSiteCode-&gt;size() = 0</codeblock></li></ul></li>
 </ol>
-
-<codeblock id="example"><![CDATA[]]></codeblock>
-<section id="changes">
-</section>
-<p><ph id="classformalname">Social History</ph></p>
-<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.33</tt>]</p>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+  <templateId root="2.16.840.1.113883.10.20.1.33"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+  <templateId root="2.16.840.1.113883.10.20.1.33"/>
+  <id root="497144448"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <text/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</observation>]]></codeblock>
 </body>
 </topic>

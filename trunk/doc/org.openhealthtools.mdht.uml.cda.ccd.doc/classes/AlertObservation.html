@@ -49,13 +49,13 @@
 <li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.4 AlertTypeCode</tt><strong class="ph b"> STATIC</strong> 20061017, where its data type is CE (CONF-267)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-270), such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-270, CONF-271), such that
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AlertStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.39]">Alert Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.39</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-281), such that
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST (is manifestation of)</em></li>
 
@@ -63,7 +63,9 @@
 </ol>
 </li>
 
-<li class="li">The absence of known allergies <strong class="ph b">SHOULD</strong> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)</li>
+<li class="li">The absence of known allergies <strong class="ph b">SHOULD</strong> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: An alert observation contains one or more sources of information. (CONF-269)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
 or not self.getSection().informant-&gt;isEmpty()
@@ -126,8 +128,8 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.18"/&gt;
-  &lt;id root="2028949508"/&gt;
-  &lt;code code="1343822157"/&gt;
+  &lt;id root="1903728321"/&gt;
+  &lt;code code="327604461"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
@@ -137,7 +139,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.39"/&gt;
-      &lt;id root="1091523892"/&gt;
+      &lt;id root="667506419"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;

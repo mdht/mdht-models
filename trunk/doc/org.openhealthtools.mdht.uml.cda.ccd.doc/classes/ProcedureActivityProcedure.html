@@ -39,13 +39,85 @@
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureActivity.html" title="[ClinicalStatement: templateId null]">Procedure Activity</a></li>
 
-<li class="li">contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
 
-<li class="li">contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <strong class="ph b">SHALL NOT</strong> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-443), such that
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+</li>
 
-<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>
+<ul class="ul"><li class="li">Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterLocation.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.45]">Encounter Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.45</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer2</strong></tt>, such that
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON (has reason)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.28]">Problem Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.28</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON (has reason)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemAct.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.27]">Problem Act</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.27</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP (has component)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.1.24]">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.49]">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
+</ol>
+</li>
+
+<li class="li">contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in Procedure / code. (CONF-435)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li">contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <strong class="ph b">SHALL NOT</strong> conflict with the site inherent in Procedure / code (CONF-436)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
 </ol>
 
@@ -57,15 +129,47 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.29"/&gt;
-  &lt;id root="892976096"/&gt;
-  &lt;code code="1732325389"/&gt;
-  &lt;statusCode code="completed"/&gt;
+  &lt;id root="590916549"/&gt;
+  &lt;code code="1565955854"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+      &lt;id root="1415320223"/&gt;
+      &lt;code code="1272092626"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation/&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;substanceAdministration/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act/&gt;
+  &lt;/entryRelationship&gt;
 &lt;/procedure&gt;</pre>
 
 </div>

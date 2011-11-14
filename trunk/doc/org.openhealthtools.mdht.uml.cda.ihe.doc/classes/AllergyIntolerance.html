@@ -91,34 +91,67 @@ case where a patient experiences an allergic reaction to an unknown substance.</
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The code /@code and code/@codeSystem attribute shall be present.</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The code/@displayName and code/@codeSystemName attributes should be present.</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: If &lt;value&gt; is coded, the code and codeSystem attributes must be present. If
-uncoded, all attributes other than xsi:type='CD' must be absent.</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the &lt;participant&gt; element may be present<ul class="ul"><li class="li">The substance that causes the allergy or intolerance may be specified in the &lt;participant&gt; element.</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The code /@code and code/@codeSystem attribute shall be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not (code.code.oclIsUndefined() or code.codeSystem.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: the participant/participantRole element may be present</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The code/@displayName and code/@codeSystemName attributes should be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not (code.displayName.oclIsUndefined() or code.codeSystemName.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: If &lt;value&gt; is coded, the code and codeSystem attributes must be present. If uncoded, all attributes other than xsi:type='CD' must be absent.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: The participant/participantRole/PlayingEntity element may be present</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the &lt;participant&gt; element may be present<ul class="ul"><li class="li">The substance that causes the allergy or intolerance may be specified in the &lt;participant&gt; element.</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;forAll(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the participant/participantRole element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole-&gt;one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: The participant/participantRole/PlayingEntity element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The participant/participantRole/playingEntity/code element shall be present. It may contain a code and codeSystem attribute to indicate
-the code for the substance causing the allergy or intolerance.</li>
+the code for the substance causing the allergy or intolerance.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity.code-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: participant/participantRole/playingEntity/code shall contain a originalText/reference element as reference to the
-original text in the narrative where the substance is named.</li>
+original text in the narrative where the substance is named.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity.code.originalText.reference-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The entryRelationship/@inversionInd for Severity Entry template <strong class="ph b">SHALL</strong> be 'true'</li>
 
@@ -138,14 +171,38 @@ original text in the narrative where the substance is named.</li>
   &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/&gt;
-  &lt;id root="1635817013"/&gt;
-  &lt;code code="1331590950"/&gt;
+  &lt;id root="2055171060"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/&gt;
   &lt;text/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="840816419"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act/&gt;
+  &lt;/entryRelationship&gt;
 &lt;/observation&gt;</pre>
 
 </div>
