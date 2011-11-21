@@ -408,6 +408,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerEntityPersonOrOrg/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerEntityPersonOrOrg/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryQuantityHasValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryQuantityHasValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryQuantityHasValue/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId/context"/>
@@ -419,6 +423,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryRepeatNumber">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryRepeatNumber/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryMedicationFullfillmentInstructions">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryMedicationFullfillmentInstructions/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryMedicationFullfillmentInstructions/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/getMedicationFullfillmentInstructions"/>
     </genClasses>

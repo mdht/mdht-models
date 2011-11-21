@@ -124,7 +124,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REACTION_OBSERVATION_REACTION_INTERVENTION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))";
+	protected static final String VALIDATE_REACTION_OBSERVATION_REACTION_INTERVENTION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(entry | entry.typeCode <> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReactionObservationReactionInterventionTypeCode(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Reaction Intervention Type Code</em>}' invariant operation.
@@ -140,7 +140,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))
+	 * self.entryRelationship->forAll(entry | entry.typeCode <> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )
 	 * @param reactionObservation The receiving '<em><b>Reaction Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

@@ -58,7 +58,7 @@ public class EncounterOperations extends EncounterEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')";
+	protected static final String VALIDATE_HITSP_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPEncounterAdmissionSourceValueSet(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounter Admission Source Value Set</em>}' invariant operation.
@@ -74,7 +74,7 @@ public class EncounterOperations extends EncounterEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')
+	 * self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )
 	 * @param encounter The receiving '<em><b>Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

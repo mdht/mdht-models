@@ -12,19 +12,19 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.3.88.11.83.6"/>
-      <details key="constraints.validation.error" value="AllergyDrugSensitivityTemplateId AllergyDrugSensitivityAdvereEventType AllergyDrugSensitivityAdvereEventTypeVocab AllergyDrugSensitivityAllergyProductTypeCode AllergyDrugSensitivityProductDetailParticipantRole AllergyDrugSensitivityProductDetailParticipantRoleClassCode AllergyDrugSensitivityProductDetailPlayingEntity AllergyDrugSensitivityProductDetailPlayingEntityClassCode AllergyDrugSensitivityProductDetailName AllergyDrugSensitivityAllergyProductFoodVocab AllergyDrugSensitivityAllergyProductMedClassVocab AllergyDrugSensitivityAllergyProductSpecificMedVocab AllergyDrugSensitivityReactionCodeVocab AllergyDrugSensitivitySeverityCodeVocab"/>
-      <details key="constraints.validation.warning" value="AllergyDrugSensitivityAdvereEventDate AllergyDrugSensitivityAllergyProduct AllergyDrugSensitivityProductCode AllergyDrugSensitivityReactionText AllergyDrugSensitivityReactionCode AllergyDrugSensitivitySeverityText AllergyDrugSensitivitySeverityCode"/>
+      <details key="constraints.validation.error" value="AllergyDrugSensitivityTemplateId AllergyDrugSensitivityAdverseEventType AllergyDrugSensitivityAdverseEventTypeVocab AllergyDrugSensitivityAllergyProductTypeCode AllergyDrugSensitivityProductDetailParticipantRole AllergyDrugSensitivityProductDetailParticipantRoleClassCode AllergyDrugSensitivityProductDetailPlayingEntity AllergyDrugSensitivityProductDetailPlayingEntityClassCode AllergyDrugSensitivityProductDetailName AllergyDrugSensitivityAllergyProductFoodVocab AllergyDrugSensitivityAllergyProductMedClassVocab AllergyDrugSensitivityAllergyProductSpecificMedVocab AllergyDrugSensitivityReactionCodeVocab AllergyDrugSensitivitySeverityCodeVocab"/>
+      <details key="constraints.validation.warning" value="AllergyDrugSensitivityAdverseEventDate AllergyDrugSensitivityAllergyProduct AllergyDrugSensitivityProductCode AllergyDrugSensitivityReactionText AllergyDrugSensitivityReactionCode AllergyDrugSensitivitySeverityText AllergyDrugSensitivitySeverityCode"/>
     </eAnnotations>
     <eAnnotations source="uml2.alias">
       <details key="Allergies and Drug Sensitivities"/>
       <details key="Allergy and Drug Sensitivity"/>
     </eAnnotations>
-    <eOperations name="AllergyDrugSensitivityAdvereEventDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyDrugSensitivityAdverseEventDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.effectiveTime.oclIsUndefined())"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  not obs.effectiveTime.oclIsUndefined())"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.effectiveTime.oclIsUndefined())"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  not obs.effectiveTime.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -41,12 +41,12 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyDrugSensitivityAdvereEventType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyDrugSensitivityAdverseEventType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined())"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined())"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined())"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -63,12 +63,12 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyDrugSensitivityAdvereEventTypeVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyDrugSensitivityAdverseEventTypeVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -87,10 +87,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityAllergyProduct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -109,10 +109,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityAllergyProductTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -131,10 +131,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityProductDetailParticipantRole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -154,10 +154,10 @@
     <eOperations name="AllergyDrugSensitivityProductDetailParticipantRoleClassCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -176,10 +176,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityProductDetailPlayingEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -199,10 +199,10 @@
     <eOperations name="AllergyDrugSensitivityProductDetailPlayingEntityClassCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -221,10 +221,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityProductDetailName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -243,10 +243,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityProductCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -265,10 +265,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityAllergyProductFoodVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -287,10 +287,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityAllergyProductMedClassVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -309,10 +309,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityAllergyProductSpecificMedVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="body" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
+        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -331,10 +331,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityReactionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.text.oclIsUndefined()))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.text.oclIsUndefined()))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -353,10 +353,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityReactionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined()))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined()))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -375,10 +375,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivityReactionCodeVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -397,10 +397,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivitySeverityText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.text.oclIsUndefined()))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.text.oclIsUndefined()))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -419,10 +419,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivitySeverityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined()))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined()))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -441,10 +441,10 @@
     </eOperations>
     <eOperations name="AllergyDrugSensitivitySeverityCodeVocab" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))"/>
+        <details key="body" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')&#xA;) )  )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))"/>
+        <details key="documentation" value="self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')&#xA;) )  )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1488,10 +1488,10 @@
     </eOperations>
     <eOperations name="ConditionConditionEntry" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hitsp::ConditionEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)"/>
+        <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hitsp::ConditionEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)"/>
+        <details key="documentation" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1510,12 +1510,12 @@
     </eOperations>
     <eOperations name="createConditionEntry" ordered="false" lowerBound="1" eType="#//ConditionEntry"/>
     <eOperations name="getConditionEntries" ordered="false" lowerBound="1" upperBound="-1"
-        eType="#//ConditionEntry">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProblemEntry">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::ConditionEntry)).oclAsType(hitsp::ConditionEntry)"/>
+        <details key="documentation" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry)).oclAsType(ihe::ProblemEntry)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::ConditionEntry)).oclAsType(hitsp::ConditionEntry)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry)).oclAsType(ihe::ProblemEntry)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
@@ -2397,10 +2397,10 @@
     </eAnnotations>
     <eOperations name="AdvanceDirectiveHasStartingTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.effectiveTime.low.hasContent()"/>
+        <details key="body" value="self.effectiveTime.low.hasContent()  or self.effectiveTime.low.isNullFlavorDefined()"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.effectiveTime.low.hasContent()"/>
+        <details key="documentation" value="self.effectiveTime.low.hasContent()  or self.effectiveTime.low.isNullFlavorDefined()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2419,10 +2419,10 @@
     </eOperations>
     <eOperations name="AdvanceDirectiveHasEndingTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.effectiveTime.high.hasContent()"/>
+        <details key="body" value="self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.effectiveTime.high.hasContent()"/>
+        <details key="documentation" value="self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2750,10 +2750,10 @@
     </eAnnotations>
     <eOperations name="HITSPEncounterAdmissionSourceValueSet" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')"/>
+        <details key="body" value="self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')"/>
+        <details key="documentation" value="self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

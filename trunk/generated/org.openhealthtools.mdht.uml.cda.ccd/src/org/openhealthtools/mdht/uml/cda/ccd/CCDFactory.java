@@ -660,6 +660,15 @@ public interface CCDFactory extends EFactory {
 	AdvanceDirectiveReference createAdvanceDirectiveReference();
 
 	/**
+	 * Returns a new object of class '<em>Family History Cause Of Death Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Cause Of Death Observation</em>'.
+	 * @generated
+	 */
+	FamilyHistoryCauseOfDeathObservation createFamilyHistoryCauseOfDeathObservation();
+
+	/**
 	 * Returns a new object of class '<em>Registry Delegate</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

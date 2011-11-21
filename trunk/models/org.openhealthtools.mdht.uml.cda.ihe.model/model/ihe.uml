@@ -2360,4 +2360,6 @@ patient's extremities.</body>
   <CDA:PropertyValidation xmi:id="_9GdagAYrEeGEVa6Nn2ESZg" base_Property="_0kjD0AYrEeGEVa6Nn2ESZg"/>
   <CDA:PropertyValidation xmi:id="_9vqIgAYrEeGEVa6Nn2ESZg" base_Property="_3sHRsAYrEeGEVa6Nn2ESZg"/>
   <CDA:ConstraintValidation xmi:id="_4exO8AYxEeG7pO1MXdunbA" base_Constraint="_qz-60FfmEeCQ8PeHNHg5Pw"/>
+  <CDA:AssociationValidation xmi:id="_8DTzkBEwEeGQTKMzurBNQw" severity="INFO"/>
+  <CDA:EntryRelationship xmi:id="_kA9bkBE1EeGQTKMzurBNQw" message="An entry relationship may be present to provide the fulfillment instructions. When present, this entry relationship shall contain a Medication Fulfillment Instructions entry." severity="INFO" base_Association="_FjPv4E8tEeCYjrG3z1gQrQ" typeCode="SUBJ"/>
 </xmi:XMI>

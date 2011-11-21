@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.openhealthtools.mdht.uml.cda.ccd.*;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
@@ -174,8 +175,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createAgeObservation();
 			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
 				return createProblemStatusObservation();
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
-				return createCauseOfDeathObservation();
 			case CCDPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
 			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
@@ -246,6 +245,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createAlertObservation();
 			case CCDPackage.ALERT_STATUS_OBSERVATION:
 				return createAlertStatusObservation();
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
 			case CCDPackage.ENCOUNTER_LOCATION:
 				return createEncounterLocation();
 			case CCDPackage.PRODUCT:
@@ -278,6 +279,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createComment();
 			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE:
 				return createAdvanceDirectiveReference();
+			case CCDPackage.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION:
+				return createFamilyHistoryCauseOfDeathObservation();
 			case CCDPackage.CCD_REGISTRY_DELEGATE:
 				return createCCDRegistryDelegate();
 			default:
@@ -983,6 +986,16 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
 		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
 		return advanceDirectiveReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryCauseOfDeathObservation createFamilyHistoryCauseOfDeathObservation() {
+		FamilyHistoryCauseOfDeathObservationImpl familyHistoryCauseOfDeathObservation = new FamilyHistoryCauseOfDeathObservationImpl();
+		return familyHistoryCauseOfDeathObservation;
 	}
 
 	/**

@@ -19,6 +19,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ConditionOperations;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemConcernEntryImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -110,7 +111,7 @@ public class ConditionImpl extends ProblemConcernEntryImpl implements Condition 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ConditionEntry> getConditionEntries() {
+	public EList<ProblemEntry> getConditionEntries() {
 		return ConditionOperations.getConditionEntries(this);
 	}
 

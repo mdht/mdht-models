@@ -32,17 +32,17 @@
   <genPackages xsi:type="genmodel:GenPackage" prefix="HITSP" basePackage="org.openhealthtools.mdht.uml.cda"
       disposableProviderFactory="true" ecorePackage="hitsp.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.hitsp.operations">
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//AllergyDrugSensitivity">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventDate">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventDate/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventDate/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventDate">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventDate/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventDate/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventType">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventType/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventType/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventType/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventTypeVocab">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventTypeVocab/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdvereEventTypeVocab/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventTypeVocab">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventTypeVocab/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAdverseEventTypeVocab/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAllergyProduct">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AllergyDrugSensitivity/AllergyDrugSensitivityAllergyProduct/diagnostics"/>

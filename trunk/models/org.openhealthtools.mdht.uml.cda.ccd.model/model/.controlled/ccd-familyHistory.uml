@@ -52,11 +52,12 @@
   </uml:Class>
   <uml:Class xmi:id="_7tlrAGwWEd6q29qQGU-SBA" name="FamilyHistoryObservation">
     <ownedRule xmi:id="_Fb8_QMj2EeChgrgmBsw26A" name="hasSubject" constrainedElement="_7tlrAGwWEd6q29qQGU-SBA">
+      <ownedComment xmi:id="_p8ED8BB4EeG5fMLD4c6Mtg">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_H1is0Mj2EeChgrgmBsw26A">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>A family history observation not contained within a family history organizer SHALL contain exactly one subject participant, representing the family member who is the subject of the observation</body>
-        <body>self.subject->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6mWAQMj4EeChgrgmBsw26A" name="hasSpecialization" constrainedElement="_Fb8_QMj2EeChgrgmBsw26A">
@@ -82,7 +83,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>A subject participant SHALL contain exactly one RelatedSubject, representing the relationship of the subject to the patient</body>
-        <body>self.subject.relatedSubject->size() = 1</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SY-H8Mj5EeChgrgmBsw26A" name="relationshipValueCode" constrainedElement="_LVZ-kMj5EeChgrgmBsw26A">
@@ -90,7 +91,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for RelatedSubject / @classCode SHALL be &quot;PRS&quot; &quot;Personal relationship&quot; 2.16.840.1.113883.5.110 RoleClass STATIC</body>
-        <body>self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HNYuYMj7EeChgrgmBsw26A" name="hasRelatedSubjectCode" constrainedElement="_SY-H8Mj5EeChgrgmBsw26A">
@@ -98,7 +99,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>RelatedSubject SHALL contain exactly one RelatedSubject / code</body>
-        <body>self.subject.relatedSubject.code->size() = 1</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_KswYQMj7EeChgrgmBsw26A" name="relatedSubjectCodeValueSet" constrainedElement="_HNYuYMj7EeChgrgmBsw26A">
@@ -106,7 +107,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for &quot;RelatedSubject / code&quot; SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</body>
-        <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hw1icMj8EeChgrgmBsw26A" name="hasPedigreeGraph" constrainedElement="_KswYQMj7EeChgrgmBsw26A">
@@ -123,7 +124,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>RelatedSubject SHOULD contain exactly one RelatedSubject / subject</body>
-        <body>self.subject.relatedSubject.subject->size() = 1</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_smqcgMj8EeChgrgmBsw26A" name="hasGenderCode" constrainedElement="_pfG1sMj8EeChgrgmBsw26A">
@@ -131,7 +132,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>RelatedSubject / subject SHOULD contain exactly one RelatedSubject / subject / administrativeGenderCode.</body>
-        <body>self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1</body>
+        <body>not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GmHUMMkVEeChgrgmBsw26A" name="relatedSubjectBirthTime">
@@ -235,11 +236,6 @@
       <type xmi:type="uml:Class" href="ccd-problem.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOvwAMj1EeChgrgmBsw26A"/>
       <association href="../ccd.uml#_AOwXEMj1EeChgrgmBsw26A"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_9HXNoMnLEeCDOYZyQPaRHg" name="causeOfDeathObservation" type="_joG2YIHbEd6Ncrr6L3Ublw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OcK9UMnMEeCDOYZyQPaRHg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OcK9UcnMEeCDOYZyQPaRHg" value="1"/>
-      <association href="../ccd.uml#_9HXNosnLEeCDOYZyQPaRHg"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_9QFYgGwWEd6q29qQGU-SBA" name="FamilyHistoryOrganizer">

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSupplyEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3' constraints.validation.error='SupplyEntryTemplateId SupplyEntryHasAuthorTime SupplyEntryHasAssignedAuthor SupplyEntryHasAssignedAuthorPersonOrOrg SupplyEntryHasPerformerTimeEvent SupplyEntryHasPerformerAssignedEntity SupplyEntryHasPerformerEntityPersonOrOrg' constraints.validation.warning='SupplyEntryHasAssignedAuthorID SupplyEntryHasPerformerTimeIntent SupplyEntryHasPerformerAssignedEntityID SupplyEntryQuantity SupplyEntryRepeatNumber' constraints.validation.info='SupplyEntryHasIntentAuthor'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3' constraints.validation.error='SupplyEntryTemplateId SupplyEntryHasAuthorTime SupplyEntryHasAssignedAuthor SupplyEntryHasAssignedAuthorPersonOrOrg SupplyEntryHasPerformerTimeEvent SupplyEntryHasPerformerAssignedEntity SupplyEntryHasPerformerEntityPersonOrOrg SupplyEntryQuantityHasValue' constraints.validation.warning='SupplyEntryHasAssignedAuthorID SupplyEntryHasPerformerTimeIntent SupplyEntryHasPerformerAssignedEntityID SupplyEntryQuantity SupplyEntryRepeatNumber' constraints.validation.info='SupplyEntryHasIntentAuthor SupplyEntryMedicationFullfillmentInstructions'"
  * @generated
  */
 public interface SupplyEntry extends SupplyActivity {
@@ -43,11 +43,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.time->size() = 1
+	 * not self.author->isEmpty() implies self.author->forAll(author| author.time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies self.author->forAll(author| author.time->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -56,11 +56,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.assignedAuthor->size() = 1
+	 * not self.author->isEmpty() implies  self.author->forAll(author| author.assignedAuthor->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.assignedAuthor->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies  self.author->forAll(author| author.assignedAuthor->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -69,11 +69,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.assignedAuthor.id->size() > 0
+	 * not self.author.assignedAuthor->isEmpty() implies self.author.assignedAuthor->forAll ( assignedAuthor | assignedAuthor.id->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.assignedAuthor.id->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author.assignedAuthor->isEmpty() implies self.author.assignedAuthor->forAll ( assignedAuthor | assignedAuthor.id->size() > 0)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasAssignedAuthorID(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -82,11 +82,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)
+	 * not self.author.assignedAuthor->isEmpty() implies    (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author.assignedAuthor->isEmpty() implies    (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,11 +95,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time->size() = 1
+	 * (not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.performer->forAll(time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.performer->forAll(time->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasPerformerTimeEvent(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -108,11 +108,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time->size() = 1
+	 * (not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.performer->forAll(time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.performer->forAll(time->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasPerformerTimeIntent(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,11 +121,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer.assignedEntity->size() = 1
+	 * (not self.performer->isEmpty()) implies self.performer->forAll(performer| not performer.assignedEntity.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer.assignedEntity->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) implies self.performer->forAll(performer| not performer.assignedEntity.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasPerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -134,11 +134,11 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer.assignedEntity.id->size() > 0
+	 * (not self.performer.assignedEntity->isEmpty())  implies self.performer.assignedEntity->forAll(id->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer.assignedEntity.id->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer.assignedEntity->isEmpty())  implies self.performer.assignedEntity->forAll(id->size() > 0)'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasPerformerAssignedEntityID(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -147,14 +147,27 @@ public interface SupplyEntry extends SupplyActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.performer.assignedEntity.assignedPerson->size() > 0 and self.performer.assignedEntity.assignedPerson.name->size() > 0 ) or (self.performer.assignedEntity.representedOrganization->size() > 0 and self.performer.assignedEntity.representedOrganization.name->size() > 0)
+	 * (not self.performer.assignedEntity->isEmpty()) implies self.performer.assignedEntity->forAll(assignedEntity | (not assignedEntity.assignedPerson->isEmpty() and assignedEntity.assignedPerson->forAll( assignedPerson | not assignedPerson.name->isEmpty() ) ) or (not assignedEntity.representedOrganization->isEmpty() and  assignedEntity.representedOrganization->forAll(representedOrganization | not representedOrganization.name->isEmpty() ) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.performer.assignedEntity.assignedPerson->size() > 0 and self.performer.assignedEntity.assignedPerson.name->size() > 0 ) or (self.performer.assignedEntity.representedOrganization->size() > 0 and self.performer.assignedEntity.representedOrganization.name->size() > 0)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer.assignedEntity->isEmpty()) implies self.performer.assignedEntity->forAll(assignedEntity | (not assignedEntity.assignedPerson->isEmpty() and assignedEntity.assignedPerson->forAll( assignedPerson | not assignedPerson.name->isEmpty() ) ) or (not assignedEntity.representedOrganization->isEmpty() and  assignedEntity.representedOrganization->forAll(representedOrganization | not representedOrganization.name->isEmpty() ) )  )'"
 	 * @generated
 	 */
 	boolean validateSupplyEntryHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.quantity->isEmpty() implies self.quantity.isDefined('value')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.quantity->isEmpty() implies self.quantity.isDefined(\'value\')'"
+	 * @generated
+	 */
+	boolean validateSupplyEntryQuantityHasValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,6 +207,20 @@ public interface SupplyEntry extends SupplyActivity {
 	 * @generated
 	 */
 	boolean validateSupplyEntryRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @generated
+	 */
+	boolean validateSupplyEntryMedicationFullfillmentInstructions(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
