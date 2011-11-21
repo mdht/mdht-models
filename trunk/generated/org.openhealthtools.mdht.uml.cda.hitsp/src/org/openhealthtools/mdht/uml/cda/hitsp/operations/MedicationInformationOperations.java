@@ -34,7 +34,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProductEntryOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedProductName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Product Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedProductVocab(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Product Vocab</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedDrugClassVocab(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Drug Class Vocab</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedIngredientVocab(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Ingredient Vocab</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedBrandName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Brand Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation#validateMedicationInformationCodedBrandNameVocab(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Brand Name Vocab</em>}</li>
@@ -161,63 +160,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
 					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB,
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedProductVocab"),
-					new Object[] { medicationInformation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationInformationCodedDrugClassVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Drug Class Vocab</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationInformationCodedDrugClassVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationInformationCodedDrugClassVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Drug Class Vocab</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationInformationCodedDrugClassVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')
-	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMedicationInformationCodedDrugClassVocab(MedicationInformation medicationInformation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
-			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedDrugClassVocab"),
 					new Object[] { medicationInformation }));
 			}
 			return false;

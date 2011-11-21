@@ -1061,10 +1061,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedProductVocab/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedProductVocab/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//MedicationInformation/MedicationInformationCodedDrugClassVocab">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedDrugClassVocab/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedDrugClassVocab/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//MedicationInformation/MedicationInformationCodedIngredientVocab">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedIngredientVocab/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//MedicationInformation/MedicationInformationCodedIngredientVocab/context"/>

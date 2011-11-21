@@ -75,17 +75,6 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformationCodedDrugClassVocab(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedDrugClassVocab(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationInformationCodedIngredientVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedIngredientVocab(

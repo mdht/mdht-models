@@ -114,11 +114,11 @@ public interface Medication extends MedicationActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )
+	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.3\')  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )'"
 	 * @generated
 	 */
 	boolean validateMedicationHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context);

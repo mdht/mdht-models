@@ -904,10 +904,10 @@
     </eAnnotations>
     <eOperations name="StatusObservationTargetOfEntryRelationship" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entryRelationship->exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
+        <details key="body" value="self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
+        <details key="documentation" value="self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

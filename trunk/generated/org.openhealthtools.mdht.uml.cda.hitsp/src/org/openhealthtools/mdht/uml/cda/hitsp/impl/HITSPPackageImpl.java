@@ -4192,17 +4192,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		op = addEOperation(
 			medicationInformationEClass, ecorePackage.getEBoolean(),
-			"validateMedicationInformationCodedDrugClassVocab", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			medicationInformationEClass, ecorePackage.getEBoolean(),
 			"validateMedicationInformationCodedIngredientVocab", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -4604,9 +4593,9 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8",
 					"constraints.validation.error",
-					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndication HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationHasPatientInstructions HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
+					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
 					"constraints.validation.info",
-					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCode HITSPMedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity HITSPMedicationApproachSiteCode HITSPMedicationCode" });
+					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasIndication HITSPMedicationHasPatientInstructions HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCode HITSPMedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity HITSPMedicationApproachSiteCode HITSPMedicationCode" });
 		addAnnotation(medicationTypeEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.96", "templateId.root", "2.16.840.1.113883.3.88.11.83.8.1",
 				"constraints.validation.error", "MedicationTypeTemplateId MedicationTypeCode", "code.codeSystemName",
@@ -4863,7 +4852,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8.2",
 					"constraints.validation.error",
-					"MedicationInformationTemplateId MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedDrugClassVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName",
+					"MedicationInformationTemplateId MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName",
 					"constraints.validation.info", "MedicationInformationCodedIngredientVocab" });
 		addAnnotation(referralSummaryEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.48.1", "constraints.validation.error",
