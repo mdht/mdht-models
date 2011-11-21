@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -26,15 +27,14 @@ public interface MedicationStatusObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
+	 * self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,8 +47,7 @@ public interface MedicationStatusObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +60,7 @@ public interface MedicationStatusObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er|not er.observation.oclIsUndefined())->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

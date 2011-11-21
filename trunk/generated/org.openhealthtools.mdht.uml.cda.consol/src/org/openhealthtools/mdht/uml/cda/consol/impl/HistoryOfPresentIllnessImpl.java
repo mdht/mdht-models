@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllness;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryOfPresentIllnessOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -69,7 +74,7 @@ public class HistoryOfPresentIllnessImpl extends SectionImpl implements HistoryO
 	 * @generated
 	 */
 	public HistoryOfPresentIllness init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // HistoryOfPresentIllnessImpl
+} //HistoryOfPresentIllnessImpl

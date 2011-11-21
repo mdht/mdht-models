@@ -11,13 +11,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Encounter;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
@@ -57,7 +62,7 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')";
+	protected static final String VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateConsolEncounterAdmissionSourceValueSet(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Admission Source Value Set</em>}' invariant operation.
@@ -73,32 +78,33 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')
+	 * self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )
 	 * @param encounter The receiving '<em><b>Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterAdmissionSourceValueSet(Encounter encounter,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterAdmissionSourceValueSet(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounter)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterAdmissionSourceValueSet"),
-					new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterAdmissionSourceValueSet"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -136,24 +142,26 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterTemplateId(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterTemplateId(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounter)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterTemplateId"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterTemplateId"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -191,23 +199,26 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterClassCode(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterClassCode(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterClassCode"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterClassCode"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -245,23 +256,26 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterId(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterId(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_ID,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterId"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_ID,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterId"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -276,9 +290,9 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.12' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.12' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateConsolEncounterCode(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Code</em>}' invariant operation.
@@ -303,23 +317,26 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterCode(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterCode(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_CODE,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterCode"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_CODE,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterCode"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -357,23 +374,26 @@ public class EncounterOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateConsolEncounterText(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateConsolEncounterText(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSOL_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_CONSOL_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_TEXT,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterText"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ConsolEncounterText"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}

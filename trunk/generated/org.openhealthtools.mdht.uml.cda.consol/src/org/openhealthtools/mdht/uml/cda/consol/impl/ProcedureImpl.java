@@ -9,10 +9,14 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureOperations;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -58,8 +62,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsolProcedurePerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateConsolProcedurePerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateConsolProcedurePerformerAssignedEntity(this, diagnostics, context);
 	}
 
@@ -96,7 +99,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * @generated
 	 */
 	public Procedure init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ProcedureImpl
+} //ProcedureImpl

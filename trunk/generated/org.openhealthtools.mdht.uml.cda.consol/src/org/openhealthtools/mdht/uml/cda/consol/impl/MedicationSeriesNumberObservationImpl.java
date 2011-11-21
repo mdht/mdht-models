@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSeriesNumberObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -72,10 +73,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,10 +82,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,10 +91,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,10 +100,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSeriesNumberObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(
-			this, diagnostics, context);
+	public boolean validateMedicationSeriesNumberObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +110,7 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public MedicationSeriesNumberObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicationSeriesNumberObservationImpl
+} //MedicationSeriesNumberObservationImpl

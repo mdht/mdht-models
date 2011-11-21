@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -49,8 +50,7 @@ public interface MedicationsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))\r\n   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))'"
 	 * @generated
 	 */
-	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

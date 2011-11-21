@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.LanguageSpoken;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.LanguageSpokenOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.LanguageCommunicationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -78,7 +83,7 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 * @generated
 	 */
 	public LanguageSpoken init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // LanguageSpokenImpl
+} //LanguageSpokenImpl

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemStatusObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class ProblemStatusObservationImpl extends ObservationImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateProblemStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
+	public boolean validateProblemStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateProblemStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class ProblemStatusObservationImpl extends ObservationImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateProblemStatusObservationNoAdditionalParticipants(
-			this, diagnostics, context);
+	public boolean validateProblemStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateProblemStatusObservationNoAdditionalParticipants(this, diagnostics, context);
 	}
 
 	/**
@@ -72,10 +73,8 @@ public class ProblemStatusObservationImpl extends ObservationImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateProblemStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
+	public boolean validateProblemStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateProblemStatusObservationNoAdditionalRelationships(this, diagnostics, context);
 	}
 
 	/**
@@ -83,10 +82,8 @@ public class ProblemStatusObservationImpl extends ObservationImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservationHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateProblemStatusObservationHasTextReference(
-			this, diagnostics, context);
+	public boolean validateProblemStatusObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateProblemStatusObservationHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +155,7 @@ public class ProblemStatusObservationImpl extends ObservationImpl implements Pro
 	 * @generated
 	 */
 	public ProblemStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ProblemStatusObservationImpl
+} //ProblemStatusObservationImpl

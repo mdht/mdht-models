@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -52,8 +53,7 @@ public interface EpisodeObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::ProblemAct)->size() >0\r\n  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::SocialHistoryObservation)->size() > 0'"
 	 * @generated
 	 */
-	boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

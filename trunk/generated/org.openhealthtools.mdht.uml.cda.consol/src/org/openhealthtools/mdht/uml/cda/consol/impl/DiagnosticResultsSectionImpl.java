@@ -10,15 +10,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 import org.openhealthtools.mdht.uml.cda.consol.Result;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticResultsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -82,10 +87,8 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(
-			this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -102,10 +105,8 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(
-			this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -113,10 +114,8 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionExternalReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionExternalReference(
-			this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionExternalReference(this, diagnostics, context);
 	}
 
 	/**
@@ -161,7 +160,7 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * @generated
 	 */
 	public DiagnosticResultsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // DiagnosticResultsSectionImpl
+} //DiagnosticResultsSectionImpl

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalCourseSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -69,7 +74,7 @@ public class HospitalCourseSectionImpl extends SectionImpl implements HospitalCo
 	 * @generated
 	 */
 	public HospitalCourseSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // HospitalCourseSectionImpl
+} //HospitalCourseSectionImpl

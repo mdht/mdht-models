@@ -41,7 +41,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationConditionalDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationConditionalDoseTemplateId MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationConditionalDoseStatusCode' classCode='SBADM' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRateQuantity' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseCode MedicationConditionalDoseEffectiveTime MedicationConditionalDoseRouteCode MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseAdministrationUnitCode MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDoseProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationConditionalDoseTemplateId MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationCode MedicationConditionalDoseStatusCode MedicationConditionalDoseEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRouteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDoseReactionObservation MedicationConditionalDoseProductInstance'"
  * @generated
  */
 public interface MedicationConditionalDose extends Medication {
@@ -69,8 +69,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,8 +114,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,8 +198,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,15 +230,14 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )
+	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.3\')  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,8 +276,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.precondition.criterion.text->exists (t | t.reference.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,8 +289,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists(er : cda::EntryRelationship | (not er.supply->isEmpty()) and er.inversionInd<>false )'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,8 +315,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,19 +329,6 @@ public interface MedicationConditionalDose extends Medication {
 	 * @generated
 	 */
 	boolean validateMedicationConditionalDoseId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateMedicationConditionalDoseCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -382,11 +362,11 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-model-doc -->
 	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.5.112'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.112\'))'"
 	 * @generated
 	 */
 	boolean validateMedicationConditionalDoseRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -395,13 +375,11 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
 	 * @generated
 	 */
 	boolean validateMedicationConditionalDoseApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -449,22 +427,6 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateMedicationConditionalDoseAdministrationUnitCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationSeriesNumberObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -472,8 +434,7 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationSeriesNumberObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -486,8 +447,20 @@ public interface MedicationConditionalDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)'"
+	 * @generated
+	 */
+	boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -530,6 +503,18 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)
+	 * <!-- end-model-doc -->
+	 * @model required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)'"
+	 * @generated
+	 */
+	EList<ProblemEntryReactionObservationContainer> getnullReactionObservations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)
 	 * <!-- end-model-doc -->
 	 * @model required="true" ordered="false"
@@ -566,37 +551,13 @@ public interface MedicationConditionalDose extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationType))->asSequence()->first().oclAsType(consol::MedicationType)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationType))->asSequence()->first().oclAsType(consol::MedicationType)'"
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)'"
 	 * @generated
 	 */
-	MedicationType getnullMedicationType();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation)).oclAsType(consol::MedicationOrderInformation)
-	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation)).oclAsType(consol::MedicationOrderInformation)'"
-	 * @generated
-	 */
-	EList<MedicationOrderInformation> getnullMedicationOrderInformations();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer))->asSequence()->first().oclAsType(consol::ProblemEntryReactionObservationContainer)
-	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer))->asSequence()->first().oclAsType(consol::ProblemEntryReactionObservationContainer)'"
-	 * @generated
-	 */
-	ProblemEntryReactionObservationContainer getnullReactionObservation();
+	MedicationOrderInformation getSupplyEntry();
 
 	/**
 	 * <!-- begin-user-doc -->

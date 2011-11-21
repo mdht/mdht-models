@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.EndocrineSystemSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -88,7 +93,7 @@ public class EndocrineSystemSectionImpl extends SectionImpl implements Endocrine
 	 * @generated
 	 */
 	public EndocrineSystemSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // EndocrineSystemSectionImpl
+} //EndocrineSystemSectionImpl

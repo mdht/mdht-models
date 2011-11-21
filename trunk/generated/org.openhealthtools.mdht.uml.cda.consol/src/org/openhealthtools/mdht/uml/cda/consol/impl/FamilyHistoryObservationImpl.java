@@ -9,15 +9,18 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -54,8 +57,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubject(this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubjectPatientRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -63,10 +66,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubjectPatientRelationship(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelationshipValueCode(this, diagnostics, context);
 	}
 
 	/**
@@ -74,10 +75,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelationshipValueCode(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectCode(this, diagnostics, context);
 	}
 
 	/**
@@ -85,10 +84,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectCode(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(this, diagnostics, context);
 	}
 
 	/**
@@ -96,10 +93,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectSubject(this, diagnostics, context);
 	}
 
 	/**
@@ -107,10 +102,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectSubject(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationHasGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasGenderCode(this, diagnostics, context);
 	}
 
 	/**
@@ -118,21 +111,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasGenderCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasGenderCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectBirthTime(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -185,10 +165,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -196,21 +174,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationProblemStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationCauseOfDeathObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationCauseOfDeathObservation(
-			this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -236,17 +201,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CauseOfDeathObservation> getCauseOfDeathObservations() {
-		return FamilyHistoryObservationOperations.getCauseOfDeathObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public FamilyHistoryObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // FamilyHistoryObservationImpl
+} //FamilyHistoryObservationImpl

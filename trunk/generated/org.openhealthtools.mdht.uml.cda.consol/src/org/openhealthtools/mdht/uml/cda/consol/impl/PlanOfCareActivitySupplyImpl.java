@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivitySupplyOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivitySupplyMoodCodeValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeValue(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareActivitySupplyMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +92,7 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * @generated
 	 */
 	public PlanOfCareActivitySupply init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PlanOfCareActivitySupplyImpl
+} //PlanOfCareActivitySupplyImpl

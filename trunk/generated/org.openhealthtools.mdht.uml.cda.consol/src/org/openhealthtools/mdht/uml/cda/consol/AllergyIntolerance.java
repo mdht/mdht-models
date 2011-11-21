@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -154,8 +155,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceAllergySubstanceParticipantRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceAllergySubstanceParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,8 +168,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceAllergySubstanceParticipantRoleClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceAllergySubstanceParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,8 +181,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceAllergySubstancePlayingEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceAllergySubstancePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,8 +194,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceAllergySubstancePlayingEntityClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceAllergySubstancePlayingEntityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,8 +207,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceAllergySubstancePlayingEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceAllergySubstancePlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,8 +220,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity.code.originalText.reference->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyIntolerancePlayingEntityCodeReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntolerancePlayingEntityCodeReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,8 +341,7 @@ public interface AllergyIntolerance extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Comment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -18,8 +20,11 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Severity;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemEntryReactionObservationContainerOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -31,8 +36,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProblemEntryReactionObservationContainerImpl extends ObservationImpl implements
-		ProblemEntryReactionObservationContainer {
+public class ProblemEntryReactionObservationContainerImpl extends ObservationImpl implements ProblemEntryReactionObservationContainer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,10 +61,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerHasReactionIntervention(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHasReactionIntervention(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerHasReactionIntervention(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHasReactionIntervention(this, diagnostics, context);
 	}
 
 	/**
@@ -68,10 +70,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -79,10 +79,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerReactionInterventionType(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerReactionInterventionType(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerReactionInterventionType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerReactionInterventionType(this, diagnostics, context);
 	}
 
 	/**
@@ -90,10 +88,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerInformationSource(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerInformationSource(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerInformationSource(this, diagnostics, context);
 	}
 
 	/**
@@ -101,10 +97,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerContainsPatientAwareness(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerContainsPatientAwareness(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerContainsPatientAwareness(this, diagnostics, context);
 	}
 
 	/**
@@ -112,10 +106,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHasTextReference(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -123,10 +115,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerCommentInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerCommentInversionInd(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerCommentInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerCommentInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -134,10 +124,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerTemplateId(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -145,10 +133,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerMoodCode(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -156,10 +142,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerId(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerId(this, diagnostics, context);
 	}
 
 	/**
@@ -167,10 +151,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerCode(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerCode(this, diagnostics, context);
 	}
 
 	/**
@@ -178,10 +160,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerText(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerText(this, diagnostics, context);
 	}
 
 	/**
@@ -189,10 +169,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerStatusCode(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -200,10 +178,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerEffectiveTime(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -211,10 +187,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerValue(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerValue(this, diagnostics, context);
 	}
 
 	/**
@@ -222,10 +196,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerAgeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerAgeObservation(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerAgeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -233,10 +205,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerSeverity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerSeverity(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerSeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerSeverity(this, diagnostics, context);
 	}
 
 	/**
@@ -244,10 +214,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerProblemStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerProblemStatusObservation(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -255,10 +223,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerHealthStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHealthStatusObservation(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerHealthStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -266,10 +232,8 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryReactionObservationContainerComment(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerComment(
-			this, diagnostics, context);
+	public boolean validateProblemEntryReactionObservationContainerComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryReactionObservationContainerOperations.validateProblemEntryReactionObservationContainerComment(this, diagnostics, context);
 	}
 
 	/**
@@ -323,7 +287,7 @@ public class ProblemEntryReactionObservationContainerImpl extends ObservationImp
 	 * @generated
 	 */
 	public ProblemEntryReactionObservationContainer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ProblemEntryReactionObservationContainerImpl
+} //ProblemEntryReactionObservationContainerImpl

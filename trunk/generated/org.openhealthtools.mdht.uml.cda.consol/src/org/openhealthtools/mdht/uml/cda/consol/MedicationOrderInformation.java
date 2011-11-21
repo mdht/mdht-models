@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Supply;
 
 /**
@@ -26,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationOrderInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.3' constraints.validation.error='MedicationOrderInformationTemplateId MedicationOrderInformationMoodCode MedicationOrderInformationInformationSource MedicationOrderInformationHasAuthorTime MedicationOrderInformationHasAssignedAuthor MedicationOrderInformationHasAssignedAuthorPersonOrOrg MedicationOrderInformationHasPerformerTimeEvent MedicationOrderInformationHasPerformerAssignedEntity MedicationOrderInformationHasPerformerEntityPersonOrOrg MedicationOrderInformationQuantityOrdered MedicationOrderInformationQuantityUnit MedicationOrderInformationPrescriptionNumber MedicationOrderInformationDispenseDate MedicationOrderInformationQuantityDispensed MedicationOrderInformationId' constraints.validation.warning='MedicationOrderInformationHasAssignedAuthorID MedicationOrderInformationHasPerformerTimeIntent MedicationOrderInformationHasPerformerAssignedEntityID MedicationOrderInformationOrderNumber MedicationOrderInformationOrderExpiration MedicationOrderInformationAssigningAuthority MedicationOrderInformationHasFillNumber MedicationOrderInformationEffectiveTime MedicationOrderInformationQuantity' classCode='SPLY' constraints.validation.info='MedicationOrderInformationHasAuthor MedicationOrderInformationHasPerformer MedicationOrderInformationHasParticipantLocation MedicationOrderInformationHasProduct MedicationOrderInformationHasIntentAuthor MedicationOrderInformationDispensingPharmacyLocation MedicationOrderInformationStatusCode MedicationOrderInformationRepeatNumber MedicationOrderInformationMedicationStatusObservation MedicationOrderInformationProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.3' constraints.validation.error='MedicationOrderInformationTemplateId MedicationOrderInformationMoodCode MedicationOrderInformationInformationSource MedicationOrderInformationHasAuthorTime MedicationOrderInformationHasAssignedAuthor MedicationOrderInformationHasAssignedAuthorPersonOrOrg MedicationOrderInformationHasPerformerTimeEvent MedicationOrderInformationHasPerformerAssignedEntity MedicationOrderInformationHasPerformerEntityPersonOrOrg MedicationOrderInformationQuantityHasValue MedicationOrderInformationQuantityOrdered MedicationOrderInformationQuantityUnit MedicationOrderInformationPrescriptionNumber MedicationOrderInformationDispenseDate MedicationOrderInformationQuantityDispensed MedicationOrderInformationId' classCode='SPLY' constraints.validation.warning='MedicationOrderInformationHasAssignedAuthorID MedicationOrderInformationHasPerformerTimeIntent MedicationOrderInformationHasPerformerAssignedEntityID MedicationOrderInformationOrderNumber MedicationOrderInformationOrderExpiration MedicationOrderInformationAssigningAuthority MedicationOrderInformationHasFillNumber MedicationOrderInformationEffectiveTime MedicationOrderInformationQuantity' constraints.validation.info='MedicationOrderInformationHasAuthor MedicationOrderInformationHasPerformer MedicationOrderInformationHasParticipantLocation MedicationOrderInformationHasProduct MedicationOrderInformationHasIntentAuthor MedicationOrderInformationDispensingPharmacyLocation MedicationOrderInformationStatusCode MedicationOrderInformationRepeatNumber MedicationOrderInformationMedicationStatusObservation MedicationOrderInformationProductInstance MedicationOrderInformationMedicationFullfillmentInstructions'"
  * @generated
  */
 public interface MedicationOrderInformation extends Supply {
@@ -80,8 +81,7 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::LOC)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,11 +132,11 @@ public interface MedicationOrderInformation extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.time->size() = 1
+	 * not self.author->isEmpty() implies self.author->forAll(author| author.time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies self.author->forAll(author| author.time->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationHasAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,11 +145,11 @@ public interface MedicationOrderInformation extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.assignedAuthor->size() = 1
+	 * not self.author->isEmpty() implies  self.author->forAll(author| author.assignedAuthor->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.assignedAuthor->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies  self.author->forAll(author| author.assignedAuthor->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -158,99 +158,105 @@ public interface MedicationOrderInformation extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author.assignedAuthor.id->size() > 0
+	 * not self.author.assignedAuthor->isEmpty() implies self.author.assignedAuthor->forAll ( assignedAuthor | assignedAuthor.id->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author.assignedAuthor.id->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author.assignedAuthor->isEmpty() implies self.author.assignedAuthor->forAll ( assignedAuthor | assignedAuthor.id->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasAssignedAuthorID(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasAssignedAuthorID(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)
+	 * not self.author.assignedAuthor->isEmpty() implies    (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author.assignedAuthor->isEmpty() implies    (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time->size() = 1
+	 * (not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.performer->forAll(time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.performer->forAll(time->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasPerformerTimeEvent(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasPerformerTimeEvent(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time->size() = 1
+	 * (not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.performer->forAll(time->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.performer->forAll(time->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasPerformerTimeIntent(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasPerformerTimeIntent(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer.assignedEntity->size() = 1
+	 * (not self.performer->isEmpty()) implies self.performer->forAll(performer| not performer.assignedEntity.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer.assignedEntity->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer->isEmpty()) implies self.performer->forAll(performer| not performer.assignedEntity.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasPerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasPerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer.assignedEntity.id->size() > 0
+	 * (not self.performer.assignedEntity->isEmpty())  implies self.performer.assignedEntity->forAll(id->size() > 0)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer.assignedEntity.id->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer.assignedEntity->isEmpty())  implies self.performer.assignedEntity->forAll(id->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasPerformerAssignedEntityID(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasPerformerAssignedEntityID(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.performer.assignedEntity.assignedPerson->size() > 0 and self.performer.assignedEntity.assignedPerson.name->size() > 0 ) or (self.performer.assignedEntity.representedOrganization->size() > 0 and self.performer.assignedEntity.representedOrganization.name->size() > 0)
+	 * (not self.performer.assignedEntity->isEmpty()) implies self.performer.assignedEntity->forAll(assignedEntity | (not assignedEntity.assignedPerson->isEmpty() and assignedEntity.assignedPerson->forAll( assignedPerson | not assignedPerson.name->isEmpty() ) ) or (not assignedEntity.representedOrganization->isEmpty() and  assignedEntity.representedOrganization->forAll(representedOrganization | not representedOrganization.name->isEmpty() ) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.performer.assignedEntity.assignedPerson->size() > 0 and self.performer.assignedEntity.assignedPerson.name->size() > 0 ) or (self.performer.assignedEntity.representedOrganization->size() > 0 and self.performer.assignedEntity.representedOrganization.name->size() > 0)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.performer.assignedEntity->isEmpty()) implies self.performer.assignedEntity->forAll(assignedEntity | (not assignedEntity.assignedPerson->isEmpty() and assignedEntity.assignedPerson->forAll( assignedPerson | not assignedPerson.name->isEmpty() ) ) or (not assignedEntity.representedOrganization->isEmpty() and  assignedEntity.representedOrganization->forAll(representedOrganization | not representedOrganization.name->isEmpty() ) )  )'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.quantity->isEmpty() implies self.quantity.isDefined('value')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.quantity->isEmpty() implies self.quantity.isDefined(\'value\')'"
+	 * @generated
+	 */
+	boolean validateMedicationOrderInformationQuantityHasValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,8 +321,7 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -329,8 +334,7 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id.root->size() > 0'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -356,8 +360,7 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -476,8 +479,7 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -491,6 +493,19 @@ public interface MedicationOrderInformation extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @generated
+	 */
+	boolean validateMedicationOrderInformationMedicationFullfillmentInstructions(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

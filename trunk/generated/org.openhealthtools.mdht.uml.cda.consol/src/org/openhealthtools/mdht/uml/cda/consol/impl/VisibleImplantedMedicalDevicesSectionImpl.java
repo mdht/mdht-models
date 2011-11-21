@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VisibleImplantedMedicalDevicesSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.VisibleImplantedMedicalDevicesSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -26,8 +31,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl implements
-		VisibleImplantedMedicalDevicesSection {
+public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl implements VisibleImplantedMedicalDevicesSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,10 +56,8 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,10 +65,8 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVisibleImplantedMedicalDevicesSectionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionCode(
-			this, diagnostics, context);
+	public boolean validateVisibleImplantedMedicalDevicesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -74,10 +74,8 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionProblemEntry(
-			this, diagnostics, context);
+	public boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +93,7 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * @generated
 	 */
 	public VisibleImplantedMedicalDevicesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // VisibleImplantedMedicalDevicesSectionImpl
+} //VisibleImplantedMedicalDevicesSectionImpl

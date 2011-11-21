@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.EarsNoseMouthThroatSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -52,8 +57,7 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 * @generated
 	 */
 	public boolean validateEarsNoseMouthThroatSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionTemplateId(
-			this, diagnostics, context);
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,10 +74,8 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEarsNoseMouthThroatSectionProblemEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(
-			this, diagnostics, context);
+	public boolean validateEarsNoseMouthThroatSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +93,7 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 * @generated
 	 */
 	public EarsNoseMouthThroatSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // EarsNoseMouthThroatSectionImpl
+} //EarsNoseMouthThroatSectionImpl

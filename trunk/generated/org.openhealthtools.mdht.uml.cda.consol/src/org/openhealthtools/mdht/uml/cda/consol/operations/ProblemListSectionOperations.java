@@ -14,16 +14,23 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
@@ -86,25 +93,26 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemListSectionTemplateId(ProblemListSection problemListSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateProblemListSectionTemplateId(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemListSectionTemplateId"),
-					new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProblemListSectionTemplateId"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -119,9 +127,9 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListSectionCode(ProblemListSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Code</em>}' invariant operation.
@@ -146,24 +154,26 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemListSectionCode(ProblemListSection problemListSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateProblemListSectionCode(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemListSectionCode"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProblemListSectionCode"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -201,24 +211,26 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemListSectionTitle(ProblemListSection problemListSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateProblemListSectionTitle(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProblemListSectionTitle"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("ProblemListSectionTitle"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -256,24 +268,26 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemListSectionText(ProblemListSection problemListSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateProblemListSectionText(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProblemListSectionText"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ProblemListSectionText"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -311,24 +325,26 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemListSectionCondition(ProblemListSection problemListSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateProblemListSectionCondition(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION,
-					ConsolPlugin.INSTANCE.getString("ProblemListSectionCondition"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION,
+						 ConsolPlugin.INSTANCE.getString("ProblemListSectionCondition"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -364,15 +380,14 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<Condition> getConditions(ProblemListSection problemListSection) {
+	public static  EList<Condition> getConditions(ProblemListSection problemListSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROBLEM_LIST_SECTION,
-				ConsolPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(ConsolPackage.Literals.PROBLEM_LIST_SECTION, ConsolPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(60));
 			try {
 				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

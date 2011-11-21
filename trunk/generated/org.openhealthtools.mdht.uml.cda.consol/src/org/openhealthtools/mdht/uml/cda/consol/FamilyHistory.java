@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Organizer;
 
 /**
@@ -203,8 +204,7 @@ public interface FamilyHistory extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFamilyHistoryHasParticipantRolePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

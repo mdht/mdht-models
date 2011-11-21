@@ -10,14 +10,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.consol.Result;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReasonForReferralSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -91,8 +96,7 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public boolean validateReasonForReferralSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionProblemEntry(
-			this, diagnostics, context);
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -128,7 +132,7 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public ReasonForReferralSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ReasonForReferralSectionImpl
+} //ReasonForReferralSectionImpl

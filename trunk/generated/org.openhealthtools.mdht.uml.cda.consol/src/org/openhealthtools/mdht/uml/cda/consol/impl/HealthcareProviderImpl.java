@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthcareProvider;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthcareProviderOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.Performer1Impl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -60,7 +65,7 @@ public class HealthcareProviderImpl extends Performer1Impl implements Healthcare
 	 * @generated
 	 */
 	public HealthcareProvider init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // HealthcareProviderImpl
+} //HealthcareProviderImpl

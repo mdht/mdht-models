@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ScanOriginalAuthor;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ScanOriginalAuthorOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.AuthorImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,8 +55,7 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanOriginalAuthorHasAssignedAuthorId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScanOriginalAuthorHasAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanOriginalAuthorOperations.validateScanOriginalAuthorHasAssignedAuthorId(this, diagnostics, context);
 	}
 
@@ -60,10 +64,8 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ScanOriginalAuthorOperations.validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(
-			this, diagnostics, context);
+	public boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScanOriginalAuthorOperations.validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -81,7 +83,7 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 * @generated
 	 */
 	public ScanOriginalAuthor init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ScanOriginalAuthorImpl
+} //ScanOriginalAuthorImpl

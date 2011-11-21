@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -52,8 +57,7 @@ public class DischargeDiagnosisSectionImpl extends SectionImpl implements Discha
 	 * @generated
 	 */
 	public boolean validateDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +75,7 @@ public class DischargeDiagnosisSectionImpl extends SectionImpl implements Discha
 	 * @generated
 	 */
 	public boolean validateDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionCondition(
-			this, diagnostics, context);
+		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionCondition(this, diagnostics, context);
 	}
 
 	/**
@@ -90,7 +93,7 @@ public class DischargeDiagnosisSectionImpl extends SectionImpl implements Discha
 	 * @generated
 	 */
 	public DischargeDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // DischargeDiagnosisSectionImpl
+} //DischargeDiagnosisSectionImpl

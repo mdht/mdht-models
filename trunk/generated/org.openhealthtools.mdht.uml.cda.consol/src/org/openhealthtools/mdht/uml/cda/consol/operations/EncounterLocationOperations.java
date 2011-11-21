@@ -11,13 +11,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterLocation;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.Participant2Operations;
 
 /**
@@ -82,25 +87,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasParticipantRole(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasParticipantRole(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRole"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRole"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -138,26 +144,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasParticipantRoleLocation(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasParticipantRoleLocation(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleLocation"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleLocation"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -195,25 +201,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasParticipantRoleCode(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasParticipantRoleCode(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCode"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCode"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -251,26 +258,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCodeVocab"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCodeVocab"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -308,25 +315,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasPlayingEntity(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasPlayingEntity(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntity"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntity"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -364,25 +372,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationHasPlayingEntityPlace(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationHasPlayingEntityPlace(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntityPlace"),
-					new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntityPlace"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -420,24 +429,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationTemplateId(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationTemplateId(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationTemplateId"), new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationTemplateId"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}
@@ -475,24 +486,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateEncounterLocationTypeCode(EncounterLocation encounterLocation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateEncounterLocationTypeCode(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterLocationTypeCode"), new Object[] { encounterLocation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("EncounterLocationTypeCode"),
+						 new Object [] { encounterLocation }));
 			}
 			return false;
 		}

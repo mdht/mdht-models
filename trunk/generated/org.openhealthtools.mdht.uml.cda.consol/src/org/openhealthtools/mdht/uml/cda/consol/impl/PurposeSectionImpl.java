@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PurposeSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -107,7 +112,7 @@ public class PurposeSectionImpl extends SectionImpl implements PurposeSection {
 	 * @generated
 	 */
 	public PurposeSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PurposeSectionImpl
+} //PurposeSectionImpl

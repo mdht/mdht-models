@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistorySectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -52,10 +57,8 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistoryObsOrgs(
-			this, diagnostics, context);
+	public boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistoryObsOrgs(this, diagnostics, context);
 	}
 
 	/**
@@ -127,7 +130,7 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * @generated
 	 */
 	public FamilyHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // FamilyHistorySectionImpl
+} //FamilyHistorySectionImpl

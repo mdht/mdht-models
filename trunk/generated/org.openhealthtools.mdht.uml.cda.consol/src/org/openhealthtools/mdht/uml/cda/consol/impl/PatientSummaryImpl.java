@@ -9,7 +9,9 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -30,8 +32,9 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.SurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PatientSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -43,7 +46,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientSummary {
+public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements PatientSummary {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -86,8 +89,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryServiceEventEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryServiceEventEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
@@ -114,8 +116,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryHasEffectiveTimeSeconds(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryHasEffectiveTimeSeconds(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryHasEffectiveTimeSeconds(this, diagnostics, context);
 	}
 
@@ -151,8 +152,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryHasAssignedAuthorNullFlavor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryHasAssignedAuthorNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryHasAssignedAuthorNullFlavor(this, diagnostics, context);
 	}
 
@@ -161,305 +161,8 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryHasInformationRecipient(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryHasInformationRecipient(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryHasInformationRecipient(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryPersonHasName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryPersonHasName(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryRolesShallHaveAddrAndTelecom(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryRolesShallHaveAddrAndTelecom(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryRolesShouldHaveAddrAndTelecom(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryRolesShouldHaveAddrAndTelecom(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryOrganizationsHaveContactInfo(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryOrganizationsHaveContactInfo(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTimePreciseToDay(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTimePreciseToDay(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTimePreciseToYear(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTimePreciseToYear(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTelephoneMatchesRegex(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTelephoneMatchesRegex(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasTelephoneDialingDigits(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasTelephoneDialingDigits(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryUnknownTelephoneUsesNullFlavor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryUnknownTelephoneUsesNullFlavor(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTypeIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTypeIdExtension(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryIdRootFormat(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryIdRootFormat(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryOidLength(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryOidLength(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryLanguageCodeForm(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryLanguageCodeForm(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummarySetIdAndVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummarySetIdAndVersionNumber(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummarySetIdAndIdAreUnique(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummarySetIdAndIdAreUnique(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryCopyTimeNotPresent(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryCopyTimeNotPresent(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasRecordTargetPatientRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasRecordTargetPatientRole(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasPatientBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasPatientBirthTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasAdministrativeGenderCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasAdministrativeGenderCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasProviderOrganization(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasProviderOrganization(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasAuthorTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasAssignedAuthorId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasAssignedAuthorPersonOrDevice(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasAssignedAuthorPersonOrDevice(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasDataEntererAssignedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasDataEntererAssignedPerson(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasDataEntererTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasDataEntererTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasInformant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasInformant(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryHasInformantAssignedPersonOrRelatedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryHasInformantAssignedPersonOrRelatedPerson(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryLegalAuthenticatorHasAssignedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryLegalAuthenticatorHasAssignedPerson(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryAuthenticatorHasAssignedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryAuthenticatorHasAssignedPerson(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTimePreciseToSecond(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTimePreciseToSecond(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTimePreciseToYearAndDay(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTimePreciseToYearAndDay(this, diagnostics, context);
 	}
 
 	/**
@@ -476,69 +179,6 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryRealmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryRealmCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTypeId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTypeId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientSummaryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientSummaryOperations.validatePatientSummaryEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePatientSummaryLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryLanguageCode(this, diagnostics, context);
 	}
@@ -548,8 +188,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
@@ -558,8 +197,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryAllergiesReactionsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryAllergiesReactionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryAllergiesReactionsSection(this, diagnostics, context);
 	}
 
@@ -622,8 +260,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryPregnancyHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryPregnancyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryPregnancyHistorySection(this, diagnostics, context);
 	}
 
@@ -650,8 +287,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryDiagnosticResultsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryDiagnosticResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryDiagnosticResultsSection(this, diagnostics, context);
 	}
 
@@ -687,8 +323,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryMedicalEquipmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryMedicalEquipmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryMedicalEquipmentSection(this, diagnostics, context);
 	}
 
@@ -697,8 +332,7 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryFunctionalStatusSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientSummaryFunctionalStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryFunctionalStatusSection(this, diagnostics, context);
 	}
 
@@ -878,8 +512,28 @@ public class PatientSummaryImpl extends ClinicalDocumentImpl implements PatientS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientSummary init() {
-		CDAUtil.init(this);
-		return this;
+	@Override
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
-} // PatientSummaryImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientSummaryOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientSummary init() {
+    	CDAUtil.init(this);
+    	return this;
+	}
+} //PatientSummaryImpl

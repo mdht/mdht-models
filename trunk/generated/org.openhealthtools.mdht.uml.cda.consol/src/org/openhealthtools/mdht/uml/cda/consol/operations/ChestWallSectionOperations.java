@@ -11,16 +11,23 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
@@ -81,24 +88,26 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateChestWallSectionTemplateId(ChestWallSection chestWallSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateChestWallSectionTemplateId(ChestWallSection chestWallSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHEST_WALL_SECTION);
 			try {
 				VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestWallSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chestWallSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ChestWallSectionTemplateId"), new Object[] { chestWallSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ChestWallSectionTemplateId"),
+						 new Object [] { chestWallSection }));
 			}
 			return false;
 		}
@@ -113,9 +122,9 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11392-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11392-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestWallSectionCode(ChestWallSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Code</em>}' invariant operation.
@@ -140,24 +149,26 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateChestWallSectionCode(ChestWallSection chestWallSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateChestWallSectionCode(ChestWallSection chestWallSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHEST_WALL_SECTION);
 			try {
 				VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestWallSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chestWallSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ChestWallSectionCode"), new Object[] { chestWallSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ChestWallSectionCode"),
+						 new Object [] { chestWallSection }));
 			}
 			return false;
 		}
@@ -195,24 +206,26 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateChestWallSectionProblemEntry(ChestWallSection chestWallSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateChestWallSectionProblemEntry(ChestWallSection chestWallSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CHEST_WALL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHEST_WALL_SECTION);
 			try {
 				VALIDATE_CHEST_WALL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_WALL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestWallSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chestWallSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_PROBLEM_ENTRY,
-					ConsolPlugin.INSTANCE.getString("ChestWallSectionProblemEntry"), new Object[] { chestWallSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_PROBLEM_ENTRY,
+						 ConsolPlugin.INSTANCE.getString("ChestWallSectionProblemEntry"),
+						 new Object [] { chestWallSection }));
 			}
 			return false;
 		}
@@ -248,15 +261,14 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static AllergyIntolerance getProblemEntry(ChestWallSection chestWallSection) {
+	public static  AllergyIntolerance getProblemEntry(ChestWallSection chestWallSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CHEST_WALL_SECTION,
-				ConsolPackage.Literals.CHEST_WALL_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(ConsolPackage.Literals.CHEST_WALL_SECTION, ConsolPackage.Literals.CHEST_WALL_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

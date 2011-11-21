@@ -7,6 +7,7 @@
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import org.eclipse.emf.common.EMFPlugin;
+
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**
@@ -39,7 +40,7 @@ public final class ConsolPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public ConsolPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

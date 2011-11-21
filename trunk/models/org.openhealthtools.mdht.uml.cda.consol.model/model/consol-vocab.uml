@@ -1,331 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Package xmi:id="_0VELNguuEeGvGIuLiiZuOg" name="consol-vocab">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0W4JHguuEeGvGIuLiiZuOg" name="HealthStatusValue">
-      <eAnnotations xmi:id="_0W-PtwuuEeGvGIuLiiZuOg" source="sourceClass">
+  <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2E7IsBSVEeGGzu7fmW9pXw" name="HealthStatusValue">
+      <eAnnotations xmi:id="_2E-zEBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_LSa-gCQSEeCxCon8a79rfA"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0W4JHwuuEeGvGIuLiiZuOg" name="81323004"/>
-      <ownedLiteral xmi:id="_0W4JIAuuEeGvGIuLiiZuOg" name="313386006"/>
-      <ownedLiteral xmi:id="_0W4JIQuuEeGvGIuLiiZuOg" name="162467007"/>
-      <ownedLiteral xmi:id="_0W4JIguuEeGvGIuLiiZuOg" name="161901003"/>
-      <ownedLiteral xmi:id="_0W4JIwuuEeGvGIuLiiZuOg" name="271593001"/>
-      <ownedLiteral xmi:id="_0W4JJAuuEeGvGIuLiiZuOg" name="21134002"/>
-      <ownedLiteral xmi:id="_0W4JJQuuEeGvGIuLiiZuOg" name="161045001"/>
-      <ownedLiteral xmi:id="_0W4JJguuEeGvGIuLiiZuOg" name="419099009"/>
+      <ownedLiteral xmi:id="_2E7IsRSVEeGGzu7fmW9pXw" name="81323004"/>
+      <ownedLiteral xmi:id="_2E7IshSVEeGGzu7fmW9pXw" name="313386006"/>
+      <ownedLiteral xmi:id="_2E7IsxSVEeGGzu7fmW9pXw" name="162467007"/>
+      <ownedLiteral xmi:id="_2E7ItBSVEeGGzu7fmW9pXw" name="161901003"/>
+      <ownedLiteral xmi:id="_2E7ItRSVEeGGzu7fmW9pXw" name="271593001"/>
+      <ownedLiteral xmi:id="_2E7IthSVEeGGzu7fmW9pXw" name="21134002"/>
+      <ownedLiteral xmi:id="_2E7ItxSVEeGGzu7fmW9pXw" name="161045001"/>
+      <ownedLiteral xmi:id="_2E7IuBSVEeGGzu7fmW9pXw" name="419099009"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0XQjmQuuEeGvGIuLiiZuOg" name="SeverityObservation">
-      <eAnnotations xmi:id="_0XWqNAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FPRwBSVEeGGzu7fmW9pXw" name="SeverityObservation">
+      <eAnnotations xmi:id="_2FRG8BSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_qhobQCQMEeCxCon8a79rfA"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0XQjmguuEeGvGIuLiiZuOg" name="H"/>
-      <ownedLiteral xmi:id="_0XQjmwuuEeGvGIuLiiZuOg" name="M"/>
-      <ownedLiteral xmi:id="_0XQjnAuuEeGvGIuLiiZuOg" name="L"/>
+      <ownedLiteral xmi:id="_2FPRwRSVEeGGzu7fmW9pXw" name="H"/>
+      <ownedLiteral xmi:id="_2FPRwhSVEeGGzu7fmW9pXw" name="M"/>
+      <ownedLiteral xmi:id="_2FPRwxSVEeGGzu7fmW9pXw" name="L"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0YHfMQuuEeGvGIuLiiZuOg" name="ProblemStatusValue">
-      <eAnnotations xmi:id="_0YNl0QuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="ProblemStatusValue">
+      <eAnnotations xmi:id="_2FfwcRSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_-YF9cCQOEeCxCon8a79rfA"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0YHfMguuEeGvGIuLiiZuOg" name="55561003"/>
-      <ownedLiteral xmi:id="_0YHfMwuuEeGvGIuLiiZuOg" name="73425007"/>
-      <ownedLiteral xmi:id="_0YHfNAuuEeGvGIuLiiZuOg" name="90734009"/>
-      <ownedLiteral xmi:id="_0YHfNQuuEeGvGIuLiiZuOg" name="7087005"/>
-      <ownedLiteral xmi:id="_0YHfNguuEeGvGIuLiiZuOg" name="255227004"/>
-      <ownedLiteral xmi:id="_0YHfNwuuEeGvGIuLiiZuOg" name="415684004"/>
-      <ownedLiteral xmi:id="_0YHfOAuuEeGvGIuLiiZuOg" name="410516002"/>
-      <ownedLiteral xmi:id="_0YHfOQuuEeGvGIuLiiZuOg" name="413322009"/>
+      <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
+      <ownedLiteral xmi:id="_2FcGEhSVEeGGzu7fmW9pXw" name="73425007"/>
+      <ownedLiteral xmi:id="_2FcGExSVEeGGzu7fmW9pXw" name="90734009"/>
+      <ownedLiteral xmi:id="_2FcGFBSVEeGGzu7fmW9pXw" name="7087005"/>
+      <ownedLiteral xmi:id="_2FcGFRSVEeGGzu7fmW9pXw" name="255227004"/>
+      <ownedLiteral xmi:id="_2FcGFhSVEeGGzu7fmW9pXw" name="415684004"/>
+      <ownedLiteral xmi:id="_2FcGFxSVEeGGzu7fmW9pXw" name="410516002"/>
+      <ownedLiteral xmi:id="_2FcGGBSVEeGGzu7fmW9pXw" name="413322009"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0YZzKAuuEeGvGIuLiiZuOg" name="Problem Type">
-      <eAnnotations xmi:id="_0Yf5tguuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Fw2MBSVEeGGzu7fmW9pXw" name="Problem Type">
+      <eAnnotations xmi:id="_2F0gkRSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_RS-wgCvBEd-LFp1hgdmc1w"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0YZzKQuuEeGvGIuLiiZuOg" name="404684003"/>
-      <ownedLiteral xmi:id="_0YZzKguuEeGvGIuLiiZuOg" name="409586006"/>
-      <ownedLiteral xmi:id="_0YZzKwuuEeGvGIuLiiZuOg" name="282291009"/>
-      <ownedLiteral xmi:id="_0YZzLAuuEeGvGIuLiiZuOg" name="64572001"/>
-      <ownedLiteral xmi:id="_0YZzLQuuEeGvGIuLiiZuOg" name="248536006"/>
-      <ownedLiteral xmi:id="_0YZzLguuEeGvGIuLiiZuOg" name="418799008"/>
-      <ownedLiteral xmi:id="_0YZzLwuuEeGvGIuLiiZuOg" name="55607006"/>
+      <ownedLiteral xmi:id="_2Fw2MRSVEeGGzu7fmW9pXw" name="404684003"/>
+      <ownedLiteral xmi:id="_2Fw2MhSVEeGGzu7fmW9pXw" name="409586006"/>
+      <ownedLiteral xmi:id="_2Fw2MxSVEeGGzu7fmW9pXw" name="282291009"/>
+      <ownedLiteral xmi:id="_2Fw2NBSVEeGGzu7fmW9pXw" name="64572001"/>
+      <ownedLiteral xmi:id="_2Fw2NRSVEeGGzu7fmW9pXw" name="248536006"/>
+      <ownedLiteral xmi:id="_2Fw2NhSVEeGGzu7fmW9pXw" name="418799008"/>
+      <ownedLiteral xmi:id="_2Fw2NxSVEeGGzu7fmW9pXw" name="55607006"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0YyNlAuuEeGvGIuLiiZuOg" name="ConcernEntryStatus">
-      <eAnnotations xmi:id="_0YyNnwuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2GDxIBSVEeGGzu7fmW9pXw" name="ConcernEntryStatus">
+      <eAnnotations xmi:id="_2GFmURSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_9ys50CM8EeCxCon8a79rfA"/>
       </eAnnotations>
-      <ownedComment xmi:id="_0YyNlQuuEeGvGIuLiiZuOg">
+      <ownedComment xmi:id="_2GDxIRSVEeGGzu7fmW9pXw">
         <body>A concern in the &quot;active&quot; state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_0YyNlguuEeGvGIuLiiZuOg" name="active"/>
-      <ownedLiteral xmi:id="_0YyNlwuuEeGvGIuLiiZuOg" name="suspended"/>
-      <ownedLiteral xmi:id="_0YyNmAuuEeGvGIuLiiZuOg" name="aborted"/>
-      <ownedLiteral xmi:id="_0YyNmQuuEeGvGIuLiiZuOg" name="completed"/>
+      <ownedLiteral xmi:id="_2GDxIhSVEeGGzu7fmW9pXw" name="active"/>
+      <ownedLiteral xmi:id="_2GDxIxSVEeGGzu7fmW9pXw" name="suspended"/>
+      <ownedLiteral xmi:id="_2GDxJBSVEeGGzu7fmW9pXw" name="aborted"/>
+      <ownedLiteral xmi:id="_2GDxJRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0ZvP4AuuEeGvGIuLiiZuOg" name="Medication Type">
-      <eAnnotations xmi:id="_0Z1WcguuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HFr4RSVEeGGzu7fmW9pXw" name="Medication Type">
+      <eAnnotations xmi:id="_2HHhERSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWV44KDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0ZvP4QuuEeGvGIuLiiZuOg" name="329505003"/>
-      <ownedLiteral xmi:id="_0ZvP4guuEeGvGIuLiiZuOg" name="73639000"/>
+      <ownedLiteral xmi:id="_2HFr4hSVEeGGzu7fmW9pXw" name="329505003"/>
+      <ownedLiteral xmi:id="_2HFr4xSVEeGGzu7fmW9pXw" name="73639000"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0agE0AuuEeGvGIuLiiZuOg" name="Medication Fill Status">
-      <eAnnotations xmi:id="_0agE1guuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HnQUxSVEeGGzu7fmW9pXw" name="Medication Fill Status">
+      <eAnnotations xmi:id="_2HpskBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dV8QQKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0agE0QuuEeGvGIuLiiZuOg" name="aborted"/>
-      <ownedLiteral xmi:id="_0agE0guuEeGvGIuLiiZuOg" name="completed"/>
+      <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
+      <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0ayYswuuEeGvGIuLiiZuOg" name="Medication Route FDA">
-      <eAnnotations xmi:id="_0ayYtQuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA">
+      <eAnnotations xmi:id="_2H3H8BSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWOkIKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0ayYtguuEeGvGIuLiiZuOg" name="Body Site">
-      <eAnnotations xmi:id="_0a4fUAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site">
+      <eAnnotations xmi:id="_2H4WEBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c215cKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0a4fUQuuEeGvGIuLiiZuOg" name="Medication Product Form">
-      <eAnnotations xmi:id="_0a4fUwuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form">
+      <eAnnotations xmi:id="_2H6LQBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWEMEKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0bjNvwuuEeGvGIuLiiZuOg" name="Problem">
-      <eAnnotations xmi:id="_0bpUUAuuEeGvGIuLiiZuOg" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_1-coUCvAEd-LFp1hgdmc1w"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0dwNIAuuEeGvGIuLiiZuOg" name="Social History Type">
-      <eAnnotations xmi:id="_0d1FoAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type">
+      <eAnnotations xmi:id="_2JnbcRSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dj_6YKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0dwNIQuuEeGvGIuLiiZuOg" name="160573003"/>
-      <ownedLiteral xmi:id="_0dwNIguuEeGvGIuLiiZuOg" name="363908000"/>
-      <ownedLiteral xmi:id="_0dwNIwuuEeGvGIuLiiZuOg" name="364703007"/>
-      <ownedLiteral xmi:id="_0dwNJAuuEeGvGIuLiiZuOg" name="256235009"/>
-      <ownedLiteral xmi:id="_0dwNJQuuEeGvGIuLiiZuOg" name="228272008"/>
-      <ownedLiteral xmi:id="_0dwNJguuEeGvGIuLiiZuOg" name="364393001"/>
-      <ownedLiteral xmi:id="_0dwNJwuuEeGvGIuLiiZuOg" name="229819007"/>
-      <ownedLiteral xmi:id="_0dwNKAuuEeGvGIuLiiZuOg" name="425400000"/>
+      <ownedLiteral xmi:id="_2JjKARSVEeGGzu7fmW9pXw" name="160573003"/>
+      <ownedLiteral xmi:id="_2JjKAhSVEeGGzu7fmW9pXw" name="363908000"/>
+      <ownedLiteral xmi:id="_2JjKAxSVEeGGzu7fmW9pXw" name="364703007"/>
+      <ownedLiteral xmi:id="_2JjKBBSVEeGGzu7fmW9pXw" name="256235009"/>
+      <ownedLiteral xmi:id="_2JjKBRSVEeGGzu7fmW9pXw" name="228272008"/>
+      <ownedLiteral xmi:id="_2JjKBhSVEeGGzu7fmW9pXw" name="364393001"/>
+      <ownedLiteral xmi:id="_2JjKBxSVEeGGzu7fmW9pXw" name="229819007"/>
+      <ownedLiteral xmi:id="_2JjKCBSVEeGGzu7fmW9pXw" name="425400000"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0ft8AAuuEeGvGIuLiiZuOg" name="Advance Directive Type">
-      <eAnnotations xmi:id="_0fy0gAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="Advance Directive Type">
+      <eAnnotations xmi:id="_2LKTkRSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c2q6UKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0ft8AQuuEeGvGIuLiiZuOg" name="281789004"/>
-      <ownedLiteral xmi:id="_0ft8AguuEeGvGIuLiiZuOg" name="89666000"/>
-      <ownedLiteral xmi:id="_0ft8AwuuEeGvGIuLiiZuOg" name="225204009"/>
-      <ownedLiteral xmi:id="_0ft8BAuuEeGvGIuLiiZuOg" name="52765003"/>
-      <ownedLiteral xmi:id="_0ft8BQuuEeGvGIuLiiZuOg" name="78823007"/>
-      <ownedLiteral xmi:id="_0ft8BguuEeGvGIuLiiZuOg" name="304251008"/>
+      <ownedLiteral xmi:id="_2LHQQRSVEeGGzu7fmW9pXw" name="281789004"/>
+      <ownedLiteral xmi:id="_2LHQQhSVEeGGzu7fmW9pXw" name="89666000"/>
+      <ownedLiteral xmi:id="_2LHQQxSVEeGGzu7fmW9pXw" name="225204009"/>
+      <ownedLiteral xmi:id="_2LHQRBSVEeGGzu7fmW9pXw" name="52765003"/>
+      <ownedLiteral xmi:id="_2LHQRRSVEeGGzu7fmW9pXw" name="78823007"/>
+      <ownedLiteral xmi:id="_2LHQRhSVEeGGzu7fmW9pXw" name="304251008"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0gn68AuuEeGvGIuLiiZuOg" name="EncounterType">
-      <eAnnotations xmi:id="_0gpwIAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterType">
+      <eAnnotations xmi:id="_2L4sUBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_3kRpAKypEd-9I53ewETPWA"/>
       </eAnnotations>
-      <ownedComment xmi:id="_0gn68QuuEeGvGIuLiiZuOg">
+      <ownedComment xmi:id="_2L3eMRSVEeGGzu7fmW9pXw">
         <body>This is used to identify medical services and procedures furnished by physicians and other healthcare professionals.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0gqXMAuuEeGvGIuLiiZuOg" name="Admission Type (NUBC)">
-      <eAnnotations xmi:id="_0gsMYAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L5TYBSVEeGGzu7fmW9pXw" name="Admission Type (NUBC)">
+      <eAnnotations xmi:id="_2L6hgBSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_iXnBgKyqEd-9I53ewETPWA"/>
       </eAnnotations>
-      <ownedComment xmi:id="_0gqXMQuuEeGvGIuLiiZuOg">
+      <ownedComment xmi:id="_2L5TYRSVEeGGzu7fmW9pXw">
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0hKGcguuEeGvGIuLiiZuOg" name="Vaccines administered (CVX)">
-      <eAnnotations xmi:id="_0hL7oAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
+      <eAnnotations xmi:id="_2MRt4BSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkKDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0k26sAuuEeGvGIuLiiZuOg" name="Vital Sign Result">
-      <eAnnotations xmi:id="_0k-PcAuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="Vital Sign Result">
+      <eAnnotations xmi:id="_2O91ghSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_UvVE0DISEd-saqiXO4OYhQ"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0k26sQuuEeGvGIuLiiZuOg" name="8310-5"/>
-      <ownedLiteral xmi:id="_0k26sguuEeGvGIuLiiZuOg" name="8462-4"/>
-      <ownedLiteral xmi:id="_0k26swuuEeGvGIuLiiZuOg" name="8480-6"/>
-      <ownedLiteral xmi:id="_0k26tAuuEeGvGIuLiiZuOg" name="8287-5"/>
-      <ownedLiteral xmi:id="_0k26tQuuEeGvGIuLiiZuOg" name="8867-4"/>
-      <ownedLiteral xmi:id="_0k26tguuEeGvGIuLiiZuOg" name="8302-2"/>
-      <ownedLiteral xmi:id="_0k26twuuEeGvGIuLiiZuOg" name="8306-3"/>
-      <ownedLiteral xmi:id="_0k26uAuuEeGvGIuLiiZuOg" name="2710-2"/>
-      <ownedLiteral xmi:id="_0k26uQuuEeGvGIuLiiZuOg" name="9279-1"/>
-      <ownedLiteral xmi:id="_0k26uguuEeGvGIuLiiZuOg" name="3141-9"/>
+      <ownedLiteral xmi:id="_2O3u6hSVEeGGzu7fmW9pXw" name="8310-5"/>
+      <ownedLiteral xmi:id="_2O3u6xSVEeGGzu7fmW9pXw" name="8462-4"/>
+      <ownedLiteral xmi:id="_2O3u7BSVEeGGzu7fmW9pXw" name="8480-6"/>
+      <ownedLiteral xmi:id="_2O3u7RSVEeGGzu7fmW9pXw" name="8287-5"/>
+      <ownedLiteral xmi:id="_2O3u7hSVEeGGzu7fmW9pXw" name="8867-4"/>
+      <ownedLiteral xmi:id="_2O3u7xSVEeGGzu7fmW9pXw" name="8302-2"/>
+      <ownedLiteral xmi:id="_2O3u8BSVEeGGzu7fmW9pXw" name="8306-3"/>
+      <ownedLiteral xmi:id="_2O3u8RSVEeGGzu7fmW9pXw" name="2710-2"/>
+      <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
+      <ownedLiteral xmi:id="_2O3u8xSVEeGGzu7fmW9pXw" name="3141-9"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0pm31wuuEeGvGIuLiiZuOg" name="Language">
-      <eAnnotations xmi:id="_0pm32QuuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SVSkBSVEeGGzu7fmW9pXw" name="Problem">
+      <eAnnotations xmi:id="_2SVSkhSVEeGGzu7fmW9pXw" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_1-coUCvAEd-LFp1hgdmc1w"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language">
+      <eAnnotations xmi:id="_2SbZNhSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_yh8VUKrtEd-yFfcbpgNFIA"/>
       </eAnnotations>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0ps-cAuuEeGvGIuLiiZuOg" name="LanguageAbilityMode">
-      <eAnnotations xmi:id="_0ps-fguuEeGvGIuLiiZuOg" source="sourceClass">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNxSVEeGGzu7fmW9pXw" name="LanguageAbilityMode">
+      <eAnnotations xmi:id="_2Shf0hSVEeGGzu7fmW9pXw" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dLqS4KDqEd-dVeaMP0XXQw"/>
       </eAnnotations>
-      <ownedLiteral xmi:id="_0ps-cQuuEeGvGIuLiiZuOg" name="ESGN"/>
-      <ownedLiteral xmi:id="_0ps-cguuEeGvGIuLiiZuOg" name="ESP"/>
-      <ownedLiteral xmi:id="_0ps-cwuuEeGvGIuLiiZuOg" name="EWR"/>
-      <ownedLiteral xmi:id="_0ps-dAuuEeGvGIuLiiZuOg" name="RSGN"/>
-      <ownedLiteral xmi:id="_0ps-dQuuEeGvGIuLiiZuOg" name="RSP"/>
-      <ownedLiteral xmi:id="_0ps-dguuEeGvGIuLiiZuOg" name="RWR"/>
+      <ownedLiteral xmi:id="_2SbZOBSVEeGGzu7fmW9pXw" name="ESGN"/>
+      <ownedLiteral xmi:id="_2SbZORSVEeGGzu7fmW9pXw" name="ESP"/>
+      <ownedLiteral xmi:id="_2SbZOhSVEeGGzu7fmW9pXw" name="EWR"/>
+      <ownedLiteral xmi:id="_2SbZOxSVEeGGzu7fmW9pXw" name="RSGN"/>
+      <ownedLiteral xmi:id="_2SbZPBSVEeGGzu7fmW9pXw" name="RSP"/>
+      <ownedLiteral xmi:id="_2SbZPRSVEeGGzu7fmW9pXw" name="RWR"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0y-2QQuuEeGvGIuLiiZuOg" name="HPDocumentType">
-      <eAnnotations xmi:id="_0zAEYAuuEeGvGIuLiiZuOg" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt-vocab.uml#_XKjcgGj5Ed-tUpkWYQgJlQ"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0z8fkAuuEeGvGIuLiiZuOg" name="ConsultDocumentTypeCodes">
-      <eAnnotations xmi:id="_0z9tsAuuEeGvGIuLiiZuOg" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt-vocab.uml#_ZjRAYGg1Ed-ilOLYnIx0jA"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_02by4AuuEeGvGIuLiiZuOg" name="ProgressNoteDocumentTypeCode">
-      <eAnnotations xmi:id="_02doEAuuEeGvGIuLiiZuOg" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt-vocab.uml#_npnkkMvhEd-hi-1hHmWxvw"/>
-      </eAnnotations>
-    </packagedElement>
-    <profileApplication xmi:id="_0VELNwuuEeGvGIuLiiZuOg">
-      <eAnnotations xmi:id="_0VELOAuuEeGvGIuLiiZuOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_2B97VhSVEeGGzu7fmW9pXw">
+      <eAnnotations xmi:id="_2B97VxSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_0VELOQuuEeGvGIuLiiZuOg">
-      <eAnnotations xmi:id="_0VELOguuEeGvGIuLiiZuOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_2B97WBSVEeGGzu7fmW9pXw">
+      <eAnnotations xmi:id="_2B97WRSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
-    <profileApplication xmi:id="_0VELPAuuEeGvGIuLiiZuOg">
-      <eAnnotations xmi:id="_0VELPQuuEeGvGIuLiiZuOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
+      <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
       </eAnnotations>
       <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <Ecore:EPackage xmi:id="_0VELOwuuEeGvGIuLiiZuOg" base_Package="_0VELNguuEeGvGIuLiiZuOg" packageName="hitsp" nsPrefix="vocab" prefix="Vocab"/>
-  <term:ValueSetVersion xmi:id="_0W4JJwuuEeGvGIuLiiZuOg" base_Enumeration="_0W4JHguuEeGvGIuLiiZuOg">
+  <Ecore:EPackage xmi:id="_2B97WhSVEeGGzu7fmW9pXw" base_Package="_2B97VRSVEeGGzu7fmW9pXw" packageName="hitsp" nsPrefix="vocab" prefix="Vocab"/>
+  <term:ValueSetVersion xmi:id="_2E7IuRSVEeGGzu7fmW9pXw" base_Enumeration="_2E7IsBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0W4JKAuuEeGvGIuLiiZuOg" conceptName="Alive and well" base_EnumerationLiteral="_0W4JHwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PsAuuEeGvGIuLiiZuOg" conceptName="In remission" base_EnumerationLiteral="_0W4JIAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PsQuuEeGvGIuLiiZuOg" conceptName="Symptom free" base_EnumerationLiteral="_0W4JIQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PsguuEeGvGIuLiiZuOg" conceptName="Chronically ill" base_EnumerationLiteral="_0W4JIguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PswuuEeGvGIuLiiZuOg" conceptName="Severely ill" base_EnumerationLiteral="_0W4JIwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PtAuuEeGvGIuLiiZuOg" conceptName="Disabled" base_EnumerationLiteral="_0W4JJAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PtQuuEeGvGIuLiiZuOg" conceptName="Severely disabled" base_EnumerationLiteral="_0W4JJQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0W-PtguuEeGvGIuLiiZuOg" conceptName="Deceased" base_EnumerationLiteral="_0W4JJguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0XWqMAuuEeGvGIuLiiZuOg" base_Enumeration="_0XQjmQuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2E8W0BSVEeGGzu7fmW9pXw" conceptName="Alive and well" base_EnumerationLiteral="_2E7IsRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E8W0RSVEeGGzu7fmW9pXw" conceptName="In remission" base_EnumerationLiteral="_2E7IshSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E894BSVEeGGzu7fmW9pXw" conceptName="Symptom free" base_EnumerationLiteral="_2E7IsxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E894RSVEeGGzu7fmW9pXw" conceptName="Chronically ill" base_EnumerationLiteral="_2E7ItBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E9k8BSVEeGGzu7fmW9pXw" conceptName="Severely ill" base_EnumerationLiteral="_2E7ItRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E9k8RSVEeGGzu7fmW9pXw" conceptName="Disabled" base_EnumerationLiteral="_2E7IthSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E-MABSVEeGGzu7fmW9pXw" conceptName="Severely disabled" base_EnumerationLiteral="_2E7ItxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2E-MARSVEeGGzu7fmW9pXw" conceptName="Deceased" base_EnumerationLiteral="_2E7IuBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2FPRxBSVEeGGzu7fmW9pXw" base_Enumeration="_2FPRwBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_hSRvwSQMEeCxCon8a79rfA"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0XWqMQuuEeGvGIuLiiZuOg" conceptName="High" base_EnumerationLiteral="_0XQjmguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0XWqMguuEeGvGIuLiiZuOg" conceptName="Moderate" base_EnumerationLiteral="_0XQjmwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0XWqMwuuEeGvGIuLiiZuOg" conceptName="Low" base_EnumerationLiteral="_0XQjnAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0YHfOguuEeGvGIuLiiZuOg" base_Enumeration="_0YHfMQuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2FP40BSVEeGGzu7fmW9pXw" conceptName="High" base_EnumerationLiteral="_2FPRwRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FQf4BSVEeGGzu7fmW9pXw" conceptName="Moderate" base_EnumerationLiteral="_2FPRwhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FQf4RSVEeGGzu7fmW9pXw" conceptName="Low" base_EnumerationLiteral="_2FPRwxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2FctIBSVEeGGzu7fmW9pXw" base_Enumeration="_2FcGEBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0YHfOwuuEeGvGIuLiiZuOg" conceptName="Active" base_EnumerationLiteral="_0YHfMguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfPAuuEeGvGIuLiiZuOg" conceptName="Inactive" base_EnumerationLiteral="_0YHfMwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfPQuuEeGvGIuLiiZuOg" conceptName="Chronic" base_EnumerationLiteral="_0YHfNAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfPguuEeGvGIuLiiZuOg" conceptName="Intermittent" base_EnumerationLiteral="_0YHfNQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfPwuuEeGvGIuLiiZuOg" conceptName="Recurrent" base_EnumerationLiteral="_0YHfNguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfQAuuEeGvGIuLiiZuOg" conceptName="Rule out" base_EnumerationLiteral="_0YHfNwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YHfQQuuEeGvGIuLiiZuOg" conceptName="Ruled out" base_EnumerationLiteral="_0YHfOAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YNl0AuuEeGvGIuLiiZuOg" conceptName="Resolved" base_EnumerationLiteral="_0YHfOQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0YZzMAuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.7.2" version="1" fullName="Problem Type Value Set" source="HITSP" definition="The SNOMED CT  has been limited by HITSP to the value set reproduced below in Table 2-60 Problem Type Value Set Definition. This indicates the level of medical judgment used to determine the existence of a problem" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_0YZzKAuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2FdUMBSVEeGGzu7fmW9pXw" conceptName="Active" base_EnumerationLiteral="_2FcGERSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Fd7QBSVEeGGzu7fmW9pXw" conceptName="Inactive" base_EnumerationLiteral="_2FcGEhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Fd7QRSVEeGGzu7fmW9pXw" conceptName="Chronic" base_EnumerationLiteral="_2FcGExSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FeiUBSVEeGGzu7fmW9pXw" conceptName="Intermittent" base_EnumerationLiteral="_2FcGFBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FeiURSVEeGGzu7fmW9pXw" conceptName="Recurrent" base_EnumerationLiteral="_2FcGFRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FfJYBSVEeGGzu7fmW9pXw" conceptName="Rule out" base_EnumerationLiteral="_2FcGFhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FfJYRSVEeGGzu7fmW9pXw" conceptName="Ruled out" base_EnumerationLiteral="_2FcGFxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FfwcBSVEeGGzu7fmW9pXw" conceptName="Resolved" base_EnumerationLiteral="_2FcGGBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2Fw2OBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.2" version="1" fullName="Problem Type Value Set" source="HITSP" definition="The SNOMED CT  has been limited by HITSP to the value set reproduced below in Table 2-60 Problem Type Value Set Definition. This indicates the level of medical judgment used to determine the existence of a problem" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_2Fw2MBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0YZzMQuuEeGvGIuLiiZuOg" conceptName="Finding" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzKQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5sAuuEeGvGIuLiiZuOg" conceptName="Complaint" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzKguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5sQuuEeGvGIuLiiZuOg" conceptName="Diagnosis" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzKwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5sguuEeGvGIuLiiZuOg" conceptName="Condition" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzLAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5swuuEeGvGIuLiiZuOg" conceptName="Functional limitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzLQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5tAuuEeGvGIuLiiZuOg" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzLguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Yf5tQuuEeGvGIuLiiZuOg" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_0YZzLwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0YyNmguuEeGvGIuLiiZuOg" base_Enumeration="_0YyNlAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YyNmwuuEeGvGIuLiiZuOg" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_0YyNlguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YyNnAuuEeGvGIuLiiZuOg" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_0YyNlwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YyNnQuuEeGvGIuLiiZuOg" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_0YyNmAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0YyNnguuEeGvGIuLiiZuOg" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_0YyNmQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0ZvP4wuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.8.19" version="1" fullName="Medication Type Value Set" definition="This is a classification based on how the medication is marketed (e.g., prescription, over the counter drug)" revisionDate="07/23/2009" base_Enumeration="_0ZvP4AuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2FyEUBSVEeGGzu7fmW9pXw" conceptName="Finding" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2MRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FyrYBSVEeGGzu7fmW9pXw" conceptName="Complaint" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2MhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FzScBSVEeGGzu7fmW9pXw" conceptName="Diagnosis" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2MxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2FzScRSVEeGGzu7fmW9pXw" conceptName="Condition" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Fz5gBSVEeGGzu7fmW9pXw" conceptName="Functional limitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Fz5gRSVEeGGzu7fmW9pXw" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2F0gkBSVEeGGzu7fmW9pXw" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2GDxJhSVEeGGzu7fmW9pXw" base_Enumeration="_2GDxIBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2GEYMBSVEeGGzu7fmW9pXw" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_2GDxIhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2GE_QBSVEeGGzu7fmW9pXw" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_2GDxIxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2GE_QRSVEeGGzu7fmW9pXw" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_2GDxJBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2GFmUBSVEeGGzu7fmW9pXw" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_2GDxJRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2HFr5BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.19" version="1" fullName="Medication Type Value Set" definition="This is a classification based on how the medication is marketed (e.g., prescription, over the counter drug)" revisionDate="07/23/2009" base_Enumeration="_2HFr4RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0Z1WcAuuEeGvGIuLiiZuOg" conceptName="Over the counter products" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ZvP4QuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0Z1WcQuuEeGvGIuLiiZuOg" conceptName="Prescription Drug" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ZvP4guuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0agE0wuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" base_Enumeration="_0agE0AuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2HG6ABSVEeGGzu7fmW9pXw" conceptName="Over the counter products" usageNote="SNOMED-CT" base_EnumerationLiteral="_2HFr4hSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2HHhEBSVEeGGzu7fmW9pXw" conceptName="Prescription Drug" usageNote="SNOMED-CT" base_EnumerationLiteral="_2HFr4xSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2Hn3YBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" base_Enumeration="_2HnQUxSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0agE1AuuEeGvGIuLiiZuOg" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_0agE0QuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0agE1QuuEeGvGIuLiiZuOg" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_0agE0guuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0ayYtAuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" base_Enumeration="_0ayYswuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2HoecBSVEeGGzu7fmW9pXw" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2HpFgBSVEeGGzu7fmW9pXw" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2H150RSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" base_Enumeration="_2H150BSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0ayYtwuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_0ayYtguuEeGvGIuLiiZuOg">
+  <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0a4fUguuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_0a4fUQuuEeGvGIuLiiZuOg">
+  <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0bjNwAuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="1" fullName="Problem Value Set" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions)" revisionDate="07/23/2009" base_Enumeration="_0bjNvwuuEeGvGIuLiiZuOg">
+  <term:ValueSetVersion xmi:id="_2JjKCRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.60" version="1" fullName="Social History Type Value Set" definition="This indicates the type of social history observation" revisionDate="07/23/2009" base_Enumeration="_2JjKABSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0dwNKQuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.80.60" version="1" fullName="Social History Type Value Set" definition="This indicates the type of social history observation" revisionDate="07/23/2009" base_Enumeration="_0dwNIAuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2JkYIBSVEeGGzu7fmW9pXw" conceptName="ETOH (Alcohol) Use" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKARSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Jk_MBSVEeGGzu7fmW9pXw" conceptName="Drug Use" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKAhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Jk_MRSVEeGGzu7fmW9pXw" conceptName="Employment" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKAxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2JlmQBSVEeGGzu7fmW9pXw" conceptName="Exercise" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2JmNUBSVEeGGzu7fmW9pXw" conceptName="Other Social History" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2JmNURSVEeGGzu7fmW9pXw" conceptName="Diet" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Jm0YBSVEeGGzu7fmW9pXw" conceptName="Smoking" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2JnbcBSVEeGGzu7fmW9pXw" conceptName="Toxic Exposure" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKCBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2LHQRxSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.2" version="1" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" base_Enumeration="_2LHQQBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0dxbQAuuEeGvGIuLiiZuOg" conceptName="ETOH (Alcohol) Use" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNIQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dxbQQuuEeGvGIuLiiZuOg" conceptName="Drug Use" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNIguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dyCUAuuEeGvGIuLiiZuOg" conceptName="Employment" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNIwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dypYAuuEeGvGIuLiiZuOg" conceptName="Exercise" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNJAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dypYQuuEeGvGIuLiiZuOg" conceptName="Other Social History" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNJQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dzQcAuuEeGvGIuLiiZuOg" conceptName="Diet" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNJguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0dz3gAuuEeGvGIuLiiZuOg" conceptName="Smoking" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNJwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0d0ekAuuEeGvGIuLiiZuOg" conceptName="Toxic Exposure" usageNote="SNOMED-CT" base_EnumerationLiteral="_0dwNKAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0ft8BwuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.1.11.20.2" version="1" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" base_Enumeration="_0ft8AAuuEeGvGIuLiiZuOg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0fvxMAuuEeGvGIuLiiZuOg" conceptName="Antibiotics" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8AQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0fwYQAuuEeGvGIuLiiZuOg" conceptName="CPR" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8AguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0fw_UAuuEeGvGIuLiiZuOg" conceptName="IV Fluid and Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8AwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0fw_UQuuEeGvGIuLiiZuOg" conceptName="Intubation" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8BAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0fxmYAuuEeGvGIuLiiZuOg" conceptName="Life Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8BQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0fyNcAuuEeGvGIuLiiZuOg" conceptName="Resuscitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_0ft8BguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0gn68guuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.80.32" version="20081218" fullName="Encounter Type" source="HITSP" definition="This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 - 99299)." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_0gn68AuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2LIeYBSVEeGGzu7fmW9pXw" conceptName="Antibiotics" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2LIeYRSVEeGGzu7fmW9pXw" conceptName="CPR" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2LJFcBSVEeGGzu7fmW9pXw" conceptName="IV Fluid and Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2LJFcRSVEeGGzu7fmW9pXw" conceptName="Intubation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2LJsgBSVEeGGzu7fmW9pXw" conceptName="Life Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2LKTkBSVEeGGzu7fmW9pXw" conceptName="Resuscitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2L3eMhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.32" version="20081218" fullName="Encounter Type" source="HITSP" definition="This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 - 99299)." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2L3eMBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0gqXMguuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." base_Enumeration="_0gqXMAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0hKtgAuuEeGvGIuLiiZuOg" identifier="2.16.840.1.114222.4.11.934" version="3" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_0hKGcguuEeGvGIuLiiZuOg">
+  <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="3" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0k26uwuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_0k26sAuuEeGvGIuLiiZuOg">
+  <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0k4v4AuuEeGvGIuLiiZuOg" conceptName="Body temperature:Temp:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26sQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k5W8AuuEeGvGIuLiiZuOg" conceptName="Intravascular diastolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26sguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k5-AAuuEeGvGIuLiiZuOg" conceptName="Intravascular systolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26swuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k6lEAuuEeGvGIuLiiZuOg" conceptName="Circumference.occipital-frontal:Len:Pt:Head:Qn:Tape measure" usageNote="LOINC" base_EnumerationLiteral="_0k26tAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k7MIAuuEeGvGIuLiiZuOg" conceptName="Heart beat:NRat:Pt:XXX:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26tQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k7zMAuuEeGvGIuLiiZuOg" conceptName="Body height:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26tguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k8aQAuuEeGvGIuLiiZuOg" conceptName="Body height^lying:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26twuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k8aQQuuEeGvGIuLiiZuOg" conceptName="Oxygen saturation:SFr:Pt:BldC:Qn:Oximetry" usageNote="LOINC" base_EnumerationLiteral="_0k26uAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k9BUAuuEeGvGIuLiiZuOg" conceptName="Breaths:NRat:Pt:Respiratory system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_0k26uQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0k9oYAuuEeGvGIuLiiZuOg" conceptName="Body weight:Mass:Pt:^Patient:Qn:Measured" usageNote="LOINC" base_EnumerationLiteral="_0k26uguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0pm32AuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_0pm31wuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0ps-dwuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.1.11.12249" version="1" fullName="LanguageAbilityMode Value Set" definition="This identifies the language ability of the individual. A value representing the method of expression of the language." revisionDate="07/23/2009" base_Enumeration="_0ps-cAuuEeGvGIuLiiZuOg">
+  <term:ValueSetCode xmi:id="_2O3u9RSVEeGGzu7fmW9pXw" conceptName="Body temperature:Temp:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u6hSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u9hSVEeGGzu7fmW9pXw" conceptName="Intravascular diastolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u6xSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u9xSVEeGGzu7fmW9pXw" conceptName="Intravascular systolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7BSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u-BSVEeGGzu7fmW9pXw" conceptName="Circumference.occipital-frontal:Len:Pt:Head:Qn:Tape measure" usageNote="LOINC" base_EnumerationLiteral="_2O3u7RSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u-RSVEeGGzu7fmW9pXw" conceptName="Heart beat:NRat:Pt:XXX:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7hSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u-hSVEeGGzu7fmW9pXw" conceptName="Body height:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7xSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u-xSVEeGGzu7fmW9pXw" conceptName="Body height^lying:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u8BSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O3u_BSVEeGGzu7fmW9pXw" conceptName="Oxygen saturation:SFr:Pt:BldC:Qn:Oximetry" usageNote="LOINC" base_EnumerationLiteral="_2O3u8RSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O91gBSVEeGGzu7fmW9pXw" conceptName="Breaths:NRat:Pt:Respiratory system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u8hSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2O91gRSVEeGGzu7fmW9pXw" conceptName="Body weight:Mass:Pt:^Patient:Qn:Measured" usageNote="LOINC" base_EnumerationLiteral="_2O3u8xSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="1" fullName="Problem Value Set" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions)" revisionDate="07/23/2009" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2SbZPhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.12249" version="1" fullName="LanguageAbilityMode Value Set" definition="This identifies the language ability of the individual. A value representing the method of expression of the language." revisionDate="07/23/2009" base_Enumeration="_2SbZNxSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dLvLYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0ps-eAuuEeGvGIuLiiZuOg" conceptName="Expressed signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-cQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0ps-eQuuEeGvGIuLiiZuOg" conceptName="Expressed spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-cguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0ps-eguuEeGvGIuLiiZuOg" conceptName="Expressed written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-cwuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0ps-ewuuEeGvGIuLiiZuOg" conceptName="Received signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-dAuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0ps-fAuuEeGvGIuLiiZuOg" conceptName="Received spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-dQuuEeGvGIuLiiZuOg"/>
-  <term:ValueSetCode xmi:id="_0ps-fQuuEeGvGIuLiiZuOg" conceptName="Received written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_0ps-dguuEeGvGIuLiiZuOg"/>
-  <term:ValueSetVersion xmi:id="_0y_dUAuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.1.11.20.22" source="Health Level Seven (HL7)" definition="Valid codes are those whose scale is DOC and whose type of service is some variation of History and Physical." type="Intensional" binding="Dynamic" base_Enumeration="_0y-2QQuuEeGvGIuLiiZuOg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0z8fkQuuEeGvGIuLiiZuOg" source="Health Level Seven (HL7)" definition="LOINC codes whose scale is DOC, and whose type of service (component) is Consultation Note. Document type codes for &quot;Blood Bank Consultation,&quot; &quot;Confirmatory Consultation Note,&quot; or those codes giving &quot;Hospital Consultation&quot; as type of service (18841-7 and 8647-0) are not allowed as document type codes. In their place, the code 34104-0 with types of service = Consultation Note and setting = hospital should be used." type="Intensional" binding="Dynamic" base_Enumeration="_0z8fkAuuEeGvGIuLiiZuOg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_02by4QuuEeGvGIuLiiZuOg" identifier="2.16.840.1.113883.11.20.8.1" fullName="Progress Note Document Type Code" source="HL7" definition="This value set includes the preferred code and pre-coordinated LOINC codes that have the scale DOC (document) and a 'component' referring to &quot;subsequent evaluation notes&quot;.  Although these pre-coordinated LOINC codes are available for use, we recommend the preferred code (11506-3  Progress Note). When these pre-coordinated codes are used, any coded values describing the author or performer of the service act or the practice setting must be consistent with the LOINC document type. Note: &quot;Subsequent evaluation note&quot; is equivalent to Progress Note." binding="Dynamic" base_Enumeration="_02by4AuuEeGvGIuLiiZuOg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_2SbZPxSVEeGGzu7fmW9pXw" conceptName="Expressed signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZOBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2SbZQBSVEeGGzu7fmW9pXw" conceptName="Expressed spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZORSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2SbZQRSVEeGGzu7fmW9pXw" conceptName="Expressed written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZOhSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2SbZQhSVEeGGzu7fmW9pXw" conceptName="Received signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZOxSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Shf0BSVEeGGzu7fmW9pXw" conceptName="Received spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetCode xmi:id="_2Shf0RSVEeGGzu7fmW9pXw" conceptName="Received written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPRSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

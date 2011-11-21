@@ -14,18 +14,25 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.SurgeriesSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
@@ -93,25 +100,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionHasProcedureActivity(SurgeriesSection surgeriesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionHasProcedureActivity(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionHasProcedureActivity"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_HAS_PROCEDURE_ACTIVITY,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionHasProcedureActivity"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -149,24 +157,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionTemplateId"), new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionTemplateId"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -181,9 +191,9 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSurgeriesSectionCode(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Section Code</em>}' invariant operation.
@@ -208,24 +218,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionCode(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionCode(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionCode"), new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionCode"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -263,24 +275,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionTitle(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionTitle(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionTitle"), new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionTitle"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -318,24 +332,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionText(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionText(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionText"), new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionText"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -373,25 +389,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_PROCEDURE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionProcedureActivity"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_PROCEDURE_ACTIVITY,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionProcedureActivity"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -429,25 +446,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionExternalReference(SurgeriesSection surgeriesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionExternalReference(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_EXTERNAL_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionExternalReference"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_EXTERNAL_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionExternalReference"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -485,26 +503,26 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(
-			SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("SurgeriesSectionProcedureEntryProcedureActivityProcedure"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionProcedureEntryProcedureActivityProcedure"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -540,15 +558,14 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
+	public static  EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
 		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SURGERIES_SECTION,
-				ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(ConsolPackage.Literals.SURGERIES_SECTION, ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(63));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -587,15 +604,14 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ExternalReference getExternalReference(SurgeriesSection surgeriesSection) {
+	public static  ExternalReference getExternalReference(SurgeriesSection surgeriesSection) {
 		if (GET_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SURGERIES_SECTION,
-				ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(ConsolPackage.Literals.SURGERIES_SECTION, ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(64));
 			try {
 				GET_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -632,24 +648,21 @@ public class SurgeriesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures(
-			SurgeriesSection surgeriesSection) {
+	public static  EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures(SurgeriesSection surgeriesSection) {
 		if (GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SURGERIES_SECTION,
-				ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(ConsolPackage.Literals.SURGERIES_SECTION, ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(65));
 			try {
 				GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureEntryProcedureActivityProcedure> result = (Collection<ProcedureEntryProcedureActivityProcedure>) query.evaluate(surgeriesSection);
-		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(
-			result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(result.size(), result.toArray());
 	}
 
 } // SurgeriesSectionOperations

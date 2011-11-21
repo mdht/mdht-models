@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -118,8 +119,7 @@ public interface SocialHistorySection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().recordTarget->forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = \'2.16.840.1.113883.5.50\' )'"
 	 * @generated
 	 */
-	boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 
 /**
@@ -37,8 +38,7 @@ public interface ScanDataEnterer extends DataEnterer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time.value = self.getClinicalDocument().effectiveTime.value'"
 	 * @generated
 	 */
-	boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivityActOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -87,7 +92,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * @generated
 	 */
 	public PlanOfCareActivityAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PlanOfCareActivityActImpl
+} //PlanOfCareActivityActImpl

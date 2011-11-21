@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PregnancyObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -104,8 +109,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationInterpretationCode(this, diagnostics, context);
 	}
 
@@ -133,7 +137,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * @generated
 	 */
 	public PregnancyObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PregnancyObservationImpl
+} //PregnancyObservationImpl

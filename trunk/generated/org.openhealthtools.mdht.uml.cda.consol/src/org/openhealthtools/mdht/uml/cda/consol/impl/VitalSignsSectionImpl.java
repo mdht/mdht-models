@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -116,7 +121,7 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * @generated
 	 */
 	public VitalSignsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // VitalSignsSectionImpl
+} //VitalSignsSectionImpl

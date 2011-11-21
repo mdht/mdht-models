@@ -11,13 +11,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ScanningDevice;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.AuthorOperations;
 
 /**
@@ -81,26 +86,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(ScanningDevice scanningDevice,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceTimeEqualsDocumentEffectiveTime"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceTimeEqualsDocumentEffectiveTime"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -138,25 +143,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceHasAssignedAuthorId(ScanningDevice scanningDevice,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceHasAssignedAuthorId(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorId"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorId"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -171,9 +177,9 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.assignedAuthoringDevice.code.codeSystem = '1.2.840.10008.2.16.4'"
-			+ "   and not self.assignedAuthor.assignedAuthoringDevice.code.code.oclIsUndefined()"
-			+ "   and not self.assignedAuthor.assignedAuthoringDevice.code.displayName.oclIsUndefined()";
+	protected static final String VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.assignedAuthoringDevice.code.codeSystem = '1.2.840.10008.2.16.4'"+
+"   and not self.assignedAuthor.assignedAuthoringDevice.code.code.oclIsUndefined()"+
+"   and not self.assignedAuthor.assignedAuthoringDevice.code.displayName.oclIsUndefined()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScanningDeviceHasAssignedAuthoringDeviceCode(ScanningDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanning Device Has Assigned Authoring Device Code</em>}' invariant operation.
@@ -198,26 +204,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(ScanningDevice scanningDevice,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthoringDeviceCode"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthoringDeviceCode"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -255,26 +261,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceHasDeviceManufacturerModelName(ScanningDevice scanningDevice,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceHasDeviceManufacturerModelName(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceHasDeviceManufacturerModelName"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceHasDeviceManufacturerModelName"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -312,25 +318,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceHasDeviceSoftwareName(ScanningDevice scanningDevice,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceHasDeviceSoftwareName(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceHasDeviceSoftwareName"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceHasDeviceSoftwareName"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -368,26 +375,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(
-			ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorRepresentedOrganizationId"),
-					new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorRepresentedOrganizationId"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}
@@ -425,24 +432,26 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateScanningDeviceTemplateId(ScanningDevice scanningDevice, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateScanningDeviceTemplateId(ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SCANNING_DEVICE);
 			try {
 				VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scanningDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanningDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ScanningDeviceTemplateId"), new Object[] { scanningDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SCANNING_DEVICE__SCANNING_DEVICE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ScanningDeviceTemplateId"),
+						 new Object [] { scanningDevice }));
 			}
 			return false;
 		}

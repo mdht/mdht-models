@@ -9,13 +9,18 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -160,8 +165,7 @@ public class SocialHistoryImpl extends ObservationImpl implements SocialHistory 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySocialHistoryStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateSocialHistorySocialHistoryStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryOperations.validateSocialHistorySocialHistoryStatusObservation(this, diagnostics, context);
 	}
 
@@ -198,7 +202,7 @@ public class SocialHistoryImpl extends ObservationImpl implements SocialHistory 
 	 * @generated
 	 */
 	public SocialHistory init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // SocialHistoryImpl
+} //SocialHistoryImpl

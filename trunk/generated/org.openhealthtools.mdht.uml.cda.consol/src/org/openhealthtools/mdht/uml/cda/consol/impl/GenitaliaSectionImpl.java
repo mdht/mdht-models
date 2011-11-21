@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GenitaliaSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.GenitaliaSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -78,7 +83,7 @@ public class GenitaliaSectionImpl extends SectionImpl implements GenitaliaSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemEntryReactionObservationContainer getProblemEntry() {
+	public AllergyIntolerance getProblemEntry() {
 		return GenitaliaSectionOperations.getProblemEntry(this);
 	}
 
@@ -88,7 +93,7 @@ public class GenitaliaSectionImpl extends SectionImpl implements GenitaliaSectio
 	 * @generated
 	 */
 	public GenitaliaSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // GenitaliaSectionImpl
+} //GenitaliaSectionImpl

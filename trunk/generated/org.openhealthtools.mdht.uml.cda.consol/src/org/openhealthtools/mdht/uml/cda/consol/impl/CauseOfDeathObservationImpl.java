@@ -9,14 +9,18 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.CauseOfDeathObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -53,8 +57,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationHasSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasSubject(this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasSubjectPatientRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -62,10 +66,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasSubjectPatientRelationship(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationRelationshipValueCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelationshipValueCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,10 +75,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationRelationshipValueCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelationshipValueCode(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationHasRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasRelatedSubjectCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,10 +84,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasRelatedSubjectCode(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelatedSubjectCodeValueSet(this, diagnostics, context);
 	}
 
 	/**
@@ -95,21 +93,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelatedSubjectCodeValueSet(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCauseOfDeathObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasRelatedSubjectSubject(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasRelatedSubjectSubject(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +103,7 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * @generated
 	 */
 	public boolean validateCauseOfDeathObservationHasGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasGenderCode(
-			this, diagnostics, context);
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationHasGenderCode(this, diagnostics, context);
 	}
 
 	/**
@@ -127,10 +111,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelatedSubjectBirthTime(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationRelatedSubjectBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +157,7 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * @generated
 	 */
 	public boolean validateCauseOfDeathObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationEffectiveTime(
-			this, diagnostics, context);
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -184,10 +165,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationAgeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationAgeObservation(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationAgeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -195,21 +174,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservationProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationProblemStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCauseOfDeathObservationCauseOfDeathObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationCauseOfDeathObservation(
-			this, diagnostics, context);
+	public boolean validateCauseOfDeathObservationProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CauseOfDeathObservationOperations.validateCauseOfDeathObservationProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -235,17 +201,8 @@ public class CauseOfDeathObservationImpl extends ObservationImpl implements Caus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CauseOfDeathObservation> getCauseOfDeathObservations() {
-		return CauseOfDeathObservationOperations.getCauseOfDeathObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public CauseOfDeathObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // CauseOfDeathObservationImpl
+} //CauseOfDeathObservationImpl

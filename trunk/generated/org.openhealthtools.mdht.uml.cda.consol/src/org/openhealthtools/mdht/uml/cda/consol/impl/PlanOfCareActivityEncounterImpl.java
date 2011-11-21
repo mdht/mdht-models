@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityEncounter;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivityEncounterOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterMoodCodeValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareActivityEncounterMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +74,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +92,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * @generated
 	 */
 	public PlanOfCareActivityEncounter init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PlanOfCareActivityEncounterImpl
+} //PlanOfCareActivityEncounterImpl

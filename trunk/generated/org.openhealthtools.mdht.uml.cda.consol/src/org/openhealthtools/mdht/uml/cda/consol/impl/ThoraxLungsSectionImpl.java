@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ThoraxLungsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -88,7 +93,7 @@ public class ThoraxLungsSectionImpl extends SectionImpl implements ThoraxLungsSe
 	 * @generated
 	 */
 	public ThoraxLungsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ThoraxLungsSectionImpl
+} //ThoraxLungsSectionImpl

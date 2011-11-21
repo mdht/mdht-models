@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -53,10 +58,8 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionHasMedicationOrSupplyActivity(
-			this, diagnostics, context);
+	public boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionHasMedicationOrSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +140,7 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * @generated
 	 */
 	public MedicationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicationsSectionImpl
+} //MedicationsSectionImpl

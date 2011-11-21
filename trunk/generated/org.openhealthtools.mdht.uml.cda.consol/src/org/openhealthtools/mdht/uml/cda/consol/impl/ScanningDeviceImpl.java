@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ScanningDevice;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ScanningDeviceOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.AuthorImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(
-			this, diagnostics, context);
+	public boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +73,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthoringDeviceCode(this, diagnostics, context);
 	}
 
@@ -80,8 +82,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanningDeviceOperations.validateScanningDeviceHasDeviceManufacturerModelName(this, diagnostics, context);
 	}
 
@@ -99,10 +100,8 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(
-			this, diagnostics, context);
+	public boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +119,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * @generated
 	 */
 	public ScanningDevice init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ScanningDeviceImpl
+} //ScanningDeviceImpl

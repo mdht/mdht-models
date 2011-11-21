@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -53,8 +58,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryRelatedSubjectCodeValueSet(this, diagnostics, context);
 	}
 
@@ -81,8 +85,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryHasFamilyHistoryObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryHasFamilyHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasFamilyHistoryObservation(this, diagnostics, context);
 	}
 
@@ -100,8 +103,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryHasSubjectPatientRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasSubjectPatientRelationship(this, diagnostics, context);
 	}
 
@@ -128,8 +130,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryHasRelatedSubjectSubject(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasRelatedSubjectSubject(this, diagnostics, context);
 	}
 
@@ -156,8 +157,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryHasParticipantParticipantRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryHasParticipantParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasParticipantParticipantRole(this, diagnostics, context);
 	}
 
@@ -175,8 +175,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryHasParticipantRolePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasParticipantRolePlayingEntity(this, diagnostics, context);
 	}
 
@@ -248,8 +247,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryProblemStatusObservation(this, diagnostics, context);
 	}
 
@@ -258,8 +256,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryFamilyHistoryObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateFamilyHistoryFamilyHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryFamilyHistoryObservation(this, diagnostics, context);
 	}
 
@@ -287,7 +284,7 @@ public class FamilyHistoryImpl extends OrganizerImpl implements FamilyHistory {
 	 * @generated
 	 */
 	public FamilyHistory init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // FamilyHistoryImpl
+} //FamilyHistoryImpl

@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.Author;
 
 /**
@@ -52,8 +53,7 @@ public interface ScanOriginalAuthor extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |\r\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
