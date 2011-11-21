@@ -117,7 +117,7 @@ pressure</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_o1rwwE6TEeC7C4Qxze6ysQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>[0..*] indications SHALL be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide.</body>
+        <body>MAY contain [0..*] indications which SHALL be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide.</body>
         <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation))</body>
       </specification>
     </ownedRule>
@@ -152,7 +152,7 @@ External patient educational materials can be referenced with an appropriate URL
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_G-uygE6VEeC7C4Qxze6ysQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>Patient Instructions SHALL be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3)</body>
+        <body>MAY contain Patient Instructions which SHALL be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3)</body>
         <body>self.getActs()->exists(po : cda::Act | po.oclIsKindOf(ihe::PatientMedicalInstructions))</body>
       </specification>
     </ownedRule>
@@ -178,7 +178,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The typeCode attribute of the &lt;participant> element SHALL be CSM</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_YpO-AE6YEeC7C4Qxze6ysQ" name="medicationVehicleClass" constrainedElement="_S3awYE6YEeC7C4Qxze6ysQ">
@@ -186,7 +186,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The classCode of the &lt;participantRole> SHALL be MANU</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_scyoEE6YEeC7C4Qxze6ysQ" name="medicationVehicleCode" constrainedElement="_YpO-AE6YEeC7C4Qxze6ysQ">
@@ -194,7 +194,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>A &lt;code> element for the &lt;participantRole> SHALL be present and SHALL contain the code 412307009 from the SNOMED CT code system</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zk7vcE6YEeC7C4Qxze6ysQ" name="medicationVehicleName" constrainedElement="_scyoEE6YEeC7C4Qxze6ysQ">
@@ -202,7 +202,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;name> element in the &lt;playingEntity> element SHALL record the name of the drug vehicle</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name->size() > 0)))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name->size() > 0)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__E7A0E6YEeC7C4Qxze6ysQ" name="medicationVehicleCodedName" constrainedElement="_zk7vcE6YEeC7C4Qxze6ysQ">
@@ -210,7 +210,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;code> element in the &lt;playingEntity> element MAY be used to supply a coded term for the drug vehicle</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0)))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ELLI8E6ZEeC7C4Qxze6ysQ" name="medicationVehicleCodedNameVocab" constrainedElement="__E7A0E6YEeC7C4Qxze6ysQ">
@@ -218,7 +218,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_w0bkkHrGEd68l9lQ-TLEBQ">
@@ -478,9 +478,7 @@ vocabulary</body>
     <ownedRule xmi:id="_09MaIE5cEeC-IOl-lQ-2xA" name="codedDrugClassVocab" constrainedElement="_xys0EE5cEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMx5wE5dEeC-IOl-lQ-2xA">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it SHALL be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Drug Class Value Set, version: 20081218, Dynamic</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2aeQcE5cEeC-IOl-lQ-2xA" name="codedIngredientVocab" constrainedElement="_09MaIE5cEeC-IOl-lQ-2xA">
@@ -611,7 +609,7 @@ marketed (e.g., prescription, over the counter drug)</body>
   <CDA:ConstraintValidation xmi:id="_-0M94E6QEeC7C4Qxze6ysQ" severity="INFO" base_Constraint="_8zg4gE6QEeC7C4Qxze6ysQ">
     <ruleId>C154-[DE-8.20-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_t9YqYE6TEeC7C4Qxze6ysQ" base_Constraint="_jMwZYE6TEeC7C4Qxze6ysQ">
+  <CDA:ConstraintValidation xmi:id="_t9YqYE6TEeC7C4Qxze6ysQ" severity="INFO" base_Constraint="_jMwZYE6TEeC7C4Qxze6ysQ">
     <ruleId>C83-[DE-8.20-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2P6hQE6TEeC7C4Qxze6ysQ" base_Constraint="_wST6YE6TEeC7C4Qxze6ysQ">
@@ -620,7 +618,7 @@ marketed (e.g., prescription, over the counter drug)</body>
   <CDA:ConstraintValidation xmi:id="_5D7hAE6TEeC7C4Qxze6ysQ" base_Constraint="_3tCmkE6TEeC7C4Qxze6ysQ">
     <ruleId>C154-[DE-8.20-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_dIsTQE6VEeC7C4Qxze6ysQ" base_Constraint="_xDmX8E6UEeC7C4Qxze6ysQ">
+  <CDA:ConstraintValidation xmi:id="_dIsTQE6VEeC7C4Qxze6ysQ" severity="INFO" base_Constraint="_xDmX8E6UEeC7C4Qxze6ysQ">
     <ruleId>C83-[DE-8.22-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_PfjcsE6YEeC7C4Qxze6ysQ" severity="INFO" base_Constraint="_XYIX8E6XEeC7C4Qxze6ysQ">

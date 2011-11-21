@@ -370,7 +370,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )";
+	protected static final String VALIDATE_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationHasIntructionsInversion(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Has Intructions Inversion</em>}' invariant operation.
@@ -387,7 +387,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd <> true and er.act.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )
+	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
