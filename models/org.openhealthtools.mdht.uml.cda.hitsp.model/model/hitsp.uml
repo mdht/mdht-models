@@ -1246,7 +1246,7 @@ resolved</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The starting time of the Advance Directive SHALL be recorded in the &lt;low> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
-          <body>self.effectiveTime.low.hasContent()</body>
+          <body>self.effectiveTime.low.hasContent()  or self.effectiveTime.low.isNullFlavorDefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_S0JFEMzrEeCvbrjDQpuvkw" name="unknownStartingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
@@ -1263,7 +1263,7 @@ resolved</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The ending time of the Advance Directive SHALL be recorded in the &lt;high> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
-          <body>self.effectiveTime.high.hasContent()</body>
+          <body>self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8Duy4MzrEeCvbrjDQpuvkw" name="unknownEndingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
@@ -1751,7 +1751,9 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_LSI4gNJXEeCZxdqWGSM1Gw" severity="INFO" base_Association="_Fp1MMdJXEeCZxdqWGSM1Gw"/>
   <CDA:AssociationValidation xmi:id="_8LtdMNJcEeCJq4tpS2QhbQ" base_Association="_5pxr8NJcEeCJq4tpS2QhbQ"/>
   <CDA:AssociationValidation xmi:id="_aRVIwNJkEeCJq4tpS2QhbQ" base_Association="_YvgwstJkEeCJq4tpS2QhbQ"/>
-  <CDA:AssociationValidation xmi:id="_FxUpoM9JEeCBIMy4xFlonQ" base_Association="_Cf2R0s9JEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_FxUpoM9JEeCBIMy4xFlonQ" message="This section SHALL include entries from the Insurance Provider module when this information is known." base_Association="_Cf2R0s9JEeCBIMy4xFlonQ">
+    <ruleId>C83-[CT-101-2]</ruleId>
+  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_dOB5wM9LEeCBIMy4xFlonQ" severity="INFO" base_Association="_aWmZos9LEeCBIMy4xFlonQ"/>
   <CDA:AssociationValidation xmi:id="_gobkEM9LEeCBIMy4xFlonQ" severity="INFO" base_Association="_fcac4s9LEeCBIMy4xFlonQ"/>
   <CDA:AssociationValidation xmi:id="_K6ZU4M9MEeCBIMy4xFlonQ" base_Association="_Jtxwws9MEeCBIMy4xFlonQ"/>

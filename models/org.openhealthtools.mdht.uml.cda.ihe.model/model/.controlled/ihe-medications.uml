@@ -272,7 +272,7 @@ any special processing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.</body>
-        <body>self.getSubstanceAdministrations()->size()=0</body>
+        <body>self.entryRelationship.substanceAdministration->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_CsEjgHyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -456,7 +456,7 @@ medication has been prescribed, or EVN to indicate that the prescription has bee
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;time> element must be present to indicate when the author created the prescription. If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</body>
-        <body>self.author.time->size() = 1</body>
+        <body>not self.author->isEmpty() implies self.author->forAll(author| author.time->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9Rse0EtaEeCAK_Z5vqvtzg" name="HasAssignedAuthor" constrainedElement="_3YIDYEtaEeCAK_Z5vqvtzg">
@@ -464,7 +464,7 @@ medication has been prescribed, or EVN to indicate that the prescription has bee
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;assignedAuthor> element shall be present in author, and identifies the author.</body>
-        <body>self.author.assignedAuthor->size() = 1</body>
+        <body>not self.author->isEmpty() implies  self.author->forAll(author| author.assignedAuthor->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_37lgUEtbEeCAK_Z5vqvtzg" name="HasAssignedAuthorID" constrainedElement="_9Rse0EtaEeCAK_Z5vqvtzg">
@@ -477,7 +477,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>One or more &lt;id> elements should be present in assignedAuthor</body>
-        <body>self.author.assignedAuthor.id->size() > 0</body>
+        <body>not self.author.assignedAuthor->isEmpty() implies self.author.assignedAuthor->forAll ( assignedAuthor | assignedAuthor.id->size() > 0)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_DBTQgEtcEeCAK_Z5vqvtzg" name="HasAssignedAuthorPersonOrOrg" constrainedElement="_37lgUEtbEeCAK_Z5vqvtzg">
@@ -485,7 +485,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>An &lt;assignedPerson> and/or &lt;representedOriganization> element shall be present in assignedAuthor. This element&#xD;&#xA;shall contain a &lt;name> element to identify the prescriber or their organization.</body>
-        <body>(self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)</body>
+        <body>not self.author.assignedAuthor->isEmpty() implies    (self.author.assignedAuthor.assignedPerson->size() > 0 and self.author.assignedAuthor.assignedPerson.name->size() > 0) or (self.author.assignedAuthor.representedOrganization->size() > 0 and self.author.assignedAuthor.representedOrganization.name->size() > 0)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_RuNw4EtcEeCAK_Z5vqvtzg" name="HasPerformerTimeEvent" constrainedElement="_DBTQgEtcEeCAK_Z5vqvtzg">
@@ -493,7 +493,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;time> element shall be present in performer to indicate when the prescription was filled&#xD;&#xA;(moodCode='EVN'). If this information is unknown, it shall be recorded by setting the nullFlavor attribute to UNK.</body>
-        <body>self.moodCode = vocab::x_DocumentSubstanceMood::EVN and self.performer.time->size() = 1</body>
+        <body>(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.performer->forAll(time->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_s0Z7EEtcEeCAK_Z5vqvtzg" name="HasPerformerTimeIntent" constrainedElement="_RuNw4EtcEeCAK_Z5vqvtzg">
@@ -501,7 +501,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The &lt;time> element should be present to indicate when the prescription is intended to be filled&#xD;&#xA;(moodCode='INT').</body>
-        <body>self.moodCode = vocab::x_DocumentSubstanceMood::INT and self.performer.time->size() = 1</body>
+        <body>(not self.performer->isEmpty()) and self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.performer->forAll(time->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_D4ilEEtdEeCAK_Z5vqvtzg" name="HasPerformerAssignedEntity" constrainedElement="_s0Z7EEtcEeCAK_Z5vqvtzg">
@@ -509,7 +509,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The performer/assignedEntity element shall be present, and identifies the filler of the prescription.</body>
-        <body>self.performer.assignedEntity->size() = 1</body>
+        <body>(not self.performer->isEmpty()) implies self.performer->forAll(performer| not performer.assignedEntity.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_kYMuUEtdEeCAK_Z5vqvtzg" name="HasPerformerAssignedEntityID" constrainedElement="_D4ilEEtdEeCAK_Z5vqvtzg">
@@ -517,7 +517,7 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>One or more &lt;id> elements should be present. These identify the performer.</body>
-        <body>self.performer.assignedEntity.id->size() > 0</body>
+        <body>(not self.performer.assignedEntity->isEmpty())  implies self.performer.assignedEntity->forAll(id->size() > 0)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_pjMMgEtdEeCAK_Z5vqvtzg" name="HasPerformerEntityPersonOrOrg" constrainedElement="_kYMuUEtdEeCAK_Z5vqvtzg">
@@ -525,7 +525,15 @@ identifiers necessary for prescribing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>An &lt;assignedPerson> and/or &lt;representedOriganization> element shall be present. This element shall contain a &lt;name> element to identify the filler or their organization.</body>
-        <body>(self.performer.assignedEntity.assignedPerson->size() > 0 and self.performer.assignedEntity.assignedPerson.name->size() > 0 ) or (self.performer.assignedEntity.representedOrganization->size() > 0 and self.performer.assignedEntity.representedOrganization.name->size() > 0)</body>
+        <body>(not self.performer.assignedEntity->isEmpty()) implies self.performer.assignedEntity->forAll(assignedEntity | (not assignedEntity.assignedPerson->isEmpty() and assignedEntity.assignedPerson->forAll( assignedPerson | not assignedPerson.name->isEmpty() ) ) or (not assignedEntity.representedOrganization->isEmpty() and  assignedEntity.representedOrganization->forAll(representedOrganization | not representedOrganization.name->isEmpty() ) )  )</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_02CNMBEzEeGQTKMzurBNQw" name="quantityHasValue" constrainedElement="_e2pkwOw7Ed-HcKrkbxroPA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3r4Y8BEzEeGQTKMzurBNQw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The supply entry should indicate the quantity supplied. The value attribute shall be present and indicates the quantity of medication supplied. If the medication is supplied in dosing units (tablets or capsules), then the unit attribute need not be present (and should be set to 1 if present). Otherwise, the unit element shall be present to indicate the quantity (e.g., volume or mass) of medication supplied.</body>
+        <body>not self.quantity->isEmpty() implies self.quantity.isDefined('value')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_e2pkwew7Ed-HcKrkbxroPA">
@@ -720,4 +728,5 @@ of the document. The comment itself is not the act being coded, so it appears in
   <CDA:PropertyValidation xmi:id="_02Ac4HZEEeCvxvMoSjRGEw" base_Property="_01_10HZEEeCvxvMoSjRGEw">
     <ruleId>CONF-308</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_UHuugBE0EeGQTKMzurBNQw" base_Constraint="_02CNMBEzEeGQTKMzurBNQw"/>
 </xmi:XMI>

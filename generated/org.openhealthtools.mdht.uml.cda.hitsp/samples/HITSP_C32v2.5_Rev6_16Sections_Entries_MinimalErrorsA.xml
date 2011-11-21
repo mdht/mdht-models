@@ -5,13 +5,16 @@
 	<realmCode code="US"/>
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
 	<templateId root="2.16.840.1.113883.3.27.1776" assigningAuthorityName="CDA/R2"/>
+	
+	<templateId root="2.16.840.1.113883.10.20.1" />
+	
 	<templateId root="2.16.840.1.113883.10.20.3" assigningAuthorityName="HL7/CDT Header"/>
 	<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" assigningAuthorityName="IHE/PCC"/>
 	<templateId root="2.16.840.1.113883.3.88.11.32.1" assigningAuthorityName="HITSP/C32"/>
 	<id root="2.16.840.1.113883.3.72" extension="HITSP_C32v2.5_Rev6_16Sections_Entries_MinimalErrors" assigningAuthorityName="NIST Healthcare Project"/>
 	<code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 	<title>Example Healthcare Record</title>
-	<effectiveTime value="20091110130945"/>
+	<effectiveTime value="20091110130945-1000"/>
 	<confidentialityCode code="N"/>
 	<languageCode code="nn-CC"/>
 	<recordTarget>
@@ -45,7 +48,7 @@
 	<author>
 		<time value="20091109120000"/>
 		<assignedAuthor>
-			<id/>
+			<id root="1.11.111.1.111111.1.11.11.11.1" />
 			<addr/>
 			<telecom value="tel:+1-301-975-3251"/>
 			<assignedPerson>
@@ -73,7 +76,7 @@
 	<custodian>
 		<assignedCustodian>
 			<representedCustodianOrganization>
-				<id/>
+				<id root="1.11.111.1.111111.1.11.11.11.1" />
 				<name>NIST Registry</name>
 				<telecom value="tel:+1-301-975-3251"/>
 				<addr>
@@ -801,7 +804,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="HL7 CCD"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE PCC"/>
 									<!-- Problem observation template -->
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code displayName="Condition" code="64572001" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96"/>
 									<text>
 										<reference value="#CondID-4"/>
@@ -853,7 +856,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE PCC"/>
 									<!--Problem observation template -->
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code displayName="Symptom" code="418799008" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96"/>
 									<text>
 										<reference value="#PregInd-1"/>
@@ -908,7 +911,7 @@
 					<entry typeCode="DRIV">
 						<procedure classCode="PROC" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
-							<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
+							<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/> 							
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
 							<!-- Procedure activity template -->
 							<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
@@ -926,7 +929,7 @@
 							<effectiveTime value="1998"/>
 							<performer>
 								<assignedEntity>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<addr/>
 									<telecom value="tel:+1-301-975-3251"/>
 									<assignedPerson>
@@ -953,14 +956,14 @@
 							<entryRelationship typeCode="REFR">
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code nullFlavor="NA"/>
 									<text>
 										<reference value="PtrToSectionText"/>
 									</text>
 									<reference typeCode="REFR">
 										<externalDocument classCode="DOC" moodCode="EVN">
-											<id/>
+											<id root="1.11.111.1.111111.1.11.11.11.1" />
 											<text>Location of Documentation -  URL or other</text>
 										</externalDocument>
 									</reference>
@@ -1119,7 +1122,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.34" assigningAuthorityName="CCD"/>
 									<templateId root="2.16.840.1.113883.3.88.11.83.8.3" assigningAuthorityName="HITSP C83"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<statusCode code="completed"/>
 									<effectiveTime xsi:type="IVL_TS">
 										<low value="20020101"/>
@@ -1179,7 +1182,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.34" assigningAuthorityName="CCD"/>
 									<templateId root="2.16.840.1.113883.3.88.11.83.8.3" assigningAuthorityName="HITSP C83"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<statusCode code="completed"/>
 									<effectiveTime xsi:type="IVL_TS">
 										<low value="20020101"/>
@@ -1286,7 +1289,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.34" assigningAuthorityName="CCD"/>
 									<templateId root="2.16.840.1.113883.3.88.11.83.8.3" assigningAuthorityName="HITSP C83"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<statusCode code="completed"/>
 									<effectiveTime xsi:type="IVL_TS">
 										<low value="20020101"/>
@@ -1353,7 +1356,7 @@
 									<templateId root="2.16.840.1.113883.10.20.1.34" assigningAuthorityName="CCD"/>
 									<templateId root="2.16.840.1.113883.3.88.11.83.8.3" assigningAuthorityName="HITSP C83"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<statusCode code="completed"/>
 									<effectiveTime xsi:type="IVL_TS">
 										<low value="20020101"/>
@@ -1452,7 +1455,7 @@
 							<participant typeCode="CST">
 								<!--custodian of document-->
 								<participantRole classCode="AGNT">
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<addr/>
 									<telecom value="tel:+1-301-975-3251"/>
 									<playingEntity>
@@ -1603,7 +1606,7 @@
 							</consumable>
 							<performer>
 								<assignedEntity>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<addr/>
 									<telecom value="tel:+1-301-975-3251"/>
 								</assignedEntity>
@@ -1699,7 +1702,7 @@
 							</consumable>
 							<performer>
 								<assignedEntity>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<addr/>
 									<telecom value="tel:+1-301-975-3251"/>
 								</assignedEntity>
@@ -1718,7 +1721,7 @@
 							<entryRelationship typeCode="RSON">
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="CCD"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code nullFlavor="NA" displayName="Patient Objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.11.19725"/>
 									<entryRelationship typeCode="SUBJ">
 										<observation classCode="OBS" moodCode="EVN">
@@ -2047,7 +2050,7 @@
 									<templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
 									<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code code="43789009" codeSystem="2.16.840.1.113883.6.96" displayName="CBC WO DIFFERENTIAL">
 										<originalText>Extract blood for CBC test<reference value="Ptr to text  in parent Section"/>
 										</originalText>
@@ -2139,7 +2142,7 @@
 							<component>
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code nullFlavor="NA"/>
 									<text>
 										<reference value="PointerToTextinSection"/>
@@ -2167,7 +2170,7 @@
 									<templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
 									<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
 									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<code code="20109005" codeSystem="2.16.840.1.113883.6.96" displayName="LYTES" codeSystemName="SNOMED CT">
 										<originalText>Extract blood for electrolytes tests<reference value="Ptr to text  in parent Section"/>
 										</originalText>
@@ -2335,7 +2338,7 @@
 							<effectiveTime value="20000407"/>
 							<performer>
 								<assignedEntity>
-									<id/>
+									<id root="1.11.111.1.111111.1.11.11.11.1" />
 									<addr/>
 									<telecom value="tel:+1-301-975-3251"/>
 									<assignedPerson>

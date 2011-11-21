@@ -112,28 +112,28 @@ public class HITSPValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.hitsp";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Advere Event Date' of 'Allergy Drug Sensitivity'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Adverse Event Date' of 'Allergy Drug Sensitivity'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE = 1;
+	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERSE_EVENT_DATE = 1;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Advere Event Type' of 'Allergy Drug Sensitivity'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Adverse Event Type' of 'Allergy Drug Sensitivity'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE = 2;
+	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERSE_EVENT_TYPE = 2;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Advere Event Type Vocab' of 'Allergy Drug Sensitivity'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Adverse Event Type Vocab' of 'Allergy Drug Sensitivity'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB = 3;
+	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERSE_EVENT_TYPE_VOCAB = 3;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Drug Sensitivity Allergy Product' of 'Allergy Drug Sensitivity'.
@@ -2453,15 +2453,15 @@ public class HITSPValidator extends EObjectValidator {
 				allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventDate(
+			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventDate(
 				allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventType(
+			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventType(
 				allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventTypeVocab(
+			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventTypeVocab(
 				allergyDrugSensitivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2540,36 +2540,36 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateAllergyDrugSensitivityAdvereEventDate constraint of '<em>Allergy Drug Sensitivity</em>'.
+	 * Validates the validateAllergyDrugSensitivityAdverseEventDate constraint of '<em>Allergy Drug Sensitivity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventDate(
+	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventDate(
 			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdvereEventDate(diagnostics, context);
+		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdverseEventDate(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyDrugSensitivityAdvereEventType constraint of '<em>Allergy Drug Sensitivity</em>'.
+	 * Validates the validateAllergyDrugSensitivityAdverseEventType constraint of '<em>Allergy Drug Sensitivity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventType(
+	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventType(
 			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdvereEventType(diagnostics, context);
+		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdverseEventType(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyDrugSensitivityAdvereEventTypeVocab constraint of '<em>Allergy Drug Sensitivity</em>'.
+	 * Validates the validateAllergyDrugSensitivityAdverseEventTypeVocab constraint of '<em>Allergy Drug Sensitivity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdvereEventTypeVocab(
+	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityAdverseEventTypeVocab(
 			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdvereEventTypeVocab(diagnostics, context);
+		return allergyDrugSensitivity.validateAllergyDrugSensitivityAdverseEventTypeVocab(diagnostics, context);
 	}
 
 	/**
@@ -3488,6 +3488,10 @@ public class HITSPValidator extends EObjectValidator {
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryQuantityHasValue(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateSupplyEntry_validateSupplyEntryTemplateId(
 				medicationOrderInformation, diagnostics, context);
 		}
@@ -3497,6 +3501,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateSupplyEntry_validateSupplyEntryRepeatNumber(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryMedicationFullfillmentInstructions(
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

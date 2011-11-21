@@ -13,11 +13,9 @@ package org.openhealthtools.mdht.uml.cda.ccd.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
-import org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.FamilyHistoryObservationOperations;
@@ -51,15 +49,6 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationHasSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubject(this, diagnostics, context);
 	}
 
 	/**
@@ -213,17 +202,6 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationCauseOfDeathObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationCauseOfDeathObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AgeObservation getAgeObservation() {
 		return FamilyHistoryObservationOperations.getAgeObservation(this);
 	}
@@ -235,15 +213,6 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public ProblemStatusObservation getProblemStatusObservation() {
 		return FamilyHistoryObservationOperations.getProblemStatusObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<CauseOfDeathObservation> getCauseOfDeathObservations() {
-		return FamilyHistoryObservationOperations.getCauseOfDeathObservations(this);
 	}
 
 	/**

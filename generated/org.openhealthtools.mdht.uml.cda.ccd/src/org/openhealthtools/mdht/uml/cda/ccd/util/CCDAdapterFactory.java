@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
+import org.openhealthtools.mdht.uml.cda.ccd.*;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
@@ -270,11 +271,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
-			return createCauseOfDeathObservationAdapter();
-		}
-
-		@Override
 		public Adapter caseSocialHistorySection(SocialHistorySection object) {
 			return createSocialHistorySectionAdapter();
 		}
@@ -455,6 +451,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
+			return createCauseOfDeathObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseEncounterLocation(EncounterLocation object) {
 			return createEncounterLocationAdapter();
 		}
@@ -542,6 +543,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
 			return createAdvanceDirectiveReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryCauseOfDeathObservation(FamilyHistoryCauseOfDeathObservation object) {
+			return createFamilyHistoryCauseOfDeathObservationAdapter();
 		}
 
 		@Override
@@ -1730,6 +1736,20 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAdvanceDirectiveReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryCauseOfDeathObservation <em>Family History Cause Of Death Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryCauseOfDeathObservation
+	 * @generated
+	 */
+	public Adapter createFamilyHistoryCauseOfDeathObservationAdapter() {
 		return null;
 	}
 

@@ -56,7 +56,7 @@ public class NormalDoseOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSubstanceAdministrations()->size()=0";
+	protected static final String VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' invariant operation.
@@ -73,7 +73,7 @@ public class NormalDoseOperations extends MedicationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->size()=0
+	 * self.entryRelationship.substanceAdministration->isEmpty()
 	 * @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

@@ -54,9 +54,9 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventDate(DiagnosticChain diagnostics,
+	public boolean validateAllergyDrugSensitivityAdverseEventDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventDate(
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdverseEventDate(
 			this, diagnostics, context);
 	}
 
@@ -65,9 +65,9 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventType(DiagnosticChain diagnostics,
+	public boolean validateAllergyDrugSensitivityAdverseEventType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventType(
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdverseEventType(
 			this, diagnostics, context);
 	}
 
@@ -76,9 +76,9 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(DiagnosticChain diagnostics,
+	public boolean validateAllergyDrugSensitivityAdverseEventTypeVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventTypeVocab(
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdverseEventTypeVocab(
 			this, diagnostics, context);
 	}
 

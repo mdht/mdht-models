@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
+import org.openhealthtools.mdht.uml.cda.ccd.*;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
@@ -571,29 +572,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(problemStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
-				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) {
-					result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseAct(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(causeOfDeathObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1302,6 +1280,29 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
+				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
+				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.ENCOUNTER_LOCATION: {
 				EncounterLocation encounterLocation = (EncounterLocation) theEObject;
 				T result = caseEncounterLocation(encounterLocation);
@@ -1632,6 +1633,29 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION: {
+				FamilyHistoryCauseOfDeathObservation familyHistoryCauseOfDeathObservation = (FamilyHistoryCauseOfDeathObservation) theEObject;
+				T result = caseFamilyHistoryCauseOfDeathObservation(familyHistoryCauseOfDeathObservation);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(familyHistoryCauseOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(familyHistoryCauseOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryCauseOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryCauseOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryCauseOfDeathObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2776,6 +2800,21 @@ public class CCDSwitch<T> {
 	 * @generated
 	 */
 	public T caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Cause Of Death Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Cause Of Death Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistoryCauseOfDeathObservation(FamilyHistoryCauseOfDeathObservation object) {
 		return null;
 	}
 

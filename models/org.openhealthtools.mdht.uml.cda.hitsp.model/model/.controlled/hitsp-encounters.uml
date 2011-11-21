@@ -25,7 +25,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>participant/@typeCode ='ORG'/code SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.33, Admission Source Value Set, STATIC</body>
-        <body>self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')</body>
+        <body>self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_MZPpIMNyEeCZQPUDKP01pg" name="patientClassValueSet" constrainedElement="_uHp58MNxEeCZQPUDKP01pg">

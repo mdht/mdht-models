@@ -149,6 +149,15 @@ public class SupplyEntryImpl extends SupplyActivityImpl implements SupplyEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSupplyEntryQuantityHasValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryQuantityHasValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSupplyEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryTemplateId(this, diagnostics, context);
 	}
@@ -169,6 +178,16 @@ public class SupplyEntryImpl extends SupplyActivityImpl implements SupplyEntry {
 	 */
 	public boolean validateSupplyEntryRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryRepeatNumber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryMedicationFullfillmentInstructions(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryMedicationFullfillmentInstructions(this, diagnostics, context);
 	}
 
 	/**
