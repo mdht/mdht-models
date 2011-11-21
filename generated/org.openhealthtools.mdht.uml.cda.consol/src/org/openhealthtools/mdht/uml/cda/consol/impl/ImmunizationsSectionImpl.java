@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -53,10 +58,8 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(
-			this, diagnostics, context);
+	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +140,7 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * @generated
 	 */
 	public ImmunizationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ImmunizationsSectionImpl
+} //ImmunizationsSectionImpl

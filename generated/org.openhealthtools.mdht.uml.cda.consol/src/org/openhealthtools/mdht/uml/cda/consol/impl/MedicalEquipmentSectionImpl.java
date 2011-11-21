@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -89,10 +94,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSectionSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionSupplyActivity(
-			this, diagnostics, context);
+	public boolean validateMedicalEquipmentSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -100,10 +103,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSectionMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionMedicationActivity(
-			this, diagnostics, context);
+	public boolean validateMedicalEquipmentSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +131,7 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * @generated
 	 */
 	public MedicalEquipmentSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicalEquipmentSectionImpl
+} //MedicalEquipmentSectionImpl

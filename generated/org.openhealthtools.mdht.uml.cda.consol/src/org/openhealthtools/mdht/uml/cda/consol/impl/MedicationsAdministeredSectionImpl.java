@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsAdministeredSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +65,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
-			this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +74,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicationsAdministeredSectionImpl
+} //MedicationsAdministeredSectionImpl

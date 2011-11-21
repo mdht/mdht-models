@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NeurologicSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.NeurologicSystemSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -78,7 +83,7 @@ public class NeurologicSystemSectionImpl extends SectionImpl implements Neurolog
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemEntryReactionObservationContainer getProblemEntry() {
+	public AllergyIntolerance getProblemEntry() {
 		return NeurologicSystemSectionOperations.getProblemEntry(this);
 	}
 
@@ -88,7 +93,7 @@ public class NeurologicSystemSectionImpl extends SectionImpl implements Neurolog
 	 * @generated
 	 */
 	public NeurologicSystemSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // NeurologicSystemSectionImpl
+} //NeurologicSystemSectionImpl

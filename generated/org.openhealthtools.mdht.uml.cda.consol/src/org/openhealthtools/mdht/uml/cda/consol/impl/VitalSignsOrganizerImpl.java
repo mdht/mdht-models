@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSign;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizerOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -79,10 +84,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(
-			this, diagnostics, context);
+	public boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +156,7 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
 	}
 
@@ -173,7 +175,7 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * @generated
 	 */
 	public VitalSignsOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // VitalSignsOrganizerImpl
+} //VitalSignsOrganizerImpl

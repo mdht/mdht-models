@@ -11,17 +11,24 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
@@ -94,24 +101,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryCodeValueSet(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryCodeValueSet(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_CODE_VALUE_SET,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryCodeValueSet"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_CODE_VALUE_SET,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryCodeValueSet"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -149,24 +158,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryNoRepeatNumber(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryNoRepeatNumber(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryNoRepeatNumber"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_REPEAT_NUMBER,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryNoRepeatNumber"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -204,25 +215,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryNoInterpretationCode(SocialHistory socialHistory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryNoInterpretationCode(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryNoInterpretationCode"),
-					new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_INTERPRETATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryNoInterpretationCode"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -260,24 +272,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryNoMethodCode(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryNoMethodCode(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryNoMethodCode"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_METHOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryNoMethodCode"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -315,24 +329,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryNoTargetSiteCode(SocialHistory socialHistory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryNoTargetSiteCode(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryNoTargetSiteCode"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_NO_TARGET_SITE_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryNoTargetSiteCode"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -370,24 +386,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryTemplateId(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryTemplateId(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryTemplateId"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryTemplateId"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -425,23 +443,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryId(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryId(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryId"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_ID,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryId"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -456,9 +477,9 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160573003' or value.code = '363908000' or value.code = '364703007' or value.code = '256235009' or value.code = '228272008' or value.code = '364393001' or value.code = '229819007' or value.code = '425400000')))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160573003' or value.code = '363908000' or value.code = '364703007' or value.code = '256235009' or value.code = '228272008' or value.code = '364393001' or value.code = '229819007' or value.code = '425400000')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryCode(SocialHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Code</em>}' invariant operation.
@@ -483,23 +504,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryCode(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryCode(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryCode"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryCode"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -537,23 +561,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryText(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryText(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_TEXT,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryText"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_TEXT,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryText"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -568,9 +595,9 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
+"value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryStatusCode(SocialHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Status Code</em>}' invariant operation.
@@ -595,24 +622,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryStatusCode(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryStatusCode(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryStatusCode"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryStatusCode"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -650,24 +679,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryEffectiveTime(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryEffectiveTime(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryEffectiveTime"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryEffectiveTime"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -705,23 +736,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryValue(SocialHistory socialHistory, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryValue(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_VALUE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryValue"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_VALUE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryValue"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -759,26 +793,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistorySocialHistoryStatusObservation(SocialHistory socialHistory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSocialHistorySocialHistoryStatusObservation(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySocialHistoryStatusObservation"),
-					new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_SOCIAL_HISTORY_STATUS_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySocialHistoryStatusObservation"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -816,24 +850,26 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateSocialHistoryEpisodeObservation(SocialHistory socialHistory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateSocialHistoryEpisodeObservation(SocialHistory socialHistory, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SOCIAL_HISTORY_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY);
 			try {
 				VALIDATE_SOCIAL_HISTORY_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_EPISODE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryEpisodeObservation"), new Object[] { socialHistory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY__SOCIAL_HISTORY_EPISODE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("SocialHistoryEpisodeObservation"),
+						 new Object [] { socialHistory }));
 			}
 			return false;
 		}
@@ -869,15 +905,14 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static SocialHistoryStatusObservation getSocialHistoryStatusObservation(SocialHistory socialHistory) {
+	public static  SocialHistoryStatusObservation getSocialHistoryStatusObservation(SocialHistory socialHistory) {
 		if (GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY,
-				ConsolPackage.Literals.SOCIAL_HISTORY.getEAllOperations().get(63));
+			helper.setOperationContext(ConsolPackage.Literals.SOCIAL_HISTORY, ConsolPackage.Literals.SOCIAL_HISTORY.getEAllOperations().get(63));
 			try {
 				GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -914,15 +949,14 @@ public class SocialHistoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EpisodeObservation getEpisodeObservation(SocialHistory socialHistory) {
+	public static  EpisodeObservation getEpisodeObservation(SocialHistory socialHistory) {
 		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY,
-				ConsolPackage.Literals.SOCIAL_HISTORY.getEAllOperations().get(64));
+			helper.setOperationContext(ConsolPackage.Literals.SOCIAL_HISTORY, ConsolPackage.Literals.SOCIAL_HISTORY.getEAllOperations().get(64));
 			try {
 				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

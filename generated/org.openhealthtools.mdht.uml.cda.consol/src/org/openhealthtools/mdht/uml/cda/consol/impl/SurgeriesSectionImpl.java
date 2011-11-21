@@ -10,14 +10,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.SurgeriesSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.SurgeriesSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -117,10 +122,8 @@ public class SurgeriesSectionImpl extends SectionImpl implements SurgeriesSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SurgeriesSectionOperations.validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(
-			this, diagnostics, context);
+	public boolean validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgeriesSectionOperations.validateSurgeriesSectionProcedureEntryProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -156,7 +159,7 @@ public class SurgeriesSectionImpl extends SectionImpl implements SurgeriesSectio
 	 * @generated
 	 */
 	public SurgeriesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // SurgeriesSectionImpl
+} //SurgeriesSectionImpl

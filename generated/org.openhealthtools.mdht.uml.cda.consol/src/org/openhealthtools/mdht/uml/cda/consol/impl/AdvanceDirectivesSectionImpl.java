@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -88,10 +93,8 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSectionAdvanceDirective(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirective(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionAdvanceDirective(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirective(this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +112,7 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * @generated
 	 */
 	public AdvanceDirectivesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AdvanceDirectivesSectionImpl
+} //AdvanceDirectivesSectionImpl

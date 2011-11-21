@@ -10,7 +10,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
@@ -21,8 +23,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationType;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -68,8 +73,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationHasDoseQuantityOrRateQuantity(this, diagnostics, context);
 	}
 
@@ -150,8 +154,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationHasDescriptionNoMedNotKnown(this, diagnostics, context);
 	}
 
@@ -475,8 +478,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationMedicationSeriesNumberObservation(this, diagnostics, context);
 	}
 
@@ -485,8 +487,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateMedicationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationMedicationStatusObservation(this, diagnostics, context);
 	}
 
@@ -577,7 +578,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * @generated
 	 */
 	public Medication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicationImpl
+} //MedicationImpl

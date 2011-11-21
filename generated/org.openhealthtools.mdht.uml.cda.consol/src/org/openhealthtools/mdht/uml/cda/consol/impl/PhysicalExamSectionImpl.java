@@ -10,7 +10,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AbdomenSection;
 import org.openhealthtools.mdht.uml.cda.consol.BreastSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
@@ -39,8 +41,11 @@ import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VesselsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VisibleImplantedMedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -113,10 +118,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionGeneralAppearanceSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionGeneralAppearanceSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionGeneralAppearanceSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionGeneralAppearanceSection(this, diagnostics, context);
 	}
 
 	/**
@@ -124,10 +127,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -135,10 +136,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionIntegumentarySystemSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionIntegumentarySystemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -164,10 +163,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsNoseMouthThroatSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionEarsNoseMouthThroatSection(this, diagnostics, context);
 	}
 
 	/**
@@ -193,10 +190,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionMouthThroatTeethSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionMouthThroatTeethSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionMouthThroatTeethSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionMouthThroatTeethSection(this, diagnostics, context);
 	}
 
 	/**
@@ -213,10 +208,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionEndocrineSystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionEndocrineSystemSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionEndocrineSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionEndocrineSystemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +217,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionThoraxLungsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePhysicalExamSectionThoraxLungsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionThoraxLungsSection(this, diagnostics, context);
 	}
 
@@ -261,10 +253,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionRespiratorySystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionRespiratorySystemSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionRespiratorySystemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionRespiratorySystemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -299,10 +289,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionMusculoskeletalSystemSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionMusculoskeletalSystemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -310,10 +298,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionNeurologicSystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNeurologicSystemSection(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionNeurologicSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionNeurologicSystemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -339,8 +325,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSectionExtremitiesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePhysicalExamSectionExtremitiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionExtremitiesSection(this, diagnostics, context);
 	}
 
@@ -584,7 +569,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * @generated
 	 */
 	public PhysicalExamSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PhysicalExamSectionImpl
+} //PhysicalExamSectionImpl

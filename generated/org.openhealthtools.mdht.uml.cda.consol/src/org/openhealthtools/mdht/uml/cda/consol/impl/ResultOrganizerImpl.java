@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Result;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -143,7 +148,7 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * @generated
 	 */
 	public ResultOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ResultOrganizerImpl
+} //ResultOrganizerImpl

@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.InsuranceProviderOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -97,8 +102,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderInsuranceInformation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateInsuranceProviderInsuranceInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInformation(this, diagnostics, context);
 	}
 
@@ -107,8 +111,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderInsuranceInfoSourceID(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateInsuranceProviderInsuranceInfoSourceID(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceID(this, diagnostics, context);
 	}
 
@@ -117,8 +120,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderInsuranceInfoSourceAddr(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateInsuranceProviderInsuranceInfoSourceAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceAddr(this, diagnostics, context);
 	}
 
@@ -127,10 +129,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(this, diagnostics, context);
 	}
 
 	/**
@@ -138,10 +138,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(this, diagnostics, context);
 	}
 
 	/**
@@ -176,8 +174,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderRelationshipToSubscriber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateInsuranceProviderRelationshipToSubscriber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriber(this, diagnostics, context);
 	}
 
@@ -186,10 +183,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -206,8 +201,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderSubscriberInformation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateInsuranceProviderSubscriberInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberInformation(this, diagnostics, context);
 	}
 
@@ -243,10 +237,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(this, diagnostics, context);
 	}
 
 	/**
@@ -254,10 +246,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -265,10 +255,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(
-			this, diagnostics, context);
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(this, diagnostics, context);
 	}
 
 	/**
@@ -349,7 +337,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * @generated
 	 */
 	public InsuranceProvider init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // InsuranceProviderImpl
+} //InsuranceProviderImpl

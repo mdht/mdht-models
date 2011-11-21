@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.Comment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.CommentOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -59,8 +64,7 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateCommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentOperations.validateCommentEffectiveTimeWhenAuthorPresent(this, diagnostics, context);
 	}
 
@@ -142,7 +146,7 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * @generated
 	 */
 	public Comment init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // CommentImpl
+} //CommentImpl

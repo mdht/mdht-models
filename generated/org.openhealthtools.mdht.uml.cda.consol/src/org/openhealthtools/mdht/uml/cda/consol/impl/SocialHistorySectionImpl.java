@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -61,10 +66,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySectionReligiousAffiliation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionReligiousAffiliation(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySectionReligiousAffiliation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionReligiousAffiliation(this, diagnostics, context);
 	}
 
 	/**
@@ -81,10 +84,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySectionPatientRaceCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionPatientRaceCodeSystem(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySectionPatientRaceCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientRaceCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -101,10 +102,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicityCodeSystem(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySectionPatientEthnicityCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionPatientEthnicityCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -167,7 +166,7 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * @generated
 	 */
 	public SocialHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // SocialHistorySectionImpl
+} //SocialHistorySectionImpl

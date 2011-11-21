@@ -11,13 +11,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
@@ -80,26 +85,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsTemplateId(
-			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsTemplateId(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsTemplateId"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsTemplateId"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}
@@ -137,26 +142,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsClassCode(
-			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsClassCode"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsClassCode"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}
@@ -194,26 +199,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsMoodCode(
-			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsMoodCode(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsMoodCode"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsMoodCode"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}
@@ -228,9 +233,9 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2'))";
+	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Code</em>}' invariant operation.
@@ -255,25 +260,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsCode(PatientMedicalInstructions patientMedicalInstructions,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsCode(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsCode"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsCode"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}
@@ -311,25 +317,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsText(PatientMedicalInstructions patientMedicalInstructions,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsText(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_TEXT,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsText"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_TEXT,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsText"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}
@@ -367,26 +374,26 @@ public class PatientMedicalInstructionsOperations extends ClinicalStatementOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePatientMedicalInstructionsStatusCode(
-			PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validatePatientMedicalInstructionsStatusCode(PatientMedicalInstructions patientMedicalInstructions, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_MEDICAL_INSTRUCTIONS);
 			try {
 				VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientMedicalInstructions)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientMedicalInstructions)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsStatusCode"),
-					new Object[] { patientMedicalInstructions }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_MEDICAL_INSTRUCTIONS__PATIENT_MEDICAL_INSTRUCTIONS_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientMedicalInstructionsStatusCode"),
+						 new Object [] { patientMedicalInstructions }));
 			}
 			return false;
 		}

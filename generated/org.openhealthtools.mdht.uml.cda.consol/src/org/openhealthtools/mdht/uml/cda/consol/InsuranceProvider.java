@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Act;
 
 /**
@@ -144,8 +145,7 @@ public interface InsuranceProvider extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,8 +223,7 @@ public interface InsuranceProvider extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = \'2.16.840.1.113883.5.111\' and (par.participantRole.code.code = \'FAMDEP\' or par.participantRole.code.code=\'HANDIC\' or par.participantRole.code.code =\'INJ\' or par.participantRole.code.code=\'SELF\' or par.participantRole.code.code=\'SPON\' or par.participantRole.code.code =\'STUD\' or par.participantRole.code.code=\'FSTUD\' or par.participantRole.code.code=\'PSTUD\')))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,8 +301,7 @@ public interface InsuranceProvider extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -316,8 +314,7 @@ public interface InsuranceProvider extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = \'2.16.840.1.113883.5.110\'))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -330,8 +327,7 @@ public interface InsuranceProvider extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

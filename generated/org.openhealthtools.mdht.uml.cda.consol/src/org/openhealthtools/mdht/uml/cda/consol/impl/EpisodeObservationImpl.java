@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.EpisodeObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservationOneEntryRelationshipSUBJ(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EpisodeObservationOperations.validateEpisodeObservationOneEntryRelationshipSUBJ(
-			this, diagnostics, context);
+	public boolean validateEpisodeObservationOneEntryRelationshipSUBJ(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EpisodeObservationOperations.validateEpisodeObservationOneEntryRelationshipSUBJ(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EpisodeObservationOperations.validateEpisodeObservationExistsEntryRelationshipSAS(
-			this, diagnostics, context);
+	public boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EpisodeObservationOperations.validateEpisodeObservationExistsEntryRelationshipSAS(this, diagnostics, context);
 	}
 
 	/**
@@ -127,7 +128,7 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * @generated
 	 */
 	public EpisodeObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // EpisodeObservationImpl
+} //EpisodeObservationImpl

@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.consol.RespiratorySystemSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.RespiratorySystemSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -70,8 +75,7 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * @generated
 	 */
 	public boolean validateRespiratorySystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(
-			this, diagnostics, context);
+		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -79,7 +83,7 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemEntryReactionObservationContainer getProblemEntry() {
+	public AllergyIntolerance getProblemEntry() {
 		return RespiratorySystemSectionOperations.getProblemEntry(this);
 	}
 
@@ -89,7 +93,7 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * @generated
 	 */
 	public RespiratorySystemSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // RespiratorySystemSectionImpl
+} //RespiratorySystemSectionImpl

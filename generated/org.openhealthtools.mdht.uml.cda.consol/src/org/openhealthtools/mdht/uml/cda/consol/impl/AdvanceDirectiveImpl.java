@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -51,8 +56,7 @@ public class AdvanceDirectiveImpl extends ObservationImpl implements AdvanceDire
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveAdvDirectiveCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveAdvDirectiveCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOperations.validateAdvanceDirectiveAdvDirectiveCodeValueSet(this, diagnostics, context);
 	}
 
@@ -61,8 +65,7 @@ public class AdvanceDirectiveImpl extends ObservationImpl implements AdvanceDire
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveAdvDirectiveCodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveAdvDirectiveCodeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOperations.validateAdvanceDirectiveAdvDirectiveCodeCodeSystem(this, diagnostics, context);
 	}
 
@@ -116,8 +119,7 @@ public class AdvanceDirectiveImpl extends ObservationImpl implements AdvanceDire
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveParticipantRoleClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantRoleClassCode(this, diagnostics, context);
 	}
 
@@ -243,10 +245,8 @@ public class AdvanceDirectiveImpl extends ObservationImpl implements AdvanceDire
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveOperations.validateAdvanceDirectiveAdvanceDirectiveStatusObservation(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectiveAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveOperations.validateAdvanceDirectiveAdvanceDirectiveStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -264,7 +264,7 @@ public class AdvanceDirectiveImpl extends ObservationImpl implements AdvanceDire
 	 * @generated
 	 */
 	public AdvanceDirective init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AdvanceDirectiveImpl
+} //AdvanceDirectiveImpl

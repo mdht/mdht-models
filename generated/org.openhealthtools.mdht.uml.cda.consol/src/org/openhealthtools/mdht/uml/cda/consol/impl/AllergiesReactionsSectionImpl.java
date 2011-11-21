@@ -10,12 +10,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyDrugSensitivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesReactionsSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -53,8 +58,7 @@ public class AllergiesReactionsSectionImpl extends SectionImpl implements Allerg
 	 * @generated
 	 */
 	public boolean validateAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(
-			this, diagnostics, context);
+		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -89,10 +93,8 @@ public class AllergiesReactionsSectionImpl extends SectionImpl implements Allerg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyDrugSensitivity(
-			this, diagnostics, context);
+	public boolean validateAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyDrugSensitivity(this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +112,7 @@ public class AllergiesReactionsSectionImpl extends SectionImpl implements Allerg
 	 * @generated
 	 */
 	public AllergiesReactionsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AllergiesReactionsSectionImpl
+} //AllergiesReactionsSectionImpl

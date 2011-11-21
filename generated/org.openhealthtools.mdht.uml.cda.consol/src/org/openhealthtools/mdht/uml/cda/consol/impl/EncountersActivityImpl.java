@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersActivityOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -162,7 +167,7 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * @generated
 	 */
 	public EncountersActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // EncountersActivityImpl
+} //EncountersActivityImpl

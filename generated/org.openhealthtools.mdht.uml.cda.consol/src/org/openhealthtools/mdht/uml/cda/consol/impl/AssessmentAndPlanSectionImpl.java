@@ -10,15 +10,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Encounter;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -83,8 +88,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public boolean validateAssessmentAndPlanSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionImmunization(
-			this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionImmunization(this, diagnostics, context);
 	}
 
 	/**
@@ -92,10 +96,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEncounterEntry(
-			this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEncounterEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -103,10 +105,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionProcedureEntry(
-			this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionProcedureEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -151,7 +151,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public AssessmentAndPlanSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AssessmentAndPlanSectionImpl
+} //AssessmentAndPlanSectionImpl

@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
@@ -41,8 +42,20 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerHasReactionIntervention(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerHasReactionIntervention(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->forAll(entry | entry.typeCode <> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(entry | entry.typeCode <> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )'"
+	 * @generated
+	 */
+	boolean validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -55,22 +68,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerReactionInterventionTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))'"
-	 * @generated
-	 */
-	boolean validateProblemEntryReactionObservationContainerReactionInterventionType(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerReactionInterventionType(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,8 +87,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.informant->isEmpty() \r\nor not self.getSection().informant->isEmpty()\r\nor not self.getClinicalDocument().informant->isEmpty()\r\nor self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)\r\nor (self.entryRelationship->exists(rel : cda::EntryRelationship | \r\n   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR\r\n   and rel.observation.code.code = \'48766-0\'))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerInformationSource(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,8 +100,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerContainsPatientAwareness(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,8 +113,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.reference.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,8 +126,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerCommentInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerCommentInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,8 +139,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.5\')'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,8 +152,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_ActMoodDocumentObservation::EVN'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,8 +180,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\')))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,8 +193,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerText(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerText(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,8 +208,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,8 +221,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,8 +234,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,8 +247,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerAgeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,8 +260,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Severity))'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerSeverity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerSeverity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -288,8 +273,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,8 +286,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::HealthStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerHealthStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -316,8 +299,7 @@ public interface ProblemEntryReactionObservationContainer extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Comment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateProblemEntryReactionObservationContainerComment(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemEntryReactionObservationContainerComment(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

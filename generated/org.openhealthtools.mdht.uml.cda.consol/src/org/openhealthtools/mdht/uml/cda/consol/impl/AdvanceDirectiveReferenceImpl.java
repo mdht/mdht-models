@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveReferenceOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ReferenceImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -60,8 +65,7 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveReferenceHasMIMEType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(
-			this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +73,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocumentHasId(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocumentHasId(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +83,7 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +101,7 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public AdvanceDirectiveReference init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AdvanceDirectiveReferenceImpl
+} //AdvanceDirectiveReferenceImpl

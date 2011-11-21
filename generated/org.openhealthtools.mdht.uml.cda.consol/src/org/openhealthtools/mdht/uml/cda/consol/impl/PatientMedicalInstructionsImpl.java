@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.PatientMedicalInstructionsOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -51,8 +56,7 @@ public class PatientMedicalInstructionsImpl extends ActImpl implements PatientMe
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsTemplateId(
-			this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -61,8 +65,7 @@ public class PatientMedicalInstructionsImpl extends ActImpl implements PatientMe
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsClassCode(
-			this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +74,7 @@ public class PatientMedicalInstructionsImpl extends ActImpl implements PatientMe
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsMoodCode(
-			this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +101,7 @@ public class PatientMedicalInstructionsImpl extends ActImpl implements PatientMe
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsStatusCode(
-			this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +110,7 @@ public class PatientMedicalInstructionsImpl extends ActImpl implements PatientMe
 	 * @generated
 	 */
 	public PatientMedicalInstructions init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // PatientMedicalInstructionsImpl
+} //PatientMedicalInstructionsImpl

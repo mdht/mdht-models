@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -99,8 +100,7 @@ public interface AllergiesReactionsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AllergyDrugSensitivity))'"
 	 * @generated
 	 */
-	boolean validateAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

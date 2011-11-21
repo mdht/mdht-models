@@ -14,11 +14,16 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
@@ -27,7 +32,9 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperations;
 
 /**
@@ -111,23 +118,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationMoodCode(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationMoodCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMoodCode"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMoodCode"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -165,26 +175,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasDoseQuantityOrRateQuantity(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasDoseQuantityOrRateQuantity(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasDoseQuantityOrRateQuantity"),
-					new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasDoseQuantityOrRateQuantity"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -222,24 +232,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasConsents(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasConsents(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_CONSENTS,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasConsents"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_CONSENTS,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasConsents"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -254,13 +266,13 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
-			+ "or not self.getSection().informant->isEmpty()"
-			+ "or not self.getClinicalDocument().informant->isEmpty()"
-			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
-			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
-			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
-			+ "   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
+"or not self.getSection().informant->isEmpty()"+
+"or not self.getClinicalDocument().informant->isEmpty()"+
+"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
+"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
+"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
+"   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationInformationSource(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Information Source</em>}' invariant operation.
@@ -289,24 +301,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationInformationSource(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationInformationSource(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_INFORMATION_SOURCE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationInformationSource"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_INFORMATION_SOURCE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationInformationSource"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -344,25 +358,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasPreconditionCriterion(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasPreconditionCriterion(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_PRECONDITION_CRITERION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasPreconditionCriterion"),
-					new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_PRECONDITION_CRITERION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasPreconditionCriterion"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -400,23 +415,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasReason(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasReason(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_REASON,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasReason"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_REASON,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasReason"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -431,9 +449,9 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "
-			+ "cda::ClinicalStatement | not target.oclIsUndefined() and "
-			+ "  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))";
+	protected static final String VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "+
+"cda::ClinicalStatement | not target.oclIsUndefined() and "+
+"  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationHasReasonProblem(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Has Reason Problem</em>}' invariant operation.
@@ -459,24 +477,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasReasonProblem(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasReasonProblem(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_REASON_PROBLEM,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasReasonProblem"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_REASON_PROBLEM,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasReasonProblem"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -514,23 +534,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationHasProduct(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationHasProduct(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_PRODUCT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationHasProduct"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_HAS_PRODUCT,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationHasProduct"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -568,23 +591,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationComments(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationComments(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_COMMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_COMMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_COMMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_COMMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_COMMENTS,
-					ConsolPlugin.INSTANCE.getString("ImmunizationComments"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_COMMENTS,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationComments"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -622,24 +648,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationRefusalReason(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationRefusalReason(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_REFUSAL_REASON,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReason"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_REFUSAL_REASON,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReason"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -677,23 +705,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationTemplateId"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationTemplateId"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -731,22 +762,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationId(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationId(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.IMMUNIZATION__IMMUNIZATION_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationId"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_ID,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationId"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -761,9 +796,9 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.12.292' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.codeSystem = '2.16.840.1.113883.12.292' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationCode(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Code</em>}' invariant operation.
@@ -788,23 +823,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationCode(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationCode"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationCode"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -842,23 +880,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationStatusCode(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationStatusCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationStatusCode"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationStatusCode"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -896,24 +937,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationEffectiveTime(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationEffectiveTime(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ImmunizationEffectiveTime"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationEffectiveTime"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -928,9 +971,9 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.112'))";
+	protected static final String VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.5.112'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationRouteCode(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Route Code</em>}' invariant operation.
@@ -955,23 +998,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationRouteCode(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationRouteCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRouteCode"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_ROUTE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationRouteCode"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1009,24 +1055,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationMaxDoseQuantity(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationMaxDoseQuantity(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_MAX_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMaxDoseQuantity"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_MAX_DOSE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMaxDoseQuantity"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1064,26 +1112,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationMedicationSeriesNumberObservation(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationMedicationSeriesNumberObservation(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationSeriesNumberObservation"),
-					new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_MEDICATION_SERIES_NUMBER_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationSeriesNumberObservation"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1121,25 +1169,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationMedicationStatusObservation(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationMedicationStatusObservation(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_MEDICATION_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationStatusObservation"),
-					new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_MEDICATION_STATUS_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationStatusObservation"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1177,24 +1226,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationPatientInstruction(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationPatientInstruction(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_PATIENT_INSTRUCTION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationPatientInstruction"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_PATIENT_INSTRUCTION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationPatientInstruction"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1232,24 +1283,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationReactionObservation(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateImmunizationReactionObservation(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_REACTION_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationReactionObservation"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_REACTION_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationReactionObservation"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1287,24 +1340,26 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationProductInstance(Immunization immunization, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static  boolean validateImmunizationProductInstance(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION);
 			try {
 				VALIDATE_IMMUNIZATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION__IMMUNIZATION_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationProductInstance"), new Object[] { immunization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION__IMMUNIZATION_PRODUCT_INSTANCE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationProductInstance"),
+						 new Object [] { immunization }));
 			}
 			return false;
 		}
@@ -1340,14 +1395,14 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static MedicationSeriesNumberObservation getMedicationSeriesNumberObservation(Immunization immunization) {
+	public static  MedicationSeriesNumberObservation getMedicationSeriesNumberObservation(Immunization immunization) {
 		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(72));
+			helper.setOperationContext(ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(72));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1384,14 +1439,14 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static MedicationStatusObservation getMedicationStatusObservation(Immunization immunization) {
+	public static  MedicationStatusObservation getMedicationStatusObservation(Immunization immunization) {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(73));
+			helper.setOperationContext(ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(73));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1428,14 +1483,14 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<PatientMedicalInstructions> getPatientInstructions(Immunization immunization) {
+	public static  EList<PatientMedicalInstructions> getPatientInstructions(Immunization immunization) {
 		if (GET_PATIENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(74));
+			helper.setOperationContext(ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(74));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1474,22 +1529,21 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ProblemEntryReactionObservationContainer> getReactionObservations(Immunization immunization) {
+	public static  EList<ProblemEntryReactionObservationContainer> getReactionObservations(Immunization immunization) {
 		if (GET_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(75));
+			helper.setOperationContext(ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(75));
 			try {
 				GET_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_REACTION_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemEntryReactionObservationContainer> result = (Collection<ProblemEntryReactionObservationContainer>) query.evaluate(immunization);
-		return new BasicEList.UnmodifiableEList<ProblemEntryReactionObservationContainer>(
-			result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProblemEntryReactionObservationContainer>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1521,14 +1575,14 @@ public class ImmunizationOperations extends SubstanceAdministrationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ProductInstance> getProductInstances(Immunization immunization) {
+	public static  EList<ProductInstance> getProductInstances(Immunization immunization) {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(76));
+			helper.setOperationContext(ConsolPackage.Literals.IMMUNIZATION, ConsolPackage.Literals.IMMUNIZATION.getEAllOperations().get(76));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

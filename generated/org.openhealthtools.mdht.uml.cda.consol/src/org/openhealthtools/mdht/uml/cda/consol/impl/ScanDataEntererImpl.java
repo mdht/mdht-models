@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ScanDataEnterer;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ScanDataEntererOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.DataEntererImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(
-			this, diagnostics, context);
+	public boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +92,7 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	 * @generated
 	 */
 	public ScanDataEnterer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ScanDataEntererImpl
+} //ScanDataEntererImpl

@@ -10,7 +10,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
@@ -18,8 +20,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -65,8 +70,7 @@ public class ImmunizationImpl extends SubstanceAdministrationImpl implements Imm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateImmunizationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateImmunizationHasDoseQuantityOrRateQuantity(this, diagnostics, context);
 	}
 
@@ -210,8 +214,7 @@ public class ImmunizationImpl extends SubstanceAdministrationImpl implements Imm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateImmunizationMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateImmunizationMedicationSeriesNumberObservation(this, diagnostics, context);
 	}
 
@@ -220,8 +223,7 @@ public class ImmunizationImpl extends SubstanceAdministrationImpl implements Imm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateImmunizationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateImmunizationMedicationStatusObservation(this, diagnostics, context);
 	}
 
@@ -303,7 +305,7 @@ public class ImmunizationImpl extends SubstanceAdministrationImpl implements Imm
 	 * @generated
 	 */
 	public Immunization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ImmunizationImpl
+} //ImmunizationImpl

@@ -9,12 +9,17 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.IntegumentarySystemSection;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.IntegumentarySystemSectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -52,8 +57,7 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * @generated
 	 */
 	public boolean validateIntegumentarySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(
-			this, diagnostics, context);
+		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,10 +74,8 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegumentarySystemSectionProblemEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionProblemEntry(
-			this, diagnostics, context);
+	public boolean validateIntegumentarySystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +93,7 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * @generated
 	 */
 	public IntegumentarySystemSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // IntegumentarySystemSectionImpl
+} //IntegumentarySystemSectionImpl

@@ -9,11 +9,14 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SupportGuardian;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.SupportGuardianOperations;
-import org.openhealthtools.mdht.uml.cda.impl.GuardianImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -25,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class SupportGuardianImpl extends GuardianImpl implements SupportGuardian {
+public class SupportGuardianImpl extends SupportImpl implements SupportGuardian {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,44 +62,8 @@ public class SupportGuardianImpl extends GuardianImpl implements SupportGuardian
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupportGuardianClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SupportGuardianOperations.validateSupportGuardianClassCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSupportGuardianCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SupportGuardianOperations.validateSupportGuardianCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSupportGuardianAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SupportGuardianOperations.validateSupportGuardianAddr(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSupportGuardianTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SupportGuardianOperations.validateSupportGuardianTelecom(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public SupportGuardian init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // SupportGuardianImpl
+} //SupportGuardianImpl

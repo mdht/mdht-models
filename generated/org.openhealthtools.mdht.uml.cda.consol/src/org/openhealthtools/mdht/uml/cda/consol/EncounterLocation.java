@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.Participant2;
 
 /**
@@ -72,8 +73,7 @@ public interface EncounterLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
-	boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -10,13 +10,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.consol.Condition;
-import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.ConditionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -125,8 +130,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateConditionHasRelatedReferencesTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionOperations.validateConditionHasRelatedReferencesTypeCode(this, diagnostics, context);
 	}
 
@@ -234,7 +238,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ConditionEntry> getConditionEntries() {
+	public EList<AllergyIntolerance> getConditionEntries() {
 		return ConditionOperations.getConditionEntries(this);
 	}
 
@@ -253,7 +257,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * @generated
 	 */
 	public Condition init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // ConditionImpl
+} //ConditionImpl

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedicationHistorySectionOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySectionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionCode(
-			this, diagnostics, context);
+	public boolean validateAdmissionMedicationHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +74,7 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public AdmissionMedicationHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // AdmissionMedicationHistorySectionImpl
+} //AdmissionMedicationHistorySectionImpl

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthStatusObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
+	public boolean validateHealthStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalParticipants(
-			this, diagnostics, context);
+	public boolean validateHealthStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalParticipants(this, diagnostics, context);
 	}
 
 	/**
@@ -72,10 +73,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
+	public boolean validateHealthStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalRelationships(this, diagnostics, context);
 	}
 
 	/**
@@ -83,10 +82,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
-			this, diagnostics, context);
+	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +155,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * @generated
 	 */
 	public HealthStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // HealthStatusObservationImpl
+} //HealthStatusObservationImpl

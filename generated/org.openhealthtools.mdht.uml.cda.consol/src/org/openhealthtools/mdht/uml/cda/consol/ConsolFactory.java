@@ -26,6 +26,15 @@ public interface ConsolFactory extends EFactory {
 	ConsolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.consol.impl.ConsolFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>General Header Constraints</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints createGeneralHeaderConstraints();
+
+	/**
 	 * Returns a new object of class '<em>Allergy Drug Sensitivity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -195,24 +204,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	Condition createCondition();
-
-	/**
-	 * Returns a new object of class '<em>Condition Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Condition Entry</em>'.
-	 * @generated
-	 */
-	ConditionEntry createConditionEntry();
-
-	/**
-	 * Returns a new object of class '<em>Cause Of Death Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cause Of Death Observation</em>'.
-	 * @generated
-	 */
-	CauseOfDeathObservation createCauseOfDeathObservation();
 
 	/**
 	 * Returns a new object of class '<em>Patient Summary</em>'.
@@ -674,13 +665,13 @@ public interface ConsolFactory extends EFactory {
 	PolicySubscriber createPolicySubscriber();
 
 	/**
-	 * Returns a new object of class '<em>Support Guardian</em>'.
+	 * Returns a new object of class '<em>Support</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Support Guardian</em>'.
+	 * @return a new object of class '<em>Support</em>'.
 	 * @generated
 	 */
-	SupportGuardian createSupportGuardian();
+	Support createSupport();
 
 	/**
 	 * Returns a new object of class '<em>History Of Past Illness Section</em>'.
@@ -1016,6 +1007,24 @@ public interface ConsolFactory extends EFactory {
 	AssessmentAndPlanSection createAssessmentAndPlanSection();
 
 	/**
+	 * Returns a new object of class '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Condition Entry</em>'.
+	 * @generated
+	 */
+	ConditionEntry createConditionEntry();
+
+	/**
+	 * Returns a new object of class '<em>Cause Of Death Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cause Of Death Observation</em>'.
+	 * @generated
+	 */
+	CauseOfDeathObservation createCauseOfDeathObservation();
+
+	/**
 	 * Returns a new object of class '<em>Language Spoken</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1077,6 +1086,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	MedicationCombinationMedication createMedicationCombinationMedication();
+
+	/**
+	 * Returns a new object of class '<em>Support Guardian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Support Guardian</em>'.
+	 * @generated
+	 */
+	SupportGuardian createSupportGuardian();
 
 	/**
 	 * Returns a new object of class '<em>Support Participant</em>'.
@@ -1169,213 +1187,6 @@ public interface ConsolFactory extends EFactory {
 	DischargeDiet createDischargeDiet();
 
 	/**
-	 * Returns a new object of class '<em>History And Physical</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>History And Physical</em>'.
-	 * @generated
-	 */
-	HistoryAndPhysical createHistoryAndPhysical();
-
-	/**
-	 * Returns a new object of class '<em>IHE History Of Present Illness</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>IHE History Of Present Illness</em>'.
-	 * @generated
-	 */
-	IHEHistoryOfPresentIllness createIHEHistoryOfPresentIllness();
-
-	/**
-	 * Returns a new object of class '<em>Review Of Systems Section IHE</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Review Of Systems Section IHE</em>'.
-	 * @generated
-	 */
-	ReviewOfSystemsSectionIHE createReviewOfSystemsSectionIHE();
-
-	/**
-	 * Returns a new object of class '<em>CCD Vital Signs Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>CCD Vital Signs Section</em>'.
-	 * @generated
-	 */
-	CCDVitalSignsSection createCCDVitalSignsSection();
-
-	/**
-	 * Returns a new object of class '<em>General Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Status Section</em>'.
-	 * @generated
-	 */
-	GeneralStatusSection createGeneralStatusSection();
-
-	/**
-	 * Returns a new object of class '<em>Diagnostic Findings</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Findings</em>'.
-	 * @generated
-	 */
-	DiagnosticFindings createDiagnosticFindings();
-
-	/**
-	 * Returns a new object of class '<em>Consultation Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Consultation Note</em>'.
-	 * @generated
-	 */
-	ConsultationNote createConsultationNote();
-
-	/**
-	 * Returns a new object of class '<em>Past Medical History Section Consult</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Past Medical History Section Consult</em>'.
-	 * @generated
-	 */
-	PastMedicalHistorySectionConsult createPastMedicalHistorySectionConsult();
-
-	/**
-	 * Returns a new object of class '<em>Reason For Visit Section Consult</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reason For Visit Section Consult</em>'.
-	 * @generated
-	 */
-	ReasonForVisitSectionConsult createReasonForVisitSectionConsult();
-
-	/**
-	 * Returns a new object of class '<em>Level One Conformance</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Level One Conformance</em>'.
-	 * @generated
-	 */
-	LevelOneConformance createLevelOneConformance();
-
-	/**
-	 * Returns a new object of class '<em>Level Two Conformance</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Level Two Conformance</em>'.
-	 * @generated
-	 */
-	LevelTwoConformance createLevelTwoConformance();
-
-	/**
-	 * Returns a new object of class '<em>Level Three Conformance</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Level Three Conformance</em>'.
-	 * @generated
-	 */
-	LevelThreeConformance createLevelThreeConformance();
-
-	/**
-	 * Returns a new object of class '<em>Assessment Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment Section</em>'.
-	 * @generated
-	 */
-	AssessmentSection createAssessmentSection();
-
-	/**
-	 * Returns a new object of class '<em>Plan Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Section</em>'.
-	 * @generated
-	 */
-	PlanSection createPlanSection();
-
-	/**
-	 * Returns a new object of class '<em>Reason For Visit Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reason For Visit Section</em>'.
-	 * @generated
-	 */
-	ReasonForVisitSection createReasonForVisitSection();
-
-	/**
-	 * Returns a new object of class '<em>Reason For Visit And Chief Complaint Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reason For Visit And Chief Complaint Section</em>'.
-	 * @generated
-	 */
-	ReasonForVisitAndChiefComplaintSection createReasonForVisitAndChiefComplaintSection();
-
-	/**
-	 * Returns a new object of class '<em>Progress Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Progress Note</em>'.
-	 * @generated
-	 */
-	ProgressNote createProgressNote();
-
-	/**
-	 * Returns a new object of class '<em>Assessment And Plan Section Proc Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment And Plan Section Proc Note</em>'.
-	 * @generated
-	 */
-	AssessmentAndPlanSectionProcNote createAssessmentAndPlanSectionProcNote();
-
-	/**
-	 * Returns a new object of class '<em>Assessment Section Proc Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment Section Proc Note</em>'.
-	 * @generated
-	 */
-	AssessmentSectionProcNote createAssessmentSectionProcNote();
-
-	/**
-	 * Returns a new object of class '<em>Chief Complaint Section Proc Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Chief Complaint Section Proc Note</em>'.
-	 * @generated
-	 */
-	ChiefComplaintSectionProcNote createChiefComplaintSectionProcNote();
-
-	/**
-	 * Returns a new object of class '<em>Objective Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Objective Section</em>'.
-	 * @generated
-	 */
-	ObjectiveSection createObjectiveSection();
-
-	/**
-	 * Returns a new object of class '<em>Subjective Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Subjective Section</em>'.
-	 * @generated
-	 */
-	SubjectiveSection createSubjectiveSection();
-
-	/**
-	 * Returns a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
-	 * @generated
-	 */
-	HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1384,4 +1195,4 @@ public interface ConsolFactory extends EFactory {
 	 */
 	ConsolPackage getConsolPackage();
 
-} // ConsolFactory
+} //ConsolFactory

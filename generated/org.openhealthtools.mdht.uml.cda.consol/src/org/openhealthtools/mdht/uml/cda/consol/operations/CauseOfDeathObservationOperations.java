@@ -6,25 +6,29 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
-import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
@@ -35,7 +39,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationHasSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationHasSubjectPatientRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject Patient Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationRelationshipValueCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Relationship Value Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationHasRelatedSubjectCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Related Subject Code</em>}</li>
@@ -50,10 +53,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationAgeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationProblemStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Problem Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#validateCauseOfDeathObservationCauseOfDeathObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Cause Of Death Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#getAgeObservation() <em>Get Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#getProblemStatusObservation() <em>Get Problem Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation#getCauseOfDeathObservations() <em>Get Cause Of Death Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,62 +71,6 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCauseOfDeathObservationHasSubject(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCauseOfDeathObservationHasSubject(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->size() > 0";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationHasSubject(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCauseOfDeathObservationHasSubject(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.subject->size() > 0
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateCauseOfDeathObservationHasSubject(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
-			try {
-				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasSubject"),
-					new Object[] { causeOfDeathObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateCauseOfDeathObservationHasSubjectPatientRelationship(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject Patient Relationship</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -133,7 +78,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject->size() = 1";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationHasSubjectPatientRelationship(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Subject Patient Relationship</em>}' invariant operation.
@@ -149,34 +94,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject->size() = 1
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject->size() = 1
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationHasSubjectPatientRelationship(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationHasSubjectPatientRelationship(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasSubjectPatientRelationship"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasSubjectPatientRelationship"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -191,7 +135,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationRelationshipValueCode(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Relationship Value Code</em>}' invariant operation.
@@ -207,33 +151,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationRelationshipValueCode(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationRelationshipValueCode(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelationshipValueCode"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelationshipValueCode"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -248,7 +192,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.code->size() = 1";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationHasRelatedSubjectCode(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Related Subject Code</em>}' invariant operation.
@@ -264,33 +208,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.code->size() = 1
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code->size() = 1
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationHasRelatedSubjectCode(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationHasRelatedSubjectCode(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasRelatedSubjectCode"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasRelatedSubjectCode"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -305,7 +249,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationRelatedSubjectCodeValueSet(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Related Subject Code Value Set</em>}' invariant operation.
@@ -321,34 +265,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationRelatedSubjectCodeValueSet(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationRelatedSubjectCodeValueSet(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelatedSubjectCodeValueSet"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelatedSubjectCodeValueSet"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -363,7 +306,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.subject->size() = 1";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationHasRelatedSubjectSubject(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Related Subject Subject</em>}' invariant operation.
@@ -379,33 +322,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.subject->size() = 1
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject->size() = 1
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationHasRelatedSubjectSubject(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationHasRelatedSubjectSubject(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasRelatedSubjectSubject"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasRelatedSubjectSubject"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -420,7 +363,7 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationHasGenderCode(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Has Gender Code</em>}' invariant operation.
@@ -436,32 +379,33 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1
+	 * not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationHasGenderCode(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationHasGenderCode(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasGenderCode"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_HAS_GENDER_CODE,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationHasGenderCode"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -499,26 +443,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationRelatedSubjectBirthTime(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationRelatedSubjectBirthTime(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelatedSubjectBirthTime"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationRelatedSubjectBirthTime"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -556,25 +500,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationTemplateId(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationTemplateId(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationTemplateId"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationTemplateId"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -612,25 +557,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationMoodCode(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationMoodCode(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationMoodCode"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationMoodCode"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -668,25 +614,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationId(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationId(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationId"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationId"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -701,9 +648,9 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
+"value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationStatusCode(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Status Code</em>}' invariant operation.
@@ -728,25 +675,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationStatusCode(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationStatusCode(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationStatusCode"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationStatusCode"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -784,25 +732,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationEffectiveTime(CauseOfDeathObservation causeOfDeathObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationEffectiveTime(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationEffectiveTime"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationEffectiveTime"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -840,25 +789,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationAgeObservation(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationAgeObservation(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationAgeObservation"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_AGE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationAgeObservation"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -896,83 +846,26 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateCauseOfDeathObservationProblemStatusObservation(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateCauseOfDeathObservationProblemStatusObservation(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
 			try {
 				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(causeOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationProblemStatusObservation"),
-					new Object[] { causeOfDeathObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCauseOfDeathObservationCauseOfDeathObservation(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Cause Of Death Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCauseOfDeathObservationCauseOfDeathObservation(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CauseOfDeathObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCauseOfDeathObservationCauseOfDeathObservation(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cause Of Death Observation Cause Of Death Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCauseOfDeathObservationCauseOfDeathObservation(CauseOfDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CauseOfDeathObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateCauseOfDeathObservationCauseOfDeathObservation(
-			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
-			try {
-				VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			causeOfDeathObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationCauseOfDeathObservation"),
-					new Object[] { causeOfDeathObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAUSE_OF_DEATH_OBSERVATION__CAUSE_OF_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("CauseOfDeathObservationProblemStatusObservation"),
+						 new Object [] { causeOfDeathObservation }));
 			}
 			return false;
 		}
@@ -1008,15 +901,14 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static AgeObservation getAgeObservation(CauseOfDeathObservation causeOfDeathObservation) {
+	public static  AgeObservation getAgeObservation(CauseOfDeathObservation causeOfDeathObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION,
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(65));
+			helper.setOperationContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION, ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(63));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1053,68 +945,19 @@ public class CauseOfDeathObservationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ProblemStatusObservation getProblemStatusObservation(CauseOfDeathObservation causeOfDeathObservation) {
+	public static  ProblemStatusObservation getProblemStatusObservation(CauseOfDeathObservation causeOfDeathObservation) {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION,
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(66));
+			helper.setOperationContext(ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION, ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY);
 		return (ProblemStatusObservation) query.evaluate(causeOfDeathObservation);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getCauseOfDeathObservations(CauseOfDeathObservation) <em>Get Cause Of Death Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCauseOfDeathObservations(CauseOfDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CauseOfDeathObservation)).oclAsType(consol::CauseOfDeathObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getCauseOfDeathObservations(CauseOfDeathObservation) <em>Get Cause Of Death Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCauseOfDeathObservations(CauseOfDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CauseOfDeathObservation)).oclAsType(consol::CauseOfDeathObservation)
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static EList<CauseOfDeathObservation> getCauseOfDeathObservations(
-			CauseOfDeathObservation causeOfDeathObservation) {
-		if (GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION,
-				ConsolPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(67));
-			try {
-				GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CauseOfDeathObservation> result = (Collection<CauseOfDeathObservation>) query.evaluate(causeOfDeathObservation);
-		return new BasicEList.UnmodifiableEList<CauseOfDeathObservation>(result.size(), result.toArray());
 	}
 
 } // CauseOfDeathObservationOperations

@@ -9,11 +9,16 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
+
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationStatusObservationOperations;
+
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -50,10 +55,8 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
+	public boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -61,10 +64,8 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalParticipants(
-			this, diagnostics, context);
+	public boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalParticipants(this, diagnostics, context);
 	}
 
 	/**
@@ -72,10 +73,8 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
+	public boolean validateMedicationStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalRelationships(this, diagnostics, context);
 	}
 
 	/**
@@ -83,10 +82,8 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validateMedicationStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateMedicationStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationClassCode(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +101,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateMedicationStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationMoodCode(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -123,10 +118,8 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationStatusCode(
-			this, diagnostics, context);
+	public boolean validateMedicationStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -135,7 +128,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public MedicationStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
-} // MedicationStatusObservationImpl
+} //MedicationStatusObservationImpl

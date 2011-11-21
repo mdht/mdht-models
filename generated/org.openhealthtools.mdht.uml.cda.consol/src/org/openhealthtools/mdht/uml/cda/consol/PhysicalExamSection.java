@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -136,8 +137,7 @@ public interface PhysicalExamSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VisibleImplantedMedicalDevicesSection))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,8 +150,7 @@ public interface PhysicalExamSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::IntegumentarySystemSection))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionIntegumentarySystemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,8 +189,7 @@ public interface PhysicalExamSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsNoseMouthThroatSection))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionEarsNoseMouthThroatSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,8 +371,7 @@ public interface PhysicalExamSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MusculoskeletalSystemSection))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionMusculoskeletalSystemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 
 /**
@@ -40,7 +41,7 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.2' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedDrugClassVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.2' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {
@@ -94,8 +95,7 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.manufacturedMaterial.code.originalText.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,8 +121,7 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturerOrganization->size() = 1'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMayHaveMaterialManufacturer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationMayHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,8 +134,7 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->size() > 0 implies self.manufacturerOrganization->size() > 0'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationShouldHaveMaterialManufacturer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationShouldHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,19 +161,6 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @generated
 	 */
 	boolean validateMedicationInformationCodedProductVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.26.1.5\' and (self.manufacturedMaterial.code.code = \'N0000000223\' or self.manufacturedMaterial.code.code = \'N0000009802\' or self.manufacturedMaterial.code.code = \'N0000000002\')'"
-	 * @generated
-	 */
-	boolean validateMedicationInformationCodedDrugClassVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
