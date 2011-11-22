@@ -9,7 +9,7 @@
 
     <target name="transformFlatten" description="Flatten inherited templates.">
         <cdatools model="${modelPath.uml}">
-        	<model file="../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml" />
+        	<!-- <model file="../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml" /> -->
         	<modelElement qname="cdt::GeneralHeaderConstraints" />
         	
             <flattenModel includeBaseModel="false" outputModel="${consolidatedModelPath.uml}" 
