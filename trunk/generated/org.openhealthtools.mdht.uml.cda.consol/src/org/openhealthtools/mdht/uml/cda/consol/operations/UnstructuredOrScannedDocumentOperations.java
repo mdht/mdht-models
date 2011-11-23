@@ -31,8 +31,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentTypeIdFixed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Type Id Fixed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasOneRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has One Record Target</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Assigned Author</em>}</li>
@@ -56,7 +54,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentAssignedAuthorHasTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Assigned Author Has Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasNonXMLBodyText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Non XML Body Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasTextReferenceOrRepresentation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Text Reference Or Representation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredOrScannedDocument#validateUnstructuredOrScannedDocumentHasTextMediaTypeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Text Media Type Value Set</em>}</li>
@@ -80,120 +80,6 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 */
 	protected UnstructuredOrScannedDocumentOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()
-	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument unstructuredOrScannedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_OR_SCANNED_DOCUMENT);
-			try {
-				VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredOrScannedDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UNSTRUCTURED_OR_SCANNED_DOCUMENT__UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
-						 ConsolPlugin.INSTANCE.getString("UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName"),
-						 new Object [] { unstructuredOrScannedDocument }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()
-	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument unstructuredOrScannedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_OR_SCANNED_DOCUMENT);
-			try {
-				VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredOrScannedDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UNSTRUCTURED_OR_SCANNED_DOCUMENT__UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
-						 ConsolPlugin.INSTANCE.getString("UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr"),
-						 new Object [] { unstructuredOrScannedDocument }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -678,7 +564,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_ORIGINAL_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor))";
+	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_ORIGINAL_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanOriginalAuthor))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasOriginalAuthor(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Original Author</em>}' invariant operation.
@@ -694,7 +580,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor))
+	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanOriginalAuthor))
 	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -735,7 +621,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_SCANNING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice))";
+	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_SCANNING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanningDevice))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasScanningDevice(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Scanning Device</em>}' invariant operation.
@@ -751,7 +637,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice))
+	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanningDevice))
 	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -792,7 +678,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_SCAN_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.dataEnterer.oclIsUndefined() and self.dataEnterer.oclIsKindOf(ihe::ScanDataEnterer)";
+	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_SCAN_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.dataEnterer.oclIsUndefined() and self.dataEnterer.oclIsKindOf(consol::ScanDataEnterer)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasScanDataEnterer(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Scan Data Enterer</em>}' invariant operation.
@@ -808,7 +694,7 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.dataEnterer.oclIsUndefined() and self.dataEnterer.oclIsKindOf(ihe::ScanDataEnterer)
+	 * not self.dataEnterer.oclIsUndefined() and self.dataEnterer.oclIsKindOf(consol::ScanDataEnterer)
 	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1530,6 +1416,63 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Name</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()
+	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(UnstructuredOrScannedDocument unstructuredOrScannedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_OR_SCANNED_DOCUMENT);
+			try {
+				VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredOrScannedDocument)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.UNSTRUCTURED_OR_SCANNED_DOCUMENT__UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
+						 ConsolPlugin.INSTANCE.getString("UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName"),
+						 new Object [] { unstructuredOrScannedDocument }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Telecom</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1579,6 +1522,63 @@ public class UnstructuredOrScannedDocumentOperations extends GeneralHeaderConstr
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
 						 ConsolValidator.UNSTRUCTURED_OR_SCANNED_DOCUMENT__UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM,
 						 ConsolPlugin.INSTANCE.getString("UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom"),
+						 new Object [] { unstructuredOrScannedDocument }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Or Scanned Document Has Represented Custodian Organization Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()
+	 * @param unstructuredOrScannedDocument The receiving '<em><b>Unstructured Or Scanned Document</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(UnstructuredOrScannedDocument unstructuredOrScannedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_OR_SCANNED_DOCUMENT);
+			try {
+				VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unstructuredOrScannedDocument)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.UNSTRUCTURED_OR_SCANNED_DOCUMENT__UNSTRUCTURED_OR_SCANNED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
+						 ConsolPlugin.INSTANCE.getString("UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr"),
 						 new Object [] { unstructuredOrScannedDocument }));
 			}
 			return false;

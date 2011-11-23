@@ -61,42 +61,81 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case ConsolPackage.ALLERGY_DRUG_SENSITIVITY: return createAllergyDrugSensitivity();
+			case ConsolPackage.ALLERGY_PROBLEM_ACT: return createAllergyProblemAct();
+			case ConsolPackage.ALLERGY_OBSERVATION: return createAllergyObservation();
+			case ConsolPackage.REACTION_OBSERVATION: return createReactionObservation();
+			case ConsolPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: return createAllergyStatusObservation();
 			case ConsolPackage.EPISODE_OBSERVATION: return createEpisodeObservation();
-			case ConsolPackage.ALLERGY_INTOLERANCE: return createAllergyIntolerance();
-			case ConsolPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: return createProblemEntryReactionObservationContainer();
 			case ConsolPackage.AGE_OBSERVATION: return createAgeObservation();
-			case ConsolPackage.SEVERITY: return createSeverity();
-			case ConsolPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
 			case ConsolPackage.COMMENT: return createComment();
-			case ConsolPackage.MEDICATION: return createMedication();
-			case ConsolPackage.MEDICATION_TYPE: return createMedicationType();
-			case ConsolPackage.MEDICATION_ORDER_INFORMATION: return createMedicationOrderInformation();
+			case ConsolPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY: return createNonMedicinalSupplyActivity();
 			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
 			case ConsolPackage.PRODUCT_INSTANCE: return createProductInstance();
 			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return createMedicationFullfillmentInstructions();
+			case ConsolPackage.INSTRUCTIONS: return createInstructions();
+			case ConsolPackage.INDICATION: return createIndication();
+			case ConsolPackage.DRUG_VEHICLE: return createDrugVehicle();
 			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
 			case ConsolPackage.INTERNAL_REFERENCE: return createInternalReference();
-			case ConsolPackage.PATIENT_MEDICAL_INSTRUCTIONS: return createPatientMedicalInstructions();
-			case ConsolPackage.CONDITION: return createCondition();
-			case ConsolPackage.PATIENT_SUMMARY: return createPatientSummary();
-			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
-			case ConsolPackage.ADVANCE_DIRECTIVE: return createAdvanceDirective();
-			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return createAdvanceDirectiveStatusObservation();
-			case ConsolPackage.ALLERGIES_REACTIONS_SECTION: return createAllergiesReactionsSection();
-			case ConsolPackage.PROBLEM_LIST_SECTION: return createProblemListSection();
-			case ConsolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-			case ConsolPackage.ENCOUNTER: return createEncounter();
-			case ConsolPackage.ENCOUNTERS_ACTIVITY: return createEncountersActivity();
-			case ConsolPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-			case ConsolPackage.IMMUNIZATION: return createImmunization();
+			case ConsolPackage.MEDICATION_TYPE: return createMedicationType();
+			case ConsolPackage.PROBLEM_CONCERN_ACT: return createProblemConcernAct();
+			case ConsolPackage.PROBLEM_OBSERVATION: return createProblemObservation();
+			case ConsolPackage.PROBLEM_STATUS: return createProblemStatus();
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: return createAdvanceDirectivesSectionEntriesOptional();
+			case ConsolPackage.ALLERGIES_SECTION: return createAllergiesSection();
+			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
+			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: return createEncountersSectionEntriesOptional();
+			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL: return createImmunizationsSectionEntriesOptional();
 			case ConsolPackage.PAYERS_SECTION: return createPayersSection();
+			case ConsolPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
+			case ConsolPackage.POLICY_ACTIVITY: return createPolicyActivity();
+			case ConsolPackage.MEDICATIONS_SECTION: return createMedicationsSection();
+			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createMedicationsSectionEntriesOptional();
+			case ConsolPackage.PROCEDURES_SECTION: return createProceduresSection();
+			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL: return createProceduresSectionEntriesOptional();
+			case ConsolPackage.PROCEDURE: return createProcedure();
+			case ConsolPackage.EXTERNAL_REFERENCE: return createExternalReference();
+			case ConsolPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureEntryProcedureActivityProcedure();
+			case ConsolPackage.IMMUNIZATION_ACTIVITY: return createImmunizationActivity();
+			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON: return createImmunizationRefusalReason();
+			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: return createVitalSignsSectionEntriesOptional();
+			case ConsolPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: return createFamilyHistoryOrganizer();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
+			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION: return createFamilyHistoryDeathObservation();
+			case ConsolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION: return createSocialHistoryObservation();
+			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: return createSocialHistoryStatusObservation();
+			case ConsolPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
+			case ConsolPackage.RESULTS_SECTION: return createResultsSection();
+			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL: return createResultsSectionEntriesOptional();
+			case ConsolPackage.RESULT_ORGANIZER: return createResultOrganizer();
+			case ConsolPackage.RESULT_OBSERVATION: return createResultObservation();
+			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
+			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
+			case ConsolPackage.PROBLEM_SECTION: return createProblemSection();
+			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL: return createProblemSectionEntriesOptional();
+			case ConsolPackage.PURPOSE_SECTION: return createPurposeSection();
+			case ConsolPackage.PURPOSE_ACTIVITY: return createPurposeActivity();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return createAdvanceDirectiveStatusObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: return createAdvanceDirectiveVerification();
+			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE: return createAdvanceDirectiveReference();
+			case ConsolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
+			case ConsolPackage.ENCOUNTERS_ACTIVITES: return createEncountersActivites();
+			case ConsolPackage.SERVICE_DELIVERY_LOCATION: return createServiceDeliveryLocation();
+			case ConsolPackage.ENCOUNTER: return createEncounter();
+			case ConsolPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
 			case ConsolPackage.INSURANCE_PROVIDER: return createInsuranceProvider();
 			case ConsolPackage.PAYER_ENTRY: return createPayerEntry();
-			case ConsolPackage.MEDICATIONS_SECTION: return createMedicationsSection();
+			case ConsolPackage.COVERED_PARTY: return createCoveredParty();
+			case ConsolPackage.POLICY_SUBSCRIBER: return createPolicySubscriber();
 			case ConsolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
-			case ConsolPackage.PROCEDURE: return createProcedure();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: return createPlanOfCareActivityEncounter();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: return createPlanOfCareActivityObservation();
@@ -104,34 +143,11 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: return createPlanOfCareActivitySubstanceAdministration();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: return createPlanOfCareActivitySupply();
 			case ConsolPackage.PREGNANCY_HISTORY_SECTION: return createPregnancyHistorySection();
-			case ConsolPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
-			case ConsolPackage.SURGERIES_SECTION: return createSurgeriesSection();
-			case ConsolPackage.EXTERNAL_REFERENCE: return createExternalReference();
-			case ConsolPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureEntryProcedureActivityProcedure();
+			case ConsolPackage.SUPPORT: return createSupport();
 			case ConsolPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
 			case ConsolPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
-			case ConsolPackage.VITAL_SIGN: return createVitalSign();
+			case ConsolPackage.VITAL_SIGN_OBSERVATION: return createVitalSignObservation();
 			case ConsolPackage.DIAGNOSTIC_RESULTS_SECTION: return createDiagnosticResultsSection();
-			case ConsolPackage.RESULT: return createResult();
-			case ConsolPackage.RESULT_ORGANIZER: return createResultOrganizer();
-			case ConsolPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
-			case ConsolPackage.FAMILY_HISTORY: return createFamilyHistory();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
-			case ConsolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case ConsolPackage.SOCIAL_HISTORY: return createSocialHistory();
-			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: return createSocialHistoryStatusObservation();
-			case ConsolPackage.RESULTS_SECTION: return createResultsSection();
-			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
-			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-			case ConsolPackage.PURPOSE_SECTION: return createPurposeSection();
-			case ConsolPackage.PURPOSE_ACTIVITY: return createPurposeActivity();
-			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: return createAdvanceDirectiveVerification();
-			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE: return createAdvanceDirectiveReference();
-			case ConsolPackage.ENCOUNTER_LOCATION: return createEncounterLocation();
-			case ConsolPackage.PAYER_ENTITY: return createPayerEntity();
-			case ConsolPackage.COVERED_PARTY: return createCoveredParty();
-			case ConsolPackage.POLICY_SUBSCRIBER: return createPolicySubscriber();
-			case ConsolPackage.SUPPORT: return createSupport();
 			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return createHistoryOfPastIllnessSection();
 			case ConsolPackage.CHIEF_COMPLAINT_SECTION: return createChiefComplaintSection();
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION: return createReasonForReferralSection();
@@ -170,7 +186,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.HOSPITAL_COURSE_SECTION: return createHospitalCourseSection();
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case ConsolPackage.CONDITION_ENTRY: return createConditionEntry();
-			case ConsolPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
 			case ConsolPackage.LANGUAGE_SPOKEN: return createLanguageSpoken();
 			case ConsolPackage.HEALTHCARE_PROVIDER: return createHealthcareProvider();
 			case ConsolPackage.MEDICATION_NORMAL_DOSE: return createMedicationNormalDose();
@@ -189,6 +204,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.REFERRAL_SUMMARY: return createReferralSummary();
 			case ConsolPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
 			case ConsolPackage.DISCHARGE_DIET: return createDischargeDiet();
+			case ConsolPackage.MEDICATION_DISPENSE: return createMedicationDispense();
+			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION: return createPreconditionForSubstanceAdministration();
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION: return createImmunizationMedicationInformation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -209,9 +227,49 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyDrugSensitivity createAllergyDrugSensitivity() {
-		AllergyDrugSensitivityImpl allergyDrugSensitivity = new AllergyDrugSensitivityImpl();
-		return allergyDrugSensitivity;
+	public AllergyProblemAct createAllergyProblemAct() {
+		AllergyProblemActImpl allergyProblemAct = new AllergyProblemActImpl();
+		return allergyProblemAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyObservation createAllergyObservation() {
+		AllergyObservationImpl allergyObservation = new AllergyObservationImpl();
+		return allergyObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReactionObservation createReactionObservation() {
+		ReactionObservationImpl reactionObservation = new ReactionObservationImpl();
+		return reactionObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeverityObservation createSeverityObservation() {
+		SeverityObservationImpl severityObservation = new SeverityObservationImpl();
+		return severityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyStatusObservation createAllergyStatusObservation() {
+		AllergyStatusObservationImpl allergyStatusObservation = new AllergyStatusObservationImpl();
+		return allergyStatusObservation;
 	}
 
 	/**
@@ -229,49 +287,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyIntolerance createAllergyIntolerance() {
-		AllergyIntoleranceImpl allergyIntolerance = new AllergyIntoleranceImpl();
-		return allergyIntolerance;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer() {
-		ProblemEntryReactionObservationContainerImpl problemEntryReactionObservationContainer = new ProblemEntryReactionObservationContainerImpl();
-		return problemEntryReactionObservationContainer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AgeObservation createAgeObservation() {
 		AgeObservationImpl ageObservation = new AgeObservationImpl();
 		return ageObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Severity createSeverity() {
-		SeverityImpl severity = new SeverityImpl();
-		return severity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProblemStatusObservation createProblemStatusObservation() {
-		ProblemStatusObservationImpl problemStatusObservation = new ProblemStatusObservationImpl();
-		return problemStatusObservation;
 	}
 
 	/**
@@ -299,9 +317,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Medication createMedication() {
-		MedicationImpl medication = new MedicationImpl();
-		return medication;
+	public MedicationActivity createMedicationActivity() {
+		MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
+		return medicationActivity;
 	}
 
 	/**
@@ -309,19 +327,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationType createMedicationType() {
-		MedicationTypeImpl medicationType = new MedicationTypeImpl();
-		return medicationType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationOrderInformation createMedicationOrderInformation() {
-		MedicationOrderInformationImpl medicationOrderInformation = new MedicationOrderInformationImpl();
-		return medicationOrderInformation;
+	public NonMedicinalSupplyActivity createNonMedicinalSupplyActivity() {
+		NonMedicinalSupplyActivityImpl nonMedicinalSupplyActivity = new NonMedicinalSupplyActivityImpl();
+		return nonMedicinalSupplyActivity;
 	}
 
 	/**
@@ -359,6 +367,36 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Instructions createInstructions() {
+		InstructionsImpl instructions = new InstructionsImpl();
+		return instructions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Indication createIndication() {
+		IndicationImpl indication = new IndicationImpl();
+		return indication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DrugVehicle createDrugVehicle() {
+		DrugVehicleImpl drugVehicle = new DrugVehicleImpl();
+		return drugVehicle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationSeriesNumberObservation createMedicationSeriesNumberObservation() {
 		MedicationSeriesNumberObservationImpl medicationSeriesNumberObservation = new MedicationSeriesNumberObservationImpl();
 		return medicationSeriesNumberObservation;
@@ -379,9 +417,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientMedicalInstructions createPatientMedicalInstructions() {
-		PatientMedicalInstructionsImpl patientMedicalInstructions = new PatientMedicalInstructionsImpl();
-		return patientMedicalInstructions;
+	public MedicationType createMedicationType() {
+		MedicationTypeImpl medicationType = new MedicationTypeImpl();
+		return medicationType;
 	}
 
 	/**
@@ -389,9 +427,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Condition createCondition() {
-		ConditionImpl condition = new ConditionImpl();
-		return condition;
+	public ProblemConcernAct createProblemConcernAct() {
+		ProblemConcernActImpl problemConcernAct = new ProblemConcernActImpl();
+		return problemConcernAct;
 	}
 
 	/**
@@ -399,9 +437,389 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientSummary createPatientSummary() {
-		PatientSummaryImpl patientSummary = new PatientSummaryImpl();
-		return patientSummary;
+	public ProblemObservation createProblemObservation() {
+		ProblemObservationImpl problemObservation = new ProblemObservationImpl();
+		return problemObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemStatus createProblemStatus() {
+		ProblemStatusImpl problemStatus = new ProblemStatusImpl();
+		return problemStatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ContinuityOfCareDocument createContinuityOfCareDocument() {
+		ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
+		return continuityOfCareDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectivesSectionEntriesOptional createAdvanceDirectivesSectionEntriesOptional() {
+		AdvanceDirectivesSectionEntriesOptionalImpl advanceDirectivesSectionEntriesOptional = new AdvanceDirectivesSectionEntriesOptionalImpl();
+		return advanceDirectivesSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSection createAllergiesSection() {
+		AllergiesSectionImpl allergiesSection = new AllergiesSectionImpl();
+		return allergiesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional() {
+		AllergiesSectionEntriesOptionalImpl allergiesSectionEntriesOptional = new AllergiesSectionEntriesOptionalImpl();
+		return allergiesSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncountersSectionEntriesOptional createEncountersSectionEntriesOptional() {
+		EncountersSectionEntriesOptionalImpl encountersSectionEntriesOptional = new EncountersSectionEntriesOptionalImpl();
+		return encountersSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationsSectionEntriesOptional createImmunizationsSectionEntriesOptional() {
+		ImmunizationsSectionEntriesOptionalImpl immunizationsSectionEntriesOptional = new ImmunizationsSectionEntriesOptionalImpl();
+		return immunizationsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayersSection createPayersSection() {
+		PayersSectionImpl payersSection = new PayersSectionImpl();
+		return payersSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CoverageActivity createCoverageActivity() {
+		CoverageActivityImpl coverageActivity = new CoverageActivityImpl();
+		return coverageActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicyActivity createPolicyActivity() {
+		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
+		return policyActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsSection createMedicationsSection() {
+		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
+		return medicationsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsSectionEntriesOptional createMedicationsSectionEntriesOptional() {
+		MedicationsSectionEntriesOptionalImpl medicationsSectionEntriesOptional = new MedicationsSectionEntriesOptionalImpl();
+		return medicationsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSection createProceduresSection() {
+		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
+		return proceduresSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSectionEntriesOptional createProceduresSectionEntriesOptional() {
+		ProceduresSectionEntriesOptionalImpl proceduresSectionEntriesOptional = new ProceduresSectionEntriesOptionalImpl();
+		return proceduresSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Procedure createProcedure() {
+		ProcedureImpl procedure = new ProcedureImpl();
+		return procedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExternalReference createExternalReference() {
+		ExternalReferenceImpl externalReference = new ExternalReferenceImpl();
+		return externalReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure() {
+		ProcedureEntryProcedureActivityProcedureImpl procedureEntryProcedureActivityProcedure = new ProcedureEntryProcedureActivityProcedureImpl();
+		return procedureEntryProcedureActivityProcedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationActivity createImmunizationActivity() {
+		ImmunizationActivityImpl immunizationActivity = new ImmunizationActivityImpl();
+		return immunizationActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationRefusalReason createImmunizationRefusalReason() {
+		ImmunizationRefusalReasonImpl immunizationRefusalReason = new ImmunizationRefusalReasonImpl();
+		return immunizationRefusalReason;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsSectionEntriesOptional createVitalSignsSectionEntriesOptional() {
+		VitalSignsSectionEntriesOptionalImpl vitalSignsSectionEntriesOptional = new VitalSignsSectionEntriesOptionalImpl();
+		return vitalSignsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySection createFamilyHistorySection() {
+		FamilyHistorySectionImpl familyHistorySection = new FamilyHistorySectionImpl();
+		return familyHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryOrganizer createFamilyHistoryOrganizer() {
+		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
+		return familyHistoryOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryObservation createFamilyHistoryObservation() {
+		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
+		return familyHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryDeathObservation createFamilyHistoryDeathObservation() {
+		FamilyHistoryDeathObservationImpl familyHistoryDeathObservation = new FamilyHistoryDeathObservationImpl();
+		return familyHistoryDeathObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistorySection createSocialHistorySection() {
+		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
+		return socialHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistoryObservation createSocialHistoryObservation() {
+		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
+		return socialHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistoryStatusObservation createSocialHistoryStatusObservation() {
+		SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
+		return socialHistoryStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PregnancyObservation createPregnancyObservation() {
+		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
+		return pregnancyObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSection createResultsSection() {
+		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
+		return resultsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSectionEntriesOptional createResultsSectionEntriesOptional() {
+		ResultsSectionEntriesOptionalImpl resultsSectionEntriesOptional = new ResultsSectionEntriesOptionalImpl();
+		return resultsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultOrganizer createResultOrganizer() {
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultObservation createResultObservation() {
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicalEquipmentSection createMedicalEquipmentSection() {
+		MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
+		return medicalEquipmentSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusSection createFunctionalStatusSection() {
+		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
+		return functionalStatusSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemSection createProblemSection() {
+		ProblemSectionImpl problemSection = new ProblemSectionImpl();
+		return problemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemSectionEntriesOptional createProblemSectionEntriesOptional() {
+		ProblemSectionEntriesOptionalImpl problemSectionEntriesOptional = new ProblemSectionEntriesOptionalImpl();
+		return problemSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PurposeSection createPurposeSection() {
+		PurposeSectionImpl purposeSection = new PurposeSectionImpl();
+		return purposeSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PurposeActivity createPurposeActivity() {
+		PurposeActivityImpl purposeActivity = new PurposeActivityImpl();
+		return purposeActivity;
 	}
 
 	/**
@@ -419,9 +837,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirective createAdvanceDirective() {
-		AdvanceDirectiveImpl advanceDirective = new AdvanceDirectiveImpl();
-		return advanceDirective;
+	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
+		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
+		return advanceDirectiveObservation;
 	}
 
 	/**
@@ -439,9 +857,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergiesReactionsSection createAllergiesReactionsSection() {
-		AllergiesReactionsSectionImpl allergiesReactionsSection = new AllergiesReactionsSectionImpl();
-		return allergiesReactionsSection;
+	public AdvanceDirectiveVerification createAdvanceDirectiveVerification() {
+		AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
+		return advanceDirectiveVerification;
 	}
 
 	/**
@@ -449,9 +867,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemListSection createProblemListSection() {
-		ProblemListSectionImpl problemListSection = new ProblemListSectionImpl();
-		return problemListSection;
+	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
+		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
+		return advanceDirectiveReference;
 	}
 
 	/**
@@ -469,6 +887,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EncountersActivites createEncountersActivites() {
+		EncountersActivitesImpl encountersActivites = new EncountersActivitesImpl();
+		return encountersActivites;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceDeliveryLocation createServiceDeliveryLocation() {
+		ServiceDeliveryLocationImpl serviceDeliveryLocation = new ServiceDeliveryLocationImpl();
+		return serviceDeliveryLocation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Encounter createEncounter() {
 		EncounterImpl encounter = new EncounterImpl();
 		return encounter;
@@ -479,39 +917,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EncountersActivity createEncountersActivity() {
-		EncountersActivityImpl encountersActivity = new EncountersActivityImpl();
-		return encountersActivity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ImmunizationsSection createImmunizationsSection() {
 		ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
 		return immunizationsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Immunization createImmunization() {
-		ImmunizationImpl immunization = new ImmunizationImpl();
-		return immunization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PayersSection createPayersSection() {
-		PayersSectionImpl payersSection = new PayersSectionImpl();
-		return payersSection;
 	}
 
 	/**
@@ -539,9 +947,19 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationsSection createMedicationsSection() {
-		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
-		return medicationsSection;
+	public CoveredParty createCoveredParty() {
+		CoveredPartyImpl coveredParty = new CoveredPartyImpl();
+		return coveredParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicySubscriber createPolicySubscriber() {
+		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
+		return policySubscriber;
 	}
 
 	/**
@@ -552,16 +970,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PlanOfCareSection createPlanOfCareSection() {
 		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
 		return planOfCareSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure createProcedure() {
-		ProcedureImpl procedure = new ProcedureImpl();
-		return procedure;
 	}
 
 	/**
@@ -639,39 +1047,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PregnancyObservation createPregnancyObservation() {
-		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
-		return pregnancyObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SurgeriesSection createSurgeriesSection() {
-		SurgeriesSectionImpl surgeriesSection = new SurgeriesSectionImpl();
-		return surgeriesSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExternalReference createExternalReference() {
-		ExternalReferenceImpl externalReference = new ExternalReferenceImpl();
-		return externalReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure() {
-		ProcedureEntryProcedureActivityProcedureImpl procedureEntryProcedureActivityProcedure = new ProcedureEntryProcedureActivityProcedureImpl();
-		return procedureEntryProcedureActivityProcedure;
+	public Support createSupport() {
+		SupportImpl support = new SupportImpl();
+		return support;
 	}
 
 	/**
@@ -699,9 +1077,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VitalSign createVitalSign() {
-		VitalSignImpl vitalSign = new VitalSignImpl();
-		return vitalSign;
+	public VitalSignObservation createVitalSignObservation() {
+		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
+		return vitalSignObservation;
 	}
 
 	/**
@@ -712,206 +1090,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DiagnosticResultsSection createDiagnosticResultsSection() {
 		DiagnosticResultsSectionImpl diagnosticResultsSection = new DiagnosticResultsSectionImpl();
 		return diagnosticResultsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Result createResult() {
-		ResultImpl result = new ResultImpl();
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResultOrganizer createResultOrganizer() {
-		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
-		return resultOrganizer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistorySection createFamilyHistorySection() {
-		FamilyHistorySectionImpl familyHistorySection = new FamilyHistorySectionImpl();
-		return familyHistorySection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistory createFamilyHistory() {
-		FamilyHistoryImpl familyHistory = new FamilyHistoryImpl();
-		return familyHistory;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistoryObservation createFamilyHistoryObservation() {
-		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
-		return familyHistoryObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SocialHistorySection createSocialHistorySection() {
-		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
-		return socialHistorySection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SocialHistory createSocialHistory() {
-		SocialHistoryImpl socialHistory = new SocialHistoryImpl();
-		return socialHistory;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SocialHistoryStatusObservation createSocialHistoryStatusObservation() {
-		SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
-		return socialHistoryStatusObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResultsSection createResultsSection() {
-		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
-		return resultsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicalEquipmentSection createMedicalEquipmentSection() {
-		MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
-		return medicalEquipmentSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FunctionalStatusSection createFunctionalStatusSection() {
-		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
-		return functionalStatusSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PurposeSection createPurposeSection() {
-		PurposeSectionImpl purposeSection = new PurposeSectionImpl();
-		return purposeSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PurposeActivity createPurposeActivity() {
-		PurposeActivityImpl purposeActivity = new PurposeActivityImpl();
-		return purposeActivity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveVerification createAdvanceDirectiveVerification() {
-		AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
-		return advanceDirectiveVerification;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
-		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
-		return advanceDirectiveReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncounterLocation createEncounterLocation() {
-		EncounterLocationImpl encounterLocation = new EncounterLocationImpl();
-		return encounterLocation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PayerEntity createPayerEntity() {
-		PayerEntityImpl payerEntity = new PayerEntityImpl();
-		return payerEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CoveredParty createCoveredParty() {
-		CoveredPartyImpl coveredParty = new CoveredPartyImpl();
-		return coveredParty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PolicySubscriber createPolicySubscriber() {
-		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
-		return policySubscriber;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Support createSupport() {
-		SupportImpl support = new SupportImpl();
-		return support;
 	}
 
 	/**
@@ -1299,16 +1477,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CauseOfDeathObservation createCauseOfDeathObservation() {
-		CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
-		return causeOfDeathObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public LanguageSpoken createLanguageSpoken() {
 		LanguageSpokenImpl languageSpoken = new LanguageSpokenImpl();
 		return languageSpoken;
@@ -1482,6 +1650,36 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DischargeDiet createDischargeDiet() {
 		DischargeDietImpl dischargeDiet = new DischargeDietImpl();
 		return dischargeDiet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationDispense createMedicationDispense() {
+		MedicationDispenseImpl medicationDispense = new MedicationDispenseImpl();
+		return medicationDispense;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreconditionForSubstanceAdministration createPreconditionForSubstanceAdministration() {
+		PreconditionForSubstanceAdministrationImpl preconditionForSubstanceAdministration = new PreconditionForSubstanceAdministrationImpl();
+		return preconditionForSubstanceAdministration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationMedicationInformation createImmunizationMedicationInformation() {
+		ImmunizationMedicationInformationImpl immunizationMedicationInformation = new ImmunizationMedicationInformationImpl();
+		return immunizationMedicationInformation;
 	}
 
 	/**

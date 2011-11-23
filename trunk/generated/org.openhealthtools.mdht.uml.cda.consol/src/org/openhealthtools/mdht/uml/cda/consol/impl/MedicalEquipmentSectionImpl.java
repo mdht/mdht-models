@@ -15,8 +15,7 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.consol.Medication;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentSectionOperations;
 
@@ -94,8 +93,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionSupplyActivity(this, diagnostics, context);
+	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -103,26 +102,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MedicationOrderInformation> getSupplyActivities() {
-		return MedicalEquipmentSectionOperations.getSupplyActivities(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Medication> getMedicationActivities() {
-		return MedicalEquipmentSectionOperations.getMedicationActivities(this);
+	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
+		return MedicalEquipmentSectionOperations.getNonMedicinalSupplyActivities(this);
 	}
 
 	/**

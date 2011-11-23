@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationNormalDoseImpl extends MedicationImpl implements MedicationNormalDose {
+public class MedicationNormalDoseImpl extends MedicationActivityImpl implements MedicationNormalDose {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,8 +63,8 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements Medicati
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNormalDoseOperations.validateMedicationTemplateId(this, diagnostics, context);
+	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationNormalDoseOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**

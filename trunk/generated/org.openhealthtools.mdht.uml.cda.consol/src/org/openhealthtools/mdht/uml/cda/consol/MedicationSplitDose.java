@@ -31,7 +31,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationSplitDoseTemplateId MedicationSplitDoseSplitDosingSubstanceAdministration'"
  * @generated
  */
-public interface MedicationSplitDose extends Medication {
+public interface MedicationSplitDose extends MedicationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

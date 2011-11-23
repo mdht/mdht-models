@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.Result;
+import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerOperations;
@@ -129,8 +129,8 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultOrganizerResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerResult(this, diagnostics, context);
+	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +138,8 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Result> getResults() {
-		return ResultOrganizerOperations.getResults(this);
+	public EList<ResultObservation> getResultObservations() {
+		return ResultOrganizerOperations.getResultObservations(this);
 	}
 
 	/**

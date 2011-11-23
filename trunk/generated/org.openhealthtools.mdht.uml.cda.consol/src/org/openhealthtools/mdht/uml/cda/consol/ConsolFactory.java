@@ -35,13 +35,49 @@ public interface ConsolFactory extends EFactory {
 	GeneralHeaderConstraints createGeneralHeaderConstraints();
 
 	/**
-	 * Returns a new object of class '<em>Allergy Drug Sensitivity</em>'.
+	 * Returns a new object of class '<em>Allergy Problem Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergy Drug Sensitivity</em>'.
+	 * @return a new object of class '<em>Allergy Problem Act</em>'.
 	 * @generated
 	 */
-	AllergyDrugSensitivity createAllergyDrugSensitivity();
+	AllergyProblemAct createAllergyProblemAct();
+
+	/**
+	 * Returns a new object of class '<em>Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Observation</em>'.
+	 * @generated
+	 */
+	AllergyObservation createAllergyObservation();
+
+	/**
+	 * Returns a new object of class '<em>Reaction Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reaction Observation</em>'.
+	 * @generated
+	 */
+	ReactionObservation createReactionObservation();
+
+	/**
+	 * Returns a new object of class '<em>Severity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Severity Observation</em>'.
+	 * @generated
+	 */
+	SeverityObservation createSeverityObservation();
+
+	/**
+	 * Returns a new object of class '<em>Allergy Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Status Observation</em>'.
+	 * @generated
+	 */
+	AllergyStatusObservation createAllergyStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Episode Observation</em>'.
@@ -53,24 +89,6 @@ public interface ConsolFactory extends EFactory {
 	EpisodeObservation createEpisodeObservation();
 
 	/**
-	 * Returns a new object of class '<em>Allergy Intolerance</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergy Intolerance</em>'.
-	 * @generated
-	 */
-	AllergyIntolerance createAllergyIntolerance();
-
-	/**
-	 * Returns a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
-	 * @generated
-	 */
-	ProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer();
-
-	/**
 	 * Returns a new object of class '<em>Age Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,24 +96,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	AgeObservation createAgeObservation();
-
-	/**
-	 * Returns a new object of class '<em>Severity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Severity</em>'.
-	 * @generated
-	 */
-	Severity createSeverity();
-
-	/**
-	 * Returns a new object of class '<em>Problem Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Problem Status Observation</em>'.
-	 * @generated
-	 */
-	ProblemStatusObservation createProblemStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Health Status Observation</em>'.
@@ -116,31 +116,22 @@ public interface ConsolFactory extends EFactory {
 	Comment createComment();
 
 	/**
-	 * Returns a new object of class '<em>Medication</em>'.
+	 * Returns a new object of class '<em>Medication Activity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication</em>'.
+	 * @return a new object of class '<em>Medication Activity</em>'.
 	 * @generated
 	 */
-	Medication createMedication();
+	MedicationActivity createMedicationActivity();
 
 	/**
-	 * Returns a new object of class '<em>Medication Type</em>'.
+	 * Returns a new object of class '<em>Non Medicinal Supply Activity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Type</em>'.
+	 * @return a new object of class '<em>Non Medicinal Supply Activity</em>'.
 	 * @generated
 	 */
-	MedicationType createMedicationType();
-
-	/**
-	 * Returns a new object of class '<em>Medication Order Information</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Order Information</em>'.
-	 * @generated
-	 */
-	MedicationOrderInformation createMedicationOrderInformation();
+	NonMedicinalSupplyActivity createNonMedicinalSupplyActivity();
 
 	/**
 	 * Returns a new object of class '<em>Medication Status Observation</em>'.
@@ -170,6 +161,33 @@ public interface ConsolFactory extends EFactory {
 	MedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
 
 	/**
+	 * Returns a new object of class '<em>Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instructions</em>'.
+	 * @generated
+	 */
+	Instructions createInstructions();
+
+	/**
+	 * Returns a new object of class '<em>Indication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Indication</em>'.
+	 * @generated
+	 */
+	Indication createIndication();
+
+	/**
+	 * Returns a new object of class '<em>Drug Vehicle</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Drug Vehicle</em>'.
+	 * @generated
+	 */
+	DrugVehicle createDrugVehicle();
+
+	/**
 	 * Returns a new object of class '<em>Medication Series Number Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -188,31 +206,373 @@ public interface ConsolFactory extends EFactory {
 	InternalReference createInternalReference();
 
 	/**
-	 * Returns a new object of class '<em>Patient Medical Instructions</em>'.
+	 * Returns a new object of class '<em>Medication Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Medical Instructions</em>'.
+	 * @return a new object of class '<em>Medication Type</em>'.
 	 * @generated
 	 */
-	PatientMedicalInstructions createPatientMedicalInstructions();
+	MedicationType createMedicationType();
 
 	/**
-	 * Returns a new object of class '<em>Condition</em>'.
+	 * Returns a new object of class '<em>Problem Concern Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Condition</em>'.
+	 * @return a new object of class '<em>Problem Concern Act</em>'.
 	 * @generated
 	 */
-	Condition createCondition();
+	ProblemConcernAct createProblemConcernAct();
 
 	/**
-	 * Returns a new object of class '<em>Patient Summary</em>'.
+	 * Returns a new object of class '<em>Problem Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Summary</em>'.
+	 * @return a new object of class '<em>Problem Observation</em>'.
 	 * @generated
 	 */
-	PatientSummary createPatientSummary();
+	ProblemObservation createProblemObservation();
+
+	/**
+	 * Returns a new object of class '<em>Problem Status</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Status</em>'.
+	 * @generated
+	 */
+	ProblemStatus createProblemStatus();
+
+	/**
+	 * Returns a new object of class '<em>Continuity Of Care Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Continuity Of Care Document</em>'.
+	 * @generated
+	 */
+	ContinuityOfCareDocument createContinuityOfCareDocument();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directives Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directives Section Entries Optional</em>'.
+	 * @generated
+	 */
+	AdvanceDirectivesSectionEntriesOptional createAdvanceDirectivesSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Allergies Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergies Section</em>'.
+	 * @generated
+	 */
+	AllergiesSection createAllergiesSection();
+
+	/**
+	 * Returns a new object of class '<em>Allergies Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergies Section Entries Optional</em>'.
+	 * @generated
+	 */
+	AllergiesSectionEntriesOptional createAllergiesSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Encounters Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Section Entries Optional</em>'.
+	 * @generated
+	 */
+	EncountersSectionEntriesOptional createEncountersSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Immunizations Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunizations Section Entries Optional</em>'.
+	 * @generated
+	 */
+	ImmunizationsSectionEntriesOptional createImmunizationsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payers Section</em>'.
+	 * @generated
+	 */
+	PayersSection createPayersSection();
+
+	/**
+	 * Returns a new object of class '<em>Coverage Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Activity</em>'.
+	 * @generated
+	 */
+	CoverageActivity createCoverageActivity();
+
+	/**
+	 * Returns a new object of class '<em>Policy Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity</em>'.
+	 * @generated
+	 */
+	PolicyActivity createPolicyActivity();
+
+	/**
+	 * Returns a new object of class '<em>Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Section</em>'.
+	 * @generated
+	 */
+	MedicationsSection createMedicationsSection();
+
+	/**
+	 * Returns a new object of class '<em>Medications Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Section Entries Optional</em>'.
+	 * @generated
+	 */
+	MedicationsSectionEntriesOptional createMedicationsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures Section</em>'.
+	 * @generated
+	 */
+	ProceduresSection createProceduresSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedures Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures Section Entries Optional</em>'.
+	 * @generated
+	 */
+	ProceduresSectionEntriesOptional createProceduresSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure</em>'.
+	 * @generated
+	 */
+	Procedure createProcedure();
+
+	/**
+	 * Returns a new object of class '<em>External Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>External Reference</em>'.
+	 * @generated
+	 */
+	ExternalReference createExternalReference();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * @generated
+	 */
+	ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Activity</em>'.
+	 * @generated
+	 */
+	ImmunizationActivity createImmunizationActivity();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Refusal Reason</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Refusal Reason</em>'.
+	 * @generated
+	 */
+	ImmunizationRefusalReason createImmunizationRefusalReason();
+
+	/**
+	 * Returns a new object of class '<em>Vital Signs Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Section Entries Optional</em>'.
+	 * @generated
+	 */
+	VitalSignsSectionEntriesOptional createVitalSignsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Family History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Section</em>'.
+	 * @generated
+	 */
+	FamilyHistorySection createFamilyHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Organizer</em>'.
+	 * @generated
+	 */
+	FamilyHistoryOrganizer createFamilyHistoryOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Family History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Observation</em>'.
+	 * @generated
+	 */
+	FamilyHistoryObservation createFamilyHistoryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Family History Death Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Death Observation</em>'.
+	 * @generated
+	 */
+	FamilyHistoryDeathObservation createFamilyHistoryDeathObservation();
+
+	/**
+	 * Returns a new object of class '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Section</em>'.
+	 * @generated
+	 */
+	SocialHistorySection createSocialHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Observation</em>'.
+	 * @generated
+	 */
+	SocialHistoryObservation createSocialHistoryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Status Observation</em>'.
+	 * @generated
+	 */
+	SocialHistoryStatusObservation createSocialHistoryStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Pregnancy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pregnancy Observation</em>'.
+	 * @generated
+	 */
+	PregnancyObservation createPregnancyObservation();
+
+	/**
+	 * Returns a new object of class '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section</em>'.
+	 * @generated
+	 */
+	ResultsSection createResultsSection();
+
+	/**
+	 * Returns a new object of class '<em>Results Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section Entries Optional</em>'.
+	 * @generated
+	 */
+	ResultsSectionEntriesOptional createResultsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer</em>'.
+	 * @generated
+	 */
+	ResultOrganizer createResultOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
+	ResultObservation createResultObservation();
+
+	/**
+	 * Returns a new object of class '<em>Medical Equipment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medical Equipment Section</em>'.
+	 * @generated
+	 */
+	MedicalEquipmentSection createMedicalEquipmentSection();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Section</em>'.
+	 * @generated
+	 */
+	FunctionalStatusSection createFunctionalStatusSection();
+
+	/**
+	 * Returns a new object of class '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Section</em>'.
+	 * @generated
+	 */
+	ProblemSection createProblemSection();
+
+	/**
+	 * Returns a new object of class '<em>Problem Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Section Entries Optional</em>'.
+	 * @generated
+	 */
+	ProblemSectionEntriesOptional createProblemSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Purpose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Purpose Section</em>'.
+	 * @generated
+	 */
+	PurposeSection createPurposeSection();
+
+	/**
+	 * Returns a new object of class '<em>Purpose Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Purpose Activity</em>'.
+	 * @generated
+	 */
+	PurposeActivity createPurposeActivity();
 
 	/**
 	 * Returns a new object of class '<em>Advance Directives Section</em>'.
@@ -224,13 +584,13 @@ public interface ConsolFactory extends EFactory {
 	AdvanceDirectivesSection createAdvanceDirectivesSection();
 
 	/**
-	 * Returns a new object of class '<em>Advance Directive</em>'.
+	 * Returns a new object of class '<em>Advance Directive Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive</em>'.
+	 * @return a new object of class '<em>Advance Directive Observation</em>'.
 	 * @generated
 	 */
-	AdvanceDirective createAdvanceDirective();
+	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
 
 	/**
 	 * Returns a new object of class '<em>Advance Directive Status Observation</em>'.
@@ -242,22 +602,22 @@ public interface ConsolFactory extends EFactory {
 	AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation();
 
 	/**
-	 * Returns a new object of class '<em>Allergies Reactions Section</em>'.
+	 * Returns a new object of class '<em>Advance Directive Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergies Reactions Section</em>'.
+	 * @return a new object of class '<em>Advance Directive Verification</em>'.
 	 * @generated
 	 */
-	AllergiesReactionsSection createAllergiesReactionsSection();
+	AdvanceDirectiveVerification createAdvanceDirectiveVerification();
 
 	/**
-	 * Returns a new object of class '<em>Problem List Section</em>'.
+	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Problem List Section</em>'.
+	 * @return a new object of class '<em>Advance Directive Reference</em>'.
 	 * @generated
 	 */
-	ProblemListSection createProblemListSection();
+	AdvanceDirectiveReference createAdvanceDirectiveReference();
 
 	/**
 	 * Returns a new object of class '<em>Encounters Section</em>'.
@@ -269,6 +629,24 @@ public interface ConsolFactory extends EFactory {
 	EncountersSection createEncountersSection();
 
 	/**
+	 * Returns a new object of class '<em>Encounters Activites</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Activites</em>'.
+	 * @generated
+	 */
+	EncountersActivites createEncountersActivites();
+
+	/**
+	 * Returns a new object of class '<em>Service Delivery Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Service Delivery Location</em>'.
+	 * @generated
+	 */
+	ServiceDeliveryLocation createServiceDeliveryLocation();
+
+	/**
 	 * Returns a new object of class '<em>Encounter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -278,15 +656,6 @@ public interface ConsolFactory extends EFactory {
 	Encounter createEncounter();
 
 	/**
-	 * Returns a new object of class '<em>Encounters Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounters Activity</em>'.
-	 * @generated
-	 */
-	EncountersActivity createEncountersActivity();
-
-	/**
 	 * Returns a new object of class '<em>Immunizations Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -294,24 +663,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ImmunizationsSection createImmunizationsSection();
-
-	/**
-	 * Returns a new object of class '<em>Immunization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immunization</em>'.
-	 * @generated
-	 */
-	Immunization createImmunization();
-
-	/**
-	 * Returns a new object of class '<em>Payers Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Payers Section</em>'.
-	 * @generated
-	 */
-	PayersSection createPayersSection();
 
 	/**
 	 * Returns a new object of class '<em>Insurance Provider</em>'.
@@ -332,13 +683,22 @@ public interface ConsolFactory extends EFactory {
 	PayerEntry createPayerEntry();
 
 	/**
-	 * Returns a new object of class '<em>Medications Section</em>'.
+	 * Returns a new object of class '<em>Covered Party</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medications Section</em>'.
+	 * @return a new object of class '<em>Covered Party</em>'.
 	 * @generated
 	 */
-	MedicationsSection createMedicationsSection();
+	CoveredParty createCoveredParty();
+
+	/**
+	 * Returns a new object of class '<em>Policy Subscriber</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Subscriber</em>'.
+	 * @generated
+	 */
+	PolicySubscriber createPolicySubscriber();
 
 	/**
 	 * Returns a new object of class '<em>Plan Of Care Section</em>'.
@@ -348,15 +708,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PlanOfCareSection createPlanOfCareSection();
-
-	/**
-	 * Returns a new object of class '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure</em>'.
-	 * @generated
-	 */
-	Procedure createProcedure();
 
 	/**
 	 * Returns a new object of class '<em>Plan Of Care Activity Act</em>'.
@@ -422,40 +773,13 @@ public interface ConsolFactory extends EFactory {
 	PregnancyHistorySection createPregnancyHistorySection();
 
 	/**
-	 * Returns a new object of class '<em>Pregnancy Observation</em>'.
+	 * Returns a new object of class '<em>Support</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Pregnancy Observation</em>'.
+	 * @return a new object of class '<em>Support</em>'.
 	 * @generated
 	 */
-	PregnancyObservation createPregnancyObservation();
-
-	/**
-	 * Returns a new object of class '<em>Surgeries Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Surgeries Section</em>'.
-	 * @generated
-	 */
-	SurgeriesSection createSurgeriesSection();
-
-	/**
-	 * Returns a new object of class '<em>External Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>External Reference</em>'.
-	 * @generated
-	 */
-	ExternalReference createExternalReference();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * @generated
-	 */
-	ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure();
+	Support createSupport();
 
 	/**
 	 * Returns a new object of class '<em>Vital Signs Section</em>'.
@@ -476,13 +800,13 @@ public interface ConsolFactory extends EFactory {
 	VitalSignsOrganizer createVitalSignsOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Vital Sign</em>'.
+	 * Returns a new object of class '<em>Vital Sign Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Vital Sign</em>'.
+	 * @return a new object of class '<em>Vital Sign Observation</em>'.
 	 * @generated
 	 */
-	VitalSign createVitalSign();
+	VitalSignObservation createVitalSignObservation();
 
 	/**
 	 * Returns a new object of class '<em>Diagnostic Results Section</em>'.
@@ -492,186 +816,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DiagnosticResultsSection createDiagnosticResultsSection();
-
-	/**
-	 * Returns a new object of class '<em>Result</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Result</em>'.
-	 * @generated
-	 */
-	Result createResult();
-
-	/**
-	 * Returns a new object of class '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Result Organizer</em>'.
-	 * @generated
-	 */
-	ResultOrganizer createResultOrganizer();
-
-	/**
-	 * Returns a new object of class '<em>Family History Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Family History Section</em>'.
-	 * @generated
-	 */
-	FamilyHistorySection createFamilyHistorySection();
-
-	/**
-	 * Returns a new object of class '<em>Family History</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Family History</em>'.
-	 * @generated
-	 */
-	FamilyHistory createFamilyHistory();
-
-	/**
-	 * Returns a new object of class '<em>Family History Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Family History Observation</em>'.
-	 * @generated
-	 */
-	FamilyHistoryObservation createFamilyHistoryObservation();
-
-	/**
-	 * Returns a new object of class '<em>Social History Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Social History Section</em>'.
-	 * @generated
-	 */
-	SocialHistorySection createSocialHistorySection();
-
-	/**
-	 * Returns a new object of class '<em>Social History</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Social History</em>'.
-	 * @generated
-	 */
-	SocialHistory createSocialHistory();
-
-	/**
-	 * Returns a new object of class '<em>Social History Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Social History Status Observation</em>'.
-	 * @generated
-	 */
-	SocialHistoryStatusObservation createSocialHistoryStatusObservation();
-
-	/**
-	 * Returns a new object of class '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Results Section</em>'.
-	 * @generated
-	 */
-	ResultsSection createResultsSection();
-
-	/**
-	 * Returns a new object of class '<em>Medical Equipment Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medical Equipment Section</em>'.
-	 * @generated
-	 */
-	MedicalEquipmentSection createMedicalEquipmentSection();
-
-	/**
-	 * Returns a new object of class '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Section</em>'.
-	 * @generated
-	 */
-	FunctionalStatusSection createFunctionalStatusSection();
-
-	/**
-	 * Returns a new object of class '<em>Purpose Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Purpose Section</em>'.
-	 * @generated
-	 */
-	PurposeSection createPurposeSection();
-
-	/**
-	 * Returns a new object of class '<em>Purpose Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Purpose Activity</em>'.
-	 * @generated
-	 */
-	PurposeActivity createPurposeActivity();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Verification</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Verification</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveVerification createAdvanceDirectiveVerification();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Reference</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveReference createAdvanceDirectiveReference();
-
-	/**
-	 * Returns a new object of class '<em>Encounter Location</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounter Location</em>'.
-	 * @generated
-	 */
-	EncounterLocation createEncounterLocation();
-
-	/**
-	 * Returns a new object of class '<em>Payer Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Payer Entity</em>'.
-	 * @generated
-	 */
-	PayerEntity createPayerEntity();
-
-	/**
-	 * Returns a new object of class '<em>Covered Party</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Covered Party</em>'.
-	 * @generated
-	 */
-	CoveredParty createCoveredParty();
-
-	/**
-	 * Returns a new object of class '<em>Policy Subscriber</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Subscriber</em>'.
-	 * @generated
-	 */
-	PolicySubscriber createPolicySubscriber();
-
-	/**
-	 * Returns a new object of class '<em>Support</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Support</em>'.
-	 * @generated
-	 */
-	Support createSupport();
 
 	/**
 	 * Returns a new object of class '<em>History Of Past Illness Section</em>'.
@@ -1016,15 +1160,6 @@ public interface ConsolFactory extends EFactory {
 	ConditionEntry createConditionEntry();
 
 	/**
-	 * Returns a new object of class '<em>Cause Of Death Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cause Of Death Observation</em>'.
-	 * @generated
-	 */
-	CauseOfDeathObservation createCauseOfDeathObservation();
-
-	/**
 	 * Returns a new object of class '<em>Language Spoken</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1185,6 +1320,33 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DischargeDiet createDischargeDiet();
+
+	/**
+	 * Returns a new object of class '<em>Medication Dispense</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense</em>'.
+	 * @generated
+	 */
+	MedicationDispense createMedicationDispense();
+
+	/**
+	 * Returns a new object of class '<em>Precondition For Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Precondition For Substance Administration</em>'.
+	 * @generated
+	 */
+	PreconditionForSubstanceAdministration createPreconditionForSubstanceAdministration();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Medication Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Medication Information</em>'.
+	 * @generated
+	 */
+	ImmunizationMedicationInformation createImmunizationMedicationInformation();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -775,7 +774,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))";
+	protected static final String VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryPayerEntity(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Payer Entity</em>}' invariant operation.
@@ -791,7 +790,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))
 	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -946,7 +945,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PAYER_ENTITY__EOCL_EXP = "self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)";
+	protected static final String GET_PAYER_ENTITY__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPayerEntity(PayerEntry) <em>Get Payer Entity</em>}' query operation.
@@ -962,12 +961,12 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)
 	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AssignedEntity getPayerEntity(PayerEntry payerEntry) {
+	public static  PayerEntry getPayerEntity(PayerEntry payerEntry) {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
@@ -979,7 +978,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTITY__EOCL_QRY);
-		return (AssignedEntity) query.evaluate(payerEntry);
+		return (PayerEntry) query.evaluate(payerEntry);
 	}
 
 	/**

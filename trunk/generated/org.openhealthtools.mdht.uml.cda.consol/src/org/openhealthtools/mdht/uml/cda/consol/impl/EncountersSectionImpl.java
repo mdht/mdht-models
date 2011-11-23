@@ -14,13 +14,10 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.Encounter;
-import org.openhealthtools.mdht.uml.cda.consol.EncountersActivity;
+import org.openhealthtools.mdht.uml.cda.consol.EncountersActivites;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -33,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EncountersSectionImpl extends SectionImpl implements EncountersSection {
+public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl implements EncountersSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,17 +55,8 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionCode(this, diagnostics, context);
+	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,15 +82,6 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionEncounterEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEncounterEntry(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEncountersSectionEncountersActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEncountersActivity(this, diagnostics, context);
 	}
@@ -112,8 +91,8 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Encounter> getEncounterEntries() {
-		return EncountersSectionOperations.getEncounterEntries(this);
+	public EList<EncountersActivites> getnullEncountersActivities() {
+		return EncountersSectionOperations.getnullEncountersActivities(this);
 	}
 
 	/**
@@ -121,8 +100,9 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EncountersActivity> getEncountersActivities() {
-		return EncountersSectionOperations.getEncountersActivities(this);
+	@Override
+	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

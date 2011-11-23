@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationSplitDoseImpl extends MedicationImpl implements MedicationSplitDose {
+public class MedicationSplitDoseImpl extends MedicationActivityImpl implements MedicationSplitDose {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,8 +63,8 @@ public class MedicationSplitDoseImpl extends MedicationImpl implements Medicatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSplitDoseOperations.validateMedicationTemplateId(this, diagnostics, context);
+	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSplitDoseOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**

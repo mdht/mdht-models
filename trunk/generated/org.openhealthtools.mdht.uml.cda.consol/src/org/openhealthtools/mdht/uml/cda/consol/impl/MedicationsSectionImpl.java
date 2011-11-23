@@ -14,13 +14,10 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.Medication;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -33,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationsSectionImpl extends SectionImpl implements MedicationsSection {
+public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImpl implements MedicationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,17 +64,8 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionCode(this, diagnostics, context);
+	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +100,8 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionSupplyActivity(this, diagnostics, context);
+	public EList<MedicationActivity> getnullMedications() {
+		return MedicationsSectionOperations.getnullMedications(this);
 	}
 
 	/**
@@ -121,17 +109,9 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Medication> getMedications() {
-		return MedicationsSectionOperations.getMedications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MedicationOrderInformation> getSupplyActivities() {
-		return MedicationsSectionOperations.getSupplyActivities(this);
+	@Override
+	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

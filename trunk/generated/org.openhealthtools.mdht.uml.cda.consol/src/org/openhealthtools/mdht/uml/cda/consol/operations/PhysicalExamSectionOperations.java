@@ -27,7 +27,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AbdomenSection;
 import org.openhealthtools.mdht.uml.cda.consol.BreastSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
-import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
@@ -47,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.consol.NeckSection;
 import org.openhealthtools.mdht.uml.cda.consol.NeurologicSystemSection;
 import org.openhealthtools.mdht.uml.cda.consol.NoseSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.RectumSection;
 import org.openhealthtools.mdht.uml.cda.consol.RespiratorySystemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
@@ -261,7 +261,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionCondition(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Condition</em>}' invariant operation.
@@ -277,7 +277,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1743,7 +1743,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition)).oclAsType(consol::Condition)";
+	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getConditions(PhysicalExamSection) <em>Get Conditions</em>}' query operation.
@@ -1759,12 +1759,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition)).oclAsType(consol::Condition)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Condition> getConditions(PhysicalExamSection physicalExamSection) {
+	public static  EList<ProblemConcernAct> getConditions(PhysicalExamSection physicalExamSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(83));
@@ -1777,8 +1777,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Condition> result = (Collection<Condition>) query.evaluate(physicalExamSection);
-		return new BasicEList.UnmodifiableEList<Condition>(result.size(), result.toArray());
+		Collection<ProblemConcernAct> result = (Collection<ProblemConcernAct>) query.evaluate(physicalExamSection);
+		return new BasicEList.UnmodifiableEList<ProblemConcernAct>(result.size(), result.toArray());
 	}
 
 	/**

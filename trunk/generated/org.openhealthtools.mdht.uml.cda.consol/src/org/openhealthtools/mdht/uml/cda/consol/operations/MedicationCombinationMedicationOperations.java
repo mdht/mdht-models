@@ -26,14 +26,14 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -77,21 +77,21 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationMedicationStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Medication Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Reaction Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Product Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullMedicationSeriesNumberObservation() <em>Getnull Medication Series Number Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullMedicationStatusObservation() <em>Getnull Medication Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getMedicationSeriesNumberObservation() <em>Get Medication Series Number Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getMedicationStatusObservation() <em>Get Medication Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullReactionObservations() <em>Getnull Reaction Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullProductInstances() <em>Getnull Product Instances</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullInternalReferences() <em>Getnull Internal References</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getnullPatientMedicalInstructionss() <em>Getnull Patient Medical Instructionss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getProductInstances() <em>Get Product Instances</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getInternalReferences() <em>Get Internal References</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getPatientMedicalInstructionss() <em>Get Patient Medical Instructionss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getSupplyEntry() <em>Get Supply Entry</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class MedicationCombinationMedicationOperations extends MedicationOperations {
+public class MedicationCombinationMedicationOperations extends MedicationActivityOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -873,7 +873,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationHasIntructionsInversion(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Has Intructions Inversion</em>}' invariant operation.
@@ -889,7 +889,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )
+	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1846,7 +1846,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationReactionObservation(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Reaction Observation</em>}' invariant operation.
@@ -1862,7 +1862,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1953,24 +1953,24 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullMedicationSeriesNumberObservation(MedicationCombinationMedication) <em>Getnull Medication Series Number Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getMedicationSeriesNumberObservation(MedicationCombinationMedication) <em>Get Medication Series Number Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedicationSeriesNumberObservation(MedicationCombinationMedication)
+	 * @see #getMedicationSeriesNumberObservation(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(consol::MedicationSeriesNumberObservation)";
+	protected static final String GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(consol::MedicationSeriesNumberObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullMedicationSeriesNumberObservation(MedicationCombinationMedication) <em>Getnull Medication Series Number Observation</em>}' query operation.
+	 * The cached OCL query for the '{@link #getMedicationSeriesNumberObservation(MedicationCombinationMedication) <em>Get Medication Series Number Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedicationSeriesNumberObservation(MedicationCombinationMedication)
+	 * @see #getMedicationSeriesNumberObservation(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1981,40 +1981,40 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationSeriesNumberObservation getnullMedicationSeriesNumberObservation(MedicationCombinationMedication medicationCombinationMedication) {
-		if (GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
+	public static  MedicationSeriesNumberObservation getMedicationSeriesNumberObservation(MedicationCombinationMedication medicationCombinationMedication) {
+		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(139));
 			try {
-				GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
+				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY);
 		return (MedicationSeriesNumberObservation) query.evaluate(medicationCombinationMedication);
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullMedicationStatusObservation(MedicationCombinationMedication) <em>Getnull Medication Status Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getMedicationStatusObservation(MedicationCombinationMedication) <em>Get Medication Status Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedicationStatusObservation(MedicationCombinationMedication)
+	 * @see #getMedicationStatusObservation(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)";
+	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullMedicationStatusObservation(MedicationCombinationMedication) <em>Getnull Medication Status Observation</em>}' query operation.
+	 * The cached OCL query for the '{@link #getMedicationStatusObservation(MedicationCombinationMedication) <em>Get Medication Status Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedicationStatusObservation(MedicationCombinationMedication)
+	 * @see #getMedicationStatusObservation(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2025,18 +2025,18 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationStatusObservation getnullMedicationStatusObservation(MedicationCombinationMedication medicationCombinationMedication) {
-		if (GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
+	public static  MedicationStatusObservation getMedicationStatusObservation(MedicationCombinationMedication medicationCombinationMedication) {
+		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(140));
 			try {
-				GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
+				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_MEDICATION_STATUS_OBSERVATION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY);
 		return (MedicationStatusObservation) query.evaluate(medicationCombinationMedication);
 	}
 
@@ -2048,7 +2048,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)";
+	protected static final String GETNULL_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getnullReactionObservations(MedicationCombinationMedication) <em>Getnull Reaction Observations</em>}' query operation.
@@ -2064,12 +2064,12 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ProblemEntryReactionObservationContainer> getnullReactionObservations(MedicationCombinationMedication medicationCombinationMedication) {
+	public static  EList<ReactionObservation> getnullReactionObservations(MedicationCombinationMedication medicationCombinationMedication) {
 		if (GETNULL_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(141));
@@ -2082,29 +2082,29 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GETNULL_REACTION_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemEntryReactionObservationContainer> result = (Collection<ProblemEntryReactionObservationContainer>) query.evaluate(medicationCombinationMedication);
-		return new BasicEList.UnmodifiableEList<ProblemEntryReactionObservationContainer>(result.size(), result.toArray());
+		Collection<ReactionObservation> result = (Collection<ReactionObservation>) query.evaluate(medicationCombinationMedication);
+		return new BasicEList.UnmodifiableEList<ReactionObservation>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullProductInstances(MedicationCombinationMedication) <em>Getnull Product Instances</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProductInstances(MedicationCombinationMedication) <em>Get Product Instances</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullProductInstances(MedicationCombinationMedication)
+	 * @see #getProductInstances(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)";
+	protected static final String GET_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullProductInstances(MedicationCombinationMedication) <em>Getnull Product Instances</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProductInstances(MedicationCombinationMedication) <em>Get Product Instances</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullProductInstances(MedicationCombinationMedication)
+	 * @see #getProductInstances(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_PRODUCT_INSTANCES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PRODUCT_INSTANCES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2115,42 +2115,42 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ProductInstance> getnullProductInstances(MedicationCombinationMedication medicationCombinationMedication) {
-		if (GETNULL_PRODUCT_INSTANCES__EOCL_QRY == null) {
+	public static  EList<ProductInstance> getProductInstances(MedicationCombinationMedication medicationCombinationMedication) {
+		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(142));
 			try {
-				GETNULL_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GETNULL_PRODUCT_INSTANCES__EOCL_EXP);
+				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_PRODUCT_INSTANCES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PRODUCT_INSTANCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProductInstance> result = (Collection<ProductInstance>) query.evaluate(medicationCombinationMedication);
 		return new BasicEList.UnmodifiableEList<ProductInstance>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullInternalReferences(MedicationCombinationMedication) <em>Getnull Internal References</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getInternalReferences(MedicationCombinationMedication) <em>Get Internal References</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullInternalReferences(MedicationCombinationMedication)
+	 * @see #getInternalReferences(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_INTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)";
+	protected static final String GET_INTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullInternalReferences(MedicationCombinationMedication) <em>Getnull Internal References</em>}' query operation.
+	 * The cached OCL query for the '{@link #getInternalReferences(MedicationCombinationMedication) <em>Get Internal References</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullInternalReferences(MedicationCombinationMedication)
+	 * @see #getInternalReferences(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_INTERNAL_REFERENCES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_INTERNAL_REFERENCES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2161,67 +2161,67 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<InternalReference> getnullInternalReferences(MedicationCombinationMedication medicationCombinationMedication) {
-		if (GETNULL_INTERNAL_REFERENCES__EOCL_QRY == null) {
+	public static  EList<InternalReference> getInternalReferences(MedicationCombinationMedication medicationCombinationMedication) {
+		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(143));
 			try {
-				GETNULL_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GETNULL_INTERNAL_REFERENCES__EOCL_EXP);
+				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_INTERNAL_REFERENCES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_INTERNAL_REFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<InternalReference> result = (Collection<InternalReference>) query.evaluate(medicationCombinationMedication);
 		return new BasicEList.UnmodifiableEList<InternalReference>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullPatientMedicalInstructionss(MedicationCombinationMedication) <em>Getnull Patient Medical Instructionss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPatientMedicalInstructionss(MedicationCombinationMedication) <em>Get Patient Medical Instructionss</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullPatientMedicalInstructionss(MedicationCombinationMedication)
+	 * @see #getPatientMedicalInstructionss(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PatientMedicalInstructions)).oclAsType(consol::PatientMedicalInstructions)";
+	protected static final String GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullPatientMedicalInstructionss(MedicationCombinationMedication) <em>Getnull Patient Medical Instructionss</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPatientMedicalInstructionss(MedicationCombinationMedication) <em>Get Patient Medical Instructionss</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullPatientMedicalInstructionss(MedicationCombinationMedication)
+	 * @see #getPatientMedicalInstructionss(MedicationCombinationMedication)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PatientMedicalInstructions)).oclAsType(consol::PatientMedicalInstructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<PatientMedicalInstructions> getnullPatientMedicalInstructionss(MedicationCombinationMedication medicationCombinationMedication) {
-		if (GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
+	public static  EList<Instructions> getPatientMedicalInstructionss(MedicationCombinationMedication medicationCombinationMedication) {
+		if (GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(144));
 			try {
-				GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
+				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PatientMedicalInstructions> result = (Collection<PatientMedicalInstructions>) query.evaluate(medicationCombinationMedication);
-		return new BasicEList.UnmodifiableEList<PatientMedicalInstructions>(result.size(), result.toArray());
+		Collection<Instructions> result = (Collection<Instructions>) query.evaluate(medicationCombinationMedication);
+		return new BasicEList.UnmodifiableEList<Instructions>(result.size(), result.toArray());
 	}
 
 	/**
@@ -2232,7 +2232,7 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SUPPLY_ENTRY__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)";
+	protected static final String GET_SUPPLY_ENTRY__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))->asSequence()->first().oclAsType(consol::NonMedicinalSupplyActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSupplyEntry(MedicationCombinationMedication) <em>Get Supply Entry</em>}' query operation.
@@ -2248,12 +2248,12 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))->asSequence()->first().oclAsType(consol::NonMedicinalSupplyActivity)
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationOrderInformation getSupplyEntry(MedicationCombinationMedication medicationCombinationMedication) {
+	public static  NonMedicinalSupplyActivity getSupplyEntry(MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_SUPPLY_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(145));
@@ -2265,28 +2265,28 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLY_ENTRY__EOCL_QRY);
-		return (MedicationOrderInformation) query.evaluate(medicationCombinationMedication);
+		return (NonMedicinalSupplyActivity) query.evaluate(medicationCombinationMedication);
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Template Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8')";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Template Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2299,25 +2299,25 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationTemplateId(MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateMedicationActivityTemplateId(MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
-				VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationCombinationMedication, context) }),
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_ACTIVITY_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicationActivityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationCombinationMedication, context) }),
 						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
@@ -2326,26 +2326,26 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Code</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicationActivityCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicationActivityCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
 "value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Code</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicationActivityCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicationActivityCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2360,25 +2360,25 @@ public class MedicationCombinationMedicationOperations extends MedicationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationCode(MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateMedicationActivityCode(MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
-				VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationCode"),
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_ACTIVITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
 						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;

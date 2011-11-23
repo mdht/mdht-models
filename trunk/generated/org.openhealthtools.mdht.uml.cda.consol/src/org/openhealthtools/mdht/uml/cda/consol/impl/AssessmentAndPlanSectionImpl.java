@@ -16,8 +16,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Encounter;
-import org.openhealthtools.mdht.uml.cda.consol.Immunization;
-import org.openhealthtools.mdht.uml.cda.consol.Medication;
+import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSectionOperations;
@@ -114,7 +114,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Medication> getMedications() {
+	public EList<MedicationActivity> getMedications() {
 		return AssessmentAndPlanSectionOperations.getMedications(this);
 	}
 
@@ -123,7 +123,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Immunization> getImmunizations() {
+	public EList<ImmunizationActivity> getImmunizations() {
 		return AssessmentAndPlanSectionOperations.getImmunizations(this);
 	}
 

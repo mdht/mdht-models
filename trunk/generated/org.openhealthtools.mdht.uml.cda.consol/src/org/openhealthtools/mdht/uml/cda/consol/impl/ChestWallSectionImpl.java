@@ -12,7 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -83,7 +83,7 @@ public class ChestWallSectionImpl extends SectionImpl implements ChestWallSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyIntolerance getProblemEntry() {
+	public AllergyObservation getProblemEntry() {
 		return ChestWallSectionOperations.getProblemEntry(this);
 	}
 

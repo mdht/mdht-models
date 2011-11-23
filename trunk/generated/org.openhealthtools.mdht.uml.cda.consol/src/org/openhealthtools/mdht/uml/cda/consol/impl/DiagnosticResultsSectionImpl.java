@@ -17,7 +17,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
-import org.openhealthtools.mdht.uml.cda.consol.Result;
+import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticResultsSectionOperations;
@@ -132,7 +132,7 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Result> getResults() {
+	public EList<ResultObservation> getResults() {
 		return DiagnosticResultsSectionOperations.getResults(this);
 	}
 

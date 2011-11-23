@@ -14,9 +14,8 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.consol.AllergiesReactionsSection;
+import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeSummary;
@@ -29,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSecti
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
@@ -92,15 +89,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryMedicalSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryMedicalSummaryMedications(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDischargeSummaryProblemListSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryProblemListSection(this, diagnostics, context);
 	}
 
 	/**
@@ -171,15 +159,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryDiagnosticResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryDiagnosticResultsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDischargeSummaryFunctionalStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryFunctionalStatusSection(this, diagnostics, context);
 	}
@@ -225,15 +204,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryPlanOfCareSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDischargeSummaryHistoryOfPastIllnessSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPastIllnessSection(this, diagnostics, context);
 	}
@@ -270,15 +240,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemListSection getProblemListSection() {
-		return DischargeSummaryOperations.getProblemListSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AdmissionMedicationHistorySection getAdmissionMedicationHistorySection() {
 		return DischargeSummaryOperations.getAdmissionMedicationHistorySection(this);
 	}
@@ -306,7 +267,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergiesReactionsSection getAllergiesReactionsSection() {
+	public AllergiesSection getAllergiesReactionsSection() {
 		return DischargeSummaryOperations.getAllergiesReactionsSection(this);
 	}
 
@@ -335,15 +296,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
 		return DischargeSummaryOperations.getHospitalDischargeMedicationsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DiagnosticResultsSection getDiagnosticResultsSection() {
-		return DischargeSummaryOperations.getDiagnosticResultsSection(this);
 	}
 
 	/**
@@ -389,15 +341,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public PhysicalExamSection getPhysicalExamSection() {
 		return DischargeSummaryOperations.getPhysicalExamSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareSection getPlanOfCareSection() {
-		return DischargeSummaryOperations.getPlanOfCareSection(this);
 	}
 
 	/**
