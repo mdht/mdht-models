@@ -2,9 +2,7 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2E7IsBSVEeGGzu7fmW9pXw" name="HealthStatusValue">
-      <eAnnotations xmi:id="_2E-zEBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_LSa-gCQSEeCxCon8a79rfA"/>
-      </eAnnotations>
+     
       <ownedLiteral xmi:id="_2E7IsRSVEeGGzu7fmW9pXw" name="81323004"/>
       <ownedLiteral xmi:id="_2E7IshSVEeGGzu7fmW9pXw" name="313386006"/>
       <ownedLiteral xmi:id="_2E7IsxSVEeGGzu7fmW9pXw" name="162467007"/>
@@ -15,17 +13,13 @@
       <ownedLiteral xmi:id="_2E7IuBSVEeGGzu7fmW9pXw" name="419099009"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FPRwBSVEeGGzu7fmW9pXw" name="SeverityObservation">
-      <eAnnotations xmi:id="_2FRG8BSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_qhobQCQMEeCxCon8a79rfA"/>
-      </eAnnotations>
+      
       <ownedLiteral xmi:id="_2FPRwRSVEeGGzu7fmW9pXw" name="H"/>
       <ownedLiteral xmi:id="_2FPRwhSVEeGGzu7fmW9pXw" name="M"/>
       <ownedLiteral xmi:id="_2FPRwxSVEeGGzu7fmW9pXw" name="L"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="ProblemStatusValue">
-      <eAnnotations xmi:id="_2FfwcRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_-YF9cCQOEeCxCon8a79rfA"/>
-      </eAnnotations>
+    
       <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
       <ownedLiteral xmi:id="_2FcGEhSVEeGGzu7fmW9pXw" name="73425007"/>
       <ownedLiteral xmi:id="_2FcGExSVEeGGzu7fmW9pXw" name="90734009"/>
@@ -48,9 +42,7 @@
       <ownedLiteral xmi:id="_2Fw2NxSVEeGGzu7fmW9pXw" name="55607006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2GDxIBSVEeGGzu7fmW9pXw" name="ConcernEntryStatus">
-      <eAnnotations xmi:id="_2GFmURSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_9ys50CM8EeCxCon8a79rfA"/>
-      </eAnnotations>
+      
       <ownedComment xmi:id="_2GDxIRSVEeGGzu7fmW9pXw">
         <body>A concern in the &quot;active&quot; state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.</body>
       </ownedComment>

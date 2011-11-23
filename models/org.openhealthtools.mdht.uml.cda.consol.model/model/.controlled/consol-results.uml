@@ -20,7 +20,7 @@ Content Modules.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains Result as entry within section, or within a ResultOrganizer.</body>
-        <body>self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(hitsp::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::Result)))</body>
+        <body>self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(consol::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::Result)))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2PKCxxSVEeGGzu7fmW9pXw">
@@ -163,19 +163,12 @@ Content Modules.</body>
     <ownedAttribute xmi:id="_2JzoshSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2J0PwRSVEeGGzu7fmW9pXw" name="specimen" visibility="private" association="_2J0PxBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J0PwhSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J0PwxSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2JxzgxSVEeGGzu7fmW9pXw" name="result" type="_2J1d4BSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2JxzgxSVEeGGzu7fmW9pXw" name="resultObservation" type="_2J1d4BSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JxzhBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2JxzhRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2J0PxBSVEeGGzu7fmW9pXw" memberEnd="_2J0PwRSVEeGGzu7fmW9pXw _2J0PxRSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2J0PxRSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2J0PxBSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
+  <uml:Association xmi:id="_2J0PxBSVEeGGzu7fmW9pXw"/>
   <uml:Association xmi:id="_2JxzhxSVEeGGzu7fmW9pXw" memberEnd="_2JxzgxSVEeGGzu7fmW9pXw _2JxziBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2JxziBSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -218,7 +211,7 @@ Content Modules.</body>
     <ruleId>CONF-399</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2JxziRSVEeGGzu7fmW9pXw" base_Association="_2JxzhxSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2J1d4BSVEeGGzu7fmW9pXw" name="Result">
+  <uml:Class xmi:id="_2J1d4BSVEeGGzu7fmW9pXw" name="ResultObservation">
     <ownedComment xmi:id="_2J-AwBSVEeGGzu7fmW9pXw" annotatedElement="_2J1d4BSVEeGGzu7fmW9pXw">
       <body>The simple observation entry is meant to be an abstract representation of many of the observations used in this&#xD;
 specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for&#xD;
