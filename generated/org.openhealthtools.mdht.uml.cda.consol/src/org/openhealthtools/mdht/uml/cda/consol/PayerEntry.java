@@ -112,12 +112,12 @@ public interface PayerEntry extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
-	 *   or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))
+	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)
+	 *   or rel.act.oclIsKindOf(consol::CoveragePlanDescription))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)\r\n  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)\r\n  or rel.act.oclIsKindOf(consol::CoveragePlanDescription))'"
 	 * @generated
 	 */
 	boolean validatePayerEntryEntryRelationshipTarget(DiagnosticChain diagnostics, Map<Object, Object> context);

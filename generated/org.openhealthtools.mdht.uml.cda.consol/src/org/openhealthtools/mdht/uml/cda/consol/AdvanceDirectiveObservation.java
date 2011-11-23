@@ -63,11 +63,11 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1
+	 * self.reference->select(r | r.oclIsKindOf(consol::AdvanceDirectiveReference))->size() =1
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r | r.oclIsKindOf(consol::AdvanceDirectiveReference))->size() =1'"
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationHasExternalReference(DiagnosticChain diagnostics,

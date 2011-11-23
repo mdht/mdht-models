@@ -202,7 +202,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(r | r.oclIsKindOf(consol::AdvanceDirectiveReference))->size() =1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationHasExternalReference(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Has External Reference</em>}' invariant operation.
@@ -218,7 +218,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1
+	 * self.reference->select(r | r.oclIsKindOf(consol::AdvanceDirectiveReference))->size() =1
 	 * @param advanceDirectiveObservation The receiving '<em><b>Advance Directive Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

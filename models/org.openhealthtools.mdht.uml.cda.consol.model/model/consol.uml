@@ -65,7 +65,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of a problem act with Act / entryRelationship / @typeCode=&quot;SUBJ&quot; SHOULD be a problem observation (in the Problem section) or alert observation (in the Alert section), but MAY be some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2F8cYRSVEeGGzu7fmW9pXw" name="containsProblemObservation">
@@ -73,7 +73,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>In Problem Section, a Problem Act SHOULD contain one or more Problem Observations.</body>
-          <body>self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</body>
+          <body>self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2F9DcBSVEeGGzu7fmW9pXw" name="containsAlertObservation">
@@ -81,7 +81,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>In Alert Section, a ProblemAct SHOULD contain one or more Alert Observations.</body>
-          <body>self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</body>
+          <body>self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2F9qgBSVEeGGzu7fmW9pXw" name="containsPatientAwareness">
@@ -89,7 +89,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>MAY contain exactly one Patient Awareness</body>
-          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</body>
+          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeLowHigh">
@@ -282,7 +282,7 @@ or agent</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>the text element is present in the Reaction Observation entry</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EAi2RSVEeGGzu7fmW9pXw" name="reactionCode" constrainedElement="_2EAi1hSVEeGGzu7fmW9pXw">
@@ -293,7 +293,7 @@ or agent</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>the code element is present in the Reaction Observation entry</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EAi3BSVEeGGzu7fmW9pXw" name="reactionCodeVocab" constrainedElement="_2EAi2RSVEeGGzu7fmW9pXw">
@@ -301,7 +301,7 @@ or agent</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EAi3hSVEeGGzu7fmW9pXw" name="severityText" constrainedElement="_2EAi2RSVEeGGzu7fmW9pXw">
@@ -313,7 +313,7 @@ allergy or intolerance</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The text element is present in the Severity Observation template</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EAi4RSVEeGGzu7fmW9pXw" name="severityCode" constrainedElement="_2EAi3hSVEeGGzu7fmW9pXw">
@@ -325,7 +325,7 @@ the allergy or intolerance</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>the code element is present in the Severity Observation entry</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EAi5BSVEeGGzu7fmW9pXw" name="severityCodeVocab" constrainedElement="_2EAi4RSVEeGGzu7fmW9pXw">
@@ -333,7 +333,7 @@ the allergy or intolerance</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static</body>
-          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')&#xA;) )  )</body>
+          <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')&#xA;) )  )</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
@@ -412,7 +412,7 @@ historical purposes.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>Source of exactly one entryRelationship whose typeCode is 'SUBJ'. This is used to link the episode observation to the target problem act or social history observation.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, ccd::ProblemAct)->size() = 1&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, ccd::SocialHistoryObservation)->size() = 1</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, consol::ProblemConcernAct)->size() = 1&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, consol::SocialHistoryObservation)->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2EQaVxSVEeGGzu7fmW9pXw" name="existsEntryRelationshipSAS" constrainedElement="_2EQaUBSVEeGGzu7fmW9pXw">
@@ -420,7 +420,7 @@ historical purposes.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>Source of one or more entryRelationship whose typeCode is 'SAS'. The target of the entryRelationship SHALL be a problem act or social history observation. This is used to represent the temporal sequence of episodes.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::ProblemAct)->size() >0&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::SocialHistoryObservation)->size() > 0</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, consol::ProblemConcernAct)->size() >0&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, consol::SocialHistoryObservation)->size() > 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_2EYWIBSVEeGGzu7fmW9pXw">
@@ -479,7 +479,7 @@ entry, with exceptions noted below.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>MAY contain exactly one Patient Awareness</body>
-          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</body>
+          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2F280BSVEeGGzu7fmW9pXw" name="hasTextReference">
@@ -756,7 +756,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
           <language>Analysis</language>
           <language>OCL</language>
           <body>A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(consol::ProcedureActivity) or entry.oclIsKindOf(consol::MedicationActivity))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2FuZ8BSVEeGGzu7fmW9pXw" name="informationSource">
@@ -772,7 +772,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
           <language>Analysis</language>
           <language>OCL</language>
           <body>MAY contain exactly one Patient Awareness</body>
-          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</body>
+          <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2FvBARSVEeGGzu7fmW9pXw" name="hasTextReference">
@@ -1079,7 +1079,7 @@ the same information as free text in the top level &amp;lt;substanceAdministrati
           <language>Analysis</language>
           <language>OCL</language>
           <body>entryRelationship / @typeCode=&quot;RSON&quot; in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2HtW8RSVEeGGzu7fmW9pXw" name="hasProduct">
@@ -1087,7 +1087,7 @@ the same information as free text in the top level &amp;lt;substanceAdministrati
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains exactly one consumable, the target of which is a Product template.</body>
-          <body>self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</body>
+          <body>self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2Ht-ABSVEeGGzu7fmW9pXw" name="hasDosing">
@@ -1319,7 +1319,7 @@ Acute, etc</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The medication status MAY be recorded using the CCD Medication Status observation using the value set defined in the CCD</body>
-          <body>self.getObservations()->exists(po : cda::Observation |  po.oclIsKindOf(ccd::MedicationStatusObservation))</body>
+          <body>self.getObservations()->exists(po : cda::Observation |  po.oclIsKindOf(consol::MedicationStatusObservation))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2GHbnBSVEeGGzu7fmW9pXw" name="hasIndication" constrainedElement="_2GHbmRSVEeGGzu7fmW9pXw">
@@ -1333,7 +1333,7 @@ pressure</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>MAY contain [0..*] indications which SHALL be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide.</body>
-          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation))</body>
+          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(consol::ProblemObservation))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2GHbnxSVEeGGzu7fmW9pXw" name="hasIndicationNarrativeText" constrainedElement="_2GHbnBSVEeGGzu7fmW9pXw">
@@ -1341,7 +1341,7 @@ pressure</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The indication problem observation SHALL contain a &lt;text> element that includes a &lt;reference> element whose value attribute points to the narrative text that is the indication for the medication</body>
-          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and not po.text.reference.oclIsUndefined())</body>
+          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(consol::ProblemObservation) and not po.text.reference.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2GHboRSVEeGGzu7fmW9pXw" name="hasIndicationVocab" constrainedElement="_2GHbnBSVEeGGzu7fmW9pXw">
@@ -1349,7 +1349,7 @@ pressure</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The indication SHALL be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic</body>
-          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(consol::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2GHboxSVEeGGzu7fmW9pXw" name="hasPatientInstructions" constrainedElement="_2GHboRSVEeGGzu7fmW9pXw">
@@ -1635,7 +1635,7 @@ ointment</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
+          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2Gyw8xSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">
@@ -2314,7 +2314,7 @@ known, the diseases they suffered from, their ages at death, and other relevant 
           <language>Analysis</language>
           <language>OCL</language>
           <body>Family History Section SHOULD include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which MAY be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23)</body>
-          <body>self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))</body>
+          <body>self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(consol::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(consol::FamilyHistoryOrganizer))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2JI6UBSVEeGGzu7fmW9pXw" name="noSubject">
@@ -2373,7 +2373,7 @@ known, the diseases they suffered from, their ages at death, and other relevant 
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of a family history organizer Organizer / component relationship SHOULD be a family history observation, but MAY be some other clinical statement</body>
-          <body>self.component->exists (comp : cda::Component4 | comp.observation->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::FamilyHistoryObservation)))</body>
+          <body>self.component->exists (comp : cda::Component4 | comp.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::FamilyHistoryObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2I7e8BSVEeGGzu7fmW9pXw" name="hasSubject">
@@ -3109,7 +3109,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
+          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2Jb1QxSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">
@@ -3321,7 +3321,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains one or more Problem Act and/or Result Organizer</body>
-          <body>self.getEntryTargets(ccd::ProblemAct)->size() > 0&#xD;&#xA;  or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0</body>
+          <body>self.getEntryTargets(consol::ProblemConcernAct)->size() > 0&#xD;&#xA;  or self.getEntryTargets(consol::ResultOrganizer)->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2KN4YxSVEeGGzu7fmW9pXw" name="titleValue">
@@ -3341,7 +3341,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>problem observation or result observation in the functional status section SHALL contain exactly one observation / code</body>
-          <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)</body>
+          <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2KPGgBSVEeGGzu7fmW9pXw" name="observationCodeValueSet">
@@ -3349,7 +3349,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>The value for Observation / code in a problem observation or result observation in the functional status section MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017</body>
-          <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2KPtkBSVEeGGzu7fmW9pXw" name="assessmentInstrument">
@@ -3409,7 +3409,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>A problem observation in the functional status section SHALL contain exactly one status of functional status observation</body>
-          <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
+          <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2KTX8BSVEeGGzu7fmW9pXw" name="resultStatusObservation">
@@ -3417,7 +3417,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>A result observation in the functional status section SHALL contain exactly one status of functional status observation.</body>
-          <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->&#xD;&#xA;forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
+          <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->&#xD;&#xA;forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_2KT_ABSVEeGGzu7fmW9pXw">
@@ -3614,7 +3614,7 @@ ASTM/HL7 Continuity of Care Document).</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The advanced directive observation may contain a single reference to an external document. The reference may be recorded using CCD :: Advance Directive Reference (2.16.840.1.113883.10.20.1.36)</body>
-          <body>self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1</body>
+          <body>self.reference->select(r | r.oclIsKindOf(consol::AdvanceDirectiveReference))->size() =1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2LE0ABSVEeGGzu7fmW9pXw" name="removedElements">
@@ -3822,7 +3822,7 @@ ASTM/HL7 Continuity of Care Document).</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
+          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2K504xSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">
@@ -4299,7 +4299,7 @@ past. It shall include entries for medication administration as described in the
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_2MS8ARSVEeGGzu7fmW9pXw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))</body>
           <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
         </specification>
       </ownedRule>
@@ -4415,7 +4415,7 @@ past. It shall include entries for medication administration as described in the
           <language>Analysis</language>
           <language>OCL</language>
           <body>entryRelationship / @typeCode=&quot;RSON&quot; in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2MP4sBSVEeGGzu7fmW9pXw" name="hasProduct">
@@ -4423,7 +4423,7 @@ past. It shall include entries for medication administration as described in the
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains exactly one consumable, the target of which is a Product template.</body>
-          <body>self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</body>
+          <body>self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2MP4sxSVEeGGzu7fmW9pXw" name="textReference">
@@ -4452,7 +4452,7 @@ past. It shall include entries for medication administration as described in the
           <language>Analysis</language>
           <language>OCL</language>
           <body>If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</body>
-          <body>self.negationInd=true implies not self.entryRelationship.act->select( act | act.oclIsKindOf(ccd::Comment) )->isEmpty()</body>
+          <body>self.negationInd=true implies not self.entryRelationship.act->select( act | act.oclIsKindOf(consol::Comment) )->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2MAoIRSVEeGGzu7fmW9pXw" name="refusalReason" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
@@ -5033,7 +5033,7 @@ guarantor, or some combination.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of a policy activity with entryRelationship / @typeCode='REFR' SHALL be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan.</body>
-          <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)&#xD;&#xA;  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))</body>
+          <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)&#xD;&#xA;  or rel.act.oclIsKindOf(consol::CoveragePlanDescription))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_2NAGohSVEeGGzu7fmW9pXw">
@@ -5136,7 +5136,7 @@ prescription list. It shall include entries for medications as described in the 
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_2NJ3sxSVEeGGzu7fmW9pXw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))</body>
           <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
         </specification>
       </ownedRule>
@@ -5674,7 +5674,7 @@ described in the Entry Content Modules.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure</body>
-          <body>not self.entry->select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))->isEmpty()</body>
+          <body>not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ"/>
@@ -6056,7 +6056,7 @@ A vital signs organizer collects vital signs observations.&#xD;
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OlbDBSVEeGGzu7fmW9pXw">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included</body>
+          <body>consol::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included</body>
           <body>self.templateId->exists(id : datatypes::II | id.root ='2.16.840.1.113883.10.20.1.32')</body>
         </specification>
       </ownedRule>
@@ -7712,7 +7712,7 @@ an insulin sliding scale dose based on blood sugar level).&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>entryRelationship / @typeCode=&quot;RSON&quot; in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2S56URSVEeGGzu7fmW9pXw" name="hasProduct">
@@ -7720,7 +7720,7 @@ an insulin sliding scale dose based on blood sugar level).&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains exactly one consumable, the target of which is a Product template.</body>
-          <body>self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</body>
+          <body>self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2S56VBSVEeGGzu7fmW9pXw" name="hasDosing">
@@ -8103,7 +8103,7 @@ is not required, to have subordinate &amp;lt;substanceAdministration> entries in
           <language>Analysis</language>
           <language>OCL</language>
           <body>entryRelationship / @typeCode=&quot;RSON&quot; in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
-          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2TMOXBSVEeGGzu7fmW9pXw" name="hasProduct">
@@ -8111,7 +8111,7 @@ is not required, to have subordinate &amp;lt;substanceAdministration> entries in
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains exactly one consumable, the target of which is a Product template.</body>
-          <body>self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</body>
+          <body>self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_2TMOXxSVEeGGzu7fmW9pXw" name="hasDosing">
@@ -9290,7 +9290,7 @@ prescription list. It shall include entries for medications as described in the 
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iAoXFRVdEeGQCvUGzi1kDQ">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))</body>
           <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
         </specification>
       </ownedRule>
@@ -9425,7 +9425,7 @@ described in the Entry Content Modules.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure</body>
-          <body>not self.entry->select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))->isEmpty()</body>
+          <body>not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_s9Ig6RVdEeGQCvUGzi1kDQ">
@@ -9629,7 +9629,7 @@ past. It shall include entries for medication administration as described in the
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_EuPlphVeEeGQCvUGzi1kDQ">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+          <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))</body>
           <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
         </specification>
       </ownedRule>

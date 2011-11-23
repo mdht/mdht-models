@@ -20,7 +20,7 @@ Content Modules.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains Result as entry within section, or within a ResultOrganizer.</body>
-        <body>self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(consol::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::Result)))</body>
+        <body>self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(consol::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(consol::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::Result)))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2PKCxxSVEeGGzu7fmW9pXw">
