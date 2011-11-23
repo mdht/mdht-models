@@ -62,8 +62,9 @@ public class SupportGuardianImpl extends SupportImpl implements SupportGuardian 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupportGuardian init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportGuardianImpl
+} // SupportGuardianImpl

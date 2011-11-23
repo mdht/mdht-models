@@ -95,13 +95,13 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"  or not self.getSection().informant->isEmpty()"+
-"  or not self.getClinicalDocument().informant->isEmpty()"+
-"  or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"  or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "  or not self.getSection().informant->isEmpty()"
+			+ "  or not self.getClinicalDocument().informant->isEmpty()"
+			+ "  or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "  or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderInformationSource(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Information Source</em>}' invariant operation.
@@ -130,26 +130,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderInformationSource(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderInformationSource(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INFORMATION_SOURCE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderInformationSource"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INFORMATION_SOURCE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderInformationSource"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -187,26 +186,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderSequenceNumber(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderSequenceNumber(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SEQUENCE_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderSequenceNumber"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SEQUENCE_NUMBER,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderSequenceNumber"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -244,26 +242,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderPaymentProviders(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderPaymentProviders(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYMENT_PROVIDERS,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderPaymentProviders"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYMENT_PROVIDERS,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderPaymentProviders"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -301,26 +298,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderPayerEntryID(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderPayerEntryID(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderPayerEntryID"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderPayerEntryID"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -358,26 +354,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderHealthInsuranceType(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderHealthInsuranceType(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthInsuranceType"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthInsuranceType"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -415,26 +410,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderInsuranceInformation(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderInsuranceInformation(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFORMATION,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInformation"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFORMATION,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInformation"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -472,26 +466,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderInsuranceInfoSourceID(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderInsuranceInfoSourceID(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceID"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceID"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -529,26 +522,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderInsuranceInfoSourceAddr(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderInsuranceInfoSourceAddr(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceAddr"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceAddr"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -586,26 +579,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderHealthPlanCoverageStartTime(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderHealthPlanCoverageStartTime(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStartTime"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStartTime"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -643,26 +636,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderHealthPlanCoverageStopTime(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderHealthPlanCoverageStopTime(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStopTime"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStopTime"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -700,26 +693,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderPatientInformation(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderPatientInformation(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_INFORMATION,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderPatientInformation"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_INFORMATION,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderPatientInformation"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -757,26 +749,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderMemberId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderMemberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderMemberId"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderMemberId"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -814,26 +804,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderMemberIdRoot(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderMemberIdRoot(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID_ROOT,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderMemberIdRoot"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID_ROOT,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderMemberIdRoot"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -871,26 +860,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderRelationshipToSubscriber(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderRelationshipToSubscriber(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriber"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriber"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -928,26 +917,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriberCodeSystem"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriberCodeSystem"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -985,26 +974,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderPatientName(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderPatientName(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_NAME,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderPatientName"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_NAME,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderPatientName"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1042,26 +1029,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderSubscriberInformation(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderSubscriberInformation(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberInformation"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberInformation"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1099,26 +1085,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderSubscriberId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderSubscriberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberId"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberId"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1156,26 +1141,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderSubscriberIdRoot(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderSubscriberIdRoot(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberIdRoot"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberIdRoot"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1213,26 +1197,25 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderSubscriberAddress(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderSubscriberAddress(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberAddress"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderSubscriberAddress"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1270,26 +1253,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderFinancialResponsibilityPartyType(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderFinancialResponsibilityPartyType(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyType"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyType"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1327,26 +1310,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyTypeCode"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyTypeCode"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1384,26 +1367,26 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyAddress"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyAddress"),
+					new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1441,26 +1424,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderTemplateId"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderTemplateId"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1498,26 +1479,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderClassCode(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderClassCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderClassCode"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderClassCode"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1555,26 +1534,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderMoodCode(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderMoodCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderMoodCode"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderMoodCode"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1612,26 +1589,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_ID,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderId"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_ID,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderId"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1646,9 +1621,9 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Code</em>}' invariant operation.
@@ -1673,26 +1648,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderCode(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_CODE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderCode"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_CODE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderCode"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1707,9 +1680,9 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderStatusCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Status Code</em>}' invariant operation.
@@ -1734,26 +1707,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderStatusCode(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderStatusCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderStatusCode"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderStatusCode"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1791,26 +1762,24 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInsuranceProviderPayerEntry(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInsuranceProviderPayerEntry(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSURANCE_PROVIDER);
 			try {
 				VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(insuranceProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			insuranceProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("InsuranceProviderPayerEntry"),
-						 new Object [] { insuranceProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY,
+					ConsolPlugin.INSTANCE.getString("InsuranceProviderPayerEntry"), new Object[] { insuranceProvider }));
 			}
 			return false;
 		}
@@ -1846,14 +1815,15 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<PayerEntry> getPayerEntries(InsuranceProvider insuranceProvider) {
+	public static EList<PayerEntry> getPayerEntries(InsuranceProvider insuranceProvider) {
 		if (GET_PAYER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.INSURANCE_PROVIDER, ConsolPackage.Literals.INSURANCE_PROVIDER.getEAllOperations().get(79));
+			helper.setOperationContext(
+				ConsolPackage.Literals.INSURANCE_PROVIDER,
+				ConsolPackage.Literals.INSURANCE_PROVIDER.getEAllOperations().get(79));
 			try {
 				GET_PAYER_ENTRIES__EOCL_QRY = helper.createQuery(GET_PAYER_ENTRIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

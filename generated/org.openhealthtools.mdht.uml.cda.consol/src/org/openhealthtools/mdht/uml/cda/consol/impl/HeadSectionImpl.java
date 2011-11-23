@@ -93,7 +93,7 @@ public class HeadSectionImpl extends SectionImpl implements HeadSection {
 	 * @generated
 	 */
 	public HeadSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HeadSectionImpl
+} // HeadSectionImpl

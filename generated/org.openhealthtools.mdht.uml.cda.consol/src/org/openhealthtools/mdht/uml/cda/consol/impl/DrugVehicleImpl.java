@@ -83,7 +83,7 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * @generated
 	 */
 	public DrugVehicle init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DrugVehicleImpl
+} // DrugVehicleImpl

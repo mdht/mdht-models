@@ -93,7 +93,7 @@ public class NeckSectionImpl extends SectionImpl implements NeckSection {
 	 * @generated
 	 */
 	public NeckSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //NeckSectionImpl
+} // NeckSectionImpl

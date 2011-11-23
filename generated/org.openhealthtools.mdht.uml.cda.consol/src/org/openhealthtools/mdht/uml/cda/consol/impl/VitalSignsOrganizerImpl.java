@@ -84,8 +84,10 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(this, diagnostics, context);
+	public boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -156,7 +158,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
 	}
 
@@ -175,7 +178,7 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * @generated
 	 */
 	public VitalSignsOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignsOrganizerImpl
+} // VitalSignsOrganizerImpl

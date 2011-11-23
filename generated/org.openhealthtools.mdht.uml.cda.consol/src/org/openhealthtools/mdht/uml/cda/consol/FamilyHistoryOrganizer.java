@@ -48,7 +48,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists (comp : cda::Component4 | comp.observation->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::FamilyHistoryObservation)))'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasFamilyHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasFamilyHistoryObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,7 +75,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasSubjectPatientRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,7 +115,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasRelatedSubjectSubject(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,7 +142,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerRelatedSubjectBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerRelatedSubjectBirthTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +169,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::PRS)'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasParticipantParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasParticipantParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,7 +183,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasParticipantRoleCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasParticipantRoleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,7 +197,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +211,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,7 +320,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::FamilyHistoryObservation))'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

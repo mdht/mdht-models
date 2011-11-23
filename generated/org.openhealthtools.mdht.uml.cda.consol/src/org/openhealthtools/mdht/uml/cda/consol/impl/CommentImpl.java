@@ -64,7 +64,8 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CommentOperations.validateCommentEffectiveTimeWhenAuthorPresent(this, diagnostics, context);
 	}
 
@@ -146,7 +147,7 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * @generated
 	 */
 	public Comment init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CommentImpl
+} // CommentImpl

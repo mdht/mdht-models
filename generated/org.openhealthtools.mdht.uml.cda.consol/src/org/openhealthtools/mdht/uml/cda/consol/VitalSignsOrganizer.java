@@ -84,7 +84,8 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root =\'2.16.840.1.113883.10.20.1.32\')'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

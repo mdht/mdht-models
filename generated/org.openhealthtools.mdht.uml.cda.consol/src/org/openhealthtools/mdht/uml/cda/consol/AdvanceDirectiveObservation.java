@@ -42,7 +42,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.codeSystem = \'2.16.840.1.113883.6.96\''"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationAdvDirectiveCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationAdvDirectiveCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -55,7 +56,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.code = \'304251008\' and self.code.codeSystem = \'2.16.840.1.113883.6.96\''"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationAdvDirectiveCodeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationAdvDirectiveCodeCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,7 +70,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))->size() =1'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationHasExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationHasExternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,7 +123,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CST)'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,7 +137,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::AGNT)'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationParticipantRoleClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,7 +298,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -319,7 +325,8 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AdvanceDirectiveStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

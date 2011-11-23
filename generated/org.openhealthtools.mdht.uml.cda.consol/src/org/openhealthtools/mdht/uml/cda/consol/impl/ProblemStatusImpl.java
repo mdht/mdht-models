@@ -65,7 +65,7 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * @generated
 	 */
 	public ProblemStatus init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemStatusImpl
+} // ProblemStatusImpl

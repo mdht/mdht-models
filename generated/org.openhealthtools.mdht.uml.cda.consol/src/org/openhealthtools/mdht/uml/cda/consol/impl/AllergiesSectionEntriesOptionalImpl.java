@@ -50,7 +50,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public AllergiesSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergiesSectionEntriesOptionalImpl
+} // AllergiesSectionEntriesOptionalImpl

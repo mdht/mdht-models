@@ -53,7 +53,8 @@ public class EncounterImpl extends org.openhealthtools.mdht.uml.cda.impl.Encount
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsolEncounterAdmissionSourceValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsolEncounterAdmissionSourceValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterOperations.validateConsolEncounterAdmissionSourceValueSet(this, diagnostics, context);
 	}
 
@@ -108,7 +109,7 @@ public class EncounterImpl extends org.openhealthtools.mdht.uml.cda.impl.Encount
 	 * @generated
 	 */
 	public Encounter init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterImpl
+} // EncounterImpl

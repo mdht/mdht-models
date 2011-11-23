@@ -66,7 +66,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,7 +196,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,7 +314,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->exists (ef : datatypes::SXCM_TS | not ef.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityFirstEffectiveTimeDatatype(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityFirstEffectiveTimeDatatype(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -390,7 +393,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and not po.text.reference.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityHasIndicationNarrativeText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityHasIndicationNarrativeText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -494,7 +498,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = \'412307009\' and pr.code.codeSystem = \'2.16.840.1.113883.6.96\' and pr.playingEntity.code->size() > 0)))'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityMedicationVehicleCodedName(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityMedicationVehicleCodedName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -507,7 +512,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0) implies self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = \'412307009\' and pr.code.codeSystem = \'2.16.840.1.113883.6.96\' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = \'2.16.840.1.113883.6.96\')))'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

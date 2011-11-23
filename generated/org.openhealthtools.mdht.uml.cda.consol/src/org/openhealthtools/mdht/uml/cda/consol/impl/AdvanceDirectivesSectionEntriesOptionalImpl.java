@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl implements AdvanceDirectivesSectionEntriesOptional {
+public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl implements
+		AdvanceDirectivesSectionEntriesOptional {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,8 +56,10 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +68,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * @generated
 	 */
 	public AdvanceDirectivesSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdvanceDirectivesSectionEntriesOptionalImpl
+} // AdvanceDirectivesSectionEntriesOptionalImpl

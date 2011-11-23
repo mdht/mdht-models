@@ -57,8 +57,10 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistoryObsOrgs(this, diagnostics, context);
+	public boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistoryObsOrgs(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +132,7 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * @generated
 	 */
 	public FamilyHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //FamilyHistorySectionImpl
+} // FamilyHistorySectionImpl

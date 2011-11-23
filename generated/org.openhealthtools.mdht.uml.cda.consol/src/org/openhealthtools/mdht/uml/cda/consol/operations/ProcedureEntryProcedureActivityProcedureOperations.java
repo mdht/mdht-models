@@ -117,26 +117,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureMoodCode(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureMoodCode(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureMoodCode"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureMoodCode"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -174,26 +176,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureHasTextReference(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureHasTextReference(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureHasTextReference"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_TEXT_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureHasTextReference"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -231,26 +235,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedurePriorityCode(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedurePriorityCode(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedurePriorityCode"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedurePriorityCode"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -288,26 +294,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_HAS_INVERSION_IND_FOR_ENCOUNTER,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -345,26 +353,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureTemplateId(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureTemplateId(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureTemplateId"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureTemplateId"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -402,26 +412,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureClassCode(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureClassCode(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureClassCode"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureClassCode"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -459,26 +471,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureId(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureId(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureId"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_ID,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureId"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -516,26 +530,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureCode(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureCode(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureCode"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureCode"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -573,26 +589,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureText(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureText(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureText"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_TEXT,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureText"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -630,26 +648,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureEffectiveTime(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureEffectiveTime(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureEffectiveTime"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureEffectiveTime"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -687,26 +707,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureApproachSiteCode"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_APPROACH_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureApproachSiteCode"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -744,26 +766,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureInternalReference(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureInternalReference(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureInternalReference"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureInternalReference"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -801,26 +825,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureInternalReferenceReason"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureInternalReferenceReason"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -858,26 +884,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureProblemObservation(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureProblemObservation(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureProblemObservation"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureProblemObservation"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -915,26 +943,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureProblemAct(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureProblemAct(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureProblemAct"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureProblemAct"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -972,26 +1002,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureAgeObservation(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureAgeObservation(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureAgeObservation"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureAgeObservation"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -1029,26 +1061,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedureMedicationActivity(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedureMedicationActivity(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureMedicationActivity"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedureMedicationActivity"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -1086,26 +1120,28 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProcedureEntryProcedureActivityProcedurePatientInstruction(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProcedureEntryProcedureActivityProcedurePatientInstruction(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE);
 			try {
 				VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureEntryProcedureActivityProcedure)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureEntryProcedureActivityProcedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION,
-						 ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedurePatientInstruction"),
-						 new Object [] { procedureEntryProcedureActivityProcedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION,
+					ConsolPlugin.INSTANCE.getString("ProcedureEntryProcedureActivityProcedurePatientInstruction"),
+					new Object[] { procedureEntryProcedureActivityProcedure }));
 			}
 			return false;
 		}
@@ -1141,14 +1177,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  InternalReference getInternalReference(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static InternalReference getInternalReference(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_INTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(67));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(67));
 			try {
 				GET_INTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1185,14 +1223,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<InternalReference> getInternalReferenceReasons(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static EList<InternalReference> getInternalReferenceReasons(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(68));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(68));
 			try {
 				GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE_REASONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1231,14 +1271,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemObservation(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static AllergyObservation getProblemObservation(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(69));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(69));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1275,14 +1317,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyProblemAct getProblemAct(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static AllergyProblemAct getProblemAct(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_PROBLEM_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(70));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(70));
 			try {
 				GET_PROBLEM_ACT__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1319,14 +1363,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AgeObservation getAgeObservation(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static AgeObservation getAgeObservation(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(71));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(71));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1363,14 +1409,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ImmunizationActivity> getMedicationActivities(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static EList<ImmunizationActivity> getMedicationActivities(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(72));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(72));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1409,14 +1457,16 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Instructions> getPatientInstructions(ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
+	public static EList<Instructions> getPatientInstructions(
+			ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure) {
 		if (GET_PATIENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE, ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(73));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+				ConsolPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(73));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

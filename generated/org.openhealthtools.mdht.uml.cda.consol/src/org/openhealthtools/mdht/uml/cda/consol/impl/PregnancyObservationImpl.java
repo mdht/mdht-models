@@ -109,7 +109,8 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationInterpretationCode(this, diagnostics, context);
 	}
 
@@ -137,7 +138,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * @generated
 	 */
 	public PregnancyObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PregnancyObservationImpl
+} // PregnancyObservationImpl

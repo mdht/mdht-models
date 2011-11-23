@@ -55,8 +55,10 @@ public class AdvanceDirectiveVerificationImpl extends Participant2Impl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveVerificationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTemplateId(this, diagnostics, context);
+	public boolean validateAdvanceDirectiveVerificationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +67,8 @@ public class AdvanceDirectiveVerificationImpl extends Participant2Impl implement
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveVerificationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTypeCode(this, diagnostics, context);
+		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +77,8 @@ public class AdvanceDirectiveVerificationImpl extends Participant2Impl implement
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveVerificationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTime(this, diagnostics, context);
+		return AdvanceDirectiveVerificationOperations.validateAdvanceDirectiveVerificationTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +87,7 @@ public class AdvanceDirectiveVerificationImpl extends Participant2Impl implement
 	 * @generated
 	 */
 	public AdvanceDirectiveVerification init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdvanceDirectiveVerificationImpl
+} // AdvanceDirectiveVerificationImpl

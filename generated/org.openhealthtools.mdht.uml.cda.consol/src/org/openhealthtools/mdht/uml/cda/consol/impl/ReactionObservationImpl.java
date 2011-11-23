@@ -56,8 +56,10 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationHasReactionIntervention(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationHasReactionIntervention(this, diagnostics, context);
+	public boolean validateReactionObservationHasReactionIntervention(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationHasReactionIntervention(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,8 +67,10 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationReactionInterventionTypeCode(this, diagnostics, context);
+	public boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationReactionInterventionTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +78,10 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationReactionInterventionType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationReactionInterventionType(this, diagnostics, context);
+	public boolean validateReactionObservationReactionInterventionType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationReactionInterventionType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +98,10 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationContainsPatientAwareness(this, diagnostics, context);
+	public boolean validateReactionObservationContainsPatientAwareness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationContainsPatientAwareness(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +118,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationCommentInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReactionObservationCommentInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationCommentInversionInd(this, diagnostics, context);
 	}
 
@@ -210,7 +219,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	public ReactionObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReactionObservationImpl
+} // ReactionObservationImpl

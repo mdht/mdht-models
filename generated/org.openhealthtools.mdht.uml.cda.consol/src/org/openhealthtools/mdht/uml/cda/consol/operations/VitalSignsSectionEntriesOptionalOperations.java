@@ -81,26 +81,28 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateVitalSignsSectionEntriesOptionalVitalSignEntry(VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVitalSignsSectionEntriesOptionalVitalSignEntry(
+			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSignsSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalVitalSignEntry"),
-						 new Object [] { vitalSignsSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGN_ENTRY,
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalVitalSignEntry"),
+					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -138,26 +140,28 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVitalSignsSectionEntriesOptionalTemplateId(
+			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSignsSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTemplateId"),
-						 new Object [] { vitalSignsSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTemplateId"),
+					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
 			return false;
 		}

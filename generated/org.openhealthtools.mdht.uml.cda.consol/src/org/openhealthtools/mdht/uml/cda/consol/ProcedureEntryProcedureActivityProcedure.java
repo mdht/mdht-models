@@ -35,7 +35,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -48,7 +49,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.reference.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +63,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedurePriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedurePriorityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,7 +77,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd <> true)->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,7 +91,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.19\')'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,7 +105,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,7 +132,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,7 +146,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +160,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +174,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,7 +188,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,7 +202,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +216,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +230,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::AllergyProblemAct) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureProblemAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -230,7 +244,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureAgeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +258,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::ImmunizationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,7 +272,8 @@ public interface ProcedureEntryProcedureActivityProcedure extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instructions))'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedurePatientInstruction(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedurePatientInstruction(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

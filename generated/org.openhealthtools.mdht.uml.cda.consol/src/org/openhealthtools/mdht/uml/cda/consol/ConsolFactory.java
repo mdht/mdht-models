@@ -1357,4 +1357,4 @@ public interface ConsolFactory extends EFactory {
 	 */
 	ConsolPackage getConsolPackage();
 
-} //ConsolFactory
+} // ConsolFactory

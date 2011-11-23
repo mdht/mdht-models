@@ -55,8 +55,10 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
+	public boolean validateAllergyStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationTargetOfEntryRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationNoAdditionalParticipants(this, diagnostics, context);
+	public boolean validateAllergyStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationNoAdditionalParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +77,10 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationNoAdditionalRelationships(this, diagnostics, context);
+	public boolean validateAllergyStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationNoAdditionalRelationships(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +88,10 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationHasTextReference(this, diagnostics, context);
+	public boolean validateAllergyStatusObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -155,7 +163,7 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * @generated
 	 */
 	public AllergyStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergyStatusObservationImpl
+} // AllergyStatusObservationImpl

@@ -37,7 +37,8 @@ public interface MedicationNormalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationNormalDoseNoSubordinateSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationNormalDoseNoSubordinateSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

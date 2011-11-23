@@ -88,26 +88,23 @@ public class EyesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEyesSectionTemplateId(EyesSection eyesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEyesSectionTemplateId(EyesSection eyesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_EYES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EYES_SECTION);
 			try {
 				VALIDATE_EYES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EYES_SECTION__EYES_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("EyesSectionTemplateId"),
-						 new Object [] { eyesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EYES_SECTION__EYES_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("EyesSectionTemplateId"), new Object[] { eyesSection }));
 			}
 			return false;
 		}
@@ -122,9 +119,9 @@ public class EyesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyesSectionCode(EyesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eyes Section Code</em>}' invariant operation.
@@ -149,26 +146,23 @@ public class EyesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEyesSectionCode(EyesSection eyesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEyesSectionCode(EyesSection eyesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EYES_SECTION);
 			try {
 				VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EYES_SECTION__EYES_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("EyesSectionCode"),
-						 new Object [] { eyesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EYES_SECTION__EYES_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("EyesSectionCode"), new Object[] { eyesSection }));
 			}
 			return false;
 		}
@@ -206,26 +200,24 @@ public class EyesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEyesSectionProblemEntry(EyesSection eyesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEyesSectionProblemEntry(EyesSection eyesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EYES_SECTION);
 			try {
 				VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			eyesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EYES_SECTION__EYES_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("EyesSectionProblemEntry"),
-						 new Object [] { eyesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EYES_SECTION__EYES_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("EyesSectionProblemEntry"), new Object[] { eyesSection }));
 			}
 			return false;
 		}
@@ -261,14 +253,14 @@ public class EyesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(EyesSection eyesSection) {
+	public static AllergyObservation getProblemEntry(EyesSection eyesSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.EYES_SECTION, ConsolPackage.Literals.EYES_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.EYES_SECTION, ConsolPackage.Literals.EYES_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

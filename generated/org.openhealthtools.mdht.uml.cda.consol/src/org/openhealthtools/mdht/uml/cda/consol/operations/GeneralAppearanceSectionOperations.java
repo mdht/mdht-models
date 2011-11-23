@@ -88,26 +88,25 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateGeneralAppearanceSectionTemplateId(GeneralAppearanceSection generalAppearanceSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralAppearanceSectionTemplateId(GeneralAppearanceSection generalAppearanceSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION);
 			try {
 				VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalAppearanceSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalAppearanceSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionTemplateId"),
-						 new Object [] { generalAppearanceSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionTemplateId"),
+					new Object[] { generalAppearanceSection }));
 			}
 			return false;
 		}
@@ -122,9 +121,9 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralAppearanceSectionCode(GeneralAppearanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Appearance Section Code</em>}' invariant operation.
@@ -149,26 +148,25 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateGeneralAppearanceSectionCode(GeneralAppearanceSection generalAppearanceSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralAppearanceSectionCode(GeneralAppearanceSection generalAppearanceSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION);
 			try {
 				VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalAppearanceSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalAppearanceSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionCode"),
-						 new Object [] { generalAppearanceSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionCode"),
+					new Object[] { generalAppearanceSection }));
 			}
 			return false;
 		}
@@ -206,26 +204,25 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateGeneralAppearanceSectionProblemEntry(GeneralAppearanceSection generalAppearanceSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralAppearanceSectionProblemEntry(
+			GeneralAppearanceSection generalAppearanceSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION);
 			try {
 				VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalAppearanceSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalAppearanceSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionProblemEntry"),
-						 new Object [] { generalAppearanceSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_APPEARANCE_SECTION__GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("GeneralAppearanceSectionProblemEntry"),
+					new Object[] { generalAppearanceSection }));
 			}
 			return false;
 		}
@@ -261,14 +258,15 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(GeneralAppearanceSection generalAppearanceSection) {
+	public static AllergyObservation getProblemEntry(GeneralAppearanceSection generalAppearanceSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION, ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION,
+				ConsolPackage.Literals.GENERAL_APPEARANCE_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

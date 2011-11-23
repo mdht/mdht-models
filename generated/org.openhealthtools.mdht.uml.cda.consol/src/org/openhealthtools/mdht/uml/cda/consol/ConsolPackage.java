@@ -30203,7 +30203,6 @@ public interface ConsolPackage extends EPackage {
 	 */
 	int IMMUNIZATION_MEDICATION_INFORMATION_FEATURE_COUNT = CDAPackage.MANUFACTURED_PRODUCT_FEATURE_COUNT + 0;
 
-
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
@@ -33168,4 +33167,4 @@ public interface ConsolPackage extends EPackage {
 
 	}
 
-} //ConsolPackage
+} // ConsolPackage

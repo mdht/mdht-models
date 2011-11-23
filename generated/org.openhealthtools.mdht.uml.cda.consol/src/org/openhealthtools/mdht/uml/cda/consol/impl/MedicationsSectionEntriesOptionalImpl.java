@@ -55,8 +55,10 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(this, diagnostics, context);
+	public boolean validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +78,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public MedicationsSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationsSectionEntriesOptionalImpl
+} // MedicationsSectionEntriesOptionalImpl

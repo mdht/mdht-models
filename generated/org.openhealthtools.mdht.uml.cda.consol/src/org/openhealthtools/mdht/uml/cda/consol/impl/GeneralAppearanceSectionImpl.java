@@ -75,7 +75,8 @@ public class GeneralAppearanceSectionImpl extends SectionImpl implements General
 	 * @generated
 	 */
 	public boolean validateGeneralAppearanceSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionProblemEntry(this, diagnostics, context);
+		return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionProblemEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +94,7 @@ public class GeneralAppearanceSectionImpl extends SectionImpl implements General
 	 * @generated
 	 */
 	public GeneralAppearanceSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //GeneralAppearanceSectionImpl
+} // GeneralAppearanceSectionImpl

@@ -34,7 +34,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,7 +48,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationRelationshipValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationRelationshipValueCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,7 +62,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationHasRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +76,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,7 +90,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,7 +117,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject.birthTime->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,7 +211,8 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryDeathObservationProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryDeathObservationProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

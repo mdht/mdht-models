@@ -56,7 +56,8 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	public boolean validateImmunizationRefusalReasonTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,7 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	public ImmunizationRefusalReason init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ImmunizationRefusalReasonImpl
+} // ImmunizationRefusalReasonImpl

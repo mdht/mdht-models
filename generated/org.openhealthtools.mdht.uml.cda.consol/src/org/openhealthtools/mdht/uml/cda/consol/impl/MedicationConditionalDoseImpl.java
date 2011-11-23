@@ -70,8 +70,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,7 +82,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseHasConsents(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasConsents(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasConsents(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +91,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseInformationSource(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseInformationSource(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +102,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasPreconditionCriterion(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasPreconditionCriterion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +114,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseHasReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasReason(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasReason(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +123,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasReasonProblem(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasReasonProblem(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasReasonProblem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasReasonProblem(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +135,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseHasProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasProduct(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasProduct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -134,7 +145,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseHasDosing(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDosing(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDosing(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +154,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseDosingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseDosingRelationship(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseDosingRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseDosingRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +165,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +176,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseReasonClassMood(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseReasonClassMood(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseReasonClassMood(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseReasonClassMood(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -169,8 +187,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasProductEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasProductEntry(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasProductEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasProductEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +198,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasIntructionsInversion(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasIntructionsInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -187,8 +209,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseProductStrength(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductStrength(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseProductStrength(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductStrength(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -197,7 +221,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseProductName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductName(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -205,8 +230,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDosePreconditionReference(this, diagnostics, context);
+	public boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDosePreconditionReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -214,8 +241,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasSupplyEntryInversion(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasSupplyEntryInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -223,8 +252,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseHasFillNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasFillNumber(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseHasFillNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseHasFillNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -232,8 +263,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -251,7 +284,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseStatusCode(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -259,8 +293,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseEffectiveTime(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -269,7 +305,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * @generated
 	 */
 	public boolean validateMedicationConditionalDoseRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseRouteCode(this, diagnostics, context);
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseRouteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -277,8 +314,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseApproachSiteCode(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseApproachSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -286,8 +325,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseDoseQuantity(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseDoseQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseDoseQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -295,8 +336,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseRateQuantity(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseRateQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -304,8 +347,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseMaxDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMaxDoseQuantity(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseMaxDoseQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMaxDoseQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -313,8 +358,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMedicationSeriesNumberObservation(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMedicationSeriesNumberObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -322,8 +369,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMedicationStatusObservation(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseMedicationStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -331,8 +380,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseReactionObservation(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseReactionObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -340,8 +391,10 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDoseProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductInstance(this, diagnostics, context);
+	public boolean validateMedicationConditionalDoseProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -432,8 +485,9 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationConditionalDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationConditionalDoseImpl
+} // MedicationConditionalDoseImpl

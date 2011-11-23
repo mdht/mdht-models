@@ -67,7 +67,8 @@ public interface SocialHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.interpretationCode->size() = 0'"
 	 * @generated
 	 */
-	boolean validateSocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +202,8 @@ public interface SocialHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SocialHistoryStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

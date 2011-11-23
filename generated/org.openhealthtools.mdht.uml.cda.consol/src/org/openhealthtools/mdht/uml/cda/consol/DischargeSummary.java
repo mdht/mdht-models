@@ -32,7 +32,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::ProblemConcernEntry)))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,7 +46,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::AllergyIntoleranceConcern)))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,7 +73,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationHistorySection))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryAdmissionMedicationHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryAdmissionMedicationHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,7 +87,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,7 +153,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,7 +258,8 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummaryMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummaryMedicationsAdministeredSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

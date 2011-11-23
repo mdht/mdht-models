@@ -124,26 +124,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActEntryRelationshipRequired(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActEntryRelationshipRequired(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActEntryRelationshipRequired"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEntryRelationshipRequired"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -158,8 +158,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and "+
-"  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and "
+			+ "  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActSubjectOfTarget(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Subject Of Target</em>}' invariant operation.
@@ -183,26 +183,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActSubjectOfTarget(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActSubjectOfTarget(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActSubjectOfTarget"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActSubjectOfTarget"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -217,8 +216,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()"+
-"   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()"
+			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActContainsProblemObservation(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Contains Problem Observation</em>}' invariant operation.
@@ -242,26 +241,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActContainsProblemObservation(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActContainsProblemObservation(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsProblemObservation"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsProblemObservation"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -276,8 +275,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()"+
-"   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()"
+			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActContainsAlertObservation(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Contains Alert Observation</em>}' invariant operation.
@@ -301,26 +300,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActContainsAlertObservation(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActContainsAlertObservation(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsAlertObservation"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsAlertObservation"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -358,26 +357,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActContainsPatientAwareness(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActContainsPatientAwareness(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsPatientAwareness"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActContainsPatientAwareness"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -392,9 +391,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.low.oclIsUndefined()"+
-"   and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())"+
-"   and ((self.statusCode.code <> 'completed' and self.statusCode.code <> 'aborted') implies self.effectiveTime.high.oclIsUndefined())";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.low.oclIsUndefined()"
+			+ "   and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())"
+			+ "   and ((self.statusCode.code <> 'completed' and self.statusCode.code <> 'aborted') implies self.effectiveTime.high.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActEffectiveTimeLowHigh(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time Low High</em>}' invariant operation.
@@ -419,26 +418,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActEffectiveTimeLowHigh(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActEffectiveTimeLowHigh(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTimeLowHigh"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW_HIGH,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTimeLowHigh"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -476,26 +474,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActHasRelatedObservations(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActHasRelatedObservations(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActHasRelatedObservations"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_HAS_RELATED_OBSERVATIONS,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActHasRelatedObservations"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -533,26 +530,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActRelatedObservationsTypeCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActRelatedObservationsTypeCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActRelatedObservationsTypeCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_RELATED_OBSERVATIONS_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActRelatedObservationsTypeCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -590,26 +587,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActHasRelatedReferencesTypeCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActHasRelatedReferencesTypeCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActHasRelatedReferencesTypeCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_HAS_RELATED_REFERENCES_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActHasRelatedReferencesTypeCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -647,26 +644,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAdverseEventDate(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAdverseEventDate(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventDate"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_DATE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventDate"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -704,26 +700,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAdverseEventType(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAdverseEventType(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventType"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventType"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -761,26 +756,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAdverseEventTypeVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAdverseEventTypeVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventTypeVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ADVERSE_EVENT_TYPE_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAdverseEventTypeVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -795,8 +789,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActAllergyProduct(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Product</em>}' invariant operation.
@@ -820,26 +814,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyProduct(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyProduct(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProduct"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProduct"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -854,8 +847,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActAllergyProductTypeCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Product Type Code</em>}' invariant operation.
@@ -879,26 +872,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyProductTypeCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyProductTypeCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductTypeCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductTypeCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -913,8 +906,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductDetailParticipantRole(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Detail Participant Role</em>}' invariant operation.
@@ -938,26 +931,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductDetailParticipantRole(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductDetailParticipantRole(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailParticipantRole"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailParticipantRole"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -972,9 +965,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode=vocab::RoleClassRoot::MANU))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductDetailParticipantRoleClassCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Detail Participant Role Class Code</em>}' invariant operation.
@@ -999,26 +992,27 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductDetailParticipantRoleClassCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductDetailParticipantRoleClassCode(
+			AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailParticipantRoleClassCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailParticipantRoleClassCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1033,9 +1027,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductDetailPlayingEntity(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Detail Playing Entity</em>}' invariant operation.
@@ -1060,26 +1054,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductDetailPlayingEntity(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductDetailPlayingEntity(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailPlayingEntity"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailPlayingEntity"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1094,9 +1088,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductDetailPlayingEntityClassCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Detail Playing Entity Class Code</em>}' invariant operation.
@@ -1121,26 +1115,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductDetailPlayingEntityClassCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductDetailPlayingEntityClassCode(
+			AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailPlayingEntityClassCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailPlayingEntityClassCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1155,9 +1149,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductDetailName(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Detail Name</em>}' invariant operation.
@@ -1182,26 +1176,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductDetailName(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductDetailName(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailName"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_DETAIL_NAME,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductDetailName"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1216,9 +1209,9 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActProductCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Product Code</em>}' invariant operation.
@@ -1243,26 +1236,24 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActProductCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActProductCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActProductCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_PRODUCT_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActProductCode"), new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1277,10 +1268,10 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="+
-"'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="
+			+ "'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActAllergyProductFoodVocab(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Product Food Vocab</em>}' invariant operation.
@@ -1306,26 +1297,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyProductFoodVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyProductFoodVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductFoodVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_FOOD_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductFoodVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1340,10 +1331,10 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="+
-"'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="
+			+ "'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActAllergyProductMedClassVocab(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Product Med Class Vocab</em>}' invariant operation.
@@ -1369,26 +1360,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyProductMedClassVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyProductMedClassVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductMedClassVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_MED_CLASS_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductMedClassVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1403,10 +1394,10 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="+
-"'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation |  "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem ="
+			+ "'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActAllergyProductSpecificMedVocab(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Product Specific Med Vocab</em>}' invariant operation.
@@ -1432,26 +1423,26 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyProductSpecificMedVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyProductSpecificMedVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductSpecificMedVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProductSpecificMedVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1489,26 +1480,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActReactionText(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActReactionText(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionText"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionText"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1546,26 +1536,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActReactionCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActReactionCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1603,26 +1592,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActReactionCodeVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActReactionCodeVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionCodeVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActReactionCodeVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1660,26 +1648,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActSeverityText(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActSeverityText(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_TEXT,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityText"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_TEXT,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityText"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1717,26 +1704,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActSeverityCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActSeverityCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityCode"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1751,8 +1737,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')"+
-") )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')"
+			+ ") )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActSeverityCodeVocab(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Severity Code Vocab</em>}' invariant operation.
@@ -1776,26 +1762,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActSeverityCodeVocab(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActSeverityCodeVocab(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityCodeVocab"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActSeverityCodeVocab"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1833,26 +1818,24 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActTemplateId(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActTemplateId(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActTemplateId"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActTemplateId"), new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1890,26 +1873,24 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActClassCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActClassCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActClassCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActClassCode"), new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -1947,26 +1928,24 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActMoodCode(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActMoodCode(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActMoodCode"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActMoodCode"), new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -2004,26 +1983,24 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActId(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActId(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ID,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActId"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ID,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActId"), new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -2061,26 +2038,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActCodeNullFlavor(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActCodeNullFlavor(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActCodeNullFlavor"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CODE_NULL_FLAVOR,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActCodeNullFlavor"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -2118,26 +2094,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActEffectiveTime(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActEffectiveTime(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTime"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTime"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -2175,26 +2150,25 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyProblemActAllergyObservation(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyProblemActAllergyObservation(AllergyProblemAct allergyProblemAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyProblemAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyProblemAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyObservation"),
-						 new Object [] { allergyProblemAct }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyObservation"),
+					new Object[] { allergyProblemAct }));
 			}
 			return false;
 		}
@@ -2230,14 +2204,15 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<AllergyObservation> getAllergyObservations(AllergyProblemAct allergyProblemAct) {
+	public static EList<AllergyObservation> getAllergyObservations(AllergyProblemAct allergyProblemAct) {
 		if (GET_ALLERGY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ALLERGY_PROBLEM_ACT, ConsolPackage.Literals.ALLERGY_PROBLEM_ACT.getEAllOperations().get(85));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ALLERGY_PROBLEM_ACT,
+				ConsolPackage.Literals.ALLERGY_PROBLEM_ACT.getEAllOperations().get(85));
 			try {
 				GET_ALLERGY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ALLERGY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

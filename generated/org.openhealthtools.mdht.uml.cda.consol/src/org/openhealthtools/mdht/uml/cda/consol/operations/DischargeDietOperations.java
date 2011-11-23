@@ -81,26 +81,24 @@ public class DischargeDietOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDischargeDietTemplateId(DischargeDiet dischargeDiet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDischargeDietTemplateId(DischargeDiet dischargeDiet, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DISCHARGE_DIET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET);
 			try {
 				VALIDATE_DISCHARGE_DIET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_DIET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_DIET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeDiet)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_DIET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dischargeDiet)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_DIET__DISCHARGE_DIET_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DischargeDietTemplateId"),
-						 new Object [] { dischargeDiet }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DISCHARGE_DIET__DISCHARGE_DIET_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("DischargeDietTemplateId"), new Object[] { dischargeDiet }));
 			}
 			return false;
 		}
@@ -115,9 +113,9 @@ public class DischargeDietOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '42344-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '42344-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeDietCode(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Code</em>}' invariant operation.
@@ -142,26 +140,23 @@ public class DischargeDietOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDischargeDietCode(DischargeDiet dischargeDiet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDischargeDietCode(DischargeDiet dischargeDiet, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET);
 			try {
 				VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_DIET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeDiet)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_DIET__DISCHARGE_DIET_CODE,
-						 ConsolPlugin.INSTANCE.getString("DischargeDietCode"),
-						 new Object [] { dischargeDiet }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DISCHARGE_DIET__DISCHARGE_DIET_CODE,
+					ConsolPlugin.INSTANCE.getString("DischargeDietCode"), new Object[] { dischargeDiet }));
 			}
 			return false;
 		}

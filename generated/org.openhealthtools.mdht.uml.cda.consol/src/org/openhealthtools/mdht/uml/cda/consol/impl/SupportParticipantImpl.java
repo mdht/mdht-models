@@ -62,8 +62,9 @@ public class SupportParticipantImpl extends SupportImpl implements SupportPartic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupportParticipant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportParticipantImpl
+} // SupportParticipantImpl

@@ -93,7 +93,7 @@ public class LymphaticSectionImpl extends SectionImpl implements LymphaticSectio
 	 * @generated
 	 */
 	public LymphaticSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //LymphaticSectionImpl
+} // LymphaticSectionImpl

@@ -101,26 +101,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasSubjectPatientRelationship"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasSubjectPatientRelationship"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -158,26 +160,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationRelationshipValueCode(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationRelationshipValueCode(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelationshipValueCode"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATIONSHIP_VALUE_CODE,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelationshipValueCode"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -215,26 +219,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationHasRelatedSubjectCode(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationHasRelatedSubjectCode(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasRelatedSubjectCode"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_CODE,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasRelatedSubjectCode"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -272,26 +278,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelatedSubjectCodeValueSet"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelatedSubjectCodeValueSet"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -329,26 +337,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasRelatedSubjectSubject"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasRelatedSubjectSubject"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -386,26 +396,27 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationHasGenderCode(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationHasGenderCode(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasGenderCode"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_HAS_GENDER_CODE,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationHasGenderCode"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -443,26 +454,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelatedSubjectBirthTime"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationRelatedSubjectBirthTime"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -500,26 +513,26 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationTemplateId(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationTemplateId(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationTemplateId"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationTemplateId"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -557,26 +570,26 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationMoodCode(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationMoodCode(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationMoodCode"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationMoodCode"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -614,26 +627,26 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationId(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationId(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_ID,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationId"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_ID,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationId"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -648,9 +661,9 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryDeathObservationStatusCode(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Status Code</em>}' invariant operation.
@@ -675,26 +688,26 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationStatusCode(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationStatusCode(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationStatusCode"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationStatusCode"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -732,26 +745,27 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationEffectiveTime(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationEffectiveTime(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationEffectiveTime"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationEffectiveTime"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -789,26 +803,27 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationAgeObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationAgeObservation(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationAgeObservation"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationAgeObservation"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -846,26 +861,28 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryDeathObservationProblemStatusObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryDeathObservationProblemStatusObservation(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryDeathObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationProblemStatusObservation"),
-						 new Object [] { familyHistoryDeathObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_PROBLEM_STATUS_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationProblemStatusObservation"),
+					new Object[] { familyHistoryDeathObservation }));
 			}
 			return false;
 		}
@@ -901,14 +918,15 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AgeObservation getAgeObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation) {
+	public static AgeObservation getAgeObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION, ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION,
+				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(63));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -945,14 +963,16 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyStatusObservation getProblemStatusObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation) {
+	public static AllergyStatusObservation getProblemStatusObservation(
+			FamilyHistoryDeathObservation familyHistoryDeathObservation) {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION, ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION,
+				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

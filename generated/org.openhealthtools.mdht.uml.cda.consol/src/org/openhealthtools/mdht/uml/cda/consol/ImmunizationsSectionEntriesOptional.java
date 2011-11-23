@@ -54,7 +54,8 @@ public interface ImmunizationsSectionEntriesOptional extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))\r\n   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))'"
 	 * @generated
 	 */
-	boolean validateImmunizationsSectionEntriesOptionalHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateImmunizationsSectionEntriesOptionalHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,7 +68,8 @@ public interface ImmunizationsSectionEntriesOptional extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.2\')'"
 	 * @generated
 	 */
-	boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

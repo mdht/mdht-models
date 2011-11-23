@@ -65,7 +65,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements PlanOfCareSect
 	 * @generated
 	 */
 	public PlanOfCareSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PlanOfCareSectionImpl
+} // PlanOfCareSectionImpl

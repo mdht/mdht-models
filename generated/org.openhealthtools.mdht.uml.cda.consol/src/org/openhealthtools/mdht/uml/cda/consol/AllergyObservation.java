@@ -155,7 +155,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationAllergySubstanceParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationAllergySubstanceParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,7 +169,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationAllergySubstanceParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationAllergySubstanceParticipantRoleClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,7 +183,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationAllergySubstancePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationAllergySubstancePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,7 +197,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationAllergySubstancePlayingEntityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationAllergySubstancePlayingEntityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,7 +211,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationAllergySubstancePlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationAllergySubstancePlayingEntityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +225,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity.code.originalText.reference->size() = 1'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationPlayingEntityCodeReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationPlayingEntityCodeReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,7 +347,8 @@ public interface AllergyObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)'"
 	 * @generated
 	 */
-	boolean validateAllergyObservationProblemEntryReactionObservationContainer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyObservationProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

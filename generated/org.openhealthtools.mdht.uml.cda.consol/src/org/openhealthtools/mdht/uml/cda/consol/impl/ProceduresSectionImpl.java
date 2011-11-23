@@ -57,7 +57,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionHasProcedureActivity(this, diagnostics, context);
 	}
 
@@ -111,8 +112,10 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureEntryProcedureActivityProcedure(this, diagnostics, context);
+	public boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionProcedureEntryProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,8 +151,10 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +162,9 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProceduresSectionImpl
+} // ProceduresSectionImpl

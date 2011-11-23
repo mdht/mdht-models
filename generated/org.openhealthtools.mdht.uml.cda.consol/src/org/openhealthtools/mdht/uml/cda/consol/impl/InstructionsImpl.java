@@ -110,7 +110,7 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * @generated
 	 */
 	public Instructions init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //InstructionsImpl
+} // InstructionsImpl

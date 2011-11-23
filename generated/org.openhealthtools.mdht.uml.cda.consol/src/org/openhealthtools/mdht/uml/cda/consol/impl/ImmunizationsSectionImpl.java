@@ -55,8 +55,10 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(this, diagnostics, context);
+	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
+	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +114,10 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +125,9 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImmunizationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ImmunizationsSectionImpl
+} // ImmunizationsSectionImpl

@@ -46,7 +46,8 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entry->select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

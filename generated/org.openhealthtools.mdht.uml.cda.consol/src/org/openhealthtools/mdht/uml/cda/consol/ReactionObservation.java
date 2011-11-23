@@ -54,7 +54,8 @@ public interface ReactionObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(entry | entry.typeCode <> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )'"
 	 * @generated
 	 */
-	boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

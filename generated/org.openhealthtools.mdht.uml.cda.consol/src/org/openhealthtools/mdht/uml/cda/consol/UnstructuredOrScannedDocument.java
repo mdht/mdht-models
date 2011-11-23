@@ -52,7 +52,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->size() = 1'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasOneRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasOneRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,7 +67,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() \r\n   or not author.assignedAuthor.representedOrganization.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasAssignedAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,7 +98,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()\r\n   and target.patientRole.addr->exists(address : datatypes::AD | address.country->exists(c : datatypes::ADXP |\r\n   not c.oclIsUndefined() and c.getText().size() > 0)))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasPatientRoleAddress(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasPatientRoleAddress(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,7 +128,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\r\n   not target.patientRole.patient.administrativeGenderCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasPatientGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasPatientGenderCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,7 +143,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\r\n   not target.patientRole.patient.birthTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasPatientBirthYear(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasPatientBirthYear(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +157,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanOriginalAuthor))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasOriginalAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasOriginalAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +171,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::ScanningDevice))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasScanningDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,7 +185,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.dataEnterer.oclIsUndefined() and self.dataEnterer.oclIsKindOf(consol::ScanDataEnterer)'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasScanDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasScanDataEnterer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -193,7 +201,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator.assignedEntity.id->size() > 0 implies (\r\n   self.legalAuthenticator.assignedEntity.id->forAll(ident : datatypes::II |\r\n      not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,7 +228,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.component.nonXMLBody.text.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,7 +242,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.nonXMLBody.text.mediaType = \'application/pdf\' or self.component.nonXMLBody.text.mediaType = \'text/plain\''"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,7 +256,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,7 +270,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.structuredBody.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentNoStructuredData(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentNoStructuredData(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +284,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(record : cda::RecordTarget | not record.patientRole.oclIsUndefined() and not record.patientRole.patient.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentOnePatientPerDocument(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,7 +298,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not recordTarget.patientRole.id->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentPatientRoleHasId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentPatientRoleHasId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,7 +312,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not author.assignedAuthor.addr->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentAssignedAuthorHasAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentAssignedAuthorHasAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,7 +326,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not author.assignedAuthor.telecom->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentAssignedAuthorHasTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentAssignedAuthorHasTelecom(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -323,7 +340,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,7 +354,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not custodian.assignedCustodian.representedCustodianOrganization.id->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,7 +368,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +382,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,7 +396,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -388,7 +410,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.component.nonXMLBody.text.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasNonXMLBodyText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,7 +424,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined(\'value\')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined(\'mediaType\') and self.component.nonXMLBody.text.getText().size() > 0)'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasTextReferenceOrRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasTextReferenceOrRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,7 +438,8 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.nonXMLBody.text.isDefined(\'mediaType\') implies (self.component.nonXMLBody.text.mediaType = \'application/msword\' or self.component.nonXMLBody.text.mediaType = \'application/pdf\' or self.component.nonXMLBody.text.mediaType = \'text/plain\' or self.component.nonXMLBody.text.mediaType = \'text/rtf\' or self.component.nonXMLBody.text.mediaType = \'text/html\' or self.component.nonXMLBody.text.mediaType = \'image/gif\' or self.component.nonXMLBody.text.mediaType = \'image/tiff\' or self.component.nonXMLBody.text.mediaType = \'image/jpeg\' or self.component.nonXMLBody.text.mediaType = \'image/png\')'"
 	 * @generated
 	 */
-	boolean validateUnstructuredOrScannedDocumentHasTextMediaTypeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredOrScannedDocumentHasTextMediaTypeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -81,26 +81,28 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(
+			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalHasProcedureActivity"),
-						 new Object [] { proceduresSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_HAS_PROCEDURE_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalHasProcedureActivity"),
+					new Object[] { proceduresSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -138,26 +140,28 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionEntriesOptionalTemplateId(
+			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
-						 new Object [] { proceduresSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
+					new Object[] { proceduresSectionEntriesOptional }));
 			}
 			return false;
 		}

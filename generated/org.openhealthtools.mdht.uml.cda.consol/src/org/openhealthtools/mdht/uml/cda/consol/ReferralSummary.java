@@ -32,7 +32,8 @@ public interface ReferralSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::ProblemConcernEntry)))'"
 	 * @generated
 	 */
-	boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,7 +46,8 @@ public interface ReferralSummary extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::AllergyIntoleranceConcern)))'"
 	 * @generated
 	 */
-	boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

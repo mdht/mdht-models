@@ -88,26 +88,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationTemplateId"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationTemplateId"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -145,26 +144,24 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationId(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationId(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ID,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationId"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ID,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationId"), new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -202,26 +199,24 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"), new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -236,9 +231,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyObservationStatusCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Status Code</em>}' invariant operation.
@@ -263,26 +258,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationStatusCode"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationStatusCode"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -320,26 +314,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationRepeatNumber(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationRepeatNumber(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_REPEAT_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationRepeatNumber"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_REPEAT_NUMBER,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationRepeatNumber"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -377,26 +370,24 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationValue"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationValue"), new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -434,26 +425,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationInterpretationCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationInterpretationCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_INTERPRETATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationInterpretationCode"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_INTERPRETATION_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationInterpretationCode"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -491,26 +481,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationMethodCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationMethodCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_METHOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationMethodCode"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_METHOD_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationMethodCode"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}
@@ -548,26 +537,25 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePregnancyObservationTargetSiteCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePregnancyObservationTargetSiteCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PREGNANCY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
 			try {
 				VALIDATE_PREGNANCY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TARGET_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PregnancyObservationTargetSiteCode"),
-						 new Object [] { pregnancyObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TARGET_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationTargetSiteCode"),
+					new Object[] { pregnancyObservation }));
 			}
 			return false;
 		}

@@ -148,7 +148,8 @@ public interface ProblemConcernAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er|er.typeCode <> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateProblemConcernActRelatedObservationsTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernActRelatedObservationsTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,7 +162,8 @@ public interface ProblemConcernAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)'"
 	 * @generated
 	 */
-	boolean validateProblemConcernActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

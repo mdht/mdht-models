@@ -147,7 +147,7 @@ public class EncountersActivitesImpl extends EncounterImpl implements Encounters
 	 * @generated
 	 */
 	public EncountersActivites init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncountersActivitesImpl
+} // EncountersActivitesImpl

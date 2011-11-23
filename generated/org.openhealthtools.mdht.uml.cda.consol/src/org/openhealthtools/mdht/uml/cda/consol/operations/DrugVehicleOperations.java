@@ -82,26 +82,23 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDrugVehicleTemplateId(DrugVehicle drugVehicle, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDrugVehicleTemplateId(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"),
-						 new Object [] { drugVehicle }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"), new Object[] { drugVehicle }));
 			}
 			return false;
 		}
@@ -139,26 +136,23 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDrugVehicleClassCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDrugVehicleClassCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"),
-						 new Object [] { drugVehicle }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"), new Object[] { drugVehicle }));
 			}
 			return false;
 		}
@@ -196,26 +190,23 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDrugVehicleCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDrugVehicleCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
-						 ConsolPlugin.INSTANCE.getString("DrugVehicleCode"),
-						 new Object [] { drugVehicle }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
+					ConsolPlugin.INSTANCE.getString("DrugVehicleCode"), new Object[] { drugVehicle }));
 			}
 			return false;
 		}

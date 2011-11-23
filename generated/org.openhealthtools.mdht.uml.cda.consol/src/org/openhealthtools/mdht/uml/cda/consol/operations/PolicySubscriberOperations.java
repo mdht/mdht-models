@@ -80,26 +80,23 @@ public class PolicySubscriberOperations extends ParticipantRoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePolicySubscriberId(PolicySubscriber policySubscriber, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePolicySubscriberId(PolicySubscriber policySubscriber, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_SUBSCRIBER);
 			try {
 				VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policySubscriber)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID,
-						 ConsolPlugin.INSTANCE.getString("PolicySubscriberId"),
-						 new Object [] { policySubscriber }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID,
+					ConsolPlugin.INSTANCE.getString("PolicySubscriberId"), new Object[] { policySubscriber }));
 			}
 			return false;
 		}

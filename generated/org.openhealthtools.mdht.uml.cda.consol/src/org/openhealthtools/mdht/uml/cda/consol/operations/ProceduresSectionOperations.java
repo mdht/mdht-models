@@ -98,26 +98,25 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionHasProcedureActivity(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionHasProcedureActivity(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionHasProcedureActivity"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionHasProcedureActivity"),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -132,9 +131,9 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionEntriesOptionalCode(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code</em>}' invariant operation.
@@ -159,26 +158,25 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionEntriesOptionalCode(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionEntriesOptionalCode(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -216,26 +214,24 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionTitle(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionTitle(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionTitle"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionTitle"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -273,26 +269,24 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionText(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionText(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionText"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionText"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -330,26 +324,25 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionProcedureActivity(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionProcedureActivity(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivity"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivity"),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -387,26 +380,25 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionExternalReference(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionExternalReference(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_EXTERNAL_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionExternalReference"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_EXTERNAL_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionExternalReference"),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -444,26 +436,27 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
-						 ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureEntryProcedureActivityProcedure"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureEntryProcedureActivityProcedure"),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -499,14 +492,15 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Procedure> getnullProcedureActivities(ProceduresSection proceduresSection) {
+	public static EList<Procedure> getnullProcedureActivities(ProceduresSection proceduresSection) {
 		if (GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURES_SECTION, ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION,
+				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(64));
 			try {
 				GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GETNULL_PROCEDURE_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -545,14 +539,15 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ExternalReference getnullExternalReference(ProceduresSection proceduresSection) {
+	public static ExternalReference getnullExternalReference(ProceduresSection proceduresSection) {
 		if (GETNULL_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURES_SECTION, ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION,
+				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(65));
 			try {
 				GETNULL_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GETNULL_EXTERNAL_REFERENCE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -589,21 +584,24 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ProcedureEntryProcedureActivityProcedure> getnullProcedureEntryProcedureActivityProcedures(ProceduresSection proceduresSection) {
+	public static EList<ProcedureEntryProcedureActivityProcedure> getnullProcedureEntryProcedureActivityProcedures(
+			ProceduresSection proceduresSection) {
 		if (GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PROCEDURES_SECTION, ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(66));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION,
+				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(66));
 			try {
 				GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureEntryProcedureActivityProcedure> result = (Collection<ProcedureEntryProcedureActivityProcedure>) query.evaluate(proceduresSection);
-		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(
+			result.size(), result.toArray());
 	}
 
 	/**
@@ -637,26 +635,31 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProceduresSectionEntriesOptionalTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(proceduresSection, context) }),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"ProceduresSectionEntriesOptionalTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(proceduresSection, context) }),
+					new Object[] { proceduresSection }));
 			}
 			return false;
 		}

@@ -189,7 +189,8 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +205,8 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()\r\n   and self.custodian.assignedCustodian.representedCustodianOrganization.addr.country->exists(c : datatypes::ADXP |\r\n      not c.oclIsUndefined() and c.getText().size() > 0)'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,7 +221,8 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator.assignedEntity.id->size() > 0 implies (\r\n   self.legalAuthenticator.assignedEntity.id->forAll(ident : datatypes::II |\r\n      not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,7 +261,8 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.nonXMLBody.text.mediaType = \'application/pdf\' or self.component.nonXMLBody.text.mediaType = \'text/plain\''"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +275,8 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

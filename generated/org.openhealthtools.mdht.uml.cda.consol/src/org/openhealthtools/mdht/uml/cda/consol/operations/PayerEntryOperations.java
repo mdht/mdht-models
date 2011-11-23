@@ -103,26 +103,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryPayerEntityIsRequired(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryPayerEntityIsRequired(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryPayerEntityIsRequired"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED,
+					ConsolPlugin.INSTANCE.getString("PayerEntryPayerEntityIsRequired"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -160,26 +158,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryCoveredPartyIsRequired(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryCoveredPartyIsRequired(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryCoveredPartyIsRequired"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED,
+					ConsolPlugin.INSTANCE.getString("PayerEntryCoveredPartyIsRequired"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -194,8 +190,8 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV"+
-"  implies not part.time.oclIsUndefined())";
+	protected static final String VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV"
+			+ "  implies not part.time.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryCoveredPartyTime(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Covered Party Time</em>}' invariant operation.
@@ -219,26 +215,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryCoveredPartyTime(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryCoveredPartyTime(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_TIME,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryCoveredPartyTime"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_TIME,
+					ConsolPlugin.INSTANCE.getString("PayerEntryCoveredPartyTime"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -276,26 +270,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntrySubscriberIsAllowed(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntrySubscriberIsAllowed(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED,
-						 ConsolPlugin.INSTANCE.getString("PayerEntrySubscriberIsAllowed"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED,
+					ConsolPlugin.INSTANCE.getString("PayerEntrySubscriberIsAllowed"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -310,8 +302,8 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD"+
-"  implies not part.time.oclIsUndefined())";
+	protected static final String VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD"
+			+ "  implies not part.time.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntrySubscriberTime(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Subscriber Time</em>}' invariant operation.
@@ -335,26 +327,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntrySubscriberTime(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntrySubscriberTime(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_TIME,
-						 ConsolPlugin.INSTANCE.getString("PayerEntrySubscriberTime"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_TIME,
+					ConsolPlugin.INSTANCE.getString("PayerEntrySubscriberTime"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -392,26 +382,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryEntryRelationshipREFR(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryEntryRelationshipREFR(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipREFR"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR,
+					ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipREFR"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -426,8 +414,8 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)"+
-"  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))";
+	protected static final String VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)"
+			+ "  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}' invariant operation.
@@ -451,26 +439,24 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryEntryRelationshipTarget(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryEntryRelationshipTarget(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipTarget"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET,
+					ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipTarget"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -508,26 +494,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryTemplateId(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryTemplateId(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryTemplateId"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("PayerEntryTemplateId"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -565,26 +548,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryClassCode(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryClassCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryClassCode"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerEntryClassCode"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -622,26 +602,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryMoodCode(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryMoodCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryMoodCode"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerEntryMoodCode"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -679,26 +656,22 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryId(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryId(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ID,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryId"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ID,
+					ConsolPlugin.INSTANCE.getString("PayerEntryId"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -713,9 +686,9 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryStatusCode(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Status Code</em>}' invariant operation.
@@ -740,26 +713,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryStatusCode(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryStatusCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryStatusCode"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerEntryStatusCode"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -797,26 +767,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryPayerEntity(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryPayerEntity(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryPayerEntity"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY,
+					ConsolPlugin.INSTANCE.getString("PayerEntryPayerEntity"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -854,26 +821,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntryCoveredParty(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntryCoveredParty(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY,
-						 ConsolPlugin.INSTANCE.getString("PayerEntryCoveredParty"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY,
+					ConsolPlugin.INSTANCE.getString("PayerEntryCoveredParty"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -911,26 +875,23 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntrySubscriber(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntrySubscriber(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTRY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
 			try {
 				VALIDATE_PAYER_ENTRY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER,
-						 ConsolPlugin.INSTANCE.getString("PayerEntrySubscriber"),
-						 new Object [] { payerEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER,
+					ConsolPlugin.INSTANCE.getString("PayerEntrySubscriber"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -966,14 +927,14 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PayerEntry getPayerEntity(PayerEntry payerEntry) {
+	public static PayerEntry getPayerEntity(PayerEntry payerEntry) {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
 			try {
 				GET_PAYER_ENTITY__EOCL_QRY = helper.createQuery(GET_PAYER_ENTITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1010,14 +971,14 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ParticipantRole getCoveredParty(PayerEntry payerEntry) {
+	public static ParticipantRole getCoveredParty(PayerEntry payerEntry) {
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(65));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(65));
 			try {
 				GET_COVERED_PARTY__EOCL_QRY = helper.createQuery(GET_COVERED_PARTY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1054,14 +1015,14 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ParticipantRole getSubscriber(PayerEntry payerEntry) {
+	public static ParticipantRole getSubscriber(PayerEntry payerEntry) {
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(66));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(66));
 			try {
 				GET_SUBSCRIBER__EOCL_QRY = helper.createQuery(GET_SUBSCRIBER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

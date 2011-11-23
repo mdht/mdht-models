@@ -55,8 +55,10 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalHasProcedureActivity(this, diagnostics, context);
+	public boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalHasProcedureActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +78,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public ProceduresSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProceduresSectionEntriesOptionalImpl
+} // ProceduresSectionEntriesOptionalImpl

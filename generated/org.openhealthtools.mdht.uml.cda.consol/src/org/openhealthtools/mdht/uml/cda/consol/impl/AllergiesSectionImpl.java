@@ -91,7 +91,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionAllergyDrugSensitivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergiesSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionAllergyDrugSensitivity(this, diagnostics, context);
 	}
 
@@ -109,8 +110,9 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergiesSectionImpl
+} // AllergiesSectionImpl

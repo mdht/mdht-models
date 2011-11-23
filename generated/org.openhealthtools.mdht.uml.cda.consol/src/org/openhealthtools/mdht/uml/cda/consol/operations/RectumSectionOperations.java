@@ -88,26 +88,24 @@ public class RectumSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateRectumSectionTemplateId(RectumSection rectumSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateRectumSectionTemplateId(RectumSection rectumSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_RECTUM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RECTUM_SECTION);
 			try {
 				VALIDATE_RECTUM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RECTUM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RECTUM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(rectumSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RECTUM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			rectumSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("RectumSectionTemplateId"),
-						 new Object [] { rectumSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("RectumSectionTemplateId"), new Object[] { rectumSection }));
 			}
 			return false;
 		}
@@ -122,9 +120,9 @@ public class RectumSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10205-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10205-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRectumSectionCode(RectumSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Rectum Section Code</em>}' invariant operation.
@@ -149,26 +147,23 @@ public class RectumSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateRectumSectionCode(RectumSection rectumSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateRectumSectionCode(RectumSection rectumSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RECTUM_SECTION);
 			try {
 				VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RECTUM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(rectumSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("RectumSectionCode"),
-						 new Object [] { rectumSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("RectumSectionCode"), new Object[] { rectumSection }));
 			}
 			return false;
 		}
@@ -206,26 +201,24 @@ public class RectumSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateRectumSectionProblemEntry(RectumSection rectumSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateRectumSectionProblemEntry(RectumSection rectumSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_RECTUM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RECTUM_SECTION);
 			try {
 				VALIDATE_RECTUM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RECTUM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RECTUM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(rectumSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RECTUM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			rectumSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("RectumSectionProblemEntry"),
-						 new Object [] { rectumSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECTUM_SECTION__RECTUM_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("RectumSectionProblemEntry"), new Object[] { rectumSection }));
 			}
 			return false;
 		}
@@ -261,14 +254,15 @@ public class RectumSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(RectumSection rectumSection) {
+	public static AllergyObservation getProblemEntry(RectumSection rectumSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RECTUM_SECTION, ConsolPackage.Literals.RECTUM_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RECTUM_SECTION,
+				ConsolPackage.Literals.RECTUM_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

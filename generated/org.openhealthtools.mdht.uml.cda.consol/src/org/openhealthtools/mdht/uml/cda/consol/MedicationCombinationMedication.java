@@ -79,7 +79,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,7 +112,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.informant->isEmpty() \r\nor not self.getSection().informant->isEmpty()\r\nor not self.getClinicalDocument().informant->isEmpty()\r\nor self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)\r\nor (self.entryRelationship->exists(rel : cda::EntryRelationship | \r\n   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR\r\n   and rel.observation.code.code = \'48766-0\'))'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,7 +126,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,7 +156,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : \r\r\ncda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasReasonProblem(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasReasonProblem(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,7 +199,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.8\') xor \nself.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.9\') xor \nself.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.10\') xor \nself.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.11\') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationDosingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationDosingRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,7 +213,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,7 +227,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationReasonClassMood(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationReasonClassMood(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,7 +241,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable.manufacturedProduct.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.7.2\')'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasProductEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasProductEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +255,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasIntructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,7 +269,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationProductStrength(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationProductStrength(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,7 +296,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.precondition.criterion.text->exists (t | t.reference.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationPreconditionReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationPreconditionReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,7 +310,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists(er : cda::EntryRelationship | (not er.supply->isEmpty()) and er.inversionInd<>false )'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasSupplyEntryInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasSupplyEntryInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,7 +324,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists(er| (not er.supply->isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationHasFillNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationHasFillNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,7 +338,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationCombinationMedicationSubstanceAdministration(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -364,7 +378,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -392,7 +407,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -431,7 +447,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationMaxDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationMaxDoseQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -444,7 +461,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationSeriesNumberObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -457,7 +475,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -470,7 +489,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationReactionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,7 +503,8 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ProductInstance))'"
 	 * @generated
 	 */
-	boolean validateMedicationCombinationMedicationProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationCombinationMedicationProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

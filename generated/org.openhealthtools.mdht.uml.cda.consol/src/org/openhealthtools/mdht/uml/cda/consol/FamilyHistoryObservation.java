@@ -41,7 +41,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -54,7 +55,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,7 +69,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,7 +83,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,7 +97,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.subject.oclIsUndefined()  implies self.subject.relatedSubject.subject->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +124,8 @@ public interface FamilyHistoryObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject.birthTime->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

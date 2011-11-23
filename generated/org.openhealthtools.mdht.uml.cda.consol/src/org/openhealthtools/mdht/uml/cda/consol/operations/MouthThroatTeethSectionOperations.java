@@ -88,26 +88,25 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMouthThroatTeethSectionTemplateId(MouthThroatTeethSection mouthThroatTeethSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMouthThroatTeethSectionTemplateId(MouthThroatTeethSection mouthThroatTeethSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
 			try {
 				VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mouthThroatTeethSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mouthThroatTeethSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionTemplateId"),
-						 new Object [] { mouthThroatTeethSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionTemplateId"),
+					new Object[] { mouthThroatTeethSection }));
 			}
 			return false;
 		}
@@ -122,9 +121,9 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMouthThroatTeethSectionCode(MouthThroatTeethSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mouth Throat Teeth Section Code</em>}' invariant operation.
@@ -149,26 +148,25 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMouthThroatTeethSectionCode(MouthThroatTeethSection mouthThroatTeethSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMouthThroatTeethSectionCode(MouthThroatTeethSection mouthThroatTeethSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
 			try {
 				VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mouthThroatTeethSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mouthThroatTeethSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionCode"),
-						 new Object [] { mouthThroatTeethSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionCode"),
+					new Object[] { mouthThroatTeethSection }));
 			}
 			return false;
 		}
@@ -206,26 +204,25 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMouthThroatTeethSectionProblemEntry(MouthThroatTeethSection mouthThroatTeethSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMouthThroatTeethSectionProblemEntry(MouthThroatTeethSection mouthThroatTeethSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
 			try {
 				VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mouthThroatTeethSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mouthThroatTeethSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionProblemEntry"),
-						 new Object [] { mouthThroatTeethSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MOUTH_THROAT_TEETH_SECTION__MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("MouthThroatTeethSectionProblemEntry"),
+					new Object[] { mouthThroatTeethSection }));
 			}
 			return false;
 		}
@@ -261,14 +258,15 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(MouthThroatTeethSection mouthThroatTeethSection) {
+	public static AllergyObservation getProblemEntry(MouthThroatTeethSection mouthThroatTeethSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION, ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION,
+				ConsolPackage.Literals.MOUTH_THROAT_TEETH_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

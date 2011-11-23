@@ -93,7 +93,7 @@ public class GenitaliaSectionImpl extends SectionImpl implements GenitaliaSectio
 	 * @generated
 	 */
 	public GenitaliaSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //GenitaliaSectionImpl
+} // GenitaliaSectionImpl

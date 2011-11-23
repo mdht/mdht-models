@@ -48,7 +48,8 @@ public interface MedicationTaperedDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( consol::Medication) )'"
 	 * @generated
 	 */
-	boolean validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -93,7 +93,7 @@ public class NeurologicSystemSectionImpl extends SectionImpl implements Neurolog
 	 * @generated
 	 */
 	public NeurologicSystemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //NeurologicSystemSectionImpl
+} // NeurologicSystemSectionImpl

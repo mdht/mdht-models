@@ -150,26 +150,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMoodCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMoodCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMoodCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMoodCode"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -207,26 +205,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(
+			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasDoseQuantityOrRateQuantity"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasDoseQuantityOrRateQuantity"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -264,26 +262,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasConsents(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasConsents(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_CONSENTS,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasConsents"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_CONSENTS,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasConsents"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -298,13 +295,13 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"or not self.getSection().informant->isEmpty()"+
-"or not self.getClinicalDocument().informant->isEmpty()"+
-"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "or not self.getSection().informant->isEmpty()"
+			+ "or not self.getClinicalDocument().informant->isEmpty()"
+			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityInformationSource(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Information Source</em>}' invariant operation.
@@ -333,26 +330,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityInformationSource(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityInformationSource(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INFORMATION_SOURCE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityInformationSource"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INFORMATION_SOURCE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityInformationSource"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -390,26 +386,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasPreconditionCriterion(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasPreconditionCriterion(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasPreconditionCriterion"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRECONDITION_CRITERION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasPreconditionCriterion"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -447,26 +443,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasReason(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasReason(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_REASON,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasReason"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_REASON,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasReason"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -481,9 +475,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "+
-"cda::ClinicalStatement | not target.oclIsUndefined() and "+
-"  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "
+			+ "cda::ClinicalStatement | not target.oclIsUndefined() and "
+			+ "  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityHasReasonProblem(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Has Reason Problem</em>}' invariant operation.
@@ -509,26 +503,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasReasonProblem(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasReasonProblem(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_REASON_PROBLEM,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasReasonProblem"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_REASON_PROBLEM,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasReasonProblem"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -566,26 +559,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasProduct(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasProduct(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRODUCT,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasProduct"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRODUCT,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasProduct"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -623,26 +615,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasDosing(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasDosing(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DOSING,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasDosing"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DOSING,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasDosing"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -657,10 +647,10 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityDosingRelationship(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dosing Relationship</em>}' invariant operation.
@@ -686,26 +676,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityDosingRelationship(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityDosingRelationship(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSING_RELATIONSHIP,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityDosingRelationship"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSING_RELATIONSHIP,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDosingRelationship"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -743,26 +732,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasDescriptionNoMedNotKnown(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasDescriptionNoMedNotKnown(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasDescriptionNoMedNotKnown"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasDescriptionNoMedNotKnown"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -800,26 +789,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityReasonClassMood(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityReasonClassMood(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REASON_CLASS_MOOD,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityReasonClassMood"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REASON_CLASS_MOOD,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityReasonClassMood"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -857,26 +845,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasProductEntry(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasProductEntry(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasProductEntry"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PRODUCT_ENTRY,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasProductEntry"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -914,26 +901,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasIntructionsInversion(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasIntructionsInversion(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasIntructionsInversion"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INTRUCTIONS_INVERSION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasIntructionsInversion"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -971,26 +958,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityProductStrength(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityProductStrength(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRODUCT_STRENGTH,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityProductStrength"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRODUCT_STRENGTH,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityProductStrength"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1028,26 +1014,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityProductName(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityProductName(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRODUCT_NAME,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityProductName"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRODUCT_NAME,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityProductName"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1085,26 +1070,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityPreconditionReference(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityPreconditionReference(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityPreconditionReference"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityPreconditionReference"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1142,26 +1126,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasSupplyEntryInversion(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasSupplyEntryInversion(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasSupplyEntryInversion"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_SUPPLY_ENTRY_INVERSION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasSupplyEntryInversion"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1199,26 +1183,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasFillNumber(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasFillNumber(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_FILL_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasFillNumber"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_FILL_NUMBER,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasFillNumber"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1256,26 +1239,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityFirstEffectiveTimeDatatype(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityFirstEffectiveTimeDatatype(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityFirstEffectiveTimeDatatype"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_FIRST_EFFECTIVE_TIME_DATATYPE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityFirstEffectiveTimeDatatype"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1313,26 +1296,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityDoseUnits(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityDoseUnits(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_UNITS,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityDoseUnits"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_UNITS,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDoseUnits"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1370,26 +1351,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityDeliveryMethodDescription(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityDeliveryMethodDescription(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityDeliveryMethodDescription"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DELIVERY_METHOD_DESCRIPTION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDeliveryMethodDescription"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1427,26 +1408,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasMedicationInformation(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasMedicationInformation(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasMedicationInformation"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_MEDICATION_INFORMATION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasMedicationInformation"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1484,26 +1465,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasStatusOfMedication(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasStatusOfMedication(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasStatusOfMedication"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_STATUS_OF_MEDICATION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasStatusOfMedication"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1541,26 +1521,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasIndication(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasIndication(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndication"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndication"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1598,26 +1577,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasIndicationNarrativeText(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasIndicationNarrativeText(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndicationNarrativeText"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION_NARRATIVE_TEXT,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndicationNarrativeText"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1655,26 +1634,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasIndicationVocab(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasIndicationVocab(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndicationVocab"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_INDICATION_VOCAB,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasIndicationVocab"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1712,26 +1690,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasPatientInstructions(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasPatientInstructions(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasPatientInstructions"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_PATIENT_INSTRUCTIONS,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasPatientInstructions"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1769,26 +1746,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityHasMedicationVehicle(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityHasMedicationVehicle(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityHasMedicationVehicle"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_HAS_MEDICATION_VEHICLE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityHasMedicationVehicle"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1826,26 +1802,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleType(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleType(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleType"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_TYPE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleType"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1883,26 +1858,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleClass(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleClass(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleClass"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CLASS,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleClass"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1940,26 +1914,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCode"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -1997,26 +1970,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleName(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleName(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleName"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_NAME,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleName"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2054,26 +2026,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleCodedName(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleCodedName(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCodedName"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCodedName"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2111,26 +2083,26 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationVehicleCodedNameVocab(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationVehicleCodedNameVocab(
+			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCodedNameVocab"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_VEHICLE_CODED_NAME_VOCAB,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationVehicleCodedNameVocab"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2168,26 +2140,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityTemplateId(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityTemplateId(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityTemplateId"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityTemplateId"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2225,26 +2196,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityId(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityId(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityId"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityId"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2282,26 +2251,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityCode"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2339,26 +2306,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityStatusCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityStatusCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityStatusCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityStatusCode"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2396,26 +2362,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityEffectiveTime(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityEffectiveTime(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTime"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTime"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2430,9 +2395,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' invariant operation.
@@ -2457,26 +2422,24 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityRouteCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityRouteCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCode"), new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2491,9 +2454,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}' invariant operation.
@@ -2518,26 +2481,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityApproachSiteCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityApproachSiteCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCode"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2575,26 +2537,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityDoseQuantity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityDoseQuantity(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityDoseQuantity"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDoseQuantity"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2632,26 +2593,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityRateQuantity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityRateQuantity(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityRateQuantity"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRateQuantity"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2689,26 +2649,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMaxDoseQuantity(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMaxDoseQuantity(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMaxDoseQuantity"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMaxDoseQuantity"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2723,9 +2682,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in ("+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in ("
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityAdministrationUnitCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code</em>}' invariant operation.
@@ -2750,26 +2709,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityAdministrationUnitCode(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityAdministrationUnitCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityAdministrationUnitCode"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityAdministrationUnitCode"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2807,26 +2765,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationSupplyOrder(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationSupplyOrder(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationSupplyOrder"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationSupplyOrder"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2864,26 +2821,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityInstructions(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityInstructions(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityInstructions"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityInstructions"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2921,26 +2877,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityIndication(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityIndication(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityIndication"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityIndication"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -2978,26 +2933,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityMedicationDispense(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityMedicationDispense(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationDispense"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationDispense"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -3035,26 +2989,25 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationActivityDrugVehicle(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationActivityDrugVehicle(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityDrugVehicle"),
-						 new Object [] { medicationActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDrugVehicle"),
+					new Object[] { medicationActivity }));
 			}
 			return false;
 		}
@@ -3090,14 +3043,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<NonMedicinalSupplyActivity> getMedicationSupplyOrders(MedicationActivity medicationActivity) {
+	public static EList<NonMedicinalSupplyActivity> getMedicationSupplyOrders(MedicationActivity medicationActivity) {
 		if (GET_MEDICATION_SUPPLY_ORDERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(101));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(101));
 			try {
 				GET_MEDICATION_SUPPLY_ORDERS__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3136,14 +3090,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ReactionObservation getReactionObservation(MedicationActivity medicationActivity) {
+	public static ReactionObservation getReactionObservation(MedicationActivity medicationActivity) {
 		if (GET_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(102));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(102));
 			try {
 				GET_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3180,14 +3135,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Instructions> getInstructionss(MedicationActivity medicationActivity) {
+	public static EList<Instructions> getInstructionss(MedicationActivity medicationActivity) {
 		if (GET_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(103));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(103));
 			try {
 				GET_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONSS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3226,14 +3182,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  Indication getIndication(MedicationActivity medicationActivity) {
+	public static Indication getIndication(MedicationActivity medicationActivity) {
 		if (GET_INDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(104));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(104));
 			try {
 				GET_INDICATION__EOCL_QRY = helper.createQuery(GET_INDICATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3270,14 +3227,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  Supply getMedicationDispense(MedicationActivity medicationActivity) {
+	public static Supply getMedicationDispense(MedicationActivity medicationActivity) {
 		if (GET_MEDICATION_DISPENSE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(105));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(105));
 			try {
 				GET_MEDICATION_DISPENSE__EOCL_QRY = helper.createQuery(GET_MEDICATION_DISPENSE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3314,14 +3272,15 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  DrugVehicle getDrugVehicle(MedicationActivity medicationActivity) {
+	public static DrugVehicle getDrugVehicle(MedicationActivity medicationActivity) {
 		if (GET_DRUG_VEHICLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_ACTIVITY, ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(106));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(106));
 			try {
 				GET_DRUG_VEHICLE__EOCL_QRY = helper.createQuery(GET_DRUG_VEHICLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

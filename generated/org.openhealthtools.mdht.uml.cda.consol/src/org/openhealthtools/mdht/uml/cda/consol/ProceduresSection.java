@@ -125,7 +125,8 @@ public interface ProceduresSection extends ProceduresSectionEntriesOptional {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureEntryProcedureActivityProcedure))'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
