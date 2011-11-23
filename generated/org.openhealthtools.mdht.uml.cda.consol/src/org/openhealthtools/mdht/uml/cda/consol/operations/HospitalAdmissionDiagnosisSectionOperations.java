@@ -21,10 +21,10 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -183,7 +183,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))";
+	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalAdmissionDiagnosisSectionCondition(HospitalAdmissionDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Condition</em>}' invariant operation.
@@ -199,7 +199,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))
+	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
 	 * @param hospitalAdmissionDiagnosisSection The receiving '<em><b>Hospital Admission Diagnosis Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -240,7 +240,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONDITION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition))->asSequence()->first().oclAsType(consol::Condition)";
+	protected static final String GET_CONDITION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCondition(HospitalAdmissionDiagnosisSection) <em>Get Condition</em>}' query operation.
@@ -256,12 +256,12 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition))->asSequence()->first().oclAsType(consol::Condition)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)
 	 * @param hospitalAdmissionDiagnosisSection The receiving '<em><b>Hospital Admission Diagnosis Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  Condition getCondition(HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection) {
+	public static  ProblemConcernAct getCondition(HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection) {
 		if (GET_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION, ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION.getEAllOperations().get(58));
@@ -273,7 +273,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITION__EOCL_QRY);
-		return (Condition) query.evaluate(hospitalAdmissionDiagnosisSection);
+		return (ProblemConcernAct) query.evaluate(hospitalAdmissionDiagnosisSection);
 	}
 
 } // HospitalAdmissionDiagnosisSectionOperations

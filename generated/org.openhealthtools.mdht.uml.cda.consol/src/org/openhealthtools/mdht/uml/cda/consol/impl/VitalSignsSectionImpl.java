@@ -19,8 +19,6 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -32,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSection {
+public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl implements VitalSignsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,17 +64,8 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionCode(this, diagnostics, context);
+	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +100,18 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VitalSignsOrganizer> getVitalSignsOrganizers() {
-		return VitalSignsSectionOperations.getVitalSignsOrganizers(this);
+	public EList<VitalSignsOrganizer> getnullVitalSignsOrganizers() {
+		return VitalSignsSectionOperations.getnullVitalSignsOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

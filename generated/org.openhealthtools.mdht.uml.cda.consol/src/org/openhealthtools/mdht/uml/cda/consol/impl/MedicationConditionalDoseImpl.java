@@ -14,14 +14,14 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationConditionalDoseOperations;
 
@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationConditionalDoseImpl extends MedicationImpl implements MedicationConditionalDose {
+public class MedicationConditionalDoseImpl extends MedicationActivityImpl implements MedicationConditionalDose {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -349,8 +349,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationSeriesNumberObservation getnullMedicationSeriesNumberObservation() {
-		return MedicationConditionalDoseOperations.getnullMedicationSeriesNumberObservation(this);
+	public MedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
+		return MedicationConditionalDoseOperations.getMedicationSeriesNumberObservation(this);
 	}
 
 	/**
@@ -358,8 +358,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation getnullMedicationStatusObservation() {
-		return MedicationConditionalDoseOperations.getnullMedicationStatusObservation(this);
+	public MedicationStatusObservation getMedicationStatusObservation() {
+		return MedicationConditionalDoseOperations.getMedicationStatusObservation(this);
 	}
 
 	/**
@@ -367,7 +367,7 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemEntryReactionObservationContainer> getnullReactionObservations() {
+	public EList<ReactionObservation> getnullReactionObservations() {
 		return MedicationConditionalDoseOperations.getnullReactionObservations(this);
 	}
 
@@ -376,8 +376,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductInstance> getnullProductInstances() {
-		return MedicationConditionalDoseOperations.getnullProductInstances(this);
+	public EList<ProductInstance> getProductInstances() {
+		return MedicationConditionalDoseOperations.getProductInstances(this);
 	}
 
 	/**
@@ -385,8 +385,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InternalReference> getnullInternalReferences() {
-		return MedicationConditionalDoseOperations.getnullInternalReferences(this);
+	public EList<InternalReference> getInternalReferences() {
+		return MedicationConditionalDoseOperations.getInternalReferences(this);
 	}
 
 	/**
@@ -394,8 +394,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PatientMedicalInstructions> getnullPatientMedicalInstructionss() {
-		return MedicationConditionalDoseOperations.getnullPatientMedicalInstructionss(this);
+	public EList<Instructions> getPatientMedicalInstructionss() {
+		return MedicationConditionalDoseOperations.getPatientMedicalInstructionss(this);
 	}
 
 	/**
@@ -403,7 +403,7 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationOrderInformation getSupplyEntry() {
+	public NonMedicinalSupplyActivity getSupplyEntry() {
 		return MedicationConditionalDoseOperations.getSupplyEntry(this);
 	}
 
@@ -413,8 +413,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationTemplateId(this, diagnostics, context);
+	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -423,8 +423,8 @@ public class MedicationConditionalDoseImpl extends MedicationImpl implements Med
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationConditionalDoseOperations.validateMedicationCode(this, diagnostics, context);
+	public boolean validateMedicationActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationActivityCode(this, diagnostics, context);
 	}
 
 	/**

@@ -14,12 +14,12 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.AllergyDrugSensitivity;
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.Immunization;
+import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
-import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureEntryProcedureActivityProcedureOperations;
@@ -242,7 +242,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyIntolerance getProblemObservation() {
+	public AllergyObservation getProblemObservation() {
 		return ProcedureEntryProcedureActivityProcedureOperations.getProblemObservation(this);
 	}
 
@@ -251,7 +251,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyDrugSensitivity getProblemAct() {
+	public AllergyProblemAct getProblemAct() {
 		return ProcedureEntryProcedureActivityProcedureOperations.getProblemAct(this);
 	}
 
@@ -269,7 +269,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Immunization> getMedicationActivities() {
+	public EList<ImmunizationActivity> getMedicationActivities() {
 		return ProcedureEntryProcedureActivityProcedureOperations.getMedicationActivities(this);
 	}
 
@@ -278,7 +278,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PatientMedicalInstructions> getPatientInstructions() {
+	public EList<Instructions> getPatientInstructions() {
 		return ProcedureEntryProcedureActivityProcedureOperations.getPatientInstructions(this);
 	}
 

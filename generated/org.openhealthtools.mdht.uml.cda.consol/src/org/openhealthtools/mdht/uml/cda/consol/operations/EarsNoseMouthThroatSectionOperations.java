@@ -21,7 +21,7 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
@@ -183,7 +183,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyIntolerance))";
+	protected static final String VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEarsNoseMouthThroatSectionProblemEntry(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Problem Entry</em>}' invariant operation.
@@ -199,7 +199,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyIntolerance))
+	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyObservation))
 	 * @param earsNoseMouthThroatSection The receiving '<em><b>Ears Nose Mouth Throat Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -240,7 +240,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_ENTRY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyIntolerance))->asSequence()->first().oclAsType(consol::AllergyIntolerance)";
+	protected static final String GET_PROBLEM_ENTRY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))->asSequence()->first().oclAsType(consol::AllergyObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemEntry(EarsNoseMouthThroatSection) <em>Get Problem Entry</em>}' query operation.
@@ -256,12 +256,12 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyIntolerance))->asSequence()->first().oclAsType(consol::AllergyIntolerance)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))->asSequence()->first().oclAsType(consol::AllergyObservation)
 	 * @param earsNoseMouthThroatSection The receiving '<em><b>Ears Nose Mouth Throat Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyIntolerance getProblemEntry(EarsNoseMouthThroatSection earsNoseMouthThroatSection) {
+	public static  AllergyObservation getProblemEntry(EarsNoseMouthThroatSection earsNoseMouthThroatSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION, ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION.getEAllOperations().get(58));
@@ -273,7 +273,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ENTRY__EOCL_QRY);
-		return (AllergyIntolerance) query.evaluate(earsNoseMouthThroatSection);
+		return (AllergyObservation) query.evaluate(earsNoseMouthThroatSection);
 	}
 
 } // EarsNoseMouthThroatSectionOperations

@@ -19,8 +19,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -32,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ResultsSectionImpl extends SectionImpl implements ResultsSection {
+public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implements ResultsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,17 +55,8 @@ public class ResultsSectionImpl extends SectionImpl implements ResultsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
+	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +91,18 @@ public class ResultsSectionImpl extends SectionImpl implements ResultsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResultOrganizer> getResultOrganizers() {
-		return ResultsSectionOperations.getResultOrganizers(this);
+	public EList<ResultOrganizer> getnullResultOrganizers() {
+		return ResultsSectionOperations.getnullResultOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

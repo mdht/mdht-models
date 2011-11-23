@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.FamilyHistory;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistorySectionOperations;
@@ -120,7 +120,7 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FamilyHistory> getFamilyHistories() {
+	public EList<FamilyHistoryOrganizer> getFamilyHistories() {
 		return FamilyHistorySectionOperations.getFamilyHistories(this);
 	}
 

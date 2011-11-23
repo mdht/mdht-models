@@ -24,12 +24,12 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.consol.Condition;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.consol.Result;
+import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -192,7 +192,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))";
+	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForReferralSectionCondition(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Condition</em>}' invariant operation.
@@ -208,7 +208,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Condition))
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -249,7 +249,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::Result))";
+	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ResultObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForReferralSectionResult(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Result</em>}' invariant operation.
@@ -265,7 +265,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::Result))
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ResultObservation))
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -306,7 +306,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyIntolerance))";
+	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForReferralSectionProblemEntry(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Problem Entry</em>}' invariant operation.
@@ -322,7 +322,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyIntolerance))
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AllergyObservation))
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -363,7 +363,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition)).oclAsType(consol::Condition)";
+	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getConditions(ReasonForReferralSection) <em>Get Conditions</em>}' query operation.
@@ -379,12 +379,12 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Condition)).oclAsType(consol::Condition)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Condition> getConditions(ReasonForReferralSection reasonForReferralSection) {
+	public static  EList<ProblemConcernAct> getConditions(ReasonForReferralSection reasonForReferralSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION, ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION.getEAllOperations().get(60));
@@ -397,8 +397,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Condition> result = (Collection<Condition>) query.evaluate(reasonForReferralSection);
-		return new BasicEList.UnmodifiableEList<Condition>(result.size(), result.toArray());
+		Collection<ProblemConcernAct> result = (Collection<ProblemConcernAct>) query.evaluate(reasonForReferralSection);
+		return new BasicEList.UnmodifiableEList<ProblemConcernAct>(result.size(), result.toArray());
 	}
 
 	/**
@@ -409,7 +409,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Result)).oclAsType(consol::Result)";
+	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation)).oclAsType(consol::ResultObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getResults(ReasonForReferralSection) <em>Get Results</em>}' query operation.
@@ -425,12 +425,12 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Result)).oclAsType(consol::Result)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation)).oclAsType(consol::ResultObservation)
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Result> getResults(ReasonForReferralSection reasonForReferralSection) {
+	public static  EList<ResultObservation> getResults(ReasonForReferralSection reasonForReferralSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION, ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION.getEAllOperations().get(61));
@@ -443,8 +443,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Result> result = (Collection<Result>) query.evaluate(reasonForReferralSection);
-		return new BasicEList.UnmodifiableEList<Result>(result.size(), result.toArray());
+		Collection<ResultObservation> result = (Collection<ResultObservation>) query.evaluate(reasonForReferralSection);
+		return new BasicEList.UnmodifiableEList<ResultObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -455,7 +455,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_ENTRIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyIntolerance)).oclAsType(consol::AllergyIntolerance)";
+	protected static final String GET_PROBLEM_ENTRIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation)).oclAsType(consol::AllergyObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemEntries(ReasonForReferralSection) <em>Get Problem Entries</em>}' query operation.
@@ -471,12 +471,12 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyIntolerance)).oclAsType(consol::AllergyIntolerance)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation)).oclAsType(consol::AllergyObservation)
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<AllergyIntolerance> getProblemEntries(ReasonForReferralSection reasonForReferralSection) {
+	public static  EList<AllergyObservation> getProblemEntries(ReasonForReferralSection reasonForReferralSection) {
 		if (GET_PROBLEM_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION, ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION.getEAllOperations().get(62));
@@ -489,8 +489,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AllergyIntolerance> result = (Collection<AllergyIntolerance>) query.evaluate(reasonForReferralSection);
-		return new BasicEList.UnmodifiableEList<AllergyIntolerance>(result.size(), result.toArray());
+		Collection<AllergyObservation> result = (Collection<AllergyObservation>) query.evaluate(reasonForReferralSection);
+		return new BasicEList.UnmodifiableEList<AllergyObservation>(result.size(), result.toArray());
 	}
 
 } // ReasonForReferralSectionOperations

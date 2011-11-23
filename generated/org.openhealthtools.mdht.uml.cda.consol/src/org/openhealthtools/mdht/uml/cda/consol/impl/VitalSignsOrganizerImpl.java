@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.VitalSign;
+import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizerOperations;
@@ -57,15 +57,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsOrganizerInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerInformationSource(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVitalSignsOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerCodeValue(this, diagnostics, context);
 	}
@@ -77,6 +68,15 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 */
 	public boolean validateVitalSignsOrganizerComponentElement(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerComponentElement(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsOrganizerInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerInformationSource(this, diagnostics, context);
 	}
 
 	/**
@@ -165,7 +165,7 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VitalSign> getVitalSignObservations() {
+	public EList<VitalSignObservation> getVitalSignObservations() {
 		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
 	}
 

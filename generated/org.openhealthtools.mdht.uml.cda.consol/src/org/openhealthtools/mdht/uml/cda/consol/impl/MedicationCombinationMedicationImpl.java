@@ -14,14 +14,14 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemEntryReactionObservationContainer;
+import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationCombinationMedicationOperations;
 
@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationCombinationMedicationImpl extends MedicationImpl implements MedicationCombinationMedication {
+public class MedicationCombinationMedicationImpl extends MedicationActivityImpl implements MedicationCombinationMedication {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -349,8 +349,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationSeriesNumberObservation getnullMedicationSeriesNumberObservation() {
-		return MedicationCombinationMedicationOperations.getnullMedicationSeriesNumberObservation(this);
+	public MedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
+		return MedicationCombinationMedicationOperations.getMedicationSeriesNumberObservation(this);
 	}
 
 	/**
@@ -358,8 +358,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation getnullMedicationStatusObservation() {
-		return MedicationCombinationMedicationOperations.getnullMedicationStatusObservation(this);
+	public MedicationStatusObservation getMedicationStatusObservation() {
+		return MedicationCombinationMedicationOperations.getMedicationStatusObservation(this);
 	}
 
 	/**
@@ -367,7 +367,7 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemEntryReactionObservationContainer> getnullReactionObservations() {
+	public EList<ReactionObservation> getnullReactionObservations() {
 		return MedicationCombinationMedicationOperations.getnullReactionObservations(this);
 	}
 
@@ -376,8 +376,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductInstance> getnullProductInstances() {
-		return MedicationCombinationMedicationOperations.getnullProductInstances(this);
+	public EList<ProductInstance> getProductInstances() {
+		return MedicationCombinationMedicationOperations.getProductInstances(this);
 	}
 
 	/**
@@ -385,8 +385,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InternalReference> getnullInternalReferences() {
-		return MedicationCombinationMedicationOperations.getnullInternalReferences(this);
+	public EList<InternalReference> getInternalReferences() {
+		return MedicationCombinationMedicationOperations.getInternalReferences(this);
 	}
 
 	/**
@@ -394,8 +394,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PatientMedicalInstructions> getnullPatientMedicalInstructionss() {
-		return MedicationCombinationMedicationOperations.getnullPatientMedicalInstructionss(this);
+	public EList<Instructions> getPatientMedicalInstructionss() {
+		return MedicationCombinationMedicationOperations.getPatientMedicalInstructionss(this);
 	}
 
 	/**
@@ -403,7 +403,7 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationOrderInformation getSupplyEntry() {
+	public NonMedicinalSupplyActivity getSupplyEntry() {
 		return MedicationCombinationMedicationOperations.getSupplyEntry(this);
 	}
 
@@ -413,8 +413,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationTemplateId(this, diagnostics, context);
+	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationCombinationMedicationOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -423,8 +423,8 @@ public class MedicationCombinationMedicationImpl extends MedicationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCode(this, diagnostics, context);
+	public boolean validateMedicationActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationCombinationMedicationOperations.validateMedicationActivityCode(this, diagnostics, context);
 	}
 
 	/**

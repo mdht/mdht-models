@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.consol.AbdomenSection;
 import org.openhealthtools.mdht.uml.cda.consol.BreastSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
-import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
 import org.openhealthtools.mdht.uml.cda.consol.EarsSection;
@@ -35,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.NeckSection;
 import org.openhealthtools.mdht.uml.cda.consol.NeurologicSystemSection;
 import org.openhealthtools.mdht.uml.cda.consol.NoseSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.RectumSection;
 import org.openhealthtools.mdht.uml.cda.consol.RespiratorySystemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
@@ -334,7 +334,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Condition> getConditions() {
+	public EList<ProblemConcernAct> getConditions() {
 		return PhysicalExamSectionOperations.getConditions(this);
 	}
 

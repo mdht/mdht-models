@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.Medication;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeMedicationsSectionOperations;
 
@@ -83,7 +83,7 @@ public class HospitalDischargeMedicationsSectionImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Medication getMedication() {
+	public MedicationActivity getMedication() {
 		return HospitalDischargeMedicationsSectionOperations.getMedication(this);
 	}
 

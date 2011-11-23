@@ -36,16 +36,16 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='MedicationTaperedDoseTemplateId MedicationTaperedDoseTaperedDosingSubstanceAdministration'"
  * @generated
  */
-public interface MedicationTaperedDose extends Medication {
+public interface MedicationTaperedDose extends MedicationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( ihe::Medication) )
+	 * self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( consol::Medication) )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( ihe::Medication) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( consol::Medication) )'"
 	 * @generated
 	 */
 	boolean validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);

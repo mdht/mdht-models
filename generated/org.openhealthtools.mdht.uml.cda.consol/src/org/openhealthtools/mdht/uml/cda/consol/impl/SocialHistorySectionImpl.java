@@ -14,7 +14,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.SocialHistory;
+import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
+import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySectionOperations;
@@ -147,8 +148,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySectionSocialHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistory(this, diagnostics, context);
+	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +157,26 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SocialHistory> getSocialHistories() {
-		return SocialHistorySectionOperations.getSocialHistories(this);
+	public boolean validateSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionPregnancyObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SocialHistoryObservation> getSocialHistoryObservations() {
+		return SocialHistorySectionOperations.getSocialHistoryObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PregnancyObservation getPregnancyObservation() {
+		return SocialHistorySectionOperations.getPregnancyObservation(this);
 	}
 
 	/**

@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -193,7 +192,7 @@ public class PayerEntryImpl extends ActImpl implements PayerEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssignedEntity getPayerEntity() {
+	public PayerEntry getPayerEntity() {
 		return PayerEntryOperations.getPayerEntity(this);
 	}
 

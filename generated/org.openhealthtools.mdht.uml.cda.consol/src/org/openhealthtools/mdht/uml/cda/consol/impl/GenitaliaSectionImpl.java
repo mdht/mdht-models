@@ -12,7 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GenitaliaSection;
 
@@ -83,7 +83,7 @@ public class GenitaliaSectionImpl extends SectionImpl implements GenitaliaSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyIntolerance getProblemEntry() {
+	public AllergyObservation getProblemEntry() {
 		return GenitaliaSectionOperations.getProblemEntry(this);
 	}
 

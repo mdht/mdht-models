@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.3.88.11.83.126' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionMaritalStatus SocialHistorySectionReligiousAffiliation SocialHistorySectionPatientRace SocialHistorySectionPatientEthnicity' code.code='29762-2' constraints.validation.info='SocialHistorySectionPatientRaceCodeSystem SocialHistorySectionPatientEthnicityCodeSystem SocialHistorySectionSocialHistory'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.17' code.displayName='Social history' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='SocialHistorySectionMaritalStatus SocialHistorySectionReligiousAffiliation SocialHistorySectionPatientRace SocialHistorySectionPatientEthnicity' code.code='29762-2' constraints.validation.info='SocialHistorySectionPatientRaceCodeSystem SocialHistorySectionPatientEthnicityCodeSystem SocialHistorySectionSocialHistoryObservation SocialHistorySectionPregnancyObservation'"
  * @generated
  */
 public interface SocialHistorySection extends Section {
@@ -125,11 +125,11 @@ public interface SocialHistorySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.126')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.126\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.17\')'"
 	 * @generated
 	 */
 	boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -144,7 +144,7 @@ public interface SocialHistorySection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (\r\nvalue.code = \'29762-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (\nvalue.code = \'29762-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
 	boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -179,26 +179,51 @@ public interface SocialHistorySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SocialHistory))
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SocialHistoryObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SocialHistory))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SocialHistoryObservation))'"
 	 * @generated
 	 */
-	boolean validateSocialHistorySectionSocialHistory(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistory)).oclAsType(consol::SocialHistory)
+	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PregnancyObservation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistory)).oclAsType(consol::SocialHistory)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PregnancyObservation))'"
 	 * @generated
 	 */
-	EList<SocialHistory> getSocialHistories();
+	boolean validateSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryObservation)).oclAsType(consol::SocialHistoryObservation)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryObservation)).oclAsType(consol::SocialHistoryObservation)'"
+	 * @generated
+	 */
+	EList<SocialHistoryObservation> getSocialHistoryObservations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PregnancyObservation))->asSequence()->first().oclAsType(consol::PregnancyObservation)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PregnancyObservation))->asSequence()->first().oclAsType(consol::PregnancyObservation)'"
+	 * @generated
+	 */
+	PregnancyObservation getPregnancyObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

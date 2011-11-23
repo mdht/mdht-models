@@ -14,13 +14,13 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Comment;
 import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.Severity;
+import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ConditionEntryOperations;
 
@@ -260,7 +260,7 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CauseOfDeathObservation getCauseOfDeathObservation() {
+	public FamilyHistoryDeathObservation getCauseOfDeathObservation() {
 		return ConditionEntryOperations.getCauseOfDeathObservation(this);
 	}
 
@@ -269,7 +269,7 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemStatusObservation getProblemStatusObservation() {
+	public AllergyStatusObservation getProblemStatusObservation() {
 		return ConditionEntryOperations.getProblemStatusObservation(this);
 	}
 
@@ -278,7 +278,7 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Severity getSeverity() {
+	public SeverityObservation getSeverity() {
 		return ConditionEntryOperations.getSeverity(this);
 	}
 

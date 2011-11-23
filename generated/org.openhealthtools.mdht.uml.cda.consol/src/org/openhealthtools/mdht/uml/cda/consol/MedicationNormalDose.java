@@ -25,7 +25,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationNormalDoseTemplateId MedicationNormalDoseNoSubordinateSubstanceAdministration'"
  * @generated
  */
-public interface MedicationNormalDose extends Medication {
+public interface MedicationNormalDose extends MedicationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

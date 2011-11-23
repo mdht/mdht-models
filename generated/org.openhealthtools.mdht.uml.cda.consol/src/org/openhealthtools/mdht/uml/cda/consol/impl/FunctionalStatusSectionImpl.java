@@ -14,6 +14,8 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusSectionOperations;
 
@@ -147,6 +149,24 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemObservation getProblemObservation() {
+		return FunctionalStatusSectionOperations.getProblemObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultObservation getResultObservation() {
+		return FunctionalStatusSectionOperations.getResultObservation(this);
 	}
 
 	/**

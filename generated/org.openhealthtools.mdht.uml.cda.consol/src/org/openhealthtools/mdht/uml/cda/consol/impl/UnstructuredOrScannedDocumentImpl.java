@@ -53,24 +53,6 @@ public class UnstructuredOrScannedDocumentImpl extends GeneralHeaderConstraintsI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateUnstructuredOrScannedDocumentTypeIdFixed(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentTypeIdFixed(this, diagnostics, context);
 	}
@@ -278,8 +260,26 @@ public class UnstructuredOrScannedDocumentImpl extends GeneralHeaderConstraintsI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**

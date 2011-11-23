@@ -221,7 +221,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->exists(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderPaymentProviders(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Payment Providers</em>}' invariant operation.
@@ -237,7 +237,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->exists(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))
+	 * self.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -278,7 +278,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | not a.id.root->isEmpty())";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | not a.id.root->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderPayerEntryID(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Payer Entry ID</em>}' invariant operation.
@@ -294,7 +294,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | not a.id.root->isEmpty())
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | not a.id.root->isEmpty())
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -335,7 +335,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.6.255.1336' and (a.code.code='12' or a.code.code='13' or a.code.code='14' or a.code.code='15' or a.code.code='16' or a.code.code='41' or a.code.code='42' or a.code.code='43' or a.code.code='47' or a.code.code='AP' or a.code.code='C1' or a.code.code='CO' or a.code.code='CP' or a.code.code='D' or a.code.code='DB' or a.code.code='EP' or a.code.code='FF' or a.code.code='GP' or a.code.code='HM' or a.code.code='HN' or a.code.code='HS' or a.code.code='IN' or a.code.code='IP' or a.code.code='LC' or a.code.code='LD' or a.code.code='LI' or a.code.code='LT' or a.code.code='MA' or a.code.code='MB' or a.code.code='MC' or a.code.code='MH' or a.code.code='MI' or a.code.code='MP' or a.code.code='OT' or a.code.code='PE' or a.code.code='PL' or a.code.code='PP' or a.code.code='PR' or a.code.code='PS' or a.code.code='QM' or a.code.code='RP' or a.code.code='SP' or a.code.code='TF' or a.code.code='WC' or a.code.code='WU'))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.6.255.1336' and (a.code.code='12' or a.code.code='13' or a.code.code='14' or a.code.code='15' or a.code.code='16' or a.code.code='41' or a.code.code='42' or a.code.code='43' or a.code.code='47' or a.code.code='AP' or a.code.code='C1' or a.code.code='CO' or a.code.code='CP' or a.code.code='D' or a.code.code='DB' or a.code.code='EP' or a.code.code='FF' or a.code.code='GP' or a.code.code='HM' or a.code.code='HN' or a.code.code='HS' or a.code.code='IN' or a.code.code='IP' or a.code.code='LC' or a.code.code='LD' or a.code.code='LI' or a.code.code='LT' or a.code.code='MA' or a.code.code='MB' or a.code.code='MC' or a.code.code='MH' or a.code.code='MI' or a.code.code='MP' or a.code.code='OT' or a.code.code='PE' or a.code.code='PL' or a.code.code='PP' or a.code.code='PR' or a.code.code='PS' or a.code.code='QM' or a.code.code='RP' or a.code.code='SP' or a.code.code='TF' or a.code.code='WC' or a.code.code='WU'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderHealthInsuranceType(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Health Insurance Type</em>}' invariant operation.
@@ -351,7 +351,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.6.255.1336' and (a.code.code='12' or a.code.code='13' or a.code.code='14' or a.code.code='15' or a.code.code='16' or a.code.code='41' or a.code.code='42' or a.code.code='43' or a.code.code='47' or a.code.code='AP' or a.code.code='C1' or a.code.code='CO' or a.code.code='CP' or a.code.code='D' or a.code.code='DB' or a.code.code='EP' or a.code.code='FF' or a.code.code='GP' or a.code.code='HM' or a.code.code='HN' or a.code.code='HS' or a.code.code='IN' or a.code.code='IP' or a.code.code='LC' or a.code.code='LD' or a.code.code='LI' or a.code.code='LT' or a.code.code='MA' or a.code.code='MB' or a.code.code='MC' or a.code.code='MH' or a.code.code='MI' or a.code.code='MP' or a.code.code='OT' or a.code.code='PE' or a.code.code='PL' or a.code.code='PP' or a.code.code='PR' or a.code.code='PS' or a.code.code='QM' or a.code.code='RP' or a.code.code='SP' or a.code.code='TF' or a.code.code='WC' or a.code.code='WU'))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.6.255.1336' and (a.code.code='12' or a.code.code='13' or a.code.code='14' or a.code.code='15' or a.code.code='16' or a.code.code='41' or a.code.code='42' or a.code.code='43' or a.code.code='47' or a.code.code='AP' or a.code.code='C1' or a.code.code='CO' or a.code.code='CP' or a.code.code='D' or a.code.code='DB' or a.code.code='EP' or a.code.code='FF' or a.code.code='GP' or a.code.code='HM' or a.code.code='HN' or a.code.code='HS' or a.code.code='IN' or a.code.code='IP' or a.code.code='LC' or a.code.code='LD' or a.code.code='LI' or a.code.code='LT' or a.code.code='MA' or a.code.code='MB' or a.code.code='MC' or a.code.code='MH' or a.code.code='MI' or a.code.code='MP' or a.code.code='OT' or a.code.code='PE' or a.code.code='PL' or a.code.code='PP' or a.code.code='PR' or a.code.code='PS' or a.code.code='QM' or a.code.code='RP' or a.code.code='SP' or a.code.code='TF' or a.code.code='WC' or a.code.code='WU'))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -392,7 +392,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderInsuranceInformation(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Insurance Information</em>}' invariant operation.
@@ -408,7 +408,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -449,7 +449,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderInsuranceInfoSourceID(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Insurance Info Source ID</em>}' invariant operation.
@@ -465,7 +465,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -506,7 +506,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderInsuranceInfoSourceAddr(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Insurance Info Source Addr</em>}' invariant operation.
@@ -522,7 +522,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -563,7 +563,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderHealthPlanCoverageStartTime(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Health Plan Coverage Start Time</em>}' invariant operation.
@@ -579,7 +579,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -620,7 +620,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderHealthPlanCoverageStopTime(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Health Plan Coverage Stop Time</em>}' invariant operation.
@@ -636,7 +636,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -677,7 +677,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderPatientInformation(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Patient Information</em>}' invariant operation.
@@ -693,7 +693,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -734,7 +734,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderMemberId(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Member Id</em>}' invariant operation.
@@ -750,7 +750,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -791,7 +791,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderMemberIdRoot(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Member Id Root</em>}' invariant operation.
@@ -807,7 +807,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -848,7 +848,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderRelationshipToSubscriber(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Relationship To Subscriber</em>}' invariant operation.
@@ -864,7 +864,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -905,7 +905,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.5.111' and (par.participantRole.code.code = 'FAMDEP' or par.participantRole.code.code='HANDIC' or par.participantRole.code.code ='INJ' or par.participantRole.code.code='SELF' or par.participantRole.code.code='SPON' or par.participantRole.code.code ='STUD' or par.participantRole.code.code='FSTUD' or par.participantRole.code.code='PSTUD')))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.5.111' and (par.participantRole.code.code = 'FAMDEP' or par.participantRole.code.code='HANDIC' or par.participantRole.code.code ='INJ' or par.participantRole.code.code='SELF' or par.participantRole.code.code='SPON' or par.participantRole.code.code ='STUD' or par.participantRole.code.code='FSTUD' or par.participantRole.code.code='PSTUD')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderRelationshipToSubscriberCodeSystem(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Relationship To Subscriber Code System</em>}' invariant operation.
@@ -921,7 +921,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.5.111' and (par.participantRole.code.code = 'FAMDEP' or par.participantRole.code.code='HANDIC' or par.participantRole.code.code ='INJ' or par.participantRole.code.code='SELF' or par.participantRole.code.code='SPON' or par.participantRole.code.code ='STUD' or par.participantRole.code.code='FSTUD' or par.participantRole.code.code='PSTUD')))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.5.111' and (par.participantRole.code.code = 'FAMDEP' or par.participantRole.code.code='HANDIC' or par.participantRole.code.code ='INJ' or par.participantRole.code.code='SELF' or par.participantRole.code.code='SPON' or par.participantRole.code.code ='STUD' or par.participantRole.code.code='FSTUD' or par.participantRole.code.code='PSTUD')))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -962,7 +962,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderPatientName(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Patient Name</em>}' invariant operation.
@@ -978,7 +978,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1019,7 +1019,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderSubscriberInformation(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Subscriber Information</em>}' invariant operation.
@@ -1035,7 +1035,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1076,7 +1076,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderSubscriberId(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Subscriber Id</em>}' invariant operation.
@@ -1092,7 +1092,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1133,7 +1133,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderSubscriberIdRoot(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Subscriber Id Root</em>}' invariant operation.
@@ -1149,7 +1149,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1190,7 +1190,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderSubscriberAddress(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Subscriber Address</em>}' invariant operation.
@@ -1206,7 +1206,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1247,7 +1247,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderFinancialResponsibilityPartyType(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Financial Responsibility Party Type</em>}' invariant operation.
@@ -1263,7 +1263,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1304,7 +1304,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.5.110'))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.5.110'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderFinancialResponsibilityPartyTypeCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Financial Responsibility Party Type Code</em>}' invariant operation.
@@ -1320,7 +1320,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.5.110'))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.5.110'))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1361,7 +1361,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))";
+	protected static final String VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInsuranceProviderFinancialResponsibilityPartyAddress(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Insurance Provider Financial Responsibility Party Address</em>}' invariant operation.
@@ -1377,7 +1377,7 @@ public class InsuranceProviderOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))
+	 * self.getActs()->select(act : cda::Act | act.oclIsKindOf(consol::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

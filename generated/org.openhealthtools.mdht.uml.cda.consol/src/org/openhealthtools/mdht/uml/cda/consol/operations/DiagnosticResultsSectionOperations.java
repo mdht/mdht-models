@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Procedure;
-import org.openhealthtools.mdht.uml.cda.consol.Result;
+import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -78,7 +78,7 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(hitsp::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::Result)))";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(consol::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::Result)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Has Result</em>}' invariant operation.
@@ -94,7 +94,7 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(hitsp::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::Result)))
+	 * self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(consol::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::Result)))
 	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -310,7 +310,7 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::Result))";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ResultObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}' invariant operation.
@@ -326,7 +326,7 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::Result))
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ResultObservation))
 	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -527,7 +527,7 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Result)).oclAsType(consol::Result)";
+	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation)).oclAsType(consol::ResultObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getResults(DiagnosticResultsSection) <em>Get Results</em>}' query operation.
@@ -543,12 +543,12 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Result)).oclAsType(consol::Result)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation)).oclAsType(consol::ResultObservation)
 	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
+	public static  EList<ResultObservation> getResults(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(63));
@@ -561,8 +561,8 @@ public class DiagnosticResultsSectionOperations extends SectionOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Result> result = (Collection<Result>) query.evaluate(diagnosticResultsSection);
-		return new BasicEList.UnmodifiableEList<Result>(result.size(), result.toArray());
+		Collection<ResultObservation> result = (Collection<ResultObservation>) query.evaluate(diagnosticResultsSection);
+		return new BasicEList.UnmodifiableEList<ResultObservation>(result.size(), result.toArray());
 	}
 
 	/**

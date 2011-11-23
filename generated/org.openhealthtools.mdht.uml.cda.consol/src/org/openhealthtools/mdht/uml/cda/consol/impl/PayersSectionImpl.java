@@ -9,12 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
+import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.PayersSectionOperations;
@@ -93,17 +92,8 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayersSectionInsuranceProvider(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayersSectionOperations.validatePayersSectionInsuranceProvider(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<InsuranceProvider> getInsuranceProviders() {
-		return PayersSectionOperations.getInsuranceProviders(this);
+	public CoverageActivity getCoverageActivity() {
+		return PayersSectionOperations.getCoverageActivity(this);
 	}
 
 	/**

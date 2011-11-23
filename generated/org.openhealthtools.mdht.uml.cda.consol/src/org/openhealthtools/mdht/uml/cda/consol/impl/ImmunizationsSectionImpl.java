@@ -14,13 +14,10 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.Immunization;
+import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationOrderInformation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -33,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ImmunizationsSectionImpl extends SectionImpl implements ImmunizationsSection {
+public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptionalImpl implements ImmunizationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,17 +64,8 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
+	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +100,8 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionSupplyActivity(this, diagnostics, context);
+	public EList<ImmunizationActivity> getnullImmunizations() {
+		return ImmunizationsSectionOperations.getnullImmunizations(this);
 	}
 
 	/**
@@ -121,17 +109,9 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Immunization> getImmunizations() {
-		return ImmunizationsSectionOperations.getImmunizations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MedicationOrderInformation> getSupplyActivities() {
-		return ImmunizationsSectionOperations.getSupplyActivities(this);
+	@Override
+	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

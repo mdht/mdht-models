@@ -51,10 +51,10 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationCombinationMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationCombinationMedicationTemplateId MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationCombinationMedicationTemplateId MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationActivityCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
  * @generated
  */
-public interface MedicationCombinationMedication extends Medication {
+public interface MedicationCombinationMedication extends MedicationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -240,11 +240,11 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )
+	 * self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(ihe::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(ihe::PatientMedicalInstructions))  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )'"
 	 * @generated
 	 */
 	boolean validateMedicationCombinationMedicationHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -376,7 +376,7 @@ public interface MedicationCombinationMedication extends Medication {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.112\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\nvalue.codeSystem = \'2.16.840.1.113883.5.112\'))'"
 	 * @generated
 	 */
 	boolean validateMedicationCombinationMedicationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -463,11 +463,11 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)'"
 	 * @generated
 	 */
 	boolean validateMedicationCombinationMedicationReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -491,11 +491,11 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(consol::MedicationSeriesNumberObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(consol::MedicationSeriesNumberObservation)'"
 	 * @generated
 	 */
-	MedicationSeriesNumberObservation getnullMedicationSeriesNumberObservation();
+	MedicationSeriesNumberObservation getMedicationSeriesNumberObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,23 +503,23 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)'"
 	 * @generated
 	 */
-	MedicationStatusObservation getnullMedicationStatusObservation();
+	MedicationStatusObservation getMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)
 	 * <!-- end-model-doc -->
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemEntryReactionObservationContainer)).oclAsType(consol::ProblemEntryReactionObservationContainer)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)'"
 	 * @generated
 	 */
-	EList<ProblemEntryReactionObservationContainer> getnullReactionObservations();
+	EList<ReactionObservation> getnullReactionObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -527,11 +527,11 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-model-doc -->
 	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)'"
 	 * @generated
 	 */
-	EList<ProductInstance> getnullProductInstances();
+	EList<ProductInstance> getProductInstances();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -539,35 +539,35 @@ public interface MedicationCombinationMedication extends Medication {
 	 * <!-- begin-model-doc -->
 	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)'"
 	 * @generated
 	 */
-	EList<InternalReference> getnullInternalReferences();
+	EList<InternalReference> getInternalReferences();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PatientMedicalInstructions)).oclAsType(consol::PatientMedicalInstructions)
-	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PatientMedicalInstructions)).oclAsType(consol::PatientMedicalInstructions)'"
-	 * @generated
-	 */
-	EList<PatientMedicalInstructions> getnullPatientMedicalInstructionss();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationOrderInformation))->asSequence()->first().oclAsType(consol::MedicationOrderInformation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)'"
 	 * @generated
 	 */
-	MedicationOrderInformation getSupplyEntry();
+	EList<Instructions> getPatientMedicalInstructionss();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))->asSequence()->first().oclAsType(consol::NonMedicinalSupplyActivity)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))->asSequence()->first().oclAsType(consol::NonMedicinalSupplyActivity)'"
+	 * @generated
+	 */
+	NonMedicinalSupplyActivity getSupplyEntry();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -13,13 +13,11 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirective;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -32,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectivesSectionImpl extends SectionImpl implements AdvanceDirectivesSection {
+public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntriesOptionalImpl implements AdvanceDirectivesSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,17 +55,8 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectivesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionCode(this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +82,8 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSectionAdvanceDirective(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirective(this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +91,18 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirective> getAdvanceDirectives() {
-		return AdvanceDirectivesSectionOperations.getAdvanceDirectives(this);
+	public EList<AdvanceDirectiveObservation> getnullAdvanceDirectiveObservations() {
+		return AdvanceDirectivesSectionOperations.getnullAdvanceDirectiveObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

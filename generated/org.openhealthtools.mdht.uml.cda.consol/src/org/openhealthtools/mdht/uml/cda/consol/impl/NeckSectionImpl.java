@@ -12,7 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NeckSection;
 
@@ -83,7 +83,7 @@ public class NeckSectionImpl extends SectionImpl implements NeckSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyIntolerance getProblemEntry() {
+	public AllergyObservation getProblemEntry() {
 		return NeckSectionOperations.getProblemEntry(this);
 	}
 
