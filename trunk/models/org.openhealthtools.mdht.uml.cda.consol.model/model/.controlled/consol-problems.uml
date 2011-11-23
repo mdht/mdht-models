@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
-  <uml:Class xmi:id="_2LSPYBSVEeGGzu7fmW9pXw" name="ProblemListSection">
+  <uml:Class xmi:id="_2LSPYBSVEeGGzu7fmW9pXw" name="ProblemSection">
     <ownedComment xmi:id="_2LV5wRSVEeGGzu7fmW9pXw" annotatedElement="_2LSPYBSVEeGGzu7fmW9pXw">
       <body>This section lists and describes all relevant clinical problems at the time the summary is generated. At a minimum, all pertinent current and historical problems should be listed. CDA R2 represents problems as Observations.</body>
     </ownedComment>
@@ -19,8 +19,8 @@
         <body>SHOULD contain a case-insensitive language-insensitive string containing 'problems'.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2LV5wxSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    <generalization xmi:id="_blmF8BVgEeGQCvUGzi1kDQ">
+      <general xmi:type="uml:Class" href="../consol.uml#_naxrkBVdEeGQCvUGzi1kDQ"/>
     </generalization>
     <ownedAttribute xmi:id="_2LTdgBSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -41,7 +41,7 @@
   <uml:Association xmi:id="_2LS2cRSVEeGGzu7fmW9pXw" memberEnd="_2LSPYxSVEeGGzu7fmW9pXw _2LS2chSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2LS2chSVEeGGzu7fmW9pXw" type="_2LSPYBSVEeGGzu7fmW9pXw" association="_2LS2cRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2LSPZhSVEeGGzu7fmW9pXw" base_Class="_2LSPYBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP C83"/>
+  <CDA:CDATemplate xmi:id="_2LSPZhSVEeGGzu7fmW9pXw" base_Class="_2LSPYBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.5.1" assigningAuthorityName="HITSP C83"/>
   <CDA:ConstraintValidation xmi:id="_2LV5wBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2LVStBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-144</ruleId>
   </CDA:ConstraintValidation>
@@ -59,7 +59,7 @@
   <CDA:AssociationValidation xmi:id="_2LS2cxSVEeGGzu7fmW9pXw" base_Association="_2LS2cRSVEeGGzu7fmW9pXw">
     <ruleId>C83-[CT-103-1]</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_2H6yUBSVEeGGzu7fmW9pXw" name="Condition">
+  <uml:Class xmi:id="_2H6yUBSVEeGGzu7fmW9pXw" name="ProblemConcernAct">
     <ownedComment xmi:id="_2IINsBSVEeGGzu7fmW9pXw" annotatedElement="_2H6yUBSVEeGGzu7fmW9pXw">
       <body>A problem is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).</body>
     </ownedComment>
@@ -256,22 +256,14 @@ historical purposes.&#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IBgAhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IBgAxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2IBgBRSVEeGGzu7fmW9pXw" name="episodeObservation" association="_2ICHEBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2EQaUBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IBgBhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IBgBxSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2H6yWRSVEeGGzu7fmW9pXw" name="conditionEntry" visibility="private" type="_2R2xcBSVEeGGzu7fmW9pXw" association="_2H9OkRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2H6yWhSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2H6yWxSVEeGGzu7fmW9pXw" value="1"/>
+    <ownedAttribute xmi:id="_1CFA0BUzEeGbmN_W114JUw" name="problemObservation">
+      <type xmi:type="uml:Class" href="../consol.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1CFA0RUzEeGbmN_W114JUw"/>
+      <association href="../consol.uml#_1CFA0hUzEeGbmN_W114JUw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2ICHEBSVEeGGzu7fmW9pXw" memberEnd="_2IBgBRSVEeGGzu7fmW9pXw _2ICHERSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2ICHERSVEeGGzu7fmW9pXw" type="_2H6yUBSVEeGGzu7fmW9pXw" association="_2ICHEBSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_2H9OkRSVEeGGzu7fmW9pXw" memberEnd="_2H6yWRSVEeGGzu7fmW9pXw _2H9OkhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2H9OkhSVEeGGzu7fmW9pXw" type="_2H6yUBSVEeGGzu7fmW9pXw" association="_2H9OkRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
+  <uml:Association xmi:id="_2ICHEBSVEeGGzu7fmW9pXw"/>
+  <uml:Association xmi:id="_2H9OkRSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_2H7ZYBSVEeGGzu7fmW9pXw" base_Class="_2H6yUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.7">
     <ruleId>C83-[DE-7-CDA-1]</ruleId>
   </CDA:CDATemplate>
@@ -370,7 +362,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>If entryRelationship / Comment is present, then entryRelationship SHALL include inversionInd = 'true'.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</body>
+        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(consol::Comment)) implies rel.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2R2xchSVEeGGzu7fmW9pXw" name="hasOnsetDate" constrainedElement="_2R2xcBSVEeGGzu7fmW9pXw">
@@ -539,7 +531,7 @@ historical purposes.&#xD;
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_2R2xkhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2R2xkBSVEeGGzu7fmW9pXw"/>
   <CDA:EntryRelationship xmi:id="_2R84EhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2R84EBSVEeGGzu7fmW9pXw" typeCode="REFR"/>
-  <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="ProblemStatusObservation">
+  <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="AllergyStatusObservation">
     <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
       <body>Any problem or allergy observation may reference a problem status observation. The clinical status observation records information about the current status of the problem or allergy, for example, whether it is active, in remission, resolved, et cetera.</body>
     </ownedComment>
@@ -577,7 +569,6 @@ historical purposes.&#xD;
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2FRuBBSVEeGGzu7fmW9pXw" name="hasTextReference">
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FRuBRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
@@ -690,7 +681,6 @@ historical purposes.&#xD;
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2ExXshSVEeGGzu7fmW9pXw" name="hasTextReference">
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2ExXsxSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
