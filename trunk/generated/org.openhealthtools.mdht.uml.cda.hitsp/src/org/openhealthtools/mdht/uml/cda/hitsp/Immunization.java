@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getImmunization()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.12.292' templateId.root='2.16.840.1.113883.3.88.11.83.13' constraints.validation.error='HITSPImmunizationTemplateId HITSPImmunizationRefusalReason ImmunizationCode' code.codeSystemName='Vaccines administered (CVX)'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='Vaccines administered (CVX)' constraints.validation.error='HITSPImmunizationTemplateId HITSPImmunizationRefusalReason ImmunizationCode' templateId.root='2.16.840.1.113883.3.88.11.83.13' code.codeSystem='2.16.840.1.113883.12.292'"
  * @generated
  */
 public interface Immunization extends org.openhealthtools.mdht.uml.cda.ihe.Immunization {

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getMedicationType()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8.1' constraints.validation.error='MedicationTypeTemplateId MedicationTypeCode' code.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.3.88.11.83.8.1' constraints.validation.error='MedicationTypeTemplateId MedicationTypeCode' code.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface MedicationType extends Observation {
@@ -49,7 +49,7 @@ public interface MedicationType extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'329505003\' or value.code = \'73639000\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'329505003\' or value.code = \'73639000\')))'"
 	 * @generated
 	 */
 	boolean validateMedicationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);

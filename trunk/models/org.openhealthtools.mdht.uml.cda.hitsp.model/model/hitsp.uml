@@ -1462,7 +1462,7 @@ resolved</body>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CuIW8DIXEd-SYNRf-pkwtw" base_Property="_ColIkDIXEd-SYNRf-pkwtw"/>
   <CDA:PropertyValidation xmi:id="_CuMBUDIXEd-SYNRf-pkwtw" base_Property="_CuLaQDIXEd-SYNRf-pkwtw"/>
-  <CDA:CDATemplate xmi:id="_HDAsgDIXEd-SYNRf-pkwtw" base_Class="_oTzNMDIWEd-SYNRf-pkwtw" templateId="2.16.840.1.113883.3.88.11.83.15">
+  <CDA:CDATemplate xmi:id="_HDAsgDIXEd-SYNRf-pkwtw" base_Class="_oTzNMDIWEd-SYNRf-pkwtw" templateId="2.16.840.1.113883.3.88.11.83.15.1">
     <ruleId>C83-[DE-15-CDA-1]</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_SV4acDuEEd-B8KE6Jx0UNQ" base_Class="_MdoNoDuEEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.2">
