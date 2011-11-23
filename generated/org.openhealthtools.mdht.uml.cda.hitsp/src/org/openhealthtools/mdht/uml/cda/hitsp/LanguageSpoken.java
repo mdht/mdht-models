@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getLanguageSpoken()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.2' constraints.validation.error='LanguageSpokenTemplateId LanguageSpokenModeCode' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode' modeCode.codeSystem='2.16.840.1.113883.5.60' modeCode.codeSystemName='LanguageAbilityMode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation modeCode.codeSystemName='LanguageAbilityMode' modeCode.codeSystem='2.16.840.1.113883.5.60' constraints.validation.error='LanguageSpokenTemplateId LanguageSpokenModeCode' templateId.root='2.16.840.1.113883.3.88.11.83.2' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode'"
  * @generated
  */
 public interface LanguageSpoken extends LanguageCommunication {
@@ -62,7 +62,7 @@ public interface LanguageSpoken extends LanguageCommunication {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in (\nvalue.codeSystem = \'2.16.840.1.113883.5.60\' and (value.code = \'ESGN\' or value.code = \'ESP\' or value.code = \'EWR\' or value.code = \'RSGN\' or value.code = \'RSP\' or value.code = \'RWR\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.60\' and (value.code = \'ESGN\' or value.code = \'ESP\' or value.code = \'EWR\' or value.code = \'RSGN\' or value.code = \'RSP\' or value.code = \'RWR\')))'"
 	 * @generated
 	 */
 	boolean validateLanguageSpokenModeCode(DiagnosticChain diagnostics, Map<Object, Object> context);

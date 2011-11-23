@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getVitalSignsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.119' constraints.validation.error='HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry' templateId.root='2.16.840.1.113883.3.88.11.83.119'"
  * @generated
  */
 public interface VitalSignsSection extends CodedVitalSignsSection {

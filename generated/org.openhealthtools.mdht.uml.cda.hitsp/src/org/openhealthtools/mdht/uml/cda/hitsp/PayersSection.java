@@ -31,7 +31,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getPayersSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.101' constraints.validation.error='HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider' templateId.root='2.16.840.1.113883.3.88.11.83.101'"
  * @generated
  */
 public interface PayersSection extends org.openhealthtools.mdht.uml.cda.ihe.PayersSection {
