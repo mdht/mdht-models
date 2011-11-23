@@ -64,11 +64,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
-	 *   (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))
+	 *   (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -77,12 +77,12 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))
+	 * self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -91,12 +91,12 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))
+	 * self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -105,11 +105,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))
+	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -383,11 +383,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActReactionText(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -396,11 +396,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActReactionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -409,11 +409,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = \'2.16.840.1.113883.6.96\' and (ro.code.code = \'404684003\' or ro.code.code = \'243796009\')  ) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = \'2.16.840.1.113883.6.96\' and (ro.code.code = \'404684003\' or ro.code.code = \'243796009\')  ) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActReactionCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -422,11 +422,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActSeverityText(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -435,11 +435,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActSeverityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -448,12 +448,12 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')
 	 * ) )  )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = \'2.16.840.1.113883.6.96\' and (so.code.code = \'255604002\' or so.code.code = \'371923003\' or so.code.code = \'6736007\' or so.code.code = \'371924009\' or so.code.code = \'24484000\' or so.code.code = \'399166001\')\n) )  )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = \'2.16.840.1.113883.6.96\' and (so.code.code = \'255604002\' or so.code.code = \'371923003\' or so.code.code = \'6736007\' or so.code.code = \'371924009\' or so.code.code = \'24484000\' or so.code.code = \'399166001\')\n) )  )'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActSeverityCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);

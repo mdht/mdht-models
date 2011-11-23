@@ -38,11 +38,11 @@ public interface ProceduresSection extends ProceduresSectionEntriesOptional {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.entry->select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))->isEmpty()
+	 * not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entry->select(e | e.act.oclIsKindOf(ccd::ProcedureActivity))->isEmpty()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()'"
 	 * @generated
 	 */
 	boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context);

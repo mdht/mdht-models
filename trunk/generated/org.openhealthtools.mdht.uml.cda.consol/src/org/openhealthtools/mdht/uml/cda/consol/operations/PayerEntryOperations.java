@@ -414,8 +414,8 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)"
-			+ "  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))";
+	protected static final String VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)"
+			+ "  or rel.act.oclIsKindOf(consol::CoveragePlanDescription))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}' invariant operation.
@@ -431,8 +431,8 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
-	 *   or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))
+	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)
+	 *   or rel.act.oclIsKindOf(consol::CoveragePlanDescription))
 	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

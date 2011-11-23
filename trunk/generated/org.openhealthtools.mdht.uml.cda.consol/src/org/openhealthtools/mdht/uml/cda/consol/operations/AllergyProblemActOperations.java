@@ -159,7 +159,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and "
-			+ "  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))";
+			+ "  (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActSubjectOfTarget(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Subject Of Target</em>}' invariant operation.
@@ -176,7 +176,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
-	 *   (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))
+	 *   (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -216,8 +216,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()"
-			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()"
+			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActContainsProblemObservation(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Contains Problem Observation</em>}' invariant operation.
@@ -233,8 +233,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))
+	 * self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -275,8 +275,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()"
-			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()"
+			+ "   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActContainsAlertObservation(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Contains Alert Observation</em>}' invariant operation.
@@ -292,8 +292,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))
+	 * self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -334,7 +334,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActContainsPatientAwareness(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Contains Patient Awareness</em>}' invariant operation.
@@ -350,7 +350,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))
+	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1457,7 +1457,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActReactionText(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Reaction Text</em>}' invariant operation.
@@ -1473,7 +1473,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1513,7 +1513,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActReactionCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Reaction Code</em>}' invariant operation.
@@ -1529,7 +1529,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1569,7 +1569,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActReactionCodeVocab(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Reaction Code Vocab</em>}' invariant operation.
@@ -1585,7 +1585,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(ccd::ReactionObservation)) or  (ro.oclIsKindOf(ccd::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1625,7 +1625,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActSeverityText(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Severity Text</em>}' invariant operation.
@@ -1641,7 +1641,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.text.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1681,7 +1681,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )";
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyProblemActSeverityCode(AllergyProblemAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Severity Code</em>}' invariant operation.
@@ -1697,7 +1697,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined()) )  )
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1737,7 +1737,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')"
+	protected static final String VALIDATE_ALLERGY_PROBLEM_ACT_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')"
 			+ ") )  )";
 
 	/**
@@ -1754,7 +1754,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(ccd::SeverityObservation)) or  (so.oclIsKindOf(ccd::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')
+	 * self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')
 	 * ) )  )
 	 * @param allergyProblemAct The receiving '<em><b>Allergy Problem Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.

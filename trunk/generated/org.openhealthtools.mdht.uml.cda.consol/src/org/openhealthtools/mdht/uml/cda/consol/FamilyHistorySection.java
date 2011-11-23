@@ -38,11 +38,11 @@ public interface FamilyHistorySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))
+	 * self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(consol::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(consol::FamilyHistoryOrganizer))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(consol::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(consol::FamilyHistoryOrganizer))'"
 	 * @generated
 	 */
 	boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(DiagnosticChain diagnostics, Map<Object, Object> context);

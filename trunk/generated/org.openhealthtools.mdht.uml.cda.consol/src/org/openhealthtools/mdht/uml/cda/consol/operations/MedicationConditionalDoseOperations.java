@@ -470,7 +470,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 */
 	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "
 			+ "cda::ClinicalStatement | not target.oclIsUndefined() and "
-			+ "  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))";
+			+ "  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseHasReasonProblem(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Has Reason Problem</em>}' invariant operation.
@@ -489,7 +489,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : 
 	 * 
 	 * cda::ClinicalStatement | not target.oclIsUndefined() and 
-	 *   (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))
+	 *   (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))
 	 * @param medicationConditionalDose The receiving '<em><b>Medication Conditional Dose</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -531,7 +531,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)";
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseHasProduct(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Has Product</em>}' invariant operation.
@@ -547,7 +547,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)
+	 * self.consumable.manufacturedProduct.oclIsKindOf(consol::Product)
 	 * @param medicationConditionalDose The receiving '<em><b>Medication Conditional Dose</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

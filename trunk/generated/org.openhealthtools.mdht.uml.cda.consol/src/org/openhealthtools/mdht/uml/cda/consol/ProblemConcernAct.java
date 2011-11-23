@@ -59,11 +59,11 @@ public interface ProblemConcernAct extends Act {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
-	 *   (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))
+	 *   (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -72,12 +72,12 @@ public interface ProblemConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))
+	 * self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -86,12 +86,12 @@ public interface ProblemConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
-	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))
+	 * self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()
+	 *    ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()\r\n   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -100,11 +100,11 @@ public interface ProblemConcernAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))
+	 * self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context);

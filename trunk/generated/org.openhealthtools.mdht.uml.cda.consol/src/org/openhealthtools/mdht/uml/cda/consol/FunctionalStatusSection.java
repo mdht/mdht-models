@@ -61,12 +61,12 @@ public interface FunctionalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEntryTargets(ccd::ProblemAct)->size() > 0
-	 *   or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0
+	 * self.getEntryTargets(consol::ProblemConcernAct)->size() > 0
+	 *   or self.getEntryTargets(consol::ResultOrganizer)->size() > 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryTargets(ccd::ProblemAct)->size() > 0\r\n  or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryTargets(consol::ProblemConcernAct)->size() > 0\r\n  or self.getEntryTargets(consol::ResultOrganizer)->size() > 0'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionClinicalStatements(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -75,11 +75,11 @@ public interface FunctionalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)
+	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -88,11 +88,11 @@ public interface FunctionalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')
+	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics,
@@ -128,11 +128,11 @@ public interface FunctionalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)
+	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionProblemStatusObservation(DiagnosticChain diagnostics,
@@ -142,12 +142,12 @@ public interface FunctionalStatusSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->
-	 * forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)
+	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->
+	 * forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->\r\nforAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->\r\nforAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionResultStatusObservation(DiagnosticChain diagnostics,
