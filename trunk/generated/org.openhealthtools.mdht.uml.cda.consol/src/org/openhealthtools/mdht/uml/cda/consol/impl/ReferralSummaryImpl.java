@@ -53,8 +53,10 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryProblemConcernEntry(this, diagnostics, context);
+	public boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryProblemConcernEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +64,10 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryAllergyConcernEntry(this, diagnostics, context);
+	public boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryAllergyConcernEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -71,7 +75,8 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralSummaryMedicalSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReferralSummaryMedicalSummaryMedications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryMedications(this, diagnostics, context);
 	}
 
@@ -100,8 +105,9 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReferralSummary init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReferralSummaryImpl
+} // ReferralSummaryImpl

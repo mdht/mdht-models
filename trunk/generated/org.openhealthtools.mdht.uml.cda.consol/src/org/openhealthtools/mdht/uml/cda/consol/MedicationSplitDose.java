@@ -43,7 +43,8 @@ public interface MedicationSplitDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

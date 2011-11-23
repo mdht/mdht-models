@@ -55,8 +55,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationTargetOfEntryRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationNoAdditionalParticipants(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationNoAdditionalParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +77,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationNoAdditionalRelationships(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationNoAdditionalRelationships(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +88,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationTemplateId(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +99,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationClassCode(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +110,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationMoodCode(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +122,8 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateSocialHistoryStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationCode(this, diagnostics, context);
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +131,10 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationStatusCode(this, diagnostics, context);
+	public boolean validateSocialHistoryStatusObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,7 +143,8 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateSocialHistoryStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationValue(this, diagnostics, context);
+		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +153,7 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public SocialHistoryStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SocialHistoryStatusObservationImpl
+} // SocialHistoryStatusObservationImpl

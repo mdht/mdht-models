@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl implements PreconditionForSubstanceAdministration {
+public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl implements
+		PreconditionForSubstanceAdministration {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,8 +56,10 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(this, diagnostics, context);
+	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +68,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * @generated
 	 */
 	public PreconditionForSubstanceAdministration init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PreconditionForSubstanceAdministrationImpl
+} // PreconditionForSubstanceAdministrationImpl

@@ -54,7 +54,8 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateImmunizationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateImmunizationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +100,8 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateImmunizationActivityHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateImmunizationActivityHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

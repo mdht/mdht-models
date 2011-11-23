@@ -88,26 +88,23 @@ public class NoseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateNoseSectionTemplateId(NoseSection noseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateNoseSectionTemplateId(NoseSection noseSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NOSE_SECTION);
 			try {
 				VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(noseSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.NOSE_SECTION__NOSE_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("NoseSectionTemplateId"),
-						 new Object [] { noseSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.NOSE_SECTION__NOSE_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("NoseSectionTemplateId"), new Object[] { noseSection }));
 			}
 			return false;
 		}
@@ -122,9 +119,9 @@ public class NoseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10203-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10203-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNoseSectionCode(NoseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Code</em>}' invariant operation.
@@ -149,26 +146,23 @@ public class NoseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateNoseSectionCode(NoseSection noseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateNoseSectionCode(NoseSection noseSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NOSE_SECTION);
 			try {
 				VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_NOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(noseSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.NOSE_SECTION__NOSE_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("NoseSectionCode"),
-						 new Object [] { noseSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.NOSE_SECTION__NOSE_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("NoseSectionCode"), new Object[] { noseSection }));
 			}
 			return false;
 		}
@@ -206,26 +200,24 @@ public class NoseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateNoseSectionProblemEntry(NoseSection noseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateNoseSectionProblemEntry(NoseSection noseSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_NOSE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NOSE_SECTION);
 			try {
 				VALIDATE_NOSE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NOSE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NOSE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(noseSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NOSE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			noseSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.NOSE_SECTION__NOSE_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("NoseSectionProblemEntry"),
-						 new Object [] { noseSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.NOSE_SECTION__NOSE_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("NoseSectionProblemEntry"), new Object[] { noseSection }));
 			}
 			return false;
 		}
@@ -261,14 +253,14 @@ public class NoseSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(NoseSection noseSection) {
+	public static AllergyObservation getProblemEntry(NoseSection noseSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.NOSE_SECTION, ConsolPackage.Literals.NOSE_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.NOSE_SECTION, ConsolPackage.Literals.NOSE_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

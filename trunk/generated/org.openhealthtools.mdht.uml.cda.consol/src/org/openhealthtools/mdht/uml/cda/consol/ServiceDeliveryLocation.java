@@ -47,7 +47,8 @@ public interface ServiceDeliveryLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC'"
 	 * @generated
 	 */
-	boolean validateServiceDeliveryLocationHasParticipantRoleLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateServiceDeliveryLocationHasParticipantRoleLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,7 +61,8 @@ public interface ServiceDeliveryLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateServiceDeliveryLocationHasParticipantRoleCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateServiceDeliveryLocationHasParticipantRoleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +75,8 @@ public interface ServiceDeliveryLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
-	boolean validateServiceDeliveryLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateServiceDeliveryLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +102,8 @@ public interface ServiceDeliveryLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC'"
 	 * @generated
 	 */
-	boolean validateServiceDeliveryLocationHasPlayingEntityPlace(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateServiceDeliveryLocationHasPlayingEntityPlace(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

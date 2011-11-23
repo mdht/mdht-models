@@ -57,7 +57,8 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * @generated
 	 */
 	public boolean validateIntegumentarySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(this, diagnostics, context);
+		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +75,10 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegumentarySystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionProblemEntry(this, diagnostics, context);
+	public boolean validateIntegumentarySystemSectionProblemEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionProblemEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +96,7 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * @generated
 	 */
 	public IntegumentarySystemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //IntegumentarySystemSectionImpl
+} // IntegumentarySystemSectionImpl

@@ -69,7 +69,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,7 +115,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,7 +200,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -237,7 +240,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll( er : cda::EntryRelationship | (not er.act.oclIsKindOf(consol::PatientMedicalInstructions)) or ( er.inversionInd = true and er.act.oclIsKindOf(consol::PatientMedicalInstructions))  )'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasIntructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,7 +280,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.precondition.criterion.text->exists (t | t.reference.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDosePreconditionReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,7 +294,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->exists(er : cda::EntryRelationship | (not er.supply->isEmpty()) and er.inversionInd<>false )'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseHasSupplyEntryInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,7 +321,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseConditionalDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,7 +441,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationSeriesNumberObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -447,7 +455,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -460,7 +469,8 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)'"
 	 * @generated
 	 */
-	boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

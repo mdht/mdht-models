@@ -65,7 +65,7 @@ public class HealthcareProviderImpl extends Performer1Impl implements Healthcare
 	 * @generated
 	 */
 	public HealthcareProvider init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HealthcareProviderImpl
+} // HealthcareProviderImpl

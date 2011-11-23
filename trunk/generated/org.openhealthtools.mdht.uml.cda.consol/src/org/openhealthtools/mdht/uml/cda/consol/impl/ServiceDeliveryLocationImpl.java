@@ -55,8 +55,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRole(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleLocation(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasParticipantRoleLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleLocation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +77,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCode(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasParticipantRoleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +88,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCodeVocab(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCodeVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +99,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +110,10 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasPlayingEntityPlace(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityPlace(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationHasPlayingEntityPlace(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityPlace(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,7 +140,7 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * @generated
 	 */
 	public ServiceDeliveryLocation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ServiceDeliveryLocationImpl
+} // ServiceDeliveryLocationImpl

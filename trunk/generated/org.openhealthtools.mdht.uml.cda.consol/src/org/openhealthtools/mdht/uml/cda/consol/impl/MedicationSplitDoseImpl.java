@@ -53,8 +53,10 @@ public class MedicationSplitDoseImpl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSplitDoseOperations.validateMedicationSplitDoseSplitDosingSubstanceAdministration(this, diagnostics, context);
+	public boolean validateMedicationSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationSplitDoseOperations.validateMedicationSplitDoseSplitDosingSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +74,9 @@ public class MedicationSplitDoseImpl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationSplitDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationSplitDoseImpl
+} // MedicationSplitDoseImpl

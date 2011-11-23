@@ -55,7 +55,8 @@ public interface VitalSignsSectionEntriesOptional extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(consol::VitalSignsOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(consol::VitalSign)))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsSectionEntriesOptionalVitalSignEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsSectionEntriesOptionalVitalSignEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

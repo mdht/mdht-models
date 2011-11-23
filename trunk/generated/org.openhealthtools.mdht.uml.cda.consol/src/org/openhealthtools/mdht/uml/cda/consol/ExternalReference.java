@@ -60,7 +60,8 @@ public interface ExternalReference extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1'"
 	 * @generated
 	 */
-	boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +74,8 @@ public interface ExternalReference extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.id->isEmpty() )->size() = 0'"
 	 * @generated
 	 */
-	boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,7 +88,8 @@ public interface ExternalReference extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.text.oclIsUndefined()  )->size() = 0'"
 	 * @generated
 	 */
-	boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

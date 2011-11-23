@@ -88,26 +88,28 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(
+			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
 			try {
 				VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visibleImplantedMedicalDevicesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			visibleImplantedMedicalDevicesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionTemplateId"),
-						 new Object [] { visibleImplantedMedicalDevicesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionTemplateId"),
+					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
 			return false;
 		}
@@ -122,9 +124,9 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' invariant operation.
@@ -149,26 +151,28 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVisibleImplantedMedicalDevicesSectionCode(
+			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
 			try {
 				VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visibleImplantedMedicalDevicesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			visibleImplantedMedicalDevicesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionCode"),
-						 new Object [] { visibleImplantedMedicalDevicesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionCode"),
+					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
 			return false;
 		}
@@ -206,26 +210,28 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(
+			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
 			try {
 				VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visibleImplantedMedicalDevicesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			visibleImplantedMedicalDevicesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionProblemEntry"),
-						 new Object [] { visibleImplantedMedicalDevicesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionProblemEntry"),
+					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
 			return false;
 		}
@@ -261,14 +267,16 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection) {
+	public static AllergyObservation getProblemEntry(
+			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION, ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION,
+				ConsolPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

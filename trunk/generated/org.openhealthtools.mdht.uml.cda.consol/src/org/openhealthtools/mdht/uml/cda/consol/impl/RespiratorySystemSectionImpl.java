@@ -75,7 +75,8 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * @generated
 	 */
 	public boolean validateRespiratorySystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(this, diagnostics, context);
+		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +94,7 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * @generated
 	 */
 	public RespiratorySystemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //RespiratorySystemSectionImpl
+} // RespiratorySystemSectionImpl

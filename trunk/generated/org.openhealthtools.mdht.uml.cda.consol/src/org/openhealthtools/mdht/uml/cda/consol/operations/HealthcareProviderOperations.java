@@ -80,26 +80,25 @@ public class HealthcareProviderOperations extends ParticipationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTHCARE_PROVIDER);
 			try {
 				VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthcareProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthcareProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("HealthcareProviderTemplateId"),
-						 new Object [] { healthcareProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("HealthcareProviderTemplateId"),
+					new Object[] { healthcareProvider }));
 			}
 			return false;
 		}

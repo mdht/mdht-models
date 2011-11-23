@@ -56,8 +56,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActEntryRelationshipRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActEntryRelationshipRequired(this, diagnostics, context);
+	public boolean validateProblemConcernActEntryRelationshipRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActEntryRelationshipRequired(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +76,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActContainsProblemObservation(this, diagnostics, context);
+	public boolean validateProblemConcernActContainsProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActContainsProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +87,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActContainsAlertObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActContainsAlertObservation(this, diagnostics, context);
 	}
 
@@ -92,7 +97,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActContainsPatientAwareness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActContainsPatientAwareness(this, diagnostics, context);
 	}
 
@@ -101,7 +107,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActEffectiveTimeLowHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeLowHigh(this, diagnostics, context);
 	}
 
@@ -110,7 +117,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActHasRelatedObservations(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActHasRelatedObservations(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActHasRelatedObservations(this, diagnostics, context);
 	}
 
@@ -119,8 +127,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActRelatedObservationsTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActRelatedObservationsTypeCode(this, diagnostics, context);
+	public boolean validateProblemConcernActRelatedObservationsTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActRelatedObservationsTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +138,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasRelatedReferencesTypeCode(this, diagnostics, context);
+	public boolean validateProblemConcernActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActHasRelatedReferencesTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -155,7 +167,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActHasProviderTreatmentTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActHasProviderTreatmentTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActHasProviderTreatmentTime(this, diagnostics, context);
 	}
 
@@ -237,7 +250,7 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * @generated
 	 */
 	public ProblemConcernAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemConcernActImpl
+} // ProblemConcernActImpl

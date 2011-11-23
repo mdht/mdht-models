@@ -102,7 +102,7 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * @generated
 	 */
 	public PayersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PayersSectionImpl
+} // PayersSectionImpl

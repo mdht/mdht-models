@@ -55,8 +55,10 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +67,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * @generated
 	 */
 	public ProblemSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemSectionEntriesOptionalImpl
+} // ProblemSectionEntriesOptionalImpl

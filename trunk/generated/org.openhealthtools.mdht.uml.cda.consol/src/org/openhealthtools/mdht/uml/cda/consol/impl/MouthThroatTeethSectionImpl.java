@@ -93,7 +93,7 @@ public class MouthThroatTeethSectionImpl extends SectionImpl implements MouthThr
 	 * @generated
 	 */
 	public MouthThroatTeethSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MouthThroatTeethSectionImpl
+} // MouthThroatTeethSectionImpl

@@ -53,7 +53,8 @@ public interface ScanOriginalAuthor extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |\r\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

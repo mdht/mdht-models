@@ -60,7 +60,8 @@ public interface AdvanceDirectiveReference extends Reference {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.externalDocument.id->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

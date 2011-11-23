@@ -55,8 +55,10 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
+	public boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,8 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthoringDeviceCode(this, diagnostics, context);
 	}
 
@@ -82,7 +85,8 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScanningDeviceOperations.validateScanningDeviceHasDeviceManufacturerModelName(this, diagnostics, context);
 	}
 
@@ -100,8 +104,10 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
+	public boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,7 +125,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * @generated
 	 */
 	public ScanningDevice init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ScanningDeviceImpl
+} // ScanningDeviceImpl

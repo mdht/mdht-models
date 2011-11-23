@@ -53,8 +53,10 @@ public class MedicationTaperedDoseImpl extends MedicationActivityImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationTaperedDoseOperations.validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(this, diagnostics, context);
+	public boolean validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationTaperedDoseOperations.validateMedicationTaperedDoseTaperedDosingSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +74,9 @@ public class MedicationTaperedDoseImpl extends MedicationActivityImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationTaperedDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationTaperedDoseImpl
+} // MedicationTaperedDoseImpl

@@ -55,8 +55,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +66,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsMoodCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +77,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +88,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +99,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +111,7 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * @generated
 	 */
 	public MedicationFullfillmentInstructions init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationFullfillmentInstructionsImpl
+} // MedicationFullfillmentInstructionsImpl

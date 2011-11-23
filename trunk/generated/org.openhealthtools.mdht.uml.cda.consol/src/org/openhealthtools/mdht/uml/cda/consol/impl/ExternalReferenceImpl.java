@@ -73,8 +73,10 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(this, diagnostics, context);
+	public boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +84,10 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(this, diagnostics, context);
+	public boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +95,10 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(this, diagnostics, context);
+	public boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -146,7 +152,7 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * @generated
 	 */
 	public ExternalReference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ExternalReferenceImpl
+} // ExternalReferenceImpl

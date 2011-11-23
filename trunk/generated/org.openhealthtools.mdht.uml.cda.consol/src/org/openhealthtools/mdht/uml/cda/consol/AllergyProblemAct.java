@@ -153,7 +153,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er|er.typeCode <> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActRelatedObservationsTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActRelatedObservationsTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,7 +167,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +249,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  \r\nobs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActProductDetailParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActProductDetailParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,7 +265,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  \r\nobs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and \r\nprole.classCode=vocab::RoleClassRoot::MANU))))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActProductDetailParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActProductDetailParticipantRoleClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,7 +296,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  \r\nobs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and \r\nprole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActProductDetailPlayingEntityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActProductDetailPlayingEntityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -354,7 +359,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  \r\nobs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and \r\nprole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =\r\n\'2.16.840.1.113883.4.9\' or playe.code.codeSystem = \'2.16.840.1.113883.3.26.1.5\' or playe.code.codeSystem = \'2.16.840.1.113883.6.88\'))))))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActAllergyProductMedClassVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActAllergyProductMedClassVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -370,7 +376,8 @@ public interface AllergyProblemAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  \r\nobs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and \r\nprole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =\r\n\'2.16.840.1.113883.4.9\' or playe.code.codeSystem = \'2.16.840.1.113883.3.26.1.5\' or playe.code.codeSystem = \'2.16.840.1.113883.6.88\'))))))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActAllergyProductSpecificMedVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActAllergyProductSpecificMedVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

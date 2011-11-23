@@ -74,7 +74,7 @@ public class BreastSectionImpl extends SectionImpl implements BreastSection {
 	 * @generated
 	 */
 	public BreastSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //BreastSectionImpl
+} // BreastSectionImpl

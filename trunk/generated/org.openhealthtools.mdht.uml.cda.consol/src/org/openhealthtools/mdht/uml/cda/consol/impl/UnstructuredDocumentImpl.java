@@ -62,7 +62,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasOneRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentHasOneRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasOneRecordTarget(this, diagnostics, context);
 	}
 
@@ -71,7 +72,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentHasAssignedAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasAssignedAuthor(this, diagnostics, context);
 	}
 
@@ -89,8 +91,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasPatientRoleAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientRoleAddress(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasPatientRoleAddress(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientRoleAddress(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +111,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasPatientGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientGenderCode(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasPatientGenderCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientGenderCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +122,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasPatientBirthYear(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientBirthYear(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasPatientBirthYear(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientBirthYear(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +133,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasOriginalAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentHasOriginalAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasOriginalAuthor(this, diagnostics, context);
 	}
 
@@ -134,7 +143,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentHasScanningDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasScanningDevice(this, diagnostics, context);
 	}
 
@@ -143,7 +153,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasScanDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentHasScanDataEnterer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasScanDataEnterer(this, diagnostics, context);
 	}
 
@@ -152,8 +163,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +174,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -170,8 +185,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +205,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyBinaryText(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyBinaryText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -197,8 +216,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextMediaType(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextMediaType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -206,8 +227,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +247,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -242,8 +267,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentConfidentialityCode(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentConfidentialityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentConfidentialityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -306,8 +333,9 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //UnstructuredDocumentImpl
+} // UnstructuredDocumentImpl

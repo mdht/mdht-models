@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl implements ImmunizationMedicationInformation {
+public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl implements
+		ImmunizationMedicationInformation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,8 +56,10 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(this, diagnostics, context);
+	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +68,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * @generated
 	 */
 	public ImmunizationMedicationInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ImmunizationMedicationInformationImpl
+} // ImmunizationMedicationInformationImpl

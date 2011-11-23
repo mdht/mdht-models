@@ -82,26 +82,24 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInternalReferenceTemplateId(InternalReference internalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInternalReferenceTemplateId(InternalReference internalReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERNAL_REFERENCE);
 			try {
 				VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(internalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			internalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("InternalReferenceTemplateId"),
-						 new Object [] { internalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("InternalReferenceTemplateId"), new Object[] { internalReference }));
 			}
 			return false;
 		}
@@ -139,26 +137,24 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInternalReferenceId(InternalReference internalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInternalReferenceId(InternalReference internalReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERNAL_REFERENCE);
 			try {
 				VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(internalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			internalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_ID,
-						 ConsolPlugin.INSTANCE.getString("InternalReferenceId"),
-						 new Object [] { internalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_ID,
+					ConsolPlugin.INSTANCE.getString("InternalReferenceId"), new Object[] { internalReference }));
 			}
 			return false;
 		}
@@ -196,26 +192,24 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateInternalReferenceCode(InternalReference internalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateInternalReferenceCode(InternalReference internalReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERNAL_REFERENCE);
 			try {
 				VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(internalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			internalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_CODE,
-						 ConsolPlugin.INSTANCE.getString("InternalReferenceCode"),
-						 new Object [] { internalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_CODE,
+					ConsolPlugin.INSTANCE.getString("InternalReferenceCode"), new Object[] { internalReference }));
 			}
 			return false;
 		}

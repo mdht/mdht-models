@@ -64,8 +64,10 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationReferenceRangeRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationReferenceRangeRequired(this, diagnostics, context);
+	public boolean validateVitalSignObservationReferenceRangeRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignObservationOperations.validateVitalSignObservationReferenceRangeRequired(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +75,10 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationNoObservationRangeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationNoObservationRangeCode(this, diagnostics, context);
+	public boolean validateVitalSignObservationNoObservationRangeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignObservationOperations.validateVitalSignObservationNoObservationRangeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +86,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationInformationSource(this, diagnostics, context);
 	}
 
@@ -154,7 +159,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(this, diagnostics, context);
 	}
 
@@ -182,7 +188,7 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * @generated
 	 */
 	public VitalSignObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignObservationImpl
+} // VitalSignObservationImpl

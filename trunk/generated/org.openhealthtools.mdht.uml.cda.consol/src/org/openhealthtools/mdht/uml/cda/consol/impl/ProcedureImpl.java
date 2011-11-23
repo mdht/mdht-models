@@ -62,7 +62,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsolProcedurePerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsolProcedurePerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateConsolProcedurePerformerAssignedEntity(this, diagnostics, context);
 	}
 
@@ -99,7 +100,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * @generated
 	 */
 	public Procedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureImpl
+} // ProcedureImpl

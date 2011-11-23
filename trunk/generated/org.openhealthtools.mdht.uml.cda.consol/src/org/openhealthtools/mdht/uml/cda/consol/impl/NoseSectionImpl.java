@@ -93,7 +93,7 @@ public class NoseSectionImpl extends SectionImpl implements NoseSection {
 	 * @generated
 	 */
 	public NoseSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //NoseSectionImpl
+} // NoseSectionImpl

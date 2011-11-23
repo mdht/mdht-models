@@ -88,26 +88,25 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExtremitiesSectionTemplateId(ExtremitiesSection extremitiesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExtremitiesSectionTemplateId(ExtremitiesSection extremitiesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTREMITIES_SECTION);
 			try {
 				VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(extremitiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			extremitiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ExtremitiesSectionTemplateId"),
-						 new Object [] { extremitiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ExtremitiesSectionTemplateId"),
+					new Object[] { extremitiesSection }));
 			}
 			return false;
 		}
@@ -122,9 +121,9 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExtremitiesSectionCode(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Code</em>}' invariant operation.
@@ -149,26 +148,24 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExtremitiesSectionCode(ExtremitiesSection extremitiesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExtremitiesSectionCode(ExtremitiesSection extremitiesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTREMITIES_SECTION);
 			try {
 				VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(extremitiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			extremitiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ExtremitiesSectionCode"),
-						 new Object [] { extremitiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("ExtremitiesSectionCode"), new Object[] { extremitiesSection }));
 			}
 			return false;
 		}
@@ -206,26 +203,25 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExtremitiesSectionProblemEntry(ExtremitiesSection extremitiesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExtremitiesSectionProblemEntry(ExtremitiesSection extremitiesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTREMITIES_SECTION);
 			try {
 				VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(extremitiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			extremitiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("ExtremitiesSectionProblemEntry"),
-						 new Object [] { extremitiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("ExtremitiesSectionProblemEntry"),
+					new Object[] { extremitiesSection }));
 			}
 			return false;
 		}
@@ -261,14 +257,15 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergyObservation getProblemEntry(ExtremitiesSection extremitiesSection) {
+	public static AllergyObservation getProblemEntry(ExtremitiesSection extremitiesSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.EXTREMITIES_SECTION, ConsolPackage.Literals.EXTREMITIES_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.EXTREMITIES_SECTION,
+				ConsolPackage.Literals.EXTREMITIES_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

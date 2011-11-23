@@ -55,8 +55,10 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +67,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public EncountersSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncountersSectionEntriesOptionalImpl
+} // EncountersSectionEntriesOptionalImpl

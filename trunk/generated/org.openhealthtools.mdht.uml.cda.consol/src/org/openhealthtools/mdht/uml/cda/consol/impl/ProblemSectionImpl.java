@@ -101,7 +101,8 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
@@ -110,8 +111,9 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemSectionImpl
+} // ProblemSectionImpl

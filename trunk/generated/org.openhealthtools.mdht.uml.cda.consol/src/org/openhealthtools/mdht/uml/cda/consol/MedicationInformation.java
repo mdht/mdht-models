@@ -95,7 +95,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.manufacturedMaterial.code.originalText.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,7 +122,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturerOrganization->size() = 1'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMayHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMayHaveMaterialManufacturer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,7 +136,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->size() > 0 implies self.manufacturerOrganization->size() > 0'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationShouldHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationShouldHaveMaterialManufacturer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

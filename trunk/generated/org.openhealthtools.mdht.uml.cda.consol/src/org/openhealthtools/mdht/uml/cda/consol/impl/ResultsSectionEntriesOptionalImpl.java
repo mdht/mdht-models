@@ -55,8 +55,10 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +67,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public ResultsSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ResultsSectionEntriesOptionalImpl
+} // ResultsSectionEntriesOptionalImpl

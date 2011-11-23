@@ -71,7 +71,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryContainsPatientAwareness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryContainsPatientAwareness(this, diagnostics, context);
 	}
 
@@ -116,7 +117,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHasUnknownResolutionDate(this, diagnostics, context);
 	}
 
@@ -206,7 +208,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
 	}
 
@@ -215,7 +218,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
@@ -233,7 +237,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryHealthStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHealthStatusObservation(this, diagnostics, context);
 	}
 
@@ -306,7 +311,7 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * @generated
 	 */
 	public ConditionEntry init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConditionEntryImpl
+} // ConditionEntryImpl

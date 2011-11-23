@@ -93,7 +93,7 @@ public class VesselsSectionImpl extends SectionImpl implements VesselsSection {
 	 * @generated
 	 */
 	public VesselsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VesselsSectionImpl
+} // VesselsSectionImpl

@@ -58,7 +58,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservationCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationCodeValueSet(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationCodeValueSet(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +67,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationNoRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoRepeatNumber(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationNoRepeatNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoRepeatNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +78,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoInterpretationCode(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoInterpretationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +90,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservationNoMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoMethodCode(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoMethodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +99,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationNoTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoTargetSiteCode(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationNoTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationNoTargetSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -147,8 +155,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationEffectiveTime(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +175,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationSocialHistoryStatusObservation(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationSocialHistoryStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -174,8 +186,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationEpisodeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationEpisodeObservation(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationEpisodeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationEpisodeObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -202,7 +216,7 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public SocialHistoryObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SocialHistoryObservationImpl
+} // SocialHistoryObservationImpl

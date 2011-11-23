@@ -87,26 +87,24 @@ public class SupportGuardianOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSupportGuardianTemplateId(SupportGuardian supportGuardian, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSupportGuardianTemplateId(SupportGuardian supportGuardian,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUPPORT_GUARDIAN);
 			try {
 				VALIDATE_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supportGuardian)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supportGuardian)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SUPPORT_GUARDIAN__SUPPORT_GUARDIAN_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("SupportGuardianTemplateId"),
-						 new Object [] { supportGuardian }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SUPPORT_GUARDIAN__SUPPORT_GUARDIAN_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("SupportGuardianTemplateId"), new Object[] { supportGuardian }));
 			}
 			return false;
 		}

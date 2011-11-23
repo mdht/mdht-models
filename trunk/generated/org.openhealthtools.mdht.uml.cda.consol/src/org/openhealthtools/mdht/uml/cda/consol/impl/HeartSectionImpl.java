@@ -93,7 +93,7 @@ public class HeartSectionImpl extends SectionImpl implements HeartSection {
 	 * @generated
 	 */
 	public HeartSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HeartSectionImpl
+} // HeartSectionImpl

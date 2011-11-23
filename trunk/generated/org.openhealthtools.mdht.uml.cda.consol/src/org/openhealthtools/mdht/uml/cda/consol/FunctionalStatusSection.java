@@ -95,7 +95,8 @@ public interface FunctionalStatusSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,7 +135,8 @@ public interface FunctionalStatusSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +150,8 @@ public interface FunctionalStatusSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->\r\nforAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionResultStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionResultStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
