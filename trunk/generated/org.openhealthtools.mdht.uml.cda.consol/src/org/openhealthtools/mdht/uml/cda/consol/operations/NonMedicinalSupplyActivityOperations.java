@@ -26,8 +26,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 
@@ -76,12 +74,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SupplyOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Quantity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityMedicationStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Fullfillment Instructions</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#getMedicationStatusObservation() <em>Get Medication Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#getProductInstances() <em>Get Product Instances</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity#getMedicationFullfillmentInstructions() <em>Get Medication Fullfillment Instructions</em>}</li>
  * </ul>
  * </p>
  *
@@ -2023,65 +2017,6 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivityMedicationStatusObservation(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivityMedicationStatusObservation(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivityMedicationStatusObservation(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Status Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivityMedicationStatusObservation(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))
-	 * @param nonMedicinalSupplyActivity The receiving '<em><b>Non Medicinal Supply Activity</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateNonMedicinalSupplyActivityMedicationStatusObservation(
-			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
-			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityMedicationStatusObservation"),
-					new Object[] { nonMedicinalSupplyActivity }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivityProductInstance(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2140,111 +2075,6 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Fullfillment Instructions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Medication Fullfillment Instructions</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-	 * @param nonMedicinalSupplyActivity The receiving '<em><b>Non Medicinal Supply Activity</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(
-			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
-			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_MEDICATION_FULLFILLMENT_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityMedicationFullfillmentInstructions"),
-					new Object[] { nonMedicinalSupplyActivity }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getMedicationStatusObservation(NonMedicinalSupplyActivity) <em>Get Medication Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMedicationStatusObservation(NonMedicinalSupplyActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getMedicationStatusObservation(NonMedicinalSupplyActivity) <em>Get Medication Status Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMedicationStatusObservation(NonMedicinalSupplyActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)
-	 * @param nonMedicinalSupplyActivity The receiving '<em><b>Non Medicinal Supply Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static MedicationStatusObservation getMedicationStatusObservation(
-			NonMedicinalSupplyActivity nonMedicinalSupplyActivity) {
-		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(86));
-			try {
-				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY);
-		return (MedicationStatusObservation) query.evaluate(nonMedicinalSupplyActivity);
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getProductInstances(NonMedicinalSupplyActivity) <em>Get Product Instances</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2278,7 +2108,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(87));
+				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(84));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2289,52 +2119,6 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 		@SuppressWarnings("unchecked")
 		Collection<ProductInstance> result = (Collection<ProductInstance>) query.evaluate(nonMedicinalSupplyActivity);
 		return new BasicEList.UnmodifiableEList<ProductInstance>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getMedicationFullfillmentInstructions(NonMedicinalSupplyActivity) <em>Get Medication Fullfillment Instructions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMedicationFullfillmentInstructions(NonMedicinalSupplyActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(consol::MedicationFullfillmentInstructions)";
-
-	/**
-	 * The cached OCL query for the '{@link #getMedicationFullfillmentInstructions(NonMedicinalSupplyActivity) <em>Get Medication Fullfillment Instructions</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMedicationFullfillmentInstructions(NonMedicinalSupplyActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(consol::MedicationFullfillmentInstructions)
-	 * @param nonMedicinalSupplyActivity The receiving '<em><b>Non Medicinal Supply Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static MedicationFullfillmentInstructions getMedicationFullfillmentInstructions(
-			NonMedicinalSupplyActivity nonMedicinalSupplyActivity) {
-		if (GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(88));
-			try {
-				GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY);
-		return (MedicationFullfillmentInstructions) query.evaluate(nonMedicinalSupplyActivity);
 	}
 
 } // NonMedicinalSupplyActivityOperations

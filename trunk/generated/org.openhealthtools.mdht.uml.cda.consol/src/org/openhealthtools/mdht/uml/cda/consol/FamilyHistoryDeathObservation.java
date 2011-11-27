@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryDeathObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.42' constraints.validation.error='FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationHasSubjectPatientRelationship FamilyHistoryDeathObservationRelationshipValueCode FamilyHistoryDeathObservationHasRelatedSubjectCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationId FamilyHistoryDeathObservationStatusCode' constraints.validation.warning='FamilyHistoryDeathObservationRelatedSubjectCodeValueSet FamilyHistoryDeathObservationHasRelatedSubjectSubject FamilyHistoryDeathObservationHasGenderCode FamilyHistoryDeathObservationRelatedSubjectBirthTime FamilyHistoryDeathObservationEffectiveTime' moodCode='EVN' constraints.validation.info='FamilyHistoryDeathObservationAgeObservation FamilyHistoryDeathObservationProblemStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.42' constraints.validation.error='FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationHasSubjectPatientRelationship FamilyHistoryDeathObservationRelationshipValueCode FamilyHistoryDeathObservationHasRelatedSubjectCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationId FamilyHistoryDeathObservationStatusCode' constraints.validation.warning='FamilyHistoryDeathObservationRelatedSubjectCodeValueSet FamilyHistoryDeathObservationHasRelatedSubjectSubject FamilyHistoryDeathObservationHasGenderCode FamilyHistoryDeathObservationRelatedSubjectBirthTime FamilyHistoryDeathObservationEffectiveTime' constraints.validation.info='FamilyHistoryDeathObservationProblemStatusObservation' moodCode='EVN'"
  * @generated
  */
 public interface FamilyHistoryDeathObservation extends Observation {
@@ -191,19 +191,6 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
-	 * @generated
-	 */
-	boolean validateFamilyHistoryDeathObservationAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyStatusObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -213,18 +200,6 @@ public interface FamilyHistoryDeathObservation extends Observation {
 	 */
 	boolean validateFamilyHistoryDeathObservationProblemStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)'"
-	 * @generated
-	 */
-	AgeObservation getAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

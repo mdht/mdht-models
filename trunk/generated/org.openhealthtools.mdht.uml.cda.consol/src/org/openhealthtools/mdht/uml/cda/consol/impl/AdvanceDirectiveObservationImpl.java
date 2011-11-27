@@ -13,7 +13,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservationOperations;
@@ -274,26 +273,6 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTargetSiteCode(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveStatusObservation getAdvanceDirectiveStatusObservation() {
-		return AdvanceDirectiveObservationOperations.getAdvanceDirectiveStatusObservation(this);
 	}
 
 	/**

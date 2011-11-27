@@ -6,14 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
-import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
@@ -26,9 +23,9 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.consol.Procedure;
-import org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -45,12 +42,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionExternalReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section External Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureEntryProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Entry Procedure Activity Procedure</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getnullProcedureActivities() <em>Getnull Procedure Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getnullExternalReference() <em>Getnull External Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getnullProcedureEntryProcedureActivityProcedures() <em>Getnull Procedure Entry Procedure Activity Procedures</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getProcedureActivityAct() <em>Get Procedure Activity Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getProcedureActivityProcedure() <em>Get Procedure Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getProcedureAcivityObservation() <em>Get Procedure Acivity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -294,54 +290,54 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProceduresSectionProcedureActivity(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateProceduresSectionProcedureActivityAct(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Act</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionProcedureActivity(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProceduresSectionProcedureActivityAct(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::Procedure))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureActivityAct))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProceduresSectionProcedureActivity(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateProceduresSectionProcedureActivityAct(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Act</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionProcedureActivity(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProceduresSectionProcedureActivityAct(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::Procedure))
+	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureActivityAct))
 	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProceduresSectionProcedureActivity(ProceduresSection proceduresSection,
+	public static boolean validateProceduresSectionProcedureActivityAct(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
-				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			proceduresSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivity"),
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityAct"),
 					new Object[] { proceduresSection }));
 			}
 			return false;
@@ -350,112 +346,55 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProceduresSectionExternalReference(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section External Reference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Procedure</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionExternalReference(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ExternalReference))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProceduresSectionExternalReference(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section External Reference</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Procedure</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionExternalReference(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ExternalReference))
+	 * self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))
 	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProceduresSectionExternalReference(ProceduresSection proceduresSection,
+	public static boolean validateProceduresSectionProcedureActivityProcedure(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
 			try {
-				VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			proceduresSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_EXTERNAL_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionExternalReference"),
-					new Object[] { proceduresSection }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProceduresSectionProcedureEntryProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Entry Procedure Activity Procedure</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionProcedureEntryProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureEntryProcedureActivityProcedure))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProceduresSectionProcedureEntryProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Entry Procedure Activity Procedure</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProceduresSectionProcedureEntryProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureEntryProcedureActivityProcedure))
-	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateProceduresSectionProcedureEntryProcedureActivityProcedure(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
-			try {
-				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			proceduresSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureEntryProcedureActivityProcedure"),
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityProcedure"),
 					new Object[] { proceduresSection }));
 			}
 			return false;
@@ -464,144 +403,138 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullProcedureActivities(ProceduresSection) <em>Getnull Procedure Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProcedureActivityAct(ProceduresSection) <em>Get Procedure Activity Act</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullProcedureActivities(ProceduresSection)
+	 * @see #getProcedureActivityAct(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_PROCEDURE_ACTIVITIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::Procedure)).oclAsType(consol::Procedure)";
+	protected static final String GET_PROCEDURE_ACTIVITY_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct))->asSequence()->first().oclAsType(consol::ProcedureActivityAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullProcedureActivities(ProceduresSection) <em>Getnull Procedure Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProcedureActivityAct(ProceduresSection) <em>Get Procedure Activity Act</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullProcedureActivities(ProceduresSection)
+	 * @see #getProcedureActivityAct(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_ACT__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::Procedure)).oclAsType(consol::Procedure)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct))->asSequence()->first().oclAsType(consol::ProcedureActivityAct)
 	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<Procedure> getnullProcedureActivities(ProceduresSection proceduresSection) {
-		if (GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
+	public static ProcedureActivityAct getProcedureActivityAct(ProceduresSection proceduresSection) {
+		if (GET_PROCEDURE_ACTIVITY_ACT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION,
+				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(63));
+			try {
+				GET_PROCEDURE_ACTIVITY_ACT__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_ACT__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_ACT__EOCL_QRY);
+		return (ProcedureActivityAct) query.evaluate(proceduresSection);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProcedureActivityProcedure(ProceduresSection) <em>Get Procedure Activity Procedure</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureActivityProcedure(ProceduresSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->asSequence()->first().oclAsType(consol::ProcedureActivityProcedure)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProcedureActivityProcedure(ProceduresSection) <em>Get Procedure Activity Procedure</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureActivityProcedure(ProceduresSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->asSequence()->first().oclAsType(consol::ProcedureActivityProcedure)
+	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static ProcedureActivityProcedure getProcedureActivityProcedure(ProceduresSection proceduresSection) {
+		if (GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURES_SECTION,
 				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(64));
 			try {
-				GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GETNULL_PROCEDURE_ACTIVITIES__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_PROCEDURE_ACTIVITIES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<Procedure> result = (Collection<Procedure>) query.evaluate(proceduresSection);
-		return new BasicEList.UnmodifiableEList<Procedure>(result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE__EOCL_QRY);
+		return (ProcedureActivityProcedure) query.evaluate(proceduresSection);
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullExternalReference(ProceduresSection) <em>Getnull External Reference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProcedureAcivityObservation(ProceduresSection) <em>Get Procedure Acivity Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullExternalReference(ProceduresSection)
+	 * @see #getProcedureAcivityObservation(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalReference))->asSequence()->first().oclAsType(consol::ExternalReference)";
+	protected static final String GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureAcivityObservation))->asSequence()->first().oclAsType(consol::ProcedureAcivityObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullExternalReference(ProceduresSection) <em>Getnull External Reference</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProcedureAcivityObservation(ProceduresSection) <em>Get Procedure Acivity Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullExternalReference(ProceduresSection)
+	 * @see #getProcedureAcivityObservation(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_EXTERNAL_REFERENCE__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalReference))->asSequence()->first().oclAsType(consol::ExternalReference)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureAcivityObservation))->asSequence()->first().oclAsType(consol::ProcedureAcivityObservation)
 	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ExternalReference getnullExternalReference(ProceduresSection proceduresSection) {
-		if (GETNULL_EXTERNAL_REFERENCE__EOCL_QRY == null) {
+	public static ProcedureAcivityObservation getProcedureAcivityObservation(ProceduresSection proceduresSection) {
+		if (GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURES_SECTION,
 				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(65));
 			try {
-				GETNULL_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GETNULL_EXTERNAL_REFERENCE__EOCL_EXP);
+				GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_EXTERNAL_REFERENCE__EOCL_QRY);
-		return (ExternalReference) query.evaluate(proceduresSection);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getnullProcedureEntryProcedureActivityProcedures(ProceduresSection) <em>Getnull Procedure Entry Procedure Activity Procedures</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getnullProcedureEntryProcedureActivityProcedures(ProceduresSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureEntryProcedureActivityProcedure)).oclAsType(consol::ProcedureEntryProcedureActivityProcedure)";
-
-	/**
-	 * The cached OCL query for the '{@link #getnullProcedureEntryProcedureActivityProcedures(ProceduresSection) <em>Getnull Procedure Entry Procedure Activity Procedures</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getnullProcedureEntryProcedureActivityProcedures(ProceduresSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureEntryProcedureActivityProcedure)).oclAsType(consol::ProcedureEntryProcedureActivityProcedure)
-	 * @param proceduresSection The receiving '<em><b>Procedures Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static EList<ProcedureEntryProcedureActivityProcedure> getnullProcedureEntryProcedureActivityProcedures(
-			ProceduresSection proceduresSection) {
-		if (GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURES_SECTION,
-				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(66));
-			try {
-				GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProcedureEntryProcedureActivityProcedure> result = (Collection<ProcedureEntryProcedureActivityProcedure>) query.evaluate(proceduresSection);
-		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(
-			result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACIVITY_OBSERVATION__EOCL_QRY);
+		return (ProcedureAcivityObservation) query.evaluate(proceduresSection);
 	}
 
 	/**

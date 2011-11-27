@@ -3366,295 +3366,6 @@ public interface ConsolPackage extends EPackage {
 	int NON_MEDICINAL_SUPPLY_ACTIVITY_FEATURE_COUNT = CDAPackage.SUPPLY_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl <em>Medication Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationStatusObservation()
-	 * @generated
-	 */
-	int MEDICATION_STATUS_OBSERVATION = 12;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Medication Status Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_STATUS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProductInstanceImpl <em>Product Instance</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3662,7 +3373,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProductInstance()
 	 * @generated
 	 */
-	int PRODUCT_INSTANCE = 13;
+	int PRODUCT_INSTANCE = 12;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3782,232 +3493,6 @@ public interface ConsolPackage extends EPackage {
 	int PRODUCT_INSTANCE_FEATURE_COUNT = CDAPackage.PARTICIPANT_ROLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationFullfillmentInstructions()
-	 * @generated
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS = 14;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ID = CDAPackage.ACT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CODE = CDAPackage.ACT__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEXT = CDAPackage.ACT__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SUBJECT = CDAPackage.ACT__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PERFORMER = CDAPackage.ACT__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__AUTHOR = CDAPackage.ACT__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__INFORMANT = CDAPackage.ACT__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REFERENCE = CDAPackage.ACT__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Medication Fullfillment Instructions</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_FULLFILLMENT_INSTRUCTIONS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsImpl <em>Instructions</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4015,7 +3500,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInstructions()
 	 * @generated
 	 */
-	int INSTRUCTIONS = 15;
+	int INSTRUCTIONS = 13;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4241,7 +3726,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getIndication()
 	 * @generated
 	 */
-	int INDICATION = 16;
+	int INDICATION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4530,7 +4015,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDrugVehicle()
 	 * @generated
 	 */
-	int DRUG_VEHICLE = 17;
+	int DRUG_VEHICLE = 15;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4657,7 +4142,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationSeriesNumberObservation()
 	 * @generated
 	 */
-	int MEDICATION_SERIES_NUMBER_OBSERVATION = 18;
+	int MEDICATION_SERIES_NUMBER_OBSERVATION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4939,6 +4424,295 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_SERIES_NUMBER_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl <em>Medication Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationStatusObservation()
+	 * @generated
+	 */
+	int MEDICATION_STATUS_OBSERVATION = 17;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Medication Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InternalReferenceImpl <em>Internal Reference</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4946,7 +4720,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInternalReference()
 	 * @generated
 	 */
-	int INTERNAL_REFERENCE = 19;
+	int INTERNAL_REFERENCE = 18;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5172,7 +4946,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationType()
 	 * @generated
 	 */
-	int MEDICATION_TYPE = 20;
+	int MEDICATION_TYPE = 19;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5452,6 +5226,232 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_TYPE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationFullfillmentInstructions()
+	 * @generated
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS = 20;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Medication Fullfillment Instructions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernActImpl <em>Problem Concern Act</em>}' class.
@@ -8809,14 +8809,14 @@ public interface ConsolPackage extends EPackage {
 	int PROCEDURES_SECTION_FEATURE_COUNT = PROCEDURES_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl <em>Procedure</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityActImpl <em>Procedure Activity Act</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedure()
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityActImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityAct()
 	 * @generated
 	 */
-	int PROCEDURE = 37;
+	int PROCEDURE_ACTIVITY_ACT = 37;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8825,7 +8825,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
+	int PROCEDURE_ACTIVITY_ACT__REALM_CODE = CDAPackage.ACT__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -8834,7 +8834,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
+	int PROCEDURE_ACTIVITY_ACT__TYPE_ID = CDAPackage.ACT__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -8843,7 +8843,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
+	int PROCEDURE_ACTIVITY_ACT__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -8852,7 +8852,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__ID = CDAPackage.PROCEDURE__ID;
+	int PROCEDURE_ACTIVITY_ACT__ID = CDAPackage.ACT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8861,7 +8861,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__CODE = CDAPackage.PROCEDURE__CODE;
+	int PROCEDURE_ACTIVITY_ACT__CODE = CDAPackage.ACT__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8870,7 +8870,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TEXT = CDAPackage.PROCEDURE__TEXT;
+	int PROCEDURE_ACTIVITY_ACT__TEXT = CDAPackage.ACT__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -8879,7 +8879,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
+	int PROCEDURE_ACTIVITY_ACT__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -8888,7 +8888,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
+	int PROCEDURE_ACTIVITY_ACT__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -8897,7 +8897,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
+	int PROCEDURE_ACTIVITY_ACT__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -8906,7 +8906,233 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
+	int PROCEDURE_ACTIVITY_ACT__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Activity Act</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl <em>Procedure Activity Procedure</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityProcedure()
+	 * @generated
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE = 38;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__ID = CDAPackage.PROCEDURE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__CODE = CDAPackage.PROCEDURE__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__TEXT = CDAPackage.PROCEDURE__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -8915,7 +9141,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
@@ -8924,7 +9150,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -8933,7 +9159,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -8942,7 +9168,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
+	int PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -8951,7 +9177,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
+	int PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -8960,7 +9186,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
+	int PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -8969,7 +9195,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
+	int PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -8978,7 +9204,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
+	int PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -8987,7 +9213,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
+	int PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -8996,7 +9222,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
+	int PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -9005,7 +9231,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -9014,7 +9240,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+	int PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9023,7 +9249,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
+	int PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9032,7 +9258,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9041,7 +9267,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
+	int PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -9050,495 +9276,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
+	int PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
 
 	/**
-	 * The number of structural features of the '<em>Procedure</em>' class.
+	 * The number of structural features of the '<em>Procedure Activity Procedure</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalReference()
-	 * @generated
-	 */
-	int EXTERNAL_REFERENCE = 38;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__ID = CDAPackage.ACT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__CODE = CDAPackage.ACT__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>External Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureEntryProcedureActivityProcedureImpl <em>Procedure Entry Procedure Activity Procedure</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureEntryProcedureActivityProcedureImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureEntryProcedureActivityProcedure()
-	 * @generated
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 39;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ID = CDAPackage.PROCEDURE__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CODE = CDAPackage.PROCEDURE__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEXT = CDAPackage.PROCEDURE__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Procedure Entry Procedure Activity Procedure</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
+	int PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationActivityImpl <em>Immunization Activity</em>}' class.
@@ -9548,7 +9295,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationActivity()
 	 * @generated
 	 */
-	int IMMUNIZATION_ACTIVITY = 40;
+	int IMMUNIZATION_ACTIVITY = 39;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9837,7 +9584,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationRefusalReason()
 	 * @generated
 	 */
-	int IMMUNIZATION_REFUSAL_REASON = 41;
+	int IMMUNIZATION_REFUSAL_REASON = 40;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10117,6 +9864,295 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMMUNIZATION_REFUSAL_REASON_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureAcivityObservationImpl <em>Procedure Acivity Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureAcivityObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureAcivityObservation()
+	 * @generated
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION = 41;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Acivity Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACIVITY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsSectionEntriesOptionalImpl <em>Vital Signs Section Entries Optional</em>}' class.
@@ -11719,295 +11755,6 @@ public interface ConsolPackage extends EPackage {
 	int SOCIAL_HISTORY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryStatusObservation()
-	 * @generated
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION = 49;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Social History Status Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PregnancyObservationImpl <em>Pregnancy Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12015,7 +11762,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPregnancyObservation()
 	 * @generated
 	 */
-	int PREGNANCY_OBSERVATION = 50;
+	int PREGNANCY_OBSERVATION = 49;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12304,7 +12051,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultsSectionEntriesOptional()
 	 * @generated
 	 */
-	int RESULTS_SECTION_ENTRIES_OPTIONAL = 52;
+	int RESULTS_SECTION_ENTRIES_OPTIONAL = 51;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12485,7 +12232,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultsSection()
 	 * @generated
 	 */
-	int RESULTS_SECTION = 51;
+	int RESULTS_SECTION = 50;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12666,7 +12413,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultOrganizer()
 	 * @generated
 	 */
-	int RESULT_ORGANIZER = 53;
+	int RESULT_ORGANIZER = 52;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12856,7 +12603,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultObservation()
 	 * @generated
 	 */
-	int RESULT_OBSERVATION = 54;
+	int RESULT_OBSERVATION = 53;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13145,7 +12892,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicalEquipmentSection()
 	 * @generated
 	 */
-	int MEDICAL_EQUIPMENT_SECTION = 55;
+	int MEDICAL_EQUIPMENT_SECTION = 54;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13326,7 +13073,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFunctionalStatusSection()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_SECTION = 56;
+	int FUNCTIONAL_STATUS_SECTION = 55;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13507,7 +13254,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemSectionEntriesOptional()
 	 * @generated
 	 */
-	int PROBLEM_SECTION_ENTRIES_OPTIONAL = 58;
+	int PROBLEM_SECTION_ENTRIES_OPTIONAL = 57;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13688,7 +13435,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemSection()
 	 * @generated
 	 */
-	int PROBLEM_SECTION = 57;
+	int PROBLEM_SECTION = 56;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13860,6 +13607,295 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROBLEM_SECTION_FEATURE_COUNT = PROBLEM_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryStatusObservation()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION = 58;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Social History Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PurposeSectionImpl <em>Purpose Section</em>}' class.
@@ -14739,6 +14775,106 @@ public interface ConsolPackage extends EPackage {
 	int ADVANCE_DIRECTIVE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveVerificationImpl <em>Advance Directive Verification</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveVerificationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectiveVerification()
+	 * @generated
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION = 63;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__REALM_CODE = CDAPackage.PARTICIPANT2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__TYPE_ID = CDAPackage.PARTICIPANT2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__TEMPLATE_ID = CDAPackage.PARTICIPANT2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__TIME = CDAPackage.PARTICIPANT2__TIME;
+
+	/**
+	 * The feature id for the '<em><b>Awareness Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__AWARENESS_CODE = CDAPackage.PARTICIPANT2__AWARENESS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Participant Role</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__PARTICIPANT_ROLE = CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__NULL_FLAVOR = CDAPackage.PARTICIPANT2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__TYPE_CODE = CDAPackage.PARTICIPANT2__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__CONTEXT_CONTROL_CODE = CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directive Verification</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION_FEATURE_COUNT = CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveStatusObservationImpl <em>Advance Directive Status Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14746,7 +14882,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectiveStatusObservation()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION = 63;
+	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION = 64;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15026,106 +15162,6 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveVerificationImpl <em>Advance Directive Verification</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveVerificationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectiveVerification()
-	 * @generated
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION = 64;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__REALM_CODE = CDAPackage.PARTICIPANT2__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__TYPE_ID = CDAPackage.PARTICIPANT2__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__TEMPLATE_ID = CDAPackage.PARTICIPANT2__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__TIME = CDAPackage.PARTICIPANT2__TIME;
-
-	/**
-	 * The feature id for the '<em><b>Awareness Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__AWARENESS_CODE = CDAPackage.PARTICIPANT2__AWARENESS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Participant Role</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__PARTICIPANT_ROLE = CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__NULL_FLAVOR = CDAPackage.PARTICIPANT2__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__TYPE_CODE = CDAPackage.PARTICIPANT2__TYPE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION__CONTEXT_CONTROL_CODE = CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Advance Directive Verification</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION_FEATURE_COUNT = CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveReferenceImpl <em>Advance Directive Reference</em>}' class.
@@ -18358,6 +18394,259 @@ public interface ConsolPackage extends EPackage {
 	int PLAN_OF_CARE_ACTIVITY_SUPPLY_FEATURE_COUNT = CDAPackage.SUPPLY_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl <em>Procedure</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedure()
+	 * @generated
+	 */
+	int PROCEDURE = 82;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__ID = CDAPackage.PROCEDURE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__CODE = CDAPackage.PROCEDURE__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__TEXT = CDAPackage.PROCEDURE__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18365,7 +18654,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPregnancyHistorySection()
 	 * @generated
 	 */
-	int PREGNANCY_HISTORY_SECTION = 82;
+	int PREGNANCY_HISTORY_SECTION = 83;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18539,6 +18828,232 @@ public interface ConsolPackage extends EPackage {
 	int PREGNANCY_HISTORY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalReference()
+	 * @generated
+	 */
+	int EXTERNAL_REFERENCE = 84;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>External Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SupportImpl <em>Support</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18546,7 +19061,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSupport()
 	 * @generated
 	 */
-	int SUPPORT = 83;
+	int SUPPORT = 85;
 
 	/**
 	 * The number of structural features of the '<em>Support</em>' class.
@@ -18565,7 +19080,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsSection()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION = 84;
+	int VITAL_SIGNS_SECTION = 86;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18746,7 +19261,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsOrganizer()
 	 * @generated
 	 */
-	int VITAL_SIGNS_ORGANIZER = 85;
+	int VITAL_SIGNS_ORGANIZER = 87;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18936,7 +19451,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignObservation()
 	 * @generated
 	 */
-	int VITAL_SIGN_OBSERVATION = 86;
+	int VITAL_SIGN_OBSERVATION = 88;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19225,7 +19740,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDiagnosticResultsSection()
 	 * @generated
 	 */
-	int DIAGNOSTIC_RESULTS_SECTION = 87;
+	int DIAGNOSTIC_RESULTS_SECTION = 89;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19406,7 +19921,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryOfPastIllnessSection()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION = 88;
+	int HISTORY_OF_PAST_ILLNESS_SECTION = 90;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19587,7 +20102,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getChiefComplaintSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_SECTION = 89;
+	int CHIEF_COMPLAINT_SECTION = 91;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19768,7 +20283,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 90;
+	int REASON_FOR_REFERRAL_SECTION = 92;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19949,7 +20464,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryOfPresentIllness()
 	 * @generated
 	 */
-	int HISTORY_OF_PRESENT_ILLNESS = 91;
+	int HISTORY_OF_PRESENT_ILLNESS = 93;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20130,7 +20645,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 92;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 94;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20311,7 +20826,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIAGNOSIS_SECTION = 93;
+	int DISCHARGE_DIAGNOSIS_SECTION = 95;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20492,7 +21007,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedicationHistorySection()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION = 94;
+	int ADMISSION_MEDICATION_HISTORY_SECTION = 96;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20673,7 +21188,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 95;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 97;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20854,7 +21369,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 96;
+	int MEDICATIONS_ADMINISTERED_SECTION = 98;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21035,7 +21550,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 97;
+	int PHYSICAL_EXAM_SECTION = 99;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21216,7 +21731,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGeneralAppearanceSection()
 	 * @generated
 	 */
-	int GENERAL_APPEARANCE_SECTION = 98;
+	int GENERAL_APPEARANCE_SECTION = 100;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21397,7 +21912,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVisibleImplantedMedicalDevicesSection()
 	 * @generated
 	 */
-	int VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION = 99;
+	int VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION = 101;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21578,7 +22093,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getIntegumentarySystemSection()
 	 * @generated
 	 */
-	int INTEGUMENTARY_SYSTEM_SECTION = 100;
+	int INTEGUMENTARY_SYSTEM_SECTION = 102;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21759,7 +22274,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHeadSection()
 	 * @generated
 	 */
-	int HEAD_SECTION = 101;
+	int HEAD_SECTION = 103;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21940,7 +22455,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEyesSection()
 	 * @generated
 	 */
-	int EYES_SECTION = 102;
+	int EYES_SECTION = 104;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22121,7 +22636,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEarsNoseMouthThroatSection()
 	 * @generated
 	 */
-	int EARS_NOSE_MOUTH_THROAT_SECTION = 103;
+	int EARS_NOSE_MOUTH_THROAT_SECTION = 105;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22302,7 +22817,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEarsSection()
 	 * @generated
 	 */
-	int EARS_SECTION = 104;
+	int EARS_SECTION = 106;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22483,7 +22998,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNoseSection()
 	 * @generated
 	 */
-	int NOSE_SECTION = 105;
+	int NOSE_SECTION = 107;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22664,7 +23179,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMouthThroatTeethSection()
 	 * @generated
 	 */
-	int MOUTH_THROAT_TEETH_SECTION = 106;
+	int MOUTH_THROAT_TEETH_SECTION = 108;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22845,7 +23360,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNeckSection()
 	 * @generated
 	 */
-	int NECK_SECTION = 107;
+	int NECK_SECTION = 109;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23026,7 +23541,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEndocrineSystemSection()
 	 * @generated
 	 */
-	int ENDOCRINE_SYSTEM_SECTION = 108;
+	int ENDOCRINE_SYSTEM_SECTION = 110;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23207,7 +23722,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getThoraxLungsSection()
 	 * @generated
 	 */
-	int THORAX_LUNGS_SECTION = 109;
+	int THORAX_LUNGS_SECTION = 111;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23388,7 +23903,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getChestWallSection()
 	 * @generated
 	 */
-	int CHEST_WALL_SECTION = 110;
+	int CHEST_WALL_SECTION = 112;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23569,7 +24084,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getBreastSection()
 	 * @generated
 	 */
-	int BREAST_SECTION = 111;
+	int BREAST_SECTION = 113;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23750,7 +24265,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHeartSection()
 	 * @generated
 	 */
-	int HEART_SECTION = 112;
+	int HEART_SECTION = 114;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23931,7 +24446,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getRespiratorySystemSection()
 	 * @generated
 	 */
-	int RESPIRATORY_SYSTEM_SECTION = 113;
+	int RESPIRATORY_SYSTEM_SECTION = 115;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24112,7 +24627,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAbdomenSection()
 	 * @generated
 	 */
-	int ABDOMEN_SECTION = 114;
+	int ABDOMEN_SECTION = 116;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24293,7 +24808,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getLymphaticSection()
 	 * @generated
 	 */
-	int LYMPHATIC_SECTION = 115;
+	int LYMPHATIC_SECTION = 117;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24474,7 +24989,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVesselsSection()
 	 * @generated
 	 */
-	int VESSELS_SECTION = 116;
+	int VESSELS_SECTION = 118;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24655,7 +25170,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMusculoskeletalSystemSection()
 	 * @generated
 	 */
-	int MUSCULOSKELETAL_SYSTEM_SECTION = 117;
+	int MUSCULOSKELETAL_SYSTEM_SECTION = 119;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24836,7 +25351,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getNeurologicSystemSection()
 	 * @generated
 	 */
-	int NEUROLOGIC_SYSTEM_SECTION = 118;
+	int NEUROLOGIC_SYSTEM_SECTION = 120;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25017,7 +25532,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGenitaliaSection()
 	 * @generated
 	 */
-	int GENITALIA_SECTION = 119;
+	int GENITALIA_SECTION = 121;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25198,7 +25713,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getRectumSection()
 	 * @generated
 	 */
-	int RECTUM_SECTION = 120;
+	int RECTUM_SECTION = 122;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25379,7 +25894,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExtremitiesSection()
 	 * @generated
 	 */
-	int EXTREMITIES_SECTION = 121;
+	int EXTREMITIES_SECTION = 123;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25560,7 +26075,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 122;
+	int REVIEW_OF_SYSTEMS_SECTION = 124;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25741,7 +26256,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 123;
+	int HOSPITAL_COURSE_SECTION = 125;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25922,7 +26437,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 124;
+	int ASSESSMENT_AND_PLAN_SECTION = 126;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26103,7 +26618,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConditionEntry()
 	 * @generated
 	 */
-	int CONDITION_ENTRY = 125;
+	int CONDITION_ENTRY = 127;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26392,7 +26907,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getLanguageSpoken()
 	 * @generated
 	 */
-	int LANGUAGE_SPOKEN = 126;
+	int LANGUAGE_SPOKEN = 128;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26483,7 +26998,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHealthcareProvider()
 	 * @generated
 	 */
-	int HEALTHCARE_PROVIDER = 127;
+	int HEALTHCARE_PROVIDER = 129;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26574,7 +27089,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationNormalDose()
 	 * @generated
 	 */
-	int MEDICATION_NORMAL_DOSE = 128;
+	int MEDICATION_NORMAL_DOSE = 130;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26863,7 +27378,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationSplitDose()
 	 * @generated
 	 */
-	int MEDICATION_SPLIT_DOSE = 129;
+	int MEDICATION_SPLIT_DOSE = 131;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27152,7 +27667,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationTaperedDose()
 	 * @generated
 	 */
-	int MEDICATION_TAPERED_DOSE = 130;
+	int MEDICATION_TAPERED_DOSE = 132;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27441,7 +27956,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationConditionalDose()
 	 * @generated
 	 */
-	int MEDICATION_CONDITIONAL_DOSE = 131;
+	int MEDICATION_CONDITIONAL_DOSE = 133;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27730,7 +28245,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationCombinationMedication()
 	 * @generated
 	 */
-	int MEDICATION_COMBINATION_MEDICATION = 132;
+	int MEDICATION_COMBINATION_MEDICATION = 134;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28019,7 +28534,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSupportGuardian()
 	 * @generated
 	 */
-	int SUPPORT_GUARDIAN = 133;
+	int SUPPORT_GUARDIAN = 135;
 
 	/**
 	 * The number of structural features of the '<em>Support Guardian</em>' class.
@@ -28038,7 +28553,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSupportParticipant()
 	 * @generated
 	 */
-	int SUPPORT_PARTICIPANT = 134;
+	int SUPPORT_PARTICIPANT = 136;
 
 	/**
 	 * The number of structural features of the '<em>Support Participant</em>' class.
@@ -28057,7 +28572,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_DOCUMENT = 135;
+	int UNSTRUCTURED_DOCUMENT = 137;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28346,7 +28861,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanOriginalAuthor()
 	 * @generated
 	 */
-	int SCAN_ORIGINAL_AUTHOR = 136;
+	int SCAN_ORIGINAL_AUTHOR = 138;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28446,7 +28961,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanningDevice()
 	 * @generated
 	 */
-	int SCANNING_DEVICE = 137;
+	int SCANNING_DEVICE = 139;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28546,7 +29061,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanDataEnterer()
 	 * @generated
 	 */
-	int SCAN_DATA_ENTERER = 138;
+	int SCAN_DATA_ENTERER = 140;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28637,7 +29152,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationInformation()
 	 * @generated
 	 */
-	int MEDICATION_INFORMATION = 139;
+	int MEDICATION_INFORMATION = 141;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28737,7 +29252,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredOrScannedDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 140;
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 142;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -29026,7 +29541,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReferralSummary()
 	 * @generated
 	 */
-	int REFERRAL_SUMMARY = 141;
+	int REFERRAL_SUMMARY = 143;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -29315,7 +29830,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY = 142;
+	int DISCHARGE_SUMMARY = 144;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -29604,7 +30119,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeDiet()
 	 * @generated
 	 */
-	int DISCHARGE_DIET = 143;
+	int DISCHARGE_DIET = 145;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -29785,7 +30300,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationDispense()
 	 * @generated
 	 */
-	int MEDICATION_DISPENSE = 144;
+	int MEDICATION_DISPENSE = 146;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -30038,7 +30553,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreconditionForSubstanceAdministration()
 	 * @generated
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION = 145;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION = 147;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -30111,7 +30626,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationMedicationInformation()
 	 * @generated
 	 */
-	int IMMUNIZATION_MEDICATION_INFORMATION = 146;
+	int IMMUNIZATION_MEDICATION_INFORMATION = 148;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -30324,16 +30839,6 @@ public interface ConsolPackage extends EPackage {
 	EClass getNonMedicinalSupplyActivity();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation <em>Medication Status Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Medication Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation
-	 * @generated
-	 */
-	EClass getMedicationStatusObservation();
-
-	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProductInstance <em>Product Instance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30342,16 +30847,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getProductInstance();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions <em>Medication Fullfillment Instructions</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Medication Fullfillment Instructions</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions
-	 * @generated
-	 */
-	EClass getMedicationFullfillmentInstructions();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Instructions <em>Instructions</em>}'.
@@ -30394,6 +30889,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getMedicationSeriesNumberObservation();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation <em>Medication Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation
+	 * @generated
+	 */
+	EClass getMedicationStatusObservation();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.InternalReference <em>Internal Reference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30412,6 +30917,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMedicationType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions <em>Medication Fullfillment Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Fullfillment Instructions</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions
+	 * @generated
+	 */
+	EClass getMedicationFullfillmentInstructions();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct <em>Problem Concern Act</em>}'.
@@ -30574,34 +31089,24 @@ public interface ConsolPackage extends EPackage {
 	EClass getProceduresSectionEntriesOptional();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Procedure <em>Procedure</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct <em>Procedure Activity Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Procedure</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.Procedure
+	 * @return the meta object for class '<em>Procedure Activity Act</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct
 	 * @generated
 	 */
-	EClass getProcedure();
+	EClass getProcedureActivityAct();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ExternalReference <em>External Reference</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure <em>Procedure Activity Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>External Reference</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ExternalReference
+	 * @return the meta object for class '<em>Procedure Activity Procedure</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure
 	 * @generated
 	 */
-	EClass getExternalReference();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure <em>Procedure Entry Procedure Activity Procedure</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureEntryProcedureActivityProcedure
-	 * @generated
-	 */
-	EClass getProcedureEntryProcedureActivityProcedure();
+	EClass getProcedureActivityProcedure();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity <em>Immunization Activity</em>}'.
@@ -30622,6 +31127,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getImmunizationRefusalReason();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation <em>Procedure Acivity Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Acivity Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation
+	 * @generated
+	 */
+	EClass getProcedureAcivityObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional <em>Vital Signs Section Entries Optional</em>}'.
@@ -30692,16 +31207,6 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSocialHistoryObservation();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation <em>Social History Status Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Social History Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation
-	 * @generated
-	 */
-	EClass getSocialHistoryStatusObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation <em>Pregnancy Observation</em>}'.
@@ -30794,6 +31299,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getProblemSectionEntriesOptional();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation <em>Social History Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Social History Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation
+	 * @generated
+	 */
+	EClass getSocialHistoryStatusObservation();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PurposeSection <em>Purpose Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30834,16 +31349,6 @@ public interface ConsolPackage extends EPackage {
 	EClass getAdvanceDirectiveObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation <em>Advance Directive Status Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Advance Directive Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation
-	 * @generated
-	 */
-	EClass getAdvanceDirectiveStatusObservation();
-
-	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveVerification <em>Advance Directive Verification</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30852,6 +31357,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdvanceDirectiveVerification();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation <em>Advance Directive Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Advance Directive Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveStatusObservation
+	 * @generated
+	 */
+	EClass getAdvanceDirectiveStatusObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveReference <em>Advance Directive Reference</em>}'.
@@ -31024,6 +31539,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getPlanOfCareActivitySupply();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Procedure <em>Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Procedure
+	 * @generated
+	 */
+	EClass getProcedure();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyHistorySection <em>Pregnancy History Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31032,6 +31557,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPregnancyHistorySection();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ExternalReference <em>External Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>External Reference</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ExternalReference
+	 * @generated
+	 */
+	EClass getExternalReference();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Support <em>Support</em>}'.
@@ -31816,16 +32351,6 @@ public interface ConsolPackage extends EPackage {
 		EClass NON_MEDICINAL_SUPPLY_ACTIVITY = eINSTANCE.getNonMedicinalSupplyActivity();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl <em>Medication Status Observation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationStatusObservation()
-		 * @generated
-		 */
-		EClass MEDICATION_STATUS_OBSERVATION = eINSTANCE.getMedicationStatusObservation();
-
-		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProductInstanceImpl <em>Product Instance</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -31834,16 +32359,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PRODUCT_INSTANCE = eINSTANCE.getProductInstance();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationFullfillmentInstructions()
-		 * @generated
-		 */
-		EClass MEDICATION_FULLFILLMENT_INSTRUCTIONS = eINSTANCE.getMedicationFullfillmentInstructions();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsImpl <em>Instructions</em>}' class.
@@ -31886,6 +32401,16 @@ public interface ConsolPackage extends EPackage {
 		EClass MEDICATION_SERIES_NUMBER_OBSERVATION = eINSTANCE.getMedicationSeriesNumberObservation();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl <em>Medication Status Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationStatusObservationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationStatusObservation()
+		 * @generated
+		 */
+		EClass MEDICATION_STATUS_OBSERVATION = eINSTANCE.getMedicationStatusObservation();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InternalReferenceImpl <em>Internal Reference</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -31904,6 +32429,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass MEDICATION_TYPE = eINSTANCE.getMedicationType();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationFullfillmentInstructionsImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationFullfillmentInstructions()
+		 * @generated
+		 */
+		EClass MEDICATION_FULLFILLMENT_INSTRUCTIONS = eINSTANCE.getMedicationFullfillmentInstructions();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernActImpl <em>Problem Concern Act</em>}' class.
@@ -32066,34 +32601,24 @@ public interface ConsolPackage extends EPackage {
 		EClass PROCEDURES_SECTION_ENTRIES_OPTIONAL = eINSTANCE.getProceduresSectionEntriesOptional();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl <em>Procedure</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityActImpl <em>Procedure Activity Act</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedure()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityActImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityAct()
 		 * @generated
 		 */
-		EClass PROCEDURE = eINSTANCE.getProcedure();
+		EClass PROCEDURE_ACTIVITY_ACT = eINSTANCE.getProcedureActivityAct();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl <em>Procedure Activity Procedure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalReference()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityProcedure()
 		 * @generated
 		 */
-		EClass EXTERNAL_REFERENCE = eINSTANCE.getExternalReference();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureEntryProcedureActivityProcedureImpl <em>Procedure Entry Procedure Activity Procedure</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureEntryProcedureActivityProcedureImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureEntryProcedureActivityProcedure()
-		 * @generated
-		 */
-		EClass PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = eINSTANCE.getProcedureEntryProcedureActivityProcedure();
+		EClass PROCEDURE_ACTIVITY_PROCEDURE = eINSTANCE.getProcedureActivityProcedure();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationActivityImpl <em>Immunization Activity</em>}' class.
@@ -32114,6 +32639,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass IMMUNIZATION_REFUSAL_REASON = eINSTANCE.getImmunizationRefusalReason();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureAcivityObservationImpl <em>Procedure Acivity Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureAcivityObservationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureAcivityObservation()
+		 * @generated
+		 */
+		EClass PROCEDURE_ACIVITY_OBSERVATION = eINSTANCE.getProcedureAcivityObservation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsSectionEntriesOptionalImpl <em>Vital Signs Section Entries Optional</em>}' class.
@@ -32184,16 +32719,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SOCIAL_HISTORY_OBSERVATION = eINSTANCE.getSocialHistoryObservation();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryStatusObservation()
-		 * @generated
-		 */
-		EClass SOCIAL_HISTORY_STATUS_OBSERVATION = eINSTANCE.getSocialHistoryStatusObservation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PregnancyObservationImpl <em>Pregnancy Observation</em>}' class.
@@ -32286,6 +32811,16 @@ public interface ConsolPackage extends EPackage {
 		EClass PROBLEM_SECTION_ENTRIES_OPTIONAL = eINSTANCE.getProblemSectionEntriesOptional();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryStatusObservationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryStatusObservation()
+		 * @generated
+		 */
+		EClass SOCIAL_HISTORY_STATUS_OBSERVATION = eINSTANCE.getSocialHistoryStatusObservation();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PurposeSectionImpl <em>Purpose Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -32326,16 +32861,6 @@ public interface ConsolPackage extends EPackage {
 		EClass ADVANCE_DIRECTIVE_OBSERVATION = eINSTANCE.getAdvanceDirectiveObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveStatusObservationImpl <em>Advance Directive Status Observation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveStatusObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectiveStatusObservation()
-		 * @generated
-		 */
-		EClass ADVANCE_DIRECTIVE_STATUS_OBSERVATION = eINSTANCE.getAdvanceDirectiveStatusObservation();
-
-		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveVerificationImpl <em>Advance Directive Verification</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -32344,6 +32869,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADVANCE_DIRECTIVE_VERIFICATION = eINSTANCE.getAdvanceDirectiveVerification();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveStatusObservationImpl <em>Advance Directive Status Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveStatusObservationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdvanceDirectiveStatusObservation()
+		 * @generated
+		 */
+		EClass ADVANCE_DIRECTIVE_STATUS_OBSERVATION = eINSTANCE.getAdvanceDirectiveStatusObservation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveReferenceImpl <em>Advance Directive Reference</em>}' class.
@@ -32516,6 +33051,16 @@ public interface ConsolPackage extends EPackage {
 		EClass PLAN_OF_CARE_ACTIVITY_SUPPLY = eINSTANCE.getPlanOfCareActivitySupply();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl <em>Procedure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedure()
+		 * @generated
+		 */
+		EClass PROCEDURE = eINSTANCE.getProcedure();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -32524,6 +33069,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PREGNANCY_HISTORY_SECTION = eINSTANCE.getPregnancyHistorySection();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalReferenceImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalReference()
+		 * @generated
+		 */
+		EClass EXTERNAL_REFERENCE = eINSTANCE.getExternalReference();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SupportImpl <em>Support</em>}' class.

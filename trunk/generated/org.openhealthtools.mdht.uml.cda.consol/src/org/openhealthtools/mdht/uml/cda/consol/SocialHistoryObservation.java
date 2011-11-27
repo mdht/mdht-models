@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.1.33' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationId SocialHistoryObservationText SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SocialHistoryObservationCodeValueSet SocialHistoryObservationNoRepeatNumber SocialHistoryObservationNoInterpretationCode SocialHistoryObservationNoMethodCode SocialHistoryObservationNoTargetSiteCode SocialHistoryObservationCode SocialHistoryObservationEffectiveTime' constraints.validation.info='SocialHistoryObservationValue SocialHistoryObservationSocialHistoryStatusObservation SocialHistoryObservationEpisodeObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.1.33' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationId SocialHistoryObservationText SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SocialHistoryObservationCodeValueSet SocialHistoryObservationNoRepeatNumber SocialHistoryObservationNoInterpretationCode SocialHistoryObservationNoMethodCode SocialHistoryObservationNoTargetSiteCode SocialHistoryObservationCode SocialHistoryObservationEffectiveTime' constraints.validation.info='SocialHistoryObservationValue'"
  * @generated
  */
 public interface SocialHistoryObservation extends Observation {
@@ -190,57 +190,6 @@ public interface SocialHistoryObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SocialHistoryStatusObservation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SocialHistoryStatusObservation))'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EpisodeObservation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EpisodeObservation))'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationEpisodeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryStatusObservation))->asSequence()->first().oclAsType(consol::SocialHistoryStatusObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryStatusObservation))->asSequence()->first().oclAsType(consol::SocialHistoryStatusObservation)'"
-	 * @generated
-	 */
-	SocialHistoryStatusObservation getSocialHistoryStatusObservation();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EpisodeObservation))->asSequence()->first().oclAsType(consol::EpisodeObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EpisodeObservation))->asSequence()->first().oclAsType(consol::EpisodeObservation)'"
-	 * @generated
-	 */
-	EpisodeObservation getEpisodeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

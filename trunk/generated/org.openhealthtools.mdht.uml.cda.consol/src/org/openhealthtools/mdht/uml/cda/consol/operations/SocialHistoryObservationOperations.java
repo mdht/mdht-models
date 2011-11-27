@@ -12,20 +12,14 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -51,10 +45,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationSocialHistoryStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Social History Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationEpisodeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Episode Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#getSocialHistoryStatusObservation() <em>Get Social History Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#getEpisodeObservation() <em>Get Episode Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -750,212 +740,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationSocialHistoryStatusObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Social History Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationSocialHistoryStatusObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SocialHistoryStatusObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationSocialHistoryStatusObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Social History Status Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationSocialHistoryStatusObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SocialHistoryStatusObservation))
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateSocialHistoryObservationSocialHistoryStatusObservation(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistoryObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryStatusObservation"),
-					new Object[] { socialHistoryObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationEpisodeObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Episode Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationEpisodeObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EpisodeObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationEpisodeObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Episode Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationEpisodeObservation(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EpisodeObservation))
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateSocialHistoryObservationEpisodeObservation(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistoryObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationEpisodeObservation"),
-					new Object[] { socialHistoryObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getSocialHistoryStatusObservation(SocialHistoryObservation) <em>Get Social History Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSocialHistoryStatusObservation(SocialHistoryObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryStatusObservation))->asSequence()->first().oclAsType(consol::SocialHistoryStatusObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getSocialHistoryStatusObservation(SocialHistoryObservation) <em>Get Social History Status Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSocialHistoryStatusObservation(SocialHistoryObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryStatusObservation))->asSequence()->first().oclAsType(consol::SocialHistoryStatusObservation)
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static SocialHistoryStatusObservation getSocialHistoryStatusObservation(
-			SocialHistoryObservation socialHistoryObservation) {
-		if (GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION,
-				ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(63));
-			try {
-				GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY);
-		return (SocialHistoryStatusObservation) query.evaluate(socialHistoryObservation);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getEpisodeObservation(SocialHistoryObservation) <em>Get Episode Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEpisodeObservation(SocialHistoryObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_EPISODE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EpisodeObservation))->asSequence()->first().oclAsType(consol::EpisodeObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getEpisodeObservation(SocialHistoryObservation) <em>Get Episode Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEpisodeObservation(SocialHistoryObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_EPISODE_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EpisodeObservation))->asSequence()->first().oclAsType(consol::EpisodeObservation)
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static EpisodeObservation getEpisodeObservation(SocialHistoryObservation socialHistoryObservation) {
-		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION,
-				ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(64));
-			try {
-				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EPISODE_OBSERVATION__EOCL_QRY);
-		return (EpisodeObservation) query.evaluate(socialHistoryObservation);
 	}
 
 } // SocialHistoryObservationOperations

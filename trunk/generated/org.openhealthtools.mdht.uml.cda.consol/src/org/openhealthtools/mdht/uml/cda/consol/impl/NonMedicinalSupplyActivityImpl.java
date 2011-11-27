@@ -14,8 +14,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 
@@ -414,17 +412,6 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMedicationStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(
@@ -436,37 +423,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationStatusObservation getMedicationStatusObservation() {
-		return NonMedicinalSupplyActivityOperations.getMedicationStatusObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<ProductInstance> getProductInstances() {
 		return NonMedicinalSupplyActivityOperations.getProductInstances(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationFullfillmentInstructions getMedicationFullfillmentInstructions() {
-		return NonMedicinalSupplyActivityOperations.getMedicationFullfillmentInstructions(this);
 	}
 
 	/**

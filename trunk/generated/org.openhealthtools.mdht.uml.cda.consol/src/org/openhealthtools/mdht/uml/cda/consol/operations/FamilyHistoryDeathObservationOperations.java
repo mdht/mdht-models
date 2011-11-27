@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
@@ -51,9 +50,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#validateFamilyHistoryDeathObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#validateFamilyHistoryDeathObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#validateFamilyHistoryDeathObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#validateFamilyHistoryDeathObservationAgeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#validateFamilyHistoryDeathObservationProblemStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Problem Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#getAgeObservation() <em>Get Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation#getProblemStatusObservation() <em>Get Problem Status Observation</em>}</li>
  * </ul>
  * </p>
@@ -773,64 +770,6 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateFamilyHistoryDeathObservationAgeObservation(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Age Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistoryDeathObservationAgeObservation(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFamilyHistoryDeathObservationAgeObservation(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Age Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistoryDeathObservationAgeObservation(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-	 * @param familyHistoryDeathObservation The receiving '<em><b>Family History Death Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateFamilyHistoryDeathObservationAgeObservation(
-			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
-			try {
-				VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryDeathObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_AGE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationAgeObservation"),
-					new Object[] { familyHistoryDeathObservation }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateFamilyHistoryDeathObservationProblemStatusObservation(FamilyHistoryDeathObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Death Observation Problem Status Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -890,51 +829,6 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAgeObservation(FamilyHistoryDeathObservation) <em>Get Age Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeObservation(FamilyHistoryDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAgeObservation(FamilyHistoryDeathObservation) <em>Get Age Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeObservation(FamilyHistoryDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_AGE_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)
-	 * @param familyHistoryDeathObservation The receiving '<em><b>Family History Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static AgeObservation getAgeObservation(FamilyHistoryDeathObservation familyHistoryDeathObservation) {
-		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION,
-				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(63));
-			try {
-				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_OBSERVATION__EOCL_QRY);
-		return (AgeObservation) query.evaluate(familyHistoryDeathObservation);
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getProblemStatusObservation(FamilyHistoryDeathObservation) <em>Get Problem Status Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -969,7 +863,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION,
-				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(64));
+				ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION.getEAllOperations().get(62));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

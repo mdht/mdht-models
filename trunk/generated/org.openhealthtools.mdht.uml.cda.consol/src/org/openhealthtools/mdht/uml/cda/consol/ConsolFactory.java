@@ -134,15 +134,6 @@ public interface ConsolFactory extends EFactory {
 	NonMedicinalSupplyActivity createNonMedicinalSupplyActivity();
 
 	/**
-	 * Returns a new object of class '<em>Medication Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Status Observation</em>'.
-	 * @generated
-	 */
-	MedicationStatusObservation createMedicationStatusObservation();
-
-	/**
 	 * Returns a new object of class '<em>Product Instance</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -150,15 +141,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ProductInstance createProductInstance();
-
-	/**
-	 * Returns a new object of class '<em>Medication Fullfillment Instructions</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Fullfillment Instructions</em>'.
-	 * @generated
-	 */
-	MedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
 
 	/**
 	 * Returns a new object of class '<em>Instructions</em>'.
@@ -197,6 +179,15 @@ public interface ConsolFactory extends EFactory {
 	MedicationSeriesNumberObservation createMedicationSeriesNumberObservation();
 
 	/**
+	 * Returns a new object of class '<em>Medication Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Status Observation</em>'.
+	 * @generated
+	 */
+	MedicationStatusObservation createMedicationStatusObservation();
+
+	/**
 	 * Returns a new object of class '<em>Internal Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -213,6 +204,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	MedicationType createMedicationType();
+
+	/**
+	 * Returns a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * @generated
+	 */
+	MedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
 
 	/**
 	 * Returns a new object of class '<em>Problem Concern Act</em>'.
@@ -359,31 +359,22 @@ public interface ConsolFactory extends EFactory {
 	ProceduresSectionEntriesOptional createProceduresSectionEntriesOptional();
 
 	/**
-	 * Returns a new object of class '<em>Procedure</em>'.
+	 * Returns a new object of class '<em>Procedure Activity Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure</em>'.
+	 * @return a new object of class '<em>Procedure Activity Act</em>'.
 	 * @generated
 	 */
-	Procedure createProcedure();
+	ProcedureActivityAct createProcedureActivityAct();
 
 	/**
-	 * Returns a new object of class '<em>External Reference</em>'.
+	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>External Reference</em>'.
+	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * @generated
 	 */
-	ExternalReference createExternalReference();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * @generated
-	 */
-	ProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure();
+	ProcedureActivityProcedure createProcedureActivityProcedure();
 
 	/**
 	 * Returns a new object of class '<em>Immunization Activity</em>'.
@@ -402,6 +393,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ImmunizationRefusalReason createImmunizationRefusalReason();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Acivity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Acivity Observation</em>'.
+	 * @generated
+	 */
+	ProcedureAcivityObservation createProcedureAcivityObservation();
 
 	/**
 	 * Returns a new object of class '<em>Vital Signs Section Entries Optional</em>'.
@@ -465,15 +465,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	SocialHistoryObservation createSocialHistoryObservation();
-
-	/**
-	 * Returns a new object of class '<em>Social History Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Social History Status Observation</em>'.
-	 * @generated
-	 */
-	SocialHistoryStatusObservation createSocialHistoryStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Pregnancy Observation</em>'.
@@ -557,6 +548,15 @@ public interface ConsolFactory extends EFactory {
 	ProblemSectionEntriesOptional createProblemSectionEntriesOptional();
 
 	/**
+	 * Returns a new object of class '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Status Observation</em>'.
+	 * @generated
+	 */
+	SocialHistoryStatusObservation createSocialHistoryStatusObservation();
+
+	/**
 	 * Returns a new object of class '<em>Purpose Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -593,15 +593,6 @@ public interface ConsolFactory extends EFactory {
 	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
 
 	/**
-	 * Returns a new object of class '<em>Advance Directive Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Status Observation</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation();
-
-	/**
 	 * Returns a new object of class '<em>Advance Directive Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -609,6 +600,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	AdvanceDirectiveVerification createAdvanceDirectiveVerification();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Status Observation</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
@@ -764,6 +764,15 @@ public interface ConsolFactory extends EFactory {
 	PlanOfCareActivitySupply createPlanOfCareActivitySupply();
 
 	/**
+	 * Returns a new object of class '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure</em>'.
+	 * @generated
+	 */
+	Procedure createProcedure();
+
+	/**
 	 * Returns a new object of class '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -771,6 +780,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PregnancyHistorySection createPregnancyHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>External Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>External Reference</em>'.
+	 * @generated
+	 */
+	ExternalReference createExternalReference();
 
 	/**
 	 * Returns a new object of class '<em>Support</em>'.

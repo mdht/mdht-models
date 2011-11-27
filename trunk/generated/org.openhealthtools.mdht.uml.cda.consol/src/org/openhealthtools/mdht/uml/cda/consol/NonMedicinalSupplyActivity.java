@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.3' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityMoodCode NonMedicinalSupplyActivityInformationSource NonMedicinalSupplyActivityHasAuthorTime NonMedicinalSupplyActivityHasAssignedAuthor NonMedicinalSupplyActivityHasAssignedAuthorPersonOrOrg NonMedicinalSupplyActivityHasPerformerTimeEvent NonMedicinalSupplyActivityHasPerformerAssignedEntity NonMedicinalSupplyActivityHasPerformerEntityPersonOrOrg NonMedicinalSupplyActivityQuantityHasValue NonMedicinalSupplyActivityQuantityOrdered NonMedicinalSupplyActivityQuantityUnit NonMedicinalSupplyActivityPrescriptionNumber NonMedicinalSupplyActivityDispenseDate NonMedicinalSupplyActivityQuantityDispensed NonMedicinalSupplyActivityId' classCode='SPLY' constraints.validation.warning='NonMedicinalSupplyActivityHasAssignedAuthorID NonMedicinalSupplyActivityHasPerformerTimeIntent NonMedicinalSupplyActivityHasPerformerAssignedEntityID NonMedicinalSupplyActivityOrderNumber NonMedicinalSupplyActivityOrderExpiration NonMedicinalSupplyActivityAssigningAuthority NonMedicinalSupplyActivityHasFillNumber NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' constraints.validation.info='NonMedicinalSupplyActivityHasAuthor NonMedicinalSupplyActivityHasPerformer NonMedicinalSupplyActivityHasParticipantLocation NonMedicinalSupplyActivityHasProduct NonMedicinalSupplyActivityHasIntentAuthor NonMedicinalSupplyActivityDispensingPharmacyLocation NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityRepeatNumber NonMedicinalSupplyActivityMedicationStatusObservation NonMedicinalSupplyActivityProductInstance NonMedicinalSupplyActivityMedicationFullfillmentInstructions'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.3' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityMoodCode NonMedicinalSupplyActivityInformationSource NonMedicinalSupplyActivityHasAuthorTime NonMedicinalSupplyActivityHasAssignedAuthor NonMedicinalSupplyActivityHasAssignedAuthorPersonOrOrg NonMedicinalSupplyActivityHasPerformerTimeEvent NonMedicinalSupplyActivityHasPerformerAssignedEntity NonMedicinalSupplyActivityHasPerformerEntityPersonOrOrg NonMedicinalSupplyActivityQuantityHasValue NonMedicinalSupplyActivityQuantityOrdered NonMedicinalSupplyActivityQuantityUnit NonMedicinalSupplyActivityPrescriptionNumber NonMedicinalSupplyActivityDispenseDate NonMedicinalSupplyActivityQuantityDispensed NonMedicinalSupplyActivityId' classCode='SPLY' constraints.validation.warning='NonMedicinalSupplyActivityHasAssignedAuthorID NonMedicinalSupplyActivityHasPerformerTimeIntent NonMedicinalSupplyActivityHasPerformerAssignedEntityID NonMedicinalSupplyActivityOrderNumber NonMedicinalSupplyActivityOrderExpiration NonMedicinalSupplyActivityAssigningAuthority NonMedicinalSupplyActivityHasFillNumber NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' constraints.validation.info='NonMedicinalSupplyActivityHasAuthor NonMedicinalSupplyActivityHasPerformer NonMedicinalSupplyActivityHasParticipantLocation NonMedicinalSupplyActivityHasProduct NonMedicinalSupplyActivityHasIntentAuthor NonMedicinalSupplyActivityDispensingPharmacyLocation NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityRepeatNumber NonMedicinalSupplyActivityProductInstance'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity extends Supply {
@@ -483,20 +483,6 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
-	 * @generated
-	 */
-	boolean validateNonMedicinalSupplyActivityMedicationStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ProductInstance))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -510,32 +496,6 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::MedicationFullfillmentInstructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
-	 * @generated
-	 */
-	boolean validateNonMedicinalSupplyActivityMedicationFullfillmentInstructions(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MedicationStatusObservation))->asSequence()->first().oclAsType(consol::MedicationStatusObservation)'"
-	 * @generated
-	 */
-	MedicationStatusObservation getMedicationStatusObservation();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance)).oclAsType(consol::ProductInstance)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
@@ -543,18 +503,6 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @generated
 	 */
 	EList<ProductInstance> getProductInstances();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(consol::MedicationFullfillmentInstructions)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(consol::MedicationFullfillmentInstructions)'"
-	 * @generated
-	 */
-	MedicationFullfillmentInstructions getMedicationFullfillmentInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -13,9 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryStatusObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservationOperations;
 
@@ -168,46 +166,6 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservationOperations.validateSocialHistoryObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSocialHistoryObservationSocialHistoryStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationSocialHistoryStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSocialHistoryObservationEpisodeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationEpisodeObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SocialHistoryStatusObservation getSocialHistoryStatusObservation() {
-		return SocialHistoryObservationOperations.getSocialHistoryStatusObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EpisodeObservation getEpisodeObservation() {
-		return SocialHistoryObservationOperations.getEpisodeObservation(this);
 	}
 
 	/**
