@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
@@ -188,30 +187,10 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryDeathObservationAgeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationAgeObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFamilyHistoryDeathObservationProblemStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationProblemStatusObservation(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AgeObservation getAgeObservation() {
-		return FamilyHistoryDeathObservationOperations.getAgeObservation(this);
 	}
 
 	/**

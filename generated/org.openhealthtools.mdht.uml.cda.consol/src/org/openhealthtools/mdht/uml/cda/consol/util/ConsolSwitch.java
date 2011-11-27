@@ -345,26 +345,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: {
-				MedicationStatusObservation medicationStatusObservation = (MedicationStatusObservation) theEObject;
-				T result = caseMedicationStatusObservation(medicationStatusObservation);
-				if (result == null) {
-					result = caseObservation(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.PRODUCT_INSTANCE: {
 				ProductInstance productInstance = (ProductInstance) theEObject;
 				T result = caseProductInstance(productInstance);
@@ -376,26 +356,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(productInstance);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
-				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions) theEObject;
-				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
-				if (result == null) {
-					result = caseCDA_Act(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseAct(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationFullfillmentInstructions);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -479,6 +439,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: {
+				MedicationStatusObservation medicationStatusObservation = (MedicationStatusObservation) theEObject;
+				T result = caseMedicationStatusObservation(medicationStatusObservation);
+				if (result == null) {
+					result = caseObservation(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.INTERNAL_REFERENCE: {
 				InternalReference internalReference = (InternalReference) theEObject;
 				T result = caseInternalReference(internalReference);
@@ -513,6 +493,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(medicationType);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
+				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions) theEObject;
+				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
+				if (result == null) {
+					result = caseCDA_Act(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseAct(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationFullfillmentInstructions);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -818,60 +818,40 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE: {
-				Procedure procedure = (Procedure) theEObject;
-				T result = caseProcedure(procedure);
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
+				T result = caseProcedureActivityAct(procedureActivityAct);
 				if (result == null) {
-					result = caseCDA_Procedure(procedure);
+					result = caseCDA_Act(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(procedure);
+					result = caseClinicalStatement(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseAct(procedure);
+					result = caseAct(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(procedure);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.EXTERNAL_REFERENCE: {
-				ExternalReference externalReference = (ExternalReference) theEObject;
-				T result = caseExternalReference(externalReference);
-				if (result == null) {
-					result = caseCDA_Act(externalReference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(externalReference);
-				}
-				if (result == null) {
-					result = caseAct(externalReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(externalReference);
+					result = caseInfrastructureRoot(procedureActivityAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (ProcedureEntryProcedureActivityProcedure) theEObject;
-				T result = caseProcedureEntryProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
+				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
+				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
 				if (result == null) {
-					result = caseCDA_Procedure(procedureEntryProcedureActivityProcedure);
+					result = caseCDA_Procedure(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(procedureEntryProcedureActivityProcedure);
+					result = caseClinicalStatement(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseAct(procedureEntryProcedureActivityProcedure);
+					result = caseAct(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(procedureEntryProcedureActivityProcedure);
+					result = caseInfrastructureRoot(procedureActivityProcedure);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -912,6 +892,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION: {
+				ProcedureAcivityObservation procedureAcivityObservation = (ProcedureAcivityObservation) theEObject;
+				T result = caseProcedureAcivityObservation(procedureAcivityObservation);
+				if (result == null) {
+					result = caseObservation(procedureAcivityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureAcivityObservation);
+				}
+				if (result == null) {
+					result = caseAct(procedureAcivityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureAcivityObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1043,26 +1043,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: {
-				SocialHistoryStatusObservation socialHistoryStatusObservation = (SocialHistoryStatusObservation) theEObject;
-				T result = caseSocialHistoryStatusObservation(socialHistoryStatusObservation);
-				if (result == null) {
-					result = caseObservation(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(socialHistoryStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1237,6 +1217,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: {
+				SocialHistoryStatusObservation socialHistoryStatusObservation = (SocialHistoryStatusObservation) theEObject;
+				T result = caseSocialHistoryStatusObservation(socialHistoryStatusObservation);
+				if (result == null) {
+					result = caseObservation(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.PURPOSE_SECTION: {
 				PurposeSection purposeSection = (PurposeSection) theEObject;
 				T result = casePurposeSection(purposeSection);
@@ -1314,6 +1314,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
+				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification) theEObject;
+				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
+				if (result == null) {
+					result = caseParticipant2(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = caseParticipation(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
 				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation) theEObject;
 				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
@@ -1328,23 +1345,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
-				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification) theEObject;
-				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
-				if (result == null) {
-					result = caseParticipant2(advanceDirectiveVerification);
-				}
-				if (result == null) {
-					result = caseParticipation(advanceDirectiveVerification);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveVerification);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1667,6 +1667,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROCEDURE: {
+				Procedure procedure = (Procedure) theEObject;
+				T result = caseProcedure(procedure);
+				if (result == null) {
+					result = caseCDA_Procedure(procedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedure);
+				}
+				if (result == null) {
+					result = caseAct(procedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.PREGNANCY_HISTORY_SECTION: {
 				PregnancyHistorySection pregnancyHistorySection = (PregnancyHistorySection) theEObject;
 				T result = casePregnancyHistorySection(pregnancyHistorySection);
@@ -1678,6 +1698,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(pregnancyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.EXTERNAL_REFERENCE: {
+				ExternalReference externalReference = (ExternalReference) theEObject;
+				T result = caseExternalReference(externalReference);
+				if (result == null) {
+					result = caseCDA_Act(externalReference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(externalReference);
+				}
+				if (result == null) {
+					result = caseAct(externalReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(externalReference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2988,21 +3028,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMedicationStatusObservation(MedicationStatusObservation object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Product Instance</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3014,21 +3039,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProductInstance(ProductInstance object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
 		return null;
 	}
 
@@ -3093,6 +3103,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationStatusObservation(MedicationStatusObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Internal Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3119,6 +3144,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseMedicationType(MedicationType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
 		return null;
 	}
 
@@ -3363,47 +3403,32 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Act</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedure(Procedure object) {
+	public T caseProcedureActivityAct(ProcedureActivityAct object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>External Reference</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>External Reference</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseExternalReference(ExternalReference object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
+	public T caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 		return null;
 	}
 
@@ -3434,6 +3459,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseImmunizationRefusalReason(ImmunizationRefusalReason object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Acivity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Acivity Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureAcivityObservation(ProcedureAcivityObservation object) {
 		return null;
 	}
 
@@ -3539,21 +3579,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSocialHistoryObservation(SocialHistoryObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSocialHistoryStatusObservation(SocialHistoryStatusObservation object) {
 		return null;
 	}
 
@@ -3693,6 +3718,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistoryStatusObservation(SocialHistoryStatusObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Purpose Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3753,21 +3793,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Status Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3779,6 +3804,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAdvanceDirectiveVerification(AdvanceDirectiveVerification object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
 		return null;
 	}
 
@@ -4038,6 +4078,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedure(Procedure object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -4049,6 +4104,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePregnancyHistorySection(PregnancyHistorySection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>External Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>External Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExternalReference(ExternalReference object) {
 		return null;
 	}
 

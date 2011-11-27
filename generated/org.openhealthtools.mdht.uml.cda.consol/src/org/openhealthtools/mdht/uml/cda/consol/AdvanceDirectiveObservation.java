@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.12' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationHasCustodian AdvanceDirectiveObservationParticipantTypeCode AdvanceDirectiveObservationParticipantRoleClassCode AdvanceDirectiveObservationHasAddress AdvanceDirectiveObservationHasTelecom AdvanceDirectiveObservationHasNameOfAgent AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationRepeatNumber AdvanceDirectiveObservationInterpretationCode AdvanceDirectiveObservationTargetSiteCode AdvanceDirectiveObservationAdvanceDirectiveStatusObservation' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem' classCode='OBS' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet AdvanceDirectiveObservationHasExternalReference' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.12' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationHasCustodian AdvanceDirectiveObservationParticipantTypeCode AdvanceDirectiveObservationParticipantRoleClassCode AdvanceDirectiveObservationHasAddress AdvanceDirectiveObservationHasTelecom AdvanceDirectiveObservationHasNameOfAgent AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationRepeatNumber AdvanceDirectiveObservationInterpretationCode AdvanceDirectiveObservationTargetSiteCode' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem' moodCode='EVN' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet AdvanceDirectiveObservationHasExternalReference'"
  * @generated
  */
 public interface AdvanceDirectiveObservation extends Observation {
@@ -313,32 +313,6 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AdvanceDirectiveStatusObservation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AdvanceDirectiveStatusObservation))'"
-	 * @generated
-	 */
-	boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveStatusObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveStatusObservation)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveStatusObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveStatusObservation)'"
-	 * @generated
-	 */
-	AdvanceDirectiveStatusObservation getAdvanceDirectiveStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
