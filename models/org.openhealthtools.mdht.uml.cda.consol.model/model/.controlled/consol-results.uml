@@ -352,9 +352,6 @@ ASTM/HL7 Continuity of Care Document).</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WaBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2J1d8RSVEeGGzu7fmW9pXw" base_Class="_2J1d4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.15">
-    <ruleId>C83-[DE-15-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2J69chSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J69cBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-413</ruleId>
   </CDA:ConstraintValidation>
@@ -489,4 +486,5 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
   <CDA:PropertyValidation xmi:id="_2OG54BSVEeGGzu7fmW9pXw" base_Property="_2OAzaBSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2OG56RSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2OG56BSVEeGGzu7fmW9pXw"/>
   <CDA:TextValue xmi:id="_2OG54RSVEeGGzu7fmW9pXw" base_Property="_2OAzaxSVEeGGzu7fmW9pXw"/>
+  <CDA:CDATemplate xmi:id="_TIHhwBneEeGs5a462vYX5Q" base_Class="_2J1d4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.2"/>
 </xmi:XMI>

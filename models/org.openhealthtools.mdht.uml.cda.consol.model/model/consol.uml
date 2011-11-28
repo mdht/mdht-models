@@ -9787,9 +9787,6 @@ past. It shall include entries for medication administration as described in the
     </profileApplication>
   </uml:Package>
   <Ecore:EPackage xmi:id="_2B97VBSVEeGGzu7fmW9pXw" base_Package="_2B30sBSVEeGGzu7fmW9pXw" packageName="consol" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" basePackage="org.openhealthtools.mdht.uml.cda" prefix="Consol"/>
-  <CDA:CDATemplate xmi:id="_2EBJwBSVEeGGzu7fmW9pXw" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.6" assigningAuthorityName="HITSP C83">
-    <ruleId>C83-[DE-6-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2EBw0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAithSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2ECX4BSVEeGGzu7fmW9pXw" base_Constraint="_2EAiuRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EC-8BSVEeGGzu7fmW9pXw" base_Constraint="_2EAivBSVEeGGzu7fmW9pXw">
@@ -9871,7 +9868,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2EY9MhSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-168</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_2EaLghSVEeGGzu7fmW9pXw" base_Class="_2EaLUBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.6" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2EbZcBSVEeGGzu7fmW9pXw" base_Property="_2EaLdBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.5.4" name="ObservationIntoleranceType" base_Property="_2EaLdBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2EdOoBSVEeGGzu7fmW9pXw" base_Property="_2EaLdhSVEeGGzu7fmW9pXw"/>
@@ -9946,7 +9942,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:EntryRelationship xmi:id="_2FGH1RSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
     <ruleId>CONF-160</ruleId>
   </CDA:EntryRelationship>
-  <CDA:CDATemplate xmi:id="_2FGu7BSVEeGGzu7fmW9pXw" base_Class="_2FGu4hSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
   <CDA:TextValue xmi:id="_2FHV8BSVEeGGzu7fmW9pXw" base_Property="_2FGu5xSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FH9ABSVEeGGzu7fmW9pXw" base_Property="_2FGu6hSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2FIkEBSVEeGGzu7fmW9pXw" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
@@ -9972,9 +9967,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2FRG8xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   <CDA:EntryRelationship xmi:id="_2FgXgBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2Fg-kBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
-  <CDA:CDATemplate xmi:id="_2FhlqhSVEeGGzu7fmW9pXw" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.11">
-    <ruleId>C83-[DE-10-CDA-2]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2FiMsBSVEeGGzu7fmW9pXw" base_Constraint="_2FhlohSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-10-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
@@ -10032,7 +10024,6 @@ past. It shall include entries for medication administration as described in the
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw" base_Constraint="_2FvBARSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw" base_Constraint="_2FvoEBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2F1usBSVEeGGzu7fmW9pXw" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
   <CDA:ConstraintValidation xmi:id="_2F1usxSVEeGGzu7fmW9pXw" base_Constraint="_2F1usRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-161</ruleId>
   </CDA:ConstraintValidation>
@@ -10065,9 +10056,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2F_fsBSVEeGGzu7fmW9pXw" base_Constraint="_2F-4pBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2F_ftRSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2F_fsRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2GAGwhSVEeGGzu7fmW9pXw" base_Constraint="_2GAGwBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2GHb3hSVEeGGzu7fmW9pXw" base_Class="_2GHbgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8" assigningAuthorityName="HITSP C83" contextDependent="true">
-    <ruleId>C83-[DE-8-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2GIpoBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbthSVEeGGzu7fmW9pXw">
     <ruleId>CONF-308</ruleId>
   </CDA:PropertyValidation>
@@ -10238,12 +10226,10 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2G43kxSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-368</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_2G5erBSVEeGGzu7fmW9pXw" base_Class="_2G5eoxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
   <CDA:PropertyValidation xmi:id="_2G6FsBSVEeGGzu7fmW9pXw" base_Property="_2G5ephSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2G6swBSVEeGGzu7fmW9pXw" base_Property="_2G5eqBSVEeGGzu7fmW9pXw"/>
   <Ecore:EAttribute xmi:id="_2G7T0RSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2G7T0BSVEeGGzu7fmW9pXw"/>
   <Ecore:EAttribute xmi:id="_2G7T0xSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2G7T0hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2G8iBBSVEeGGzu7fmW9pXw" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
   <CDA:PropertyValidation xmi:id="_2G9JABSVEeGGzu7fmW9pXw" base_Property="_2G8h-BSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2G9wEBSVEeGGzu7fmW9pXw" base_Property="_2G8h-hSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2G-XIBSVEeGGzu7fmW9pXw" identifier="1.3.6.1.4.1.19376.1.5.3.2" name="IHEActCode" code="PINSTRUCT" base_Property="_2G8h-hSVEeGGzu7fmW9pXw"/>
@@ -10252,10 +10238,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:PropertyValidation xmi:id="_2HBacBSVEeGGzu7fmW9pXw" base_Property="_2HAzYRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-332</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_2HDPoBSVEeGGzu7fmW9pXw" base_Class="_2HCokhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8.1">
-    <ruleId>C83-[DE-8.19-CDA-1]</ruleId>
-    <ruleId>C83-[DE-8.19-CDA-4]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_2HD2sBSVEeGGzu7fmW9pXw" base_Property="_2HColRSVEeGGzu7fmW9pXw">
     <reference href="consol-vocab.uml#_2HFr5BSVEeGGzu7fmW9pXw"/>
     <ruleId>C83-[DE-8.19-CDA-5]</ruleId>
@@ -10334,7 +10316,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2HVjhRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2HVjgxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-369</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_2HWKnBSVEeGGzu7fmW9pXw" base_Class="_2HWKkBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
   <CDA:PropertyValidation xmi:id="_2HWxoBSVEeGGzu7fmW9pXw" base_Property="_2HWKkhSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2HXYsBSVEeGGzu7fmW9pXw" identifier="1.3.6.1.4.1.19376.1.5.3.2" name="IHEActCode" code="FINSTRUCT" base_Property="_2HWKkhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2HYm0BSVEeGGzu7fmW9pXw" base_Property="_2HWKlBSVEeGGzu7fmW9pXw"/>
@@ -10424,7 +10405,6 @@ past. It shall include entries for medication administration as described in the
     <ruleId>CONF-187</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2IahkxSVEeGGzu7fmW9pXw" base_Property="_2IahkBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2IbIzxSVEeGGzu7fmW9pXw" base_Class="_2IbIoBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.18" assigningAuthorityName="HITSP"/>
   <CDA:ConstraintValidation xmi:id="_2IcWwBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2IbIoRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2IcWwRSVEeGGzu7fmW9pXw" base_Constraint="_2IbIoxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Ic90BSVEeGGzu7fmW9pXw" base_Constraint="_2IbIpRSVEeGGzu7fmW9pXw"/>
@@ -10461,7 +10441,6 @@ past. It shall include entries for medication administration as described in the
     <ruleId>CONF-203</ruleId>
     <ruleId>CONF-204</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2IpyKhSVEeGGzu7fmW9pXw" base_Class="_2IpyIxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.13.3" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2IqZMBSVEeGGzu7fmW9pXw" base_Property="_2IpyJhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2IrAQBSVEeGGzu7fmW9pXw" base_Property="_2IpyJhSVEeGGzu7fmW9pXw">
     <reference href="consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
@@ -10791,7 +10770,6 @@ past. It shall include entries for medication administration as described in the
     <ruleId>CONF-80</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2Kj2pBSVEeGGzu7fmW9pXw" base_Property="_2Kj2oRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2KlE4hSVEeGGzu7fmW9pXw" base_Class="_2KlEwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.12"/>
   <CDA:PropertyValidation xmi:id="_2Klr0BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw">
     <reference href="consol-vocab.uml#_2LHQRxSVEeGGzu7fmW9pXw"/>
@@ -10999,9 +10977,6 @@ past. It shall include entries for medication administration as described in the
   </CDA:ConstraintValidation>
   <Ecore:EReference xmi:id="_2Lr4AxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2Lr4ABSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2LuUQhSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2LuUQBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2LviYBSVEeGGzu7fmW9pXw" base_Class="_2Lu7UBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.16">
-    <ruleId>C83-[DE-16-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_2LwJcBSVEeGGzu7fmW9pXw" base_Property="_2Lu7YxSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="consol-vocab.uml#_2L3eMhSVEeGGzu7fmW9pXw"/>
     <ruleId>C83-[DE-16.02-1]</ruleId>
@@ -11039,7 +11014,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2MABERSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-298</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_2MAoJxSVEeGGzu7fmW9pXw" base_Class="_2MAoIBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
   <CDA:ValueSetConstraint xmi:id="_2MBPMBSVEeGGzu7fmW9pXw" base_Property="_2MAoJBSVEeGGzu7fmW9pXw">
     <reference href="consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
@@ -11140,7 +11114,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:PropertyValidation xmi:id="_2MZpsBSVEeGGzu7fmW9pXw" base_Property="_2MZCoRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-30</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_2Ma4JRSVEeGGzu7fmW9pXw" base_Class="_2Ma30BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.5" assigningAuthorityName="HITSP C83"/>
   <CDA:CodeSystemConstraint xmi:id="_2McF8BSVEeGGzu7fmW9pXw" code="48768-6" displayName="Payment sources" base_Property="_2Ma4JBSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-41</ruleId>
@@ -11201,7 +11174,6 @@ past. It shall include entries for medication administration as described in the
     <ruleId>CONF-39</ruleId>
     <ruleId>CONF-40</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2MyrRRSVEeGGzu7fmW9pXw" base_Class="_2MyrQxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.18" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2Mz5YhSVEeGGzu7fmW9pXw" base_Property="_2Mz5YBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-49</ruleId>
   </CDA:PropertyValidation>
@@ -11421,9 +11393,6 @@ past. It shall include entries for medication administration as described in the
   </CDA:ConstraintValidation>
   <Ecore:EAttribute xmi:id="_2NufZRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NufYxSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2NufaRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2NufZxSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2NufehSVEeGGzu7fmW9pXw" base_Class="_2NufahSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.17">
-    <ruleId>C83-[DE-17-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_2NufexSVEeGGzu7fmW9pXw" name="" base_Property="_2NufcxSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>C83-[DE-17-CDA-3]</ruleId>
@@ -11442,7 +11411,6 @@ past. It shall include entries for medication administration as described in the
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2N0mGxSVEeGGzu7fmW9pXw" base_Association="_2N0mGRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2N6stBSVEeGGzu7fmW9pXw" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
   <CDA:PropertyValidation xmi:id="_2N6stRSVEeGGzu7fmW9pXw" base_Property="_2N6soxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6sthSVEeGGzu7fmW9pXw" base_Property="_2N6spBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6stxSVEeGGzu7fmW9pXw" base_Property="_2N6spxSVEeGGzu7fmW9pXw"/>
@@ -11538,9 +11506,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:PropertyValidation xmi:id="_2OlbBRSVEeGGzu7fmW9pXw" base_Property="_2OlbAhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-381</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_2OlbIhSVEeGGzu7fmW9pXw" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.13.1" assigningAuthorityName="IHE PCC">
-    <ruleId>6.3.4.21</ruleId>
-  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2OlbIxSVEeGGzu7fmW9pXw" base_Property="_2OlbDhSVEeGGzu7fmW9pXw">
     <ruleId>6.3.4.21.2</ruleId>
   </CDA:PropertyValidation>
@@ -11574,9 +11539,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:AssociationValidation xmi:id="_2OrhsBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-399</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_2OrhuRSVEeGGzu7fmW9pXw" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.14" assigningAuthorityName="HITSP">
-    <ruleId>C83-[DE-14-CDA-1]</ruleId>
-  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2OrhuhSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-14.03-1]</ruleId>
   </CDA:PropertyValidation>
@@ -11900,9 +11862,6 @@ past. It shall include entries for medication administration as described in the
     <ruleId>CONF-199</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2SPL_xSVEeGGzu7fmW9pXw" base_Constraint="_2SPL_BSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2SVSpBSVEeGGzu7fmW9pXw" base_Class="_2SVSlBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.2">
-    <ruleId>C83-[DE-2.01-CDA-2]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_2SVSpRSVEeGGzu7fmW9pXw" base_Property="_2SVSnRSVEeGGzu7fmW9pXw">
     <reference href="consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>C154-[DE-2.01-1]</ruleId>
@@ -11922,13 +11881,10 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2SbZMRSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2SVSmRSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-2.01-CDA-5]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_2Shf1RSVEeGGzu7fmW9pXw" base_Class="_2Shf0xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.4" assigningAuthorityName="HITSP C83"/>
   <Ecore:EAttribute xmi:id="_2Shf2BSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2Shf1xSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2Shf3BSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2Shf2RSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Shf5hSVEeGGzu7fmW9pXw" base_Constraint="_2Shf5BSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2Shf6RSVEeGGzu7fmW9pXw" base_Class="_2Shf4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8"/>
   <CDA:ConstraintValidation xmi:id="_2Shf8BSVEeGGzu7fmW9pXw" base_Constraint="_2Shf7hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2SnmchSVEeGGzu7fmW9pXw" base_Class="_2Shf6hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8"/>
   <CDA:CDATemplate xmi:id="_2SnmdhSVEeGGzu7fmW9pXw" base_Class="_2SnmcxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2SnmehSVEeGGzu7fmW9pXw" base_Constraint="_2SnmeBSVEeGGzu7fmW9pXw"/>
   <Ecore:EAttribute xmi:id="_2SnmgxSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2SnmgRSVEeGGzu7fmW9pXw"/>
@@ -12010,7 +11966,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2S56dRSVEeGGzu7fmW9pXw" base_Constraint="_2S56cxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2S56eRSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2S56dhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2S56fBSVEeGGzu7fmW9pXw" base_Constraint="_2S56ehSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2TAA8BSVEeGGzu7fmW9pXw" base_Class="_2SnmfRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8"/>
   <Ecore:EAttribute xmi:id="_2TAA9xSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2TAA9RSVEeGGzu7fmW9pXw"/>
   <Ecore:EAttribute xmi:id="_2TAA-RSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2TAA-BSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TAA_RSVEeGGzu7fmW9pXw" base_Property="_2TAA-hSVEeGGzu7fmW9pXw">
@@ -12089,22 +12044,17 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2TSU5RSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2TSU4xSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TSU6BSVEeGGzu7fmW9pXw" base_Constraint="_2TSU5hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TSU7BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TSU6RSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2TSU8xSVEeGGzu7fmW9pXw" base_Class="_2TAA8RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8"/>
-  <CDA:CDATemplate xmi:id="_2TYbdBSVEeGGzu7fmW9pXw" base_Class="_2TYbcBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.3"/>
   <CDA:PropertyValidation xmi:id="_2TYbehSVEeGGzu7fmW9pXw" base_Property="_2TYbdhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TYbfhSVEeGGzu7fmW9pXw" base_Property="_2TYbexSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2TYbfxSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.5.111" name="RoleCode" base_Property="_2TYbexSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TYbgxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2TYbgBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TYbhxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2TYbhBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2TYbjxSVEeGGzu7fmW9pXw" base_Class="_2TYbixSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.3"/>
   <CDA:PropertyValidation xmi:id="_2TeiEhSVEeGGzu7fmW9pXw" base_Property="_2TeiEBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TeiFxSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2TeiExSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2TeiGxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TeiGBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2TkoxRSVEeGGzu7fmW9pXw" base_Class="_2TkovBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.2.20.1"/>
   <CDA:ConstraintValidation xmi:id="_2TkoxhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkovhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TkoxxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkowBSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2TkozBSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TkoyRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2Tko6RSVEeGGzu7fmW9pXw" base_Class="_2Tko1hSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.2.20.2"/>
   <CDA:ConstraintValidation xmi:id="_2TqvUBSVEeGGzu7fmW9pXw" base_Constraint="_2Tko2BSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TqvURSVEeGGzu7fmW9pXw" base_Constraint="_2Tko2hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TqvUhSVEeGGzu7fmW9pXw" base_Constraint="_2Tko3BSVEeGGzu7fmW9pXw"/>
@@ -12112,14 +12062,10 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2TqvVBSVEeGGzu7fmW9pXw" base_Constraint="_2Tko4RSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TqvVRSVEeGGzu7fmW9pXw" base_Constraint="_2Tko5BSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2TqvWhSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TqvVxSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2TqvbxSVEeGGzu7fmW9pXw" base_Class="_2TqvZBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.2.20.3"/>
   <CDA:PropertyValidation xmi:id="_2Tw18BSVEeGGzu7fmW9pXw" base_Property="_2TqvaxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Tw18RSVEeGGzu7fmW9pXw" base_Constraint="_2TqvZhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Tw18hSVEeGGzu7fmW9pXw" base_Constraint="_2TqvaBSVEeGGzu7fmW9pXw"/>
   <Ecore:EReference xmi:id="_2Tw19xSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2Tw19BSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2T9DWRSVEeGGzu7fmW9pXw" base_Class="_2T9DQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.8.2">
-    <ruleId>C83-[DE-8-CDA-5]</ruleId>
-  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2T9DWhSVEeGGzu7fmW9pXw" base_Constraint="_2T9DQhSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-8.13-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
@@ -12305,4 +12251,20 @@ past. It shall include entries for medication administration as described in the
   <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19"/>
   <CDA:ActRelationship xmi:id="_pNyKoBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q"/>
   <CDA:EntryRelationship xmi:id="_qEUxEBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q" typeCode="REFR"/>
+  <CDA:CDATemplate xmi:id="_u5G5QBnaEeGs5a462vYX5Q" base_Class="_2KlEwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.48"/>
+  <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30"/>
+  <CDA:CDATemplate xmi:id="_96YgEBnaEeGs5a462vYX5Q" base_Class="_2EaLUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.7"/>
+  <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64"/>
+  <CDA:CDATemplate xmi:id="_hWyHQBnbEeGs5a462vYX5Q" base_Class="_2IpyIxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.46"/>
+  <CDA:CDATemplate xmi:id="_kKyf8BnbEeGs5a462vYX5Q" base_Class="_2IbIoBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.45"/>
+  <CDA:CDATemplate xmi:id="_zh-FUBnbEeGs5a462vYX5Q" base_Class="_2MAoIBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.52"/>
+  <CDA:CDATemplate xmi:id="_3iHhABnbEeGs5a462vYX5Q" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.20"/>
+  <CDA:CDATemplate xmi:id="_-vKWgBnbEeGs5a462vYX5Q" base_Class="_2GHbgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.16"/>
+  <CDA:CDATemplate xmi:id="_HlZ-cBncEeGs5a462vYX5Q" base_Class="_DpoGkBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.18"/>
+  <CDA:CDATemplate xmi:id="_LKvGYBncEeGs5a462vYX5Q" base_Class="_2T9DQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.23"/>
+  <CDA:CDATemplate xmi:id="_aXMCcBncEeGs5a462vYX5Q" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.15.3.8"/>
+  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9"/>
+  <CDA:CDATemplate xmi:id="_cAAIcBneEeGs5a462vYX5Q" base_Class="_2FGu4hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.8"/>
+  <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27"/>
+  <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26"/>
 </xmi:XMI>
