@@ -608,7 +608,6 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2FSVEBSVEeGGzu7fmW9pXw" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
   <CDA:ConstraintValidation xmi:id="_2FZp0hSVEeGGzu7fmW9pXw" base_Constraint="_2FZp0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
@@ -720,7 +719,6 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2ExXuRSVEeGGzu7fmW9pXw" base_Class="_2ExXsBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
   <CDA:ConstraintValidation xmi:id="_2E4FYhSVEeGGzu7fmW9pXw" base_Constraint="_2E4FYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
@@ -753,4 +751,6 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_2Eyl0BSVEeGGzu7fmW9pXw" base_Property="_2ExXuBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2E7IuRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28"/>
+  <CDA:CDATemplate xmi:id="_p4UDcBnbEeGs5a462vYX5Q" base_Class="_2ExXsBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.5"/>
 </xmi:XMI>
