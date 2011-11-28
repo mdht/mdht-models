@@ -5200,6 +5200,9 @@ order requests for monitoring, tracking, or improving the condition of the patie
           <body>SHOULD contain a case-insensitive language-insensitive text string containing 'plan'.</body>
         </specification>
       </ownedRule>
+      <generalization xmi:id="_h0yLgBnTEeGs5a462vYX5Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
       <ownedAttribute xmi:id="_2NP-XRSVEeGGzu7fmW9pXw" name="code" visibility="private">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -6358,7 +6361,7 @@ hospital facility. It shall include entries for observations as described in the
     <packagedElement xmi:type="uml:Association" xmi:id="_2PidShSVEeGGzu7fmW9pXw" memberEnd="_2PidRRSVEeGGzu7fmW9pXw _2PidSxSVEeGGzu7fmW9pXw">
       <ownedEnd xmi:id="_2PidSxSVEeGGzu7fmW9pXw" type="_2PidQhSVEeGGzu7fmW9pXw" association="_2PidShSVEeGGzu7fmW9pXw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2PidURSVEeGGzu7fmW9pXw" name="DischargeDiagnosisSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2PidURSVEeGGzu7fmW9pXw" name="HospitalDischargeDiagnosisSection">
       <ownedComment xmi:id="_2Poj4hSVEeGGzu7fmW9pXw" annotatedElement="_2PidURSVEeGGzu7fmW9pXw">
         <body>The discharge diagnosis section shall contain a narrative description of the conditions that need to be monitored after&#xD;
 discharge from the hospital and those that were resolved during the hospital course. It shall include entries for patient&#xD;
@@ -6386,7 +6389,7 @@ conditions as described in the Entry Content Module.</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_2PidWRSVEeGGzu7fmW9pXw" memberEnd="_2PidVBSVEeGGzu7fmW9pXw _2PidWhSVEeGGzu7fmW9pXw">
       <ownedEnd xmi:id="_2PidWhSVEeGGzu7fmW9pXw" type="_2PidURSVEeGGzu7fmW9pXw" association="_2PidWRSVEeGGzu7fmW9pXw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="AdmissionMedicationHistorySection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="Hospital AdmissionMedicationsSectionEntriesOptional">
       <ownedComment xmi:id="_2Poj6xSVEeGGzu7fmW9pXw" annotatedElement="_2Poj5BSVEeGGzu7fmW9pXw">
         <body>The admission medication history section shall contain a narrative description of the relevant medications administered to&#xD;
 a patient prior to admission to a facility. It shall include entries for medication administration as described in the&#xD;
@@ -6593,10 +6596,9 @@ Examination Subsections.&lt;/p></body>
     <packagedElement xmi:type="uml:Association" xmi:id="_2Pxt5hSVEeGGzu7fmW9pXw" memberEnd="_2Pxt5BSVEeGGzu7fmW9pXw _2Pxt5xSVEeGGzu7fmW9pXw">
       <ownedEnd xmi:id="_2Pxt5xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2Pxt5hSVEeGGzu7fmW9pXw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralAppearanceSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralStatusSection">
       <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-        <body>The general appearance section shall contain a description of the overall, visiblyapparent&#xD;
-condition of the patient.</body>
+        <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
       </ownedComment>
       <generalization xmi:id="_2P7e0BSVEeGGzu7fmW9pXw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -8785,7 +8787,7 @@ the text associated with the coded concept</body>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2Uz-1hSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2Uz-2RSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2Uz-3BSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDiet">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
       <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
         <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
       </ownedComment>
@@ -11277,7 +11279,6 @@ past. It shall include entries for medication administration as described in the
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2NJ3wBSVEeGGzu7fmW9pXw" base_Constraint="_2NJ3vRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2NJ3xBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2NJ3wRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2NP-TxSVEeGGzu7fmW9pXw" base_Class="_2NP-QxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.17"/>
   <CDA:AssociationValidation xmi:id="_2NP-UxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-VhSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-WRSVEeGGzu7fmW9pXw" severity="INFO"/>
@@ -11412,7 +11413,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2N0mCBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2N0mBRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-484</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_2N0mFhSVEeGGzu7fmW9pXw" base_Class="_2N0mDRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"/>
   <CDA:CodeSystemConstraint xmi:id="_2N0mFxSVEeGGzu7fmW9pXw" code="10162-6" displayName="HISTORY OF PREGNANCIES" base_Property="_2N0mEBSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -11631,43 +11631,35 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2PD8JhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2PD8IxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-385</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_2PQJehSVEeGGzu7fmW9pXw" base_Class="_2PQJcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.104" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2PQJfhSVEeGGzu7fmW9pXw" base_Association="_2PQJfBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2PWQARSVEeGGzu7fmW9pXw" code="11348-0" displayName="HISTORY OF PAST ILLNESS" base_Property="_2PWQABSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_2PWQBBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2PWQAhSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2PWQDhSVEeGGzu7fmW9pXw" base_Class="_2PWQCBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.105" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2PWQEhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PWQEBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2PWQFBSVEeGGzu7fmW9pXw" code="10154-3" displayName="CHIEF COMPLAINT" base_Property="_2PWQExSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2PWQIRSVEeGGzu7fmW9pXw" base_Class="_2PWQFxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.106" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2PcWoxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PcWoRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2PcWphSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PcWpBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2PcWqBSVEeGGzu7fmW9pXw" code="42349-1" displayName="REASON FOR REFERRAL" base_Property="_2PcWpxSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PcWrhSVEeGGzu7fmW9pXw" base_Association="_2PcWrBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2PcWtBSVEeGGzu7fmW9pXw" base_Class="_2PcWsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.107" assigningAuthorityName="HITSP C83"/>
   <CDA:CodeSystemConstraint xmi:id="_2PcWtxSVEeGGzu7fmW9pXw" code="10164-2" displayName="HISTORY OF PRESENT ILLNESS" base_Property="_2PcWthSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2PidSBSVEeGGzu7fmW9pXw" base_Class="_2PidQhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.110" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2PidTBSVEeGGzu7fmW9pXw" base_Association="_2PidShSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2PidThSVEeGGzu7fmW9pXw" code="46241-6" displayName="HOSPITAL ADMISSION DX" base_Property="_2PidTRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2PidVxSVEeGGzu7fmW9pXw" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.111" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw" base_Association="_2PidWRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Poj4RSVEeGGzu7fmW9pXw" code="11535-2" displayName="HOSPITAL DISCHARGE DX" base_Property="_2Poj4BSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2Poj5xSVEeGGzu7fmW9pXw" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.113" assigningAuthorityName="HITSP C83"/>
   <CDA:CodeSystemConstraint xmi:id="_2Poj6hSVEeGGzu7fmW9pXw" code="42346-7" displayName="MEDICATIONS ON ADMISSION" base_Property="_2Poj6RSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2Poj8xSVEeGGzu7fmW9pXw" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.114" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2Poj9xSVEeGGzu7fmW9pXw" base_Association="_2Poj9RSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Poj-RSVEeGGzu7fmW9pXw" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_2Poj-BSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -11676,173 +11668,146 @@ past. It shall include entries for medication administration as described in the
   <CDA:CodeSystemConstraint xmi:id="_2PokAhSVEeGGzu7fmW9pXw" code="18610-6" displayName="MEDICATION ADMINISTERED" base_Property="_2PokARSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2Pxt3BSVEeGGzu7fmW9pXw" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.118" assigningAuthorityName="HITSP C83"/>
   <CDA:ConstraintValidation xmi:id="_2Pxt3RSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2Pxt1BSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Pxt4RSVEeGGzu7fmW9pXw" base_Association="_2Pxt3xSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt4xSVEeGGzu7fmW9pXw" code="29545-1" displayName="PHYSICAL EXAMINATION" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2Pxt6BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Pxt5hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2Pxt8xSVEeGGzu7fmW9pXw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.16" assigningAuthorityName="IHE PCC"/>
+  <CDA:CDATemplate xmi:id="_2Pxt8xSVEeGGzu7fmW9pXw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.5" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2Pxt9BSVEeGGzu7fmW9pXw" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt9RSVEeGGzu7fmW9pXw" code="10210-3" displayName="GENERAL STATUS" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2Pxt-RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Pxt9xSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2P7e0xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e0RSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2P7e3hSVEeGGzu7fmW9pXw" base_Class="_2P7e1hSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.48" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2P7e3xSVEeGGzu7fmW9pXw" base_Property="_2P7e2RSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2P7e4BSVEeGGzu7fmW9pXw" code="XX-VisibleImplantedDevices" displayName="Visible implanted medical devices" base_Property="_2P7e2RSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2P7e5BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e4hSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2P7e6BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e5hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2P7e8xSVEeGGzu7fmW9pXw" base_Class="_2P7e6xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.17" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2P7e9BSVEeGGzu7fmW9pXw" base_Property="_2P7e7hSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2P7e9RSVEeGGzu7fmW9pXw" identifier="" code="29302-7" displayName="INTEGUMENTARY SYSTEM" base_Property="_2P7e7hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QEowxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEowRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QEoxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEoxRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QEo0hSVEeGGzu7fmW9pXw" base_Class="_2QEoyhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.18" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2QEo0xSVEeGGzu7fmW9pXw" base_Property="_2QEozRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2QEo1BSVEeGGzu7fmW9pXw" code="10199-8" displayName="HEAD" base_Property="_2QEozRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QEo2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEo1hSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QEo3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEo2hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QEo5xSVEeGGzu7fmW9pXw" base_Class="_2QEo3xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.19" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2QEo6BSVEeGGzu7fmW9pXw" base_Property="_2QEo4RSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2QEo6RSVEeGGzu7fmW9pXw" code="10197-2" displayName="EYE" base_Property="_2QEo4RSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QOZwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZwRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QOZxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZxRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QOZ0hSVEeGGzu7fmW9pXw" base_Class="_2QOZyhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.20" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2QOZ0xSVEeGGzu7fmW9pXw" base_Property="_2QOZzRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2QOZ1BSVEeGGzu7fmW9pXw" code="11393-6" displayName="EARS and NOSE and MOUTH and THROAT" base_Property="_2QOZzRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QOZ2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZ1hSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QOZ3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZ2hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QOZ5xSVEeGGzu7fmW9pXw" base_Class="_2QOZ3xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.21" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2QOZ6BSVEeGGzu7fmW9pXw" base_Property="_2QOZ4hSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2QOZ6RSVEeGGzu7fmW9pXw" identifier="" code="10195-6" displayName="EAR" base_Property="_2QOZ4hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QYKwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYKwRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QYKxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYKxRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QYK0hSVEeGGzu7fmW9pXw" base_Class="_2QYKyhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.22" assigningAuthorityName="IHE PCC"/>
   <CDA:PropertyValidation xmi:id="_2QYK0xSVEeGGzu7fmW9pXw" base_Property="_2QYKzRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2QYK1BSVEeGGzu7fmW9pXw" code="10203-8" displayName="NOSE" base_Property="_2QYKzRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QYK2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYK1hSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QYK3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYK2hSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QYK5xSVEeGGzu7fmW9pXw" base_Class="_2QYK3xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.23" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2QhUsBSVEeGGzu7fmW9pXw" code="10201-2" displayName="MOUTH and THROAT and TEETH" base_Property="_2QYK4hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QhUtBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUshSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QhUuBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUthSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QhUwxSVEeGGzu7fmW9pXw" base_Class="_2QhUuxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.24" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2QhUxBSVEeGGzu7fmW9pXw" code="11411-6" displayName="NECK" base_Property="_2QhUvhSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QhUyBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUxhSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QnbUxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbURSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QnbXhSVEeGGzu7fmW9pXw" base_Class="_2QnbVhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.25" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2QnbXxSVEeGGzu7fmW9pXw" code="29307-6" displayName="ENDOCRINE SYSTEM" base_Property="_2QnbWRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QnbYxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbYRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QnbZxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbZRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2Qth8BSVEeGGzu7fmW9pXw" base_Class="_2QnbahSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.26" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2Qth8RSVEeGGzu7fmW9pXw" code="10207-9" displayName="THORAX+LUNGS" base_Property="_2QnbbRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2Qth9RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Qth8xSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Qth-RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Qth9xSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QtiBBSVEeGGzu7fmW9pXw" base_Class="_2Qth_BSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.27" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2QtiBRSVEeGGzu7fmW9pXw" code="11392-8" displayName="CHEST WALL" base_Property="_2Qth_xSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QzokxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzokRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2QzolxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzolRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QzooBSVEeGGzu7fmW9pXw" base_Class="_2QzomhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.28" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2QzooRSVEeGGzu7fmW9pXw" code="10193-1" displayName="BREASTS" base_Property="_2QzonRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2QzophSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzopBSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2QzosRSVEeGGzu7fmW9pXw" base_Class="_2QzoqRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.29" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2Q5vMBSVEeGGzu7fmW9pXw" code="10200-4" displayName="HEART" base_Property="_2QzorBSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2Q5vNBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q5vMhSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Q5vOBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q5vNhSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2Q5vQxSVEeGGzu7fmW9pXw" base_Class="_2Q5vOxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.30" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2Q5vRBSVEeGGzu7fmW9pXw" code="11412-4" displayName="RESPIRATORY SYSTEM" base_Property="_2Q5vPhSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2Q_10xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q_10RSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RF8cxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8cRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RF8fhSVEeGGzu7fmW9pXw" base_Class="_2RF8dhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.31" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RF8fxSVEeGGzu7fmW9pXw" code="10191-5" displayName="ABDOMEN" base_Property="_2RF8eRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RF8gxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8gRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RF8hxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8hRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RMDGBSVEeGGzu7fmW9pXw" base_Class="_2RMDEBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.32" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RMDGRSVEeGGzu7fmW9pXw" code="11447-0" displayName="HEMATOLOGIC+LYMPHATIC+IMMUNOLOGIC SYSTEM" base_Property="_2RMDExSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RMDHRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RMDGxSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RMDIRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RMDHxSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RMDLBSVEeGGzu7fmW9pXw" base_Class="_2RMDJBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.33" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RMDLRSVEeGGzu7fmW9pXw" code="10208-7" displayName="VESSELS" base_Property="_2RMDJxSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RSJsxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJsRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RSJtxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJtRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RSJwhSVEeGGzu7fmW9pXw" base_Class="_2RSJuhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.34" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RSJwxSVEeGGzu7fmW9pXw" code="11410-8" displayName="MUSCULOSKELETAL SYSTEM" base_Property="_2RSJvRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RSJxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJxRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RSJyxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJyRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RYQWhSVEeGGzu7fmW9pXw" base_Class="_2RYQUhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.35" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RYQWxSVEeGGzu7fmW9pXw" code="10202-0" displayName="NEUROLOGIC SYSTEM" base_Property="_2RYQVRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RYQXxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RYQXRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RYQYxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RYQYRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RYQbhSVEeGGzu7fmW9pXw" base_Class="_2RYQZhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.36" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RYQbxSVEeGGzu7fmW9pXw" code="11400-9" displayName="GENITALIA" base_Property="_2RYQaRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2ReW8xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReW8RSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2ReW9xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReW9RSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2ReXAhSVEeGGzu7fmW9pXw" base_Class="_2ReW-hSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.37" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2ReXAxSVEeGGzu7fmW9pXw" code="10205-3" displayName="RECTUM" base_Property="_2ReW_RSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2ReXBxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReXBRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RkdkxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdkRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RkdnhSVEeGGzu7fmW9pXw" base_Class="_2RkdlhSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_2RkdnxSVEeGGzu7fmW9pXw" code="10196-4" displayName="EXTREMITIES" base_Property="_2RkdmRSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2RkdoxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdoRSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2RkdpxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdpRSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2RqkNBSVEeGGzu7fmW9pXw" base_Class="_2RqkMBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.120" assigningAuthorityName="HITSP C83"/>
   <CDA:CodeSystemConstraint xmi:id="_2RqkNxSVEeGGzu7fmW9pXw" code="10187-3" displayName="REVIEW OF SYSTEMS" base_Property="_2RqkNhSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2RqkPhSVEeGGzu7fmW9pXw" base_Class="_2RqkOxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.121" assigningAuthorityName="HITSP C83"/>
   <CDA:CodeSystemConstraint xmi:id="_2RqkQRSVEeGGzu7fmW9pXw" code="8648-8" displayName="HOSPITAL COURSE" base_Property="_2RqkQBSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_2Rwq4BSVEeGGzu7fmW9pXw" base_Class="_2Rwq0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.83.123" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_2Rwq5BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq4hSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Rwq5xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq5RSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Rwq6hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq6BSVEeGGzu7fmW9pXw"/>
@@ -12190,7 +12155,6 @@ past. It shall include entries for medication administration as described in the
   <CDA:ConstraintValidation xmi:id="_2UJQdRSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2UJQcxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-367</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_2Uz-6RSVEeGGzu7fmW9pXw" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
   <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet" base_Property="_2Uz-5hSVEeGGzu7fmW9pXw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -12295,4 +12259,19 @@ past. It shall include entries for medication administration as described in the
   <Ecore:EReference xmi:id="_hPwGmRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGlhg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_hPwGnRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGmhg4EeGs5a462vYX5Q"/>
   <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12"/>
+  <CDA:CDATemplate xmi:id="_r3b7QBkaEeGs5a462vYX5Q" base_Class="_2Rwq0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.9"/>
+  <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
+  <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6"/>
+  <CDA:CDATemplate xmi:id="_JcLykBkbEeGs5a462vYX5Q" base_Class="_2PWQCBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+  <CDA:CDATemplate xmi:id="_g8kmkBnSEeGs5a462vYX5Q" base_Class="_2PQJcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.20"/>
+  <CDA:CDATemplate xmi:id="_n3vB4BnSEeGs5a462vYX5Q" base_Class="_2PcWsRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+  <CDA:CDATemplate xmi:id="_uFmSUBnSEeGs5a462vYX5Q" base_Class="_2PidQhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.43"/>
+  <CDA:CDATemplate xmi:id="_55YpcBnSEeGs5a462vYX5Q" base_Class="_2RqkOxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.5"/>
+  <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11"/>
+  <CDA:CDATemplate xmi:id="_ZHedIBnTEeGs5a462vYX5Q" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.10"/>
+  <CDA:CDATemplate xmi:id="_jeR44BnTEeGs5a462vYX5Q" base_Class="_2NP-QxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.10"/>
+  <CDA:CDATemplate xmi:id="_LeTcQBnUEeGs5a462vYX5Q" base_Class="_2PWQFxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
+  <CDA:CDATemplate xmi:id="_TYymkBnUEeGs5a462vYX5Q" base_Class="_2RqkMBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+  <CDA:CDATemplate xmi:id="_IYW3oBnXEeGs5a462vYX5Q" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.44"/>
+  <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24"/>
 </xmi:XMI>
