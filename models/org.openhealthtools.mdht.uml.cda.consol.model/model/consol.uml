@@ -8925,6 +8925,9 @@ the text associated with the coded concept</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UdHpOhUlEeGvPruliC3crg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_fqsDwBnZEeGs5a462vYX5Q" name="authorizationActivity" type="_XUoXwBnZEeGs5a462vYX5Q" association="_fqsDwhnZEeGs5a462vYX5Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqsDwRnZEeGs5a462vYX5Q"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Cg3pkBUmEeGvPruliC3crg" name="CoverageActivity">
       <generalization xmi:id="_Cg3pkRUmEeGvPruliC3crg">
@@ -9747,6 +9750,28 @@ past. It shall include entries for medication administration as described in the
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5iZLEhg4EeGs5a462vYX5Q" memberEnd="_5iZLEBg4EeGs5a462vYX5Q _5iZLExg4EeGs5a462vYX5Q">
       <ownedEnd xmi:id="_5iZLExg4EeGs5a462vYX5Q" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_5iZLEhg4EeGs5a462vYX5Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XUoXwBnZEeGs5a462vYX5Q" name="AuthorizationActivity">
+      <generalization xmi:id="_XUoXwRnZEeGs5a462vYX5Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_aZU30BnZEeGs5a462vYX5Q" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_aZU30hnZEeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aZU30xnZEeGs5a462vYX5Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZU31BnZEeGs5a462vYX5Q"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_aZU31hnZEeGs5a462vYX5Q" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fqsDwhnZEeGs5a462vYX5Q" memberEnd="_fqsDwBnZEeGs5a462vYX5Q _fqsDwxnZEeGs5a462vYX5Q">
+      <ownedEnd xmi:id="_fqsDwxnZEeGs5a462vYX5Q" type="_PZBdMBUlEeGvPruliC3crg" association="_fqsDwhnZEeGs5a462vYX5Q"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -12274,4 +12299,10 @@ past. It shall include entries for medication administration as described in the
   <CDA:CDATemplate xmi:id="_TYymkBnUEeGs5a462vYX5Q" base_Class="_2RqkMBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
   <CDA:CDATemplate xmi:id="_IYW3oBnXEeGs5a462vYX5Q" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.44"/>
   <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24"/>
+  <Ecore:EAttribute xmi:id="_aZU30RnZEeGs5a462vYX5Q" isUnsettable="true" base_Property="_aZU30BnZEeGs5a462vYX5Q"/>
+  <Ecore:EReference xmi:id="_aZU31RnZEeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_aZU30hnZEeGs5a462vYX5Q"/>
+  <Ecore:EAttribute xmi:id="_aZU31xnZEeGs5a462vYX5Q" isUnsettable="true" base_Property="_aZU31hnZEeGs5a462vYX5Q"/>
+  <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19"/>
+  <CDA:ActRelationship xmi:id="_pNyKoBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q"/>
+  <CDA:EntryRelationship xmi:id="_qEUxEBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q" typeCode="REFR"/>
 </xmi:XMI>
