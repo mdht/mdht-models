@@ -23,23 +23,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNoseSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='NOSE' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.22' constraints.validation.error='NoseSectionTemplateId NoseSectionCode' code.codeSystemName='LOINC' code.code='10203-8' constraints.validation.info='NoseSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='NOSE' constraints.validation.error='NoseSectionCode' code.codeSystemName='LOINC' code.code='10203-8' constraints.validation.info='NoseSectionProblemEntry'"
  * @generated
  */
 public interface NoseSection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.22')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.9.22\')'"
-	 * @generated
-	 */
-	boolean validateNoseSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

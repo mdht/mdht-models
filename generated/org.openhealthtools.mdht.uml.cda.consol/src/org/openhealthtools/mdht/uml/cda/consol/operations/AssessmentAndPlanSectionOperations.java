@@ -24,13 +24,14 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
+import org.openhealthtools.mdht.uml.cda.Encounter;
+import org.openhealthtools.mdht.uml.cda.Procedure;
+
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.Encounter;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
-import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -77,7 +78,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.123')";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Template Id</em>}' invariant operation.
@@ -93,7 +94,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.123')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9')
 	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -305,7 +306,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::Encounter))";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(cda::Encounter))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionEncounterEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Encounter Entry</em>}' invariant operation.
@@ -321,7 +322,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::Encounter))
+	 * self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(cda::Encounter))
 	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -361,7 +362,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::Procedure))";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionProcedureEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Procedure Entry</em>}' invariant operation.
@@ -377,7 +378,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::Procedure))
+	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))
 	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -511,7 +512,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENCOUNTER_ENTRIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::Encounter)).oclAsType(consol::Encounter)";
+	protected static final String GET_ENCOUNTER_ENTRIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).oclAsType(cda::Encounter)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEncounterEntries(AssessmentAndPlanSection) <em>Get Encounter Entries</em>}' query operation.
@@ -527,7 +528,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::Encounter)).oclAsType(consol::Encounter)
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).oclAsType(cda::Encounter)
 	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -558,7 +559,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ENTRIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::Procedure)).oclAsType(consol::Procedure)";
+	protected static final String GET_PROCEDURE_ENTRIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProcedureEntries(AssessmentAndPlanSection) <em>Get Procedure Entries</em>}' query operation.
@@ -574,7 +575,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::Procedure)).oclAsType(consol::Procedure)
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)
 	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

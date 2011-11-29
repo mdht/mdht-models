@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LymphaticSection#validateLymphaticSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LymphaticSection#validateLymphaticSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LymphaticSection#validateLymphaticSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LymphaticSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,61 +54,6 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 */
 	protected LymphaticSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateLymphaticSectionTemplateId(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLymphaticSectionTemplateId(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.32')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateLymphaticSectionTemplateId(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLymphaticSectionTemplateId(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.32')
-	 * @param lymphaticSection The receiving '<em><b>Lymphatic Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateLymphaticSectionTemplateId(LymphaticSection lymphaticSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.LYMPHATIC_SECTION);
-			try {
-				VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lymphaticSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("LymphaticSectionTemplateId"), new Object[] { lymphaticSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -260,7 +204,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.LYMPHATIC_SECTION,
-				ConsolPackage.Literals.LYMPHATIC_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.LYMPHATIC_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

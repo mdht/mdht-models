@@ -35,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Procedure#validateConsolProcedureHasCodeOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Has Code Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Procedure#validateConsolProcedurePerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Performer Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Procedure#validateConsolProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Procedure#validateConsolProcedureCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Procedure#validateConsolProcedureTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Target Site Code</em>}</li>
  * </ul>
@@ -158,61 +157,6 @@ public class ProcedureOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROCEDURE__CONSOL_PROCEDURE_PERFORMER_ASSIGNED_ENTITY,
 					ConsolPlugin.INSTANCE.getString("ConsolProcedurePerformerAssignedEntity"),
 					new Object[] { procedure }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateConsolProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateConsolProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.17')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateConsolProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Procedure Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateConsolProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.17')
-	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateConsolProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE);
-			try {
-				VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedure)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE__CONSOL_PROCEDURE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ConsolProcedureTemplateId"), new Object[] { procedure }));
 			}
 			return false;
 		}

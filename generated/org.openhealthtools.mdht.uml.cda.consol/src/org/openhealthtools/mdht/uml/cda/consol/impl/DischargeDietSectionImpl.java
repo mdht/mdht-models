@@ -13,9 +13,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.DischargeDiet;
+import org.openhealthtools.mdht.uml.cda.consol.DischargeDietSection;
 
-import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDietOperations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDietSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
@@ -23,20 +23,20 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Discharge Diet</b></em>'.
+ * An implementation of the model object '<em><b>Discharge Diet Section</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class DischargeDietImpl extends SectionImpl implements DischargeDiet {
+public class DischargeDietSectionImpl extends SectionImpl implements DischargeDietSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DischargeDietImpl() {
+	protected DischargeDietSectionImpl() {
 		super();
 	}
 
@@ -47,7 +47,7 @@ public class DischargeDietImpl extends SectionImpl implements DischargeDiet {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.DISCHARGE_DIET;
+		return ConsolPackage.Literals.DISCHARGE_DIET_SECTION;
 	}
 
 	/**
@@ -55,8 +55,8 @@ public class DischargeDietImpl extends SectionImpl implements DischargeDiet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeDietTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeDietOperations.validateDischargeDietTemplateId(this, diagnostics, context);
+	public boolean validateDischargeDietSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDietSectionOperations.validateDischargeDietSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +64,8 @@ public class DischargeDietImpl extends SectionImpl implements DischargeDiet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeDietCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeDietOperations.validateDischargeDietCode(this, diagnostics, context);
+	public boolean validateDischargeDietSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDietSectionOperations.validateDischargeDietSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +73,8 @@ public class DischargeDietImpl extends SectionImpl implements DischargeDiet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiet init() {
+	public DischargeDietSection init() {
 		CDAUtil.init(this);
 		return this;
 	}
-} // DischargeDietImpl
+} // DischargeDietSectionImpl

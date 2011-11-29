@@ -13,13 +13,12 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.Supply;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 
@@ -590,7 +589,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Supply getMedicationDispense() {
+	public MedicationDispense getMedicationDispense() {
 		return MedicationActivityOperations.getMedicationDispense(this);
 	}
 

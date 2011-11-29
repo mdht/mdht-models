@@ -55,17 +55,6 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationFullfillmentInstructionsMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsMoodCode(

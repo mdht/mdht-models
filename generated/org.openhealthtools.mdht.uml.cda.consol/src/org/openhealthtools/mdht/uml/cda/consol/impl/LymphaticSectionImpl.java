@@ -56,15 +56,6 @@ public class LymphaticSectionImpl extends SectionImpl implements LymphaticSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLymphaticSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LymphaticSectionOperations.validateLymphaticSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateLymphaticSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LymphaticSectionOperations.validateLymphaticSectionCode(this, diagnostics, context);
 	}

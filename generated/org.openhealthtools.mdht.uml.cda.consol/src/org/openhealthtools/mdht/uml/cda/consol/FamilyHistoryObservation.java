@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.3' constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationHasSubjectPatientRelationship FamilyHistoryObservationRelationshipValueCode FamilyHistoryObservationHasRelatedSubjectCode FamilyHistoryObservationId FamilyHistoryObservationCode FamilyHistoryObservationStatusCode FamilyHistoryObservationValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationRelatedSubjectCodeValueSet FamilyHistoryObservationHasRelatedSubjectSubject FamilyHistoryObservationHasGenderCode FamilyHistoryObservationRelatedSubjectBirthTime' constraints.validation.info='FamilyHistoryObservationAgeObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.46' constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationHasSubjectPatientRelationship FamilyHistoryObservationRelationshipValueCode FamilyHistoryObservationHasRelatedSubjectCode FamilyHistoryObservationId FamilyHistoryObservationCode FamilyHistoryObservationStatusCode FamilyHistoryObservationValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationRelatedSubjectCodeValueSet FamilyHistoryObservationHasRelatedSubjectSubject FamilyHistoryObservationHasGenderCode FamilyHistoryObservationRelatedSubjectBirthTime' constraints.validation.info='FamilyHistoryObservationAgeObservation'"
  * @generated
  */
 public interface FamilyHistoryObservation extends Observation {
@@ -131,11 +131,11 @@ public interface FamilyHistoryObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.13.3')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.46')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.13.3\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.46\')'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

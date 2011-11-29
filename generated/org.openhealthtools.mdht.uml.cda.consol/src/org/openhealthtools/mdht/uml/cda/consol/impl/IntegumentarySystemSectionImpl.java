@@ -56,16 +56,6 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIntegumentarySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateIntegumentarySystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionCode(this, diagnostics, context);
 	}

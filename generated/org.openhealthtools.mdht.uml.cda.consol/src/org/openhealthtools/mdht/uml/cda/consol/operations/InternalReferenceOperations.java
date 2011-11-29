@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InternalReference#validateInternalReferenceTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Internal Reference Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InternalReference#validateInternalReferenceId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Internal Reference Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InternalReference#validateInternalReferenceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Internal Reference Code</em>}</li>
  * </ul>
@@ -49,61 +48,6 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	protected InternalReferenceOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateInternalReferenceTemplateId(InternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Internal Reference Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateInternalReferenceTemplateId(InternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.4.1')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateInternalReferenceTemplateId(InternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Internal Reference Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateInternalReferenceTemplateId(InternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.4.1')
-	 * @param internalReference The receiving '<em><b>Internal Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateInternalReferenceTemplateId(InternalReference internalReference,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.INTERNAL_REFERENCE);
-			try {
-				VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			internalReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InternalReferenceTemplateId"), new Object[] { internalReference }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

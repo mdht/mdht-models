@@ -6,10 +6,16 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+
+import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionEntriesOptionalOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
@@ -42,6 +48,17 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

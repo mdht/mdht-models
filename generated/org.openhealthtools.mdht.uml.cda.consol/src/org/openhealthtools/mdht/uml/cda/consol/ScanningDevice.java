@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Author;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getScanningDevice()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.2.20.2' constraints.validation.error='ScanningDeviceTemplateId ScanningDeviceTimeEqualsDocumentEffectiveTime ScanningDeviceHasAssignedAuthorId ScanningDeviceHasAssignedAuthoringDeviceCode ScanningDeviceHasDeviceManufacturerModelName ScanningDeviceHasDeviceSoftwareName ScanningDeviceHasAssignedAuthorRepresentedOrganizationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScanningDeviceTimeEqualsDocumentEffectiveTime ScanningDeviceHasAssignedAuthorId ScanningDeviceHasAssignedAuthoringDeviceCode ScanningDeviceHasDeviceManufacturerModelName ScanningDeviceHasDeviceSoftwareName ScanningDeviceHasAssignedAuthorRepresentedOrganizationId'"
  * @generated
  */
 public interface ScanningDevice extends Author {
@@ -110,19 +110,6 @@ public interface ScanningDevice extends Author {
 	 */
 	boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.2.20.2')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.2.20.2\')'"
-	 * @generated
-	 */
-	boolean validateScanningDeviceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -56,15 +56,6 @@ public class NeurologicSystemSectionImpl extends SectionImpl implements Neurolog
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNeurologicSystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NeurologicSystemSectionOperations.validateNeurologicSystemSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNeurologicSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicSystemSectionOperations.validateNeurologicSystemSectionCode(this, diagnostics, context);
 	}

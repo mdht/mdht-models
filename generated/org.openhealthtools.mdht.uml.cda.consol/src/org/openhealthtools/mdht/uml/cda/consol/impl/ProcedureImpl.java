@@ -72,15 +72,6 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsolProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateConsolProcedureTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConsolProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateConsolProcedureCode(this, diagnostics, context);
 	}

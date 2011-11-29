@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3' constraints.validation.error='InstructionsTemplateId InstructionsClassCode InstructionsMoodCode InstructionsCode InstructionsText InstructionsStatusCode' code.codeSystemName='IHEActCode' classCode='ACT' code.code='PINSTRUCT' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' templateId.root='2.16.840.1.113883.10.20.22.4.20' constraints.validation.error='InstructionsTemplateId InstructionsClassCode InstructionsMoodCode InstructionsCode InstructionsText InstructionsStatusCode' code.codeSystemName='IHEActCode' classCode='ACT' code.code='PINSTRUCT' moodCode='INT'"
  * @generated
  */
 public interface Instructions extends Act {
@@ -37,11 +37,11 @@ public interface Instructions extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.20')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.3\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.20\')'"
 	 * @generated
 	 */
 	boolean validateInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

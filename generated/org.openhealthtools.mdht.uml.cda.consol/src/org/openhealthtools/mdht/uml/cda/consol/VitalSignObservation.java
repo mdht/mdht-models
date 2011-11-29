@@ -35,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.3.88.11.83.14' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationNoObservationRangeCode VitalSignObservationInformationSource VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationValue' code.codeSystemName='LOINC' constraints.validation.warning='VitalSignObservationCodeValue VitalSignObservationReferenceRangeRequired VitalSignObservationEffectiveTime' classCode='OBS' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationNoObservationRangeCode VitalSignObservationInformationSource VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationValue' code.codeSystemName='LOINC' constraints.validation.warning='VitalSignObservationCodeValue VitalSignObservationReferenceRangeRequired VitalSignObservationEffectiveTime' classCode='OBS' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode' moodCode='EVN'"
  * @generated
  */
 public interface VitalSignObservation extends Observation {
@@ -101,11 +101,11 @@ public interface VitalSignObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.14')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.27')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.14\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.27\')'"
 	 * @generated
 	 */
 	boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

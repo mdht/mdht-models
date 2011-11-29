@@ -24,14 +24,15 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
-import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -722,7 +723,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureInternalReference(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Internal Reference</em>}' invariant operation.
@@ -738,7 +739,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -780,7 +781,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureInternalReferenceReason(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Internal Reference Reason</em>}' invariant operation.
@@ -796,7 +797,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -839,7 +840,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureProblemObservation(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Problem Observation</em>}' invariant operation.
@@ -855,7 +856,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1011,7 +1012,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::ImmunizationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::MedicationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureMedicationActivity(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Medication Activity</em>}' invariant operation.
@@ -1027,7 +1028,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::ImmunizationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::MedicationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1127,7 +1128,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference))->asSequence()->first().oclAsType(consol::InternalReference)";
+	protected static final String GET_INTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInternalReference(ProcedureActivityProcedure) <em>Get Internal Reference</em>}' query operation.
@@ -1143,12 +1144,12 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference))->asSequence()->first().oclAsType(consol::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static InternalReference getInternalReference(ProcedureActivityProcedure procedureActivityProcedure) {
+	public static Act getInternalReference(ProcedureActivityProcedure procedureActivityProcedure) {
 		if (GET_INTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1161,7 +1162,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_INTERNAL_REFERENCE__EOCL_QRY);
-		return (InternalReference) query.evaluate(procedureActivityProcedure);
+		return (Act) query.evaluate(procedureActivityProcedure);
 	}
 
 	/**
@@ -1172,7 +1173,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTERNAL_REFERENCE_REASONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)";
+	protected static final String GET_INTERNAL_REFERENCE_REASONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInternalReferenceReasons(ProcedureActivityProcedure) <em>Get Internal Reference Reasons</em>}' query operation.
@@ -1188,13 +1189,12 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<InternalReference> getInternalReferenceReasons(
-			ProcedureActivityProcedure procedureActivityProcedure) {
+	public static EList<Act> getInternalReferenceReasons(ProcedureActivityProcedure procedureActivityProcedure) {
 		if (GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1208,8 +1208,8 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<InternalReference> result = (Collection<InternalReference>) query.evaluate(procedureActivityProcedure);
-		return new BasicEList.UnmodifiableEList<InternalReference>(result.size(), result.toArray());
+		Collection<Act> result = (Collection<Act>) query.evaluate(procedureActivityProcedure);
+		return new BasicEList.UnmodifiableEList<Act>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1220,7 +1220,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))->asSequence()->first().oclAsType(consol::AllergyObservation)";
+	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemObservation(ProcedureActivityProcedure) <em>Get Problem Observation</em>}' query operation.
@@ -1236,12 +1236,12 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))->asSequence()->first().oclAsType(consol::AllergyObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static AllergyObservation getProblemObservation(ProcedureActivityProcedure procedureActivityProcedure) {
+	public static ProblemObservation getProblemObservation(ProcedureActivityProcedure procedureActivityProcedure) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1254,7 +1254,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
-		return (AllergyObservation) query.evaluate(procedureActivityProcedure);
+		return (ProblemObservation) query.evaluate(procedureActivityProcedure);
 	}
 
 	/**
@@ -1355,7 +1355,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)";
+	protected static final String GET_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationActivities(ProcedureActivityProcedure) <em>Get Medication Activities</em>}' query operation.
@@ -1371,12 +1371,12 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ImmunizationActivity> getMedicationActivities(
+	public static EList<MedicationActivity> getMedicationActivities(
 			ProcedureActivityProcedure procedureActivityProcedure) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1391,8 +1391,8 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ImmunizationActivity> result = (Collection<ImmunizationActivity>) query.evaluate(procedureActivityProcedure);
-		return new BasicEList.UnmodifiableEList<ImmunizationActivity>(result.size(), result.toArray());
+		Collection<MedicationActivity> result = (Collection<MedicationActivity>) query.evaluate(procedureActivityProcedure);
+		return new BasicEList.UnmodifiableEList<MedicationActivity>(result.size(), result.toArray());
 	}
 
 	/**

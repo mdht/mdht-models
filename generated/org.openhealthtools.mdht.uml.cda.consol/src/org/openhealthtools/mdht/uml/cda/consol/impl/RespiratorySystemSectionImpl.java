@@ -56,15 +56,6 @@ public class RespiratorySystemSectionImpl extends SectionImpl implements Respira
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRespiratorySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateRespiratorySystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionCode(this, diagnostics, context);
 	}

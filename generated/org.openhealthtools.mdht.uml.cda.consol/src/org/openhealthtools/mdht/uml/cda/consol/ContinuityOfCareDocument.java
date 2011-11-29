@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getContinuityOfCareDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Summarization of episode note' templateId.root='2.16.840.1.113883.10.20.22.1.2' constraints.validation.error='ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentServiceEventRequired ContinuityOfCareDocumentServiceEventClassCode ContinuityOfCareDocumentServiceEventEffectiveTime ContinuityOfCareDocumentLanguageCodeFormat ContinuityOfCareDocumentNoTemplateIdExtension ContinuityOfCareDocumentHasEffectiveTimeSeconds ContinuityOfCareDocumentHasEffectiveTimeZone ContinuityOfCareDocumentOneOrTwoRecordTarget ContinuityOfCareDocumentHasAssignedAuthorNullFlavor GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentProblemSection' code.codeSystemName='LOINC' constraints.validation.warning='ContinuityOfCareDocumentHasAssignedAuthor ContinuityOfCareDocumentProceduresSection' code.code='34133-9' constraints.validation.info='ContinuityOfCareDocumentHasInformationRecipient ContinuityOfCareDocumentHealthcareProvider ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentImmunizationsSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentVitalSignsSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentFunctionalStatusSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.2' code.displayName='Summarization of episode note' constraints.validation.error='ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentServiceEventRequired ContinuityOfCareDocumentServiceEventClassCode ContinuityOfCareDocumentServiceEventEffectiveTime ContinuityOfCareDocumentLanguageCodeFormat ContinuityOfCareDocumentNoTemplateIdExtension ContinuityOfCareDocumentHasEffectiveTimeSeconds ContinuityOfCareDocumentHasEffectiveTimeZone ContinuityOfCareDocumentOneOrTwoRecordTarget ContinuityOfCareDocumentHasAssignedAuthorNullFlavor GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentProblemSection' code.codeSystemName='LOINC' constraints.validation.warning='ContinuityOfCareDocumentHasAssignedAuthor ContinuityOfCareDocumentProceduresSection' code.code='34133-9' constraints.validation.info='ContinuityOfCareDocumentHasInformationRecipient ContinuityOfCareDocumentHealthcareProvider ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentImmunizationsSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentVitalSignsSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentFunctionalStatusSection'"
  * @generated
  */
 public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
@@ -291,6 +291,19 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -466,6 +479,18 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	MedicationsSection getMedicationsSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)'"
+	 * @generated
+	 */
+	PlanOfCareSection getPlanOfCareSection();
 
 	/**
 	 * <!-- begin-user-doc -->

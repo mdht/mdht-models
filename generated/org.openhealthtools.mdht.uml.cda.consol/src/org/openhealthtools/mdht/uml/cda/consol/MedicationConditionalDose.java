@@ -11,6 +11,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Medication Conditional Dose</b></em>'.
@@ -41,7 +43,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationConditionalDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationConditionalDoseTemplateId MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationActivityCode MedicationConditionalDoseStatusCode MedicationConditionalDoseEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRouteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDoseReactionObservation MedicationConditionalDoseProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationActivityCode MedicationConditionalDoseStatusCode MedicationConditionalDoseEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRouteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDoseReactionObservation MedicationConditionalDoseProductInstance'"
  * @generated
  */
 public interface MedicationConditionalDose extends MedicationActivity {
@@ -537,13 +539,13 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)'"
 	 * @generated
 	 */
-	EList<InternalReference> getInternalReferences();
+	EList<Act> getInternalReferences();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -21,6 +21,7 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
+import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -46,7 +47,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntrySubscriberTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Subscriber Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryEntryRelationshipREFR(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship REFR</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryEntryRelationshipTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Id</em>}</li>
@@ -464,60 +464,6 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePayerEntryTemplateId(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayerEntryTemplateId(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.18')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePayerEntryTemplateId(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayerEntryTemplateId(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.18')
-	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validatePayerEntryTemplateId(PayerEntry payerEntry, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
-			try {
-				VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntry)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PayerEntryTemplateId"), new Object[] { payerEntry }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validatePayerEntryClassCode(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Class Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -744,7 +690,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))";
+	protected static final String VALIDATE_PAYER_ENTRY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerEntryPayerEntity(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Payer Entity</em>}' invariant operation.
@@ -760,7 +706,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act))
 	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -906,7 +852,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PAYER_ENTITY__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)";
+	protected static final String GET_PAYER_ENTITY__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPayerEntity(PayerEntry) <em>Get Payer Entity</em>}' query operation.
@@ -922,16 +868,16 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)
 	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static PayerEntry getPayerEntity(PayerEntry payerEntry) {
+	public static Act getPayerEntity(PayerEntry payerEntry) {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(63));
 			try {
 				GET_PAYER_ENTITY__EOCL_QRY = helper.createQuery(GET_PAYER_ENTITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -939,7 +885,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTITY__EOCL_QRY);
-		return (PayerEntry) query.evaluate(payerEntry);
+		return (Act) query.evaluate(payerEntry);
 	}
 
 	/**
@@ -975,7 +921,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(65));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
 			try {
 				GET_COVERED_PARTY__EOCL_QRY = helper.createQuery(GET_COVERED_PARTY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1019,7 +965,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(66));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(65));
 			try {
 				GET_SUBSCRIBER__EOCL_QRY = helper.createQuery(GET_SUBSCRIBER__EOCL_EXP);
 			} catch (ParserException pe) {

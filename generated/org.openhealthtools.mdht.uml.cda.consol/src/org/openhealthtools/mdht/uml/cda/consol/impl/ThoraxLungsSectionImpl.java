@@ -56,15 +56,6 @@ public class ThoraxLungsSectionImpl extends SectionImpl implements ThoraxLungsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateThoraxLungsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThoraxLungsSectionOperations.validateThoraxLungsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateThoraxLungsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ThoraxLungsSectionOperations.validateThoraxLungsSectionCode(this, diagnostics, context);
 	}

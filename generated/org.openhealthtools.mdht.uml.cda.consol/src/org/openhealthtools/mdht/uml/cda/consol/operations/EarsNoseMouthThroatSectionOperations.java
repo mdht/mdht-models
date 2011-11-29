@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection#validateEarsNoseMouthThroatSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection#validateEarsNoseMouthThroatSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection#validateEarsNoseMouthThroatSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,63 +54,6 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 */
 	protected EarsNoseMouthThroatSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateEarsNoseMouthThroatSectionTemplateId(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEarsNoseMouthThroatSectionTemplateId(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.20')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateEarsNoseMouthThroatSectionTemplateId(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEarsNoseMouthThroatSectionTemplateId(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.20')
-	 * @param earsNoseMouthThroatSection The receiving '<em><b>Ears Nose Mouth Throat Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateEarsNoseMouthThroatSectionTemplateId(
-			EarsNoseMouthThroatSection earsNoseMouthThroatSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION);
-			try {
-				VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			earsNoseMouthThroatSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EARS_NOSE_MOUTH_THROAT_SECTION__EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EarsNoseMouthThroatSectionTemplateId"),
-					new Object[] { earsNoseMouthThroatSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -265,7 +207,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION,
-				ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

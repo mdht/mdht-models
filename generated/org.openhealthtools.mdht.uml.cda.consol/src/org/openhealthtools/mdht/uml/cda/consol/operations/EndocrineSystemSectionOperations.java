@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection#validateEndocrineSystemSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection#validateEndocrineSystemSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection#validateEndocrineSystemSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,62 +54,6 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 */
 	protected EndocrineSystemSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateEndocrineSystemSectionTemplateId(EndocrineSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEndocrineSystemSectionTemplateId(EndocrineSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.25')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateEndocrineSystemSectionTemplateId(EndocrineSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEndocrineSystemSectionTemplateId(EndocrineSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.25')
-	 * @param endocrineSystemSection The receiving '<em><b>Endocrine System Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateEndocrineSystemSectionTemplateId(EndocrineSystemSection endocrineSystemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ENDOCRINE_SYSTEM_SECTION);
-			try {
-				VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			endocrineSystemSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENDOCRINE_SYSTEM_SECTION__ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EndocrineSystemSectionTemplateId"),
-					new Object[] { endocrineSystemSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -263,7 +206,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ENDOCRINE_SYSTEM_SECTION,
-				ConsolPackage.Literals.ENDOCRINE_SYSTEM_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.ENDOCRINE_SYSTEM_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

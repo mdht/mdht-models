@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ChestWallSection#validateChestWallSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ChestWallSection#validateChestWallSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ChestWallSection#validateChestWallSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ChestWallSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,61 +54,6 @@ public class ChestWallSectionOperations extends SectionOperations {
 	 */
 	protected ChestWallSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateChestWallSectionTemplateId(ChestWallSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateChestWallSectionTemplateId(ChestWallSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.27')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateChestWallSectionTemplateId(ChestWallSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest Wall Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateChestWallSectionTemplateId(ChestWallSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.27')
-	 * @param chestWallSection The receiving '<em><b>Chest Wall Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateChestWallSectionTemplateId(ChestWallSection chestWallSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.CHEST_WALL_SECTION);
-			try {
-				VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_WALL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestWallSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHEST_WALL_SECTION__CHEST_WALL_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ChestWallSectionTemplateId"), new Object[] { chestWallSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -260,7 +204,7 @@ public class ChestWallSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CHEST_WALL_SECTION,
-				ConsolPackage.Literals.CHEST_WALL_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.CHEST_WALL_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

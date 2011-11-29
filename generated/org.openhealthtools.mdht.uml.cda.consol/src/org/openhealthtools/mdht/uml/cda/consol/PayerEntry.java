@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPayerEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.18' constraints.validation.error='PayerEntryTemplateId PayerEntryPayerEntityIsRequired PayerEntryCoveredPartyIsRequired PayerEntryEntryRelationshipREFR PayerEntryEntryRelationshipTarget PayerEntryClassCode PayerEntryMoodCode PayerEntryId PayerEntryStatusCode PayerEntryPayerEntity PayerEntryCoveredParty' classCode='ACT' constraints.validation.info='PayerEntryCoveredPartyTime PayerEntrySubscriberIsAllowed PayerEntrySubscriberTime PayerEntrySubscriber' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' constraints.validation.error='PayerEntryPayerEntityIsRequired PayerEntryCoveredPartyIsRequired PayerEntryEntryRelationshipREFR PayerEntryEntryRelationshipTarget PayerEntryClassCode PayerEntryMoodCode PayerEntryId PayerEntryStatusCode PayerEntryPayerEntity PayerEntryCoveredParty' classCode='ACT' constraints.validation.info='PayerEntryCoveredPartyTime PayerEntrySubscriberIsAllowed PayerEntrySubscriberTime PayerEntrySubscriber' moodCode='EVN'"
  * @generated
  */
 public interface PayerEntry extends Act {
@@ -126,19 +126,6 @@ public interface PayerEntry extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.18')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.18\')'"
-	 * @generated
-	 */
-	boolean validatePayerEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -193,11 +180,11 @@ public interface PayerEntry extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PayerEntry))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(cda::Act))'"
 	 * @generated
 	 */
 	boolean validatePayerEntryPayerEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -232,13 +219,13 @@ public interface PayerEntry extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PayerEntry))->asSequence()->first().oclAsType(consol::PayerEntry)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act))->asSequence()->first().oclAsType(cda::Act)'"
 	 * @generated
 	 */
-	PayerEntry getPayerEntity();
+	Act getPayerEntity();
 
 	/**
 	 * <!-- begin-user-doc -->

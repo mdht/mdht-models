@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection#validateExtremitiesSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection#validateExtremitiesSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection#validateExtremitiesSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,62 +54,6 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 */
 	protected ExtremitiesSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExtremitiesSectionTemplateId(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExtremitiesSectionTemplateId(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExtremitiesSectionTemplateId(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExtremitiesSectionTemplateId(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1')
-	 * @param extremitiesSection The receiving '<em><b>Extremities Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateExtremitiesSectionTemplateId(ExtremitiesSection extremitiesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTREMITIES_SECTION);
-			try {
-				VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			extremitiesSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ExtremitiesSectionTemplateId"),
-					new Object[] { extremitiesSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -262,7 +205,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.EXTREMITIES_SECTION,
-				ConsolPackage.Literals.EXTREMITIES_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.EXTREMITIES_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

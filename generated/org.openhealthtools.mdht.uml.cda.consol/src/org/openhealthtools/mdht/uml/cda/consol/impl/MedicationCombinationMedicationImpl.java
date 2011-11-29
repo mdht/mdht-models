@@ -13,9 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
-import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
@@ -449,7 +450,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InternalReference> getInternalReferences() {
+	public EList<Act> getInternalReferences() {
 		return MedicationCombinationMedicationOperations.getInternalReferences(this);
 	}
 
@@ -469,17 +470,6 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public NonMedicinalSupplyActivity getSupplyEntry() {
 		return MedicationCombinationMedicationOperations.getSupplyEntry(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationActivityTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

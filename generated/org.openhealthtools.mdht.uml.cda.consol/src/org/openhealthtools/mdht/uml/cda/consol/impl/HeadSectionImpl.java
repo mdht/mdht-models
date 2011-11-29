@@ -56,15 +56,6 @@ public class HeadSectionImpl extends SectionImpl implements HeadSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHeadSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeadSectionOperations.validateHeadSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHeadSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadSectionOperations.validateHeadSectionCode(this, diagnostics, context);
 	}

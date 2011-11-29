@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection#validateMusculoskeletalSystemSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection#validateMusculoskeletalSystemSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection#validateMusculoskeletalSystemSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,63 +54,6 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 	 */
 	protected MusculoskeletalSystemSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMusculoskeletalSystemSectionTemplateId(MusculoskeletalSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMusculoskeletalSystemSectionTemplateId(MusculoskeletalSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.34')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMusculoskeletalSystemSectionTemplateId(MusculoskeletalSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMusculoskeletalSystemSectionTemplateId(MusculoskeletalSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.34')
-	 * @param musculoskeletalSystemSection The receiving '<em><b>Musculoskeletal System Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMusculoskeletalSystemSectionTemplateId(
-			MusculoskeletalSystemSection musculoskeletalSystemSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION);
-			try {
-				VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			musculoskeletalSystemSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MUSCULOSKELETAL_SYSTEM_SECTION__MUSCULOSKELETAL_SYSTEM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MusculoskeletalSystemSectionTemplateId"),
-					new Object[] { musculoskeletalSystemSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -266,7 +208,7 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION,
-				ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

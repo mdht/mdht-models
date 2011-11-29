@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' templateId.root='2.16.840.1.113883.3.88.11.83.114' constraints.validation.error='HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionCode HospitalDischargeMedicationsSectionMedication' code.codeSystemName='LOINC' code.code='10183-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' templateId.root='2.16.840.1.113883.10.20.22.2.11' constraints.validation.error='HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionCode HospitalDischargeMedicationsSectionMedication' code.codeSystemName='LOINC' code.code='10183-2'"
  * @generated
  */
 public interface HospitalDischargeMedicationsSection extends Section {
@@ -37,11 +37,11 @@ public interface HospitalDischargeMedicationsSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.114')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.11')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.114\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.11\')'"
 	 * @generated
 	 */
 	boolean validateHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,

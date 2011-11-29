@@ -13,9 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
-import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.InsuranceProviderOperations;
 
@@ -281,15 +282,6 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateInsuranceProviderClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderClassCode(this, diagnostics, context);
 	}
@@ -344,7 +336,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PayerEntry> getPayerEntries() {
+	public EList<Act> getPayerEntries() {
 		return InsuranceProviderOperations.getPayerEntries(this);
 	}
 

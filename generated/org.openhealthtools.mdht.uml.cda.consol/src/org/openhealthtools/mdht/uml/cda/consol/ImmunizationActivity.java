@@ -11,7 +11,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.Supply;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.12.292' templateId.root='2.16.840.1.113883.3.88.11.83.13' constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityMoodCode ImmunizationActivityInformationSource ImmunizationActivityHasReasonProblem ImmunizationActivityHasProduct ImmunizationActivityComments ImmunizationActivityRefusalReason ImmunizationActivityId ImmunizationActivityCode ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime' routeCode.codeSystem='2.16.840.1.113883.5.112' code.codeSystemName='Vaccines administered (CVX)' routeCode.codeSystemName='HL7 RouteOfAdministration' classCode='SBADM' constraints.validation.warning='ImmunizationActivityHasDoseQuantityOrRateQuantity ImmunizationActivityRouteCode' constraints.validation.info='ImmunizationActivityHasConsents ImmunizationActivityHasPreconditionCriterion ImmunizationActivityHasReason ImmunizationActivityMaxDoseQuantity ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationSupplyOrder ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.12.292' templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityMoodCode ImmunizationActivityInformationSource ImmunizationActivityHasReasonProblem ImmunizationActivityHasProduct ImmunizationActivityComments ImmunizationActivityRefusalReason ImmunizationActivityId ImmunizationActivityCode ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime' routeCode.codeSystem='2.16.840.1.113883.5.112' code.codeSystemName='Vaccines administered (CVX)' routeCode.codeSystemName='HL7 RouteOfAdministration' classCode='SBADM' constraints.validation.warning='ImmunizationActivityHasDoseQuantityOrRateQuantity ImmunizationActivityRouteCode' constraints.validation.info='ImmunizationActivityHasConsents ImmunizationActivityHasPreconditionCriterion ImmunizationActivityHasReason ImmunizationActivityMaxDoseQuantity ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationSupplyOrder ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation' moodCode='EVN'"
  * @generated
  */
 public interface ImmunizationActivity extends SubstanceAdministration {
@@ -175,11 +174,11 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.13')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.52')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.13\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.52\')'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -322,11 +321,11 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(cda::Supply))
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::MedicationDispense))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(cda::Supply))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::MedicationDispense))'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityMedicationDispense(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -396,13 +395,13 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(cda::Supply))->asSequence()->first().oclAsType(cda::Supply)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationDispense))->asSequence()->first().oclAsType(consol::MedicationDispense)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(cda::Supply))->asSequence()->first().oclAsType(cda::Supply)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationDispense))->asSequence()->first().oclAsType(consol::MedicationDispense)'"
 	 * @generated
 	 */
-	Supply getMedicationDispense();
+	MedicationDispense getMedicationDispense();
 
 	/**
 	 * <!-- begin-user-doc -->

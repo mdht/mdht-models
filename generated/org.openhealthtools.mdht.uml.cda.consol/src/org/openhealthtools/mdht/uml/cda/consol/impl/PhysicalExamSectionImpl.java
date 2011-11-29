@@ -13,33 +13,12 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AbdomenSection;
-import org.openhealthtools.mdht.uml.cda.consol.BreastSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
+import org.openhealthtools.mdht.uml.cda.Section;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
-import org.openhealthtools.mdht.uml.cda.consol.EarsSection;
-import org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection;
-import org.openhealthtools.mdht.uml.cda.consol.EyesSection;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralAppearanceSection;
-import org.openhealthtools.mdht.uml.cda.consol.GenitaliaSection;
-import org.openhealthtools.mdht.uml.cda.consol.HeadSection;
-import org.openhealthtools.mdht.uml.cda.consol.HeartSection;
-import org.openhealthtools.mdht.uml.cda.consol.IntegumentarySystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.LymphaticSection;
-import org.openhealthtools.mdht.uml.cda.consol.MouthThroatTeethSection;
-import org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.NeckSection;
-import org.openhealthtools.mdht.uml.cda.consol.NeurologicSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.NoseSection;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
-import org.openhealthtools.mdht.uml.cda.consol.RectumSection;
-import org.openhealthtools.mdht.uml.cda.consol.RespiratorySystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
-import org.openhealthtools.mdht.uml.cda.consol.VesselsSection;
-import org.openhealthtools.mdht.uml.cda.consol.VisibleImplantedMedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
@@ -372,7 +351,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralAppearanceSection getGeneralAppearanceSection() {
+	public GeneralStatusSection getGeneralAppearanceSection() {
 		return PhysicalExamSectionOperations.getGeneralAppearanceSection(this);
 	}
 
@@ -381,7 +360,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisibleImplantedMedicalDevicesSection getVisibleImplantedMedicalDevicesSection() {
+	public Section getVisibleImplantedMedicalDevicesSection() {
 		return PhysicalExamSectionOperations.getVisibleImplantedMedicalDevicesSection(this);
 	}
 
@@ -390,7 +369,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntegumentarySystemSection getIntegumentarySystemSection() {
+	public Section getIntegumentarySystemSection() {
 		return PhysicalExamSectionOperations.getIntegumentarySystemSection(this);
 	}
 
@@ -399,7 +378,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HeadSection getHeadSection() {
+	public Section getHeadSection() {
 		return PhysicalExamSectionOperations.getHeadSection(this);
 	}
 
@@ -408,7 +387,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EyesSection getEyesSection() {
+	public Section getEyesSection() {
 		return PhysicalExamSectionOperations.getEyesSection(this);
 	}
 
@@ -417,7 +396,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EarsNoseMouthThroatSection getEarsNoseMouthThroatSection() {
+	public Section getEarsNoseMouthThroatSection() {
 		return PhysicalExamSectionOperations.getEarsNoseMouthThroatSection(this);
 	}
 
@@ -426,7 +405,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EarsSection getEarsSection() {
+	public Section getEarsSection() {
 		return PhysicalExamSectionOperations.getEarsSection(this);
 	}
 
@@ -435,7 +414,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NoseSection getNoseSection() {
+	public Section getNoseSection() {
 		return PhysicalExamSectionOperations.getNoseSection(this);
 	}
 
@@ -444,7 +423,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MouthThroatTeethSection getMouthThroatTeethSection() {
+	public Section getMouthThroatTeethSection() {
 		return PhysicalExamSectionOperations.getMouthThroatTeethSection(this);
 	}
 
@@ -453,7 +432,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NeckSection getNeckSection() {
+	public Section getNeckSection() {
 		return PhysicalExamSectionOperations.getNeckSection(this);
 	}
 
@@ -462,7 +441,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EndocrineSystemSection getEndocrineSystemSection() {
+	public Section getEndocrineSystemSection() {
 		return PhysicalExamSectionOperations.getEndocrineSystemSection(this);
 	}
 
@@ -471,7 +450,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ThoraxLungsSection getThoraxLungsSection() {
+	public Section getThoraxLungsSection() {
 		return PhysicalExamSectionOperations.getThoraxLungsSection(this);
 	}
 
@@ -480,7 +459,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ChestWallSection getChestWallSection() {
+	public Section getChestWallSection() {
 		return PhysicalExamSectionOperations.getChestWallSection(this);
 	}
 
@@ -489,7 +468,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BreastSection getBreastSection() {
+	public Section getBreastSection() {
 		return PhysicalExamSectionOperations.getBreastSection(this);
 	}
 
@@ -498,7 +477,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HeartSection getHeartSection() {
+	public Section getHeartSection() {
 		return PhysicalExamSectionOperations.getHeartSection(this);
 	}
 
@@ -507,7 +486,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RespiratorySystemSection getRespiratorySystemSection() {
+	public Section getRespiratorySystemSection() {
 		return PhysicalExamSectionOperations.getRespiratorySystemSection(this);
 	}
 
@@ -516,7 +495,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbdomenSection getAbdomenSection() {
+	public Section getAbdomenSection() {
 		return PhysicalExamSectionOperations.getAbdomenSection(this);
 	}
 
@@ -525,7 +504,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LymphaticSection getLymphaticSection() {
+	public Section getLymphaticSection() {
 		return PhysicalExamSectionOperations.getLymphaticSection(this);
 	}
 
@@ -534,7 +513,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VesselsSection getVesselsSection() {
+	public Section getVesselsSection() {
 		return PhysicalExamSectionOperations.getVesselsSection(this);
 	}
 
@@ -543,7 +522,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MusculoskeletalSystemSection getMusculoskeletalSystemSection() {
+	public Section getMusculoskeletalSystemSection() {
 		return PhysicalExamSectionOperations.getMusculoskeletalSystemSection(this);
 	}
 
@@ -552,7 +531,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NeurologicSystemSection getNeurologicSystemSection() {
+	public Section getNeurologicSystemSection() {
 		return PhysicalExamSectionOperations.getNeurologicSystemSection(this);
 	}
 
@@ -561,7 +540,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GenitaliaSection getGenitaliaSection() {
+	public Section getGenitaliaSection() {
 		return PhysicalExamSectionOperations.getGenitaliaSection(this);
 	}
 
@@ -570,7 +549,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RectumSection getRectumSection() {
+	public Section getRectumSection() {
 		return PhysicalExamSectionOperations.getRectumSection(this);
 	}
 
@@ -579,7 +558,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExtremitiesSection getExtremitiesSection() {
+	public Section getExtremitiesSection() {
 		return PhysicalExamSectionOperations.getExtremitiesSection(this);
 	}
 

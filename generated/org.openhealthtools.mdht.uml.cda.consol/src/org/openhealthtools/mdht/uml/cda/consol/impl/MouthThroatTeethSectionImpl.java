@@ -56,15 +56,6 @@ public class MouthThroatTeethSectionImpl extends SectionImpl implements MouthThr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMouthThroatTeethSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MouthThroatTeethSectionOperations.validateMouthThroatTeethSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMouthThroatTeethSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MouthThroatTeethSectionOperations.validateMouthThroatTeethSectionCode(this, diagnostics, context);
 	}

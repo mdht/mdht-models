@@ -26,24 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationFullfillmentInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1' constraints.validation.error='MedicationFullfillmentInstructionsTemplateId MedicationFullfillmentInstructionsMoodCode MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsText MedicationFullfillmentInstructionsStatusCode' code.codeSystemName='IHEActCode' code.code='FINSTRUCT' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' constraints.validation.error='MedicationFullfillmentInstructionsMoodCode MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsText MedicationFullfillmentInstructionsStatusCode' code.codeSystemName='IHEActCode' code.code='FINSTRUCT' moodCode='INT'"
  * @generated
  */
 public interface MedicationFullfillmentInstructions extends Act {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3.1')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.3.1\')'"
-	 * @generated
-	 */
-	boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

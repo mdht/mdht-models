@@ -41,7 +41,7 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.8.2' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {
@@ -234,11 +234,11 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.23')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.8.2\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.23\')'"
 	 * @generated
 	 */
 	boolean validateMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

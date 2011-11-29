@@ -115,15 +115,6 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanningDeviceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ScanningDevice init() {
 		CDAUtil.init(this);
 		return this;

@@ -56,15 +56,6 @@ public class EndocrineSystemSectionImpl extends SectionImpl implements Endocrine
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEndocrineSystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EndocrineSystemSectionOperations.validateEndocrineSystemSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEndocrineSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EndocrineSystemSectionOperations.validateEndocrineSystemSectionCode(this, diagnostics, context);
 	}

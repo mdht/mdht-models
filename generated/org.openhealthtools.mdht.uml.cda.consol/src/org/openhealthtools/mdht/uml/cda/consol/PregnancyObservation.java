@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPregnancyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.5' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationId PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationRepeatNumber PregnancyObservationValue PregnancyObservationInterpretationCode PregnancyObservationMethodCode PregnancyObservationTargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.15.3.8' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationId PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationRepeatNumber PregnancyObservationValue PregnancyObservationInterpretationCode PregnancyObservationMethodCode PregnancyObservationTargetSiteCode'"
  * @generated
  */
 public interface PregnancyObservation extends Observation {
@@ -35,11 +35,11 @@ public interface PregnancyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.13.5')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.8')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.13.5\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.15.3.8\')'"
 	 * @generated
 	 */
 	boolean validatePregnancyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

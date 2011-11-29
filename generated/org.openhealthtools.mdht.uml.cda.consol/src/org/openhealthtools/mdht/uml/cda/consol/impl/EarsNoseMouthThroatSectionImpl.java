@@ -56,16 +56,6 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEarsNoseMouthThroatSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEarsNoseMouthThroatSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionCode(this, diagnostics, context);
 	}

@@ -56,15 +56,6 @@ public class ExtremitiesSectionImpl extends SectionImpl implements ExtremitiesSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtremitiesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExtremitiesSectionOperations.validateExtremitiesSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateExtremitiesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesSectionOperations.validateExtremitiesSectionCode(this, diagnostics, context);
 	}

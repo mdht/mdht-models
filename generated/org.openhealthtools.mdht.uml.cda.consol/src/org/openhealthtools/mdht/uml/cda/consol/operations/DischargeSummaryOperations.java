@@ -21,23 +21,24 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.DischargeDiet;
+import org.openhealthtools.mdht.uml.cda.consol.DischargeDietSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
+import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
@@ -66,6 +67,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryHospitalCourseSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Hospital Course Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryMedicalEquipmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Medical Equipment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryPhysicalExamSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Physical Exam Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryPlanOfCareSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Plan Of Care Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryHistoryOfPastIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary History Of Past Illness Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryMedicationsAdministeredSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Medications Administered Section</em>}</li>
@@ -82,6 +84,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getHospitalCourseSection() <em>Get Hospital Course Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getMedicalEquipmentSection() <em>Get Medical Equipment Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getPhysicalExamSection() <em>Get Physical Exam Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getPlanOfCareSection() <em>Get Plan Of Care Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getHistoryOfPastIllnessSection() <em>Get History Of Past Illness Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#getMedicationsAdministeredSection() <em>Get Medications Administered Section</em>}</li>
@@ -282,7 +285,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_ADMISSION_MEDICATION_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationHistorySection))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_ADMISSION_MEDICATION_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::Hospital AdmissionMedicationsSectionEntriesOptional))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummaryAdmissionMedicationHistorySection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Admission Medication History Section</em>}' invariant operation.
@@ -298,7 +301,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationHistorySection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::Hospital AdmissionMedicationsSectionEntriesOptional))
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -509,7 +512,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummaryDischargeDiagnosisSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Discharge Diagnosis Section</em>}' invariant operation.
@@ -525,7 +528,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -566,7 +569,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiet))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDietSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummaryDischargeDiet(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Discharge Diet</em>}' invariant operation.
@@ -582,7 +585,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiet))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDietSection))
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -951,6 +954,62 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateDischargeSummaryPlanOfCareSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Plan Of Care Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryPlanOfCareSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDischargeSummaryPlanOfCareSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Plan Of Care Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryPlanOfCareSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))
+	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateDischargeSummaryPlanOfCareSection(DischargeSummary dischargeSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY);
+			try {
+				VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dischargeSummary)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
+					new Object[] { dischargeSummary }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateDischargeSummaryHistoryOfPastIllnessSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary History Of Past Illness Section</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1184,7 +1243,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationHistorySection))->asSequence()->first().oclAsType(consol::AdmissionMedicationHistorySection)";
+	protected static final String GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::Hospital AdmissionMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::Hospital AdmissionMedicationsSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAdmissionMedicationHistorySection(DischargeSummary) <em>Get Admission Medication History Section</em>}' query operation.
@@ -1200,18 +1259,18 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationHistorySection))->asSequence()->first().oclAsType(consol::AdmissionMedicationHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::Hospital AdmissionMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::Hospital AdmissionMedicationsSectionEntriesOptional)
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static AdmissionMedicationHistorySection getAdmissionMedicationHistorySection(
+	public static HospitalAdmissionMedicationsSectionEntriesOptional getAdmissionMedicationHistorySection(
 			DischargeSummary dischargeSummary) {
 		if (GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(87));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(88));
 			try {
 				GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1219,7 +1278,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ADMISSION_MEDICATION_HISTORY_SECTION__EOCL_QRY);
-		return (AdmissionMedicationHistorySection) query.evaluate(dischargeSummary);
+		return (HospitalAdmissionMedicationsSectionEntriesOptional) query.evaluate(dischargeSummary);
 	}
 
 	/**
@@ -1257,7 +1316,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(88));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(89));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1302,7 +1361,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(89));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(90));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1347,7 +1406,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(90));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(91));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1366,7 +1425,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection))->asSequence()->first().oclAsType(consol::DischargeDiagnosisSection)";
+	protected static final String GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->first().oclAsType(consol::HospitalDischargeDiagnosisSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getDischargeDiagnosisSection(DischargeSummary) <em>Get Discharge Diagnosis Section</em>}' query operation.
@@ -1382,17 +1441,17 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection))->asSequence()->first().oclAsType(consol::DischargeDiagnosisSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->first().oclAsType(consol::HospitalDischargeDiagnosisSection)
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static DischargeDiagnosisSection getDischargeDiagnosisSection(DischargeSummary dischargeSummary) {
+	public static HospitalDischargeDiagnosisSection getDischargeDiagnosisSection(DischargeSummary dischargeSummary) {
 		if (GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(91));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
 			try {
 				GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1400,7 +1459,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (DischargeDiagnosisSection) query.evaluate(dischargeSummary);
+		return (HospitalDischargeDiagnosisSection) query.evaluate(dischargeSummary);
 	}
 
 	/**
@@ -1411,7 +1470,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DISCHARGE_DIET__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiet))->asSequence()->first().oclAsType(consol::DischargeDiet)";
+	protected static final String GET_DISCHARGE_DIET__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDietSection))->asSequence()->first().oclAsType(consol::DischargeDietSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getDischargeDiet(DischargeSummary) <em>Get Discharge Diet</em>}' query operation.
@@ -1427,17 +1486,17 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiet))->asSequence()->first().oclAsType(consol::DischargeDiet)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDietSection))->asSequence()->first().oclAsType(consol::DischargeDietSection)
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static DischargeDiet getDischargeDiet(DischargeSummary dischargeSummary) {
+	public static DischargeDietSection getDischargeDiet(DischargeSummary dischargeSummary) {
 		if (GET_DISCHARGE_DIET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(92));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
 			try {
 				GET_DISCHARGE_DIET__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIET__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1445,7 +1504,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_DISCHARGE_DIET__EOCL_QRY);
-		return (DischargeDiet) query.evaluate(dischargeSummary);
+		return (DischargeDietSection) query.evaluate(dischargeSummary);
 	}
 
 	/**
@@ -1483,7 +1542,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(93));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1528,7 +1587,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(94));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1573,7 +1632,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(95));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1618,7 +1677,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(96));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
 			try {
 				GET_HOSPITAL_COURSE_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_COURSE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1663,7 +1722,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(97));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1708,7 +1767,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(98));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1717,6 +1776,51 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_QRY);
 		return (PhysicalExamSection) query.evaluate(dischargeSummary);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getPlanOfCareSection(DischargeSummary) <em>Get Plan Of Care Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPlanOfCareSection(DischargeSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)";
+
+	/**
+	 * The cached OCL query for the '{@link #getPlanOfCareSection(DischargeSummary) <em>Get Plan Of Care Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPlanOfCareSection(DischargeSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_SECTION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static PlanOfCareSection getPlanOfCareSection(DischargeSummary dischargeSummary) {
+		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.DISCHARGE_SUMMARY,
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
+			try {
+				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_QRY);
+		return (PlanOfCareSection) query.evaluate(dischargeSummary);
 	}
 
 	/**
@@ -1753,7 +1857,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(99));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1798,7 +1902,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(100));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(102));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1843,7 +1947,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(101));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(103));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1888,7 +1992,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(102));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(104));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

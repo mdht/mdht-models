@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VesselsSection#validateVesselsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vessels Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VesselsSection#validateVesselsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vessels Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VesselsSection#validateVesselsSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vessels Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VesselsSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,61 +54,6 @@ public class VesselsSectionOperations extends SectionOperations {
 	 */
 	protected VesselsSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateVesselsSectionTemplateId(VesselsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vessels Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVesselsSectionTemplateId(VesselsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.33')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateVesselsSectionTemplateId(VesselsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vessels Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVesselsSectionTemplateId(VesselsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.33')
-	 * @param vesselsSection The receiving '<em><b>Vessels Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateVesselsSectionTemplateId(VesselsSection vesselsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.VESSELS_SECTION);
-			try {
-				VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VESSELS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vesselsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.VESSELS_SECTION__VESSELS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VesselsSectionTemplateId"), new Object[] { vesselsSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -259,7 +203,7 @@ public class VesselsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.VESSELS_SECTION,
-				ConsolPackage.Literals.VESSELS_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.VESSELS_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

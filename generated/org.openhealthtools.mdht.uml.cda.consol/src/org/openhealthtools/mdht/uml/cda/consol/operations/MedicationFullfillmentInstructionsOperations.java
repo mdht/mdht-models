@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions#validateMedicationFullfillmentInstructionsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions#validateMedicationFullfillmentInstructionsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions#validateMedicationFullfillmentInstructionsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFullfillmentInstructions#validateMedicationFullfillmentInstructionsText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Text</em>}</li>
@@ -51,65 +50,6 @@ public class MedicationFullfillmentInstructionsOperations extends ClinicalStatem
 	 */
 	protected MedicationFullfillmentInstructionsOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationFullfillmentInstructionsTemplateId(MedicationFullfillmentInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationFullfillmentInstructionsTemplateId(MedicationFullfillmentInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3.1')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationFullfillmentInstructionsTemplateId(MedicationFullfillmentInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Fullfillment Instructions Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationFullfillmentInstructionsTemplateId(MedicationFullfillmentInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3.1')
-	 * @param medicationFullfillmentInstructions The receiving '<em><b>Medication Fullfillment Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMedicationFullfillmentInstructionsTemplateId(
-			MedicationFullfillmentInstructions medicationFullfillmentInstructions, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_FULLFILLMENT_INSTRUCTIONS);
-			try {
-				VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFullfillmentInstructions)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FULLFILLMENT_INSTRUCTIONS__MEDICATION_FULLFILLMENT_INSTRUCTIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationFullfillmentInstructionsTemplateId"),
-					new Object[] { medicationFullfillmentInstructions }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

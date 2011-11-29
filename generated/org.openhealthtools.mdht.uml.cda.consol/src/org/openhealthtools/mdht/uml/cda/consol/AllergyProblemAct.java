@@ -41,7 +41,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyProblemAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.6' constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEntryRelationshipRequired AllergyProblemActEffectiveTimeLowHigh AllergyProblemActHasRelatedObservations AllergyProblemActRelatedObservationsTypeCode AllergyProblemActHasRelatedReferencesTypeCode AllergyProblemActAdverseEventType AllergyProblemActAdverseEventTypeVocab AllergyProblemActAllergyProductTypeCode AllergyProblemActProductDetailParticipantRole AllergyProblemActProductDetailParticipantRoleClassCode AllergyProblemActProductDetailPlayingEntity AllergyProblemActProductDetailPlayingEntityClassCode AllergyProblemActProductDetailName AllergyProblemActAllergyProductFoodVocab AllergyProblemActAllergyProductMedClassVocab AllergyProblemActAllergyProductSpecificMedVocab AllergyProblemActReactionCodeVocab AllergyProblemActSeverityCodeVocab AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCodeNullFlavor AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='AllergyProblemActSubjectOfTarget AllergyProblemActContainsProblemObservation AllergyProblemActContainsAlertObservation AllergyProblemActAdverseEventDate AllergyProblemActAllergyProduct AllergyProblemActProductCode AllergyProblemActReactionText AllergyProblemActReactionCode AllergyProblemActSeverityText AllergyProblemActSeverityCode' moodCode='EVN' constraints.validation.info='AllergyProblemActContainsPatientAwareness'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.30' constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEntryRelationshipRequired AllergyProblemActEffectiveTimeLowHigh AllergyProblemActHasRelatedObservations AllergyProblemActRelatedObservationsTypeCode AllergyProblemActHasRelatedReferencesTypeCode AllergyProblemActAdverseEventType AllergyProblemActAdverseEventTypeVocab AllergyProblemActAllergyProductTypeCode AllergyProblemActProductDetailParticipantRole AllergyProblemActProductDetailParticipantRoleClassCode AllergyProblemActProductDetailPlayingEntity AllergyProblemActProductDetailPlayingEntityClassCode AllergyProblemActProductDetailName AllergyProblemActAllergyProductFoodVocab AllergyProblemActAllergyProductMedClassVocab AllergyProblemActAllergyProductSpecificMedVocab AllergyProblemActReactionCodeVocab AllergyProblemActSeverityCodeVocab AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCodeNullFlavor AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='AllergyProblemActSubjectOfTarget AllergyProblemActContainsProblemObservation AllergyProblemActContainsAlertObservation AllergyProblemActAdverseEventDate AllergyProblemActAllergyProduct AllergyProblemActProductCode AllergyProblemActReactionText AllergyProblemActReactionCode AllergyProblemActSeverityText AllergyProblemActSeverityCode' moodCode='EVN' constraints.validation.info='AllergyProblemActContainsPatientAwareness'"
  *        annotation="uml2.alias Allergies\040and\040Drug\040Sensitivities='null' Allergy\040and\040Drug\040Sensitivity='null'"
  * @generated
  */
@@ -462,11 +462,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.6')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.30')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.6\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.30\')'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

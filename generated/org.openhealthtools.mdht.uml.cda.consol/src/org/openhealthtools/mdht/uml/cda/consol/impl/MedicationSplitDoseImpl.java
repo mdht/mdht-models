@@ -65,16 +65,6 @@ public class MedicationSplitDoseImpl extends MedicationActivityImpl implements M
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSplitDoseOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MedicationSplitDose init() {
 		CDAUtil.init(this);
 		return this;

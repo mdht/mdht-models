@@ -57,17 +57,6 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVisibleImplantedMedicalDevicesSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionCode(

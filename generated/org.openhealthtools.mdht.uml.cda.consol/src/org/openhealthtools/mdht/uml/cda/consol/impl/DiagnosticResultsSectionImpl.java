@@ -13,10 +13,11 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Procedure;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.consol.Procedure;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 

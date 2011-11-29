@@ -63,15 +63,6 @@ public class EncounterImpl extends org.openhealthtools.mdht.uml.cda.impl.Encount
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsolEncounterTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterOperations.validateConsolEncounterTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConsolEncounterClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterOperations.validateConsolEncounterClassCode(this, diagnostics, context);
 	}

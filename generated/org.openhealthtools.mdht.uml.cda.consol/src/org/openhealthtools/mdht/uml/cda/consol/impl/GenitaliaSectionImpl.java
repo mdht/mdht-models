@@ -56,15 +56,6 @@ public class GenitaliaSectionImpl extends SectionImpl implements GenitaliaSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGenitaliaSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GenitaliaSectionOperations.validateGenitaliaSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateGenitaliaSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GenitaliaSectionOperations.validateGenitaliaSectionCode(this, diagnostics, context);
 	}

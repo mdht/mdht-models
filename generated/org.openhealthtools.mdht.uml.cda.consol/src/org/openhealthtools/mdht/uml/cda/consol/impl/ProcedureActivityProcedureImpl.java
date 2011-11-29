@@ -13,13 +13,14 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
-import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedureOperations;
@@ -250,7 +251,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InternalReference getInternalReference() {
+	public Act getInternalReference() {
 		return ProcedureActivityProcedureOperations.getInternalReference(this);
 	}
 
@@ -259,7 +260,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InternalReference> getInternalReferenceReasons() {
+	public EList<Act> getInternalReferenceReasons() {
 		return ProcedureActivityProcedureOperations.getInternalReferenceReasons(this);
 	}
 
@@ -268,7 +269,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyObservation getProblemObservation() {
+	public ProblemObservation getProblemObservation() {
 		return ProcedureActivityProcedureOperations.getProblemObservation(this);
 	}
 
@@ -295,7 +296,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ImmunizationActivity> getMedicationActivities() {
+	public EList<MedicationActivity> getMedicationActivities() {
 		return ProcedureActivityProcedureOperations.getMedicationActivities(this);
 	}
 

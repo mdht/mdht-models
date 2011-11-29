@@ -75,15 +75,6 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanDataEntererTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScanDataEntererOperations.validateScanDataEntererTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateScanDataEntererTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScanDataEntererOperations.validateScanDataEntererTime(this, diagnostics, context);
 	}

@@ -41,7 +41,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyHistorySection#validatePregnancyHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyHistorySection#validatePregnancyHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyHistorySection#validatePregnancyHistorySectionPregnancyObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Pregnancy Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyHistorySection#getPregnancyObservations() <em>Get Pregnancy Observations</em>}</li>
@@ -58,62 +57,6 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 */
 	protected PregnancyHistorySectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePregnancyHistorySectionTemplateId(PregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePregnancyHistorySectionTemplateId(PregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePregnancyHistorySectionTemplateId(PregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePregnancyHistorySectionTemplateId(PregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4')
-	 * @param pregnancyHistorySection The receiving '<em><b>Pregnancy History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validatePregnancyHistorySectionTemplateId(PregnancyHistorySection pregnancyHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PREGNANCY_HISTORY_SECTION);
-			try {
-				VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREGNANCY_HISTORY_SECTION__PREGNANCY_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PregnancyHistorySectionTemplateId"),
-					new Object[] { pregnancyHistorySection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -267,7 +210,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PREGNANCY_HISTORY_SECTION,
-				ConsolPackage.Literals.PREGNANCY_HISTORY_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.PREGNANCY_HISTORY_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

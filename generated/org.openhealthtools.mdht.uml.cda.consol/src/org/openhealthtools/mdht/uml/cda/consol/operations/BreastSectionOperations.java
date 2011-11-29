@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BreastSection#validateBreastSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Breast Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BreastSection#validateBreastSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Breast Section Code</em>}</li>
  * </ul>
  * </p>
@@ -48,61 +47,6 @@ public class BreastSectionOperations extends SectionOperations {
 	 */
 	protected BreastSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateBreastSectionTemplateId(BreastSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Breast Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBreastSectionTemplateId(BreastSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.28')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateBreastSectionTemplateId(BreastSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Breast Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBreastSectionTemplateId(BreastSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.28')
-	 * @param breastSection The receiving '<em><b>Breast Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateBreastSectionTemplateId(BreastSection breastSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.BREAST_SECTION);
-			try {
-				VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			breastSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BREAST_SECTION__BREAST_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("BreastSectionTemplateId"), new Object[] { breastSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

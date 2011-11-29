@@ -57,15 +57,6 @@ public class PregnancyHistorySectionImpl extends SectionImpl implements Pregnanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePregnancyHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionCode(this, diagnostics, context);
 	}

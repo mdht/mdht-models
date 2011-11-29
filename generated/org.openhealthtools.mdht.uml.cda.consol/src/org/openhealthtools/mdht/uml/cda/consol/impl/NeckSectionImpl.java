@@ -56,15 +56,6 @@ public class NeckSectionImpl extends SectionImpl implements NeckSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNeckSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NeckSectionOperations.validateNeckSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNeckSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckSectionOperations.validateNeckSectionCode(this, diagnostics, context);
 	}
