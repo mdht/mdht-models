@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ReactionObservationTemplateId ReactionObservationReactionInterventionTypeCode ReactionObservationInformationSource ReactionObservationHasTextReference ReactionObservationCommentInversionInd ReactionObservationMoodCode ReactionObservationId ReactionObservationText ReactionObservationStatusCode ReactionObservationValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ReactionObservationCode ReactionObservationEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='ReactionObservationHasReactionIntervention ReactionObservationReactionInterventionType ReactionObservationContainsPatientAwareness ReactionObservationSeverity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.error='ReactionObservationTemplateId ReactionObservationReactionInterventionTypeCode ReactionObservationInformationSource ReactionObservationHasTextReference ReactionObservationCommentInversionInd ReactionObservationMoodCode ReactionObservationId ReactionObservationText ReactionObservationStatusCode ReactionObservationValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ReactionObservationCode ReactionObservationEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='ReactionObservationHasReactionIntervention ReactionObservationReactionInterventionType ReactionObservationContainsPatientAwareness ReactionObservationSeverity'"
  * @generated
  */
 public interface ReactionObservation extends Observation {
@@ -132,11 +132,11 @@ public interface ReactionObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.9')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.5\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.9\')'"
 	 * @generated
 	 */
 	boolean validateReactionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -56,15 +56,6 @@ public class HeartSectionImpl extends SectionImpl implements HeartSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHeartSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartSectionOperations.validateHeartSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHeartSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartSectionOperations.validateHeartSectionCode(this, diagnostics, context);
 	}

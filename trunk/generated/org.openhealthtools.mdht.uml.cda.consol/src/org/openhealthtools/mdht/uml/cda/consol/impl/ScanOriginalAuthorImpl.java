@@ -76,15 +76,6 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScanOriginalAuthorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScanOriginalAuthorOperations.validateScanOriginalAuthorTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ScanOriginalAuthor init() {
 		CDAUtil.init(this);
 		return this;

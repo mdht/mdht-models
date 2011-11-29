@@ -6,16 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthcareProvider;
-
-import org.openhealthtools.mdht.uml.cda.consol.operations.HealthcareProviderOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.Performer1Impl;
 
@@ -48,15 +42,6 @@ public class HealthcareProviderImpl extends Performer1Impl implements Healthcare
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HEALTHCARE_PROVIDER;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthcareProviderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthcareProviderOperations.validateHealthcareProviderTemplateId(this, diagnostics, context);
 	}
 
 	/**

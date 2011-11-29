@@ -24,10 +24,11 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
-import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSeriesNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation;
@@ -84,7 +85,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getInternalReferences() <em>Get Internal References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getPatientMedicalInstructionss() <em>Get Patient Medical Instructionss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getSupplyEntry() <em>Get Supply Entry</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}</li>
  * </ul>
  * </p>
@@ -2196,7 +2196,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)";
+	protected static final String GET_INTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInternalReferences(MedicationCombinationMedication) <em>Get Internal References</em>}' query operation.
@@ -2212,13 +2212,12 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)
 	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<InternalReference> getInternalReferences(
-			MedicationCombinationMedication medicationCombinationMedication) {
+	public static EList<Act> getInternalReferences(MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2232,8 +2231,8 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_INTERNAL_REFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<InternalReference> result = (Collection<InternalReference>) query.evaluate(medicationCombinationMedication);
-		return new BasicEList.UnmodifiableEList<InternalReference>(result.size(), result.toArray());
+		Collection<Act> result = (Collection<Act>) query.evaluate(medicationCombinationMedication);
+		return new BasicEList.UnmodifiableEList<Act>(result.size(), result.toArray());
 	}
 
 	/**
@@ -2328,68 +2327,6 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLY_ENTRY__EOCL_QRY);
 		return (NonMedicinalSupplyActivity) query.evaluate(medicationCombinationMedication);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationActivityTemplateId(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8')
-	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMedicationActivityTemplateId(
-			MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
-			try {
-				VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_ACTIVITY_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicationActivityTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationCombinationMedication, context) }),
-					new Object[] { medicationCombinationMedication }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

@@ -56,15 +56,6 @@ public class EarsSectionImpl extends SectionImpl implements EarsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEarsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EarsSectionOperations.validateEarsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEarsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EarsSectionOperations.validateEarsSectionCode(this, diagnostics, context);
 	}

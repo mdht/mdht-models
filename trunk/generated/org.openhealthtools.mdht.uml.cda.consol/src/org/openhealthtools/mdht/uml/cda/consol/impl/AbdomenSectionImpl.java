@@ -56,15 +56,6 @@ public class AbdomenSectionImpl extends SectionImpl implements AbdomenSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAbdomenSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenSectionOperations.validateAbdomenSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAbdomenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AbdomenSectionOperations.validateAbdomenSectionCode(this, diagnostics, context);
 	}

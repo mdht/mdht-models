@@ -6,10 +6,16 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
+
+import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispenseOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
 
@@ -42,6 +48,15 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_DISPENSE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationDispenseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispenseTemplateId(this, diagnostics, context);
 	}
 
 	/**

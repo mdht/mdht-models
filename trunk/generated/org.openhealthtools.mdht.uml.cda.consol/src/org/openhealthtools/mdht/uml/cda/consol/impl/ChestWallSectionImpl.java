@@ -56,15 +56,6 @@ public class ChestWallSectionImpl extends SectionImpl implements ChestWallSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateChestWallSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestWallSectionOperations.validateChestWallSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateChestWallSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChestWallSectionOperations.validateChestWallSectionCode(this, diagnostics, context);
 	}

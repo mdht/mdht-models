@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Health status' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1.2' constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservationTargetOfEntryRelationship HealthStatusObservationNoAdditionalParticipants HealthStatusObservationNoAdditionalRelationships HealthStatusObservationHasTextReference HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationText HealthStatusObservationStatusCode HealthStatusObservationValue' code.codeSystemName='LOINC' classCode='OBS' code.code='11323-3' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Health status' templateId.root='2.16.840.1.113883.10.20.22.4.5' constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservationTargetOfEntryRelationship HealthStatusObservationNoAdditionalParticipants HealthStatusObservationNoAdditionalRelationships HealthStatusObservationHasTextReference HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationText HealthStatusObservationStatusCode HealthStatusObservationValue' code.codeSystemName='LOINC' classCode='OBS' code.code='11323-3' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface HealthStatusObservation extends Observation {
@@ -86,11 +86,11 @@ public interface HealthStatusObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1.2')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.5')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.1.2\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.5\')'"
 	 * @generated
 	 */
 	boolean validateHealthStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

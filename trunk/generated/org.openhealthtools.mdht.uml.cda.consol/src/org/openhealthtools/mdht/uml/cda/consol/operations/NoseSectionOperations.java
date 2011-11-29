@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoseSection#validateNoseSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoseSection#validateNoseSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoseSection#validateNoseSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoseSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,60 +54,6 @@ public class NoseSectionOperations extends SectionOperations {
 	 */
 	protected NoseSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateNoseSectionTemplateId(NoseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNoseSectionTemplateId(NoseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.22')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNoseSectionTemplateId(NoseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nose Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNoseSectionTemplateId(NoseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.22')
-	 * @param noseSection The receiving '<em><b>Nose Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateNoseSectionTemplateId(NoseSection noseSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.NOSE_SECTION);
-			try {
-				VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(noseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NOSE_SECTION__NOSE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NoseSectionTemplateId"), new Object[] { noseSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -257,7 +202,7 @@ public class NoseSectionOperations extends SectionOperations {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.NOSE_SECTION, ConsolPackage.Literals.NOSE_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.NOSE_SECTION, ConsolPackage.Literals.NOSE_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

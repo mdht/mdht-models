@@ -56,15 +56,6 @@ public class VesselsSectionImpl extends SectionImpl implements VesselsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVesselsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VesselsSectionOperations.validateVesselsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVesselsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VesselsSectionOperations.validateVesselsSectionCode(this, diagnostics, context);
 	}

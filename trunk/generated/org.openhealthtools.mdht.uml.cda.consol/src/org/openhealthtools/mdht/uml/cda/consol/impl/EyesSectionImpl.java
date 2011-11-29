@@ -56,15 +56,6 @@ public class EyesSectionImpl extends SectionImpl implements EyesSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEyesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyesSectionOperations.validateEyesSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEyesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EyesSectionOperations.validateEyesSectionCode(this, diagnostics, context);
 	}

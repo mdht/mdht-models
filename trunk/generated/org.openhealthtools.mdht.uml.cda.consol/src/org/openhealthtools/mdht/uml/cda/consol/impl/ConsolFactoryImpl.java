@@ -89,6 +89,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createInstructions();
 			case ConsolPackage.INDICATION:
 				return createIndication();
+			case ConsolPackage.MEDICATION_DISPENSE:
+				return createMedicationDispense();
 			case ConsolPackage.DRUG_VEHICLE:
 				return createDrugVehicle();
 			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
@@ -125,10 +127,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoverageActivity();
 			case ConsolPackage.POLICY_ACTIVITY:
 				return createPolicyActivity();
+			case ConsolPackage.AUTHORIZATION_ACTIVITY:
+				return createAuthorizationActivity();
 			case ConsolPackage.MEDICATIONS_SECTION:
 				return createMedicationsSection();
 			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createMedicationsSectionEntriesOptional();
+			case ConsolPackage.PLAN_OF_CARE_SECTION:
+				return createPlanOfCareSection();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT:
+				return createPlanOfCareActivityAct();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
+				return createPlanOfCareActivityEncounter();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
+				return createPlanOfCareActivityObservation();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return createPlanOfCareActivityProcedure();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
+				return createPlanOfCareActivitySubstanceAdministration();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
+				return createPlanOfCareActivitySupply();
 			case ConsolPackage.PROCEDURES_SECTION:
 				return createProceduresSection();
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
@@ -137,10 +155,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityAct();
 			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
 				return createProcedureActivityProcedure();
-			case ConsolPackage.IMMUNIZATION_ACTIVITY:
-				return createImmunizationActivity();
-			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
-				return createImmunizationRefusalReason();
 			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION:
 				return createProcedureAcivityObservation();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
@@ -201,6 +215,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncounter();
 			case ConsolPackage.IMMUNIZATIONS_SECTION:
 				return createImmunizationsSection();
+			case ConsolPackage.IMMUNIZATION_ACTIVITY:
+				return createImmunizationActivity();
+			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
+				return createImmunizationRefusalReason();
 			case ConsolPackage.INSURANCE_PROVIDER:
 				return createInsuranceProvider();
 			case ConsolPackage.PAYER_ENTRY:
@@ -209,20 +227,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoveredParty();
 			case ConsolPackage.POLICY_SUBSCRIBER:
 				return createPolicySubscriber();
-			case ConsolPackage.PLAN_OF_CARE_SECTION:
-				return createPlanOfCareSection();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT:
-				return createPlanOfCareActivityAct();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
-				return createPlanOfCareActivityEncounter();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
-				return createPlanOfCareActivityObservation();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
-				return createPlanOfCareActivityProcedure();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
-				return createPlanOfCareActivitySubstanceAdministration();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
-				return createPlanOfCareActivitySupply();
 			case ConsolPackage.PROCEDURE:
 				return createProcedure();
 			case ConsolPackage.PREGNANCY_HISTORY_SECTION:
@@ -249,18 +253,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHistoryOfPresentIllness();
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
 				return createHospitalAdmissionDiagnosisSection();
-			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION:
-				return createDischargeDiagnosisSection();
-			case ConsolPackage.ADMISSION_MEDICATION_HISTORY_SECTION:
-				return createAdmissionMedicationHistorySection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
+				return createHospitalDischargeDiagnosisSection();
+			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
+				return createHospitalAdmissionMedicationsSectionEntriesOptional();
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
 				return createHospitalDischargeMedicationsSection();
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION:
 				return createMedicationsAdministeredSection();
 			case ConsolPackage.PHYSICAL_EXAM_SECTION:
 				return createPhysicalExamSection();
-			case ConsolPackage.GENERAL_APPEARANCE_SECTION:
-				return createGeneralAppearanceSection();
+			case ConsolPackage.GENERAL_STATUS_SECTION:
+				return createGeneralStatusSection();
 			case ConsolPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
 				return createVisibleImplantedMedicalDevicesSection();
 			case ConsolPackage.INTEGUMENTARY_SYSTEM_SECTION:
@@ -349,10 +353,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReferralSummary();
 			case ConsolPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
-			case ConsolPackage.DISCHARGE_DIET:
-				return createDischargeDiet();
-			case ConsolPackage.MEDICATION_DISPENSE:
-				return createMedicationDispense();
+			case ConsolPackage.DISCHARGE_DIET_SECTION:
+				return createDischargeDietSection();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
 				return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
@@ -510,6 +512,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public Indication createIndication() {
 		IndicationImpl indication = new IndicationImpl();
 		return indication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationDispense createMedicationDispense() {
+		MedicationDispenseImpl medicationDispense = new MedicationDispenseImpl();
+		return medicationDispense;
 	}
 
 	/**
@@ -697,6 +709,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AuthorizationActivity createAuthorizationActivity() {
+		AuthorizationActivityImpl authorizationActivity = new AuthorizationActivityImpl();
+		return authorizationActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsSection createMedicationsSection() {
 		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
 		return medicationsSection;
@@ -710,6 +732,76 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public MedicationsSectionEntriesOptional createMedicationsSectionEntriesOptional() {
 		MedicationsSectionEntriesOptionalImpl medicationsSectionEntriesOptional = new MedicationsSectionEntriesOptionalImpl();
 		return medicationsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareSection createPlanOfCareSection() {
+		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
+		return planOfCareSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityAct createPlanOfCareActivityAct() {
+		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
+		return planOfCareActivityAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityEncounter createPlanOfCareActivityEncounter() {
+		PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
+		return planOfCareActivityEncounter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityObservation createPlanOfCareActivityObservation() {
+		PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
+		return planOfCareActivityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityProcedure createPlanOfCareActivityProcedure() {
+		PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
+		return planOfCareActivityProcedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration() {
+		PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
+		return planOfCareActivitySubstanceAdministration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivitySupply createPlanOfCareActivitySupply() {
+		PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
+		return planOfCareActivitySupply;
 	}
 
 	/**
@@ -750,26 +842,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
 		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
 		return procedureActivityProcedure;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ImmunizationActivity createImmunizationActivity() {
-		ImmunizationActivityImpl immunizationActivity = new ImmunizationActivityImpl();
-		return immunizationActivity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ImmunizationRefusalReason createImmunizationRefusalReason() {
-		ImmunizationRefusalReasonImpl immunizationRefusalReason = new ImmunizationRefusalReasonImpl();
-		return immunizationRefusalReason;
 	}
 
 	/**
@@ -1077,6 +1149,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ImmunizationActivity createImmunizationActivity() {
+		ImmunizationActivityImpl immunizationActivity = new ImmunizationActivityImpl();
+		return immunizationActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationRefusalReason createImmunizationRefusalReason() {
+		ImmunizationRefusalReasonImpl immunizationRefusalReason = new ImmunizationRefusalReasonImpl();
+		return immunizationRefusalReason;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public InsuranceProvider createInsuranceProvider() {
 		InsuranceProviderImpl insuranceProvider = new InsuranceProviderImpl();
 		return insuranceProvider;
@@ -1110,76 +1202,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicySubscriber createPolicySubscriber() {
 		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
 		return policySubscriber;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareSection createPlanOfCareSection() {
-		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
-		return planOfCareSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivityAct createPlanOfCareActivityAct() {
-		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
-		return planOfCareActivityAct;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivityEncounter createPlanOfCareActivityEncounter() {
-		PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
-		return planOfCareActivityEncounter;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivityObservation createPlanOfCareActivityObservation() {
-		PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
-		return planOfCareActivityObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivityProcedure createPlanOfCareActivityProcedure() {
-		PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
-		return planOfCareActivityProcedure;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration() {
-		PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
-		return planOfCareActivitySubstanceAdministration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivitySupply createPlanOfCareActivitySupply() {
-		PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
-		return planOfCareActivitySupply;
 	}
 
 	/**
@@ -1317,9 +1339,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiagnosisSection createDischargeDiagnosisSection() {
-		DischargeDiagnosisSectionImpl dischargeDiagnosisSection = new DischargeDiagnosisSectionImpl();
-		return dischargeDiagnosisSection;
+	public HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection() {
+		HospitalDischargeDiagnosisSectionImpl hospitalDischargeDiagnosisSection = new HospitalDischargeDiagnosisSectionImpl();
+		return hospitalDischargeDiagnosisSection;
 	}
 
 	/**
@@ -1327,9 +1349,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdmissionMedicationHistorySection createAdmissionMedicationHistorySection() {
-		AdmissionMedicationHistorySectionImpl admissionMedicationHistorySection = new AdmissionMedicationHistorySectionImpl();
-		return admissionMedicationHistorySection;
+	public HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional() {
+		HospitalAdmissionMedicationsSectionEntriesOptionalImpl hospitalAdmissionMedicationsSectionEntriesOptional = new HospitalAdmissionMedicationsSectionEntriesOptionalImpl();
+		return hospitalAdmissionMedicationsSectionEntriesOptional;
 	}
 
 	/**
@@ -1367,9 +1389,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralAppearanceSection createGeneralAppearanceSection() {
-		GeneralAppearanceSectionImpl generalAppearanceSection = new GeneralAppearanceSectionImpl();
-		return generalAppearanceSection;
+	public GeneralStatusSection createGeneralStatusSection() {
+		GeneralStatusSectionImpl generalStatusSection = new GeneralStatusSectionImpl();
+		return generalStatusSection;
 	}
 
 	/**
@@ -1817,19 +1839,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiet createDischargeDiet() {
-		DischargeDietImpl dischargeDiet = new DischargeDietImpl();
-		return dischargeDiet;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationDispense createMedicationDispense() {
-		MedicationDispenseImpl medicationDispense = new MedicationDispenseImpl();
-		return medicationDispense;
+	public DischargeDietSection createDischargeDietSection() {
+		DischargeDietSectionImpl dischargeDietSection = new DischargeDietSectionImpl();
+		return dischargeDietSection;
 	}
 
 	/**

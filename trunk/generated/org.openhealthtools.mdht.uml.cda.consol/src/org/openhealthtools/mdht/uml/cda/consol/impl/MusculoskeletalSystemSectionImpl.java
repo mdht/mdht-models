@@ -56,17 +56,6 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMusculoskeletalSystemSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMusculoskeletalSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(
 			this, diagnostics, context);

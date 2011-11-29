@@ -55,15 +55,6 @@ public class BreastSectionImpl extends SectionImpl implements BreastSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBreastSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BreastSectionOperations.validateBreastSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateBreastSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BreastSectionOperations.validateBreastSectionCode(this, diagnostics, context);
 	}

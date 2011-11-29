@@ -24,23 +24,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getThoraxLungsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='THORAX+LUNGS' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.26' constraints.validation.error='ThoraxLungsSectionTemplateId ThoraxLungsSectionCode' code.codeSystemName='LOINC' code.code='10207-9' constraints.validation.info='ThoraxLungsSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='THORAX+LUNGS' constraints.validation.error='ThoraxLungsSectionCode' code.codeSystemName='LOINC' code.code='10207-9' constraints.validation.info='ThoraxLungsSectionProblemEntry'"
  * @generated
  */
 public interface ThoraxLungsSection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.26')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.9.26\')'"
-	 * @generated
-	 */
-	boolean validateThoraxLungsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

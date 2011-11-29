@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NeckSection#validateNeckSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neck Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NeckSection#validateNeckSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neck Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NeckSection#validateNeckSectionProblemEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neck Section Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NeckSection#getProblemEntry() <em>Get Problem Entry</em>}</li>
@@ -55,60 +54,6 @@ public class NeckSectionOperations extends SectionOperations {
 	 */
 	protected NeckSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateNeckSectionTemplateId(NeckSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neck Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNeckSectionTemplateId(NeckSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.24')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNeckSectionTemplateId(NeckSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neck Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNeckSectionTemplateId(NeckSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.24')
-	 * @param neckSection The receiving '<em><b>Neck Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateNeckSectionTemplateId(NeckSection neckSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.NECK_SECTION);
-			try {
-				VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NECK_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(neckSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NECK_SECTION__NECK_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NeckSectionTemplateId"), new Object[] { neckSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -257,7 +202,7 @@ public class NeckSectionOperations extends SectionOperations {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.NECK_SECTION, ConsolPackage.Literals.NECK_SECTION.getEAllOperations().get(58));
+				ConsolPackage.Literals.NECK_SECTION, ConsolPackage.Literals.NECK_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

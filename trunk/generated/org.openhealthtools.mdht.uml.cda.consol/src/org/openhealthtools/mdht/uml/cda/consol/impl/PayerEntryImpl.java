@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -120,15 +121,6 @@ public class PayerEntryImpl extends ActImpl implements PayerEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayerEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayerEntryOperations.validatePayerEntryTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePayerEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayerEntryOperations.validatePayerEntryClassCode(this, diagnostics, context);
 	}
@@ -192,7 +184,7 @@ public class PayerEntryImpl extends ActImpl implements PayerEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PayerEntry getPayerEntity() {
+	public Act getPayerEntity() {
 		return PayerEntryOperations.getPayerEntity(this);
 	}
 

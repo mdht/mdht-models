@@ -14,7 +14,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Discharge Diagnosis Section</b></em>'.
+ * A representation of the model object '<em><b>Hospital Discharge Diagnosis Section</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -29,23 +29,23 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDischargeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE DX' templateId.root='2.16.840.1.113883.3.88.11.83.111' constraints.validation.error='DischargeDiagnosisSectionTemplateId DischargeDiagnosisSectionCode DischargeDiagnosisSectionCondition' code.codeSystemName='LOINC' code.code='11535-2'"
+ * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeDiagnosisSection()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE DX' templateId.root='2.16.840.1.113883.10.20.22.2.24' constraints.validation.error='HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCondition' code.codeSystemName='LOINC' code.code='11535-2'"
  * @generated
  */
-public interface DischargeDiagnosisSection extends Section {
+public interface HospitalDischargeDiagnosisSection extends Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.111')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.111\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.24\')'"
 	 * @generated
 	 */
-	boolean validateDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,7 +60,7 @@ public interface DischargeDiagnosisSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (\nvalue.code = \'11535-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
-	boolean validateDischargeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +73,7 @@ public interface DischargeDiagnosisSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))'"
 	 * @generated
 	 */
-	boolean validateDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHospitalDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,5 +92,5 @@ public interface DischargeDiagnosisSection extends Section {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiagnosisSection init();
-} // DischargeDiagnosisSection
+	public HospitalDischargeDiagnosisSection init();
+} // HospitalDischargeDiagnosisSection

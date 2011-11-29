@@ -11,6 +11,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.openhealthtools.mdht.uml.cda.Act;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Medication Combination Medication</b></em>'.
@@ -51,7 +53,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationCombinationMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.8' constraints.validation.error='MedicationCombinationMedicationTemplateId MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationActivityCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationActivityCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
  * @generated
  */
 public interface MedicationCombinationMedication extends MedicationActivity {
@@ -558,13 +560,13 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InternalReference)).oclAsType(consol::InternalReference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(cda::Act)).oclAsType(cda::Act)'"
 	 * @generated
 	 */
-	EList<InternalReference> getInternalReferences();
+	EList<Act> getInternalReferences();
 
 	/**
 	 * <!-- begin-user-doc -->

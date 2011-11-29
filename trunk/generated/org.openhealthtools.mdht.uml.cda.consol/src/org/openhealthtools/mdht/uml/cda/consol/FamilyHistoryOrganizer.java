@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.111' templateId.root='2.16.840.1.113883.3.88.11.83.18' constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerHasComponent FamilyHistoryOrganizerHasSubject FamilyHistoryOrganizerHasSubjectPatientRelationship FamilyHistoryOrganizerRelationshipValueCode FamilyHistoryOrganizerHasRelatedSubjectCode FamilyHistoryOrganizerHasParticipantParticipantRole FamilyHistoryOrganizerHasParticipantRoleCode FamilyHistoryOrganizerHasParticipantRolePlayingEntity FamilyHistoryOrganizerRelatedSubjectCodeValueSet FamilyHistoryOrganizerFamilyMemberCondition FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode FamilyHistoryOrganizerCode FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerFamilyHistoryObservation' code.codeSystemName='RoleCode' classCode='CLUSTER' constraints.validation.warning='FamilyHistoryOrganizerHasFamilyHistoryObservation FamilyHistoryOrganizerHasRelatedSubjectSubject FamilyHistoryOrganizerHasGenderCode FamilyHistoryOrganizerRelatedSubjectBirthTime FamilyHistoryOrganizerHasFamilyName' moodCode='EVN' constraints.validation.info='FamilyHistoryOrganizerHasParticipant'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.111' templateId.root='2.16.840.1.113883.10.20.22.4.45' constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerHasComponent FamilyHistoryOrganizerHasSubject FamilyHistoryOrganizerHasSubjectPatientRelationship FamilyHistoryOrganizerRelationshipValueCode FamilyHistoryOrganizerHasRelatedSubjectCode FamilyHistoryOrganizerHasParticipantParticipantRole FamilyHistoryOrganizerHasParticipantRoleCode FamilyHistoryOrganizerHasParticipantRolePlayingEntity FamilyHistoryOrganizerRelatedSubjectCodeValueSet FamilyHistoryOrganizerFamilyMemberCondition FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode FamilyHistoryOrganizerCode FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerFamilyHistoryObservation' code.codeSystemName='RoleCode' classCode='CLUSTER' constraints.validation.warning='FamilyHistoryOrganizerHasFamilyHistoryObservation FamilyHistoryOrganizerHasRelatedSubjectSubject FamilyHistoryOrganizerHasGenderCode FamilyHistoryOrganizerRelatedSubjectBirthTime FamilyHistoryOrganizerHasFamilyName' moodCode='EVN' constraints.validation.info='FamilyHistoryOrganizerHasParticipant'"
  * @generated
  */
 public interface FamilyHistoryOrganizer extends Organizer {
@@ -244,11 +244,11 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.18')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.45')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.18\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.45\')'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

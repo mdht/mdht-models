@@ -56,15 +56,6 @@ public class NoseSectionImpl extends SectionImpl implements NoseSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNoseSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NoseSectionOperations.validateNoseSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNoseSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoseSectionOperations.validateNoseSectionCode(this, diagnostics, context);
 	}

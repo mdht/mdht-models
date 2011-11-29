@@ -55,15 +55,6 @@ public class MedicationTypeImpl extends ObservationImpl implements MedicationTyp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationTypeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationTypeOperations.validateMedicationTypeTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationTypeOperations.validateMedicationTypeCode(this, diagnostics, context);
 	}

@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.3.88.11.83.12' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationHasCustodian AdvanceDirectiveObservationParticipantTypeCode AdvanceDirectiveObservationParticipantRoleClassCode AdvanceDirectiveObservationHasAddress AdvanceDirectiveObservationHasTelecom AdvanceDirectiveObservationHasNameOfAgent AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationRepeatNumber AdvanceDirectiveObservationInterpretationCode AdvanceDirectiveObservationTargetSiteCode' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem' moodCode='EVN' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet AdvanceDirectiveObservationHasExternalReference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.48' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationHasCustodian AdvanceDirectiveObservationParticipantTypeCode AdvanceDirectiveObservationParticipantRoleClassCode AdvanceDirectiveObservationHasAddress AdvanceDirectiveObservationHasTelecom AdvanceDirectiveObservationHasNameOfAgent AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationRepeatNumber AdvanceDirectiveObservationInterpretationCode AdvanceDirectiveObservationTargetSiteCode' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem' moodCode='EVN' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet AdvanceDirectiveObservationHasExternalReference'"
  * @generated
  */
 public interface AdvanceDirectiveObservation extends Observation {
@@ -183,11 +183,11 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.12')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.12\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.48\')'"
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

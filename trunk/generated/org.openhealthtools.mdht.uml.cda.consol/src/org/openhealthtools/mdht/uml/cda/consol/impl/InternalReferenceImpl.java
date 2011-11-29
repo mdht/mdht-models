@@ -55,15 +55,6 @@ public class InternalReferenceImpl extends ActImpl implements InternalReference 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInternalReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InternalReferenceOperations.validateInternalReferenceTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateInternalReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InternalReferenceOperations.validateInternalReferenceId(this, diagnostics, context);
 	}

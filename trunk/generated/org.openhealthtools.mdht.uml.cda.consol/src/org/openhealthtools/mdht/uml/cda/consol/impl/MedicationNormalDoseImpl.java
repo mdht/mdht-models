@@ -65,16 +65,6 @@ public class MedicationNormalDoseImpl extends MedicationActivityImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNormalDoseOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MedicationNormalDose init() {
 		CDAUtil.init(this);
 		return this;

@@ -161,6 +161,15 @@ public interface ConsolFactory extends EFactory {
 	Indication createIndication();
 
 	/**
+	 * Returns a new object of class '<em>Medication Dispense</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense</em>'.
+	 * @generated
+	 */
+	MedicationDispense createMedicationDispense();
+
+	/**
 	 * Returns a new object of class '<em>Drug Vehicle</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -323,6 +332,15 @@ public interface ConsolFactory extends EFactory {
 	PolicyActivity createPolicyActivity();
 
 	/**
+	 * Returns a new object of class '<em>Authorization Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Authorization Activity</em>'.
+	 * @generated
+	 */
+	AuthorizationActivity createAuthorizationActivity();
+
+	/**
 	 * Returns a new object of class '<em>Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -339,6 +357,69 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	MedicationsSectionEntriesOptional createMedicationsSectionEntriesOptional();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Section</em>'.
+	 * @generated
+	 */
+	PlanOfCareSection createPlanOfCareSection();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Act</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivityAct createPlanOfCareActivityAct();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Encounter</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivityEncounter createPlanOfCareActivityEncounter();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Observation</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivityObservation createPlanOfCareActivityObservation();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Procedure</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivityProcedure createPlanOfCareActivityProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Supply</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Supply</em>'.
+	 * @generated
+	 */
+	PlanOfCareActivitySupply createPlanOfCareActivitySupply();
 
 	/**
 	 * Returns a new object of class '<em>Procedures Section</em>'.
@@ -375,24 +456,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ProcedureActivityProcedure createProcedureActivityProcedure();
-
-	/**
-	 * Returns a new object of class '<em>Immunization Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immunization Activity</em>'.
-	 * @generated
-	 */
-	ImmunizationActivity createImmunizationActivity();
-
-	/**
-	 * Returns a new object of class '<em>Immunization Refusal Reason</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immunization Refusal Reason</em>'.
-	 * @generated
-	 */
-	ImmunizationRefusalReason createImmunizationRefusalReason();
 
 	/**
 	 * Returns a new object of class '<em>Procedure Acivity Observation</em>'.
@@ -665,6 +728,24 @@ public interface ConsolFactory extends EFactory {
 	ImmunizationsSection createImmunizationsSection();
 
 	/**
+	 * Returns a new object of class '<em>Immunization Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Activity</em>'.
+	 * @generated
+	 */
+	ImmunizationActivity createImmunizationActivity();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Refusal Reason</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Refusal Reason</em>'.
+	 * @generated
+	 */
+	ImmunizationRefusalReason createImmunizationRefusalReason();
+
+	/**
 	 * Returns a new object of class '<em>Insurance Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -699,69 +780,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PolicySubscriber createPolicySubscriber();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Section</em>'.
-	 * @generated
-	 */
-	PlanOfCareSection createPlanOfCareSection();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Act</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivityAct createPlanOfCareActivityAct();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Encounter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Encounter</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivityEncounter createPlanOfCareActivityEncounter();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Observation</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivityObservation createPlanOfCareActivityObservation();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Procedure</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivityProcedure createPlanOfCareActivityProcedure();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration();
-
-	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity Supply</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity Supply</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivitySupply createPlanOfCareActivitySupply();
 
 	/**
 	 * Returns a new object of class '<em>Procedure</em>'.
@@ -881,22 +899,22 @@ public interface ConsolFactory extends EFactory {
 	HospitalAdmissionDiagnosisSection createHospitalAdmissionDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Discharge Diagnosis Section</em>'.
+	 * Returns a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Discharge Diagnosis Section</em>'.
+	 * @return a new object of class '<em>Hospital Discharge Diagnosis Section</em>'.
 	 * @generated
 	 */
-	DischargeDiagnosisSection createDischargeDiagnosisSection();
+	HospitalDischargeDiagnosisSection createHospitalDischargeDiagnosisSection();
 
 	/**
-	 * Returns a new object of class '<em>Admission Medication History Section</em>'.
+	 * Returns a new object of class '<em>Hospital Admission Medications Section Entries Optional</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Admission Medication History Section</em>'.
+	 * @return a new object of class '<em>Hospital Admission Medications Section Entries Optional</em>'.
 	 * @generated
 	 */
-	AdmissionMedicationHistorySection createAdmissionMedicationHistorySection();
+	HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
 	 * Returns a new object of class '<em>Hospital Discharge Medications Section</em>'.
@@ -926,13 +944,13 @@ public interface ConsolFactory extends EFactory {
 	PhysicalExamSection createPhysicalExamSection();
 
 	/**
-	 * Returns a new object of class '<em>General Appearance Section</em>'.
+	 * Returns a new object of class '<em>General Status Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Appearance Section</em>'.
+	 * @return a new object of class '<em>General Status Section</em>'.
 	 * @generated
 	 */
-	GeneralAppearanceSection createGeneralAppearanceSection();
+	GeneralStatusSection createGeneralStatusSection();
 
 	/**
 	 * Returns a new object of class '<em>Visible Implanted Medical Devices Section</em>'.
@@ -1331,22 +1349,13 @@ public interface ConsolFactory extends EFactory {
 	DischargeSummary createDischargeSummary();
 
 	/**
-	 * Returns a new object of class '<em>Discharge Diet</em>'.
+	 * Returns a new object of class '<em>Discharge Diet Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Discharge Diet</em>'.
+	 * @return a new object of class '<em>Discharge Diet Section</em>'.
 	 * @generated
 	 */
-	DischargeDiet createDischargeDiet();
-
-	/**
-	 * Returns a new object of class '<em>Medication Dispense</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Dispense</em>'.
-	 * @generated
-	 */
-	MedicationDispense createMedicationDispense();
+	DischargeDietSection createDischargeDietSection();
 
 	/**
 	 * Returns a new object of class '<em>Precondition For Substance Administration</em>'.

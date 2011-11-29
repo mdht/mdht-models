@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.15' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationInformationSource ResultObservationResultValuePresence ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' constraints.validation.warning='ResultObservationCodeValue ResultObservationReferenceRangeRequired ResultObservationResultTypeCodeSystem ResultObservationLaboratoryResultsValueSet ResultObservationInterpretationCode' classCode='OBS' constraints.validation.info='ResultObservationMethodCode' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.2' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationInformationSource ResultObservationResultValuePresence ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' constraints.validation.warning='ResultObservationCodeValue ResultObservationReferenceRangeRequired ResultObservationResultTypeCodeSystem ResultObservationLaboratoryResultsValueSet ResultObservationInterpretationCode' classCode='OBS' constraints.validation.info='ResultObservationMethodCode' moodCode='EVN'"
  * @generated
  */
 public interface ResultObservation extends Observation {
@@ -135,11 +135,11 @@ public interface ResultObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.15')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.2')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.15\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.2\')'"
 	 * @generated
 	 */
 	boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

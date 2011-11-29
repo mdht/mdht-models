@@ -24,34 +24,13 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AbdomenSection;
-import org.openhealthtools.mdht.uml.cda.consol.BreastSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChestWallSection;
+import org.openhealthtools.mdht.uml.cda.Section;
+
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.EarsNoseMouthThroatSection;
-import org.openhealthtools.mdht.uml.cda.consol.EarsSection;
-import org.openhealthtools.mdht.uml.cda.consol.EndocrineSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ExtremitiesSection;
-import org.openhealthtools.mdht.uml.cda.consol.EyesSection;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralAppearanceSection;
-import org.openhealthtools.mdht.uml.cda.consol.GenitaliaSection;
-import org.openhealthtools.mdht.uml.cda.consol.HeadSection;
-import org.openhealthtools.mdht.uml.cda.consol.HeartSection;
-import org.openhealthtools.mdht.uml.cda.consol.IntegumentarySystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.LymphaticSection;
-import org.openhealthtools.mdht.uml.cda.consol.MouthThroatTeethSection;
-import org.openhealthtools.mdht.uml.cda.consol.MusculoskeletalSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.NeckSection;
-import org.openhealthtools.mdht.uml.cda.consol.NeurologicSystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.NoseSection;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
-import org.openhealthtools.mdht.uml.cda.consol.RectumSection;
-import org.openhealthtools.mdht.uml.cda.consol.RespiratorySystemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ThoraxLungsSection;
-import org.openhealthtools.mdht.uml.cda.consol.VesselsSection;
-import org.openhealthtools.mdht.uml.cda.consol.VisibleImplantedMedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -143,7 +122,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.118')";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.10')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionTemplateId(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Template Id</em>}' invariant operation.
@@ -159,7 +138,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.118')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.10')
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -370,7 +349,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralAppearanceSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionGeneralAppearanceSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section General Appearance Section</em>}' invariant operation.
@@ -386,7 +365,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralAppearanceSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -427,7 +406,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VisibleImplantedMedicalDevicesSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Visible Implanted Medical Devices Section</em>}' invariant operation.
@@ -443,7 +422,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VisibleImplantedMedicalDevicesSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -485,7 +464,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::IntegumentarySystemSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionIntegumentarySystemSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Integumentary System Section</em>}' invariant operation.
@@ -501,7 +480,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::IntegumentarySystemSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -542,7 +521,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeadSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionHeadSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Head Section</em>}' invariant operation.
@@ -558,7 +537,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeadSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -598,7 +577,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EyesSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionEyesSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Eyes Section</em>}' invariant operation.
@@ -614,7 +593,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EyesSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -654,7 +633,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsNoseMouthThroatSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionEarsNoseMouthThroatSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Ears Nose Mouth Throat Section</em>}' invariant operation.
@@ -670,7 +649,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsNoseMouthThroatSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -711,7 +690,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionEarsSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Ears Section</em>}' invariant operation.
@@ -727,7 +706,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -767,7 +746,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NoseSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionNoseSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Nose Section</em>}' invariant operation.
@@ -783,7 +762,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NoseSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -823,7 +802,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MouthThroatTeethSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionMouthThroatTeethSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Mouth Throat Teeth Section</em>}' invariant operation.
@@ -839,7 +818,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MouthThroatTeethSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -880,7 +859,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeckSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionNeckSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Neck Section</em>}' invariant operation.
@@ -896,7 +875,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeckSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -936,7 +915,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EndocrineSystemSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionEndocrineSystemSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Endocrine System Section</em>}' invariant operation.
@@ -952,7 +931,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EndocrineSystemSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -993,7 +972,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ThoraxLungsSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionThoraxLungsSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Thorax Lungs Section</em>}' invariant operation.
@@ -1009,7 +988,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ThoraxLungsSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1049,7 +1028,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChestWallSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionChestWallSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Chest Wall Section</em>}' invariant operation.
@@ -1065,7 +1044,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChestWallSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1105,7 +1084,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::BreastSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionBreastSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Breast Section</em>}' invariant operation.
@@ -1121,7 +1100,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::BreastSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1161,7 +1140,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeartSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionHeartSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Heart Section</em>}' invariant operation.
@@ -1177,7 +1156,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeartSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1217,7 +1196,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RespiratorySystemSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionRespiratorySystemSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Respiratory System Section</em>}' invariant operation.
@@ -1233,7 +1212,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RespiratorySystemSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1274,7 +1253,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AbdomenSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionAbdomenSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Abdomen Section</em>}' invariant operation.
@@ -1290,7 +1269,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AbdomenSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1330,7 +1309,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::LymphaticSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionLymphaticSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Lymphatic Section</em>}' invariant operation.
@@ -1346,7 +1325,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::LymphaticSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1386,7 +1365,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VesselsSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionVesselsSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Vessels Section</em>}' invariant operation.
@@ -1402,7 +1381,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VesselsSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1442,7 +1421,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MusculoskeletalSystemSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionMusculoskeletalSystemSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Musculoskeletal System Section</em>}' invariant operation.
@@ -1458,7 +1437,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MusculoskeletalSystemSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1499,7 +1478,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeurologicSystemSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionNeurologicSystemSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Neurologic System Section</em>}' invariant operation.
@@ -1515,7 +1494,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeurologicSystemSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1556,7 +1535,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GenitaliaSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionGenitaliaSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Genitalia Section</em>}' invariant operation.
@@ -1572,7 +1551,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GenitaliaSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1612,7 +1591,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RectumSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionRectumSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Rectum Section</em>}' invariant operation.
@@ -1628,7 +1607,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RectumSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1668,7 +1647,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ExtremitiesSection))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionExtremitiesSection(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Extremities Section</em>}' invariant operation.
@@ -1684,7 +1663,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ExtremitiesSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1816,7 +1795,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_GENERAL_APPEARANCE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralAppearanceSection))->asSequence()->first().oclAsType(consol::GeneralAppearanceSection)";
+	protected static final String GET_GENERAL_APPEARANCE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->first().oclAsType(consol::GeneralStatusSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getGeneralAppearanceSection(PhysicalExamSection) <em>Get General Appearance Section</em>}' query operation.
@@ -1832,12 +1811,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralAppearanceSection))->asSequence()->first().oclAsType(consol::GeneralAppearanceSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->first().oclAsType(consol::GeneralStatusSection)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static GeneralAppearanceSection getGeneralAppearanceSection(PhysicalExamSection physicalExamSection) {
+	public static GeneralStatusSection getGeneralAppearanceSection(PhysicalExamSection physicalExamSection) {
 		if (GET_GENERAL_APPEARANCE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1850,7 +1829,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_GENERAL_APPEARANCE_SECTION__EOCL_QRY);
-		return (GeneralAppearanceSection) query.evaluate(physicalExamSection);
+		return (GeneralStatusSection) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -1861,7 +1840,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VisibleImplantedMedicalDevicesSection))->asSequence()->first().oclAsType(consol::VisibleImplantedMedicalDevicesSection)";
+	protected static final String GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getVisibleImplantedMedicalDevicesSection(PhysicalExamSection) <em>Get Visible Implanted Medical Devices Section</em>}' query operation.
@@ -1877,13 +1856,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VisibleImplantedMedicalDevicesSection))->asSequence()->first().oclAsType(consol::VisibleImplantedMedicalDevicesSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static VisibleImplantedMedicalDevicesSection getVisibleImplantedMedicalDevicesSection(
-			PhysicalExamSection physicalExamSection) {
+	public static Section getVisibleImplantedMedicalDevicesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1896,7 +1874,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_QRY);
-		return (VisibleImplantedMedicalDevicesSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -1907,7 +1885,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::IntegumentarySystemSection))->asSequence()->first().oclAsType(consol::IntegumentarySystemSection)";
+	protected static final String GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getIntegumentarySystemSection(PhysicalExamSection) <em>Get Integumentary System Section</em>}' query operation.
@@ -1923,12 +1901,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::IntegumentarySystemSection))->asSequence()->first().oclAsType(consol::IntegumentarySystemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static IntegumentarySystemSection getIntegumentarySystemSection(PhysicalExamSection physicalExamSection) {
+	public static Section getIntegumentarySystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1941,7 +1919,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_QRY);
-		return (IntegumentarySystemSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -1952,7 +1930,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEAD_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeadSection))->asSequence()->first().oclAsType(consol::HeadSection)";
+	protected static final String GET_HEAD_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHeadSection(PhysicalExamSection) <em>Get Head Section</em>}' query operation.
@@ -1968,12 +1946,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeadSection))->asSequence()->first().oclAsType(consol::HeadSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static HeadSection getHeadSection(PhysicalExamSection physicalExamSection) {
+	public static Section getHeadSection(PhysicalExamSection physicalExamSection) {
 		if (GET_HEAD_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1986,7 +1964,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEAD_SECTION__EOCL_QRY);
-		return (HeadSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -1997,7 +1975,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EYES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EyesSection))->asSequence()->first().oclAsType(consol::EyesSection)";
+	protected static final String GET_EYES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEyesSection(PhysicalExamSection) <em>Get Eyes Section</em>}' query operation.
@@ -2013,12 +1991,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EyesSection))->asSequence()->first().oclAsType(consol::EyesSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EyesSection getEyesSection(PhysicalExamSection physicalExamSection) {
+	public static Section getEyesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EYES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2031,7 +2009,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EYES_SECTION__EOCL_QRY);
-		return (EyesSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2042,7 +2020,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsNoseMouthThroatSection))->asSequence()->first().oclAsType(consol::EarsNoseMouthThroatSection)";
+	protected static final String GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEarsNoseMouthThroatSection(PhysicalExamSection) <em>Get Ears Nose Mouth Throat Section</em>}' query operation.
@@ -2058,12 +2036,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsNoseMouthThroatSection))->asSequence()->first().oclAsType(consol::EarsNoseMouthThroatSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EarsNoseMouthThroatSection getEarsNoseMouthThroatSection(PhysicalExamSection physicalExamSection) {
+	public static Section getEarsNoseMouthThroatSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2076,7 +2054,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_QRY);
-		return (EarsNoseMouthThroatSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2087,7 +2065,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EARS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsSection))->asSequence()->first().oclAsType(consol::EarsSection)";
+	protected static final String GET_EARS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEarsSection(PhysicalExamSection) <em>Get Ears Section</em>}' query operation.
@@ -2103,12 +2081,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EarsSection))->asSequence()->first().oclAsType(consol::EarsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EarsSection getEarsSection(PhysicalExamSection physicalExamSection) {
+	public static Section getEarsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EARS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2121,7 +2099,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EARS_SECTION__EOCL_QRY);
-		return (EarsSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2132,7 +2110,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NOSE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NoseSection))->asSequence()->first().oclAsType(consol::NoseSection)";
+	protected static final String GET_NOSE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNoseSection(PhysicalExamSection) <em>Get Nose Section</em>}' query operation.
@@ -2148,12 +2126,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NoseSection))->asSequence()->first().oclAsType(consol::NoseSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static NoseSection getNoseSection(PhysicalExamSection physicalExamSection) {
+	public static Section getNoseSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NOSE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2166,7 +2144,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NOSE_SECTION__EOCL_QRY);
-		return (NoseSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2177,7 +2155,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MOUTH_THROAT_TEETH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MouthThroatTeethSection))->asSequence()->first().oclAsType(consol::MouthThroatTeethSection)";
+	protected static final String GET_MOUTH_THROAT_TEETH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMouthThroatTeethSection(PhysicalExamSection) <em>Get Mouth Throat Teeth Section</em>}' query operation.
@@ -2193,12 +2171,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MouthThroatTeethSection))->asSequence()->first().oclAsType(consol::MouthThroatTeethSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static MouthThroatTeethSection getMouthThroatTeethSection(PhysicalExamSection physicalExamSection) {
+	public static Section getMouthThroatTeethSection(PhysicalExamSection physicalExamSection) {
 		if (GET_MOUTH_THROAT_TEETH_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2211,7 +2189,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MOUTH_THROAT_TEETH_SECTION__EOCL_QRY);
-		return (MouthThroatTeethSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2222,7 +2200,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NECK_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeckSection))->asSequence()->first().oclAsType(consol::NeckSection)";
+	protected static final String GET_NECK_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNeckSection(PhysicalExamSection) <em>Get Neck Section</em>}' query operation.
@@ -2238,12 +2216,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeckSection))->asSequence()->first().oclAsType(consol::NeckSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static NeckSection getNeckSection(PhysicalExamSection physicalExamSection) {
+	public static Section getNeckSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NECK_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2256,7 +2234,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NECK_SECTION__EOCL_QRY);
-		return (NeckSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2267,7 +2245,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENDOCRINE_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EndocrineSystemSection))->asSequence()->first().oclAsType(consol::EndocrineSystemSection)";
+	protected static final String GET_ENDOCRINE_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEndocrineSystemSection(PhysicalExamSection) <em>Get Endocrine System Section</em>}' query operation.
@@ -2283,12 +2261,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EndocrineSystemSection))->asSequence()->first().oclAsType(consol::EndocrineSystemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EndocrineSystemSection getEndocrineSystemSection(PhysicalExamSection physicalExamSection) {
+	public static Section getEndocrineSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_ENDOCRINE_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2301,7 +2279,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENDOCRINE_SYSTEM_SECTION__EOCL_QRY);
-		return (EndocrineSystemSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2312,7 +2290,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_THORAX_LUNGS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ThoraxLungsSection))->asSequence()->first().oclAsType(consol::ThoraxLungsSection)";
+	protected static final String GET_THORAX_LUNGS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getThoraxLungsSection(PhysicalExamSection) <em>Get Thorax Lungs Section</em>}' query operation.
@@ -2328,12 +2306,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ThoraxLungsSection))->asSequence()->first().oclAsType(consol::ThoraxLungsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ThoraxLungsSection getThoraxLungsSection(PhysicalExamSection physicalExamSection) {
+	public static Section getThoraxLungsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_THORAX_LUNGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2346,7 +2324,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_THORAX_LUNGS_SECTION__EOCL_QRY);
-		return (ThoraxLungsSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2357,7 +2335,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CHEST_WALL_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChestWallSection))->asSequence()->first().oclAsType(consol::ChestWallSection)";
+	protected static final String GET_CHEST_WALL_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getChestWallSection(PhysicalExamSection) <em>Get Chest Wall Section</em>}' query operation.
@@ -2373,12 +2351,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChestWallSection))->asSequence()->first().oclAsType(consol::ChestWallSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ChestWallSection getChestWallSection(PhysicalExamSection physicalExamSection) {
+	public static Section getChestWallSection(PhysicalExamSection physicalExamSection) {
 		if (GET_CHEST_WALL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2391,7 +2369,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CHEST_WALL_SECTION__EOCL_QRY);
-		return (ChestWallSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2402,7 +2380,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_BREAST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::BreastSection))->asSequence()->first().oclAsType(consol::BreastSection)";
+	protected static final String GET_BREAST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getBreastSection(PhysicalExamSection) <em>Get Breast Section</em>}' query operation.
@@ -2418,12 +2396,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::BreastSection))->asSequence()->first().oclAsType(consol::BreastSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static BreastSection getBreastSection(PhysicalExamSection physicalExamSection) {
+	public static Section getBreastSection(PhysicalExamSection physicalExamSection) {
 		if (GET_BREAST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2436,7 +2414,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_BREAST_SECTION__EOCL_QRY);
-		return (BreastSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2447,7 +2425,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEART_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeartSection))->asSequence()->first().oclAsType(consol::HeartSection)";
+	protected static final String GET_HEART_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHeartSection(PhysicalExamSection) <em>Get Heart Section</em>}' query operation.
@@ -2463,12 +2441,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HeartSection))->asSequence()->first().oclAsType(consol::HeartSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static HeartSection getHeartSection(PhysicalExamSection physicalExamSection) {
+	public static Section getHeartSection(PhysicalExamSection physicalExamSection) {
 		if (GET_HEART_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2481,7 +2459,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEART_SECTION__EOCL_QRY);
-		return (HeartSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2492,7 +2470,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESPIRATORY_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RespiratorySystemSection))->asSequence()->first().oclAsType(consol::RespiratorySystemSection)";
+	protected static final String GET_RESPIRATORY_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getRespiratorySystemSection(PhysicalExamSection) <em>Get Respiratory System Section</em>}' query operation.
@@ -2508,12 +2486,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RespiratorySystemSection))->asSequence()->first().oclAsType(consol::RespiratorySystemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static RespiratorySystemSection getRespiratorySystemSection(PhysicalExamSection physicalExamSection) {
+	public static Section getRespiratorySystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_RESPIRATORY_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2526,7 +2504,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESPIRATORY_SYSTEM_SECTION__EOCL_QRY);
-		return (RespiratorySystemSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2537,7 +2515,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ABDOMEN_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AbdomenSection))->asSequence()->first().oclAsType(consol::AbdomenSection)";
+	protected static final String GET_ABDOMEN_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAbdomenSection(PhysicalExamSection) <em>Get Abdomen Section</em>}' query operation.
@@ -2553,12 +2531,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AbdomenSection))->asSequence()->first().oclAsType(consol::AbdomenSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static AbdomenSection getAbdomenSection(PhysicalExamSection physicalExamSection) {
+	public static Section getAbdomenSection(PhysicalExamSection physicalExamSection) {
 		if (GET_ABDOMEN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2571,7 +2549,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ABDOMEN_SECTION__EOCL_QRY);
-		return (AbdomenSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2582,7 +2560,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_LYMPHATIC_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::LymphaticSection))->asSequence()->first().oclAsType(consol::LymphaticSection)";
+	protected static final String GET_LYMPHATIC_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getLymphaticSection(PhysicalExamSection) <em>Get Lymphatic Section</em>}' query operation.
@@ -2598,12 +2576,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::LymphaticSection))->asSequence()->first().oclAsType(consol::LymphaticSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static LymphaticSection getLymphaticSection(PhysicalExamSection physicalExamSection) {
+	public static Section getLymphaticSection(PhysicalExamSection physicalExamSection) {
 		if (GET_LYMPHATIC_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2616,7 +2594,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_LYMPHATIC_SECTION__EOCL_QRY);
-		return (LymphaticSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2627,7 +2605,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_VESSELS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VesselsSection))->asSequence()->first().oclAsType(consol::VesselsSection)";
+	protected static final String GET_VESSELS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getVesselsSection(PhysicalExamSection) <em>Get Vessels Section</em>}' query operation.
@@ -2643,12 +2621,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VesselsSection))->asSequence()->first().oclAsType(consol::VesselsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static VesselsSection getVesselsSection(PhysicalExamSection physicalExamSection) {
+	public static Section getVesselsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_VESSELS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2661,7 +2639,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_VESSELS_SECTION__EOCL_QRY);
-		return (VesselsSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2672,7 +2650,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MusculoskeletalSystemSection))->asSequence()->first().oclAsType(consol::MusculoskeletalSystemSection)";
+	protected static final String GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMusculoskeletalSystemSection(PhysicalExamSection) <em>Get Musculoskeletal System Section</em>}' query operation.
@@ -2688,12 +2666,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MusculoskeletalSystemSection))->asSequence()->first().oclAsType(consol::MusculoskeletalSystemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static MusculoskeletalSystemSection getMusculoskeletalSystemSection(PhysicalExamSection physicalExamSection) {
+	public static Section getMusculoskeletalSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2706,7 +2684,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_QRY);
-		return (MusculoskeletalSystemSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2717,7 +2695,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeurologicSystemSection))->asSequence()->first().oclAsType(consol::NeurologicSystemSection)";
+	protected static final String GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNeurologicSystemSection(PhysicalExamSection) <em>Get Neurologic System Section</em>}' query operation.
@@ -2733,12 +2711,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NeurologicSystemSection))->asSequence()->first().oclAsType(consol::NeurologicSystemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static NeurologicSystemSection getNeurologicSystemSection(PhysicalExamSection physicalExamSection) {
+	public static Section getNeurologicSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2751,7 +2729,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_QRY);
-		return (NeurologicSystemSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2762,7 +2740,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_GENITALIA_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GenitaliaSection))->asSequence()->first().oclAsType(consol::GenitaliaSection)";
+	protected static final String GET_GENITALIA_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getGenitaliaSection(PhysicalExamSection) <em>Get Genitalia Section</em>}' query operation.
@@ -2778,12 +2756,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GenitaliaSection))->asSequence()->first().oclAsType(consol::GenitaliaSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static GenitaliaSection getGenitaliaSection(PhysicalExamSection physicalExamSection) {
+	public static Section getGenitaliaSection(PhysicalExamSection physicalExamSection) {
 		if (GET_GENITALIA_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2796,7 +2774,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_GENITALIA_SECTION__EOCL_QRY);
-		return (GenitaliaSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2807,7 +2785,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RECTUM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RectumSection))->asSequence()->first().oclAsType(consol::RectumSection)";
+	protected static final String GET_RECTUM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getRectumSection(PhysicalExamSection) <em>Get Rectum Section</em>}' query operation.
@@ -2823,12 +2801,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::RectumSection))->asSequence()->first().oclAsType(consol::RectumSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static RectumSection getRectumSection(PhysicalExamSection physicalExamSection) {
+	public static Section getRectumSection(PhysicalExamSection physicalExamSection) {
 		if (GET_RECTUM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2841,7 +2819,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RECTUM_SECTION__EOCL_QRY);
-		return (RectumSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 	/**
@@ -2852,7 +2830,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EXTREMITIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ExtremitiesSection))->asSequence()->first().oclAsType(consol::ExtremitiesSection)";
+	protected static final String GET_EXTREMITIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)";
 
 	/**
 	 * The cached OCL query for the '{@link #getExtremitiesSection(PhysicalExamSection) <em>Get Extremities Section</em>}' query operation.
@@ -2868,12 +2846,12 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ExtremitiesSection))->asSequence()->first().oclAsType(consol::ExtremitiesSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ExtremitiesSection getExtremitiesSection(PhysicalExamSection physicalExamSection) {
+	public static Section getExtremitiesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EXTREMITIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2886,7 +2864,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EXTREMITIES_SECTION__EOCL_QRY);
-		return (ExtremitiesSection) query.evaluate(physicalExamSection);
+		return (Section) query.evaluate(physicalExamSection);
 	}
 
 } // PhysicalExamSectionOperations

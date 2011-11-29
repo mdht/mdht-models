@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounter()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' templateId.root='2.16.840.1.113883.3.88.11.83.16' constraints.validation.error='ConsolEncounterTemplateId ConsolEncounterAdmissionSourceValueSet ConsolEncounterClassCode ConsolEncounterId ConsolEncounterText' code.codeSystemName='CPT-4' classCode='ENC' constraints.validation.warning='ConsolEncounterCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' constraints.validation.error='ConsolEncounterAdmissionSourceValueSet ConsolEncounterClassCode ConsolEncounterId ConsolEncounterText' code.codeSystemName='CPT-4' classCode='ENC' constraints.validation.warning='ConsolEncounterCode'"
  * @generated
  */
 public interface Encounter extends org.openhealthtools.mdht.uml.cda.Encounter {
@@ -37,19 +37,6 @@ public interface Encounter extends org.openhealthtools.mdht.uml.cda.Encounter {
 	 * @generated
 	 */
 	boolean validateConsolEncounterAdmissionSourceValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.16')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.16\')'"
-	 * @generated
-	 */
-	boolean validateConsolEncounterTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

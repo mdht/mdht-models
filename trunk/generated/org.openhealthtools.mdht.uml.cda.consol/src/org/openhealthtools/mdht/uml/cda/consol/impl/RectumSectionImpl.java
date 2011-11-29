@@ -56,15 +56,6 @@ public class RectumSectionImpl extends SectionImpl implements RectumSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRectumSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RectumSectionOperations.validateRectumSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateRectumSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RectumSectionOperations.validateRectumSectionCode(this, diagnostics, context);
 	}

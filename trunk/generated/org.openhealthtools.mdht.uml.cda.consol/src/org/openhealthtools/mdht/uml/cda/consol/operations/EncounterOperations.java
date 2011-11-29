@@ -34,7 +34,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Encounter#validateConsolEncounterAdmissionSourceValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Admission Source Value Set</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Encounter#validateConsolEncounterTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Encounter#validateConsolEncounterClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Encounter#validateConsolEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Encounter#validateConsolEncounterCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Code</em>}</li>
@@ -104,61 +103,6 @@ public class EncounterOperations extends ClinicalStatementOperations {
 					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET,
 					ConsolPlugin.INSTANCE.getString("ConsolEncounterAdmissionSourceValueSet"),
 					new Object[] { encounter }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateConsolEncounterTemplateId(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateConsolEncounterTemplateId(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.16')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateConsolEncounterTemplateId(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consol Encounter Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateConsolEncounterTemplateId(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.16')
-	 * @param encounter The receiving '<em><b>Encounter</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateConsolEncounterTemplateId(Encounter encounter, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ENCOUNTER);
-			try {
-				VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSOL_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounter)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER__CONSOL_ENCOUNTER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ConsolEncounterTemplateId"), new Object[] { encounter }));
 			}
 			return false;
 		}
