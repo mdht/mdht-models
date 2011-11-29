@@ -433,7 +433,7 @@ organization performed or hosted the Procedure</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHMhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="encounterLocation" association="_2OTHORSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHNxSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHOBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -460,16 +460,16 @@ organization performed or hosted the Procedure</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OZNzBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OZN0BSVEeGGzu7fmW9pXw" name="patientInstruction" association="_2OZN0xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OZN0RSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OZN0hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OG6AxSVEeGGzu7fmW9pXw" name="internalReference" association="_2ONAjBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6BBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OG6BRSVEeGGzu7fmW9pXw" name="internalReferenceReason" association="_2OTHIBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6BhSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6BxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>

@@ -448,7 +448,7 @@ historical purposes.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2R84KhSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2R84LhSVEeGGzu7fmW9pXw" name="comment" association="_2R84MRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2FhloBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2FhloBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2R84LxSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2R84MBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
@@ -918,4 +918,99 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2EuUYBSVEeGGzu7fmW9pXw" base_Property="_2EqqCxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-231</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_4-pu0hVZEeGrgeKDUiwadw">
+    <ownedEnd xmi:id="_4-pu0xVZEeGrgeKDUiwadw" association="_4-pu0hVZEeGrgeKDUiwadw">
+      <type xmi:type="uml:Class" href="consol-documents.uml#_2IJb0BSVEeGGzu7fmW9pXw"/>
+    </ownedEnd>
+    <memberEnd href="consol-documents.uml#_4-pu0BVZEeGrgeKDUiwadw"/>
+    <memberEnd href="#_4-pu0xVZEeGrgeKDUiwadw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="__ZLiQBVZEeGrgeKDUiwadw" base_Association="_4-pu0hVZEeGrgeKDUiwadw"/>
+  <uml:Class xmi:id="_2EQaUBSVEeGGzu7fmW9pXw" name="EpisodeObservation">
+    <ownedComment xmi:id="_2EQaURSVEeGGzu7fmW9pXw" annotatedElement="_2EQaUBSVEeGGzu7fmW9pXw">
+      <body>Episode observations are used to distinguish among multiple occurrences of a problem or social history item. An episode observation is used to indicate that a problem act represents a new episode, distinct from other episodes of a similar concern.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_2EQaUhSVEeGGzu7fmW9pXw" name="valueExpression" constrainedElement="_2EQaUBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2EQaUxSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EQaVBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>Value in an episode observation SHOULD be the following SNOMED CT expression:&#xD;&#xA;&lt;codeblock>&amp;lt;value xsi:type=&quot;CD&quot; code=&quot;404684003&quot; codeSystem=&quot;2.16.840.1.113883.6.96&quot; displayName=&quot;Clinical finding&quot;&amp;gt;&#xD;&#xA;  &amp;lt;qualifier&amp;gt;&#xD;&#xA;    &amp;lt;name code=&quot;246456000&quot; displayName=&quot;Episodicity&quot;/&amp;gt;&#xD;&#xA;    &amp;lt;value code=&quot;288527008&quot; displayName=&quot;New episode&quot;/&amp;gt;&#xD;&#xA;  &amp;lt;/qualifier&amp;gt;&#xD;&#xA;&amp;lt;/value&amp;gt;&lt;/codeblock></body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2EQaVRSVEeGGzu7fmW9pXw" name="oneEntryRelationshipSUBJ" constrainedElement="_2EQaUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EQaVhSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Source of exactly one entryRelationship whose typeCode is 'SUBJ'. This is used to link the episode observation to the target problem act or social history observation.</body>
+        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, consol::ProblemConcernAct)->size() = 1&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, consol::SocialHistoryObservation)->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2EQaVxSVEeGGzu7fmW9pXw" name="existsEntryRelationshipSAS" constrainedElement="_2EQaUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EQaWBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Source of one or more entryRelationship whose typeCode is 'SAS'. The target of the entryRelationship SHALL be a problem act or social history observation. This is used to represent the temporal sequence of episodes.</body>
+        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, consol::ProblemConcernAct)->size() >0&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, consol::SocialHistoryObservation)->size() > 0</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2EYWIBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2EQaWhSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2EQaWxSVEeGGzu7fmW9pXw" name="OBS">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EQaXBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2EQaXRSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EQaXxSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EQaXhSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EQaYBSVEeGGzu7fmW9pXw" name="value" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EQaYRSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EQaYhSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_2EQaYxSVEeGGzu7fmW9pXw" base_Class="_2EQaUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.41" assigningAuthorityName="CCD"/>
+  <CDA:ConstraintValidation xmi:id="_2EVS0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EQaUhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-175</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EV54BSVEeGGzu7fmW9pXw" base_Constraint="_2EQaVRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-176</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EWg8BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EQaVxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-177</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_2ERBYBSVEeGGzu7fmW9pXw" base_Property="_2EQaWhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-170</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2ERocBSVEeGGzu7fmW9pXw" base_Property="_2EQaXBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-171</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2ES2kBSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EQaXxSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-174</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_2ERocRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2EQaXhSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-172</ruleId>
+    <ruleId>CONF-173</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_2EUEsBSVEeGGzu7fmW9pXw" code="404684003" displayName="Clinical finding" base_Property="_2EQaYBSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-175</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

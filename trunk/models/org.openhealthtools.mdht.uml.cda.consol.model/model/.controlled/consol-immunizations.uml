@@ -190,15 +190,15 @@ identifying the site.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2MHV3xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ZljOsBU9EeGbmN_W114JUw" name="drugVehicle" association="_ZljOshU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="../consol.uml#_VBXq8BUTEeG6PvUxSTZnaw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_VBXq8BUTEeG6PvUxSTZnaw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZljOsRU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_cqsasBU9EeGbmN_W114JUw" name="indication" association="_cqsashU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="../consol.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cqsasRU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fhFZABU9EeGbmN_W114JUw" name="instructions" association="_fhFZAhU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fhFZARU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_i7iGoBU9EeGbmN_W114JUw" name="medicationSupplyOrder" association="_i7iGohU9EeGbmN_W114JUw">
@@ -210,11 +210,11 @@ identifying the site.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m131QRU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pdW04BU9EeGbmN_W114JUw" name="reactionObservation" association="_pdgl4RU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdgl4BU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rQGk4BU9EeGbmN_W114JUw" name="preconditionForSubstanceAdministration" association="_rQGk4hU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="../consol.uml#_chEhQBUUEeG6PvUxSTZnaw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_chEhQBUUEeG6PvUxSTZnaw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rQGk4RU9EeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_JEY5wBVOEeGbmN_W114JUw" name="immunizationRefusalReason" type="__qYdcBVNEeGbmN_W114JUw" association="_JEY5whVOEeGbmN_W114JUw">

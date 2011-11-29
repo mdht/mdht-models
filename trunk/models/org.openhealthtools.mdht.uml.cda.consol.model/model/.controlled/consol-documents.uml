@@ -812,82 +812,82 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Uz-4RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxlhSVEeGGzu7fmW9pXw" name="admissionMedicationHistorySection" association="_2UnxyxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Poj5BSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj5BSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxlxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxmRSVEeGGzu7fmW9pXw" name="hospitalAdmissionDiagnosisSection" association="_2UnxzhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2PidQhSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PidQhSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxmhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxnBSVEeGGzu7fmW9pXw" name="advanceDirectivesSection" association="_2Unx0RSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-advancedirectives.uml#_2KgzUBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-advancedirectives.uml#_2KgzUBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxnRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxnhSVEeGGzu7fmW9pXw" name="allergiesReactionsSection" association="_2Unx1BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxnxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="dischargeDiagnosisSection" association="_2Unx1xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2PidURSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PidURSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxohSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxpBSVEeGGzu7fmW9pXw" name="dischargeDiet" association="_2Ut4MhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Uz-4xSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2Uz-4xSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxpRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxphSVEeGGzu7fmW9pXw" name="hospitalDischargeMedicationsSection" association="_2Ut4NRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Poj7RSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj7RSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxpxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxqBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxqxSVEeGGzu7fmW9pXw" name="functionalStatusSection" association="_2Ut4OxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxrRSVEeGGzu7fmW9pXw" name="historyOfPresentIllness" association="_2Ut4PhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2PcWsRSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PcWsRSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxrhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxsBSVEeGGzu7fmW9pXw" name="hospitalCourseSection" association="_2Ut4QRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2RqkOxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2RqkOxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxsRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxshSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxsxSVEeGGzu7fmW9pXw" name="medicalEquipmentSection" association="_2Ut4RBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxtBSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxtRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxthSVEeGGzu7fmW9pXw" name="physicalExamSection" association="_2Ut4RxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Pxt0hSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-exams.uml#_2Pxt0hSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxtxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxuBSVEeGGzu7fmW9pXw" name="planOfCareSection" association="_2Uz-0BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-planofcare.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxuRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxuhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxuxSVEeGGzu7fmW9pXw" name="historyOfPastIllnessSection" association="_2Uz-0xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2PQJcxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PQJcxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxvBSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxvRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxvhSVEeGGzu7fmW9pXw" name="reviewOfSystemsSection" association="_2Uz-1hSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2RqkMBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-exams.uml#_2RqkMBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxvxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxwBSVEeGGzu7fmW9pXw" name="medicationsAdministeredSection" association="_2Uz-2RSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-medications.uml#_2Poj_BSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj_BSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxwRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxwhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxwxSVEeGGzu7fmW9pXw" name="vitalSignsSection" association="_2Uz-3BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxxBSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxxRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -1167,74 +1167,74 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IVpEhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IWQIBSVEeGGzu7fmW9pXw" name="familyHistorySection" visibility="private" association="_2JKIcBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5QyHABVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5QyHARVhEeGQCvUGzi1kDQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JKIcxSVEeGGzu7fmW9pXw" name="socialHistorySection" visibility="private" association="_2JsT8BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-socialhistory.uml#_2JKvgBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-socialhistory.uml#_2JKvgBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_52xwABVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_52xwARVhEeGQCvUGzi1kDQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Js7ABSVEeGGzu7fmW9pXw" name="resultsSection" visibility="private" association="_2KEHYBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7ARSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7AhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2KEHYxSVEeGGzu7fmW9pXw" name="medicalEquipmentSection" visibility="private" association="_2KKOABSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Z8ugBVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Z8ugRVhEeGQCvUGzi1kDQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2KKOAxSVEeGGzu7fmW9pXw" name="functionalStatusSection" visibility="private" association="_2KT_ARSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_64ymoBVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_64ymoRVhEeGQCvUGzi1kDQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb3RSVEeGGzu7fmW9pXw" name="advanceDirectivesSection" association="_2IMfIRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-advancedirectives.uml#_1RZdIBVdEeGQCvUGzi1kDQ"/>
+      <type xmi:type="uml:Class" href="consol-advancedirectives.uml#_1RZdIBVdEeGQCvUGzi1kDQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IJb3hSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb3xSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb4BSVEeGGzu7fmW9pXw" name="allergiesSection" association="_2INGMBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gSEcBVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gSEcRVhEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb6BSVEeGGzu7fmW9pXw" name="encountersSection" association="_2IOUUBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_4yj2wBVdEeGQCvUGzi1kDQ"/>
+      <type xmi:type="uml:Class" href="consol-encounters.uml#_4yj2wBVdEeGQCvUGzi1kDQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb6RSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb6hSVEeGGzu7fmW9pXw" name="immunizationsSection" association="_2IO7YBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-immunizations.uml#_EuPloBVeEeGQCvUGzi1kDQ"/>
+      <type xmi:type="uml:Class" href="consol-immunizations.uml#_EuPloBVeEeGQCvUGzi1kDQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb6xSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb7BSVEeGGzu7fmW9pXw" name="payersSection" association="_2IPicBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2MV_UBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-payers.uml#_2MV_UBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb7RSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb7hSVEeGGzu7fmW9pXw" name="medicationsSection" association="_2IPicxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2NIpgBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8P0D8BVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8P0D8RVhEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb8BSVEeGGzu7fmW9pXw" name="planOfCareSection" association="_2IQJgBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-planofcare.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb8RSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb9BSVEeGGzu7fmW9pXw" name="proceduresSection" association="_2IRXoBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_2OAzQRSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_8gYBVhEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_8gYRVhEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2IJb-RSVEeGGzu7fmW9pXw" name="vitalSignsSection" association="_2IR-shSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../.controlled/consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
+      <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_bRH8sBVeEeGQCvUGzi1kDQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IJb-hSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4-pu0BVZEeGrgeKDUiwadw" name="problemSection">
-      <type xmi:type="uml:Class" href="../.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4-pu0RVZEeGrgeKDUiwadw"/>
-      <association href="../consol.uml#_4-pu0hVZEeGrgeKDUiwadw"/>
+      <association href="consol-problems.uml#_4-pu0hVZEeGrgeKDUiwadw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2JKIcBSVEeGGzu7fmW9pXw" memberEnd="_2IWQIBSVEeGGzu7fmW9pXw _2JKIcRSVEeGGzu7fmW9pXw">
@@ -1681,17 +1681,17 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TkotxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2TkouRSVEeGGzu7fmW9pXw" name="scanOriginalAuthor" association="_2Tko0BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2TkovBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2TkovBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TkouhSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TkouxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Tko0xSVEeGGzu7fmW9pXw" name="scanningDevice" association="_2TqvXhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Tko1hSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2Tko1hSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Tko1BSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Tko1RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2TqvYRSVEeGGzu7fmW9pXw" name="scanDataEnterer" association="_2Tw1-xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2TqvZBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2TqvZBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TqvYhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TqvYxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -2070,17 +2070,17 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UJQmBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UPXERSVEeGGzu7fmW9pXw" name="scanOriginalAuthor" association="_2UPXFBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2TkovBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2TkovBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UPXEhSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UPXExSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UPXFxSVEeGGzu7fmW9pXw" name="scanningDevice" association="_2UPXGhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2Tko1hSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2Tko1hSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UPXGBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UPXGRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UPXHRSVEeGGzu7fmW9pXw" name="scanDataEnterer" association="_2UPXIBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../consol.uml#_2TqvZBSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-other.uml#_2TqvZBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UPXHhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UPXHxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
