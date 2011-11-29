@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_2RF8dhSVEeGGzu7fmW9pXw" name="AbdomenSection">
+    <ownedComment xmi:id="_2RF8dxSVEeGGzu7fmW9pXw" annotatedElement="_2RF8dhSVEeGGzu7fmW9pXw">
+      <body>The abdomen system section shall contain a description of any type of abdominal exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RF8hBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RF8eRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RF8ehSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RF8exSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RF8fBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RF8gRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RF8fRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RF8gRSVEeGGzu7fmW9pXw" memberEnd="_2RF8fBSVEeGGzu7fmW9pXw _2RF8ghSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RF8ghSVEeGGzu7fmW9pXw" type="_2RF8dhSVEeGGzu7fmW9pXw" association="_2RF8gRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RF8fxSVEeGGzu7fmW9pXw" code="10191-5" displayName="ABDOMEN" base_Property="_2RF8eRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RF8gxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8gRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QzomhSVEeGGzu7fmW9pXw" name="BreastSection">
+    <ownedComment xmi:id="_2QzomxSVEeGGzu7fmW9pXw" annotatedElement="_2QzomhSVEeGGzu7fmW9pXw">
+      <body>The breast section shall contain a description of any type of breast exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QzooxSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QzonRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QzonhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QzonxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CodeSystemConstraint xmi:id="_2QzooRSVEeGGzu7fmW9pXw" code="10193-1" displayName="BREASTS" base_Property="_2QzonRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_2Qth_BSVEeGGzu7fmW9pXw" name="ChestWallSection">
+    <ownedComment xmi:id="_2Qth_RSVEeGGzu7fmW9pXw" annotatedElement="_2Qth_BSVEeGGzu7fmW9pXw">
+      <body>The chest wall section shall contain a description of any type of chest wall exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QzolBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Qth_xSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QtiABSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QtiARSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QtiAhSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QzokRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QtiAxSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QzokRSVEeGGzu7fmW9pXw" memberEnd="_2QtiAhSVEeGGzu7fmW9pXw _2QzokhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QzokhSVEeGGzu7fmW9pXw" type="_2Qth_BSVEeGGzu7fmW9pXw" association="_2QzokRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2QtiBRSVEeGGzu7fmW9pXw" code="11392-8" displayName="CHEST WALL" base_Property="_2Qth_xSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QzokxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzokRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QOZyhSVEeGGzu7fmW9pXw" name="EarsNoseMouthThroatSection">
+    <ownedComment xmi:id="_2QOZyxSVEeGGzu7fmW9pXw" annotatedElement="_2QOZyhSVEeGGzu7fmW9pXw">
+      <body>The ears, nose, mouth, and throat section shall contain a description of any type of ears,&#xD;
+nose, mouth, or throat exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QOZ2RSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QOZzRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QOZzhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZzxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QOZ0BSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QOZ1hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZ0RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QOZ1hSVEeGGzu7fmW9pXw" memberEnd="_2QOZ0BSVEeGGzu7fmW9pXw _2QOZ1xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QOZ1xSVEeGGzu7fmW9pXw" type="_2QOZyhSVEeGGzu7fmW9pXw" association="_2QOZ1hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2QOZ0xSVEeGGzu7fmW9pXw" base_Property="_2QOZzRSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2QOZ1BSVEeGGzu7fmW9pXw" code="11393-6" displayName="EARS and NOSE and MOUTH and THROAT" base_Property="_2QOZzRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QOZ2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZ1hSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QOZ3xSVEeGGzu7fmW9pXw" name="EarsSection">
+    <ownedComment xmi:id="_2QOZ4BSVEeGGzu7fmW9pXw" annotatedElement="_2QOZ3xSVEeGGzu7fmW9pXw">
+      <body>The ears section shall contain a description of any type of ear exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QYKxBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QOZ4hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QOZ4xSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZ5BSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QOZ5RSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QYKwRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZ5hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QYKwRSVEeGGzu7fmW9pXw" memberEnd="_2QOZ5RSVEeGGzu7fmW9pXw _2QYKwhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QYKwhSVEeGGzu7fmW9pXw" type="_2QOZ3xSVEeGGzu7fmW9pXw" association="_2QYKwRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2QOZ6BSVEeGGzu7fmW9pXw" base_Property="_2QOZ4hSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2QOZ6RSVEeGGzu7fmW9pXw" identifier="" code="10195-6" displayName="EAR" base_Property="_2QOZ4hSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QYKwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYKwRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QnbVhSVEeGGzu7fmW9pXw" name="EndocrineSystemSection">
+    <ownedComment xmi:id="_2QnbVxSVEeGGzu7fmW9pXw" annotatedElement="_2QnbVhSVEeGGzu7fmW9pXw">
+      <body>The endocrine system section shall contain a description of any type of endocrine&#xD;
+system exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QnbZBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QnbWRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QnbWhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbWxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QnbXBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QnbYRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbXRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QnbYRSVEeGGzu7fmW9pXw" memberEnd="_2QnbXBSVEeGGzu7fmW9pXw _2QnbYhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QnbYhSVEeGGzu7fmW9pXw" type="_2QnbVhSVEeGGzu7fmW9pXw" association="_2QnbYRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2QnbXxSVEeGGzu7fmW9pXw" code="29307-6" displayName="ENDOCRINE SYSTEM" base_Property="_2QnbWRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QnbYxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbYRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RkdlhSVEeGGzu7fmW9pXw" name="ExtremitiesSection">
+    <ownedComment xmi:id="_2RkdlxSVEeGGzu7fmW9pXw" annotatedElement="_2RkdlhSVEeGGzu7fmW9pXw">
+      <body>The Extremities section SHALL contain a description of any type of exam on the&#xD;
+patient's extremities.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RkdpBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RkdmRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RkdmhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RkdmxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RkdnBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RkdoRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RkdnRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RkdoRSVEeGGzu7fmW9pXw" memberEnd="_2RkdnBSVEeGGzu7fmW9pXw _2RkdohSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RkdohSVEeGGzu7fmW9pXw" type="_2RkdlhSVEeGGzu7fmW9pXw" association="_2RkdoRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RkdnxSVEeGGzu7fmW9pXw" code="10196-4" displayName="EXTREMITIES" base_Property="_2RkdmRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RkdoxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdoRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QEo3xSVEeGGzu7fmW9pXw" name="EyesSection">
+    <generalization xmi:id="_2QOZxBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QEo4RSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_2QEo4hSVEeGGzu7fmW9pXw">
+        <body>The eyes section shall contain a description of any type of eye exam.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QEo4xSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEo5BSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QEo5RSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QOZwRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEo5hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QOZwRSVEeGGzu7fmW9pXw" memberEnd="_2QEo5RSVEeGGzu7fmW9pXw _2QOZwhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QOZwhSVEeGGzu7fmW9pXw" type="_2QEo3xSVEeGGzu7fmW9pXw" association="_2QOZwRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2QEo6BSVEeGGzu7fmW9pXw" base_Property="_2QEo4RSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2QEo6RSVEeGGzu7fmW9pXw" code="10197-2" displayName="EYE" base_Property="_2QEo4RSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QOZwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZwRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RYQZhSVEeGGzu7fmW9pXw" name="GenitaliaSection">
+    <ownedComment xmi:id="_2RYQZxSVEeGGzu7fmW9pXw" annotatedElement="_2RYQZhSVEeGGzu7fmW9pXw">
+      <body>The genitalia section shall contain a description of any type of genital exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2ReW9BSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RYQaRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RYQahSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQaxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RYQbBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2ReW8RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQbRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2ReW8RSVEeGGzu7fmW9pXw" memberEnd="_2RYQbBSVEeGGzu7fmW9pXw _2ReW8hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2ReW8hSVEeGGzu7fmW9pXw" type="_2RYQZhSVEeGGzu7fmW9pXw" association="_2ReW8RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RYQbxSVEeGGzu7fmW9pXw" code="11400-9" displayName="GENITALIA" base_Property="_2RYQaRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2ReW8xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReW8RSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralStatusSection">
+    <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
+    </ownedComment>
+    <generalization xmi:id="_2P7e0BSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Pxt7hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Pxt7xSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt8BSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Pxt8RSVEeGGzu7fmW9pXw" name="problemEntry" association="_2Pxt9xSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt8hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Pxt9xSVEeGGzu7fmW9pXw" memberEnd="_2Pxt8RSVEeGGzu7fmW9pXw _2Pxt-BSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Pxt-BSVEeGGzu7fmW9pXw" type="_2Pxt6xSVEeGGzu7fmW9pXw" association="_2Pxt9xSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2Pxt8xSVEeGGzu7fmW9pXw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.5" assigningAuthorityName="IHE PCC"/>
+  <CDA:PropertyValidation xmi:id="_2Pxt9BSVEeGGzu7fmW9pXw" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2Pxt9RSVEeGGzu7fmW9pXw" code="10210-3" displayName="GENERAL STATUS" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2Pxt-RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Pxt9xSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QEoyhSVEeGGzu7fmW9pXw" name="HeadSection">
+    <ownedComment xmi:id="_2QEoyxSVEeGGzu7fmW9pXw" annotatedElement="_2QEoyhSVEeGGzu7fmW9pXw">
+      <body>The head section shall contain a description of any type of head exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QEo2RSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QEozRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QEozhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEozxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QEo0BSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QEo1hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEo0RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QEo1hSVEeGGzu7fmW9pXw" memberEnd="_2QEo0BSVEeGGzu7fmW9pXw _2QEo1xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QEo1xSVEeGGzu7fmW9pXw" type="_2QEoyhSVEeGGzu7fmW9pXw" association="_2QEo1hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2QEo0xSVEeGGzu7fmW9pXw" base_Property="_2QEozRSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2QEo1BSVEeGGzu7fmW9pXw" code="10199-8" displayName="HEAD" base_Property="_2QEozRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QEo2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEo1hSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QzoqRSVEeGGzu7fmW9pXw" name="HeartSection">
+    <ownedComment xmi:id="_2QzoqhSVEeGGzu7fmW9pXw" annotatedElement="_2QzoqRSVEeGGzu7fmW9pXw">
+      <body>The heart section shall contain a description of any type of heart exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2Q5vNRSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QzorBSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QzorRSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QzorhSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QzorxSVEeGGzu7fmW9pXw" name="problemEntry" association="_2Q5vMhSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QzosBSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Q5vMhSVEeGGzu7fmW9pXw" memberEnd="_2QzorxSVEeGGzu7fmW9pXw _2Q5vMxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Q5vMxSVEeGGzu7fmW9pXw" type="_2QzoqRSVEeGGzu7fmW9pXw" association="_2Q5vMhSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2Q5vMBSVEeGGzu7fmW9pXw" code="10200-4" displayName="HEART" base_Property="_2QzorBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2Q5vNBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q5vMhSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2P7e6xSVEeGGzu7fmW9pXw" name="IntegumentarySystemSection">
+    <ownedComment xmi:id="_2P7e7BSVEeGGzu7fmW9pXw" annotatedElement="_2P7e6xSVEeGGzu7fmW9pXw">
+      <body>The integumentary system section shall contain a description of any type of integumentary&#xD;
+system exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QEoxBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2P7e7hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2P7e7xSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2P7e8BSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2P7e8RSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QEowRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2P7e8hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QEowRSVEeGGzu7fmW9pXw" memberEnd="_2P7e8RSVEeGGzu7fmW9pXw _2QEowhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QEowhSVEeGGzu7fmW9pXw" type="_2P7e6xSVEeGGzu7fmW9pXw" association="_2QEowRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2P7e9BSVEeGGzu7fmW9pXw" base_Property="_2P7e7hSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2P7e9RSVEeGGzu7fmW9pXw" identifier="" code="29302-7" displayName="INTEGUMENTARY SYSTEM" base_Property="_2P7e7hSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QEowxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEowRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RMDEBSVEeGGzu7fmW9pXw" name="LymphaticSection">
+    <ownedComment xmi:id="_2RMDERSVEeGGzu7fmW9pXw" annotatedElement="_2RMDEBSVEeGGzu7fmW9pXw">
+      <body>The lymphatic system section shall contain a description of any type of lymphatic exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RMDHhSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RMDExSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RMDFBSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RMDFRSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RMDFhSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RMDGxSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RMDFxSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RMDGxSVEeGGzu7fmW9pXw" memberEnd="_2RMDFhSVEeGGzu7fmW9pXw _2RMDHBSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RMDHBSVEeGGzu7fmW9pXw" type="_2RMDEBSVEeGGzu7fmW9pXw" association="_2RMDGxSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RMDGRSVEeGGzu7fmW9pXw" code="11447-0" displayName="HEMATOLOGIC+LYMPHATIC+IMMUNOLOGIC SYSTEM" base_Property="_2RMDExSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RMDHRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RMDGxSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QYK3xSVEeGGzu7fmW9pXw" name="MouthThroatTeethSection">
+    <ownedComment xmi:id="_2QYK4BSVEeGGzu7fmW9pXw" annotatedElement="_2QYK3xSVEeGGzu7fmW9pXw">
+      <body>The mouth, throat, and teeth section shall contain a description of any type of mouth,&#xD;
+throat, or teeth exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QhUtRSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QYK4hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QYK4xSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYK5BSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QYK5RSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QhUshSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYK5hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QhUshSVEeGGzu7fmW9pXw" memberEnd="_2QYK5RSVEeGGzu7fmW9pXw _2QhUsxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QhUsxSVEeGGzu7fmW9pXw" type="_2QYK3xSVEeGGzu7fmW9pXw" association="_2QhUshSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2QhUsBSVEeGGzu7fmW9pXw" code="10201-2" displayName="MOUTH and THROAT and TEETH" base_Property="_2QYK4hSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QhUtBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUshSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RSJuhSVEeGGzu7fmW9pXw" name="MusculoskeletalSystemSection">
+    <ownedComment xmi:id="_2RSJuxSVEeGGzu7fmW9pXw" annotatedElement="_2RSJuhSVEeGGzu7fmW9pXw">
+      <body>The musculoskeletal system section shall contain a description of any type of&#xD;
+musculoskeletal exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RSJyBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RSJvRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RSJvhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RSJvxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RSJwBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RSJxRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RSJwRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RSJxRSVEeGGzu7fmW9pXw" memberEnd="_2RSJwBSVEeGGzu7fmW9pXw _2RSJxhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RSJxhSVEeGGzu7fmW9pXw" type="_2RSJuhSVEeGGzu7fmW9pXw" association="_2RSJxRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RSJwxSVEeGGzu7fmW9pXw" code="11410-8" displayName="MUSCULOSKELETAL SYSTEM" base_Property="_2RSJvRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RSJxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJxRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QhUuxSVEeGGzu7fmW9pXw" name="NeckSection">
+    <ownedComment xmi:id="_2QhUvBSVEeGGzu7fmW9pXw" annotatedElement="_2QhUuxSVEeGGzu7fmW9pXw">
+      <body>Description The neck section shall contain a description of any type of neck exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QnbUBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QhUvhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QhUvxSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QhUwBSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QhUwRSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QhUxhSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QhUwhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QhUxhSVEeGGzu7fmW9pXw" memberEnd="_2QhUwRSVEeGGzu7fmW9pXw _2QhUxxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QhUxxSVEeGGzu7fmW9pXw" type="_2QhUuxSVEeGGzu7fmW9pXw" association="_2QhUxhSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2QhUxBSVEeGGzu7fmW9pXw" code="11411-6" displayName="NECK" base_Property="_2QhUvhSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QhUyBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUxhSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RYQUhSVEeGGzu7fmW9pXw" name="NeurologicSystemSection">
+    <ownedComment xmi:id="_2RYQUxSVEeGGzu7fmW9pXw" annotatedElement="_2RYQUhSVEeGGzu7fmW9pXw">
+      <body>The neurologic system section shall contain a description of any type of neurologic&#xD;
+exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RYQYBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RYQVRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RYQVhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQVxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RYQWBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RYQXRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQWRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RYQXRSVEeGGzu7fmW9pXw" memberEnd="_2RYQWBSVEeGGzu7fmW9pXw _2RYQXhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RYQXhSVEeGGzu7fmW9pXw" type="_2RYQUhSVEeGGzu7fmW9pXw" association="_2RYQXRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RYQWxSVEeGGzu7fmW9pXw" code="10202-0" displayName="NEUROLOGIC SYSTEM" base_Property="_2RYQVRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RYQXxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RYQXRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QYKyhSVEeGGzu7fmW9pXw" name="NoseSection">
+    <ownedComment xmi:id="_2QYKyxSVEeGGzu7fmW9pXw" annotatedElement="_2QYKyhSVEeGGzu7fmW9pXw">
+      <body>The nose section shall contain a description of any type of nose exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2QYK2RSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QYKzRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QYKzhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYKzxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QYK0BSVEeGGzu7fmW9pXw" name="problemEntry" association="_2QYK1hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYK0RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2QYK1hSVEeGGzu7fmW9pXw" memberEnd="_2QYK0BSVEeGGzu7fmW9pXw _2QYK1xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QYK1xSVEeGGzu7fmW9pXw" type="_2QYKyhSVEeGGzu7fmW9pXw" association="_2QYK1hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_2QYK0xSVEeGGzu7fmW9pXw" base_Property="_2QYKzRSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2QYK1BSVEeGGzu7fmW9pXw" code="10203-8" displayName="NOSE" base_Property="_2QYKzRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2QYK2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYK1hSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2Pxt0hSVEeGGzu7fmW9pXw" name="PhysicalExamSection">
+    <ownedComment xmi:id="_2RkdqBSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <body>&lt;p>The Physical Examination section includes direct observations made by the clinician.&#xD;
+The examination may include the use of simple instruments and may also describe&#xD;
+simple maneuvers performed directly on the patient's body. This section only includes&#xD;
+observations made by the examining clinician using inspection, palpation, auscultation,&#xD;
+and percussion; it does not include laboratory or imaging findings. The exam may be&#xD;
+limited to pertinent body systems based on the patient's chief complaint or it may&#xD;
+include a comprehensive examination. The examination may be reported as a collection&#xD;
+of random clinical statements or it may be reported categorically. Categorical report&#xD;
+formats may be divided into multiple subsections, including Vital Signs, General Status,&#xD;
+and any of the subsections listed in Appendix D: List of Additional Physical&#xD;
+Examination Subsections. Note that Vital Signs can be a top-level section or subsection&#xD;
+of Physical Exam.&lt;/p>&#xD;
+&#xD;
+&lt;p>The physical findings included in this section describe direct observations made by the&#xD;
+clinician divided by organ or body system and may be included under appropriate&#xD;
+subsections to Physical Exam. Systems are typically listed cephalic to caudal (i.e.,&#xD;
+starting with the head) and may include all body systems or only those pertinent to the&#xD;
+chief complaint. The head, eyes, ears, nose, throat, mouth, and teeth may be described&#xD;
+separately or combined into a single subsection labeled &quot;HEENT.&quot; Other subsections&#xD;
+may include Skin, Neck, Lymph Nodes, Thorax (Chest) and Lungs, Cardiovascular,&#xD;
+Breasts, Abdomen, Pelvic, Genitourinary, Musculoskeletal, Extremities including&#xD;
+Peripheral Vascular, and Neurologic. A detailed Mental Status Examination may be&#xD;
+included when pertinent.&lt;/p>&#xD;
+&#xD;
+&lt;p>The Physical Examination section may contain multiple nested subsections: Vital Signs,&#xD;
+General Status, and those listed in Appendix D: List of Additional Physical&#xD;
+Examination Subsections.&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_2RkdqRSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <body>The physical exam section shall contain a narrative description of the patient's physical findings.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_2RkdqhSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <body>The physical exam section shall contain only the required and optional subsections performed.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_2Pxt0xSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+    The Physical Examination Section contains information describing the physical findings. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_2Pxt1BSVEeGGzu7fmW9pXw" name="physicalExamCode" constrainedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2Pxt1RSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Pxt1hSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>Restrict the Condition Type (code) as FINDING (404684003)or FUNCTIONAL LIMITATION (248536006) from the SNOMED CT Code System</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2RkdqxSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Pxt4hSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Pxt5BSVEeGGzu7fmW9pXw" name="vitalSignsSection" association="_2Pxt5hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt5RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Pxt6RSVEeGGzu7fmW9pXw" name="generalAppearanceSection" type="_2Pxt6xSVEeGGzu7fmW9pXw" association="_2P7e0RSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt6hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2P7e1BSVEeGGzu7fmW9pXw" name="visibleImplantedMedicalDevicesSection" association="_2P7e5hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2P7e1hSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2P7e1RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2P7e6RSVEeGGzu7fmW9pXw" name="integumentarySystemSection" type="_2P7e6xSVEeGGzu7fmW9pXw" association="_2QEoxRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2P7e6hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QEoyBSVEeGGzu7fmW9pXw" name="headSection" type="_2QEoyhSVEeGGzu7fmW9pXw" association="_2QEo2hSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEoyRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QEo3RSVEeGGzu7fmW9pXw" name="eyesSection" type="_2QEo3xSVEeGGzu7fmW9pXw" association="_2QOZxRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QEo3hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QOZyBSVEeGGzu7fmW9pXw" name="earsNoseMouthThroatSection" type="_2QOZyhSVEeGGzu7fmW9pXw" association="_2QOZ2hSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZyRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QOZ3RSVEeGGzu7fmW9pXw" name="earsSection" type="_2QOZ3xSVEeGGzu7fmW9pXw" association="_2QYKxRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QOZ3hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QYKyBSVEeGGzu7fmW9pXw" name="noseSection" type="_2QYKyhSVEeGGzu7fmW9pXw" association="_2QYK2hSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYKyRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QYK3RSVEeGGzu7fmW9pXw" name="mouthThroatTeethSection" type="_2QYK3xSVEeGGzu7fmW9pXw" association="_2QhUthSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QYK3hSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QhUuRSVEeGGzu7fmW9pXw" name="neckSection" type="_2QhUuxSVEeGGzu7fmW9pXw" association="_2QnbURSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QhUuhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QnbVBSVEeGGzu7fmW9pXw" name="endocrineSystemSection" type="_2QnbVhSVEeGGzu7fmW9pXw" association="_2QnbZRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbVRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QnbaBSVEeGGzu7fmW9pXw" name="thoraxLungsSection" type="_2QnbahSVEeGGzu7fmW9pXw" association="_2Qth9xSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbaRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Qth-hSVEeGGzu7fmW9pXw" name="chestWallSection" type="_2Qth_BSVEeGGzu7fmW9pXw" association="_2QzolRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qth-xSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QzomBSVEeGGzu7fmW9pXw" name="breastSection" type="_2QzomhSVEeGGzu7fmW9pXw" association="_2QzopBSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QzomRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QzopxSVEeGGzu7fmW9pXw" name="heartSection" type="_2QzoqRSVEeGGzu7fmW9pXw" association="_2Q5vNhSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QzoqBSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Q5vORSVEeGGzu7fmW9pXw" name="respiratorySystemSection" type="_2Q5vOxSVEeGGzu7fmW9pXw" association="_2RF8cRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Q5vOhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RF8dBSVEeGGzu7fmW9pXw" name="abdomenSection" type="_2RF8dhSVEeGGzu7fmW9pXw" association="_2RF8hRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RF8dRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RF8iBSVEeGGzu7fmW9pXw" name="lymphaticSection" type="_2RMDEBSVEeGGzu7fmW9pXw" association="_2RMDHxSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RF8iRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RMDIhSVEeGGzu7fmW9pXw" name="vesselsSection" type="_2RMDJBSVEeGGzu7fmW9pXw" association="_2RSJtRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RMDIxSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RSJuBSVEeGGzu7fmW9pXw" name="musculoskeletalSystemSection" type="_2RSJuhSVEeGGzu7fmW9pXw" association="_2RSJyRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RSJuRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RYQUBSVEeGGzu7fmW9pXw" name="neurologicSystemSection" type="_2RYQUhSVEeGGzu7fmW9pXw" association="_2RYQYRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQURSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RYQZBSVEeGGzu7fmW9pXw" name="genitaliaSection" type="_2RYQZhSVEeGGzu7fmW9pXw" association="_2ReW9RSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RYQZRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2ReW-BSVEeGGzu7fmW9pXw" name="rectumSection" type="_2ReW-hSVEeGGzu7fmW9pXw" association="_2RkdkRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ReW-RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RkdlBSVEeGGzu7fmW9pXw" name="extremitiesSection" type="_2RkdlhSVEeGGzu7fmW9pXw" association="_2RkdpRSVEeGGzu7fmW9pXw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RkdlRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Pxt2RSVEeGGzu7fmW9pXw" name="condition" association="_2Pxt3xSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_2H6yUBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Pxt2hSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt2xSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Pxt5hSVEeGGzu7fmW9pXw" memberEnd="_2Pxt5BSVEeGGzu7fmW9pXw _2Pxt5xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Pxt5xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2Pxt5hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2P7e0RSVEeGGzu7fmW9pXw" memberEnd="_2Pxt6RSVEeGGzu7fmW9pXw _2P7e0hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2P7e0hSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2P7e0RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2P7e5hSVEeGGzu7fmW9pXw" memberEnd="_2P7e1BSVEeGGzu7fmW9pXw _2P7e5xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2P7e5xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2P7e5hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QEoxRSVEeGGzu7fmW9pXw" memberEnd="_2P7e6RSVEeGGzu7fmW9pXw _2QEoxhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QEoxhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QEoxRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QEo2hSVEeGGzu7fmW9pXw" memberEnd="_2QEoyBSVEeGGzu7fmW9pXw _2QEo2xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QEo2xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QEo2hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QOZxRSVEeGGzu7fmW9pXw" memberEnd="_2QEo3RSVEeGGzu7fmW9pXw _2QOZxhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QOZxhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QOZxRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QOZ2hSVEeGGzu7fmW9pXw" memberEnd="_2QOZyBSVEeGGzu7fmW9pXw _2QOZ2xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QOZ2xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QOZ2hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QYKxRSVEeGGzu7fmW9pXw" memberEnd="_2QOZ3RSVEeGGzu7fmW9pXw _2QYKxhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QYKxhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QYKxRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QYK2hSVEeGGzu7fmW9pXw" memberEnd="_2QYKyBSVEeGGzu7fmW9pXw _2QYK2xSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QYK2xSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QYK2hSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QhUthSVEeGGzu7fmW9pXw" memberEnd="_2QYK3RSVEeGGzu7fmW9pXw _2QhUtxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QhUtxSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QhUthSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QnbURSVEeGGzu7fmW9pXw" memberEnd="_2QhUuRSVEeGGzu7fmW9pXw _2QnbUhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QnbUhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QnbURSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QnbZRSVEeGGzu7fmW9pXw" memberEnd="_2QnbVBSVEeGGzu7fmW9pXw _2QnbZhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QnbZhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QnbZRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2Qth9xSVEeGGzu7fmW9pXw" memberEnd="_2QnbaBSVEeGGzu7fmW9pXw _2Qth-BSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Qth-BSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2Qth9xSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QzolRSVEeGGzu7fmW9pXw" memberEnd="_2Qth-hSVEeGGzu7fmW9pXw _2QzolhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QzolhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QzolRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2QzopBSVEeGGzu7fmW9pXw" memberEnd="_2QzomBSVEeGGzu7fmW9pXw _2QzopRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2QzopRSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2QzopBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2Q5vNhSVEeGGzu7fmW9pXw" memberEnd="_2QzopxSVEeGGzu7fmW9pXw _2Q5vNxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Q5vNxSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2Q5vNhSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RF8cRSVEeGGzu7fmW9pXw" memberEnd="_2Q5vORSVEeGGzu7fmW9pXw _2RF8chSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RF8chSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RF8cRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RF8hRSVEeGGzu7fmW9pXw" memberEnd="_2RF8dBSVEeGGzu7fmW9pXw _2RF8hhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RF8hhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RF8hRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RMDHxSVEeGGzu7fmW9pXw" memberEnd="_2RF8iBSVEeGGzu7fmW9pXw _2RMDIBSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RMDIBSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RMDHxSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RSJtRSVEeGGzu7fmW9pXw" memberEnd="_2RMDIhSVEeGGzu7fmW9pXw _2RSJthSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RSJthSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RSJtRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RSJyRSVEeGGzu7fmW9pXw" memberEnd="_2RSJuBSVEeGGzu7fmW9pXw _2RSJyhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RSJyhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RSJyRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RYQYRSVEeGGzu7fmW9pXw" memberEnd="_2RYQUBSVEeGGzu7fmW9pXw _2RYQYhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RYQYhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RYQYRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2ReW9RSVEeGGzu7fmW9pXw" memberEnd="_2RYQZBSVEeGGzu7fmW9pXw _2ReW9hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2ReW9hSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2ReW9RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RkdkRSVEeGGzu7fmW9pXw" memberEnd="_2ReW-BSVEeGGzu7fmW9pXw _2RkdkhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RkdkhSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RkdkRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2RkdpRSVEeGGzu7fmW9pXw" memberEnd="_2RkdlBSVEeGGzu7fmW9pXw _2RkdphSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RkdphSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2RkdpRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2Pxt3xSVEeGGzu7fmW9pXw" memberEnd="_2Pxt2RSVEeGGzu7fmW9pXw _2Pxt4BSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Pxt4BSVEeGGzu7fmW9pXw" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_2Pxt3xSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_ZHedIBnTEeGs5a462vYX5Q" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.10"/>
+  <CDA:ConstraintValidation xmi:id="_2Pxt3RSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2Pxt1BSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2Pxt4xSVEeGGzu7fmW9pXw" code="29545-1" displayName="PHYSICAL EXAMINATION" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2Pxt6BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Pxt5hSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2P7e0xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e0RSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2P7e6BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e5hSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QEoxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEoxRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QEo3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QEo2hSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QOZxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZxRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QOZ3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QOZ2hSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QYKxxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYKxRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QYK3BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QYK2hSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QhUuBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QhUthSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QnbUxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbURSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QnbZxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QnbZRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2Qth-RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Qth9xSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QzolxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzolRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2QzophSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2QzopBSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2Q5vOBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q5vNhSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RF8cxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8cRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RF8hxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RF8hRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RMDIRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RMDHxSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RSJtxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJtRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RSJyxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJyRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RYQYxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RYQYRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2ReW9xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReW9RSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RkdkxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdkRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2RkdpxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RkdpRSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2Pxt4RSVEeGGzu7fmW9pXw" base_Association="_2Pxt3xSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2ReW-hSVEeGGzu7fmW9pXw" name="RectumSection">
+    <ownedComment xmi:id="_2ReW-xSVEeGGzu7fmW9pXw" annotatedElement="_2ReW-hSVEeGGzu7fmW9pXw">
+      <body>The rectum section shall contain a description of any type of rectal exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RkdkBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2ReW_RSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ReW_hSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ReW_xSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2ReXABSVEeGGzu7fmW9pXw" name="problemEntry" association="_2ReXBRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ReXARSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2ReXBRSVEeGGzu7fmW9pXw" memberEnd="_2ReXABSVEeGGzu7fmW9pXw _2ReXBhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2ReXBhSVEeGGzu7fmW9pXw" type="_2ReW-hSVEeGGzu7fmW9pXw" association="_2ReXBRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2ReXAxSVEeGGzu7fmW9pXw" code="10205-3" displayName="RECTUM" base_Property="_2ReW_RSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2ReXBxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ReXBRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2Q5vOxSVEeGGzu7fmW9pXw" name="RespiratorySystemSection">
+    <ownedComment xmi:id="_2Q5vPBSVEeGGzu7fmW9pXw" annotatedElement="_2Q5vOxSVEeGGzu7fmW9pXw">
+      <body>The respiratory system section shall contain a description of any type of respiratory&#xD;
+exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RF8cBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Q5vPhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Q5vPxSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Q5vQBSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Q5vQRSVEeGGzu7fmW9pXw" name="problemEntry" association="_2Q_10RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Q5vQhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Q_10RSVEeGGzu7fmW9pXw" memberEnd="_2Q5vQRSVEeGGzu7fmW9pXw _2Q_10hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Q_10hSVEeGGzu7fmW9pXw" type="_2Q5vOxSVEeGGzu7fmW9pXw" association="_2Q_10RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2Q5vRBSVEeGGzu7fmW9pXw" code="11412-4" displayName="RESPIRATORY SYSTEM" base_Property="_2Q5vPhSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2Q_10xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Q_10RSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RMDJBSVEeGGzu7fmW9pXw" name="VesselsSection">
+    <ownedComment xmi:id="_2RMDJRSVEeGGzu7fmW9pXw" annotatedElement="_2RMDJBSVEeGGzu7fmW9pXw">
+      <body>The vessels section shall contain a description of any type of vessels exam.</body>
+    </ownedComment>
+    <generalization xmi:id="_2RSJtBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RMDJxSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2RMDKBSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RMDKRSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2RMDKhSVEeGGzu7fmW9pXw" name="problemEntry" association="_2RSJsRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2RMDKxSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2RSJsRSVEeGGzu7fmW9pXw" memberEnd="_2RMDKhSVEeGGzu7fmW9pXw _2RSJshSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2RSJshSVEeGGzu7fmW9pXw" type="_2RMDJBSVEeGGzu7fmW9pXw" association="_2RSJsRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2RMDLRSVEeGGzu7fmW9pXw" code="10208-7" displayName="VESSELS" base_Property="_2RMDJxSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2RSJsxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2RSJsRSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2QnbahSVEeGGzu7fmW9pXw" name="ThoraxLungsSection">
+    <ownedComment xmi:id="_2QnbaxSVEeGGzu7fmW9pXw" annotatedElement="_2QnbahSVEeGGzu7fmW9pXw">
+      <body>The thorax and lungs section shall contain a description of any type of thoracic or lung&#xD;
+exams.</body>
+    </ownedComment>
+    <generalization xmi:id="_2Qth9hSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2QnbbRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QnbbhSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbbxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QnbcBSVEeGGzu7fmW9pXw" name="problemEntry" association="_2Qth8xSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2EaLUBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QnbcRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Qth8xSVEeGGzu7fmW9pXw" memberEnd="_2QnbcBSVEeGGzu7fmW9pXw _2Qth9BSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Qth9BSVEeGGzu7fmW9pXw" type="_2QnbahSVEeGGzu7fmW9pXw" association="_2Qth8xSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_2Qth8RSVEeGGzu7fmW9pXw" code="10207-9" displayName="THORAX+LUNGS" base_Property="_2QnbbRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2Qth9RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Qth8xSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_2RqkMBSVEeGGzu7fmW9pXw" name="ReviewOfSystemsSection">
+    <ownedComment xmi:id="_2RqkOBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
+      <body>The review of systems is a relevant collection of symptoms and functions systematically&#xD;
+gathered by a clinician. It includes symptoms the patient is currently experiencing,&#xD;
+some of which were not elicited during the history of present illness, as well as a&#xD;
+potentially large number of pertinent negatives, e.g., symptoms that the patient was&#xD;
+specifically asked if they had experienced or were currently experiencing, but had&#xD;
+denied experiencing.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_2RqkORSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
+      <body>The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine&#xD;
+questions on the functions of each anatomic body system.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_2RqkMRSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+    The Review of Systems Section contains information describing patient responses to questions about the&#xD;
+    function of various body systems. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_2RqkOhSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RqkNhSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_TYymkBnUEeGs5a462vYX5Q" base_Class="_2RqkMBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+  <CDA:CodeSystemConstraint xmi:id="_2RqkNxSVEeGGzu7fmW9pXw" code="10187-3" displayName="REVIEW OF SYSTEMS" base_Property="_2RqkNhSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+</xmi:XMI>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2LWg0BSVEeGGzu7fmW9pXw" name="EncountersSection">
+    <ownedComment xmi:id="_2L7IkBSVEeGGzu7fmW9pXw" annotatedElement="_2LWg0BSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+    This section is used to list and describe any healthcare encounters pertinent to the patient's current&#xD;
+    health status or historical health history. An Encounter is an interaction, regardless of the setting, between a&#xD;
+    patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the&#xD;
+    patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a&#xD;
+    contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a&#xD;
+    given contact, exercising independent judgment. This section may contain all encounters for the time period being&#xD;
+    summarized, but should include notable encounters.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_2L7IkRSVEeGGzu7fmW9pXw" annotatedElement="_2LWg0BSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+    The encounter history section contains coded entries describing the patient history of encounters.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_2LWg0RSVEeGGzu7fmW9pXw" annotatedElement="_2LWg0BSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+    The Encounter Section contains information describing the patient history of encounters. At a minimum,&#xD;
+    current and pertinent historical encounters should be included; a full encounter history may be included. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_2L6hgRSVEeGGzu7fmW9pXw" name="titleValue">
+      <ownedComment xmi:id="_2L6hghSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2L6hgxSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>SHOULD be valued with a case-insensitive language-insensitive text string containing 'encounters'.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_KVkvoBVgEeGQCvUGzi1kDQ" general="_4yj2wBVdEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_2LYWABSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LZkIBSVEeGGzu7fmW9pXw" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LZkIhSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LZkIxSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LZkJBSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LaLMRSVEeGGzu7fmW9pXw" name="encountersActivity" type="_2LayQBSVEeGGzu7fmW9pXw" association="_2LuUQBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LaLMhSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LaLMxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2LuUQBSVEeGGzu7fmW9pXw" memberEnd="_2LaLMRSVEeGGzu7fmW9pXw _2LuUQRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2LuUQRSVEeGGzu7fmW9pXw" type="_2LWg0BSVEeGGzu7fmW9pXw" association="_2LuUQBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2LXH4BSVEeGGzu7fmW9pXw" base_Class="_2LWg0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.22"/>
+  <CDA:ConstraintValidation xmi:id="_2L6hhBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2L6hgRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-457</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2LYWARSVEeGGzu7fmW9pXw" code="46240-8" displayName="History of encounters" base_Property="_2LYWABSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-454</ruleId>
+    <ruleId>CONF-455</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2LZkIRSVEeGGzu7fmW9pXw" base_Property="_2LZkIBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-456</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2LaLMBSVEeGGzu7fmW9pXw" base_Property="_2LZkIhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-453</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2LuUQhSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2LuUQBSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_4yj2wBVdEeGQCvUGzi1kDQ" name="EncountersSectionEntriesOptional">
+    <ownedComment xmi:id="_4yj2wRVdEeGQCvUGzi1kDQ" annotatedElement="_4yj2wBVdEeGQCvUGzi1kDQ">
+      <body>&lt;p>&#xD;
+    This section is used to list and describe any healthcare encounters pertinent to the patient's current&#xD;
+    health status or historical health history. An Encounter is an interaction, regardless of the setting, between a&#xD;
+    patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the&#xD;
+    patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a&#xD;
+    contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a&#xD;
+    given contact, exercising independent judgment. This section may contain all encounters for the time period being&#xD;
+    summarized, but should include notable encounters.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_4yj2whVdEeGQCvUGzi1kDQ" annotatedElement="_4yj2wBVdEeGQCvUGzi1kDQ">
+      <body>&lt;p>&#xD;
+    The encounter history section contains coded entries describing the patient history of encounters.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_4yj2wxVdEeGQCvUGzi1kDQ" annotatedElement="_4yj2wBVdEeGQCvUGzi1kDQ">
+      <body>&lt;p>&#xD;
+    The Encounter Section contains information describing the patient history of encounters. At a minimum,&#xD;
+    current and pertinent historical encounters should be included; a full encounter history may be included. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_4yj2xBVdEeGQCvUGzi1kDQ" name="titleValue">
+      <ownedComment xmi:id="_4yj2xRVdEeGQCvUGzi1kDQ">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_4yj2xhVdEeGQCvUGzi1kDQ">
+        <language>Analysis</language>
+        <body>SHOULD be valued with a case-insensitive language-insensitive text string containing 'encounters'.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_4yj2xxVdEeGQCvUGzi1kDQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_4yj2yBVdEeGQCvUGzi1kDQ" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4yj2yRVdEeGQCvUGzi1kDQ" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4yj2yhVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4yj2yxVdEeGQCvUGzi1kDQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4yj2zBVdEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4yj2zRVdEeGQCvUGzi1kDQ" name="encountersActivity" type="_2LayQBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4yj2zhVdEeGQCvUGzi1kDQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4yj2zxVdEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_aJLnwBVfEeGQCvUGzi1kDQ" base_Class="_4yj2wBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.22"/>
+  <uml:Class xmi:id="_2Lu7UBSVEeGGzu7fmW9pXw" name="Encounter">
+    <ownedComment xmi:id="_2Lu7URSVEeGGzu7fmW9pXw" annotatedElement="_2Lu7UBSVEeGGzu7fmW9pXw">
+      <body>The encounter entry contains data describing the interactions between the patient and clinicians. Interaction includes both in-person and non-in-person encounters such as telephone and e-mail communication.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_2Lu7UhSVEeGGzu7fmW9pXw" name="admissionSourceValueSet" constrainedElement="_2Lu7UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7UxSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>participant/@typeCode ='ORG'/code SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.33, Admission Source Value Set, STATIC</body>
+        <body>self.participant->select( par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG )->forAll( par : cda::Participant2 | par.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33') )</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Lu7VBSVEeGGzu7fmW9pXw" name="patientClassValueSet" constrainedElement="_2Lu7UhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7VRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>ClinicalDocument/componentOf/encompassingEncounter/code/@code SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.66, Patient Class Value Set, 20090630, STATIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Lu7VhSVEeGGzu7fmW9pXw" name="healthcareFacilityAddressState" constrainedElement="_2Lu7VBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2Lu7VxSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7WBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>The state part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Lu7WRSVEeGGzu7fmW9pXw" name="healthcareFacilityAddressCountry" constrainedElement="_2Lu7VBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2Lu7WhSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7WxSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>The country part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Lu7XBSVEeGGzu7fmW9pXw" name="healthcareFacilityAddressPostal" constrainedElement="_2Lu7VBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2Lu7XRSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7XhSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>The postal code part of ClinicalDocument/componentOf/encompassingEncounter/location/addr SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Lu7XxSVEeGGzu7fmW9pXw" name="orderToAdmitGuidance" constrainedElement="_2Lu7UBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2Lu7YBSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Lu7YRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>The order to admit time reflects the time of participation of the provider referring the patient to an inpatient setting. The encounter type should reflect that this is an inpatient encounter.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2L23IBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2L0a4RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2L0a4hSVEeGGzu7fmW9pXw" value="ENC"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2L1B8BSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2L1B8RSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2L1B8hSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2L1B9BSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2L1B9RSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2L1B9hSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Lu7YxSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2L1pABSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2L1pARSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2L1pAhSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Lu7ZBSVEeGGzu7fmW9pXw" name="priorityCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Lu7ZRSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Lu7ZhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:ConstraintValidation xmi:id="_2Lx-oBSVEeGGzu7fmW9pXw" base_Constraint="_2Lu7UhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Lx-oRSVEeGGzu7fmW9pXw" base_Constraint="_2Lu7VBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LylsBSVEeGGzu7fmW9pXw" base_Constraint="_2Lu7VhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LzMwBSVEeGGzu7fmW9pXw" base_Constraint="_2Lu7WRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LzMwRSVEeGGzu7fmW9pXw" base_Constraint="_2Lu7XBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Lzz0BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2Lu7XxSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2L0a4xSVEeGGzu7fmW9pXw" base_Property="_2L0a4RSVEeGGzu7fmW9pXw"/>
+  <Ecore:EAttribute xmi:id="_2L1B8xSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2L1B8BSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2L1B9xSVEeGGzu7fmW9pXw" base_Property="_2L1B9BSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_2LwJcBSVEeGGzu7fmW9pXw" base_Property="_2Lu7YxSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_2L3eMhSVEeGGzu7fmW9pXw"/>
+    <ruleId>C83-[DE-16.02-1]</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:TextValue xmi:id="_2L1pAxSVEeGGzu7fmW9pXw" base_Property="_2L1pABSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_2LwwgBSVEeGGzu7fmW9pXw" base_Property="_2Lu7ZBSVEeGGzu7fmW9pXw" severity="INFO">
+    <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
+    <ruleId>C154-[DE-16.07-1]</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_2LayQBSVEeGGzu7fmW9pXw" name="EncountersActivites">
+    <ownedRule xmi:id="_2LayQRSVEeGGzu7fmW9pXw" name="hasIndications" constrainedElement="_2LayQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LayQhSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</body>
+        <body>self.entryRelationship->exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2LayQxSVEeGGzu7fmW9pXw" name="hasPractitioners" constrainedElement="_2LayQRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LayRBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain zero or more [0..*] performer, used to define the practioners involved in an encounter</body>
+        <body>self.performer->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2LayRRSVEeGGzu7fmW9pXw" name="practitionerRole" constrainedElement="_2LayQxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LayRhSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</body>
+        <body>self.performer.assignedEntity.code->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2LayRxSVEeGGzu7fmW9pXw" name="hasInformation" constrainedElement="_2LayRRSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2LaySBSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LaySRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>SHALL contain one or more sources of information</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2LttMBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2LaySxSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2LayTBSVEeGGzu7fmW9pXw" name="ENC">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdeEDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LayTRSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2LayThSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LayTxSVEeGGzu7fmW9pXw" name="id" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LayUBSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LayURSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LayUhSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LayUxSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LayVBSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LayVRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LayWxSVEeGGzu7fmW9pXw" name="serviceDeliveryLocation" association="_2Lg44BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LayXBSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LayXRSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6DavkBU6EeGbmN_W114JUw" name="indication" association="_6DavkhU6EeGbmN_W114JUw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6DavkRU6EeGbmN_W114JUw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2Lg44BSVEeGGzu7fmW9pXw" memberEnd="_2LayWxSVEeGGzu7fmW9pXw _2Lg44RSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Lg44RSVEeGGzu7fmW9pXw" type="_2LayQBSVEeGGzu7fmW9pXw" association="_2Lg44BSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_6DavkhU6EeGbmN_W114JUw" memberEnd="_6DavkBU6EeGbmN_W114JUw _6DavkxU6EeGbmN_W114JUw">
+    <ownedEnd xmi:id="_6DavkxU6EeGbmN_W114JUw" type="_2LayQBSVEeGGzu7fmW9pXw" association="_6DavkhU6EeGbmN_W114JUw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2LayXhSVEeGGzu7fmW9pXw" base_Class="_2LayQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.21" assigningAuthorityName="CCD"/>
+  <CDA:ConstraintValidation xmi:id="_2Ld1kBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2LayQRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LecoBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2LayQxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LecoRSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2LayRRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2LfDsBSVEeGGzu7fmW9pXw" base_Constraint="_2LayRxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-470</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_2LbZUBSVEeGGzu7fmW9pXw" base_Property="_2LaySxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-459</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2LcAYBSVEeGGzu7fmW9pXw" base_Property="_2LayTRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-460</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2LcAYRSVEeGGzu7fmW9pXw" base_Property="_2LayTxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-461</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2LcncBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.13955" name="EncounterCode" base_Property="_2LayUhSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-462</ruleId>
+    <ruleId>CONF-463</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_2LdOgBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2LayUxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-464</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2Lg44hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Lg44BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-471</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_A18MQBU7EeGbmN_W114JUw" severity="INFO" base_Association="_6DavkhU6EeGbmN_W114JUw"/>
+</xmi:XMI>
