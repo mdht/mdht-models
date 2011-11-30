@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
+import org.openhealthtools.mdht.uml.cda.hitsp.*;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -2337,6 +2338,10 @@ public class HITSPValidator extends EObjectValidator {
 				return validateReferralSummary((ReferralSummary) value, diagnostics, context);
 			case HITSPPackage.DISCHARGE_SUMMARY:
 				return validateDischargeSummary((DischargeSummary) value, diagnostics, context);
+			case HITSPPackage.PLANNED_PROCEDURE:
+				return validatePlannedProcedure((PlannedProcedure) value, diagnostics, context);
+			case HITSPPackage.PAST_PROCEDURE:
+				return validatePastProcedure((PastProcedure) value, diagnostics, context);
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
 				return validateHITSPRegistryDelegate((HITSPRegistryDelegate) value, diagnostics, context);
 			default:
@@ -10283,7 +10288,42 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(procedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryMoodCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasTextReference(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryPriorityCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasInversionIndForEncounter(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateProcedureEntry_validateProcedureEntryTemplateId(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryClassCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryText(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryApproachSiteCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReference(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReferenceReason(
 				procedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -12138,6 +12178,243 @@ public class HITSPValidator extends EObjectValidator {
 	public boolean validateDischargeSummary_validateMedicalSummaryTemplateId(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return dischargeSummary.validateMedicalSummaryTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedure(PlannedProcedure plannedProcedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(plannedProcedure, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(plannedProcedure, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryMoodCode(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasTextReference(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryPriorityCode(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasInversionIndForEncounter(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryTemplateId(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryClassCode(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryText(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryApproachSiteCode(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReference(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReferenceReason(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureHasCodeOriginalText(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedurePerformerAssignedEntity(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTemplateId(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTargetSiteCode(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureCode(plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureMoodCodeValue(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureTemplateId(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureId(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareActivityProcedure_validatePlanOfCareActivityProcedureMoodCode(
+				plannedProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryPlanOfCareActivityProcedure_validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
+				plannedProcedure, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePastProcedure(PastProcedure pastProcedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(pastProcedure, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(pastProcedure, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryMoodCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasTextReference(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryPriorityCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryHasInversionIndForEncounter(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryTemplateId(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryClassCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryText(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryApproachSiteCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReference(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntry_validateProcedureEntryInternalReferenceReason(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureHasCodeOriginalText(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedurePerformerAssignedEntity(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTemplateId(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTargetSiteCode(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureCode(pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMoodCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEffectiveTime(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureId(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProblemObservation(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProblemAct(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureAgeObservation(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMedicationActivity(
+				pastProcedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePatientInstruction(
+				pastProcedure, diagnostics, context);
+		}
+		return result;
 	}
 
 	/**

@@ -471,15 +471,6 @@ public interface HITSPFactory extends EFactory {
 	MedicationCombinationMedication createMedicationCombinationMedication();
 
 	/**
-	 * Returns a new object of class '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure</em>'.
-	 * @generated
-	 */
-	Procedure createProcedure();
-
-	/**
 	 * Returns a new object of class '<em>Support</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -550,6 +541,24 @@ public interface HITSPFactory extends EFactory {
 	 * @generated
 	 */
 	DischargeSummary createDischargeSummary();
+
+	/**
+	 * Returns a new object of class '<em>Planned Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Procedure</em>'.
+	 * @generated
+	 */
+	PlannedProcedure createPlannedProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Past Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Past Procedure</em>'.
+	 * @generated
+	 */
+	PastProcedure createPastProcedure();
 
 	/**
 	 * Returns a new object of class '<em>Family History</em>'.

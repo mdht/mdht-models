@@ -81,6 +81,13 @@ public class HITSPRegistryDelegateOperations {
 				} else if ("participant".equals(localName)) {
 					result = HITSPPackage.Literals.SUPPORT_PARTICIPANT;
 				}
+			} else if ("2.16.840.1.113883.3.88.11.83.17".equals(templateId)) {
+				List<String> templateIds = getTemplateIds(element);
+				if (templateIds.contains("2.16.840.1.113883.10.20.1.29")) {
+					result = HITSPPackage.Literals.PAST_PROCEDURE;
+				} else if (templateIds.contains("2.16.840.1.113883.10.20.1.25")) {
+					result = HITSPPackage.Literals.PLANNED_PROCEDURE;
+				}
 			}
 		}
 		return result;

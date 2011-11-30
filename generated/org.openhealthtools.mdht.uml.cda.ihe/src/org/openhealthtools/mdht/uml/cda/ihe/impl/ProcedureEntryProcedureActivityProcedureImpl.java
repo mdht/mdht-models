@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryOperations;
-import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryProcedureActivityProcedureOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -58,6 +57,43 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureEntryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryHasTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryPriorityCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryHasInversionIndForEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryHasInversionIndForEncounter(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureEntryOperations.validateProcedureEntryTemplateId(this, diagnostics, context);
 	}
@@ -67,10 +103,8 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureMoodCode(
-			this, diagnostics, context);
+	public boolean validateProcedureEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,10 +112,8 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureInternalReference(
-			this, diagnostics, context);
+	public boolean validateProcedureEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryText(this, diagnostics, context);
 	}
 
 	/**
@@ -89,10 +121,8 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(
-			this, diagnostics, context);
+	public boolean validateProcedureEntryApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,10 +130,8 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureHasTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureHasTextReference(
-			this, diagnostics, context);
+	public boolean validateProcedureEntryInternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryInternalReference(this, diagnostics, context);
 	}
 
 	/**
@@ -111,54 +139,9 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureEntryProcedureActivityProcedurePriorityCode(DiagnosticChain diagnostics,
+	public boolean validateProcedureEntryInternalReferenceReason(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedurePriorityCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureApproachSiteCode(
-			this, diagnostics, context);
+		return ProcedureEntryOperations.validateProcedureEntryInternalReferenceReason(this, diagnostics, context);
 	}
 
 	/**
@@ -167,7 +150,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * @generated
 	 */
 	public InternalReference getInternalReference() {
-		return ProcedureEntryProcedureActivityProcedureOperations.getInternalReference(this);
+		return ProcedureEntryOperations.getInternalReference(this);
 	}
 
 	/**
@@ -176,7 +159,7 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	 * @generated
 	 */
 	public EList<InternalReference> getInternalReferenceReasons() {
-		return ProcedureEntryProcedureActivityProcedureOperations.getInternalReferenceReasons(this);
+		return ProcedureEntryOperations.getInternalReferenceReasons(this);
 	}
 
 	/**
@@ -188,16 +171,5 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	public ProcedureEntryProcedureActivityProcedure init() {
 		CDAUtil.init(this);
 		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureEntryProcedureActivityProcedureOperations.validateProcedureEntryProcedureActivityProcedureText(
-			this, diagnostics, context);
 	}
 } // ProcedureEntryProcedureActivityProcedureImpl

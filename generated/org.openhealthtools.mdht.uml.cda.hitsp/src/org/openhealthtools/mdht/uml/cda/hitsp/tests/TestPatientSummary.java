@@ -29,6 +29,8 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPFactory;
 import org.openhealthtools.mdht.uml.cda.hitsp.PatientSummary;
+import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
+import org.openhealthtools.mdht.uml.cda.hitsp.Result;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEFactory;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
@@ -62,6 +64,7 @@ public class TestPatientSummary {
 
 		patientSummary.addSection(createAllergiesSection());
 		patientSummary.addSection(createMedicationsSection());
+		patientSummary.addSection(createDiagnosticResultsSection());
 
 		System.out.println("***** Generate Patient Summary *****");
 		save(patientSummary);
@@ -77,6 +80,21 @@ public class TestPatientSummary {
 		ClinicalDocument completeSample = CDAUtil.load(new FileInputStream(
 			"samples/HITSP_C32v2.5_Rev6_16Sections_Entries_MinimalErrors.xml"));
 		validate(completeSample);
+	}
+
+	/**
+	 * @return
+	 */
+	private static Section createDiagnosticResultsSection() {
+		Section section = HITSPFactory.eINSTANCE.createDiagnosticResultsSection().init();
+
+		Result result = HITSPFactory.eINSTANCE.createResult().init();
+		section.addObservation(result);
+
+		Procedure procedure = HITSPFactory.eINSTANCE.createPastProcedure().init();
+		section.addProcedure(procedure);
+
+		return section;
 	}
 
 	public static PatientSummary createPatientSummary() {
