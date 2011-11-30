@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.31' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationInformationSource ResultObservationMoodCode ResultObservationId ResultObservationStatusCode ResultObservationCode ResultObservationValue' constraints.validation.warning='ResultObservationCodeValue ResultObservationReferenceRangeRequired ResultObservationEffectiveTime ResultObservationInterpretationCode' classCode='OBS' constraints.validation.info='ResultObservationMethodCode' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' constraints.validation.info='ResultObservationMethodCode' templateId.root='2.16.840.1.113883.10.20.1.31' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationInformationSource ResultObservationMoodCode ResultObservationId ResultObservationStatusCode ResultObservationCode ResultObservationValue' constraints.validation.warning='ResultObservationCodeValue ResultObservationReferenceRangeRequired ResultObservationEffectiveTime ResultObservationInterpretationCode'"
  * @generated
  */
 public interface ResultObservation extends Observation {

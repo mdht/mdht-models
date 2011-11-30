@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getImmunizationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.6' code.displayName='History of immunizations' constraints.validation.error='ImmunizationsSectionTemplateId MedicationsSectionCode ImmunizationsSectionTitle ImmunizationsSectionText' code.codeSystemName='LOINC' code.code='11369-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.1.6' constraints.validation.error='ImmunizationsSectionTemplateId MedicationsSectionCode ImmunizationsSectionTitle ImmunizationsSectionText' code.displayName='History of immunizations' code.codeSystem='2.16.840.1.113883.6.1' code.code='11369-6'"
  * @generated
  */
 public interface ImmunizationsSection extends MedicationsSection {

@@ -270,7 +270,7 @@ The value for &quot;[Act | Observation | Procedure] / statusCode&quot; in a proc
       <association href="../ccd.uml#_oHZcUACpEeGr8LMv5XjMCA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_e1I9gAoPEeGuLYmxYntHkA" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_e1JkkAoPEeGuLYmxYntHkA" value="EVN"/>
     </ownedAttribute>
