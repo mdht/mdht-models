@@ -49,20 +49,17 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9Ig7RVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9Ig7hVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_HKgr8Bq9EeGYcL3NfEQErA" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_HKgr8Bq9EeGYcL3NfEQErA" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_HKhTABq9EeGYcL3NfEQErA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KFVeUBq9EeGYcL3NfEQErA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KFVeURq9EeGYcL3NfEQErA"/>
-      <association href="../consol.uml#_HKhTABq9EeGYcL3NfEQErA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_MCAmYBq9EeGYcL3NfEQErA" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q">
+    <ownedAttribute xmi:id="_MCAmYBq9EeGYcL3NfEQErA" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_MCBNcBq9EeGYcL3NfEQErA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qolhkBrSEeGxIZCGAXKxsQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qolhkRrSEeGxIZCGAXKxsQ"/>
-      <association href="../consol.uml#_MCBNcBq9EeGYcL3NfEQErA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_VDYgQBq9EeGYcL3NfEQErA" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q">
+    <ownedAttribute xmi:id="_VDYgQBq9EeGYcL3NfEQErA" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_VDZHUBq9EeGYcL3NfEQErA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMKIsBrSEeGxIZCGAXKxsQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMKIsRrSEeGxIZCGAXKxsQ"/>
-      <association href="../consol.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
@@ -487,4 +484,13 @@ organization performed or hosted the Procedure</body>
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
+  <uml:Association xmi:id="_HKhTABq9EeGYcL3NfEQErA" memberEnd="_HKgr8Bq9EeGYcL3NfEQErA _HKh6EBq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_HKh6EBq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_HKhTABq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_MCBNcBq9EeGYcL3NfEQErA" memberEnd="_MCAmYBq9EeGYcL3NfEQErA _MCBNcRq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_MCBNcRq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_MCBNcBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_VDZHUBq9EeGYcL3NfEQErA" memberEnd="_VDYgQBq9EeGYcL3NfEQErA _VDZHURq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_VDZHUBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
 </xmi:XMI>

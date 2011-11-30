@@ -344,13 +344,7 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_NozUYBUzEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_SjN_8BUzEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_c6LMshUzEeGbmN_W114JUw"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_1CFA0hUzEeGbmN_W114JUw">
-      <ownedEnd xmi:id="_1CFA0xUzEeGbmN_W114JUw" association="_1CFA0hUzEeGbmN_W114JUw">
-        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_2H6yUBSVEeGGzu7fmW9pXw"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-problems.uml#_1CFA0BUzEeGbmN_W114JUw"/>
-      <memberEnd href="#_1CFA0xUzEeGbmN_W114JUw"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_1CFA0hUzEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_6DavkhU6EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-familyhistory.uml#_Z-2U8hU8EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_jCNL0BU8EeGbmN_W114JUw"/>
@@ -381,27 +375,9 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_awdH4Bg4EeGs5a462vYX5Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-payers.uml#_XUoXwBnZEeGs5a462vYX5Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-payers.uml#_fqsDwhnZEeGs5a462vYX5Q"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HKhTABq9EeGYcL3NfEQErA">
-      <ownedEnd xmi:id="_HKh6EBq9EeGYcL3NfEQErA" association="_HKhTABq9EeGYcL3NfEQErA">
-        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-procedures.uml#_HKgr8Bq9EeGYcL3NfEQErA"/>
-      <memberEnd href="#_HKh6EBq9EeGYcL3NfEQErA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MCBNcBq9EeGYcL3NfEQErA">
-      <ownedEnd xmi:id="_MCBNcRq9EeGYcL3NfEQErA" association="_MCBNcBq9EeGYcL3NfEQErA">
-        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-procedures.uml#_MCAmYBq9EeGYcL3NfEQErA"/>
-      <memberEnd href="#_MCBNcRq9EeGYcL3NfEQErA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VDZHUBq9EeGYcL3NfEQErA">
-      <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" association="_VDZHUBq9EeGYcL3NfEQErA">
-        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-procedures.uml#_VDYgQBq9EeGYcL3NfEQErA"/>
-      <memberEnd href="#_VDZHURq9EeGYcL3NfEQErA"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_HKhTABq9EeGYcL3NfEQErA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_MCBNcBq9EeGYcL3NfEQErA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -534,16 +510,21 @@
   <Ecore:EReference xmi:id="_R8N9QxUmEeGvPruliC3crg" xmlNamespace="##targetNamespace"/>
   <Ecore:EReference xmi:id="_R8N9RxUmEeGvPruliC3crg" xmlNamespace="##targetNamespace"/>
   <Ecore:EAttribute xmi:id="_R8N9SRUmEeGvPruliC3crg" isUnsettable="true"/>
-  <CDA:AssociationValidation xmi:id="_2RW3YBUzEeGbmN_W114JUw" base_Association="_1CFA0hUzEeGbmN_W114JUw"/>
+  <CDA:AssociationValidation xmi:id="_2RW3YBUzEeGbmN_W114JUw">
+    <base_Association href=".controlled/consol-problems.uml#_1CFA0hUzEeGbmN_W114JUw"/>
+  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_vAJFABVeEeGQCvUGzi1kDQ" severity="INFO"/>
-  <CDA:AssociationValidation xmi:id="_H59L4Bq9EeGYcL3NfEQErA" severity="INFO" base_Association="_HKhTABq9EeGYcL3NfEQErA">
+  <CDA:AssociationValidation xmi:id="_H59L4Bq9EeGYcL3NfEQErA" severity="INFO">
     <ruleId>CONF:6277</ruleId>
     <ruleId>CONF:8534</ruleId>
+    <base_Association href=".controlled/consol-procedures.uml#_HKhTABq9EeGYcL3NfEQErA"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_NwzDcBq9EeGYcL3NfEQErA" severity="INFO" base_Association="_MCBNcBq9EeGYcL3NfEQErA">
+  <CDA:AssociationValidation xmi:id="_NwzDcBq9EeGYcL3NfEQErA" severity="INFO">
     <ruleId>CONF:6279</ruleId>
+    <base_Association href=".controlled/consol-procedures.uml#_MCBNcBq9EeGYcL3NfEQErA"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_XmLNIBq9EeGYcL3NfEQErA" severity="INFO" base_Association="_VDZHUBq9EeGYcL3NfEQErA">
+  <CDA:AssociationValidation xmi:id="_XmLNIBq9EeGYcL3NfEQErA" severity="INFO">
     <ruleId>CONF:8534</ruleId>
+    <base_Association href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
   </CDA:AssociationValidation>
 </xmi:XMI>
