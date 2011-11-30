@@ -2,7 +2,6 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2E7IsBSVEeGGzu7fmW9pXw" name="HealthStatusValue">
-     
       <ownedLiteral xmi:id="_2E7IsRSVEeGGzu7fmW9pXw" name="81323004"/>
       <ownedLiteral xmi:id="_2E7IshSVEeGGzu7fmW9pXw" name="313386006"/>
       <ownedLiteral xmi:id="_2E7IsxSVEeGGzu7fmW9pXw" name="162467007"/>
@@ -13,13 +12,11 @@
       <ownedLiteral xmi:id="_2E7IuBSVEeGGzu7fmW9pXw" name="419099009"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FPRwBSVEeGGzu7fmW9pXw" name="SeverityObservation">
-      
       <ownedLiteral xmi:id="_2FPRwRSVEeGGzu7fmW9pXw" name="H"/>
       <ownedLiteral xmi:id="_2FPRwhSVEeGGzu7fmW9pXw" name="M"/>
       <ownedLiteral xmi:id="_2FPRwxSVEeGGzu7fmW9pXw" name="L"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="ProblemStatusValue">
-    
       <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
       <ownedLiteral xmi:id="_2FcGEhSVEeGGzu7fmW9pXw" name="73425007"/>
       <ownedLiteral xmi:id="_2FcGExSVEeGGzu7fmW9pXw" name="90734009"/>
@@ -42,7 +39,6 @@
       <ownedLiteral xmi:id="_2Fw2NxSVEeGGzu7fmW9pXw" name="55607006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2GDxIBSVEeGGzu7fmW9pXw" name="ConcernEntryStatus">
-      
       <ownedComment xmi:id="_2GDxIRSVEeGGzu7fmW9pXw">
         <body>A concern in the &quot;active&quot; state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.</body>
       </ownedComment>
@@ -160,6 +156,16 @@
       <ownedLiteral xmi:id="_2SbZOxSVEeGGzu7fmW9pXw" name="RSGN"/>
       <ownedLiteral xmi:id="_2SbZPBSVEeGGzu7fmW9pXw" name="RSP"/>
       <ownedLiteral xmi:id="_2SbZPRSVEeGGzu7fmW9pXw" name="RWR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_S8q4IBrNEeGxIZCGAXKxsQ" name="MoodCodeEvnInt">
+      <ownedLiteral xmi:id="_tnQrcBrNEeGxIZCGAXKxsQ" name="EVN"/>
+      <ownedLiteral xmi:id="_u1rmYBrNEeGxIZCGAXKxsQ" name="INT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-hMgMBrREeGxIZCGAXKxsQ" name="ProcedureActStatusCode">
+      <ownedLiteral xmi:id="_IcwKYBrSEeGxIZCGAXKxsQ" name="completed"/>
+      <ownedLiteral xmi:id="_J7q_cBrSEeGxIZCGAXKxsQ" name="active"/>
+      <ownedLiteral xmi:id="_LxDMsBrSEeGxIZCGAXKxsQ" name="aborted"/>
+      <ownedLiteral xmi:id="_M-QmsBrSEeGxIZCGAXKxsQ" name="cancelled"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97VhSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97VxSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -296,4 +302,17 @@
   <term:ValueSetCode xmi:id="_2SbZQhSVEeGGzu7fmW9pXw" conceptName="Received signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZOxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Shf0BSVEeGGzu7fmW9pXw" conceptName="Received spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Shf0RSVEeGGzu7fmW9pXw" conceptName="Received written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPRSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_S8sGQBrNEeGxIZCGAXKxsQ" identifier="2.16.840.1.113883.11.20.9.18" version="2011-04-03" definition="Subset of HL7 ActMood codes, constrained to represent event (EVN) and intent (INT) moodes" base_Enumeration="_S8q4IBrNEeGxIZCGAXKxsQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_tnQrcRrNEeGxIZCGAXKxsQ" conceptName="Event" base_EnumerationLiteral="_tnQrcBrNEeGxIZCGAXKxsQ"/>
+  <term:ValueSetCode xmi:id="_u1sNcBrNEeGxIZCGAXKxsQ" conceptName="Intent" base_EnumerationLiteral="_u1rmYBrNEeGxIZCGAXKxsQ"/>
+  <term:ValueSetCode xmi:id="_wq0jERrNEeGxIZCGAXKxsQ"/>
+  <term:ValueSetVersion xmi:id="_-hMgMRrREeGxIZCGAXKxsQ" identifier="2.16.840.1.113883.11.20.9.22" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" binding="Dynamic" base_Enumeration="_-hMgMBrREeGxIZCGAXKxsQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Ic5UUBrSEeGxIZCGAXKxsQ" conceptName="Completed" base_EnumerationLiteral="_IcwKYBrSEeGxIZCGAXKxsQ"/>
+  <term:ValueSetCode xmi:id="_J7q_cRrSEeGxIZCGAXKxsQ" conceptName="Active" base_EnumerationLiteral="_J7q_cBrSEeGxIZCGAXKxsQ"/>
+  <term:ValueSetCode xmi:id="_LxDMsRrSEeGxIZCGAXKxsQ" conceptName="Aborted" base_EnumerationLiteral="_LxDMsBrSEeGxIZCGAXKxsQ"/>
+  <term:ValueSetCode xmi:id="_M-QmsRrSEeGxIZCGAXKxsQ" conceptName="Cancelled" base_EnumerationLiteral="_M-QmsBrSEeGxIZCGAXKxsQ"/>
 </xmi:XMI>
