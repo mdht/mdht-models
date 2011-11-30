@@ -782,15 +782,6 @@ public interface ConsolFactory extends EFactory {
 	PolicySubscriber createPolicySubscriber();
 
 	/**
-	 * Returns a new object of class '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure</em>'.
-	 * @generated
-	 */
-	Procedure createProcedure();
-
-	/**
 	 * Returns a new object of class '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

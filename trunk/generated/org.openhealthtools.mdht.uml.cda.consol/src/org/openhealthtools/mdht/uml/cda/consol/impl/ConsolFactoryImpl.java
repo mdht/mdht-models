@@ -151,12 +151,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProceduresSection();
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
 				return createProceduresSectionEntriesOptional();
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
-				return createProcedureActivityAct();
 			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
 				return createProcedureActivityProcedure();
 			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION:
 				return createProcedureAcivityObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
+				return createProcedureActivityAct();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
 				return createVitalSignsSectionEntriesOptional();
 			case ConsolPackage.FAMILY_HISTORY_SECTION:
@@ -227,8 +227,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoveredParty();
 			case ConsolPackage.POLICY_SUBSCRIBER:
 				return createPolicySubscriber();
-			case ConsolPackage.PROCEDURE:
-				return createProcedure();
 			case ConsolPackage.PREGNANCY_HISTORY_SECTION:
 				return createPregnancyHistorySection();
 			case ConsolPackage.EXTERNAL_REFERENCE:
@@ -1202,16 +1200,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicySubscriber createPolicySubscriber() {
 		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
 		return policySubscriber;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure createProcedure() {
-		ProcedureImpl procedure = new ProcedureImpl();
-		return procedure;
 	}
 
 	/**

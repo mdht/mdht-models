@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Precondition;
+import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -902,7 +903,7 @@ public class ConsolSwitch<T> {
 				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
 				if (result == null) {
-					result = caseCDA_Procedure(planOfCareActivityProcedure);
+					result = caseProcedure(planOfCareActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(planOfCareActivityProcedure);
@@ -995,31 +996,11 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
-				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
-				T result = caseProcedureActivityAct(procedureActivityAct);
-				if (result == null) {
-					result = caseCDA_Act(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
 				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
 				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
 				if (result == null) {
-					result = caseCDA_Procedure(procedureActivityProcedure);
+					result = caseProcedure(procedureActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(procedureActivityProcedure);
@@ -1049,6 +1030,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(procedureAcivityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
+				T result = caseProcedureActivityAct(procedureActivityAct);
+				if (result == null) {
+					result = caseCDA_Act(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1710,26 +1711,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(policySubscriber);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROCEDURE: {
-				Procedure procedure = (Procedure) theEObject;
-				T result = caseProcedure(procedure);
-				if (result == null) {
-					result = caseCDA_Procedure(procedure);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedure);
-				}
-				if (result == null) {
-					result = caseAct(procedure);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedure);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5304,21 +5285,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 
