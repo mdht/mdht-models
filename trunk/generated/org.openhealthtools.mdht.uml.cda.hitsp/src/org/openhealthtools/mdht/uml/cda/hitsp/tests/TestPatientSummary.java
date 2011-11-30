@@ -82,9 +82,6 @@ public class TestPatientSummary {
 		validate(completeSample);
 	}
 
-	/**
-	 * @return
-	 */
 	private static Section createDiagnosticResultsSection() {
 		Section section = HITSPFactory.eINSTANCE.createDiagnosticResultsSection().init();
 
