@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getProblemAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.27' constraints.validation.error='ProblemActTemplateId ProblemActEntryRelationshipRequired ProblemActClassCode ProblemActMoodCode ProblemActId ProblemActCodeNullFlavor' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='ProblemActSubjectOfTarget ProblemActContainsProblemObservation ProblemActContainsAlertObservation' moodCode='EVN' constraints.validation.info='ProblemActContainsPatientAwareness ProblemActEffectiveTime ProblemActEpisodeObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.nullFlavor='NA' templateId.root='2.16.840.1.113883.10.20.1.27' constraints.validation.error='ProblemActTemplateId ProblemActEntryRelationshipRequired ProblemActClassCode ProblemActMoodCode ProblemActId ProblemActCodeNullFlavor' constraints.validation.info='ProblemActContainsPatientAwareness ProblemActEffectiveTime ProblemActEpisodeObservation' constraints.validation.warning='ProblemActSubjectOfTarget ProblemActContainsProblemObservation ProblemActContainsAlertObservation'"
  * @generated
  */
 public interface ProblemAct extends Act {
