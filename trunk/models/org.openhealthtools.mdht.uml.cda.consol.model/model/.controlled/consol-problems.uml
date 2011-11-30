@@ -254,8 +254,9 @@ historical purposes.&#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IBgAhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IBgAxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1CFA0BUzEeGbmN_W114JUw" name="problemObservation" type="_5Ha7ABUyEeGbmN_W114JUw" association="_1CFA0hUzEeGbmN_W114JUw">
+    <ownedAttribute xmi:id="_1CFA0BUzEeGbmN_W114JUw" name="problemObservation" type="_5Ha7ABUyEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1CFA0RUzEeGbmN_W114JUw"/>
+      <association href="../consol.uml#_1CFA0hUzEeGbmN_W114JUw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2ICHEBSVEeGGzu7fmW9pXw"/>
@@ -1012,7 +1013,4 @@ historical purposes.&#xD;
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-175</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_1CFA0hUzEeGbmN_W114JUw" memberEnd="_1CFA0BUzEeGbmN_W114JUw _1CFA0xUzEeGbmN_W114JUw">
-    <ownedEnd xmi:id="_1CFA0xUzEeGbmN_W114JUw" type="_2H6yUBSVEeGGzu7fmW9pXw" association="_1CFA0hUzEeGbmN_W114JUw"/>
-  </uml:Association>
 </xmi:XMI>
