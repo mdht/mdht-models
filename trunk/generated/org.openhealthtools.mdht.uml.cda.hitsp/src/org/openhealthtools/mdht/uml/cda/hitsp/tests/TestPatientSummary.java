@@ -80,6 +80,11 @@ public class TestPatientSummary {
 		ClinicalDocument completeSample = CDAUtil.load(new FileInputStream(
 			"samples/HITSP_C32v2.5_Rev6_16Sections_Entries_MinimalErrors.xml"));
 		validate(completeSample);
+
+		if (completeSample instanceof PatientSummary) {
+			PatientSummary summary = (PatientSummary) completeSample;
+			System.out.println(summary.getSurgeriesSection().getProcedures());
+		}
 	}
 
 	private static Section createDiagnosticResultsSection() {
