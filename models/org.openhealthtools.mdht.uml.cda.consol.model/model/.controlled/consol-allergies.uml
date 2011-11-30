@@ -934,70 +934,19 @@ historical purposes.&#xD;
     <reference href="../consol-vocab.uml#_2FPRxBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_2E_aIRSVEeGGzu7fmW9pXw" name="ReactionObservation">
-    <ownedComment xmi:id="_2FwPIBSVEeGGzu7fmW9pXw" annotatedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <body>A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. &quot;no adverse reaction 30 minutes post administration&quot;).</body>
+    <ownedComment xmi:id="_j3HUIBraEeGo461UQq-B1g">
+      <body>This clinical statement represents an undesired symptom, finding, etc., due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2FwPIRSVEeGGzu7fmW9pXw" annotatedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&amp;lt;observation classCode='OBS'>) that problem. The &amp;lt;value> of the observation comes from a controlled vocabulary representing such things. The &amp;lt;code> contained within the &amp;lt;observation> describes the method of determination from yet another controlled vocabulary.&lt;/p>&#xD;
-&#xD;
-&lt;p>The basic pattern for reporting a problem uses the CDA &amp;lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is &quot;no prior history of chicken pox&quot;, one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_2FskwBSVEeGGzu7fmW9pXw" name="hasReactionIntervention">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FskwRSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="procedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XcWKoBrcEeGo461UQq-B1g">
         <language>Analysis</language>
-        <language>OCL</language>
-        <body>A reaction observation MAY contain one or more reation interventions.</body>
-        <body>not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->isEmpty()</body>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2FtL0BSVEeGGzu7fmW9pXw" name="reactionInterventionTypeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FtL0RSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="medicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-Q-oBrcEeGo461UQq-B1g">
         <language>Analysis</language>
-        <language>OCL</language>
-        <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-        <body>self.entryRelationship->forAll(entry | entry.typeCode &lt;> vocab::x_ActRelationshipEntryRelationship::RSON  or ( entry.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (entry.act->isEmpty() and entry.procedure->isEmpty()  ) ) )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Fty4BSVEeGGzu7fmW9pXw" name="reactionInterventionType">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Fty4RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
-        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(consol::ProcedureActivity) or entry.oclIsKindOf(consol::MedicationActivity))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FuZ8BSVEeGGzu7fmW9pXw" name="informationSource">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FuZ8RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL contain one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FuZ8xSVEeGGzu7fmW9pXw" name="containsPatientAwareness">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FuZ9BSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>MAY contain exactly one Patient Awareness</body>
-        <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FvBARSVEeGGzu7fmW9pXw" name="hasTextReference">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FvBAhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The problem name SHALL be recorded in the entry by recording a &amp;lt;reference> where the value attribute points to the narrative text containing the name of the problem.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-        <body>The problem name SHALL be recorded in the entry by recording a &amp;lt;reference> where the value attribute points to the narrative text containing the name of the problem.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FvoEBSVEeGGzu7fmW9pXw" name="commentInversionInd">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FvoERSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>If entryRelationship / Comment is present, then entryRelationship SHALL include inversionInd = 'true'.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(consol::Comment)) implies rel.inversionInd=true)</body>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True (CONF:7344).</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
@@ -1022,8 +971,8 @@ historical purposes.&#xD;
         <body>The specific observation being recorded must have an identifier (&amp;lt;id>) that shall be provided for tracking purposes. If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension (e.g., &amp;lt;id root='CE1215CD-69EC-4C7B-805F-569233C5E159'/>). At least one identifier must be present, more than one may appear.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FBPUhSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FBPUxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ky9dsBrbEeGo461UQq-B1g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ky9dsRrbEeGo461UQq-B1g" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPVRSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <ownedComment xmi:id="_2FBPVhSVEeGGzu7fmW9pXw">
@@ -1057,39 +1006,46 @@ historical purposes.&#xD;
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FGu4BSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2FGu4BSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FGu4RSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_feOy4BrbEeGo461UQq-B1g" name="procedureActivityProcedure">
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_feOy4RrbEeGo461UQq-B1g"/>
+      <association href="consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nTmMoBrbEeGo461UQq-B1g" name="medicationActivity">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTmMoRrbEeGo461UQq-B1g"/>
+      <association href="consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FGu4BSVEeGGzu7fmW9pXw _2FRG8hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2FRG8hSVEeGGzu7fmW9pXw" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9"/>
-  <CDA:ConstraintValidation xmi:id="_2FskwhSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2FskwBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FskwhSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-280</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FtL0hSVEeGGzu7fmW9pXw" base_Constraint="_2FtL0BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FtL0hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-296</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Fty4hSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2Fty4BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2Fty4hSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-297</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FuZ8hSVEeGGzu7fmW9pXw" base_Constraint="_2FuZ8BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FuZ8hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-161</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FvBABSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2FuZ8xSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FvBABSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-180</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw" base_Constraint="_2FvBARSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw" base_Constraint="_2FvoEBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FAoRBSVEeGGzu7fmW9pXw" base_Property="_2FAoQhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-155</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FBPVRSVEeGGzu7fmW9pXw"/>
-  <CDA:ValueSetConstraint xmi:id="_2FB2YRSVEeGGzu7fmW9pXw" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" base_Property="_2FDEgBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2FDrkhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FDrkRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -1098,5 +1054,12 @@ historical purposes.&#xD;
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FFgwxSVEeGGzu7fmW9pXw" base_Property="_2FFgwRSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2FRG8xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_OjVYABrbEeGo461UQq-B1g" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_WZIPkBrbEeGo461UQq-B1g" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
 </xmi:XMI>

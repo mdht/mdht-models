@@ -167,6 +167,7 @@
       <ownedLiteral xmi:id="_LxDMsBrSEeGxIZCGAXKxsQ" name="aborted"/>
       <ownedLiteral xmi:id="_M-QmsBrSEeGxIZCGAXKxsQ" name="cancelled"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Dhi68BueEeGnMahsPjlwOw" name="PatientEducation"/>
     <profileApplication xmi:id="_2B97VhSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97VxSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -315,4 +316,5 @@
   <term:ValueSetCode xmi:id="_J7q_cRrSEeGxIZCGAXKxsQ" conceptName="Active" base_EnumerationLiteral="_J7q_cBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_LxDMsRrSEeGxIZCGAXKxsQ" conceptName="Aborted" base_EnumerationLiteral="_LxDMsBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_M-QmsRrSEeGxIZCGAXKxsQ" conceptName="Cancelled" base_EnumerationLiteral="_M-QmsBrSEeGxIZCGAXKxsQ"/>
+  <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="4. 2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw"/>
 </xmi:XMI>
