@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Vital signs' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.1' constraints.validation.error='IHEVitalSignsOrganizerTemplateId IHEVitalSignsOrganizerRequireResultsOrganizerTemplateID IHEVitalSignsOrganizerClassCode ResultOrganizerCode IHEVitalSignsOrganizerEffectiveTime ResultOrganizerStatusCode IHEVitalSignsOrganizerId IHEVitalSignsOrganizerVitalSignObservation' code.codeSystemName='SNOMEDCT' classCode='CLUSTER' code.code='46680005'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='CLUSTER' code.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.1' constraints.validation.error='IHEVitalSignsOrganizerTemplateId IHEVitalSignsOrganizerRequireResultsOrganizerTemplateID IHEVitalSignsOrganizerClassCode ResultOrganizerCode IHEVitalSignsOrganizerEffectiveTime ResultOrganizerStatusCode IHEVitalSignsOrganizerId IHEVitalSignsOrganizerVitalSignObservation' code.displayName='Vital signs' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.code='46680005'"
  * @generated
  */
 public interface VitalSignsOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer {

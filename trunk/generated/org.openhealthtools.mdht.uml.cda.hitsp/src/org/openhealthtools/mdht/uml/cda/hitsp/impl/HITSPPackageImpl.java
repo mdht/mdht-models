@@ -62,10 +62,12 @@ import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationType;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.PastProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.PatientSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.PayersSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PlanOfCareSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.PlannedProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
@@ -498,6 +500,20 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 	 * @generated
 	 */
 	private EClass dischargeSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass plannedProcedureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pastProcedureEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1128,6 +1144,24 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPlannedProcedure() {
+		return plannedProcedureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPastProcedure() {
+		return pastProcedureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFamilyHistory() {
 		return familyHistoryEClass;
 	}
@@ -1311,6 +1345,10 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		dischargeSummaryEClass = createEClass(DISCHARGE_SUMMARY);
 
+		plannedProcedureEClass = createEClass(PLANNED_PROCEDURE);
+
+		pastProcedureEClass = createEClass(PAST_PROCEDURE);
+
 		hitspRegistryDelegateEClass = createEClass(HITSP_REGISTRY_DELEGATE);
 	}
 
@@ -1432,6 +1470,10 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		unstructuredOrScannedDocumentEClass.getESuperTypes().add(this.getUnstructuredDocument());
 		referralSummaryEClass.getESuperTypes().add(theIHEPackage.getMedicalSummary());
 		dischargeSummaryEClass.getESuperTypes().add(theIHEPackage.getMedicalSummary());
+		plannedProcedureEClass.getESuperTypes().add(this.getProcedure());
+		plannedProcedureEClass.getESuperTypes().add(theIHEPackage.getProcedureEntryPlanOfCareActivityProcedure());
+		pastProcedureEClass.getESuperTypes().add(this.getProcedure());
+		pastProcedureEClass.getESuperTypes().add(theIHEPackage.getProcedureEntryProcedureActivityProcedure());
 		hitspRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
 		// Initialize classes and features; add operations and parameters
@@ -3146,7 +3188,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			surgeriesSectionEClass, this.getProcedure(), "getProcedureActivities", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
-			procedureEClass, Procedure.class, "Procedure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			procedureEClass, Procedure.class, "Procedure", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			procedureEClass, ecorePackage.getEBoolean(), "validateHITSPProcedureHasCodeOriginalText", 0, 1, IS_UNIQUE,
@@ -4551,6 +4593,14 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			dischargeSummaryEClass, this.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
+			plannedProcedureEClass, PlannedProcedure.class, "PlannedProcedure", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(
+			pastProcedureEClass, PastProcedure.class, "PastProcedure", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(
 			hitspRegistryDelegateEClass, HITSPRegistryDelegate.class, "HITSPRegistryDelegate", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -4708,9 +4758,10 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.108" });
 		addAnnotation(procedureEClass, source, new String[] {
-				"targetSiteCode.codeSystemName", "SNOMEDCT", "targetSiteCode.codeSystem", "2.16.840.1.113883.6.96",
-				"constraints.validation.error", "HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.17", "constraints.validation.warning",
+				"targetSiteCode.codeSystemName", "SNOMEDCT", "contextDependent", "true", "targetSiteCode.codeSystem",
+				"2.16.840.1.113883.6.96", "constraints.validation.error",
+				"HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText", "templateId.root",
+				"2.16.840.1.113883.3.88.11.83.17", "constraints.validation.warning",
 				"HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode" });
 		addAnnotation(
 			planOfCareSectionEClass,

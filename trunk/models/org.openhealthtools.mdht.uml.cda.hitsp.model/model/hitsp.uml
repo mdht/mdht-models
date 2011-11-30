@@ -640,7 +640,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_XRbX0KDkEd-dVeaMP0XXQw" memberEnd="_XRawwKDkEd-dVeaMP0XXQw _XRb-4KDkEd-dVeaMP0XXQw">
       <ownedEnd xmi:id="_XRb-4KDkEd-dVeaMP0XXQw" type="_wDMM0GEHEd6bFO5yxRh3Nw" association="_XRbX0KDkEd-dVeaMP0XXQw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_KYNNMKDlEd-dVeaMP0XXQw" name="Procedure">
+    <packagedElement xmi:type="uml:Class" xmi:id="_KYNNMKDlEd-dVeaMP0XXQw" name="Procedure" isAbstract="true">
       <ownedComment xmi:id="_mGksABdlEeCf9aMNaCAtDQ">
         <body>Defines a coded entry describing a procedure performed on a patient.</body>
       </ownedComment>
@@ -1436,6 +1436,18 @@ resolved</body>
       <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_lAEYEM9eEeCBIMy4xFlonQ"/>
       <memberEnd href="#_lAEYE89eEeCBIMy4xFlonQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ysYZ0BuLEeG6kfZwwf5nmQ" name="PlannedProcedure">
+      <generalization xmi:id="_2VvGIBuLEeG6kfZwwf5nmQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_9xEuEDuNEd-B8KE6Jx0UNQ"/>
+      </generalization>
+      <generalization xmi:id="_6oXY8BuLEeG6kfZwwf5nmQ" general="_KYNNMKDlEd-dVeaMP0XXQw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AnLgwBuMEeG6kfZwwf5nmQ" name="PastProcedure">
+      <generalization xmi:id="_EICYYBuMEeG6kfZwwf5nmQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_6yfdEDuNEd-B8KE6Jx0UNQ"/>
+      </generalization>
+      <generalization xmi:id="_F0hIUBuMEeG6kfZwwf5nmQ" general="_KYNNMKDlEd-dVeaMP0XXQw"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1532,7 +1544,7 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_Yq0MoKDkEd-dVeaMP0XXQw" severity="INFO" base_Association="_XRbX0KDkEd-dVeaMP0XXQw">
     <ruleId>C32-[CT1-15]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_PFSnYKDlEd-dVeaMP0XXQw" base_Class="_KYNNMKDlEd-dVeaMP0XXQw" templateId="2.16.840.1.113883.3.88.11.83.17">
+  <CDA:CDATemplate xmi:id="_PFSnYKDlEd-dVeaMP0XXQw" base_Class="_KYNNMKDlEd-dVeaMP0XXQw" templateId="2.16.840.1.113883.3.88.11.83.17" contextDependent="true">
     <ruleId>C83-[DE-17-CDA-1]</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_gkawsKDlEd-dVeaMP0XXQw" requiresParentId="true">

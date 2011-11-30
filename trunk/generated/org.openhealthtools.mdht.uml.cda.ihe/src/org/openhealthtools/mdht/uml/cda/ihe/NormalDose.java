@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getNormalDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.1' constraints.validation.error='NormalDoseTemplateId NormalDoseNoSubordinateSubstanceAdministration'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NormalDoseTemplateId NormalDoseNoSubordinateSubstanceAdministration' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.1'"
  * @generated
  */
 public interface NormalDose extends Medication {

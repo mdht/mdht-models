@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEncounterPlanOfCare()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' constraints.validation.error='EncounterPlanOfCareTemplateId EncounterPlanOfCareMoodCodeValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' constraints.validation.error='EncounterPlanOfCareTemplateId EncounterPlanOfCareMoodCodeValue' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14'"
  * @generated
  */
 public interface EncounterPlanOfCare extends EncounterEntry, PlanOfCareActivityEncounter {

@@ -1185,6 +1185,8 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getMedicationsAdministeredSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getVitalSignsSection"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//PlannedProcedure"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//PastProcedure"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//HITSPRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

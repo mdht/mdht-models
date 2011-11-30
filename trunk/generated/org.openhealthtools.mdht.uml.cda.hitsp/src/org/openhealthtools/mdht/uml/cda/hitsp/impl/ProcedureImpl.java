@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProcedureImpl extends ProcedureEntryImpl implements Procedure {
+public abstract class ProcedureImpl extends ProcedureEntryImpl implements Procedure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

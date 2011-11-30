@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.openhealthtools.mdht.uml.cda.hitsp.*;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -63,7 +64,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.PayersSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ProblemListSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
@@ -161,8 +161,6 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createInsuranceProvider();
 			case HITSPPackage.SURGERIES_SECTION:
 				return createSurgeriesSection();
-			case HITSPPackage.PROCEDURE:
-				return createProcedure();
 			case HITSPPackage.PLAN_OF_CARE_SECTION:
 				return createPlanOfCareSection();
 			case HITSPPackage.VITAL_SIGNS_SECTION:
@@ -245,6 +243,10 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createReferralSummary();
 			case HITSPPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
+			case HITSPPackage.PLANNED_PROCEDURE:
+				return createPlannedProcedure();
+			case HITSPPackage.PAST_PROCEDURE:
+				return createPastProcedure();
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
 				return createHITSPRegistryDelegate();
 			default:
@@ -747,16 +749,6 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Procedure createProcedure() {
-		ProcedureImpl procedure = new ProcedureImpl();
-		return procedure;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Support createSupport() {
 		SupportImpl support = new SupportImpl();
 		return support;
@@ -830,6 +822,26 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedProcedure createPlannedProcedure() {
+		PlannedProcedureImpl plannedProcedure = new PlannedProcedureImpl();
+		return plannedProcedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PastProcedure createPastProcedure() {
+		PastProcedureImpl pastProcedure = new PastProcedureImpl();
+		return pastProcedure;
 	}
 
 	/**

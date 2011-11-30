@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEncounterEntry()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.4' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' constraints.validation.error='EncounterEntryTemplateId EncounterEntryClassCode EncounterEntryId EncounterEntryText' code.codeSystemName='ActEncounterCode' constraints.validation.warning='EncounterEntryCode' classCode='ENC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ENC' code.codeSystemName='ActEncounterCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' constraints.validation.error='EncounterEntryTemplateId EncounterEntryClassCode EncounterEntryId EncounterEntryText' code.codeSystem='2.16.840.1.113883.5.4' constraints.validation.warning='EncounterEntryCode'"
  * @generated
  */
 public interface EncounterEntry extends Encounter {
@@ -63,7 +63,7 @@ public interface EncounterEntry extends Encounter {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\nvalue.codeSystem = \'2.16.840.1.113883.5.4\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.4\'))'"
 	 * @generated
 	 */
 	boolean validateEncounterEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context);

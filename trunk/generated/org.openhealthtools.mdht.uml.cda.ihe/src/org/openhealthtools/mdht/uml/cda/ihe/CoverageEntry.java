@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getCoverageEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.17' constraints.validation.error='CoverageEntryTemplateId CoverageEntryPayerEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageEntryTemplateId CoverageEntryPayerEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.17'"
  * @generated
  */
 public interface CoverageEntry extends CoverageActivity {

@@ -11,7 +11,6 @@
 package org.openhealthtools.mdht.uml.cda.ihe;
 
 import java.util.Map;
-
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
 
@@ -22,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProcedureEntryPlanOfCareActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.19' constraints.validation.error='ProcedureEntryPlanOfCareActivityProcedureTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='INT' constraints.validation.error='ProcedureEntryPlanOfCareActivityProcedureMoodCode'"
  * @generated
  */
 public interface ProcedureEntryPlanOfCareActivityProcedure extends PlanOfCareActivityProcedure, ProcedureEntry {
@@ -30,14 +29,14 @@ public interface ProcedureEntryPlanOfCareActivityProcedure extends PlanOfCareAct
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.19')
+	 * isDefined('moodCode')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.19\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryPlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
+	boolean validateProcedureEntryPlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

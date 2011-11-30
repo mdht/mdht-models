@@ -33,9 +33,13 @@ import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
+import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
@@ -44,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.*;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -134,6 +139,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
@@ -1729,6 +1736,76 @@ public class HITSPSwitch<T> {
 				}
 				return result;
 			}
+			case HITSPPackage.PLANNED_PROCEDURE: {
+				PlannedProcedure plannedProcedure = (PlannedProcedure) theEObject;
+				T result = casePlannedProcedure(plannedProcedure);
+				if (result == null) {
+					result = caseProcedure(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntryPlanOfCareActivityProcedure(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntry(plannedProcedure);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivityProcedure(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseCDA_Procedure(plannedProcedure);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseAct(plannedProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case HITSPPackage.PAST_PROCEDURE: {
+				PastProcedure pastProcedure = (PastProcedure) theEObject;
+				T result = casePastProcedure(pastProcedure);
+				if (result == null) {
+					result = caseProcedure(pastProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntryProcedureActivityProcedure(pastProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntry(pastProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivityProcedure(pastProcedure);
+				}
+				if (result == null) {
+					result = caseCDA_Procedure(pastProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(pastProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(pastProcedure);
+				}
+				if (result == null) {
+					result = caseAct(pastProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pastProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE: {
 				HITSPRegistryDelegate hitspRegistryDelegate = (HITSPRegistryDelegate) theEObject;
 				T result = caseHITSPRegistryDelegate(hitspRegistryDelegate);
@@ -2642,6 +2719,36 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseDischargeSummary(DischargeSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Planned Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Planned Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlannedProcedure(PlannedProcedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Past Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Past Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePastProcedure(PastProcedure object) {
 		return null;
 	}
 
@@ -4401,6 +4508,96 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseMedicalSummary(MedicalSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Plan Of Care Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Plan Of Care Activity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlanOfCareActivity(PlanOfCareActivity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Plan Of Care Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Plan Of Care Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlanOfCareActivityProcedure(PlanOfCareActivityProcedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Entry Plan Of Care Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Entry Plan Of Care Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureEntryPlanOfCareActivityProcedure(ProcedureEntryPlanOfCareActivityProcedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivity(ProcedureActivity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
 		return null;
 	}
 
