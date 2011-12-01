@@ -3170,7 +3170,9 @@ medication supplied.</body>
     <ownedRule xmi:id="_G1AaMBq2EeGo461UQq-B1g" name="playingEntityCode" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_IGiTgBq2EeGo461UQq-B1g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This playingEntity SHALL contain exactly one [1..1] code (CONF:7493). &#xA;&#x9;This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086)</body>
+        <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WgMgsBq2EeGo461UQq-B1g" name="playingEntityName" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">
