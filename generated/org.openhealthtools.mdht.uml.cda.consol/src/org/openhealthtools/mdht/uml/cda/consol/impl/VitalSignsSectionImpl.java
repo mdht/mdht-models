@@ -55,15 +55,7 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionVitalSignEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionVitalSignEntry(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
@@ -100,8 +92,8 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VitalSignsOrganizer> getnullVitalSignsOrganizers() {
-		return VitalSignsSectionOperations.getnullVitalSignsOrganizers(this);
+	public EList<VitalSignsOrganizer> getConsolVitalSignsOrganizers() {
+		return VitalSignsSectionOperations.getConsolVitalSignsOrganizers(this);
 	}
 
 	/**

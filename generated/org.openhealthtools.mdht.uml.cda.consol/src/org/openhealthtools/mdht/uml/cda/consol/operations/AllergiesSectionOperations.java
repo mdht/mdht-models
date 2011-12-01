@@ -39,12 +39,12 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionAllergyDrugSensitivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Drug Sensitivity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getnullAllergyDrugSensitivities() <em>Getnull Allergy Drug Sensitivities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getConsolAllergyDrugSensitivities() <em>Get Consol Allergy Drug Sensitivities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -59,28 +59,6 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	protected AllergiesSectionOperations() {
 		super();
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,24 +265,24 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullAllergyDrugSensitivities(AllergiesSection) <em>Getnull Allergy Drug Sensitivities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolAllergyDrugSensitivities(AllergiesSection) <em>Get Consol Allergy Drug Sensitivities</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullAllergyDrugSensitivities(AllergiesSection)
+	 * @see #getConsolAllergyDrugSensitivities(AllergiesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)";
+	protected static final String GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullAllergyDrugSensitivities(AllergiesSection) <em>Getnull Allergy Drug Sensitivities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolAllergyDrugSensitivities(AllergiesSection) <em>Get Consol Allergy Drug Sensitivities</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullAllergyDrugSensitivities(AllergiesSection)
+	 * @see #getConsolAllergyDrugSensitivities(AllergiesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,19 +293,19 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<AllergyProblemAct> getnullAllergyDrugSensitivities(AllergiesSection allergiesSection) {
-		if (GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null) {
+	public static EList<AllergyProblemAct> getConsolAllergyDrugSensitivities(AllergiesSection allergiesSection) {
+		if (GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGIES_SECTION,
-				ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(60));
+				ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(62));
 			try {
-				GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
+				GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AllergyProblemAct> result = (Collection<AllergyProblemAct>) query.evaluate(allergiesSection);
 		return new BasicEList.UnmodifiableEList<AllergyProblemAct>(result.size(), result.toArray());
@@ -352,6 +330,28 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->

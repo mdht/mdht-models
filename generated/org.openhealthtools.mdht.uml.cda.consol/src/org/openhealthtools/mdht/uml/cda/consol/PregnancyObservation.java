@@ -17,17 +17,9 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * A representation of the model object '<em><b>Pregnancy Observation</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * The simple observation entry is meant to be an abstract representation of many of the observations used in this
- * specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for
- * codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,
- * ASTM/HL7 Continuity of Care Document).
- * A pregnancy observation is a Simple Observation that uses a specific vocabulary to record observations about a patient's current or historical pregnancies.
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPregnancyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.15.3.8' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationId PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationRepeatNumber PregnancyObservationValue PregnancyObservationInterpretationCode PregnancyObservationMethodCode PregnancyObservationTargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Assertion' templateId.root='2.16.840.1.113883.10.20.15.3.8' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationId PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationRepeatNumber PregnancyObservationValue PregnancyObservationInterpretationCode PregnancyObservationMethodCode PregnancyObservationTargetSiteCode PregnancyObservationEffectiveTime PregnancyObservationEstimatedDateOfDelivery' code.code='ASSERTION' value.displayName='Pregnant' statusCode.code='completed' value.code='77386006' code.codeSystemName='HL7ActCode' classCode='OBS' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface PregnancyObservation extends Observation {
@@ -48,6 +40,32 @@ public interface PregnancyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * isDefined('classCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
+	 * @generated
+	 */
+	boolean validatePregnancyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * isDefined('moodCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validatePregnancyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -61,11 +79,13 @@ public interface PregnancyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
+	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\'))'"
 	 * @generated
 	 */
 	boolean validatePregnancyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -102,11 +122,13 @@ public interface PregnancyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+	 * value.code = '77386006' and value.codeSystem = '2.16.840.1.113883.6.96'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.code = \'77386006\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
 	boolean validatePregnancyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -149,6 +171,44 @@ public interface PregnancyObservation extends Observation {
 	 * @generated
 	 */
 	boolean validatePregnancyObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePregnancyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EstimatedDateOfDelivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EstimatedDateOfDelivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->first().oclAsType(consol::EstimatedDateOfDelivery)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->first().oclAsType(consol::EstimatedDateOfDelivery)'"
+	 * @generated
+	 */
+	EstimatedDateOfDelivery getEstimatedDateOfDelivery();
 
 	/**
 	 * <!-- begin-user-doc -->

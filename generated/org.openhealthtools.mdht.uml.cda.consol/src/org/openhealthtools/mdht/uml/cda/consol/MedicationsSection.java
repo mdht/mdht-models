@@ -111,11 +111,11 @@ public interface MedicationsSection extends MedicationsSectionEntriesOptional {
 	 * <!-- begin-model-doc -->
 	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)'"
 	 * @generated
 	 */
-	EList<MedicationActivity> getnullMedications();
+	EList<MedicationActivity> getConsolMedications();
 
 	/**
 	 * <!-- begin-user-doc -->

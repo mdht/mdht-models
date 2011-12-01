@@ -17,86 +17,12 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * A representation of the model object '<em><b>Vital Sign Observation</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * The simple observation entry is meant to be an abstract representation of many of the observations used in this
- * specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for
- * codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,
- * ASTM/HL7 Continuity of Care Document).
- * A vital signs observation is a simple observation that uses a specific vocabulary, and inherits
- * constraints from CCD.
- * <p>
- * These entries are used to record current and relevant historical vital signs for the patient. Vital Signs are a subset of <b><i>Results Section</i></b>, but are reported in this section to follow clinical conventions.
- * </p>
- * 
- * <p>
- * The differentiation between Vital Signs and Results varies by clinical context. Common examples of vital signs include temperature, height, weight, blood pressure, etc. However, some clinical contexts may alter these common vitals, for example in neonatology "height" may be replaced by "crown-to-rump" measurement.
- * </p>
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationNoObservationRangeCode VitalSignObservationInformationSource VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationValue' code.codeSystemName='LOINC' constraints.validation.warning='VitalSignObservationCodeValue VitalSignObservationReferenceRangeRequired VitalSignObservationEffectiveTime' classCode='OBS' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' code.codeSystemName='LOINC' classCode='OBS' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode' moodCode='EVN'"
  * @generated
  */
 public interface VitalSignObservation extends Observation {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.codeSystem = \'2.16.840.1.113883.6.1\' xor self.code.codeSystem = \'2.16.840.1.113883.6.96\' xor self.code.codeSystem = \'2.16.840.1.113883.6.12\''"
-	 * @generated
-	 */
-	boolean validateVitalSignObservationCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.referenceRange->isEmpty()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.referenceRange->isEmpty()'"
-	 * @generated
-	 */
-	boolean validateVitalSignObservationReferenceRangeRequired(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateVitalSignObservationNoObservationRangeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.informant->isEmpty() 
-	 * or not self.getSection().informant->isEmpty()
-	 * or not self.getClinicalDocument().informant->isEmpty()
-	 * or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-	 * or (self.entryRelationship->exists(rel : cda::EntryRelationship | 
-	 *    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-	 *    and rel.observation.code.code = '48766-0'))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.informant->isEmpty() \r\nor not self.getSection().informant->isEmpty()\r\nor not self.getClinicalDocument().informant->isEmpty()\r\nor self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)\r\nor (self.entryRelationship->exists(rel : cda::EntryRelationship | \r\n   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR\r\n   and rel.observation.code.code = \'48766-0\'))'"
-	 * @generated
-	 */
-	boolean validateVitalSignObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,6 +35,19 @@ public interface VitalSignObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * isDefined('classCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
+	 * @generated
+	 */
+	boolean validateVitalSignObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,11 +94,13 @@ public interface VitalSignObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
+	 * value.code = 'completed'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\nvalue.code = \'completed\'))'"
 	 * @generated
 	 */
 	boolean validateVitalSignObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

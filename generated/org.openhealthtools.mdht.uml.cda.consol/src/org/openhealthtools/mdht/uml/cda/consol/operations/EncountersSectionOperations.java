@@ -43,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#validateEncountersSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#validateEncountersSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#validateEncountersSectionEncountersActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Encounters Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#getnullEncountersActivities() <em>Getnull Encounters Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#getConsolEncountersActivities() <em>Get Consol Encounters Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSection#validateEncountersSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -287,24 +287,24 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullEncountersActivities(EncountersSection) <em>Getnull Encounters Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolEncountersActivities(EncountersSection) <em>Get Consol Encounters Activities</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullEncountersActivities(EncountersSection)
+	 * @see #getConsolEncountersActivities(EncountersSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncountersActivites)).oclAsType(consol::EncountersActivites)";
+	protected static final String GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncountersActivites)).oclAsType(consol::EncountersActivites)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullEncountersActivities(EncountersSection) <em>Getnull Encounters Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolEncountersActivities(EncountersSection) <em>Get Consol Encounters Activities</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullEncountersActivities(EncountersSection)
+	 * @see #getConsolEncountersActivities(EncountersSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,19 +315,19 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<EncountersActivites> getnullEncountersActivities(EncountersSection encountersSection) {
-		if (GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_QRY == null) {
+	public static EList<EncountersActivites> getConsolEncountersActivities(EncountersSection encountersSection) {
+		if (GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ENCOUNTERS_SECTION,
 				ConsolPackage.Literals.ENCOUNTERS_SECTION.getEAllOperations().get(60));
 			try {
-				GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_QRY = helper.createQuery(GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_EXP);
+				GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_ENCOUNTERS_ACTIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_ENCOUNTERS_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EncountersActivites> result = (Collection<EncountersActivites>) query.evaluate(encountersSection);
 		return new BasicEList.UnmodifiableEList<EncountersActivites>(result.size(), result.toArray());

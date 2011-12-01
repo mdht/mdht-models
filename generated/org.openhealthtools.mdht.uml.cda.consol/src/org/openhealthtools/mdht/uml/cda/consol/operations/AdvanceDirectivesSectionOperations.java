@@ -43,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#validateAdvanceDirectivesSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#validateAdvanceDirectivesSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#validateAdvanceDirectivesSectionAdvanceDirectiveObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Advance Directive Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#getnullAdvanceDirectiveObservations() <em>Getnull Advance Directive Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#getConsolAdvanceDirectiveObservations() <em>Get Consol Advance Directive Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection#validateAdvanceDirectivesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -292,24 +292,24 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullAdvanceDirectiveObservations(AdvanceDirectivesSection) <em>Getnull Advance Directive Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolAdvanceDirectiveObservations(AdvanceDirectivesSection) <em>Get Consol Advance Directive Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullAdvanceDirectiveObservations(AdvanceDirectivesSection)
+	 * @see #getConsolAdvanceDirectiveObservations(AdvanceDirectivesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)";
+	protected static final String GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullAdvanceDirectiveObservations(AdvanceDirectivesSection) <em>Getnull Advance Directive Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolAdvanceDirectiveObservations(AdvanceDirectivesSection) <em>Get Consol Advance Directive Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullAdvanceDirectiveObservations(AdvanceDirectivesSection)
+	 * @see #getConsolAdvanceDirectiveObservations(AdvanceDirectivesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,20 +320,20 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<AdvanceDirectiveObservation> getnullAdvanceDirectiveObservations(
+	public static EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations(
 			AdvanceDirectivesSection advanceDirectivesSection) {
-		if (GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION,
 				ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(60));
 			try {
-				GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
+				GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AdvanceDirectiveObservation> result = (Collection<AdvanceDirectiveObservation>) query.evaluate(advanceDirectivesSection);
 		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation>(result.size(), result.toArray());

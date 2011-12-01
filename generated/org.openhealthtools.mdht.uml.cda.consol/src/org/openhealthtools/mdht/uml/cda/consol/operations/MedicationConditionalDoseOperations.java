@@ -80,7 +80,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Product Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getMedicationSeriesNumberObservation() <em>Get Medication Series Number Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getMedicationStatusObservation() <em>Get Medication Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getnullReactionObservations() <em>Getnull Reaction Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getConsolReactionObservations() <em>Get Consol Reaction Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getProductInstances() <em>Get Product Instances</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getInternalReferences() <em>Get Internal References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getPatientMedicalInstructionss() <em>Get Patient Medical Instructionss</em>}</li>
@@ -2068,24 +2068,24 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullReactionObservations(MedicationConditionalDose) <em>Getnull Reaction Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolReactionObservations(MedicationConditionalDose) <em>Get Consol Reaction Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullReactionObservations(MedicationConditionalDose)
+	 * @see #getConsolReactionObservations(MedicationConditionalDose)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)";
+	protected static final String GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullReactionObservations(MedicationConditionalDose) <em>Getnull Reaction Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolReactionObservations(MedicationConditionalDose) <em>Get Consol Reaction Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullReactionObservations(MedicationConditionalDose)
+	 * @see #getConsolReactionObservations(MedicationConditionalDose)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_REACTION_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2096,20 +2096,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ReactionObservation> getnullReactionObservations(
+	public static EList<ReactionObservation> getConsolReactionObservations(
 			MedicationConditionalDose medicationConditionalDose) {
-		if (GETNULL_REACTION_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(141));
 			try {
-				GETNULL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GETNULL_REACTION_OBSERVATIONS__EOCL_EXP);
+				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_REACTION_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ReactionObservation> result = (Collection<ReactionObservation>) query.evaluate(medicationConditionalDose);
 		return new BasicEList.UnmodifiableEList<ReactionObservation>(result.size(), result.toArray());

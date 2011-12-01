@@ -17,16 +17,9 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * A representation of the model object '<em><b>Social History Observation</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * The simple observation entry is meant to be an abstract representation of many of the observations used in this
- * specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for
- * codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,
- * ASTM/HL7 Continuity of Care Document).
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.1.33' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationId SocialHistoryObservationText SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SocialHistoryObservationCodeValueSet SocialHistoryObservationNoRepeatNumber SocialHistoryObservationNoInterpretationCode SocialHistoryObservationNoMethodCode SocialHistoryObservationNoTargetSiteCode SocialHistoryObservationCode SocialHistoryObservationEffectiveTime' constraints.validation.info='SocialHistoryObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.38' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='SocialHistoryObservationCode SocialHistoryObservationValue' moodCode='EVN'"
  * @generated
  */
 public interface SocialHistoryObservation extends Observation {
@@ -34,80 +27,40 @@ public interface SocialHistoryObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.38')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.codeSystem = \'2.16.840.1.113883.6.1\' or self.code.codeSystem = \'2.16.840.1.113883.6.96\' or self.code.codeSystem = \'2.16.840.1.113883.1.11.20.18\''"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.repeatNumber->size() = 0
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.repeatNumber->size() = 0'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationNoRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.interpretationCode->size() = 0
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.interpretationCode->size() = 0'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.methodCode->size() = 0
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.methodCode->size() = 0'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationNoMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.targetSiteCode->size() = 0
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSiteCode->size() = 0'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationNoTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.33')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.1.33\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.38\')'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * isDefined('classCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
+	 * @generated
+	 */
+	boolean validateSocialHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * isDefined('moodCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validateSocialHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,19 +94,6 @@ public interface SocialHistoryObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationText(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
 	 * value.code = 'completed'))
@@ -164,19 +104,6 @@ public interface SocialHistoryObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateSocialHistoryObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

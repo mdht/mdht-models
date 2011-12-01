@@ -55,9 +55,9 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionEntriesOptionalVitalSignEntry(DiagnosticChain diagnostics,
+	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalVitalSignEntry(
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 
@@ -66,9 +66,29 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}
 

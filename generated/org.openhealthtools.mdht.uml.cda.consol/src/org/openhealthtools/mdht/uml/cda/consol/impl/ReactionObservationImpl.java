@@ -13,6 +13,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 
@@ -56,80 +58,17 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationHasReactionIntervention(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationHasReactionIntervention(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationReactionInterventionTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationReactionInterventionType(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationReactionInterventionType(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationInformationSource(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationContainsPatientAwareness(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationContainsPatientAwareness(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationHasTextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReactionObservationCommentInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationCommentInversionInd(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateReactionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -200,8 +139,9 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReactionObservationSeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationSeverity(this, diagnostics, context);
+	public boolean validateReactionObservationSeverityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationSeverityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -209,8 +149,47 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SeverityObservation getSeverity() {
-		return ReactionObservationOperations.getSeverity(this);
+	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationMedicationActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeverityObservation getSeverityObservation() {
+		return ReactionObservationOperations.getSeverityObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureActivityProcedure getProcedureActivityProcedure() {
+		return ReactionObservationOperations.getProcedureActivityProcedure(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationActivity getMedicationActivity() {
+		return ReactionObservationOperations.getMedicationActivity(this);
 	}
 
 	/**

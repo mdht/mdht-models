@@ -91,8 +91,8 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemConcernAct> getnullConditions() {
-		return ProblemSectionOperations.getnullConditions(this);
+	public EList<ProblemConcernAct> getConsolConditions() {
+		return ProblemSectionOperations.getConsolConditions(this);
 	}
 
 	/**

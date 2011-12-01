@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ParticipantRoleOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehiclePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Code</em>}</li>
@@ -49,6 +50,61 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	protected DrugVehicleOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDrugVehiclePlayingEntityCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDrugVehiclePlayingEntityCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.playingEntity.oclIsUndefined() implies self.playingEntity";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDrugVehiclePlayingEntityCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDrugVehiclePlayingEntityCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity
+	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateDrugVehiclePlayingEntityCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
+			try {
+				VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			drugVehicle)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityCode"), new Object[] { drugVehicle }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -167,7 +223,9 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDrugVehicleCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Code</em>}' invariant operation.
@@ -183,7 +241,9 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
+	 * value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96'))
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

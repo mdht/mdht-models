@@ -88,11 +88,11 @@ public interface ProblemSection extends ProblemSectionEntriesOptional {
 	 * <!-- begin-model-doc -->
 	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)'"
 	 * @generated
 	 */
-	EList<ProblemConcernAct> getnullConditions();
+	EList<ProblemConcernAct> getConsolConditions();
 
 	/**
 	 * <!-- begin-user-doc -->

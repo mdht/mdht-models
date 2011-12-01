@@ -64,6 +64,69 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIndicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Indication init() {
 		CDAUtil.init(this);
 		return this;

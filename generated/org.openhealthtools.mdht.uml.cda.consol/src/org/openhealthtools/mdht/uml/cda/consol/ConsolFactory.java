@@ -170,6 +170,15 @@ public interface ConsolFactory extends EFactory {
 	MedicationDispense createMedicationDispense();
 
 	/**
+	 * Returns a new object of class '<em>Medication Supply Order</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Supply Order</em>'.
+	 * @generated
+	 */
+	MedicationSupplyOrder createMedicationSupplyOrder();
+
+	/**
 	 * Returns a new object of class '<em>Drug Vehicle</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -539,6 +548,15 @@ public interface ConsolFactory extends EFactory {
 	PregnancyObservation createPregnancyObservation();
 
 	/**
+	 * Returns a new object of class '<em>Estimated Date Of Delivery</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Estimated Date Of Delivery</em>'.
+	 * @generated
+	 */
+	EstimatedDateOfDelivery createEstimatedDateOfDelivery();
+
+	/**
 	 * Returns a new object of class '<em>Results Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -780,6 +798,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PolicySubscriber createPolicySubscriber();
+
+	/**
+	 * Returns a new object of class '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure</em>'.
+	 * @generated
+	 */
+	Procedure createProcedure();
 
 	/**
 	 * Returns a new object of class '<em>Pregnancy History Section</em>'.

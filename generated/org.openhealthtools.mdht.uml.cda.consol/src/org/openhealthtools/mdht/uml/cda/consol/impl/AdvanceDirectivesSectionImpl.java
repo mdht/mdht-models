@@ -96,8 +96,8 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveObservation> getnullAdvanceDirectiveObservations() {
-		return AdvanceDirectivesSectionOperations.getnullAdvanceDirectiveObservations(this);
+	public EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations() {
+		return AdvanceDirectivesSectionOperations.getConsolAdvanceDirectiveObservations(this);
 	}
 
 	/**

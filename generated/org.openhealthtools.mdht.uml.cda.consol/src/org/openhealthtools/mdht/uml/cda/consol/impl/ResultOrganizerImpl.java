@@ -66,35 +66,8 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultOrganizerComponentElement(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerComponentElement(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultOrganizerInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerInformationSource(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**

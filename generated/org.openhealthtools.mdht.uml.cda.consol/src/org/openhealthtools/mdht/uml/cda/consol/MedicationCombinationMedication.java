@@ -538,11 +538,11 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation)).oclAsType(consol::ReactionObservation)'"
 	 * @generated
 	 */
-	EList<ReactionObservation> getnullReactionObservations();
+	EList<ReactionObservation> getConsolReactionObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

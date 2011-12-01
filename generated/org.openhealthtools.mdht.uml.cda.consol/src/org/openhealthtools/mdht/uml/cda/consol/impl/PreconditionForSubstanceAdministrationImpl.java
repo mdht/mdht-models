@@ -56,6 +56,39 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreconditionForSubstanceAdministrationCriterionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreconditionForSubstanceAdministrationCriterionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreconditionForSubstanceAdministrationCriterionValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(

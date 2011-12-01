@@ -25,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Precondition;
-import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -120,13 +119,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAllergyStatusObservation(AllergyStatusObservation object) {
-			return createAllergyStatusObservationAdapter();
+		public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
+			return createProcedureActivityProcedureAdapter();
 		}
 
 		@Override
-		public Adapter caseEpisodeObservation(EpisodeObservation object) {
-			return createEpisodeObservationAdapter();
+		public Adapter caseProblemObservation(ProblemObservation object) {
+			return createProblemObservationAdapter();
 		}
 
 		@Override
@@ -140,8 +139,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseComment(Comment object) {
-			return createCommentAdapter();
+		public Adapter caseProblemStatus(ProblemStatus object) {
+			return createProblemStatusAdapter();
 		}
 
 		@Override
@@ -175,8 +174,28 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMedicationSupplyOrder(MedicationSupplyOrder object) {
+			return createMedicationSupplyOrderAdapter();
+		}
+
+		@Override
 		public Adapter caseDrugVehicle(DrugVehicle object) {
 			return createDrugVehicleAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyStatusObservation(AllergyStatusObservation object) {
+			return createAllergyStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseEpisodeObservation(EpisodeObservation object) {
+			return createEpisodeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseComment(Comment object) {
+			return createCommentAdapter();
 		}
 
 		@Override
@@ -207,16 +226,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProblemConcernAct(ProblemConcernAct object) {
 			return createProblemConcernActAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemObservation(ProblemObservation object) {
-			return createProblemObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemStatus(ProblemStatus object) {
-			return createProblemStatusAdapter();
 		}
 
 		@Override
@@ -325,18 +334,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
-			return createProcedureActivityProcedureAdapter();
+		public Adapter caseProcedureActivityAct(ProcedureActivityAct object) {
+			return createProcedureActivityActAdapter();
 		}
 
 		@Override
 		public Adapter caseProcedureAcivityObservation(ProcedureAcivityObservation object) {
 			return createProcedureAcivityObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProcedureActivityAct(ProcedureActivityAct object) {
-			return createProcedureActivityActAdapter();
 		}
 
 		@Override
@@ -377,6 +381,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePregnancyObservation(PregnancyObservation object) {
 			return createPregnancyObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseEstimatedDateOfDelivery(EstimatedDateOfDelivery object) {
+			return createEstimatedDateOfDeliveryAdapter();
 		}
 
 		@Override
@@ -512,6 +521,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePolicySubscriber(PolicySubscriber object) {
 			return createPolicySubscriberAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedure(Procedure object) {
+			return createProcedureAdapter();
 		}
 
 		@Override
@@ -871,6 +885,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
+			return createCDA_ProcedureAdapter();
+		}
+
+		@Override
 		public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
 			return createSubstanceAdministrationAdapter();
 		}
@@ -898,11 +917,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
 			return createCDA_EncounterAdapter();
-		}
-
-		@Override
-		public Adapter caseProcedure(Procedure object) {
-			return createProcedureAdapter();
 		}
 
 		@Override
@@ -1200,6 +1214,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMedicationDispenseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder <em>Medication Supply Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder
+	 * @generated
+	 */
+	public Adapter createMedicationSupplyOrderAdapter() {
 		return null;
 	}
 
@@ -1778,6 +1806,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery <em>Estimated Date Of Delivery</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery
+	 * @generated
+	 */
+	public Adapter createEstimatedDateOfDeliveryAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection <em>Results Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2156,13 +2198,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Procedure <em>Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Procedure
 	 * @generated
 	 */
 	public Adapter createProcedureAdapter() {
@@ -3244,6 +3286,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCDA_EncounterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @generated
+	 */
+	public Adapter createCDA_ProcedureAdapter() {
 		return null;
 	}
 

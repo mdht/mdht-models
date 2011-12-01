@@ -103,8 +103,8 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationActivity> getnullMedications() {
-		return MedicationsSectionOperations.getnullMedications(this);
+	public EList<MedicationActivity> getConsolMedications() {
+		return MedicationsSectionOperations.getConsolMedications(this);
 	}
 
 	/**

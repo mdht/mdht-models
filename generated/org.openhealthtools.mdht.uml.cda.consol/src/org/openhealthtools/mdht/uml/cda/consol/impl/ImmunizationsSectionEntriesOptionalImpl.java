@@ -55,9 +55,9 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionEntriesOptionalHasMedicationOrSupplyActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalHasMedicationOrSupplyActivity(
+	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 
@@ -66,9 +66,31 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}
 

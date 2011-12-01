@@ -69,16 +69,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReactionObservation();
 			case ConsolPackage.SEVERITY_OBSERVATION:
 				return createSeverityObservation();
-			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
-				return createAllergyStatusObservation();
-			case ConsolPackage.EPISODE_OBSERVATION:
-				return createEpisodeObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
+				return createProcedureActivityProcedure();
+			case ConsolPackage.PROBLEM_OBSERVATION:
+				return createProblemObservation();
 			case ConsolPackage.AGE_OBSERVATION:
 				return createAgeObservation();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
 				return createHealthStatusObservation();
-			case ConsolPackage.COMMENT:
-				return createComment();
+			case ConsolPackage.PROBLEM_STATUS:
+				return createProblemStatus();
 			case ConsolPackage.MEDICATION_ACTIVITY:
 				return createMedicationActivity();
 			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY:
@@ -91,8 +91,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createIndication();
 			case ConsolPackage.MEDICATION_DISPENSE:
 				return createMedicationDispense();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
+				return createMedicationSupplyOrder();
 			case ConsolPackage.DRUG_VEHICLE:
 				return createDrugVehicle();
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
+				return createAllergyStatusObservation();
+			case ConsolPackage.EPISODE_OBSERVATION:
+				return createEpisodeObservation();
+			case ConsolPackage.COMMENT:
+				return createComment();
 			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
 				return createMedicationSeriesNumberObservation();
 			case ConsolPackage.MEDICATION_STATUS_OBSERVATION:
@@ -105,10 +113,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationFullfillmentInstructions();
 			case ConsolPackage.PROBLEM_CONCERN_ACT:
 				return createProblemConcernAct();
-			case ConsolPackage.PROBLEM_OBSERVATION:
-				return createProblemObservation();
-			case ConsolPackage.PROBLEM_STATUS:
-				return createProblemStatus();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT:
 				return createContinuityOfCareDocument();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
@@ -151,12 +155,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProceduresSection();
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
 				return createProceduresSectionEntriesOptional();
-			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
-				return createProcedureActivityProcedure();
-			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION:
-				return createProcedureAcivityObservation();
 			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
 				return createProcedureActivityAct();
+			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION:
+				return createProcedureAcivityObservation();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
 				return createVitalSignsSectionEntriesOptional();
 			case ConsolPackage.FAMILY_HISTORY_SECTION:
@@ -173,6 +175,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSocialHistoryObservation();
 			case ConsolPackage.PREGNANCY_OBSERVATION:
 				return createPregnancyObservation();
+			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY:
+				return createEstimatedDateOfDelivery();
 			case ConsolPackage.RESULTS_SECTION:
 				return createResultsSection();
 			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL:
@@ -227,6 +231,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoveredParty();
 			case ConsolPackage.POLICY_SUBSCRIBER:
 				return createPolicySubscriber();
+			case ConsolPackage.PROCEDURE:
+				return createProcedure();
 			case ConsolPackage.PREGNANCY_HISTORY_SECTION:
 				return createPregnancyHistorySection();
 			case ConsolPackage.EXTERNAL_REFERENCE:
@@ -520,6 +526,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public MedicationDispense createMedicationDispense() {
 		MedicationDispenseImpl medicationDispense = new MedicationDispenseImpl();
 		return medicationDispense;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationSupplyOrder createMedicationSupplyOrder() {
+		MedicationSupplyOrderImpl medicationSupplyOrder = new MedicationSupplyOrderImpl();
+		return medicationSupplyOrder;
 	}
 
 	/**
@@ -937,6 +953,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EstimatedDateOfDelivery createEstimatedDateOfDelivery() {
+		EstimatedDateOfDeliveryImpl estimatedDateOfDelivery = new EstimatedDateOfDeliveryImpl();
+		return estimatedDateOfDelivery;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ResultsSection createResultsSection() {
 		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
 		return resultsSection;
@@ -1200,6 +1226,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicySubscriber createPolicySubscriber() {
 		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
 		return policySubscriber;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Procedure createProcedure() {
+		ProcedureImpl procedure = new ProcedureImpl();
+		return procedure;
 	}
 
 	/**

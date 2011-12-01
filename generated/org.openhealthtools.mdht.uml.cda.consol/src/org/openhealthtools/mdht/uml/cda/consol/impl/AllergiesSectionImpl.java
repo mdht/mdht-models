@@ -55,6 +55,7 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
@@ -92,8 +93,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AllergyProblemAct> getnullAllergyDrugSensitivities() {
-		return AllergiesSectionOperations.getnullAllergyDrugSensitivities(this);
+	public EList<AllergyProblemAct> getConsolAllergyDrugSensitivities() {
+		return AllergiesSectionOperations.getConsolAllergyDrugSensitivities(this);
 	}
 
 	/**

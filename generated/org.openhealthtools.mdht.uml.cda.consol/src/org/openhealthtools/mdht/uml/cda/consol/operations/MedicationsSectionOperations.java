@@ -44,7 +44,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Medication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#getnullMedications() <em>Getnull Medications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#getConsolMedications() <em>Get Consol Medications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -347,24 +347,24 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullMedications(MedicationsSection) <em>Getnull Medications</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolMedications(MedicationsSection) <em>Get Consol Medications</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedications(MedicationsSection)
+	 * @see #getConsolMedications(MedicationsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_MEDICATIONS__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
+	protected static final String GET_CONSOL_MEDICATIONS__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullMedications(MedicationsSection) <em>Getnull Medications</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolMedications(MedicationsSection) <em>Get Consol Medications</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullMedications(MedicationsSection)
+	 * @see #getConsolMedications(MedicationsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_MEDICATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_MEDICATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,19 +375,19 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<MedicationActivity> getnullMedications(MedicationsSection medicationsSection) {
-		if (GETNULL_MEDICATIONS__EOCL_QRY == null) {
+	public static EList<MedicationActivity> getConsolMedications(MedicationsSection medicationsSection) {
+		if (GET_CONSOL_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATIONS_SECTION,
 				ConsolPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(62));
 			try {
-				GETNULL_MEDICATIONS__EOCL_QRY = helper.createQuery(GETNULL_MEDICATIONS__EOCL_EXP);
+				GET_CONSOL_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_MEDICATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_MEDICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MedicationActivity> result = (Collection<MedicationActivity>) query.evaluate(medicationsSection);
 		return new BasicEList.UnmodifiableEList<MedicationActivity>(result.size(), result.toArray());

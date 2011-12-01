@@ -91,8 +91,8 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EncountersActivites> getnullEncountersActivities() {
-		return EncountersSectionOperations.getnullEncountersActivities(this);
+	public EList<EncountersActivites> getConsolEncountersActivities() {
+		return EncountersSectionOperations.getConsolEncountersActivities(this);
 	}
 
 	/**

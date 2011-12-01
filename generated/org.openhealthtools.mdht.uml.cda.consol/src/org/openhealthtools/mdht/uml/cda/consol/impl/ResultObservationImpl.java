@@ -64,76 +64,8 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultObservationReferenceRangeRequired(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationReferenceRangeRequired(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationNoObservationRangeCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationInformationSource(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationResultTypeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationResultTypeCodeSystem(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationLaboratoryResultsValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationLaboratoryResultsValueSet(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationResultValuePresence(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationResultValuePresence(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -152,15 +84,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 */
 	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -197,6 +120,24 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 */
 	public boolean validateResultObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationMethodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validateResultObservationTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validateResultObservationAuthor(this, diagnostics, context);
 	}
 
 	/**

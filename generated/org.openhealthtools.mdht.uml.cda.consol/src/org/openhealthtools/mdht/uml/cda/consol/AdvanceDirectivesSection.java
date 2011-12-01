@@ -92,11 +92,11 @@ public interface AdvanceDirectivesSection extends AdvanceDirectivesSectionEntrie
 	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)'"
 	 * @generated
 	 */
-	EList<AdvanceDirectiveObservation> getnullAdvanceDirectiveObservations();
+	EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
