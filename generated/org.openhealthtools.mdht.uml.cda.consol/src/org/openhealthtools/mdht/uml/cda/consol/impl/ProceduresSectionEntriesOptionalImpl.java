@@ -10,9 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntriesOptionalOperations;
@@ -55,9 +59,9 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptionalHasProcedureActivity(DiagnosticChain diagnostics,
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalHasProcedureActivity(
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 
@@ -66,10 +70,79 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSectionEntriesOptionalProcedureAcivityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureAcivityObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
+		return ProceduresSectionEntriesOptionalOperations.getProcedureActivityProcedures(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureAcivityObservation> getProcedureAcivityObservations() {
+		return ProceduresSectionEntriesOptionalOperations.getProcedureAcivityObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureActivityAct> getProcedureActivityActs() {
+		return ProceduresSectionEntriesOptionalOperations.getProcedureActivityActs(this);
 	}
 
 	/**
