@@ -2,19 +2,8 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
     <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments&#xD;
-    pertinent to the patient historically at the time the document is generated. The section may contain all procedures for&#xD;
-    the period of time being summarized, but should include notable procedures.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2OfUaxSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
-      <body>The list of surgeries section shall contain a narrative description of the diagnostic and therapeutic operative procedures&#xD;
-and associated anesthetic techniques the patient received in the past.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2OfUbBSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
-      <body>The list of surgeries section shall include entries for procedures and references to procedure reports when known as&#xD;
-described in the Entry Content Modules.</body>
+      <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</body>
     </ownedComment>
     <ownedRule xmi:id="_2OfUZxSVEeGGzu7fmW9pXw" name="hasProcedureActivity">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OfUaBSVEeGGzu7fmW9pXw">
@@ -25,44 +14,15 @@ described in the Entry Content Modules.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-    <ownedAttribute xmi:id="_2OAzSxSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2OAzTRSVEeGGzu7fmW9pXw" name="title" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OAzTxSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OAzUBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OAzURSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2OG57hSVEeGGzu7fmW9pXw" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OfUYBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CSXy8Bg5EeGs5a462vYX5Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CSXy8Rg5EeGs5a462vYX5Q" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2OAzQxSVEeGGzu7fmW9pXw" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_2OAzSBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DsrNwBg5EeGs5a462vYX5Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DsrNwRg5EeGs5a462vYX5Q" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_5iZLEBg4EeGs5a462vYX5Q" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_5iZLEhg4EeGs5a462vYX5Q">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ENdmoBg5EeGs5a462vYX5Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ENdmoRg5EeGs5a462vYX5Q" value="1"/>
-    </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2OfUYBSVEeGGzu7fmW9pXw" memberEnd="_2OG57hSVEeGGzu7fmW9pXw _2OfUYRSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2OfUYRSVEeGGzu7fmW9pXw" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_2OfUYBSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_2OAzSBSVEeGGzu7fmW9pXw" memberEnd="_2OAzQxSVEeGGzu7fmW9pXw _2OAzSRSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2OAzSRSVEeGGzu7fmW9pXw" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_2OAzSBSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_5iZLEhg4EeGs5a462vYX5Q" memberEnd="_5iZLEBg4EeGs5a462vYX5Q _5iZLExg4EeGs5a462vYX5Q">
-    <ownedEnd xmi:id="_5iZLExg4EeGs5a462vYX5Q" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_5iZLEhg4EeGs5a462vYX5Q"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_2OAzRhSVEeGGzu7fmW9pXw" base_Class="_2OAzQRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.7.1"/>
-  <CDA:ConstraintValidation xmi:id="_2OfUaRSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2OfUZxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-419</ruleId>
+  <CDA:ConstraintValidation xmi:id="_2OfUaRSVEeGGzu7fmW9pXw" base_Constraint="_2OfUZxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8021</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2OAzTBSVEeGGzu7fmW9pXw" code="47519-4" displayName="History of procedures" base_Property="_2OAzSxSVEeGGzu7fmW9pXw">
+  <CDA:CodeSystemConstraint xmi:id="_2OAzTBSVEeGGzu7fmW9pXw" code="47519-4" displayName="History of procedures">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-423</ruleId>
     <ruleId>CONF-424</ruleId>
@@ -70,62 +30,41 @@ described in the Entry Content Modules.</body>
   <CDA:PropertyValidation xmi:id="_2OAzThSVEeGGzu7fmW9pXw" base_Property="_2OAzTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-425</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OAzUhSVEeGGzu7fmW9pXw" base_Property="_2OAzTxSVEeGGzu7fmW9pXw">
+  <CDA:PropertyValidation xmi:id="_2OAzUhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-422</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2OfUYhSVEeGGzu7fmW9pXw" base_Association="_2OfUYBSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2OAzShSVEeGGzu7fmW9pXw" base_Association="_2OAzSBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[CT-108-2]</ruleId>
-  </CDA:AssociationValidation>
   <uml:Class xmi:id="_s9Ig4BVdEeGQCvUGzi1kDQ" name="ProceduresSectionEntriesOptional">
     <ownedComment xmi:id="_s9Ig4RVdEeGQCvUGzi1kDQ" annotatedElement="_s9Ig4BVdEeGQCvUGzi1kDQ">
-      <body>&lt;p>&#xD;
-    This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments&#xD;
-    pertinent to the patient historically at the time the document is generated. The section may contain all procedures for&#xD;
-    the period of time being summarized, but should include notable procedures.&#xD;
-&lt;/p></body>
+      <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</body>
     </ownedComment>
-    <ownedComment xmi:id="_s9Ig4hVdEeGQCvUGzi1kDQ" annotatedElement="_s9Ig4BVdEeGQCvUGzi1kDQ">
-      <body>The list of surgeries section shall contain a narrative description of the diagnostic and therapeutic operative procedures&#xD;
-and associated anesthetic techniques the patient received in the past.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_s9Ig4xVdEeGQCvUGzi1kDQ" annotatedElement="_s9Ig4BVdEeGQCvUGzi1kDQ">
-      <body>The list of surgeries section shall include entries for procedures and references to procedure reports when known as&#xD;
-described in the Entry Content Modules.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_s9Ig5BVdEeGQCvUGzi1kDQ" name="titleValue">
-      <ownedComment xmi:id="_s9Ig5RVdEeGQCvUGzi1kDQ">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_s9Ig5hVdEeGQCvUGzi1kDQ">
-        <language>Analysis</language>
-        <body>title is valued with a case-insensitive language-insensitive text string containing &quot;procedures&quot;.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_s9Ig5xVdEeGQCvUGzi1kDQ" name="hasProcedureActivity">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_s9Ig6BVdEeGQCvUGzi1kDQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure</body>
-        <body>not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_s9Ig6RVdEeGQCvUGzi1kDQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_s9Ig6hVdEeGQCvUGzi1kDQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_s9Ig6xVdEeGQCvUGzi1kDQ" name="title" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_s9Ig7BVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9Ig7RVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9Ig7hVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_HKgr8Bq9EeGYcL3NfEQErA" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_HKhTABq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KFVeUBq9EeGYcL3NfEQErA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KFVeURq9EeGYcL3NfEQErA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MCAmYBq9EeGYcL3NfEQErA" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_MCBNcBq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qolhkBrSEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qolhkRrSEeGxIZCGAXKxsQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VDYgQBq9EeGYcL3NfEQErA" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_VDZHUBq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMKIsBrSEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMKIsRrSEeGxIZCGAXKxsQ"/>
+    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7"/>
+  <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
+    <ruleId>CONF:6271</ruleId>
+  </CDA:CDATemplate>
   <uml:Class xmi:id="_2NufahSVEeGGzu7fmW9pXw" name="Procedure">
     <ownedComment xmi:id="_2NufaxSVEeGGzu7fmW9pXw" annotatedElement="_2NufahSVEeGGzu7fmW9pXw">
       <body>Defines a coded entry describing a procedure performed on a patient.</body>
@@ -300,84 +239,28 @@ organization performed or hosted the Procedure</body>
   <Ecore:EReference xmi:id="_hPwGmRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGlhg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_hPwGnRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGmhg4EeGs5a462vYX5Q"/>
   <uml:Class xmi:id="_2OG58RSVEeGGzu7fmW9pXw" name="ProcedureActivityProcedure">
-    <ownedRule xmi:id="_2OZN1hSVEeGGzu7fmW9pXw" name="hasAuthorizationConsent">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OZN1xSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_qGzKgBrPEeGxIZCGAXKxsQ" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8J3uYBrPEeGxIZCGAXKxsQ">
         <language>Analysis</language>
-        <body>A procedure activity MAY have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent.</body>
+        <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2OZN2RSVEeGGzu7fmW9pXw" name="hasSourcesOfInformation">
-      <ownedComment xmi:id="_2OZN2hSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OZN2xSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_N4ba0BrQEeGxIZCGAXKxsQ" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VYc2sBrQEeGxIZCGAXKxsQ">
         <language>Analysis</language>
-        <body>A procedure activity SHALL contain one or more sources of information, as defined in section 5.2 Source.</body>
+        <body>code SHOULD contain zero or one [0..1] originalText</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2OZN3RSVEeGGzu7fmW9pXw" name="mayHaveMethodCode">
-      <ownedComment xmi:id="_2OZN3hSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OZN3xSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_WEQMwBrQEeGxIZCGAXKxsQ" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pp6KEBrREeGxIZCGAXKxsQ">
         <language>Analysis</language>
-        <body>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode SHALL NOT conflict with the method inherent in Procedure / code.</body>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2OZN4RSVEeGGzu7fmW9pXw" name="mayHaveSiteCode">
-      <ownedComment xmi:id="_2OZN4hSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OZN4xSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_SSUWwBrREeGxIZCGAXKxsQ" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VD9X8BrREeGxIZCGAXKxsQ">
         <language>Analysis</language>
-        <body>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode SHALL NOT conflict with the site inherent in Procedure / code</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OZN5RSVEeGGzu7fmW9pXw" name="hasSameSpecimen">
-      <ownedComment xmi:id="_2OZN5hSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OZN5xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>specimen / specimenRole / id SHOULD be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OG58hSVEeGGzu7fmW9pXw" name="moodCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OG58xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.</body>
-        <body>self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OG59BSVEeGGzu7fmW9pXw" name="hasTextReference" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OG59RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The &amp;lt;text> element shall contain a reference to the narrative text describing the procedure.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OG59hSVEeGGzu7fmW9pXw" name="templateSelection">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OG59xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>When the procedure is in event mood (moodCode='EVN'), this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.29, and when in intent mood, this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.25</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OG5-BSVEeGGzu7fmW9pXw" name="priorityCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OG5-RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>&amp;lt;priorityCode> SHALL be present in INT mood when effectiveTime is not provided, it MAY be present in other moods</body>
-        <body>self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OG5-hSVEeGGzu7fmW9pXw" name="hasInversionIndForEncounter">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OG5-xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)</body>
-        <body>self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;> true)->isEmpty()</body>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2OZN6RSVEeGGzu7fmW9pXw">
@@ -389,9 +272,8 @@ organization performed or hosted the Procedure</body>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OG5_xSVEeGGzu7fmW9pXw" value="PROC"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHIxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../consol-vocab.uml#_S8q4IBrNEeGxIZCGAXKxsQ"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OTHJBSVEeGGzu7fmW9pXw" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHJhSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
@@ -419,18 +301,10 @@ organization performed or hosted the Procedure</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHLRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHLhSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OG6DBSVEeGGzu7fmW9pXw" name="approachSiteCode" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2OG6DRSVEeGGzu7fmW9pXw">
-        <body>This element may be present to indicate the procedure approach.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6DhSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6DxSVEeGGzu7fmW9pXw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHMBSVEeGGzu7fmW9pXw" name="specimen" association="_2OTHMxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHMRSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHMhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMTcBrZEeGrncRpaMCqdA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMTcRrZEeGrncRpaMCqdA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="encounterLocation" association="_2OTHORSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
@@ -456,25 +330,42 @@ organization performed or hosted the Procedure</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OZNyhSVEeGGzu7fmW9pXw" name="medicationActivity" association="_2OZNzRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OZNyxSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OZNzBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gf_x4BrbEeGrncRpaMCqdA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gf_x4RrbEeGrncRpaMCqdA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OZN0BSVEeGGzu7fmW9pXw" name="patientInstruction" association="_2OZN0xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OZN0RSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OZN0hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OG6AxSVEeGGzu7fmW9pXw" name="internalReference" association="_2ONAjBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6BBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_2OG6BRSVEeGGzu7fmW9pXw" name="indication" association="_2OTHIBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t4MiEBrbEeGrncRpaMCqdA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t4MiERrbEeGrncRpaMCqdA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OG6BRSVEeGGzu7fmW9pXw" name="internalReferenceReason" association="_2OTHIBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G5eoxSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6BhSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6BxSVEeGGzu7fmW9pXw" value="1"/>
+    <ownedAttribute xmi:id="_ozsKlBrUEeGxIZCGAXKxsQ" name="priorityCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKlRrUEeGxIZCGAXKxsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKlhrUEeGxIZCGAXKxsQ"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9miWgErhEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ozsKkBrUEeGxIZCGAXKxsQ" name="methodCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1YScBrZEeGrncRpaMCqdA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D1YScRrZEeGrncRpaMCqdA"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DrwBQEriEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ozsKmBrUEeGxIZCGAXKxsQ" name="targetSiteCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKmRrUEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKmhrUEeGxIZCGAXKxsQ"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2OTHMxSVEeGGzu7fmW9pXw" memberEnd="_2OTHMBSVEeGGzu7fmW9pXw _2OTHNBSVEeGGzu7fmW9pXw">
+    <ownedComment xmi:id="_pjuRoBraEeGrncRpaMCqdA">
+      <body>This specimen is for representing specimens obtained from a procedure.</body>
+    </ownedComment>
     <ownedEnd xmi:id="_2OTHNBSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHMxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2OTHORSVEeGGzu7fmW9pXw" memberEnd="_2OTHNhSVEeGGzu7fmW9pXw _2OTHOhSVEeGGzu7fmW9pXw">
@@ -498,45 +389,53 @@ organization performed or hosted the Procedure</body>
   <uml:Association xmi:id="_2OZN0xSVEeGGzu7fmW9pXw" memberEnd="_2OZN0BSVEeGGzu7fmW9pXw _2OZN1BSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OZN1BSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZN0xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2ONAjBSVEeGGzu7fmW9pXw" memberEnd="_2OG6AxSVEeGGzu7fmW9pXw _2ONAjRSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2ONAjRSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2ONAjBSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
+  <uml:Association xmi:id="_2ONAjBSVEeGGzu7fmW9pXw"/>
   <uml:Association xmi:id="_2OTHIBSVEeGGzu7fmW9pXw" memberEnd="_2OG6BRSVEeGGzu7fmW9pXw _2OTHIRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OTHIRSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHIBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2ONAgBSVEeGGzu7fmW9pXw" base_Class="_2OG58RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="IHE PCC" contextDependent="true"/>
-  <CDA:ConstraintValidation xmi:id="_2OZN2BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2OZN1hSVEeGGzu7fmW9pXw">
+  <CDA:CDATemplate xmi:id="_2ONAgBSVEeGGzu7fmW9pXw" base_Class="_2OG58RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="IHE PCC" contextDependent="true">
+    <ruleId>CONF:7654</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2OZN2BSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-442</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN3BSVEeGGzu7fmW9pXw" base_Constraint="_2OZN2RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OZN3BSVEeGGzu7fmW9pXw">
     <ruleId>CONF-447</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN4BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2OZN3RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OZN4BSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-435</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN5BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2OZN4RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OZN5BSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-436</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN6BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2OZN5RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OZN6BSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-444</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2ONAhhSVEeGGzu7fmW9pXw" base_Constraint="_2OG58hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2ONAhxSVEeGGzu7fmW9pXw" base_Constraint="_2OG59BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2ONAiBSVEeGGzu7fmW9pXw" base_Constraint="_2OG59hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2ONAiRSVEeGGzu7fmW9pXw" base_Constraint="_2OG5-BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2ONAihSVEeGGzu7fmW9pXw" base_Constraint="_2OG5-hSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2ONAgRSVEeGGzu7fmW9pXw" base_Property="_2OG5_hSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2OTHJRSVEeGGzu7fmW9pXw" base_Property="_2OTHIxSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2OTHKRSVEeGGzu7fmW9pXw" base_Property="_2OTHJhSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2OTHKxSVEeGGzu7fmW9pXw" base_Property="_2OTHKhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAhhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAhxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAiBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAiRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAihSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2ONAgRSVEeGGzu7fmW9pXw" base_Property="_2OG5_hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7652</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OTHJRSVEeGGzu7fmW9pXw" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7653</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OTHKRSVEeGGzu7fmW9pXw" base_Property="_2OTHJhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7655</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OTHKxSVEeGGzu7fmW9pXw" base_Property="_2OTHKhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7656</ruleId>
+  </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_2ONAghSVEeGGzu7fmW9pXw" base_Property="_2OG6ABSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2ONAgxSVEeGGzu7fmW9pXw" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-430</ruleId>
-    <ruleId>CONF-431</ruleId>
+    <ruleId>CONF:7661</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2ONAhBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.15" name="ProcedureStatusCode" version="20061017" base_Property="_2OG6CBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2OTHLxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OTHLBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2ONAhRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OG6DBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2OTHLxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OTHLBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7662</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2ONAhRSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2OTHNRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHMxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-443</ruleId>
   </CDA:AssociationValidation>
@@ -546,7 +445,52 @@ organization performed or hosted the Procedure</body>
   <CDA:EntryRelationship xmi:id="_2OZNxBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNwhSVEeGGzu7fmW9pXw" typeCode="RSON"/>
   <CDA:EntryRelationship xmi:id="_2OZNyRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNxxSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
   <CDA:EntryRelationship xmi:id="_2OZNzxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNzRSVEeGGzu7fmW9pXw" typeCode="COMP"/>
-  <CDA:AssociationValidation xmi:id="_2OZN1RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw"/>
   <CDA:EntryRelationship xmi:id="_2ONAjhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ONAjBSVEeGGzu7fmW9pXw" typeCode="COMP"/>
   <CDA:EntryRelationship xmi:id="_2OTHIhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHIBSVEeGGzu7fmW9pXw" typeCode="RSON"/>
+  <CDA:PropertyValidation xmi:id="_jDk6ABq8EeGYcL3NfEQErA" base_Property="_s9Ig6hVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:6272</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_pvbG8Bq8EeGYcL3NfEQErA" code="47519-4" displayName="History of procedures" base_Property="_s9Ig6hVdEeGQCvUGzi1kDQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_9DL2oBq8EeGYcL3NfEQErA" base_Property="_s9Ig7BVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:6273</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_IQKvoBrBEeGJnPZ8qwcJ8A" base_Property="_2OAzTRSVEeGGzu7fmW9pXw" value="Procedures"/>
+  <CDA:ConstraintValidation xmi:id="_-LZhQBrPEeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_qGzKgBrPEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7657</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Q7LaIBrQEeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_N4ba0BrQEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7659</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XSCZEBrREeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_WEQMwBrQEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7659</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Xu5UMBrREeGxIZCGAXKxsQ" base_Constraint="_SSUWwBrREeGxIZCGAXKxsQ">
+    <ruleId>CONF:7660</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+  </CDA:ValueSetConstraint>
+  <Ecore:EReference xmi:id="_ozsKkxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ"/>
+  <Ecore:EReference xmi:id="_ozsKlxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
+  <Ecore:EReference xmi:id="_ozsKmxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ"/>
+  <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7668</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_EHrjYBrZEeGrncRpaMCqdA" severity="INFO" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ"/>
+  <CDA:PropertyValidation xmi:id="_FOWQgBrZEeGrncRpaMCqdA" severity="WARNING" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ"/>
+  <CDA:ValueSetConstraint xmi:id="_LFtFcBrZEeGrncRpaMCqdA" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
+  <uml:Association xmi:id="_HKhTABq9EeGYcL3NfEQErA" memberEnd="_HKgr8Bq9EeGYcL3NfEQErA _HKh6EBq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_HKh6EBq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_HKhTABq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_MCBNcBq9EeGYcL3NfEQErA" memberEnd="_MCAmYBq9EeGYcL3NfEQErA _MCBNcRq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_MCBNcRq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_MCBNcBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_VDZHUBq9EeGYcL3NfEQErA" memberEnd="_VDYgQBq9EeGYcL3NfEQErA _VDZHURq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_VDZHUBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
 </xmi:XMI>
