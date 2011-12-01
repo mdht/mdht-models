@@ -73,70 +73,24 @@ Content Modules.</body>
   <CDA:AssociationValidation xmi:id="_2PD8QRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PD8PxSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2PD8RBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PD8QhSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2JxzgBSVEeGGzu7fmW9pXw" name="ResultOrganizer">
-    <ownedComment xmi:id="_2KCSMxSVEeGGzu7fmW9pXw" annotatedElement="_2JxzgBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;). These values are often implicit in the &lt;tt>Organizer/code&lt;/tt> (e.g., an &lt;tt>Organizer/code&lt;/tt> of &quot;complete blood count&quot; implies a &lt;tt>ResultTypeCode&lt;/tt> of &quot;Hematology&quot;). This template requires &lt;tt>Organizer/code&lt;/tt> to include a &lt;tt>ResultTypeCode&lt;/tt> either directly or as a translation of a code from some other code system.&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2JxzgRSVEeGGzu7fmW9pXw" annotatedElement="_2JxzgBSVEeGGzu7fmW9pXw">
-      <body>Non-template subclasss of CCD ResultOrganizer that requires entires to be HITSP Result.</body>
-    </ownedComment>
     <ownedRule xmi:id="_2J_O4BSVEeGGzu7fmW9pXw" name="codeValue">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J_O4RSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC.</body>
+        <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12)</body>
         <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.1.11.20.16'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2J_O4xSVEeGGzu7fmW9pXw" name="specimenConflict">
-      <ownedComment xmi:id="_2J_O5BSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J_O5RSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_1dxCgBtuEeG4C_iCHrZZ9w" name="classCodeValue" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="__kVC0BtuEeG4C_iCHrZZ9w">
         <language>Analysis</language>
-        <body>The specimen element SHALL NOT conflict with the specimen inherent in code</body>
+        <body>SHOULD contain zero or one [0..1] @classCode=&quot;CLUSTER&quot; Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR SHOULD contain zero or one [0..1] @classCode=&quot;BATTERY&quot; Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2J_18RSVEeGGzu7fmW9pXw" name="specimenRoleId">
-      <ownedComment xmi:id="_2J_18hSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J_18xSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_aB7UQBt1EeG4C_iCHrZZ9w" name="codeValueLabResults" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jmZUIBt1EeG4C_iCHrZZ9w">
         <language>Analysis</language>
-        <body>specimen / specimenRole / id SHOULD be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KAdABSVEeGGzu7fmW9pXw" name="componentElement">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KAdARSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more component</body>
-        <body>not self.component->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KBEEBSVEeGGzu7fmW9pXw" name="componentProcedure">
-      <ownedComment xmi:id="_2KBEERSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KBEEhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>The target of one or more result organizer component relationships MAY be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KBrIBSVEeGGzu7fmW9pXw" name="componentProcedureReference">
-      <ownedComment xmi:id="_2KBrIRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KBrIhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>A result organizer component / procedure MAY be a reference to a procedure described in the Procedure section.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KCSMBSVEeGGzu7fmW9pXw" name="informationSource">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KCSMRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</body>
+        <body>Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results SHOULD also be allowed</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2KCSNBSVEeGGzu7fmW9pXw">
@@ -147,10 +101,6 @@ Content Modules.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JzBoBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2JzBoRSVEeGGzu7fmW9pXw" name="EVN">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
-      </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JzBoxSVEeGGzu7fmW9pXw" name="id" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
@@ -172,127 +122,61 @@ Content Modules.</body>
   <uml:Association xmi:id="_2JxzhxSVEeGGzu7fmW9pXw" memberEnd="_2JxzgxSVEeGGzu7fmW9pXw _2JxziBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2JxziBSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2KC5QBSVEeGGzu7fmW9pXw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.32"/>
+  <CDA:CDATemplate xmi:id="_2KC5QBSVEeGGzu7fmW9pXw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.1"/>
   <CDA:ConstraintValidation xmi:id="_2J_O4hSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J_O4BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-398</ruleId>
+    <ruleId>CONF-7164</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J_18BSVEeGGzu7fmW9pXw" base_Constraint="_2J_O4xSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J_18BSVEeGGzu7fmW9pXw">
     <ruleId>CONF-400</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J_19BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J_18RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J_19BSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-401</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KAdAhSVEeGGzu7fmW9pXw" base_Constraint="_2KAdABSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KAdAhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-402</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KBEExSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2KBEEBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KBEExSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-403</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KBrIxSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2KBrIBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KBrIxSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-404</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KCSMhSVEeGGzu7fmW9pXw" base_Constraint="_2KCSMBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KCSMhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-406</ruleId>
   </CDA:ConstraintValidation>
   <Ecore:EAttribute xmi:id="_2JyakRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2JyakBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2JzBohSVEeGGzu7fmW9pXw" base_Property="_2JzBoBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-394</ruleId>
+    <ruleId>CONF-7122</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JzBphSVEeGGzu7fmW9pXw" base_Property="_2JzBoxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-395</ruleId>
+    <ruleId>CONF-7127</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JzosRSVEeGGzu7fmW9pXw" base_Property="_2JzosBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF-7128</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J0PwBSVEeGGzu7fmW9pXw" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-396</ruleId>
+    <ruleId>CONF-7123</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2J020BSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2J0PxBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-399</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2JxziRSVEeGGzu7fmW9pXw" base_Association="_2JxzhxSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2JxziRSVEeGGzu7fmW9pXw" base_Association="_2JxzhxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-7124</ruleId>
+    <ruleId>CONF-7125</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="_2J1d4BSVEeGGzu7fmW9pXw" name="ResultObservation">
-    <ownedComment xmi:id="_2J-AwBSVEeGGzu7fmW9pXw" annotatedElement="_2J1d4BSVEeGGzu7fmW9pXw">
-      <body>The simple observation entry is meant to be an abstract representation of many of the observations used in this&#xD;
-specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for&#xD;
-codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,&#xD;
-ASTM/HL7 Continuity of Care Document).</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2J1d4RSVEeGGzu7fmW9pXw" annotatedElement="_2J1d4BSVEeGGzu7fmW9pXw">
-      <body>This clinical statement represents details of a lab, radiology, or other study performed on a patient. The scope of result observations is broad with the exception of &quot;vital signs&quot; which are contained in the Vital Signs section.</body>
-    </ownedComment>
     <ownedRule xmi:id="_2J69cBSVEeGGzu7fmW9pXw" name="codeValue">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J69cRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The value for 'code' SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).</body>
+        <body>The value for 'code' SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
         <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2J7kgBSVEeGGzu7fmW9pXw" name="codeConflict">
-      <ownedComment xmi:id="_2J7kgRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J7kghSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_gvQyIBt5EeG4C_iCHrZZ9w" name="codeValueLabResults" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gvQyIRt5EeG4C_iCHrZZ9w">
         <language>Analysis</language>
-        <body>The methodCode SHALL NOT conflict with the method inherent in code</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J8LkBSVEeGGzu7fmW9pXw" name="valueUnitOfMeasure">
-      <ownedComment xmi:id="_2J8LkRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J8LkhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Where value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J8LlBSVEeGGzu7fmW9pXw" name="referenceRangeRequired">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J8LlRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contain one or more referenceRange to show the normal range of values for the observation result</body>
-        <body>not self.referenceRange->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J8yoBSVEeGGzu7fmW9pXw" name="noObservationRangeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J8yoRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL NOT contain referenceRange / observationRange / code, as this attribute is not used by the HL7 Clinical Statement or Lab Committee models.</body>
-        <body>self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J9ZsBSVEeGGzu7fmW9pXw" name="informationSource">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J9ZsRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J1d4hSVEeGGzu7fmW9pXw" name="resultTypeCodeSystem" constrainedElement="_2J1d6hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J1d4xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Result Type SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J1d5BSVEeGGzu7fmW9pXw" name="laboratoryResultsValueSet" constrainedElement="_2J1d6hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J1d5RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Result Type for laboratory results SHOULD be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations.</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2J1d5hSVEeGGzu7fmW9pXw" name="resultValuePresence" constrainedElement="_2J1d7xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J1d5xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Result Value SHALL be present when the observation/@moodCode is EVN or GOL, and SHALL NOT be present when observation/@moodCode is INT or PRP.</body>
-        <body>(self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)&#xD;&#xA;    implies (not self.value->isEmpty()) and&#xD;&#xA;  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)&#xD;&#xA;   implies (self.value->isEmpty())</body>
+        <body>Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results SHOULD also be allowed. The Local and/or regional codes SHOULD be sent in the translation element.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2J-AwRSVEeGGzu7fmW9pXw">
@@ -322,9 +206,6 @@ ASTM/HL7 Continuity of Care Document).</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J1d6xSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2J1d7BSVEeGGzu7fmW9pXw">
-        <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J1d7RSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J1d7hSVEeGGzu7fmW9pXw" value="1"/>
@@ -351,48 +232,62 @@ ASTM/HL7 Continuity of Care Document).</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WZxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WaBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_Wwv9wBt9EeG4C_iCHrZZ9w" name="targetSiteCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wwv9wht9EeG4C_iCHrZZ9w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wwv9wxt9EeG4C_iCHrZZ9w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_-wDvcBt9EeG4C_iCHrZZ9w" name="author" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-wDvcRt9EeG4C_iCHrZZ9w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-wDvcht9EeG4C_iCHrZZ9w"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:ConstraintValidation xmi:id="_2J69chSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J69cBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-413</ruleId>
+    <ruleId>CONF-7166</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J7kgxSVEeGGzu7fmW9pXw" base_Constraint="_2J7kgBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J7kgxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-415</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J8LkxSVEeGGzu7fmW9pXw" base_Constraint="_2J8LkBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J8LkxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-417</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J8LlhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J8LlBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J8LlhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-419</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J8yohSVEeGGzu7fmW9pXw" base_Constraint="_2J8yoBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J8yohSVEeGGzu7fmW9pXw">
     <ruleId>CONF-420</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J9ZshSVEeGGzu7fmW9pXw" base_Constraint="_2J9ZsBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J9ZshSVEeGGzu7fmW9pXw">
     <ruleId>CONF-421</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J2sARSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J1d4hSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J2sARSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>C154-[DE-15.03-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J3TEBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J1d5BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J3TEBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>C154-[DE-15.03-2]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J36IBSVEeGGzu7fmW9pXw" base_Constraint="_2J1d5hSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2J36IBSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-15.05-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2J4hNRSVEeGGzu7fmW9pXw" base_Property="_2J4hMxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-408</ruleId>
+    <ruleId>CONF-7131</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J5IQxSVEeGGzu7fmW9pXw" base_Property="_2J5IQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-409</ruleId>
+    <ruleId>CONF-7137</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2J2E8BSVEeGGzu7fmW9pXw" base_Property="_2J1d6hSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2J2E8BSVEeGGzu7fmW9pXw" base_Property="_2J1d6hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-7133</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J5vURSVEeGGzu7fmW9pXw" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-410</ruleId>
+    <ruleId>CONF-7134</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J2E8RSVEeGGzu7fmW9pXw" base_Property="_2J1d6xSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2J2sABSVEeGGzu7fmW9pXw" base_Property="_2J1d7xSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2J2sABSVEeGGzu7fmW9pXw" base_Property="_2J1d7xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-7143</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J6WZBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2J6WYBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-418</ruleId>
+    <ruleId>CONF-7147</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J6WaRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2J6WZRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-414</ruleId>
@@ -512,19 +407,7 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
     size of a polyp observed during a colonoscopy.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_2Js7BRSVEeGGzu7fmW9pXw" name="titleValue" constrainedElement="_2Js7ChSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2Js7BhSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Js7BxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_ksO6UBVgEeGQCvUGzi1kDQ" general="_xGqiEBVdEeGQCvUGzi1kDQ"/>
-    <ownedAttribute xmi:id="_2Js7CRSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2Js7ChSVEeGGzu7fmW9pXw" name="title" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
@@ -533,19 +416,18 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7EBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2Js7CxSVEeGGzu7fmW9pXw" name="resultOrganizer" visibility="private" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2JwlYRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DBSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7DRSVEeGGzu7fmW9pXw" value="1"/>
+    <ownedAttribute xmi:id="_wGYWEBrJEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btkX8BrLEeGZ46SdiDZtPQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btk_ABrLEeGZ46SdiDZtPQ" value="1"/>
+      <association href="../consol.uml#_wGY9IBrJEeGZ46SdiDZtPQ"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2JwlYRSVEeGGzu7fmW9pXw" memberEnd="_2Js7CxSVEeGGzu7fmW9pXw _2JwlYhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2JwlYhSVEeGGzu7fmW9pXw" type="_2Js7AxSVEeGGzu7fmW9pXw" association="_2JwlYRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:CDATemplate xmi:id="_2JtiEBSVEeGGzu7fmW9pXw" base_Class="_2Js7AxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.14"/>
-  <CDA:ConstraintValidation xmi:id="_2Jv-URSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2Js7BRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2JwlYRSVEeGGzu7fmW9pXw"/>
+  <CDA:CDATemplate xmi:id="_2JtiEBSVEeGGzu7fmW9pXw" base_Class="_2Js7AxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
+  <CDA:ConstraintValidation xmi:id="_2Jv-URSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-392</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2JuJIBSVEeGGzu7fmW9pXw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_2Js7CRSVEeGGzu7fmW9pXw">
+  <CDA:CodeSystemConstraint xmi:id="_2JuJIBSVEeGGzu7fmW9pXw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-389</ruleId>
     <ruleId>CONF-390</ruleId>
@@ -584,15 +466,6 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
     size of a polyp observed during a colonoscopy.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_xGqiEhVdEeGQCvUGzi1kDQ" name="titleValue" constrainedElement="_xGqiFxVdEeGQCvUGzi1kDQ">
-      <ownedComment xmi:id="_xGqiExVdEeGQCvUGzi1kDQ">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xGqiFBVdEeGQCvUGzi1kDQ">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_xGqiFRVdEeGQCvUGzi1kDQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
@@ -607,10 +480,56 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiGRVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xGqiGhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xGqiGxVdEeGQCvUGzi1kDQ" name="resultOrganizer" visibility="private" type="_2JxzgBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiHBVdEeGQCvUGzi1kDQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xGqiHRVdEeGQCvUGzi1kDQ" value="1"/>
+    <ownedAttribute xmi:id="_GXWIoBrIEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9fNUBrIEeGZ46SdiDZtPQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9f0YBrIEeGZ46SdiDZtPQ"/>
+      <association href="../consol.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_OydAEBVfEeGQCvUGzi1kDQ" base_Class="_xGqiEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.3"/>
+  <CDA:CodeSystemConstraint xmi:id="_sMASkBrGEeGZ46SdiDZtPQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_xGqiFhVdEeGQCvUGzi1kDQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-7117</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_niTuIBrHEeGZ46SdiDZtPQ" base_Property="_xGqiFxVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF-8891</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_ulYIQBrHEeGZ46SdiDZtPQ" base_Property="_xGqiGBVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF-7118</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_c-nMABtuEeG4C_iCHrZZ9w" code="" base_Property="_2JyakBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+    <ruleId>7121</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_fbWpUBtwEeG4C_iCHrZZ9w" identifier="" code="completed" displayName="Completed" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_76siUBtxEeG4C_iCHrZZ9w" severity="WARNING" base_Constraint="_1dxCgBtuEeG4C_iCHrZZ9w">
+    <ruleId>CONF-7165</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_FP0eoBtyEeG4C_iCHrZZ9w" name="" code="EVN" displayName="Event" base_Property="_2JzBoBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_eaFnUBt1EeG4C_iCHrZZ9w" severity="WARNING" base_Constraint="_aB7UQBt1EeG4C_iCHrZZ9w">
+    <ruleId>CONF-9108</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_JwWb0Bt4EeG4C_iCHrZZ9w" base_Property="_2J4hMRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-7130</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_SFhXABt4EeG4C_iCHrZZ9w" identifier="" code="OBS" displayName="Observation" base_Property="_2J4hMRSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_fV0vcBt4EeG4C_iCHrZZ9w" identifier="" name="" code="EVN" displayName="Event" base_Property="_2J4hMxSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_s1du8Bt5EeG4C_iCHrZZ9w" severity="WARNING" base_Constraint="_gvQyIBt5EeG4C_iCHrZZ9w">
+    <ruleId>CONF-9109</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_rQFaoBt7EeG4C_iCHrZZ9w" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_h3mWYBt9EeG4C_iCHrZZ9w" severity="INFO" base_Property="_Wwv9wBt9EeG4C_iCHrZZ9w">
+    <ruleId>CONF-7153</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_B0fw0Bt-EeG4C_iCHrZZ9w" severity="INFO" base_Property="_-wDvcBt9EeG4C_iCHrZZ9w"/>
 </xmi:XMI>
