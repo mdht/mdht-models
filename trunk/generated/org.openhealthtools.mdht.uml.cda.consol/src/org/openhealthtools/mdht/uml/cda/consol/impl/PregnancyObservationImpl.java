@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.PregnancyObservationOperations;
@@ -57,6 +58,24 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 */
 	public boolean validatePregnancyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,6 +149,35 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 */
 	public boolean validatePregnancyObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EstimatedDateOfDelivery getEstimatedDateOfDelivery() {
+		return PregnancyObservationOperations.getEstimatedDateOfDelivery(this);
 	}
 
 	/**

@@ -67,6 +67,27 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ImmunizationMedicationInformation init() {
 		CDAUtil.init(this);
 		return this;

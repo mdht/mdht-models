@@ -43,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#validateProblemSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#validateProblemSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#validateProblemSectionCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Condition</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#getnullConditions() <em>Getnull Conditions</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#getConsolConditions() <em>Get Consol Conditions</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#validateProblemSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
@@ -284,24 +284,24 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getnullConditions(ProblemSection) <em>Getnull Conditions</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolConditions(ProblemSection) <em>Get Consol Conditions</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullConditions(ProblemSection)
+	 * @see #getConsolConditions(ProblemSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GETNULL_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)";
+	protected static final String GET_CONSOL_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getnullConditions(ProblemSection) <em>Getnull Conditions</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolConditions(ProblemSection) <em>Get Consol Conditions</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getnullConditions(ProblemSection)
+	 * @see #getConsolConditions(ProblemSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GETNULL_CONDITIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_CONDITIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,19 +312,19 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ProblemConcernAct> getnullConditions(ProblemSection problemSection) {
-		if (GETNULL_CONDITIONS__EOCL_QRY == null) {
+	public static EList<ProblemConcernAct> getConsolConditions(ProblemSection problemSection) {
+		if (GET_CONSOL_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_SECTION,
 				ConsolPackage.Literals.PROBLEM_SECTION.getEAllOperations().get(60));
 			try {
-				GETNULL_CONDITIONS__EOCL_QRY = helper.createQuery(GETNULL_CONDITIONS__EOCL_EXP);
+				GET_CONSOL_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_CONDITIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GETNULL_CONDITIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_CONDITIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemConcernAct> result = (Collection<ProblemConcernAct>) query.evaluate(problemSection);
 		return new BasicEList.UnmodifiableEList<ProblemConcernAct>(result.size(), result.toArray());

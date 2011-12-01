@@ -101,11 +101,11 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	 * <!-- begin-model-doc -->
 	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncountersActivites)).oclAsType(consol::EncountersActivites)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false"
+	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncountersActivites)).oclAsType(consol::EncountersActivites)'"
 	 * @generated
 	 */
-	EList<EncountersActivites> getnullEncountersActivities();
+	EList<EncountersActivites> getConsolEncountersActivities();
 
 	/**
 	 * <!-- begin-user-doc -->

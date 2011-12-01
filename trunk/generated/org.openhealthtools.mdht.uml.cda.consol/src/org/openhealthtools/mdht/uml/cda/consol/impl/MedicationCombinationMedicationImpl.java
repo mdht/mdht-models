@@ -432,8 +432,8 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ReactionObservation> getnullReactionObservations() {
-		return MedicationCombinationMedicationOperations.getnullReactionObservations(this);
+	public EList<ReactionObservation> getConsolReactionObservations() {
+		return MedicationCombinationMedicationOperations.getConsolReactionObservations(this);
 	}
 
 	/**

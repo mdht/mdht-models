@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Precondition;
-import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -206,40 +205,40 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: {
-				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation) theEObject;
-				T result = caseAllergyStatusObservation(allergyStatusObservation);
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
+				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
+				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
 				if (result == null) {
-					result = caseObservation(allergyStatusObservation);
+					result = caseCDA_Procedure(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(allergyStatusObservation);
+					result = caseClinicalStatement(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseAct(allergyStatusObservation);
+					result = caseAct(procedureActivityProcedure);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(allergyStatusObservation);
+					result = caseInfrastructureRoot(procedureActivityProcedure);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.EPISODE_OBSERVATION: {
-				EpisodeObservation episodeObservation = (EpisodeObservation) theEObject;
-				T result = caseEpisodeObservation(episodeObservation);
+			case ConsolPackage.PROBLEM_OBSERVATION: {
+				ProblemObservation problemObservation = (ProblemObservation) theEObject;
+				T result = caseProblemObservation(problemObservation);
 				if (result == null) {
-					result = caseObservation(episodeObservation);
+					result = caseObservation(problemObservation);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(episodeObservation);
+					result = caseClinicalStatement(problemObservation);
 				}
 				if (result == null) {
-					result = caseAct(episodeObservation);
+					result = caseAct(problemObservation);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(episodeObservation);
+					result = caseInfrastructureRoot(problemObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -286,20 +285,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.COMMENT: {
-				Comment comment = (Comment) theEObject;
-				T result = caseComment(comment);
+			case ConsolPackage.PROBLEM_STATUS: {
+				ProblemStatus problemStatus = (ProblemStatus) theEObject;
+				T result = caseProblemStatus(problemStatus);
 				if (result == null) {
-					result = caseCDA_Act(comment);
+					result = caseObservation(problemStatus);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(comment);
+					result = caseClinicalStatement(problemStatus);
 				}
 				if (result == null) {
-					result = caseAct(comment);
+					result = caseAct(problemStatus);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(comment);
+					result = caseInfrastructureRoot(problemStatus);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -423,6 +422,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER: {
+				MedicationSupplyOrder medicationSupplyOrder = (MedicationSupplyOrder) theEObject;
+				T result = caseMedicationSupplyOrder(medicationSupplyOrder);
+				if (result == null) {
+					result = caseSupply(medicationSupplyOrder);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationSupplyOrder);
+				}
+				if (result == null) {
+					result = caseAct(medicationSupplyOrder);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationSupplyOrder);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.DRUG_VEHICLE: {
 				DrugVehicle drugVehicle = (DrugVehicle) theEObject;
 				T result = caseDrugVehicle(drugVehicle);
@@ -434,6 +453,66 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(drugVehicle);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: {
+				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation) theEObject;
+				T result = caseAllergyStatusObservation(allergyStatusObservation);
+				if (result == null) {
+					result = caseObservation(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.EPISODE_OBSERVATION: {
+				EpisodeObservation episodeObservation = (EpisodeObservation) theEObject;
+				T result = caseEpisodeObservation(episodeObservation);
+				if (result == null) {
+					result = caseObservation(episodeObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(episodeObservation);
+				}
+				if (result == null) {
+					result = caseAct(episodeObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(episodeObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMMENT: {
+				Comment comment = (Comment) theEObject;
+				T result = caseComment(comment);
+				if (result == null) {
+					result = caseCDA_Act(comment);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(comment);
+				}
+				if (result == null) {
+					result = caseAct(comment);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(comment);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -554,46 +633,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(problemConcernAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_OBSERVATION: {
-				ProblemObservation problemObservation = (ProblemObservation) theEObject;
-				T result = caseProblemObservation(problemObservation);
-				if (result == null) {
-					result = caseObservation(problemObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_STATUS: {
-				ProblemStatus problemStatus = (ProblemStatus) theEObject;
-				T result = caseProblemStatus(problemStatus);
-				if (result == null) {
-					result = caseObservation(problemStatus);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemStatus);
-				}
-				if (result == null) {
-					result = caseAct(problemStatus);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemStatus);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -903,7 +942,7 @@ public class ConsolSwitch<T> {
 				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
 				if (result == null) {
-					result = caseProcedure(planOfCareActivityProcedure);
+					result = caseCDA_Procedure(planOfCareActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(planOfCareActivityProcedure);
@@ -996,20 +1035,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
-				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
+				T result = caseProcedureActivityAct(procedureActivityAct);
 				if (result == null) {
-					result = caseProcedure(procedureActivityProcedure);
+					result = caseCDA_Act(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(procedureActivityProcedure);
+					result = caseClinicalStatement(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseAct(procedureActivityProcedure);
+					result = caseAct(procedureActivityAct);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityProcedure);
+					result = caseInfrastructureRoot(procedureActivityAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1030,26 +1069,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(procedureAcivityObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
-				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
-				T result = caseProcedureActivityAct(procedureActivityAct);
-				if (result == null) {
-					result = caseCDA_Act(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1201,6 +1220,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(pregnancyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY: {
+				EstimatedDateOfDelivery estimatedDateOfDelivery = (EstimatedDateOfDelivery) theEObject;
+				T result = caseEstimatedDateOfDelivery(estimatedDateOfDelivery);
+				if (result == null) {
+					result = caseObservation(estimatedDateOfDelivery);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(estimatedDateOfDelivery);
+				}
+				if (result == null) {
+					result = caseAct(estimatedDateOfDelivery);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(estimatedDateOfDelivery);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1711,6 +1750,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(policySubscriber);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE: {
+				Procedure procedure = (Procedure) theEObject;
+				T result = caseProcedure(procedure);
+				if (result == null) {
+					result = caseCDA_Procedure(procedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedure);
+				}
+				if (result == null) {
+					result = caseAct(procedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedure);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3098,6 +3157,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Supply Order</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Supply Order</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationSupplyOrder(MedicationSupplyOrder object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Drug Vehicle</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3709,6 +3783,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePregnancyObservation(PregnancyObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Estimated Date Of Delivery</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Estimated Date Of Delivery</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEstimatedDateOfDelivery(EstimatedDateOfDelivery object) {
 		return null;
 	}
 
@@ -5285,6 +5374,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 

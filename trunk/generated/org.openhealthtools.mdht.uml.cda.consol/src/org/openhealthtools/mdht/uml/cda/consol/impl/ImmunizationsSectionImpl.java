@@ -55,17 +55,7 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(
@@ -104,8 +94,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ImmunizationActivity> getnullImmunizations() {
-		return ImmunizationsSectionOperations.getnullImmunizations(this);
+	public EList<ImmunizationActivity> getConsolImmunizations() {
+		return ImmunizationsSectionOperations.getConsolImmunizations(this);
 	}
 
 	/**

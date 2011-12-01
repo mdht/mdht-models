@@ -421,8 +421,8 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ReactionObservation> getnullReactionObservations() {
-		return MedicationConditionalDoseOperations.getnullReactionObservations(this);
+	public EList<ReactionObservation> getConsolReactionObservations() {
+		return MedicationConditionalDoseOperations.getConsolReactionObservations(this);
 	}
 
 	/**
