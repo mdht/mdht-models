@@ -400,6 +400,14 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_3-ztEBrYEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_vBswQBtpEeGT89b80j3MTg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5LuUQBtpEeGT89b80j3MTg">
+      <ownedEnd xmi:id="_5LuUQRtpEeGT89b80j3MTg" association="_5LuUQBtpEeGT89b80j3MTg">
+        <type xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2N6soBSVEeGGzu7fmW9pXw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-socialhistory.uml#_5LtGIBtpEeGT89b80j3MTg"/>
+      <memberEnd href="#_5LuUQRtpEeGT89b80j3MTg"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nYYbMBt5EeGnMahsPjlwOw">
       <ownedEnd xmi:id="_nYZCQBt5EeGnMahsPjlwOw" association="_nYYbMBt5EeGnMahsPjlwOw">
         <type xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_2MAoIBSVEeGGzu7fmW9pXw"/>
@@ -587,4 +595,11 @@
   <Ecore:EReference xmi:id="_ZoAakBuEEeGnMahsPjlwOw" xmlNamespace="##targetNamespace"/>
   <CDA:CDATemplate xmi:id="_qzhEUBuEEeGnMahsPjlwOw" templateId="11111"/>
   <CDA:PropertyValidation xmi:id="_r4qugBuEEeGnMahsPjlwOw"/>
+  <CDA:AssociationValidation xmi:id="_4Kb30BrkEeGJ_KU17uNyeA">
+    <ruleId>CONF-458</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_JSrJsBtqEeGT89b80j3MTg" base_Association="_5LuUQBtpEeGT89b80j3MTg" typeCode="REFR">
+    <ruleId>CONF-459</ruleId>
+    <ruleId>CONF-460</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
