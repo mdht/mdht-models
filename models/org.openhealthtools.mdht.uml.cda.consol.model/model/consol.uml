@@ -63,7 +63,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2JVHkhSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2JsT8BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2JwlYRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2JxzgBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2JxzhxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
@@ -401,6 +400,23 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_vBswQBtpEeGT89b80j3MTg"/>
+    
+    <packagedElement xmi:type="uml:Association" xmi:id="_GXXWwBrIEeGZ46SdiDZtPQ">
+      <ownedEnd xmi:id="_GXX90BrIEeGZ46SdiDZtPQ" association="_GXXWwBrIEeGZ46SdiDZtPQ">
+        <type xmi:type="uml:Class" href=".controlled/consol-results.uml#_xGqiEBVdEeGQCvUGzi1kDQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-results.uml#_GXWIoBrIEeGZ46SdiDZtPQ"/>
+      <memberEnd href="#_GXX90BrIEeGZ46SdiDZtPQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wGY9IBrJEeGZ46SdiDZtPQ">
+      <ownedEnd xmi:id="_wGY9IRrJEeGZ46SdiDZtPQ" association="_wGY9IBrJEeGZ46SdiDZtPQ">
+        <type xmi:type="uml:Class" href=".controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-results.uml#_wGYWEBrJEeGZ46SdiDZtPQ"/>
+      <memberEnd href="#_wGY9IRrJEeGZ46SdiDZtPQ"/>
+    </packagedElement>
+
+    
     <packagedElement xmi:type="uml:Association" xmi:id="_5LuUQBtpEeGT89b80j3MTg">
       <ownedEnd xmi:id="_5LuUQRtpEeGT89b80j3MTg" association="_5LuUQBtpEeGT89b80j3MTg">
         <type xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2N6soBSVEeGGzu7fmW9pXw"/>
@@ -602,4 +618,11 @@
     <ruleId>CONF-459</ruleId>
     <ruleId>CONF-460</ruleId>
   </CDA:EntryRelationship>
+  
+  <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING" base_Association="_GXXWwBrIEeGZ46SdiDZtPQ">
+    <ruleId>CONF-7119</ruleId>
+    <ruleId>CONF-7120</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xyLJgBrJEeGZ46SdiDZtPQ" base_Association="_wGY9IBrJEeGZ46SdiDZtPQ"/>
+  
 </xmi:XMI>
