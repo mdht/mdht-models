@@ -650,18 +650,6 @@ conditions as described in the Entry Content Module.</body>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw" base_Association="_2PidWRSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_sHrUoBUSEeG6PvUxSTZnaw" name="Indication">
-    <ownedRule xmi:id="_88IbIBq2EeGo461UQq-B1g" name="observationId" constrainedElement="_sHrUoBUSEeG6PvUxSTZnaw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-xTNABq2EeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>Set the observation/id equal to an ID on the problem list to signify that problem as an indication. (CONF:9321).</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_cDfUsBq3EeGo461UQq-B1g" name="valueElement" constrainedElement="_sHrUoBUSEeG6PvUxSTZnaw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_eAWqABq3EeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>i. The value element MAY contain @nullFlavor (CONF:10088).&#xA;1. If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”.  If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element (CONF:10089).</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_sHrUoRUSEeG6PvUxSTZnaw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
