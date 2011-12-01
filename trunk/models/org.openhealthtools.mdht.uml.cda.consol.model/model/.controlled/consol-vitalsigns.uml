@@ -64,7 +64,7 @@
   <uml:Association xmi:id="_2PD8IBSVEeGGzu7fmW9pXw" memberEnd="_2OlbBhSVEeGGzu7fmW9pXw _2PD8IRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2PD8IRSVEeGGzu7fmW9pXw" type="_2OfUcxSVEeGGzu7fmW9pXw" association="_2PD8IBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2OfUeBSVEeGGzu7fmW9pXw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.4"/>
+  <CDA:CDATemplate xmi:id="_2OfUeBSVEeGGzu7fmW9pXw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.4.1"/>
   <CDA:ConstraintValidation xmi:id="_2PD8JhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2PD8IxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-385</ruleId>
   </CDA:ConstraintValidation>
@@ -86,31 +86,10 @@
     <ruleId>6.3.3.4.5</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bRH8sBVeEeGQCvUGzi1kDQ" name="VitalSignsSectionEntriesOptional">
-    <ownedComment xmi:id="_bRH8sRVeEeGQCvUGzi1kDQ" annotatedElement="_bRH8sBVeEeGQCvUGzi1kDQ">
-      <body>&lt;p>&#xD;
-    This section contains current and historically relevant vital signs, such as blood pressure, heart rate,&#xD;
-    respiratory rate, height, weight, body mass index, head circumference, crown-to-rump length, and pulse oximetry. The&#xD;
-    section may contain all vital signs for the period of time being summarized, but at a minimum should include notable&#xD;
-    vital signs such as the most recent, maximum and/or minimum, or both, baseline, or relevant trends.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-    Vital signs are represented like other results (as defined in &lt;b>&lt;i>Results&#xD;
-    Section&lt;/i>&lt;/b>) with additional vocabulary constraints, but are aggregated into their own section in order to follow clinical&#xD;
-    conventions.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_bRH8shVeEeGQCvUGzi1kDQ" annotatedElement="_bRH8sBVeEeGQCvUGzi1kDQ">
-      <body>&lt;p>&#xD;
-    The vital signs section shall contain a narrative description of the measurement results of a patient's vital signs.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_bRH8sxVeEeGQCvUGzi1kDQ" annotatedElement="_bRH8sBVeEeGQCvUGzi1kDQ">
-      <body>The vital signs section contains coded measurement results of a patient's vital signs.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_bRH8tBVeEeGQCvUGzi1kDQ" annotatedElement="_bRH8sBVeEeGQCvUGzi1kDQ">
-      <body>&lt;p>&#xD;
-    The Vital Signs Section contains information documenting the patient vital signs. &#xD;
-&lt;/p></body>
+    <ownedComment xmi:id="_LjYecBwiEeG_RY8fzJjtMw">
+      <body>&lt;p>The Vital Signs section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, and pulse oximetry. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&lt;/p>
+
+&lt;p>Vital signs are represented in the same way as other results, but are aggregated into their own section to follow clinical conventions.&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_bRH8tRVeEeGQCvUGzi1kDQ" name="titleValue">
       <ownedComment xmi:id="_bRH8thVeEeGQCvUGzi1kDQ">
@@ -144,93 +123,15 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRH8vxVeEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bRH8wBVeEeGQCvUGzi1kDQ" name="vitalSignsOrganizer" visibility="private" type="_2OlbCRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRH8wRVeEeGQCvUGzi1kDQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRH8whVeEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B9FSkBwiEeG_RY8fzJjtMw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B9F5oBwiEeG_RY8fzJjtMw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_4L3_UBVfEeGQCvUGzi1kDQ" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.4"/>
   <uml:Class xmi:id="_2OrhsRSVEeGGzu7fmW9pXw" name="VitalSignObservation">
-    <ownedComment xmi:id="_2O3u5hSVEeGGzu7fmW9pXw" annotatedElement="_2OrhsRSVEeGGzu7fmW9pXw">
-      <body>The simple observation entry is meant to be an abstract representation of many of the observations used in this&#xD;
-specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for&#xD;
-codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,&#xD;
-ASTM/HL7 Continuity of Care Document).</body>
+    <ownedComment xmi:id="_y1fL4BwiEeG_RY8fzJjtMw">
+      <body>Vital signs are represented as are other results, with additional vocabulary constraints.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2O3u5xSVEeGGzu7fmW9pXw" annotatedElement="_2OrhsRSVEeGGzu7fmW9pXw">
-      <body>A vital signs observation is a simple observation that uses a specific vocabulary, and inherits&#xD;
-constraints from CCD.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2OrhshSVEeGGzu7fmW9pXw" annotatedElement="_2OrhsRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-These entries are used to record current and relevant historical vital signs for the patient. Vital Signs are a subset of &lt;b>&lt;i>Results Section&lt;/i>&lt;/b>, but are reported in this section to follow clinical conventions.&#xD;
-&lt;/p>&#xD;
-&#xD;
-&lt;p>&#xD;
-The differentiation between Vital Signs and Results varies by clinical context. Common examples of vital signs include temperature, height, weight, blood pressure, etc. However, some clinical contexts may alter these common vitals, for example in neonatology &quot;height&quot; may be replaced by &quot;crown-to-rump&quot; measurement.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_2OxoYxSVEeGGzu7fmW9pXw" name="codeValue">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OxoZBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The value for 'code' SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OxoZhSVEeGGzu7fmW9pXw" name="codeConflict">
-      <ownedComment xmi:id="_2OxoZxSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OxoaBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>The methodCode SHALL NOT conflict with the method inherent in code</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OxoahSVEeGGzu7fmW9pXw" name="valueUnitOfMeasure">
-      <ownedComment xmi:id="_2OxoaxSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OxobBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Where value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OxobhSVEeGGzu7fmW9pXw" name="referenceRangeRequired">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OxobxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contain one or more referenceRange to show the normal range of values for the observation result</body>
-        <body>not self.referenceRange->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2O3u4BSVEeGGzu7fmW9pXw" name="noObservationRangeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2O3u4RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL NOT contain referenceRange / observationRange / code, as this attribute is not used by the HL7 Clinical Statement or Lab Committee models.</body>
-        <body>self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2O3u4xSVEeGGzu7fmW9pXw" name="informationSource">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2O3u5BSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2OrhsxSVEeGGzu7fmW9pXw" name="dataMappingToResults" constrainedElement="_2OrhsRSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2OrhtBSVEeGGzu7fmW9pXw">
-        <body>Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</body>
-      </ownedComment>
-      <ownedComment xmi:id="_2OrhtRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OrhthSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Data Element Definitions for Results [Placeholder]</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2O3u6BSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -292,27 +193,32 @@ The differentiation between Vital Signs and Results varies by clinical context. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoYBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoYRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_NgHbcBwjEeG_RY8fzJjtMw" name="author">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgHbcRwjEeG_RY8fzJjtMw"/>
+      <association href="../consol.uml#_NgICgBwjEeG_RY8fzJjtMw"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27"/>
-  <CDA:ConstraintValidation xmi:id="_2OxoZRSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2OxoYxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OxoZRSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-413</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OxoaRSVEeGGzu7fmW9pXw" base_Constraint="_2OxoZhSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OxoaRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-415</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OxobRSVEeGGzu7fmW9pXw" base_Constraint="_2OxoahSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OxobRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-417</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OxocBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2OxobhSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2OxocBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-419</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2O3u4hSVEeGGzu7fmW9pXw" base_Constraint="_2O3u4BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2O3u4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-420</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2O3u5RSVEeGGzu7fmW9pXw" base_Constraint="_2O3u4xSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2O3u5RSVEeGGzu7fmW9pXw">
     <ruleId>CONF-421</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OxoQBSVEeGGzu7fmW9pXw" base_Constraint="_2OrhsxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2OxoQBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2OxoRhSVEeGGzu7fmW9pXw" base_Property="_2OxoRBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-408</ruleId>
   </CDA:PropertyValidation>
@@ -328,7 +234,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
   <CDA:PropertyValidation xmi:id="_2OxoTBSVEeGGzu7fmW9pXw" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-410</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
+  <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-411</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OxoUxSVEeGGzu7fmW9pXw" base_Property="_2OxoUhSVEeGGzu7fmW9pXw">
@@ -344,13 +250,10 @@ The differentiation between Vital Signs and Results varies by clinical context. 
     <ruleId>6.3.4.22.7</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2OlbCRSVEeGGzu7fmW9pXw" name="VitalSignsOrganizer">
-    <ownedComment xmi:id="_2O91oBSVEeGGzu7fmW9pXw" annotatedElement="_2OlbCRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;). These values are often implicit in the &lt;tt>Organizer/code&lt;/tt> (e.g., an &lt;tt>Organizer/code&lt;/tt> of &quot;complete blood count&quot; implies a &lt;tt>ResultTypeCode&lt;/tt> of &quot;Hematology&quot;). This template requires &lt;tt>Organizer/code&lt;/tt> to include a &lt;tt>ResultTypeCode&lt;/tt> either directly or as a translation of a code from some other code system.&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2OlbChSVEeGGzu7fmW9pXw" annotatedElement="_2OlbCRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-A vital signs organizer collects vital signs observations.&#xD;
-&lt;/p></body>
+    <ownedComment xmi:id="_YFDPQBwiEeG_RY8fzJjtMw">
+      <body>&lt;p>The Vital Signs Organizer groups vital signs, which is similar to the Result Organizer, but with further constraints. &lt;/p>
+
+&lt;p>An appropriate nullFlavor can be used when a single result observation is contained in the organizer, and organizer/code or organizer/id is unknown.&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_2O91gxSVEeGGzu7fmW9pXw" name="codeValue">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2O91hBSVEeGGzu7fmW9pXw">
@@ -462,7 +365,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OlbEhSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_2OlbExSVEeGGzu7fmW9pXw">
-        <body>The effective time element shall be present to indicate when the measurement was taken.</body>
+        <body>represents clinically effective time of the measurement, which is most likely when the measurement was performed (e.g., a BP measurement). (CONF:7289).</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbFBSVEeGGzu7fmW9pXw" value="1"/>
@@ -525,4 +428,12 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:AssociationValidation xmi:id="_2OrhpBSVEeGGzu7fmW9pXw" base_Association="_2OrhohSVEeGGzu7fmW9pXw">
     <ruleId>6.3.4.21.9</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_-zMwgBwhEeG_RY8fzJjtMw" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ"/>
+  <CDA:TextValue xmi:id="__bdqYBwhEeG_RY8fzJjtMw" base_Property="_bRH8vBVeEeGQCvUGzi1kDQ"/>
+  <CDA:PropertyValidation xmi:id="_ALh1YBwiEeG_RY8fzJjtMw" base_Property="_bRH8vRVeEeGQCvUGzi1kDQ"/>
+  <CDA:PropertyValidation xmi:id="_BKszYBwiEeG_RY8fzJjtMw" severity="WARNING" base_Property="_bRH8wBVeEeGQCvUGzi1kDQ"/>
+  <CDA:PropertyValidation xmi:id="_0NTTYBwiEeG_RY8fzJjtMw" base_Property="_2OxoQhSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_7-leYBwiEeG_RY8fzJjtMw" code="completed" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
