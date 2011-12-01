@@ -328,9 +328,8 @@ frequency.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WJgwIhrkEeGJ_KU17uNyeA"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_5LtGIBtpEeGT89b80j3MTg" name="estimatedDateOfDelivery" type="_vBswQBtpEeGT89b80j3MTg">
+    <ownedAttribute xmi:id="_5LtGIBtpEeGT89b80j3MTg" name="estimatedDateOfDelivery" type="_vBswQBtpEeGT89b80j3MTg" association="_5LuUQBtpEeGT89b80j3MTg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5LttMBtpEeGT89b80j3MTg"/>
-      <association href="../consol.uml#_5LuUQBtpEeGT89b80j3MTg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aXMCcBncEeGs5a462vYX5Q" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.15.3.8"/>
@@ -460,4 +459,7 @@ frequency.&#xD;
   <CDA:PropertyValidation xmi:id="_KbRYkBuuEeG0YIoJCEsKqA" base_Property="_lcxCQBupEeG0YIoJCEsKqA">
     <ruleId>CONF-450</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_5LuUQBtpEeGT89b80j3MTg" memberEnd="_5LtGIBtpEeGT89b80j3MTg _5LuUQRtpEeGT89b80j3MTg">
+    <ownedEnd xmi:id="_5LuUQRtpEeGT89b80j3MTg" type="_2N6soBSVEeGGzu7fmW9pXw" association="_5LuUQBtpEeGT89b80j3MTg"/>
+  </uml:Association>
 </xmi:XMI>

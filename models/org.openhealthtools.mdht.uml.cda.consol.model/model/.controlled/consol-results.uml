@@ -416,10 +416,9 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7EBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_wGYWEBrJEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_wGYWEBrJEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_wGY9IBrJEeGZ46SdiDZtPQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btkX8BrLEeGZ46SdiDZtPQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btk_ABrLEeGZ46SdiDZtPQ" value="1"/>
-      <association href="../consol.uml#_wGY9IBrJEeGZ46SdiDZtPQ"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2JwlYRSVEeGGzu7fmW9pXw"/>
@@ -480,10 +479,9 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiGRVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xGqiGhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_GXWIoBrIEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_GXWIoBrIEeGZ46SdiDZtPQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_GXXWwBrIEeGZ46SdiDZtPQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9fNUBrIEeGZ46SdiDZtPQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9f0YBrIEeGZ46SdiDZtPQ"/>
-      <association href="../consol.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_OydAEBVfEeGQCvUGzi1kDQ" base_Class="_xGqiEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.3"/>
@@ -532,4 +530,10 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
     <ruleId>CONF-7153</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_B0fw0Bt-EeG4C_iCHrZZ9w" severity="INFO" base_Property="_-wDvcBt9EeG4C_iCHrZZ9w"/>
+  <uml:Association xmi:id="_GXXWwBrIEeGZ46SdiDZtPQ" memberEnd="_GXWIoBrIEeGZ46SdiDZtPQ _GXX90BrIEeGZ46SdiDZtPQ">
+    <ownedEnd xmi:id="_GXX90BrIEeGZ46SdiDZtPQ" type="_xGqiEBVdEeGQCvUGzi1kDQ" association="_GXXWwBrIEeGZ46SdiDZtPQ"/>
+  </uml:Association>
+  <uml:Association xmi:id="_wGY9IBrJEeGZ46SdiDZtPQ" memberEnd="_wGYWEBrJEeGZ46SdiDZtPQ _wGY9IRrJEeGZ46SdiDZtPQ">
+    <ownedEnd xmi:id="_wGY9IRrJEeGZ46SdiDZtPQ" type="_2Js7AxSVEeGGzu7fmW9pXw" association="_wGY9IBrJEeGZ46SdiDZtPQ"/>
+  </uml:Association>
 </xmi:XMI>

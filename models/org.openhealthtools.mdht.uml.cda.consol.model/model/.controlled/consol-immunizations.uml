@@ -165,10 +165,9 @@ identifying the site.</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CtfWwBqsEeGo461UQq-B1g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_nYXNEBt5EeGnMahsPjlwOw" name="medicationSupplyOrder">
+    <ownedAttribute xmi:id="_nYXNEBt5EeGnMahsPjlwOw" name="medicationSupplyOrder" association="_nYYbMBt5EeGnMahsPjlwOw">
       <type xmi:type="uml:Class" href="consol-medications.uml#_j3aTQBrTEeGo461UQq-B1g"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYX0IBt5EeGnMahsPjlwOw"/>
-      <association href="../consol.uml#_nYYbMBt5EeGnMahsPjlwOw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_ZljOshU9EeGbmN_W114JUw" memberEnd="_ZljOsBU9EeGbmN_W114JUw _ZljOsxU9EeGbmN_W114JUw">
@@ -300,10 +299,9 @@ identifying the site.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jQ64FxVOEeGbmN_W114JUw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_TenzcEo6Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0bJ4gBt6EeGnMahsPjlwOw" name="organization">
+    <ownedAttribute xmi:id="_0bJ4gBt6EeGnMahsPjlwOw" name="organization" association="_0bKfkRt6EeGnMahsPjlwOw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bKfkBt6EeGnMahsPjlwOw"/>
-      <association href="../consol.uml#_0bKfkRt6EeGnMahsPjlwOw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_k-AE8BVOEeGbmN_W114JUw" base_Class="_daTqABVOEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.54"/>
@@ -586,4 +584,10 @@ identifying the site.</body>
   <CDA:CodeSystemConstraint xmi:id="_tcJCgBt7EeGnMahsPjlwOw" code="completed" base_Property="_Dr389hVOEeGbmN_W114JUw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_nYYbMBt5EeGnMahsPjlwOw" memberEnd="_nYXNEBt5EeGnMahsPjlwOw _nYZCQBt5EeGnMahsPjlwOw">
+    <ownedEnd xmi:id="_nYZCQBt5EeGnMahsPjlwOw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_nYYbMBt5EeGnMahsPjlwOw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_0bKfkRt6EeGnMahsPjlwOw" memberEnd="_0bJ4gBt6EeGnMahsPjlwOw _0bKfkht6EeGnMahsPjlwOw">
+    <ownedEnd xmi:id="_0bKfkht6EeGnMahsPjlwOw" type="_daTqABVOEeGbmN_W114JUw" association="_0bKfkRt6EeGnMahsPjlwOw"/>
+  </uml:Association>
 </xmi:XMI>
