@@ -53,7 +53,9 @@ associated adverse reactions suffered by the patient.</body>
   <uml:Association xmi:id="_2LNW4RSVEeGGzu7fmW9pXw" memberEnd="_2LMIwxSVEeGGzu7fmW9pXw _2LNW4hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2LNW4hSVEeGGzu7fmW9pXw" type="_2LMIwBSVEeGGzu7fmW9pXw" association="_2LNW4RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1"/>
+  <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1">
+    <ruleId>CONF:7527</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2LQaMBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-261</ruleId>
   </CDA:ConstraintValidation>
@@ -62,23 +64,23 @@ associated adverse reactions suffered by the patient.</body>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-258</ruleId>
-    <ruleId>CONF-259</ruleId>
+    <ruleId>CONF:7528</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2LPMERSVEeGGzu7fmW9pXw" base_Property="_2LPMEBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-260</ruleId>
+    <ruleId>CONF:7534</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2LPzIxSVEeGGzu7fmW9pXw" base_Property="_2LPzIBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-256</ruleId>
+    <ruleId>CONF:7530</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2LNW4xSVEeGGzu7fmW9pXw" base_Association="_2LNW4RSVEeGGzu7fmW9pXw"/>
+  <CDA:AssociationValidation xmi:id="_2LNW4xSVEeGGzu7fmW9pXw" base_Association="_2LNW4RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7531</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="_bGzYgBVdEeGQCvUGzi1kDQ" name="AllergiesSectionEntriesOptional">
     <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
       <body>This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
     </ownedComment>
     <ownedComment xmi:id="_bGzYghVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
-      <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the&#xD;
-associated adverse reactions suffered by the patient.</body>
+      <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient.</body>
     </ownedComment>
     <ownedComment xmi:id="_bGzYgxVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
       <body>&lt;p>&#xD;
@@ -120,11 +122,13 @@ associated adverse reactions suffered by the patient.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bGzYjxVdEeGQCvUGzi1kDQ" name="allergyDrugSensitivity" type="_2EAisBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGzYkBVdEeGQCvUGzi1kDQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYkRVdEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-FrTQBwNEeGlALrr33gUJg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-FrTQRwNEeGlALrr33gUJg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6"/>
+  <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
+    <ruleId>CONF:7800</ruleId>
+  </CDA:CDATemplate>
   <uml:Class xmi:id="_2EaLUBSVEeGGzu7fmW9pXw" name="AllergyObservation">
     <eAnnotations xmi:id="_2EaLURSVEeGGzu7fmW9pXw" source="uml2.alias">
       <details xmi:id="_2EaLUhSVEeGGzu7fmW9pXw" key="Allergies and Intolerances"/>
@@ -1062,4 +1066,19 @@ historical purposes.&#xD;
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
+  <CDA:PropertyValidation xmi:id="_HxiKABwNEeGlALrr33gUJg" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7801</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_KuCXYBwNEeGlALrr33gUJg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_skqTkBwNEeGlALrr33gUJg" base_Property="_bGzYixVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7802</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2GICwBwNEeGlALrr33gUJg" base_Property="_bGzYjBVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7803</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__eoqQBwNEeGlALrr33gUJg" severity="WARNING" base_Property="_bGzYjxVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7805</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
