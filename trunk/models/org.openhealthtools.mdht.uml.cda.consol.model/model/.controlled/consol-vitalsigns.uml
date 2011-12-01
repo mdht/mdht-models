@@ -133,10 +133,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoYBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoYRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_NgHbcBwjEeG_RY8fzJjtMw" name="author">
+    <ownedAttribute xmi:id="_NgHbcBwjEeG_RY8fzJjtMw" name="author" association="_NgICgBwjEeG_RY8fzJjtMw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgHbcRwjEeG_RY8fzJjtMw"/>
-      <association href="../consol.uml#_NgICgBwjEeG_RY8fzJjtMw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27"/>
@@ -308,4 +307,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_NgICgBwjEeG_RY8fzJjtMw" memberEnd="_NgHbcBwjEeG_RY8fzJjtMw _NgICgRwjEeG_RY8fzJjtMw">
+    <ownedEnd xmi:id="_NgICgRwjEeG_RY8fzJjtMw" type="_2OrhsRSVEeGGzu7fmW9pXw" association="_NgICgBwjEeG_RY8fzJjtMw"/>
+  </uml:Association>
 </xmi:XMI>
