@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XSDGeneration="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4 pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
+  <uml:Package xmi:id="_-IoX0ByVEeGBz7RHLRKZDw" name="GreenDatatypes">
+    <packageImport xmi:id="_-JmBIhyVEeGBz7RHLRKZDw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-KupkRyVEeGBz7RHLRKZDw" name="QualifierType">
+      <ownedAttribute xmi:id="_-KupkhyVEeGBz7RHLRKZDw" name="name" type="_-KupkxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-KyT9ByVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KyT8hyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KyT8xyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KyT9hyVEeGBz7RHLRKZDw" name="value" type="_-KyT9xyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Ky7BRyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Ky7AxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Ky7BByVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-KupkxyVEeGBz7RHLRKZDw" name="Name1" visibility="private">
+        <generalization xmi:id="_-Kxs5RyVEeGBz7RHLRKZDw" general="_-KuplByVEeGBz7RHLRKZDw"/>
+        <ownedAttribute xmi:id="_-Kxs5xyVEeGBz7RHLRKZDw" name="originalText">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Kxs6ByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Kxs6RyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-Kxs6hyVEeGBz7RHLRKZDw" name="qualifier" type="_-KupkRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-KyT8ByVEeGBz7RHLRKZDw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Kxs7ByVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-KyT9xyVEeGBz7RHLRKZDw" name="Value1" visibility="private">
+        <generalization xmi:id="_-KyT-ByVEeGBz7RHLRKZDw" general="_-KuplByVEeGBz7RHLRKZDw"/>
+        <ownedAttribute xmi:id="_-KyT-hyVEeGBz7RHLRKZDw" name="originalText">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KyT-xyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KyT_ByVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-KyT_RyVEeGBz7RHLRKZDw" name="qualifier" type="_-KupkRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Ky7ARyVEeGBz7RHLRKZDw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Ky7AByVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-KuplByVEeGBz7RHLRKZDw" name="ConceptDescriptor">
+      <ownedComment xmi:id="_-KuplRyVEeGBz7RHLRKZDw">
+        <body>Code</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-Kv3sByVEeGBz7RHLRKZDw" name="originalText">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Kv3sRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Kv3shyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-Kv3sxyVEeGBz7RHLRKZDw" name="qualifier" type="_-KupkRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Kv3thyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Kv3tByVEeGBz7RHLRKZDw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Kv3tRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KwewByVEeGBz7RHLRKZDw" name="code">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KwewxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KwewhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KwexByVEeGBz7RHLRKZDw" name="displayName">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KwexxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KwexhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KweyByVEeGBz7RHLRKZDw" name="codeSystem">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KweyxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KweyhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KwezByVEeGBz7RHLRKZDw" name="codeSystemName">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KxF0hyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KxF0RyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-KxF0xyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Kxs5ByVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Kxs4xyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Kv3thyVEeGBz7RHLRKZDw" memberEnd="_-Kv3txyVEeGBz7RHLRKZDw _-Kv3sxyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Kv3txyVEeGBz7RHLRKZDw" type="_-KuplByVEeGBz7RHLRKZDw" association="_-Kv3thyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-KxF1RyVEeGBz7RHLRKZDw" name="NullFlavorType">
+      <generalization xmi:id="_-Kxs4hyVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-KxF1hyVEeGBz7RHLRKZDw" name="NP"/>
+      <ownedLiteral xmi:id="_-KxF1xyVEeGBz7RHLRKZDw" name="NI"/>
+      <ownedLiteral xmi:id="_-KxF2ByVEeGBz7RHLRKZDw" name="MSK"/>
+      <ownedLiteral xmi:id="_-KxF2RyVEeGBz7RHLRKZDw" name="NA"/>
+      <ownedLiteral xmi:id="_-KxF2hyVEeGBz7RHLRKZDw" name="OTH"/>
+      <ownedLiteral xmi:id="_-KxF2xyVEeGBz7RHLRKZDw" name="NINF"/>
+      <ownedLiteral xmi:id="_-KxF3ByVEeGBz7RHLRKZDw" name="PINF"/>
+      <ownedLiteral xmi:id="_-KxF3RyVEeGBz7RHLRKZDw" name="UNK"/>
+      <ownedLiteral xmi:id="_-KxF3hyVEeGBz7RHLRKZDw" name="NASK"/>
+      <ownedLiteral xmi:id="_-KxF3xyVEeGBz7RHLRKZDw" name="TRC"/>
+      <ownedLiteral xmi:id="_-Kxs4ByVEeGBz7RHLRKZDw" name="ASKU"/>
+      <ownedLiteral xmi:id="_-Kxs4RyVEeGBz7RHLRKZDw" name="NAV"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-KyT8ByVEeGBz7RHLRKZDw" memberEnd="_-KyT8RyVEeGBz7RHLRKZDw _-Kxs6hyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-KyT8RyVEeGBz7RHLRKZDw" type="_-KupkxyVEeGBz7RHLRKZDw" association="_-KyT8ByVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-KyT9ByVEeGBz7RHLRKZDw" memberEnd="_-KyT9RyVEeGBz7RHLRKZDw _-KupkhyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-KyT9RyVEeGBz7RHLRKZDw" type="_-KupkRyVEeGBz7RHLRKZDw" association="_-KyT9ByVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Ky7ARyVEeGBz7RHLRKZDw" memberEnd="_-Ky7AhyVEeGBz7RHLRKZDw _-KyT_RyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Ky7AhyVEeGBz7RHLRKZDw" type="_-KyT9xyVEeGBz7RHLRKZDw" association="_-Ky7ARyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Ky7BRyVEeGBz7RHLRKZDw" memberEnd="_-Ky7BhyVEeGBz7RHLRKZDw _-KyT9hyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Ky7BhyVEeGBz7RHLRKZDw" type="_-KupkRyVEeGBz7RHLRKZDw" association="_-Ky7BRyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-Ky7BxyVEeGBz7RHLRKZDw" name="InstanceIdentifier">
+      <ownedComment xmi:id="_-Ky7CByVEeGBz7RHLRKZDw">
+        <body>Id</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-K0JIByVEeGBz7RHLRKZDw" name="root">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K0JIxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K0JIhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K0JJByVEeGBz7RHLRKZDw" name="extension">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K0JJxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K0JJhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K0JKByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K0JKxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K0JKhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-K0JLByVEeGBz7RHLRKZDw" name="EncapsulatedData">
+      <ownedComment xmi:id="_-K0wMByVEeGBz7RHLRKZDw">
+        <body>Data that is primarily intended for human interpretation
+            or for further machine processing is outside the scope of
+            HL7. This includes unformatted or formatted written language,
+            multimedia data, or structured information as defined by a
+            different standard (e.g., XML-signatures.)  Instead of the
+            data itself, an ED may contain 
+            only a reference (see TEL.) Note
+            that the ST data type is a
+            specialization of the ED data type
+            when the ED media type is text/plain.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-K1XQByVEeGBz7RHLRKZDw" name="reference">
+        <ownedComment xmi:id="_-K1XQRyVEeGBz7RHLRKZDw">
+          <body>A telecommunication address (TEL), such as a URL
+                        for HTTP or FTP, which will resolve to precisely
+                        the same binary data that could as well have been
+                        provided as inline data.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K2lYByVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K2lYRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K2lYhyVEeGBz7RHLRKZDw" name="thumbnail">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K2lYxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K2lZByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K2lZRyVEeGBz7RHLRKZDw" name="mediaType">
+        <ownedComment xmi:id="_-K2lZhyVEeGBz7RHLRKZDw">
+          <body>Identifies the type of the encapsulated data and
+                     identifies a method to interpret or render the data.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K3zghyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K3zgRyVEeGBz7RHLRKZDw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_-K3McByVEeGBz7RHLRKZDw" value="text/plain"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K3zgxyVEeGBz7RHLRKZDw" name="language">
+        <ownedComment xmi:id="_-K3zhByVEeGBz7RHLRKZDw">
+          <body>For character based information the language property
+                     specifies the human language of the text.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K4akhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K4akRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K4akxyVEeGBz7RHLRKZDw" name="compression">
+        <ownedComment xmi:id="_-K4alByVEeGBz7RHLRKZDw">
+          <body>Indicates whether the raw byte data is compressed,
+                     and what compression algorithm was used.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K5oshyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K5osRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K5osxyVEeGBz7RHLRKZDw" name="integrityCheck">
+        <ownedComment xmi:id="_-K5otByVEeGBz7RHLRKZDw">
+          <body>The integrity check is a short binary value representing
+                     a cryptographically strong checksum that is calculated
+                     over the binary data. The purpose of this property, when
+                     communicated with a reference is for anyone to validate
+                     later whether the reference still resolved to the same
+                     data that the reference resolved to when the encapsulated
+                     data value with reference was created.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K620hyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K620RyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-K620xyVEeGBz7RHLRKZDw" name="integrityCheckAlgorithm">
+        <ownedComment xmi:id="_-K621ByVEeGBz7RHLRKZDw">
+          <body>Specifies the algorithm used to compute the
+                     integrityCheck value.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K8E8xyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K8E8hyVEeGBz7RHLRKZDw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_-K8E8ByVEeGBz7RHLRKZDw" value="SHA-1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-K8E9RyVEeGBz7RHLRKZDw" name="PhysicalQuantity">
+      <ownedComment xmi:id="_-K8E9hyVEeGBz7RHLRKZDw">
+        <body>Physical Quantity</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-K9TEByVEeGBz7RHLRKZDw" name="translation" type="_-K96IByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LHEERyVEeGBz7RHLRKZDw">
+        <ownedComment xmi:id="_-K9TERyVEeGBz7RHLRKZDw">
+          <body>An alternative representation of the same physical
+                        quantity expressed in a different unit, of a different
+                        unit code system and possibly with a different value.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LGdAxyVEeGBz7RHLRKZDw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LHEEByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LHEExyVEeGBz7RHLRKZDw" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LHEFhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LHEFRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LHEFxyVEeGBz7RHLRKZDw" name="unit">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LHrIRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LHrIByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LHrIhyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LHrJRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LHrJByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-K96IByVEeGBz7RHLRKZDw" name="Translation1" visibility="private">
+        <ownedAttribute xmi:id="_-K96IRyVEeGBz7RHLRKZDw" name="originalText" type="_-K0JLByVEeGBz7RHLRKZDw" aggregation="composite" association="_-K_IQhyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-K96IhyVEeGBz7RHLRKZDw">
+            <body>The text or phrase used as the basis for the coding.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-K_IQByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K_IQRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-K_IRByVEeGBz7RHLRKZDw" name="translation">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-K_IRhyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-K_IRxyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-K_ISByVEeGBz7RHLRKZDw">
+            <body>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LAWYhyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LAWYRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LAWYxyVEeGBz7RHLRKZDw" name="code">
+          <ownedComment xmi:id="_-LAWZByVEeGBz7RHLRKZDw">
+            <body>The plain code symbol defined by the code system.
+                     For example, &quot;784.0&quot; is the code symbol of the ICD-9
+                     code &quot;784.0&quot; for headache.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LBkghyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LBkgRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LBkgxyVEeGBz7RHLRKZDw" name="codeSystem">
+          <ownedComment xmi:id="_-LBkhByVEeGBz7RHLRKZDw">
+            <body>Specifies the code system that defines the code.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LCLkhyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LCLkRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LCLkxyVEeGBz7RHLRKZDw" name="codeSystemName">
+          <ownedComment xmi:id="_-LCyoByVEeGBz7RHLRKZDw">
+            <body>A common name of the coding system.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LDZshyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LDZsRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LDZsxyVEeGBz7RHLRKZDw" name="codeSystemVersion">
+          <ownedComment xmi:id="_-LDZtByVEeGBz7RHLRKZDw">
+            <body>If applicable, a version descriptor defined
+                     specifically for the given code system.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LEn0hyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LEn0RyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LEn0xyVEeGBz7RHLRKZDw" name="displayName">
+          <ownedComment xmi:id="_-LEn1ByVEeGBz7RHLRKZDw">
+            <body>A name or title for the code, under which the sending
+                     system shows the code value to its users.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LF18hyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LF18RyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LF18xyVEeGBz7RHLRKZDw" name="value">
+          <ownedComment xmi:id="_-LF19ByVEeGBz7RHLRKZDw">
+            <body>The magnitude of the measurement value in terms of
+                     the unit specified in the code.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LGdAhyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LGdARyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-K_IQhyVEeGBz7RHLRKZDw" memberEnd="_-K_IQxyVEeGBz7RHLRKZDw _-K96IRyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-K_IQxyVEeGBz7RHLRKZDw" type="_-K96IByVEeGBz7RHLRKZDw" association="_-K_IQhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LHEERyVEeGBz7RHLRKZDw" memberEnd="_-LHEEhyVEeGBz7RHLRKZDw _-K9TEByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LHEEhyVEeGBz7RHLRKZDw" type="_-K8E9RyVEeGBz7RHLRKZDw" association="_-LHEERyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LHrJhyVEeGBz7RHLRKZDw" name="MonetaryAmount">
+      <ownedComment xmi:id="_-LHrJxyVEeGBz7RHLRKZDw">
+        <body>Monetary Amount</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-LI5QByVEeGBz7RHLRKZDw" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LI5QxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LI5QhyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LI5RByVEeGBz7RHLRKZDw" name="currency" type="_-LJgURyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LLVghyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LLVgRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LLVgxyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LLVhhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LLVhRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LJgURyVEeGBz7RHLRKZDw" name="CurrencyType">
+      <ownedComment xmi:id="_-LKHbByVEeGBz7RHLRKZDw">
+        <body>Enumeration of the types of currency available</body>
+      </ownedComment>
+      <generalization xmi:id="_-LLVgByVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LJgUhyVEeGBz7RHLRKZDw" name="ARS"/>
+      <ownedLiteral xmi:id="_-LJgUxyVEeGBz7RHLRKZDw" name="AUD"/>
+      <ownedLiteral xmi:id="_-LJgVByVEeGBz7RHLRKZDw" name="BRL"/>
+      <ownedLiteral xmi:id="_-LJgVRyVEeGBz7RHLRKZDw" name="CAD"/>
+      <ownedLiteral xmi:id="_-LJgVhyVEeGBz7RHLRKZDw" name="CHF"/>
+      <ownedLiteral xmi:id="_-LJgVxyVEeGBz7RHLRKZDw" name="CLF"/>
+      <ownedLiteral xmi:id="_-LJgWByVEeGBz7RHLRKZDw" name="CNY"/>
+      <ownedLiteral xmi:id="_-LJgWRyVEeGBz7RHLRKZDw" name="DEM"/>
+      <ownedLiteral xmi:id="_-LJgWhyVEeGBz7RHLRKZDw" name="ESP"/>
+      <ownedLiteral xmi:id="_-LJgWxyVEeGBz7RHLRKZDw" name="EUR"/>
+      <ownedLiteral xmi:id="_-LJgXByVEeGBz7RHLRKZDw" name="FIM"/>
+      <ownedLiteral xmi:id="_-LJgXRyVEeGBz7RHLRKZDw" name="FRF"/>
+      <ownedLiteral xmi:id="_-LJgXhyVEeGBz7RHLRKZDw" name="GBP"/>
+      <ownedLiteral xmi:id="_-LJgXxyVEeGBz7RHLRKZDw" name="ILS"/>
+      <ownedLiteral xmi:id="_-LJgYByVEeGBz7RHLRKZDw" name="INR"/>
+      <ownedLiteral xmi:id="_-LKHYByVEeGBz7RHLRKZDw" name="JPY"/>
+      <ownedLiteral xmi:id="_-LKHYRyVEeGBz7RHLRKZDw" name="KRW"/>
+      <ownedLiteral xmi:id="_-LKHYhyVEeGBz7RHLRKZDw" name="MXN"/>
+      <ownedLiteral xmi:id="_-LKHYxyVEeGBz7RHLRKZDw" name="NLG"/>
+      <ownedLiteral xmi:id="_-LKHZByVEeGBz7RHLRKZDw" name="NZD"/>
+      <ownedLiteral xmi:id="_-LKHZRyVEeGBz7RHLRKZDw" name="PHP"/>
+      <ownedLiteral xmi:id="_-LKHZhyVEeGBz7RHLRKZDw" name="RUR"/>
+      <ownedLiteral xmi:id="_-LKHZxyVEeGBz7RHLRKZDw" name="THB"/>
+      <ownedLiteral xmi:id="_-LKHaByVEeGBz7RHLRKZDw" name="TRL"/>
+      <ownedLiteral xmi:id="_-LKHaRyVEeGBz7RHLRKZDw" name="TWD"/>
+      <ownedLiteral xmi:id="_-LKHahyVEeGBz7RHLRKZDw" name="USD"/>
+      <ownedLiteral xmi:id="_-LKHaxyVEeGBz7RHLRKZDw" name="ZAR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LLVhxyVEeGBz7RHLRKZDw" name="OrganizationName">
+      <ownedComment xmi:id="_-LLViByVEeGBz7RHLRKZDw">
+        <body>Organization name</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-LMjoByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LMjoxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LMjohyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LMjpRyVEeGBz7RHLRKZDw" name="PersonName">
+      <ownedComment xmi:id="_-LNKsByVEeGBz7RHLRKZDw">
+        <body>Person Name</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-LNxwByVEeGBz7RHLRKZDw" name="prefix">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LNxwRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LNxwhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LNxwxyVEeGBz7RHLRKZDw" name="given">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LNxxByVEeGBz7RHLRKZDw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LNxxRyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LOY0ByVEeGBz7RHLRKZDw" name="family">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LOY0RyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LOY0hyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LOY0xyVEeGBz7RHLRKZDw" name="suffix">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LOY1ByVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LOY1RyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LOY1hyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LOY2RyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LOY2ByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LOY2hyVEeGBz7RHLRKZDw" name="PostalAddress">
+      <ownedComment xmi:id="_-LOY2xyVEeGBz7RHLRKZDw">
+        <body>Address (US only)</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-LPm8ByVEeGBz7RHLRKZDw" name="streetAddressLine">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LPm8RyVEeGBz7RHLRKZDw" value="2"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LPm8hyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LPm8xyVEeGBz7RHLRKZDw" name="city">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LPm9ByVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LPm9RyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LPm9hyVEeGBz7RHLRKZDw" name="state">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LPm9xyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LPm-ByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LPm-RyVEeGBz7RHLRKZDw" name="postalCode">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LPm-hyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LPm-xyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LPm_ByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LQOAhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LQOARyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LQOBByVEeGBz7RHLRKZDw" name="TelecomAddress">
+      <ownedComment xmi:id="_-LQOBRyVEeGBz7RHLRKZDw">
+        <body>A telephone number (voice or fax), e-mail address, or
+            other locator for a resource (information or service)
+            mediated by telecommunication equipment. The address
+            is specified as a Universal Resource Locator (URL)
+            qualified by time specification and use codes that help
+            in deciding which address to use for a given time and
+            purpose.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-LQ1EByVEeGBz7RHLRKZDw" name="useablePeriod" type="_-LSDMByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LUfdhyVEeGBz7RHLRKZDw">
+        <ownedComment xmi:id="_-LRcIByVEeGBz7RHLRKZDw">
+          <body>Specifies the periods of time during which the
+                     telecommunication address can be used.  For a
+                     telephone number, this can indicate the time of day
+                     in which the party can be reached on that telephone.
+                     For a web address, it may specify a time range in
+                     which the web content is promised to be available
+                     under the given address.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LUfdByVEeGBz7RHLRKZDw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LUfdRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LUfeByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <ownedComment xmi:id="_-LUfeRyVEeGBz7RHLRKZDw">
+          <body>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LVtkhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LVtkRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LVtkxyVEeGBz7RHLRKZDw" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LVtlhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LVtlRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LVtlxyVEeGBz7RHLRKZDw" name="use">
+        <ownedComment xmi:id="_-LVtmByVEeGBz7RHLRKZDw">
+          <body>One or more codes advising a system or user which
+                     telecommunication address in a set of like addresses
+                     to select for a given telecommunication need.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LW7shyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LW7sRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-LSDMByVEeGBz7RHLRKZDw" name="UseablePeriod1" visibility="private">
+        <ownedAttribute xmi:id="_-LSDMRyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-LSDMhyVEeGBz7RHLRKZDw">
+            <body>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LTRUhyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LTRURyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LTRUxyVEeGBz7RHLRKZDw" name="value">
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LTRVhyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LTRVRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LTRVxyVEeGBz7RHLRKZDw" name="operator">
+          <ownedComment xmi:id="_-LTRWByVEeGBz7RHLRKZDw">
+            <body>A code specifying whether the set component is included
+                     (union) or excluded (set-difference) from the set, or
+                     other set operations with the current set component and
+                     the set as constructed from the representation stream
+                     up to the current point.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LUfcxyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LUfchyVEeGBz7RHLRKZDw"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_-LUfcByVEeGBz7RHLRKZDw" value="I"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LUfdhyVEeGBz7RHLRKZDw" memberEnd="_-LUfdxyVEeGBz7RHLRKZDw _-LQ1EByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LUfdxyVEeGBz7RHLRKZDw" type="_-LQOBByVEeGBz7RHLRKZDw" association="_-LUfdhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LW7sxyVEeGBz7RHLRKZDw" name="Timestamp">
+      <ownedAttribute xmi:id="_-LW7tByVEeGBz7RHLRKZDw" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LW7txyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LW7thyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LXiwByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LXiwxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LXiwhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LXixByVEeGBz7RHLRKZDw" name="IntervalOfTimestamps">
+      <ownedAttribute xmi:id="_-LbNKRyVEeGBz7RHLRKZDw" name="_sequence1" type="_-LXixhyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Lb0MByVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LbNKhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LbNKxyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-Lb0MhyVEeGBz7RHLRKZDw" name="high" type="_-LW7sxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Lb0NRyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lb0MxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lb0NByVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LeQdByVEeGBz7RHLRKZDw" name="_sequence2" type="_-Lb0NxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LeQdxyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LeQdRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LeQdhyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LgstByVEeGBz7RHLRKZDw" name="_sequence3" type="_-LeQeRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LgstxyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LgstRyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LgsthyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LgsuhyVEeGBz7RHLRKZDw" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LhTwhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LhTwRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LhTwxyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LhTxhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LhTxRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-LhTxxyVEeGBz7RHLRKZDw" name="operator">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LhTyhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LhTyRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-LXixhyVEeGBz7RHLRKZDw" name="_Sequence1" visibility="private">
+        <ownedAttribute xmi:id="_-LXiyRyVEeGBz7RHLRKZDw" name="low" type="_-LW7sxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LYw4hyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-LXiyhyVEeGBz7RHLRKZDw">
+            <body>The low limit of the interval.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LYw4ByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LYw4RyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LbNJByVEeGBz7RHLRKZDw" name="_choice1" type="_-LYw5ByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LbNJxyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LbNJRyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LbNJhyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-LYw5ByVEeGBz7RHLRKZDw" name="_Choice1" visibility="private">
+          <ownedAttribute xmi:id="_-LYw5xyVEeGBz7RHLRKZDw" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LZ_AhyVEeGBz7RHLRKZDw">
+            <ownedComment xmi:id="_-LYw6ByVEeGBz7RHLRKZDw">
+              <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LZ_AByVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LZ_ARyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-LZ_BByVEeGBz7RHLRKZDw" name="high" type="_-LW7sxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LbNIhyVEeGBz7RHLRKZDw">
+            <ownedComment xmi:id="_-LZ_BRyVEeGBz7RHLRKZDw">
+              <body>The high limit of the interval.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LbNIByVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LbNIRyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-Lb0NxyVEeGBz7RHLRKZDw" name="_Sequence2" visibility="private">
+        <ownedAttribute xmi:id="_-Lb0OhyVEeGBz7RHLRKZDw" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LdCUhyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-Lb0OxyVEeGBz7RHLRKZDw">
+            <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LdCUByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LdCURyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LdCVByVEeGBz7RHLRKZDw" name="high" type="_-LW7sxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LeQchyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-LdCVRyVEeGBz7RHLRKZDw">
+            <body>The high limit of the interval.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LeQcByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LeQcRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-LeQeRyVEeGBz7RHLRKZDw" name="_Sequence3" visibility="private">
+        <ownedAttribute xmi:id="_-LeQfByVEeGBz7RHLRKZDw" name="center" type="_-LW7sxyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LfekhyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-LeQfRyVEeGBz7RHLRKZDw">
+            <body>The arithmetic mean of the interval (low plus high
+                           divided by 2). The purpose of distinguishing the center
+                           as a semantic property is for conversions of intervals
+                           from and to point values.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LfekByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LfekRyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LfelByVEeGBz7RHLRKZDw" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LgsshyVEeGBz7RHLRKZDw">
+          <ownedComment xmi:id="_-LfelRyVEeGBz7RHLRKZDw">
+            <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LgssByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LgssRyVEeGBz7RHLRKZDw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LYw4hyVEeGBz7RHLRKZDw" memberEnd="_-LYw4xyVEeGBz7RHLRKZDw _-LXiyRyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LYw4xyVEeGBz7RHLRKZDw" type="_-LXixhyVEeGBz7RHLRKZDw" association="_-LYw4hyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LZ_AhyVEeGBz7RHLRKZDw" memberEnd="_-LZ_AxyVEeGBz7RHLRKZDw _-LYw5xyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LZ_AxyVEeGBz7RHLRKZDw" type="_-LYw5ByVEeGBz7RHLRKZDw" association="_-LZ_AhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LbNIhyVEeGBz7RHLRKZDw" memberEnd="_-LbNIxyVEeGBz7RHLRKZDw _-LZ_BByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LbNIxyVEeGBz7RHLRKZDw" type="_-LYw5ByVEeGBz7RHLRKZDw" association="_-LbNIhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LbNJxyVEeGBz7RHLRKZDw" memberEnd="_-LbNKByVEeGBz7RHLRKZDw _-LbNJByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LbNKByVEeGBz7RHLRKZDw" type="_-LXixhyVEeGBz7RHLRKZDw" association="_-LbNJxyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Lb0MByVEeGBz7RHLRKZDw" memberEnd="_-Lb0MRyVEeGBz7RHLRKZDw _-LbNKRyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Lb0MRyVEeGBz7RHLRKZDw" type="_-LXixByVEeGBz7RHLRKZDw" association="_-Lb0MByVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Lb0NRyVEeGBz7RHLRKZDw" memberEnd="_-Lb0NhyVEeGBz7RHLRKZDw _-Lb0MhyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Lb0NhyVEeGBz7RHLRKZDw" type="_-LXixByVEeGBz7RHLRKZDw" association="_-Lb0NRyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LdCUhyVEeGBz7RHLRKZDw" memberEnd="_-LdCUxyVEeGBz7RHLRKZDw _-Lb0OhyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LdCUxyVEeGBz7RHLRKZDw" type="_-Lb0NxyVEeGBz7RHLRKZDw" association="_-LdCUhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LeQchyVEeGBz7RHLRKZDw" memberEnd="_-LeQcxyVEeGBz7RHLRKZDw _-LdCVByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LeQcxyVEeGBz7RHLRKZDw" type="_-Lb0NxyVEeGBz7RHLRKZDw" association="_-LeQchyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LeQdxyVEeGBz7RHLRKZDw" memberEnd="_-LeQeByVEeGBz7RHLRKZDw _-LeQdByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LeQeByVEeGBz7RHLRKZDw" type="_-LXixByVEeGBz7RHLRKZDw" association="_-LeQdxyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LfekhyVEeGBz7RHLRKZDw" memberEnd="_-LfekxyVEeGBz7RHLRKZDw _-LeQfByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LfekxyVEeGBz7RHLRKZDw" type="_-LeQeRyVEeGBz7RHLRKZDw" association="_-LfekhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LgsshyVEeGBz7RHLRKZDw" memberEnd="_-LgssxyVEeGBz7RHLRKZDw _-LfelByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LgssxyVEeGBz7RHLRKZDw" type="_-LeQeRyVEeGBz7RHLRKZDw" association="_-LgsshyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LgstxyVEeGBz7RHLRKZDw" memberEnd="_-LgsuByVEeGBz7RHLRKZDw _-LgstByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LgsuByVEeGBz7RHLRKZDw" type="_-LXixByVEeGBz7RHLRKZDw" association="_-LgstxyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LhTyxyVEeGBz7RHLRKZDw" name="ObservationValue">
+      <ownedAttribute xmi:id="_-LkXGRyVEeGBz7RHLRKZDw" name="_choice1" type="_-LhTzByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LkXHByVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LkXGhyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LkXGxyVEeGBz7RHLRKZDw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_-LhTzByVEeGBz7RHLRKZDw" name="_Choice1" visibility="private">
+        <ownedAttribute xmi:id="_-Lh60hyVEeGBz7RHLRKZDw" name="integer" type="_-Lh60xyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Lh63hyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lh63ByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lh63RyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-Lih4RyVEeGBz7RHLRKZDw" name="monetaryAmount" type="_-LHrJhyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Lih5ByVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lih4hyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lih4xyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-Lih5hyVEeGBz7RHLRKZDw" name="physicalQuantity" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite" association="_-Lih6RyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lih5xyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lih6ByVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-Lih6xyVEeGBz7RHLRKZDw" name="simpleCode" type="_-Lih7ByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LjwBRyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjwAxyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjwBByVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LjwBxyVEeGBz7RHLRKZDw" name="string" type="_-LjwCByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LkXEhyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LkXEByVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LkXERyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-LkXFByVEeGBz7RHLRKZDw" name="conceptDescriptor" type="_-KuplByVEeGBz7RHLRKZDw" aggregation="composite" association="_-LkXFxyVEeGBz7RHLRKZDw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LkXFRyVEeGBz7RHLRKZDw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LkXFhyVEeGBz7RHLRKZDw" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-Lh60xyVEeGBz7RHLRKZDw" name="Integer1" visibility="private">
+          <ownedAttribute xmi:id="_-Lh61ByVEeGBz7RHLRKZDw" name="value">
+            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lh61xyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lh61hyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-Lh62ByVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lh62xyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lh62hyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-Lih7ByVEeGBz7RHLRKZDw" name="SimpleCode1" visibility="private">
+          <ownedAttribute xmi:id="_-Lih7RyVEeGBz7RHLRKZDw" name="code">
+            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjI8RyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjI8ByVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-LjI8hyVEeGBz7RHLRKZDw" name="codeSystem">
+            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjI9RyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjI9ByVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-LjI9hyVEeGBz7RHLRKZDw" name="codeSystemName">
+            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjI-RyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjI-ByVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-LjI-hyVEeGBz7RHLRKZDw" name="displayName">
+            <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjI_RyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjI_ByVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_-LjI_hyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjwAhyVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjwARyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-LjwCByVEeGBz7RHLRKZDw" name="String1" visibility="private">
+          <ownedAttribute xmi:id="_-LjwCRyVEeGBz7RHLRKZDw" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LjwDByVEeGBz7RHLRKZDw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LjwCxyVEeGBz7RHLRKZDw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Lh63hyVEeGBz7RHLRKZDw" memberEnd="_-Lih4ByVEeGBz7RHLRKZDw _-Lh60hyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Lih4ByVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-Lh63hyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Lih5ByVEeGBz7RHLRKZDw" memberEnd="_-Lih5RyVEeGBz7RHLRKZDw _-Lih4RyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Lih5RyVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-Lih5ByVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Lih6RyVEeGBz7RHLRKZDw" memberEnd="_-Lih6hyVEeGBz7RHLRKZDw _-Lih5hyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-Lih6hyVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-Lih6RyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LjwBRyVEeGBz7RHLRKZDw" memberEnd="_-LjwBhyVEeGBz7RHLRKZDw _-Lih6xyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LjwBhyVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-LjwBRyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LkXEhyVEeGBz7RHLRKZDw" memberEnd="_-LkXExyVEeGBz7RHLRKZDw _-LjwBxyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LkXExyVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-LkXEhyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LkXFxyVEeGBz7RHLRKZDw" memberEnd="_-LkXGByVEeGBz7RHLRKZDw _-LkXFByVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LkXGByVEeGBz7RHLRKZDw" type="_-LhTzByVEeGBz7RHLRKZDw" association="_-LkXFxyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LkXHByVEeGBz7RHLRKZDw" memberEnd="_-LkXHRyVEeGBz7RHLRKZDw _-LkXGRyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LkXHRyVEeGBz7RHLRKZDw" type="_-LhTyxyVEeGBz7RHLRKZDw" association="_-LkXHByVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-LkXHhyVEeGBz7RHLRKZDw" name="CodedSimpleValue">
+      <ownedAttribute xmi:id="_-Lk-IByVEeGBz7RHLRKZDw" name="code">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lk-IxyVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lk-IhyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-Lk-JByVEeGBz7RHLRKZDw" name="CodedWithEquivalents">
+      <generalization xmi:id="_-Lk-JRyVEeGBz7RHLRKZDw" general="_-KuplByVEeGBz7RHLRKZDw"/>
+      <ownedAttribute xmi:id="_-Lk-JxyVEeGBz7RHLRKZDw" name="originalText">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Lk-KByVEeGBz7RHLRKZDw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lk-KRyVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-Lk-KhyVEeGBz7RHLRKZDw" name="qualifier" type="_-KupkRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LllMRyVEeGBz7RHLRKZDw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LllMByVEeGBz7RHLRKZDw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-LllMRyVEeGBz7RHLRKZDw" memberEnd="_-LllMhyVEeGBz7RHLRKZDw _-Lk-KhyVEeGBz7RHLRKZDw">
+      <ownedEnd xmi:id="_-LllMhyVEeGBz7RHLRKZDw" type="_-Lk-JByVEeGBz7RHLRKZDw" association="_-LllMRyVEeGBz7RHLRKZDw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LllMxyVEeGBz7RHLRKZDw" name="SupportType">
+      <ownedComment xmi:id="_-LllNhyVEeGBz7RHLRKZDw">
+        <body>Enumeration of the types of providers available</body>
+      </ownedComment>
+      <generalization xmi:id="_-LmzUByVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LllNByVEeGBz7RHLRKZDw" name="GUARD"/>
+      <ownedLiteral xmi:id="_-LllNRyVEeGBz7RHLRKZDw" name="AGNT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LmzURyVEeGBz7RHLRKZDw" name="ValueType">
+      <ownedComment xmi:id="_-LmzYByVEeGBz7RHLRKZDw">
+        <body>Enumeration of the different xsi:type values available for a VALUE</body>
+      </ownedComment>
+      <generalization xmi:id="_-LoBcByVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LmzUhyVEeGBz7RHLRKZDw" name="CE"/>
+      <ownedLiteral xmi:id="_-LmzUxyVEeGBz7RHLRKZDw" name="BL"/>
+      <ownedLiteral xmi:id="_-LmzVByVEeGBz7RHLRKZDw" name="BN"/>
+      <ownedLiteral xmi:id="_-LmzVRyVEeGBz7RHLRKZDw" name="BIN"/>
+      <ownedLiteral xmi:id="_-LmzVhyVEeGBz7RHLRKZDw" name="CR"/>
+      <ownedLiteral xmi:id="_-LmzVxyVEeGBz7RHLRKZDw" name="UUID"/>
+      <ownedLiteral xmi:id="_-LmzWByVEeGBz7RHLRKZDw" name="II"/>
+      <ownedLiteral xmi:id="_-LmzWRyVEeGBz7RHLRKZDw" name="URL"/>
+      <ownedLiteral xmi:id="_-LmzWhyVEeGBz7RHLRKZDw" name="AD"/>
+      <ownedLiteral xmi:id="_-LmzWxyVEeGBz7RHLRKZDw" name="BL"/>
+      <ownedLiteral xmi:id="_-LmzXByVEeGBz7RHLRKZDw" name="EN"/>
+      <ownedLiteral xmi:id="_-LmzXRyVEeGBz7RHLRKZDw" name="QTY"/>
+      <ownedLiteral xmi:id="_-LmzXhyVEeGBz7RHLRKZDw" name="PQR"/>
+      <ownedLiteral xmi:id="_-LmzXxyVEeGBz7RHLRKZDw" name="RTO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LoBcRyVEeGBz7RHLRKZDw" name="RelationshipType">
+      <ownedComment xmi:id="_-LoBdRyVEeGBz7RHLRKZDw">
+        <body>Enumeration of the different relationship types, INCOMPLETE</body>
+      </ownedComment>
+      <generalization xmi:id="_-LpPkByVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LoBchyVEeGBz7RHLRKZDw" name="CHILD"/>
+      <ownedLiteral xmi:id="_-LoBcxyVEeGBz7RHLRKZDw" name="SON"/>
+      <ownedLiteral xmi:id="_-LoBdByVEeGBz7RHLRKZDw" name="HUSB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LpPkRyVEeGBz7RHLRKZDw" name="StatusType">
+      <ownedComment xmi:id="_-LpPmhyVEeGBz7RHLRKZDw">
+        <body>Enumeration of the different status values available for status codes</body>
+      </ownedComment>
+      <generalization xmi:id="_-LqdsByVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LpPkhyVEeGBz7RHLRKZDw" name="normal"/>
+      <ownedLiteral xmi:id="_-LpPkxyVEeGBz7RHLRKZDw" name="active"/>
+      <ownedLiteral xmi:id="_-LpPlByVEeGBz7RHLRKZDw" name="cancelled"/>
+      <ownedLiteral xmi:id="_-LpPlRyVEeGBz7RHLRKZDw" name="pending"/>
+      <ownedLiteral xmi:id="_-LpPlhyVEeGBz7RHLRKZDw" name="suspended"/>
+      <ownedLiteral xmi:id="_-LpPlxyVEeGBz7RHLRKZDw" name="terminated"/>
+      <ownedLiteral xmi:id="_-LpPmByVEeGBz7RHLRKZDw" name="nullified"/>
+      <ownedLiteral xmi:id="_-LpPmRyVEeGBz7RHLRKZDw" name="completed"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-LqdsRyVEeGBz7RHLRKZDw" name="ConfidentialityType">
+      <generalization xmi:id="_-LqdtRyVEeGBz7RHLRKZDw">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-LqdshyVEeGBz7RHLRKZDw" name="N"/>
+      <ownedLiteral xmi:id="_-LqdsxyVEeGBz7RHLRKZDw" name="R"/>
+      <ownedLiteral xmi:id="_-LqdtByVEeGBz7RHLRKZDw" name="V"/>
+    </packagedElement>
+    <profileApplication xmi:id="_-JUUUByVEeGBz7RHLRKZDw">
+      <eAnnotations xmi:id="_-JUUURyVEeGBz7RHLRKZDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_yvqaMUtXEdqCydWod9T-cg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-JmBIByVEeGBz7RHLRKZDw">
+      <eAnnotations xmi:id="_-JmBIRyVEeGBz7RHLRKZDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_ytRNgEtXEdqCydWod9T-cg"/>
+    </profileApplication>
+  </uml:Package>
+  <xsd:Schema xmi:id="_-KupkByVEeGBz7RHLRKZDw" base_Package="_-IoX0ByVEeGBz7RHLRKZDw" targetNamespace="urn:hl7-org:greencda:datatypes" targetNamespacePrefix="gdt"/>
+  <xsd:Attribute xmi:id="_-KwewRyVEeGBz7RHLRKZDw" base_Property="_-KwewByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-KwexRyVEeGBz7RHLRKZDw" base_Property="_-KwexByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-KweyRyVEeGBz7RHLRKZDw" base_Property="_-KweyByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-KxF0ByVEeGBz7RHLRKZDw" base_Property="_-KwezByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-KxF1ByVEeGBz7RHLRKZDw" base_Property="_-KxF0xyVEeGBz7RHLRKZDw"/>
+  <xsd:Restriction xmi:id="_-Kxs5hyVEeGBz7RHLRKZDw" base_Generalization="_-Kxs5RyVEeGBz7RHLRKZDw"/>
+  <xsd:Element xmi:id="_-Kxs6xyVEeGBz7RHLRKZDw" base_Property="_-Kxs6hyVEeGBz7RHLRKZDw" prohibited="true"/>
+  <xsd:Restriction xmi:id="_-KyT-RyVEeGBz7RHLRKZDw" base_Generalization="_-KyT-ByVEeGBz7RHLRKZDw"/>
+  <xsd:Element xmi:id="_-KyT_hyVEeGBz7RHLRKZDw" base_Property="_-KyT_RyVEeGBz7RHLRKZDw" prohibited="true"/>
+  <xsd:Attribute xmi:id="_-K0JIRyVEeGBz7RHLRKZDw" base_Property="_-K0JIByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K0JJRyVEeGBz7RHLRKZDw" base_Property="_-K0JJByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K0JKRyVEeGBz7RHLRKZDw" base_Property="_-K0JKByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K3zgByVEeGBz7RHLRKZDw" base_Property="_-K2lZRyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K4akByVEeGBz7RHLRKZDw" base_Property="_-K3zgxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K5osByVEeGBz7RHLRKZDw" base_Property="_-K4akxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K620ByVEeGBz7RHLRKZDw" base_Property="_-K5osxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-K8E8RyVEeGBz7RHLRKZDw" base_Property="_-K620xyVEeGBz7RHLRKZDw"/>
+  <xsd:ComplexType xmi:id="_-K8E9ByVEeGBz7RHLRKZDw" mixed="true" base_Class="_-K0JLByVEeGBz7RHLRKZDw"/>
+  <xsd:Element xmi:id="_-K_IRRyVEeGBz7RHLRKZDw" base_Property="_-K_IRByVEeGBz7RHLRKZDw" prohibited="true"/>
+  <xsd:Attribute xmi:id="_-LAWYByVEeGBz7RHLRKZDw" base_Property="_-K_IRxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LBkgByVEeGBz7RHLRKZDw" base_Property="_-LAWYxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LCLkByVEeGBz7RHLRKZDw" base_Property="_-LBkgxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LDZsByVEeGBz7RHLRKZDw" base_Property="_-LCLkxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LEn0ByVEeGBz7RHLRKZDw" base_Property="_-LDZsxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LF18ByVEeGBz7RHLRKZDw" base_Property="_-LEn0xyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LGdAByVEeGBz7RHLRKZDw" base_Property="_-LF18xyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LHEFByVEeGBz7RHLRKZDw" base_Property="_-LHEExyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LHEGByVEeGBz7RHLRKZDw" base_Property="_-LHEFxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LHrIxyVEeGBz7RHLRKZDw" base_Property="_-LHrIhyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LI5QRyVEeGBz7RHLRKZDw" base_Property="_-LI5QByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LJgUByVEeGBz7RHLRKZDw" base_Property="_-LI5RByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LLVhByVEeGBz7RHLRKZDw" base_Property="_-LLVgxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LMjoRyVEeGBz7RHLRKZDw" base_Property="_-LMjoByVEeGBz7RHLRKZDw"/>
+  <xsd:ComplexType xmi:id="_-LMjpByVEeGBz7RHLRKZDw" mixed="true" base_Class="_-LLVhxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LOY1xyVEeGBz7RHLRKZDw" base_Property="_-LOY1hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LQOAByVEeGBz7RHLRKZDw" base_Property="_-LPm_ByVEeGBz7RHLRKZDw"/>
+  <xsd:ComplexType xmi:id="_-LQOAxyVEeGBz7RHLRKZDw" mixed="true" base_Class="_-LOY2hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LTRUByVEeGBz7RHLRKZDw" base_Property="_-LSDMRyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LTRVByVEeGBz7RHLRKZDw" base_Property="_-LTRUxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LUfcRyVEeGBz7RHLRKZDw" base_Property="_-LTRVxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LVtkByVEeGBz7RHLRKZDw" base_Property="_-LUfeByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LVtlByVEeGBz7RHLRKZDw" base_Property="_-LVtkxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LW7sByVEeGBz7RHLRKZDw" base_Property="_-LVtlxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LW7tRyVEeGBz7RHLRKZDw" base_Property="_-LW7tByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LXiwRyVEeGBz7RHLRKZDw" base_Property="_-LXiwByVEeGBz7RHLRKZDw"/>
+  <xsd:ComplexType xmi:id="_-LXixRyVEeGBz7RHLRKZDw" contentLower="0" base_Class="_-LXixByVEeGBz7RHLRKZDw"/>
+  <xsd:Group xmi:id="_-LXixxyVEeGBz7RHLRKZDw" base_Class="_-LXixhyVEeGBz7RHLRKZDw"/>
+  <xsd:Sequence xmi:id="_-LXiyByVEeGBz7RHLRKZDw" base_Class="_-LXixhyVEeGBz7RHLRKZDw"/>
+  <xsd:Group xmi:id="_-LYw5RyVEeGBz7RHLRKZDw" base_Class="_-LYw5ByVEeGBz7RHLRKZDw"/>
+  <xsd:Choice xmi:id="_-LYw5hyVEeGBz7RHLRKZDw" base_Class="_-LYw5ByVEeGBz7RHLRKZDw"/>
+  <xsd:Group xmi:id="_-Lb0OByVEeGBz7RHLRKZDw" base_Class="_-Lb0NxyVEeGBz7RHLRKZDw"/>
+  <xsd:Sequence xmi:id="_-Lb0ORyVEeGBz7RHLRKZDw" base_Class="_-Lb0NxyVEeGBz7RHLRKZDw"/>
+  <xsd:Group xmi:id="_-LeQehyVEeGBz7RHLRKZDw" base_Class="_-LeQeRyVEeGBz7RHLRKZDw"/>
+  <xsd:Sequence xmi:id="_-LeQexyVEeGBz7RHLRKZDw" base_Class="_-LeQeRyVEeGBz7RHLRKZDw"/>
+  <xsd:Choice xmi:id="_-LgsuRyVEeGBz7RHLRKZDw" base_Class="_-LXixByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LhTwByVEeGBz7RHLRKZDw" base_Property="_-LgsuhyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LhTxByVEeGBz7RHLRKZDw" base_Property="_-LhTwxyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LhTyByVEeGBz7RHLRKZDw" base_Property="_-LhTxxyVEeGBz7RHLRKZDw"/>
+  <xsd:Group xmi:id="_-Lh60ByVEeGBz7RHLRKZDw" base_Class="_-LhTzByVEeGBz7RHLRKZDw"/>
+  <xsd:Choice xmi:id="_-Lh60RyVEeGBz7RHLRKZDw" base_Class="_-LhTzByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-Lh61RyVEeGBz7RHLRKZDw" base_Property="_-Lh61ByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-Lh62RyVEeGBz7RHLRKZDw" base_Property="_-Lh62ByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-Lih7hyVEeGBz7RHLRKZDw" base_Property="_-Lih7RyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LjI8xyVEeGBz7RHLRKZDw" base_Property="_-LjI8hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LjI9xyVEeGBz7RHLRKZDw" base_Property="_-LjI9hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LjI-xyVEeGBz7RHLRKZDw" base_Property="_-LjI-hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LjwAByVEeGBz7RHLRKZDw" base_Property="_-LjI_hyVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-LjwChyVEeGBz7RHLRKZDw" base_Property="_-LjwCRyVEeGBz7RHLRKZDw"/>
+  <xsd:ComplexType xmi:id="_-LjwDRyVEeGBz7RHLRKZDw" mixed="true" base_Class="_-LjwCByVEeGBz7RHLRKZDw"/>
+  <xsd:Attribute xmi:id="_-Lk-IRyVEeGBz7RHLRKZDw" base_Property="_-Lk-IByVEeGBz7RHLRKZDw"/>
+  <xsd:Restriction xmi:id="_-Lk-JhyVEeGBz7RHLRKZDw" base_Generalization="_-Lk-JRyVEeGBz7RHLRKZDw"/>
+  <xsd:Element xmi:id="_-Lk-KxyVEeGBz7RHLRKZDw" base_Property="_-Lk-KhyVEeGBz7RHLRKZDw" prohibited="true"/>
+  <XSDGeneration:SchemaGen xmi:id="_iLwHsB0NEeGzVb7D37zbYQ" base_Package="_-IoX0ByVEeGBz7RHLRKZDw" elementNameMapping="omitElement"/>
+</xmi:XMI>
