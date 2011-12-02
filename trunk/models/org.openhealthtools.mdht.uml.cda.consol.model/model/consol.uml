@@ -397,8 +397,13 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_HKhTABq9EeGYcL3NfEQErA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_MCBNcBq9EeGYcL3NfEQErA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_2NufahSVEeGGzu7fmW9pXw"/>    
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_NgICgBwjEeG_RY8fzJjtMw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_XgAY8BxYEeG8X6LmnKJ43Q"/>
+    
+    
+    
+    
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
