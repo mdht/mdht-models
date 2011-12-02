@@ -528,7 +528,7 @@ historical purposes.&#xD;
   <CDA:EntryRelationship xmi:id="_2R84EhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2R84EBSVEeGGzu7fmW9pXw" typeCode="REFR"/>
   <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="AllergyStatusObservation">
     <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
-      <body>Any problem or allergy observation may reference a problem status observation. The clinical status observation records information about the current status of the problem or allergy, for example, whether it is active, in remission, resolved, et cetera.</body>
+      <body>This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.</body>
     </ownedComment>
     <ownedRule xmi:id="_2FZp0BSVEeGGzu7fmW9pXw" name="targetOfEntryRelationship">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FZp0RSVEeGGzu7fmW9pXw">
@@ -617,23 +617,23 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw" base_Constraint="_2FRuBBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-510</ruleId>
+    <ruleId>CONF:7318</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FV_dRSVEeGGzu7fmW9pXw" base_Property="_2FV_cxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-511</ruleId>
+    <ruleId>CONF:7319</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FWmgRSVEeGGzu7fmW9pXw" code="33999-4" displayName="Status" base_Property="_2FWmgBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-512</ruleId>
-    <ruleId>CONF-513</ruleId>
+    <ruleId>CONF:7320</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw" base_Property="_2FRuBxSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-514</ruleId>
-    <ruleId>CONF-515</ruleId>
+    <ruleId>CONF:7321</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2FTjMBSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FTjMBSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7322</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
@@ -746,7 +746,9 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_2Eyl0BSVEeGGzu7fmW9pXw" base_Property="_2ExXuBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2E7IuRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28"/>
+  <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28">
+    <ruleId>CONF:7317</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_p4UDcBnbEeGs5a462vYX5Q" base_Class="_2ExXsBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.5"/>
   <uml:Class xmi:id="_naxrkBVdEeGQCvUGzi1kDQ" name="ProblemSectionEntriesOptional">
     <ownedComment xmi:id="_naxrkRVdEeGQCvUGzi1kDQ" annotatedElement="_naxrkBVdEeGQCvUGzi1kDQ">
