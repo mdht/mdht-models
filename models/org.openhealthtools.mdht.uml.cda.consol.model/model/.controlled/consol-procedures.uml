@@ -10,7 +10,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <language>Analysis</language>
         <language>OCL</language>
         <body>There SHALL be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section.</body>
-        <body>not self.entry->select(e | e.act.oclIsKindOf(consol::ProcedureActivity))->isEmpty()</body>
+        <body>self.getActs()->exists(a : cda::act | a.oclIsKindOf(consol::ProcedureActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::ProcedureActivityObservation)) or self.getProcedures()->exists(p : cda::procedure | p.oclIsKindOf(consol::ProcedureActivityProcedure))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ"/>
@@ -134,25 +134,33 @@ This clinical statement represents procedures that result in new information abo
     <ownedRule xmi:id="_-WpQYBxuEeGXP8PxDYviDg" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-WpQYRxuEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.4)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_gpDwsBxvEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gpDwsRxvEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_iKsikBxvEeGXP8PxDYviDg" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iKsikRxvEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jzsgsBxvEeGXP8PxDYviDg" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_jzsgsRxvEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_I_JDoBxwEeGXP8PxDYviDg" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
@@ -164,7 +172,9 @@ This clinical statement represents procedures that result in new information abo
     <ownedRule xmi:id="_oJm7kBxwEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_oJm7kRxwEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(cda::encounter)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_p26x8BxwEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
@@ -176,7 +186,9 @@ This clinical statement represents procedures that result in new information abo
     <ownedRule xmi:id="_rOfo4BxwEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rOfo4RxwEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Aj7JkRg4EeGs5a462vYX5Q">
@@ -283,31 +295,41 @@ This clinical statement represents any procedure that cannot be classified as an
     <ownedRule xmi:id="_ilhFEBxpEeGXP8PxDYviDg" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ilhFERxpEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code in a procedure activity observation SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oGW3cBxpEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_oGW3cRxpEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rX9yIBxpEeGXP8PxDYviDg" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rX9yIRxpEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0i4pkBxpEeGXP8PxDYviDg" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0i4pkRxpEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ATZYUBxsEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ATZYURxsEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_C9KP4BxsEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
@@ -319,7 +341,9 @@ This clinical statement represents any procedure that cannot be classified as an
     <ownedRule xmi:id="_zFL1IBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zFL1IRxsEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_awdH4Rg4EeGs5a462vYX5Q">
@@ -404,25 +428,33 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedRule xmi:id="_qGzKgBrPEeGxIZCGAXKxsQ" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_8J3uYBrPEeGxIZCGAXKxsQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104' xor self.code.codeSystem = '2.16.840.1.113883.6.4'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_N4ba0BrQEeGxIZCGAXKxsQ" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VYc2sBrQEeGxIZCGAXKxsQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WEQMwBrQEeGxIZCGAXKxsQ" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pp6KEBrREeGxIZCGAXKxsQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SSUWwBrREeGxIZCGAXKxsQ" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VD9X8BrREeGxIZCGAXKxsQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tJGGcBxGEeGIELeDlfT77A" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
@@ -434,25 +466,29 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedRule xmi:id="_t6LqgBxZEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7DYVYBxZEeGXP8PxDYviDg">
         <language>Analysis</language>
-        <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <language>OCL</language>
+        <body>entryRelationship with target entry encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(cda::encounter)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9s2SABxZEeGXP8PxDYviDg" name="productInstanceTypeCode" constrainedElement="_t6LqgBxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_FdoGsBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
-        <body>participant with target class Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;DEV&quot; Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target entry Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;DEV&quot; Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_JHSVABxaEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pf0kYBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
-        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_5r5qcBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5r5qcRxsEeGXP8PxDYviDg">
         <language>Analysis</language>
-        <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2OZN6RSVEeGGzu7fmW9pXw">
@@ -806,6 +842,15 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_toQ8oBxwEeGXP8PxDYviDg" base_Constraint="_rOfo4BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8274</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_BW2n4B0FEeGlVNChrpQV_Q" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_DgKdwB0FEeGlVNChrpQV_Q" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_G_fEUB0FEeGlVNChrpQV_Q" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
+  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_qeLqQBxEEeGIELeDlfT77A" name="ProcedureEncounter">
     <ownedRule xmi:id="_UWwzQBxcEeGXP8PxDYviDg" name="sameEncounter" constrainedElement="_qeLqQBxEEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WsHhEBxcEeGXP8PxDYviDg">
