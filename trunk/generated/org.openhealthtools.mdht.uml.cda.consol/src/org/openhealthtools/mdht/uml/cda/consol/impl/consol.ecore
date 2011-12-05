@@ -2394,9 +2394,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationSupplyOrder" eSuperTypes="urn:hl7-org:v3#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.17"/>
-      <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderId"/>
-      <details key="constraints.validation.warning" value="MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber"/>
+      <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId"/>
       <details key="classCode" value="SPLY"/>
+      <details key="constraints.validation.warning" value="MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber"/>
       <details key="constraints.validation.info" value="MedicationSupplyOrderInstructions"/>
       <details key="moodCode" value="INT"/>
     </eAnnotations>
@@ -2446,6 +2446,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationSupplyOrderRepeatNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationSupplyOrderStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7620,24 +7629,15 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.12.292"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.52"/>
-      <details key="constraints.validation.error" value="ImmunizationActivityTemplateId ImmunizationActivityMoodCode ImmunizationActivityClassCode ImmunizationActivityId ImmunizationActivityCode ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd"/>
+      <details key="constraints.validation.error" value="ImmunizationActivityTemplateId ImmunizationActivityClassCode ImmunizationActivityId ImmunizationActivityCode ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd"/>
       <details key="code.codeSystemName" value="Vaccines administered (CVX)"/>
-      <details key="classCode" value="SBADM"/>
       <details key="constraints.validation.warning" value="ImmunizationActivityDoseQuantity ImmunizationActivityText"/>
+      <details key="classCode" value="SBADM"/>
       <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="constraints.validation.info" value="ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityNonMedicinalSupplyActivity ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder"/>
+      <details key="constraints.validation.info" value="ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder"/>
       <details key="negationInd" value="false"/>
       <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
-    <eOperations name="ImmunizationActivityMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="ImmunizationActivityTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -7782,15 +7782,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationActivityNonMedicinalSupplyActivity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="ImmunizationActivityMedicationDispense" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -7830,8 +7821,6 @@
     <eOperations name="getDrugVehicle" ordered="false" lowerBound="1" eType="#//DrugVehicle"/>
     <eOperations name="getIndication" ordered="false" lowerBound="1" eType="#//Indication"/>
     <eOperations name="getInstructions" ordered="false" lowerBound="1" eType="#//Instructions"/>
-    <eOperations name="getNonMedicinalSupplyActivity" ordered="false" lowerBound="1"
-        eType="#//NonMedicinalSupplyActivity"/>
     <eOperations name="getMedicationDispense" ordered="false" lowerBound="1" eType="#//MedicationDispense"/>
     <eOperations name="getReactionObservation" ordered="false" lowerBound="1" eType="#//ReactionObservation"/>
     <eOperations name="getImmunizationRefusalReason" ordered="false" lowerBound="1"
@@ -12267,8 +12256,8 @@
       eSuperTypes="urn:hl7-org:v3#//Precondition">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.25"/>
-      <details key="constraints.validation.error" value="PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCriterionValue"/>
-      <details key="constraints.validation.warning" value="PreconditionForSubstanceAdministrationCriterionCode"/>
+      <details key="constraints.validation.error" value="PreconditionForSubstanceAdministrationTemplateId"/>
+      <details key="constraints.validation.warning" value="PreconditionForSubstanceAdministrationCriterionCode PreconditionForSubstanceAdministrationCriterionValue"/>
       <details key="constraints.validation.info" value="PreconditionForSubstanceAdministrationCriterionText"/>
     </eAnnotations>
     <eOperations name="PreconditionForSubstanceAdministrationCriterionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">

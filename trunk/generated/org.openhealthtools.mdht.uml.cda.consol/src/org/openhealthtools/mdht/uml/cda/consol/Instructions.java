@@ -17,16 +17,6 @@ import org.openhealthtools.mdht.uml.cda.Act;
  * A representation of the model object '<em><b>Instructions</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p>
- *     Patient instructions are additional information provided to a patient related to one of their
- *     medications (e.g. "take on an empty stomach").
- * </p>
- * Any medication may be the subject of further instructions to the patient, for example to indicate
- * that it should be taken with food, et cetera. This structure is included in the target substance administration or supply act using the
- * &lt;entryRelationship> element defined in the CDA Schema.
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructions()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.20' constraints.validation.error='InstructionsTemplateId InstructionsClassCode InstructionsMoodCode InstructionsStatusCode' constraints.validation.warning='InstructionsText' classCode='ACT' moodCode='INT'"

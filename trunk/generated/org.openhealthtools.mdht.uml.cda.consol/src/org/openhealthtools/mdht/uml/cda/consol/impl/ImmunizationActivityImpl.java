@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
-import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivityOperations;
@@ -56,15 +55,6 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATION_ACTIVITY;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -218,17 +208,6 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationActivityNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityNonMedicinalSupplyActivity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateImmunizationActivityMedicationDispense(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityMedicationDispense(this, diagnostics, context);
@@ -292,15 +271,6 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public Instructions getInstructions() {
 		return ImmunizationActivityOperations.getInstructions(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NonMedicinalSupplyActivity getNonMedicinalSupplyActivity() {
-		return ImmunizationActivityOperations.getNonMedicinalSupplyActivity(this);
 	}
 
 	/**
