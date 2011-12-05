@@ -218,7 +218,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 			preconditionForSubstanceAdministration)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE,
 					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionValue"),
