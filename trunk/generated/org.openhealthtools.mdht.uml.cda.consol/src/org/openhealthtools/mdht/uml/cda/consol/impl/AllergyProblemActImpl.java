@@ -381,8 +381,17 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyProblemActCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActCodeNullFlavor(this, diagnostics, context);
+	public boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyProblemActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActStatusCode(this, diagnostics, context);
 	}
 
 	/**

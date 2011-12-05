@@ -1385,6 +1385,42 @@ public interface ConsolFactory extends EFactory {
 	ImmunizationMedicationInformation createImmunizationMedicationInformation();
 
 	/**
+	 * Returns a new object of class '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure</em>'.
+	 * @generated
+	 */
+	Procedure createProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Specimen</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Specimen</em>'.
+	 * @generated
+	 */
+	ProcedureSpecimen createProcedureSpecimen();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Performer</em>'.
+	 * @generated
+	 */
+	ProcedurePerformer createProcedurePerformer();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Encounter</em>'.
+	 * @generated
+	 */
+	ProcedureEncounter createProcedureEncounter();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -10,9 +10,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.Indication;
+import org.openhealthtools.mdht.uml.cda.consol.Instructions;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityActOperations;
@@ -57,6 +62,134 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActPriorityCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureEncounter(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructions(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActIndication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Encounter> getProcedureEncounters() {
+		return ProcedureActivityActOperations.getProcedureEncounters(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Instructions getInstructions() {
+		return ProcedureActivityActOperations.getInstructions(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Indication> getIndications() {
+		return ProcedureActivityActOperations.getIndications(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationActivity getMedicationActivity() {
+		return ProcedureActivityActOperations.getMedicationActivity(this);
 	}
 
 	/**

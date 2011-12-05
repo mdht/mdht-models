@@ -22,10 +22,12 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
+import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.Specimen;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 
@@ -210,7 +212,7 @@ public class ConsolSwitch<T> {
 				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
 				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
 				if (result == null) {
-					result = caseProcedure(procedureActivityProcedure);
+					result = caseCDA_Procedure(procedureActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(procedureActivityProcedure);
@@ -240,86 +242,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(indication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_OBSERVATION: {
-				ProblemObservation problemObservation = (ProblemObservation) theEObject;
-				T result = caseProblemObservation(problemObservation);
-				if (result == null) {
-					result = caseObservation(problemObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation) theEObject;
-				T result = caseAgeObservation(ageObservation);
-				if (result == null) {
-					result = caseObservation(ageObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(ageObservation);
-				}
-				if (result == null) {
-					result = caseAct(ageObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(ageObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HEALTH_STATUS_OBSERVATION: {
-				HealthStatusObservation healthStatusObservation = (HealthStatusObservation) theEObject;
-				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) {
-					result = caseObservation(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(healthStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_STATUS: {
-				ProblemStatus problemStatus = (ProblemStatus) theEObject;
-				T result = caseProblemStatus(problemStatus);
-				if (result == null) {
-					result = caseObservation(problemStatus);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemStatus);
-				}
-				if (result == null) {
-					result = caseAct(problemStatus);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemStatus);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -500,6 +422,46 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.AGE_OBSERVATION: {
+				AgeObservation ageObservation = (AgeObservation) theEObject;
+				T result = caseAgeObservation(ageObservation);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION: {
+				HealthStatusObservation healthStatusObservation = (HealthStatusObservation) theEObject;
+				T result = caseHealthStatusObservation(healthStatusObservation);
+				if (result == null) {
+					result = caseObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.COMMENT: {
 				Comment comment = (Comment) theEObject;
 				T result = caseComment(comment);
@@ -634,6 +596,46 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(problemConcernAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_OBSERVATION: {
+				ProblemObservation problemObservation = (ProblemObservation) theEObject;
+				T result = caseProblemObservation(problemObservation);
+				if (result == null) {
+					result = caseObservation(problemObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_STATUS: {
+				ProblemStatus problemStatus = (ProblemStatus) theEObject;
+				T result = caseProblemStatus(problemStatus);
+				if (result == null) {
+					result = caseObservation(problemStatus);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatus);
+				}
+				if (result == null) {
+					result = caseAct(problemStatus);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatus);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -943,7 +945,7 @@ public class ConsolSwitch<T> {
 				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
 				if (result == null) {
-					result = caseProcedure(planOfCareActivityProcedure);
+					result = caseCDA_Procedure(planOfCareActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(planOfCareActivityProcedure);
@@ -1087,6 +1089,46 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(vitalSignsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER: {
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
+				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
+				if (result == null) {
+					result = caseOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.VITAL_SIGN_OBSERVATION: {
+				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
+				T result = caseVitalSignObservation(vitalSignObservation);
+				if (result == null) {
+					result = caseObservation(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1816,46 +1858,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(vitalSignsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
-				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) {
-					result = caseOrganizer(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.VITAL_SIGN_OBSERVATION: {
-				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
-				T result = caseVitalSignObservation(vitalSignObservation);
-				if (result == null) {
-					result = caseObservation(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2886,6 +2888,80 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(immunizationMedicationInformation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE: {
+				Procedure procedure = (Procedure) theEObject;
+				T result = caseProcedure(procedure);
+				if (result == null) {
+					result = caseCDA_Procedure(procedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedure);
+				}
+				if (result == null) {
+					result = caseAct(procedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_SPECIMEN: {
+				ProcedureSpecimen procedureSpecimen = (ProcedureSpecimen) theEObject;
+				T result = caseProcedureSpecimen(procedureSpecimen);
+				if (result == null) {
+					result = caseSpecimen(procedureSpecimen);
+				}
+				if (result == null) {
+					result = caseParticipation(procedureSpecimen);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureSpecimen);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_PERFORMER: {
+				ProcedurePerformer procedurePerformer = (ProcedurePerformer) theEObject;
+				T result = caseProcedurePerformer(procedurePerformer);
+				if (result == null) {
+					result = casePerformer2(procedurePerformer);
+				}
+				if (result == null) {
+					result = caseParticipation(procedurePerformer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedurePerformer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ENCOUNTER: {
+				ProcedureEncounter procedureEncounter = (ProcedureEncounter) theEObject;
+				T result = caseProcedureEncounter(procedureEncounter);
+				if (result == null) {
+					result = caseCDA_Encounter(procedureEncounter);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureEncounter);
+				}
+				if (result == null) {
+					result = caseAct(procedureEncounter);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureEncounter);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4203,6 +4279,51 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Specimen</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Specimen</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureSpecimen(ProcedureSpecimen object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Performer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedurePerformer(ProcedurePerformer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Encounter</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureEncounter(ProcedureEncounter object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -5269,6 +5390,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Substance Administration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -5520,6 +5656,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePrecondition(Precondition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specimen</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specimen</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecimen(Specimen object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Performer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Performer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePerformer2(Performer2 object) {
 		return null;
 	}
 

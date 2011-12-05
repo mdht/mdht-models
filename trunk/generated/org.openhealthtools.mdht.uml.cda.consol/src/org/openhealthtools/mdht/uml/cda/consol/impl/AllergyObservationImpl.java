@@ -213,6 +213,15 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationMoodCode(this, diagnostics, context);
 	}

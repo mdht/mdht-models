@@ -83,15 +83,6 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePregnancyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
 	}
@@ -110,45 +101,8 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyObservationRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationRepeatNumber(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePregnancyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationInterpretationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePregnancyObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationMethodCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePregnancyObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
