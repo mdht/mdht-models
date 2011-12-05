@@ -650,6 +650,12 @@ conditions as described in the Entry Content Module.</body>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw" base_Association="_2PidWRSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_sHrUoBUSEeG6PvUxSTZnaw" name="Indication">
+    <ownedRule xmi:id="_MtdoIB7kEeGEaLkc3UAsAg" name="codeNullFlavor" constrainedElement="_sHrUoBUSEeG6PvUxSTZnaw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RK-VQB7kEeGEaLkc3UAsAg">
+        <language>Analysis</language>
+        <body>The value element MAY contain @nullFlavor (CONF:10088).&#xD;&#xA;If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”.  If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element (CONF:10089).</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_sHrUoRUSEeG6PvUxSTZnaw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -692,7 +698,9 @@ conditions as described in the Entry Content Module.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_4MwQEBUSEeG6PvUxSTZnaw" base_Class="_sHrUoBUSEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.19"/>
+  <CDA:CDATemplate xmi:id="_4MwQEBUSEeG6PvUxSTZnaw" base_Class="_sHrUoBUSEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.19">
+    <ruleId>CONF:7482</ruleId>
+  </CDA:CDATemplate>
   <Ecore:EAttribute xmi:id="_2MdMQRUSEeG6PvUxSTZnaw" isUnsettable="true" base_Property="_2MdMQBUSEeG6PvUxSTZnaw"/>
   <Ecore:EReference xmi:id="_2MdMQxUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MdMQhUSEeG6PvUxSTZnaw"/>
   <Ecore:EReference xmi:id="_2MdMRxUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MdMRBUSEeG6PvUxSTZnaw"/>
@@ -701,16 +709,8 @@ conditions as described in the Entry Content Module.</body>
   <Ecore:EReference xmi:id="_2MmWNBUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MmWMRUSEeG6PvUxSTZnaw"/>
   <Ecore:EReference xmi:id="_2MmWOBUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MmWNRUSEeG6PvUxSTZnaw"/>
   <uml:Class xmi:id="_2G8h9RSVEeGGzu7fmW9pXw" name="Instructions">
-    <ownedComment xmi:id="_2HCBgBSVEeGGzu7fmW9pXw" annotatedElement="_2G8h9RSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    Patient instructions are additional information provided to a patient related to one of their&#xD;
-    medications (e.g. &quot;take on an empty stomach&quot;).&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2G8h9hSVEeGGzu7fmW9pXw" annotatedElement="_2G8h9RSVEeGGzu7fmW9pXw">
-      <body>Any medication may be the subject of further instructions to the patient, for example to indicate&#xD;
-that it should be taken with food, et cetera. This structure is included in the target substance administration or supply act using the&#xD;
-&amp;lt;entryRelationship> element defined in the CDA Schema.</body>
+    <ownedComment xmi:id="_-HE7oB7lEeGEaLkc3UAsAg">
+      <body>The Instructions template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The act/code defines the type of instruction.Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</body>
     </ownedComment>
     <ownedRule xmi:id="_VsoLUBueEeGnMahsPjlwOw" name="textReference" constrainedElement="_2G8h9RSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y-ZeEBueEeGnMahsPjlwOw">
@@ -756,14 +756,24 @@ not the act being coded, so it appears in the &amp;lt;text> of the &amp;lt;obser
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2G8h_xSVEeGGzu7fmW9pXw" value="completed"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_3iHhABnbEeGs5a462vYX5Q" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.20"/>
-  <CDA:PropertyValidation xmi:id="_2G9JABSVEeGGzu7fmW9pXw" base_Property="_2G8h-BSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2HBacBSVEeGGzu7fmW9pXw" base_Property="_2HAzYRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-332</ruleId>
+  <CDA:CDATemplate xmi:id="_3iHhABnbEeGs5a462vYX5Q" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.20">
+    <ruleId>CONF:7393</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_2G9JABSVEeGGzu7fmW9pXw" base_Property="_2G8h-BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7391</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2G9wEBSVEeGGzu7fmW9pXw" base_Property="_2G8h-hSVEeGGzu7fmW9pXw"/>
-  <CDA:TextValue xmi:id="_2HAMUBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2G8iABSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2G_lQBSVEeGGzu7fmW9pXw" base_Property="_2G8h-xSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2HBacBSVEeGGzu7fmW9pXw" base_Property="_2HAzYRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7392</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2G9wEBSVEeGGzu7fmW9pXw" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7394</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_2HAMUBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2G8iABSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7395</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2G_lQBSVEeGGzu7fmW9pXw" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7396</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_2G5eoxSVEeGGzu7fmW9pXw" name="InternalReference">
     <ownedComment xmi:id="_2G5epBSVEeGGzu7fmW9pXw" annotatedElement="_2G5eoxSVEeGGzu7fmW9pXw">
       <body>&lt;p>CDA and HL7 Version 3 Entries may reference (point to) information contained in other entries&#xD;
@@ -1422,16 +1432,27 @@ internal or partially external.</body>
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2P7e5BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2P7e4hSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_1jO68Bq2EeGo461UQq-B1g" base_Property="_2MdMQBUSEeG6PvUxSTZnaw"/>
-  <CDA:PropertyValidation xmi:id="_3a3K8Bq2EeGo461UQq-B1g" base_Property="_2MdMTBUSEeG6PvUxSTZnaw"/>
+  <CDA:PropertyValidation xmi:id="_1jO68Bq2EeGo461UQq-B1g" base_Property="_2MdMQBUSEeG6PvUxSTZnaw">
+    <ruleId>CONF:7480</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_3a3K8Bq2EeGo461UQq-B1g" base_Property="_2MdMTBUSEeG6PvUxSTZnaw">
+    <ruleId>CONF:7481</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7483</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Gb3E8Bq3EeGo461UQq-B1g" code="completed" base_Property="_2MmWMRUSEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7487</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_MI78gBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MdMRBUSEeG6PvUxSTZnaw"/>
-  <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw"/>
+  <CDA:PropertyValidation xmi:id="_MI78gBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MdMRBUSEeG6PvUxSTZnaw">
+    <ruleId>CONF:7488</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
+    <ruleId>CONF:7489</ruleId>
+    <ruleId>CONF:7991</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
@@ -1441,6 +1462,10 @@ internal or partially external.</body>
   <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ConstraintValidation xmi:id="_XbW-ABueEeGnMahsPjlwOw" severity="WARNING" base_Constraint="_VsoLUBueEeGnMahsPjlwOw"/>
-  <CDA:PropertyValidation xmi:id="_Wy2XEBufEeGnMahsPjlwOw" base_Property="_2MdMSBUSEeG6PvUxSTZnaw"/>
+  <CDA:ConstraintValidation xmi:id="_XbW-ABueEeGnMahsPjlwOw" severity="WARNING" base_Constraint="_VsoLUBueEeGnMahsPjlwOw">
+    <ruleId>CONF:7397</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_Wy2XEBufEeGnMahsPjlwOw" base_Property="_2MdMSBUSEeG6PvUxSTZnaw">
+    <ruleId>CONF:9321</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

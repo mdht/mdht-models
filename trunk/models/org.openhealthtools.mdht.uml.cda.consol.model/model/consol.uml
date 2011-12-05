@@ -348,7 +348,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_ZljOshU9EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_cqsashU9EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_fhFZAhU9EeGbmN_W114JUw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_i7iGohU9EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_m131QhU9EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_pdgl4RU9EeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_rQGk4hU9EeGbmN_W114JUw"/>
@@ -557,36 +556,45 @@
     <base_Association href=".controlled/consol-immunizations.uml#_NdMEkRq1EeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ChoggBq2EeGo461UQq-B1g">
+    <ruleId>CONF:7492</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_A3suQRq2EeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_hDPtEBrUEeGo461UQq-B1g" severity="INFO" typeCode="REFR">
     <base_Association href=".controlled/consol-immunizations.uml#_eLHCUhrUEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_-n6vEBrYEeGo461UQq-B1g" severity="INFO">
+    <ruleId>CONF:7459</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_YCao8BrYEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="__LxqEBrYEeGo461UQq-B1g" severity="INFO">
+    <ruleId>CONF:9331</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_cBgUsRrYEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="__4LdEBrYEeGo461UQq-B1g" severity="INFO">
     <base_Association href=".controlled/consol-medications.uml#_eqeiEBrYEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AjcAkBrZEeGo461UQq-B1g">
+    <ruleId>CONF:7467</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_j8nKEBrYEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_B_1GEBrZEeGo461UQq-B1g" severity="INFO">
-    <base_Association href=".controlled/consol-medications.uml#_3-ztEBrYEeGo461UQq-B1g"/>
-  </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_iMIjkBrbEeGo461UQq-B1g" severity="INFO" typeCode="RSON">
+    <ruleId>CONF:7337</ruleId>
+    <ruleId>CONF:7338</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_oVqGkBrbEeGo461UQq-B1g" severity="INFO" typeCode="RSON">
+    <ruleId>CONF:7340</ruleId>
+    <ruleId>CONF:7341</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_qYdhABt5EeGnMahsPjlwOw" severity="INFO" typeCode="REFR">
+    <ruleId>CONF:8860</ruleId>
+    <ruleId>CONF:8861</ruleId>
+    <ruleId>CONF:8862</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_nYYbMBt5EeGnMahsPjlwOw"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_1ZGHcBt6EeGnMahsPjlwOw" severity="WARNING">
+    <ruleId>CONF:9012</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_0bKfkRt6EeGnMahsPjlwOw"/>
   </CDA:AssociationValidation>
   <Ecore:EReference xmi:id="_ZoAakBuEEeGnMahsPjlwOw" xmlNamespace="##targetNamespace"/>

@@ -970,6 +970,18 @@ historical purposes.&#xD;
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True (CONF:7344).</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_0GiY4B7nEeGEaLkc3UAsAg" name="effectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1tzRoB7nEeGEaLkc3UAsAg">
+        <language>Analysis</language>
+        <body>This effectiveTime SHOULD contain zero or one [0..1] low</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3bLZcB7nEeGEaLkc3UAsAg" name="effectiveTimeHigh" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5-C-0B7nEeGEaLkc3UAsAg">
+        <language>Analysis</language>
+        <body>This effectiveTime SHOULD contain zero or one [0..1] high</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1044,7 +1056,9 @@ historical purposes.&#xD;
   <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FGu4BSVEeGGzu7fmW9pXw _2FRG8hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2FRG8hSVEeGGzu7fmW9pXw" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9"/>
+  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9">
+    <ruleId>CONF:7323</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2FskwhSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-280</ruleId>
   </CDA:ConstraintValidation>
@@ -1063,26 +1077,41 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FAoRBSVEeGGzu7fmW9pXw" base_Property="_2FAoQhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-155</ruleId>
+    <ruleId>CONF:7326</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FBPVRSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" base_Property="_2FDEgBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7329</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7327</ruleId>
+    <ruleId>CONF:9107</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" base_Property="_2FDEgBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7330</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FDrkhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FDrkRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-156</ruleId>
-    <ruleId>CONF-157</ruleId>
+    <ruleId>CONF:7328</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2FFgwxSVEeGGzu7fmW9pXw" base_Property="_2FFgwRSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7332</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FFgwxSVEeGGzu7fmW9pXw" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7335</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7325</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_OjVYABrbEeGo461UQq-B1g" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_WZIPkBrbEeGo461UQq-B1g" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
-  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:7580</ruleId>
+    <ruleId>CONF:7581</ruleId>
+  </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_HxiKABwNEeGlALrr33gUJg" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7801</ruleId>
   </CDA:PropertyValidation>
@@ -1104,4 +1133,14 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_kWt0YBxSEeGGdsHVD60BZA" base_Property="_2Em_oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7379</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_8dfcwB7nEeGEaLkc3UAsAg" base_Constraint="_0GiY4B7nEeGEaLkc3UAsAg">
+    <ruleId>CONF:7333</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-UGZEB7nEeGEaLkc3UAsAg" base_Constraint="_3bLZcB7nEeGEaLkc3UAsAg">
+    <ruleId>CONF:7334</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ThwCkB7oEeGEaLkc3UAsAg" base_Constraint="_IvIIQBrcEeGo461UQq-B1g">
+    <ruleId>CONF:7344</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qmctQB7oEeGEaLkc3UAsAg" base_Constraint="_P3TE0BrcEeGo461UQq-B1g"/>
 </xmi:XMI>
