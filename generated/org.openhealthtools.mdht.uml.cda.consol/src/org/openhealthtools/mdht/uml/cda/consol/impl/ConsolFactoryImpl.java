@@ -73,14 +73,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityProcedure();
 			case ConsolPackage.INDICATION:
 				return createIndication();
-			case ConsolPackage.PROBLEM_OBSERVATION:
-				return createProblemObservation();
-			case ConsolPackage.AGE_OBSERVATION:
-				return createAgeObservation();
-			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
-				return createHealthStatusObservation();
-			case ConsolPackage.PROBLEM_STATUS:
-				return createProblemStatus();
 			case ConsolPackage.MEDICATION_ACTIVITY:
 				return createMedicationActivity();
 			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY:
@@ -99,6 +91,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAllergyStatusObservation();
 			case ConsolPackage.EPISODE_OBSERVATION:
 				return createEpisodeObservation();
+			case ConsolPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
+				return createHealthStatusObservation();
 			case ConsolPackage.COMMENT:
 				return createComment();
 			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
@@ -113,6 +109,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationFullfillmentInstructions();
 			case ConsolPackage.PROBLEM_CONCERN_ACT:
 				return createProblemConcernAct();
+			case ConsolPackage.PROBLEM_OBSERVATION:
+				return createProblemObservation();
+			case ConsolPackage.PROBLEM_STATUS:
+				return createProblemStatus();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT:
 				return createContinuityOfCareDocument();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
@@ -161,6 +161,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityAct();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
 				return createVitalSignsSectionEntriesOptional();
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case ConsolPackage.VITAL_SIGN_OBSERVATION:
+				return createVitalSignObservation();
 			case ConsolPackage.FAMILY_HISTORY_SECTION:
 				return createFamilyHistorySection();
 			case ConsolPackage.FAMILY_HISTORY_ORGANIZER:
@@ -239,10 +243,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSupport();
 			case ConsolPackage.VITAL_SIGNS_SECTION:
 				return createVitalSignsSection();
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
-				return createVitalSignsOrganizer();
-			case ConsolPackage.VITAL_SIGN_OBSERVATION:
-				return createVitalSignObservation();
 			case ConsolPackage.DIAGNOSTIC_RESULTS_SECTION:
 				return createDiagnosticResultsSection();
 			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
@@ -361,6 +361,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
 				return createImmunizationMedicationInformation();
+			case ConsolPackage.PROCEDURE:
+				return createProcedure();
+			case ConsolPackage.PROCEDURE_SPECIMEN:
+				return createProcedureSpecimen();
+			case ConsolPackage.PROCEDURE_PERFORMER:
+				return createProcedurePerformer();
+			case ConsolPackage.PROCEDURE_ENCOUNTER:
+				return createProcedureEncounter();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1874,6 +1882,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ImmunizationMedicationInformation createImmunizationMedicationInformation() {
 		ImmunizationMedicationInformationImpl immunizationMedicationInformation = new ImmunizationMedicationInformationImpl();
 		return immunizationMedicationInformation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Procedure createProcedure() {
+		ProcedureImpl procedure = new ProcedureImpl();
+		return procedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureSpecimen createProcedureSpecimen() {
+		ProcedureSpecimenImpl procedureSpecimen = new ProcedureSpecimenImpl();
+		return procedureSpecimen;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedurePerformer createProcedurePerformer() {
+		ProcedurePerformerImpl procedurePerformer = new ProcedurePerformerImpl();
+		return procedurePerformer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureEncounter createProcedureEncounter() {
+		ProcedureEncounterImpl procedureEncounter = new ProcedureEncounterImpl();
+		return procedureEncounter;
 	}
 
 	/**

@@ -41,7 +41,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyProblemAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.30' constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEntryRelationshipRequired AllergyProblemActEffectiveTimeLowHigh AllergyProblemActHasRelatedObservations AllergyProblemActRelatedObservationsTypeCode AllergyProblemActHasRelatedReferencesTypeCode AllergyProblemActAdverseEventType AllergyProblemActAdverseEventTypeVocab AllergyProblemActAllergyProductTypeCode AllergyProblemActProductDetailParticipantRole AllergyProblemActProductDetailParticipantRoleClassCode AllergyProblemActProductDetailPlayingEntity AllergyProblemActProductDetailPlayingEntityClassCode AllergyProblemActProductDetailName AllergyProblemActAllergyProductFoodVocab AllergyProblemActAllergyProductMedClassVocab AllergyProblemActAllergyProductSpecificMedVocab AllergyProblemActReactionCodeVocab AllergyProblemActSeverityCodeVocab AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCodeNullFlavor AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='AllergyProblemActSubjectOfTarget AllergyProblemActContainsProblemObservation AllergyProblemActContainsAlertObservation AllergyProblemActAdverseEventDate AllergyProblemActAllergyProduct AllergyProblemActProductCode AllergyProblemActReactionText AllergyProblemActReactionCode AllergyProblemActSeverityText AllergyProblemActSeverityCode' moodCode='EVN' constraints.validation.info='AllergyProblemActContainsPatientAwareness'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Allergies, adverse reactions, alerts' templateId.root='2.16.840.1.113883.10.20.22.4.30' constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEntryRelationshipRequired AllergyProblemActEffectiveTimeLowHigh AllergyProblemActHasRelatedObservations AllergyProblemActRelatedObservationsTypeCode AllergyProblemActHasRelatedReferencesTypeCode AllergyProblemActAdverseEventType AllergyProblemActAdverseEventTypeVocab AllergyProblemActAllergyProductTypeCode AllergyProblemActProductDetailParticipantRole AllergyProblemActProductDetailParticipantRoleClassCode AllergyProblemActProductDetailPlayingEntity AllergyProblemActProductDetailPlayingEntityClassCode AllergyProblemActProductDetailName AllergyProblemActAllergyProductFoodVocab AllergyProblemActAllergyProductMedClassVocab AllergyProblemActAllergyProductSpecificMedVocab AllergyProblemActReactionCodeVocab AllergyProblemActSeverityCodeVocab AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation' code.codeSystemName='LOINC' constraints.validation.warning='AllergyProblemActSubjectOfTarget AllergyProblemActContainsProblemObservation AllergyProblemActContainsAlertObservation AllergyProblemActAdverseEventDate AllergyProblemActAllergyProduct AllergyProblemActProductCode AllergyProblemActReactionText AllergyProblemActReactionCode AllergyProblemActSeverityText AllergyProblemActSeverityCode' classCode='ACT' code.code='48765-2' constraints.validation.info='AllergyProblemActContainsPatientAwareness' moodCode='EVN'"
  *        annotation="uml2.alias Allergies\040and\040Drug\040Sensitivities='null' Allergy\040and\040Drug\040Sensitivity='null'"
  * @generated
  */
@@ -514,14 +514,31 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.nullFlavor = vocab::NullFlavor::NA)
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
+	 * value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.nullFlavor = vocab::NullFlavor::NA)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
-	boolean validateAllergyProblemActCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '55561003' or value.code = '73425007' or value.code = '90734009' or value.code = '7087005' or value.code = '255227004' or value.code = '415684004' or value.code = '410516002' or value.code = '413322009')))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'55561003\' or value.code = \'73425007\' or value.code = \'90734009\' or value.code = \'7087005\' or value.code = \'255227004\' or value.code = \'415684004\' or value.code = \'410516002\' or value.code = \'413322009\')))'"
+	 * @generated
+	 */
+	boolean validateAllergyProblemActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
