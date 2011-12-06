@@ -512,35 +512,6 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_BJU_EBrdEeGo461UQq-B1g" base_Property="_Dr388BVOEeGbmN_W114JUw">
     <ruleId>CONF:8994</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_rlOroBq0EeGo461UQq-B1g" name="ImmunizationMedicationInformationMaterial">
-    <ownedRule xmi:id="_D431sBq1EeGo461UQq-B1g" name="originalText" constrainedElement="_rlOroBq0EeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FjHxABq1EeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>i. This code SHOULD contain zero or one [0..1] originalText (CONF:9008). &#xA;1. This originalText, if present, SHOULD contain zero or one [0..1] reference/@value (CONF:9009). &#xA;a. This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:9010).</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_JPlbsBq1EeGo461UQq-B1g" name="translation" constrainedElement="_rlOroBq0EeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Kf5NABq1EeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>ii. This code MAY contain zero or more [0..*] translation (CONF:9011). &#xA;1. Translations can be used to represent generic product name, packaged product code, etc. (CONF:9013).</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_rlOroRq0EeGo461UQq-B1g">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_rFzJEEcZEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_wCmO0Bq0EeGo461UQq-B1g" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wCmO0Rq0EeGo461UQq-B1g" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wCmO0hq0EeGo461UQq-B1g"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_wCnc8Bq0EeGo461UQq-B1g" name="lotNumberText" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wCnc8Rq0EeGo461UQq-B1g" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wCnc8hq0EeGo461UQq-B1g"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vsf-cEo6Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
-  </uml:Class>
   <CDA:ConstraintValidation xmi:id="_EjBl8Bq1EeGo461UQq-B1g" severity="WARNING" base_Constraint="_D431sBq1EeGo461UQq-B1g"/>
   <Ecore:EReference xmi:id="_wCm14Bq0EeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_wCmO0Bq0EeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_x5Bk8Bq0EeGo461UQq-B1g" base_Property="_wCmO0Bq0EeGo461UQq-B1g"/>
