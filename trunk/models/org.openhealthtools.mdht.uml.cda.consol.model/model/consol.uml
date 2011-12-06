@@ -724,11 +724,6 @@
     <ruleId>CONF:7416</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_f6p3QiAMEeGKirKJsFylGA"/>
   </CDA:AssociationValidation>  
-  <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING" base_Association="_GXXWwBrIEeGZ46SdiDZtPQ">
-    <ruleId>CONF-7119</ruleId>
-    <ruleId>CONF-7120</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_xyLJgBrJEeGZ46SdiDZtPQ" base_Association="_wGY9IBrJEeGZ46SdiDZtPQ"/>
   <CDA:AssociationValidation xmi:id="_AFd2wB7tEeGaOZtrEokzNQ" severity="INFO">
     <ruleId>CONF-9139</ruleId>
   </CDA:AssociationValidation>
