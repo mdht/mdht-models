@@ -10,9 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionEntriesOptionalOperations;
@@ -89,6 +91,15 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	public boolean validateAllergiesSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AllergyProblemAct> getAllergyProblemActs() {
+		return AllergiesSectionEntriesOptionalOperations.getAllergyProblemActs(this);
 	}
 
 	/**

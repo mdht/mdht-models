@@ -17,6 +17,7 @@ import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
+import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant2;
@@ -35,6 +36,7 @@ import org.openhealthtools.mdht.uml.cda.consol.*;
 
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.ActRelationship;
+import org.openhealthtools.mdht.uml.hl7.rim.Entity;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
 import org.openhealthtools.mdht.uml.hl7.rim.Role;
@@ -268,37 +270,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY: {
-				NonMedicinalSupplyActivity nonMedicinalSupplyActivity = (NonMedicinalSupplyActivity) theEObject;
-				T result = caseNonMedicinalSupplyActivity(nonMedicinalSupplyActivity);
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER: {
+				MedicationSupplyOrder medicationSupplyOrder = (MedicationSupplyOrder) theEObject;
+				T result = caseMedicationSupplyOrder(medicationSupplyOrder);
 				if (result == null) {
-					result = caseSupply(nonMedicinalSupplyActivity);
+					result = caseSupply(medicationSupplyOrder);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(nonMedicinalSupplyActivity);
+					result = caseClinicalStatement(medicationSupplyOrder);
 				}
 				if (result == null) {
-					result = caseAct(nonMedicinalSupplyActivity);
+					result = caseAct(medicationSupplyOrder);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(nonMedicinalSupplyActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PRODUCT_INSTANCE: {
-				ProductInstance productInstance = (ProductInstance) theEObject;
-				T result = caseProductInstance(productInstance);
-				if (result == null) {
-					result = caseParticipantRole(productInstance);
-				}
-				if (result == null) {
-					result = caseRole(productInstance);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(productInstance);
+					result = caseInfrastructureRoot(medicationSupplyOrder);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -345,26 +330,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.MEDICATION_SUPPLY_ORDER: {
-				MedicationSupplyOrder medicationSupplyOrder = (MedicationSupplyOrder) theEObject;
-				T result = caseMedicationSupplyOrder(medicationSupplyOrder);
-				if (result == null) {
-					result = caseSupply(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseAct(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.DRUG_VEHICLE: {
 				DrugVehicle drugVehicle = (DrugVehicle) theEObject;
 				T result = caseDrugVehicle(drugVehicle);
@@ -376,6 +341,23 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(drugVehicle);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PRODUCT_INSTANCE: {
+				ProductInstance productInstance = (ProductInstance) theEObject;
+				T result = caseProductInstance(productInstance);
+				if (result == null) {
+					result = caseParticipantRole(productInstance);
+				}
+				if (result == null) {
+					result = caseRole(productInstance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productInstance);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -556,6 +538,26 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(medicationType);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY: {
+				NonMedicinalSupplyActivity nonMedicinalSupplyActivity = (NonMedicinalSupplyActivity) theEObject;
+				T result = caseNonMedicinalSupplyActivity(nonMedicinalSupplyActivity);
+				if (result == null) {
+					result = caseSupply(nonMedicinalSupplyActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(nonMedicinalSupplyActivity);
+				}
+				if (result == null) {
+					result = caseAct(nonMedicinalSupplyActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(nonMedicinalSupplyActivity);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2968,6 +2970,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: {
+				MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial = (MedicationInformationManufacturedMaterial) theEObject;
+				T result = caseMedicationInformationManufacturedMaterial(medicationInformationManufacturedMaterial);
+				if (result == null) {
+					result = caseMaterial(medicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = caseEntity(medicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -4320,6 +4339,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProcedureEncounter(ProcedureEncounter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Information Manufactured Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Information Manufactured Material</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationInformationManufacturedMaterial(MedicationInformationManufacturedMaterial object) {
 		return null;
 	}
 
@@ -5686,6 +5720,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePerformer2(Performer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEntity(Entity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Material</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMaterial(Material object) {
 		return null;
 	}
 

@@ -17,31 +17,9 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  * A representation of the model object '<em><b>Medication Information</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p>
- * The product entry describes a medication or immunization used in a 'substanceAdministration'
- * or 'supply' act
- * </p>
- * <p>
- * In a CDA document, the name and strength of the medication are specified in the elements under
- * the 'manufacturedMaterial' element.
- * </p>
- * <p>
- * The 'code' element of the 'manufacturedMaterial' describes the medication. This may be
- * coded using a controlled vocabulary, such as RxNorm, First Databank, or other vocabulary
- * system for medications, and should be the code that represents the generic medication name and
- * strength (e.g., acetaminophen and oxycodone -5/325), or just the generic medication name alone
- * if strength is not relevant (Acetaminophen).
- * In a CDA document, the &lt;originalText> shall contain a 'reference' whose URI value points to
- * the generic name and strength of the medication, or just the generic name alone if strength is not
- * relevant.
- * </p>
- * The product concentration is determined from the coded product or brand name using knowledge base information in the vocabularies specified for these fields, and therefore this information is not explicitly included.
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.error='MedicationInformationTemplateId MedicationInformationHasMaterial MedicationInformationHasMaterialCode MedicationInformationHasMaterialCodeOriginalText MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName MedicationInformationClassCode' constraints.validation.warning='MedicationInformationHasMaterialCodeVocab MedicationInformationShouldHaveMaterialManufacturer' classCode='MANU' constraints.validation.info='MedicationInformationHasMaterialName MedicationInformationMayHaveMaterialManufacturer MedicationInformationCodedIngredientVocab MedicationInformationId'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {
@@ -255,6 +233,19 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @generated
 	 */
 	boolean validateMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * isDefined('classCode')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
+	 * @generated
+	 */
+	boolean validateMedicationInformationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

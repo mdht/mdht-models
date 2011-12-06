@@ -66,6 +66,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
@@ -103,8 +104,8 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationActivity> getConsolMedications() {
-		return MedicationsSectionOperations.getConsolMedications(this);
+	public EList<MedicationActivity> getMedications() {
+		return MedicationsSectionOperations.getMedications(this);
 	}
 
 	/**

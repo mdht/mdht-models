@@ -93,8 +93,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AllergyProblemAct> getConsolAllergyDrugSensitivities() {
-		return AllergiesSectionOperations.getConsolAllergyDrugSensitivities(this);
+	public EList<AllergyProblemAct> getAllergyDrugSensitivities() {
+		return AllergiesSectionOperations.getAllergyDrugSensitivities(this);
 	}
 
 	/**

@@ -1421,6 +1421,15 @@ public interface ConsolFactory extends EFactory {
 	ProcedureEncounter createProcedureEncounter();
 
 	/**
+	 * Returns a new object of class '<em>Medication Information Manufactured Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Information Manufactured Material</em>'.
+	 * @generated
+	 */
+	MedicationInformationManufacturedMaterial createMedicationInformationManufacturedMaterial();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
