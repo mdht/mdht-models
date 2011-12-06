@@ -842,15 +842,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_toQ8oBxwEeGXP8PxDYviDg" base_Constraint="_rOfo4BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8274</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_BW2n4B0FEeGlVNChrpQV_Q" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
-    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
-  </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_DgKdwB0FEeGlVNChrpQV_Q" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
-  </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_G_fEUB0FEeGlVNChrpQV_Q" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_OOqdQR0EEeGlVNChrpQV_Q"/>
-  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_qeLqQBxEEeGIELeDlfT77A" name="ProcedureEncounter">
     <ownedRule xmi:id="_UWwzQBxcEeGXP8PxDYviDg" name="sameEncounter" constrainedElement="_qeLqQBxEEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WsHhEBxcEeGXP8PxDYviDg">

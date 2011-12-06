@@ -178,7 +178,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2SC-wxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2SC-yhSVEeGGzu7fmW9pXw" name="problemStatusObservation" association="_2SC-zBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_2FRuAhSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_2FRuAhSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2SC-yxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
   </uml:Class>
