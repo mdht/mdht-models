@@ -2,7 +2,9 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2LMIwBSVEeGGzu7fmW9pXw" name="AllergiesSection">
     <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <body>This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;
+&#xD;
+This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
     </ownedComment>
     <ownedComment xmi:id="_2LRBQhSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
       <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the&#xD;
@@ -15,15 +17,6 @@ associated adverse reactions suffered by the patient.</body>
     allergies and adverse reactions shall be listed. &#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_2LQaMBSVEeGGzu7fmW9pXw" name="titleValue">
-      <ownedComment xmi:id="_2LQaMRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LQaMhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing &quot;alert&quot; and/or &quot;allergies and adverse reactions&quot;.</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_2LQaNBSVEeGGzu7fmW9pXw" name="absenceIsAsserted">
       <ownedComment xmi:id="_2LQaNRSVEeGGzu7fmW9pXw">
         <body>UNIMPLEMENTABLE</body>
@@ -56,7 +49,7 @@ associated adverse reactions suffered by the patient.</body>
   <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1">
     <ruleId>CONF:7527</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2LQaMBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-261</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2LRBQBSVEeGGzu7fmW9pXw" base_Constraint="_2LQaNBSVEeGGzu7fmW9pXw">
@@ -89,15 +82,6 @@ associated adverse reactions suffered by the patient.</body>
     allergies and adverse reactions shall be listed. &#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_bGzYhBVdEeGQCvUGzi1kDQ" name="titleValue">
-      <ownedComment xmi:id="_bGzYhRVdEeGQCvUGzi1kDQ">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bGzYhhVdEeGQCvUGzi1kDQ">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing &quot;alert&quot; and/or &quot;allergies and adverse reactions&quot;.</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_bGzYhxVdEeGQCvUGzi1kDQ" name="absenceIsAsserted">
       <ownedComment xmi:id="_bGzYiBVdEeGQCvUGzi1kDQ">
         <body>UNIMPLEMENTABLE</body>
@@ -121,9 +105,9 @@ associated adverse reactions suffered by the patient.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGzYjRVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_bGzYjxVdEeGQCvUGzi1kDQ" name="allergyDrugSensitivity" type="_2EAisBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-FrTQBwNEeGlALrr33gUJg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-FrTQRwNEeGlALrr33gUJg"/>
+    <ownedAttribute xmi:id="_lqJOQB0aEeGGdsHVD60BZA" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_lqJOQh0aEeGGdsHVD60BZA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qtWpcB0aEeGGdsHVD60BZA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qtWpcR0aEeGGdsHVD60BZA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
@@ -357,8 +341,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
     <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLfBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" association="_-xkhwhUvEeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_2FRuAhSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
     </ownedAttribute>
   </uml:Class>
@@ -388,7 +371,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   <CDA:ConstraintValidation xmi:id="_2EfD0BSVEeGGzu7fmW9pXw" base_Constraint="_2EaLWxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLXhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLZxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaRSVEeGGzu7fmW9pXw"/>
@@ -418,6 +401,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2EdOoBSVEeGGzu7fmW9pXw" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7390</ruleId>
+    <ruleId>CONF:9139</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_2Ej8UxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ej8URSVEeGGzu7fmW9pXw" typeCode="MFST"/>
   <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="REFR"/>
@@ -873,20 +857,16 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2EMv8xSVEeGGzu7fmW9pXw" base_Property="_2EMv8BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7472</ruleId>
   </CDA:PropertyValidation>
-  <CDA:NullFlavor xmi:id="_2EMv9RSVEeGGzu7fmW9pXw" base_Property="_2EMv9BSVEeGGzu7fmW9pXw" nullFlavor="NA">
-    <ruleId>CONF:7477</ruleId>
-  </CDA:NullFlavor>
-  <CDA:PropertyValidation xmi:id="_2EN-EBSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7485</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7485</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7498</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_2F6nMhSVEeGGzu7fmW9pXw" base_Association="_2F6nMBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7509</ruleId>
+    <ruleId>CONF:7510</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2FGu4hSVEeGGzu7fmW9pXw" name="SeverityObservation">
     <ownedComment xmi:id="_2FGu4xSVEeGGzu7fmW9pXw" annotatedElement="_2FGu4hSVEeGGzu7fmW9pXw">
@@ -970,18 +950,6 @@ historical purposes.&#xD;
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True (CONF:7344).</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_0GiY4B7nEeGEaLkc3UAsAg" name="effectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1tzRoB7nEeGEaLkc3UAsAg">
-        <language>Analysis</language>
-        <body>This effectiveTime SHOULD contain zero or one [0..1] low</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_3bLZcB7nEeGEaLkc3UAsAg" name="effectiveTimeHigh" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5-C-0B7nEeGEaLkc3UAsAg">
-        <language>Analysis</language>
-        <body>This effectiveTime SHOULD contain zero or one [0..1] high</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1056,9 +1024,7 @@ historical purposes.&#xD;
   <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FGu4BSVEeGGzu7fmW9pXw _2FRG8hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2FRG8hSVEeGGzu7fmW9pXw" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9">
-    <ruleId>CONF:7323</ruleId>
-  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9"/>
   <CDA:ConstraintValidation xmi:id="_2FskwhSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-280</ruleId>
   </CDA:ConstraintValidation>
@@ -1077,41 +1043,26 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FAoRBSVEeGGzu7fmW9pXw" base_Property="_2FAoQhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7326</ruleId>
+    <ruleId>CONF-155</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7329</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7327</ruleId>
-    <ruleId>CONF:9107</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" base_Property="_2FDEgBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7330</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FBPVRSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" base_Property="_2FDEgBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2FDrkhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FDrkRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7328</ruleId>
+    <ruleId>CONF-156</ruleId>
+    <ruleId>CONF-157</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7332</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FFgwxSVEeGGzu7fmW9pXw" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7335</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7325</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FFgwxSVEeGGzu7fmW9pXw" base_Property="_2FFgwRSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_OjVYABrbEeGo461UQq-B1g" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_WZIPkBrbEeGo461UQq-B1g" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
-  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ">
-    <ruleId>CONF:7580</ruleId>
-    <ruleId>CONF:7581</ruleId>
-  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="INFO" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
   <CDA:PropertyValidation xmi:id="_HxiKABwNEeGlALrr33gUJg" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7801</ruleId>
   </CDA:PropertyValidation>
@@ -1124,23 +1075,134 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2GICwBwNEeGlALrr33gUJg" base_Property="_bGzYjBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7803</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="__eoqQBwNEeGlALrr33gUJg" severity="WARNING" base_Property="_bGzYjxVdEeGQCvUGzi1kDQ">
+  <CDA:PropertyValidation xmi:id="__eoqQBwNEeGlALrr33gUJg" severity="WARNING">
     <ruleId>CONF:7805</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_-Yz2kBxNEeGGdsHVD60BZA" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2EMv9BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7477</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_kWt0YBxSEeGGdsHVD60BZA" base_Property="_2Em_oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7379</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_8dfcwB7nEeGEaLkc3UAsAg" base_Constraint="_0GiY4B7nEeGEaLkc3UAsAg">
-    <ruleId>CONF:7333</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_eWhS0B0eEeGGdsHVD60BZA" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c2vy0aDqEd-dVeaMP0XXQw"/>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_lqJOQh0aEeGGdsHVD60BZA" memberEnd="_lqJOQB0aEeGGdsHVD60BZA _lqJOQx0aEeGGdsHVD60BZA">
+    <ownedEnd xmi:id="_lqJOQx0aEeGGdsHVD60BZA" type="_bGzYgBVdEeGQCvUGzi1kDQ" association="_lqJOQh0aEeGGdsHVD60BZA"/>
+  </uml:Association>
+  <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="AllergyStatusObservation">
+    <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
+      <body>This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_2FZp0BSVEeGGzu7fmW9pXw" name="targetOfEntryRelationship">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FZp0RSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2FZp0xSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">
+      <ownedComment xmi:id="_2FZp1BSVEeGGzu7fmW9pXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FZp1RSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <body>SHALL NOT contain any additional Observation attributes.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2FaQ4RSVEeGGzu7fmW9pXw" name="noAdditionalParticipants">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FaQ4hSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT contain any Observation participants.</body>
+        <body>self.participant->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2Fa38BSVEeGGzu7fmW9pXw" name="noAdditionalRelationships">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Fa38RSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT be the source of any Observation relationships.</body>
+        <body>self.entryRelationship->select(er|not er.observation.oclIsUndefined())->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2FRuBBSVEeGGzu7fmW9pXw" name="hasTextReference">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FRuBRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+        <body>not self.text.reference.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2FbfABSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2FV_cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_cRSVEeGGzu7fmW9pXw" name="OBS">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FV_cxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_dBSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FWmgBSVEeGGzu7fmW9pXw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FRuBxSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FRuCBSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FRuCRSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FX0oBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FRuChSVEeGGzu7fmW9pXw" name="value" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28">
+    <ruleId>CONF:7317</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2FZp0hSVEeGGzu7fmW9pXw" base_Constraint="_2FZp0BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_-UGZEB7nEeGEaLkc3UAsAg" base_Constraint="_3bLZcB7nEeGEaLkc3UAsAg">
-    <ruleId>CONF:7334</ruleId>
+  <CDA:ConstraintValidation xmi:id="_2FaQ4BSVEeGGzu7fmW9pXw" base_Constraint="_2FZp0xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-517</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_ThwCkB7oEeGEaLkc3UAsAg" base_Constraint="_IvIIQBrcEeGo461UQq-B1g">
-    <ruleId>CONF:7344</ruleId>
+  <CDA:ConstraintValidation xmi:id="_2FaQ4xSVEeGGzu7fmW9pXw" base_Constraint="_2FaQ4RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-518</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_qmctQB7oEeGEaLkc3UAsAg" base_Constraint="_P3TE0BrcEeGo461UQq-B1g"/>
+  <CDA:ConstraintValidation xmi:id="_2Fa38hSVEeGGzu7fmW9pXw" base_Constraint="_2Fa38BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-519</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw" base_Constraint="_2FRuBBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7318</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FV_dRSVEeGGzu7fmW9pXw" base_Property="_2FV_cxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7319</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2FWmgRSVEeGGzu7fmW9pXw" code="33999-4" displayName="Status" base_Property="_2FWmgBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7320</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw" base_Property="_2FRuBxSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7321</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2FTjMBSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7322</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
