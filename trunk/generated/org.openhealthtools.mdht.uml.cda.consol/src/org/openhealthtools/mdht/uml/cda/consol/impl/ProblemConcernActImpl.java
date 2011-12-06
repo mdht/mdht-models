@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -56,92 +57,9 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActEntryRelationshipRequired(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActEntryRelationshipRequired(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActSubjectOfTarget(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActContainsProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActContainsProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActContainsAlertObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActContainsAlertObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActContainsPatientAwareness(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActContainsPatientAwareness(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProblemConcernActEffectiveTimeLowHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeLowHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActHasRelatedObservations(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasRelatedObservations(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActRelatedObservationsTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActRelatedObservationsTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasRelatedReferencesTypeCode(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +131,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActCodeNullFlavor(this, diagnostics, context);
+	public boolean validateProblemConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActCode(this, diagnostics, context);
 	}
 
 	/**
@@ -240,8 +158,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemObservation getProblemObservation() {
-		return ProblemConcernActOperations.getProblemObservation(this);
+	public EList<ProblemObservation> getProblemObservations() {
+		return ProblemConcernActOperations.getProblemObservations(this);
 	}
 
 	/**

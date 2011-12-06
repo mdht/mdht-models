@@ -80,15 +80,6 @@ public interface ConsolFactory extends EFactory {
 	AllergyStatusObservation createAllergyStatusObservation();
 
 	/**
-	 * Returns a new object of class '<em>Episode Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Episode Observation</em>'.
-	 * @generated
-	 */
-	EpisodeObservation createEpisodeObservation();
-
-	/**
 	 * Returns a new object of class '<em>Age Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1194,15 +1185,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	AssessmentAndPlanSection createAssessmentAndPlanSection();
-
-	/**
-	 * Returns a new object of class '<em>Condition Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Condition Entry</em>'.
-	 * @generated
-	 */
-	ConditionEntry createConditionEntry();
 
 	/**
 	 * Returns a new object of class '<em>Language Spoken</em>'.

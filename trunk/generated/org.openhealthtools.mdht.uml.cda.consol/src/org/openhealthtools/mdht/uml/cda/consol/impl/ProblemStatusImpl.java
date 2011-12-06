@@ -64,6 +64,60 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemStatusClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProblemStatus init() {
 		CDAUtil.init(this);
 		return this;

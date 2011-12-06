@@ -384,26 +384,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.EPISODE_OBSERVATION: {
-				EpisodeObservation episodeObservation = (EpisodeObservation) theEObject;
-				T result = caseEpisodeObservation(episodeObservation);
-				if (result == null) {
-					result = caseObservation(episodeObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(episodeObservation);
-				}
-				if (result == null) {
-					result = caseAct(episodeObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(episodeObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.AGE_OBSERVATION: {
 				AgeObservation ageObservation = (AgeObservation) theEObject;
 				T result = caseAgeObservation(ageObservation);
@@ -2512,26 +2492,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.CONDITION_ENTRY: {
-				ConditionEntry conditionEntry = (ConditionEntry) theEObject;
-				T result = caseConditionEntry(conditionEntry);
-				if (result == null) {
-					result = caseObservation(conditionEntry);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(conditionEntry);
-				}
-				if (result == null) {
-					result = caseAct(conditionEntry);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(conditionEntry);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.LANGUAGE_SPOKEN: {
 				LanguageSpoken languageSpoken = (LanguageSpoken) theEObject;
 				T result = caseLanguageSpoken(languageSpoken);
@@ -3079,21 +3039,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAllergyStatusObservation(AllergyStatusObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Episode Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Episode Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEpisodeObservation(EpisodeObservation object) {
 		return null;
 	}
 
@@ -5015,21 +4960,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Condition Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Condition Entry</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConditionEntry(ConditionEntry object) {
 		return null;
 	}
 
