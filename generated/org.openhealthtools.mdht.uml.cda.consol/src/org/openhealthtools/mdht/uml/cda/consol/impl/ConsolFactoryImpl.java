@@ -87,8 +87,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProductInstance();
 			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
 				return createAllergyStatusObservation();
-			case ConsolPackage.EPISODE_OBSERVATION:
-				return createEpisodeObservation();
 			case ConsolPackage.AGE_OBSERVATION:
 				return createAgeObservation();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
@@ -319,8 +317,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHospitalCourseSection();
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION:
 				return createAssessmentAndPlanSection();
-			case ConsolPackage.CONDITION_ENTRY:
-				return createConditionEntry();
 			case ConsolPackage.LANGUAGE_SPOKEN:
 				return createLanguageSpoken();
 			case ConsolPackage.HEALTHCARE_PROVIDER:
@@ -434,16 +430,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AllergyStatusObservation createAllergyStatusObservation() {
 		AllergyStatusObservationImpl allergyStatusObservation = new AllergyStatusObservationImpl();
 		return allergyStatusObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EpisodeObservation createEpisodeObservation() {
-		EpisodeObservationImpl episodeObservation = new EpisodeObservationImpl();
-		return episodeObservation;
 	}
 
 	/**
@@ -1674,16 +1660,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
 		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
 		return assessmentAndPlanSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ConditionEntry createConditionEntry() {
-		ConditionEntryImpl conditionEntry = new ConditionEntryImpl();
-		return conditionEntry;
 	}
 
 	/**

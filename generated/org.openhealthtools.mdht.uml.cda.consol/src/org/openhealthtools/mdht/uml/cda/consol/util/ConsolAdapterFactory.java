@@ -169,11 +169,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseEpisodeObservation(EpisodeObservation object) {
-			return createEpisodeObservationAdapter();
-		}
-
-		@Override
 		public Adapter caseAgeObservation(AgeObservation object) {
 			return createAgeObservationAdapter();
 		}
@@ -750,11 +745,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseConditionEntry(ConditionEntry object) {
-			return createConditionEntryAdapter();
-		}
-
-		@Override
 		public Adapter caseLanguageSpoken(LanguageSpoken object) {
 			return createLanguageSpokenAdapter();
 		}
@@ -1119,20 +1109,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAllergyStatusObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation <em>Episode Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.EpisodeObservation
-	 * @generated
-	 */
-	public Adapter createEpisodeObservationAdapter() {
 		return null;
 	}
 
@@ -2925,20 +2901,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAssessmentAndPlanSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ConditionEntry <em>Condition Entry</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ConditionEntry
-	 * @generated
-	 */
-	public Adapter createConditionEntryAdapter() {
 		return null;
 	}
 

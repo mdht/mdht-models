@@ -66,6 +66,36 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProblemSectionEntriesOptional init() {
 		CDAUtil.init(this);
 		return this;

@@ -55,6 +55,7 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
 	}
@@ -82,8 +83,8 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionOperations.validateProblemSectionCondition(this, diagnostics, context);
+	public boolean validateProblemSectionProblemConcern(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionProblemConcern(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +92,8 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemConcernAct> getConsolConditions() {
-		return ProblemSectionOperations.getConsolConditions(this);
+	public EList<ProblemConcernAct> getConsolProblemConcerns() {
+		return ProblemSectionOperations.getConsolProblemConcerns(this);
 	}
 
 	/**
