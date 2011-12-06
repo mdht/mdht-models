@@ -60,6 +60,72 @@ public class ProcedureAcivityObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureAcivityObservationCodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationCodeCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureAcivityObservationCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationCodeOriginalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureAcivityObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationOriginalTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureAcivityObservationReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureAcivityObservationEncounterInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationEncounterInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureAcivityObservationInstructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationInstructionsInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureAcivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureAcivityObservationOperations.validateProcedureAcivityObservationTemplateId(

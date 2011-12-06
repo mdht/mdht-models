@@ -2035,7 +2035,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(139));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(108));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2081,7 +2081,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(140));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(109));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2127,7 +2127,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(141));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(110));
 			try {
 				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2175,7 +2175,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(142));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(111));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2222,7 +2222,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(143));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(112));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2270,7 +2270,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(144));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(113));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2318,7 +2318,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(145));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(114));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

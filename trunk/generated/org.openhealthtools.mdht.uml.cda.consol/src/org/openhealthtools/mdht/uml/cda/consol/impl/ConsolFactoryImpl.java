@@ -75,18 +75,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createIndication();
 			case ConsolPackage.MEDICATION_ACTIVITY:
 				return createMedicationActivity();
-			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY:
-				return createNonMedicinalSupplyActivity();
-			case ConsolPackage.PRODUCT_INSTANCE:
-				return createProductInstance();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
+				return createMedicationSupplyOrder();
 			case ConsolPackage.INSTRUCTIONS:
 				return createInstructions();
 			case ConsolPackage.MEDICATION_DISPENSE:
 				return createMedicationDispense();
-			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
-				return createMedicationSupplyOrder();
 			case ConsolPackage.DRUG_VEHICLE:
 				return createDrugVehicle();
+			case ConsolPackage.PRODUCT_INSTANCE:
+				return createProductInstance();
 			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
 				return createAllergyStatusObservation();
 			case ConsolPackage.EPISODE_OBSERVATION:
@@ -105,6 +103,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createInternalReference();
 			case ConsolPackage.MEDICATION_TYPE:
 				return createMedicationType();
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY:
+				return createNonMedicinalSupplyActivity();
 			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
 				return createMedicationFullfillmentInstructions();
 			case ConsolPackage.PROBLEM_CONCERN_ACT:
@@ -369,6 +369,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedurePerformer();
 			case ConsolPackage.PROCEDURE_ENCOUNTER:
 				return createProcedureEncounter();
+			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
+				return createMedicationInformationManufacturedMaterial();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1922,6 +1924,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProcedureEncounter createProcedureEncounter() {
 		ProcedureEncounterImpl procedureEncounter = new ProcedureEncounterImpl();
 		return procedureEncounter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationInformationManufacturedMaterial createMedicationInformationManufacturedMaterial() {
+		MedicationInformationManufacturedMaterialImpl medicationInformationManufacturedMaterial = new MedicationInformationManufacturedMaterialImpl();
+		return medicationInformationManufacturedMaterial;
 	}
 
 	/**

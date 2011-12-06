@@ -218,6 +218,15 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationInformationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationInformation init() {
 		CDAUtil.init(this);
 		return this;

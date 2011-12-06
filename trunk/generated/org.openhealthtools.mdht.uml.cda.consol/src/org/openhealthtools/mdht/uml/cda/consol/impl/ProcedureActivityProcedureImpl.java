@@ -61,6 +61,72 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityProcedureCodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCodeCodeSystems(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCodeOriginalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureOriginalTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureOriginalTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureEncounterInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEncounterInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedureInstructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureInstructionsInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedurePriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedurePriorityCode(

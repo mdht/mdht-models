@@ -103,6 +103,16 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ResultsSection init() {
 		CDAUtil.init(this);
 		return this;

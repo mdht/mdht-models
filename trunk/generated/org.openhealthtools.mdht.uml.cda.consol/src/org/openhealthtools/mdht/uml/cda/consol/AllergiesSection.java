@@ -17,6 +17,8 @@ import org.eclipse.emf.common.util.EList;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
+ * This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.
+ * 
  * This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.
  * The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the
  * associated adverse reactions suffered by the patient.
@@ -82,7 +84,7 @@ public interface AllergiesSection extends AllergiesSectionEntriesOptional {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)'"
 	 * @generated
 	 */
-	EList<AllergyProblemAct> getConsolAllergyDrugSensitivities();
+	EList<AllergyProblemAct> getAllergyDrugSensitivities();
 
 	/**
 	 * <!-- begin-user-doc -->
