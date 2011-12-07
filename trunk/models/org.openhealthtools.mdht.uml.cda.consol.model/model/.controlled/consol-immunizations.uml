@@ -512,14 +512,7 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_BJU_EBrdEeGo461UQq-B1g" base_Property="_Dr388BVOEeGbmN_W114JUw">
     <ruleId>CONF:8994</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_EjBl8Bq1EeGo461UQq-B1g" severity="WARNING" base_Constraint="_D431sBq1EeGo461UQq-B1g"/>
-  <Ecore:EReference xmi:id="_wCm14Bq0EeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_wCmO0Bq0EeGo461UQq-B1g"/>
-  <CDA:PropertyValidation xmi:id="_x5Bk8Bq0EeGo461UQq-B1g" base_Property="_wCmO0Bq0EeGo461UQq-B1g"/>
-  <CDA:ValueSetConstraint xmi:id="_0ogC8Bq0EeGo461UQq-B1g" base_Property="_wCmO0Bq0EeGo461UQq-B1g">
-    <reference href="../consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
-  </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_wCnc8xq0EeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_wCnc8Bq0EeGo461UQq-B1g"/>
-  <CDA:TextValue xmi:id="_ywWOgBq0EeGo461UQq-B1g" severity="WARNING" base_Property="_wCnc8Bq0EeGo461UQq-B1g"/>
+  
   <uml:Association xmi:id="_CtfWwRqsEeGo461UQq-B1g" memberEnd="_CtevsBqsEeGo461UQq-B1g _CtfWwhqsEeGo461UQq-B1g">
     <ownedEnd xmi:id="_CtfWwhqsEeGo461UQq-B1g" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_CtfWwRqsEeGo461UQq-B1g"/>
   </uml:Association>
