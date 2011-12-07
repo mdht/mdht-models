@@ -10,7 +10,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <language>Analysis</language>
         <language>OCL</language>
         <body>There SHALL be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section.</body>
-        <body>self.getActs()->exists(a : cda::act | a.oclIsKindOf(consol::ProcedureActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::ProcedureActivityObservation)) or self.getProcedures()->exists(p : cda::procedure | p.oclIsKindOf(consol::ProcedureActivityProcedure))</body>
+        <body>self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::ProcedureActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::ProcedureActivityObservation)) or self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::ProcedureActivityProcedure))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ"/>
@@ -126,7 +126,7 @@ organization performed or hosted the Procedure</body>
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>C83-[DE-17-CDA-3]</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_Aj7JkBg4EeGs5a462vYX5Q" name="ProcedureAcivityObservation">
+  <uml:Class xmi:id="_Aj7JkBg4EeGs5a462vYX5Q" name="ProcedureActivityObservation">
     <ownedComment xmi:id="_RlVIQBxuEeGXP8PxDYviDg">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
 This clinical statement represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs and EKGs.</body>
@@ -174,13 +174,15 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(cda::encounter)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_p26x8BxwEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_p26x8RxwEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rOfo4BxwEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
@@ -188,7 +190,7 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Aj7JkRg4EeGs5a462vYX5Q">
@@ -329,13 +331,15 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_C9KP4BxsEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_C9KP4RxsEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zFL1IBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
@@ -343,7 +347,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_awdH4Rg4EeGs5a462vYX5Q">
@@ -390,7 +394,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uu4_wBxrEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uu4_wRxrEeGXP8PxDYviDg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Oyk-sBxsEeGXP8PxDYviDg" name="participant" association="_OymM0BxsEeGXP8PxDYviDg">
+    <ownedAttribute xmi:id="_Oyk-sBxsEeGXP8PxDYviDg" name="serviceDeliveryLocation" association="_OymM0BxsEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RarpYBxsEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RarpYRxsEeGXP8PxDYviDg"/>
@@ -468,19 +472,23 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(cda::encounter)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9s2SABxZEeGXP8PxDYviDg" name="productInstanceTypeCode" constrainedElement="_t6LqgBxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_FdoGsBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant with target entry Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;DEV&quot; Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::DEV)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_JHSVABxaEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pf0kYBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_5r5qcBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
@@ -488,7 +496,7 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.getEntryRelationships(consol::Instructions)->exists(e : cda::EntryRelationship | e.inversionInd='true')</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2OZN6RSVEeGGzu7fmW9pXw">
@@ -525,7 +533,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMTcBrZEeGrncRpaMCqdA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMTcRrZEeGrncRpaMCqdA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="participant" association="_2OTHORSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="serviceDeliveryLocation" association="_2OTHORSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkq4cBxWEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkq4cRxWEeGXP8PxDYviDg"/>
@@ -890,55 +898,73 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedRule xmi:id="_fu9akBxcEeGXP8PxDYviDg" name="assignedEntity" constrainedElement="_nbpGUBxEEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_kD6BkBxcEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>SHALL contain exactly one [1..1] assignedEntity</body>
+        <body>self.assignedEntity->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ofCJEBxcEeGXP8PxDYviDg" name="assignedEntityId" constrainedElement="_fu9akBxcEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qjD2UBxcEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>assignedEntity SHALL contain at least one [1..*] id</body>
+        <body>self.assignedEntity.id->size() >= 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IMfKkBxjEeGXP8PxDYviDg" name="assignedEntityAddr" constrainedElement="_ofCJEBxcEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_LGmyUBxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>assignedEntity SHALL contain exactly one [1..1] addr</body>
+        <body>self.assignedEntity.addr->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_NG_8wBxjEeGXP8PxDYviDg" name="assignedEntityTelecom" constrainedElement="_IMfKkBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_QxeDYBxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>assignedEntity SHALL contain exactly one [1..1] telecom</body>
+        <body>self.assignedEntity.telecom->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Ss84oBxjEeGXP8PxDYviDg" name="assignedEntityRepOrg" constrainedElement="_NG_8wBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VRCmABxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>assignedEntity SHOULD contain zero or one [0..1] representedOrganization</body>
+        <body>self.assignedEntity.representedOrganization->size() &lt;= 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_X3E0IBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgId" constrainedElement="_Ss84oBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zVWHIBxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>representedOrganization, if present, SHOULD contain zero or more [0..*] id</body>
+        <body>self.assignedEntity.representedOrganization.id->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_bkN0QBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgName" constrainedElement="_X3E0IBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4NUisBxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>representedOrganization, if present, MAY contain zero or more [0..*] name</body>
+        <body>self.assignedEntity.representedOrganization.name->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_cs-MEBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgAddr" constrainedElement="_bkN0QBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5BP6ABxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>representedOrganization, if present, SHALL contain exactly one [1..1] addr</body>
+        <body>self.assignedEntity.representedOrganization.addr->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_eFMjQBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgTelecom" constrainedElement="_cs-MEBxjEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_585p8BxjEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>representedOrganization, if present, SHALL contain exactly one [1..1] telecom</body>
+        <body>self.assignedEntity.representedOrganization.telecom->size() = 1</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_nbptYBxEEeGIELeDlfT77A">
@@ -979,13 +1005,17 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedRule xmi:id="_qp5TkBxbEeGXP8PxDYviDg" name="specimenRole" constrainedElement="_JIc0oBxEEeGIELeDlfT77A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_t30BEBxbEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>SHALL contain exactly one [1..1] specimenRole</body>
+        <body>self.specimenRole->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wOrx0BxbEeGXP8PxDYviDg" name="specimentRoleId" constrainedElement="_qp5TkBxbEeGXP8PxDYviDg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zIM8oBxbEeGXP8PxDYviDg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>specimenRole SHOULD contain zero or more [0..*] id</body>
+        <body>self.specimenRole.id->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1NFlgBxbEeGXP8PxDYviDg" name="sameSpecimen" constrainedElement="_JIc0oBxEEeGIELeDlfT77A">

@@ -167,6 +167,9 @@
       <ownedLiteral xmi:id="_M-QmsBrSEeGxIZCGAXKxsQ" name="cancelled"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Dhi68BueEeGnMahsPjlwOw" name="PatientEducation"/>
+    
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IzJFYB-ZEeGtfPlBCjHWkw" name="HealthcareServiceLocation"/>
+    
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Aqy5cCBCEeG938evaWkvcA" name="AgePQ_UCUM ">
       <ownedComment xmi:id="_RZcoECBCEeG938evaWkvcA">
         <body>A valueSet of UCUM codes for representing age value units.</body>
@@ -336,4 +339,5 @@
   <term:ValueSetCode xmi:id="_dGk9kSBCEeG938evaWkvcA" conceptName="Week" base_EnumerationLiteral="_dGk9kCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
+  <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw"/>
 </xmi:XMI>

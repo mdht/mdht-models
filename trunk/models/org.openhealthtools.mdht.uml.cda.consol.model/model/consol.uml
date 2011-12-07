@@ -90,7 +90,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_2Lg44BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2Lr4BBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_2LuUQBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-encounters.uml#_2Lu7UBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_2L7voBSVEeGGzu7fmW9pXw"/>
@@ -381,7 +380,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_HKhTABq9EeGYcL3NfEQErA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_MCBNcBq9EeGYcL3NfEQErA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_2NufahSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_NgICgBwjEeG_RY8fzJjtMw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_XgAY8BxYEeG8X6LmnKJ43Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_JIc0oBxEEeGIELeDlfT77A"/>
