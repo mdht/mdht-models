@@ -2,9 +2,7 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2LMIwBSVEeGGzu7fmW9pXw" name="AllergiesSection">
     <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;
-&#xD;
-This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
     <ownedComment xmi:id="_2LRBQhSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
       <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the&#xD;
@@ -48,6 +46,7 @@ associated adverse reactions suffered by the patient.</body>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1">
     <ruleId>CONF:7527</ruleId>
+    <ruleId>CONF:10379</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-261</ruleId>
@@ -67,6 +66,7 @@ associated adverse reactions suffered by the patient.</body>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2LNW4xSVEeGGzu7fmW9pXw" base_Association="_2LNW4RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7531</ruleId>
+    <ruleId>CONF:7532</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bGzYgBVdEeGQCvUGzi1kDQ" name="AllergiesSectionEntriesOptional">
     <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
@@ -112,15 +112,15 @@ associated adverse reactions suffered by the patient.</body>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
     <ruleId>CONF:7800</ruleId>
+    <ruleId>CONF:10378</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2EaLUBSVEeGGzu7fmW9pXw" name="AllergyObservation">
     <eAnnotations xmi:id="_2EaLURSVEeGGzu7fmW9pXw" source="uml2.alias">
       <details xmi:id="_2EaLUhSVEeGGzu7fmW9pXw" key="Allergies and Intolerances"/>
     </eAnnotations>
     <ownedComment xmi:id="_2F5ZEBSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&amp;lt;observation classCode='OBS'>) that problem. The &amp;lt;value> of the observation comes from a controlled vocabulary representing such things. The &amp;lt;code> contained within the &amp;lt;observation> describes the method of determination from yet another controlled vocabulary.&lt;/p>&#xD;
-&#xD;
-&lt;p>The basic pattern for reporting a problem uses the CDA &amp;lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is &quot;no prior history of chicken pox&quot;, one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.&lt;/p></body>
+      <body>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.&#xD;
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed.</body>
     </ownedComment>
     <ownedComment xmi:id="_2EaLUxSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <body>Allergies and intolerances are special kinds of problems, and so are also recorded in the CDA&#xD;
@@ -202,7 +202,7 @@ entry, with exceptions noted below.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLYBSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>the &amp;lt;participant&amp;gt; element may be present</body>
+        <body>the &amp;lt;participant&amp;gt; element SHOULD be present</body>
         <body>self.participant->size() = 1</body>
       </specification>
     </ownedRule>
@@ -312,6 +312,8 @@ intolerance (not known to be allergy or intolerance).</body>
         <body>The &amp;lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &amp;lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJvQUCCOEeGq2sn1dgvG_g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cJvQUSCOEeGq2sn1dgvG_g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EoNwxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -356,6 +358,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   </uml:Association>
   <CDA:CDATemplate xmi:id="_96YgEBnaEeGs5a462vYX5Q" base_Class="_2EaLUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.7">
     <ruleId>CONF:7381</ruleId>
+    <ruleId>CONF:10488</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2F1usxSVEeGGzu7fmW9pXw" base_Constraint="_2F1usRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-161</ruleId>
@@ -369,8 +372,12 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   <CDA:ConstraintValidation xmi:id="_2Ed1sBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLVxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EecwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLWRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EfD0BSVEeGGzu7fmW9pXw" base_Constraint="_2EaLWxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLXhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLXhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7402</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7403</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLZxSVEeGGzu7fmW9pXw"/>
@@ -391,7 +398,9 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" base_Property="_2EoNwBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2EoNwBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7422</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EoNxBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2EoNwxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7386</ruleId>
@@ -413,7 +422,7 @@ case where a patient experiences an allergic reaction to an unknown substance.</
       <details xmi:id="_2EAitBSVEeGGzu7fmW9pXw" key="Allergy and Drug Sensitivity"/>
     </eAnnotations>
     <ownedComment xmi:id="_2GDKEBSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <body>A problem is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).</body>
+      <body>This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or &quot;Concern&quot; act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the &quot;Concern&quot;) can contain nested problem observations or other nested clinical statements relevant to the allergy concern</body>
     </ownedComment>
     <ownedComment xmi:id="_2GDKERSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -452,7 +461,7 @@ of being concerned about a problem, allergy or other issue about the patient con
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F7ORRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
-        <body>A problem act MAY reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for &quot;Act / entryRelationship / @typeCode&quot; to be &quot;SUBJ&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+        <body>A problem act SHALL reference a allergy observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for &quot;Act / entryRelationship / @typeCode&quot; to be &quot;SUBJ&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2F71URSVEeGGzu7fmW9pXw" name="subjectOfTarget">
@@ -754,7 +763,7 @@ the allergy or intolerance</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EMv8hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EMv9BSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2ENXABSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_2ENXARSVEeGGzu7fmW9pXw">
@@ -792,11 +801,13 @@ historical purposes.&#xD;
   <uml:Association xmi:id="_2F6nMBSVEeGGzu7fmW9pXw" memberEnd="_2EZkQBSVEeGGzu7fmW9pXw _2F6nMRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2F6nMRSVEeGGzu7fmW9pXw" type="_2EAisBSVEeGGzu7fmW9pXw" association="_2F6nMBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30"/>
+  <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30">
+    <ruleId>CONF:7471</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2F7OQhSVEeGGzu7fmW9pXw" base_Constraint="_2F7OQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7509</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F71UBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2F7OQxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F71UBSVEeGGzu7fmW9pXw" base_Constraint="_2F7OQxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7915</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2F8cYBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2F71URSVEeGGzu7fmW9pXw">
@@ -1205,4 +1216,9 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_i7X6oCAqEeGq2sn1dgvG_g" severity="WARNING" base_Association="_lqJOQh0aEeGGdsHVD60BZA">
+    <ruleId>CONF:7804</ruleId>
+    <ruleId>CONF:7805</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g" base_Property="_2EoNwBSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>
