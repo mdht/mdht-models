@@ -218,7 +218,7 @@ entry, with exceptions noted below.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLZBSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>the participant/participantRole element may be present</body>
+        <body>the participant/participantRole element shall be present</body>
         <body>self.participant.participantRole->size() = 1</body>
       </specification>
     </ownedRule>
@@ -234,7 +234,7 @@ entry, with exceptions noted below.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLaBSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The participant/participantRole/PlayingEntity element may be present</body>
+        <body>The participant/participantRole/PlayingEntity element shall be present</body>
         <body>self.participant.participantRole.playingEntity->size() = 1</body>
       </specification>
     </ownedRule>
@@ -272,6 +272,47 @@ entry, with exceptions noted below.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLchSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <body>The entryRelationship/@inversionInd for Comment Entry template SHALL be 'true'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2l9d8CEyEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_9fCOkCEyEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <body>If it is unknown when the allergy began, this effectiveTime SHALL contain low/@nullFLavor=&quot;UNK&quot;</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Ha3lkCEzEeG9m6LRl9ardQ" name="effectiveTimeHigh" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_MSTOkCEzEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <body>If the allergy is no longer a concern, this effectiveTime MAY contain zero or one [0..1] high</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ouJssCFKEeG9m6LRl9ardQ" name="valueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5qNlMCFKEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>value SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.value.originalText.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cf38gCFLEeG9m6LRl9ardQ" name="originalTextReferenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuCH4CFLEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.value.originalText.oclIsUndefined() implies not self.value.originalText.reference.value.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_nV_8ECFMEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw"/>
+    <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="allergyInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_L6csQCFUEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <body>MAY contain zero or one [0..1]entryRelationship (CONF:7440) such that it SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VBabUCFVEeG9m6LRl9ardQ" name="reactionInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_f5vPwCFVEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <body>SHOULD contain zero or more [0..*] entryRelationship (CONF:7447) such that it SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">
@@ -378,11 +419,21 @@ case where a patient experiences an allergic reaction to an unknown substance.</
   <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7403</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLZxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EiHIBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7404</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7405</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7406</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7407</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EiHIBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7419</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2EiuMBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EjVQBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EjVQRSVEeGGzu7fmW9pXw" base_Constraint="_2EaLcRSVEeGGzu7fmW9pXw"/>
@@ -412,8 +463,16 @@ case where a patient experiences an allergic reaction to an unknown substance.</
     <ruleId>CONF:7390</ruleId>
     <ruleId>CONF:9139</ruleId>
   </CDA:PropertyValidation>
-  <CDA:EntryRelationship xmi:id="_2Ej8UxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ej8URSVEeGGzu7fmW9pXw" typeCode="MFST"/>
-  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_2Ej8UxSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Ej8URSVEeGGzu7fmW9pXw" typeCode="MFST">
+    <ruleId>CONF:7447</ruleId>
+    <ruleId>CONF:7907</ruleId>
+    <ruleId>CONF:7450</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:9961</ruleId>
+    <ruleId>CONF:9962</ruleId>
+    <ruleId>CONF:9963</ruleId>
+  </CDA:EntryRelationship>
   <uml:Class xmi:id="_2EAisBSVEeGGzu7fmW9pXw" name="AllergyProblemAct">
     <eAnnotations xmi:id="_2EAisRSVEeGGzu7fmW9pXw" source="uml2.alias">
       <details xmi:id="_2EAishSVEeGGzu7fmW9pXw" key="Allergies and Drug Sensitivities"/>
@@ -1221,4 +1280,32 @@ historical purposes.&#xD;
     <ruleId>CONF:7805</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g" base_Property="_2EoNwBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_-vDsACEyEeG9m6LRl9ardQ" base_Constraint="_2l9d8CEyEeG9m6LRl9ardQ">
+    <ruleId>CONF:9103</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Mvzp8CEzEeG9m6LRl9ardQ" severity="INFO" base_Constraint="_Ha3lkCEzEeG9m6LRl9ardQ">
+    <ruleId>CONF:10082</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_0KsogCFKEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_ouJssCFKEeG9m6LRl9ardQ">
+    <ruleId>CONF:7422</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mSUG8CFLEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_cf38gCFLEeG9m6LRl9ardQ">
+    <ruleId>CONF:7400</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xUgzoCFMEeG9m6LRl9ardQ" base_Constraint="_nV_8ECFMEeG9m6LRl9ardQ">
+    <ruleId>CONF:7401</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:EntryRelationship xmi:id="_gj6AYCFQEeG9m6LRl9ardQ" severity="INFO" base_Association="_-xkhwhUvEeGbmN_W114JUw" typeCode="SUBJ">
+    <ruleId>CONF:7440</ruleId>
+    <ruleId>CONF:7906</ruleId>
+    <ruleId>CONF:7441</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ActRelationship xmi:id="_5HFbQCFQEeG9m6LRl9ardQ" base_Association="_-xkhwhUvEeGbmN_W114JUw"/>
+  <CDA:ConstraintValidation xmi:id="_UHQ8sCFUEeG9m6LRl9ardQ" base_Constraint="_8gb1UCFTEeG9m6LRl9ardQ">
+    <ruleId>CONF:7446</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mLLYoCFVEeG9m6LRl9ardQ" base_Constraint="_VBabUCFVEeG9m6LRl9ardQ">
+    <ruleId>CONF:7449</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ActRelationship xmi:id="_J-iHQCFWEeG9m6LRl9ardQ" base_Association="_2EkjYBSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>
