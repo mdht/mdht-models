@@ -78,7 +78,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>code, if present, SHOULD contain zero or one [0..1] originalText</body>
-        <body>not self.code->size() > 0 implies not self.code.originalText.oclIsUndefined()</body>
+        <body>not self.code.oclIsUndefined() implies not self.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_4G8WIBtsEeGT89b80j3MTg" name="reference" constrainedElement="_2JOZ4BSVEeGGzu7fmW9pXw">
@@ -86,10 +86,10 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value.</body>
-        <body>self.code.originalText->size() > 0 implies self.code.originalText.reference ->size() &lt;= 1</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_O-ANcBttEeGT89b80j3MTg" name="value" constrainedElement="_2JOZ4BSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_O-ANcBttEeGT89b80j3MTg" name="referenceValue" constrainedElement="_2JOZ4BSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_aUIYMBttEeGT89b80j3MTg">
         <language>Analysis</language>
         <language>OCL</language>
