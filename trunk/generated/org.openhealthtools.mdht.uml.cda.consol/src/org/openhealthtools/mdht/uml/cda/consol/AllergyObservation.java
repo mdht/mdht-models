@@ -19,9 +19,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * <p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&lt;observation classCode='OBS'>) that problem. The &lt;value> of the observation comes from a controlled vocabulary representing such things. The &lt;code> contained within the &lt;observation> describes the method of determination from yet another controlled vocabulary.</p>
- * 
- * <p>The basic pattern for reporting a problem uses the CDA &lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is "no prior history of chicken pox", one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.</p>
+ * This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. "allergy to penicillin"), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.
+ * NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed.
  * Allergies and intolerances are special kinds of problems, and so are also recorded in the CDA
  * &lt;observation> element, with classCode='OBS'. They follow the same pattern as the problem
  * entry, with exceptions noted below.
@@ -29,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationInformationSource AllergyObservationHasTextReference AllergyObservationCommentInversionInd AllergyObservationCodeCodeSystemRequired AllergyObservationAllergySubstanceTypeCode AllergyObservationAllergySubstanceParticipantRoleClassCode AllergyObservationAllergySubstancePlayingEntityClassCode AllergyObservationAllergySubstancePlayingEntityCode AllergyObservationPlayingEntityCodeReference AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationText AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue' code.codeSystemName='HL7ActCode' classCode='OBS' constraints.validation.warning='AllergyObservationDisplayNameCodeName AllergyObservationAllergySubstanceParticipantRole' code.code='ASSERTION' moodCode='EVN' constraints.validation.info='AllergyObservationContainsPatientAwareness AllergyObservationAllergySubstance AllergyObservationAllergySubstancePlayingEntity AllergyObservationProblemEntryReactionObservationContainer AllergyObservationSeverity' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationInformationSource AllergyObservationHasTextReference AllergyObservationCommentInversionInd AllergyObservationCodeCodeSystemRequired AllergyObservationAllergySubstanceTypeCode AllergyObservationAllergySubstanceParticipantRole AllergyObservationAllergySubstanceParticipantRoleClassCode AllergyObservationAllergySubstancePlayingEntity AllergyObservationAllergySubstancePlayingEntityClassCode AllergyObservationAllergySubstancePlayingEntityCode AllergyObservationPlayingEntityCodeReference AllergyObservationReferenceValue AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationSeverity' code.codeSystemName='HL7ActCode' constraints.validation.warning='AllergyObservationDisplayNameCodeName AllergyObservationAllergySubstance AllergyObservationValueOriginalText AllergyObservationOriginalTextReferenceValue AllergyObservationText AllergyObservationProblemEntryReactionObservationContainer' classCode='OBS' code.code='ASSERTION' constraints.validation.info='AllergyObservationContainsPatientAwareness AllergyObservationAllergyStatusObservation' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  *        annotation="uml2.alias Allergies\040and\040Intolerances='null'"
  * @generated
  */
@@ -232,6 +231,45 @@ public interface AllergyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * not self.value.originalText.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.value.originalText.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.value.originalText.oclIsUndefined() implies not self.value.originalText.reference.value.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.value.originalText.oclIsUndefined() implies not self.value.originalText.reference.value.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateAllergyObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model
+	 * @generated
+	 */
+	boolean validateAllergyObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.7')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -369,14 +407,27 @@ public interface AllergyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
 	boolean validateAllergyObservationSeverity(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AllergyStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @generated
+	 */
+	boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

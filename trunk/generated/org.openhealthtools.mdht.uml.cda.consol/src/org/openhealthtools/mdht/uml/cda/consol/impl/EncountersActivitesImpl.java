@@ -10,12 +10,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersActivites;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 
+import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersActivitesOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
@@ -128,8 +130,28 @@ public class EncountersActivitesImpl extends EncounterImpl implements Encounters
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncountersActivitesServiceDeliveryLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncountersActivitesOperations.validateEncountersActivitesServiceDeliveryLocation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncountersActivitesIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersActivitesOperations.validateEncountersActivitesIndication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
+		return EncountersActivitesOperations.getServiceDeliveryLocations(this);
 	}
 
 	/**

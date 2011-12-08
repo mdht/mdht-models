@@ -440,6 +440,15 @@ public interface ConsolFactory extends EFactory {
 	ProceduresSectionEntriesOptional createProceduresSectionEntriesOptional();
 
 	/**
+	 * Returns a new object of class '<em>Procedure Activity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Observation</em>'.
+	 * @generated
+	 */
+	ProcedureActivityObservation createProcedureActivityObservation();
+
+	/**
 	 * Returns a new object of class '<em>Procedure Activity Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -456,15 +465,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ProcedureActivityProcedure createProcedureActivityProcedure();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Acivity Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Acivity Observation</em>'.
-	 * @generated
-	 */
-	ProcedureAcivityObservation createProcedureAcivityObservation();
 
 	/**
 	 * Returns a new object of class '<em>Vital Signs Section Entries Optional</em>'.
@@ -1365,15 +1365,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ImmunizationMedicationInformation createImmunizationMedicationInformation();
-
-	/**
-	 * Returns a new object of class '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure</em>'.
-	 * @generated
-	 */
-	Procedure createProcedure();
 
 	/**
 	 * Returns a new object of class '<em>Procedure Specimen</em>'.

@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.ocl.ParserException;
@@ -26,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersActivites;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 
+import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
@@ -46,7 +50,9 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#validateEncountersActivitesMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#validateEncountersActivitesId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#validateEncountersActivitesEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#validateEncountersActivitesServiceDeliveryLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Service Delivery Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#validateEncountersActivitesIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Indication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#getServiceDeliveryLocations() <em>Get Service Delivery Locations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersActivites#getIndication() <em>Get Indication</em>}</li>
  * </ul>
  * </p>
@@ -511,6 +517,63 @@ public class EncountersActivitesOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateEncountersActivitesServiceDeliveryLocation(EncountersActivites, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Service Delivery Location</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncountersActivitesServiceDeliveryLocation(EncountersActivites, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEncountersActivitesServiceDeliveryLocation(EncountersActivites, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Service Delivery Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncountersActivitesServiceDeliveryLocation(EncountersActivites, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))
+	 * @param encountersActivites The receiving '<em><b>Encounters Activites</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateEncountersActivitesServiceDeliveryLocation(EncountersActivites encountersActivites,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_ACTIVITES);
+			try {
+				VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersActivites)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_ACTIVITES__ENCOUNTERS_ACTIVITES_SERVICE_DELIVERY_LOCATION,
+					ConsolPlugin.INSTANCE.getString("EncountersActivitesServiceDeliveryLocation"),
+					new Object[] { encountersActivites }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateEncountersActivitesIndication(EncountersActivites, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activites Indication</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -567,6 +630,53 @@ public class EncountersActivitesOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getServiceDeliveryLocations(EncountersActivites) <em>Get Service Delivery Locations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getServiceDeliveryLocations(EncountersActivites)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ServiceDeliveryLocation)).oclAsType(consol::ServiceDeliveryLocation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getServiceDeliveryLocations(EncountersActivites) <em>Get Service Delivery Locations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getServiceDeliveryLocations(EncountersActivites)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ServiceDeliveryLocation)).oclAsType(consol::ServiceDeliveryLocation)
+	 * @param encountersActivites The receiving '<em><b>Encounters Activites</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static EList<ServiceDeliveryLocation> getServiceDeliveryLocations(EncountersActivites encountersActivites) {
+		if (GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.ENCOUNTERS_ACTIVITES,
+				ConsolPackage.Literals.ENCOUNTERS_ACTIVITES.getEAllOperations().get(59));
+			try {
+				GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY = helper.createQuery(GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ServiceDeliveryLocation> result = (Collection<ServiceDeliveryLocation>) query.evaluate(encountersActivites);
+		return new BasicEList.UnmodifiableEList<ServiceDeliveryLocation>(result.size(), result.toArray());
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getIndication(EncountersActivites) <em>Get Indication</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -600,7 +710,7 @@ public class EncountersActivitesOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ENCOUNTERS_ACTIVITES,
-				ConsolPackage.Literals.ENCOUNTERS_ACTIVITES.getEAllOperations().get(58));
+				ConsolPackage.Literals.ENCOUNTERS_ACTIVITES.getEAllOperations().get(60));
 			try {
 				GET_INDICATION__EOCL_QRY = helper.createQuery(GET_INDICATION__EOCL_EXP);
 			} catch (ParserException pe) {

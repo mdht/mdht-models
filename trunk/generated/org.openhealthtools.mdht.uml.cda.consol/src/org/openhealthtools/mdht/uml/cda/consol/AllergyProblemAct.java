@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * A problem is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).
+ * This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or "Concern" act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the "Concern") can contain nested problem observations or other nested clinical statements relevant to the allergy concern
  * <p>
  * This event (moodCode='EVN') represents an act (act classCode='ACT') of being concerned
  * about a problem, allergy or other issue. The &lt;effectiveTime> element describes the period of
@@ -514,13 +514,13 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
 	 * value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (\nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context);

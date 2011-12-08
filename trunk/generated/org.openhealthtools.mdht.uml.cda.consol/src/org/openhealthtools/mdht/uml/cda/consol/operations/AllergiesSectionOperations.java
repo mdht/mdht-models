@@ -298,7 +298,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGIES_SECTION,
-				ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(63));
+				ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(64));
 			try {
 				GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

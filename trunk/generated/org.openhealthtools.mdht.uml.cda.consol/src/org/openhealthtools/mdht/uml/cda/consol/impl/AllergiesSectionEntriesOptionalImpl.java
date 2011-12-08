@@ -98,6 +98,17 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AllergyProblemAct> getAllergyProblemActs() {
 		return AllergiesSectionEntriesOptionalOperations.getAllergyProblemActs(this);
 	}

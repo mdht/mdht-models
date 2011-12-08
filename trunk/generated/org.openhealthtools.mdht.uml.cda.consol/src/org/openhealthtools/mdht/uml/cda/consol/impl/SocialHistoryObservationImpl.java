@@ -74,6 +74,17 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservationReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
 	}

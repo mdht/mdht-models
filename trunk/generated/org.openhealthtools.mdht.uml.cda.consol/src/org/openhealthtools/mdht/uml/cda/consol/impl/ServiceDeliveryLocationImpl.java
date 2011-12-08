@@ -17,8 +17,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ServiceDeliveryLocationOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
-
+import org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -30,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ServiceDeliveryLocationImpl extends Participant2Impl implements ServiceDeliveryLocation {
+public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements ServiceDeliveryLocation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,50 +54,6 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRole(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateServiceDeliveryLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasParticipantRoleCodeVocab(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
@@ -110,9 +65,20 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationHasPlayingEntityPlace(DiagnosticChain diagnostics,
+	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityPlace(
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCodeName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCodeName(
 			this, diagnostics, context);
 	}
 
@@ -130,8 +96,17 @@ public class ServiceDeliveryLocationImpl extends Participant2Impl implements Ser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTypeCode(this, diagnostics, context);
+	public boolean validateServiceDeliveryLocationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateServiceDeliveryLocationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTelecom(this, diagnostics, context);
 	}
 
 	/**

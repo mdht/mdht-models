@@ -24,8 +24,8 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-import org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 
@@ -309,7 +309,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureAcivityObservation))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionEntriesOptionalProcedureAcivityObservation(ProceduresSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Acivity Observation</em>}' invariant operation.
@@ -325,7 +325,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureAcivityObservation))
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation))
 	 * @param proceduresSectionEntriesOptional The receiving '<em><b>Procedures Section Entries Optional</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -475,7 +475,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ACIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureAcivityObservation)).oclAsType(consol::ProcedureAcivityObservation)";
+	protected static final String GET_PROCEDURE_ACIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProcedureAcivityObservations(ProceduresSectionEntriesOptional) <em>Get Procedure Acivity Observations</em>}' query operation.
@@ -491,12 +491,12 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureAcivityObservation)).oclAsType(consol::ProcedureAcivityObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)
 	 * @param proceduresSectionEntriesOptional The receiving '<em><b>Procedures Section Entries Optional</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ProcedureAcivityObservation> getProcedureAcivityObservations(
+	public static EList<ProcedureActivityObservation> getProcedureAcivityObservations(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional) {
 		if (GET_PROCEDURE_ACIVITY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -511,8 +511,8 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACIVITY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureAcivityObservation> result = (Collection<ProcedureAcivityObservation>) query.evaluate(proceduresSectionEntriesOptional);
-		return new BasicEList.UnmodifiableEList<ProcedureAcivityObservation>(result.size(), result.toArray());
+		Collection<ProcedureActivityObservation> result = (Collection<ProcedureActivityObservation>) query.evaluate(proceduresSectionEntriesOptional);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation>(result.size(), result.toArray());
 	}
 
 	/**
