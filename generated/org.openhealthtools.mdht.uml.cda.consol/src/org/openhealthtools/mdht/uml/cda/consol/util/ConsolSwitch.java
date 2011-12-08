@@ -214,7 +214,7 @@ public class ConsolSwitch<T> {
 				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
 				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
 				if (result == null) {
-					result = caseCDA_Procedure(procedureActivityProcedure);
+					result = caseProcedure(procedureActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(procedureActivityProcedure);
@@ -244,6 +244,23 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(indication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SERVICE_DELIVERY_LOCATION: {
+				ServiceDeliveryLocation serviceDeliveryLocation = (ServiceDeliveryLocation) theEObject;
+				T result = caseServiceDeliveryLocation(serviceDeliveryLocation);
+				if (result == null) {
+					result = caseParticipantRole(serviceDeliveryLocation);
+				}
+				if (result == null) {
+					result = caseRole(serviceDeliveryLocation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(serviceDeliveryLocation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -927,7 +944,7 @@ public class ConsolSwitch<T> {
 				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
 				if (result == null) {
-					result = caseCDA_Procedure(planOfCareActivityProcedure);
+					result = caseProcedure(planOfCareActivityProcedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(planOfCareActivityProcedure);
@@ -1020,20 +1037,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION: {
-				ProcedureAcivityObservation procedureAcivityObservation = (ProcedureAcivityObservation) theEObject;
-				T result = caseProcedureAcivityObservation(procedureAcivityObservation);
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: {
+				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation) theEObject;
+				T result = caseProcedureActivityObservation(procedureActivityObservation);
 				if (result == null) {
-					result = caseObservation(procedureAcivityObservation);
+					result = caseObservation(procedureActivityObservation);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(procedureAcivityObservation);
+					result = caseClinicalStatement(procedureActivityObservation);
 				}
 				if (result == null) {
-					result = caseAct(procedureAcivityObservation);
+					result = caseAct(procedureActivityObservation);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(procedureAcivityObservation);
+					result = caseInfrastructureRoot(procedureActivityObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1604,23 +1621,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(encountersActivites);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.SERVICE_DELIVERY_LOCATION: {
-				ServiceDeliveryLocation serviceDeliveryLocation = (ServiceDeliveryLocation) theEObject;
-				T result = caseServiceDeliveryLocation(serviceDeliveryLocation);
-				if (result == null) {
-					result = caseParticipant2(serviceDeliveryLocation);
-				}
-				if (result == null) {
-					result = caseParticipation(serviceDeliveryLocation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(serviceDeliveryLocation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2856,26 +2856,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURE: {
-				Procedure procedure = (Procedure) theEObject;
-				T result = caseProcedure(procedure);
-				if (result == null) {
-					result = caseCDA_Procedure(procedure);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedure);
-				}
-				if (result == null) {
-					result = caseAct(procedure);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedure);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.PROCEDURE_SPECIMEN: {
 				ProcedureSpecimen procedureSpecimen = (ProcedureSpecimen) theEObject;
 				T result = caseProcedureSpecimen(procedureSpecimen);
@@ -3643,6 +3623,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityObservation(ProcedureActivityObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3669,21 +3664,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Acivity Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Acivity Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProcedureAcivityObservation(ProcedureAcivityObservation object) {
 		return null;
 	}
 
@@ -5350,21 +5330,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseObservation(Observation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 

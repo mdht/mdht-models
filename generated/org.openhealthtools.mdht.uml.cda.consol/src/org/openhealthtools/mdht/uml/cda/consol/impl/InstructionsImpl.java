@@ -55,6 +55,24 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInstructionsTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsOperations.validateInstructionsTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInstructionsTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsOperations.validateInstructionsTextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsTemplateId(this, diagnostics, context);
 	}

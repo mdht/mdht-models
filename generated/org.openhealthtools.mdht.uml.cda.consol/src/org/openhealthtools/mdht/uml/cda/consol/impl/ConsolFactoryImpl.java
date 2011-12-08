@@ -73,6 +73,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityProcedure();
 			case ConsolPackage.INDICATION:
 				return createIndication();
+			case ConsolPackage.SERVICE_DELIVERY_LOCATION:
+				return createServiceDeliveryLocation();
 			case ConsolPackage.MEDICATION_ACTIVITY:
 				return createMedicationActivity();
 			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
@@ -153,8 +155,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProceduresSection();
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
 				return createProceduresSectionEntriesOptional();
-			case ConsolPackage.PROCEDURE_ACIVITY_OBSERVATION:
-				return createProcedureAcivityObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
+				return createProcedureActivityObservation();
 			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
 				return createProcedureActivityAct();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
@@ -215,8 +217,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncountersSection();
 			case ConsolPackage.ENCOUNTERS_ACTIVITES:
 				return createEncountersActivites();
-			case ConsolPackage.SERVICE_DELIVERY_LOCATION:
-				return createServiceDeliveryLocation();
 			case ConsolPackage.ENCOUNTER:
 				return createEncounter();
 			case ConsolPackage.IMMUNIZATIONS_SECTION:
@@ -357,8 +357,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
 				return createImmunizationMedicationInformation();
-			case ConsolPackage.PROCEDURE:
-				return createProcedure();
 			case ConsolPackage.PROCEDURE_SPECIMEN:
 				return createProcedureSpecimen();
 			case ConsolPackage.PROCEDURE_PERFORMER:
@@ -837,6 +835,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ProcedureActivityObservation createProcedureActivityObservation() {
+		ProcedureActivityObservationImpl procedureActivityObservation = new ProcedureActivityObservationImpl();
+		return procedureActivityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureActivityAct createProcedureActivityAct() {
 		ProcedureActivityActImpl procedureActivityAct = new ProcedureActivityActImpl();
 		return procedureActivityAct;
@@ -850,16 +858,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
 		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
 		return procedureActivityProcedure;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureAcivityObservation createProcedureAcivityObservation() {
-		ProcedureAcivityObservationImpl procedureAcivityObservation = new ProcedureAcivityObservationImpl();
-		return procedureAcivityObservation;
 	}
 
 	/**
@@ -1860,16 +1858,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ImmunizationMedicationInformation createImmunizationMedicationInformation() {
 		ImmunizationMedicationInformationImpl immunizationMedicationInformation = new ImmunizationMedicationInformationImpl();
 		return immunizationMedicationInformation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure createProcedure() {
-		ProcedureImpl procedure = new ProcedureImpl();
-		return procedure;
 	}
 
 	/**

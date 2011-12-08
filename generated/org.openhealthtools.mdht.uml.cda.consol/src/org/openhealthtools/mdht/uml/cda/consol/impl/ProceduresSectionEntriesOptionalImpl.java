@@ -14,8 +14,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ProcedureAcivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
+import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 
@@ -132,7 +132,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureAcivityObservation> getProcedureAcivityObservations() {
+	public EList<ProcedureActivityObservation> getProcedureAcivityObservations() {
 		return ProceduresSectionEntriesOptionalOperations.getProcedureAcivityObservations(this);
 	}
 

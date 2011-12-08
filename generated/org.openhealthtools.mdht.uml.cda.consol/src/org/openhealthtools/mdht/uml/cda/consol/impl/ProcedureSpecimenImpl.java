@@ -55,6 +55,24 @@ public class ProcedureSpecimenImpl extends SpecimenImpl implements ProcedureSpec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureSpecimenSpecimenRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureSpecimenOperations.validateProcedureSpecimenSpecimenRole(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureSpecimenSpecimentRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureSpecimenOperations.validateProcedureSpecimenSpecimentRoleId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureSpecimenTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimenOperations.validateProcedureSpecimenTemplateId(this, diagnostics, context);
 	}

@@ -55,6 +55,15 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationCodeNullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationTemplateId(this, diagnostics, context);
 	}
