@@ -325,13 +325,13 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:CodeSystemConstraint xmi:id="_7-leYBwiEeG_RY8fzJjtMw" code="completed" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
+  <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" code="8716-3" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_NgICgBwjEeG_RY8fzJjtMw" memberEnd="_NgHbcBwjEeG_RY8fzJjtMw _NgICgRwjEeG_RY8fzJjtMw">
     <ownedEnd xmi:id="_NgICgRwjEeG_RY8fzJjtMw" type="_2OrhsRSVEeGGzu7fmW9pXw" association="_NgICgBwjEeG_RY8fzJjtMw"/>
   </uml:Association>
-  <CDA:CodeSystemConstraint xmi:id="_5wyhkBxYEeG8X6LmnKJ43Q" base_Property="_2OfUexSVEeGGzu7fmW9pXw">
+  <CDA:CodeSystemConstraint xmi:id="_5wyhkBxYEeG8X6LmnKJ43Q" code="8716-3" base_Property="_2OfUexSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7274</ruleId>
   </CDA:CodeSystemConstraint>
