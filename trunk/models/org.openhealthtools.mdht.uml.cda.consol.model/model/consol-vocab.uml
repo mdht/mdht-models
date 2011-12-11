@@ -167,9 +167,7 @@
       <ownedLiteral xmi:id="_M-QmsBrSEeGxIZCGAXKxsQ" name="cancelled"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Dhi68BueEeGnMahsPjlwOw" name="PatientEducation"/>
-    
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_IzJFYB-ZEeGtfPlBCjHWkw" name="HealthcareServiceLocation"/>
-    
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Aqy5cCBCEeG938evaWkvcA" name="AgePQ_UCUM ">
       <ownedComment xmi:id="_RZcoECBCEeG938evaWkvcA">
         <body>A valueSet of UCUM codes for representing age value units.</body>
