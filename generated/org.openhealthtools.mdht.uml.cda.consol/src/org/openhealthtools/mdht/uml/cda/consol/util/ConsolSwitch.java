@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.Specimen;
+import org.openhealthtools.mdht.uml.cda.Subject;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 
@@ -2927,6 +2928,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.FAMILY_HISTORY_SUBJECT: {
+				FamilyHistorySubject familyHistorySubject = (FamilyHistorySubject) theEObject;
+				T result = caseFamilyHistorySubject(familyHistorySubject);
+				if (result == null) {
+					result = caseSubject(familyHistorySubject);
+				}
+				if (result == null) {
+					result = caseParticipation(familyHistorySubject);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySubject);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -4279,6 +4297,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseMedicationInformationManufacturedMaterial(MedicationInformationManufacturedMaterial object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Subject</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Subject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistorySubject(FamilyHistorySubject object) {
 		return null;
 	}
 
@@ -5645,6 +5678,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseMaterial(Material object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Subject</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Subject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubject(Subject object) {
 		return null;
 	}
 

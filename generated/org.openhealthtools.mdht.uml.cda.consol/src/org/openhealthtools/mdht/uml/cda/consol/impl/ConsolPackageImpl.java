@@ -1117,6 +1117,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass medicationInformationManufacturedMaterialEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistorySubjectEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -3175,6 +3182,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(152);
 		}
 		return medicationInformationManufacturedMaterialEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistorySubject() {
+		if (familyHistorySubjectEClass == null) {
+			familyHistorySubjectEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				153);
+		}
+		return familyHistorySubjectEClass;
 	}
 
 	/**

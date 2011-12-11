@@ -57,75 +57,9 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
+	public boolean validateFamilyHistoryObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubjectPatientRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelationshipValueCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectSubject(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationHasGenderCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasGenderCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectBirthTime(
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(
 			this, diagnostics, context);
 	}
 
@@ -136,6 +70,24 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -170,6 +122,17 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationValue(this, diagnostics, context);
 	}
@@ -182,6 +145,17 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationFamilyHistoryDeathObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(
 			this, diagnostics, context);
 	}
 

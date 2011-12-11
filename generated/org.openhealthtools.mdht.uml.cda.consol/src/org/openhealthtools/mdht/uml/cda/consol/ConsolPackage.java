@@ -31317,6 +31317,97 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_FEATURE_COUNT = CDAPackage.MATERIAL_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FamilyHistorySubjectImpl <em>Family History Subject</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.FamilyHistorySubjectImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFamilyHistorySubject()
+	 * @generated
+	 */
+	int FAMILY_HISTORY_SUBJECT = 153;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__REALM_CODE = CDAPackage.SUBJECT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__TYPE_ID = CDAPackage.SUBJECT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__TEMPLATE_ID = CDAPackage.SUBJECT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Awareness Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__AWARENESS_CODE = CDAPackage.SUBJECT__AWARENESS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Related Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__RELATED_SUBJECT = CDAPackage.SUBJECT__RELATED_SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__NULL_FLAVOR = CDAPackage.SUBJECT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__TYPE_CODE = CDAPackage.SUBJECT__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT__CONTEXT_CONTROL_CODE = CDAPackage.SUBJECT__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Family History Subject</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_SUBJECT_FEATURE_COUNT = CDAPackage.SUBJECT_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -32845,6 +32936,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMedicationInformationManufacturedMaterial();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject <em>Family History Subject</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Family History Subject</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject
+	 * @generated
+	 */
+	EClass getFamilyHistorySubject();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -34397,6 +34498,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass MEDICATION_INFORMATION_MANUFACTURED_MATERIAL = eINSTANCE.getMedicationInformationManufacturedMaterial();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FamilyHistorySubjectImpl <em>Family History Subject</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.FamilyHistorySubjectImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFamilyHistorySubject()
+		 * @generated
+		 */
+		EClass FAMILY_HISTORY_SUBJECT = eINSTANCE.getFamilyHistorySubject();
 
 	}
 

@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationInformationSource AllergyObservationHasTextReference AllergyObservationCommentInversionInd AllergyObservationCodeCodeSystemRequired AllergyObservationAllergySubstanceTypeCode AllergyObservationAllergySubstanceParticipantRole AllergyObservationAllergySubstanceParticipantRoleClassCode AllergyObservationAllergySubstancePlayingEntity AllergyObservationAllergySubstancePlayingEntityClassCode AllergyObservationAllergySubstancePlayingEntityCode AllergyObservationPlayingEntityCodeReference AllergyObservationReferenceValue AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationSeverity' code.codeSystemName='HL7ActCode' constraints.validation.warning='AllergyObservationDisplayNameCodeName AllergyObservationAllergySubstance AllergyObservationValueOriginalText AllergyObservationOriginalTextReferenceValue AllergyObservationText AllergyObservationProblemEntryReactionObservationContainer' classCode='OBS' code.code='ASSERTION' constraints.validation.info='AllergyObservationContainsPatientAwareness AllergyObservationAllergyStatusObservation' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationInformationSource AllergyObservationHasTextReference AllergyObservationCommentInversionInd AllergyObservationCodeCodeSystemRequired AllergyObservationAllergySubstanceTypeCode AllergyObservationAllergySubstanceParticipantRole AllergyObservationAllergySubstanceParticipantRoleClassCode AllergyObservationAllergySubstancePlayingEntity AllergyObservationAllergySubstancePlayingEntityClassCode AllergyObservationAllergySubstancePlayingEntityCode AllergyObservationPlayingEntityCodeReference AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationSeverity' code.codeSystemName='HL7ActCode' constraints.validation.warning='AllergyObservationDisplayNameCodeName AllergyObservationAllergySubstance AllergyObservationValueOriginalText AllergyObservationOriginalTextReferenceValue AllergyObservationText AllergyObservationProblemEntryReactionObservationContainer' classCode='OBS' code.code='ASSERTION' constraints.validation.info='AllergyObservationContainsPatientAwareness AllergyObservationAllergyStatusObservation' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  *        annotation="uml2.alias Allergies\040and\040Intolerances='null'"
  * @generated
  */
@@ -253,18 +253,6 @@ public interface AllergyObservation extends Observation {
 	 */
 	boolean validateAllergyObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model
-	 * @generated
-	 */
-	boolean validateAllergyObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

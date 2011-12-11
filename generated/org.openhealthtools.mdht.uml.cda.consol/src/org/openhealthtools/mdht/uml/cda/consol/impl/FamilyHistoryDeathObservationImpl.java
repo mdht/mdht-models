@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 
@@ -56,86 +55,20 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationHasSubjectPatientRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationRelationshipValueCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationRelationshipValueCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationHasRelatedSubjectCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationRelatedSubjectCodeValueSet(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationHasRelatedSubjectSubject(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationHasGenderCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationHasGenderCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationRelatedSubjectBirthTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
 			this, diagnostics, context);
 	}
 
@@ -155,8 +88,8 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryDeathObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationId(
+	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
 			this, diagnostics, context);
 	}
 
@@ -176,30 +109,9 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryDeathObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationEffectiveTime(
+	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFamilyHistoryDeathObservationProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationProblemStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergyStatusObservation getProblemStatusObservation() {
-		return FamilyHistoryDeathObservationOperations.getProblemStatusObservation(this);
 	}
 
 	/**
