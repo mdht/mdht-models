@@ -365,6 +365,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureEncounter();
 			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
 				return createMedicationInformationManufacturedMaterial();
+			case ConsolPackage.FAMILY_HISTORY_SUBJECT:
+				return createFamilyHistorySubject();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1898,6 +1900,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public MedicationInformationManufacturedMaterial createMedicationInformationManufacturedMaterial() {
 		MedicationInformationManufacturedMaterialImpl medicationInformationManufacturedMaterial = new MedicationInformationManufacturedMaterialImpl();
 		return medicationInformationManufacturedMaterial;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySubject createFamilyHistorySubject() {
+		FamilyHistorySubjectImpl familyHistorySubject = new FamilyHistorySubjectImpl();
+		return familyHistorySubject;
 	}
 
 	/**

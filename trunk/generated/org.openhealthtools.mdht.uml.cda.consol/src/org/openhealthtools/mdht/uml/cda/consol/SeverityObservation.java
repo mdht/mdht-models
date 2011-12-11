@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeverityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SeverityObservation' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.error='SeverityObservationTemplateId SeverityObservationHasTextReference SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationText SeverityObservationStatusCode SeverityObservationValue' code.codeSystemName='HL7ActCode' classCode='OBS' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.5.1063'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.error='SeverityObservationTemplateId SeverityObservationHasTextReference SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationText SeverityObservationStatusCode SeverityObservationValue' code.codeSystemName='HL7ActCode' classCode='OBS' constraints.validation.warning='SeverityObservationTextReference' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface SeverityObservation extends Observation {
@@ -39,6 +39,32 @@ public interface SeverityObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateSeverityObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateSeverityObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateSeverityObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,11 +154,11 @@ public interface SeverityObservation extends Observation {
 	 * <!-- begin-model-doc -->
 	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'H' or value.code = 'M' or value.code = 'L')))
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '399166001' or value.code = '255604002' or value.code = '371923003' or value.code = '6736007' or value.code = '371924009' or value.code = '24484000')))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.5.1063\' and (value.code = \'H\' or value.code = \'M\' or value.code = \'L\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'399166001\' or value.code = \'255604002\' or value.code = \'371923003\' or value.code = \'6736007\' or value.code = \'371924009\' or value.code = \'24484000\')))'"
 	 * @generated
 	 */
 	boolean validateSeverityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
