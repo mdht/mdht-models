@@ -1314,6 +1314,18 @@ identifying the site.</body>
         <body>A supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_sSYnACRAEeG4DdjGPr5_Vg" name="assignedEntityAddr" constrainedElement="_DpoGkBUUEeG6PvUxSTZnaw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0lnBcCRAEeG4DdjGPr5_Vg">
+        <language>Analysis</language>
+        <body>This assignedEntity SHOULD contain zero or one [0..1] addr</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_AKgA8CRBEeG4DdjGPr5_Vg" name="assignedEntityAddrUSRealm" constrainedElement="_DpoGkBUUEeG6PvUxSTZnaw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_B3Rr0CRBEeG4DdjGPr5_Vg">
+        <language>Analysis</language>
+        <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10565).</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_DpoGkRUUEeG6PvUxSTZnaw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3gL0sEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -2635,7 +2647,7 @@ medication supplied.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>This playingEntity SHALL contain exactly one [1..1] code (CONF:7493). &#xA;&#x9;This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086)</body>
-        <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity</body>
+        <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WgMgsBq2EeGo461UQq-B1g" name="playingEntityName" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">
@@ -2782,8 +2794,8 @@ Entry Content Module.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1pzUBrTEeGo461UQq-B1g" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1pzURrTEeGo461UQq-B1g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p1pzUhrTEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKIuUCRBEeG4DdjGPr5_Vg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZKIuUSRBEeG4DdjGPr5_Vg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1qaYBrTEeGo461UQq-B1g" name="moodCode" visibility="private">
@@ -2811,8 +2823,8 @@ Entry Content Module.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_z3ymoBrTEeGo461UQq-B1g" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z3zNsBrTEeGo461UQq-B1g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z3zNsRrTEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_no1zkCRBEeG4DdjGPr5_Vg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_no1zkSRBEeG4DdjGPr5_Vg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__4pJYBrTEeGo461UQq-B1g" name="medicationInformation" type="_2T9DQBSVEeGGzu7fmW9pXw" association="__4pwcRrTEeGo461UQq-B1g">
@@ -2914,6 +2926,7 @@ Entry Content Module.</body>
   <CDA:EntryRelationship xmi:id="_yvMA4B7mEeGEaLkc3UAsAg" severity="INFO" base_Association="_3-ztEBrYEeGo461UQq-B1g" typeCode="REFR">
     <ruleId>CONF:7473</ruleId>
     <ruleId>CONF:7474</ruleId>
+    <ruleId>CONF:7476</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_I-_q8B7nEeGEaLkc3UAsAg" base_Constraint="_-TejcB7mEeGEaLkc3UAsAg">
     <ruleId>CONF:9333</ruleId>
@@ -2995,4 +3008,5 @@ Entry Content Module.</body>
   <uml:Association xmi:id="_f6p3QiAMEeGKirKJsFylGA" memberEnd="_f6p3QCAMEeGKirKJsFylGA _f6p3QyAMEeGKirKJsFylGA">
     <ownedEnd xmi:id="_f6p3QyAMEeGKirKJsFylGA" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_f6p3QiAMEeGKirKJsFylGA"/>
   </uml:Association>
+  <CDA:ConstraintValidation xmi:id="_t0lZkCRAEeG4DdjGPr5_Vg" base_Constraint="_sSYnACRAEeG4DdjGPr5_Vg"/>
 </xmi:XMI>

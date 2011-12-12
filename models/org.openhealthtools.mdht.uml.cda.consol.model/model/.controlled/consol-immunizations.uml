@@ -31,6 +31,12 @@
         <body>This text, if present, SHOULD contain zero or one [0..1] reference/@value (CONF:8832). &#xA;This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:9056).</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_aXWsMCQ9EeG4DdjGPr5_Vg" name="instructionInversion" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_i2pMsCQ9EeG4DdjGPr5_Vg">
+        <language>Analysis</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2MQfwxSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -71,13 +77,6 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BERaYRqlEeGo461UQq-B1g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2MHV0BSVEeGGzu7fmW9pXw" name="approachSiteCode" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2MHV0RSVEeGGzu7fmW9pXw">
-        <body>The site where the medication is administered, usually used with IV or topical drugs. The &amp;lt;approachSiteCode> element describes the site of medication administrion. It may be coded&#xD;
-to a controlled vocabulary that lists such sites (e.g., SNOMED-CT). In CDA documents, this&#xD;
-4805 element contains a URI in the value attribute of the &amp;lt;reference> that points to the text in the&#xD;
-narrative identifying the site. In a message, the &amp;lt;originalText> element shall contain the text&#xD;
-identifying the site.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TiwH4BqlEeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TiwH4RqlEeGo461UQq-B1g"/>
@@ -218,14 +217,10 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_2MDrcxSVEeGGzu7fmW9pXw" base_Property="_2MDrcBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8829</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2MBPMBSVEeGGzu7fmW9pXw" base_Property="_2MAoJBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8830</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2MEShBSVEeGGzu7fmW9pXw" base_Property="_2MESgBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8833</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2ME5kBSVEeGGzu7fmW9pXw" message="IHE Immunization SHALL satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)" base_Property="_2MEShRSVEeGGzu7fmW9pXw">
+  <CDA:PropertyValidation xmi:id="_2ME5kBSVEeGGzu7fmW9pXw" base_Property="_2MEShRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8834</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2ME5lBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
@@ -361,9 +356,6 @@ identifying the site.</body>
   <uml:Association xmi:id="_2L89wBSVEeGGzu7fmW9pXw" memberEnd="_2L7voxSVEeGGzu7fmW9pXw _2L89wRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2L89wRSVEeGGzu7fmW9pXw" type="_2L7voBSVEeGGzu7fmW9pXw" association="_2L89wBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2L7vphSVEeGGzu7fmW9pXw" base_Class="_2L7voBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.2.1">
-    <ruleId>CONF:9015</ruleId>
-  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2MS8AhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-298</ruleId>
   </CDA:ConstraintValidation>
@@ -405,13 +397,15 @@ identifying the site.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EuPltBVeEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EuPltRVeEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_EuPlthVeEeGQCvUGzi1kDQ" name="immunization" type="_2MAoIBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x47OYBqgEeGo461UQq-B1g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x47OYRqgEeGo461UQq-B1g"/>
+    <ownedAttribute xmi:id="_qfAzoCQ6EeG4DdjGPr5_Vg" name="immunizationActivity" type="_2MAoIBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uT_hICQ6EeG4DdjGPr5_Vg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uT_hISQ6EeG4DdjGPr5_Vg"/>
+      <association href="../consol.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_npcu0BVfEeGQCvUGzi1kDQ" base_Class="_EuPloBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.2">
     <ruleId>CONF:7965</ruleId>
+    <ruleId>CONF:10399</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_k6QYgBqgEeGo461UQq-B1g" code="11369-6" base_Property="_EuPlsRVeEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -423,14 +417,10 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_uNuH8BqgEeGo461UQq-B1g" base_Property="_EuPlsxVeEeGQCvUGzi1kDQ">
     <ruleId>CONF:7968</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_wL6S8BqgEeGo461UQq-B1g" severity="WARNING" base_Property="_EuPlthVeEeGQCvUGzi1kDQ">
+  <CDA:PropertyValidation xmi:id="_wL6S8BqgEeGo461UQq-B1g" severity="WARNING">
     <ruleId>CONF:7969</ruleId>
     <ruleId>CONF:7970</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_TXBgYBqiEeGo461UQq-B1g" code="11369-6" base_Property="_2L9k0BSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:9016</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_k-uhcBqjEeGo461UQq-B1g" base_Property="_2MDEYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8826</ruleId>
   </CDA:PropertyValidation>
@@ -512,7 +502,6 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_BJU_EBrdEeGo461UQq-B1g" base_Property="_Dr388BVOEeGbmN_W114JUw">
     <ruleId>CONF:8994</ruleId>
   </CDA:PropertyValidation>
-  
   <uml:Association xmi:id="_CtfWwRqsEeGo461UQq-B1g" memberEnd="_CtevsBqsEeGo461UQq-B1g _CtfWwhqsEeGo461UQq-B1g">
     <ownedEnd xmi:id="_CtfWwhqsEeGo461UQq-B1g" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_CtfWwRqsEeGo461UQq-B1g"/>
   </uml:Association>
@@ -583,4 +572,22 @@ identifying the site.</body>
     <ruleId>CONF:9008</ruleId>
     <ruleId>CONF:9010)</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_FrWMoCQ8EeG4DdjGPr5_Vg" base_Property="_2MAoJBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8830</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2pzqoCQ8EeG4DdjGPr5_Vg" base_Property="_ESwTIBqmEeGo461UQq-B1g">
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_kOty4CQ9EeG4DdjGPr5_Vg" base_Constraint="_aXWsMCQ9EeG4DdjGPr5_Vg">
+    <ruleId>CONF:8858</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConformsTo xmi:id="_qn9vwCREEeG4DdjGPr5_Vg" base_Generalization="_QPw2IBVgEeGQCvUGzi1kDQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_w7Zx0CRGEeGPuMK8Qi-Gbg" code="11369-6" base_Property="_2L9k0BSVEeGGzu7fmW9pXw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:9016</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_kl0fwCRHEeGPuMK8Qi-Gbg" base_Class="_2L7voBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.2.1">
+    <ruleId>CONF:9015</ruleId>
+    <ruleId>CONF:10400</ruleId>
+  </CDA:CDATemplate>
 </xmi:XMI>
