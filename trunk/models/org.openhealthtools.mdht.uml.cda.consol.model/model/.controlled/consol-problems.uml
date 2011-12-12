@@ -318,9 +318,9 @@ historical purposes.&#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_naxrmxVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_naxrnBVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_naxrnRVdEeGQCvUGzi1kDQ" name="problemConcern" visibility="private" type="_2H6yUBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_psLK8CAoEeGetMjKLkqR8g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_psLK8SAoEeGetMjKLkqR8g"/>
+    <ownedAttribute xmi:id="_kwGNICT3EeGEp-w8SGFAPw" name="problemConcern" type="_2H6yUBSVEeGGzu7fmW9pXw" association="_kwG0MST3EeGEp-w8SGFAPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mIimwCT3EeGEp-w8SGFAPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mIjN0CT3EeGEp-w8SGFAPw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_8A93ABVeEeGQCvUGzi1kDQ" base_Class="_naxrkBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.5">
@@ -524,9 +524,6 @@ historical purposes.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nEo0ESBAEeG9GZYpu7WBOQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EqqCxSVEeGGzu7fmW9pXw" name="value" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2EqqDBSVEeGGzu7fmW9pXw">
-        <body>Valued using appropriate datatype.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EqqDRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EqqDhSVEeGGzu7fmW9pXw" value="1"/>
@@ -572,9 +569,6 @@ historical purposes.&#xD;
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_TqvUECAoEeGetMjKLkqR8g" base_Property="_naxrmhVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7880</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_XdcJoCAoEeGetMjKLkqR8g" severity="WARNING" base_Property="_naxrnRVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7882</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_k2bHgCApEeGetMjKLkqR8g" code="CONC" displayName="Concern" base_Property="_2H_DwRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
@@ -667,4 +661,10 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_x4R70CBLEeG938evaWkvcA" severity="WARNING" base_Constraint="_vaH7gCBEEeG938evaWkvcA">
     <ruleId>CONF:9187</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_kwG0MST3EeGEp-w8SGFAPw" memberEnd="_kwGNICT3EeGEp-w8SGFAPw _kwHbQCT3EeGEp-w8SGFAPw">
+    <ownedEnd xmi:id="_kwHbQCT3EeGEp-w8SGFAPw" type="_naxrkBVdEeGQCvUGzi1kDQ" association="_kwG0MST3EeGEp-w8SGFAPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_oQa5QCT3EeGEp-w8SGFAPw" severity="WARNING" base_Association="_kwG0MST3EeGEp-w8SGFAPw">
+    <ruleId>CONF:7882</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
