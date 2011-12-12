@@ -6854,10 +6854,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemSectionEntriesOptional" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5"/>
       <details key="code.displayName" value="Problem List"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5"/>
       <details key="constraints.validation.error" value="ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText"/>
       <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.warning" value="ProblemSectionEntriesOptionalProblemConcern"/>
       <details key="code.code" value="11450-4"/>
     </eAnnotations>
     <eOperations name="ProblemSectionEntriesOptionalTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -6896,6 +6897,17 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ProblemSectionEntriesOptionalProblemConcern" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getProblemConcerns" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//ProblemConcernAct"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SocialHistoryStatusObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

@@ -295,7 +295,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_SECTION,
-				ConsolPackage.Literals.PROBLEM_SECTION.getEAllOperations().get(62));
+				ConsolPackage.Literals.PROBLEM_SECTION.getEAllOperations().get(64));
 			try {
 				GET_CONSOL_PROBLEM_CONCERNS__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_CONCERNS__EOCL_EXP);
 			} catch (ParserException pe) {
