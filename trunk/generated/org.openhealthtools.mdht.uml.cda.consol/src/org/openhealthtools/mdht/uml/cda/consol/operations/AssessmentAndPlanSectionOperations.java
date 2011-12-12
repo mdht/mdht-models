@@ -25,8 +25,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
@@ -50,11 +48,9 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#validateAssessmentAndPlanSectionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#validateAssessmentAndPlanSectionImmunization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Immunization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#validateAssessmentAndPlanSectionEncounterEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Encounter Entry</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#validateAssessmentAndPlanSectionProcedureEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Procedure Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#getMedications() <em>Get Medications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#getImmunizations() <em>Get Immunizations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#getEncounterEntries() <em>Get Encounter Entries</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection#getProcedureEntries() <em>Get Procedure Entries</em>}</li>
  * </ul>
  * </p>
  *
@@ -355,62 +351,6 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanSectionProcedureEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Procedure Entry</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentAndPlanSectionProcedureEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionProcedureEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Procedure Entry</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentAndPlanSectionProcedureEntry(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))
-	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateAssessmentAndPlanSectionProcedureEntry(
-			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION);
-			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionProcedureEntry"),
-					new Object[] { assessmentAndPlanSection }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getMedications(AssessmentAndPlanSection) <em>Get Medications</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -444,7 +384,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(61));
+				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(60));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -491,7 +431,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(62));
+				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(61));
 			try {
 				GET_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -538,7 +478,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(63));
+				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(62));
 			try {
 				GET_ENCOUNTER_ENTRIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -549,53 +489,6 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<Encounter> result = (Collection<Encounter>) query.evaluate(assessmentAndPlanSection);
 		return new BasicEList.UnmodifiableEList<Encounter>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getProcedureEntries(AssessmentAndPlanSection) <em>Get Procedure Entries</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProcedureEntries(AssessmentAndPlanSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROCEDURE_ENTRIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProcedureEntries(AssessmentAndPlanSection) <em>Get Procedure Entries</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProcedureEntries(AssessmentAndPlanSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURE_ENTRIES__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)
-	 * @param assessmentAndPlanSection The receiving '<em><b>Assessment And Plan Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static EList<Procedure> getProcedureEntries(AssessmentAndPlanSection assessmentAndPlanSection) {
-		if (GET_PROCEDURE_ENTRIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(64));
-			try {
-				GET_PROCEDURE_ENTRIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRIES__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRIES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<Procedure> result = (Collection<Procedure>) query.evaluate(assessmentAndPlanSection);
-		return new BasicEList.UnmodifiableEList<Procedure>(result.size(), result.toArray());
 	}
 
 } // AssessmentAndPlanSectionOperations

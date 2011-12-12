@@ -60,7 +60,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.playingEntity.oclIsUndefined() implies self.playingEntity";
+	protected static final String VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDrugVehiclePlayingEntityCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity Code</em>}' invariant operation.
@@ -76,7 +76,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity
+	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

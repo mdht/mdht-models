@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -47,7 +46,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentAndPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.9' code.displayName='ASSESSMENT AND PLAN' constraints.validation.error='AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode' code.codeSystemName='LOINC' code.code='51847-2' constraints.validation.info='AssessmentAndPlanSectionMedication AssessmentAndPlanSectionImmunization AssessmentAndPlanSectionEncounterEntry AssessmentAndPlanSectionProcedureEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='ASSESSMENT AND PLAN' templateId.root='2.16.840.1.113883.10.20.22.2.9' constraints.validation.error='AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode' code.codeSystemName='LOINC' code.code='51847-2' constraints.validation.info='AssessmentAndPlanSectionMedication AssessmentAndPlanSectionImmunization AssessmentAndPlanSectionEncounterEntry'"
  * @generated
  */
 public interface AssessmentAndPlanSection extends Section {
@@ -122,19 +121,6 @@ public interface AssessmentAndPlanSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(cda::Procedure))'"
-	 * @generated
-	 */
-	boolean validateAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
@@ -166,18 +152,6 @@ public interface AssessmentAndPlanSection extends Section {
 	 * @generated
 	 */
 	EList<Encounter> getEncounterEntries();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(cda::Procedure)).oclAsType(cda::Procedure)'"
-	 * @generated
-	 */
-	EList<Procedure> getProcedureEntries();
 
 	/**
 	 * <!-- begin-user-doc -->

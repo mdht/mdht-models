@@ -265,6 +265,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseImmunizationActivity(ImmunizationActivity object) {
+			return createImmunizationActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseImmunizationRefusalReason(ImmunizationRefusalReason object) {
+			return createImmunizationRefusalReasonAdapter();
+		}
+
+		@Override
 		public Adapter casePayersSection(PayersSection object) {
 			return createPayersSectionAdapter();
 		}
@@ -502,16 +512,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseImmunizationsSection(ImmunizationsSection object) {
 			return createImmunizationsSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseImmunizationActivity(ImmunizationActivity object) {
-			return createImmunizationActivityAdapter();
-		}
-
-		@Override
-		public Adapter caseImmunizationRefusalReason(ImmunizationRefusalReason object) {
-			return createImmunizationRefusalReasonAdapter();
 		}
 
 		@Override
