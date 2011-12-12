@@ -2850,6 +2850,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSectionEntriesOptional/ProblemSectionEntriesOptionalText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSectionEntriesOptional/ProblemSectionEntriesOptionalText/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSectionEntriesOptional/ProblemSectionEntriesOptionalProblemConcern">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSectionEntriesOptional/ProblemSectionEntriesOptionalProblemConcern/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSectionEntriesOptional/ProblemSectionEntriesOptionalProblemConcern/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSectionEntriesOptional/getProblemConcerns"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SocialHistoryStatusObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryStatusObservation/SocialHistoryStatusObservationTargetOfEntryRelationship">
