@@ -65,56 +65,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
   <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
     <ruleId>CONF:6271</ruleId>
   </CDA:CDATemplate>
-  <uml:Class xmi:id="_2NufahSVEeGGzu7fmW9pXw" name="Procedure">
-    <ownedComment xmi:id="_2NufaxSVEeGGzu7fmW9pXw" annotatedElement="_2NufahSVEeGGzu7fmW9pXw">
-      <body>Defines a coded entry describing a procedure performed on a patient.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2NufbBSVEeGGzu7fmW9pXw" name="hasCodeOriginalText" constrainedElement="_2NufahSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2NufbRSVEeGGzu7fmW9pXw">
-        <body>Free text describing the Procedure</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2NufbhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The code/originalText/reference/@value is present.</body>
-        <body>not self.code.originalText.reference.value.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2NufbxSVEeGGzu7fmW9pXw" name="performerAssignedEntity" constrainedElement="_2NufahSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2NufcBSVEeGGzu7fmW9pXw">
-        <body>Name and other information for the person or&#xD;
-organization performed or hosted the Procedure</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2NufcRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains the procedure provider in performer / assignedEntity.</body>
-        <body>self.performer->forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity->size() > 0)</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_2N0mBBSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2N0mABSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2N0mAhSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2NufdxSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NufeBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NufeRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2NufcxSVEeGGzu7fmW9pXw" name="targetSiteCode" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2NufdBSVEeGGzu7fmW9pXw">
-        <body>The anatomical site where a procedure is performed</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NufdRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NufdhSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
+ 
   <CDA:ConstraintValidation xmi:id="_2NuffRSVEeGGzu7fmW9pXw" base_Constraint="_2NufbBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2NuffhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2NufbxSVEeGGzu7fmW9pXw"/>
   <Ecore:EAttribute xmi:id="_2N0mARSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2N0mABSVEeGGzu7fmW9pXw"/>
