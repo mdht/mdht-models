@@ -125,6 +125,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncountersSectionEntriesOptional();
 			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createImmunizationsSectionEntriesOptional();
+			case ConsolPackage.IMMUNIZATION_ACTIVITY:
+				return createImmunizationActivity();
+			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
+				return createImmunizationRefusalReason();
 			case ConsolPackage.PAYERS_SECTION:
 				return createPayersSection();
 			case ConsolPackage.COVERAGE_ACTIVITY:
@@ -221,10 +225,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncounter();
 			case ConsolPackage.IMMUNIZATIONS_SECTION:
 				return createImmunizationsSection();
-			case ConsolPackage.IMMUNIZATION_ACTIVITY:
-				return createImmunizationActivity();
-			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
-				return createImmunizationRefusalReason();
 			case ConsolPackage.INSURANCE_PROVIDER:
 				return createInsuranceProvider();
 			case ConsolPackage.PAYER_ENTRY:

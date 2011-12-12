@@ -13,8 +13,6 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.Procedure;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
@@ -88,17 +86,6 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDiagnosticResultsSectionResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResult(this, diagnostics, context);
 	}
@@ -123,15 +110,6 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 			Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionExternalReference(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Procedure> getDiagnosticProcedures() {
-		return DiagnosticResultsSectionOperations.getDiagnosticProcedures(this);
 	}
 
 	/**

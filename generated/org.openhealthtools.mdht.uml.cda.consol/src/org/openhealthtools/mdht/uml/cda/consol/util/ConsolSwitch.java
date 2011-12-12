@@ -750,6 +750,46 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.IMMUNIZATION_ACTIVITY: {
+				ImmunizationActivity immunizationActivity = (ImmunizationActivity) theEObject;
+				T result = caseImmunizationActivity(immunizationActivity);
+				if (result == null) {
+					result = caseSubstanceAdministration(immunizationActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(immunizationActivity);
+				}
+				if (result == null) {
+					result = caseAct(immunizationActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON: {
+				ImmunizationRefusalReason immunizationRefusalReason = (ImmunizationRefusalReason) theEObject;
+				T result = caseImmunizationRefusalReason(immunizationRefusalReason);
+				if (result == null) {
+					result = caseObservation(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = caseAct(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.PAYERS_SECTION: {
 				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
@@ -1662,46 +1702,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(immunizationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.IMMUNIZATION_ACTIVITY: {
-				ImmunizationActivity immunizationActivity = (ImmunizationActivity) theEObject;
-				T result = caseImmunizationActivity(immunizationActivity);
-				if (result == null) {
-					result = caseSubstanceAdministration(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseAct(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON: {
-				ImmunizationRefusalReason immunizationRefusalReason = (ImmunizationRefusalReason) theEObject;
-				T result = caseImmunizationRefusalReason(immunizationRefusalReason);
-				if (result == null) {
-					result = caseObservation(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseAct(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationRefusalReason);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

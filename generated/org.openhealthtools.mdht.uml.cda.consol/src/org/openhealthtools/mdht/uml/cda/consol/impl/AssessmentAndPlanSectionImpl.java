@@ -14,8 +14,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
@@ -109,17 +107,6 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionProcedureEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<MedicationActivity> getMedications() {
 		return AssessmentAndPlanSectionOperations.getMedications(this);
 	}
@@ -140,15 +127,6 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 */
 	public EList<Encounter> getEncounterEntries() {
 		return AssessmentAndPlanSectionOperations.getEncounterEntries(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Procedure> getProcedureEntries() {
-		return AssessmentAndPlanSectionOperations.getProcedureEntries(this);
 	}
 
 	/**

@@ -42,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#validateImmunizationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#validateImmunizationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#validateImmunizationsSectionImmunization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Immunization</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#getConsolImmunizations() <em>Get Consol Immunizations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#getImmunizations() <em>Get Immunizations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#validateImmunizationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection#validateImmunizationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code</em>}</li>
  * </ul>
@@ -265,24 +265,24 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolImmunizations(ImmunizationsSection) <em>Get Consol Immunizations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getImmunizations(ImmunizationsSection) <em>Get Immunizations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolImmunizations(ImmunizationsSection)
+	 * @see #getImmunizations(ImmunizationsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_IMMUNIZATIONS__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)";
+	protected static final String GET_IMMUNIZATIONS__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolImmunizations(ImmunizationsSection) <em>Get Consol Immunizations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getImmunizations(ImmunizationsSection) <em>Get Immunizations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolImmunizations(ImmunizationsSection)
+	 * @see #getImmunizations(ImmunizationsSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_IMMUNIZATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_IMMUNIZATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,19 +293,19 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<ImmunizationActivity> getConsolImmunizations(ImmunizationsSection immunizationsSection) {
-		if (GET_CONSOL_IMMUNIZATIONS__EOCL_QRY == null) {
+	public static EList<ImmunizationActivity> getImmunizations(ImmunizationsSection immunizationsSection) {
+		if (GET_IMMUNIZATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATIONS_SECTION,
-				ConsolPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(62));
+				ConsolPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(64));
 			try {
-				GET_CONSOL_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_IMMUNIZATIONS__EOCL_EXP);
+				GET_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_IMMUNIZATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ImmunizationActivity> result = (Collection<ImmunizationActivity>) query.evaluate(immunizationsSection);
 		return new BasicEList.UnmodifiableEList<ImmunizationActivity>(result.size(), result.toArray());

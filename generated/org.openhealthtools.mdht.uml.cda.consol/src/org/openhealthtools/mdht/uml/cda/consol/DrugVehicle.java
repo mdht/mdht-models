@@ -27,11 +27,11 @@ public interface DrugVehicle extends ParticipantRole {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity
+	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.playingEntity.oclIsUndefined() implies self.playingEntity'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1'"
 	 * @generated
 	 */
 	boolean validateDrugVehiclePlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);

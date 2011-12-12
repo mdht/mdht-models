@@ -94,8 +94,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ImmunizationActivity> getConsolImmunizations() {
-		return ImmunizationsSectionOperations.getConsolImmunizations(this);
+	public EList<ImmunizationActivity> getImmunizations() {
+		return ImmunizationsSectionOperations.getImmunizations(this);
 	}
 
 	/**

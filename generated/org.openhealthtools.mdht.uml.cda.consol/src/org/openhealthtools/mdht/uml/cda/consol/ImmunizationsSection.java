@@ -71,7 +71,7 @@ public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptiona
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)'"
 	 * @generated
 	 */
-	EList<ImmunizationActivity> getConsolImmunizations();
+	EList<ImmunizationActivity> getImmunizations();
 
 	/**
 	 * <!-- begin-user-doc -->
