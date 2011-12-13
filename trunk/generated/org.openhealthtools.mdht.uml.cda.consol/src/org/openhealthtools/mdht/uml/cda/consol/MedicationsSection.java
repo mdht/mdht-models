@@ -18,25 +18,10 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Medications' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' code.displayName='History of medication use' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' code.codeSystemName='LOINC' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity' code.code='10160-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Medications' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' code.displayName='History of medication use' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' code.codeSystemName='LOINC' code.code='10160-0'"
  * @generated
  */
 public interface MedicationsSection extends MedicationsSectionEntriesOptional {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))
-	 *    or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(consol::MedicationActivity))\r\n   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(consol::SupplyActivity))'"
-	 * @generated
-	 */
-	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

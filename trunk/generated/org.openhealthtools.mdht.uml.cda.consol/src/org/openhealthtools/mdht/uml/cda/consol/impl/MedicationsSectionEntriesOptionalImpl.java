@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -49,17 +50,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalHasMedicationOrSupplyActivity(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +112,8 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationActivity getMedicationActivity() {
-		return MedicationsSectionEntriesOptionalOperations.getMedicationActivity(this);
+	public EList<MedicationActivity> getMedicationActivities() {
+		return MedicationsSectionEntriesOptionalOperations.getMedicationActivities(this);
 	}
 
 	/**
