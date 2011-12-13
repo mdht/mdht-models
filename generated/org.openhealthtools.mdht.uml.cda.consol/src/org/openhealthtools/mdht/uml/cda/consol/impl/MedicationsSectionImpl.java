@@ -55,17 +55,6 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionHasMedicationOrSupplyActivity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
