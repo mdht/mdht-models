@@ -30,19 +30,25 @@
         <body>self.entryRelationship->select(er |   er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and er.act.code.codeSystem &lt;> '2.16.840.1.113883.1.11.19717' )->isEmpty()</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_tg8aoCWaEeGCz74CaMtvdQ" name="codedProductName" constrainedElement="_qkWXUDuJEd-B8KE6Jx0UNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xCZvMCWaEeGCz74CaMtvdQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Immunizations SHALL be coded using CVX as specified in HITSP/C80 Section 2.2.3.5.1 Vaccines Administered.</body>
+        <body>self.consumable.manufacturedProduct.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59'</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_qkWXUTuJEd-B8KE6Jx0UNQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
     </generalization>
-    <ownedAttribute xmi:id="_szV_cFayEeCddY1UIvGtQg" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_szV_cVayEeCddY1UIvGtQg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_szV_clayEeCddY1UIvGtQg"/>
-    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_s4UlEDuJEd-B8KE6Jx0UNQ" base_Class="_qkWXUDuJEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
   <CDA:ConstraintValidation xmi:id="_r-nhcFazEeCddY1UIvGtQg" base_Constraint="_qvCv8FazEeCddY1UIvGtQg"/>
   <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
-  <CDA:ValueSetConstraint xmi:id="_KFeygGxZEeCVhdosyN0o1A" base_Property="_szV_cFayEeCddY1UIvGtQg">
+  <CDA:ValueSetConstraint xmi:id="_KFeygGxZEeCVhdosyN0o1A">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkaDqEd-dVeaMP0XXQw"/>
   </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_zINlICWaEeGCz74CaMtvdQ" base_Constraint="_tg8aoCWaEeGCz74CaMtvdQ">
+    <ruleId>C154-[DE-13.06-1]</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

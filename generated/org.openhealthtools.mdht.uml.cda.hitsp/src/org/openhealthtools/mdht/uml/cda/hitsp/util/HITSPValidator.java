@@ -1393,6 +1393,14 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON = 115;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Coded Product Name' of 'Immunization'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_CODED_PRODUCT_NAME = 116;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Physical Exam Section Template Id' of 'Physical Exam Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1790,15 +1798,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 116;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Immunization Code' of 'Immunization'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 117;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 117;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Comment Template Id' of 'Comment'.
@@ -8653,7 +8653,7 @@ public class HITSPValidator extends EObjectValidator {
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
+			result &= iheValidator.validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateImmunization_validateImmunizationStatusCode(
@@ -8668,6 +8668,9 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateImmunization_validateHITSPImmunizationRefusalReason(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateImmunization_validateHITSPImmunizationCodedProductName(immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateImmunization_validateHITSPImmunizationTemplateId(immunization, diagnostics, context);
@@ -8687,6 +8690,17 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateHITSPImmunizationCodedProductName constraint of '<em>Immunization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunization_validateHITSPImmunizationCodedProductName(Immunization immunization,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return immunization.validateHITSPImmunizationCodedProductName(diagnostics, context);
+	}
+
+	/**
 	 * Validates the validateHITSPImmunizationTemplateId constraint of '<em>Immunization</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8695,17 +8709,6 @@ public class HITSPValidator extends EObjectValidator {
 	public boolean validateImmunization_validateHITSPImmunizationTemplateId(Immunization immunization,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return immunization.validateHITSPImmunizationTemplateId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateImmunizationCode constraint of '<em>Immunization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateImmunization_validateImmunizationCode(Immunization immunization,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return immunization.validateImmunizationCode(diagnostics, context);
 	}
 
 	/**
