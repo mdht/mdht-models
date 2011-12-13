@@ -397,10 +397,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EuPltBVeEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EuPltRVeEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_qfAzoCQ6EeG4DdjGPr5_Vg" name="immunizationActivity" type="_2MAoIBSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_qfAzoCQ6EeG4DdjGPr5_Vg" name="immunizationActivity" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_qfAzoiQ6EeG4DdjGPr5_Vg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uT_hICQ6EeG4DdjGPr5_Vg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uT_hISQ6EeG4DdjGPr5_Vg"/>
-      <association href="../consol.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_npcu0BVfEeGQCvUGzi1kDQ" base_Class="_EuPloBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.2">
@@ -590,4 +589,7 @@
     <ruleId>CONF:9015</ruleId>
     <ruleId>CONF:10400</ruleId>
   </CDA:CDATemplate>
+  <uml:Association xmi:id="_qfAzoiQ6EeG4DdjGPr5_Vg" memberEnd="_qfAzoCQ6EeG4DdjGPr5_Vg _qfAzoyQ6EeG4DdjGPr5_Vg">
+    <ownedEnd xmi:id="_qfAzoyQ6EeG4DdjGPr5_Vg" type="_EuPloBVeEeGQCvUGzi1kDQ" association="_qfAzoiQ6EeG4DdjGPr5_Vg"/>
+  </uml:Association>
 </xmi:XMI>

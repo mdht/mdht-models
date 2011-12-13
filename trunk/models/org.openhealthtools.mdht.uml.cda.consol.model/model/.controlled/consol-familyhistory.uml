@@ -234,10 +234,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IpyIRSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IpyIhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_QkrlUCHZEeGFLIX-2_sWzA" name="subject" type="_JNgjcCHZEeGFLIX-2_sWzA">
+    <ownedAttribute xmi:id="_QkrlUCHZEeGFLIX-2_sWzA" name="subject" type="_JNgjcCHZEeGFLIX-2_sWzA" association="_QkrlUiHZEeGFLIX-2_sWzA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RqJ_oCHZEeGFLIX-2_sWzA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RqJ_oSHZEeGFLIX-2_sWzA" value="1"/>
-      <association href="../consol.uml#_QkrlUiHZEeGFLIX-2_sWzA"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2I6Q0BSVEeGGzu7fmW9pXw" memberEnd="_2IpyIBSVEeGGzu7fmW9pXw _2I6Q0RSVEeGGzu7fmW9pXw">
@@ -529,4 +528,7 @@
   <CDA:CodeSystemConstraint xmi:id="_Ow2PMCHkEeGFLIX-2_sWzA" code="419099009" displayName="Dead" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_QkrlUiHZEeGFLIX-2_sWzA" memberEnd="_QkrlUCHZEeGFLIX-2_sWzA _QkrlUyHZEeGFLIX-2_sWzA">
+    <ownedEnd xmi:id="_QkrlUyHZEeGFLIX-2_sWzA" type="_2IbIoBSVEeGGzu7fmW9pXw" association="_QkrlUiHZEeGFLIX-2_sWzA"/>
+  </uml:Association>
 </xmi:XMI>
