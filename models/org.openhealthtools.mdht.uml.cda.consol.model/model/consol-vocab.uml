@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FPRwBSVEeGGzu7fmW9pXw" name="SeverityObservation">
       <ownedLiteral xmi:id="_2FPRwRSVEeGGzu7fmW9pXw" name="H"/>
@@ -179,18 +179,57 @@
       <ownedLiteral xmi:id="_eGosYCBCEeG938evaWkvcA" name="mo"/>
       <ownedLiteral xmi:id="_fZwhICBCEeG938evaWkvcA" name="a"/>
     </packagedElement>
-    <profileApplication xmi:id="_2B97VhSVEeGGzu7fmW9pXw">
-      <eAnnotations xmi:id="_2B97VxSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
-    </profileApplication>
-    <profileApplication xmi:id="_2B97WBSVEeGGzu7fmW9pXw">
-      <eAnnotations xmi:id="_2B97WRSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
-    </profileApplication>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xQszoCXLEeGnSfJ2zNllag" name="Observation Interpretation (HL7)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Zpfm4CXNEeGnSfJ2zNllag" name="Problem Severity">
+      <ownedComment xmi:id="_DBP8wCXPEeGnSfJ2zNllag">
+        <body>This is a description of the level of the severity of the problem.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_Zpfm4iXNEeGnSfJ2zNllag" name="255604002"/>
+      <ownedLiteral xmi:id="_Zpfm4yXNEeGnSfJ2zNllag" name="371923003"/>
+      <ownedLiteral xmi:id="_Zpfm5CXNEeGnSfJ2zNllag" name="6736007"/>
+      <ownedLiteral xmi:id="_Zpfm5SXNEeGnSfJ2zNllag" name="371924009"/>
+      <ownedLiteral xmi:id="_Zpfm5iXNEeGnSfJ2zNllag" name="24484000"/>
+      <ownedLiteral xmi:id="_Zpfm4SXNEeGnSfJ2zNllag" name="399166001"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_c2vy0KDqEd-dVeaMP0XXQw" name="Allergy/Adverse Event Type">
+      <ownedComment xmi:id="_bH0IkCXZEeGD8_EQPvfzIQ">
+        <body>This describes the type of product and intolerance suffered by the patient&#xD;
+http://phinvads.cdc.gov/vads/ViewValueSet.action?id=7AFDBFB5-A277-DE11-9B52-0015173D1785</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_c2y2IqDqEd-dVeaMP0XXQw" name="420134006"/>
+      <ownedLiteral xmi:id="_c2zdMaDqEd-dVeaMP0XXQw" name="418038007"/>
+      <ownedLiteral xmi:id="_c2y2JKDqEd-dVeaMP0XXQw" name="419511003"/>
+      <ownedLiteral xmi:id="_c2y2JqDqEd-dVeaMP0XXQw" name="418471000"/>
+      <ownedLiteral xmi:id="_c2xoAKDqEd-dVeaMP0XXQw" name="419199007"/>
+      <ownedLiteral xmi:id="_c2xoAqDqEd-dVeaMP0XXQw" name="416098002"/>
+      <ownedLiteral xmi:id="_c2yPE6DqEd-dVeaMP0XXQw" name="414285001"/>
+      <ownedLiteral xmi:id="_c2yPEaDqEd-dVeaMP0XXQw" name="59037007"/>
+      <ownedLiteral xmi:id="_c2y2IKDqEd-dVeaMP0XXQw" name="235719002"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRWEIKDqEd-dVeaMP0XXQw" name="Medication Brand Name">
+      <ownedComment xmi:id="_1Nq3ICXZEeGD8_EQPvfzIQ">
+        <body>Brand names&#xD;
+http://phinvads.cdc.gov/vads/ViewValueSet.action?id=229BEF3E-971C-DF11-B334-0015173D1785</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dU_1EKDqEd-dVeaMP0XXQw" name="Medication Drug Class">
+      <ownedComment xmi:id="_C9MiMCXaEeGD8_EQPvfzIQ">
+        <body>This identifies the pharmacological drug class, such as Cephalosporins. Shall contain a value descending from the NDF-RT concept types of &quot;Mechanism of Action - N0000000223&quot;, &quot;Physiologic Effect - N0000009802&quot; or &quot;Chemical Structure - N0000000002&quot;. NUI will be used as the concept code. &#xD;
+http://phinvads.cdc.gov/vads/ViewValueSet.action?id=77FDBFB5-A277-DE11-9B52-0015173D1785</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dSQDEKDqEd-dVeaMP0XXQw" name="Medication Clinical Drug">
+      <ownedComment xmi:id="_AI7q0CXaEeGD8_EQPvfzIQ">
+        <body>Clinical drug names&#xD;
+http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015173D1785</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_e1-m8CXaEeGD8_EQPvfzIQ" name="Ingredient Name">
+      <ownedComment xmi:id="_l1WM0CXaEeGD8_EQPvfzIQ">
+        <body>Unique ingredient identifiers (UNIIs) for substances in drugs, biologics, foods, and devices.&#xD;
+http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523.htm</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -198,7 +237,6 @@
       <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <Ecore:EPackage xmi:id="_2B97WhSVEeGGzu7fmW9pXw" base_Package="_2B97VRSVEeGGzu7fmW9pXw" packageName="hitsp" nsPrefix="vocab" prefix="Vocab"/>
   <term:ValueSetVersion xmi:id="_2E7IuRSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -338,4 +376,38 @@
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
   <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw"/>
+  <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" binding="Dynamic" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_R4Y6wSAqEeGetMjKLkqR8g"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_cOR30CXNEeGnSfJ2zNllag" identifier="2.16.840.1.113883.3.88.12.3221.6.8" binding="Dynamic" base_Enumeration="_Zpfm4CXNEeGnSfJ2zNllag">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_pkqqICXNEeGnSfJ2zNllag" conceptName="Fatal" base_EnumerationLiteral="_Zpfm4SXNEeGnSfJ2zNllag"/>
+  <term:ValueSetCode xmi:id="_qtXXkCXNEeGnSfJ2zNllag" conceptName="Mild" base_EnumerationLiteral="_Zpfm4iXNEeGnSfJ2zNllag"/>
+  <term:ValueSetCode xmi:id="_r_59gCXNEeGnSfJ2zNllag" conceptName="Mild to moderate" base_EnumerationLiteral="_Zpfm4yXNEeGnSfJ2zNllag"/>
+  <term:ValueSetCode xmi:id="_tMd3QCXNEeGnSfJ2zNllag" conceptName="Moderate" base_EnumerationLiteral="_Zpfm5CXNEeGnSfJ2zNllag"/>
+  <term:ValueSetCode xmi:id="_ubGNkCXNEeGnSfJ2zNllag" conceptName="Moderate to severe" base_EnumerationLiteral="_Zpfm5SXNEeGnSfJ2zNllag"/>
+  <term:ValueSetCode xmi:id="_vc3MkCXNEeGnSfJ2zNllag" conceptName="Severe" base_EnumerationLiteral="_Zpfm5iXNEeGnSfJ2zNllag"/>
+  <term:ValueSetVersion xmi:id="_i0QFQCXYEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.3221.6.2" binding="Dynamic" base_Enumeration="_c2vy0KDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_kKh7sCXYEeGD8_EQPvfzIQ" conceptName="Allergy to substance" base_EnumerationLiteral="_c2xoAKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_lXbzsCXYEeGD8_EQPvfzIQ" conceptName="Drug allergy" base_EnumerationLiteral="_c2xoAqDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_mYMtICXYEeGD8_EQPvfzIQ" conceptName="Drug intolerance" base_EnumerationLiteral="_c2yPEaDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_niCDACXYEeGD8_EQPvfzIQ" conceptName="Food allergy" base_EnumerationLiteral="_c2yPE6DqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_om4yQCXYEeGD8_EQPvfzIQ" conceptName="Food intolerance" base_EnumerationLiteral="_c2y2IKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_p5MusCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions" base_EnumerationLiteral="_c2y2IqDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_q8G9MCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions to drug" base_EnumerationLiteral="_c2y2JKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_r7dhYCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions to food" base_EnumerationLiteral="_c2y2JqDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetCode xmi:id="_s-qDwCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions to substance" base_EnumerationLiteral="_c2zdMaDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_tBOaICXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.16" binding="Dynamic" base_Enumeration="_dRWEIKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_uPu0oCXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.17" binding="Dynamic" base_Enumeration="_dSQDEKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_vin_4CXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.18" binding="Dynamic" base_Enumeration="_dU_1EKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_e1-m8SXaEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.20" base_Enumeration="_e1-m8CXaEeGD8_EQPvfzIQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
