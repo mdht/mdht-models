@@ -735,4 +735,6 @@
     <ruleId>CONF:7969</ruleId>
     <ruleId>CONF:7970</ruleId>
   </CDA:AssociationValidation>
+  <Ecore:EReference xmi:id="_yf0u4CUrEeG_gJw2x8CkdQ" xmlNamespace="##targetNamespace"/>
+  <CDA:ValueSetConstraint xmi:id="__6IX4CUrEeG_gJw2x8CkdQ"/>
 </xmi:XMI>
