@@ -132,6 +132,6 @@ identifying the site.</body>
     <ruleId>6.3.4.17.8</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_5bPsQHpuEeCPBNaWF5MH3Q" message="IHE Immunization SHALL satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)" base_Property="_5bOeIHpuEeCPBNaWF5MH3Q">
-    <ruleId>CONF-308</ruleId>
+    <ruleId>6.3.4.17.8</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
