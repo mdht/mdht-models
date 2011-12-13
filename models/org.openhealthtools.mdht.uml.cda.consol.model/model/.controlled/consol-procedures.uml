@@ -65,18 +65,6 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
   <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
     <ruleId>CONF:6271</ruleId>
   </CDA:CDATemplate>
- 
-  <CDA:ConstraintValidation xmi:id="_2NuffRSVEeGGzu7fmW9pXw" base_Constraint="_2NufbBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2NuffhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2NufbxSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2N0mARSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2N0mABSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2N0mAxSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2N0mAhSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2NuffBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2NufdxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-433</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2NufexSVEeGGzu7fmW9pXw" name="" base_Property="_2NufcxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
-    <ruleId>C83-[DE-17-CDA-3]</ruleId>
-  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_Aj7JkBg4EeGs5a462vYX5Q" name="ProcedureActivityObservation">
     <ownedComment xmi:id="_RlVIQBxuEeGXP8PxDYviDg">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
