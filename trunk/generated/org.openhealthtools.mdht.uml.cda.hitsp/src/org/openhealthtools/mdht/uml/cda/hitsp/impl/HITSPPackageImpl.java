@@ -2873,6 +2873,17 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			immunizationEClass, ecorePackage.getEBoolean(), "validateHITSPImmunizationCodedProductName", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			immunizationEClass, ecorePackage.getEBoolean(), "validateHITSPImmunizationTemplateId", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -4727,9 +4738,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"HITSPImmunizationsSectionTemplateId HITSPImmunizationsSectionImmunization", "templateId.root",
 				"2.16.840.1.113883.3.88.11.83.117" });
 		addAnnotation(immunizationEClass, source, new String[] {
-				"code.codeSystemName", "Vaccines administered (CVX)", "constraints.validation.error",
-				"HITSPImmunizationTemplateId HITSPImmunizationRefusalReason ImmunizationCode", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.13", "code.codeSystem", "2.16.840.1.113883.12.292" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.13", "constraints.validation.error",
+				"HITSPImmunizationTemplateId HITSPImmunizationRefusalReason HITSPImmunizationCodedProductName" });
 		addAnnotation(payersSectionEClass, source, new String[] {
 				"constraints.validation.error", "HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider",
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.101" });
@@ -4949,7 +4959,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		String source = "duplicates";
 		addAnnotation(conditionEntryEClass, source, new String[] {});
 		addAnnotation(advanceDirectiveEClass, source, new String[] {});
-		addAnnotation(immunizationEClass, source, new String[] {});
 		addAnnotation(insuranceProviderEClass, source, new String[] {});
 		addAnnotation(vitalSignEClass, source, new String[] {});
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {});

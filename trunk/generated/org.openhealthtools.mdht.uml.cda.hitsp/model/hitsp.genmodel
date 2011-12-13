@@ -542,6 +542,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationRefusalReason/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationRefusalReason/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//Immunization/HITSPImmunizationCodedProductName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationCodedProductName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationCodedProductName/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//Immunization/HITSPImmunizationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Immunization/HITSPImmunizationTemplateId/context"/>

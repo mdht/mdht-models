@@ -63,8 +63,8 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationOperations.validateHITSPImmunizationTemplateId(this, diagnostics, context);
+	public boolean validateHITSPImmunizationCodedProductName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateHITSPImmunizationCodedProductName(this, diagnostics, context);
 	}
 
 	/**
@@ -72,9 +72,8 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateImmunizationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationOperations.validateImmunizationCode(this, diagnostics, context);
+	public boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateHITSPImmunizationTemplateId(this, diagnostics, context);
 	}
 
 	/**
