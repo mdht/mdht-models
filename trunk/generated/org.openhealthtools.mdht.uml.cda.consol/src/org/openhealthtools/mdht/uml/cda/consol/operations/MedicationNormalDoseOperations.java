@@ -85,20 +85,20 @@ public class MedicationNormalDoseOperations extends MedicationActivityOperations
 			helper.setContext(ConsolPackage.Literals.MEDICATION_NORMAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNormalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationNormalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_NORMAL_DOSE__MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION,
-					ConsolPlugin.INSTANCE.getString("MedicationNormalDoseNoSubordinateSubstanceAdministration"),
-					new Object[] { medicationNormalDose }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_NORMAL_DOSE__MEDICATION_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION,
+						 ConsolPlugin.INSTANCE.getString("MedicationNormalDoseNoSubordinateSubstanceAdministration"),
+						 new Object [] { medicationNormalDose }));
 			}
 			return false;
 		}

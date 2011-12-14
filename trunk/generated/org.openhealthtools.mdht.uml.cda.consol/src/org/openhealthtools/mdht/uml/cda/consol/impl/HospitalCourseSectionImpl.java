@@ -74,7 +74,7 @@ public class HospitalCourseSectionImpl extends SectionImpl implements HospitalCo
 	 * @generated
 	 */
 	public HospitalCourseSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalCourseSectionImpl

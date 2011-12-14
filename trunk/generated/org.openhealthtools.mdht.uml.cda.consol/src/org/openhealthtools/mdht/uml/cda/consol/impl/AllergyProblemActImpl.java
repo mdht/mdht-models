@@ -59,8 +59,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActEntryRelationshipRequired(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActEntryRelationshipRequired(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActEntryRelationshipRequired(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +78,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActContainsProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActContainsProblemObservation(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActContainsProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +128,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActRelatedObservationsTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActRelatedObservationsTypeCode(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActRelatedObservationsTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +138,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActHasRelatedReferencesTypeCode(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActHasRelatedReferencesTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -199,8 +195,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActProductDetailParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActProductDetailParticipantRole(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActProductDetailParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -210,8 +205,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActProductDetailParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActProductDetailParticipantRoleClassCode(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActProductDetailParticipantRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -221,8 +215,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActProductDetailPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActProductDetailPlayingEntity(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActProductDetailPlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -232,8 +225,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActProductDetailPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActProductDetailPlayingEntityClassCode(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActProductDetailPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -271,8 +263,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActAllergyProductMedClassVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActAllergyProductMedClassVocab(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActAllergyProductMedClassVocab(this, diagnostics, context);
 	}
 
 	/**
@@ -282,8 +273,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActAllergyProductSpecificMedVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActAllergyProductSpecificMedVocab(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActAllergyProductSpecificMedVocab(this, diagnostics, context);
 	}
 
 	/**
@@ -427,7 +417,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	public AllergyProblemAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyProblemActImpl

@@ -169,8 +169,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(
-			this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -216,7 +215,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	public ReactionObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReactionObservationImpl

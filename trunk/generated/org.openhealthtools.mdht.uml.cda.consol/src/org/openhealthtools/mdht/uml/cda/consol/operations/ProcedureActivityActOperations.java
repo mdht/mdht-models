@@ -120,18 +120,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeCodeSystems"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeCodeSystems"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -176,18 +178,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeOriginalText"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeOriginalText"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -232,19 +236,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActOriginalTextReferenceValue"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActOriginalTextReferenceValue"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -289,18 +294,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActReferenceValue"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActReferenceValue"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -345,18 +352,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEncounterInversion"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActEncounterInversion"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -401,19 +410,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocationTypeCode"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocationTypeCode"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -458,19 +468,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructionsInversion"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructionsInversion"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -515,18 +526,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActTemplateId"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActTemplateId"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -571,18 +584,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActClassCode"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActClassCode"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -627,17 +642,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActId"), new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActId"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -682,17 +700,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCode"), new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActCode"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -707,9 +728,9 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.14' and (value.code = 'completed' or value.code = 'active' or value.code = 'aborted' or value.code = 'cancelled')))";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
+"value.codeSystem = '2.16.840.1.113883.5.14' and (value.code = 'completed' or value.code = 'active' or value.code = 'aborted' or value.code = 'cancelled')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityActStatusCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Status Code</em>}' invariant operation.
@@ -741,18 +762,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActStatusCode"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActStatusCode"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -797,18 +820,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEffectiveTime"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActEffectiveTime"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -853,18 +878,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCode"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCode"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -909,19 +936,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocation"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocation"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -966,18 +994,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureEncounter"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ENCOUNTER,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureEncounter"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -1022,18 +1052,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructions"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructions"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -1078,18 +1110,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActIndication"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActIndication"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -1134,18 +1168,20 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
 			try {
 				VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureActivityAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActMedicationActivity"),
-					new Object[] { procedureActivityAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY,
+						 ConsolPlugin.INSTANCE.getString("ProcedureActivityActMedicationActivity"),
+						 new Object [] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -1184,12 +1220,11 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	public static EList<ServiceDeliveryLocation> getServiceDeliveryLocations(ProcedureActivityAct procedureActivityAct) {
 		if (GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(68));
+			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT, ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(68));
 			try {
 				GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY = helper.createQuery(GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1231,12 +1266,11 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	public static EList<Encounter> getProcedureEncounters(ProcedureActivityAct procedureActivityAct) {
 		if (GET_PROCEDURE_ENCOUNTERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(69));
+			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT, ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(69));
 			try {
 				GET_PROCEDURE_ENCOUNTERS__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENCOUNTERS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1278,12 +1312,11 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	public static Instructions getInstructions(ProcedureActivityAct procedureActivityAct) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(70));
+			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT, ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(70));
 			try {
 				GET_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1323,12 +1356,11 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	public static EList<Indication> getIndications(ProcedureActivityAct procedureActivityAct) {
 		if (GET_INDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(71));
+			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT, ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(71));
 			try {
 				GET_INDICATIONS__EOCL_QRY = helper.createQuery(GET_INDICATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1370,12 +1402,11 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	public static MedicationActivity getMedicationActivity(ProcedureActivityAct procedureActivityAct) {
 		if (GET_MEDICATION_ACTIVITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(72));
+			helper.setOperationContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT, ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(72));
 			try {
 				GET_MEDICATION_ACTIVITY__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

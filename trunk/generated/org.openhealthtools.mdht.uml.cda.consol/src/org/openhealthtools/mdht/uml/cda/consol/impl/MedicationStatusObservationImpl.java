@@ -57,8 +57,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalParticipants(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalParticipants(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateMedicationStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalRelationships(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +87,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateMedicationStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationTemplateId(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateMedicationStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationClassCode(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +105,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateMedicationStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationMoodCode(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +124,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateMedicationStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationStatusCode(
-			this, diagnostics, context);
+		return MedicationStatusObservationOperations.validateMedicationStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -140,7 +133,7 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public MedicationStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationStatusObservationImpl

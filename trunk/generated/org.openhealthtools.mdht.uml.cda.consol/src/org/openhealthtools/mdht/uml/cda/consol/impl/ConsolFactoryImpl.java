@@ -31,11 +31,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 */
 	public static ConsolFactory init() {
 		try {
-			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consol");
+			ConsolFactory theConsolFactory = (ConsolFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consol"); 
 			if (theConsolFactory != null) {
 				return theConsolFactory;
 			}
-		} catch (Exception exception) {
+		}
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new ConsolFactoryImpl();
@@ -59,314 +60,159 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS:
-				return createGeneralHeaderConstraints();
-			case ConsolPackage.ALLERGY_PROBLEM_ACT:
-				return createAllergyProblemAct();
-			case ConsolPackage.ALLERGY_OBSERVATION:
-				return createAllergyObservation();
-			case ConsolPackage.REACTION_OBSERVATION:
-				return createReactionObservation();
-			case ConsolPackage.SEVERITY_OBSERVATION:
-				return createSeverityObservation();
-			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
-				return createProcedureActivityProcedure();
-			case ConsolPackage.INDICATION:
-				return createIndication();
-			case ConsolPackage.SERVICE_DELIVERY_LOCATION:
-				return createServiceDeliveryLocation();
-			case ConsolPackage.MEDICATION_ACTIVITY:
-				return createMedicationActivity();
-			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
-				return createMedicationSupplyOrder();
-			case ConsolPackage.INSTRUCTIONS:
-				return createInstructions();
-			case ConsolPackage.MEDICATION_DISPENSE:
-				return createMedicationDispense();
-			case ConsolPackage.DRUG_VEHICLE:
-				return createDrugVehicle();
-			case ConsolPackage.PRODUCT_INSTANCE:
-				return createProductInstance();
-			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
-				return createAllergyStatusObservation();
-			case ConsolPackage.AGE_OBSERVATION:
-				return createAgeObservation();
-			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
-				return createHealthStatusObservation();
-			case ConsolPackage.COMMENT:
-				return createComment();
-			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
-				return createMedicationSeriesNumberObservation();
-			case ConsolPackage.MEDICATION_STATUS_OBSERVATION:
-				return createMedicationStatusObservation();
-			case ConsolPackage.INTERNAL_REFERENCE:
-				return createInternalReference();
-			case ConsolPackage.MEDICATION_TYPE:
-				return createMedicationType();
-			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY:
-				return createNonMedicinalSupplyActivity();
-			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
-				return createMedicationFullfillmentInstructions();
-			case ConsolPackage.PROBLEM_CONCERN_ACT:
-				return createProblemConcernAct();
-			case ConsolPackage.PROBLEM_OBSERVATION:
-				return createProblemObservation();
-			case ConsolPackage.PROBLEM_STATUS:
-				return createProblemStatus();
-			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT:
-				return createContinuityOfCareDocument();
-			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
-				return createAdvanceDirectivesSectionEntriesOptional();
-			case ConsolPackage.ALLERGIES_SECTION:
-				return createAllergiesSection();
-			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
-				return createAllergiesSectionEntriesOptional();
-			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL:
-				return createEncountersSectionEntriesOptional();
-			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL:
-				return createImmunizationsSectionEntriesOptional();
-			case ConsolPackage.IMMUNIZATION_ACTIVITY:
-				return createImmunizationActivity();
-			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
-				return createImmunizationRefusalReason();
-			case ConsolPackage.PAYERS_SECTION:
-				return createPayersSection();
-			case ConsolPackage.COVERAGE_ACTIVITY:
-				return createCoverageActivity();
-			case ConsolPackage.POLICY_ACTIVITY:
-				return createPolicyActivity();
-			case ConsolPackage.AUTHORIZATION_ACTIVITY:
-				return createAuthorizationActivity();
-			case ConsolPackage.MEDICATIONS_SECTION:
-				return createMedicationsSection();
-			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
-				return createMedicationsSectionEntriesOptional();
-			case ConsolPackage.PLAN_OF_CARE_SECTION:
-				return createPlanOfCareSection();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT:
-				return createPlanOfCareActivityAct();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
-				return createPlanOfCareActivityEncounter();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
-				return createPlanOfCareActivityObservation();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
-				return createPlanOfCareActivityProcedure();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
-				return createPlanOfCareActivitySubstanceAdministration();
-			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
-				return createPlanOfCareActivitySupply();
-			case ConsolPackage.PROCEDURES_SECTION:
-				return createProceduresSection();
-			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
-				return createProceduresSectionEntriesOptional();
-			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
-				return createProcedureActivityObservation();
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
-				return createProcedureActivityAct();
-			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
-				return createVitalSignsSectionEntriesOptional();
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
-				return createVitalSignsOrganizer();
-			case ConsolPackage.VITAL_SIGN_OBSERVATION:
-				return createVitalSignObservation();
-			case ConsolPackage.FAMILY_HISTORY_SECTION:
-				return createFamilyHistorySection();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER:
-				return createFamilyHistoryOrganizer();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION:
-				return createFamilyHistoryObservation();
-			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION:
-				return createFamilyHistoryDeathObservation();
-			case ConsolPackage.SOCIAL_HISTORY_SECTION:
-				return createSocialHistorySection();
-			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION:
-				return createSocialHistoryObservation();
-			case ConsolPackage.PREGNANCY_OBSERVATION:
-				return createPregnancyObservation();
-			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY:
-				return createEstimatedDateOfDelivery();
-			case ConsolPackage.RESULTS_SECTION:
-				return createResultsSection();
-			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL:
-				return createResultsSectionEntriesOptional();
-			case ConsolPackage.RESULT_ORGANIZER:
-				return createResultOrganizer();
-			case ConsolPackage.RESULT_OBSERVATION:
-				return createResultObservation();
-			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION:
-				return createMedicalEquipmentSection();
-			case ConsolPackage.FUNCTIONAL_STATUS_SECTION:
-				return createFunctionalStatusSection();
-			case ConsolPackage.PROBLEM_SECTION:
-				return createProblemSection();
-			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL:
-				return createProblemSectionEntriesOptional();
-			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
-				return createSocialHistoryStatusObservation();
-			case ConsolPackage.PURPOSE_SECTION:
-				return createPurposeSection();
-			case ConsolPackage.PURPOSE_ACTIVITY:
-				return createPurposeActivity();
-			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION:
-				return createAdvanceDirectivesSection();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
-				return createAdvanceDirectiveObservation();
-			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION:
-				return createAdvanceDirectiveVerification();
-			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
-				return createAdvanceDirectiveStatusObservation();
-			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE:
-				return createAdvanceDirectiveReference();
-			case ConsolPackage.ENCOUNTERS_SECTION:
-				return createEncountersSection();
-			case ConsolPackage.ENCOUNTERS_ACTIVITES:
-				return createEncountersActivites();
-			case ConsolPackage.ENCOUNTER:
-				return createEncounter();
-			case ConsolPackage.IMMUNIZATIONS_SECTION:
-				return createImmunizationsSection();
-			case ConsolPackage.INSURANCE_PROVIDER:
-				return createInsuranceProvider();
-			case ConsolPackage.PAYER_ENTRY:
-				return createPayerEntry();
-			case ConsolPackage.COVERED_PARTY:
-				return createCoveredParty();
-			case ConsolPackage.POLICY_SUBSCRIBER:
-				return createPolicySubscriber();
-			case ConsolPackage.PREGNANCY_HISTORY_SECTION:
-				return createPregnancyHistorySection();
-			case ConsolPackage.EXTERNAL_REFERENCE:
-				return createExternalReference();
-			case ConsolPackage.SUPPORT:
-				return createSupport();
-			case ConsolPackage.VITAL_SIGNS_SECTION:
-				return createVitalSignsSection();
-			case ConsolPackage.DIAGNOSTIC_RESULTS_SECTION:
-				return createDiagnosticResultsSection();
-			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
-				return createHistoryOfPastIllnessSection();
-			case ConsolPackage.CHIEF_COMPLAINT_SECTION:
-				return createChiefComplaintSection();
-			case ConsolPackage.REASON_FOR_REFERRAL_SECTION:
-				return createReasonForReferralSection();
-			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS:
-				return createHistoryOfPresentIllness();
-			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
-				return createHospitalAdmissionDiagnosisSection();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
-				return createHospitalDischargeDiagnosisSection();
-			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
-				return createHospitalAdmissionMedicationsSectionEntriesOptional();
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
-				return createHospitalDischargeMedicationsSection();
-			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION:
-				return createMedicationsAdministeredSection();
-			case ConsolPackage.PHYSICAL_EXAM_SECTION:
-				return createPhysicalExamSection();
-			case ConsolPackage.GENERAL_STATUS_SECTION:
-				return createGeneralStatusSection();
-			case ConsolPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
-				return createVisibleImplantedMedicalDevicesSection();
-			case ConsolPackage.INTEGUMENTARY_SYSTEM_SECTION:
-				return createIntegumentarySystemSection();
-			case ConsolPackage.HEAD_SECTION:
-				return createHeadSection();
-			case ConsolPackage.EYES_SECTION:
-				return createEyesSection();
-			case ConsolPackage.EARS_NOSE_MOUTH_THROAT_SECTION:
-				return createEarsNoseMouthThroatSection();
-			case ConsolPackage.EARS_SECTION:
-				return createEarsSection();
-			case ConsolPackage.NOSE_SECTION:
-				return createNoseSection();
-			case ConsolPackage.MOUTH_THROAT_TEETH_SECTION:
-				return createMouthThroatTeethSection();
-			case ConsolPackage.NECK_SECTION:
-				return createNeckSection();
-			case ConsolPackage.ENDOCRINE_SYSTEM_SECTION:
-				return createEndocrineSystemSection();
-			case ConsolPackage.THORAX_LUNGS_SECTION:
-				return createThoraxLungsSection();
-			case ConsolPackage.CHEST_WALL_SECTION:
-				return createChestWallSection();
-			case ConsolPackage.BREAST_SECTION:
-				return createBreastSection();
-			case ConsolPackage.HEART_SECTION:
-				return createHeartSection();
-			case ConsolPackage.RESPIRATORY_SYSTEM_SECTION:
-				return createRespiratorySystemSection();
-			case ConsolPackage.ABDOMEN_SECTION:
-				return createAbdomenSection();
-			case ConsolPackage.LYMPHATIC_SECTION:
-				return createLymphaticSection();
-			case ConsolPackage.VESSELS_SECTION:
-				return createVesselsSection();
-			case ConsolPackage.MUSCULOSKELETAL_SYSTEM_SECTION:
-				return createMusculoskeletalSystemSection();
-			case ConsolPackage.NEUROLOGIC_SYSTEM_SECTION:
-				return createNeurologicSystemSection();
-			case ConsolPackage.GENITALIA_SECTION:
-				return createGenitaliaSection();
-			case ConsolPackage.RECTUM_SECTION:
-				return createRectumSection();
-			case ConsolPackage.EXTREMITIES_SECTION:
-				return createExtremitiesSection();
-			case ConsolPackage.REVIEW_OF_SYSTEMS_SECTION:
-				return createReviewOfSystemsSection();
-			case ConsolPackage.HOSPITAL_COURSE_SECTION:
-				return createHospitalCourseSection();
-			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION:
-				return createAssessmentAndPlanSection();
-			case ConsolPackage.LANGUAGE_SPOKEN:
-				return createLanguageSpoken();
-			case ConsolPackage.HEALTHCARE_PROVIDER:
-				return createHealthcareProvider();
-			case ConsolPackage.MEDICATION_NORMAL_DOSE:
-				return createMedicationNormalDose();
-			case ConsolPackage.MEDICATION_SPLIT_DOSE:
-				return createMedicationSplitDose();
-			case ConsolPackage.MEDICATION_TAPERED_DOSE:
-				return createMedicationTaperedDose();
-			case ConsolPackage.MEDICATION_CONDITIONAL_DOSE:
-				return createMedicationConditionalDose();
-			case ConsolPackage.MEDICATION_COMBINATION_MEDICATION:
-				return createMedicationCombinationMedication();
-			case ConsolPackage.SUPPORT_GUARDIAN:
-				return createSupportGuardian();
-			case ConsolPackage.SUPPORT_PARTICIPANT:
-				return createSupportParticipant();
-			case ConsolPackage.UNSTRUCTURED_DOCUMENT:
-				return createUnstructuredDocument();
-			case ConsolPackage.SCAN_ORIGINAL_AUTHOR:
-				return createScanOriginalAuthor();
-			case ConsolPackage.SCANNING_DEVICE:
-				return createScanningDevice();
-			case ConsolPackage.SCAN_DATA_ENTERER:
-				return createScanDataEnterer();
-			case ConsolPackage.MEDICATION_INFORMATION:
-				return createMedicationInformation();
-			case ConsolPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT:
-				return createUnstructuredOrScannedDocument();
-			case ConsolPackage.REFERRAL_SUMMARY:
-				return createReferralSummary();
-			case ConsolPackage.DISCHARGE_SUMMARY:
-				return createDischargeSummary();
-			case ConsolPackage.DISCHARGE_DIET_SECTION:
-				return createDischargeDietSection();
-			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
-				return createPreconditionForSubstanceAdministration();
-			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
-				return createImmunizationMedicationInformation();
-			case ConsolPackage.PROCEDURE_SPECIMEN:
-				return createProcedureSpecimen();
-			case ConsolPackage.PROCEDURE_PERFORMER:
-				return createProcedurePerformer();
-			case ConsolPackage.PROCEDURE_ENCOUNTER:
-				return createProcedureEncounter();
-			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
-				return createMedicationInformationManufacturedMaterial();
-			case ConsolPackage.FAMILY_HISTORY_SUBJECT:
-				return createFamilyHistorySubject();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
+			case ConsolPackage.ALLERGY_PROBLEM_ACT: return createAllergyProblemAct();
+			case ConsolPackage.ALLERGY_OBSERVATION: return createAllergyObservation();
+			case ConsolPackage.REACTION_OBSERVATION: return createReactionObservation();
+			case ConsolPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
+			case ConsolPackage.INDICATION: return createIndication();
+			case ConsolPackage.SERVICE_DELIVERY_LOCATION: return createServiceDeliveryLocation();
+			case ConsolPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER: return createMedicationSupplyOrder();
+			case ConsolPackage.INSTRUCTIONS: return createInstructions();
+			case ConsolPackage.MEDICATION_DISPENSE: return createMedicationDispense();
+			case ConsolPackage.DRUG_VEHICLE: return createDrugVehicle();
+			case ConsolPackage.PRODUCT_INSTANCE: return createProductInstance();
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: return createAllergyStatusObservation();
+			case ConsolPackage.AGE_OBSERVATION: return createAgeObservation();
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
+			case ConsolPackage.COMMENT: return createComment();
+			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
+			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
+			case ConsolPackage.INTERNAL_REFERENCE: return createInternalReference();
+			case ConsolPackage.MEDICATION_TYPE: return createMedicationType();
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY: return createNonMedicinalSupplyActivity();
+			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return createMedicationFullfillmentInstructions();
+			case ConsolPackage.PROBLEM_CONCERN_ACT: return createProblemConcernAct();
+			case ConsolPackage.PROBLEM_OBSERVATION: return createProblemObservation();
+			case ConsolPackage.PROBLEM_STATUS: return createProblemStatus();
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: return createAdvanceDirectivesSectionEntriesOptional();
+			case ConsolPackage.ALLERGIES_SECTION: return createAllergiesSection();
+			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
+			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: return createEncountersSectionEntriesOptional();
+			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL: return createImmunizationsSectionEntriesOptional();
+			case ConsolPackage.IMMUNIZATION_ACTIVITY: return createImmunizationActivity();
+			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON: return createImmunizationRefusalReason();
+			case ConsolPackage.PAYERS_SECTION: return createPayersSection();
+			case ConsolPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
+			case ConsolPackage.POLICY_ACTIVITY: return createPolicyActivity();
+			case ConsolPackage.AUTHORIZATION_ACTIVITY: return createAuthorizationActivity();
+			case ConsolPackage.MEDICATIONS_SECTION: return createMedicationsSection();
+			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createMedicationsSectionEntriesOptional();
+			case ConsolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: return createPlanOfCareActivityEncounter();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: return createPlanOfCareActivityObservation();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: return createPlanOfCareActivityProcedure();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: return createPlanOfCareActivitySubstanceAdministration();
+			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: return createPlanOfCareActivitySupply();
+			case ConsolPackage.PROCEDURES_SECTION: return createProceduresSection();
+			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL: return createProceduresSectionEntriesOptional();
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: return createProcedureActivityObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: return createProcedureActivityAct();
+			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: return createVitalSignsSectionEntriesOptional();
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
+			case ConsolPackage.VITAL_SIGN_OBSERVATION: return createVitalSignObservation();
+			case ConsolPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: return createFamilyHistoryOrganizer();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
+			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION: return createFamilyHistoryDeathObservation();
+			case ConsolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION: return createSocialHistoryObservation();
+			case ConsolPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
+			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY: return createEstimatedDateOfDelivery();
+			case ConsolPackage.RESULTS_SECTION: return createResultsSection();
+			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL: return createResultsSectionEntriesOptional();
+			case ConsolPackage.RESULT_ORGANIZER: return createResultOrganizer();
+			case ConsolPackage.RESULT_OBSERVATION: return createResultObservation();
+			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
+			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
+			case ConsolPackage.PROBLEM_SECTION: return createProblemSection();
+			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL: return createProblemSectionEntriesOptional();
+			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: return createSocialHistoryStatusObservation();
+			case ConsolPackage.PURPOSE_SECTION: return createPurposeSection();
+			case ConsolPackage.PURPOSE_ACTIVITY: return createPurposeActivity();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: return createAdvanceDirectiveVerification();
+			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return createAdvanceDirectiveStatusObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE: return createAdvanceDirectiveReference();
+			case ConsolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
+			case ConsolPackage.ENCOUNTERS_ACTIVITES: return createEncountersActivites();
+			case ConsolPackage.ENCOUNTER: return createEncounter();
+			case ConsolPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
+			case ConsolPackage.INSURANCE_PROVIDER: return createInsuranceProvider();
+			case ConsolPackage.PAYER_ENTRY: return createPayerEntry();
+			case ConsolPackage.COVERED_PARTY: return createCoveredParty();
+			case ConsolPackage.POLICY_SUBSCRIBER: return createPolicySubscriber();
+			case ConsolPackage.PREGNANCY_HISTORY_SECTION: return createPregnancyHistorySection();
+			case ConsolPackage.EXTERNAL_REFERENCE: return createExternalReference();
+			case ConsolPackage.SUPPORT: return createSupport();
+			case ConsolPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
+			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return createHistoryOfPastIllnessSection();
+			case ConsolPackage.CHIEF_COMPLAINT_SECTION: return createChiefComplaintSection();
+			case ConsolPackage.REASON_FOR_REFERRAL_SECTION: return createReasonForReferralSection();
+			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS: return createHistoryOfPresentIllness();
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: return createHospitalDischargeDiagnosisSection();
+			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: return createHospitalAdmissionMedicationsSectionEntriesOptional();
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return createHospitalDischargeMedicationsSection();
+			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
+			case ConsolPackage.PHYSICAL_EXAM_SECTION: return createPhysicalExamSection();
+			case ConsolPackage.GENERAL_STATUS_SECTION: return createGeneralStatusSection();
+			case ConsolPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION: return createVisibleImplantedMedicalDevicesSection();
+			case ConsolPackage.INTEGUMENTARY_SYSTEM_SECTION: return createIntegumentarySystemSection();
+			case ConsolPackage.HEAD_SECTION: return createHeadSection();
+			case ConsolPackage.EYES_SECTION: return createEyesSection();
+			case ConsolPackage.EARS_NOSE_MOUTH_THROAT_SECTION: return createEarsNoseMouthThroatSection();
+			case ConsolPackage.EARS_SECTION: return createEarsSection();
+			case ConsolPackage.NOSE_SECTION: return createNoseSection();
+			case ConsolPackage.MOUTH_THROAT_TEETH_SECTION: return createMouthThroatTeethSection();
+			case ConsolPackage.NECK_SECTION: return createNeckSection();
+			case ConsolPackage.ENDOCRINE_SYSTEM_SECTION: return createEndocrineSystemSection();
+			case ConsolPackage.THORAX_LUNGS_SECTION: return createThoraxLungsSection();
+			case ConsolPackage.CHEST_WALL_SECTION: return createChestWallSection();
+			case ConsolPackage.BREAST_SECTION: return createBreastSection();
+			case ConsolPackage.HEART_SECTION: return createHeartSection();
+			case ConsolPackage.RESPIRATORY_SYSTEM_SECTION: return createRespiratorySystemSection();
+			case ConsolPackage.ABDOMEN_SECTION: return createAbdomenSection();
+			case ConsolPackage.LYMPHATIC_SECTION: return createLymphaticSection();
+			case ConsolPackage.VESSELS_SECTION: return createVesselsSection();
+			case ConsolPackage.MUSCULOSKELETAL_SYSTEM_SECTION: return createMusculoskeletalSystemSection();
+			case ConsolPackage.NEUROLOGIC_SYSTEM_SECTION: return createNeurologicSystemSection();
+			case ConsolPackage.GENITALIA_SECTION: return createGenitaliaSection();
+			case ConsolPackage.RECTUM_SECTION: return createRectumSection();
+			case ConsolPackage.EXTREMITIES_SECTION: return createExtremitiesSection();
+			case ConsolPackage.REVIEW_OF_SYSTEMS_SECTION: return createReviewOfSystemsSection();
+			case ConsolPackage.HOSPITAL_COURSE_SECTION: return createHospitalCourseSection();
+			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
+			case ConsolPackage.LANGUAGE_SPOKEN: return createLanguageSpoken();
+			case ConsolPackage.HEALTHCARE_PROVIDER: return createHealthcareProvider();
+			case ConsolPackage.MEDICATION_NORMAL_DOSE: return createMedicationNormalDose();
+			case ConsolPackage.MEDICATION_SPLIT_DOSE: return createMedicationSplitDose();
+			case ConsolPackage.MEDICATION_TAPERED_DOSE: return createMedicationTaperedDose();
+			case ConsolPackage.MEDICATION_CONDITIONAL_DOSE: return createMedicationConditionalDose();
+			case ConsolPackage.MEDICATION_COMBINATION_MEDICATION: return createMedicationCombinationMedication();
+			case ConsolPackage.SUPPORT_GUARDIAN: return createSupportGuardian();
+			case ConsolPackage.SUPPORT_PARTICIPANT: return createSupportParticipant();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT: return createUnstructuredDocument();
+			case ConsolPackage.SCAN_ORIGINAL_AUTHOR: return createScanOriginalAuthor();
+			case ConsolPackage.SCANNING_DEVICE: return createScanningDevice();
+			case ConsolPackage.SCAN_DATA_ENTERER: return createScanDataEnterer();
+			case ConsolPackage.MEDICATION_INFORMATION: return createMedicationInformation();
+			case ConsolPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT: return createUnstructuredOrScannedDocument();
+			case ConsolPackage.REFERRAL_SUMMARY: return createReferralSummary();
+			case ConsolPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
+			case ConsolPackage.DISCHARGE_DIET_SECTION: return createDischargeDietSection();
+			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION: return createPreconditionForSubstanceAdministration();
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION: return createImmunizationMedicationInformation();
+			case ConsolPackage.PROCEDURE_SPECIMEN: return createProcedureSpecimen();
+			case ConsolPackage.PROCEDURE_PERFORMER: return createProcedurePerformer();
+			case ConsolPackage.PROCEDURE_ENCOUNTER: return createProcedureEncounter();
+			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: return createMedicationInformationManufacturedMaterial();
+			case ConsolPackage.FAMILY_HISTORY_SUBJECT: return createFamilyHistorySubject();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1287,16 +1133,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiagnosticResultsSection createDiagnosticResultsSection() {
-		DiagnosticResultsSectionImpl diagnosticResultsSection = new DiagnosticResultsSectionImpl();
-		return diagnosticResultsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public HistoryOfPastIllnessSection createHistoryOfPastIllnessSection() {
 		HistoryOfPastIllnessSectionImpl historyOfPastIllnessSection = new HistoryOfPastIllnessSectionImpl();
 		return historyOfPastIllnessSection;
@@ -1918,7 +1754,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	public ConsolPackage getConsolPackage() {
-		return (ConsolPackage) getEPackage();
+		return (ConsolPackage)getEPackage();
 	}
 
 	/**

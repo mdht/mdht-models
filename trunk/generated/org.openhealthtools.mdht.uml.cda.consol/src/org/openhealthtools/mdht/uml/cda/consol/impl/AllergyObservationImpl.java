@@ -70,8 +70,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationContainsPatientAwareness(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationContainsPatientAwareness(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationContainsPatientAwareness(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +128,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstanceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceTypeCode(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +138,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstanceParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceParticipantRole(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +148,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstanceParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceParticipantRoleClassCode(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstanceParticipantRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +158,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstancePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntity(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -173,8 +168,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstancePlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntityClassCode(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +178,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergySubstancePlayingEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntityCode(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergySubstancePlayingEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +188,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationPlayingEntityCodeReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationPlayingEntityCodeReference(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationPlayingEntityCodeReference(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +207,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -307,8 +298,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(this, diagnostics, context);
 	}
 
 	/**
@@ -327,8 +317,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -364,7 +353,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 * @generated
 	 */
 	public AllergyObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyObservationImpl

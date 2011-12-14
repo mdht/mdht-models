@@ -64,9 +64,9 @@ public class GenitaliaSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11400-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11400-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGenitaliaSectionCode(GenitaliaSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Genitalia Section Code</em>}' invariant operation.
@@ -98,17 +98,20 @@ public class GenitaliaSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.GENITALIA_SECTION);
 			try {
 				VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			genitaliaSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENITALIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(genitaliaSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GENITALIA_SECTION__GENITALIA_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("GenitaliaSectionCode"), new Object[] { genitaliaSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENITALIA_SECTION__GENITALIA_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("GenitaliaSectionCode"),
+						 new Object [] { genitaliaSection }));
 			}
 			return false;
 		}
@@ -153,17 +156,20 @@ public class GenitaliaSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.GENITALIA_SECTION);
 			try {
 				VALIDATE_GENITALIA_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENITALIA_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENITALIA_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			genitaliaSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENITALIA_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(genitaliaSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GENITALIA_SECTION__GENITALIA_SECTION_PROBLEM_ENTRY,
-					ConsolPlugin.INSTANCE.getString("GenitaliaSectionProblemEntry"), new Object[] { genitaliaSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENITALIA_SECTION__GENITALIA_SECTION_PROBLEM_ENTRY,
+						 ConsolPlugin.INSTANCE.getString("GenitaliaSectionProblemEntry"),
+						 new Object [] { genitaliaSection }));
 			}
 			return false;
 		}
@@ -202,12 +208,11 @@ public class GenitaliaSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(GenitaliaSection genitaliaSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GENITALIA_SECTION,
-				ConsolPackage.Literals.GENITALIA_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(ConsolPackage.Literals.GENITALIA_SECTION, ConsolPackage.Literals.GENITALIA_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

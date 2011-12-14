@@ -96,8 +96,7 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public boolean validateReasonForReferralSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionProblemEntry(
-			this, diagnostics, context);
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +132,7 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public ReasonForReferralSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReasonForReferralSectionImpl

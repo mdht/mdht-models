@@ -59,8 +59,7 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateVisibleImplantedMedicalDevicesSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionCode(
-			this, diagnostics, context);
+		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +69,7 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionProblemEntry(
-			this, diagnostics, context);
+		return VisibleImplantedMedicalDevicesSectionOperations.validateVisibleImplantedMedicalDevicesSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +87,7 @@ public class VisibleImplantedMedicalDevicesSectionImpl extends SectionImpl imple
 	 * @generated
 	 */
 	public VisibleImplantedMedicalDevicesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // VisibleImplantedMedicalDevicesSectionImpl

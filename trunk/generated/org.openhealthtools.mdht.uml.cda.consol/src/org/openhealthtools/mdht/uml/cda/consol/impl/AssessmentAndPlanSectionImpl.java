@@ -87,8 +87,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public boolean validateAssessmentAndPlanSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionImmunization(
-			this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionImmunization(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +97,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 */
 	public boolean validateAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEncounterEntry(
-			this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEncounterEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -135,7 +133,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public AssessmentAndPlanSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AssessmentAndPlanSectionImpl

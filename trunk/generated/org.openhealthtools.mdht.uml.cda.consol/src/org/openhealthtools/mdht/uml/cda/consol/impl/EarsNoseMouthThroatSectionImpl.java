@@ -67,8 +67,7 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 */
 	public boolean validateEarsNoseMouthThroatSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(
-			this, diagnostics, context);
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +85,7 @@ public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsN
 	 * @generated
 	 */
 	public EarsNoseMouthThroatSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EarsNoseMouthThroatSectionImpl

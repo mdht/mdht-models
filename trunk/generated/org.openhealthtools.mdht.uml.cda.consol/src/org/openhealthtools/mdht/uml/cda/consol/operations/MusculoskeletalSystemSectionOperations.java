@@ -64,9 +64,9 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11410-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11410-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMusculoskeletalSystemSectionCode(MusculoskeletalSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Musculoskeletal System Section Code</em>}' invariant operation.
@@ -99,18 +99,20 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION);
 			try {
 				VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			musculoskeletalSystemSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(musculoskeletalSystemSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MUSCULOSKELETAL_SYSTEM_SECTION__MUSCULOSKELETAL_SYSTEM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MusculoskeletalSystemSectionCode"),
-					new Object[] { musculoskeletalSystemSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MUSCULOSKELETAL_SYSTEM_SECTION__MUSCULOSKELETAL_SYSTEM_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("MusculoskeletalSystemSectionCode"),
+						 new Object [] { musculoskeletalSystemSection }));
 			}
 			return false;
 		}
@@ -156,18 +158,20 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION);
 			try {
 				VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			musculoskeletalSystemSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(musculoskeletalSystemSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MUSCULOSKELETAL_SYSTEM_SECTION__MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY,
-					ConsolPlugin.INSTANCE.getString("MusculoskeletalSystemSectionProblemEntry"),
-					new Object[] { musculoskeletalSystemSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MUSCULOSKELETAL_SYSTEM_SECTION__MUSCULOSKELETAL_SYSTEM_SECTION_PROBLEM_ENTRY,
+						 ConsolPlugin.INSTANCE.getString("MusculoskeletalSystemSectionProblemEntry"),
+						 new Object [] { musculoskeletalSystemSection }));
 			}
 			return false;
 		}
@@ -206,12 +210,11 @@ public class MusculoskeletalSystemSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(MusculoskeletalSystemSection musculoskeletalSystemSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION,
-				ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION, ConsolPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -58,8 +58,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCodeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCodeValue(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCodeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationId(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationId(this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +97,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * @generated
 	 */
 	public PlanOfCareActivitySubstanceAdministration init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PlanOfCareActivitySubstanceAdministrationImpl

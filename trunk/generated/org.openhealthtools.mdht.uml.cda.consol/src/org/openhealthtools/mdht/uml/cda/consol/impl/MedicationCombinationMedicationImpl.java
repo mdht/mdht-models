@@ -65,8 +65,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMoodCode(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +75,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDoseQuantityOrRateQuantity(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDoseQuantityOrRateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +85,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasConsents(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasConsents(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasConsents(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +95,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationInformationSource(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationInformationSource(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationInformationSource(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +105,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasPreconditionCriterion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasPreconditionCriterion(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasPreconditionCriterion(this, diagnostics, context);
 	}
 
 	/**
@@ -120,8 +115,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasReason(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasReason(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasReason(this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +125,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasReasonProblem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasReasonProblem(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasReasonProblem(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +135,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasProduct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasProduct(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasProduct(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +145,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasDosing(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDosing(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDosing(this, diagnostics, context);
 	}
 
 	/**
@@ -164,8 +155,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationDosingRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationDosingRelationship(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationDosingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +165,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDescriptionNoMedNotKnown(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasDescriptionNoMedNotKnown(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +175,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationReasonClassMood(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationReasonClassMood(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationReasonClassMood(this, diagnostics, context);
 	}
 
 	/**
@@ -197,8 +185,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasProductEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasProductEntry(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasProductEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -208,8 +195,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasIntructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasIntructionsInversion(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasIntructionsInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -219,8 +205,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationProductStrength(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductStrength(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductStrength(this, diagnostics, context);
 	}
 
 	/**
@@ -230,8 +215,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationProductName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductName(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductName(this, diagnostics, context);
 	}
 
 	/**
@@ -241,8 +225,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationPreconditionReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationPreconditionReference(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationPreconditionReference(this, diagnostics, context);
 	}
 
 	/**
@@ -252,8 +235,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasSupplyEntryInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasSupplyEntryInversion(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasSupplyEntryInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -263,8 +245,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationHasFillNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasFillNumber(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationHasFillNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -274,8 +255,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationCombinationMedicationSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationCombinationMedicationSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationCombinationMedicationSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -284,8 +264,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 * @generated
 	 */
 	public boolean validateMedicationCombinationMedicationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationId(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationId(this, diagnostics, context);
 	}
 
 	/**
@@ -295,8 +274,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationStatusCode(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -306,8 +284,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationEffectiveTime(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -317,8 +294,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationRouteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationRouteCode(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationRouteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -328,8 +304,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationApproachSiteCode(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -339,8 +314,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationDoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationDoseQuantity(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationDoseQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -350,8 +324,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationRateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationRateQuantity(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationRateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -361,8 +334,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationMaxDoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMaxDoseQuantity(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMaxDoseQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -372,8 +344,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationMedicationSeriesNumberObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMedicationSeriesNumberObservation(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMedicationSeriesNumberObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -383,8 +354,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationMedicationStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMedicationStatusObservation(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationMedicationStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -394,8 +364,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationReactionObservation(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationReactionObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -405,8 +374,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	public boolean validateMedicationCombinationMedicationProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductInstance(
-			this, diagnostics, context);
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationProductInstance(this, diagnostics, context);
 	}
 
 	/**
@@ -489,7 +457,7 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 */
 	@Override
 	public MedicationCombinationMedication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationCombinationMedicationImpl
