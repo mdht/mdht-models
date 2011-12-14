@@ -432,7 +432,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_J3O5ECHdEeGFLIX-2_sWzA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>subject MAY contain zero or one sdtc:deceasedInd. The prefix sdtc: SHALL be bound to the namespace “urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element</body>
+        <body>subject MAY contain zero or one sdtc:deceasedInd. The prefix sdtc: SHALL be bound to the namespace urn:hl7-org:sdtc. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element</body>
         <body>self.relatedSubject.subject->size() = 1 implies self.relatedSubject.subject.sDTCDeceasedInd->size() = 1</body>
       </specification>
     </ownedRule>
