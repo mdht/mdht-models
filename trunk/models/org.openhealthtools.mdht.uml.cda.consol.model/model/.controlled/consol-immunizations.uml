@@ -530,8 +530,8 @@
     <memberEnd href="#_cBgUshrYEeGo461UQq-B1g"/>
   </uml:Association>
   <uml:Association xmi:id="_fePZ8BrbEeGo461UQq-B1g">
-    <ownedComment xmi:id="_CvLYABrcEeGo461UQq-B1g">
-      <body>This procedure activity is intended to contain information about procedures that were performed in response to an allergy reaction (CONF:7583).</body>
+    <ownedComment xmi:id="_-i8RsCYLEeGWfpmyutaqOA">
+      <body>This procedure activity is intended to contain information about procedures that were performed in response to an allergy reaction CONF:7583.</body>
     </ownedComment>
     <ownedEnd xmi:id="_fePZ8RrbEeGo461UQq-B1g" association="_fePZ8BrbEeGo461UQq-B1g">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>

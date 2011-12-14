@@ -4,26 +4,6 @@
     <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2LRBQhSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the&#xD;
-associated adverse reactions suffered by the patient.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2LMIwRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Allergies and Other Adverse Reactions Section contains data on the substance intolerances and the&#xD;
-    associated adverse reactions suffered by the patient. At a minimum, currently active and any relevant historical&#xD;
-    allergies and adverse reactions shall be listed. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_2LQaNBSVEeGGzu7fmW9pXw" name="absenceIsAsserted">
-      <ownedComment xmi:id="_2LQaNRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LQaNhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_EEbhsBVgEeGQCvUGzi1kDQ" general="_bGzYgBVdEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -51,7 +31,7 @@ associated adverse reactions suffered by the patient.</body>
   <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-261</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LRBQBSVEeGGzu7fmW9pXw" base_Constraint="_2LQaNBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2LRBQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-257</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
@@ -70,17 +50,7 @@ associated adverse reactions suffered by the patient.</body>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bGzYgBVdEeGQCvUGzi1kDQ" name="AllergiesSectionEntriesOptional">
     <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
-      <body>This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_bGzYghVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
-      <body>The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_bGzYgxVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
-      <body>&lt;p>&#xD;
-    The Allergies and Other Adverse Reactions Section contains data on the substance intolerances and the&#xD;
-    associated adverse reactions suffered by the patient. At a minimum, currently active and any relevant historical&#xD;
-    allergies and adverse reactions shall be listed. &#xD;
-&lt;/p></body>
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
     <ownedRule xmi:id="_bGzYhxVdEeGQCvUGzi1kDQ" name="absenceIsAsserted">
       <ownedComment xmi:id="_bGzYiBVdEeGQCvUGzi1kDQ">
@@ -120,161 +90,12 @@ associated adverse reactions suffered by the patient.</body>
     </eAnnotations>
     <ownedComment xmi:id="_2F5ZEBSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <body>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.&#xD;
-NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed.</body>
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2EaLUxSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <body>Allergies and intolerances are special kinds of problems, and so are also recorded in the CDA&#xD;
-&amp;lt;observation> element, with classCode='OBS'. They follow the same pattern as the problem&#xD;
-entry, with exceptions noted below.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2F1usRSVEeGGzu7fmW9pXw" name="informationSource">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F1ushSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL contain one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F2VwBSVEeGGzu7fmW9pXw" name="containsPatientAwareness">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F2VwRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>MAY contain exactly one Patient Awareness</body>
-        <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F280BSVEeGGzu7fmW9pXw" name="hasTextReference">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F280RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The problem name SHALL be recorded in the entry by recording a reference where the value attribute points to the narrative text containing the name of the problem.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-        <body>The problem name SHALL be recorded in the entry by recording a &amp;lt;reference> where the value attribute points to the narrative text containing the name of the problem.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F3j4BSVEeGGzu7fmW9pXw" name="commentInversionInd">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F3j4RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>If entryRelationship / Comment is present, then entryRelationship SHALL include inversionInd = 'true'.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(consol::Comment)) implies rel.inversionInd=true)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLVBSVEeGGzu7fmW9pXw" name="codeVocab" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EaLVRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLVhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLVxSVEeGGzu7fmW9pXw" name="codeCodeSystemRequired" constrainedElement="_2EaLVBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLWBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The code /@code and code/@codeSystem attribute shall be present.</body>
-        <body>not (code.code.oclIsUndefined() or code.codeSystem.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLWRSVEeGGzu7fmW9pXw" name="displayNameCodeName" constrainedElement="_2EaLVxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLWhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The code/@displayName and code/@codeSystemName attributes should be present.</body>
-        <body>not (code.displayName.oclIsUndefined() or code.codeSystemName.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLWxSVEeGGzu7fmW9pXw" name="valueCodeCodeSystem" constrainedElement="_2EaLWRSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EaLXBSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLXRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>If &amp;lt;value&amp;gt; is coded, the code and codeSystem attributes must be present. If uncoded, all attributes other than xsi:type='CD' must be absent.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLXhSVEeGGzu7fmW9pXw" name="allergySubstance">
-      <ownedComment xmi:id="_2EaLXxSVEeGGzu7fmW9pXw">
-        <body>The substance that causes the allergy or intolerance may be specified in the participant element.</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLYBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the &amp;lt;participant&amp;gt; element SHOULD be present</body>
-        <body>self.participant->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLYRSVEeGGzu7fmW9pXw" name="allergySubstanceTypeCode" constrainedElement="_2EaLYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLYhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/@typecode attribute shall be 'CSM'</body>
-        <body>self.participant->forAll(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLYxSVEeGGzu7fmW9pXw" name="allergySubstanceParticipantRole" constrainedElement="_2EaLXhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLZBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole element shall be present</body>
-        <body>self.participant.participantRole->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLZRSVEeGGzu7fmW9pXw" name="allergySubstanceParticipantRoleClassCode" constrainedElement="_2EaLYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLZhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole/@classcode attribute shall be 'MANU'</body>
-        <body>self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLZxSVEeGGzu7fmW9pXw" name="allergySubstancePlayingEntity" constrainedElement="_2EaLYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLaBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The participant/participantRole/PlayingEntity element shall be present</body>
-        <body>self.participant.participantRole.playingEntity->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLaRSVEeGGzu7fmW9pXw" name="allergySubstancePlayingEntityClassCode" constrainedElement="_2EaLYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLahSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</body>
-        <body>self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLaxSVEeGGzu7fmW9pXw" name="allergySubstancePlayingEntityCode" constrainedElement="_2EaLXhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLbBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The participant/participantRole/playingEntity/code element shall be present. It may contain a code and codeSystem attribute to indicate&#xD;&#xA;the code for the substance causing the allergy or intolerance.</body>
-        <body>self.participant.participantRole.playingEntity.code->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLbRSVEeGGzu7fmW9pXw" name="PlayingEntityCodeReference" constrainedElement="_2EaLaxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLbhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>participant/participantRole/playingEntity/code shall contain a originalText/reference element as reference to the&#xD;&#xA;original text in the narrative where the substance is named.</body>
-        <body>self.participant.participantRole.playingEntity.code.originalText.reference->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLbxSVEeGGzu7fmW9pXw" name="severityInversionInd" constrainedElement="_2EaLbRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLcBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>The entryRelationship/@inversionInd for Severity Entry template SHALL be 'true'</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EaLcRSVEeGGzu7fmW9pXw" name="commentInversionInd" constrainedElement="_2EaLbxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLchSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>The entryRelationship/@inversionInd for Comment Entry template SHALL be 'true'</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_2l9d8CEyEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_fOvmsCWiEeGWfpmyutaqOA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_9fCOkCEyEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <body>If it is unknown when the allergy began, this effectiveTime SHALL contain low/@nullFLavor=&quot;UNK&quot;</body>
@@ -292,17 +113,13 @@ entry, with exceptions noted below.</body>
     <ownedRule xmi:id="_ouJssCFKEeG9m6LRl9ardQ" name="valueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5qNlMCFKEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>value SHOULD contain zero or one [0..1] originalText</body>
-        <body>not self.value.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cf38gCFLEeG9m6LRl9ardQ" name="originalTextReferenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_cf38gCFLEeG9m6LRl9ardQ" name="originalTextReference" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuCH4CFLEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.value.originalText.oclIsUndefined() implies not self.value.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_nV_8ECFMEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -311,16 +128,28 @@ entry, with exceptions noted below.</body>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="allergyInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="allergyStatusInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_L6csQCFUEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <body>MAY contain zero or one [0..1]entryRelationship (CONF:7440) such that it SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VBabUCFVEeG9m6LRl9ardQ" name="reactionInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_f5vPwCFVEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <body>SHOULD contain zero or more [0..*] entryRelationship (CONF:7447) such that it SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2EaLbxSVEeGGzu7fmW9pXw" name="severityInversionIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLcBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">
@@ -341,49 +170,28 @@ entry, with exceptions noted below.</body>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EnmsBSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2EnmsRSVEeGGzu7fmW9pXw">
-        <body>The specific observation being recorded must have an identifier (&amp;lt;id>) that shall be provided for tracking purposes. If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension (e.g., &amp;lt;id root='CE1215CD-69EC-4C7B-805F-569233C5E159'/>). At least one identifier must be present, more than one may appear.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EnmshSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EnmsxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLdBSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <ownedComment xmi:id="_2EaLdRSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;code> element represents the kind of allergy observation made, to a drug, food or&#xD;
-environmental agent, and whether it is an allergy, non-allergy intolerance, or unknown class of&#xD;
-intolerance (not known to be allergy or intolerance).</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2EoNwBSVEeGGzu7fmW9pXw" name="text" visibility="private">
-      <ownedComment xmi:id="_2EoNwRSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &amp;lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJvQUCCOEeGq2sn1dgvG_g" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cJvQUSCOEeGq2sn1dgvG_g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EoNwxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Epb4BSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2Epb4RSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;effectiveTime> of this &amp;lt;observation> is the time interval over which the &amp;lt;observation> is known to be true. The &amp;lt;low> and &amp;lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &amp;lt;low> value is the earliest point for which the condition is known to have existed. The &amp;lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &amp;lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &amp;lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &amp;lt;low> and &amp;lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &amp;lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &amp;lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &amp;lt;effectiveTime> element shall have a &amp;lt;low> element with a nullFlavor attribute set to 'UNK'. The &amp;lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Epb4hSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Epb4xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLdhSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <ownedComment xmi:id="_2EaLdxSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;value> is a description of the allergy or adverse reaction. While the value may be a coded&#xD;
-or an uncoded string, the type is always a coded value (xsi: type='CD'). The codingSystem should reference a controlled&#xD;
-vocabulary describing allergies and adverse reactions. The allergy or intolerance may&#xD;
-not be known, in which case that fact shall be recorded appropriately. This might occur in the&#xD;
-case where a patient experiences an allergic reaction to an unknown substance.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EoNwBSVEeGGzu7fmW9pXw" name="text" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJvQUCCOEeGq2sn1dgvG_g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cJvQUSCOEeGq2sn1dgvG_g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="problemEntryReactionObservationContainer" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EaLeRSVEeGGzu7fmW9pXw" value="*"/>
@@ -409,42 +217,44 @@ case where a patient experiences an allergic reaction to an unknown substance.</
     <ruleId>CONF:7381</ruleId>
     <ruleId>CONF:10488</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2F1usxSVEeGGzu7fmW9pXw" base_Constraint="_2F1usRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F1usxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-161</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F2VwhSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2F2VwBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F2VwhSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-180</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F280hSVEeGGzu7fmW9pXw" base_Constraint="_2F280BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2F3j4hSVEeGGzu7fmW9pXw" base_Constraint="_2F3j4BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EdOoRSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2EaLVBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Ed1sBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLVxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EecwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLWRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EfD0BSVEeGGzu7fmW9pXw" base_Constraint="_2EaLWxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EaLXhSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F280hSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F3j4hSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EdOoRSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2Ed1sBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EecwBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EfD0BSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF:7402</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7403</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw" base_Constraint="_2EaLYxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7404</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7405</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLZxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7406</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7407</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EiHIBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLaxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EiHIBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7419</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EiuMBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EjVQBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EjVQRSVEeGGzu7fmW9pXw" base_Constraint="_2EaLcRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EiuMBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EjVQBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9964</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EjVQRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2Em_pBSVEeGGzu7fmW9pXw" base_Property="_2Em_ohSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7380</ruleId>
   </CDA:PropertyValidation>
@@ -489,36 +299,29 @@ case where a patient experiences an allergic reaction to an unknown substance.</
       <details xmi:id="_2EAitBSVEeGGzu7fmW9pXw" key="Allergy and Drug Sensitivity"/>
     </eAnnotations>
     <ownedComment xmi:id="_2GDKEBSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <body>This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or &quot;Concern&quot; act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the &quot;Concern&quot;) can contain nested problem observations or other nested clinical statements relevant to the allergy concern</body>
+      <body>This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or &quot;Concern&quot; act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the &quot;Concern&quot;) can contain nested problem observations or other nested clinical statements relevant to the allergy concern.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2GDKERSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-This event (moodCode='EVN') represents an act (act classCode='ACT') of being concerned&#xD;
-about a problem, allergy or other issue. The &amp;lt;effectiveTime> element describes the period of&#xD;
-concern. The subject of concern is one or more observations about related problems (see&#xD;
-1.3.6.1.4.1.19376.1.5.3.1.4.5.2) or allergies and intolerances (see&#xD;
-1.3.6.1.4.1.19376.1.5.3.1.4.5.3). Additional references can be provided having additional information related to the concern. The concern entry allows related acts to be grouped. This&#xD;
-allows representing the history of a problem as a series of observation over time, for example.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-All concerns reflect the act of recording (&amp;lt;act classCode='ACT'>) the event (moodCode='EVN')&#xD;
-of being concerned about a problem, allergy or other issue about the patient condition.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2GDKEhSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <body>This entry is a specialization of the Concern Entry, wherein the subject of the concern is focused on an allergy or intolerance.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2EAitRSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    This module contains the allergy or intolerance conditions and the associated adverse reactions suffered&#xD;
-    by the patient. See the HL7 Continuity of Care Document Section 3.8 for constraints applicable to this module. &#xD;
-&lt;/p></body>
-    </ownedComment>
+    <ownedRule xmi:id="_L5MNcCWFEeGWfpmyutaqOA" name="effectiveTimeLow" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UD7aQCWFEeGWfpmyutaqOA">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>(self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies not self.effectiveTime.low.oclIsUndefined()</body>
+        <body>If statusCode = &quot;active|supended&quot;, then effectiveTime SHALL contain [1..1] low</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeHigh">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If statusCode = &quot;active|supended&quot;, then effectiveTime SHALL contain  low [1..1].</body>
+        <body>(self.statusCode.code = 'aborted' or self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
     <ownedRule xmi:id="_2F7OQBSVEeGGzu7fmW9pXw" name="entryRelationshipRequired">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F7OQRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain one or more entryRelationship</body>
+        <body>SHALL contain at least one [1..*] entryRelationship</body>
         <body>not self.entryRelationship->isEmpty()</body>
       </specification>
     </ownedRule>
@@ -528,283 +331,7 @@ of being concerned about a problem, allergy or other issue about the patient con
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F7ORRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
-        <body>A problem act SHALL reference a allergy observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for &quot;Act / entryRelationship / @typeCode&quot; to be &quot;SUBJ&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F71URSVEeGGzu7fmW9pXw" name="subjectOfTarget">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F71UhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The target of a problem act with Act / entryRelationship / @typeCode=&quot;SUBJ&quot; SHOULD be a problem observation (in the Problem section) or alert observation (in the Alert section), but MAY be some other clinical statement.</body>
-        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(consol::ProblemObservation) or target.oclIsKindOf(consol::AlertObservation)))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F8cYRSVEeGGzu7fmW9pXw" name="containsProblemObservation">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F8cYhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>In Problem Section, a Problem Act SHOULD contain one or more Problem Observations.</body>
-        <body>self.getSection().oclIsKindOf(consol::ProblemSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F9DcBSVEeGGzu7fmW9pXw" name="containsAlertObservation">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F9DcRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>In Alert Section, a ProblemAct SHOULD contain one or more Alert Observations.</body>
-        <body>self.getSection().oclIsKindOf(consol::AlertsSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AlertObservation))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F9qgBSVEeGGzu7fmW9pXw" name="containsPatientAwareness">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F9qgRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>MAY contain exactly one Patient Awareness</body>
-        <body>self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(consol::PatientAwareness))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeLowHigh">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The effectiveTime 'low' element SHALL be present. The 'high' element SHALL be present for concerns in the completed or aborted state, and SHALL NOT be present otherwise.</body>
-        <body>not self.effectiveTime.low.oclIsUndefined()&#xD;&#xA;   and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())&#xD;&#xA;   and ((self.statusCode.code &lt;> 'completed' and self.statusCode.code &lt;> 'aborted') implies self.effectiveTime.high.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F-4oBSVEeGGzu7fmW9pXw" name="hasRelatedObservations">
-      <ownedComment xmi:id="_2F-4oRSVEeGGzu7fmW9pXw">
-        <body>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-4ohSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This entry SHALL contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.</body>
-        <body>self.entryRelationship.observation.templateId->exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.5') or self.entryRelationship.observation.templateId->exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.6')</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F-4pBSVEeGGzu7fmW9pXw" name="relatedObservationsTypeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-4pRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>This SHALL be represented using entryRelationship with typeCode = 'SUBJ'</body>
-        <body>self.entryRelationship->select(er|er.typeCode &lt;> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2F_fsRSVEeGGzu7fmW9pXw" name="hasRelatedReferences">
-      <ownedComment xmi:id="_2F_fshSVEeGGzu7fmW9pXw">
-        <body>These may be used to represent related statements such related visits.</body>
-      </ownedComment>
-      <ownedComment xmi:id="_2F_fsxSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F_ftBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Each concern MAY have 0 or more related references. This MAY be any valid CDA clinical statement, and SHOULD be an IHE entry template.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2GAGwBSVEeGGzu7fmW9pXw" name="hasRelatedReferencesTypeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GAGwRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Related References SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
-        <body>self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAithSVEeGGzu7fmW9pXw" name="adverseEventDate" constrainedElement="_2EAivhSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAitxSVEeGGzu7fmW9pXw">
-        <body>This is a date that expresses when this particular&#xD;
-allergy or intolerance was known to be active for the&#xD;
-patient</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAiuBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the observation/effectiveTime element is present to record event date</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  not obs.effectiveTime.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAiuRSVEeGGzu7fmW9pXw" name="adverseEventType" constrainedElement="_2EAithSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAiuhSVEeGGzu7fmW9pXw">
-        <body>Describes the type of product and intolerance suffered&#xD;
-by the patient. The type of product shall be classified&#xD;
-with respect to whether the adverse event occurs in&#xD;
-relationship with a medication, food, or environmental&#xD;
-or other product. The adverse event should also be&#xD;
-classified more specifically as an allergy, non-allergy&#xD;
-intolerance, or just adverse reaction if that level of&#xD;
-detail is not known</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAiuxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the observation/code element shall be present to record the adverse event type</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAivBSVEeGGzu7fmW9pXw" name="adverseEventTypeVocab" constrainedElement="_2EAiuRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAivRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAivhSVEeGGzu7fmW9pXw" name="allergyProduct">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAivxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the observation/participant element SHOULD be present</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAiwBSVEeGGzu7fmW9pXw" name="allergyProductTypeCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAiwRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/@typecode attribute shall be 'CSM'</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAiwhSVEeGGzu7fmW9pXw" name="productDetailParticipantRole">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAiwxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole element may be present</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAixBSVEeGGzu7fmW9pXw" name="productDetailParticipantRoleClassCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAixRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole/@classcode attribute shall be 'MANU'</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAixhSVEeGGzu7fmW9pXw" name="productDetailPlayingEntity">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAixxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The participant/participantRole/PlayingEntity element may be present</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAiyBSVEeGGzu7fmW9pXw" name="productDetailPlayingEntityClassCode">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAiyRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAiyhSVEeGGzu7fmW9pXw" name="productDetailName" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAiyxSVEeGGzu7fmW9pXw">
-        <body>This is the name or other description of the product or&#xD;
-agent that causes the intolerance</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAizBSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the participant/participantRole/playingEntity/name element is present</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAizRSVEeGGzu7fmW9pXw" name="productCode" constrainedElement="_2EAiyhSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAizhSVEeGGzu7fmW9pXw">
-        <body>This value is a code describing the product</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAizxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>participant/participantRole/playingEntity/code element is present</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi0BSVEeGGzu7fmW9pXw" name="allergyProductFoodVocab" constrainedElement="_2EAivhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi0RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>For participant/participantRole/playingEntity/code element, Food and substance allergies SHALL be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi0hSVEeGGzu7fmW9pXw" name="allergyProductMedClassVocab" constrainedElement="_2EAivhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi0xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>For participant/participantRole/playingEntity/code element, Allergies to a class of medication SHALL be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi1BSVEeGGzu7fmW9pXw" name="allergyProductSpecificMedVocab" constrainedElement="_2EAivhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi1RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>For participant/participantRole/playingEntity/code element, Allergies to a specific medication SHALL be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation |  &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi1hSVEeGGzu7fmW9pXw" name="reactionText" constrainedElement="_2EAizRSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAi1xSVEeGGzu7fmW9pXw">
-        <body>This is the reaction that may be caused by the product&#xD;
-or agent</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi2BSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the text element is present in the Reaction Observation entry</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.text.oclIsUndefined()) )  )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi2RSVEeGGzu7fmW9pXw" name="reactionCode" constrainedElement="_2EAi1hSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAi2hSVEeGGzu7fmW9pXw">
-        <body>This value is a code describing the reaction</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi2xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the code element is present in the Reaction Observation entry</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()) )  )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi3BSVEeGGzu7fmW9pXw" name="reactionCodeVocab" constrainedElement="_2EAi2RSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi3RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( ro | (not ro.oclIsKindOf(consol::ReactionObservation)) or  (ro.oclIsKindOf(consol::ReactionObservation) and  not ro.code.oclIsUndefined()  and ro.code.codeSystem = '2.16.840.1.113883.6.96' and (ro.code.code = '404684003' or ro.code.code = '243796009')  ) )  )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi3hSVEeGGzu7fmW9pXw" name="severityText" constrainedElement="_2EAi2RSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAi3xSVEeGGzu7fmW9pXw">
-        <body>This is a description of the level of severity of the&#xD;
-allergy or intolerance</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi4BSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The text element is present in the Severity Observation template</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.text.oclIsUndefined()) )  )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi4RSVEeGGzu7fmW9pXw" name="severityCode" constrainedElement="_2EAi3hSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2EAi4hSVEeGGzu7fmW9pXw">
-        <body>This value is a code describing the level severity of&#xD;
-the allergy or intolerance</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi4xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the code element is present in the Severity Observation entry</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined()) )  )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2EAi5BSVEeGGzu7fmW9pXw" name="severityCodeVocab" constrainedElement="_2EAi4RSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EAi5RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static</body>
-        <body>self.getObservations()->forAll(obs | obs.getObservations()->forAll( so | (not so.oclIsKindOf(consol::SeverityObservation)) or  (so.oclIsKindOf(consol::SeverityObservation) and  not so.code.oclIsUndefined() and so.code.codeSystem = '2.16.840.1.113883.6.96' and (so.code.code = '255604002' or so.code.code = '371923003' or so.code.code = '6736007' or so.code.code = '371924009' or so.code.code = '24484000' or so.code.code = '399166001')&#xA;) )  )</body>
+        <body>SHALL contain exactly one [1..1] @typeCode=&quot;SUBJ&quot; Has subject (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
@@ -870,6 +397,7 @@ historical purposes.&#xD;
   </uml:Association>
   <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30">
     <ruleId>CONF:7471</ruleId>
+    <ruleId>CONF:10489</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2F7OQhSVEeGGzu7fmW9pXw" base_Constraint="_2F7OQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7509</ruleId>
@@ -877,53 +405,55 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2F71UBSVEeGGzu7fmW9pXw" base_Constraint="_2F7OQxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7915</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F8cYBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2F71URSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F8cYBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-153</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F8cYxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2F8cYRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F8cYxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-140</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F9DchSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2F9DcBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F9DchSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-256</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F9qghSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2F9qgBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F9qghSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-179</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F-RkhSVEeGGzu7fmW9pXw" base_Constraint="_2F-RkBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2F-4oxSVEeGGzu7fmW9pXw" base_Constraint="_2F-4oBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2F_fsBSVEeGGzu7fmW9pXw" base_Constraint="_2F-4pBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2F_ftRSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2F_fsRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2GAGwhSVEeGGzu7fmW9pXw" base_Constraint="_2GAGwBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EBw0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAithSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2ECX4BSVEeGGzu7fmW9pXw" base_Constraint="_2EAiuRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EC-8BSVEeGGzu7fmW9pXw" base_Constraint="_2EAivBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2F-RkhSVEeGGzu7fmW9pXw" base_Constraint="_2F-RkBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7504</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2F-4oxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F_fsBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F_ftRSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2GAGwhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EBw0BSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2ECX4BSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EC-8BSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.02-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EC-8RSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAivhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EDmABSVEeGGzu7fmW9pXw" base_Constraint="_2EAiwBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EENEBSVEeGGzu7fmW9pXw" base_Constraint="_2EAiwhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EE0IBSVEeGGzu7fmW9pXw" base_Constraint="_2EAixBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EE0IRSVEeGGzu7fmW9pXw" base_Constraint="_2EAixhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EFbMBSVEeGGzu7fmW9pXw" base_Constraint="_2EAiyBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EGCQBSVEeGGzu7fmW9pXw" base_Constraint="_2EAiyhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EGpUBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAizRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EGpURSVEeGGzu7fmW9pXw" base_Constraint="_2EAi0BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EC-8RSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EDmABSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EENEBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EE0IBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EE0IRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EFbMBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EGCQBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EGpUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EGpURSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.04-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EHQYBSVEeGGzu7fmW9pXw" base_Constraint="_2EAi0hSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EHQYBSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.04-2]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EH3cBSVEeGGzu7fmW9pXw" base_Constraint="_2EAi1BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EH3cBSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.04-3]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EIegBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAi1hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EJFkBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAi2RSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EJFkRSVEeGGzu7fmW9pXw" base_Constraint="_2EAi3BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EIegBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EJFkBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EJFkRSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.06-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EJsoBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAi3hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2EAi4RSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EK6wBSVEeGGzu7fmW9pXw" base_Constraint="_2EAi5BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2EJsoBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EK6wBSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-6.08-1]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2ELh0xSVEeGGzu7fmW9pXw" base_Property="_2ELh0RSVEeGGzu7fmW9pXw">
@@ -948,7 +478,7 @@ historical purposes.&#xD;
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2FGu4hSVEeGGzu7fmW9pXw" name="SeverityObservation">
     <ownedComment xmi:id="_2FGu4xSVEeGGzu7fmW9pXw" annotatedElement="_2FGu4hSVEeGGzu7fmW9pXw">
-      <body>This specification models a severity observation as a separate observation from the condition. While this model is different from work presently underway by various organizations (i.e., SNOMED, HL7, TermInfo), it is not wholly incompatible with that work. In that work, qualifiers may be used to identify severity in the coded condition observation, and a separate severity observation is no longer necessary. The use of qualifiers is not precluded by this specification. However, to support semantic interoperability between EMR systems using different vocabularies, this specification does require that severity information also be provided in a separate observation. This ensures that all EMR systems have equal access to the information, regardless of the vocabularies they support.</body>
+      <body>This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy Obervation, Reaction Observation or both. When the Severity Observation is associated directly with an Allergy it characterizes the Allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a Reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity</body>
     </ownedComment>
     <ownedRule xmi:id="_2FGu5BSVEeGGzu7fmW9pXw" name="hasTextReference" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FGu5RSVEeGGzu7fmW9pXw">
@@ -999,9 +529,6 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu6hSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <ownedComment xmi:id="_2FGu6xSVEeGGzu7fmW9pXw">
-        <body>Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NEuDgCKzEeG9m6LRl9ardQ" name="interpretationCode" visibility="private" aggregation="composite">
@@ -1036,25 +563,10 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2FH9ABSVEeGGzu7fmW9pXw" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7356</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2FIkEBSVEeGGzu7fmW9pXw" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dddNgKDqEd-dVeaMP0XXQw"/>
-  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_2E_aIRSVEeGGzu7fmW9pXw" name="ReactionObservation">
     <ownedComment xmi:id="_j3HUIBraEeGo461UQq-B1g">
       <body>This clinical statement represents an undesired symptom, finding, etc., due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="procedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XcWKoBrcEeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="medicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-Q-oBrcEeGo461UQq-B1g">
-        <language>Analysis</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True (CONF:7344).</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_UJVqICIhEeG9m6LRl9ardQ" name="codeValueSet" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_soybkCIhEeG9m6LRl9ardQ">
         <language>Analysis</language>
@@ -1089,6 +601,30 @@ historical purposes.&#xD;
         <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_jm2UICYKEeGWfpmyutaqOA" name="severityObservationInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qNTDsCYKEeGWfpmyutaqOA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; TRUE</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="procedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XcWKoBrcEeGo461UQq-B1g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="medicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-Q-oBrcEeGo461UQq-B1g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True.</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1107,23 +643,14 @@ historical purposes.&#xD;
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPUBSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2FBPURSVEeGGzu7fmW9pXw">
-        <body>The specific observation being recorded must have an identifier (&amp;lt;id>) that shall be provided for tracking purposes. If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension (e.g., &amp;lt;id root='CE1215CD-69EC-4C7B-805F-569233C5E159'/>). At least one identifier must be present, more than one may appear.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ky9dsBrbEeGo461UQq-B1g" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ky9dsRrbEeGo461UQq-B1g" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPVRSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <ownedComment xmi:id="_2FBPVhSVEeGGzu7fmW9pXw">
-        <body>The value set for this code element has not been specified.  Implementers are allowed to use any code system, such as SNOMED CT, a locally determined code, or a nullFlavor.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FDEgBSVEeGGzu7fmW9pXw" name="text" visibility="private">
-      <ownedComment xmi:id="_2FDEgRSVEeGGzu7fmW9pXw">
-        <body>The text element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The reference contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZBorQCIgEeG9m6LRl9ardQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZBorQSIgEeG9m6LRl9ardQ"/>
@@ -1153,12 +680,14 @@ historical purposes.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_feOy4BrbEeGo461UQq-B1g" name="procedureActivityProcedure">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_feOy4RrbEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0W_QgCYKEeGWfpmyutaqOA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0W_QgSYKEeGWfpmyutaqOA"/>
       <association href="consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_nTmMoBrbEeGo461UQq-B1g" name="medicationActivity">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTmMoRrbEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rrWgoCYLEeGWfpmyutaqOA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rrWgoSYLEeGWfpmyutaqOA"/>
       <association href="consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
     </ownedAttribute>
   </uml:Class>
@@ -1194,7 +723,6 @@ historical purposes.&#xD;
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7327</ruleId>
-    <ruleId>CONF:9107)</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FDEgBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7330</ruleId>
@@ -1252,47 +780,6 @@ historical purposes.&#xD;
     <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
       <body>This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.</body>
     </ownedComment>
-    <ownedRule xmi:id="_2FZp0BSVEeGGzu7fmW9pXw" name="targetOfEntryRelationship">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FZp0RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FZp0xSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">
-      <ownedComment xmi:id="_2FZp1BSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FZp1RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>SHALL NOT contain any additional Observation attributes.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FaQ4RSVEeGGzu7fmW9pXw" name="noAdditionalParticipants">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FaQ4hSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL NOT contain any Observation participants.</body>
-        <body>self.participant->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Fa38BSVEeGGzu7fmW9pXw" name="noAdditionalRelationships">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Fa38RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>SHALL NOT be the source of any Observation relationships.</body>
-        <body>self.entryRelationship->select(er|not er.observation.oclIsUndefined())->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FRuBBSVEeGGzu7fmW9pXw" name="hasTextReference">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FRuBRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
-        <body>not self.text.reference.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2FbfABSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -1313,11 +800,6 @@ historical purposes.&#xD;
     <ownedAttribute xmi:id="_2FWmgBSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FRuBxSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FRuCBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FRuCRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2FX0oBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
@@ -1329,19 +811,19 @@ historical purposes.&#xD;
     <ruleId>CONF:7317</ruleId>
     <ruleId>CONF:10490</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2FZp0hSVEeGGzu7fmW9pXw" base_Constraint="_2FZp0BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FZp0hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FaQ4BSVEeGGzu7fmW9pXw" base_Constraint="_2FZp0xSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FaQ4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF-517</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FaQ4xSVEeGGzu7fmW9pXw" base_Constraint="_2FaQ4RSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2FaQ4xSVEeGGzu7fmW9pXw">
     <ruleId>CONF-518</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Fa38hSVEeGGzu7fmW9pXw" base_Constraint="_2Fa38BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2Fa38hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-519</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw" base_Constraint="_2FRuBBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7318</ruleId>
   </CDA:PropertyValidation>
@@ -1352,7 +834,7 @@ historical purposes.&#xD;
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7320</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw" base_Property="_2FRuBxSVEeGGzu7fmW9pXw"/>
+  <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7321</ruleId>
@@ -1422,5 +904,42 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_3ucQMCK3EeG9m6LRl9ardQ" base_Constraint="_0IXhYCK3EeG9m6LRl9ardQ">
     <ruleId>CONF:7378</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_e8RsMCK5EeG9m6LRl9ardQ" base_Property="_NEuDgCKzEeG9m6LRl9ardQ"/>
+  <CDA:ConstraintValidation xmi:id="_gBGW4CWFEeGWfpmyutaqOA" base_Constraint="_L5MNcCWFEeGWfpmyutaqOA">
+    <ruleId>CONF:7504</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_rgdFYCWhEeGWfpmyutaqOA">
+    <ruleId>CONF:7421</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_lGdg0CXKEeGWfpmyutaqOA">
+    <ruleId>CONF:10083</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7ZihUCXKEeGWfpmyutaqOA">
+    <ruleId>CONF:10084</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_oGz9UCXTEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:7424</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BI13YCXUEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:7425</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XNKqMCXUEeGWfpmyutaqOA">
+    <ruleId>CONF:7426</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BSGroCXVEeGWfpmyutaqOA" severity="INFO">
+    <ruleId>CONF:7431</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_r9M7ECYKEeGWfpmyutaqOA" base_Constraint="_jm2UICYKEeGWfpmyutaqOA">
+    <ruleId>CONF:10375</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_LPerMCYLEeGWfpmyutaqOA" base_Constraint="_IvIIQBrcEeGo461UQq-B1g">
+    <ruleId>CONF:7343</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_eqOzsCYLEeGWfpmyutaqOA"/>
+  <CDA:ConstraintValidation xmi:id="_QuussCYMEeGWfpmyutaqOA" base_Constraint="_P3TE0BrcEeGo461UQq-B1g">
+    <ruleId>CONF:7344</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_kTFLMCYOEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:9118</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_vj2U0CYOEeGWfpmyutaqOA" base_Property="_NEuDgCKzEeG9m6LRl9ardQ"/>
 </xmi:XMI>

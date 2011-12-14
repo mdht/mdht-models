@@ -50,11 +50,6 @@ of the patient.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Rwq2xSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Rwq3BSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2Rwq3RSVEeGGzu7fmW9pXw" name="procedureEntry" association="_2Rwq6xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-procedures.uml#_2NufahSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Rwq3hSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Rwq3xSVEeGGzu7fmW9pXw"/>
-    </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2Rwq4hSVEeGGzu7fmW9pXw" memberEnd="_2Rwq1BSVEeGGzu7fmW9pXw _2Rwq4xSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Rwq4xSVEeGGzu7fmW9pXw" type="_2Rwq0BSVEeGGzu7fmW9pXw" association="_2Rwq4hSVEeGGzu7fmW9pXw"/>
@@ -65,9 +60,7 @@ of the patient.</body>
   <uml:Association xmi:id="_2Rwq6BSVEeGGzu7fmW9pXw" memberEnd="_2Rwq2hSVEeGGzu7fmW9pXw _2Rwq6RSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Rwq6RSVEeGGzu7fmW9pXw" type="_2Rwq0BSVEeGGzu7fmW9pXw" association="_2Rwq6BSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2Rwq6xSVEeGGzu7fmW9pXw" memberEnd="_2Rwq3RSVEeGGzu7fmW9pXw _2Rwq7BSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2Rwq7BSVEeGGzu7fmW9pXw" type="_2Rwq0BSVEeGGzu7fmW9pXw" association="_2Rwq6xSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
+  <uml:Association xmi:id="_2Rwq6xSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_r3b7QBkaEeGs5a462vYX5Q" base_Class="_2Rwq0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.9"/>
   <CDA:CodeSystemConstraint xmi:id="_2Rwq7xSVEeGGzu7fmW9pXw" code="51847-2" displayName="ASSESSMENT AND PLAN" base_Property="_2Rwq7hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>

@@ -235,7 +235,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2Rwq4hSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2Rwq5RSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2Rwq6BSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2Rwq6xSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-familyhistory.uml#_2SC-sBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2SVSlBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2Shf0xSVEeGGzu7fmW9pXw"/>
@@ -570,11 +569,13 @@
   <CDA:EntryRelationship xmi:id="_iMIjkBrbEeGo461UQq-B1g" severity="INFO" typeCode="RSON">
     <ruleId>CONF:7337</ruleId>
     <ruleId>CONF:7338</ruleId>
+    <ruleId>CONF:7339</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_oVqGkBrbEeGo461UQq-B1g" severity="INFO" typeCode="RSON">
     <ruleId>CONF:7340</ruleId>
     <ruleId>CONF:7341</ruleId>
+    <ruleId>CONF:7342</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_qYdhABt5EeGnMahsPjlwOw" severity="INFO" typeCode="REFR">
