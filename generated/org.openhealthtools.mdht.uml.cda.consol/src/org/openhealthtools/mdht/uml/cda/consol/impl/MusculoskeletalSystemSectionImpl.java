@@ -57,7 +57,8 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	 * @generated
 	 */
 	public boolean validateMusculoskeletalSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(this, diagnostics, context);
+		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	 */
 	public boolean validateMusculoskeletalSystemSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionProblemEntry(this, diagnostics, context);
+		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionProblemEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +87,7 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	 * @generated
 	 */
 	public MusculoskeletalSystemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MusculoskeletalSystemSectionImpl

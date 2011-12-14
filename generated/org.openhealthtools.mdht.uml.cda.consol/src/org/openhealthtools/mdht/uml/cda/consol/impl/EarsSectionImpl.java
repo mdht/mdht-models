@@ -84,7 +84,7 @@ public class EarsSectionImpl extends SectionImpl implements EarsSection {
 	 * @generated
 	 */
 	public EarsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EarsSectionImpl

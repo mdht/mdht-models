@@ -84,7 +84,7 @@ public class ChestWallSectionImpl extends SectionImpl implements ChestWallSectio
 	 * @generated
 	 */
 	public ChestWallSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ChestWallSectionImpl

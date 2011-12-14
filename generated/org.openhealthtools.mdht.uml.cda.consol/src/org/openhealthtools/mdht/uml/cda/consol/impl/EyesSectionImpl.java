@@ -84,7 +84,7 @@ public class EyesSectionImpl extends SectionImpl implements EyesSection {
 	 * @generated
 	 */
 	public EyesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EyesSectionImpl

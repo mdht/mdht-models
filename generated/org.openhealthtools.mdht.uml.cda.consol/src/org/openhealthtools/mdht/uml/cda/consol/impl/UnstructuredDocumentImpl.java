@@ -93,7 +93,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasPatientRoleAddress(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientRoleAddress(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientRoleAddress(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +113,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasPatientGenderCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientGenderCode(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientGenderCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +124,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasPatientBirthYear(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientBirthYear(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasPatientBirthYear(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,7 +165,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -172,7 +176,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -182,7 +187,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentLegalAuthenticatorAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -201,7 +207,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyBinaryText(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyBinaryText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -211,7 +218,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextMediaType(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextMediaType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,7 +229,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentHasNonXMLBodyTextRepresentation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -240,7 +249,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -259,7 +269,8 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentConfidentialityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentConfidentialityCode(this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentConfidentialityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -324,7 +335,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	@Override
 	public UnstructuredDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // UnstructuredDocumentImpl

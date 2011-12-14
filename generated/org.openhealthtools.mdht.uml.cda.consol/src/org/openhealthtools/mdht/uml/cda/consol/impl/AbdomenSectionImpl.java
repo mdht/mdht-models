@@ -84,7 +84,7 @@ public class AbdomenSectionImpl extends SectionImpl implements AbdomenSection {
 	 * @generated
 	 */
 	public AbdomenSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AbdomenSectionImpl

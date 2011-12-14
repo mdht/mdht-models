@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -69,6 +70,39 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedureInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationMedicationActivityInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationMedicationActivityInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -169,7 +203,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -196,8 +231,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureActivityProcedure getProcedureActivityProcedure() {
-		return ReactionObservationOperations.getProcedureActivityProcedure(this);
+	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
+		return ReactionObservationOperations.getProcedureActivityProcedures(this);
 	}
 
 	/**
@@ -205,8 +240,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationActivity getMedicationActivity() {
-		return ReactionObservationOperations.getMedicationActivity(this);
+	public EList<MedicationActivity> getMedicationActivities() {
+		return ReactionObservationOperations.getMedicationActivities(this);
 	}
 
 	/**
@@ -215,7 +250,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	public ReactionObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ReactionObservationImpl

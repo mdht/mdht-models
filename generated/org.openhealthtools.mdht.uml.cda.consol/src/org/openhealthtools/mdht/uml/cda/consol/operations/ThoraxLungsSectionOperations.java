@@ -64,9 +64,9 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateThoraxLungsSectionCode(ThoraxLungsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thorax Lungs Section Code</em>}' invariant operation.
@@ -98,20 +98,17 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.THORAX_LUNGS_SECTION);
 			try {
 				VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thoraxLungsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thoraxLungsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ThoraxLungsSectionCode"),
-						 new Object [] { thoraxLungsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("ThoraxLungsSectionCode"), new Object[] { thoraxLungsSection }));
 			}
 			return false;
 		}
@@ -156,20 +153,18 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.THORAX_LUNGS_SECTION);
 			try {
 				VALIDATE_THORAX_LUNGS_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THORAX_LUNGS_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THORAX_LUNGS_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thoraxLungsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THORAX_LUNGS_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thoraxLungsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("ThoraxLungsSectionProblemEntry"),
-						 new Object [] { thoraxLungsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("ThoraxLungsSectionProblemEntry"),
+					new Object[] { thoraxLungsSection }));
 			}
 			return false;
 		}
@@ -208,11 +203,12 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(ThoraxLungsSection thoraxLungsSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.THORAX_LUNGS_SECTION, ConsolPackage.Literals.THORAX_LUNGS_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(
+				ConsolPackage.Literals.THORAX_LUNGS_SECTION,
+				ConsolPackage.Literals.THORAX_LUNGS_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

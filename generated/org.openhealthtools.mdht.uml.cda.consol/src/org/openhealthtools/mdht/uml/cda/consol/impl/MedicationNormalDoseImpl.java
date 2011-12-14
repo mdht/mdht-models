@@ -55,7 +55,8 @@ public class MedicationNormalDoseImpl extends MedicationActivityImpl implements 
 	 */
 	public boolean validateMedicationNormalDoseNoSubordinateSubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNormalDoseOperations.validateMedicationNormalDoseNoSubordinateSubstanceAdministration(this, diagnostics, context);
+		return MedicationNormalDoseOperations.validateMedicationNormalDoseNoSubordinateSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,7 @@ public class MedicationNormalDoseImpl extends MedicationActivityImpl implements 
 	 */
 	@Override
 	public MedicationNormalDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationNormalDoseImpl

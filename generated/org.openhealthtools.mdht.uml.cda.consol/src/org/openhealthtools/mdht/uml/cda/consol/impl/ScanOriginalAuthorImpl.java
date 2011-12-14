@@ -67,7 +67,8 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 */
 	public boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ScanOriginalAuthorOperations.validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
+		return ScanOriginalAuthorOperations.validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +77,7 @@ public class ScanOriginalAuthorImpl extends AuthorImpl implements ScanOriginalAu
 	 * @generated
 	 */
 	public ScanOriginalAuthor init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ScanOriginalAuthorImpl

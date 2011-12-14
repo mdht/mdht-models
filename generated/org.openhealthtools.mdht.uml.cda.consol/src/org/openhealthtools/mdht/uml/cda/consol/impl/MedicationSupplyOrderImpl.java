@@ -147,7 +147,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * @generated
 	 */
 	public MedicationSupplyOrder init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationSupplyOrderImpl

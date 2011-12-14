@@ -158,7 +158,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * @generated
 	 */
 	public MedicationDispense init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationDispenseImpl

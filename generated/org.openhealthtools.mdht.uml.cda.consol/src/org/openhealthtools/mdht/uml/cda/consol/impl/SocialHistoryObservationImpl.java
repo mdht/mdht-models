@@ -56,7 +56,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservationOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationOriginalText(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationOriginalText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationReferenceValue(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -147,7 +149,7 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public SocialHistoryObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SocialHistoryObservationImpl

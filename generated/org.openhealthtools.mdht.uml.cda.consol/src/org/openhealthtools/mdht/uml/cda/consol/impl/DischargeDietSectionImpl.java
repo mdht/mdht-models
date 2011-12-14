@@ -74,7 +74,7 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * @generated
 	 */
 	public DischargeDietSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DischargeDietSectionImpl

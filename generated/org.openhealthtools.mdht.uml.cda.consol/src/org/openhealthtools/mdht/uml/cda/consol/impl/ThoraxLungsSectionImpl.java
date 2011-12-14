@@ -84,7 +84,7 @@ public class ThoraxLungsSectionImpl extends SectionImpl implements ThoraxLungsSe
 	 * @generated
 	 */
 	public ThoraxLungsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ThoraxLungsSectionImpl

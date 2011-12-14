@@ -65,7 +65,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * @generated
 	 */
 	public AuthorizationActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AuthorizationActivityImpl

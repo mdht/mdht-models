@@ -64,9 +64,9 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLymphaticSectionCode(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Code</em>}' invariant operation.
@@ -98,20 +98,17 @@ public class LymphaticSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.LYMPHATIC_SECTION);
 			try {
 				VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lymphaticSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			lymphaticSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("LymphaticSectionCode"),
-						 new Object [] { lymphaticSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("LymphaticSectionCode"), new Object[] { lymphaticSection }));
 			}
 			return false;
 		}
@@ -156,20 +153,17 @@ public class LymphaticSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.LYMPHATIC_SECTION);
 			try {
 				VALIDATE_LYMPHATIC_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LYMPHATIC_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LYMPHATIC_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lymphaticSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LYMPHATIC_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			lymphaticSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("LymphaticSectionProblemEntry"),
-						 new Object [] { lymphaticSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("LymphaticSectionProblemEntry"), new Object[] { lymphaticSection }));
 			}
 			return false;
 		}
@@ -208,11 +202,12 @@ public class LymphaticSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(LymphaticSection lymphaticSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.LYMPHATIC_SECTION, ConsolPackage.Literals.LYMPHATIC_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(
+				ConsolPackage.Literals.LYMPHATIC_SECTION,
+				ConsolPackage.Literals.LYMPHATIC_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

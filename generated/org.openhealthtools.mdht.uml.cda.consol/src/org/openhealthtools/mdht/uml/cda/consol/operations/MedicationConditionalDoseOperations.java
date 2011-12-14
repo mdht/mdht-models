@@ -140,20 +140,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMoodCode"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMoodCode"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -199,20 +197,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDoseQuantityOrRateQuantity"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDoseQuantityOrRateQuantity"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -258,20 +256,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasConsents"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_CONSENTS,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasConsents"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -286,13 +282,13 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"or not self.getSection().informant->isEmpty()"+
-"or not self.getClinicalDocument().informant->isEmpty()"+
-"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "or not self.getSection().informant->isEmpty()"
+			+ "or not self.getClinicalDocument().informant->isEmpty()"
+			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseInformationSource(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Information Source</em>}' invariant operation.
@@ -329,20 +325,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseInformationSource"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_INFORMATION_SOURCE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseInformationSource"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -388,20 +383,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasPreconditionCriterion"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRECONDITION_CRITERION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasPreconditionCriterion"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -447,20 +442,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_REASON,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasReason"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_REASON,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasReason"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -475,9 +468,9 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "+
-"cda::ClinicalStatement | not target.oclIsUndefined() and "+
-"  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))";
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "
+			+ "cda::ClinicalStatement | not target.oclIsUndefined() and "
+			+ "  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseHasReasonProblem(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Has Reason Problem</em>}' invariant operation.
@@ -511,20 +504,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasReasonProblem"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_REASON_PROBLEM,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasReasonProblem"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -570,20 +562,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasProduct"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasProduct"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -629,20 +619,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DOSING,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDosing"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DOSING,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDosing"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -657,10 +645,10 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "+
-"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "
+			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseDosingRelationship(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Dosing Relationship</em>}' invariant operation.
@@ -694,20 +682,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseDosingRelationship"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_DOSING_RELATIONSHIP,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseDosingRelationship"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -753,20 +740,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDescriptionNoMedNotKnown"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasDescriptionNoMedNotKnown"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -812,20 +799,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseReasonClassMood"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_REASON_CLASS_MOOD,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseReasonClassMood"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -871,20 +857,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasProductEntry"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_PRODUCT_ENTRY,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasProductEntry"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -930,20 +915,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasIntructionsInversion"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_INTRUCTIONS_INVERSION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasIntructionsInversion"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -989,20 +973,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductStrength"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_STRENGTH,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductStrength"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1048,20 +1030,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductName"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_NAME,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductName"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1107,20 +1087,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDosePreconditionReference"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRECONDITION_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDosePreconditionReference"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1166,20 +1145,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasSupplyEntryInversion"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_SUPPLY_ENTRY_INVERSION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasSupplyEntryInversion"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1225,20 +1204,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasFillNumber"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_HAS_FILL_NUMBER,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseHasFillNumber"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1284,20 +1261,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseConditionalDosingSubstanceAdministration"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseConditionalDosingSubstanceAdministration"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1342,20 +1319,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_ID,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseId"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_ID,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseId"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1401,20 +1376,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseStatusCode"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseStatusCode"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1460,20 +1433,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseEffectiveTime"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseEffectiveTime"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1488,9 +1459,9 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.112'))";
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.5.112'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDoseRouteCode(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Route Code</em>}' invariant operation.
@@ -1523,20 +1494,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseRouteCode"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_ROUTE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseRouteCode"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1582,20 +1551,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseApproachSiteCode"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_APPROACH_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseApproachSiteCode"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1641,20 +1609,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseDoseQuantity"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_DOSE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseDoseQuantity"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1700,20 +1666,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseRateQuantity"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_RATE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseRateQuantity"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1759,20 +1723,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMaxDoseQuantity"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MAX_DOSE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMaxDoseQuantity"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1818,20 +1781,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMedicationSeriesNumberObservation"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MEDICATION_SERIES_NUMBER_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMedicationSeriesNumberObservation"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1877,20 +1840,20 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMedicationStatusObservation"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_MEDICATION_STATUS_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseMedicationStatusObservation"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1936,20 +1899,19 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseReactionObservation"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_REACTION_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseReactionObservation"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -1995,20 +1957,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE,
-						 ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductInstance"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PRODUCT_INSTANCE,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDoseProductInstance"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
@@ -2048,11 +2008,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			MedicationConditionalDose medicationConditionalDose) {
 		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(108));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(108));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2093,11 +2054,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			MedicationConditionalDose medicationConditionalDose) {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(109));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(109));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2138,11 +2100,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			MedicationConditionalDose medicationConditionalDose) {
 		if (GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(110));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(110));
 			try {
 				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2184,11 +2147,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	public static EList<ProductInstance> getProductInstances(MedicationConditionalDose medicationConditionalDose) {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(111));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(111));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2230,11 +2194,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	public static EList<Act> getInternalReferences(MedicationConditionalDose medicationConditionalDose) {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(112));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(112));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2276,11 +2241,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	public static EList<Instructions> getPatientMedicalInstructionss(MedicationConditionalDose medicationConditionalDose) {
 		if (GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(113));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(113));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2322,11 +2288,12 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	public static NonMedicinalSupplyActivity getSupplyEntry(MedicationConditionalDose medicationConditionalDose) {
 		if (GET_SUPPLY_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE, ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(114));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(114));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2342,9 +2309,9 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityCode(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}' invariant operation.
@@ -2376,20 +2343,18 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationConditionalDose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_ACTIVITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
-						 new Object [] { medicationConditionalDose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_ACTIVITY_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
+					new Object[] { medicationConditionalDose }));
 			}
 			return false;
 		}
