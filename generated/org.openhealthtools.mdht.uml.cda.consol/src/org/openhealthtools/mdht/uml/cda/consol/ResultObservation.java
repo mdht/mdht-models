@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' templateId.root='2.16.840.1.113883.10.20.22.4.2' classCode.displayName='Observation' moodCode.code='EVN' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationEffectiveTime ResultObservationValue' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.warning='ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='OBS' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' templateId.root='2.16.840.1.113883.10.20.22.4.2' classCode.displayName='Observation' constraints.validation.error='ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' statusCode.code='completed' moodCode.code='EVN' constraints.validation.warning='ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='OBS' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface ResultObservation extends Observation {
@@ -113,6 +113,21 @@ public interface ResultObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateResultObservationText(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
+	 * value.code = 'completed'))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\nvalue.code = \'completed\'))'"
+	 * @generated
+	 */
+	boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

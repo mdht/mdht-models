@@ -55,8 +55,7 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 */
 	public boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryProblemConcernEntry(
-			this, diagnostics, context);
+		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryProblemConcernEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +65,7 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 */
 	public boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryAllergyConcernEntry(
-			this, diagnostics, context);
+		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryAllergyConcernEntry(this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +105,7 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 */
 	@Override
 	public ReferralSummary init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReferralSummaryImpl

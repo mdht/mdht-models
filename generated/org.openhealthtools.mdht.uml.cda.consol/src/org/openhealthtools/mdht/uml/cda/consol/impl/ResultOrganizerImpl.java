@@ -93,6 +93,15 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
 	}
@@ -112,7 +121,7 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * @generated
 	 */
 	public ResultOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultOrganizerImpl

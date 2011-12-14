@@ -84,7 +84,7 @@ public class EndocrineSystemSectionImpl extends SectionImpl implements Endocrine
 	 * @generated
 	 */
 	public EndocrineSystemSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EndocrineSystemSectionImpl

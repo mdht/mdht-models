@@ -119,6 +119,15 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validateResultObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -165,7 +174,7 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * @generated
 	 */
 	public ResultObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultObservationImpl

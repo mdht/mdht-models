@@ -845,15 +845,6 @@ public interface ConsolFactory extends EFactory {
 	VitalSignObservation createVitalSignObservation();
 
 	/**
-	 * Returns a new object of class '<em>Diagnostic Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Results Section</em>'.
-	 * @generated
-	 */
-	DiagnosticResultsSection createDiagnosticResultsSection();
-
-	/**
 	 * Returns a new object of class '<em>History Of Past Illness Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

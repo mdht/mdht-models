@@ -64,9 +64,9 @@ public class RespiratorySystemSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11412-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '11412-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRespiratorySystemSectionCode(RespiratorySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Respiratory System Section Code</em>}' invariant operation.
@@ -98,18 +98,20 @@ public class RespiratorySystemSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION);
 			try {
 				VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			respiratorySystemSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPIRATORY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(respiratorySystemSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESPIRATORY_SYSTEM_SECTION__RESPIRATORY_SYSTEM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("RespiratorySystemSectionCode"),
-					new Object[] { respiratorySystemSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.RESPIRATORY_SYSTEM_SECTION__RESPIRATORY_SYSTEM_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("RespiratorySystemSectionCode"),
+						 new Object [] { respiratorySystemSection }));
 			}
 			return false;
 		}
@@ -154,18 +156,20 @@ public class RespiratorySystemSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION);
 			try {
 				VALIDATE_RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			respiratorySystemSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(respiratorySystemSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESPIRATORY_SYSTEM_SECTION__RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY,
-					ConsolPlugin.INSTANCE.getString("RespiratorySystemSectionProblemEntry"),
-					new Object[] { respiratorySystemSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.RESPIRATORY_SYSTEM_SECTION__RESPIRATORY_SYSTEM_SECTION_PROBLEM_ENTRY,
+						 ConsolPlugin.INSTANCE.getString("RespiratorySystemSectionProblemEntry"),
+						 new Object [] { respiratorySystemSection }));
 			}
 			return false;
 		}
@@ -204,12 +208,11 @@ public class RespiratorySystemSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(RespiratorySystemSection respiratorySystemSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION,
-				ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION, ConsolPackage.Literals.RESPIRATORY_SYSTEM_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

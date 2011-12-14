@@ -152,18 +152,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -178,9 +180,9 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionCode(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}' invariant operation.
@@ -212,17 +214,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCode"), new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCode"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -267,18 +272,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CONDITION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCondition"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CONDITION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCondition"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -323,18 +330,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVitalSignsSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VITAL_SIGNS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVitalSignsSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -379,19 +388,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionGeneralAppearanceSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_GENERAL_APPEARANCE_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionGeneralAppearanceSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -436,20 +446,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVisibleImplantedMedicalDevicesSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVisibleImplantedMedicalDevicesSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -494,19 +504,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionIntegumentarySystemSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_INTEGUMENTARY_SYSTEM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionIntegumentarySystemSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -551,18 +562,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_HEAD_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HEAD_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionHeadSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HEAD_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionHeadSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -607,18 +620,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EYES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EYES_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEyesSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EYES_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEyesSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -663,19 +678,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEarsNoseMouthThroatSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EARS_NOSE_MOUTH_THROAT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEarsNoseMouthThroatSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -720,18 +736,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EARS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EARS_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEarsSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EARS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEarsSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -776,18 +794,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NOSE_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNoseSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NOSE_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNoseSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -832,19 +852,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionMouthThroatTeethSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_MOUTH_THROAT_TEETH_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionMouthThroatTeethSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -889,18 +910,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NECK_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NECK_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNeckSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NECK_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNeckSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -945,19 +968,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEndocrineSystemSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_ENDOCRINE_SYSTEM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionEndocrineSystemSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1002,18 +1026,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionThoraxLungsSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_THORAX_LUNGS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionThoraxLungsSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1058,18 +1084,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionChestWallSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CHEST_WALL_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionChestWallSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1114,18 +1142,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_BREAST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_BREAST_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionBreastSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_BREAST_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionBreastSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1170,18 +1200,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_HEART_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HEART_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionHeartSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HEART_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionHeartSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1226,19 +1258,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionRespiratorySystemSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_RESPIRATORY_SYSTEM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionRespiratorySystemSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1283,18 +1316,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionAbdomenSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_ABDOMEN_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionAbdomenSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1339,18 +1374,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionLymphaticSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_LYMPHATIC_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionLymphaticSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1395,18 +1432,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_VESSELS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VESSELS_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVesselsSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_VESSELS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionVesselsSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1451,19 +1490,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionMusculoskeletalSystemSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_MUSCULOSKELETAL_SYSTEM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionMusculoskeletalSystemSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1508,19 +1548,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNeurologicSystemSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NEUROLOGIC_SYSTEM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionNeurologicSystemSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1565,18 +1606,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_GENITALIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_GENITALIA_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionGenitaliaSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_GENITALIA_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionGenitaliaSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1621,18 +1664,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_RECTUM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_RECTUM_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionRectumSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_RECTUM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionRectumSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1677,18 +1722,20 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionExtremitiesSection"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_EXTREMITIES_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionExtremitiesSection"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}
@@ -1727,12 +1774,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static EList<ProblemConcernAct> getConditions(PhysicalExamSection physicalExamSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(83));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(83));
 			try {
 				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1774,12 +1820,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static VitalSignsSection getVitalSignsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(84));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(84));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1819,12 +1864,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static GeneralStatusSection getGeneralAppearanceSection(PhysicalExamSection physicalExamSection) {
 		if (GET_GENERAL_APPEARANCE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(85));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(85));
 			try {
 				GET_GENERAL_APPEARANCE_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_APPEARANCE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1864,12 +1908,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getVisibleImplantedMedicalDevicesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(86));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(86));
 			try {
 				GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_QRY = helper.createQuery(GET_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1909,12 +1952,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getIntegumentarySystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(87));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(87));
 			try {
 				GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_QRY = helper.createQuery(GET_INTEGUMENTARY_SYSTEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1954,12 +1996,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getHeadSection(PhysicalExamSection physicalExamSection) {
 		if (GET_HEAD_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(88));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(88));
 			try {
 				GET_HEAD_SECTION__EOCL_QRY = helper.createQuery(GET_HEAD_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1999,12 +2040,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getEyesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EYES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(89));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(89));
 			try {
 				GET_EYES_SECTION__EOCL_QRY = helper.createQuery(GET_EYES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2044,12 +2084,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getEarsNoseMouthThroatSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(90));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(90));
 			try {
 				GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_QRY = helper.createQuery(GET_EARS_NOSE_MOUTH_THROAT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2089,12 +2128,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getEarsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EARS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(91));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(91));
 			try {
 				GET_EARS_SECTION__EOCL_QRY = helper.createQuery(GET_EARS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2134,12 +2172,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getNoseSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NOSE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(92));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(92));
 			try {
 				GET_NOSE_SECTION__EOCL_QRY = helper.createQuery(GET_NOSE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2179,12 +2216,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getMouthThroatTeethSection(PhysicalExamSection physicalExamSection) {
 		if (GET_MOUTH_THROAT_TEETH_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(93));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(93));
 			try {
 				GET_MOUTH_THROAT_TEETH_SECTION__EOCL_QRY = helper.createQuery(GET_MOUTH_THROAT_TEETH_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2224,12 +2260,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getNeckSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NECK_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(94));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(94));
 			try {
 				GET_NECK_SECTION__EOCL_QRY = helper.createQuery(GET_NECK_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2269,12 +2304,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getEndocrineSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_ENDOCRINE_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(95));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(95));
 			try {
 				GET_ENDOCRINE_SYSTEM_SECTION__EOCL_QRY = helper.createQuery(GET_ENDOCRINE_SYSTEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2314,12 +2348,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getThoraxLungsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_THORAX_LUNGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(96));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(96));
 			try {
 				GET_THORAX_LUNGS_SECTION__EOCL_QRY = helper.createQuery(GET_THORAX_LUNGS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2359,12 +2392,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getChestWallSection(PhysicalExamSection physicalExamSection) {
 		if (GET_CHEST_WALL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(97));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(97));
 			try {
 				GET_CHEST_WALL_SECTION__EOCL_QRY = helper.createQuery(GET_CHEST_WALL_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2404,12 +2436,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getBreastSection(PhysicalExamSection physicalExamSection) {
 		if (GET_BREAST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(98));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(98));
 			try {
 				GET_BREAST_SECTION__EOCL_QRY = helper.createQuery(GET_BREAST_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2449,12 +2480,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getHeartSection(PhysicalExamSection physicalExamSection) {
 		if (GET_HEART_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(99));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(99));
 			try {
 				GET_HEART_SECTION__EOCL_QRY = helper.createQuery(GET_HEART_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2494,12 +2524,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getRespiratorySystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_RESPIRATORY_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(100));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(100));
 			try {
 				GET_RESPIRATORY_SYSTEM_SECTION__EOCL_QRY = helper.createQuery(GET_RESPIRATORY_SYSTEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2539,12 +2568,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getAbdomenSection(PhysicalExamSection physicalExamSection) {
 		if (GET_ABDOMEN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(101));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(101));
 			try {
 				GET_ABDOMEN_SECTION__EOCL_QRY = helper.createQuery(GET_ABDOMEN_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2584,12 +2612,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getLymphaticSection(PhysicalExamSection physicalExamSection) {
 		if (GET_LYMPHATIC_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(102));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(102));
 			try {
 				GET_LYMPHATIC_SECTION__EOCL_QRY = helper.createQuery(GET_LYMPHATIC_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2629,12 +2656,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getVesselsSection(PhysicalExamSection physicalExamSection) {
 		if (GET_VESSELS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(103));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(103));
 			try {
 				GET_VESSELS_SECTION__EOCL_QRY = helper.createQuery(GET_VESSELS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2674,12 +2700,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getMusculoskeletalSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(104));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(104));
 			try {
 				GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_QRY = helper.createQuery(GET_MUSCULOSKELETAL_SYSTEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2719,12 +2744,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getNeurologicSystemSection(PhysicalExamSection physicalExamSection) {
 		if (GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(105));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(105));
 			try {
 				GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_QRY = helper.createQuery(GET_NEUROLOGIC_SYSTEM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2764,12 +2788,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getGenitaliaSection(PhysicalExamSection physicalExamSection) {
 		if (GET_GENITALIA_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(106));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(106));
 			try {
 				GET_GENITALIA_SECTION__EOCL_QRY = helper.createQuery(GET_GENITALIA_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2809,12 +2832,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getRectumSection(PhysicalExamSection physicalExamSection) {
 		if (GET_RECTUM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(107));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(107));
 			try {
 				GET_RECTUM_SECTION__EOCL_QRY = helper.createQuery(GET_RECTUM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2854,12 +2876,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static Section getExtremitiesSection(PhysicalExamSection physicalExamSection) {
 		if (GET_EXTREMITIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(108));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(108));
 			try {
 				GET_EXTREMITIES_SECTION__EOCL_QRY = helper.createQuery(GET_EXTREMITIES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

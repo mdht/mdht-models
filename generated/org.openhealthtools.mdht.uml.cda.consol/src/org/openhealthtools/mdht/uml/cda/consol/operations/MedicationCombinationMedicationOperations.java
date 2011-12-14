@@ -140,18 +140,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMoodCode"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMoodCode"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -197,20 +199,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDoseQuantityOrRateQuantity"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DOSE_QUANTITY_OR_RATE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDoseQuantityOrRateQuantity"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -256,19 +258,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasConsents"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_CONSENTS,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasConsents"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -283,13 +286,13 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
-			+ "or not self.getSection().informant->isEmpty()"
-			+ "or not self.getClinicalDocument().informant->isEmpty()"
-			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
-			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
-			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
-			+ "   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
+"or not self.getSection().informant->isEmpty()"+
+"or not self.getClinicalDocument().informant->isEmpty()"+
+"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
+"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
+"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
+"   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationInformationSource(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Information Source</em>}' invariant operation.
@@ -326,20 +329,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationInformationSource"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_INFORMATION_SOURCE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationInformationSource"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -385,20 +388,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasPreconditionCriterion"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRECONDITION_CRITERION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasPreconditionCriterion"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -444,18 +447,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_REASON,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasReason"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_REASON,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasReason"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -470,9 +475,9 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "
-			+ "cda::ClinicalStatement | not target.oclIsUndefined() and "
-			+ "  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : "+
+"cda::ClinicalStatement | not target.oclIsUndefined() and "+
+"  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationHasReasonProblem(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Has Reason Problem</em>}' invariant operation.
@@ -506,20 +511,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasReasonProblem"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_REASON_PROBLEM,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasReasonProblem"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -565,19 +570,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasProduct"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasProduct"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -623,18 +629,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DOSING,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDosing"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DOSING,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDosing"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -649,10 +657,10 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "
-			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "
-			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "
-			+ "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor "+
+"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor "+
+"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor "+
+"self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationDosingRelationship(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Dosing Relationship</em>}' invariant operation.
@@ -686,20 +694,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationDosingRelationship"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_DOSING_RELATIONSHIP,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationDosingRelationship"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -745,20 +753,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDescriptionNoMedNotKnown"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasDescriptionNoMedNotKnown"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -804,20 +812,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationReasonClassMood"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_REASON_CLASS_MOOD,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationReasonClassMood"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -863,20 +871,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasProductEntry"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_PRODUCT_ENTRY,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasProductEntry"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -922,20 +930,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasIntructionsInversion"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_INTRUCTIONS_INVERSION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasIntructionsInversion"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -981,20 +989,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductStrength"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_STRENGTH,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductStrength"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1040,19 +1048,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductName"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_NAME,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductName"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1098,20 +1107,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationPreconditionReference"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRECONDITION_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationPreconditionReference"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1157,20 +1166,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasSupplyEntryInversion"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasSupplyEntryInversion"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1216,20 +1225,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasFillNumber"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_HAS_FILL_NUMBER,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationHasFillNumber"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1275,20 +1284,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationCombinationMedicationSubstanceAdministration"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationCombinationMedicationSubstanceAdministration"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1334,18 +1343,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationId"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationId"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1391,19 +1402,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationStatusCode"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationStatusCode"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1449,20 +1461,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationEffectiveTime"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationEffectiveTime"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1477,9 +1489,9 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.112'))";
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.5.112'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationRouteCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Route Code</em>}' invariant operation.
@@ -1512,18 +1524,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationRouteCode"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_ROUTE_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationRouteCode"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1569,20 +1583,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationApproachSiteCode"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_APPROACH_SITE_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationApproachSiteCode"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1628,19 +1642,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationDoseQuantity"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_DOSE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationDoseQuantity"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1686,19 +1701,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationRateQuantity"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_RATE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationRateQuantity"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1744,20 +1760,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMaxDoseQuantity"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MAX_DOSE_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMaxDoseQuantity"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1803,20 +1819,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMedicationSeriesNumberObservation"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MEDICATION_SERIES_NUMBER_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMedicationSeriesNumberObservation"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1862,20 +1878,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMedicationStatusObservation"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_MEDICATION_STATUS_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationMedicationStatusObservation"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1921,20 +1937,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationReactionObservation"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_REACTION_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationReactionObservation"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -1980,20 +1996,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductInstance"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PRODUCT_INSTANCE,
+						 ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationProductInstance"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}
@@ -2033,12 +2049,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(108));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(108));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2079,12 +2094,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(109));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(109));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2125,12 +2139,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(110));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(110));
 			try {
 				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2173,12 +2186,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(111));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(111));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2220,12 +2232,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	public static EList<Act> getInternalReferences(MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(112));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(112));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2268,12 +2279,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(113));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(113));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2316,12 +2326,11 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			MedicationCombinationMedication medicationCombinationMedication) {
 		if (GET_SUPPLY_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(114));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION, ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(114));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2337,9 +2346,9 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityCode(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}' invariant operation.
@@ -2372,18 +2381,20 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationCombinationMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationCombinationMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
-					new Object[] { medicationCombinationMedication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_ACTIVITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationActivityCode"),
+						 new Object [] { medicationCombinationMedication }));
 			}
 			return false;
 		}

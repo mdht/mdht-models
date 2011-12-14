@@ -58,8 +58,7 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCode(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCondition(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCondition(this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +96,7 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public HospitalDischargeDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalDischargeDiagnosisSectionImpl
