@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Generated from MDHT UML models.
+-->
+<xsd:schema xmlns:gdt="urn:hl7-org:greencda:datatypes" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:hl7-org:greencda:datatypes">
+  <!-- ================================================== -->
+  <!-- =====  Simple Type Definitions  -->
+  <!-- ================================================== -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ConfidentialityType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ConfidentialityType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="N"/>
+      <xsd:enumeration value="R"/>
+      <xsd:enumeration value="V"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CurrencyType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="CurrencyType">
+    <xsd:annotation>
+      <xsd:documentation>Enumeration of the types of currency available</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ARS"/>
+      <xsd:enumeration value="AUD"/>
+      <xsd:enumeration value="BRL"/>
+      <xsd:enumeration value="CAD"/>
+      <xsd:enumeration value="CHF"/>
+      <xsd:enumeration value="CLF"/>
+      <xsd:enumeration value="CNY"/>
+      <xsd:enumeration value="DEM"/>
+      <xsd:enumeration value="ESP"/>
+      <xsd:enumeration value="EUR"/>
+      <xsd:enumeration value="FIM"/>
+      <xsd:enumeration value="FRF"/>
+      <xsd:enumeration value="GBP"/>
+      <xsd:enumeration value="ILS"/>
+      <xsd:enumeration value="INR"/>
+      <xsd:enumeration value="JPY"/>
+      <xsd:enumeration value="KRW"/>
+      <xsd:enumeration value="MXN"/>
+      <xsd:enumeration value="NLG"/>
+      <xsd:enumeration value="NZD"/>
+      <xsd:enumeration value="PHP"/>
+      <xsd:enumeration value="RUR"/>
+      <xsd:enumeration value="THB"/>
+      <xsd:enumeration value="TRL"/>
+      <xsd:enumeration value="TWD"/>
+      <xsd:enumeration value="USD"/>
+      <xsd:enumeration value="ZAR"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  NullFlavorType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="NullFlavorType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NP"/>
+      <xsd:enumeration value="NI"/>
+      <xsd:enumeration value="MSK"/>
+      <xsd:enumeration value="NA"/>
+      <xsd:enumeration value="OTH"/>
+      <xsd:enumeration value="NINF"/>
+      <xsd:enumeration value="PINF"/>
+      <xsd:enumeration value="UNK"/>
+      <xsd:enumeration value="NASK"/>
+      <xsd:enumeration value="TRC"/>
+      <xsd:enumeration value="ASKU"/>
+      <xsd:enumeration value="NAV"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  RelationshipType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="RelationshipType">
+    <xsd:annotation>
+      <xsd:documentation>Enumeration of the different relationship types, INCOMPLETE</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="CHILD"/>
+      <xsd:enumeration value="SON"/>
+      <xsd:enumeration value="HUSB"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  StatusType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="StatusType">
+    <xsd:annotation>
+      <xsd:documentation>Enumeration of the different status values available for status codes</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="normal"/>
+      <xsd:enumeration value="active"/>
+      <xsd:enumeration value="cancelled"/>
+      <xsd:enumeration value="pending"/>
+      <xsd:enumeration value="suspended"/>
+      <xsd:enumeration value="terminated"/>
+      <xsd:enumeration value="nullified"/>
+      <xsd:enumeration value="completed"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  SupportType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="SupportType">
+    <xsd:annotation>
+      <xsd:documentation>Enumeration of the types of providers available</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="GUARD"/>
+      <xsd:enumeration value="AGNT"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ValueType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:simpleType name="ValueType">
+    <xsd:annotation>
+      <xsd:documentation>Enumeration of the different xsi:type values available for a VALUE</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="CE"/>
+      <xsd:enumeration value="BL"/>
+      <xsd:enumeration value="BN"/>
+      <xsd:enumeration value="BIN"/>
+      <xsd:enumeration value="CR"/>
+      <xsd:enumeration value="UUID"/>
+      <xsd:enumeration value="II"/>
+      <xsd:enumeration value="URL"/>
+      <xsd:enumeration value="AD"/>
+      <xsd:enumeration value="BL"/>
+      <xsd:enumeration value="EN"/>
+      <xsd:enumeration value="QTY"/>
+      <xsd:enumeration value="PQR"/>
+      <xsd:enumeration value="RTO"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- ================================================== -->
+  <!-- =====  Complex Type Definitions  -->
+  <!-- ================================================== -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CodedSimpleValue  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CodedSimpleValue">
+    <xsd:attribute name="code" type="xsd:string"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  CodedWithEquivalents  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="CodedWithEquivalents">
+    <xsd:complexContent>
+      <xsd:restriction base="gdt:ConceptDescriptor">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="originalText" type="xsd:string"/>
+          <xsd:element maxOccurs="0" minOccurs="0" name="qualifier" type="gdt:QualifierType"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ConceptDescriptor  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ConceptDescriptor">
+    <xsd:annotation>
+      <xsd:documentation>Code</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="originalText" type="xsd:string"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="qualifier" type="gdt:QualifierType"/>
+    </xsd:sequence>
+    <xsd:attribute name="code" type="xsd:string"/>
+    <xsd:attribute name="displayName" type="xsd:string"/>
+    <xsd:attribute name="codeSystem" type="xsd:string"/>
+    <xsd:attribute name="codeSystemName" type="xsd:string"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  EncapsulatedData  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType mixed="true" name="EncapsulatedData">
+    <xsd:annotation>
+      <xsd:documentation>Data that is primarily intended for human interpretation
+            or for further machine processing is outside the scope of
+            HL7. This includes unformatted or formatted written language,
+            multimedia data, or structured information as defined by a
+            different standard (e.g., XML-signatures.)  Instead of the
+            data itself, an ED may contain 
+            only a reference (see TEL.) Note
+            that the ST data type is a
+            specialization of the ED data type
+            when the ED media type is text/plain.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="reference" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>A telecommunication address (TEL), such as a URL
+                        for HTTP or FTP, which will resolve to precisely
+                        the same binary data that could as well have been
+                        provided as inline data.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="thumbnail" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute default="text/plain" name="mediaType" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>Identifies the type of the encapsulated data and
+                     identifies a method to interpret or render the data.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="language" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>For character based information the language property
+                     specifies the human language of the text.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="compression" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>Indicates whether the raw byte data is compressed,
+                     and what compression algorithm was used.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="integrityCheck" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>The integrity check is a short binary value representing
+                     a cryptographically strong checksum that is calculated
+                     over the binary data. The purpose of this property, when
+                     communicated with a reference is for anyone to validate
+                     later whether the reference still resolved to the same
+                     data that the reference resolved to when the encapsulated
+                     data value with reference was created.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute default="SHA-1" name="integrityCheckAlgorithm" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>Specifies the algorithm used to compute the
+                     integrityCheck value.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  InstanceIdentifier  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="InstanceIdentifier">
+    <xsd:annotation>
+      <xsd:documentation>Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:attribute name="root" type="xsd:string"/>
+    <xsd:attribute name="extension" type="xsd:string"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  IntervalOfTimestamps  <<complexType, choice>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="IntervalOfTimestamps">
+    <xsd:choice maxOccurs="1" minOccurs="0">
+      <xsd:sequence>
+        <xsd:element name="low" type="gdt:Timestamp">
+          <xsd:annotation>
+            <xsd:documentation>The low limit of the interval.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:choice minOccurs="0">
+          <xsd:element minOccurs="0" name="width" type="gdt:PhysicalQuantity">
+            <xsd:annotation>
+              <xsd:documentation>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="high" type="gdt:Timestamp">
+            <xsd:annotation>
+              <xsd:documentation>The high limit of the interval.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:sequence>
+      <xsd:element name="high" type="gdt:Timestamp"/>
+      <xsd:sequence>
+        <xsd:element name="width" type="gdt:PhysicalQuantity">
+          <xsd:annotation>
+            <xsd:documentation>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="high" type="gdt:Timestamp">
+          <xsd:annotation>
+            <xsd:documentation>The high limit of the interval.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:sequence>
+        <xsd:element name="center" type="gdt:Timestamp">
+          <xsd:annotation>
+            <xsd:documentation>The arithmetic mean of the interval (low plus high
+                           divided by 2). The purpose of distinguishing the center
+                           as a semantic property is for conversions of intervals
+                           from and to point values.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="width" type="gdt:PhysicalQuantity">
+          <xsd:annotation>
+            <xsd:documentation>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:choice>
+    <xsd:attribute name="value" type="xsd:string"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+    <xsd:attribute name="operator" type="xsd:string"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  MonetaryAmount  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="MonetaryAmount">
+    <xsd:annotation>
+      <xsd:documentation>Monetary Amount</xsd:documentation>
+    </xsd:annotation>
+    <xsd:attribute name="value" type="xsd:string" use="required"/>
+    <xsd:attribute name="currency" type="gdt:CurrencyType"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  ObservationValue  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="ObservationValue">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:element name="integer">
+          <xsd:complexType>
+            <xsd:attribute name="value" type="xsd:string"/>
+            <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="monetaryAmount" type="gdt:MonetaryAmount"/>
+        <xsd:element name="physicalQuantity" type="gdt:PhysicalQuantity"/>
+        <xsd:element name="simpleCode">
+          <xsd:complexType>
+            <xsd:attribute name="code" type="xsd:string"/>
+            <xsd:attribute name="codeSystem" type="xsd:string"/>
+            <xsd:attribute name="codeSystemName" type="xsd:string"/>
+            <xsd:attribute name="displayName" type="xsd:string"/>
+            <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="string">
+          <xsd:complexType mixed="true">
+            <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="conceptDescriptor" type="gdt:ConceptDescriptor"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  OrganizationName  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType mixed="true" name="OrganizationName">
+    <xsd:annotation>
+      <xsd:documentation>Organization name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PersonName  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PersonName">
+    <xsd:annotation>
+      <xsd:documentation>Person Name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="prefix" type="xsd:string"/>
+      <xsd:element maxOccurs="unbounded" name="given" type="xsd:string"/>
+      <xsd:element name="family" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="suffix" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PhysicalQuantity  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="PhysicalQuantity">
+    <xsd:annotation>
+      <xsd:documentation>Physical Quantity</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="translation">
+        <xsd:annotation>
+          <xsd:documentation>An alternative representation of the same physical
+                        quantity expressed in a different unit, of a different
+                        unit code system and possibly with a different value.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="originalText" type="gdt:EncapsulatedData">
+              <xsd:annotation>
+                <xsd:documentation>The text or phrase used as the basis for the coding.</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="0" minOccurs="0" name="translation" type="xsd:string"/>
+          </xsd:sequence>
+          <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType">
+            <xsd:annotation>
+              <xsd:documentation>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="code" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>The plain code symbol defined by the code system.
+                     For example, "784.0" is the code symbol of the ICD-9
+                     code "784.0" for headache.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="codeSystem" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the code system that defines the code.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="codeSystemName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>A common name of the coding system.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="codeSystemVersion" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>If applicable, a version descriptor defined
+                     specifically for the given code system.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="displayName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>A name or title for the code, under which the sending
+                     system shows the code value to its users.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="value" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>The magnitude of the measurement value in terms of
+                     the unit specified in the code.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="value" type="xsd:string"/>
+    <xsd:attribute name="unit" type="xsd:string"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  PostalAddress  <<complexType>>  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType mixed="true" name="PostalAddress">
+    <xsd:annotation>
+      <xsd:documentation>Address (US only)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element maxOccurs="2" minOccurs="0" name="streetAddressLine" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="city" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="state" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="postalCode" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  QualifierType  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="QualifierType">
+    <xsd:sequence>
+      <xsd:element name="name">
+        <xsd:complexType>
+          <xsd:complexContent>
+            <xsd:restriction base="gdt:ConceptDescriptor">
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="originalText" type="xsd:string"/>
+                <xsd:element maxOccurs="0" minOccurs="0" name="qualifier" type="gdt:QualifierType"/>
+              </xsd:sequence>
+            </xsd:restriction>
+          </xsd:complexContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="value">
+        <xsd:complexType>
+          <xsd:complexContent>
+            <xsd:restriction base="gdt:ConceptDescriptor">
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="originalText" type="xsd:string"/>
+                <xsd:element maxOccurs="0" minOccurs="0" name="qualifier" type="gdt:QualifierType"/>
+              </xsd:sequence>
+            </xsd:restriction>
+          </xsd:complexContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  TelecomAddress  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="TelecomAddress">
+    <xsd:annotation>
+      <xsd:documentation>A telephone number (voice or fax), e-mail address, or
+            other locator for a resource (information or service)
+            mediated by telecommunication equipment. The address
+            is specified as a Universal Resource Locator (URL)
+            qualified by time specification and use codes that help
+            in deciding which address to use for a given time and
+            purpose.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="useablePeriod">
+        <xsd:annotation>
+          <xsd:documentation>Specifies the periods of time during which the
+                     telecommunication address can be used.  For a
+                     telephone number, this can indicate the time of day
+                     in which the party can be reached on that telephone.
+                     For a web address, it may specify a time range in
+                     which the web content is promised to be available
+                     under the given address.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType">
+            <xsd:annotation>
+              <xsd:documentation>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="value" type="xsd:string"/>
+          <xsd:attribute default="I" name="operator" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>A code specifying whether the set component is included
+                     (union) or excluded (set-difference) from the set, or
+                     other set operations with the current set component and
+                     the set as constructed from the representation stream
+                     up to the current point.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType">
+      <xsd:annotation>
+        <xsd:documentation>An exceptional value expressing missing information
+               and possibly the reason why the information is missing.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="value" type="xsd:string"/>
+    <xsd:attribute name="use" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>One or more codes advising a system or user which
+                     telecommunication address in a set of like addresses
+                     to select for a given telecommunication need.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Timestamp  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <xsd:complexType name="Timestamp">
+    <xsd:attribute name="value" type="xsd:string"/>
+    <xsd:attribute name="nullFlavor" type="gdt:NullFlavorType"/>
+  </xsd:complexType>
+</xsd:schema>
