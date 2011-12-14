@@ -84,7 +84,7 @@ public class RectumSectionImpl extends SectionImpl implements RectumSection {
 	 * @generated
 	 */
 	public RectumSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // RectumSectionImpl

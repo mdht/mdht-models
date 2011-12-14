@@ -65,7 +65,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveReferenceHasMIMEType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocumentHasId(this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocumentHasId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +86,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +105,7 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public AdvanceDirectiveReference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveReferenceImpl

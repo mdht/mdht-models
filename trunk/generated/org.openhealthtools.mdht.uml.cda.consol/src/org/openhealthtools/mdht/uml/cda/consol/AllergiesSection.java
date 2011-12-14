@@ -18,13 +18,6 @@ import org.eclipse.emf.common.util.EList;
  *
  * <!-- begin-model-doc -->
  * This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.
- * The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the
- * associated adverse reactions suffered by the patient.
- * <p>
- *     The Allergies and Other Adverse Reactions Section contains data on the substance intolerances and the
- *     associated adverse reactions suffered by the patient. At a minimum, currently active and any relevant historical
- *     allergies and adverse reactions shall be listed. 
- * </p>
  * <!-- end-model-doc -->
  *
  *

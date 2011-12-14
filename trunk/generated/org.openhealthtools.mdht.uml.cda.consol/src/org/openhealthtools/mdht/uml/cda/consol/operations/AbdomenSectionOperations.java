@@ -64,9 +64,9 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbdomenSectionCode(AbdomenSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abdomen Section Code</em>}' invariant operation.
@@ -98,20 +98,16 @@ public class AbdomenSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.ABDOMEN_SECTION);
 			try {
 				VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("AbdomenSectionCode"),
-						 new Object [] { abdomenSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("AbdomenSectionCode"), new Object[] { abdomenSection }));
 			}
 			return false;
 		}
@@ -156,20 +152,17 @@ public class AbdomenSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.ABDOMEN_SECTION);
 			try {
 				VALIDATE_ABDOMEN_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_PROBLEM_ENTRY,
-						 ConsolPlugin.INSTANCE.getString("AbdomenSectionProblemEntry"),
-						 new Object [] { abdomenSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_PROBLEM_ENTRY,
+					ConsolPlugin.INSTANCE.getString("AbdomenSectionProblemEntry"), new Object[] { abdomenSection }));
 			}
 			return false;
 		}
@@ -208,11 +201,12 @@ public class AbdomenSectionOperations extends SectionOperations {
 	public static AllergyObservation getProblemEntry(AbdomenSection abdomenSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ABDOMEN_SECTION, ConsolPackage.Literals.ABDOMEN_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ABDOMEN_SECTION,
+				ConsolPackage.Literals.ABDOMEN_SECTION.getEAllOperations().get(57));
 			try {
 				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -135,7 +135,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +146,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -192,7 +194,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -248,7 +251,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -258,7 +262,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -268,7 +273,8 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -340,7 +346,7 @@ public class InsuranceProviderImpl extends ActImpl implements InsuranceProvider 
 	 * @generated
 	 */
 	public InsuranceProvider init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // InsuranceProviderImpl

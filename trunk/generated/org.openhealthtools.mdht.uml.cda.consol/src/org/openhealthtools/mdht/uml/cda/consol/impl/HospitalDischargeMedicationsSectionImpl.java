@@ -58,7 +58,8 @@ public class HospitalDischargeMedicationsSectionImpl extends SectionImpl impleme
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTemplateId(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class HospitalDischargeMedicationsSectionImpl extends SectionImpl impleme
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCode(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class HospitalDischargeMedicationsSectionImpl extends SectionImpl impleme
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionMedication(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionMedication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +99,7 @@ public class HospitalDischargeMedicationsSectionImpl extends SectionImpl impleme
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalDischargeMedicationsSectionImpl

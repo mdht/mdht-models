@@ -132,7 +132,8 @@ public class EncountersActivitesImpl extends EncounterImpl implements Encounters
 	 */
 	public boolean validateEncountersActivitesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersActivitesOperations.validateEncountersActivitesServiceDeliveryLocation(this, diagnostics, context);
+		return EncountersActivitesOperations.validateEncountersActivitesServiceDeliveryLocation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -168,7 +169,7 @@ public class EncountersActivitesImpl extends EncounterImpl implements Encounters
 	 * @generated
 	 */
 	public EncountersActivites init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncountersActivitesImpl

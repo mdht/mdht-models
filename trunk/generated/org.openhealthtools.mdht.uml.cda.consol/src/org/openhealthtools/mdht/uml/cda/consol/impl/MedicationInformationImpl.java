@@ -83,7 +83,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * @generated
 	 */
 	public MedicationInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationInformationImpl

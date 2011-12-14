@@ -57,7 +57,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +112,8 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateMedicationSeriesNumberObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(this, diagnostics, context);
+		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +122,7 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public MedicationSeriesNumberObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationSeriesNumberObservationImpl

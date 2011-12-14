@@ -57,7 +57,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationTargetOfEntryRelationship(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationTargetOfEntryRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalParticipants(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalRelationships(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalRelationships(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -159,7 +163,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * @generated
 	 */
 	public HealthStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HealthStatusObservationImpl

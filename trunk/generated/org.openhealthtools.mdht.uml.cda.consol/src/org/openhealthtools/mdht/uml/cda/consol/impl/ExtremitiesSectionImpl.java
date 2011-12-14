@@ -84,7 +84,7 @@ public class ExtremitiesSectionImpl extends SectionImpl implements ExtremitiesSe
 	 * @generated
 	 */
 	public ExtremitiesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ExtremitiesSectionImpl
