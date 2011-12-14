@@ -138,11 +138,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_2OrhohSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_2PD8IBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2PD8KxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2PD8PBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2PD8PxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2PD8QhSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2PKCwxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2PQJcxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2PQJfBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2PWQCBSVEeGGzu7fmW9pXw"/>
