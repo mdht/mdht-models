@@ -234,23 +234,6 @@ of the patient.</body>
   <CDA:AssociationValidation xmi:id="_2FizwxSVEeGGzu7fmW9pXw" base_Association="_2FizwRSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-10-CDA-4]</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
-    <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
-      <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
-    </ownedComment>
-    <generalization xmi:id="_2U6FchSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2Uz-5hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Uz-5xSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Uz-6BSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
-  <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet" base_Property="_2Uz-5hSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2KKOBhSVEeGGzu7fmW9pXw" name="FunctionalStatusSection">
     <ownedComment xmi:id="_2KTX8xSVEeGGzu7fmW9pXw" annotatedElement="_2KKOBhSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -587,61 +570,8 @@ hospital facility. It shall include entries for observations as described in the
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PidTBSVEeGGzu7fmW9pXw" base_Association="_2PidShSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2RqkOxSVEeGGzu7fmW9pXw" name="HospitalCourseSection">
-    <ownedComment xmi:id="_2RqkQhSVEeGGzu7fmW9pXw" annotatedElement="_2RqkOxSVEeGGzu7fmW9pXw">
-      <body>The hospital course section shall contain a narrative description of the sequence of events from admission to discharge in&#xD;
-a hospital facility.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2RqkPBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkOxSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Hospital Course Section contains information about of the sequence of events from admission to&#xD;
-    discharge in a hospital facility. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <generalization xmi:id="_2RqkQxSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2RqkQBSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-  </uml:Class>
-  <CDA:CDATemplate xmi:id="_55YpcBnSEeGs5a462vYX5Q" base_Class="_2RqkOxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.5"/>
-  <CDA:CodeSystemConstraint xmi:id="_2RqkQRSVEeGGzu7fmW9pXw" code="8648-8" displayName="HOSPITAL COURSE" base_Property="_2RqkQBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_2PidURSVEeGGzu7fmW9pXw" name="HospitalDischargeDiagnosisSection">
-    <ownedComment xmi:id="_2Poj4hSVEeGGzu7fmW9pXw" annotatedElement="_2PidURSVEeGGzu7fmW9pXw">
-      <body>The discharge diagnosis section shall contain a narrative description of the conditions that need to be monitored after&#xD;
-discharge from the hospital and those that were resolved during the hospital course. It shall include entries for patient&#xD;
-conditions as described in the Entry Content Module.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2PidUhSVEeGGzu7fmW9pXw" annotatedElement="_2PidURSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Discharge Diagnosis Section contains information about the conditions identified during the hospital&#xD;
-    stay that either need to be monitored after discharge from the hospital and/or where resolved during the hospital&#xD;
-    course. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <generalization xmi:id="_2Poj4xSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2Poj4BSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2PidVBSVEeGGzu7fmW9pXw" name="condition" association="_2PidWRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_2H6yUBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2PidVRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2PidVhSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2PidWRSVEeGGzu7fmW9pXw" memberEnd="_2PidVBSVEeGGzu7fmW9pXw _2PidWhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2PidWhSVEeGGzu7fmW9pXw" type="_2PidURSVEeGGzu7fmW9pXw" association="_2PidWRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24"/>
-  <CDA:CodeSystemConstraint xmi:id="_2Poj4RSVEeGGzu7fmW9pXw" code="11535-2" displayName="HOSPITAL DISCHARGE DX" base_Property="_2Poj4BSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw" base_Association="_2PidWRSVEeGGzu7fmW9pXw"/>
+ 
+
   <uml:Class xmi:id="_sHrUoBUSEeG6PvUxSTZnaw" name="Indication">
     <ownedComment xmi:id="_CjRfQB-YEeGtfPlBCjHWkw">
       <body>The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems Section</body>

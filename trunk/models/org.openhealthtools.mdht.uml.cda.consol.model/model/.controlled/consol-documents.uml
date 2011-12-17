@@ -831,16 +831,16 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="dischargeDiagnosisSection" association="_2Unx1xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2PidURSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxohSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxpBSVEeGGzu7fmW9pXw" name="dischargeDiet" association="_2Ut4MhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2Uz-4xSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_2Uz-4xSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxpRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxphSVEeGGzu7fmW9pXw" name="hospitalDischargeMedicationsSection" association="_2Ut4NRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj7RSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_2Poj7RSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxpxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxqBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -854,7 +854,7 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxsBSVEeGGzu7fmW9pXw" name="hospitalCourseSection" association="_2Ut4QRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2RqkOxSVEeGGzu7fmW9pXw"/>
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_2RqkOxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxsRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxshSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
@@ -892,7 +892,7 @@ treatment or implementation of confidentiality.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxxRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2UnxyBSVEeGGzu7fmW9pXw"/>
+ 
   <uml:Association xmi:id="_2UnxyxSVEeGGzu7fmW9pXw" memberEnd="_2UnxlhSVEeGGzu7fmW9pXw _2UnxzBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2UnxzBSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2UnxyxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -906,6 +906,9 @@ treatment or implementation of confidentiality.</body>
     <ownedEnd xmi:id="_2Unx1RSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Unx1BSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2Unx1xSVEeGGzu7fmW9pXw" memberEnd="_2UnxoRSVEeGGzu7fmW9pXw _2Ut4MBSVEeGGzu7fmW9pXw">
+    <generalization xmi:id="_4-GdYCiuEeGhk8Yq0-SNUw">
+      <general xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
+    </generalization>
     <ownedEnd xmi:id="_2Ut4MBSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Unx1xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2Ut4MhSVEeGGzu7fmW9pXw" memberEnd="_2UnxpBSVEeGGzu7fmW9pXw _2Ut4MxSVEeGGzu7fmW9pXw">
@@ -914,7 +917,6 @@ treatment or implementation of confidentiality.</body>
   <uml:Association xmi:id="_2Ut4NRSVEeGGzu7fmW9pXw" memberEnd="_2UnxphSVEeGGzu7fmW9pXw _2Ut4NhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Ut4NhSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Ut4NRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2Ut4OBSVEeGGzu7fmW9pXw"/>
   <uml:Association xmi:id="_2Ut4OxSVEeGGzu7fmW9pXw" memberEnd="_2UnxqxSVEeGGzu7fmW9pXw _2Ut4PBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Ut4PBSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Ut4OxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -952,9 +954,7 @@ treatment or implementation of confidentiality.</body>
   <CDA:CodeSystemConstraint xmi:id="_2Uz-4hSVEeGGzu7fmW9pXw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2UnxyhSVEeGGzu7fmW9pXw" base_Association="_2UnxyBSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-1]</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:AssociationValidation xmi:id="_2UnxzRSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2UnxyxSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-2]</ruleId>
   </CDA:AssociationValidation>
@@ -976,9 +976,7 @@ treatment or implementation of confidentiality.</body>
   <CDA:AssociationValidation xmi:id="_2Ut4NxSVEeGGzu7fmW9pXw" base_Association="_2Ut4NRSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-8]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Ut4OhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4OBSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-9]</ruleId>
-  </CDA:AssociationValidation>
+
   <CDA:AssociationValidation xmi:id="_2Ut4PRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4OxSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-10]</ruleId>
   </CDA:AssociationValidation>
@@ -1252,15 +1250,14 @@ treatment or implementation of confidentiality.</body>
   <uml:Association xmi:id="_2KT_ARSVEeGGzu7fmW9pXw" memberEnd="_2KKOAxSVEeGGzu7fmW9pXw _2KT_AhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2KT_AhSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2KT_ARSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2KgMQBSVEeGGzu7fmW9pXw"/>
+ 
   <uml:Association xmi:id="_2IMfIRSVEeGGzu7fmW9pXw" memberEnd="_2IJb3RSVEeGGzu7fmW9pXw _2IMfIhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2IMfIhSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2IMfIRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2INGMBSVEeGGzu7fmW9pXw" memberEnd="_2IJb4BSVEeGGzu7fmW9pXw _2INGMRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2INGMRSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2INGMBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2INGMxSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2INtQhSVEeGGzu7fmW9pXw"/>
+
   <uml:Association xmi:id="_2IOUUBSVEeGGzu7fmW9pXw" memberEnd="_2IJb6BSVEeGGzu7fmW9pXw _2IOUURSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2IOUURSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2IOUUBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -1276,7 +1273,7 @@ treatment or implementation of confidentiality.</body>
   <uml:Association xmi:id="_2IQJgBSVEeGGzu7fmW9pXw" memberEnd="_2IJb8BSVEeGGzu7fmW9pXw _2IQJgRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2IQJgRSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2IQJgBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2IQwkBSVEeGGzu7fmW9pXw"/>
+ 
   <uml:Association xmi:id="_2IRXoBSVEeGGzu7fmW9pXw" memberEnd="_2IJb9BSVEeGGzu7fmW9pXw _2IRXoRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2IRXoRSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2IRXoBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -1284,7 +1281,7 @@ treatment or implementation of confidentiality.</body>
   <uml:Association xmi:id="_2IR-shSVEeGGzu7fmW9pXw" memberEnd="_2IJb-RSVEeGGzu7fmW9pXw _2IR-sxSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2IR-sxSVEeGGzu7fmW9pXw" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_2IR-shSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2ISlwBSVEeGGzu7fmW9pXw"/>
+  
   <CDA:CDATemplate xmi:id="_2IKC4BSVEeGGzu7fmW9pXw" base_Class="_2IJb0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.2" assigningAuthorityName="HITSP C32">
     <ruleId>C32-[CT1-19]</ruleId>
   </CDA:CDATemplate>
@@ -1364,21 +1361,14 @@ treatment or implementation of confidentiality.</body>
   <CDA:AssociationValidation xmi:id="_2KUmEBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2KT_ARSVEeGGzu7fmW9pXw">
     <ruleId>CONF-123</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2KgMQhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2KgMQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-15</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:AssociationValidation xmi:id="_2IMfIxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IMfIRSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-1]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2INGMhSVEeGGzu7fmW9pXw" base_Association="_2INGMBSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-2]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2INtQRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2INGMxSVEeGGzu7fmW9pXw">
-    <ruleId>C32-[CT1-3]</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2INtRBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2INtQhSVEeGGzu7fmW9pXw">
-    <ruleId>C32-[CT1-4]</ruleId>
-  </CDA:AssociationValidation>
+
   <CDA:AssociationValidation xmi:id="_2IOUUhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IOUUBSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-5]</ruleId>
   </CDA:AssociationValidation>
@@ -1394,9 +1384,7 @@ treatment or implementation of confidentiality.</body>
   <CDA:AssociationValidation xmi:id="_2IQJghSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IQJgBSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-13]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2IQwkhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IQwkBSVEeGGzu7fmW9pXw">
-    <ruleId>C32-[CT1-14]</ruleId>
-  </CDA:AssociationValidation>
+ 
   <CDA:AssociationValidation xmi:id="_2IRXohSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2IRXoBSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-15]</ruleId>
   </CDA:AssociationValidation>
@@ -1406,9 +1394,7 @@ treatment or implementation of confidentiality.</body>
   <CDA:AssociationValidation xmi:id="_2IR-tBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IR-shSVEeGGzu7fmW9pXw">
     <ruleId>C32-[CT1-17]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2ISlwhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ISlwBSVEeGGzu7fmW9pXw">
-    <ruleId>C32-[CT1-18]</ruleId>
-  </CDA:AssociationValidation>
+ 
   <uml:Class xmi:id="_2Uhq_hSVEeGGzu7fmW9pXw" name="ReferralSummary">
     <ownedRule xmi:id="_2UhrBhSVEeGGzu7fmW9pXw" name="MedicalSummaryProblemConcernEntry">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2UhrBxSVEeGGzu7fmW9pXw">

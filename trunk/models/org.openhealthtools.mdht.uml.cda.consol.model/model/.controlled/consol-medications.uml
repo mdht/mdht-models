@@ -2530,37 +2530,7 @@ Entry Content Module.</body>
   <CDA:CodeSystemConstraint xmi:id="_2Poj6hSVEeGGzu7fmW9pXw" code="42346-7" displayName="MEDICATIONS ON ADMISSION" base_Property="_2Poj6RSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_2Poj7RSVEeGGzu7fmW9pXw" name="HospitalDischargeMedicationsSection">
-    <ownedComment xmi:id="_2Poj-hSVEeGGzu7fmW9pXw" annotatedElement="_2Poj7RSVEeGGzu7fmW9pXw">
-      <body>The hospital discharge medications section shall contain a narrative description of the medications requested&#xD;
-            (ordered) to be administered to the patient after discharge from the hospital. It shall include entries for&#xD;
-            medication requests as described in the Entry Content Module.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2Poj7hSVEeGGzu7fmW9pXw" annotatedElement="_2Poj7RSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Hospital Discharge Medications Section contains information about the relevant medications of the&#xD;
-    medications ordered for the patient for use after discharge from the hospital. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <generalization xmi:id="_2Poj-xSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2Poj-BSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2Poj8BSVEeGGzu7fmW9pXw" name="medication" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2Poj9RSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Poj8RSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Poj8hSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2Poj9RSVEeGGzu7fmW9pXw" memberEnd="_2Poj8BSVEeGGzu7fmW9pXw _2Poj9hSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2Poj9hSVEeGGzu7fmW9pXw" type="_2Poj7RSVEeGGzu7fmW9pXw" association="_2Poj9RSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11"/>
-  <CDA:CodeSystemConstraint xmi:id="_2Poj-RSVEeGGzu7fmW9pXw" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_2Poj-BSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2Poj9xSVEeGGzu7fmW9pXw" base_Association="_2Poj9RSVEeGGzu7fmW9pXw"/>
+
   <CDA:CodeSystemConstraint xmi:id="_3jQucBq1EeGo461UQq-B1g" code="412307009" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
