@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDrugVehicle()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.24' constraints.validation.error='DrugVehicleTemplateId DrugVehiclePlayingEntityCode DrugVehicleClassCode DrugVehicleCode' code.codeSystemName='SNOMEDCT' classCode='MANU' code.code='412307009'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.24' constraints.validation.error='DrugVehicleTemplateId DrugVehiclePlayingEntityCode DrugVehicleClassCode DrugVehicleCode DrugVehiclePlayingEntity' code.codeSystemName='SNOMEDCT' classCode='MANU' code.code='412307009'"
  * @generated
  */
 public interface DrugVehicle extends ParticipantRole {
@@ -76,6 +76,19 @@ public interface DrugVehicle extends ParticipantRole {
 	 * @generated
 	 */
 	boolean validateDrugVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(rim::Entity))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(rim::Entity))'"
+	 * @generated
+	 */
+	boolean validateDrugVehiclePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

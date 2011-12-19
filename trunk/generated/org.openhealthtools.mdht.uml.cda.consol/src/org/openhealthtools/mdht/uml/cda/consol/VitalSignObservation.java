@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' code.codeSystemName='LOINC' constraints.validation.warning='VitalSignObservationText' classCode='OBS' moodCode='EVN' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' code.codeSystemName='LOINC' classCode='OBS' constraints.validation.warning='VitalSignObservationText' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor' moodCode='EVN'"
  * @generated
  */
 public interface VitalSignObservation extends Observation {
@@ -182,6 +182,19 @@ public interface VitalSignObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateVitalSignObservationText(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateVitalSignObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

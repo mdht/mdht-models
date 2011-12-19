@@ -146,6 +146,15 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCommentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentOperations.validateCommentAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Comment init() {
 		CDAUtil.init(this);
 		return this;

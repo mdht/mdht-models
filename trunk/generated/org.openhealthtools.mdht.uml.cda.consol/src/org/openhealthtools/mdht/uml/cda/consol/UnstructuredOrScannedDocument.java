@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getUnstructuredOrScannedDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.19.1' constraints.validation.error='UnstructuredOrScannedDocumentTemplateId UnstructuredOrScannedDocumentTypeIdFixed UnstructuredOrScannedDocumentHasOneRecordTarget UnstructuredOrScannedDocumentHasAssignedAuthor UnstructuredOrScannedDocumentPatientRoleId UnstructuredOrScannedDocumentHasPatientRoleAddress UnstructuredOrScannedDocumentHasPatientName UnstructuredOrScannedDocumentHasPatientGenderCode UnstructuredOrScannedDocumentHasPatientBirthYear UnstructuredOrScannedDocumentHasScanningDevice UnstructuredOrScannedDocumentHasScanDataEnterer UnstructuredOrScannedDocumentLegalAuthenticatorAssignedEntityId UnstructuredOrScannedDocumentHasNonXMLBody UnstructuredOrScannedDocumentHasNonXMLBodyBinaryText UnstructuredOrScannedDocumentHasNonXMLBodyTextMediaType UnstructuredOrScannedDocumentHasNonXMLBodyTextRepresentation UnstructuredOrScannedDocumentOnePatientPerDocument UnstructuredOrScannedDocumentPatientRoleHasId UnstructuredOrScannedDocumentAssignedAuthorHasAddr UnstructuredOrScannedDocumentAssignedAuthorHasTelecom UnstructuredOrScannedDocumentHasRepresentedCustodianOrganization UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationId UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr UnstructuredOrScannedDocumentHasNonXMLBodyText UnstructuredOrScannedDocumentHasTextReferenceOrRepresentation UnstructuredOrScannedDocumentHasTextMediaTypeValueSet UnstructuredOrScannedDocumentCode UnstructuredOrScannedDocumentEffectiveTime UnstructuredOrScannedDocumentId UnstructuredOrScannedDocumentLanguageCode UnstructuredOrScannedDocumentTypeId' constraints.validation.warning='UnstructuredOrScannedDocumentHasOriginalAuthor UnstructuredOrScannedDocumentNoStructuredData UnstructuredOrScannedDocumentTitle'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.19.1' constraints.validation.error='UnstructuredOrScannedDocumentTemplateId UnstructuredOrScannedDocumentTypeIdFixed UnstructuredOrScannedDocumentHasOneRecordTarget UnstructuredOrScannedDocumentHasAssignedAuthor UnstructuredOrScannedDocumentPatientRoleId UnstructuredOrScannedDocumentHasPatientRoleAddress UnstructuredOrScannedDocumentHasPatientName UnstructuredOrScannedDocumentHasPatientGenderCode UnstructuredOrScannedDocumentHasPatientBirthYear UnstructuredOrScannedDocumentHasScanningDevice UnstructuredOrScannedDocumentHasScanDataEnterer UnstructuredOrScannedDocumentLegalAuthenticatorAssignedEntityId UnstructuredOrScannedDocumentHasNonXMLBody UnstructuredOrScannedDocumentHasNonXMLBodyBinaryText UnstructuredOrScannedDocumentHasNonXMLBodyTextMediaType UnstructuredOrScannedDocumentHasNonXMLBodyTextRepresentation UnstructuredOrScannedDocumentOnePatientPerDocument UnstructuredOrScannedDocumentPatientRoleHasId UnstructuredOrScannedDocumentAssignedAuthorHasAddr UnstructuredOrScannedDocumentAssignedAuthorHasTelecom UnstructuredOrScannedDocumentHasRepresentedCustodianOrganization UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationId UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationName UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredOrScannedDocumentHasRepresentedCustodianOrganizationAddr UnstructuredOrScannedDocumentHasNonXMLBodyText UnstructuredOrScannedDocumentHasTextReferenceOrRepresentation UnstructuredOrScannedDocumentHasTextMediaTypeValueSet UnstructuredOrScannedDocumentCode UnstructuredOrScannedDocumentEffectiveTime UnstructuredOrScannedDocumentId UnstructuredOrScannedDocumentLanguageCode UnstructuredOrScannedDocumentTypeId UnstructuredOrScannedDocumentScanningDevice UnstructuredOrScannedDocumentScanDataEnterer UnstructuredOrScannedDocumentCustodian' constraints.validation.warning='UnstructuredOrScannedDocumentHasOriginalAuthor UnstructuredOrScannedDocumentNoStructuredData UnstructuredOrScannedDocumentTitle UnstructuredOrScannedDocumentScanOriginalAuthor' constraints.validation.info='UnstructuredOrScannedDocumentLegalAuthenticator UnstructuredOrScannedDocumentDocumentationOf'"
  * @generated
  */
 public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints {
@@ -518,6 +518,88 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentTypeId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentScanOriginalAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.dataEnterer->one(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(cda::DataEnterer))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.dataEnterer->one(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(cda::DataEnterer))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentScanDataEnterer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentLegalAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.documentationOf->one(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(rim::ActRelationship))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->one(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(rim::ActRelationship))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentDocumentationOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredOrScannedDocumentCustodian(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

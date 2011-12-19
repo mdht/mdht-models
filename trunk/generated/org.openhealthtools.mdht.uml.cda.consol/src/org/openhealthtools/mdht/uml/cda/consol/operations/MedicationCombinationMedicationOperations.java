@@ -76,6 +76,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationMaxDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Max Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationMedicationSeriesNumberObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Medication Series Number Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationMedicationStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Medication Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Reaction Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#validateMedicationCombinationMedicationProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Product Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication#getMedicationSeriesNumberObservation() <em>Get Medication Series Number Observation</em>}</li>
@@ -1883,6 +1884,63 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationCombinationMedicationPerformer(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Performer</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationCombinationMedicationPerformer(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationCombinationMedicationPerformer(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Performer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationCombinationMedicationPerformer(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param medicationCombinationMedication The receiving '<em><b>Medication Combination Medication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateMedicationCombinationMedicationPerformer(
+			MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION);
+			try {
+				VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_COMBINATION_MEDICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationCombinationMedication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_COMBINATION_MEDICATION__MEDICATION_COMBINATION_MEDICATION_PERFORMER,
+					ConsolPlugin.INSTANCE.getString("MedicationCombinationMedicationPerformer"),
+					new Object[] { medicationCombinationMedication }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateMedicationCombinationMedicationReactionObservation(MedicationCombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Combination Medication Reaction Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2035,7 +2093,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(108));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(112));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2081,7 +2139,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(109));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(113));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2127,7 +2185,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(110));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(114));
 			try {
 				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2175,7 +2233,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(111));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(115));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2222,7 +2280,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(112));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(116));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2270,7 +2328,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(113));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(117));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2318,7 +2376,7 @@ public class MedicationCombinationMedicationOperations extends MedicationActivit
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION,
-				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(114));
+				ConsolPackage.Literals.MEDICATION_COMBINATION_MEDICATION.getEAllOperations().get(118));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

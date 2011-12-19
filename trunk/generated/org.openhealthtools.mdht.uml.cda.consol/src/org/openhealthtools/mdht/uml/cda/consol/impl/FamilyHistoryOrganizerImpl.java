@@ -104,6 +104,15 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubject(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<FamilyHistoryObservation> getFamilyHistoryObservations() {
 		return FamilyHistoryOrganizerOperations.getFamilyHistoryObservations(this);
 	}

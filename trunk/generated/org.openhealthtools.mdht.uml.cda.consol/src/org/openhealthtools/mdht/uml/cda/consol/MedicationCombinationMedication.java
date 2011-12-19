@@ -53,7 +53,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationCombinationMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationActivityCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationCombinationMedicationMoodCode MedicationCombinationMedicationInformationSource MedicationCombinationMedicationHasReasonProblem MedicationCombinationMedicationHasProduct MedicationCombinationMedicationHasDosing MedicationCombinationMedicationDosingRelationship MedicationCombinationMedicationHasDescriptionNoMedNotKnown MedicationCombinationMedicationReasonClassMood MedicationCombinationMedicationHasProductEntry MedicationCombinationMedicationHasIntructionsInversion MedicationCombinationMedicationProductName MedicationCombinationMedicationHasSupplyEntryInversion MedicationCombinationMedicationCombinationMedicationSubstanceAdministration MedicationCombinationMedicationId MedicationActivityCode MedicationCombinationMedicationStatusCode MedicationCombinationMedicationEffectiveTime' routeCode.codeSystem='2.16.840.1.113883.5.112' code.codeSystemName='SNOMEDCT' routeCode.codeSystemName='HL7 RouteOfAdministration' classCode='SBADM' constraints.validation.warning='MedicationCombinationMedicationHasDoseQuantityOrRateQuantity MedicationCombinationMedicationProductStrength MedicationCombinationMedicationHasFillNumber MedicationCombinationMedicationRouteCode MedicationCombinationMedicationDoseQuantity MedicationCombinationMedicationRateQuantity' constraints.validation.info='MedicationCombinationMedicationHasConsents MedicationCombinationMedicationHasPreconditionCriterion MedicationCombinationMedicationHasReason MedicationCombinationMedicationPreconditionReference MedicationCombinationMedicationApproachSiteCode MedicationCombinationMedicationMaxDoseQuantity MedicationCombinationMedicationMedicationSeriesNumberObservation MedicationCombinationMedicationMedicationStatusObservation MedicationCombinationMedicationPerformer MedicationCombinationMedicationReactionObservation MedicationCombinationMedicationProductInstance'"
  * @generated
  */
 public interface MedicationCombinationMedication extends MedicationActivity {
@@ -479,6 +479,19 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 */
 	boolean validateMedicationCombinationMedicationMedicationStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateMedicationCombinationMedicationPerformer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -435,6 +435,72 @@ public class UnstructuredOrScannedDocumentImpl extends GeneralHeaderConstraintsI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUnstructuredOrScannedDocumentScanOriginalAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentScanOriginalAuthor(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentScanningDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentScanningDevice(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentScanDataEnterer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentScanDataEnterer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentLegalAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentLegalAuthenticator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentDocumentationOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentDocumentationOf(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredOrScannedDocumentCustodian(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredOrScannedDocumentOperations.validateUnstructuredOrScannedDocumentCustodian(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredOrScannedDocumentOperations.validateGeneralHeaderConstraintsTemplateId(

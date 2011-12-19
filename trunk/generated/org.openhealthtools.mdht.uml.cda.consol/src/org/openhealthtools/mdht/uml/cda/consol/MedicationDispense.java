@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.hl7.rim.Role;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber' constraints.validation.info='MedicationDispenseMedicationSupplyOrder' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber' classCode='SPLY' constraints.validation.info='MedicationDispensePerformer2 MedicationDispenseMedicationSupplyOrder' moodCode='EVN'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
@@ -116,6 +116,19 @@ public interface MedicationDispense extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateMedicationDispensePerformer2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

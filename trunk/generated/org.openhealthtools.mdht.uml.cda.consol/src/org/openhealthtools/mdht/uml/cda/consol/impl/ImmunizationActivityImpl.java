@@ -229,10 +229,37 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivityPrecondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityPrecondition(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImmunizationActivityImmunizationRefusalReason(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityImmunizationRefusalReason(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivityConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityConsumable(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivityPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityPerformer(this, diagnostics, context);
 	}
 
 	/**

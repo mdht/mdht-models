@@ -88,6 +88,17 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformationOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ImmunizationMedicationInformation init() {
 		CDAUtil.init(this);
 		return this;
