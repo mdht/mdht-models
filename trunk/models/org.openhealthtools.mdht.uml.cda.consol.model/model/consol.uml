@@ -115,7 +115,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_2NiSKhSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2NiSPxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_2NoYwxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2NoY2xSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2NoY3hSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_2NoY5BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2NufZxSVEeGGzu7fmW9pXw"/>
@@ -605,11 +604,13 @@
     <base_Association href=".controlled/consol-socialhistory.uml#_5LuUQBtpEeGT89b80j3MTg"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING">
-    <ruleId>CONF-7119</ruleId>
-    <ruleId>CONF-7120</ruleId>
+    <ruleId>CONF:7119</ruleId>
+    <ruleId>CONF:7120</ruleId>
     <base_Association href=".controlled/consol-results.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xyLJgBrJEeGZ46SdiDZtPQ">
+    <ruleId>CONF:7112</ruleId>
+    <ruleId>CONF:7113</ruleId>
     <base_Association href=".controlled/consol-results.uml#_wGY9IBrJEeGZ46SdiDZtPQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_Pli24BwjEeG_RY8fzJjtMw" severity="INFO">
