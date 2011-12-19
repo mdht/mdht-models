@@ -55,42 +55,20 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalParticipants(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHealthStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationNoAdditionalRelationships(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
 			this, diagnostics, context);
 	}
 

@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
@@ -624,7 +624,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummaryHospitalDischargeMedicationsSection(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Hospital Discharge Medications Section</em>}' invariant operation.
@@ -640,7 +640,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1515,7 +1515,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSection)";
+	protected static final String GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHospitalDischargeMedicationsSection(DischargeSummary) <em>Get Hospital Discharge Medications Section</em>}' query operation.
@@ -1531,12 +1531,12 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSectionEntriesOptional)
 	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection(
+	public static HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSection(
 			DischargeSummary dischargeSummary) {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1550,7 +1550,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY);
-		return (HospitalDischargeMedicationsSection) query.evaluate(dischargeSummary);
+		return (HospitalDischargeMedicationsSectionEntriesOptional) query.evaluate(dischargeSummary);
 	}
 
 	/**

@@ -67,27 +67,19 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationHasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHasOnsetDate(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHasResolutionDate(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemObservationHasUnknownResolutionDate(DiagnosticChain diagnostics,
+	public boolean validateProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHasUnknownResolutionDate(
+		return ProblemObservationOperations.validateProblemObservationHasTextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservationAgeObservationInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(
 			this, diagnostics, context);
 	}
 

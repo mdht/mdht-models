@@ -57,9 +57,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActEffectiveTimeLowHigh(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeLowHigh(this, diagnostics, context);
+	public boolean validateProblemConcernActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeLow(this, diagnostics, context);
 	}
 
 	/**
@@ -67,27 +66,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActHasTreatingProvider(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasTreatingProvider(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActHasProviderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasProviderId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemConcernActHasProviderTreatmentTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActHasProviderTreatmentTime(this, diagnostics, context);
+	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**

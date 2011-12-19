@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActMoodCodeValue PlanOfCareActivityActMoodCode PlanOfCareActivityActId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='2.16.840.1.113883.10.20.22.4.39' classCode.displayName='' constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' classCode.code=''"
  * @generated
  */
 public interface PlanOfCareActivityAct extends Act {
@@ -27,42 +27,14 @@ public interface PlanOfCareActivityAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentActMood::INT or self.moodCode = vocab::x_DocumentActMood::ARQ
-	 *   or self.moodCode = vocab::x_DocumentActMood::PRMS or self.moodCode = vocab::x_DocumentActMood::PRP
-	 *   or self.moodCode = vocab::x_DocumentActMood::RQO
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.39')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentActMood::INT or self.moodCode = vocab::x_DocumentActMood::ARQ\r\n  or self.moodCode = vocab::x_DocumentActMood::PRMS or self.moodCode = vocab::x_DocumentActMood::PRP\r\n  or self.moodCode = vocab::x_DocumentActMood::RQO'"
-	 * @generated
-	 */
-	boolean validatePlanOfCareActivityActMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.25')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.1.25\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.39\')'"
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * isDefined('moodCode')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
-	 * @generated
-	 */
-	boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

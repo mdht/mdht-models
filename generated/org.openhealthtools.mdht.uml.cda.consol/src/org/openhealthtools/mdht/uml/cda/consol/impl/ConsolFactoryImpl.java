@@ -251,12 +251,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHistoryOfPresentIllness();
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
 				return createHospitalAdmissionDiagnosisSection();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
-				return createHospitalDischargeDiagnosisSection();
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createHospitalAdmissionMedicationsSectionEntriesOptional();
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
-				return createHospitalDischargeMedicationsSection();
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION:
 				return createMedicationsAdministeredSection();
 			case ConsolPackage.PHYSICAL_EXAM_SECTION:
@@ -311,8 +307,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createExtremitiesSection();
 			case ConsolPackage.REVIEW_OF_SYSTEMS_SECTION:
 				return createReviewOfSystemsSection();
-			case ConsolPackage.HOSPITAL_COURSE_SECTION:
-				return createHospitalCourseSection();
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION:
 				return createAssessmentAndPlanSection();
 			case ConsolPackage.LANGUAGE_SPOKEN:
@@ -349,8 +343,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReferralSummary();
 			case ConsolPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
+				return createHospitalDischargeDiagnosisSection();
 			case ConsolPackage.DISCHARGE_DIET_SECTION:
 				return createDischargeDietSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
+				return createHospitalDischargeMedicationsSectionEntriesOptional();
+			case ConsolPackage.HOSPITAL_COURSE_SECTION:
+				return createHospitalCourseSection();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
 				return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
@@ -365,6 +365,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationInformationManufacturedMaterial();
 			case ConsolPackage.FAMILY_HISTORY_SUBJECT:
 				return createFamilyHistorySubject();
+			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return createHospitalDischargeStudiesSummarySection();
+			case ConsolPackage.DISCHARGE_MEDICATION:
+				return createDischargeMedication();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS:
+				return createHospitalDischargeDiagnosis();
+			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION:
+				return createHospitalDischargeInstructionsSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
+				return createHospitalDischargeMedicationsSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
+				return createHospitalDischargePhysicalSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1365,6 +1377,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public HospitalDischargePhysicalSection createHospitalDischargePhysicalSection() {
+		HospitalDischargePhysicalSectionImpl hospitalDischargePhysicalSection = new HospitalDischargePhysicalSectionImpl();
+		return hospitalDischargePhysicalSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
@@ -1835,6 +1857,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public HospitalDischargeMedicationsSectionEntriesOptional createHospitalDischargeMedicationsSectionEntriesOptional() {
+		HospitalDischargeMedicationsSectionEntriesOptionalImpl hospitalDischargeMedicationsSectionEntriesOptional = new HospitalDischargeMedicationsSectionEntriesOptionalImpl();
+		return hospitalDischargeMedicationsSectionEntriesOptional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PreconditionForSubstanceAdministration createPreconditionForSubstanceAdministration() {
 		PreconditionForSubstanceAdministrationImpl preconditionForSubstanceAdministration = new PreconditionForSubstanceAdministrationImpl();
 		return preconditionForSubstanceAdministration;
@@ -1898,6 +1930,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public FamilyHistorySubject createFamilyHistorySubject() {
 		FamilyHistorySubjectImpl familyHistorySubject = new FamilyHistorySubjectImpl();
 		return familyHistorySubject;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection() {
+		HospitalDischargeStudiesSummarySectionImpl hospitalDischargeStudiesSummarySection = new HospitalDischargeStudiesSummarySectionImpl();
+		return hospitalDischargeStudiesSummarySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeMedication createDischargeMedication() {
+		DischargeMedicationImpl dischargeMedication = new DischargeMedicationImpl();
+		return dischargeMedication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeDiagnosis createHospitalDischargeDiagnosis() {
+		HospitalDischargeDiagnosisImpl hospitalDischargeDiagnosis = new HospitalDischargeDiagnosisImpl();
+		return hospitalDischargeDiagnosis;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeInstructionsSection createHospitalDischargeInstructionsSection() {
+		HospitalDischargeInstructionsSectionImpl hospitalDischargeInstructionsSection = new HospitalDischargeInstructionsSectionImpl();
+		return hospitalDischargeInstructionsSection;
 	}
 
 	/**

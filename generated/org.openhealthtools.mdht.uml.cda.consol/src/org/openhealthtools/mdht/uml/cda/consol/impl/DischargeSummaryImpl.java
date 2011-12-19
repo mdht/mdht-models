@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
@@ -327,7 +327,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
+	public HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSection() {
 		return DischargeSummaryOperations.getHospitalDischargeMedicationsSection(this);
 	}
 

@@ -73,6 +73,24 @@ public class HospitalCourseSectionImpl extends SectionImpl implements HospitalCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHospitalCourseSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalCourseSectionOperations.validateHospitalCourseSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalCourseSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalCourseSectionOperations.validateHospitalCourseSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalCourseSection init() {
 		CDAUtil.init(this);
 		return this;

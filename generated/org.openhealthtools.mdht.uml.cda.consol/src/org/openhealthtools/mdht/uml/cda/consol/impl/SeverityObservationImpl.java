@@ -55,15 +55,6 @@ public class SeverityObservationImpl extends ObservationImpl implements Severity
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverityObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservationOperations.validateSeverityObservationHasTextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSeverityObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationTextReference(this, diagnostics, context);
 	}

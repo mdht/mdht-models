@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.6' templateId.root='2.16.840.1.113883.10.20.22.4.3' code.displayName='Concern' constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLowHigh ProblemConcernActHasTreatingProvider ProblemConcernActHasProviderId ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' code.codeSystemName='HL7ActClass' classCode='ACT' code.code='CONC' moodCode='EVN' constraints.validation.info='ProblemConcernActHasProviderTreatmentTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.6' templateId.root='2.16.840.1.113883.10.20.22.4.3' code.displayName='Concern' constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' code.codeSystemName='HL7ActClass' classCode='ACT' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' code.code='CONC' moodCode='EVN'"
  * @generated
  */
 public interface ProblemConcernAct extends Act {
@@ -29,54 +29,26 @@ public interface ProblemConcernAct extends Act {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * not self.effectiveTime.low.oclIsUndefined()
-	 *    and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())
-	 *    and ((self.statusCode.code <> 'completed' and self.statusCode.code <> 'aborted') implies self.effectiveTime.high.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.low.oclIsUndefined()\r\n   and ((self.statusCode.code = \'completed\' or self.statusCode.code = \'aborted\') implies not self.effectiveTime.high.oclIsUndefined())\r\n   and ((self.statusCode.code <> \'completed\' and self.statusCode.code <> \'aborted\') implies self.effectiveTime.high.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.low.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProblemConcernActEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.performer->isEmpty()
+	 * not self.effectiveTime.high.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.performer->isEmpty()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.high.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProblemConcernActHasTreatingProvider(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.performer->exists(p : cda::Performer2 | p.assignedEntity.id->size() > 0)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(p : cda::Performer2 | p.assignedEntity.id->size() > 0)'"
-	 * @generated
-	 */
-	boolean validateProblemConcernActHasProviderId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.performer->exists(p : cda::Performer2 | p.time.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(p : cda::Performer2 | p.time.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateProblemConcernActHasProviderTreatmentTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
