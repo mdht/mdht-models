@@ -313,6 +313,11 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_-xkhwhUvEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_H_AaUBUzEeGbmN_W114JUw"/>
+    
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_uvodUyf1EeGO5_JBy9h6BA"/>
+    
+    
+    
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_NozUYBUzEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_SjN_8BUzEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_c6LMshUzEeGbmN_W114JUw"/>
