@@ -43,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationConditionalDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationActivityCode MedicationConditionalDoseStatusCode MedicationConditionalDoseEffectiveTime' code.codeSystemName='SNOMEDCT' routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRouteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseRateQuantity' classCode='SBADM' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDoseReactionObservation MedicationConditionalDoseProductInstance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationConditionalDoseMoodCode MedicationConditionalDoseInformationSource MedicationConditionalDoseHasReasonProblem MedicationConditionalDoseHasProduct MedicationConditionalDoseHasDosing MedicationConditionalDoseDosingRelationship MedicationConditionalDoseHasDescriptionNoMedNotKnown MedicationConditionalDoseReasonClassMood MedicationConditionalDoseHasProductEntry MedicationConditionalDoseHasIntructionsInversion MedicationConditionalDoseProductName MedicationConditionalDoseHasSupplyEntryInversion MedicationConditionalDoseConditionalDosingSubstanceAdministration MedicationConditionalDoseId MedicationActivityCode MedicationConditionalDoseStatusCode MedicationConditionalDoseEffectiveTime' routeCode.codeSystem='2.16.840.1.113883.5.112' code.codeSystemName='SNOMEDCT' routeCode.codeSystemName='HL7 RouteOfAdministration' classCode='SBADM' constraints.validation.warning='MedicationConditionalDoseHasDoseQuantityOrRateQuantity MedicationConditionalDoseProductStrength MedicationConditionalDoseHasFillNumber MedicationConditionalDoseRouteCode MedicationConditionalDoseDoseQuantity MedicationConditionalDoseRateQuantity' constraints.validation.info='MedicationConditionalDoseHasConsents MedicationConditionalDoseHasPreconditionCriterion MedicationConditionalDoseHasReason MedicationConditionalDosePreconditionReference MedicationConditionalDoseApproachSiteCode MedicationConditionalDoseMaxDoseQuantity MedicationConditionalDoseMedicationSeriesNumberObservation MedicationConditionalDoseMedicationStatusObservation MedicationConditionalDosePerformer MedicationConditionalDoseReactionObservation MedicationConditionalDoseProductInstance'"
  * @generated
  */
 public interface MedicationConditionalDose extends MedicationActivity {
@@ -459,6 +459,19 @@ public interface MedicationConditionalDose extends MedicationActivity {
 	 */
 	boolean validateMedicationConditionalDoseMedicationStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateMedicationConditionalDosePerformer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

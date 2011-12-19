@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationSupplyOrder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.17' constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId' classCode='SPLY' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' constraints.validation.info='MedicationSupplyOrderInstructions' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.17' constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' classCode='SPLY' moodCode='INT' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions'"
  * @generated
  */
 public interface MedicationSupplyOrder extends Supply {
@@ -126,6 +126,19 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateMedicationSupplyOrderAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

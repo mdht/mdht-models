@@ -323,6 +323,53 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUnstructuredDocumentScanOriginalAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentScanOriginalAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocumentScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentScanningDevice(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocumentScanDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentScanDataEnterer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocumentLegalAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentLegalAuthenticator(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocumentDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentDocumentationOf(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);

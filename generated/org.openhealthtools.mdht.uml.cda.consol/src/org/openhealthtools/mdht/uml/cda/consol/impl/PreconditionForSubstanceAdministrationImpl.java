@@ -100,6 +100,17 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreconditionForSubstanceAdministrationCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PreconditionForSubstanceAdministration init() {
 		CDAUtil.init(this);
 		return this;

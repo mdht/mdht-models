@@ -392,6 +392,17 @@ public class MedicationCombinationMedicationImpl extends MedicationActivityImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationCombinationMedicationPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationPerformer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationCombinationMedicationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationCombinationMedicationOperations.validateMedicationCombinationMedicationReactionObservation(

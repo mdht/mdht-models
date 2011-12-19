@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Reference;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveReference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.36' constraints.validation.error='AdvanceDirectiveReferenceTemplateId AdvanceDirectiveReferenceExternalDocumentHasId AdvanceDirectiveReferenceTypeCode' typeCode='REFR' constraints.validation.info='AdvanceDirectiveReferenceHasURL AdvanceDirectiveReferenceHasMIMEType'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.36' constraints.validation.error='AdvanceDirectiveReferenceTemplateId AdvanceDirectiveReferenceExternalDocumentHasId AdvanceDirectiveReferenceTypeCode AdvanceDirectiveReferenceExternalDocument' typeCode='REFR' constraints.validation.info='AdvanceDirectiveReferenceHasURL AdvanceDirectiveReferenceHasMIMEType'"
  * @generated
  */
 public interface AdvanceDirectiveReference extends Reference {
@@ -88,6 +88,19 @@ public interface AdvanceDirectiveReference extends Reference {
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(rim::Act))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(rim::Act))'"
+	 * @generated
+	 */
+	boolean validateAdvanceDirectiveReferenceExternalDocument(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

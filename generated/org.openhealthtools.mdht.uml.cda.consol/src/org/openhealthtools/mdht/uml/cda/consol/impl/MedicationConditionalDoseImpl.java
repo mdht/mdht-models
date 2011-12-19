@@ -381,6 +381,16 @@ public class MedicationConditionalDoseImpl extends MedicationActivityImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationConditionalDosePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationConditionalDoseOperations.validateMedicationConditionalDosePerformer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationConditionalDoseReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationConditionalDoseOperations.validateMedicationConditionalDoseReactionObservation(

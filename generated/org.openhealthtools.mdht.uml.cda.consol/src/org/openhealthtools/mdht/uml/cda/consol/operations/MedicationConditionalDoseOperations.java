@@ -76,6 +76,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseMaxDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Max Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseMedicationSeriesNumberObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Medication Series Number Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseMedicationStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Medication Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDosePerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Reaction Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#validateMedicationConditionalDoseProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Product Instance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationConditionalDose#getMedicationSeriesNumberObservation() <em>Get Medication Series Number Observation</em>}</li>
@@ -1861,6 +1862,63 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationConditionalDosePerformer(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Performer</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationConditionalDosePerformer(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationConditionalDosePerformer(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Performer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationConditionalDosePerformer(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param medicationConditionalDose The receiving '<em><b>Medication Conditional Dose</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateMedicationConditionalDosePerformer(
+			MedicationConditionalDose medicationConditionalDose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE);
+			try {
+				VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_CONDITIONAL_DOSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationConditionalDose)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_CONDITIONAL_DOSE__MEDICATION_CONDITIONAL_DOSE_PERFORMER,
+					ConsolPlugin.INSTANCE.getString("MedicationConditionalDosePerformer"),
+					new Object[] { medicationConditionalDose }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateMedicationConditionalDoseReactionObservation(MedicationConditionalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Conditional Dose Reaction Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2010,7 +2068,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(108));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(112));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2056,7 +2114,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(109));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(113));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2102,7 +2160,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(110));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(114));
 			try {
 				GET_CONSOL_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2149,7 +2207,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(111));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(115));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2196,7 +2254,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(112));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(116));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2243,7 +2301,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(113));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(117));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2290,7 +2348,7 @@ public class MedicationConditionalDoseOperations extends MedicationActivityOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE,
-				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(114));
+				ConsolPackage.Literals.MEDICATION_CONDITIONAL_DOSE.getEAllOperations().get(118));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

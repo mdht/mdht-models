@@ -120,6 +120,15 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationDispensePerformer2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformer2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationDispenseAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseAssignedEntity(this, diagnostics, context);
 	}

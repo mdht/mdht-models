@@ -91,6 +91,15 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDrugVehiclePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugVehicleOperations.validateDrugVehiclePlayingEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DrugVehicle init() {
 		CDAUtil.init(this);
 		return this;
