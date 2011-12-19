@@ -55,31 +55,9 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityObservationMoodCodeValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCodeValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(
 			this, diagnostics, context);
 	}
 

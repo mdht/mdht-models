@@ -14,8 +14,6 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagnosisSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -78,9 +76,9 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics,
+	public boolean validateHospitalDischargeDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCondition(
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTitle(
 			this, diagnostics, context);
 	}
 
@@ -89,8 +87,10 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemConcernAct getCondition() {
-		return HospitalDischargeDiagnosisSectionOperations.getCondition(this);
+	public boolean validateHospitalDischargeDiagnosisSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionText(
+			this, diagnostics, context);
 	}
 
 	/**

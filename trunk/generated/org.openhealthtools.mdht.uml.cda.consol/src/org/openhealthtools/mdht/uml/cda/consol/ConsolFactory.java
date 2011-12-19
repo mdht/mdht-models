@@ -917,6 +917,15 @@ public interface ConsolFactory extends EFactory {
 	HospitalDischargeMedicationsSection createHospitalDischargeMedicationsSection();
 
 	/**
+	 * Returns a new object of class '<em>Hospital Discharge Physical Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Physical Section</em>'.
+	 * @generated
+	 */
+	HospitalDischargePhysicalSection createHospitalDischargePhysicalSection();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1340,6 +1349,15 @@ public interface ConsolFactory extends EFactory {
 	DischargeDietSection createDischargeDietSection();
 
 	/**
+	 * Returns a new object of class '<em>Hospital Discharge Medications Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Medications Section Entries Optional</em>'.
+	 * @generated
+	 */
+	HospitalDischargeMedicationsSectionEntriesOptional createHospitalDischargeMedicationsSectionEntriesOptional();
+
+	/**
 	 * Returns a new object of class '<em>Precondition For Substance Administration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1401,6 +1419,42 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	FamilyHistorySubject createFamilyHistorySubject();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * @generated
+	 */
+	HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Medication</em>'.
+	 * @generated
+	 */
+	DischargeMedication createDischargeMedication();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Diagnosis</em>'.
+	 * @generated
+	 */
+	HospitalDischargeDiagnosis createHospitalDischargeDiagnosis();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Instructions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Instructions Section</em>'.
+	 * @generated
+	 */
+	HospitalDischargeInstructionsSection createHospitalDischargeInstructionsSection();
 
 	/**
 	 * Returns the package supported by this factory.

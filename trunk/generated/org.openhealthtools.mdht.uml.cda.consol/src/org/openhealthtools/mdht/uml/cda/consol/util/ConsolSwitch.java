@@ -1932,23 +1932,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
-				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection) theEObject;
-				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
 				HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional = (HospitalAdmissionMedicationsSectionEntriesOptional) theEObject;
 				T result = caseHospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional);
@@ -1960,23 +1943,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(hospitalAdmissionMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
-				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
-				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2442,23 +2408,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_COURSE_SECTION: {
-				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection) theEObject;
-				T result = caseHospitalCourseSection(hospitalCourseSection);
-				if (result == null) {
-					result = caseSection(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION: {
 				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection) theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
@@ -2789,6 +2738,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
+				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection) theEObject;
+				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.DISCHARGE_DIET_SECTION: {
 				DischargeDietSection dischargeDietSection = (DischargeDietSection) theEObject;
 				T result = caseDischargeDietSection(dischargeDietSection);
@@ -2800,6 +2766,40 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(dischargeDietSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
+				HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional = (HospitalDischargeMedicationsSectionEntriesOptional) theEObject;
+				T result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(hospitalDischargeMedicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeMedicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeMedicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_COURSE_SECTION: {
+				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection) theEObject;
+				T result = caseHospitalCourseSection(hospitalCourseSection);
+				if (result == null) {
+					result = caseSection(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalCourseSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2922,6 +2922,117 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(familyHistorySubject);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
+				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection) theEObject;
+				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DISCHARGE_MEDICATION: {
+				DischargeMedication dischargeMedication = (DischargeMedication) theEObject;
+				T result = caseDischargeMedication(dischargeMedication);
+				if (result == null) {
+					result = caseCDA_Act(dischargeMedication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(dischargeMedication);
+				}
+				if (result == null) {
+					result = caseAct(dischargeMedication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeMedication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS: {
+				HospitalDischargeDiagnosis hospitalDischargeDiagnosis = (HospitalDischargeDiagnosis) theEObject;
+				T result = caseHospitalDischargeDiagnosis(hospitalDischargeDiagnosis);
+				if (result == null) {
+					result = caseCDA_Act(hospitalDischargeDiagnosis);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(hospitalDischargeDiagnosis);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeDiagnosis);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeDiagnosis);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION: {
+				HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection = (HospitalDischargeInstructionsSection) theEObject;
+				T result = caseHospitalDischargeInstructionsSection(hospitalDischargeInstructionsSection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
+				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
+				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
+				if (result == null) {
+					result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseSection(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION: {
+				HospitalDischargePhysicalSection hospitalDischargePhysicalSection = (HospitalDischargePhysicalSection) theEObject;
+				T result = caseHospitalDischargePhysicalSection(hospitalDischargePhysicalSection);
+				if (result == null) {
+					result = caseSection(hospitalDischargePhysicalSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargePhysicalSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargePhysicalSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4299,6 +4410,66 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeStudiesSummarySection(HospitalDischargeStudiesSummarySection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Medication</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeMedication(DischargeMedication object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeDiagnosis(HospitalDischargeDiagnosis object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Instructions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Instructions Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeInstructionsSection(HospitalDischargeInstructionsSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -4506,6 +4677,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Physical Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Physical Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargePhysicalSection(HospitalDischargePhysicalSection object) {
 		return null;
 	}
 
@@ -5211,6 +5397,22 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseDischargeDietSection(DischargeDietSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section Entries Optional</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section Entries Optional</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeMedicationsSectionEntriesOptional(
+			HospitalDischargeMedicationsSectionEntriesOptional object) {
 		return null;
 	}
 
