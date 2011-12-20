@@ -6,6 +6,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -13,33 +15,36 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Problem Section</b></em>'.
  * <!-- end-user-doc -->
  *
- * <p>
- * The following features are supported:
- * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSection#getProblemConcern <em>Problem Concern</em>}</li>
- * </ul>
- * </p>
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.2.5.1' constraints.validation.error='ProblemSectionTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.2.5.1' constraints.validation.error='ProblemSectionTemplateId ProblemSectionProblemConcern'"
  * @generated
  */
 public interface ProblemSection extends ProblemSectionEntriesOptional {
 	/**
-	 * Returns the value of the '<em><b>Problem Concern</b></em>' reference list.
-	 * The list contents are of type {@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Problem Concern</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Problem Concern</em>' reference list.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSection_ProblemConcern()
-	 * @model required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))'"
 	 * @generated
 	 */
-	EList<ProblemConcernAct> getProblemConcern();
+	boolean validateProblemSectionProblemConcern(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)'"
+	 * @generated
+	 */
+	EList<ProblemConcernAct> getConsolProblemConcerns();
 
 	/**
 	 * <!-- begin-user-doc -->

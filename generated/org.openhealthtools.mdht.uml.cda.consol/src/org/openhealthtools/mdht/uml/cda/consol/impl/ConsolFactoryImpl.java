@@ -117,6 +117,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createContinuityOfCareDocument();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
 				return createAdvanceDirectivesSectionEntriesOptional();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
+				return createAdvanceDirectiveObservation();
 			case ConsolPackage.ALLERGIES_SECTION:
 				return createAllergiesSection();
 			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
@@ -209,8 +211,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPurposeActivity();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION:
 				return createAdvanceDirectivesSection();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
-				return createAdvanceDirectiveObservation();
 			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION:
 				return createAdvanceDirectiveVerification();
 			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
@@ -345,10 +345,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDischargeSummary();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
 				return createHospitalDischargeDiagnosisSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS:
+				return createHospitalDischargeDiagnosis();
 			case ConsolPackage.DISCHARGE_DIET_SECTION:
 				return createDischargeDietSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createHospitalDischargeMedicationsSectionEntriesOptional();
+			case ConsolPackage.DISCHARGE_MEDICATION:
+				return createDischargeMedication();
 			case ConsolPackage.HOSPITAL_COURSE_SECTION:
 				return createHospitalCourseSection();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
@@ -367,16 +371,28 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createFamilyHistorySubject();
 			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
 				return createHospitalDischargeStudiesSummarySection();
-			case ConsolPackage.DISCHARGE_MEDICATION:
-				return createDischargeMedication();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS:
-				return createHospitalDischargeDiagnosis();
 			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION:
 				return createHospitalDischargeInstructionsSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
 				return createHospitalDischargeMedicationsSection();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
+				return createAdvanceDirectiveObservationVerifier();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN:
+				return createAdvanceDirectiveObservationCustodian();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE:
+				return createAdvanceDirectiveObservationCustodianRole();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY:
+				return createAdvanceDirectiveObservationCustodianEntity();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE:
+				return createAdvanceDirectiveObservationReference();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_EXTERNAL_DOCUMENT:
+				return createAdvanceDirectiveObservationExternalDocument();
 			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
 				return createHospitalDischargePhysicalSection();
+			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION:
+				return createChiefComplaintAndReasonForVisitSection();
+			case ConsolPackage.REASON_FOR_VISIT_SECTION:
+				return createReasonForVisitSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1380,6 +1396,86 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HospitalDischargePhysicalSection createHospitalDischargePhysicalSection() {
 		HospitalDischargePhysicalSectionImpl hospitalDischargePhysicalSection = new HospitalDischargePhysicalSectionImpl();
 		return hospitalDischargePhysicalSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChiefComplaintAndReasonForVisitSection createChiefComplaintAndReasonForVisitSection() {
+		ChiefComplaintAndReasonForVisitSectionImpl chiefComplaintAndReasonForVisitSection = new ChiefComplaintAndReasonForVisitSectionImpl();
+		return chiefComplaintAndReasonForVisitSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForVisitSection createReasonForVisitSection() {
+		ReasonForVisitSectionImpl reasonForVisitSection = new ReasonForVisitSectionImpl();
+		return reasonForVisitSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationVerifier createAdvanceDirectiveObservationVerifier() {
+		AdvanceDirectiveObservationVerifierImpl advanceDirectiveObservationVerifier = new AdvanceDirectiveObservationVerifierImpl();
+		return advanceDirectiveObservationVerifier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationCustodian createAdvanceDirectiveObservationCustodian() {
+		AdvanceDirectiveObservationCustodianImpl advanceDirectiveObservationCustodian = new AdvanceDirectiveObservationCustodianImpl();
+		return advanceDirectiveObservationCustodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationCustodianRole createAdvanceDirectiveObservationCustodianRole() {
+		AdvanceDirectiveObservationCustodianRoleImpl advanceDirectiveObservationCustodianRole = new AdvanceDirectiveObservationCustodianRoleImpl();
+		return advanceDirectiveObservationCustodianRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationCustodianEntity createAdvanceDirectiveObservationCustodianEntity() {
+		AdvanceDirectiveObservationCustodianEntityImpl advanceDirectiveObservationCustodianEntity = new AdvanceDirectiveObservationCustodianEntityImpl();
+		return advanceDirectiveObservationCustodianEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationReference createAdvanceDirectiveObservationReference() {
+		AdvanceDirectiveObservationReferenceImpl advanceDirectiveObservationReference = new AdvanceDirectiveObservationReferenceImpl();
+		return advanceDirectiveObservationReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservationExternalDocument createAdvanceDirectiveObservationExternalDocument() {
+		AdvanceDirectiveObservationExternalDocumentImpl advanceDirectiveObservationExternalDocument = new AdvanceDirectiveObservationExternalDocumentImpl();
+		return advanceDirectiveObservationExternalDocument;
 	}
 
 	/**

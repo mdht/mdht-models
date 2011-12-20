@@ -55,6 +55,24 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemStatusTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemStatusTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatusOperations.validateProblemStatusTextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusTemplateId(this, diagnostics, context);
 	}
