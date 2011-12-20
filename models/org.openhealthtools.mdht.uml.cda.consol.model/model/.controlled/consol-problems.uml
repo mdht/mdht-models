@@ -165,7 +165,7 @@ historical purposes.&#xD;
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2ExXsxSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
@@ -221,7 +221,9 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2E56kBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-519</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9271</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2E0bAhSVEeGGzu7fmW9pXw" base_Property="_2E0bABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9057</ruleId>
   </CDA:PropertyValidation>
@@ -274,6 +276,22 @@ historical purposes.&#xD;
     <ownedComment xmi:id="_DRGcECA8EeG9GZYpu7WBOQ">
       <body>The Problem Status records whether the indicated problem is active, inactive, or resolved.</body>
     </ownedComment>
+    <ownedRule xmi:id="_NGUbACp_EeGiFpKeZIy4Pg" name="textReference" constrainedElement="_SjN_8BUzEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_QDaeQCp_EeGiFpKeZIy4Pg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.text.reference.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_S6G-kCp_EeGiFpKeZIy4Pg" name="textReferenceValue" constrainedElement="_NGUbACp_EeGiFpKeZIy4Pg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UfbWkCp_EeGiFpKeZIy4Pg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_SjN_8RUzEeGbmN_W114JUw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -540,7 +558,9 @@ historical purposes.&#xD;
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
     <ruleId>CONF:9440</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:EntryRelationship xmi:id="_vSyGwCArEeGetMjKLkqR8g" base_Association="_1CFA0hUzEeGbmN_W114JUw" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_vSyGwCArEeGetMjKLkqR8g" base_Association="_1CFA0hUzEeGbmN_W114JUw" typeCode="SUBJ">
+    <ruleId>CONF:9036</ruleId>
+  </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_dDG_YCAtEeGetMjKLkqR8g" base_Property="_6-B3UBUyEeGbmN_W114JUw">
     <ruleId>CONF:9041</ruleId>
   </CDA:PropertyValidation>
@@ -664,4 +684,13 @@ historical purposes.&#xD;
     <memberEnd href="#_p1AdACdeEeGcTOgEa70Vzg"/>
     <memberEnd href="#_p1BrISdeEeGcTOgEa70Vzg"/>
   </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1c7ZwCp8EeGiFpKeZIy4Pg" base_Association="_uvodUyf1EeGO5_JBy9h6BA">
+    <ruleId>CONF:9183</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_Q1jF0Cp_EeGiFpKeZIy4Pg" severity="WARNING" base_Constraint="_NGUbACp_EeGiFpKeZIy4Pg">
+    <ruleId>CONF:7363</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VCsbsCp_EeGiFpKeZIy4Pg" base_Constraint="_S6G-kCp_EeGiFpKeZIy4Pg">
+    <ruleId>CONF:7375</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

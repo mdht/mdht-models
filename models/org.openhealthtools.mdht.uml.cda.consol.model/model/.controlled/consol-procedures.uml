@@ -18,7 +18,9 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2OAzRhSVEeGGzu7fmW9pXw" base_Class="_2OAzQRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.7.1"/>
+  <CDA:CDATemplate xmi:id="_2OAzRhSVEeGGzu7fmW9pXw" base_Class="_2OAzQRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.7.1">
+    <ruleId>CONF:10447</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2OfUaRSVEeGGzu7fmW9pXw" base_Constraint="_2OfUZxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8021</ruleId>
   </CDA:ConstraintValidation>
@@ -28,7 +30,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
     <ruleId>CONF-424</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2OAzThSVEeGGzu7fmW9pXw" base_Property="_2OAzTRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-425</ruleId>
+    <ruleId>CONF:7893</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OAzUhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-422</ruleId>
@@ -217,7 +219,9 @@ This clinical statement represents procedures that result in new information abo
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_odtt4RxxEeGXP8PxDYviDg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_PlWhYBg4EeGs5a462vYX5Q" base_Class="_Aj7JkBg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.13"/>
+  <CDA:CDATemplate xmi:id="_PlWhYBg4EeGs5a462vYX5Q" base_Class="_Aj7JkBg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.13">
+    <ruleId>CONF:10520</ruleId>
+  </CDA:CDATemplate>
   <Ecore:EAttribute xmi:id="_NL3hgRg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_NL3hgBg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_NMUNcRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNcBg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_NMUNdRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNchg4EeGs5a462vYX5Q"/>
@@ -356,7 +360,9 @@ This clinical statement represents any procedure that cannot be classified as an
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEQasRxtEeGXP8PxDYviDg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12"/>
+  <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12">
+    <ruleId>CONF:10519</ruleId>
+  </CDA:CDATemplate>
   <Ecore:EAttribute xmi:id="_hPmVkRg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_hPmVkBg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_hPmVkxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPmVkhg4EeGs5a462vYX5Q"/>
   <Ecore:EReference xmi:id="_hPwGkxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGkBg4EeGs5a462vYX5Q"/>
@@ -625,7 +631,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7657</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Q7LaIBrQEeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_N4ba0BrQEeGxIZCGAXKxsQ">
-    <ruleId>CONF:7659</ruleId>
+    <ruleId>CONF:7658</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_XSCZEBrREeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_WEQMwBrQEeGxIZCGAXKxsQ">
     <ruleId>CONF:7659</ruleId>
