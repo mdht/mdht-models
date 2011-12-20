@@ -14,8 +14,6 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ChiefComplaintSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -74,8 +72,8 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateChiefComplaintSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChiefComplaintSectionOperations.validateChiefComplaintSectionCondition(this, diagnostics, context);
+	public boolean validateChiefComplaintSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +81,8 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemConcernAct getCondition() {
-		return ChiefComplaintSectionOperations.getCondition(this);
+	public boolean validateChiefComplaintSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionTitle(this, diagnostics, context);
 	}
 
 	/**
