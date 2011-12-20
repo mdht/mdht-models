@@ -173,9 +173,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yaMD8CUKEeGiOPpZVnfEJA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_fU_8gCqAEeGiFpKeZIy4Pg" name="hospitalDischargeDiagnosis" type="_KtwVgCULEeGiOPpZVnfEJA">
+    <ownedAttribute xmi:id="_fU_8gCqAEeGiFpKeZIy4Pg" name="hospitalDischargeDiagnosis" type="_KtwVgCULEeGiOPpZVnfEJA" association="_fU_8giqAEeGiFpKeZIy4Pg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fU_8gSqAEeGiFpKeZIy4Pg"/>
-      <association href="../consol.uml#_fU_8giqAEeGiFpKeZIy4Pg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24" assigningAuthorityName="HL7">
@@ -240,10 +239,9 @@
       <body>The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</body>
     </ownedComment>
     <generalization xmi:id="_TytVkSUQEeGiOPpZVnfEJA" general="_2Poj7RSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_9F4LUCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg">
+    <ownedAttribute xmi:id="_9F4LUCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg" association="_9GB8UCqAEeGiFpKeZIy4Pg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-dOYwCqAEeGiFpKeZIy4Pg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-dOYwSqAEeGiFpKeZIy4Pg" value="1"/>
-      <association href="../consol.uml#_9GB8UCqAEeGiFpKeZIy4Pg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:ClassValidation xmi:id="_fQfngCUQEeGiOPpZVnfEJA" base_Class="_TytVkCUQEeGiOPpZVnfEJA">
@@ -272,10 +270,9 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1j5DACUOEeGiOPpZVnfEJA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w9kVsCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA">
+    <ownedAttribute xmi:id="_w9kVsCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" association="_w9kVsiqAEeGiFpKeZIy4Pg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zjw74CqAEeGiFpKeZIy4Pg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zjw74SqAEeGiFpKeZIy4Pg"/>
-      <association href="../consol.uml#_w9kVsiqAEeGiFpKeZIy4Pg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11" assigningAuthorityName="HL7">
@@ -380,4 +377,13 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <CDA:PropertyValidation xmi:id="_GePSACUUEeGiOPpZVnfEJA" base_Property="_5F8bNCUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7913</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_fU_8giqAEeGiFpKeZIy4Pg" memberEnd="_fU_8gCqAEeGiFpKeZIy4Pg _fU_8gyqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_fU_8gyqAEeGiFpKeZIy4Pg" type="_2PidURSVEeGGzu7fmW9pXw" association="_fU_8giqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_w9kVsiqAEeGiFpKeZIy4Pg" memberEnd="_w9kVsCqAEeGiFpKeZIy4Pg _w9kVsyqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_w9kVsyqAEeGiFpKeZIy4Pg" type="_2Poj7RSVEeGGzu7fmW9pXw" association="_w9kVsiqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9F4LUCqAEeGiFpKeZIy4Pg _9GB8USqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_9GB8USqAEeGiFpKeZIy4Pg" type="_TytVkCUQEeGiOPpZVnfEJA" association="_9GB8UCqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
 </xmi:XMI>
