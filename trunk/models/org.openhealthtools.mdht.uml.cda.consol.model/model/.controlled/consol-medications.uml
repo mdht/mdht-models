@@ -2530,7 +2530,6 @@ Entry Content Module.</body>
   <CDA:CodeSystemConstraint xmi:id="_2Poj6hSVEeGGzu7fmW9pXw" code="42346-7" displayName="MEDICATIONS ON ADMISSION" base_Property="_2Poj6RSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-
   <CDA:CodeSystemConstraint xmi:id="_3jQucBq1EeGo461UQq-B1g" code="412307009" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>

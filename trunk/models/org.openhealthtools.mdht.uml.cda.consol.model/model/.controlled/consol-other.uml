@@ -1455,4 +1455,85 @@ internal or partially external.</body>
   <CDA:TextValue xmi:id="_cM02kCrAEeGHF88-qhhUMA" base_Property="_Yg4wUCrAEeGHF88-qhhUMA">
     <ruleId>CONF:7834</ruleId>
   </CDA:TextValue>
+  <uml:Class xmi:id="_oI7CQCsaEeGHF88-qhhUMA" name="ChiefComplaintAndReasonForVisitSection">
+    <ownedComment xmi:id="_sNrJwCsdEeGHF88-qhhUMA">
+      <body>This section records the patient's chief complaint (the patient's own description) and/or the reason for the patient's visit (the provider's description of the reason for visit).  Local policy determines whether the information is divided into two sections or recorded in one section serving both purposes.</body>
+    </ownedComment>
+    <generalization xmi:id="_oI7CQSsaEeGHF88-qhhUMA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_wl51oCsaEeGHF88-qhhUMA" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XwTYkCsbEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XwTYkSsbEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wl6csCsaEeGHF88-qhhUMA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YJyPkCsbEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YJyPkSsbEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wl7DwCsaEeGHF88-qhhUMA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YvQ7MCsbEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YvRiQCsbEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_1EZaMCsaEeGHF88-qhhUMA" base_Class="_oI7CQCsaEeGHF88-qhhUMA" templateId="2.16.840.1.113883.10.20.22.2.13">
+    <ruleId>CONF:7840</ruleId>
+    <ruleId>CONF:10383</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_BJSvcCsbEeGHF88-qhhUMA" code="46239-0" displayName="Chief Complaint and Reason for Visit" base_Property="_wl51oCsaEeGHF88-qhhUMA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7841</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_amaqECsbEeGHF88-qhhUMA" base_Property="_wl6csCsaEeGHF88-qhhUMA">
+    <ruleId>CONF:7843</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_aMIh0CsbEeGHF88-qhhUMA" base_Property="_wl7DwCsaEeGHF88-qhhUMA">
+    <ruleId>CONF:7842</ruleId>
+  </CDA:TextValue>
+  <uml:Class xmi:id="_Nm64UCscEeGHF88-qhhUMA" name="ReasonForVisitSection">
+    <ownedComment xmi:id="_OPllYCsdEeGHF88-qhhUMA">
+      <body>This section records the patient's reason for the patient's visit (as documented by the provider).  Local policy determines whether Reason for Visit and Chief Complaint are in separate or combined sections.</body>
+    </ownedComment>
+    <generalization xmi:id="_Nm7fYCscEeGHF88-qhhUMA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_Q7bWACscEeGHF88-qhhUMA" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2bYJUCscEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2bYJUSscEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q7b9ESscEeGHF88-qhhUMA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zn1DoCscEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zn1DoSscEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q7ckICscEeGHF88-qhhUMA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v1jr4CscEeGHF88-qhhUMA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v1jr4SscEeGHF88-qhhUMA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:ClassValidation xmi:id="_SCS3cCscEeGHF88-qhhUMA" base_Class="_Nm64UCscEeGHF88-qhhUMA">
+    <ruleId>CONF:7836</ruleId>
+    <ruleId>CONF:10448</ruleId>
+  </CDA:ClassValidation>
+  <CDA:CDATemplate xmi:id="_Xl_wkCscEeGHF88-qhhUMA" base_Class="_Nm64UCscEeGHF88-qhhUMA" templateId="2.16.840.1.113883.10.20.22.2.12"/>
+  <CDA:CodeSystemConstraint xmi:id="_dR48YCscEeGHF88-qhhUMA" identifier="" code="29299-5" displayName="Reason for Visit" base_Property="_Q7bWACscEeGHF88-qhhUMA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7837</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_xUrVQCscEeGHF88-qhhUMA" base_Property="_Q7b9ESscEeGHF88-qhhUMA">
+    <ruleId>CONF:7839</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_tMsMMCscEeGHF88-qhhUMA" base_Property="_Q7ckICscEeGHF88-qhhUMA">
+    <ruleId>CONF:7838</ruleId>
+  </CDA:TextValue>
 </xmi:XMI>
