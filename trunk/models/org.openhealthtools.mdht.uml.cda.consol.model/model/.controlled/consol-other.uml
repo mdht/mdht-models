@@ -269,116 +269,6 @@ of the patient.</body>
 &lt;p>Functional Statuses can be expressed in 3 different forms. They can occur as a Problem, a Result or as text. Text can be employed if and only if the Functional Status is neither a Problem nor a Result. Functional Statuses expressed as Problems include relevant clinical conditions, diagnoses, symptoms and findings. Results are the interpretation or conclusion derived from a clinical assessment or test battery, such as the Instrumental Activities of Daily Living (IADL) scale or the Functional Status Index (FSI).&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedComment xmi:id="_2KKOBxSVEeGGzu7fmW9pXw" annotatedElement="_2KKOBhSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Functional Status Section provides information about the capability of the patient to perform acts&#xD;
-    of daily living. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_2KN4YBSVEeGGzu7fmW9pXw" name="clinicalStatements">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KN4YRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more Problem Act and/or Result Organizer</body>
-        <body>self.getEntryTargets(consol::ProblemConcernAct)->size() > 0&#xD;&#xA;  or self.getEntryTargets(consol::ResultOrganizer)->size() > 0</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KN4YxSVEeGGzu7fmW9pXw" name="titleValue">
-      <ownedComment xmi:id="_2KN4ZBSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KN4ZRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing 'functional status'.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KOfcRSVEeGGzu7fmW9pXw" name="observationCode">
-      <ownedComment xmi:id="_2KOfchSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KOfcxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>problem observation or result observation in the functional status section SHALL contain exactly one observation / code</body>
-        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KPGgBSVEeGGzu7fmW9pXw" name="observationCodeValueSet">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KPGgRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The value for Observation / code in a problem observation or result observation in the functional status section MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017</body>
-        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(consol::ProblemObservation) or obs.oclIsKindOf(consol::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KPtkBSVEeGGzu7fmW9pXw" name="assessmentInstrument">
-      <ownedComment xmi:id="_2KPtkRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KPtkhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>If the functional status was collected using a standardized assessment instrument, then the instrument itself SHOULD be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KQUoBSVEeGGzu7fmW9pXw" name="assessmentInstrumentQuestion">
-      <ownedComment xmi:id="_2KQUoRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KQUohSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>If the functional status was collected using a standardized assessment instrument, then the question within that instrument SHOULD be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96).</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KQ7sBSVEeGGzu7fmW9pXw" name="assessmentInstrumentAnswers">
-      <ownedComment xmi:id="_2KQ7sRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KQ7shSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer SHOULD be represented in the Observation / value of a result observation</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KQ7tBSVEeGGzu7fmW9pXw" name="valueCodeValueSet">
-      <ownedComment xmi:id="_2KQ7tRSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KQ7thSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>If Observation / value in a result observation in the functional status section is of data type CE or CD, then it SHOULD use the same code system used to code the question in Observation / code.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KRiwRSVEeGGzu7fmW9pXw" name="valueDatatype">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KRiwhSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Observation / value in a result observation in the functional status section MAY be of datatype CE or CD and MAY contain one or more Observation / value / translation, to represent equivalent values from other code systems.</body>
-        <body>self.getObservations()->select(o | o.value->select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) ->isEmpty())->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KSJ0BSVEeGGzu7fmW9pXw" name="icfCodeSystem">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KSJ0RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>A problem observation or result observation in the functional status section MAY use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254).</body>
-        <body>self.getObservations()->select(o|o.code.codeSystem &lt;> '2.16.840.1.113883.6.254')->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KSw4BSVEeGGzu7fmW9pXw" name="problemStatusObservation">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KSw4RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>A problem observation in the functional status section SHALL contain exactly one status of functional status observation</body>
-        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2KTX8BSVEeGGzu7fmW9pXw" name="resultStatusObservation">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KTX8RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>A result observation in the functional status section SHALL contain exactly one status of functional status observation.</body>
-        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(consol::ResultObservation) or obs.oclIsKindOf(consol::ProblemObservation)))->&#xD;&#xA;forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(consol::FunctionalStatusObservation))->size() = 1)</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2KT_ABSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
@@ -408,52 +298,55 @@ of the patient.</body>
   <uml:Association xmi:id="_lr7nIhU8EeGbmN_W114JUw" memberEnd="_lr7nIBU8EeGbmN_W114JUw _lr7nIxU8EeGbmN_W114JUw">
     <ownedEnd xmi:id="_lr7nIxU8EeGbmN_W114JUw" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_lr7nIhU8EeGbmN_W114JUw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2KK1EBSVEeGGzu7fmW9pXw" base_Class="_2KKOBhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.14"/>
-  <CDA:ConstraintValidation xmi:id="_2KN4YhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KN4YBSVEeGGzu7fmW9pXw">
+  <CDA:CDATemplate xmi:id="_2KK1EBSVEeGGzu7fmW9pXw" base_Class="_2KKOBhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.14" assigningAuthorityName="HL7">
+    <ruleId>CONF:10389</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2KN4YhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-123</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KOfcBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KN4YxSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KOfcBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-127</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KOfdBSVEeGGzu7fmW9pXw" base_Constraint="_2KOfcRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KOfdBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-128</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KPGghSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2KPGgBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KPGghSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-129</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KPtkxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KPtkBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KPtkxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-130</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KQUoxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KQUoBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KQUoxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-131</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KQ7sxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KQ7sBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KQ7sxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-132</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KRiwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2KQ7tBSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KRiwBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-133</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KRiwxSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2KRiwRSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KRiwxSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-134</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KSJ0hSVEeGGzu7fmW9pXw" severity="INFO" base_Constraint="_2KSJ0BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KSJ0hSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-135</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KSw4hSVEeGGzu7fmW9pXw" base_Constraint="_2KSw4BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KSw4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-136</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KTX8hSVEeGGzu7fmW9pXw" base_Constraint="_2KTX8BSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2KTX8hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-137</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2KLcIhSVEeGGzu7fmW9pXw" code="47420-5" displayName="Functional status assessment" base_Property="_2KLcIRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-124</ruleId>
-    <ruleId>CONF-125</ruleId>
+    <ruleId>CONF:7921</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2KMqQRSVEeGGzu7fmW9pXw" base_Property="_2KMqQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-126</ruleId>
+    <ruleId>CONF:7922</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_2KNRUxSVEeGGzu7fmW9pXw" base_Property="_2KNRUBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2KNRUxSVEeGGzu7fmW9pXw" base_Property="_2KNRUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7923</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_2Shf0xSVEeGGzu7fmW9pXw" name="HealthcareProvider">
     <generalization xmi:id="_2Shf3xSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
@@ -524,14 +417,7 @@ past. It shall include entries for problems as described in the Entry Content Mo
   <CDA:AssociationValidation xmi:id="_2PQJfhSVEeGGzu7fmW9pXw" base_Association="_2PQJfBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2PcWsRSVEeGGzu7fmW9pXw" name="HistoryOfPresentIllness">
     <ownedComment xmi:id="_2PidQBSVEeGGzu7fmW9pXw" annotatedElement="_2PcWsRSVEeGGzu7fmW9pXw">
-      <body>The history of present illness section shall contain a narrative description of the sequence of events preceding the&#xD;
-patient's current complaints.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2PcWshSVEeGGzu7fmW9pXw" annotatedElement="_2PcWsRSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The History of Present Illness Section contains information about the sequence of events preceding the&#xD;
-    patient's current complaints. &#xD;
-&lt;/p></body>
+      <body>The History of Present Illness section describes the history related to the reason for the encounter.  It contains the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</body>
     </ownedComment>
     <generalization xmi:id="_2PidQRSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -539,10 +425,25 @@ patient's current complaints.</body>
     <ownedAttribute xmi:id="_2PcWthSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_L_-YwCtVEeGlWN0TVxk9LA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OSE-QCtVEeGlWN0TVxk9LA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OSE-QStVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_L_zZoCtVEeGlWN0TVxk9LA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N1mdoCtVEeGlWN0TVxk9LA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N1mdoStVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_n3vB4BnSEeGs5a462vYX5Q" base_Class="_2PcWsRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+  <CDA:CDATemplate xmi:id="_n3vB4BnSEeGs5a462vYX5Q" base_Class="_2PcWsRSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.4">
+    <ruleId>CONF:10458</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PcWtxSVEeGGzu7fmW9pXw" code="10164-2" displayName="HISTORY OF PRESENT ILLNESS" base_Property="_2PcWthSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7849</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2PidQhSVEeGGzu7fmW9pXw" name="HospitalAdmissionDiagnosisSection">
     <ownedComment xmi:id="_2PidTxSVEeGGzu7fmW9pXw" annotatedElement="_2PidQhSVEeGGzu7fmW9pXw">
@@ -1535,5 +1436,19 @@ internal or partially external.</body>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_tMsMMCscEeGHF88-qhhUMA" base_Property="_Q7ckICscEeGHF88-qhhUMA">
     <ruleId>CONF:7838</ruleId>
+  </CDA:TextValue>
+  <CDA:AssociationValidation xmi:id="_Oo9AcCtFEeGlWN0TVxk9LA" severity="INFO" base_Association="_jCNL0BU8EeGbmN_W114JUw">
+    <ruleId>CONF:9080</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_PisE0CtFEeGlWN0TVxk9LA" severity="INFO" base_Association="_lr7nIhU8EeGbmN_W114JUw">
+    <ruleId>CONF:9082</ruleId>
+  </CDA:AssociationValidation>
+  <Ecore:EReference xmi:id="_L_0AsCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_L_zZoCtVEeGlWN0TVxk9LA"/>
+  <Ecore:EReference xmi:id="_L_-_0CtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_L_-YwCtVEeGlWN0TVxk9LA"/>
+  <CDA:PropertyValidation xmi:id="_MmipgCtVEeGlWN0TVxk9LA" base_Property="_L_zZoCtVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7851</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_NNAzoCtVEeGlWN0TVxk9LA" base_Property="_L_-YwCtVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7850</ruleId>
   </CDA:TextValue>
 </xmi:XMI>
