@@ -73,6 +73,24 @@ public class HistoryOfPresentIllnessImpl extends SectionImpl implements HistoryO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHistoryOfPresentIllnessTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfPresentIllnessOperations.validateHistoryOfPresentIllnessTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfPresentIllnessText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfPresentIllnessOperations.validateHistoryOfPresentIllnessText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HistoryOfPresentIllness init() {
 		CDAUtil.init(this);
 		return this;

@@ -73,6 +73,24 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReviewOfSystemsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReviewOfSystemsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ReviewOfSystemsSection init() {
 		CDAUtil.init(this);
 		return this;

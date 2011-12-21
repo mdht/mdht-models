@@ -73,6 +73,24 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeDietSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDietSectionOperations.validateDischargeDietSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDietSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDietSectionOperations.validateDischargeDietSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DischargeDietSection init() {
 		CDAUtil.init(this);
 		return this;
