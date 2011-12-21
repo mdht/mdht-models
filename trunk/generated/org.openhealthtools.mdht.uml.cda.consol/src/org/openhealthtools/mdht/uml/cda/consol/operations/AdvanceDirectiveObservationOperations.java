@@ -1122,7 +1122,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select(typeCode=vocab::ParticipationType::CST).participantRole->forAll(isDefined('classCode'))";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select(typeCode=vocab::ParticipationType::CST).participantRole->forAll(classCode=vocab::RoleClassRoot::ROL)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleClassCode(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Advance Directive Observation Custodian Advance Directive Observation Custodian Role Class Code</em>}' invariant operation.
@@ -1138,7 +1138,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->select(typeCode=vocab::ParticipationType::CST).participantRole->forAll(isDefined('classCode'))
+	 * self.participant->select(typeCode=vocab::ParticipationType::CST).participantRole->forAll(classCode=vocab::RoleClassRoot::ROL)
 	 * @param advanceDirectiveObservation The receiving '<em><b>Advance Directive Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
