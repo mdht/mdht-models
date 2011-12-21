@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Class xmi:id="_2KlEwBSVEeGGzu7fmW9pXw" name="AdvanceDirectiveObservation">
+    <ownedComment xmi:id="_N7l9YCwEEeGs-ue-ukBpXg">
+      <body>Advance Directives Observatations assert findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</body>
+    </ownedComment>
     <ownedRule xmi:id="_2KlExRSVEeGGzu7fmW9pXw" name="hasStartingTime" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KlExhSVEeGGzu7fmW9pXw">
         <language>OCL</language>
@@ -249,8 +252,12 @@
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_1RZdIBVdEeGQCvUGzi1kDQ" name="AdvanceDirectivesSectionEntriesOptional">
     <ownedComment xmi:id="_1RZdIRVdEeGQCvUGzi1kDQ" annotatedElement="_1RZdIBVdEeGQCvUGzi1kDQ">
-      <body>The advance directive section shall contain a narrative description of the list of documents that define the patient's&#xD;
-expectations and requests for care along with the locations of the documents.</body>
+      <body>&lt;p>
+This section contains data defining the patient's advance directives and any reference to supporting documentation. The most recent and up-to-date directives are required, if known, and should be listed in as much detail as possible. This section contains data such as the existence of living wills, healthcare proxies, and CPR and resuscitation status. If referenced documents are available, they can be included in the CCD exchange package. 
+&lt;/p>
+&lt;p>
+NOTE: The descriptions in this section differentiate between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be &quot;no cardiopulmonary resuscitation&quot;, and this directive might be stated in a legal advance directive document.
+&lt;/p></body>
     </ownedComment>
     <ownedComment xmi:id="_1RZdIhVdEeGQCvUGzi1kDQ" annotatedElement="_1RZdIBVdEeGQCvUGzi1kDQ">
       <body>&lt;p>&#xD;
