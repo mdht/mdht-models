@@ -58,7 +58,7 @@ public class AdvanceDirectiveObservationCustodianOperations extends Participant2
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('typeCode')";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.typeCode=vocab::ParticipationType::CST";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCustodianTypeCode(AdvanceDirectiveObservationCustodian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Type Code</em>}' invariant operation.
@@ -74,7 +74,7 @@ public class AdvanceDirectiveObservationCustodianOperations extends Participant2
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('typeCode')
+	 * self.typeCode=vocab::ParticipationType::CST
 	 * @param advanceDirectiveObservationCustodian The receiving '<em><b>Advance Directive Observation Custodian</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

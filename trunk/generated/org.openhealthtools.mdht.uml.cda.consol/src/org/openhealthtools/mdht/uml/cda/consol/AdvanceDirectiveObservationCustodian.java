@@ -27,11 +27,11 @@ public interface AdvanceDirectiveObservationCustodian extends Participant2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('typeCode')
+	 * self.typeCode=vocab::ParticipationType::CST
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'typeCode\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.typeCode=vocab::ParticipationType::CST'"
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationCustodianTypeCode(DiagnosticChain diagnostics,

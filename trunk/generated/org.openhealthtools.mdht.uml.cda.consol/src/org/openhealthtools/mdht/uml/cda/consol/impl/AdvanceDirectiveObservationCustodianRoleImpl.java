@@ -89,9 +89,9 @@ public class AdvanceDirectiveObservationCustodianRoleImpl extends ParticipantRol
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationCustodianRoleOperations.validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
+	public boolean validateAdvanceDirectiveObservationCustodianRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationCustodianRoleOperations.validateAdvanceDirectiveObservationCustodianRolePlayingEntity(
 			this, diagnostics, context);
 	}
 

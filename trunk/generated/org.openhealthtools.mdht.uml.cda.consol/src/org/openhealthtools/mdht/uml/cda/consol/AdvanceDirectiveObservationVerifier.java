@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservationVerifier()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='i. 2.16.840.1.113883.10.20.1.58' constraints.validation.error='AdvanceDirectiveObservationVerifierTemplateId AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='i. 2.16.840.1.113883.10.20.1.58' constraints.validation.error='AdvanceDirectiveObservationVerifierTemplateId AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole' typeCode='VRF'"
  * @generated
  */
 public interface AdvanceDirectiveObservationVerifier extends Participant2 {

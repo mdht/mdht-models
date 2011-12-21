@@ -266,9 +266,9 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
+	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRolePlayingEntity(
 			this, diagnostics, context);
 	}
 

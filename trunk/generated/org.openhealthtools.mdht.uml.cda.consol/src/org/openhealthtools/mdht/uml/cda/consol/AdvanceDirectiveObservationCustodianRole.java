@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservationCustodianRole()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianRoleClassCode AdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity' constraints.validation.warning='AdvanceDirectiveObservationCustodianRoleAddr AdvanceDirectiveObservationCustodianRoleTelecom' classCode='ROL'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianRoleClassCode AdvanceDirectiveObservationCustodianRolePlayingEntity' constraints.validation.warning='AdvanceDirectiveObservationCustodianRoleAddr AdvanceDirectiveObservationCustodianRoleTelecom' classCode='ROL'"
  * @generated
  */
 public interface AdvanceDirectiveObservationCustodianRole extends ParticipantRole {
@@ -76,8 +76,8 @@ public interface AdvanceDirectiveObservationCustodianRole extends ParticipantRol
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity))'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAdvanceDirectiveObservationCustodianRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

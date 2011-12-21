@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ParticipantRoleOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole#validateAdvanceDirectiveObservationCustodianRoleAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole#validateAdvanceDirectiveObservationCustodianRoleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole#validateAdvanceDirectiveObservationCustodianRoleTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Telecom</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole#validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Advance Directive Observation Custodian Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole#validateAdvanceDirectiveObservationCustodianRolePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Playing Entity</em>}</li>
  * </ul>
  * </p>
  *
@@ -230,24 +230,24 @@ public class AdvanceDirectiveObservationCustodianRoleOperations extends Particip
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Advance Directive Observation Custodian Entity</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveObservationCustodianRolePlayingEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Playing Entity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveObservationCustodianRolePlayingEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity))";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Advance Directive Observation Custodian Entity</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCustodianRolePlayingEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Role Playing Entity</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAdvanceDirectiveObservationCustodianRolePlayingEntity(AdvanceDirectiveObservationCustodianRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,27 +260,27 @@ public class AdvanceDirectiveObservationCustodianRoleOperations extends Particip
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateAdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity(
+	public static boolean validateAdvanceDirectiveObservationCustodianRolePlayingEntity(
 			AdvanceDirectiveObservationCustodianRole advanceDirectiveObservationCustodianRole,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			advanceDirectiveObservationCustodianRole)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianRoleAdvanceDirectiveObservationCustodianEntity"),
+					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE_PLAYING_ENTITY,
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianRolePlayingEntity"),
 					new Object[] { advanceDirectiveObservationCustodianRole }));
 			}
 			return false;

@@ -57,81 +57,6 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusSectionClinicalStatements(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionClinicalStatements(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionObservationCodeValueSet(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionValueDatatype(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionValueDatatype(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionIcfCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionIcfCodeSystem(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionProblemStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusSectionResultStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
 	}
@@ -161,6 +86,28 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**
