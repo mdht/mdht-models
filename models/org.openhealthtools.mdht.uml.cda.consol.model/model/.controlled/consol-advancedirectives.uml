@@ -422,7 +422,7 @@ expectations and requests for care along with the locations of the documents.</b
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_xSLI8CseEeGQ5rkpDKAt8A" name="AdvanceDirectiveObservationCustodian">
     <ownedComment xmi:id="_CQRaECslEeGQ5rkpDKAt8A">
-      <body>INLINE</body>
+      <body>INLINE&amp;typeCode=vocab::ParticipationType::CST</body>
     </ownedComment>
     <generalization xmi:id="_xSLwACseEeGQ5rkpDKAt8A">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
@@ -477,7 +477,7 @@ expectations and requests for care along with the locations of the documents.</b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5X-V8SsfEeGQ5rkpDKAt8A"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_TCqdsEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_7kDocCseEeGQ5rkpDKAt8A" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_7kDocCseEeGQ5rkpDKAt8A" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7kDocSseEeGQ5rkpDKAt8A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7kDociseEeGQ5rkpDKAt8A"/>
@@ -587,7 +587,7 @@ expectations and requests for care along with the locations of the documents.</b
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_9HiC0CsdEeGQ5rkpDKAt8A" name="AdvanceDirectiveObservationVerifier">
     <ownedComment xmi:id="_FcCygCslEeGQ5rkpDKAt8A">
-      <body>INLINE</body>
+      <body>INLINE&amp;typeCode=vocab::ParticipationType::VRF</body>
     </ownedComment>
     <generalization xmi:id="_9HiC0SsdEeGQ5rkpDKAt8A">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
