@@ -188,11 +188,6 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ownedAttribute xmi:id="_2EaLdhSVEeGGzu7fmW9pXw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2EoNwBSVEeGGzu7fmW9pXw" name="text" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJvQUCCOEeGq2sn1dgvG_g" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cJvQUSCOEeGq2sn1dgvG_g"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="problemEntryReactionObservationContainer" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EaLeRSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLehSVEeGGzu7fmW9pXw"/>
@@ -267,7 +262,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2EoNwBSVEeGGzu7fmW9pXw">
+  <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF:7422</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EoNxBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2EoNwxSVEeGGzu7fmW9pXw">
@@ -313,7 +308,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If statusCode = &quot;active|supended&quot;, then effectiveTime SHALL contain  low [1..1].</body>
+        <body>If statusCode = &quot;aborted|completed&quot;, then effectiveTime SHALL contain  high [1..1].</body>
         <body>(self.statusCode.code = 'aborted' or self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
@@ -401,7 +396,7 @@ historical purposes.&#xD;
     <ruleId>CONF-179</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2F-RkhSVEeGGzu7fmW9pXw" base_Constraint="_2F-RkBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7504</ruleId>
+    <ruleId>CONF:10085</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2F-4oxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2F_fsBSVEeGGzu7fmW9pXw"/>
@@ -457,6 +452,7 @@ historical purposes.&#xD;
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_2F6nMhSVEeGGzu7fmW9pXw" base_Association="_2F6nMBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7509</ruleId>
+    <ruleId>CONF:7915</ruleId>
     <ruleId>CONF:7510</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2FGu4hSVEeGGzu7fmW9pXw" name="SeverityObservation">
@@ -466,17 +462,13 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_sBN0ECK3EeG9m6LRl9ardQ" name="textReference" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wsR1ACK3EeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0IXhYCK3EeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3NEBcCK3EeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FODoBSVEeGGzu7fmW9pXw">
@@ -550,17 +542,13 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_gBlYICKdEeG9m6LRl9ardQ" name="textReference" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_sG9OgCKdEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0eDcUCKdEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3rGAECKdEeG9m6LRl9ardQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1SPc4CKeEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
@@ -633,20 +621,11 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FE5sBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2FE5sRSVEeGGzu7fmW9pXw">
-        <body>The effectiveTime of this observation is the time interval over which the observation is known to be true. The &amp;lt;low> and &amp;lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &amp;lt;low> value is the earliest point for which the condition is known to have existed. The &amp;lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &amp;lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &amp;lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &amp;lt;low> and &amp;lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &amp;lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &amp;lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &amp;lt;effectiveTime> element shall have a &amp;lt;low> element with a nullFlavor attribute set to 'UNK'. The &amp;lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).</body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohOT0CIiEeG9m6LRl9ardQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohOT0SIiEeG9m6LRl9ardQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FFgwRSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <ownedComment xmi:id="_2FFgwhSVEeGGzu7fmW9pXw">
-        <body>&lt;p>The &amp;lt;value> is the condition that was found. This element is required. While the value may be a coded or an un-coded string, the type is always a coded value (xsi:type='CD'). If coded, the code and codeSystem attributes shall be present. The codeSystem should reference a controlled vocabulary describing problems, complaints, symptoms, findings, diagnoses, or functional limitations, e.g., ICD-9, SNOMED-CT or MEDCIN, or others.&lt;/p>&#xD;
-&lt;p>It is recommended that the codeSystemName associated with the codeSystem, and the displayName for the code also be provided for diagnostic and human readability purposes, but this is not required by this profile.&lt;/p>&#xD;
-&lt;p>If uncoded, all attributes other than xsi:type='CD' must be absent.&lt;/p>&#xD;
-&lt;p>The &amp;lt;value> contains a &amp;lt;reference> to the &amp;lt;originalText> in order to link the coded value to the problem narrative text (minus any dates, comments, et cetera). The &amp;lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.&lt;/p></body>
-      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu4BSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw">
@@ -823,7 +802,7 @@ historical purposes.&#xD;
     <ruleId>CONF:7804</ruleId>
     <ruleId>CONF:7805</ruleId>
   </CDA:AssociationValidation>
-  <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g" base_Property="_2EoNwBSVEeGGzu7fmW9pXw"/>
+  <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g"/>
   <CDA:ConstraintValidation xmi:id="_-vDsACEyEeG9m6LRl9ardQ" base_Constraint="_2l9d8CEyEeG9m6LRl9ardQ">
     <ruleId>CONF:9103</ruleId>
   </CDA:ConstraintValidation>

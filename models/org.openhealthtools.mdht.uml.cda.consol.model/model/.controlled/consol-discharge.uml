@@ -12,10 +12,25 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Uz-5xSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Uz-6BSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_7AqigStVEeGlWN0TVxk9LA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-zG5YCtVEeGlWN0TVxk9LA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zG5YStVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7Ap7cCtVEeGlWN0TVxk9LA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Nd6ICtVEeGlWN0TVxk9LA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Nd6IStVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
+  <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33">
+    <ruleId>CONF:10455</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet" base_Property="_2Uz-5hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7976</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_hD-z0CUPEeGiOPpZVnfEJA" name="DischargeMedication">
     <ownedComment xmi:id="_j_-q4CUPEeGiOPpZVnfEJA">
@@ -386,4 +401,12 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9F4LUCqAEeGiFpKeZIy4Pg _9GB8USqAEeGiFpKeZIy4Pg">
     <ownedEnd xmi:id="_9GB8USqAEeGiFpKeZIy4Pg" type="_TytVkCUQEeGiOPpZVnfEJA" association="_9GB8UCqAEeGiFpKeZIy4Pg"/>
   </uml:Association>
+  <Ecore:EReference xmi:id="_7AqigCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_7Ap7cCtVEeGlWN0TVxk9LA"/>
+  <Ecore:EReference xmi:id="_7AqihCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_7AqigStVEeGlWN0TVxk9LA"/>
+  <CDA:TextValue xmi:id="_8vajUCtVEeGlWN0TVxk9LA" base_Property="_7AqigStVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7977</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_9QG1kCtVEeGlWN0TVxk9LA" base_Property="_7Ap7cCtVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7978</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

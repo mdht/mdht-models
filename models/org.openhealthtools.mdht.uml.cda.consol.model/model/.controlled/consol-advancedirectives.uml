@@ -427,7 +427,7 @@ expectations and requests for care along with the locations of the documents.</b
     <generalization xmi:id="_xSLwACseEeGQ5rkpDKAt8A">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
     </generalization>
-    <ownedAttribute xmi:id="_yVu3sCseEeGQ5rkpDKAt8A" name="typeCode" visibility="private">
+    <ownedAttribute xmi:id="_yVu3sCseEeGQ5rkpDKAt8A" name="typeCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_x61O8CsfEeGQ5rkpDKAt8A" value="CST"/>
@@ -447,6 +447,12 @@ expectations and requests for care along with the locations of the documents.</b
     <ruleId>CONF:8669</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="__8j5wCseEeGQ5rkpDKAt8A" name="AdvanceDirectiveObservationCustodianEntity">
+    <ownedRule xmi:id="_eIraoCtBEeGqDO62uYTlKA" name="agentName" constrainedElement="__8j5wCseEeGQ5rkpDKAt8A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gUQhYCtBEeGqDO62uYTlKA">
+        <language>Analysis</language>
+        <body>The name of the agent who can provide a copy of the Advance Directive SHALL be recorded in the &lt;name> element inside the &lt;playingEntity> element</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="__8j5wSseEeGQ5rkpDKAt8A">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
     </generalization>
@@ -487,7 +493,7 @@ expectations and requests for care along with the locations of the documents.</b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lQBYSsfEeGQ5rkpDKAt8A"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VObxsEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Kn5bECsfEeGQ5rkpDKAt8A" name="advanceDirectiveObservationCustodianEntity" type="__8j5wCseEeGQ5rkpDKAt8A" association="_Kn6CICsfEeGQ5rkpDKAt8A">
+    <ownedAttribute xmi:id="_Kn5bECsfEeGQ5rkpDKAt8A" name="playingEntity" type="__8j5wCseEeGQ5rkpDKAt8A" association="_Kn6CICsfEeGQ5rkpDKAt8A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-fd0MCsfEeGQ5rkpDKAt8A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-febQCsfEeGQ5rkpDKAt8A" value="1"/>
     </ownedAttribute>
@@ -496,12 +502,21 @@ expectations and requests for care along with the locations of the documents.</b
     <ownedEnd xmi:id="_Kn6CISsfEeGQ5rkpDKAt8A" type="_4vBVACseEeGQ5rkpDKAt8A" association="_Kn6CICsfEeGQ5rkpDKAt8A"/>
   </uml:Association>
   <Ecore:EReference xmi:id="_7kDBYyseEeGQ5rkpDKAt8A" xmlNamespace="##targetNamespace" base_Property="_7kDBYCseEeGQ5rkpDKAt8A"/>
-  <CDA:PropertyValidation xmi:id="_4yXugCsfEeGQ5rkpDKAt8A" severity="WARNING" base_Property="_7kDBYCseEeGQ5rkpDKAt8A"/>
+  <CDA:PropertyValidation xmi:id="_4yXugCsfEeGQ5rkpDKAt8A" severity="WARNING" base_Property="_7kDBYCseEeGQ5rkpDKAt8A">
+    <ruleId>CONF:8671</ruleId>
+  </CDA:PropertyValidation>
   <Ecore:EAttribute xmi:id="_7kEPgCseEeGQ5rkpDKAt8A" isUnsettable="true" base_Property="_7kDocCseEeGQ5rkpDKAt8A"/>
-  <CDA:PropertyValidation xmi:id="_3a164CsfEeGQ5rkpDKAt8A" base_Property="_7kDocCseEeGQ5rkpDKAt8A"/>
+  <CDA:PropertyValidation xmi:id="_3a164CsfEeGQ5rkpDKAt8A" base_Property="_7kDocCseEeGQ5rkpDKAt8A">
+    <ruleId>CONF:8670</ruleId>
+  </CDA:PropertyValidation>
   <Ecore:EReference xmi:id="_7kEPhCseEeGQ5rkpDKAt8A" xmlNamespace="##targetNamespace" base_Property="_7kEPgSseEeGQ5rkpDKAt8A"/>
-  <CDA:PropertyValidation xmi:id="_606OACsfEeGQ5rkpDKAt8A" severity="WARNING" base_Property="_7kEPgSseEeGQ5rkpDKAt8A"/>
-  <CDA:AssociationValidation xmi:id="_9ngRcCsfEeGQ5rkpDKAt8A" base_Association="_Kn6CICsfEeGQ5rkpDKAt8A"/>
+  <CDA:PropertyValidation xmi:id="_606OACsfEeGQ5rkpDKAt8A" severity="WARNING" base_Property="_7kEPgSseEeGQ5rkpDKAt8A">
+    <ruleId>CONF:8672</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_9ngRcCsfEeGQ5rkpDKAt8A" base_Association="_Kn6CICsfEeGQ5rkpDKAt8A">
+    <ruleId>ii.</ruleId>
+    <ruleId>CONF:8824</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="_TrqsMCsgEeGQ5rkpDKAt8A" name="AdvanceDirectiveObservationExternalDocument">
     <ownedRule xmi:id="_mZCKQCsgEeGQ5rkpDKAt8A" name="textMediaType" constrainedElement="_TrqsMCsgEeGQ5rkpDKAt8A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0V2qcCsgEeGQ5rkpDKAt8A">
@@ -586,6 +601,7 @@ expectations and requests for care along with the locations of the documents.</b
     <ownedAttribute xmi:id="_EuemECseEeGQ5rkpDKAt8A" name="typeCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_L1UNcCtAEeGqDO62uYTlKA" value="VRF"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_dAHlACseEeGQ5rkpDKAt8A" name="participantRole" association="_dAIMESseEeGQ5rkpDKAt8A">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
@@ -622,4 +638,7 @@ expectations and requests for care along with the locations of the documents.</b
   <uml:Association xmi:id="_GTulQCshEeGQ5rkpDKAt8A" memberEnd="_GTt-MCshEeGQ5rkpDKAt8A _GTulQSshEeGQ5rkpDKAt8A">
     <ownedEnd xmi:id="_GTulQSshEeGQ5rkpDKAt8A" type="_2KlEwBSVEeGGzu7fmW9pXw" association="_GTulQCshEeGQ5rkpDKAt8A"/>
   </uml:Association>
+  <CDA:ConstraintValidation xmi:id="_jgRKYCtBEeGqDO62uYTlKA" base_Constraint="_eIraoCtBEeGqDO62uYTlKA">
+    <ruleId>CONF:8674</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
