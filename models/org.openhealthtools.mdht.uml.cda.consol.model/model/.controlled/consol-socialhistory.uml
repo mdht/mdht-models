@@ -332,30 +332,6 @@ frequency.&#xD;
   <CDA:PropertyValidation xmi:id="_2N6sthSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6stxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6suRSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2N0mDRSVEeGGzu7fmW9pXw" name="PregnancyHistorySection">
-    <ownedComment xmi:id="_2N0mDhSVEeGGzu7fmW9pXw" annotatedElement="_2N0mDRSVEeGGzu7fmW9pXw">
-      <body>The pregnancy history section contains coded entries describing the patient history of pregnancies.</body>
-    </ownedComment>
-    <generalization xmi:id="_2OAzQBSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2N0mEBSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2N0mERSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2N0mEhSVEeGGzu7fmW9pXw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2N0mExSVEeGGzu7fmW9pXw" name="pregnancyObservation" type="_2N6soBSVEeGGzu7fmW9pXw" association="_2N0mGRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2N0mFBSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2N0mFRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2N0mGRSVEeGGzu7fmW9pXw" memberEnd="_2N0mExSVEeGGzu7fmW9pXw _2N0mGhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2N0mGhSVEeGGzu7fmW9pXw" type="_2N0mDRSVEeGGzu7fmW9pXw" association="_2N0mGRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:CodeSystemConstraint xmi:id="_2N0mFxSVEeGGzu7fmW9pXw" code="10162-6" displayName="HISTORY OF PREGNANCIES" base_Property="_2N0mEBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2N0mGxSVEeGGzu7fmW9pXw" base_Association="_2N0mGRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_fX96MBrYEeGJ_KU17uNyeA" base_Property="_2JSEQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-8548</ruleId>
   </CDA:PropertyValidation>

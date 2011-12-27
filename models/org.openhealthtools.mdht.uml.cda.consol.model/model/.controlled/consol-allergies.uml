@@ -568,7 +568,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; TRUE</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="procedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
@@ -576,7 +576,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="medicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
@@ -584,13 +584,13 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True.</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.substanceAdministration.oclIsKindOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2FAoQBSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2FAoQBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FAoQRSVEeGGzu7fmW9pXw" name="OBS">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
@@ -693,9 +693,6 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7325</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_WZIPkBrbEeGo461UQq-B1g" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
-  </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="WARNING" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7580</ruleId>
     <ruleId>CONF:7581</ruleId>
@@ -911,5 +908,9 @@ historical purposes.&#xD;
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:9118</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
