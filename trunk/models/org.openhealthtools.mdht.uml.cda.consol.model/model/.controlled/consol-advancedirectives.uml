@@ -617,6 +617,9 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_dAIMESseEeGQ5rkpDKAt8A" memberEnd="_dAHlACseEeGQ5rkpDKAt8A _dAIzICseEeGQ5rkpDKAt8A">
+    <generalization xmi:id="_C0DEADCgEeGKv64oQf5fow">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+    </generalization>
     <ownedEnd xmi:id="_dAIzICseEeGQ5rkpDKAt8A" type="_9HiC0CsdEeGQ5rkpDKAt8A" association="_dAIMESseEeGQ5rkpDKAt8A"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_Q4aMUCseEeGQ5rkpDKAt8A" base_Class="_9HiC0CsdEeGQ5rkpDKAt8A" templateId="i. 2.16.840.1.113883.10.20.1.58">

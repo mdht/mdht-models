@@ -139,7 +139,6 @@
       <ownedComment xmi:id="_w0gJcCAxEeGetMjKLkqR8g">
         <body>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_GT_LgCjSEeGpe-vtKtXilA" name="234422006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language">
       <eAnnotations xmi:id="_2SbZNhSVEeGGzu7fmW9pXw" source="sourceClass">
@@ -409,5 +408,5 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_e1-m8SXaEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.20" base_Enumeration="_e1-m8CXaEeGD8_EQPvfzIQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA" base_EnumerationLiteral="_GT_LgCjSEeGpe-vtKtXilA"/>
+  <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
 </xmi:XMI>
