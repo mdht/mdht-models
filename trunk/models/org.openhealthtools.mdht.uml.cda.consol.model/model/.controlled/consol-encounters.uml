@@ -5,9 +5,9 @@
       <body>This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</body>
     </ownedComment>
     <generalization xmi:id="_KVkvoBVgEeGQCvUGzi1kDQ" general="_4yj2wBVdEeGQCvUGzi1kDQ"/>
-    <ownedAttribute xmi:id="__GSxgCwNEeGKLc4ckmfDag" name="encountersActivites" type="_2LayQBSVEeGGzu7fmW9pXw" redefinedProperty="_3enOcCwNEeGKLc4ckmfDag">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BMyj8CwOEeGKLc4ckmfDag" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BMyj8SwOEeGKLc4ckmfDag" value="1"/>
+    <ownedAttribute xmi:id="_qg2HIDFVEeGbx9xBxK_Upg" name="encounterActivities" type="_2LayQBSVEeGGzu7fmW9pXw" association="_qg2uMDFVEeGbx9xBxK_Upg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8QzhwDFVEeGbx9xBxK_Upg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Q0I0DFVEeGbx9xBxK_Upg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2LXH4BSVEeGGzu7fmW9pXw" base_Class="_2LWg0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.22.1">
@@ -45,9 +45,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4yj2yxVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4yj2zBVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_3enOcCwNEeGKLc4ckmfDag" name="encountersActivites" type="_2LayQBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4-4HUCwNEeGKLc4ckmfDag" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4-4HUSwNEeGKLc4ckmfDag"/>
+    <ownedAttribute xmi:id="_tEKYcDFVEeGbx9xBxK_Upg" name="encounterActivities" type="_2LayQBSVEeGGzu7fmW9pXw" association="_tEK_gDFVEeGbx9xBxK_Upg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7o2J4DFVEeGbx9xBxK_Upg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7o2J4TFVEeGbx9xBxK_Upg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aJLnwBVfEeGQCvUGzi1kDQ" base_Class="_4yj2wBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="HL7">
@@ -340,4 +340,10 @@
   <CDA:ConstraintValidation xmi:id="_nZocACwaEeGKLc4ckmfDag" base_Constraint="_ktatYCwaEeGKLc4ckmfDag">
     <ruleId>CONF:8721</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_tEK_gDFVEeGbx9xBxK_Upg" memberEnd="_tEKYcDFVEeGbx9xBxK_Upg _tEK_gTFVEeGbx9xBxK_Upg">
+    <ownedEnd xmi:id="_tEK_gTFVEeGbx9xBxK_Upg" type="_4yj2wBVdEeGQCvUGzi1kDQ" association="_tEK_gDFVEeGbx9xBxK_Upg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_qg2uMDFVEeGbx9xBxK_Upg" memberEnd="_qg2HIDFVEeGbx9xBxK_Upg _qg2uMTFVEeGbx9xBxK_Upg">
+    <ownedEnd xmi:id="_qg2uMTFVEeGbx9xBxK_Upg" type="_2LWg0BSVEeGGzu7fmW9pXw" association="_qg2uMDFVEeGbx9xBxK_Upg"/>
+  </uml:Association>
 </xmi:XMI>
