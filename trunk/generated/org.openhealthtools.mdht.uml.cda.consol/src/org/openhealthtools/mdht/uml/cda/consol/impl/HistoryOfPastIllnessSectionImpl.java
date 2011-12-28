@@ -10,12 +10,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
-
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryOfPastIllnessSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -56,17 +56,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPastIllnessSectionHasClinicalStatements(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionHasClinicalStatements(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
@@ -87,8 +76,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPastIllnessSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCondition(
+	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
 			this, diagnostics, context);
 	}
 
@@ -97,8 +86,28 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemConcernAct getCondition() {
-		return HistoryOfPastIllnessSectionOperations.getCondition(this);
+	public boolean validateHistoryOfPastIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProblemObservation> getProblemObservations() {
+		return HistoryOfPastIllnessSectionOperations.getProblemObservations(this);
 	}
 
 	/**

@@ -125,6 +125,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAllergiesSectionEntriesOptional();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL:
 				return createEncountersSectionEntriesOptional();
+			case ConsolPackage.ENCOUNTER_ACTIVITIES:
+				return createEncounterActivities();
 			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createImmunizationsSectionEntriesOptional();
 			case ConsolPackage.IMMUNIZATION_ACTIVITY:
@@ -219,8 +221,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAdvanceDirectiveReference();
 			case ConsolPackage.ENCOUNTERS_SECTION:
 				return createEncountersSection();
-			case ConsolPackage.ENCOUNTERS_ACTIVITES:
-				return createEncountersActivites();
 			case ConsolPackage.ENCOUNTER:
 				return createEncounter();
 			case ConsolPackage.IMMUNIZATIONS_SECTION:
@@ -233,8 +233,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoveredParty();
 			case ConsolPackage.POLICY_SUBSCRIBER:
 				return createPolicySubscriber();
-			case ConsolPackage.PREGNANCY_HISTORY_SECTION:
-				return createPregnancyHistorySection();
 			case ConsolPackage.EXTERNAL_REFERENCE:
 				return createExternalReference();
 			case ConsolPackage.SUPPORT:
@@ -259,52 +257,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPhysicalExamSection();
 			case ConsolPackage.GENERAL_STATUS_SECTION:
 				return createGeneralStatusSection();
-			case ConsolPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
-				return createVisibleImplantedMedicalDevicesSection();
-			case ConsolPackage.INTEGUMENTARY_SYSTEM_SECTION:
-				return createIntegumentarySystemSection();
-			case ConsolPackage.HEAD_SECTION:
-				return createHeadSection();
-			case ConsolPackage.EYES_SECTION:
-				return createEyesSection();
-			case ConsolPackage.EARS_NOSE_MOUTH_THROAT_SECTION:
-				return createEarsNoseMouthThroatSection();
-			case ConsolPackage.EARS_SECTION:
-				return createEarsSection();
-			case ConsolPackage.NOSE_SECTION:
-				return createNoseSection();
-			case ConsolPackage.MOUTH_THROAT_TEETH_SECTION:
-				return createMouthThroatTeethSection();
-			case ConsolPackage.NECK_SECTION:
-				return createNeckSection();
-			case ConsolPackage.ENDOCRINE_SYSTEM_SECTION:
-				return createEndocrineSystemSection();
-			case ConsolPackage.THORAX_LUNGS_SECTION:
-				return createThoraxLungsSection();
-			case ConsolPackage.CHEST_WALL_SECTION:
-				return createChestWallSection();
-			case ConsolPackage.BREAST_SECTION:
-				return createBreastSection();
-			case ConsolPackage.HEART_SECTION:
-				return createHeartSection();
-			case ConsolPackage.RESPIRATORY_SYSTEM_SECTION:
-				return createRespiratorySystemSection();
-			case ConsolPackage.ABDOMEN_SECTION:
-				return createAbdomenSection();
-			case ConsolPackage.LYMPHATIC_SECTION:
-				return createLymphaticSection();
-			case ConsolPackage.VESSELS_SECTION:
-				return createVesselsSection();
-			case ConsolPackage.MUSCULOSKELETAL_SYSTEM_SECTION:
-				return createMusculoskeletalSystemSection();
-			case ConsolPackage.NEUROLOGIC_SYSTEM_SECTION:
-				return createNeurologicSystemSection();
-			case ConsolPackage.GENITALIA_SECTION:
-				return createGenitaliaSection();
-			case ConsolPackage.RECTUM_SECTION:
-				return createRectumSection();
-			case ConsolPackage.EXTREMITIES_SECTION:
-				return createExtremitiesSection();
 			case ConsolPackage.REVIEW_OF_SYSTEMS_SECTION:
 				return createReviewOfSystemsSection();
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION:
@@ -313,16 +265,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createLanguageSpoken();
 			case ConsolPackage.HEALTHCARE_PROVIDER:
 				return createHealthcareProvider();
-			case ConsolPackage.MEDICATION_NORMAL_DOSE:
-				return createMedicationNormalDose();
-			case ConsolPackage.MEDICATION_SPLIT_DOSE:
-				return createMedicationSplitDose();
 			case ConsolPackage.MEDICATION_TAPERED_DOSE:
 				return createMedicationTaperedDose();
-			case ConsolPackage.MEDICATION_CONDITIONAL_DOSE:
-				return createMedicationConditionalDose();
-			case ConsolPackage.MEDICATION_COMBINATION_MEDICATION:
-				return createMedicationCombinationMedication();
 			case ConsolPackage.SUPPORT_GUARDIAN:
 				return createSupportGuardian();
 			case ConsolPackage.SUPPORT_PARTICIPANT:
@@ -375,24 +319,90 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHospitalDischargeInstructionsSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
 				return createHospitalDischargeMedicationsSection();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
-				return createAdvanceDirectiveObservationVerifier();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN:
-				return createAdvanceDirectiveObservationCustodian();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE:
-				return createAdvanceDirectiveObservationCustodianRole();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY:
-				return createAdvanceDirectiveObservationCustodianEntity();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE:
-				return createAdvanceDirectiveObservationReference();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_EXTERNAL_DOCUMENT:
-				return createAdvanceDirectiveObservationExternalDocument();
 			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
 				return createHospitalDischargePhysicalSection();
 			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION:
 				return createChiefComplaintAndReasonForVisitSection();
 			case ConsolPackage.REASON_FOR_VISIT_SECTION:
 				return createReasonForVisitSection();
+			case ConsolPackage.RELATED_INFORMANT:
+				return createRelatedInformant();
+			case ConsolPackage.ENCOUNTER_PERFORMER:
+				return createEncounterPerformer();
+			case ConsolPackage.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY:
+				return createEncounterPerformerAssignedEntity();
+			case ConsolPackage.AUTHOR:
+				return createAuthor();
+			case ConsolPackage.PERSON:
+				return createPerson();
+			case ConsolPackage.RECORD_TARGET:
+				return createRecordTarget();
+			case ConsolPackage.DATA_ENTERER:
+				return createDataEnterer();
+			case ConsolPackage.CUSTODIAN:
+				return createCustodian();
+			case ConsolPackage.INFORMATION_RECIPIENT:
+				return createInformationRecipient();
+			case ConsolPackage.LEGAL_AUTHENTICATOR:
+				return createLegalAuthenticator();
+			case ConsolPackage.AUTHENTICATOR:
+				return createAuthenticator();
+			case ConsolPackage.INFORMANT:
+				return createInformant();
+			case ConsolPackage.PARTICIPANT_SUPPORT:
+				return createParticipantSupport();
+			case ConsolPackage.IN_FULFILLMENT_OF:
+				return createInFulfillmentOf();
+			case ConsolPackage.COMPONENT_OF:
+				return createComponentOf();
+			case ConsolPackage.ASSIGNED_AUTHENTICATOR:
+				return createAssignedAuthenticator();
+			case ConsolPackage.ASSIGNED_AUTHOR:
+				return createAssignedAuthor();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER:
+				return createEncompassingEncounter();
+			case ConsolPackage.ASSIGNED_CUSTODIAN:
+				return createAssignedCustodian();
+			case ConsolPackage.CUSTODIAN_ORGANIZATION:
+				return createCustodianOrganization();
+			case ConsolPackage.AUTHORING_DEVICE:
+				return createAuthoringDevice();
+			case ConsolPackage.ASSIGNED_INFORMANT:
+				return createAssignedInformant();
+			case ConsolPackage.INTENDED_RECIPIENT:
+				return createIntendedRecipient();
+			case ConsolPackage.ASSIGNED_DATA_ENTERER:
+				return createAssignedDataEnterer();
+			case ConsolPackage.ORDER:
+				return createOrder();
+			case ConsolPackage.RECIEVED_ORGANIZATION:
+				return createRecievedOrganization();
+			case ConsolPackage.PATIENT_ROLE:
+				return createPatientRole();
+			case ConsolPackage.PATIENT:
+				return createPatient();
+			case ConsolPackage.BIRTHPLACE:
+				return createBirthplace();
+			case ConsolPackage.GUARDIAN:
+				return createGuardian();
+			case ConsolPackage.PROVIDER_ORGANIZATION:
+				return createProviderOrganization();
+			case ConsolPackage.LANGUAGE_COMMUNICATION:
+				return createLanguageCommunication();
+			case ConsolPackage.PLACE:
+				return createPlace();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN:
+				return createAdvanceDirectiveObservationCustodian();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE:
+				return createAdvanceDirectiveObservationReference();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
+				return createAdvanceDirectiveObservationVerifier();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE:
+				return createAdvanceDirectiveObservationCustodianRole();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY:
+				return createAdvanceDirectiveObservationCustodianEntity();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_EXTERNAL_DOCUMENT:
+				return createAdvanceDirectiveObservationExternalDocument();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1153,9 +1163,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EncountersActivites createEncountersActivites() {
-		EncountersActivitesImpl encountersActivites = new EncountersActivitesImpl();
-		return encountersActivites;
+	public EncounterActivities createEncounterActivities() {
+		EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
+		return encounterActivities;
 	}
 
 	/**
@@ -1246,16 +1256,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicySubscriber createPolicySubscriber() {
 		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
 		return policySubscriber;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PregnancyHistorySection createPregnancyHistorySection() {
-		PregnancyHistorySectionImpl pregnancyHistorySection = new PregnancyHistorySectionImpl();
-		return pregnancyHistorySection;
 	}
 
 	/**
@@ -1423,6 +1423,336 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public RelatedInformant createRelatedInformant() {
+		RelatedInformantImpl relatedInformant = new RelatedInformantImpl();
+		return relatedInformant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterPerformer createEncounterPerformer() {
+		EncounterPerformerImpl encounterPerformer = new EncounterPerformerImpl();
+		return encounterPerformer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity() {
+		EncounterPerformerAssignedEntityImpl encounterPerformerAssignedEntity = new EncounterPerformerAssignedEntityImpl();
+		return encounterPerformerAssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Author createAuthor() {
+		AuthorImpl author = new AuthorImpl();
+		return author;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Person createPerson() {
+		PersonImpl person = new PersonImpl();
+		return person;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RecordTarget createRecordTarget() {
+		RecordTargetImpl recordTarget = new RecordTargetImpl();
+		return recordTarget;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DataEnterer createDataEnterer() {
+		DataEntererImpl dataEnterer = new DataEntererImpl();
+		return dataEnterer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Custodian createCustodian() {
+		CustodianImpl custodian = new CustodianImpl();
+		return custodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationRecipient createInformationRecipient() {
+		InformationRecipientImpl informationRecipient = new InformationRecipientImpl();
+		return informationRecipient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LegalAuthenticator createLegalAuthenticator() {
+		LegalAuthenticatorImpl legalAuthenticator = new LegalAuthenticatorImpl();
+		return legalAuthenticator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Authenticator createAuthenticator() {
+		AuthenticatorImpl authenticator = new AuthenticatorImpl();
+		return authenticator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Informant createInformant() {
+		InformantImpl informant = new InformantImpl();
+		return informant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ParticipantSupport createParticipantSupport() {
+		ParticipantSupportImpl participantSupport = new ParticipantSupportImpl();
+		return participantSupport;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InFulfillmentOf createInFulfillmentOf() {
+		InFulfillmentOfImpl inFulfillmentOf = new InFulfillmentOfImpl();
+		return inFulfillmentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf createComponentOf() {
+		ComponentOfImpl componentOf = new ComponentOfImpl();
+		return componentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedAuthenticator createAssignedAuthenticator() {
+		AssignedAuthenticatorImpl assignedAuthenticator = new AssignedAuthenticatorImpl();
+		return assignedAuthenticator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedAuthor createAssignedAuthor() {
+		AssignedAuthorImpl assignedAuthor = new AssignedAuthorImpl();
+		return assignedAuthor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter createEncompassingEncounter() {
+		EncompassingEncounterImpl encompassingEncounter = new EncompassingEncounterImpl();
+		return encompassingEncounter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedCustodian createAssignedCustodian() {
+		AssignedCustodianImpl assignedCustodian = new AssignedCustodianImpl();
+		return assignedCustodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CustodianOrganization createCustodianOrganization() {
+		CustodianOrganizationImpl custodianOrganization = new CustodianOrganizationImpl();
+		return custodianOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AuthoringDevice createAuthoringDevice() {
+		AuthoringDeviceImpl authoringDevice = new AuthoringDeviceImpl();
+		return authoringDevice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedInformant createAssignedInformant() {
+		AssignedInformantImpl assignedInformant = new AssignedInformantImpl();
+		return assignedInformant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntendedRecipient createIntendedRecipient() {
+		IntendedRecipientImpl intendedRecipient = new IntendedRecipientImpl();
+		return intendedRecipient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedDataEnterer createAssignedDataEnterer() {
+		AssignedDataEntererImpl assignedDataEnterer = new AssignedDataEntererImpl();
+		return assignedDataEnterer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Order createOrder() {
+		OrderImpl order = new OrderImpl();
+		return order;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RecievedOrganization createRecievedOrganization() {
+		RecievedOrganizationImpl recievedOrganization = new RecievedOrganizationImpl();
+		return recievedOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientRole createPatientRole() {
+		PatientRoleImpl patientRole = new PatientRoleImpl();
+		return patientRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Patient createPatient() {
+		PatientImpl patient = new PatientImpl();
+		return patient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Birthplace createBirthplace() {
+		BirthplaceImpl birthplace = new BirthplaceImpl();
+		return birthplace;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Guardian createGuardian() {
+		GuardianImpl guardian = new GuardianImpl();
+		return guardian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProviderOrganization createProviderOrganization() {
+		ProviderOrganizationImpl providerOrganization = new ProviderOrganizationImpl();
+		return providerOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LanguageCommunication createLanguageCommunication() {
+		LanguageCommunicationImpl languageCommunication = new LanguageCommunicationImpl();
+		return languageCommunication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Place createPlace() {
+		PlaceImpl place = new PlaceImpl();
+		return place;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AdvanceDirectiveObservationVerifier createAdvanceDirectiveObservationVerifier() {
 		AdvanceDirectiveObservationVerifierImpl advanceDirectiveObservationVerifier = new AdvanceDirectiveObservationVerifierImpl();
 		return advanceDirectiveObservationVerifier;
@@ -1513,236 +1843,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection() {
-		VisibleImplantedMedicalDevicesSectionImpl visibleImplantedMedicalDevicesSection = new VisibleImplantedMedicalDevicesSectionImpl();
-		return visibleImplantedMedicalDevicesSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IntegumentarySystemSection createIntegumentarySystemSection() {
-		IntegumentarySystemSectionImpl integumentarySystemSection = new IntegumentarySystemSectionImpl();
-		return integumentarySystemSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HeadSection createHeadSection() {
-		HeadSectionImpl headSection = new HeadSectionImpl();
-		return headSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EyesSection createEyesSection() {
-		EyesSectionImpl eyesSection = new EyesSectionImpl();
-		return eyesSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EarsNoseMouthThroatSection createEarsNoseMouthThroatSection() {
-		EarsNoseMouthThroatSectionImpl earsNoseMouthThroatSection = new EarsNoseMouthThroatSectionImpl();
-		return earsNoseMouthThroatSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EarsSection createEarsSection() {
-		EarsSectionImpl earsSection = new EarsSectionImpl();
-		return earsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NoseSection createNoseSection() {
-		NoseSectionImpl noseSection = new NoseSectionImpl();
-		return noseSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MouthThroatTeethSection createMouthThroatTeethSection() {
-		MouthThroatTeethSectionImpl mouthThroatTeethSection = new MouthThroatTeethSectionImpl();
-		return mouthThroatTeethSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NeckSection createNeckSection() {
-		NeckSectionImpl neckSection = new NeckSectionImpl();
-		return neckSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EndocrineSystemSection createEndocrineSystemSection() {
-		EndocrineSystemSectionImpl endocrineSystemSection = new EndocrineSystemSectionImpl();
-		return endocrineSystemSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ThoraxLungsSection createThoraxLungsSection() {
-		ThoraxLungsSectionImpl thoraxLungsSection = new ThoraxLungsSectionImpl();
-		return thoraxLungsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ChestWallSection createChestWallSection() {
-		ChestWallSectionImpl chestWallSection = new ChestWallSectionImpl();
-		return chestWallSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BreastSection createBreastSection() {
-		BreastSectionImpl breastSection = new BreastSectionImpl();
-		return breastSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HeartSection createHeartSection() {
-		HeartSectionImpl heartSection = new HeartSectionImpl();
-		return heartSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RespiratorySystemSection createRespiratorySystemSection() {
-		RespiratorySystemSectionImpl respiratorySystemSection = new RespiratorySystemSectionImpl();
-		return respiratorySystemSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AbdomenSection createAbdomenSection() {
-		AbdomenSectionImpl abdomenSection = new AbdomenSectionImpl();
-		return abdomenSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LymphaticSection createLymphaticSection() {
-		LymphaticSectionImpl lymphaticSection = new LymphaticSectionImpl();
-		return lymphaticSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VesselsSection createVesselsSection() {
-		VesselsSectionImpl vesselsSection = new VesselsSectionImpl();
-		return vesselsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MusculoskeletalSystemSection createMusculoskeletalSystemSection() {
-		MusculoskeletalSystemSectionImpl musculoskeletalSystemSection = new MusculoskeletalSystemSectionImpl();
-		return musculoskeletalSystemSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NeurologicSystemSection createNeurologicSystemSection() {
-		NeurologicSystemSectionImpl neurologicSystemSection = new NeurologicSystemSectionImpl();
-		return neurologicSystemSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GenitaliaSection createGenitaliaSection() {
-		GenitaliaSectionImpl genitaliaSection = new GenitaliaSectionImpl();
-		return genitaliaSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RectumSection createRectumSection() {
-		RectumSectionImpl rectumSection = new RectumSectionImpl();
-		return rectumSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExtremitiesSection createExtremitiesSection() {
-		ExtremitiesSectionImpl extremitiesSection = new ExtremitiesSectionImpl();
-		return extremitiesSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ReviewOfSystemsSection createReviewOfSystemsSection() {
 		ReviewOfSystemsSectionImpl reviewOfSystemsSection = new ReviewOfSystemsSectionImpl();
 		return reviewOfSystemsSection;
@@ -1793,49 +1893,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationNormalDose createMedicationNormalDose() {
-		MedicationNormalDoseImpl medicationNormalDose = new MedicationNormalDoseImpl();
-		return medicationNormalDose;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationSplitDose createMedicationSplitDose() {
-		MedicationSplitDoseImpl medicationSplitDose = new MedicationSplitDoseImpl();
-		return medicationSplitDose;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationTaperedDose createMedicationTaperedDose() {
 		MedicationTaperedDoseImpl medicationTaperedDose = new MedicationTaperedDoseImpl();
 		return medicationTaperedDose;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationConditionalDose createMedicationConditionalDose() {
-		MedicationConditionalDoseImpl medicationConditionalDose = new MedicationConditionalDoseImpl();
-		return medicationConditionalDose;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationCombinationMedication createMedicationCombinationMedication() {
-		MedicationCombinationMedicationImpl medicationCombinationMedication = new MedicationCombinationMedicationImpl();
-		return medicationCombinationMedication;
 	}
 
 	/**

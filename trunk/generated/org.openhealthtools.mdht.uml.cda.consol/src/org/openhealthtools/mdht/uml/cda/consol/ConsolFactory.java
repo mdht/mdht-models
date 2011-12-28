@@ -701,13 +701,13 @@ public interface ConsolFactory extends EFactory {
 	EncountersSection createEncountersSection();
 
 	/**
-	 * Returns a new object of class '<em>Encounters Activites</em>'.
+	 * Returns a new object of class '<em>Encounter Activities</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounters Activites</em>'.
+	 * @return a new object of class '<em>Encounter Activities</em>'.
 	 * @generated
 	 */
-	EncountersActivites createEncountersActivites();
+	EncounterActivities createEncounterActivities();
 
 	/**
 	 * Returns a new object of class '<em>Service Delivery Location</em>'.
@@ -789,15 +789,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PolicySubscriber createPolicySubscriber();
-
-	/**
-	 * Returns a new object of class '<em>Pregnancy History Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Pregnancy History Section</em>'.
-	 * @generated
-	 */
-	PregnancyHistorySection createPregnancyHistorySection();
 
 	/**
 	 * Returns a new object of class '<em>External Reference</em>'.
@@ -944,6 +935,303 @@ public interface ConsolFactory extends EFactory {
 	ReasonForVisitSection createReasonForVisitSection();
 
 	/**
+	 * Returns a new object of class '<em>Related Informant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Related Informant</em>'.
+	 * @generated
+	 */
+	RelatedInformant createRelatedInformant();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Performer</em>'.
+	 * @generated
+	 */
+	EncounterPerformer createEncounterPerformer();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Performer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Performer Assigned Entity</em>'.
+	 * @generated
+	 */
+	EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Author</em>'.
+	 * @generated
+	 */
+	Author createAuthor();
+
+	/**
+	 * Returns a new object of class '<em>Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Person</em>'.
+	 * @generated
+	 */
+	Person createPerson();
+
+	/**
+	 * Returns a new object of class '<em>Record Target</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Record Target</em>'.
+	 * @generated
+	 */
+	RecordTarget createRecordTarget();
+
+	/**
+	 * Returns a new object of class '<em>Data Enterer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Enterer</em>'.
+	 * @generated
+	 */
+	DataEnterer createDataEnterer();
+
+	/**
+	 * Returns a new object of class '<em>Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian</em>'.
+	 * @generated
+	 */
+	Custodian createCustodian();
+
+	/**
+	 * Returns a new object of class '<em>Information Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Information Recipient</em>'.
+	 * @generated
+	 */
+	InformationRecipient createInformationRecipient();
+
+	/**
+	 * Returns a new object of class '<em>Legal Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Legal Authenticator</em>'.
+	 * @generated
+	 */
+	LegalAuthenticator createLegalAuthenticator();
+
+	/**
+	 * Returns a new object of class '<em>Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Authenticator</em>'.
+	 * @generated
+	 */
+	Authenticator createAuthenticator();
+
+	/**
+	 * Returns a new object of class '<em>Informant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Informant</em>'.
+	 * @generated
+	 */
+	Informant createInformant();
+
+	/**
+	 * Returns a new object of class '<em>Participant Support</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Participant Support</em>'.
+	 * @generated
+	 */
+	ParticipantSupport createParticipantSupport();
+
+	/**
+	 * Returns a new object of class '<em>In Fulfillment Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>In Fulfillment Of</em>'.
+	 * @generated
+	 */
+	InFulfillmentOf createInFulfillmentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of</em>'.
+	 * @generated
+	 */
+	ComponentOf createComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Authenticator</em>'.
+	 * @generated
+	 */
+	AssignedAuthenticator createAssignedAuthenticator();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Author</em>'.
+	 * @generated
+	 */
+	AssignedAuthor createAssignedAuthor();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter createEncompassingEncounter();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Custodian</em>'.
+	 * @generated
+	 */
+	AssignedCustodian createAssignedCustodian();
+
+	/**
+	 * Returns a new object of class '<em>Custodian Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian Organization</em>'.
+	 * @generated
+	 */
+	CustodianOrganization createCustodianOrganization();
+
+	/**
+	 * Returns a new object of class '<em>Authoring Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Authoring Device</em>'.
+	 * @generated
+	 */
+	AuthoringDevice createAuthoringDevice();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Informant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Informant</em>'.
+	 * @generated
+	 */
+	AssignedInformant createAssignedInformant();
+
+	/**
+	 * Returns a new object of class '<em>Intended Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intended Recipient</em>'.
+	 * @generated
+	 */
+	IntendedRecipient createIntendedRecipient();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Data Enterer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Data Enterer</em>'.
+	 * @generated
+	 */
+	AssignedDataEnterer createAssignedDataEnterer();
+
+	/**
+	 * Returns a new object of class '<em>Order</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Order</em>'.
+	 * @generated
+	 */
+	Order createOrder();
+
+	/**
+	 * Returns a new object of class '<em>Recieved Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Recieved Organization</em>'.
+	 * @generated
+	 */
+	RecievedOrganization createRecievedOrganization();
+
+	/**
+	 * Returns a new object of class '<em>Patient Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Role</em>'.
+	 * @generated
+	 */
+	PatientRole createPatientRole();
+
+	/**
+	 * Returns a new object of class '<em>Patient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient</em>'.
+	 * @generated
+	 */
+	Patient createPatient();
+
+	/**
+	 * Returns a new object of class '<em>Birthplace</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Birthplace</em>'.
+	 * @generated
+	 */
+	Birthplace createBirthplace();
+
+	/**
+	 * Returns a new object of class '<em>Guardian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Guardian</em>'.
+	 * @generated
+	 */
+	Guardian createGuardian();
+
+	/**
+	 * Returns a new object of class '<em>Provider Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Provider Organization</em>'.
+	 * @generated
+	 */
+	ProviderOrganization createProviderOrganization();
+
+	/**
+	 * Returns a new object of class '<em>Language Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Language Communication</em>'.
+	 * @generated
+	 */
+	LanguageCommunication createLanguageCommunication();
+
+	/**
+	 * Returns a new object of class '<em>Place</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Place</em>'.
+	 * @generated
+	 */
+	Place createPlace();
+
+	/**
 	 * Returns a new object of class '<em>Advance Directive Observation Verifier</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1025,213 +1313,6 @@ public interface ConsolFactory extends EFactory {
 	GeneralStatusSection createGeneralStatusSection();
 
 	/**
-	 * Returns a new object of class '<em>Visible Implanted Medical Devices Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Visible Implanted Medical Devices Section</em>'.
-	 * @generated
-	 */
-	VisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection();
-
-	/**
-	 * Returns a new object of class '<em>Integumentary System Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Integumentary System Section</em>'.
-	 * @generated
-	 */
-	IntegumentarySystemSection createIntegumentarySystemSection();
-
-	/**
-	 * Returns a new object of class '<em>Head Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Head Section</em>'.
-	 * @generated
-	 */
-	HeadSection createHeadSection();
-
-	/**
-	 * Returns a new object of class '<em>Eyes Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Eyes Section</em>'.
-	 * @generated
-	 */
-	EyesSection createEyesSection();
-
-	/**
-	 * Returns a new object of class '<em>Ears Nose Mouth Throat Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ears Nose Mouth Throat Section</em>'.
-	 * @generated
-	 */
-	EarsNoseMouthThroatSection createEarsNoseMouthThroatSection();
-
-	/**
-	 * Returns a new object of class '<em>Ears Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ears Section</em>'.
-	 * @generated
-	 */
-	EarsSection createEarsSection();
-
-	/**
-	 * Returns a new object of class '<em>Nose Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nose Section</em>'.
-	 * @generated
-	 */
-	NoseSection createNoseSection();
-
-	/**
-	 * Returns a new object of class '<em>Mouth Throat Teeth Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Mouth Throat Teeth Section</em>'.
-	 * @generated
-	 */
-	MouthThroatTeethSection createMouthThroatTeethSection();
-
-	/**
-	 * Returns a new object of class '<em>Neck Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Neck Section</em>'.
-	 * @generated
-	 */
-	NeckSection createNeckSection();
-
-	/**
-	 * Returns a new object of class '<em>Endocrine System Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Endocrine System Section</em>'.
-	 * @generated
-	 */
-	EndocrineSystemSection createEndocrineSystemSection();
-
-	/**
-	 * Returns a new object of class '<em>Thorax Lungs Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Thorax Lungs Section</em>'.
-	 * @generated
-	 */
-	ThoraxLungsSection createThoraxLungsSection();
-
-	/**
-	 * Returns a new object of class '<em>Chest Wall Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Chest Wall Section</em>'.
-	 * @generated
-	 */
-	ChestWallSection createChestWallSection();
-
-	/**
-	 * Returns a new object of class '<em>Breast Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Breast Section</em>'.
-	 * @generated
-	 */
-	BreastSection createBreastSection();
-
-	/**
-	 * Returns a new object of class '<em>Heart Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Heart Section</em>'.
-	 * @generated
-	 */
-	HeartSection createHeartSection();
-
-	/**
-	 * Returns a new object of class '<em>Respiratory System Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Respiratory System Section</em>'.
-	 * @generated
-	 */
-	RespiratorySystemSection createRespiratorySystemSection();
-
-	/**
-	 * Returns a new object of class '<em>Abdomen Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Abdomen Section</em>'.
-	 * @generated
-	 */
-	AbdomenSection createAbdomenSection();
-
-	/**
-	 * Returns a new object of class '<em>Lymphatic Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Lymphatic Section</em>'.
-	 * @generated
-	 */
-	LymphaticSection createLymphaticSection();
-
-	/**
-	 * Returns a new object of class '<em>Vessels Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Vessels Section</em>'.
-	 * @generated
-	 */
-	VesselsSection createVesselsSection();
-
-	/**
-	 * Returns a new object of class '<em>Musculoskeletal System Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Musculoskeletal System Section</em>'.
-	 * @generated
-	 */
-	MusculoskeletalSystemSection createMusculoskeletalSystemSection();
-
-	/**
-	 * Returns a new object of class '<em>Neurologic System Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Neurologic System Section</em>'.
-	 * @generated
-	 */
-	NeurologicSystemSection createNeurologicSystemSection();
-
-	/**
-	 * Returns a new object of class '<em>Genitalia Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Genitalia Section</em>'.
-	 * @generated
-	 */
-	GenitaliaSection createGenitaliaSection();
-
-	/**
-	 * Returns a new object of class '<em>Rectum Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Rectum Section</em>'.
-	 * @generated
-	 */
-	RectumSection createRectumSection();
-
-	/**
-	 * Returns a new object of class '<em>Extremities Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Extremities Section</em>'.
-	 * @generated
-	 */
-	ExtremitiesSection createExtremitiesSection();
-
-	/**
 	 * Returns a new object of class '<em>Review Of Systems Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1277,24 +1358,6 @@ public interface ConsolFactory extends EFactory {
 	HealthcareProvider createHealthcareProvider();
 
 	/**
-	 * Returns a new object of class '<em>Medication Normal Dose</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Normal Dose</em>'.
-	 * @generated
-	 */
-	MedicationNormalDose createMedicationNormalDose();
-
-	/**
-	 * Returns a new object of class '<em>Medication Split Dose</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Split Dose</em>'.
-	 * @generated
-	 */
-	MedicationSplitDose createMedicationSplitDose();
-
-	/**
 	 * Returns a new object of class '<em>Medication Tapered Dose</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1302,24 +1365,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	MedicationTaperedDose createMedicationTaperedDose();
-
-	/**
-	 * Returns a new object of class '<em>Medication Conditional Dose</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Conditional Dose</em>'.
-	 * @generated
-	 */
-	MedicationConditionalDose createMedicationConditionalDose();
-
-	/**
-	 * Returns a new object of class '<em>Medication Combination Medication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Combination Medication</em>'.
-	 * @generated
-	 */
-	MedicationCombinationMedication createMedicationCombinationMedication();
 
 	/**
 	 * Returns a new object of class '<em>Support Guardian</em>'.

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservationCustodianRole()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianRoleClassCode AdvanceDirectiveObservationCustodianRolePlayingEntity' constraints.validation.warning='AdvanceDirectiveObservationCustodianRoleAddr AdvanceDirectiveObservationCustodianRoleTelecom' classCode='ROL'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianRoleClassCode' classCode='ROL' constraints.validation.warning='AdvanceDirectiveObservationCustodianRoleAddr AdvanceDirectiveObservationCustodianRoleTelecom'"
  * @generated
  */
 public interface AdvanceDirectiveObservationCustodianRole extends ParticipantRole {

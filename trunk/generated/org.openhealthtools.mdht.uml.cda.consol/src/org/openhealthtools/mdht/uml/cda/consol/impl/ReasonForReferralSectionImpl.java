@@ -9,16 +9,10 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReasonForReferralSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -77,8 +71,8 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForReferralSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionCondition(this, diagnostics, context);
+	public boolean validateReasonForReferralSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -86,45 +80,8 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForReferralSectionResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionResult(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForReferralSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionProblemEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ProblemConcernAct> getConditions() {
-		return ReasonForReferralSectionOperations.getConditions(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ResultObservation> getResults() {
-		return ReasonForReferralSectionOperations.getResults(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<AllergyObservation> getProblemEntries() {
-		return ReasonForReferralSectionOperations.getProblemEntries(this);
+	public boolean validateReasonForReferralSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionText(this, diagnostics, context);
 	}
 
 	/**
