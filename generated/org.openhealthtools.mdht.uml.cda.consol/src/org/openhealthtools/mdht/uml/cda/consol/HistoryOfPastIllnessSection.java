@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -18,42 +19,15 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * This section describes the past medical history for the patient. It may contain
- * information about past procedures or other illnesses that might have a bearing on the
- * patient's current illness. Since past medical history can include past surgical history
- * and other procedures, the Procedure History section may be included under the Past
- * Medical History section or it may stand alone as its own section. By the same token,
- * problems can be recorded in a standalone Problems section or in a nested Problems
- * section. Wherever used, procedures and problems should conform to the CCD template
- * for CDA entries cited in the respective sections.
- * The History of Past Illness section shall contain a narrative description of the conditions the patient suffered in the
- * past. It shall include entries for problems as described in the Entry Content Modules.
- * <p>
- *     The History of Past Illness Section contains data about problems the patient suffered in the
- *     past. 
- * </p>
+ * This section describes the history related to the patient's current complaints, problems, or diagnoses. It records the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.
  * <!-- end-model-doc -->
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHistoryOfPastIllnessSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HISTORY OF PAST ILLNESS' templateId.root='2.16.840.1.113883.10.20.22.2.20' constraints.validation.error='HistoryOfPastIllnessSectionTemplateId HistoryOfPastIllnessSectionCode HistoryOfPastIllnessSectionCondition' code.codeSystemName='LOINC' constraints.validation.warning='HistoryOfPastIllnessSectionHasClinicalStatements' code.code='11348-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HISTORY OF PAST ILLNESS' templateId.root='2.16.840.1.113883.10.20.22.2.20' constraints.validation.error='HistoryOfPastIllnessSectionTemplateId HistoryOfPastIllnessSectionCode HistoryOfPastIllnessSectionTitle HistoryOfPastIllnessSectionText' code.codeSystemName='LOINC' code.code='11348-0' constraints.validation.info='HistoryOfPastIllnessSectionProblemObservation'"
  * @generated
  */
 public interface HistoryOfPastIllnessSection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.entry->isEmpty()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entry->isEmpty()'"
-	 * @generated
-	 */
-	boolean validateHistoryOfPastIllnessSectionHasClinicalStatements(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -86,26 +60,53 @@ public interface HistoryOfPastIllnessSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateHistoryOfPastIllnessSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)
+	 * not self.text.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
 	 * @generated
 	 */
-	ProblemConcernAct getCondition();
+	boolean validateHistoryOfPastIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation))'"
+	 * @generated
+	 */
+	boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation)).oclAsType(consol::ProblemObservation)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation)).oclAsType(consol::ProblemObservation)'"
+	 * @generated
+	 */
+	EList<ProblemObservation> getProblemObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

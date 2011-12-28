@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 
@@ -74,8 +73,8 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralStatusSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralStatusSectionOperations.validateGeneralStatusSectionProblemEntry(this, diagnostics, context);
+	public boolean validateGeneralStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralStatusSectionOperations.validateGeneralStatusSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +82,8 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyObservation getProblemEntry() {
-		return GeneralStatusSectionOperations.getProblemEntry(this);
+	public boolean validateGeneralStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralStatusSectionOperations.validateGeneralStatusSectionText(this, diagnostics, context);
 	}
 
 	/**

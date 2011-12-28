@@ -13,12 +13,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
-
+import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -77,8 +74,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionMedication(this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -86,19 +83,9 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionImmunization(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics,
+	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEncounterEntry(
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			this, diagnostics, context);
 	}
 
@@ -107,26 +94,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationActivity> getMedications() {
-		return AssessmentAndPlanSectionOperations.getMedications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ImmunizationActivity> getImmunizations() {
-		return AssessmentAndPlanSectionOperations.getImmunizations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Encounter> getEncounterEntries() {
-		return AssessmentAndPlanSectionOperations.getEncounterEntries(this);
+	public EList<PlanOfCareActivityAct> getPlanOfCareActivityActs() {
+		return AssessmentAndPlanSectionOperations.getPlanOfCareActivityActs(this);
 	}
 
 	/**
