@@ -119,6 +119,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAdvanceDirectivesSectionEntriesOptional();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
 				return createAdvanceDirectiveObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE:
+				return createAdvanceDirectiveObservation_Reference();
+			case ConsolPackage.REFERENCE_EXTERNAL_DOCUMENT:
+				return createReference_ExternalDocument();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN:
+				return createAdvanceDirectiveObservation_Custodian();
+			case ConsolPackage.CUSTODIAN_CUSTODIAN_ROLE:
+				return createCustodian_CustodianRole();
+			case ConsolPackage.CUSTODIAN_ROLE_CUSTODIAN_ENTITY:
+				return createCustodianRole_CustodianEntity();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
+				return createAdvanceDirectiveObservation_Verifier();
 			case ConsolPackage.ALLERGIES_SECTION:
 				return createAllergiesSection();
 			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
@@ -217,8 +229,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAdvanceDirectiveVerification();
 			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
 				return createAdvanceDirectiveStatusObservation();
-			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE:
-				return createAdvanceDirectiveReference();
 			case ConsolPackage.ENCOUNTERS_SECTION:
 				return createEncountersSection();
 			case ConsolPackage.ENCOUNTER:
@@ -391,18 +401,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createLanguageCommunication();
 			case ConsolPackage.PLACE:
 				return createPlace();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN:
-				return createAdvanceDirectiveObservationCustodian();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE:
-				return createAdvanceDirectiveObservationReference();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
-				return createAdvanceDirectiveObservationVerifier();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE:
-				return createAdvanceDirectiveObservationCustodianRole();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY:
-				return createAdvanceDirectiveObservationCustodianEntity();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_EXTERNAL_DOCUMENT:
-				return createAdvanceDirectiveObservationExternalDocument();
+			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT:
+				return createAllergyObservationParticipant();
+			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE:
+				return createAllergyObservationParticipantRole();
+			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY:
+				return createAllergyObservationPlayingEntity();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1123,6 +1127,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AdvanceDirectiveObservation_Reference createAdvanceDirectiveObservation_Reference() {
+		AdvanceDirectiveObservation_ReferenceImpl advanceDirectiveObservation_Reference = new AdvanceDirectiveObservation_ReferenceImpl();
+		return advanceDirectiveObservation_Reference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Reference_ExternalDocument createReference_ExternalDocument() {
+		Reference_ExternalDocumentImpl reference_ExternalDocument = new Reference_ExternalDocumentImpl();
+		return reference_ExternalDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation_Custodian createAdvanceDirectiveObservation_Custodian() {
+		AdvanceDirectiveObservation_CustodianImpl advanceDirectiveObservation_Custodian = new AdvanceDirectiveObservation_CustodianImpl();
+		return advanceDirectiveObservation_Custodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Custodian_CustodianRole createCustodian_CustodianRole() {
+		Custodian_CustodianRoleImpl custodian_CustodianRole = new Custodian_CustodianRoleImpl();
+		return custodian_CustodianRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CustodianRole_CustodianEntity createCustodianRole_CustodianEntity() {
+		CustodianRole_CustodianEntityImpl custodianRole_CustodianEntity = new CustodianRole_CustodianEntityImpl();
+		return custodianRole_CustodianEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation_Verifier createAdvanceDirectiveObservation_Verifier() {
+		AdvanceDirectiveObservation_VerifierImpl advanceDirectiveObservation_Verifier = new AdvanceDirectiveObservation_VerifierImpl();
+		return advanceDirectiveObservation_Verifier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AdvanceDirectiveVerification createAdvanceDirectiveVerification() {
 		AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
 		return advanceDirectiveVerification;
@@ -1136,16 +1200,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation() {
 		AdvanceDirectiveStatusObservationImpl advanceDirectiveStatusObservation = new AdvanceDirectiveStatusObservationImpl();
 		return advanceDirectiveStatusObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
-		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
-		return advanceDirectiveReference;
 	}
 
 	/**
@@ -1753,9 +1807,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectiveObservationVerifier createAdvanceDirectiveObservationVerifier() {
-		AdvanceDirectiveObservationVerifierImpl advanceDirectiveObservationVerifier = new AdvanceDirectiveObservationVerifierImpl();
-		return advanceDirectiveObservationVerifier;
+	public AllergyObservationParticipant createAllergyObservationParticipant() {
+		AllergyObservationParticipantImpl allergyObservationParticipant = new AllergyObservationParticipantImpl();
+		return allergyObservationParticipant;
 	}
 
 	/**
@@ -1763,9 +1817,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectiveObservationCustodian createAdvanceDirectiveObservationCustodian() {
-		AdvanceDirectiveObservationCustodianImpl advanceDirectiveObservationCustodian = new AdvanceDirectiveObservationCustodianImpl();
-		return advanceDirectiveObservationCustodian;
+	public AllergyObservationParticipantRole createAllergyObservationParticipantRole() {
+		AllergyObservationParticipantRoleImpl allergyObservationParticipantRole = new AllergyObservationParticipantRoleImpl();
+		return allergyObservationParticipantRole;
 	}
 
 	/**
@@ -1773,39 +1827,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectiveObservationCustodianRole createAdvanceDirectiveObservationCustodianRole() {
-		AdvanceDirectiveObservationCustodianRoleImpl advanceDirectiveObservationCustodianRole = new AdvanceDirectiveObservationCustodianRoleImpl();
-		return advanceDirectiveObservationCustodianRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservationCustodianEntity createAdvanceDirectiveObservationCustodianEntity() {
-		AdvanceDirectiveObservationCustodianEntityImpl advanceDirectiveObservationCustodianEntity = new AdvanceDirectiveObservationCustodianEntityImpl();
-		return advanceDirectiveObservationCustodianEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservationReference createAdvanceDirectiveObservationReference() {
-		AdvanceDirectiveObservationReferenceImpl advanceDirectiveObservationReference = new AdvanceDirectiveObservationReferenceImpl();
-		return advanceDirectiveObservationReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservationExternalDocument createAdvanceDirectiveObservationExternalDocument() {
-		AdvanceDirectiveObservationExternalDocumentImpl advanceDirectiveObservationExternalDocument = new AdvanceDirectiveObservationExternalDocumentImpl();
-		return advanceDirectiveObservationExternalDocument;
+	public AllergyObservationPlayingEntity createAllergyObservationPlayingEntity() {
+		AllergyObservationPlayingEntityImpl allergyObservationPlayingEntity = new AllergyObservationPlayingEntityImpl();
+		return allergyObservationPlayingEntity;
 	}
 
 	/**

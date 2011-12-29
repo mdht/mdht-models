@@ -12,10 +12,10 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReference;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
-import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservationReferenceOperations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservation_ReferenceOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.ReferenceImpl;
 
@@ -30,14 +30,14 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectiveObservationReferenceImpl extends ReferenceImpl implements
-		AdvanceDirectiveObservationReference {
+public class AdvanceDirectiveObservation_ReferenceImpl extends ReferenceImpl implements
+		AdvanceDirectiveObservation_Reference {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdvanceDirectiveObservationReferenceImpl() {
+	protected AdvanceDirectiveObservation_ReferenceImpl() {
 		super();
 	}
 
@@ -56,9 +56,8 @@ public class AdvanceDirectiveObservationReferenceImpl extends ReferenceImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationReferenceExternalDocument(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationReferenceOperations.validateAdvanceDirectiveObservationReferenceExternalDocument(
+	public boolean validateReferenceExternalDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveObservation_ReferenceOperations.validateReferenceExternalDocument(
 			this, diagnostics, context);
 	}
 
@@ -67,8 +66,8 @@ public class AdvanceDirectiveObservationReferenceImpl extends ReferenceImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectiveObservationReference init() {
+	public AdvanceDirectiveObservation_Reference init() {
 		CDAUtil.init(this);
 		return this;
 	}
-} // AdvanceDirectiveObservationReferenceImpl
+} // AdvanceDirectiveObservation_ReferenceImpl

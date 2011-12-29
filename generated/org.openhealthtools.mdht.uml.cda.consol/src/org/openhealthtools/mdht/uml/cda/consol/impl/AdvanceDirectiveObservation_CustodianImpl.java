@@ -12,10 +12,10 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodian;
+import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Custodian;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
-import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservationCustodianOperations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservation_CustodianOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
 
@@ -30,14 +30,14 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectiveObservationCustodianImpl extends Participant2Impl implements
-		AdvanceDirectiveObservationCustodian {
+public class AdvanceDirectiveObservation_CustodianImpl extends Participant2Impl implements
+		AdvanceDirectiveObservation_Custodian {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdvanceDirectiveObservationCustodianImpl() {
+	protected AdvanceDirectiveObservation_CustodianImpl() {
 		super();
 	}
 
@@ -56,9 +56,18 @@ public class AdvanceDirectiveObservationCustodianImpl extends Participant2Impl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationCustodianTypeCode(DiagnosticChain diagnostics,
+	public boolean validateCustodianTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveObservation_CustodianOperations.validateCustodianTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCustodianAdvanceDirectiveObservationCustodianRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationCustodianOperations.validateAdvanceDirectiveObservationCustodianTypeCode(
+		return AdvanceDirectiveObservation_CustodianOperations.validateCustodianAdvanceDirectiveObservationCustodianRole(
 			this, diagnostics, context);
 	}
 
@@ -67,19 +76,8 @@ public class AdvanceDirectiveObservationCustodianImpl extends Participant2Impl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationCustodianOperations.validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservationCustodian init() {
+	public AdvanceDirectiveObservation_Custodian init() {
 		CDAUtil.init(this);
 		return this;
 	}
-} // AdvanceDirectiveObservationCustodianImpl
+} // AdvanceDirectiveObservation_CustodianImpl

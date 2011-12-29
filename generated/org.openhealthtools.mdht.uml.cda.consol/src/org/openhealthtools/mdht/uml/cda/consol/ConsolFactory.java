@@ -665,6 +665,60 @@ public interface ConsolFactory extends EFactory {
 	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
 
 	/**
+	 * Returns a new object of class '<em>Advance Directive Observation Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Observation Reference</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveObservation_Reference createAdvanceDirectiveObservation_Reference();
+
+	/**
+	 * Returns a new object of class '<em>Reference External Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reference External Document</em>'.
+	 * @generated
+	 */
+	Reference_ExternalDocument createReference_ExternalDocument();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Observation Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Observation Custodian</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveObservation_Custodian createAdvanceDirectiveObservation_Custodian();
+
+	/**
+	 * Returns a new object of class '<em>Custodian Custodian Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian Custodian Role</em>'.
+	 * @generated
+	 */
+	Custodian_CustodianRole createCustodian_CustodianRole();
+
+	/**
+	 * Returns a new object of class '<em>Custodian Role Custodian Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian Role Custodian Entity</em>'.
+	 * @generated
+	 */
+	CustodianRole_CustodianEntity createCustodianRole_CustodianEntity();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Observation Verifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Observation Verifier</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveObservation_Verifier createAdvanceDirectiveObservation_Verifier();
+
+	/**
 	 * Returns a new object of class '<em>Advance Directive Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -681,15 +735,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	AdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Reference</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveReference createAdvanceDirectiveReference();
 
 	/**
 	 * Returns a new object of class '<em>Encounters Section</em>'.
@@ -1232,58 +1277,31 @@ public interface ConsolFactory extends EFactory {
 	Place createPlace();
 
 	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Verifier</em>'.
+	 * Returns a new object of class '<em>Allergy Observation Participant</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Verifier</em>'.
+	 * @return a new object of class '<em>Allergy Observation Participant</em>'.
 	 * @generated
 	 */
-	AdvanceDirectiveObservationVerifier createAdvanceDirectiveObservationVerifier();
+	AllergyObservationParticipant createAllergyObservationParticipant();
 
 	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Custodian</em>'.
+	 * Returns a new object of class '<em>Allergy Observation Participant Role</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Custodian</em>'.
+	 * @return a new object of class '<em>Allergy Observation Participant Role</em>'.
 	 * @generated
 	 */
-	AdvanceDirectiveObservationCustodian createAdvanceDirectiveObservationCustodian();
+	AllergyObservationParticipantRole createAllergyObservationParticipantRole();
 
 	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Custodian Role</em>'.
+	 * Returns a new object of class '<em>Allergy Observation Playing Entity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Custodian Role</em>'.
+	 * @return a new object of class '<em>Allergy Observation Playing Entity</em>'.
 	 * @generated
 	 */
-	AdvanceDirectiveObservationCustodianRole createAdvanceDirectiveObservationCustodianRole();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Custodian Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Custodian Entity</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservationCustodianEntity createAdvanceDirectiveObservationCustodianEntity();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Reference</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservationReference createAdvanceDirectiveObservationReference();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation External Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation External Document</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservationExternalDocument createAdvanceDirectiveObservationExternalDocument();
+	AllergyObservationPlayingEntity createAllergyObservationPlayingEntity();
 
 	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.

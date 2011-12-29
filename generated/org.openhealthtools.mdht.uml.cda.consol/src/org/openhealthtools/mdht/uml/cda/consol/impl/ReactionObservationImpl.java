@@ -59,6 +59,42 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationEffectiveTimeLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationEffectiveTimeHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(
