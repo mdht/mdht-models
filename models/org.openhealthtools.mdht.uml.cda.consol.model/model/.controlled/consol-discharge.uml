@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
     <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
       <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
@@ -63,15 +63,12 @@
     <ownedEnd xmi:id="_3InvsSUPEeGiOPpZVnfEJA" type="_hD-z0CUPEeGiOPpZVnfEJA" association="_3InvsCUPEeGiOPpZVnfEJA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_lhObMCUPEeGiOPpZVnfEJA" base_Class="_hD-z0CUPEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.35" assigningAuthorityName="HL7"/>
-  <Ecore:EAttribute xmi:id="_iYbeQCUPEeGiOPpZVnfEJA" isUnsettable="true" base_Property="_iYa3MCUPEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_pYIbUCUPEeGiOPpZVnfEJA" base_Property="_iYa3MCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7689</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_iYd6gCUPEeGiOPpZVnfEJA" isUnsettable="true" base_Property="_iYdTcCUPEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_sfKdsCUPEeGiOPpZVnfEJA" base_Property="_iYdTcCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7690</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_iYcsYCUPEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_iYcFUCUPEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_v1oDMCUPEeGiOPpZVnfEJA" base_Property="_iYcFUCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7691</ruleId>
   </CDA:PropertyValidation>
@@ -111,11 +108,9 @@
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7853</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_A2GJUCUKEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_A2FiQCUKEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_DWr2wCUKEeGiOPpZVnfEJA" base_Property="_A2FiQCUKEeGiOPpZVnfEJA">
     <ruleId>CONF:7854</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_A11qoCUKEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_A1tHwCUKEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_FMdsoCUKEeGiOPpZVnfEJA" base_Property="_A1tHwCUKEeGiOPpZVnfEJA">
     <ruleId>CONF:7855</ruleId>
   </CDA:PropertyValidation>
@@ -150,15 +145,12 @@
     <ownedEnd xmi:id="_uH22oSULEeGiOPpZVnfEJA" type="_KtwVgCULEeGiOPpZVnfEJA" association="_uH22oCULEeGiOPpZVnfEJA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_OJL6kCULEeGiOPpZVnfEJA" base_Class="_KtwVgCULEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.33" assigningAuthorityName="HL7"/>
-  <Ecore:EAttribute xmi:id="_MwN8gCULEeGiOPpZVnfEJA" isUnsettable="true" base_Property="_MwNVcCULEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_em_w0CULEeGiOPpZVnfEJA" base_Property="_MwNVcCULEeGiOPpZVnfEJA">
     <ruleId>CONF:7663</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_MwPxsCULEeGiOPpZVnfEJA" isUnsettable="true" base_Property="_MwPKoCULEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_hnRD4CULEeGiOPpZVnfEJA" base_Property="_MwPKoCULEeGiOPpZVnfEJA">
     <ruleId>CONF:7664</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_MwOjkSULEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_MwOjkCULEeGiOPpZVnfEJA"/>
   <CDA:CodeSystemConstraint xmi:id="_kj3X4CULEeGiOPpZVnfEJA" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="_MwOjkCULEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7665</ruleId>
@@ -199,11 +191,9 @@
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7980</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_wbgwwCUKEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_wbgJsCUKEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_zgAcgCUKEeGiOPpZVnfEJA" base_Property="_wbgJsCUKEeGiOPpZVnfEJA">
     <ruleId>CONF:7981</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_wbfioCUKEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_wbe7kCUKEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_0U5dICUKEeGiOPpZVnfEJA" base_Property="_wbe7kCUKEeGiOPpZVnfEJA">
     <ruleId>CONF:7982</ruleId>
   </CDA:PropertyValidation>
@@ -236,16 +226,13 @@
   <CDA:CDATemplate xmi:id="_onB14CUMEeGiOPpZVnfEJA" base_Class="_lBergCUMEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.2.41" assigningAuthorityName="HL7">
     <ruleId>CONF:10395</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EReference xmi:id="_mPunUCUMEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_mPuAQCUMEeGiOPpZVnfEJA"/>
   <CDA:CodeSystemConstraint xmi:id="_sPZDsCUMEeGiOPpZVnfEJA" code="8653-8" displayName="Hospital Discharge Instructions" base_Property="_mPuAQCUMEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:9920</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_mPv1cCUMEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_mPvOYCUMEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_0SG88CUMEeGiOPpZVnfEJA" base_Property="_mPvOYCUMEeGiOPpZVnfEJA">
     <ruleId>CONF:9921</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_mPwcgyUMEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_mPwcgCUMEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_2S9aYCUMEeGiOPpZVnfEJA" base_Property="_mPwcgCUMEeGiOPpZVnfEJA">
     <ruleId>CONF:9922</ruleId>
   </CDA:TextValue>
@@ -297,11 +284,9 @@
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7817</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_zaK9cyUOEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_zaK9cCUOEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_236PoCUOEeGiOPpZVnfEJA" base_Property="_zaK9cCUOEeGiOPpZVnfEJA">
     <ruleId>CONF:7818</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_zaKWYCUOEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_zaJvUCUOEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_4s9swCUOEeGiOPpZVnfEJA" base_Property="_zaJvUCUOEeGiOPpZVnfEJA">
     <ruleId>CONF:7819</ruleId>
   </CDA:PropertyValidation>
@@ -334,16 +319,13 @@
   <CDA:CDATemplate xmi:id="_Z5_VgCUTEeGiOPpZVnfEJA" base_Class="_WikGsCUTEeGiOPpZVnfEJA" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.26" assigningAuthorityName="HL7">
     <ruleId>CONF:10460</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EReference xmi:id="_Xi_B4yUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_Xi_B4CUTEeGiOPpZVnfEJA"/>
   <CDA:CodeSystemConstraint xmi:id="_f0Ul8CUTEeGiOPpZVnfEJA" code="10184-0" displayName="Hospital Discharge Physical" base_Property="_Xi_B4CUTEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7972</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_Xi_B6yUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_Xi_B6CUTEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_o0XqICUTEeGiOPpZVnfEJA" base_Property="_Xi_B6CUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7973</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_Xi_B5yUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_Xi_B5CUTEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_oHJXwCUTEeGiOPpZVnfEJA" base_Property="_Xi_B5CUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7974</ruleId>
   </CDA:PropertyValidation>
@@ -380,15 +362,12 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <CDA:CDATemplate xmi:id="_6g_c4CUTEeGiOPpZVnfEJA" base_Class="_38AXoCUTEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.2.16" assigningAuthorityName="HL7">
     <ruleId>CONF:10398</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EReference xmi:id="_5F8bMyUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_5F8bMCUTEeGiOPpZVnfEJA"/>
   <CDA:CodeSystemConstraint xmi:id="_8-_JUCUTEeGiOPpZVnfEJA" code="11493-4" displayName="Hospital Discharge Studies Summary" base_Property="_5F8bMCUTEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_5F8bOyUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_5F8bOCUTEeGiOPpZVnfEJA"/>
   <CDA:TextValue xmi:id="_Fa_sUCUUEeGiOPpZVnfEJA" base_Property="_5F8bOCUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7912</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_5F8bNyUTEeGiOPpZVnfEJA" xmlNamespace="##targetNamespace" base_Property="_5F8bNCUTEeGiOPpZVnfEJA"/>
   <CDA:PropertyValidation xmi:id="_GePSACUUEeGiOPpZVnfEJA" base_Property="_5F8bNCUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7913</ruleId>
   </CDA:PropertyValidation>
@@ -401,8 +380,6 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9F4LUCqAEeGiFpKeZIy4Pg _9GB8USqAEeGiFpKeZIy4Pg">
     <ownedEnd xmi:id="_9GB8USqAEeGiFpKeZIy4Pg" type="_TytVkCUQEeGiOPpZVnfEJA" association="_9GB8UCqAEeGiFpKeZIy4Pg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_7AqigCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_7Ap7cCtVEeGlWN0TVxk9LA"/>
-  <Ecore:EReference xmi:id="_7AqihCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_7AqigStVEeGlWN0TVxk9LA"/>
   <CDA:TextValue xmi:id="_8vajUCtVEeGlWN0TVxk9LA" base_Property="_7AqigStVEeGlWN0TVxk9LA">
     <ruleId>CONF:7977</ruleId>
   </CDA:TextValue>

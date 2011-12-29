@@ -127,14 +127,12 @@
   <CDA:ConstraintValidation xmi:id="_2NWE9xSVEeGGzu7fmW9pXw">
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NWE-hSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NWE-RSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2NWE9RSVEeGGzu7fmW9pXw" base_Property="_2NWE8hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8539</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2NWE9BSVEeGGzu7fmW9pXw" base_Property="_2NWE7xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8539</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2NWE_BSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2NWE-xSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2NWFBBSVEeGGzu7fmW9pXw" name="PlanOfCareActivityEncounter">
     <generalization xmi:id="_2NcLhxSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
@@ -166,7 +164,6 @@
   <CDA:ConstraintValidation xmi:id="_2NcLgxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NcLhhSVEeGGzu7fmW9pXw" isUnsettable="true"/>
   <CDA:PropertyValidation xmi:id="_2NcLgRSVEeGGzu7fmW9pXw" base_Property="_2NWFDxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8565</ruleId>
   </CDA:PropertyValidation>
@@ -201,14 +198,12 @@
   <CDA:ConstraintValidation xmi:id="_2NcLnhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NiSIBSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NcLoBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2NcLnBSVEeGGzu7fmW9pXw" base_Property="_2NcLmRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8582</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2NcLmxSVEeGGzu7fmW9pXw" base_Property="_2NcLlhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8584</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2NiSIhSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace"/>
   <uml:Class xmi:id="_2NiSKhSVEeGGzu7fmW9pXw" name="PlanOfCareActivityProcedure">
     <generalization xmi:id="_2NiSPhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
@@ -237,7 +232,6 @@
   <CDA:ConstraintValidation xmi:id="_2NiSOhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NiSPRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NiSPBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2NiSOBSVEeGGzu7fmW9pXw" base_Property="_2NiSNRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8569</ruleId>
   </CDA:PropertyValidation>
@@ -273,14 +267,12 @@
   <CDA:ConstraintValidation xmi:id="_2NoY0hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-489</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NoY1hSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NoY1BSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2NoY0RSVEeGGzu7fmW9pXw" base_Property="_2NoYzhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8573</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2NoY0BSVEeGGzu7fmW9pXw" base_Property="_2NoYyxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8575</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2NoY2hSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace"/>
   <uml:Class xmi:id="_2NoY5BSVEeGGzu7fmW9pXw" name="PlanOfCareActivitySupply">
     <generalization xmi:id="_2NufZhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3gL0sEbuEd6besF9iFIJkQ"/>
@@ -312,7 +304,6 @@
   <CDA:ConstraintValidation xmi:id="_2NufYRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-491</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2NufZRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2NufYxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2NoY8hSVEeGGzu7fmW9pXw" base_Property="_2NoY7xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8578</ruleId>
   </CDA:PropertyValidation>
@@ -330,7 +321,6 @@
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F5fHsCoNEeGHF88-qhhUMA" identifier="2.16.840.1.113883.5.6" displayName="ENC"/>
-  <Ecore:EAttribute xmi:id="_WZzfYCoNEeGHF88-qhhUMA" isUnsettable="true" base_Property="_WZy4UCoNEeGHF88-qhhUMA"/>
   <CDA:PropertyValidation xmi:id="_YUsewCoNEeGHF88-qhhUMA" base_Property="_WZy4UCoNEeGHF88-qhhUMA">
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>

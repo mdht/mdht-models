@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralStatusSection">
     <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
       <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
@@ -95,24 +95,18 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7813</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_VzwKgytWEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_VzwKgCtWEeGlWN0TVxk9LA"/>
-  <Ecore:EReference xmi:id="_VzwKhytWEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_VzwKhCtWEeGlWN0TVxk9LA"/>
   <CDA:TextValue xmi:id="_lr2roCtWEeGlWN0TVxk9LA" base_Property="_VzwKhCtWEeGlWN0TVxk9LA">
     <ruleId>CONF:7814</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_mMnPUCtWEeGlWN0TVxk9LA" base_Property="_VzwKgCtWEeGlWN0TVxk9LA">
     <ruleId>CONF:7815</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_fHh3UCzoEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_fHgpMCzoEeG29eivM7bhbw"/>
-  <Ecore:EReference xmi:id="_fHjFcyzoEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_fHjFcCzoEeG29eivM7bhbw"/>
   <CDA:TextValue xmi:id="_g54lwCzoEeG29eivM7bhbw" base_Property="_fHjFcCzoEeG29eivM7bhbw">
     <ruleId>CONF:7808</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_itf4cCzoEeG29eivM7bhbw" base_Property="_fHgpMCzoEeG29eivM7bhbw">
     <ruleId>CONF:7809</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_qrBIoyzoEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_qrBIoCzoEeG29eivM7bhbw"/>
-  <Ecore:EReference xmi:id="_qrBvsyzoEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_qrBvsCzoEeG29eivM7bhbw"/>
   <CDA:PropertyValidation xmi:id="_ujBU8CzoEeG29eivM7bhbw" base_Property="_qrBIoCzoEeG29eivM7bhbw">
     <ruleId>CONF:7988</ruleId>
   </CDA:PropertyValidation>

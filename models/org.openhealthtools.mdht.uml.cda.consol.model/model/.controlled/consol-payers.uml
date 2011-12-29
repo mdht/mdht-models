@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2MV_UBSVEeGGzu7fmW9pXw" name="PayersSection">
     <ownedComment xmi:id="_2NICcBSVEeGGzu7fmW9pXw" annotatedElement="_2MV_UBSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -287,11 +287,6 @@ guarantor, or some combination.</body>
     <ownedEnd xmi:id="_fqsDwxnZEeGs5a462vYX5Q" type="_PZBdMBUlEeGvPruliC3crg" association="_fqsDwhnZEeGs5a462vYX5Q"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_WCTeUBUlEeGvPruliC3crg" base_Class="_PZBdMBUlEeGvPruliC3crg" templateId="2.16.840.1.113883.10.20.22.4.60"/>
-  <Ecore:EAttribute xmi:id="_Ucq9QRUlEeGvPruliC3crg" isUnsettable="true" base_Property="_Ucq9QBUlEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_UdHpMRUlEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_UdHpMBUlEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_UdHpNRUlEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_UdHpMhUlEeGvPruliC3crg"/>
-  <Ecore:EAttribute xmi:id="_UdHpNxUlEeGvPruliC3crg" isUnsettable="true" base_Property="_UdHpNhUlEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_UdHpOxUlEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_UdHpOBUlEeGvPruliC3crg"/>
   <CDA:ActRelationship xmi:id="_pNyKoBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q"/>
   <CDA:EntryRelationship xmi:id="_qEUxEBnZEeGs5a462vYX5Q" base_Association="_fqsDwhnZEeGs5a462vYX5Q" typeCode="REFR"/>
   <uml:Class xmi:id="_2M7OIBSVEeGGzu7fmW9pXw" name="PolicySubscriber">
@@ -343,11 +338,6 @@ guarantor, or some combination.</body>
     <ownedEnd xmi:id="_V2ah8xUmEeGvPruliC3crg" type="_Cg3pkBUmEeGvPruliC3crg" association="_V2ah8hUmEeGvPruliC3crg"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_HyrhcBUmEeGvPruliC3crg" base_Class="_Cg3pkBUmEeGvPruliC3crg" templateId="2.16.840.1.113883.10.20.22.4.60"/>
-  <Ecore:EAttribute xmi:id="_FVBzQRUmEeGvPruliC3crg" isUnsettable="true" base_Property="_FVBzQBUmEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_FVBzQxUmEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_FVBzQhUmEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_FVBzRxUmEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_FVBzRBUmEeGvPruliC3crg"/>
-  <Ecore:EAttribute xmi:id="_FVBzSRUmEeGvPruliC3crg" isUnsettable="true" base_Property="_FVBzSBUmEeGvPruliC3crg"/>
-  <Ecore:EReference xmi:id="_FVBzTRUmEeGvPruliC3crg" xmlNamespace="##targetNamespace" base_Property="_FVBzShUmEeGvPruliC3crg"/>
   <CDA:AssociationValidation xmi:id="_W3-soBUmEeGvPruliC3crg" base_Association="_V2ah8hUmEeGvPruliC3crg"/>
   <uml:Class xmi:id="_2M4x4xSVEeGGzu7fmW9pXw" name="CoveredParty">
     <generalization xmi:id="_2M6AABSVEeGGzu7fmW9pXw">
@@ -390,9 +380,6 @@ guarantor, or some combination.</body>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19"/>
-  <Ecore:EAttribute xmi:id="_aZU30RnZEeGs5a462vYX5Q" isUnsettable="true" base_Property="_aZU30BnZEeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_aZU31RnZEeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_aZU30hnZEeGs5a462vYX5Q"/>
-  <Ecore:EAttribute xmi:id="_aZU31xnZEeGs5a462vYX5Q" isUnsettable="true" base_Property="_aZU31hnZEeGs5a462vYX5Q"/>
   <uml:Class xmi:id="_2Ma30BSVEeGGzu7fmW9pXw" name="InsuranceProvider">
     <ownedRule xmi:id="_2NBUwxSVEeGGzu7fmW9pXw" name="informationSource">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2NBUxBSVEeGGzu7fmW9pXw">

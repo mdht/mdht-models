@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2DNRcBSVEeGGzu7fmW9pXw" name="GeneralHeaderConstraints">
     <ownedComment xmi:id="_2DNRcRSVEeGGzu7fmW9pXw" annotatedElement="_2DNRcBSVEeGGzu7fmW9pXw">
       <body>This section describes constraints that apply to the header for all documents within the scope of this implementation guide. Header constraints specific to each document type are described in the appropriate document-specific section below
@@ -151,8 +151,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:PropertyValidation xmi:id="_2DTYERSVEeGGzu7fmW9pXw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:5372</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2D3YwxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2D3YwBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2D4m4BSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2D3_0hSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2UnxkRSVEeGGzu7fmW9pXw" name="DischargeSummary">
     <ownedRule xmi:id="_2U6FcxSVEeGGzu7fmW9pXw" name="MedicalSummaryProblemConcernEntry">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2U6FdBSVEeGGzu7fmW9pXw">
@@ -1532,8 +1530,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:PropertyValidation xmi:id="_RPh9oCykEeGMXrZ0DiQwGg" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:5259</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_ZxQHECykEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_ZxPgACykEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_ZxRVMCykEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_ZxQuICykEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_a6CUECykEeGMXrZ0DiQwGg" severity="INFO" base_Property="_ZxPgACykEeGMXrZ0DiQwGg">
     <ruleId>CONF:5261</ruleId>
   </CDA:PropertyValidation>
@@ -1594,19 +1590,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_IMjo0yzGEeGMXrZ0DiQwGg" xmlName="addr" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_IMjo0CzGEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_KeYhgCzGEeGMXrZ0DiQwGg" base_Property="_IMjo0CzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:5589</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_IMkP4yzGEeGMXrZ0DiQwGg" xmlName="code" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_M4RKACzGEeGMXrZ0DiQwGg" severity="INFO" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:9949</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_IMk28yzGEeGMXrZ0DiQwGg" xmlName="id" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_IMk28CzGEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_PjUbACzGEeGMXrZ0DiQwGg" base_Property="_IMk28CzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:5586</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_IMleAyzGEeGMXrZ0DiQwGg" xmlName="telecom" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_IMleACzGEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_SgORACzGEeGMXrZ0DiQwGg" base_Property="_IMleACzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:5595</ruleId>
   </CDA:PropertyValidation>
@@ -1658,19 +1650,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ownedEnd xmi:id="_G7ZKoizAEeGMXrZ0DiQwGg" type="_344-ICymEeGMXrZ0DiQwGg" association="_G7ZKoSzAEeGMXrZ0DiQwGg"/>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_Lqn54CzAEeGMXrZ0DiQwGg" base_Constraint="_LKdzICzAEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_93g4sCymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_93gRoCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_F-MU0Cy7EeGMXrZ0DiQwGg" base_Property="_93gRoCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5452</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_93hfwyymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_93hfwCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_CLll4Cy7EeGMXrZ0DiQwGg" severity="WARNING" base_Property="_93hfwCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:9942</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_93iG0CymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_93hfxCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_AZNpUCy7EeGMXrZ0DiQwGg" base_Property="_93hfxCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5449</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_93iG1CymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_93iG0SymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_KFVJUCy7EeGMXrZ0DiQwGg" base_Property="_93iG0SymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5428</ruleId>
   </CDA:PropertyValidation>
@@ -1724,19 +1712,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_3EIhkizAEeGMXrZ0DiQwGg" memberEnd="_3EIhkCzAEeGMXrZ0DiQwGg _3EJIoCzAEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_3EJIoCzAEeGMXrZ0DiQwGg" type="_HOG0oCynEeGMXrZ0DiQwGg" association="_3EIhkizAEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_NItx4CynEeGMXrZ0DiQwGg" xmlName="addr" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_NItK0CynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_pu6z8CzAEeGMXrZ0DiQwGg" base_Property="_NItK0CynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5460</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_NIuY8yynEeGMXrZ0DiQwGg" xmlName="code" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_NIuY8CynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_nZYf8CzAEeGMXrZ0DiQwGg" severity="INFO" base_Property="_NIuY8CynEeGMXrZ0DiQwGg">
     <ruleId>CONF:9944</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_NIvAAyynEeGMXrZ0DiQwGg" xmlName="id" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_NIvAACynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_kxsE8CzAEeGMXrZ0DiQwGg" base_Property="_NIvAACynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5443</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_NIvnECynEeGMXrZ0DiQwGg" xmlName="telecom" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_NIvABCynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_sHWq8CzAEeGMXrZ0DiQwGg" base_Property="_NIvABCynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5466</ruleId>
   </CDA:PropertyValidation>
@@ -1801,11 +1785,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QjONkEofEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_eA2-QSyoEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_eA2-QCyoEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_mRLTACzGEeGMXrZ0DiQwGg" base_Property="_eA2-QCyoEeGMXrZ0DiQwGg">
     <ruleId>CONF:5608</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_pL6l0SzGEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_qWaDACzGEeGMXrZ0DiQwGg" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:5610</ruleId>
   </CDA:PropertyValidation>
@@ -1851,11 +1833,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lSMhkEogEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_4Aeqgyy_EeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_4AeqgCy_EeGMXrZ0DiQwGg"/>
   <CDA:TextValue xmi:id="_8qPq8Cy_EeGMXrZ0DiQwGg" base_Property="_4AeqgCy_EeGMXrZ0DiQwGg">
     <ruleId>CONF:9936</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_4AfRkyy_EeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_4AfRkCy_EeGMXrZ0DiQwGg"/>
   <CDA:TextValue xmi:id="_-vTS8Cy_EeGMXrZ0DiQwGg" base_Property="_4AfRkCy_EeGMXrZ0DiQwGg">
     <ruleId>CONF:9999</ruleId>
   </CDA:TextValue>
@@ -1909,19 +1889,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_J0W5IEowEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_2zRkcyynEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_2zRkcCynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_JRe7cCzEEeGMXrZ0DiQwGg" base_Property="_2zRkcCynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5559</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2zSLgyynEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_2zSLgCynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_5iGRcCzDEeGMXrZ0DiQwGg" base_Property="_2zSLgCynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5522</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2zSykyynEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_2zSykCynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_F9_xcCzEEeGMXrZ0DiQwGg" base_Property="_2zSykCynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5524</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2zTZoCynEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_2zSylCynEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_HcmdcCzEEeGMXrZ0DiQwGg" base_Property="_2zSylCynEeGMXrZ0DiQwGg">
     <ruleId>CONF:5525</ruleId>
   </CDA:PropertyValidation>
@@ -1971,12 +1947,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_M_vp0CysEeGMXrZ0DiQwGg" memberEnd="_M_vCwCysEeGMXrZ0DiQwGg _M_vp0SysEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_M_vp0SysEeGMXrZ0DiQwGg" type="_-vjwcCylEeGMXrZ0DiQwGg" association="_M_vp0CysEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_Cmzu0yymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_Cmzu0CymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_FFbeoCysEeGMXrZ0DiQwGg" severity="WARNING" base_Property="_Cmzu0CymEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_Cm0V4yymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_Cm0V4CymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_AhJbICysEeGMXrZ0DiQwGg" severity="WARNING" base_Property="_Cm0V4CymEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_BbDeoCysEeGMXrZ0DiQwGg" base_Property="_Cm0V4CymEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_Cm088yymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_Cm088CymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_GD6gICysEeGMXrZ0DiQwGg" severity="INFO" base_Property="_Cm088CymEeGMXrZ0DiQwGg"/>
   <CDA:AssociationValidation xmi:id="_qdT7ECysEeGMXrZ0DiQwGg" base_Association="_M_vp0CysEeGMXrZ0DiQwGg">
     <ruleId>CONF:5385</ruleId>
@@ -2089,22 +2062,18 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_g17BMEo5Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_nLJOcyymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_nLJOcCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_QwRfsCytEeGMXrZ0DiQwGg" base_Property="_nLJOcCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5407</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_S5cLoCytEeGMXrZ0DiQwGg" base_Property="_nLJOcCymEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_nLKckCymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_nLJ1gCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_pkK3ICytEeGMXrZ0DiQwGg" severity="INFO" base_Property="_nLJ1gCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5414</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_nLLDoCymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_jpN7oCytEeGMXrZ0DiQwGg" base_Property="_nLKckSymEeGMXrZ0DiQwGg">
     <ruleId>CONF:9965</ruleId>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_ZGMo0yytEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_aVvlICytEeGMXrZ0DiQwGg" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_2SbZPhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:5409</ruleId>
@@ -2136,11 +2105,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xQJ_AEo5Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_Zc5D0CyoEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_Zc4cwCyoEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_OSrvACzFEeGMXrZ0DiQwGg" base_Property="_Zc4cwCyoEeGMXrZ0DiQwGg">
     <ruleId>CONF:5580</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_S_jt0SzFEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_S_jt0CzFEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_T_SsgCzFEeGMXrZ0DiQwGg" base_Property="_S_jt0CzFEeGMXrZ0DiQwGg">
     <ruleId>CONF:5583</ruleId>
   </CDA:PropertyValidation>
@@ -2156,7 +2123,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XKImMEraEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_44iyYCyoEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_44iLUCyoEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_I0KwgCzIEeGMXrZ0DiQwGg" base_Property="_44iLUCyoEeGMXrZ0DiQwGg">
     <ruleId>CONF:9954</ruleId>
   </CDA:PropertyValidation>
@@ -2179,7 +2145,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_fvkKsCzHEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_fvjjoCzHEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_iW7OgCzHEeGMXrZ0DiQwGg" severity="INFO" base_Property="_fvjjoCzHEeGMXrZ0DiQwGg">
     <ruleId>CONF:10004</ruleId>
   </CDA:PropertyValidation>
@@ -2249,24 +2214,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_GmNfcCytEeGMXrZ0DiQwGg" memberEnd="_GmM4YCytEeGMXrZ0DiQwGg _GmNfcSytEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_GmNfcSytEeGMXrZ0DiQwGg" type="_wfQTkCylEeGMXrZ0DiQwGg" association="_GmNfcCytEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_7OsRwCylEeGMXrZ0DiQwGg" xmlName="administrativeGenderCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7OrqsCylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_L3ZzoCyqEeGMXrZ0DiQwGg" base_Property="_7OrqsCylEeGMXrZ0DiQwGg">
     <ruleId>CONF:6394</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_ohHwoCyrEeGMXrZ0DiQwGg" base_Property="_7OrqsCylEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_7Os40yylEeGMXrZ0DiQwGg" xmlName="birthTime" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7Os40CylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_iCncICyrEeGMXrZ0DiQwGg" base_Property="_7Os40CylEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_7Otf4CylEeGMXrZ0DiQwGg" xmlName="ethnicGroupCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7Os41CylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_u46ZICyrEeGMXrZ0DiQwGg" severity="INFO" base_Property="_7Os41CylEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_7OuG8CylEeGMXrZ0DiQwGg" xmlName="maritalStatusCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7Otf4SylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_j72OoCyrEeGMXrZ0DiQwGg" severity="WARNING" base_Property="_7Otf4SylEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_kVtgICyrEeGMXrZ0DiQwGg" base_Property="_7Otf4SylEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_7OuG9CylEeGMXrZ0DiQwGg" xmlName="name" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7OuG8SylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_J8keoCyqEeGMXrZ0DiQwGg" base_Property="_7OuG8SylEeGMXrZ0DiQwGg">
     <ruleId>CONF:5284</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_7OuuAyylEeGMXrZ0DiQwGg" xmlName="raceCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7OuuACylEeGMXrZ0DiQwGg"/>
-  <Ecore:EReference xmi:id="_7OvVEyylEeGMXrZ0DiQwGg" xmlName="religiousAffiliationCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_7OvVECylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_qnPvoCyrEeGMXrZ0DiQwGg" severity="INFO" base_Property="_7OvVECylEeGMXrZ0DiQwGg"/>
   <CDA:AssociationValidation xmi:id="_6HJMICyrEeGMXrZ0DiQwGg" severity="INFO" base_Association="_2jzoQCyrEeGMXrZ0DiQwGg">
     <ruleId>CONF:5325</ruleId>
@@ -2313,15 +2271,12 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_rOGWcCy6EeGMXrZ0DiQwGg" memberEnd="_rOFvYCy6EeGMXrZ0DiQwGg _rOGWcSy6EeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_rOGWcSy6EeGMXrZ0DiQwGg" type="_qjbOUCylEeGMXrZ0DiQwGg" association="_rOGWcCy6EeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_tsTq0CylEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_tsTDwCylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_56zEICypEeGMXrZ0DiQwGg" base_Property="_tsTDwCylEeGMXrZ0DiQwGg">
     <ruleId>CONF:5271</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_tsUR4yylEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_tsUR4CylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_4OO0oCypEeGMXrZ0DiQwGg" base_Property="_tsUR4CylEeGMXrZ0DiQwGg">
     <ruleId>CONF:5268</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_tsVgACylEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_tsU48CylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_8TO7ICypEeGMXrZ0DiQwGg" base_Property="_tsU48CylEeGMXrZ0DiQwGg">
     <ruleId>CONF:5280</ruleId>
   </CDA:PropertyValidation>
@@ -2350,7 +2305,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sK2_QErgEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_bs30UyymEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_bs30UCymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_-GzDICysEeGMXrZ0DiQwGg" base_Property="_bs30UCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5397</ruleId>
   </CDA:PropertyValidation>
@@ -2365,7 +2319,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_tXL-UCzEEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_tXLXQCzEEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_u2DwECzEEeGMXrZ0DiQwGg" base_Property="_tXLXQCzEEeGMXrZ0DiQwGg">
     <ruleId>CONF:5578</ruleId>
   </CDA:PropertyValidation>
@@ -2413,12 +2366,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_6zNJcSzCEeGMXrZ0DiQwGg" memberEnd="_6zMiYCzCEeGMXrZ0DiQwGg _6zNJcizCEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_6zNJcizCEeGMXrZ0DiQwGg" type="_pjq7UCzCEeGMXrZ0DiQwGg" association="_6zNJcSzCEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <Ecore:EReference xmi:id="_r-q-ICzCEeGMXrZ0DiQwGg" xmlName="addr" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_r-qXECzCEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_zONG8CzCEeGMXrZ0DiQwGg" severity="WARNING" base_Property="_r-qXECzCEeGMXrZ0DiQwGg">
     <ruleId>a.</ruleId>
     <ruleId>CONF:8820</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_r-rlMyzCEeGMXrZ0DiQwGg" xmlName="code" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_r-rlMCzCEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_ySPN8CzCEeGMXrZ0DiQwGg" severity="INFO" base_Property="_r-rlMCzCEeGMXrZ0DiQwGg">
     <ruleId>a.</ruleId>
     <ruleId>CONF:9947</ruleId>
@@ -2473,11 +2424,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_kfYp8EozEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_UiXOESypEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_UiXOECypEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_kFArgCzIEeGMXrZ0DiQwGg" base_Property="_UiXOECypEeGMXrZ0DiQwGg">
     <ruleId>CONF:9958</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_UiX1IyypEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_UiX1ICypEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_k__GACzIEeGMXrZ0DiQwGg" base_Property="_UiX1ICypEeGMXrZ0DiQwGg">
     <ruleId>CONF:9959</ruleId>
   </CDA:PropertyValidation>
@@ -2510,19 +2459,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_-Z0QUyytEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_-Z0QUCytEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_eoHGUCy6EeGMXrZ0DiQwGg" base_Property="_-Z0QUCytEeGMXrZ0DiQwGg">
     <ruleId>CONF:5422</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_-Z03YyytEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_-Z03YCytEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_TueqUCy6EeGMXrZ0DiQwGg" base_Property="_-Z03YCytEeGMXrZ0DiQwGg">
     <ruleId>CONF:5417</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_-Z1ecyytEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_-Z1ecCytEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_ZUEZ0Cy6EeGMXrZ0DiQwGg" base_Property="_-Z1ecCytEeGMXrZ0DiQwGg">
     <ruleId>CONF:5419</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_-Z2FgCytEeGMXrZ0DiQwGg" xmlNamespace="##targetNamespace" base_Property="_-Z1edCytEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_bz-x0Cy6EeGMXrZ0DiQwGg" base_Property="_-Z1edCytEeGMXrZ0DiQwGg">
     <ruleId>CONF:5420</ruleId>
   </CDA:PropertyValidation>
