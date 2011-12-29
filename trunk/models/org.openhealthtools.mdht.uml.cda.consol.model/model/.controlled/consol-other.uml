@@ -332,8 +332,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <uml:Association xmi:id="_2Shf3RSVEeGGzu7fmW9pXw" memberEnd="_2Shf2RSVEeGGzu7fmW9pXw _2Shf3hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Shf3hSVEeGGzu7fmW9pXw" type="_2Shf0xSVEeGGzu7fmW9pXw" association="_2Shf3RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <Ecore:EAttribute xmi:id="_2Shf2BSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2Shf1xSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2Shf3BSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2Shf2RSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2PQJcxSVEeGGzu7fmW9pXw" name="HistoryOfPastIllnessSection">
     <ownedComment xmi:id="_2PWQBRSVEeGGzu7fmW9pXw" annotatedElement="_2PQJcxSVEeGGzu7fmW9pXw">
       <body>This section describes the history related to the patient's current complaints, problems, or diagnoses. It records the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</body>
@@ -503,13 +501,6 @@ hospital facility. It shall include entries for observations as described in the
   <CDA:CDATemplate xmi:id="_4MwQEBUSEeG6PvUxSTZnaw" base_Class="_sHrUoBUSEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.19">
     <ruleId>CONF:7482</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_2MdMQRUSEeG6PvUxSTZnaw" isUnsettable="true" base_Property="_2MdMQBUSEeG6PvUxSTZnaw"/>
-  <Ecore:EReference xmi:id="_2MdMQxUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MdMQhUSEeG6PvUxSTZnaw"/>
-  <Ecore:EReference xmi:id="_2MdMRxUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MdMRBUSEeG6PvUxSTZnaw"/>
-  <Ecore:EReference xmi:id="_2MdMSxUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MdMSBUSEeG6PvUxSTZnaw"/>
-  <Ecore:EAttribute xmi:id="_2MmWMBUSEeG6PvUxSTZnaw" isUnsettable="true" base_Property="_2MdMTBUSEeG6PvUxSTZnaw"/>
-  <Ecore:EReference xmi:id="_2MmWNBUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MmWMRUSEeG6PvUxSTZnaw"/>
-  <Ecore:EReference xmi:id="_2MmWOBUSEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_2MmWNRUSEeG6PvUxSTZnaw"/>
   <uml:Class xmi:id="_2G8h9RSVEeGGzu7fmW9pXw" name="Instructions">
     <ownedComment xmi:id="_-HE7oB7lEeGEaLkc3UAsAg">
       <body>The Instructions template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The act/code defines the type of instruction.Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</body>
@@ -618,8 +609,6 @@ attribute should be set to &quot;NA&quot;.</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EAttribute xmi:id="_2G7T0RSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2G7T0BSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2G7T0xSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2G7T0hSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2G6swBSVEeGGzu7fmW9pXw" base_Property="_2G5eqBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2G6FsBSVEeGGzu7fmW9pXw" base_Property="_2G5ephSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2SVSlBSVEeGGzu7fmW9pXw" name="LanguageSpoken">
@@ -890,7 +879,6 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:ConstraintValidation xmi:id="_2Tw18RSVEeGGzu7fmW9pXw" base_Constraint="_2TqvZhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Tw18hSVEeGGzu7fmW9pXw" base_Constraint="_2TqvaBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2Tw18BSVEeGGzu7fmW9pXw" base_Property="_2TqvaxSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2Tw19xSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2Tw19BSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2Tko1hSVEeGGzu7fmW9pXw" name="ScanningDevice">
     <ownedComment xmi:id="_2Tko1xSVEeGGzu7fmW9pXw" annotatedElement="_2Tko1hSVEeGGzu7fmW9pXw">
       <body>Represents the scanning device and software used to produce the scanned content.</body>
@@ -973,7 +961,6 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:ConstraintValidation xmi:id="_2TqvUxSVEeGGzu7fmW9pXw" base_Constraint="_2Tko3hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TqvVBSVEeGGzu7fmW9pXw" base_Constraint="_2Tko4RSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TqvVRSVEeGGzu7fmW9pXw" base_Constraint="_2Tko5BSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2TqvWhSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TqvVxSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2TkovBSVEeGGzu7fmW9pXw" name="ScanOriginalAuthor">
     <ownedComment xmi:id="_2TkovRSVEeGGzu7fmW9pXw" annotatedElement="_2TkovBSVEeGGzu7fmW9pXw">
       <body>Represents the author of the original content. It additionally can encode the original author‟s institution in the subelement representedOrganization. Information regarding the original author and his/her institution shall be included, if it is known. In many cases this will have to be supplied by the operator.</body>
@@ -1014,7 +1001,6 @@ attribute should be set to &quot;NA&quot;.</body>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_2TkoxhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkovhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2TkoxxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkowBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2TkozBSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TkoyRSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2LiHABSVEeGGzu7fmW9pXw" name="ServiceDeliveryLocation">
     <ownedRule xmi:id="_U1PlUB-ZEeGtfPlBCjHWkw" name="hasPlayingEntity" constrainedElement="_2LiHABSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_aYMQgB-ZEeGtfPlBCjHWkw">
@@ -1094,7 +1080,6 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:PropertyValidation xmi:id="_2LjVIBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-473</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_2Lr4AxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace"/>
   <uml:Class xmi:id="_2OfUbhSVEeGGzu7fmW9pXw" name="Support">
     <ownedComment xmi:id="_2OfUchSVEeGGzu7fmW9pXw" annotatedElement="_2OfUbhSVEeGGzu7fmW9pXw">
       <body>&lt;p>Represents the patient's sources of support such as immediate family, relatives, and guardian at the time the summarization is generated. Support information also includes next of kin, caregivers, and support organizations. At a minimum, key support contacts relative to healthcare decisions, including next of kin, should be included.&lt;/p>&#xD;
@@ -1185,7 +1170,6 @@ attribute should be set to &quot;NA&quot;.</body>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_2TeiEhSVEeGGzu7fmW9pXw" base_Property="_2TeiEBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2TeiFxSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2TeiExSVEeGGzu7fmW9pXw"/>
-  <Ecore:EReference xmi:id="_2TeiGxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2TeiGBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_1jO68Bq2EeGo461UQq-B1g" base_Property="_2MdMQBUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7480</ruleId>
   </CDA:PropertyValidation>
@@ -1234,10 +1218,6 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:ConstraintValidation xmi:id="_80CEgB-XEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_5t29wB-XEeGtfPlBCjHWkw">
     <ruleId>CONF:9321</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EReference xmi:id="_nD9N8B-YEeGtfPlBCjHWkw" xmlNamespace="##targetNamespace" base_Property="_nD7_0B-YEeGtfPlBCjHWkw"/>
-  <Ecore:EAttribute xmi:id="_nD_DIB-YEeGtfPlBCjHWkw" isUnsettable="true" base_Property="_nD-cEB-YEeGtfPlBCjHWkw"/>
-  <Ecore:EReference xmi:id="_nD_qMx-YEeGtfPlBCjHWkw" xmlNamespace="##targetNamespace" base_Property="_nD_qMB-YEeGtfPlBCjHWkw"/>
-  <Ecore:EReference xmi:id="_nEA4UB-YEeGtfPlBCjHWkw" xmlNamespace="##targetNamespace" base_Property="_nEARQB-YEeGtfPlBCjHWkw"/>
   <CDA:PropertyValidation xmi:id="_rVPc8B-YEeGtfPlBCjHWkw" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7758</ruleId>
   </CDA:PropertyValidation>
@@ -1265,8 +1245,6 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:ConstraintValidation xmi:id="_h8UJQB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_X2UwsB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7764</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EReference xmi:id="_YgtxMCrAEeGHF88-qhhUMA" xmlNamespace="##targetNamespace" base_Property="_YgtKICrAEeGHF88-qhhUMA"/>
-  <Ecore:EReference xmi:id="_Yg4wUyrAEeGHF88-qhhUMA" xmlNamespace="##targetNamespace" base_Property="_Yg4wUCrAEeGHF88-qhhUMA"/>
   <CDA:PropertyValidation xmi:id="_aUzlACrAEeGHF88-qhhUMA" base_Property="_YgtKICrAEeGHF88-qhhUMA">
     <ruleId>CONF:7835</ruleId>
   </CDA:PropertyValidation>
@@ -1360,28 +1338,21 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:AssociationValidation xmi:id="_PisE0CtFEeGlWN0TVxk9LA" severity="INFO" base_Association="_lr7nIhU8EeGbmN_W114JUw">
     <ruleId>CONF:9082</ruleId>
   </CDA:AssociationValidation>
-  <Ecore:EReference xmi:id="_L_0AsCtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_L_zZoCtVEeGlWN0TVxk9LA"/>
-  <Ecore:EReference xmi:id="_L_-_0CtVEeGlWN0TVxk9LA" xmlNamespace="##targetNamespace" base_Property="_L_-YwCtVEeGlWN0TVxk9LA"/>
   <CDA:PropertyValidation xmi:id="_MmipgCtVEeGlWN0TVxk9LA" base_Property="_L_zZoCtVEeGlWN0TVxk9LA">
     <ruleId>CONF:7851</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_NNAzoCtVEeGlWN0TVxk9LA" base_Property="_L_-YwCtVEeGlWN0TVxk9LA">
     <ruleId>CONF:7850</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_h-Qj8CzUEeGanY0p4MnU2w" xmlNamespace="##targetNamespace" base_Property="_h-PV0CzUEeGanY0p4MnU2w"/>
   <CDA:PropertyValidation xmi:id="_o6FGkCzUEeGanY0p4MnU2w" base_Property="_h-PV0CzUEeGanY0p4MnU2w">
     <ruleId>CONF:7707</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_PXzEgyznEeGanY0p4MnU2w" xmlNamespace="##targetNamespace" base_Property="_PXzEgCznEeGanY0p4MnU2w"/>
-  <Ecore:EReference xmi:id="_PX0SoyznEeGanY0p4MnU2w" xmlNamespace="##targetNamespace" base_Property="_PX0SoCznEeGanY0p4MnU2w"/>
   <CDA:TextValue xmi:id="_QgzT8CznEeGanY0p4MnU2w" base_Property="_PX0SoCznEeGanY0p4MnU2w">
     <ruleId>CONF:7830</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_TeOuYCznEeGanY0p4MnU2w" base_Property="_PXzEgCznEeGanY0p4MnU2w">
     <ruleId>CONF:7831</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_HMQ7kCzpEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_HMPtcCzpEeG29eivM7bhbw"/>
-  <Ecore:EReference xmi:id="_HMSJsyzpEeG29eivM7bhbw" xmlNamespace="##targetNamespace" base_Property="_HMSJsCzpEeG29eivM7bhbw"/>
   <CDA:TextValue xmi:id="_K9ULUCzpEeG29eivM7bhbw" base_Property="_HMSJsCzpEeG29eivM7bhbw">
     <ruleId>CONF:7846</ruleId>
   </CDA:TextValue>

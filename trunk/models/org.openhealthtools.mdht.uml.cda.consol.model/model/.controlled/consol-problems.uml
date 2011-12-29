@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2LSPYBSVEeGGzu7fmW9pXw" name="ProblemSection">
     <ownedComment xmi:id="_hb8PkCAnEeGetMjKLkqR8g">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</body>
@@ -331,10 +331,6 @@ historical purposes.&#xD;
   <CDA:CDATemplate xmi:id="_YpxugBUzEeGbmN_W114JUw" base_Class="_SjN_8BUzEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.6">
     <ruleId>CONF:7359</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_XGPfMRUzEeGbmN_W114JUw" isUnsettable="true" base_Property="_XGPfMBUzEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_XGYpIRUzEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_XGYpIBUzEeGbmN_W114JUw"/>
-  <Ecore:EAttribute xmi:id="_XGYpIxUzEeGbmN_W114JUw" isUnsettable="true" base_Property="_XGYpIhUzEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_XGYpJxUzEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_XGYpJBUzEeGbmN_W114JUw"/>
   <uml:Class xmi:id="_5Ha7ABUyEeGbmN_W114JUw" name="ProblemObservation">
     <ownedComment xmi:id="_-wq7oCAsEeGetMjKLkqR8g">
       <body>&lt;p>A problem is a clinical statement that a clinician has noted. In health care it is a condition that requires monitoring or diagnostic, therapeutic, or educational action. It also refers to any unmet or partially met basic human need.&lt;/p>&#xD;
@@ -472,10 +468,6 @@ historical purposes.&#xD;
     <ownedEnd xmi:id="_c6LMsxUzEeGbmN_W114JUw" type="_5Ha7ABUyEeGbmN_W114JUw" association="_c6LMshUzEeGbmN_W114JUw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_GYVXcBUzEeGbmN_W114JUw" base_Class="_5Ha7ABUyEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.4"/>
-  <Ecore:EAttribute xmi:id="_6-LoUBUyEeGbmN_W114JUw" isUnsettable="true" base_Property="_6-B3UBUyEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_6-UyQRUyEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_6-UyQBUyEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_6-ejQxUyEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_6-ejQBUyEeGbmN_W114JUw"/>
-  <Ecore:EAttribute xmi:id="_6-ejRRUyEeGbmN_W114JUw" isUnsettable="true" base_Property="_6-ejRBUyEeGbmN_W114JUw"/>
   <uml:Class xmi:id="_2EqqABSVEeGGzu7fmW9pXw" name="AgeObservation">
     <ownedComment xmi:id="_2EqqARSVEeGGzu7fmW9pXw" annotatedElement="_2EqqABSVEeGGzu7fmW9pXw">
       <body>This Age Observation represents the subject's age at onset of an event or observation. The age of a relative in a Family History Observation at the time of that observation could also be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime. However, a common scenario is that a patient will know the age of a relative when the relative had a certain condition or when the relative died, but will not know the actual year (e.g., &quot;grandpa died of a heart attack at the age of 50&quot;). Often times, neither precise dates nor ages are known (e.g. &quot;cousin died of congenital heart disease as an infant&quot;).</body>
@@ -567,7 +559,6 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_gYJBgCAtEeGetMjKLkqR8g" base_Property="_6-ejRBUyEeGbmN_W114JUw">
     <ruleId>9042</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_qzwEwCAtEeGetMjKLkqR8g" isUnsettable="true" base_Property="_qzvdsCAtEeGetMjKLkqR8g"/>
   <CDA:PropertyValidation xmi:id="_uwAe8CAtEeGetMjKLkqR8g" severity="INFO" base_Property="_qzvdsCAtEeGetMjKLkqR8g">
     <ruleId>CONF:10139</ruleId>
   </CDA:PropertyValidation>
@@ -578,10 +569,6 @@ historical purposes.&#xD;
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9045</ruleId>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_zGapEyAuEeGetMjKLkqR8g" xmlNamespace="##targetNamespace" base_Property="_zGapECAuEeGetMjKLkqR8g"/>
-  <Ecore:EReference xmi:id="_zGbQIyAuEeGetMjKLkqR8g" xmlNamespace="##targetNamespace" base_Property="_zGbQICAuEeGetMjKLkqR8g"/>
-  <Ecore:EReference xmi:id="_zGb3MCAuEeGetMjKLkqR8g" xmlNamespace="##targetNamespace" base_Property="_zGbQJCAuEeGetMjKLkqR8g"/>
-  <Ecore:EReference xmi:id="_zGb3NCAuEeGetMjKLkqR8g" xmlNamespace="##targetNamespace" base_Property="_zGb3MSAuEeGetMjKLkqR8g"/>
   <CDA:PropertyValidation xmi:id="_BxcdoCAwEeGetMjKLkqR8g" severity="WARNING" base_Property="_zGapECAuEeGetMjKLkqR8g">
     <ruleId>CONF:9050</ruleId>
   </CDA:PropertyValidation>
@@ -617,8 +604,6 @@ historical purposes.&#xD;
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7361</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_g9BSYCA8EeG9GZYpu7WBOQ" xmlNamespace="##targetNamespace" base_Property="_g9ArUCA8EeG9GZYpu7WBOQ"/>
-  <Ecore:EReference xmi:id="_g9CggCA8EeG9GZYpu7WBOQ" xmlNamespace="##targetNamespace" base_Property="_g9B5cCA8EeG9GZYpu7WBOQ"/>
   <CDA:CodeSystemConstraint xmi:id="_lgv8QCA8EeG9GZYpu7WBOQ" code="completed" displayName="Completed" base_Property="_XGYpJBUzEeGbmN_W114JUw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7364</ruleId>

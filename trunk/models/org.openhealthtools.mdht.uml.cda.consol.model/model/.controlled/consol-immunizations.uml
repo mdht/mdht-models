@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2MAoIBSVEeGGzu7fmW9pXw" name="ImmunizationActivity">
     <ownedComment xmi:id="_2MQfwhSVEeGGzu7fmW9pXw" annotatedElement="_2MAoIBSVEeGGzu7fmW9pXw">
       <body>&lt;p>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&lt;/p>
@@ -210,7 +210,6 @@
     <ruleId>CONF-354</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2MB2QBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2MDEYhSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2MDEYBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2MDEZRSVEeGGzu7fmW9pXw" base_Property="_2MDEYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8827</ruleId>
   </CDA:PropertyValidation>
@@ -294,8 +293,6 @@
   <CDA:CDATemplate xmi:id="_k-AE8BVOEeGbmN_W114JUw" base_Class="_daTqABVOEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.54">
     <ruleId>CONF:9004</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_jQ64FBVOEeGbmN_W114JUw" isUnsettable="true" base_Property="_jQ64EBVOEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_jQ64GBVOEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_jQ64FRVOEeGbmN_W114JUw"/>
   <uml:Class xmi:id="__qYdcBVNEeGbmN_W114JUw" name="ImmunizationRefusalReason">
     <generalization xmi:id="__qr_cBVNEeGbmN_W114JUw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -330,11 +327,6 @@
   <CDA:CDATemplate xmi:id="_FsB20BVOEeGbmN_W114JUw" base_Class="__qYdcBVNEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.53">
     <ruleId>CONF:8993</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_DruzABVOEeGbmN_W114JUw" isUnsettable="true" base_Property="_DrIWEBVOEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_DruzAhVOEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_DruzARVOEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_Dr388xVOEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_Dr388BVOEeGbmN_W114JUw"/>
-  <Ecore:EAttribute xmi:id="_Dr389RVOEeGbmN_W114JUw" isUnsettable="true" base_Property="_Dr389BVOEeGbmN_W114JUw"/>
-  <Ecore:EReference xmi:id="_Dr38-RVOEeGbmN_W114JUw" xmlNamespace="##targetNamespace" base_Property="_Dr389hVOEeGbmN_W114JUw"/>
   <uml:Class xmi:id="_2L7voBSVEeGGzu7fmW9pXw" name="ImmunizationsSection">
     <generalization xmi:id="_QPw2IBVgEeGQCvUGzi1kDQ" general="_EuPloBVeEeGQCvUGzi1kDQ"/>
     <ownedAttribute xmi:id="_2L9k0BSVEeGGzu7fmW9pXw" name="code" visibility="private">
@@ -423,15 +415,12 @@
   <CDA:PropertyValidation xmi:id="_k-uhcBqjEeGo461UQq-B1g" base_Property="_2MDEYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8826</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_1GHbwBqjEeGo461UQq-B1g" isUnsettable="true" base_Property="_1GG0sBqjEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_29xg8BqjEeGo461UQq-B1g" base_Property="_1GG0sBqjEeGo461UQq-B1g">
     <ruleId>CONF:8985</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_b0i0YBqkEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_b0iNUBqkEeGo461UQq-B1g"/>
   <CDA:TextValue xmi:id="_eIVb8BqkEeGo461UQq-B1g" severity="WARNING" base_Property="_b0iNUBqkEeGo461UQq-B1g">
     <ruleId>CONF:8831</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_s20CkxqkEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_s20CkBqkEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_vlWscBqkEeGo461UQq-B1g" severity="INFO" base_Property="_s20CkBqkEeGo461UQq-B1g">
     <ruleId>CONF:8838</ruleId>
   </CDA:PropertyValidation>
@@ -445,7 +434,6 @@
   <CDA:PropertyValidation xmi:id="_aN2t8BqlEeGo461UQq-B1g" severity="WARNING" base_Property="_2MHV1BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8841</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_ESwTIxqmEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_ESwTIBqmEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_IQes8BqmEeGo461UQq-B1g" severity="INFO" base_Property="_ESwTIBqmEeGo461UQq-B1g">
     <ruleId>CONF:8846</ruleId>
   </CDA:PropertyValidation>

@@ -52,15 +52,6 @@
     <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_bGzYhxVdEeGQCvUGzi1kDQ" name="absenceIsAsserted">
-      <ownedComment xmi:id="_bGzYiBVdEeGQCvUGzi1kDQ">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bGzYiRVdEeGQCvUGzi1kDQ">
-        <language>Analysis</language>
-        <body>The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_FHCOMBVgEeGQCvUGzi1kDQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
@@ -133,7 +124,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VBabUCFVEeG9m6LRl9ardQ" name="reactionInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -141,7 +132,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2EaLbxSVEeGGzu7fmW9pXw" name="severityInversionIndicator">
@@ -149,7 +140,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">
@@ -193,10 +184,15 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLehSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLfBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KfVPYDI6EeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KfVPYTI6EeG6R8Pb5FT2Ow" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FQD_EDJDEeG6R8Pb5FT2Ow" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FQD_ETJDEeG6R8Pb5FT2Ow"/>
+      <association href="../consol.uml#_FQD_EjJDEeG6R8Pb5FT2Ow"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2EaLeBSVEeGGzu7fmW9pXw _2Ej8UhSVEeGGzu7fmW9pXw">
@@ -462,13 +458,17 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_sBN0ECK3EeG9m6LRl9ardQ" name="textReference" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wsR1ACK3EeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0IXhYCK3EeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3NEBcCK3EeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FODoBSVEeGGzu7fmW9pXw">
@@ -519,7 +519,7 @@ historical purposes.&#xD;
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7349</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:TextValue xmi:id="_2FHV8BSVEeGGzu7fmW9pXw" base_Property="_2FGu5xSVEeGGzu7fmW9pXw">
+  <CDA:TextValue xmi:id="_2FHV8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FGu5xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7350</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_2FM1gRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FM1gBSVEeGGzu7fmW9pXw">
@@ -542,25 +542,33 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_gBlYICKdEeG9m6LRl9ardQ" name="textReference" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_sG9OgCKdEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0eDcUCKdEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3rGAECKdEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1SPc4CKeEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7fXGcCKeEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>effectiveTime, if present, SHOULD contain zero or one [0..1] low</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_3qPPACKeEeG9m6LRl9ardQ" name="effectiveTimeHigh" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_8rNOgCKeEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jm2UICYKEeGWfpmyutaqOA" name="severityObservationInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
@@ -754,7 +762,7 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FRuChSVEeGGzu7fmW9pXw" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28">
@@ -843,7 +851,6 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_ICYiICKfEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_1SPc4CKeEeG9m6LRl9ardQ">
     <ruleId>CONF:7333</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EReference xmi:id="_NEuDgyKzEeG9m6LRl9ardQ" xmlNamespace="##targetNamespace"/>
   <CDA:PropertyValidation xmi:id="_R4ulECKzEeG9m6LRl9ardQ" severity="WARNING">
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:9118</ruleId>
@@ -913,4 +920,139 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
+    <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_098tYDJAEeG6R8Pb5FT2Ow" name="typeCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Oi4gMDJBEeG6R8Pb5FT2Ow" name="participantRole" type="_4Lj44DJAEeG6R8Pb5FT2Ow">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJrDUDJBEeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
+      <association href="../consol.uml#_Oi4gMjJBEeG6R8Pb5FT2Ow"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantRole">
+    <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_6LgXYDJAEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uiVfYDJBEeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uiVfYTJBEeG6R8Pb5FT2Ow" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QPyG4DJBEeG6R8Pb5FT2Ow" name="playingEntity" type="_E1B60DJBEeG6R8Pb5FT2Ow">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKWADJBEeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
+      <association href="../consol.uml#_QPyG4jJBEeG6R8Pb5FT2Ow"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="AllergyObservationPlayingEntity">
+    <ownedRule xmi:id="_Q7cdkDJCEeG6R8Pb5FT2Ow" name="allergySpecificMedication" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_irU_sDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_UYE8gDJCEeG6R8Pb5FT2Ow" name="allergyClassMedication" constrainedElement="_Q7cdkDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5MrFsDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WDVkcDJCEeG6R8Pb5FT2Ow" name="allergyFoodOtherSubstance" constrainedElement="_UYE8gDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1ChZcDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZIdiUDJCEeG6R8Pb5FT2Ow" name="codeOriginalText" constrainedElement="_WDVkcDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xtJZEDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="originalTextReference" constrainedElement="_ZIdiUDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_eR_n8DJCEeG6R8Pb5FT2Ow" name="codeTranslation" constrainedElement="_c0knsDJCEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lW3Y4DJCEeG6R8Pb5FT2Ow">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code MAY contain zero or more [0..*] translation</body>
+        <body>not self.code.translation->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_F56fQDJBEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gMc8DJBEeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gMc8TJBEeG6R8Pb5FT2Ow" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IIVpMDJCEeG6R8Pb5FT2Ow" value="MMAT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KmLkoDJCEeG6R8Pb5FT2Ow" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFs2oDJCEeG6R8Pb5FT2Ow" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFs2oTJCEeG6R8Pb5FT2Ow" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:PropertyValidation xmi:id="_TYMCQDJBEeG6R8Pb5FT2Ow" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7403</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_j-UHADJBEeG6R8Pb5FT2Ow" code="MANU" displayName="Manufactured Product" base_Property="_6LgXYDJAEeG6R8Pb5FT2Ow">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <ruleId>CONF:7405</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_96euEDJBEeG6R8Pb5FT2Ow" base_Property="_F56fQDJBEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7407</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_M0Hb0DJCEeG6R8Pb5FT2Ow" base_Property="_KmLkoDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7419</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_jihtcDJCEeG6R8Pb5FT2Ow" base_Constraint="_Q7cdkDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7421</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_lqgGkDJCEeG6R8Pb5FT2Ow" severity="INFO" base_Constraint="_eR_n8DJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7431</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_pb9mADJCEeG6R8Pb5FT2Ow" base_Constraint="_c0knsDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7426</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_uwgBwDJCEeG6R8Pb5FT2Ow" severity="WARNING" base_Constraint="_aK9hIDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7425</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_x-HNQDJCEeG6R8Pb5FT2Ow" severity="WARNING" base_Constraint="_ZIdiUDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7424</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2PSHgDJCEeG6R8Pb5FT2Ow" base_Constraint="_WDVkcDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:10084</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5umHADJCEeG6R8Pb5FT2Ow" base_Constraint="_UYE8gDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:10083</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

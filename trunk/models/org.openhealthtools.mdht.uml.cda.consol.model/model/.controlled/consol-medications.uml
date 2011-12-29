@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -311,8 +311,6 @@ Medication timing is complex. This template requires that there be a substanceAd
   <CDA:ConstraintValidation xmi:id="_2Gi5UBSVEeGGzu7fmW9pXw">
     <ruleId>C154-[DE-8.24-1]</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2GkugBSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2GkHcBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2GkughSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2GkugRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2GkuhhSVEeGGzu7fmW9pXw" base_Property="_2GkugxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7500</ruleId>
   </CDA:PropertyValidation>
@@ -348,7 +346,6 @@ Medication timing is complex. This template requires that there be a substanceAd
     <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7519</ruleId>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_2GnKwxSVEeGGzu7fmW9pXw" xmlNamespace="##targetNamespace" base_Property="_2GnKwBSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_CTs80BUREeG6PvUxSTZnaw" base_Association="_2Gnx0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7520</ruleId>
   </CDA:AssociationValidation>
@@ -444,7 +441,6 @@ Medication timing is complex. This template requires that there be a substanceAd
   <CDA:CDATemplate xmi:id="_HlZ-cBncEeGs5a462vYX5Q" base_Class="_DpoGkBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.18">
     <ruleId>CONF:7454</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_EYtaIhUUEeG6PvUxSTZnaw" isUnsettable="true" base_Property="_EYtaIBUUEeG6PvUxSTZnaw"/>
   <uml:Class xmi:id="_2HWKkBSVEeGGzu7fmW9pXw" name="MedicationFullfillmentInstructions">
     <ownedComment xmi:id="_2HbDEBSVEeGGzu7fmW9pXw" annotatedElement="_2HWKkBSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -489,7 +485,6 @@ of the document. The comment itself is not the act being coded, so it appears in
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2HWKlxSVEeGGzu7fmW9pXw" value="completed"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EAttribute xmi:id="_2HZ08hSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2HZ08RSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2HacAhSVEeGGzu7fmW9pXw" base_Property="_2HacABSVEeGGzu7fmW9pXw">
     <ruleId>CONF-336</ruleId>
   </CDA:PropertyValidation>
@@ -853,8 +848,6 @@ marketed (e.g., prescription, over the counter drug)</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EAttribute xmi:id="_2HFE0BSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2HEdwRSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2HFE0hSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2HFE0RSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2HD2sBSVEeGGzu7fmW9pXw" base_Property="_2HColRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2HFr5BSVEeGGzu7fmW9pXw"/>
     <ruleId>C83-[DE-8.19-CDA-5]</ruleId>
@@ -1391,8 +1384,6 @@ medication supplied.</body>
   <CDA:ConstraintValidation xmi:id="_2HR5IBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2HIvVxSVEeGGzu7fmW9pXw">
     <ruleId>C83-[DE-8.39-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_2HSgMxSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2HSgMRSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2HTHQRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2HTHQBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2HTHRRSVEeGGzu7fmW9pXw" base_Property="_2HTHQhSVEeGGzu7fmW9pXw">
     <ruleId>CONF-318</ruleId>
   </CDA:PropertyValidation>
@@ -1526,11 +1517,9 @@ medication supplied.</body>
   <CDA:CDATemplate xmi:id="_a3-5ABUTEeG6PvUxSTZnaw" base_Class="_VBXq8BUTEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.24">
     <ruleId>CONF:7495</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_ZXk2NBUTEeG6PvUxSTZnaw" isUnsettable="true" base_Property="_ZXk2MBUTEeG6PvUxSTZnaw"/>
   <CDA:PropertyValidation xmi:id="_cMxhsBUTEeG6PvUxSTZnaw" base_Property="_ZXk2MBUTEeG6PvUxSTZnaw">
     <ruleId>CONF:7490</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_ZXk2OBUTEeG6PvUxSTZnaw" xmlNamespace="##targetNamespace" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw"/>
   <CDA:PropertyValidation xmi:id="_d2t7ABUTEeG6PvUxSTZnaw" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <ruleId>CONF:7491</ruleId>
   </CDA:PropertyValidation>
@@ -1572,11 +1561,6 @@ Entry Content Module.</body>
   <CDA:PropertyValidation xmi:id="_7nNMkBrXEeGo461UQq-B1g" base_Property="_EYtaIBUUEeG6PvUxSTZnaw">
     <ruleId>CONF:7451</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_ThGZ4xrYEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_ThGZ4BrYEeGo461UQq-B1g"/>
-  <Ecore:EReference xmi:id="_ThHA8xrYEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_ThHA8BrYEeGo461UQq-B1g"/>
-  <Ecore:EAttribute xmi:id="_ThHoARrYEeGo461UQq-B1g" isUnsettable="true" base_Property="_ThHoABrYEeGo461UQq-B1g"/>
-  <Ecore:EReference xmi:id="_ThIPExrYEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_ThIPEBrYEeGo461UQq-B1g"/>
-  <Ecore:EReference xmi:id="_ThI2IBrYEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_ThIPFBrYEeGo461UQq-B1g"/>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
     <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7455</ruleId>
@@ -1671,28 +1655,21 @@ Entry Content Module.</body>
   <CDA:CDATemplate xmi:id="_uFl-gBrTEeGo461UQq-B1g" base_Class="_j3aTQBrTEeGo461UQq-B1g" templateId="2.16.840.1.113883.10.20.22.4.17">
     <ruleId>CONF:7429</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_p1pMQBrTEeGo461UQq-B1g" isUnsettable="true" base_Property="_p1olMBrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_v_02kBrTEeGo461UQq-B1g" base_Property="_p1olMBrTEeGo461UQq-B1g">
     <ruleId>CONF:7427</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_p1pzUxrTEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_p1pzUBrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_5Dz_kBrTEeGo461UQq-B1g" severity="WARNING" base_Property="_p1pzUBrTEeGo461UQq-B1g">
     <ruleId>CONF:7433</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_p1qaYRrTEeGo461UQq-B1g" isUnsettable="true" base_Property="_p1qaYBrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_2R5RkBrTEeGo461UQq-B1g" base_Property="_p1qaYBrTEeGo461UQq-B1g">
     <ruleId>CONF:7428</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_p1rBcBrTEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_p1qaYhrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_13RLEBrTEeGo461UQq-B1g" severity="WARNING" base_Property="_p1qaYhrTEeGo461UQq-B1g">
     <ruleId>CONF:7436</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_p1rogBrTEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_p1rBcRrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_1NE-kBrTEeGo461UQq-B1g" severity="WARNING" base_Property="_p1rBcRrTEeGo461UQq-B1g">
     <ruleId>CONF:7434</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_p1rohBrTEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_p1rogRrTEeGo461UQq-B1g"/>
-  <Ecore:EReference xmi:id="_z3zNshrTEeGo461UQq-B1g" xmlNamespace="##targetNamespace" base_Property="_z3ymoBrTEeGo461UQq-B1g"/>
   <CDA:PropertyValidation xmi:id="_0eFKkBrTEeGo461UQq-B1g" base_Property="_z3ymoBrTEeGo461UQq-B1g">
     <ruleId>CONF:7430</ruleId>
   </CDA:PropertyValidation>
@@ -1763,11 +1740,9 @@ Entry Content Module.</body>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_yhVYwx-vEeGKirKJsFylGA" xmlNamespace="##targetNamespace" base_Property="_yhVYwB-vEeGKirKJsFylGA"/>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
   </CDA:TextValue>
-  <Ecore:EReference xmi:id="_0gGEIx-yEeGKirKJsFylGA" xmlNamespace="##targetNamespace" base_Property="_0gGEIB-yEeGKirKJsFylGA"/>
   <CDA:PropertyValidation xmi:id="_8mgKkB-yEeGKirKJsFylGA" severity="INFO" base_Property="_0gGEIB-yEeGKirKJsFylGA">
     <ruleId>CONF:7555</ruleId>
   </CDA:PropertyValidation>
@@ -1775,7 +1750,6 @@ Entry Content Module.</body>
   <CDA:EntryRelationship xmi:id="_XLpnwB-0EeGKirKJsFylGA" severity="INFO" base_Association="_2GjgZRSVEeGGzu7fmW9pXw"/>
   <CDA:EntryRelationship xmi:id="_fPPDsB-0EeGKirKJsFylGA" severity="INFO" base_Association="_2GjgYxSVEeGGzu7fmW9pXw" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_hNSr0B-0EeGKirKJsFylGA" severity="INFO" base_Association="_2HCokBSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
-  <Ecore:EAttribute xmi:id="_pUNnpCAMEeGKirKJsFylGA" isUnsettable="true" base_Property="_pUNnoCAMEeGKirKJsFylGA"/>
   <CDA:PropertyValidation xmi:id="_qbvQYCAMEeGKirKJsFylGA" base_Property="_pUNnoCAMEeGKirKJsFylGA">
     <ruleId>CONF:7408</ruleId>
   </CDA:PropertyValidation>
@@ -1802,7 +1776,6 @@ Entry Content Module.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <Ecore:EReference xmi:id="_Dh74wyANEeGKirKJsFylGA" xmlNamespace="##targetNamespace" base_Property="_Dh74wCANEeGKirKJsFylGA"/>
   <CDA:ValueSetConstraint xmi:id="_KhRCYCANEeGKirKJsFylGA" base_Property="_Dh74wCANEeGKirKJsFylGA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dSQDEaDqEd-dVeaMP0XXQw"/>
   </CDA:ValueSetConstraint>

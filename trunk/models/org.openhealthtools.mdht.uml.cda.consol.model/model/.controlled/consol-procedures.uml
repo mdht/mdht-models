@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
     <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
       <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
@@ -222,16 +222,6 @@ This clinical statement represents procedures that result in new information abo
   <CDA:CDATemplate xmi:id="_PlWhYBg4EeGs5a462vYX5Q" base_Class="_Aj7JkBg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.13">
     <ruleId>CONF:10520</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_NL3hgRg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_NL3hgBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNcRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNcBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNdRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNchg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNeRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNdhg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNfRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNehg4EeGs5a462vYX5Q"/>
-  <Ecore:EAttribute xmi:id="_NMUNfxg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_NMUNfhg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNgxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNgBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNhxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNhBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNixg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNiBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_NMUNjxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_NMUNjBg4EeGs5a462vYX5Q"/>
   <uml:Class xmi:id="_awdH4Bg4EeGs5a462vYX5Q" name="ProcedureActivityAct">
     <ownedComment xmi:id="_95KuYBxnEeGXP8PxDYviDg">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
@@ -363,12 +353,6 @@ This clinical statement represents any procedure that cannot be classified as an
   <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12">
     <ruleId>CONF:10519</ruleId>
   </CDA:CDATemplate>
-  <Ecore:EAttribute xmi:id="_hPmVkRg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_hPmVkBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_hPmVkxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPmVkhg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_hPwGkxg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGkBg4EeGs5a462vYX5Q"/>
-  <Ecore:EAttribute xmi:id="_hPwGlRg4EeGs5a462vYX5Q" isUnsettable="true" base_Property="_hPwGlBg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_hPwGmRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGlhg4EeGs5a462vYX5Q"/>
-  <Ecore:EReference xmi:id="_hPwGnRg4EeGs5a462vYX5Q" xmlNamespace="##targetNamespace" base_Property="_hPwGmhg4EeGs5a462vYX5Q"/>
   <uml:Class xmi:id="_2OG58RSVEeGGzu7fmW9pXw" name="ProcedureActivityProcedure">
     <ownedComment xmi:id="_w6NZEBxxEeGXP8PxDYviDg">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
@@ -642,9 +626,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_ozsKkxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ"/>
-  <Ecore:EReference xmi:id="_ozsKlxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
-  <Ecore:EReference xmi:id="_ozsKmxrUEeGxIZCGAXKxsQ" xmlNamespace="##targetNamespace" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ"/>
   <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
     <ruleId>CONF:7668</ruleId>
   </CDA:PropertyValidation>
@@ -715,7 +696,6 @@ This clinical statement represents procedures whose immediate and primary outcom
     <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8298</ruleId>
   </CDA:ValueSetConstraint>
-  <Ecore:EReference xmi:id="_LJu6oxxqEeGXP8PxDYviDg" xmlNamespace="##targetNamespace" base_Property="_LJu6oBxqEeGXP8PxDYviDg"/>
   <CDA:PropertyValidation xmi:id="_MR3AUBxqEeGXP8PxDYviDg" severity="WARNING" base_Property="_LJu6oBxqEeGXP8PxDYviDg">
     <ruleId>CONF:8299</ruleId>
   </CDA:PropertyValidation>
@@ -827,15 +807,12 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_W6JWABxcEeGXP8PxDYviDg" severity="INFO" base_Constraint="_UWwzQBxcEeGXP8PxDYviDg">
     <ruleId>CONF:7774</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EAttribute xmi:id="_F7Ga8BxcEeGXP8PxDYviDg" isUnsettable="true" base_Property="_F7Fz4BxcEeGXP8PxDYviDg"/>
   <CDA:PropertyValidation xmi:id="_G9-NMBxcEeGXP8PxDYviDg" base_Property="_F7Fz4BxcEeGXP8PxDYviDg">
     <ruleId>CONF:7771</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EAttribute xmi:id="_F7HpExxcEeGXP8PxDYviDg" isUnsettable="true" base_Property="_F7HpEBxcEeGXP8PxDYviDg"/>
   <CDA:PropertyValidation xmi:id="_LbXlkBxcEeGXP8PxDYviDg" base_Property="_F7HpEBxcEeGXP8PxDYviDg">
     <ruleId>CONF:7772</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_F7HCAxxcEeGXP8PxDYviDg" xmlNamespace="##targetNamespace" base_Property="_F7HCABxcEeGXP8PxDYviDg"/>
   <CDA:PropertyValidation xmi:id="_RFZwMBxcEeGXP8PxDYviDg" base_Property="_F7HCABxcEeGXP8PxDYviDg">
     <ruleId>CONF:7773</ruleId>
   </CDA:PropertyValidation>

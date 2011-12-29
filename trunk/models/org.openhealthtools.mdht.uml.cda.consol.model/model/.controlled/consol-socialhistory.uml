@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2JKvgBSVEeGGzu7fmW9pXw" name="SocialHistorySection">
     <generalization xmi:id="_2Jrs4hSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -163,8 +163,6 @@ frequency.&#xD;
   <CDA:ConstraintValidation xmi:id="_2JhU0hSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Jh74hSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Jii8BSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <Ecore:EAttribute xmi:id="_2JSEQRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2JSEQBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2JSrUBSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2JSEQhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2JSrVBSVEeGGzu7fmW9pXw" base_Property="_2JSrURSVEeGGzu7fmW9pXw">
     <ruleId>CONF-8551</ruleId>
   </CDA:PropertyValidation>
@@ -315,8 +313,6 @@ frequency.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aXMCcBncEeGs5a462vYX5Q" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.15.3.8"/>
-  <Ecore:EAttribute xmi:id="_2N6svRSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2N6svBSVEeGGzu7fmW9pXw"/>
-  <Ecore:EAttribute xmi:id="_2N6svxSVEeGGzu7fmW9pXw" isUnsettable="true" base_Property="_2N6svhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6swxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6stRSVEeGGzu7fmW9pXw" base_Property="_2N6soxSVEeGGzu7fmW9pXw">
     <ruleId>CONF-454</ruleId>
@@ -347,7 +343,6 @@ frequency.&#xD;
   <CDA:CodeSystemConstraint xmi:id="_-exn4BrdEeGJ_KU17uNyeA" code="ASSERTION" displayName="Assertion" base_Property="_2N6soxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_WJgwIxrkEeGJ_KU17uNyeA" xmlNamespace="##targetNamespace" base_Property="_WJgwIBrkEeGJ_KU17uNyeA"/>
   <CDA:PropertyValidation xmi:id="_hYNdMBrkEeGJ_KU17uNyeA" severity="WARNING" base_Property="_WJgwIBrkEeGJ_KU17uNyeA">
     <ruleId>CONF-2018</ruleId>
   </CDA:PropertyValidation>
@@ -393,27 +388,22 @@ frequency.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_DA2mUBtqEeGT89b80j3MTg" base_Class="_vBswQBtpEeGT89b80j3MTg" templateId="2.16.840.1.113883.10.20.15.3.1"/>
-  <Ecore:EAttribute xmi:id="_cuHQEBupEeG0YIoJCEsKqA" isUnsettable="true" base_Property="_ct-GIBupEeG0YIoJCEsKqA"/>
   <CDA:PropertyValidation xmi:id="_qzYhoBupEeG0YIoJCEsKqA" base_Property="_ct-GIBupEeG0YIoJCEsKqA">
     <ruleId>CONF-444</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_lcnRQRupEeG0YIoJCEsKqA" xmlNamespace="##targetNamespace" base_Property="_lcnRQBupEeG0YIoJCEsKqA"/>
   <CDA:PropertyValidation xmi:id="_bwZ1MBuqEeG0YIoJCEsKqA" base_Property="_lcnRQBupEeG0YIoJCEsKqA">
     <ruleId>CONF-446</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_wHqpQBuqEeG0YIoJCEsKqA" code="11778-8" base_Property="_lcnRQBupEeG0YIoJCEsKqA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <Ecore:EAttribute xmi:id="_lcnRQxupEeG0YIoJCEsKqA" isUnsettable="true" base_Property="_lcnRQhupEeG0YIoJCEsKqA"/>
   <CDA:PropertyValidation xmi:id="_CDRIoBuqEeG0YIoJCEsKqA" base_Property="_lcnRQhupEeG0YIoJCEsKqA">
     <ruleId>CONF-445</ruleId>
   </CDA:PropertyValidation>
-  <Ecore:EReference xmi:id="_lcnRRxupEeG0YIoJCEsKqA" xmlNamespace="##targetNamespace" base_Property="_lcnRRBupEeG0YIoJCEsKqA" referenceName=""/>
   <CDA:CodeSystemConstraint xmi:id="_cVGWUButEeG0YIoJCEsKqA" code="completed" base_Property="_lcnRRBupEeG0YIoJCEsKqA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-448</ruleId>
   </CDA:CodeSystemConstraint>
-  <Ecore:EReference xmi:id="_lcxCQxupEeG0YIoJCEsKqA" xmlNamespace="##targetNamespace" base_Property="_lcxCQBupEeG0YIoJCEsKqA"/>
   <CDA:PropertyValidation xmi:id="_KbRYkBuuEeG0YIoJCEsKqA" base_Property="_lcxCQBupEeG0YIoJCEsKqA">
     <ruleId>CONF-450</ruleId>
   </CDA:PropertyValidation>
