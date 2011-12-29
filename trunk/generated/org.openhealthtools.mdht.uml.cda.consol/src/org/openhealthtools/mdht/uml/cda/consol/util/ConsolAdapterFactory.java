@@ -258,6 +258,36 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAdvanceDirectiveObservation_Reference(AdvanceDirectiveObservation_Reference object) {
+			return createAdvanceDirectiveObservation_ReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseReference_ExternalDocument(Reference_ExternalDocument object) {
+			return createReference_ExternalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveObservation_Custodian(AdvanceDirectiveObservation_Custodian object) {
+			return createAdvanceDirectiveObservation_CustodianAdapter();
+		}
+
+		@Override
+		public Adapter caseCustodian_CustodianRole(Custodian_CustodianRole object) {
+			return createCustodian_CustodianRoleAdapter();
+		}
+
+		@Override
+		public Adapter caseCustodianRole_CustodianEntity(CustodianRole_CustodianEntity object) {
+			return createCustodianRole_CustodianEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveObservation_Verifier(AdvanceDirectiveObservation_Verifier object) {
+			return createAdvanceDirectiveObservation_VerifierAdapter();
+		}
+
+		@Override
 		public Adapter caseAllergiesSection(AllergiesSection object) {
 			return createAllergiesSectionAdapter();
 		}
@@ -500,11 +530,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
 			return createAdvanceDirectiveStatusObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
-			return createAdvanceDirectiveReferenceAdapter();
 		}
 
 		@Override
@@ -940,34 +965,18 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectiveObservationCustodian(AdvanceDirectiveObservationCustodian object) {
-			return createAdvanceDirectiveObservationCustodianAdapter();
+		public Adapter caseAllergyObservationParticipant(AllergyObservationParticipant object) {
+			return createAllergyObservationParticipantAdapter();
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectiveObservationReference(AdvanceDirectiveObservationReference object) {
-			return createAdvanceDirectiveObservationReferenceAdapter();
+		public Adapter caseAllergyObservationParticipantRole(AllergyObservationParticipantRole object) {
+			return createAllergyObservationParticipantRoleAdapter();
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectiveObservationVerifier(AdvanceDirectiveObservationVerifier object) {
-			return createAdvanceDirectiveObservationVerifierAdapter();
-		}
-
-		@Override
-		public Adapter caseAdvanceDirectiveObservationCustodianRole(AdvanceDirectiveObservationCustodianRole object) {
-			return createAdvanceDirectiveObservationCustodianRoleAdapter();
-		}
-
-		@Override
-		public Adapter caseAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianEntity object) {
-			return createAdvanceDirectiveObservationCustodianEntityAdapter();
-		}
-
-		@Override
-		public Adapter caseAdvanceDirectiveObservationExternalDocument(
-				AdvanceDirectiveObservationExternalDocument object) {
-			return createAdvanceDirectiveObservationExternalDocumentAdapter();
+		public Adapter caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
+			return createAllergyObservationPlayingEntityAdapter();
 		}
 
 		@Override
@@ -1031,13 +1040,18 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
-			return createCDA_EncounterAdapter();
+		public Adapter caseActRelationship(ActRelationship object) {
+			return createActRelationshipAdapter();
 		}
 
 		@Override
-		public Adapter caseOrganizer(Organizer object) {
-			return createOrganizerAdapter();
+		public Adapter caseReference(Reference object) {
+			return createReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalDocument(ExternalDocument object) {
+			return createExternalDocumentAdapter();
 		}
 
 		@Override
@@ -1051,13 +1065,23 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseActRelationship(ActRelationship object) {
-			return createActRelationshipAdapter();
+		public Adapter caseEntity(Entity object) {
+			return createEntityAdapter();
 		}
 
 		@Override
-		public Adapter caseReference(Reference object) {
-			return createReferenceAdapter();
+		public Adapter casePlayingEntity(PlayingEntity object) {
+			return createPlayingEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
+			return createCDA_EncounterAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
 		}
 
 		@Override
@@ -1098,11 +1122,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePerformer2(Performer2 object) {
 			return createPerformer2Adapter();
-		}
-
-		@Override
-		public Adapter caseEntity(Entity object) {
-			return createEntityAdapter();
 		}
 
 		@Override
@@ -1238,16 +1257,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseCDA_Place(org.openhealthtools.mdht.uml.cda.Place object) {
 			return createCDA_PlaceAdapter();
-		}
-
-		@Override
-		public Adapter casePlayingEntity(PlayingEntity object) {
-			return createPlayingEntityAdapter();
-		}
-
-		@Override
-		public Adapter caseExternalDocument(ExternalDocument object) {
-			return createExternalDocumentAdapter();
 		}
 
 		@Override
@@ -2264,6 +2273,90 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Reference <em>Advance Directive Observation Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Reference
+	 * @generated
+	 */
+	public Adapter createAdvanceDirectiveObservation_ReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Reference_ExternalDocument <em>Reference External Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Reference_ExternalDocument
+	 * @generated
+	 */
+	public Adapter createReference_ExternalDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Custodian <em>Advance Directive Observation Custodian</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Custodian
+	 * @generated
+	 */
+	public Adapter createAdvanceDirectiveObservation_CustodianAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Custodian_CustodianRole <em>Custodian Custodian Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Custodian_CustodianRole
+	 * @generated
+	 */
+	public Adapter createCustodian_CustodianRoleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CustodianRole_CustodianEntity <em>Custodian Role Custodian Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CustodianRole_CustodianEntity
+	 * @generated
+	 */
+	public Adapter createCustodianRole_CustodianEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier <em>Advance Directive Observation Verifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier
+	 * @generated
+	 */
+	public Adapter createAdvanceDirectiveObservation_VerifierAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveVerification <em>Advance Directive Verification</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2288,20 +2381,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAdvanceDirectiveStatusObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveReference <em>Advance Directive Reference</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveReference
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveReferenceAdapter() {
 		return null;
 	}
 
@@ -2862,90 +2941,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEncounterPerformerAssignedEntityAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationVerifier <em>Advance Directive Observation Verifier</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationVerifier
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationVerifierAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodian <em>Advance Directive Observation Custodian</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodian
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationCustodianAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole <em>Advance Directive Observation Custodian Role</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianRole
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationCustodianRoleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianEntity <em>Advance Directive Observation Custodian Entity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCustodianEntity
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationCustodianEntityAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReference <em>Advance Directive Observation Reference</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReference
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationReferenceAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationExternalDocument <em>Advance Directive Observation External Document</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationExternalDocument
-	 * @generated
-	 */
-	public Adapter createAdvanceDirectiveObservationExternalDocumentAdapter() {
 		return null;
 	}
 
@@ -3548,6 +3543,48 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPlaceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipant <em>Allergy Observation Participant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipant
+	 * @generated
+	 */
+	public Adapter createAllergyObservationParticipantAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipantRole <em>Allergy Observation Participant Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipantRole
+	 * @generated
+	 */
+	public Adapter createAllergyObservationParticipantRoleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationPlayingEntity <em>Allergy Observation Playing Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationPlayingEntity
+	 * @generated
+	 */
+	public Adapter createAllergyObservationPlayingEntityAdapter() {
 		return null;
 	}
 

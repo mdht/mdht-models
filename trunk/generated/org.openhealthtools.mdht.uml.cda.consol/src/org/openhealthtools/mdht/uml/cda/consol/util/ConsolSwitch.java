@@ -707,6 +707,108 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE: {
+				AdvanceDirectiveObservation_Reference advanceDirectiveObservation_Reference = (AdvanceDirectiveObservation_Reference) theEObject;
+				T result = caseAdvanceDirectiveObservation_Reference(advanceDirectiveObservation_Reference);
+				if (result == null) {
+					result = caseReference(advanceDirectiveObservation_Reference);
+				}
+				if (result == null) {
+					result = caseActRelationship(advanceDirectiveObservation_Reference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveObservation_Reference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.REFERENCE_EXTERNAL_DOCUMENT: {
+				Reference_ExternalDocument reference_ExternalDocument = (Reference_ExternalDocument) theEObject;
+				T result = caseReference_ExternalDocument(reference_ExternalDocument);
+				if (result == null) {
+					result = caseExternalDocument(reference_ExternalDocument);
+				}
+				if (result == null) {
+					result = caseAct(reference_ExternalDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reference_ExternalDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN: {
+				AdvanceDirectiveObservation_Custodian advanceDirectiveObservation_Custodian = (AdvanceDirectiveObservation_Custodian) theEObject;
+				T result = caseAdvanceDirectiveObservation_Custodian(advanceDirectiveObservation_Custodian);
+				if (result == null) {
+					result = caseParticipant2(advanceDirectiveObservation_Custodian);
+				}
+				if (result == null) {
+					result = caseParticipation(advanceDirectiveObservation_Custodian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveObservation_Custodian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CUSTODIAN_CUSTODIAN_ROLE: {
+				Custodian_CustodianRole custodian_CustodianRole = (Custodian_CustodianRole) theEObject;
+				T result = caseCustodian_CustodianRole(custodian_CustodianRole);
+				if (result == null) {
+					result = caseParticipantRole(custodian_CustodianRole);
+				}
+				if (result == null) {
+					result = caseRole(custodian_CustodianRole);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(custodian_CustodianRole);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CUSTODIAN_ROLE_CUSTODIAN_ENTITY: {
+				CustodianRole_CustodianEntity custodianRole_CustodianEntity = (CustodianRole_CustodianEntity) theEObject;
+				T result = caseCustodianRole_CustodianEntity(custodianRole_CustodianEntity);
+				if (result == null) {
+					result = casePlayingEntity(custodianRole_CustodianEntity);
+				}
+				if (result == null) {
+					result = caseEntity(custodianRole_CustodianEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(custodianRole_CustodianEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER: {
+				AdvanceDirectiveObservation_Verifier advanceDirectiveObservation_Verifier = (AdvanceDirectiveObservation_Verifier) theEObject;
+				T result = caseAdvanceDirectiveObservation_Verifier(advanceDirectiveObservation_Verifier);
+				if (result == null) {
+					result = caseParticipant2(advanceDirectiveObservation_Verifier);
+				}
+				if (result == null) {
+					result = caseParticipation(advanceDirectiveObservation_Verifier);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveObservation_Verifier);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.ALLERGIES_SECTION: {
 				AllergiesSection allergiesSection = (AllergiesSection) theEObject;
 				T result = caseAllergiesSection(allergiesSection);
@@ -1633,23 +1735,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_REFERENCE: {
-				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
-				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
-				if (result == null) {
-					result = caseReference(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseActRelationship(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveReference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3136,102 +3221,51 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN: {
-				AdvanceDirectiveObservationCustodian advanceDirectiveObservationCustodian = (AdvanceDirectiveObservationCustodian) theEObject;
-				T result = caseAdvanceDirectiveObservationCustodian(advanceDirectiveObservationCustodian);
+			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT: {
+				AllergyObservationParticipant allergyObservationParticipant = (AllergyObservationParticipant) theEObject;
+				T result = caseAllergyObservationParticipant(allergyObservationParticipant);
 				if (result == null) {
-					result = caseParticipant2(advanceDirectiveObservationCustodian);
+					result = caseParticipant2(allergyObservationParticipant);
 				}
 				if (result == null) {
-					result = caseParticipation(advanceDirectiveObservationCustodian);
+					result = caseParticipation(allergyObservationParticipant);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationCustodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE: {
-				AdvanceDirectiveObservationReference advanceDirectiveObservationReference = (AdvanceDirectiveObservationReference) theEObject;
-				T result = caseAdvanceDirectiveObservationReference(advanceDirectiveObservationReference);
-				if (result == null) {
-					result = caseReference(advanceDirectiveObservationReference);
-				}
-				if (result == null) {
-					result = caseActRelationship(advanceDirectiveObservationReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationReference);
+					result = caseInfrastructureRoot(allergyObservationParticipant);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER: {
-				AdvanceDirectiveObservationVerifier advanceDirectiveObservationVerifier = (AdvanceDirectiveObservationVerifier) theEObject;
-				T result = caseAdvanceDirectiveObservationVerifier(advanceDirectiveObservationVerifier);
+			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE: {
+				AllergyObservationParticipantRole allergyObservationParticipantRole = (AllergyObservationParticipantRole) theEObject;
+				T result = caseAllergyObservationParticipantRole(allergyObservationParticipantRole);
 				if (result == null) {
-					result = caseParticipant2(advanceDirectiveObservationVerifier);
+					result = caseParticipantRole(allergyObservationParticipantRole);
 				}
 				if (result == null) {
-					result = caseParticipation(advanceDirectiveObservationVerifier);
+					result = caseRole(allergyObservationParticipantRole);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationVerifier);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE: {
-				AdvanceDirectiveObservationCustodianRole advanceDirectiveObservationCustodianRole = (AdvanceDirectiveObservationCustodianRole) theEObject;
-				T result = caseAdvanceDirectiveObservationCustodianRole(advanceDirectiveObservationCustodianRole);
-				if (result == null) {
-					result = caseParticipantRole(advanceDirectiveObservationCustodianRole);
-				}
-				if (result == null) {
-					result = caseRole(advanceDirectiveObservationCustodianRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationCustodianRole);
+					result = caseInfrastructureRoot(allergyObservationParticipantRole);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ENTITY: {
-				AdvanceDirectiveObservationCustodianEntity advanceDirectiveObservationCustodianEntity = (AdvanceDirectiveObservationCustodianEntity) theEObject;
-				T result = caseAdvanceDirectiveObservationCustodianEntity(advanceDirectiveObservationCustodianEntity);
+			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY: {
+				AllergyObservationPlayingEntity allergyObservationPlayingEntity = (AllergyObservationPlayingEntity) theEObject;
+				T result = caseAllergyObservationPlayingEntity(allergyObservationPlayingEntity);
 				if (result == null) {
-					result = casePlayingEntity(advanceDirectiveObservationCustodianEntity);
+					result = casePlayingEntity(allergyObservationPlayingEntity);
 				}
 				if (result == null) {
-					result = caseEntity(advanceDirectiveObservationCustodianEntity);
+					result = caseEntity(allergyObservationPlayingEntity);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationCustodianEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_EXTERNAL_DOCUMENT: {
-				AdvanceDirectiveObservationExternalDocument advanceDirectiveObservationExternalDocument = (AdvanceDirectiveObservationExternalDocument) theEObject;
-				T result = caseAdvanceDirectiveObservationExternalDocument(advanceDirectiveObservationExternalDocument);
-				if (result == null) {
-					result = caseExternalDocument(advanceDirectiveObservationExternalDocument);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveObservationExternalDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservationExternalDocument);
+					result = caseInfrastructureRoot(allergyObservationPlayingEntity);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4309,6 +4343,96 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveObservation_Reference(AdvanceDirectiveObservation_Reference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reference External Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reference External Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReference_ExternalDocument(Reference_ExternalDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveObservation_Custodian(AdvanceDirectiveObservation_Custodian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Custodian Custodian Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Custodian Custodian Role</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCustodian_CustodianRole(Custodian_CustodianRole object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Custodian Role Custodian Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Custodian Role Custodian Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCustodianRole_CustodianEntity(CustodianRole_CustodianEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Verifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Verifier</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveObservation_Verifier(AdvanceDirectiveObservation_Verifier object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -4335,21 +4459,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Reference</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
 		return null;
 	}
 
@@ -4951,96 +5060,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseEncounterPerformerAssignedEntity(EncounterPerformerAssignedEntity object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Verifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Verifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationVerifier(AdvanceDirectiveObservationVerifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationCustodian(AdvanceDirectiveObservationCustodian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian Role</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationCustodianRole(AdvanceDirectiveObservationCustodianRole object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Custodian Entity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationCustodianEntity(AdvanceDirectiveObservationCustodianEntity object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation Reference</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationReference(AdvanceDirectiveObservationReference object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation External Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation External Document</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdvanceDirectiveObservationExternalDocument(AdvanceDirectiveObservationExternalDocument object) {
 		return null;
 	}
 
@@ -5687,6 +5706,51 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePlace(Place object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyObservationParticipant(AllergyObservationParticipant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Participant Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Participant Role</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyObservationParticipantRole(AllergyObservationParticipantRole object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Playing Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Playing Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
 		return null;
 	}
 
