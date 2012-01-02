@@ -1002,4 +1002,100 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_odu8ABxxEeGXP8PxDYviDg" memberEnd="_odtt4BxxEeGXP8PxDYviDg _odu8ARxxEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_odu8ARxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_odu8ABxxEeGXP8PxDYviDg"/>
   </uml:Association>
+  <uml:Class xmi:id="_OA_Q0DVyEeGaW4kr-GbV8Q" name="AnesthesiaSection">
+    <generalization xmi:id="_OA_Q0TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_R1OXcDVyEeGaW4kr-GbV8Q" name="ComplicationsSection">
+    <generalization xmi:id="_R1OXcTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_vHfXoDVyEeGaW4kr-GbV8Q" name="OperativeNoteFluidSection">
+    <generalization xmi:id="_vHfXoTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_zel6wDVyEeGaW4kr-GbV8Q" name="OperativeNoteSurgicalProcedureSection">
+    <generalization xmi:id="_zel6wTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_3b6E4DVyEeGaW4kr-GbV8Q" name="PlannedProcedureSection">
+    <generalization xmi:id="_3b6E4TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_7UA-4DVyEeGaW4kr-GbV8Q" name="PostoperativeDiagnosisSection">
+    <generalization xmi:id="_7UA-4TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_-jlSMDVyEeGaW4kr-GbV8Q" name="PostprocedureDiagnosisSection">
+    <generalization xmi:id="_-jlSMTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_Cu6qMDVzEeGaW4kr-GbV8Q" name="PreoperativeDiagnosisSection ">
+    <generalization xmi:id="_Cu6qMTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_HNUIIDVzEeGaW4kr-GbV8Q" name="ProcedureDescriptionSection">
+    <generalization xmi:id="_HNUIITVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_QhXGYDVzEeGaW4kr-GbV8Q" name="ProcedureDispositionSection">
+    <generalization xmi:id="_QhXGYTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_TvcL8DVzEeGaW4kr-GbV8Q" name="ProcedureEstimatedBloodLossSection ">
+    <generalization xmi:id="_TvcL8TVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_W4UBYDVzEeGaW4kr-GbV8Q" name="ProcedureFindingsSection">
+    <generalization xmi:id="_W4UBYTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_Z662wDVzEeGaW4kr-GbV8Q" name="ProcedureImplantsSection">
+    <generalization xmi:id="_Z662wTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_cjmJMDVzEeGaW4kr-GbV8Q" name="ProcedureIndicationsSection">
+    <generalization xmi:id="_cjv6MDVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_luQh8DVzEeGaW4kr-GbV8Q" name="SurgicalDrainsSection">
+    <generalization xmi:id="_luQh8TVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_gSUdsDVzEeGaW4kr-GbV8Q" name="ProcedureSpecimensTakenSection">
+    <generalization xmi:id="_gSUdsTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_cLhVgDV1EeGaW4kr-GbV8Q" severity="INFO" base_Class="_luQh8DVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.13"/>
+  <CDA:CDATemplate xmi:id="_hf3kADV1EeGaW4kr-GbV8Q" base_Class="_OA_Q0DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.25"/>
+  <CDA:CDATemplate xmi:id="_kL-k8DV1EeGaW4kr-GbV8Q" base_Class="_R1OXcDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.37"/>
+  <CDA:CDATemplate xmi:id="_DIe5YDV2EeGaW4kr-GbV8Q" base_Class="_vHfXoDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.12"/>
+  <CDA:CDATemplate xmi:id="_FHJlgDV2EeGaW4kr-GbV8Q" base_Class="_zel6wDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.14"/>
+  <CDA:CDATemplate xmi:id="_IFlFgDV2EeGaW4kr-GbV8Q" base_Class="_3b6E4DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.30"/>
+  <CDA:CDATemplate xmi:id="_K5SjQDV2EeGaW4kr-GbV8Q" base_Class="_7UA-4DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.35"/>
+  <CDA:CDATemplate xmi:id="_OjincDV2EeGaW4kr-GbV8Q" base_Class="_-jlSMDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.36"/>
+  <CDA:CDATemplate xmi:id="_Rt5DkDV2EeGaW4kr-GbV8Q" base_Class="_Cu6qMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.34"/>
+  <CDA:CDATemplate xmi:id="_U67nUDV2EeGaW4kr-GbV8Q" base_Class="_HNUIIDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.27"/>
+  <CDA:CDATemplate xmi:id="_XD4Q0DV2EeGaW4kr-GbV8Q" base_Class="_QhXGYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.18.2.12"/>
+  <CDA:CDATemplate xmi:id="_ZcBM4DV2EeGaW4kr-GbV8Q" base_Class="_TvcL8DVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.18.2.9"/>
+  <CDA:CDATemplate xmi:id="_cTJyEDV2EeGaW4kr-GbV8Q" base_Class="_W4UBYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.28"/>
+  <CDA:CDATemplate xmi:id="_eDgVYDV2EeGaW4kr-GbV8Q" base_Class="_Z662wDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.40"/>
+  <CDA:CDATemplate xmi:id="_f1f3cDV2EeGaW4kr-GbV8Q" base_Class="_cjmJMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.29"/>
+  <CDA:CDATemplate xmi:id="_ifYDwDV2EeGaW4kr-GbV8Q" base_Class="_gSUdsDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.31"/>
 </xmi:XMI>
