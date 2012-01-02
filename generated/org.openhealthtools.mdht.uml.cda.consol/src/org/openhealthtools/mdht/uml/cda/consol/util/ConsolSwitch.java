@@ -2740,6 +2740,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SURGICAL_DRAINS_SECTION: {
+				SurgicalDrainsSection surgicalDrainsSection = (SurgicalDrainsSection) theEObject;
+				T result = caseSurgicalDrainsSection(surgicalDrainsSection);
+				if (result == null) {
+					result = caseSection(surgicalDrainsSection);
+				}
+				if (result == null) {
+					result = caseAct(surgicalDrainsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(surgicalDrainsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT: {
 				UnstructuredDocument unstructuredDocument = (UnstructuredDocument) theEObject;
 				T result = caseUnstructuredDocument(unstructuredDocument);
@@ -3319,6 +3336,380 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(allergyObservationPlayingEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ANESTHESIA_SECTION: {
+				AnesthesiaSection anesthesiaSection = (AnesthesiaSection) theEObject;
+				T result = caseAnesthesiaSection(anesthesiaSection);
+				if (result == null) {
+					result = caseSection(anesthesiaSection);
+				}
+				if (result == null) {
+					result = caseAct(anesthesiaSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(anesthesiaSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPLICATIONS_SECTION: {
+				ComplicationsSection complicationsSection = (ComplicationsSection) theEObject;
+				T result = caseComplicationsSection(complicationsSection);
+				if (result == null) {
+					result = caseSection(complicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(complicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(complicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DICOM_OBJECT_CATALOG_SECTION: {
+				DICOMObjectCatalogSection dicomObjectCatalogSection = (DICOMObjectCatalogSection) theEObject;
+				T result = caseDICOMObjectCatalogSection(dicomObjectCatalogSection);
+				if (result == null) {
+					result = caseSection(dicomObjectCatalogSection);
+				}
+				if (result == null) {
+					result = caseAct(dicomObjectCatalogSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dicomObjectCatalogSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FINDINGS_SECTION: {
+				FindingsSection findingsSection = (FindingsSection) theEObject;
+				T result = caseFindingsSection(findingsSection);
+				if (result == null) {
+					result = caseSection(findingsSection);
+				}
+				if (result == null) {
+					result = caseAct(findingsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(findingsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION: {
+				HospitalConsultationsSection hospitalConsultationsSection = (HospitalConsultationsSection) theEObject;
+				T result = caseHospitalConsultationsSection(hospitalConsultationsSection);
+				if (result == null) {
+					result = caseSection(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INTERVENTIONS_SECTION: {
+				InterventionsSection interventionsSection = (InterventionsSection) theEObject;
+				T result = caseInterventionsSection(interventionsSection);
+				if (result == null) {
+					result = caseSection(interventionsSection);
+				}
+				if (result == null) {
+					result = caseAct(interventionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(interventionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICAL_HISTORY_SECTION: {
+				MedicalHistorySection medicalHistorySection = (MedicalHistorySection) theEObject;
+				T result = caseMedicalHistorySection(medicalHistorySection);
+				if (result == null) {
+					result = caseSection(medicalHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(medicalHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.OBJECTIVE_SECTION: {
+				ObjectiveSection objectiveSection = (ObjectiveSection) theEObject;
+				T result = caseObjectiveSection(objectiveSection);
+				if (result == null) {
+					result = caseSection(objectiveSection);
+				}
+				if (result == null) {
+					result = caseAct(objectiveSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(objectiveSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.OPERATIVE_NOTE_FLUID_SECTION: {
+				OperativeNoteFluidSection operativeNoteFluidSection = (OperativeNoteFluidSection) theEObject;
+				T result = caseOperativeNoteFluidSection(operativeNoteFluidSection);
+				if (result == null) {
+					result = caseSection(operativeNoteFluidSection);
+				}
+				if (result == null) {
+					result = caseAct(operativeNoteFluidSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(operativeNoteFluidSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION: {
+				OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection = (OperativeNoteSurgicalProcedureSection) theEObject;
+				T result = caseOperativeNoteSurgicalProcedureSection(operativeNoteSurgicalProcedureSection);
+				if (result == null) {
+					result = caseSection(operativeNoteSurgicalProcedureSection);
+				}
+				if (result == null) {
+					result = caseAct(operativeNoteSurgicalProcedureSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(operativeNoteSurgicalProcedureSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PLANNED_PROCEDURE_SECTION: {
+				PlannedProcedureSection plannedProcedureSection = (PlannedProcedureSection) theEObject;
+				T result = casePlannedProcedureSection(plannedProcedureSection);
+				if (result == null) {
+					result = caseSection(plannedProcedureSection);
+				}
+				if (result == null) {
+					result = caseAct(plannedProcedureSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedProcedureSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION: {
+				PostoperativeDiagnosisSection postoperativeDiagnosisSection = (PostoperativeDiagnosisSection) theEObject;
+				T result = casePostoperativeDiagnosisSection(postoperativeDiagnosisSection);
+				if (result == null) {
+					result = caseSection(postoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(postoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(postoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: {
+				PostprocedureDiagnosisSection postprocedureDiagnosisSection = (PostprocedureDiagnosisSection) theEObject;
+				T result = casePostprocedureDiagnosisSection(postprocedureDiagnosisSection);
+				if (result == null) {
+					result = caseSection(postprocedureDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(postprocedureDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(postprocedureDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: {
+				PreoperativeDiagnosisSection preoperativeDiagnosisSection = (PreoperativeDiagnosisSection) theEObject;
+				T result = casePreoperativeDiagnosisSection(preoperativeDiagnosisSection);
+				if (result == null) {
+					result = caseSection(preoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(preoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(preoperativeDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_DESCRIPTION_SECTION: {
+				ProcedureDescriptionSection procedureDescriptionSection = (ProcedureDescriptionSection) theEObject;
+				T result = caseProcedureDescriptionSection(procedureDescriptionSection);
+				if (result == null) {
+					result = caseSection(procedureDescriptionSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureDescriptionSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureDescriptionSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_DISPOSITION_SECTION: {
+				ProcedureDispositionSection procedureDispositionSection = (ProcedureDispositionSection) theEObject;
+				T result = caseProcedureDispositionSection(procedureDispositionSection);
+				if (result == null) {
+					result = caseSection(procedureDispositionSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureDispositionSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureDispositionSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION: {
+				ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection = (ProcedureEstimatedBloodLossSection) theEObject;
+				T result = caseProcedureEstimatedBloodLossSection(procedureEstimatedBloodLossSection);
+				if (result == null) {
+					result = caseSection(procedureEstimatedBloodLossSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureEstimatedBloodLossSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureEstimatedBloodLossSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_FINDINGS_SECTION: {
+				ProcedureFindingsSection procedureFindingsSection = (ProcedureFindingsSection) theEObject;
+				T result = caseProcedureFindingsSection(procedureFindingsSection);
+				if (result == null) {
+					result = caseSection(procedureFindingsSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureFindingsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureFindingsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_IMPLANTS_SECTION: {
+				ProcedureImplantsSection procedureImplantsSection = (ProcedureImplantsSection) theEObject;
+				T result = caseProcedureImplantsSection(procedureImplantsSection);
+				if (result == null) {
+					result = caseSection(procedureImplantsSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureImplantsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureImplantsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION: {
+				ProcedureIndicationsSection procedureIndicationsSection = (ProcedureIndicationsSection) theEObject;
+				T result = caseProcedureIndicationsSection(procedureIndicationsSection);
+				if (result == null) {
+					result = caseSection(procedureIndicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureIndicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureIndicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_SPECIMENS_TAKEN_SECTION: {
+				ProcedureSpecimensTakenSection procedureSpecimensTakenSection = (ProcedureSpecimensTakenSection) theEObject;
+				T result = caseProcedureSpecimensTakenSection(procedureSpecimensTakenSection);
+				if (result == null) {
+					result = caseSection(procedureSpecimensTakenSection);
+				}
+				if (result == null) {
+					result = caseAct(procedureSpecimensTakenSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureSpecimensTakenSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SUBJECTIVE_SECTION: {
+				SubjectiveSection subjectiveSection = (SubjectiveSection) theEObject;
+				T result = caseSubjectiveSection(subjectiveSection);
+				if (result == null) {
+					result = caseSection(subjectiveSection);
+				}
+				if (result == null) {
+					result = caseAct(subjectiveSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(subjectiveSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5762,6 +6153,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Surgical Drains Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Surgical Drains Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSurgicalDrainsSection(SurgicalDrainsSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6269,6 +6675,336 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Anesthesia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Anesthesia Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnesthesiaSection(AnesthesiaSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Complications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Complications Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComplicationsSection(ComplicationsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>DICOM Object Catalog Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>DICOM Object Catalog Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDICOMObjectCatalogSection(DICOMObjectCatalogSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Findings Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Findings Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFindingsSection(FindingsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Consultations Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Consultations Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalConsultationsSection(HospitalConsultationsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Interventions Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInterventionsSection(InterventionsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medical History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medical History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicalHistorySection(MedicalHistorySection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Objective Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Objective Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObjectiveSection(ObjectiveSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operative Note Fluid Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operative Note Fluid Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOperativeNoteFluidSection(OperativeNoteFluidSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operative Note Surgical Procedure Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operative Note Surgical Procedure Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOperativeNoteSurgicalProcedureSection(OperativeNoteSurgicalProcedureSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Planned Procedure Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Planned Procedure Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlannedProcedureSection(PlannedProcedureSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Postoperative Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Postoperative Diagnosis Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePostoperativeDiagnosisSection(PostoperativeDiagnosisSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePostprocedureDiagnosisSection(PostprocedureDiagnosisSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePreoperativeDiagnosisSection(PreoperativeDiagnosisSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Description Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Description Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureDescriptionSection(ProcedureDescriptionSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Disposition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Disposition Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureDispositionSection(ProcedureDispositionSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Estimated Blood Loss Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Estimated Blood Loss Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureEstimatedBloodLossSection(ProcedureEstimatedBloodLossSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Findings Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Findings Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureFindingsSection(ProcedureFindingsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Implants Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Implants Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureImplantsSection(ProcedureImplantsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Indications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Indications Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureIndicationsSection(ProcedureIndicationsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Specimens Taken Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Specimens Taken Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureSpecimensTakenSection(ProcedureSpecimensTakenSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubjectiveSection(SubjectiveSection object) {
 		return null;
 	}
 

@@ -1322,6 +1322,204 @@ public interface ConsolFactory extends EFactory {
 	AllergyObservationPlayingEntity createAllergyObservationPlayingEntity();
 
 	/**
+	 * Returns a new object of class '<em>Anesthesia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Anesthesia Section</em>'.
+	 * @generated
+	 */
+	AnesthesiaSection createAnesthesiaSection();
+
+	/**
+	 * Returns a new object of class '<em>Complications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Complications Section</em>'.
+	 * @generated
+	 */
+	ComplicationsSection createComplicationsSection();
+
+	/**
+	 * Returns a new object of class '<em>DICOM Object Catalog Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>DICOM Object Catalog Section</em>'.
+	 * @generated
+	 */
+	DICOMObjectCatalogSection createDICOMObjectCatalogSection();
+
+	/**
+	 * Returns a new object of class '<em>Findings Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Findings Section</em>'.
+	 * @generated
+	 */
+	FindingsSection createFindingsSection();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Consultations Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Consultations Section</em>'.
+	 * @generated
+	 */
+	HospitalConsultationsSection createHospitalConsultationsSection();
+
+	/**
+	 * Returns a new object of class '<em>Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Interventions Section</em>'.
+	 * @generated
+	 */
+	InterventionsSection createInterventionsSection();
+
+	/**
+	 * Returns a new object of class '<em>Medical History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medical History Section</em>'.
+	 * @generated
+	 */
+	MedicalHistorySection createMedicalHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Objective Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Objective Section</em>'.
+	 * @generated
+	 */
+	ObjectiveSection createObjectiveSection();
+
+	/**
+	 * Returns a new object of class '<em>Operative Note Fluid Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operative Note Fluid Section</em>'.
+	 * @generated
+	 */
+	OperativeNoteFluidSection createOperativeNoteFluidSection();
+
+	/**
+	 * Returns a new object of class '<em>Operative Note Surgical Procedure Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operative Note Surgical Procedure Section</em>'.
+	 * @generated
+	 */
+	OperativeNoteSurgicalProcedureSection createOperativeNoteSurgicalProcedureSection();
+
+	/**
+	 * Returns a new object of class '<em>Planned Procedure Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Procedure Section</em>'.
+	 * @generated
+	 */
+	PlannedProcedureSection createPlannedProcedureSection();
+
+	/**
+	 * Returns a new object of class '<em>Postoperative Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postoperative Diagnosis Section</em>'.
+	 * @generated
+	 */
+	PostoperativeDiagnosisSection createPostoperativeDiagnosisSection();
+
+	/**
+	 * Returns a new object of class '<em>Postprocedure Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postprocedure Diagnosis Section</em>'.
+	 * @generated
+	 */
+	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
+
+	/**
+	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Preoperative Diagnosis Section</em>'.
+	 * @generated
+	 */
+	PreoperativeDiagnosisSection createPreoperativeDiagnosisSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Description Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Description Section</em>'.
+	 * @generated
+	 */
+	ProcedureDescriptionSection createProcedureDescriptionSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Disposition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Disposition Section</em>'.
+	 * @generated
+	 */
+	ProcedureDispositionSection createProcedureDispositionSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Estimated Blood Loss Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Estimated Blood Loss Section</em>'.
+	 * @generated
+	 */
+	ProcedureEstimatedBloodLossSection createProcedureEstimatedBloodLossSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Findings Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Findings Section</em>'.
+	 * @generated
+	 */
+	ProcedureFindingsSection createProcedureFindingsSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Implants Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Implants Section</em>'.
+	 * @generated
+	 */
+	ProcedureImplantsSection createProcedureImplantsSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Indications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Indications Section</em>'.
+	 * @generated
+	 */
+	ProcedureIndicationsSection createProcedureIndicationsSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Specimens Taken Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Specimens Taken Section</em>'.
+	 * @generated
+	 */
+	ProcedureSpecimensTakenSection createProcedureSpecimensTakenSection();
+
+	/**
+	 * Returns a new object of class '<em>Subjective Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Subjective Section</em>'.
+	 * @generated
+	 */
+	SubjectiveSection createSubjectiveSection();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1419,6 +1617,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	SupportParticipant createSupportParticipant();
+
+	/**
+	 * Returns a new object of class '<em>Surgical Drains Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Surgical Drains Section</em>'.
+	 * @generated
+	 */
+	SurgicalDrainsSection createSurgicalDrainsSection();
 
 	/**
 	 * Returns a new object of class '<em>Unstructured Document</em>'.

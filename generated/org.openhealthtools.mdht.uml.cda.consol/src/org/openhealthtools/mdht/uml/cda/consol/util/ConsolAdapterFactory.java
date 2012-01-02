@@ -846,6 +846,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSurgicalDrainsSection(SurgicalDrainsSection object) {
+			return createSurgicalDrainsSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseUnstructuredDocument(UnstructuredDocument object) {
 			return createUnstructuredDocumentAdapter();
 		}
@@ -1009,6 +1014,116 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
 			return createAllergyObservationPlayingEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseAnesthesiaSection(AnesthesiaSection object) {
+			return createAnesthesiaSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseComplicationsSection(ComplicationsSection object) {
+			return createComplicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseDICOMObjectCatalogSection(DICOMObjectCatalogSection object) {
+			return createDICOMObjectCatalogSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFindingsSection(FindingsSection object) {
+			return createFindingsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalConsultationsSection(HospitalConsultationsSection object) {
+			return createHospitalConsultationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseInterventionsSection(InterventionsSection object) {
+			return createInterventionsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalHistorySection(MedicalHistorySection object) {
+			return createMedicalHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseObjectiveSection(ObjectiveSection object) {
+			return createObjectiveSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseOperativeNoteFluidSection(OperativeNoteFluidSection object) {
+			return createOperativeNoteFluidSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseOperativeNoteSurgicalProcedureSection(OperativeNoteSurgicalProcedureSection object) {
+			return createOperativeNoteSurgicalProcedureSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePlannedProcedureSection(PlannedProcedureSection object) {
+			return createPlannedProcedureSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePostoperativeDiagnosisSection(PostoperativeDiagnosisSection object) {
+			return createPostoperativeDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePostprocedureDiagnosisSection(PostprocedureDiagnosisSection object) {
+			return createPostprocedureDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePreoperativeDiagnosisSection(PreoperativeDiagnosisSection object) {
+			return createPreoperativeDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureDescriptionSection(ProcedureDescriptionSection object) {
+			return createProcedureDescriptionSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureDispositionSection(ProcedureDispositionSection object) {
+			return createProcedureDispositionSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEstimatedBloodLossSection(ProcedureEstimatedBloodLossSection object) {
+			return createProcedureEstimatedBloodLossSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureFindingsSection(ProcedureFindingsSection object) {
+			return createProcedureFindingsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureImplantsSection(ProcedureImplantsSection object) {
+			return createProcedureImplantsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureIndicationsSection(ProcedureIndicationsSection object) {
+			return createProcedureIndicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureSpecimensTakenSection(ProcedureSpecimensTakenSection object) {
+			return createProcedureSpecimensTakenSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSubjectiveSection(SubjectiveSection object) {
+			return createSubjectiveSectionAdapter();
 		}
 
 		@Override
@@ -3579,6 +3694,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection <em>Surgical Drains Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection
+	 * @generated
+	 */
+	public Adapter createSurgicalDrainsSectionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument <em>Unstructured Document</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -4051,6 +4180,314 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAllergyObservationPlayingEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection <em>Anesthesia Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection
+	 * @generated
+	 */
+	public Adapter createAnesthesiaSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection <em>Complications Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection
+	 * @generated
+	 */
+	public Adapter createComplicationsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection <em>DICOM Object Catalog Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection
+	 * @generated
+	 */
+	public Adapter createDICOMObjectCatalogSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FindingsSection <em>Findings Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FindingsSection
+	 * @generated
+	 */
+	public Adapter createFindingsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection <em>Hospital Consultations Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection
+	 * @generated
+	 */
+	public Adapter createHospitalConsultationsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection <em>Interventions Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.InterventionsSection
+	 * @generated
+	 */
+	public Adapter createInterventionsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicalHistorySection <em>Medical History Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicalHistorySection
+	 * @generated
+	 */
+	public Adapter createMedicalHistorySectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection <em>Objective Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection
+	 * @generated
+	 */
+	public Adapter createObjectiveSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection <em>Operative Note Fluid Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection
+	 * @generated
+	 */
+	public Adapter createOperativeNoteFluidSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNoteSurgicalProcedureSection <em>Operative Note Surgical Procedure Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.OperativeNoteSurgicalProcedureSection
+	 * @generated
+	 */
+	public Adapter createOperativeNoteSurgicalProcedureSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection <em>Planned Procedure Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection
+	 * @generated
+	 */
+	public Adapter createPlannedProcedureSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection <em>Postoperative Diagnosis Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection
+	 * @generated
+	 */
+	public Adapter createPostoperativeDiagnosisSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection <em>Postprocedure Diagnosis Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection
+	 * @generated
+	 */
+	public Adapter createPostprocedureDiagnosisSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection <em>Preoperative Diagnosis Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection
+	 * @generated
+	 */
+	public Adapter createPreoperativeDiagnosisSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureDescriptionSection <em>Procedure Description Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureDescriptionSection
+	 * @generated
+	 */
+	public Adapter createProcedureDescriptionSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureDispositionSection <em>Procedure Disposition Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureDispositionSection
+	 * @generated
+	 */
+	public Adapter createProcedureDispositionSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection <em>Procedure Estimated Blood Loss Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection
+	 * @generated
+	 */
+	public Adapter createProcedureEstimatedBloodLossSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection <em>Procedure Findings Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection
+	 * @generated
+	 */
+	public Adapter createProcedureFindingsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection <em>Procedure Implants Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection
+	 * @generated
+	 */
+	public Adapter createProcedureImplantsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection <em>Procedure Indications Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection
+	 * @generated
+	 */
+	public Adapter createProcedureIndicationsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection <em>Procedure Specimens Taken Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection
+	 * @generated
+	 */
+	public Adapter createProcedureSpecimensTakenSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection <em>Subjective Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection
+	 * @generated
+	 */
+	public Adapter createSubjectiveSectionAdapter() {
 		return null;
 	}
 
