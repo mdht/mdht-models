@@ -35,6 +35,294 @@ public interface ConsolFactory extends EFactory {
 	GeneralHeaderConstraints createGeneralHeaderConstraints();
 
 	/**
+	 * Returns a new object of class '<em>General Header Constraints Record Target</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Record Target</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_RecordTarget createGeneralHeaderConstraints_RecordTarget();
+
+	/**
+	 * Returns a new object of class '<em>Record Target Patient Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Record Target Patient Role</em>'.
+	 * @generated
+	 */
+	RecordTarget_PatientRole createRecordTarget_PatientRole();
+
+	/**
+	 * Returns a new object of class '<em>Patient Role Patient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Role Patient</em>'.
+	 * @generated
+	 */
+	PatientRole_Patient createPatientRole_Patient();
+
+	/**
+	 * Returns a new object of class '<em>Patient Guardian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Guardian</em>'.
+	 * @generated
+	 */
+	Patient_Guardian createPatient_Guardian();
+
+	/**
+	 * Returns a new object of class '<em>Patient Language Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Language Communication</em>'.
+	 * @generated
+	 */
+	Patient_LanguageCommunication createPatient_LanguageCommunication();
+
+	/**
+	 * Returns a new object of class '<em>Patient Birthplace</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Birthplace</em>'.
+	 * @generated
+	 */
+	Patient_Birthplace createPatient_Birthplace();
+
+	/**
+	 * Returns a new object of class '<em>Birthplace Place</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Birthplace Place</em>'.
+	 * @generated
+	 */
+	Birthplace_Place createBirthplace_Place();
+
+	/**
+	 * Returns a new object of class '<em>Patient Role Provider Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Role Provider Organization</em>'.
+	 * @generated
+	 */
+	PatientRole_ProviderOrganization createPatientRole_ProviderOrganization();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Component Of</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_ComponentOf createGeneralHeaderConstraints_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter createComponentOf_EncompassingEncounter();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Author</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_Author createGeneralHeaderConstraints_Author();
+
+	/**
+	 * Returns a new object of class '<em>Author Assigned Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Author Assigned Author</em>'.
+	 * @generated
+	 */
+	Author_AssignedAuthor createAuthor_AssignedAuthor();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Author Authoring Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Author Authoring Device</em>'.
+	 * @generated
+	 */
+	AssignedAuthor_AuthoringDevice createAssignedAuthor_AuthoringDevice();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Person</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_Person createGeneralHeaderConstraints_Person();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Data Enterer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Data Enterer</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_DataEnterer createGeneralHeaderConstraints_DataEnterer();
+
+	/**
+	 * Returns a new object of class '<em>Data Enterer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Enterer Assigned Entity</em>'.
+	 * @generated
+	 */
+	DataEnterer_AssignedEntity createDataEnterer_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Custodian</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_Custodian createGeneralHeaderConstraints_Custodian();
+
+	/**
+	 * Returns a new object of class '<em>Custodian Assigned Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian Assigned Custodian</em>'.
+	 * @generated
+	 */
+	Custodian_AssignedCustodian createCustodian_AssignedCustodian();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Custodian Custodian Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Custodian Custodian Organization</em>'.
+	 * @generated
+	 */
+	AssignedCustodian_CustodianOrganization createAssignedCustodian_CustodianOrganization();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Information Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Information Recipient</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_InformationRecipient createGeneralHeaderConstraints_InformationRecipient();
+
+	/**
+	 * Returns a new object of class '<em>Information Recipient Intended Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Information Recipient Intended Recipient</em>'.
+	 * @generated
+	 */
+	InformationRecipient_IntendedRecipient createInformationRecipient_IntendedRecipient();
+
+	/**
+	 * Returns a new object of class '<em>Intended Recipient Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intended Recipient Organization</em>'.
+	 * @generated
+	 */
+	IntendedRecipient_Organization createIntendedRecipient_Organization();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Legal Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Legal Authenticator</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_LegalAuthenticator createGeneralHeaderConstraints_LegalAuthenticator();
+
+	/**
+	 * Returns a new object of class '<em>Legal Authenticator Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Legal Authenticator Assigned Entity</em>'.
+	 * @generated
+	 */
+	LegalAuthenticator_AssignedEntity createLegalAuthenticator_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Authenticator</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_Authenticator createGeneralHeaderConstraints_Authenticator();
+
+	/**
+	 * Returns a new object of class '<em>Authenticator Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Authenticator Assigned Entity</em>'.
+	 * @generated
+	 */
+	Authenticator_AssignedEntity createAuthenticator_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Informant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Informant</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_Informant createGeneralHeaderConstraints_Informant();
+
+	/**
+	 * Returns a new object of class '<em>Informant Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Informant Assigned Entity</em>'.
+	 * @generated
+	 */
+	Informant_AssignedEntity createInformant_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Informant Related Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Informant Related Entity</em>'.
+	 * @generated
+	 */
+	Informant_RelatedEntity createInformant_RelatedEntity();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints Participant Support</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints Participant Support</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_ParticipantSupport createGeneralHeaderConstraints_ParticipantSupport();
+
+	/**
+	 * Returns a new object of class '<em>General Header Constraints In Fulfillment Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Header Constraints In Fulfillment Of</em>'.
+	 * @generated
+	 */
+	GeneralHeaderConstraints_InFulfillmentOf createGeneralHeaderConstraints_InFulfillmentOf();
+
+	/**
+	 * Returns a new object of class '<em>In Fulfillment Of Order</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>In Fulfillment Of Order</em>'.
+	 * @generated
+	 */
+	InFulfillmentOf_Order createInFulfillmentOf_Order();
+
+	/**
 	 * Returns a new object of class '<em>Allergy Problem Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1005,276 +1293,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Author</em>'.
-	 * @generated
-	 */
-	Author createAuthor();
-
-	/**
-	 * Returns a new object of class '<em>Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Person</em>'.
-	 * @generated
-	 */
-	Person createPerson();
-
-	/**
-	 * Returns a new object of class '<em>Record Target</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Record Target</em>'.
-	 * @generated
-	 */
-	RecordTarget createRecordTarget();
-
-	/**
-	 * Returns a new object of class '<em>Data Enterer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Data Enterer</em>'.
-	 * @generated
-	 */
-	DataEnterer createDataEnterer();
-
-	/**
-	 * Returns a new object of class '<em>Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian</em>'.
-	 * @generated
-	 */
-	Custodian createCustodian();
-
-	/**
-	 * Returns a new object of class '<em>Information Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Information Recipient</em>'.
-	 * @generated
-	 */
-	InformationRecipient createInformationRecipient();
-
-	/**
-	 * Returns a new object of class '<em>Legal Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Legal Authenticator</em>'.
-	 * @generated
-	 */
-	LegalAuthenticator createLegalAuthenticator();
-
-	/**
-	 * Returns a new object of class '<em>Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Authenticator</em>'.
-	 * @generated
-	 */
-	Authenticator createAuthenticator();
-
-	/**
-	 * Returns a new object of class '<em>Informant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Informant</em>'.
-	 * @generated
-	 */
-	Informant createInformant();
-
-	/**
-	 * Returns a new object of class '<em>Participant Support</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Participant Support</em>'.
-	 * @generated
-	 */
-	ParticipantSupport createParticipantSupport();
-
-	/**
-	 * Returns a new object of class '<em>In Fulfillment Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>In Fulfillment Of</em>'.
-	 * @generated
-	 */
-	InFulfillmentOf createInFulfillmentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of</em>'.
-	 * @generated
-	 */
-	ComponentOf createComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Authenticator</em>'.
-	 * @generated
-	 */
-	AssignedAuthenticator createAssignedAuthenticator();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Author</em>'.
-	 * @generated
-	 */
-	AssignedAuthor createAssignedAuthor();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter createEncompassingEncounter();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Custodian</em>'.
-	 * @generated
-	 */
-	AssignedCustodian createAssignedCustodian();
-
-	/**
-	 * Returns a new object of class '<em>Custodian Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian Organization</em>'.
-	 * @generated
-	 */
-	CustodianOrganization createCustodianOrganization();
-
-	/**
-	 * Returns a new object of class '<em>Authoring Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Authoring Device</em>'.
-	 * @generated
-	 */
-	AuthoringDevice createAuthoringDevice();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Informant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Informant</em>'.
-	 * @generated
-	 */
-	AssignedInformant createAssignedInformant();
-
-	/**
-	 * Returns a new object of class '<em>Intended Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Intended Recipient</em>'.
-	 * @generated
-	 */
-	IntendedRecipient createIntendedRecipient();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Data Enterer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Data Enterer</em>'.
-	 * @generated
-	 */
-	AssignedDataEnterer createAssignedDataEnterer();
-
-	/**
-	 * Returns a new object of class '<em>Order</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Order</em>'.
-	 * @generated
-	 */
-	Order createOrder();
-
-	/**
-	 * Returns a new object of class '<em>Recieved Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Recieved Organization</em>'.
-	 * @generated
-	 */
-	RecievedOrganization createRecievedOrganization();
-
-	/**
-	 * Returns a new object of class '<em>Patient Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Role</em>'.
-	 * @generated
-	 */
-	PatientRole createPatientRole();
-
-	/**
-	 * Returns a new object of class '<em>Patient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient</em>'.
-	 * @generated
-	 */
-	Patient createPatient();
-
-	/**
-	 * Returns a new object of class '<em>Birthplace</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Birthplace</em>'.
-	 * @generated
-	 */
-	Birthplace createBirthplace();
-
-	/**
-	 * Returns a new object of class '<em>Guardian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Guardian</em>'.
-	 * @generated
-	 */
-	Guardian createGuardian();
-
-	/**
-	 * Returns a new object of class '<em>Provider Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Provider Organization</em>'.
-	 * @generated
-	 */
-	ProviderOrganization createProviderOrganization();
-
-	/**
-	 * Returns a new object of class '<em>Language Communication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Language Communication</em>'.
-	 * @generated
-	 */
-	LanguageCommunication createLanguageCommunication();
-
-	/**
-	 * Returns a new object of class '<em>Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
-	 * @generated
-	 */
-	Place createPlace();
 
 	/**
 	 * Returns a new object of class '<em>Allergy Observation Participant</em>'.
