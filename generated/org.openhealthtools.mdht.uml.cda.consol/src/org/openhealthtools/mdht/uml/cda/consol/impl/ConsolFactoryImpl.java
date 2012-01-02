@@ -61,6 +61,70 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 		switch (eClass.getClassifierID()) {
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS:
 				return createGeneralHeaderConstraints();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET:
+				return createGeneralHeaderConstraints_RecordTarget();
+			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE:
+				return createRecordTarget_PatientRole();
+			case ConsolPackage.PATIENT_ROLE_PATIENT:
+				return createPatientRole_Patient();
+			case ConsolPackage.PATIENT_GUARDIAN:
+				return createPatient_Guardian();
+			case ConsolPackage.PATIENT_LANGUAGE_COMMUNICATION:
+				return createPatient_LanguageCommunication();
+			case ConsolPackage.PATIENT_BIRTHPLACE:
+				return createPatient_Birthplace();
+			case ConsolPackage.BIRTHPLACE_PLACE:
+				return createBirthplace_Place();
+			case ConsolPackage.PATIENT_ROLE_PROVIDER_ORGANIZATION:
+				return createPatientRole_ProviderOrganization();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF:
+				return createGeneralHeaderConstraints_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER:
+				return createComponentOf_EncompassingEncounter();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHOR:
+				return createGeneralHeaderConstraints_Author();
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR:
+				return createAuthor_AssignedAuthor();
+			case ConsolPackage.ASSIGNED_AUTHOR_AUTHORING_DEVICE:
+				return createAssignedAuthor_AuthoringDevice();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PERSON:
+				return createGeneralHeaderConstraints_Person();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER:
+				return createGeneralHeaderConstraints_DataEnterer();
+			case ConsolPackage.DATA_ENTERER_ASSIGNED_ENTITY:
+				return createDataEnterer_AssignedEntity();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN:
+				return createGeneralHeaderConstraints_Custodian();
+			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN:
+				return createCustodian_AssignedCustodian();
+			case ConsolPackage.ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION:
+				return createAssignedCustodian_CustodianOrganization();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT:
+				return createGeneralHeaderConstraints_InformationRecipient();
+			case ConsolPackage.INFORMATION_RECIPIENT_INTENDED_RECIPIENT:
+				return createInformationRecipient_IntendedRecipient();
+			case ConsolPackage.INTENDED_RECIPIENT_ORGANIZATION:
+				return createIntendedRecipient_Organization();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR:
+				return createGeneralHeaderConstraints_LegalAuthenticator();
+			case ConsolPackage.LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY:
+				return createLegalAuthenticator_AssignedEntity();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR:
+				return createGeneralHeaderConstraints_Authenticator();
+			case ConsolPackage.AUTHENTICATOR_ASSIGNED_ENTITY:
+				return createAuthenticator_AssignedEntity();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMANT:
+				return createGeneralHeaderConstraints_Informant();
+			case ConsolPackage.INFORMANT_ASSIGNED_ENTITY:
+				return createInformant_AssignedEntity();
+			case ConsolPackage.INFORMANT_RELATED_ENTITY:
+				return createInformant_RelatedEntity();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT:
+				return createGeneralHeaderConstraints_ParticipantSupport();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF:
+				return createGeneralHeaderConstraints_InFulfillmentOf();
+			case ConsolPackage.IN_FULFILLMENT_OF_ORDER:
+				return createInFulfillmentOf_Order();
 			case ConsolPackage.ALLERGY_PROBLEM_ACT:
 				return createAllergyProblemAct();
 			case ConsolPackage.ALLERGY_OBSERVATION:
@@ -341,66 +405,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncounterPerformer();
 			case ConsolPackage.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY:
 				return createEncounterPerformerAssignedEntity();
-			case ConsolPackage.AUTHOR:
-				return createAuthor();
-			case ConsolPackage.PERSON:
-				return createPerson();
-			case ConsolPackage.RECORD_TARGET:
-				return createRecordTarget();
-			case ConsolPackage.DATA_ENTERER:
-				return createDataEnterer();
-			case ConsolPackage.CUSTODIAN:
-				return createCustodian();
-			case ConsolPackage.INFORMATION_RECIPIENT:
-				return createInformationRecipient();
-			case ConsolPackage.LEGAL_AUTHENTICATOR:
-				return createLegalAuthenticator();
-			case ConsolPackage.AUTHENTICATOR:
-				return createAuthenticator();
-			case ConsolPackage.INFORMANT:
-				return createInformant();
-			case ConsolPackage.PARTICIPANT_SUPPORT:
-				return createParticipantSupport();
-			case ConsolPackage.IN_FULFILLMENT_OF:
-				return createInFulfillmentOf();
-			case ConsolPackage.COMPONENT_OF:
-				return createComponentOf();
-			case ConsolPackage.ASSIGNED_AUTHENTICATOR:
-				return createAssignedAuthenticator();
-			case ConsolPackage.ASSIGNED_AUTHOR:
-				return createAssignedAuthor();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER:
-				return createEncompassingEncounter();
-			case ConsolPackage.ASSIGNED_CUSTODIAN:
-				return createAssignedCustodian();
-			case ConsolPackage.CUSTODIAN_ORGANIZATION:
-				return createCustodianOrganization();
-			case ConsolPackage.AUTHORING_DEVICE:
-				return createAuthoringDevice();
-			case ConsolPackage.ASSIGNED_INFORMANT:
-				return createAssignedInformant();
-			case ConsolPackage.INTENDED_RECIPIENT:
-				return createIntendedRecipient();
-			case ConsolPackage.ASSIGNED_DATA_ENTERER:
-				return createAssignedDataEnterer();
-			case ConsolPackage.ORDER:
-				return createOrder();
-			case ConsolPackage.RECIEVED_ORGANIZATION:
-				return createRecievedOrganization();
-			case ConsolPackage.PATIENT_ROLE:
-				return createPatientRole();
-			case ConsolPackage.PATIENT:
-				return createPatient();
-			case ConsolPackage.BIRTHPLACE:
-				return createBirthplace();
-			case ConsolPackage.GUARDIAN:
-				return createGuardian();
-			case ConsolPackage.PROVIDER_ORGANIZATION:
-				return createProviderOrganization();
-			case ConsolPackage.LANGUAGE_COMMUNICATION:
-				return createLanguageCommunication();
-			case ConsolPackage.PLACE:
-				return createPlace();
 			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT:
 				return createAllergyObservationParticipant();
 			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE:
@@ -420,6 +424,326 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
 		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
 		return generalHeaderConstraints;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_RecordTarget createGeneralHeaderConstraints_RecordTarget() {
+		GeneralHeaderConstraints_RecordTargetImpl generalHeaderConstraints_RecordTarget = new GeneralHeaderConstraints_RecordTargetImpl();
+		return generalHeaderConstraints_RecordTarget;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RecordTarget_PatientRole createRecordTarget_PatientRole() {
+		RecordTarget_PatientRoleImpl recordTarget_PatientRole = new RecordTarget_PatientRoleImpl();
+		return recordTarget_PatientRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientRole_Patient createPatientRole_Patient() {
+		PatientRole_PatientImpl patientRole_Patient = new PatientRole_PatientImpl();
+		return patientRole_Patient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Patient_Guardian createPatient_Guardian() {
+		Patient_GuardianImpl patient_Guardian = new Patient_GuardianImpl();
+		return patient_Guardian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Patient_LanguageCommunication createPatient_LanguageCommunication() {
+		Patient_LanguageCommunicationImpl patient_LanguageCommunication = new Patient_LanguageCommunicationImpl();
+		return patient_LanguageCommunication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Patient_Birthplace createPatient_Birthplace() {
+		Patient_BirthplaceImpl patient_Birthplace = new Patient_BirthplaceImpl();
+		return patient_Birthplace;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Birthplace_Place createBirthplace_Place() {
+		Birthplace_PlaceImpl birthplace_Place = new Birthplace_PlaceImpl();
+		return birthplace_Place;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientRole_ProviderOrganization createPatientRole_ProviderOrganization() {
+		PatientRole_ProviderOrganizationImpl patientRole_ProviderOrganization = new PatientRole_ProviderOrganizationImpl();
+		return patientRole_ProviderOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_ComponentOf createGeneralHeaderConstraints_ComponentOf() {
+		GeneralHeaderConstraints_ComponentOfImpl generalHeaderConstraints_ComponentOf = new GeneralHeaderConstraints_ComponentOfImpl();
+		return generalHeaderConstraints_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter createComponentOf_EncompassingEncounter() {
+		ComponentOf_EncompassingEncounterImpl componentOf_EncompassingEncounter = new ComponentOf_EncompassingEncounterImpl();
+		return componentOf_EncompassingEncounter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_Author createGeneralHeaderConstraints_Author() {
+		GeneralHeaderConstraints_AuthorImpl generalHeaderConstraints_Author = new GeneralHeaderConstraints_AuthorImpl();
+		return generalHeaderConstraints_Author;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Author_AssignedAuthor createAuthor_AssignedAuthor() {
+		Author_AssignedAuthorImpl author_AssignedAuthor = new Author_AssignedAuthorImpl();
+		return author_AssignedAuthor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedAuthor_AuthoringDevice createAssignedAuthor_AuthoringDevice() {
+		AssignedAuthor_AuthoringDeviceImpl assignedAuthor_AuthoringDevice = new AssignedAuthor_AuthoringDeviceImpl();
+		return assignedAuthor_AuthoringDevice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_Person createGeneralHeaderConstraints_Person() {
+		GeneralHeaderConstraints_PersonImpl generalHeaderConstraints_Person = new GeneralHeaderConstraints_PersonImpl();
+		return generalHeaderConstraints_Person;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_DataEnterer createGeneralHeaderConstraints_DataEnterer() {
+		GeneralHeaderConstraints_DataEntererImpl generalHeaderConstraints_DataEnterer = new GeneralHeaderConstraints_DataEntererImpl();
+		return generalHeaderConstraints_DataEnterer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DataEnterer_AssignedEntity createDataEnterer_AssignedEntity() {
+		DataEnterer_AssignedEntityImpl dataEnterer_AssignedEntity = new DataEnterer_AssignedEntityImpl();
+		return dataEnterer_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_Custodian createGeneralHeaderConstraints_Custodian() {
+		GeneralHeaderConstraints_CustodianImpl generalHeaderConstraints_Custodian = new GeneralHeaderConstraints_CustodianImpl();
+		return generalHeaderConstraints_Custodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Custodian_AssignedCustodian createCustodian_AssignedCustodian() {
+		Custodian_AssignedCustodianImpl custodian_AssignedCustodian = new Custodian_AssignedCustodianImpl();
+		return custodian_AssignedCustodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedCustodian_CustodianOrganization createAssignedCustodian_CustodianOrganization() {
+		AssignedCustodian_CustodianOrganizationImpl assignedCustodian_CustodianOrganization = new AssignedCustodian_CustodianOrganizationImpl();
+		return assignedCustodian_CustodianOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_InformationRecipient createGeneralHeaderConstraints_InformationRecipient() {
+		GeneralHeaderConstraints_InformationRecipientImpl generalHeaderConstraints_InformationRecipient = new GeneralHeaderConstraints_InformationRecipientImpl();
+		return generalHeaderConstraints_InformationRecipient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationRecipient_IntendedRecipient createInformationRecipient_IntendedRecipient() {
+		InformationRecipient_IntendedRecipientImpl informationRecipient_IntendedRecipient = new InformationRecipient_IntendedRecipientImpl();
+		return informationRecipient_IntendedRecipient;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntendedRecipient_Organization createIntendedRecipient_Organization() {
+		IntendedRecipient_OrganizationImpl intendedRecipient_Organization = new IntendedRecipient_OrganizationImpl();
+		return intendedRecipient_Organization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_LegalAuthenticator createGeneralHeaderConstraints_LegalAuthenticator() {
+		GeneralHeaderConstraints_LegalAuthenticatorImpl generalHeaderConstraints_LegalAuthenticator = new GeneralHeaderConstraints_LegalAuthenticatorImpl();
+		return generalHeaderConstraints_LegalAuthenticator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LegalAuthenticator_AssignedEntity createLegalAuthenticator_AssignedEntity() {
+		LegalAuthenticator_AssignedEntityImpl legalAuthenticator_AssignedEntity = new LegalAuthenticator_AssignedEntityImpl();
+		return legalAuthenticator_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_Authenticator createGeneralHeaderConstraints_Authenticator() {
+		GeneralHeaderConstraints_AuthenticatorImpl generalHeaderConstraints_Authenticator = new GeneralHeaderConstraints_AuthenticatorImpl();
+		return generalHeaderConstraints_Authenticator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Authenticator_AssignedEntity createAuthenticator_AssignedEntity() {
+		Authenticator_AssignedEntityImpl authenticator_AssignedEntity = new Authenticator_AssignedEntityImpl();
+		return authenticator_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_Informant createGeneralHeaderConstraints_Informant() {
+		GeneralHeaderConstraints_InformantImpl generalHeaderConstraints_Informant = new GeneralHeaderConstraints_InformantImpl();
+		return generalHeaderConstraints_Informant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Informant_AssignedEntity createInformant_AssignedEntity() {
+		Informant_AssignedEntityImpl informant_AssignedEntity = new Informant_AssignedEntityImpl();
+		return informant_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Informant_RelatedEntity createInformant_RelatedEntity() {
+		Informant_RelatedEntityImpl informant_RelatedEntity = new Informant_RelatedEntityImpl();
+		return informant_RelatedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_ParticipantSupport createGeneralHeaderConstraints_ParticipantSupport() {
+		GeneralHeaderConstraints_ParticipantSupportImpl generalHeaderConstraints_ParticipantSupport = new GeneralHeaderConstraints_ParticipantSupportImpl();
+		return generalHeaderConstraints_ParticipantSupport;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralHeaderConstraints_InFulfillmentOf createGeneralHeaderConstraints_InFulfillmentOf() {
+		GeneralHeaderConstraints_InFulfillmentOfImpl generalHeaderConstraints_InFulfillmentOf = new GeneralHeaderConstraints_InFulfillmentOfImpl();
+		return generalHeaderConstraints_InFulfillmentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InFulfillmentOf_Order createInFulfillmentOf_Order() {
+		InFulfillmentOf_OrderImpl inFulfillmentOf_Order = new InFulfillmentOf_OrderImpl();
+		return inFulfillmentOf_Order;
 	}
 
 	/**
@@ -1500,306 +1824,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity() {
 		EncounterPerformerAssignedEntityImpl encounterPerformerAssignedEntity = new EncounterPerformerAssignedEntityImpl();
 		return encounterPerformerAssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Author createAuthor() {
-		AuthorImpl author = new AuthorImpl();
-		return author;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Person createPerson() {
-		PersonImpl person = new PersonImpl();
-		return person;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RecordTarget createRecordTarget() {
-		RecordTargetImpl recordTarget = new RecordTargetImpl();
-		return recordTarget;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DataEnterer createDataEnterer() {
-		DataEntererImpl dataEnterer = new DataEntererImpl();
-		return dataEnterer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Custodian createCustodian() {
-		CustodianImpl custodian = new CustodianImpl();
-		return custodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InformationRecipient createInformationRecipient() {
-		InformationRecipientImpl informationRecipient = new InformationRecipientImpl();
-		return informationRecipient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LegalAuthenticator createLegalAuthenticator() {
-		LegalAuthenticatorImpl legalAuthenticator = new LegalAuthenticatorImpl();
-		return legalAuthenticator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Authenticator createAuthenticator() {
-		AuthenticatorImpl authenticator = new AuthenticatorImpl();
-		return authenticator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Informant createInformant() {
-		InformantImpl informant = new InformantImpl();
-		return informant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ParticipantSupport createParticipantSupport() {
-		ParticipantSupportImpl participantSupport = new ParticipantSupportImpl();
-		return participantSupport;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InFulfillmentOf createInFulfillmentOf() {
-		InFulfillmentOfImpl inFulfillmentOf = new InFulfillmentOfImpl();
-		return inFulfillmentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf createComponentOf() {
-		ComponentOfImpl componentOf = new ComponentOfImpl();
-		return componentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedAuthenticator createAssignedAuthenticator() {
-		AssignedAuthenticatorImpl assignedAuthenticator = new AssignedAuthenticatorImpl();
-		return assignedAuthenticator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedAuthor createAssignedAuthor() {
-		AssignedAuthorImpl assignedAuthor = new AssignedAuthorImpl();
-		return assignedAuthor;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter createEncompassingEncounter() {
-		EncompassingEncounterImpl encompassingEncounter = new EncompassingEncounterImpl();
-		return encompassingEncounter;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedCustodian createAssignedCustodian() {
-		AssignedCustodianImpl assignedCustodian = new AssignedCustodianImpl();
-		return assignedCustodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CustodianOrganization createCustodianOrganization() {
-		CustodianOrganizationImpl custodianOrganization = new CustodianOrganizationImpl();
-		return custodianOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AuthoringDevice createAuthoringDevice() {
-		AuthoringDeviceImpl authoringDevice = new AuthoringDeviceImpl();
-		return authoringDevice;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedInformant createAssignedInformant() {
-		AssignedInformantImpl assignedInformant = new AssignedInformantImpl();
-		return assignedInformant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IntendedRecipient createIntendedRecipient() {
-		IntendedRecipientImpl intendedRecipient = new IntendedRecipientImpl();
-		return intendedRecipient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedDataEnterer createAssignedDataEnterer() {
-		AssignedDataEntererImpl assignedDataEnterer = new AssignedDataEntererImpl();
-		return assignedDataEnterer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Order createOrder() {
-		OrderImpl order = new OrderImpl();
-		return order;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RecievedOrganization createRecievedOrganization() {
-		RecievedOrganizationImpl recievedOrganization = new RecievedOrganizationImpl();
-		return recievedOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientRole createPatientRole() {
-		PatientRoleImpl patientRole = new PatientRoleImpl();
-		return patientRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Patient createPatient() {
-		PatientImpl patient = new PatientImpl();
-		return patient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Birthplace createBirthplace() {
-		BirthplaceImpl birthplace = new BirthplaceImpl();
-		return birthplace;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Guardian createGuardian() {
-		GuardianImpl guardian = new GuardianImpl();
-		return guardian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProviderOrganization createProviderOrganization() {
-		ProviderOrganizationImpl providerOrganization = new ProviderOrganizationImpl();
-		return providerOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LanguageCommunication createLanguageCommunication() {
-		LanguageCommunicationImpl languageCommunication = new LanguageCommunicationImpl();
-		return languageCommunication;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Place createPlace() {
-		PlaceImpl place = new PlaceImpl();
-		return place;
 	}
 
 	/**

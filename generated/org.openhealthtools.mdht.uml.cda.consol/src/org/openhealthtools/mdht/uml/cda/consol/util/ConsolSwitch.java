@@ -11,28 +11,47 @@ import java.util.List;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
+import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.Author;
+import org.openhealthtools.mdht.uml.cda.AuthoringDevice;
+import org.openhealthtools.mdht.uml.cda.Birthplace;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Component1;
+import org.openhealthtools.mdht.uml.cda.Custodian;
+import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
+import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
+import org.openhealthtools.mdht.uml.cda.Guardian;
+import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
 import org.openhealthtools.mdht.uml.cda.Informant12;
+import org.openhealthtools.mdht.uml.cda.InformationRecipient;
+import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
+import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
+import org.openhealthtools.mdht.uml.cda.Order;
 import org.openhealthtools.mdht.uml.cda.Organization;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
+import org.openhealthtools.mdht.uml.cda.Patient;
+import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Performer2;
+import org.openhealthtools.mdht.uml.cda.Person;
+import org.openhealthtools.mdht.uml.cda.Place;
 import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.Section;
@@ -133,6 +152,544 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET: {
+				GeneralHeaderConstraints_RecordTarget generalHeaderConstraints_RecordTarget = (GeneralHeaderConstraints_RecordTarget) theEObject;
+				T result = caseGeneralHeaderConstraints_RecordTarget(generalHeaderConstraints_RecordTarget);
+				if (result == null) {
+					result = caseRecordTarget(generalHeaderConstraints_RecordTarget);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_RecordTarget);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_RecordTarget);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE: {
+				RecordTarget_PatientRole recordTarget_PatientRole = (RecordTarget_PatientRole) theEObject;
+				T result = caseRecordTarget_PatientRole(recordTarget_PatientRole);
+				if (result == null) {
+					result = casePatientRole(recordTarget_PatientRole);
+				}
+				if (result == null) {
+					result = caseRole(recordTarget_PatientRole);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(recordTarget_PatientRole);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_ROLE_PATIENT: {
+				PatientRole_Patient patientRole_Patient = (PatientRole_Patient) theEObject;
+				T result = casePatientRole_Patient(patientRole_Patient);
+				if (result == null) {
+					result = casePatient(patientRole_Patient);
+				}
+				if (result == null) {
+					result = caseEntity(patientRole_Patient);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientRole_Patient);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_GUARDIAN: {
+				Patient_Guardian patient_Guardian = (Patient_Guardian) theEObject;
+				T result = casePatient_Guardian(patient_Guardian);
+				if (result == null) {
+					result = caseGuardian(patient_Guardian);
+				}
+				if (result == null) {
+					result = caseRole(patient_Guardian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patient_Guardian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_LANGUAGE_COMMUNICATION: {
+				Patient_LanguageCommunication patient_LanguageCommunication = (Patient_LanguageCommunication) theEObject;
+				T result = casePatient_LanguageCommunication(patient_LanguageCommunication);
+				if (result == null) {
+					result = caseLanguageCommunication(patient_LanguageCommunication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_BIRTHPLACE: {
+				Patient_Birthplace patient_Birthplace = (Patient_Birthplace) theEObject;
+				T result = casePatient_Birthplace(patient_Birthplace);
+				if (result == null) {
+					result = caseBirthplace(patient_Birthplace);
+				}
+				if (result == null) {
+					result = caseRole(patient_Birthplace);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patient_Birthplace);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.BIRTHPLACE_PLACE: {
+				Birthplace_Place birthplace_Place = (Birthplace_Place) theEObject;
+				T result = caseBirthplace_Place(birthplace_Place);
+				if (result == null) {
+					result = casePlace(birthplace_Place);
+				}
+				if (result == null) {
+					result = caseEntity(birthplace_Place);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(birthplace_Place);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_ROLE_PROVIDER_ORGANIZATION: {
+				PatientRole_ProviderOrganization patientRole_ProviderOrganization = (PatientRole_ProviderOrganization) theEObject;
+				T result = casePatientRole_ProviderOrganization(patientRole_ProviderOrganization);
+				if (result == null) {
+					result = caseOrganization(patientRole_ProviderOrganization);
+				}
+				if (result == null) {
+					result = caseEntity(patientRole_ProviderOrganization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientRole_ProviderOrganization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF: {
+				GeneralHeaderConstraints_ComponentOf generalHeaderConstraints_ComponentOf = (GeneralHeaderConstraints_ComponentOf) theEObject;
+				T result = caseGeneralHeaderConstraints_ComponentOf(generalHeaderConstraints_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(generalHeaderConstraints_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(generalHeaderConstraints_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER: {
+				ComponentOf_EncompassingEncounter componentOf_EncompassingEncounter = (ComponentOf_EncompassingEncounter) theEObject;
+				T result = caseComponentOf_EncompassingEncounter(componentOf_EncompassingEncounter);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHOR: {
+				GeneralHeaderConstraints_Author generalHeaderConstraints_Author = (GeneralHeaderConstraints_Author) theEObject;
+				T result = caseGeneralHeaderConstraints_Author(generalHeaderConstraints_Author);
+				if (result == null) {
+					result = caseAuthor(generalHeaderConstraints_Author);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_Author);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_Author);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR: {
+				Author_AssignedAuthor author_AssignedAuthor = (Author_AssignedAuthor) theEObject;
+				T result = caseAuthor_AssignedAuthor(author_AssignedAuthor);
+				if (result == null) {
+					result = caseAssignedAuthor(author_AssignedAuthor);
+				}
+				if (result == null) {
+					result = caseRole(author_AssignedAuthor);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(author_AssignedAuthor);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSIGNED_AUTHOR_AUTHORING_DEVICE: {
+				AssignedAuthor_AuthoringDevice assignedAuthor_AuthoringDevice = (AssignedAuthor_AuthoringDevice) theEObject;
+				T result = caseAssignedAuthor_AuthoringDevice(assignedAuthor_AuthoringDevice);
+				if (result == null) {
+					result = caseAuthoringDevice(assignedAuthor_AuthoringDevice);
+				}
+				if (result == null) {
+					result = caseEntity(assignedAuthor_AuthoringDevice);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assignedAuthor_AuthoringDevice);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PERSON: {
+				GeneralHeaderConstraints_Person generalHeaderConstraints_Person = (GeneralHeaderConstraints_Person) theEObject;
+				T result = caseGeneralHeaderConstraints_Person(generalHeaderConstraints_Person);
+				if (result == null) {
+					result = casePerson(generalHeaderConstraints_Person);
+				}
+				if (result == null) {
+					result = caseEntity(generalHeaderConstraints_Person);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_Person);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER: {
+				GeneralHeaderConstraints_DataEnterer generalHeaderConstraints_DataEnterer = (GeneralHeaderConstraints_DataEnterer) theEObject;
+				T result = caseGeneralHeaderConstraints_DataEnterer(generalHeaderConstraints_DataEnterer);
+				if (result == null) {
+					result = caseDataEnterer(generalHeaderConstraints_DataEnterer);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_DataEnterer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_DataEnterer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DATA_ENTERER_ASSIGNED_ENTITY: {
+				DataEnterer_AssignedEntity dataEnterer_AssignedEntity = (DataEnterer_AssignedEntity) theEObject;
+				T result = caseDataEnterer_AssignedEntity(dataEnterer_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(dataEnterer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(dataEnterer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dataEnterer_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN: {
+				GeneralHeaderConstraints_Custodian generalHeaderConstraints_Custodian = (GeneralHeaderConstraints_Custodian) theEObject;
+				T result = caseGeneralHeaderConstraints_Custodian(generalHeaderConstraints_Custodian);
+				if (result == null) {
+					result = caseCustodian(generalHeaderConstraints_Custodian);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_Custodian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_Custodian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN: {
+				Custodian_AssignedCustodian custodian_AssignedCustodian = (Custodian_AssignedCustodian) theEObject;
+				T result = caseCustodian_AssignedCustodian(custodian_AssignedCustodian);
+				if (result == null) {
+					result = caseAssignedCustodian(custodian_AssignedCustodian);
+				}
+				if (result == null) {
+					result = caseRole(custodian_AssignedCustodian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(custodian_AssignedCustodian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION: {
+				AssignedCustodian_CustodianOrganization assignedCustodian_CustodianOrganization = (AssignedCustodian_CustodianOrganization) theEObject;
+				T result = caseAssignedCustodian_CustodianOrganization(assignedCustodian_CustodianOrganization);
+				if (result == null) {
+					result = caseCustodianOrganization(assignedCustodian_CustodianOrganization);
+				}
+				if (result == null) {
+					result = caseEntity(assignedCustodian_CustodianOrganization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assignedCustodian_CustodianOrganization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT: {
+				GeneralHeaderConstraints_InformationRecipient generalHeaderConstraints_InformationRecipient = (GeneralHeaderConstraints_InformationRecipient) theEObject;
+				T result = caseGeneralHeaderConstraints_InformationRecipient(generalHeaderConstraints_InformationRecipient);
+				if (result == null) {
+					result = caseInformationRecipient(generalHeaderConstraints_InformationRecipient);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_InformationRecipient);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_InformationRecipient);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INFORMATION_RECIPIENT_INTENDED_RECIPIENT: {
+				InformationRecipient_IntendedRecipient informationRecipient_IntendedRecipient = (InformationRecipient_IntendedRecipient) theEObject;
+				T result = caseInformationRecipient_IntendedRecipient(informationRecipient_IntendedRecipient);
+				if (result == null) {
+					result = caseIntendedRecipient(informationRecipient_IntendedRecipient);
+				}
+				if (result == null) {
+					result = caseRole(informationRecipient_IntendedRecipient);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(informationRecipient_IntendedRecipient);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INTENDED_RECIPIENT_ORGANIZATION: {
+				IntendedRecipient_Organization intendedRecipient_Organization = (IntendedRecipient_Organization) theEObject;
+				T result = caseIntendedRecipient_Organization(intendedRecipient_Organization);
+				if (result == null) {
+					result = caseOrganization(intendedRecipient_Organization);
+				}
+				if (result == null) {
+					result = caseEntity(intendedRecipient_Organization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(intendedRecipient_Organization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR: {
+				GeneralHeaderConstraints_LegalAuthenticator generalHeaderConstraints_LegalAuthenticator = (GeneralHeaderConstraints_LegalAuthenticator) theEObject;
+				T result = caseGeneralHeaderConstraints_LegalAuthenticator(generalHeaderConstraints_LegalAuthenticator);
+				if (result == null) {
+					result = caseLegalAuthenticator(generalHeaderConstraints_LegalAuthenticator);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_LegalAuthenticator);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_LegalAuthenticator);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY: {
+				LegalAuthenticator_AssignedEntity legalAuthenticator_AssignedEntity = (LegalAuthenticator_AssignedEntity) theEObject;
+				T result = caseLegalAuthenticator_AssignedEntity(legalAuthenticator_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(legalAuthenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(legalAuthenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(legalAuthenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR: {
+				GeneralHeaderConstraints_Authenticator generalHeaderConstraints_Authenticator = (GeneralHeaderConstraints_Authenticator) theEObject;
+				T result = caseGeneralHeaderConstraints_Authenticator(generalHeaderConstraints_Authenticator);
+				if (result == null) {
+					result = caseAuthenticator(generalHeaderConstraints_Authenticator);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_Authenticator);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_Authenticator);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.AUTHENTICATOR_ASSIGNED_ENTITY: {
+				Authenticator_AssignedEntity authenticator_AssignedEntity = (Authenticator_AssignedEntity) theEObject;
+				T result = caseAuthenticator_AssignedEntity(authenticator_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(authenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(authenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(authenticator_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMANT: {
+				GeneralHeaderConstraints_Informant generalHeaderConstraints_Informant = (GeneralHeaderConstraints_Informant) theEObject;
+				T result = caseGeneralHeaderConstraints_Informant(generalHeaderConstraints_Informant);
+				if (result == null) {
+					result = caseInformant12(generalHeaderConstraints_Informant);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_Informant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_Informant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INFORMANT_ASSIGNED_ENTITY: {
+				Informant_AssignedEntity informant_AssignedEntity = (Informant_AssignedEntity) theEObject;
+				T result = caseInformant_AssignedEntity(informant_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(informant_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(informant_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(informant_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INFORMANT_RELATED_ENTITY: {
+				Informant_RelatedEntity informant_RelatedEntity = (Informant_RelatedEntity) theEObject;
+				T result = caseInformant_RelatedEntity(informant_RelatedEntity);
+				if (result == null) {
+					result = caseRelatedEntity(informant_RelatedEntity);
+				}
+				if (result == null) {
+					result = caseRole(informant_RelatedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(informant_RelatedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT: {
+				GeneralHeaderConstraints_ParticipantSupport generalHeaderConstraints_ParticipantSupport = (GeneralHeaderConstraints_ParticipantSupport) theEObject;
+				T result = caseGeneralHeaderConstraints_ParticipantSupport(generalHeaderConstraints_ParticipantSupport);
+				if (result == null) {
+					result = caseParticipant1(generalHeaderConstraints_ParticipantSupport);
+				}
+				if (result == null) {
+					result = caseParticipation(generalHeaderConstraints_ParticipantSupport);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_ParticipantSupport);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF: {
+				GeneralHeaderConstraints_InFulfillmentOf generalHeaderConstraints_InFulfillmentOf = (GeneralHeaderConstraints_InFulfillmentOf) theEObject;
+				T result = caseGeneralHeaderConstraints_InFulfillmentOf(generalHeaderConstraints_InFulfillmentOf);
+				if (result == null) {
+					result = caseInFulfillmentOf(generalHeaderConstraints_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(generalHeaderConstraints_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.IN_FULFILLMENT_OF_ORDER: {
+				InFulfillmentOf_Order inFulfillmentOf_Order = (InFulfillmentOf_Order) theEObject;
+				T result = caseInFulfillmentOf_Order(inFulfillmentOf_Order);
+				if (result == null) {
+					result = caseOrder(inFulfillmentOf_Order);
+				}
+				if (result == null) {
+					result = caseAct(inFulfillmentOf_Order);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(inFulfillmentOf_Order);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2114,7 +2671,7 @@ public class ConsolSwitch<T> {
 				LanguageSpoken languageSpoken = (LanguageSpoken) theEObject;
 				T result = caseLanguageSpoken(languageSpoken);
 				if (result == null) {
-					result = caseCDA_LanguageCommunication(languageSpoken);
+					result = caseLanguageCommunication(languageSpoken);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2207,7 +2764,7 @@ public class ConsolSwitch<T> {
 				ScanOriginalAuthor scanOriginalAuthor = (ScanOriginalAuthor) theEObject;
 				T result = caseScanOriginalAuthor(scanOriginalAuthor);
 				if (result == null) {
-					result = caseCDA_Author(scanOriginalAuthor);
+					result = caseAuthor(scanOriginalAuthor);
 				}
 				if (result == null) {
 					result = caseParticipation(scanOriginalAuthor);
@@ -2224,7 +2781,7 @@ public class ConsolSwitch<T> {
 				ScanningDevice scanningDevice = (ScanningDevice) theEObject;
 				T result = caseScanningDevice(scanningDevice);
 				if (result == null) {
-					result = caseCDA_Author(scanningDevice);
+					result = caseAuthor(scanningDevice);
 				}
 				if (result == null) {
 					result = caseParticipation(scanningDevice);
@@ -2241,7 +2798,7 @@ public class ConsolSwitch<T> {
 				ScanDataEnterer scanDataEnterer = (ScanDataEnterer) theEObject;
 				T result = caseScanDataEnterer(scanDataEnterer);
 				if (result == null) {
-					result = caseCDA_DataEnterer(scanDataEnterer);
+					result = caseDataEnterer(scanDataEnterer);
 				}
 				if (result == null) {
 					result = caseParticipation(scanDataEnterer);
@@ -2717,510 +3274,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.AUTHOR: {
-				Author author = (Author) theEObject;
-				T result = caseAuthor(author);
-				if (result == null) {
-					result = caseCDA_Author(author);
-				}
-				if (result == null) {
-					result = caseParticipation(author);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(author);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PERSON: {
-				Person person = (Person) theEObject;
-				T result = casePerson(person);
-				if (result == null) {
-					result = caseCDA_Person(person);
-				}
-				if (result == null) {
-					result = caseEntity(person);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(person);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.RECORD_TARGET: {
-				RecordTarget recordTarget = (RecordTarget) theEObject;
-				T result = caseRecordTarget(recordTarget);
-				if (result == null) {
-					result = caseCDA_RecordTarget(recordTarget);
-				}
-				if (result == null) {
-					result = caseParticipation(recordTarget);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(recordTarget);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.DATA_ENTERER: {
-				DataEnterer dataEnterer = (DataEnterer) theEObject;
-				T result = caseDataEnterer(dataEnterer);
-				if (result == null) {
-					result = caseCDA_DataEnterer(dataEnterer);
-				}
-				if (result == null) {
-					result = caseParticipation(dataEnterer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dataEnterer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.CUSTODIAN: {
-				Custodian custodian = (Custodian) theEObject;
-				T result = caseCustodian(custodian);
-				if (result == null) {
-					result = caseCDA_Custodian(custodian);
-				}
-				if (result == null) {
-					result = caseParticipation(custodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.INFORMATION_RECIPIENT: {
-				InformationRecipient informationRecipient = (InformationRecipient) theEObject;
-				T result = caseInformationRecipient(informationRecipient);
-				if (result == null) {
-					result = caseCDA_InformationRecipient(informationRecipient);
-				}
-				if (result == null) {
-					result = caseParticipation(informationRecipient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(informationRecipient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.LEGAL_AUTHENTICATOR: {
-				LegalAuthenticator legalAuthenticator = (LegalAuthenticator) theEObject;
-				T result = caseLegalAuthenticator(legalAuthenticator);
-				if (result == null) {
-					result = caseCDA_LegalAuthenticator(legalAuthenticator);
-				}
-				if (result == null) {
-					result = caseParticipation(legalAuthenticator);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(legalAuthenticator);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.AUTHENTICATOR: {
-				Authenticator authenticator = (Authenticator) theEObject;
-				T result = caseAuthenticator(authenticator);
-				if (result == null) {
-					result = caseCDA_Authenticator(authenticator);
-				}
-				if (result == null) {
-					result = caseParticipation(authenticator);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(authenticator);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.INFORMANT: {
-				Informant informant = (Informant) theEObject;
-				T result = caseInformant(informant);
-				if (result == null) {
-					result = caseInformant12(informant);
-				}
-				if (result == null) {
-					result = caseParticipation(informant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(informant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PARTICIPANT_SUPPORT: {
-				ParticipantSupport participantSupport = (ParticipantSupport) theEObject;
-				T result = caseParticipantSupport(participantSupport);
-				if (result == null) {
-					result = caseParticipant1(participantSupport);
-				}
-				if (result == null) {
-					result = caseParticipation(participantSupport);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(participantSupport);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.IN_FULFILLMENT_OF: {
-				InFulfillmentOf inFulfillmentOf = (InFulfillmentOf) theEObject;
-				T result = caseInFulfillmentOf(inFulfillmentOf);
-				if (result == null) {
-					result = caseCDA_InFulfillmentOf(inFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(inFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(inFulfillmentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.COMPONENT_OF: {
-				ComponentOf componentOf = (ComponentOf) theEObject;
-				T result = caseComponentOf(componentOf);
-				if (result == null) {
-					result = caseComponent1(componentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(componentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ASSIGNED_AUTHENTICATOR: {
-				AssignedAuthenticator assignedAuthenticator = (AssignedAuthenticator) theEObject;
-				T result = caseAssignedAuthenticator(assignedAuthenticator);
-				if (result == null) {
-					result = caseAssignedEntity(assignedAuthenticator);
-				}
-				if (result == null) {
-					result = caseRole(assignedAuthenticator);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedAuthenticator);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ASSIGNED_AUTHOR: {
-				AssignedAuthor assignedAuthor = (AssignedAuthor) theEObject;
-				T result = caseAssignedAuthor(assignedAuthor);
-				if (result == null) {
-					result = caseCDA_AssignedAuthor(assignedAuthor);
-				}
-				if (result == null) {
-					result = caseRole(assignedAuthor);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedAuthor);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER: {
-				EncompassingEncounter encompassingEncounter = (EncompassingEncounter) theEObject;
-				T result = caseEncompassingEncounter(encompassingEncounter);
-				if (result == null) {
-					result = caseCDA_EncompassingEncounter(encompassingEncounter);
-				}
-				if (result == null) {
-					result = caseAct(encompassingEncounter);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ASSIGNED_CUSTODIAN: {
-				AssignedCustodian assignedCustodian = (AssignedCustodian) theEObject;
-				T result = caseAssignedCustodian(assignedCustodian);
-				if (result == null) {
-					result = caseCDA_AssignedCustodian(assignedCustodian);
-				}
-				if (result == null) {
-					result = caseRole(assignedCustodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedCustodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.CUSTODIAN_ORGANIZATION: {
-				CustodianOrganization custodianOrganization = (CustodianOrganization) theEObject;
-				T result = caseCustodianOrganization(custodianOrganization);
-				if (result == null) {
-					result = caseCDA_CustodianOrganization(custodianOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(custodianOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodianOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.AUTHORING_DEVICE: {
-				AuthoringDevice authoringDevice = (AuthoringDevice) theEObject;
-				T result = caseAuthoringDevice(authoringDevice);
-				if (result == null) {
-					result = caseCDA_AuthoringDevice(authoringDevice);
-				}
-				if (result == null) {
-					result = caseEntity(authoringDevice);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(authoringDevice);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ASSIGNED_INFORMANT: {
-				AssignedInformant assignedInformant = (AssignedInformant) theEObject;
-				T result = caseAssignedInformant(assignedInformant);
-				if (result == null) {
-					result = caseAssignedEntity(assignedInformant);
-				}
-				if (result == null) {
-					result = caseRole(assignedInformant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedInformant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.INTENDED_RECIPIENT: {
-				IntendedRecipient intendedRecipient = (IntendedRecipient) theEObject;
-				T result = caseIntendedRecipient(intendedRecipient);
-				if (result == null) {
-					result = caseCDA_IntendedRecipient(intendedRecipient);
-				}
-				if (result == null) {
-					result = caseRole(intendedRecipient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(intendedRecipient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ASSIGNED_DATA_ENTERER: {
-				AssignedDataEnterer assignedDataEnterer = (AssignedDataEnterer) theEObject;
-				T result = caseAssignedDataEnterer(assignedDataEnterer);
-				if (result == null) {
-					result = caseAssignedEntity(assignedDataEnterer);
-				}
-				if (result == null) {
-					result = caseRole(assignedDataEnterer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedDataEnterer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ORDER: {
-				Order order = (Order) theEObject;
-				T result = caseOrder(order);
-				if (result == null) {
-					result = caseCDA_Order(order);
-				}
-				if (result == null) {
-					result = caseAct(order);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(order);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.RECIEVED_ORGANIZATION: {
-				RecievedOrganization recievedOrganization = (RecievedOrganization) theEObject;
-				T result = caseRecievedOrganization(recievedOrganization);
-				if (result == null) {
-					result = caseOrganization(recievedOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(recievedOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(recievedOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PATIENT_ROLE: {
-				PatientRole patientRole = (PatientRole) theEObject;
-				T result = casePatientRole(patientRole);
-				if (result == null) {
-					result = caseCDA_PatientRole(patientRole);
-				}
-				if (result == null) {
-					result = caseRole(patientRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientRole);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PATIENT: {
-				Patient patient = (Patient) theEObject;
-				T result = casePatient(patient);
-				if (result == null) {
-					result = caseCDA_Patient(patient);
-				}
-				if (result == null) {
-					result = caseEntity(patient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.BIRTHPLACE: {
-				Birthplace birthplace = (Birthplace) theEObject;
-				T result = caseBirthplace(birthplace);
-				if (result == null) {
-					result = caseCDA_Birthplace(birthplace);
-				}
-				if (result == null) {
-					result = caseRole(birthplace);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(birthplace);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.GUARDIAN: {
-				Guardian guardian = (Guardian) theEObject;
-				T result = caseGuardian(guardian);
-				if (result == null) {
-					result = caseCDA_Guardian(guardian);
-				}
-				if (result == null) {
-					result = caseRole(guardian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(guardian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROVIDER_ORGANIZATION: {
-				ProviderOrganization providerOrganization = (ProviderOrganization) theEObject;
-				T result = caseProviderOrganization(providerOrganization);
-				if (result == null) {
-					result = caseOrganization(providerOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(providerOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(providerOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.LANGUAGE_COMMUNICATION: {
-				LanguageCommunication languageCommunication = (LanguageCommunication) theEObject;
-				T result = caseLanguageCommunication(languageCommunication);
-				if (result == null) {
-					result = caseCDA_LanguageCommunication(languageCommunication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PLACE: {
-				Place place = (Place) theEObject;
-				T result = casePlace(place);
-				if (result == null) {
-					result = caseCDA_Place(place);
-				}
-				if (result == null) {
-					result = caseEntity(place);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(place);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT: {
 				AllergyObservationParticipant allergyObservationParticipant = (AllergyObservationParticipant) theEObject;
 				T result = caseAllergyObservationParticipant(allergyObservationParticipant);
@@ -3289,6 +3342,486 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Record Target</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Record Target</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_RecordTarget(GeneralHeaderConstraints_RecordTarget object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Record Target Patient Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Record Target Patient Role</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRecordTarget_PatientRole(RecordTarget_PatientRole object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Role Patient</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Role Patient</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatientRole_Patient(PatientRole_Patient object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Guardian</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Guardian</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatient_Guardian(Patient_Guardian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Language Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Language Communication</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatient_LanguageCommunication(Patient_LanguageCommunication object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Birthplace</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Birthplace</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatient_Birthplace(Patient_Birthplace object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Birthplace Place</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Birthplace Place</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBirthplace_Place(Birthplace_Place object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Role Provider Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Role Provider Organization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatientRole_ProviderOrganization(PatientRole_ProviderOrganization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_ComponentOf(GeneralHeaderConstraints_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter(ComponentOf_EncompassingEncounter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Author</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_Author(GeneralHeaderConstraints_Author object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Author Assigned Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Author Assigned Author</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthor_AssignedAuthor(Author_AssignedAuthor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assigned Author Authoring Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assigned Author Authoring Device</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignedAuthor_AuthoringDevice(AssignedAuthor_AuthoringDevice object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Person</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_Person(GeneralHeaderConstraints_Person object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Data Enterer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Data Enterer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_DataEnterer(GeneralHeaderConstraints_DataEnterer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Data Enterer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Data Enterer Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDataEnterer_AssignedEntity(DataEnterer_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Custodian</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_Custodian(GeneralHeaderConstraints_Custodian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Custodian Assigned Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Custodian Assigned Custodian</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCustodian_AssignedCustodian(Custodian_AssignedCustodian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assigned Custodian Custodian Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assigned Custodian Custodian Organization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignedCustodian_CustodianOrganization(AssignedCustodian_CustodianOrganization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Information Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Information Recipient</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_InformationRecipient(GeneralHeaderConstraints_InformationRecipient object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Information Recipient Intended Recipient</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Information Recipient Intended Recipient</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInformationRecipient_IntendedRecipient(InformationRecipient_IntendedRecipient object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Intended Recipient Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Intended Recipient Organization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntendedRecipient_Organization(IntendedRecipient_Organization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Legal Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Legal Authenticator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_LegalAuthenticator(GeneralHeaderConstraints_LegalAuthenticator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Legal Authenticator Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Legal Authenticator Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLegalAuthenticator_AssignedEntity(LegalAuthenticator_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Authenticator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Authenticator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_Authenticator(GeneralHeaderConstraints_Authenticator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Authenticator Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Authenticator Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthenticator_AssignedEntity(Authenticator_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Informant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Informant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_Informant(GeneralHeaderConstraints_Informant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Informant Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Informant Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInformant_AssignedEntity(Informant_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Informant Related Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Informant Related Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInformant_RelatedEntity(Informant_RelatedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints Participant Support</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints Participant Support</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_ParticipantSupport(GeneralHeaderConstraints_ParticipantSupport object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints In Fulfillment Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints In Fulfillment Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralHeaderConstraints_InFulfillmentOf(GeneralHeaderConstraints_InFulfillmentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>In Fulfillment Of Order</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>In Fulfillment Of Order</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInFulfillmentOf_Order(InFulfillmentOf_Order object) {
 		return null;
 	}
 
@@ -5675,21 +6208,6 @@ public class ConsolSwitch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_LanguageCommunication(org.openhealthtools.mdht.uml.cda.LanguageCommunication object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Language Communication</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Language Communication</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
 	public T caseLanguageCommunication(LanguageCommunication object) {
 		return null;
 	}
@@ -5766,36 +6284,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePerformer1(Performer1 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Author</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Author(org.openhealthtools.mdht.uml.cda.Author object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Data Enterer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Data Enterer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_DataEnterer(org.openhealthtools.mdht.uml.cda.DataEnterer object) {
 		return null;
 	}
 
@@ -5920,36 +6408,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Informant</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Informant</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInformant(Informant object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Participant Support</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Participant Support</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseParticipantSupport(ParticipantSupport object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>In Fulfillment Of</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -5961,36 +6419,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseInFulfillmentOf(InFulfillmentOf object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Component Of</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseComponentOf(ComponentOf object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assigned Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assigned Authenticator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssignedAuthenticator(AssignedAuthenticator object) {
 		return null;
 	}
 
@@ -6070,21 +6498,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assigned Informant</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assigned Informant</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssignedInformant(AssignedInformant object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Intended Recipient</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6100,21 +6513,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assigned Data Enterer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assigned Data Enterer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssignedDataEnterer(AssignedDataEnterer object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6126,21 +6524,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseOrder(Order object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Recieved Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Recieved Organization</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRecievedOrganization(RecievedOrganization object) {
 		return null;
 	}
 
@@ -6201,21 +6584,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseGuardian(Guardian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Provider Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Provider Organization</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProviderOrganization(ProviderOrganization object) {
 		return null;
 	}
 
@@ -6355,96 +6723,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Person</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Person(org.openhealthtools.mdht.uml.cda.Person object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Record Target</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Record Target</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_RecordTarget(org.openhealthtools.mdht.uml.cda.RecordTarget object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Custodian</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Custodian(org.openhealthtools.mdht.uml.cda.Custodian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Information Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Information Recipient</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_InformationRecipient(org.openhealthtools.mdht.uml.cda.InformationRecipient object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Legal Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Legal Authenticator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_LegalAuthenticator(org.openhealthtools.mdht.uml.cda.LegalAuthenticator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Authenticator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Authenticator(org.openhealthtools.mdht.uml.cda.Authenticator object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Informant12</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6475,21 +6753,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>In Fulfillment Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>In Fulfillment Of</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_InFulfillmentOf(org.openhealthtools.mdht.uml.cda.InFulfillmentOf object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Component1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6505,111 +6768,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assigned Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assigned Author</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_AssignedAuthor(org.openhealthtools.mdht.uml.cda.AssignedAuthor object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_EncompassingEncounter(org.openhealthtools.mdht.uml.cda.EncompassingEncounter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assigned Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assigned Custodian</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_AssignedCustodian(org.openhealthtools.mdht.uml.cda.AssignedCustodian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Custodian Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Custodian Organization</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_CustodianOrganization(org.openhealthtools.mdht.uml.cda.CustodianOrganization object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Authoring Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Authoring Device</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_AuthoringDevice(org.openhealthtools.mdht.uml.cda.AuthoringDevice object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Intended Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Intended Recipient</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_IntendedRecipient(org.openhealthtools.mdht.uml.cda.IntendedRecipient object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Order</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Order</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Order(org.openhealthtools.mdht.uml.cda.Order object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Organization</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6621,81 +6779,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseOrganization(Organization object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Patient Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Patient Role</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_PatientRole(org.openhealthtools.mdht.uml.cda.PatientRole object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Patient</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Patient</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Patient(org.openhealthtools.mdht.uml.cda.Patient object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Birthplace</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Birthplace</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Birthplace(org.openhealthtools.mdht.uml.cda.Birthplace object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Guardian</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Guardian</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Guardian(org.openhealthtools.mdht.uml.cda.Guardian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCDA_Place(org.openhealthtools.mdht.uml.cda.Place object) {
 		return null;
 	}
 
