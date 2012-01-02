@@ -79,7 +79,7 @@
       <ownedAttribute xmi:id="_SYpIoCshEeGQ5rkpDKAt8A" name="externalDocument" type="_TrqsMCsgEeGQ5rkpDKAt8A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_URs8ACshEeGQ5rkpDKAt8A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_URs8ASshEeGQ5rkpDKAt8A" value="1"/>
-        <association href="../consol.uml#_SYpvsSshEeGQ5rkpDKAt8A"/>
+        <association href="consol-documents.uml#_SYpvsSshEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_TrqsMCsgEeGQ5rkpDKAt8A" name="ExternalDocument">
         <ownedRule xmi:id="_mZCKQCsgEeGQ5rkpDKAt8A" name="textMediaType" constrainedElement="_TrqsMCsgEeGQ5rkpDKAt8A">
@@ -125,7 +125,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_HG0hACsfEeGQ5rkpDKAt8A" name="advanceDirectiveObservationCustodianRole" type="_4vBVACseEeGQ5rkpDKAt8A">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HG0hASsfEeGQ5rkpDKAt8A"/>
-        <association href="../consol.uml#_HG1IECsfEeGQ5rkpDKAt8A"/>
+        <association href="consol-documents.uml#_HG1IECsfEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_4vBVACseEeGQ5rkpDKAt8A" name="CustodianRole">
         <generalization xmi:id="_4vB8ECseEeGQ5rkpDKAt8A">
@@ -156,7 +156,7 @@
         <ownedAttribute xmi:id="_Kn5bECsfEeGQ5rkpDKAt8A" name="playingEntity" type="__8j5wCseEeGQ5rkpDKAt8A">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-fd0MCsfEeGQ5rkpDKAt8A" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-febQCsfEeGQ5rkpDKAt8A" value="1"/>
-          <association href="../consol.uml#_Kn6CICsfEeGQ5rkpDKAt8A"/>
+          <association href="consol-documents.uml#_Kn6CICsfEeGQ5rkpDKAt8A"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__8j5wCseEeGQ5rkpDKAt8A" name="CustodianEntity">
           <ownedRule xmi:id="_eIraoCtBEeGqDO62uYTlKA" name="agentName" constrainedElement="__8j5wCseEeGQ5rkpDKAt8A">
@@ -199,7 +199,7 @@
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eTpCYCseEeGQ5rkpDKAt8A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eTpCYSseEeGQ5rkpDKAt8A" value="1"/>
-        <association href="../consol.uml#_dAIMESseEeGQ5rkpDKAt8A"/>
+        <association href="consol-documents.uml#_dAIMESseEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
