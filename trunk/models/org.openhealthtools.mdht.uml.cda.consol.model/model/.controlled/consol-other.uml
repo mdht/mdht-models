@@ -1365,4 +1365,34 @@ attribute should be set to &quot;NA&quot;.</body>
   <uml:Association xmi:id="_U6kJgCznEeGanY0p4MnU2w" memberEnd="_U6i7YCznEeGanY0p4MnU2w _U6kwkCznEeGanY0p4MnU2w">
     <ownedEnd xmi:id="_U6kwkCznEeGanY0p4MnU2w" type="_2PQJcxSVEeGGzu7fmW9pXw" association="_U6kJgCznEeGanY0p4MnU2w"/>
   </uml:Association>
+  <uml:Class xmi:id="_eKFbUDVyEeGaW4kr-GbV8Q" name="HospitalConsultationsSection ">
+    <generalization xmi:id="_eKFbUTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_hqzJADVyEeGaW4kr-GbV8Q" name="InterventionsSection">
+    <generalization xmi:id="_hqzJATVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_mEIgwDVyEeGaW4kr-GbV8Q" name="MedicalHistorySection">
+    <generalization xmi:id="_mEIgwTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_rNJpADVyEeGaW4kr-GbV8Q" name="ObjectiveSection ">
+    <generalization xmi:id="_rNJpATVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <uml:Class xmi:id="_iy8nYDVzEeGaW4kr-GbV8Q" name="SubjectiveSection">
+    <generalization xmi:id="_iy8nYTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_xv0kcDV1EeGaW4kr-GbV8Q" base_Class="_eKFbUDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.42"/>
+  <CDA:CDATemplate xmi:id="_19h7ADV1EeGaW4kr-GbV8Q" base_Class="_hqzJADVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.3"/>
+  <CDA:CDATemplate xmi:id="_7ssdQDV1EeGaW4kr-GbV8Q" base_Class="_mEIgwDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.39"/>
+  <CDA:CDATemplate xmi:id="_-ZsPADV1EeGaW4kr-GbV8Q" base_Class="_rNJpADVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.1"/>
+  <CDA:CDATemplate xmi:id="_lrrAoDV2EeGaW4kr-GbV8Q" base_Class="_iy8nYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.2"/>
 </xmi:XMI>
