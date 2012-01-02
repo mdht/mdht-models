@@ -345,6 +345,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSupportGuardian();
 			case ConsolPackage.SUPPORT_PARTICIPANT:
 				return createSupportParticipant();
+			case ConsolPackage.SURGICAL_DRAINS_SECTION:
+				return createSurgicalDrainsSection();
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT:
 				return createUnstructuredDocument();
 			case ConsolPackage.SCAN_ORIGINAL_AUTHOR:
@@ -411,6 +413,50 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAllergyObservationParticipantRole();
 			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY:
 				return createAllergyObservationPlayingEntity();
+			case ConsolPackage.ANESTHESIA_SECTION:
+				return createAnesthesiaSection();
+			case ConsolPackage.COMPLICATIONS_SECTION:
+				return createComplicationsSection();
+			case ConsolPackage.DICOM_OBJECT_CATALOG_SECTION:
+				return createDICOMObjectCatalogSection();
+			case ConsolPackage.FINDINGS_SECTION:
+				return createFindingsSection();
+			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION:
+				return createHospitalConsultationsSection();
+			case ConsolPackage.INTERVENTIONS_SECTION:
+				return createInterventionsSection();
+			case ConsolPackage.MEDICAL_HISTORY_SECTION:
+				return createMedicalHistorySection();
+			case ConsolPackage.OBJECTIVE_SECTION:
+				return createObjectiveSection();
+			case ConsolPackage.OPERATIVE_NOTE_FLUID_SECTION:
+				return createOperativeNoteFluidSection();
+			case ConsolPackage.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION:
+				return createOperativeNoteSurgicalProcedureSection();
+			case ConsolPackage.PLANNED_PROCEDURE_SECTION:
+				return createPlannedProcedureSection();
+			case ConsolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION:
+				return createPostoperativeDiagnosisSection();
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION:
+				return createPostprocedureDiagnosisSection();
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION:
+				return createPreoperativeDiagnosisSection();
+			case ConsolPackage.PROCEDURE_DESCRIPTION_SECTION:
+				return createProcedureDescriptionSection();
+			case ConsolPackage.PROCEDURE_DISPOSITION_SECTION:
+				return createProcedureDispositionSection();
+			case ConsolPackage.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION:
+				return createProcedureEstimatedBloodLossSection();
+			case ConsolPackage.PROCEDURE_FINDINGS_SECTION:
+				return createProcedureFindingsSection();
+			case ConsolPackage.PROCEDURE_IMPLANTS_SECTION:
+				return createProcedureImplantsSection();
+			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION:
+				return createProcedureIndicationsSection();
+			case ConsolPackage.PROCEDURE_SPECIMENS_TAKEN_SECTION:
+				return createProcedureSpecimensTakenSection();
+			case ConsolPackage.SUBJECTIVE_SECTION:
+				return createSubjectiveSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1861,6 +1907,226 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AnesthesiaSection createAnesthesiaSection() {
+		AnesthesiaSectionImpl anesthesiaSection = new AnesthesiaSectionImpl();
+		return anesthesiaSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplicationsSection createComplicationsSection() {
+		ComplicationsSectionImpl complicationsSection = new ComplicationsSectionImpl();
+		return complicationsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DICOMObjectCatalogSection createDICOMObjectCatalogSection() {
+		DICOMObjectCatalogSectionImpl dicomObjectCatalogSection = new DICOMObjectCatalogSectionImpl();
+		return dicomObjectCatalogSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FindingsSection createFindingsSection() {
+		FindingsSectionImpl findingsSection = new FindingsSectionImpl();
+		return findingsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalConsultationsSection createHospitalConsultationsSection() {
+		HospitalConsultationsSectionImpl hospitalConsultationsSection = new HospitalConsultationsSectionImpl();
+		return hospitalConsultationsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterventionsSection createInterventionsSection() {
+		InterventionsSectionImpl interventionsSection = new InterventionsSectionImpl();
+		return interventionsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicalHistorySection createMedicalHistorySection() {
+		MedicalHistorySectionImpl medicalHistorySection = new MedicalHistorySectionImpl();
+		return medicalHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectiveSection createObjectiveSection() {
+		ObjectiveSectionImpl objectiveSection = new ObjectiveSectionImpl();
+		return objectiveSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNoteFluidSection createOperativeNoteFluidSection() {
+		OperativeNoteFluidSectionImpl operativeNoteFluidSection = new OperativeNoteFluidSectionImpl();
+		return operativeNoteFluidSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNoteSurgicalProcedureSection createOperativeNoteSurgicalProcedureSection() {
+		OperativeNoteSurgicalProcedureSectionImpl operativeNoteSurgicalProcedureSection = new OperativeNoteSurgicalProcedureSectionImpl();
+		return operativeNoteSurgicalProcedureSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedProcedureSection createPlannedProcedureSection() {
+		PlannedProcedureSectionImpl plannedProcedureSection = new PlannedProcedureSectionImpl();
+		return plannedProcedureSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostoperativeDiagnosisSection createPostoperativeDiagnosisSection() {
+		PostoperativeDiagnosisSectionImpl postoperativeDiagnosisSection = new PostoperativeDiagnosisSectionImpl();
+		return postoperativeDiagnosisSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
+		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
+		return postprocedureDiagnosisSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosisSection createPreoperativeDiagnosisSection() {
+		PreoperativeDiagnosisSectionImpl preoperativeDiagnosisSection = new PreoperativeDiagnosisSectionImpl();
+		return preoperativeDiagnosisSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureDescriptionSection createProcedureDescriptionSection() {
+		ProcedureDescriptionSectionImpl procedureDescriptionSection = new ProcedureDescriptionSectionImpl();
+		return procedureDescriptionSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureDispositionSection createProcedureDispositionSection() {
+		ProcedureDispositionSectionImpl procedureDispositionSection = new ProcedureDispositionSectionImpl();
+		return procedureDispositionSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureEstimatedBloodLossSection createProcedureEstimatedBloodLossSection() {
+		ProcedureEstimatedBloodLossSectionImpl procedureEstimatedBloodLossSection = new ProcedureEstimatedBloodLossSectionImpl();
+		return procedureEstimatedBloodLossSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureFindingsSection createProcedureFindingsSection() {
+		ProcedureFindingsSectionImpl procedureFindingsSection = new ProcedureFindingsSectionImpl();
+		return procedureFindingsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureImplantsSection createProcedureImplantsSection() {
+		ProcedureImplantsSectionImpl procedureImplantsSection = new ProcedureImplantsSectionImpl();
+		return procedureImplantsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureIndicationsSection createProcedureIndicationsSection() {
+		ProcedureIndicationsSectionImpl procedureIndicationsSection = new ProcedureIndicationsSectionImpl();
+		return procedureIndicationsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureSpecimensTakenSection createProcedureSpecimensTakenSection() {
+		ProcedureSpecimensTakenSectionImpl procedureSpecimensTakenSection = new ProcedureSpecimensTakenSectionImpl();
+		return procedureSpecimensTakenSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubjectiveSection createSubjectiveSection() {
+		SubjectiveSectionImpl subjectiveSection = new SubjectiveSectionImpl();
+		return subjectiveSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
@@ -1964,6 +2230,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SupportParticipant createSupportParticipant() {
 		SupportParticipantImpl supportParticipant = new SupportParticipantImpl();
 		return supportParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SurgicalDrainsSection createSurgicalDrainsSection() {
+		SurgicalDrainsSectionImpl surgicalDrainsSection = new SurgicalDrainsSectionImpl();
+		return surgicalDrainsSection;
 	}
 
 	/**
