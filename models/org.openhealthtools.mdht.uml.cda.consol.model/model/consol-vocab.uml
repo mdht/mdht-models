@@ -230,6 +230,84 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015
 http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523.htm</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vNtCQDVPEeGIw7CntkyPQw" name="ConfidentialityCode "/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8K870DVPEeGIw7CntkyPQw" name="BasicConfidentialityKind"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="__Nb_8DVQEeGIw7CntkyPQw" name="AdministrativeGenderCode">
+      <ownedComment xmi:id="__Nb_8TVQEeGIw7CntkyPQw">
+        <body>The gender of a person used for administrative purposes (as opposed to clinical gender)</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DMi50DVREeGIw7CntkyPQw" name="Administrative Gender (HL7 V3)">
+      <ownedLiteral xmi:id="_DMi50TVREeGIw7CntkyPQw" name="F"/>
+      <ownedLiteral xmi:id="_DMi50jVREeGIw7CntkyPQw" name="M"/>
+      <ownedLiteral xmi:id="_DMi50zVREeGIw7CntkyPQw" name="UN"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfoXwKDqEd-dVeaMP0XXQw" name="ReligiousAffiliation"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfhqEKDqEd-dVeaMP0XXQw" name="Religious Affiliation"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRQkkKDqEd-dVeaMP0XXQw" name="MaritalStatus"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRMTIKDqEd-dVeaMP0XXQw" name="Marital Status">
+      <ownedLiteral xmi:id="_dRRLoKDqEd-dVeaMP0XXQw" name="A"/>
+      <ownedLiteral xmi:id="_dRRLoqDqEd-dVeaMP0XXQw" name="D"/>
+      <ownedLiteral xmi:id="_dRRLpKDqEd-dVeaMP0XXQw" name="T"/>
+      <ownedLiteral xmi:id="_dRRLpqDqEd-dVeaMP0XXQw" name="I"/>
+      <ownedLiteral xmi:id="_dRRysaDqEd-dVeaMP0XXQw" name="L"/>
+      <ownedLiteral xmi:id="_dRRys6DqEd-dVeaMP0XXQw" name="M"/>
+      <ownedLiteral xmi:id="_dRRytaDqEd-dVeaMP0XXQw" name="S"/>
+      <ownedLiteral xmi:id="_dRRyt6DqEd-dVeaMP0XXQw" name="P"/>
+      <ownedLiteral xmi:id="_dRSZwaDqEd-dVeaMP0XXQw" name="W"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfcxkKDqEd-dVeaMP0XXQw" name="Race and Ethnicity - CDC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="RoleCode">
+      <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
+        <body>Specific classification codes for further qualifying RoleClass codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ddN88KDqEd-dVeaMP0XXQw" name="Personal Relationship Role Type">
+      <ownedLiteral xmi:id="_ddRnUKDqEd-dVeaMP0XXQw" name="ADOPT"/>
+      <ownedLiteral xmi:id="_ddRnUqDqEd-dVeaMP0XXQw" name="AUNT"/>
+      <ownedLiteral xmi:id="_ddSOYKDqEd-dVeaMP0XXQw" name="CHILD"/>
+      <ownedLiteral xmi:id="_ddSOYqDqEd-dVeaMP0XXQw" name="CHLDINLAW"/>
+      <ownedLiteral xmi:id="_ddSOZKDqEd-dVeaMP0XXQw" name="COUSN"/>
+      <ownedLiteral xmi:id="_ddSOZqDqEd-dVeaMP0XXQw" name="DOMPART"/>
+      <ownedLiteral xmi:id="_ddS1caDqEd-dVeaMP0XXQw" name="FAMMEMB"/>
+      <ownedLiteral xmi:id="_ddS1c6DqEd-dVeaMP0XXQw" name="CHLDFOST"/>
+      <ownedLiteral xmi:id="_ddS1daDqEd-dVeaMP0XXQw" name="GRNDCHILD"/>
+      <ownedLiteral xmi:id="_ddTcgKDqEd-dVeaMP0XXQw" name="GPARNT"/>
+      <ownedLiteral xmi:id="_ddTcgqDqEd-dVeaMP0XXQw" name="GRPRN"/>
+      <ownedLiteral xmi:id="_ddTchKDqEd-dVeaMP0XXQw" name="GGRPRN"/>
+      <ownedLiteral xmi:id="_ddTchqDqEd-dVeaMP0XXQw" name="HSIB"/>
+      <ownedLiteral xmi:id="_ddUDkaDqEd-dVeaMP0XXQw" name="MAUNT"/>
+      <ownedLiteral xmi:id="_ddUDk6DqEd-dVeaMP0XXQw" name="MCOUSN"/>
+      <ownedLiteral xmi:id="_ddUDlaDqEd-dVeaMP0XXQw" name="MGRPRN"/>
+      <ownedLiteral xmi:id="_ddUqoKDqEd-dVeaMP0XXQw" name="MGGRPRN"/>
+      <ownedLiteral xmi:id="_ddUqoqDqEd-dVeaMP0XXQw" name="MUNCLE"/>
+      <ownedLiteral xmi:id="_ddUqpKDqEd-dVeaMP0XXQw" name="NCHILD"/>
+      <ownedLiteral xmi:id="_ddUqpqDqEd-dVeaMP0XXQw" name="NPRN"/>
+      <ownedLiteral xmi:id="_ddVRsKDqEd-dVeaMP0XXQw" name="NSIB"/>
+      <ownedLiteral xmi:id="_ddVRsqDqEd-dVeaMP0XXQw" name="NBOR"/>
+      <ownedLiteral xmi:id="_ddVRtKDqEd-dVeaMP0XXQw" name="NIENEPH"/>
+      <ownedLiteral xmi:id="_ddVRtqDqEd-dVeaMP0XXQw" name="PRN"/>
+      <ownedLiteral xmi:id="_ddV4waDqEd-dVeaMP0XXQw" name="PRNINLAW"/>
+      <ownedLiteral xmi:id="_ddV4w6DqEd-dVeaMP0XXQw" name="PAUNT"/>
+      <ownedLiteral xmi:id="_ddV4xaDqEd-dVeaMP0XXQw" name="PCOUSN"/>
+      <ownedLiteral xmi:id="_ddWf0KDqEd-dVeaMP0XXQw" name="PGRPRN"/>
+      <ownedLiteral xmi:id="_ddWf0qDqEd-dVeaMP0XXQw" name="PGGRPRN"/>
+      <ownedLiteral xmi:id="_ddWf1KDqEd-dVeaMP0XXQw" name="PUNCLE"/>
+      <ownedLiteral xmi:id="_ddWf1qDqEd-dVeaMP0XXQw" name="ROOM"/>
+      <ownedLiteral xmi:id="_ddXG4KDqEd-dVeaMP0XXQw" name="SIB"/>
+      <ownedLiteral xmi:id="_ddXG4qDqEd-dVeaMP0XXQw" name="SIBINLAW"/>
+      <ownedLiteral xmi:id="_ddXG5KDqEd-dVeaMP0XXQw" name="SIGOTHR"/>
+      <ownedLiteral xmi:id="_ddXt8KDqEd-dVeaMP0XXQw" name="SPS"/>
+      <ownedLiteral xmi:id="_ddXt8qDqEd-dVeaMP0XXQw" name="STEP"/>
+      <ownedLiteral xmi:id="_ddXt9KDqEd-dVeaMP0XXQw" name="STPPRN"/>
+      <ownedLiteral xmi:id="_ddXt9qDqEd-dVeaMP0XXQw" name="STPSIB"/>
+      <ownedLiteral xmi:id="_ddYVAKDqEd-dVeaMP0XXQw" name="UNCLE"/>
+      <ownedLiteral xmi:id="_ddYVAqDqEd-dVeaMP0XXQw" name="FRND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_svo1oDVVEeGIw7CntkyPQw" name="NUCCHealthCareProviderTaxonomy"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZhyZUDVYEeGIw7CntkyPQw" name="Participationsignature"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -409,4 +487,11 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
+  <term:CodeSystemVersion xmi:id="_vNtCQTVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.25" fullName="Confidentiality Code" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_vNtCQDVPEeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" codeSystem="_vNtCQTVPEeGIw7CntkyPQw" base_Enumeration="_8K870DVPEeGIw7CntkyPQw"/>
+  <term:CodeSystemVersion xmi:id="_KAjkQDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.1" base_Enumeration="__Nb_8DVQEeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw"/>
+  <term:CodeSystemVersion xmi:id="_svo1oTVVEeGIw7CntkyPQw" identifier="2.16.840.1.113883.6.101" fullName="NUCC Health Care Provider Taxonomy" base_Enumeration="_svo1oDVVEeGIw7CntkyPQw"/>
+  <term:CodeSystemVersion xmi:id="_ZhyZUTVYEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.89" fullName="Participationsignature" base_Enumeration="_ZhyZUDVYEeGIw7CntkyPQw"/>
 </xmi:XMI>
