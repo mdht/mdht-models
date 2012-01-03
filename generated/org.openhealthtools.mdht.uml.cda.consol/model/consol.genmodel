@@ -5180,6 +5180,28 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/AnesthesiaSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/AnesthesiaSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/AnesthesiaSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/AnesthesiaSectionProcedureActivityProcedure">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionProcedureActivityProcedure/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionProcedureActivityProcedure/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/AnesthesiaSectionMedicationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionMedicationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AnesthesiaSection/AnesthesiaSectionMedicationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/getProcedureActivityProcedures"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AnesthesiaSection/getMedicationActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ComplicationsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ComplicationsSection/ComplicationsSectionTemplateId">
