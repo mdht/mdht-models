@@ -56,6 +56,17 @@ public class GeneralHeaderConstraints_ParticipantSupportImpl extends Participant
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateParticipantSupportTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportTime(
 			this, diagnostics, context);

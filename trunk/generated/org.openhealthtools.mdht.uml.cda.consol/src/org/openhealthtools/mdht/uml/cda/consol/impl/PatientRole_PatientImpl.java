@@ -55,6 +55,24 @@ public class PatientRole_PatientImpl extends PatientImpl implements PatientRole_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientBirthTimePreciseToYear(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientRole_PatientOperations.validatePatientBirthTimePreciseToYear(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientBirthTimePreciseToDay(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientRole_PatientOperations.validatePatientBirthTimePreciseToDay(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientRole_PatientOperations.validatePatientBirthTime(this, diagnostics, context);
 	}

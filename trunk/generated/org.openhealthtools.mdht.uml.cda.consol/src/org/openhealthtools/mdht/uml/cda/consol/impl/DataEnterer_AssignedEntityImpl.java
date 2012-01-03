@@ -55,6 +55,17 @@ public class DataEnterer_AssignedEntityImpl extends AssignedEntityImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DataEnterer_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DataEnterer_AssignedEntityOperations.validateAssignedEntityAddr(this, diagnostics, context);
 	}

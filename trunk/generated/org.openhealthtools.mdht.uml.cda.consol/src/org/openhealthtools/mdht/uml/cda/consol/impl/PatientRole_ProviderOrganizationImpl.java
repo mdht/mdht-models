@@ -55,6 +55,17 @@ public class PatientRole_ProviderOrganizationImpl extends OrganizationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProviderOrganizationHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProviderOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationAddr(this, diagnostics, context);
 	}

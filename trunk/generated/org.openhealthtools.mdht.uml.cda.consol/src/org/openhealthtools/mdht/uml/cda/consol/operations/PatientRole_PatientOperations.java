@@ -33,6 +33,8 @@ import org.openhealthtools.mdht.uml.cda.operations.PatientOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_Patient#validatePatientBirthTimePreciseToYear(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Year</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_Patient#validatePatientBirthTimePreciseToDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_Patient#validatePatientBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_Patient#validatePatientEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Ethnic Group Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_Patient#validatePatientMaritalStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Marital Status Code</em>}</li>
@@ -55,6 +57,118 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 */
 	protected PatientRole_PatientOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePatientBirthTimePreciseToYear(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Year</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientBirthTimePreciseToYear(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.birthTime.value.size() >= 4";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePatientBirthTimePreciseToYear(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Year</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientBirthTimePreciseToYear(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.birthTime.value.size() >= 4
+	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validatePatientBirthTimePreciseToYear(PatientRole_Patient patientRole_Patient,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
+			try {
+				VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_Patient)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_YEAR,
+					ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToYear"),
+					new Object[] { patientRole_Patient }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePatientBirthTimePreciseToDay(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Day</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientBirthTimePreciseToDay(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.birthTime.value.size() >= 6";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePatientBirthTimePreciseToDay(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Birth Time Precise To Day</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientBirthTimePreciseToDay(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.birthTime.value.size() >= 6
+	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validatePatientBirthTimePreciseToDay(PatientRole_Patient patientRole_Patient,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
+			try {
+				VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_Patient)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_DAY,
+					ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToDay"),
+					new Object[] { patientRole_Patient }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**

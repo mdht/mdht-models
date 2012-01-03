@@ -55,6 +55,28 @@ public class Author_AssignedAuthorImpl extends AssignedAuthorImpl implements Aut
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Author_AssignedAuthorOperations.validateAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssignedAuthorHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Author_AssignedAuthorOperations.validateAssignedAuthorHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssignedAuthorAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Author_AssignedAuthorOperations.validateAssignedAuthorAddr(this, diagnostics, context);
 	}
