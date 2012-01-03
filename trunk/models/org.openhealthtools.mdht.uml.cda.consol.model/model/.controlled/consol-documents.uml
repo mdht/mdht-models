@@ -145,13 +145,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <ownedRule xmi:id="_dqXccDVREeGIw7CntkyPQw" name="birthTimePreciseToYear" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_sg6Z8DVREeGIw7CntkyPQw">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>BirthTime precise to year</body>
+              <body>self.birthTime.value.size() >= 4</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_kIBcYDVREeGIw7CntkyPQw" name="birthTimePreciseToDay" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_uehWIDVREeGIw7CntkyPQw">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>BirthTime precise to day</body>
+              <body>self.birthTime.value.size() >= 6</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_wfQ6oCylEeGMXrZ0DiQwGg">
@@ -288,7 +292,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <ownedRule xmi:id="_oGeuoDVUEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_qF4akDVUEeGIw7CntkyPQw">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+              <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_6j680SytEeGMXrZ0DiQwGg">
@@ -373,13 +379,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <ownedRule xmi:id="_LKdzICzAEeGMXrZ0DiQwGg" name="hasAssignedPersonOrAssignedAuthoringDevice" constrainedElement="_344-ICymEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mdv_8CzAEeGMXrZ0DiQwGg">
             <language>Analysis</language>
-            <body>iv. This assignedAuthor SHALL contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</body>
+            <language>OCL</language>
+            <body>This assignedAuthor SHALL contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</body>
+            <body>assignedPerson.oclIsUndefined() xor assignedAuthoringDevice.oclIsUndefined()</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_BEoOQDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BEoOQTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_345lMCymEeGMXrZ0DiQwGg">
@@ -409,10 +419,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1-esSy7EeGMXrZ0DiQwGg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_rUGegCy_EeGMXrZ0DiQwGg" name="person" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_rUHFkCy_EeGMXrZ0DiQwGg">
+        <ownedAttribute xmi:id="_rUGegCy_EeGMXrZ0DiQwGg" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_rUHFkCy_EeGMXrZ0DiQwGg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rUGegSy_EeGMXrZ0DiQwGg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_G7YjkCzAEeGMXrZ0DiQwGg" name="authoringDevice" type="_1_b_0Cy_EeGMXrZ0DiQwGg" association="_G7ZKoSzAEeGMXrZ0DiQwGg">
+        <ownedAttribute xmi:id="_G7YjkCzAEeGMXrZ0DiQwGg" name="assignedAuthoringDevice" type="_1_b_0Cy_EeGMXrZ0DiQwGg" association="_G7ZKoSzAEeGMXrZ0DiQwGg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G7ZKoCzAEeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1_b_0Cy_EeGMXrZ0DiQwGg" name="AuthoringDevice">
@@ -462,7 +472,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <ownedRule xmi:id="_YXfQwDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_YXfQwTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_HOHbsCynEeGMXrZ0DiQwGg">
@@ -523,7 +535,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <ownedRule xmi:id="__ERYsDVXEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="__ERYsTVXEeGIw7CntkyPQw">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+              <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_yEoEASynEeGMXrZ0DiQwGg">
@@ -625,7 +639,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <ownedRule xmi:id="_nlqjwTVYEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_nlqjwjVYEeGIw7CntkyPQw">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_nlqjwzVYEeGIw7CntkyPQw">
@@ -685,7 +701,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <ownedRule xmi:id="_UfqGwDVZEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_UfqGwTVZEeGIw7CntkyPQw">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_GEizcCzGEeGMXrZ0DiQwGg">
@@ -734,7 +752,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <ownedRule xmi:id="_72wJQDVWEeGIw7CntkyPQw" name="hasAssignedEntityOrRelatedEntity" constrainedElement="_RS-y4CynEeGMXrZ0DiQwGg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_EAcNMDVXEeGIw7CntkyPQw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>contain exactly one [1..1] assignedEntity OR exactly one [1..1] relatedEntity</body>
+          <body>self.assignedEntity.oclIsUndefined() xor self.relatedEntity.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_RS-y4SynEeGMXrZ0DiQwGg">
@@ -750,7 +770,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <ownedRule xmi:id="_JKUtkDVWEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_JKUtkTVWEeGIw7CntkyPQw">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_NmVGsSzCEeGMXrZ0DiQwGg">
@@ -805,7 +827,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <ownedRule xmi:id="_CAPIoDVaEeGIw7CntkyPQw" name="associatedEntityHasAssociatedPersonOrScopingOrganization" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_FRAV0DVaEeGIw7CntkyPQw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Such participants, if present, SHALL have an associatedPerson or scopingOrganization element under participant/associatedEntity.</body>
+          <body>self.associatedEntity.associatedPerson.oclIsUndefined() xor self.associatedEntity.scopingOrganization.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PAeEwDVaEeGIw7CntkyPQw" name="useINDRoleclassCodes" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
