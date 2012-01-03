@@ -1003,9 +1003,41 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedEnd xmi:id="_odu8ARxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_odu8ABxxEeGXP8PxDYviDg"/>
   </uml:Association>
   <uml:Class xmi:id="_OA_Q0DVyEeGaW4kr-GbV8Q" name="AnesthesiaSection">
+    <ownedComment xmi:id="_dpvJsDWmEeG32vxjh5_fjg">
+      <body>The Anesthesia section briefly records the type of anesthesia (e.g., general or local) and may state the actual agent used. This may or may not be a subsection of the Procedure Description section. The full details of anesthesia are usually found in a separate Anesthesia Note.</body>
+    </ownedComment>
     <generalization xmi:id="_OA_Q0TVyEeGaW4kr-GbV8Q">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_kPlcUDWmEeG32vxjh5_fjg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWiikDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bWiikTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kPlcUzWmEeG32vxjh5_fjg" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8iyoDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b8iyoTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kPlcVjWmEeG32vxjh5_fjg" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfHUMDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfHUMTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w85ccDWmEeG32vxjh5_fjg" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ewGfYDWnEeG32vxjh5_fjg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ewGfYTWnEeG32vxjh5_fjg"/>
+      <association href="../consol.uml#_w85ccjWmEeG32vxjh5_fjg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zMF34DWmEeG32vxjh5_fjg" name="medicationActivity">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOfrkDWnEeG32vxjh5_fjg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOfrkTWnEeG32vxjh5_fjg"/>
+      <association href="../consol.uml#_zMF34jWmEeG32vxjh5_fjg"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_R1OXcDVyEeGaW4kr-GbV8Q" name="ComplicationsSection">
     <generalization xmi:id="_R1OXcTVyEeGaW4kr-GbV8Q">
@@ -1083,7 +1115,10 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cLhVgDV1EeGaW4kr-GbV8Q" severity="INFO" base_Class="_luQh8DVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.13"/>
-  <CDA:CDATemplate xmi:id="_hf3kADV1EeGaW4kr-GbV8Q" base_Class="_OA_Q0DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.25"/>
+  <CDA:CDATemplate xmi:id="_hf3kADV1EeGaW4kr-GbV8Q" base_Class="_OA_Q0DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.25">
+    <ruleId>CONF:8066</ruleId>
+    <ruleId>CONF:10380</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_kL-k8DV1EeGaW4kr-GbV8Q" base_Class="_R1OXcDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.37"/>
   <CDA:CDATemplate xmi:id="_DIe5YDV2EeGaW4kr-GbV8Q" base_Class="_vHfXoDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.12"/>
   <CDA:CDATemplate xmi:id="_FHJlgDV2EeGaW4kr-GbV8Q" base_Class="_zel6wDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.14"/>
@@ -1098,4 +1133,16 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:CDATemplate xmi:id="_eDgVYDV2EeGaW4kr-GbV8Q" base_Class="_Z662wDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.40"/>
   <CDA:CDATemplate xmi:id="_f1f3cDV2EeGaW4kr-GbV8Q" base_Class="_cjmJMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.29"/>
   <CDA:CDATemplate xmi:id="_ifYDwDV2EeGaW4kr-GbV8Q" base_Class="_gSUdsDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.31"/>
+  <CDA:PropertyValidation xmi:id="_4oeoEDWmEeG32vxjh5_fjg" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
+    <ruleId>CONF:8067</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_4_k5cDWmEeG32vxjh5_fjg" base_Property="_kPlcUzWmEeG32vxjh5_fjg">
+    <ruleId>CONF:8069</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_5jpP0DWmEeG32vxjh5_fjg" base_Property="_kPlcVjWmEeG32vxjh5_fjg">
+    <ruleId>CONF:8068</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_8E32cDWmEeG32vxjh5_fjg" code="59774-0" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
