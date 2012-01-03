@@ -19,10 +19,36 @@ import org.openhealthtools.mdht.uml.cda.Patient;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatientRole_Patient()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation raceCode.codeSystem='2.16.840.1.113883.6.238' raceCode.codeSystemName='Race and Ethnicity - CDC' religiousAffiliationCode.codeSystem='2.16.840.1.113883.5.1076' maritalStatusCode.codeSystemName='MaritalStatus' constraints.validation.error='PatientBirthTime PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode' constraints.validation.warning='PatientLanguageCommunication' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' religiousAffiliationCode.codeSystemName='ReligiousAffiliation' constraints.validation.info='PatientEthnicGroupCode PatientGuardian PatientBirthplace'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation raceCode.codeSystem='2.16.840.1.113883.6.238' raceCode.codeSystemName='Race and Ethnicity - CDC' religiousAffiliationCode.codeSystem='2.16.840.1.113883.5.1076' maritalStatusCode.codeSystemName='MaritalStatus' constraints.validation.error='PatientBirthTimePreciseToYear PatientBirthTime PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode' constraints.validation.warning='PatientBirthTimePreciseToDay PatientLanguageCommunication' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' religiousAffiliationCode.codeSystemName='ReligiousAffiliation' constraints.validation.info='PatientEthnicGroupCode PatientGuardian PatientBirthplace'"
  * @generated
  */
 public interface PatientRole_Patient extends Patient {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.birthTime.value.size() >= 4
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.birthTime.value.size() >= 4'"
+	 * @generated
+	 */
+	boolean validatePatientBirthTimePreciseToYear(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.birthTime.value.size() >= 6
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.birthTime.value.size() >= 6'"
+	 * @generated
+	 */
+	boolean validatePatientBirthTimePreciseToDay(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

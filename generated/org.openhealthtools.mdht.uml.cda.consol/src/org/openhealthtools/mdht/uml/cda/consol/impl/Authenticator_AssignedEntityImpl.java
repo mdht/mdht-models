@@ -55,6 +55,17 @@ public class Authenticator_AssignedEntityImpl extends AssignedEntityImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Authenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Authenticator_AssignedEntityOperations.validateAssignedEntityAddr(this, diagnostics, context);
 	}

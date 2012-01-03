@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizationOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_ProviderOrganization#validateProviderOrganizationHasNationalProviderIdentifier(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Has National Provider Identifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_ProviderOrganization#validateProviderOrganizationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_ProviderOrganization#validateProviderOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PatientRole_ProviderOrganization#validateProviderOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Name</em>}</li>
@@ -50,6 +51,65 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 	 */
 	protected PatientRole_ProviderOrganizationOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProviderOrganizationHasNationalProviderIdentifier(PatientRole_ProviderOrganization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Has National Provider Identifier</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProviderOrganizationHasNationalProviderIdentifier(PatientRole_ProviderOrganization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.id->exists( root='2.16.840.1.113883.4.6' )";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProviderOrganizationHasNationalProviderIdentifier(PatientRole_ProviderOrganization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Organization Has National Provider Identifier</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProviderOrganizationHasNationalProviderIdentifier(PatientRole_ProviderOrganization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.id->exists( root='2.16.840.1.113883.4.6' )
+	 * @param patientRole_ProviderOrganization The receiving '<em><b>Patient Role Provider Organization</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateProviderOrganizationHasNationalProviderIdentifier(
+			PatientRole_ProviderOrganization patientRole_ProviderOrganization, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
+			try {
+				VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationHasNationalProviderIdentifier"),
+					new Object[] { patientRole_ProviderOrganization }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**

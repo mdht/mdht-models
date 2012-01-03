@@ -19,10 +19,24 @@ import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssignedCustodian_CustodianOrganization()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CustodianOrganizationAddr CustodianOrganizationId CustodianOrganizationName CustodianOrganizationTelecom'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CustodianOrganizationHasNationalProviderIdentifier CustodianOrganizationAddr CustodianOrganizationId CustodianOrganizationName CustodianOrganizationTelecom'"
  * @generated
  */
 public interface AssignedCustodian_CustodianOrganization extends CustodianOrganization {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.id->exists( root='2.16.840.1.113883.4.6' )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->exists( root=\'2.16.840.1.113883.4.6\' )'"
+	 * @generated
+	 */
+	boolean validateCustodianOrganizationHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

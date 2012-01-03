@@ -56,6 +56,17 @@ public class LegalAuthenticator_AssignedEntityImpl extends AssignedEntityImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityAddr(this, diagnostics, context);
 	}

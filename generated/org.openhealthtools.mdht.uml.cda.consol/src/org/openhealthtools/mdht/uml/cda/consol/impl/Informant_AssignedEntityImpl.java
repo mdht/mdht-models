@@ -55,6 +55,17 @@ public class Informant_AssignedEntityImpl extends AssignedEntityImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Informant_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Informant_AssignedEntityOperations.validateAssignedEntityAddr(this, diagnostics, context);
 	}

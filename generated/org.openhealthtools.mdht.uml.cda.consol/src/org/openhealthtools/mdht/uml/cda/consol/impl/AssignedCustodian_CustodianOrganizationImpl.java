@@ -56,6 +56,17 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCustodianOrganizationHasNationalProviderIdentifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationAddr(
 			this, diagnostics, context);

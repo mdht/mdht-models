@@ -122,6 +122,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthorAddr/context"/>
@@ -142,6 +150,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthor/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthorAssignedAuthor/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAddr/context"/>
@@ -161,6 +173,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr/diagnostics"/>
@@ -202,6 +218,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipient/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipient/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr/context"/>
@@ -230,6 +250,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorSignatureCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorSignatureCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr/context"/>
@@ -257,6 +281,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr/diagnostics"/>
@@ -305,6 +333,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime/diagnostics"/>
@@ -382,6 +418,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantRelatedEntityPerson/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantRelatedEntityPerson/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityAddr/context"/>
@@ -397,6 +437,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityPerson">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityPerson/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantAssignedEntityPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsParticipantSupportTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsParticipantSupportTime/diagnostics"/>
@@ -436,6 +484,14 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PatientRole_Patient">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToYear">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToYear/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToYear/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToDay">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToDay/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTimePreciseToDay/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PatientRole_Patient/PatientBirthTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_Patient/PatientBirthTime/context"/>
@@ -514,6 +570,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PatientRole_ProviderOrganization">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PatientRole_ProviderOrganization/ProviderOrganizationAddr/context"/>
@@ -554,6 +614,14 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Author_AssignedAuthor">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Author_AssignedAuthor/AssignedAuthorAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Author_AssignedAuthor/AssignedAuthorAddr/context"/>
@@ -584,6 +652,10 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints_Person"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints_DataEnterer"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DataEnterer_AssignedEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DataEnterer_AssignedEntity/AssignedEntityAddr/context"/>
@@ -618,6 +690,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AssignedCustodian_CustodianOrganization">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AssignedCustodian_CustodianOrganization/CustodianOrganizationAddr/context"/>
@@ -668,6 +744,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//LegalAuthenticator_AssignedEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//LegalAuthenticator_AssignedEntity/AssignedEntityAddr/context"/>
@@ -704,6 +784,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Authenticator_AssignedEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityAddr/context"/>
@@ -721,8 +805,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Authenticator_AssignedEntity/AssignedEntityTelecom/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints_Informant"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints_Informant">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints_Informant/InformantHasAssignedEntityOrRelatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_Informant/InformantHasAssignedEntityOrRelatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_Informant/InformantHasAssignedEntityOrRelatedEntity/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Informant_AssignedEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Informant_AssignedEntity/AssignedEntityHasNationalProviderIdentifier">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Informant_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Informant_AssignedEntity/AssignedEntityHasNationalProviderIdentifier/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Informant_AssignedEntity/AssignedEntityAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Informant_AssignedEntity/AssignedEntityAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Informant_AssignedEntity/AssignedEntityAddr/context"/>
@@ -751,6 +844,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints_ParticipantSupport/ParticipantSupportTime/context"/>
