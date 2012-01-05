@@ -46,7 +46,7 @@ public interface GeneralHeaderConstraints_LegalAuthenticator extends LegalAuthen
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'s\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (\nvalue.code = \'s\'))'"
 	 * @generated
 	 */
 	boolean validateLegalAuthenticatorSignatureCode(DiagnosticChain diagnostics, Map<Object, Object> context);

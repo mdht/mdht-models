@@ -55,17 +55,6 @@ public class MedicationStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationStatusObservationOperations.validateMedicationStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationStatusObservationOperations.validateMedicationStatusObservationNoAdditionalParticipants(

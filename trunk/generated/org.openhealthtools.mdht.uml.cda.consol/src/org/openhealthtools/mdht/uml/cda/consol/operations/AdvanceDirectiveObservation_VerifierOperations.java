@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.operations.Participant2Operations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier#validateVerifierTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier#validateVerifierTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier#validateVerifierTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation_Verifier#validateVerifierParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Participant Role</em>}</li>
@@ -50,63 +49,6 @@ public class AdvanceDirectiveObservation_VerifierOperations extends Participant2
 	 */
 	protected AdvanceDirectiveObservation_VerifierOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateVerifierTemplateId(AdvanceDirectiveObservation_Verifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVerifierTemplateId(AdvanceDirectiveObservation_Verifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'i. 2.16.840.1.113883.10.20.1.58')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateVerifierTemplateId(AdvanceDirectiveObservation_Verifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Verifier Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVerifierTemplateId(AdvanceDirectiveObservation_Verifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = 'i. 2.16.840.1.113883.10.20.1.58')
-	 * @param advanceDirectiveObservation_Verifier The receiving '<em><b>Advance Directive Observation Verifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateVerifierTemplateId(
-			AdvanceDirectiveObservation_Verifier advanceDirectiveObservation_Verifier, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER);
-			try {
-				VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			advanceDirectiveObservation_Verifier)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER__VERIFIER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VerifierTemplateId"),
-					new Object[] { advanceDirectiveObservation_Verifier }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

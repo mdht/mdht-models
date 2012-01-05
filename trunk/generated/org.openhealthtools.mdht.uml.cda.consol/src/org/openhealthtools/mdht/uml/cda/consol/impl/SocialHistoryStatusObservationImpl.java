@@ -55,17 +55,6 @@ public class SocialHistoryStatusObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSocialHistoryStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryStatusObservationOperations.validateSocialHistoryStatusObservationNoAdditionalParticipants(

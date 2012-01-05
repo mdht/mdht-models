@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getServiceDeliveryLocation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.32' constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode' classCode.codeSystem='2.16.840.1.113883.5.111' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom' classCode.codeSystemName='RoleCode' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity ServiceDeliveryLocationHasPlayingEntityClassCodeName'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.32' constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode' classCode.codeSystem='2.16.840.1.113883.5.111' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom' classCode.codeSystemName='RoleCode' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity'"
  * @generated
  */
 public interface ServiceDeliveryLocation extends ParticipantRole {
@@ -48,20 +48,6 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.playingEntity->size()>0 implies not self.playingEntity.classCode.name.oclIsUndefined()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->size()>0 implies not self.playingEntity.classCode.name.oclIsUndefined()'"
-	 * @generated
-	 */
-	boolean validateServiceDeliveryLocationHasPlayingEntityClassCodeName(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
