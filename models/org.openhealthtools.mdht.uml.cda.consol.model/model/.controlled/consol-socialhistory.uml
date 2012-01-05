@@ -185,9 +185,7 @@ frequency.&#xD;
     <ownedRule xmi:id="_2Jb1QBSVEeGGzu7fmW9pXw" name="targetOfEntryRelationship">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Jb1QRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2Jb1QxSVEeGGzu7fmW9pXw" name="noAdditionalAttributes">

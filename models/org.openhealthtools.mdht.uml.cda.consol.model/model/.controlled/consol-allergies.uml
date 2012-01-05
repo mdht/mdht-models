@@ -977,9 +977,7 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="originalTextReference" constrainedElement="_ZIdiUDJCEeG6R8Pb5FT2Ow">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
-        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">

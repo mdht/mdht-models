@@ -1021,9 +1021,7 @@ attribute should be set to &quot;NA&quot;.</body>
     <ownedRule xmi:id="_X2UwsB-ZEeGtfPlBCjHWkw" name="hasPlayingEntityClassCodeName" constrainedElement="_W3fw8B-ZEeGtfPlBCjHWkw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gzccsB-ZEeGtfPlBCjHWkw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>@classCode MAY contain zero or one [0..1] name</body>
-        <body>self.playingEntity->size()>0 implies not self.playingEntity.classCode.name.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_c7QfoB-YEeGtfPlBCjHWkw">

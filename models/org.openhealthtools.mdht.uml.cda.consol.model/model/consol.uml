@@ -869,10 +869,6 @@
     <ruleId>CONF:8824</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_Kn6CICsfEeGQ5rkpDKAt8A"/>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_Q4aMUCseEeGQ5rkpDKAt8A" templateId="i. 2.16.840.1.113883.10.20.1.58">
-    <ruleId>CONF:8664</ruleId>
-    <base_Class href=".controlled/consol-advancedirectives.uml#_9HiC0CsdEeGQ5rkpDKAt8A"/>
-  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_XQ9p0CseEeGQ5rkpDKAt8A">
     <ruleId>CONF:8665</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_EudX8CseEeGQ5rkpDKAt8A"/>
