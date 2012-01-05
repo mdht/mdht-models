@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -100,12 +101,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalAdmissionMedicationsSectionEntriesOptional, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 			return false;
@@ -168,12 +164,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalAdmissionMedicationsSectionEntriesOptionalCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalAdmissionMedicationsSectionEntriesOptional, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 			return false;

@@ -98,17 +98,6 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(

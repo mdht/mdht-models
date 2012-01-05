@@ -66,17 +66,6 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservationPlayingEntityOriginalTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityOriginalTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAllergyObservationPlayingEntityCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCodeTranslation(

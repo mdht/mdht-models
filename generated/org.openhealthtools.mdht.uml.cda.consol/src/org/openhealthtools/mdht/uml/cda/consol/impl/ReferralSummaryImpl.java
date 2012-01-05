@@ -53,38 +53,6 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryProblemConcernEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryAllergyConcernEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralSummaryMedicalSummaryMedications(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferralSummaryOperations.validateReferralSummaryMedicalSummaryMedications(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferralSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
