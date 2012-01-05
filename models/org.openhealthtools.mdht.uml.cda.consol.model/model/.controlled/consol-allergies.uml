@@ -983,9 +983,7 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_eR_n8DJCEeG6R8Pb5FT2Ow" name="codeTranslation" constrainedElement="_c0knsDJCEeG6R8Pb5FT2Ow">
