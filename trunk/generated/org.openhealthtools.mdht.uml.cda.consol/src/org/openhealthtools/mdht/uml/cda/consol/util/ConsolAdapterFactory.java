@@ -831,11 +831,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseMedicationTaperedDose(MedicationTaperedDose object) {
-			return createMedicationTaperedDoseAdapter();
-		}
-
-		@Override
 		public Adapter caseSupportGuardian(SupportGuardian object) {
 			return createSupportGuardianAdapter();
 		}
@@ -3648,20 +3643,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHealthcareProviderAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationTaperedDose <em>Medication Tapered Dose</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationTaperedDose
-	 * @generated
-	 */
-	public Adapter createMedicationTaperedDoseAdapter() {
 		return null;
 	}
 

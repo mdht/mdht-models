@@ -4222,12 +4222,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HealthcareProvider"/>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MedicationTaperedDose">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationTaperedDose/MedicationTaperedDoseTaperedDosingSubstanceAdministration">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationTaperedDose/MedicationTaperedDoseTaperedDosingSubstanceAdministration/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationTaperedDose/MedicationTaperedDoseTaperedDosingSubstanceAdministration/context"/>
-      </genOperations>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SupportGuardian"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SupportParticipant"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SurgicalDrainsSection">
@@ -4604,33 +4598,8 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredOrScannedDocument/UnstructuredOrScannedDocumentCustodian/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ReferralSummary">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryProblemConcernEntry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryProblemConcernEntry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryProblemConcernEntry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryAllergyConcernEntry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryAllergyConcernEntry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryAllergyConcernEntry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryMedications">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryMedications/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralSummary/ReferralSummaryMedicalSummaryMedications/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ReferralSummary"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DischargeSummary">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryProblemConcernEntry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryProblemConcernEntry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryProblemConcernEntry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryAllergyConcernEntry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryAllergyConcernEntry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryAllergyConcernEntry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryMedications">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryMedications/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryMedicalSummaryMedications/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection/context"/>
@@ -4974,10 +4943,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubject/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubject/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectId/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FamilyHistorySubject/FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode/context"/>
@@ -5125,10 +5090,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityCodeOriginalText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityCodeOriginalText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityCodeOriginalText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityOriginalTextReferenceValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityOriginalTextReferenceValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityOriginalTextReferenceValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityCodeTranslation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservationPlayingEntity/AllergyObservationPlayingEntityCodeTranslation/diagnostics"/>

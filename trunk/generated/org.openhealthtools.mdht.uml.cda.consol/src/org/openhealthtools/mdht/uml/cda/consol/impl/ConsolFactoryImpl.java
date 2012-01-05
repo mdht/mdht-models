@@ -339,8 +339,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createLanguageSpoken();
 			case ConsolPackage.HEALTHCARE_PROVIDER:
 				return createHealthcareProvider();
-			case ConsolPackage.MEDICATION_TAPERED_DOSE:
-				return createMedicationTaperedDose();
 			case ConsolPackage.SUPPORT_GUARDIAN:
 				return createSupportGuardian();
 			case ConsolPackage.SUPPORT_PARTICIPANT:
@@ -2200,16 +2198,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HealthcareProvider createHealthcareProvider() {
 		HealthcareProviderImpl healthcareProvider = new HealthcareProviderImpl();
 		return healthcareProvider;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationTaperedDose createMedicationTaperedDose() {
-		MedicationTaperedDoseImpl medicationTaperedDose = new MedicationTaperedDoseImpl();
-		return medicationTaperedDose;
 	}
 
 	/**

@@ -70,38 +70,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryMedicalSummaryProblemConcernEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDischargeSummaryMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryMedicalSummaryAllergyConcernEntry(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDischargeSummaryMedicalSummaryMedications(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryMedicalSummaryMedications(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDischargeSummaryAdmissionMedicationHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryAdmissionMedicationHistorySection(

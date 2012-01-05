@@ -1592,15 +1592,6 @@ public interface ConsolFactory extends EFactory {
 	HealthcareProvider createHealthcareProvider();
 
 	/**
-	 * Returns a new object of class '<em>Medication Tapered Dose</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Tapered Dose</em>'.
-	 * @generated
-	 */
-	MedicationTaperedDose createMedicationTaperedDose();
-
-	/**
 	 * Returns a new object of class '<em>Support Guardian</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
