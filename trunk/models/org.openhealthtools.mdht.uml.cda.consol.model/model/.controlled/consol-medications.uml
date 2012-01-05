@@ -800,34 +800,6 @@ This section requires that there be either an entry indicating the subject is no
   <CDA:ValueSetConstraint xmi:id="_2Gt4cBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.7" name="MedicationStatusCode" version="20061017" base_Property="_2GtRZRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-353</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_2SnmcxSVEeGGzu7fmW9pXw" name="MedicationTaperedDose">
-    <ownedComment xmi:id="_2SnmexSVEeGGzu7fmW9pXw" annotatedElement="_2SnmcxSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    This template identifier is used to identify medication administration events that require special processing to handle&#xD;
-    tapered dosing. The parent template is 1.3.6.1.4.1.19376.1.5.3.1.4.7. A tapered dose is often used for certain&#xD;
-    medications where abrupt termination of the medication can have negative consequences. Tapered dosages may be done by&#xD;
-    adjusting the dose frequency, the dose amount, or both.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-    When merely the dose frequency is adjusted, (e.g., Prednisone 5mg b.i.d. for three days, then 5mg. daily for three&#xD;
-    days, and then 5mg every other day), then only one medication entry is needed, multiple frequency specifications&#xD;
-    recorded in &amp;lt;effectiveTime&amp;gt; elements. When the dose varies (eg. Prednisone 15mg daily for three days, then 10 mg&#xD;
-    daily for three days, the 5 mg daily for three days), subordinate medication entries should be created for each&#xD;
-    distinct dosage.&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_2SnmeBSVEeGGzu7fmW9pXw" name="TaperedDosingSubstanceAdministration">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2SnmeRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Subordinate Medication entries should be created for each distinct dosage.</body>
-        <body>self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( consol::Medication) )</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_2SnmfBSVEeGGzu7fmW9pXw" general="_2GHbgBSVEeGGzu7fmW9pXw"/>
-  </uml:Class>
-  <CDA:CDATemplate xmi:id="_2SnmdhSVEeGGzu7fmW9pXw" base_Class="_2SnmcxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2SnmehSVEeGGzu7fmW9pXw" base_Constraint="_2SnmeBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2HCokhSVEeGGzu7fmW9pXw" name="MedicationType">
     <ownedComment xmi:id="_2HCokxSVEeGGzu7fmW9pXw" annotatedElement="_2HCokhSVEeGGzu7fmW9pXw">
       <body>A classification based on how the medication is&#xD;
@@ -1521,7 +1493,7 @@ medication supplied.</body>
   <CDA:PropertyValidation xmi:id="_d2t7ABUTEeG6PvUxSTZnaw" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <ruleId>CONF:7491</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="Hospital AdmissionMedicationsSectionEntriesOptional">
+  <uml:Class xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="HospitalAdmissionMedicationsSectionEntriesOptional">
     <ownedComment xmi:id="_2Poj6xSVEeGGzu7fmW9pXw" annotatedElement="_2Poj5BSVEeGGzu7fmW9pXw">
       <body>The admission medication history section shall contain a narrative description of the relevant medications administered to&#xD;
 a patient prior to admission to a facility. It shall include entries for medication administration as described in the&#xD;

@@ -928,24 +928,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ruleId>CONF:5372</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2UnxkRSVEeGGzu7fmW9pXw" name="DischargeSummary">
-    <ownedRule xmi:id="_2U6FcxSVEeGGzu7fmW9pXw" name="MedicalSummaryProblemConcernEntry">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2U6FdBSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::ProblemConcernEntry)))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2U6FdhSVEeGGzu7fmW9pXw" name="MedicalSummaryAllergyConcernEntry">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2U6FdxSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::AllergyIntoleranceConcern)))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2U6FeRSVEeGGzu7fmW9pXw" name="MedicalSummaryMedications">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2U6FehSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.oclIsKindOf(consol::Medication)))</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2U6FfBSVEeGGzu7fmW9pXw" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_2Uz-3xSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -1088,9 +1070,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ownedEnd xmi:id="_2Uz-3RSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-3BSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2UnxxhSVEeGGzu7fmW9pXw" base_Class="_2UnxkRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.8"/>
-  <CDA:ConstraintValidation xmi:id="_2U6FdRSVEeGGzu7fmW9pXw" base_Constraint="_2U6FcxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2U6FeBSVEeGGzu7fmW9pXw" base_Constraint="_2U6FdhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2U6FexSVEeGGzu7fmW9pXw" base_Constraint="_2U6FeRSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2Uz-4hSVEeGGzu7fmW9pXw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -1526,24 +1505,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ruleId>C32-[CT1-17]</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2Uhq_hSVEeGGzu7fmW9pXw" name="ReferralSummary">
-    <ownedRule xmi:id="_2UhrBhSVEeGGzu7fmW9pXw" name="MedicalSummaryProblemConcernEntry">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2UhrBxSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::ProblemConcernEntry)))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2UhrCRSVEeGGzu7fmW9pXw" name="MedicalSummaryAllergyConcernEntry">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2UhrChSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getActs()->exists(act : cda::Act | act.oclIsKindOf(consol::AllergyIntoleranceConcern)))</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2UhrDBSVEeGGzu7fmW9pXw" name="MedicalSummaryMedications">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2UhrDRSVEeGGzu7fmW9pXw">
-        <language>OCL</language>
-        <body>self.getSections()->exists(sect : cda::Section | sect.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.oclIsKindOf(consol::Medication)))</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_2UnxkBSVEeGGzu7fmW9pXw" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_2UhrAhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -1552,9 +1513,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2UhrABSVEeGGzu7fmW9pXw" base_Class="_2Uhq_hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.3.88.11.48.1"/>
-  <CDA:ConstraintValidation xmi:id="_2UhrCBSVEeGGzu7fmW9pXw" base_Constraint="_2UhrBhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2UhrCxSVEeGGzu7fmW9pXw" base_Constraint="_2UhrCRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2UhrDhSVEeGGzu7fmW9pXw" base_Constraint="_2UhrDBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2UhrBRSVEeGGzu7fmW9pXw" base_Property="_2UhrAhSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
