@@ -112,15 +112,6 @@ public class PayerEntryImpl extends ActImpl implements PayerEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayerEntryEntryRelationshipTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayerEntryOperations.validatePayerEntryEntryRelationshipTarget(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePayerEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayerEntryOperations.validatePayerEntryClassCode(this, diagnostics, context);
 	}

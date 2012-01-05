@@ -56,15 +56,6 @@ public class AdvanceDirectiveObservation_VerifierImpl extends Participant2Impl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVerifierTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservation_VerifierOperations.validateVerifierTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVerifierTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation_VerifierOperations.validateVerifierTime(this, diagnostics, context);
 	}

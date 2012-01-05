@@ -55,17 +55,6 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationTargetOfEntryRelationship(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAdvanceDirectiveStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationNoAdditionalParticipants(

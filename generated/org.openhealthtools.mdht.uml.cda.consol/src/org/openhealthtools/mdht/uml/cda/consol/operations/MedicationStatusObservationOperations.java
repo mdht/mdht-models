@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation#validateMedicationStatusObservationTargetOfEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation Target Of Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation#validateMedicationStatusObservationNoAdditionalParticipants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation No Additional Participants</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation#validateMedicationStatusObservationNoAdditionalRelationships(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation No Additional Relationships</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationStatusObservation#validateMedicationStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation Template Id</em>}</li>
@@ -54,65 +53,6 @@ public class MedicationStatusObservationOperations extends ClinicalStatementOper
 	 */
 	protected MedicationStatusObservationOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationStatusObservationTargetOfEntryRelationship(MedicationStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation Target Of Entry Relationship</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationStatusObservationTargetOfEntryRelationship(MedicationStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationStatusObservationTargetOfEntryRelationship(MedicationStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Status Observation Target Of Entry Relationship</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationStatusObservationTargetOfEntryRelationship(MedicationStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-	 * @param medicationStatusObservation The receiving '<em><b>Medication Status Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMedicationStatusObservationTargetOfEntryRelationship(
-			MedicationStatusObservation medicationStatusObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_STATUS_OBSERVATION);
-			try {
-				VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationStatusObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_STATUS_OBSERVATION__MEDICATION_STATUS_OBSERVATION_TARGET_OF_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("MedicationStatusObservationTargetOfEntryRelationship"),
-					new Object[] { medicationStatusObservation }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**

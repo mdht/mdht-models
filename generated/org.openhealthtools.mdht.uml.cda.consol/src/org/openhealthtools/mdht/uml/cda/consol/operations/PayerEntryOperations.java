@@ -46,7 +46,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntrySubscriberIsAllowed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Subscriber Is Allowed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntrySubscriberTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Subscriber Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryEntryRelationshipREFR(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship REFR</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryEntryRelationshipTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry#validatePayerEntryId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Id</em>}</li>
@@ -400,63 +399,6 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR,
 					ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipREFR"), new Object[] { payerEntry }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)"
-			+ "  or rel.act.oclIsKindOf(consol::CoveragePlanDescription))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Entry Entry Relationship Target</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayerEntryEntryRelationshipTarget(PayerEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)
-	 *   or rel.act.oclIsKindOf(consol::CoveragePlanDescription))
-	 * @param payerEntry The receiving '<em><b>Payer Entry</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validatePayerEntryEntryRelationshipTarget(PayerEntry payerEntry, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PAYER_ENTRY);
-			try {
-				VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payerEntry)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET,
-					ConsolPlugin.INSTANCE.getString("PayerEntryEntryRelationshipTarget"), new Object[] { payerEntry }));
 			}
 			return false;
 		}
@@ -877,7 +819,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(63));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(62));
 			try {
 				GET_PAYER_ENTITY__EOCL_QRY = helper.createQuery(GET_PAYER_ENTITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -921,7 +863,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(63));
 			try {
 				GET_COVERED_PARTY__EOCL_QRY = helper.createQuery(GET_COVERED_PARTY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -965,7 +907,7 @@ public class PayerEntryOperations extends ClinicalStatementOperations {
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(65));
+				ConsolPackage.Literals.PAYER_ENTRY, ConsolPackage.Literals.PAYER_ENTRY.getEAllOperations().get(64));
 			try {
 				GET_SUBSCRIBER__EOCL_QRY = helper.createQuery(GET_SUBSCRIBER__EOCL_EXP);
 			} catch (ParserException pe) {
