@@ -145,9 +145,7 @@ guarantor, or some combination.</body>
     <ownedRule xmi:id="_2M_fkxSVEeGGzu7fmW9pXw" name="entryRelationshipTarget">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2M_flBSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>The target of a policy activity with entryRelationship / @typeCode='REFR' SHALL be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(consol::AuthorizationActivity)&#xD;&#xA;  or rel.act.oclIsKindOf(consol::CoveragePlanDescription))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2NAGohSVEeGGzu7fmW9pXw">
