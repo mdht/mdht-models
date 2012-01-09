@@ -308,6 +308,53 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_svo1oDVVEeGIw7CntkyPQw" name="NUCCHealthCareProviderTaxonomy"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZhyZUDVYEeGIw7CntkyPQw" name="Participationsignature"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type">
+      <ownedLiteral xmi:id="_oBbiYDrtEeG-aJb2h_4S8w" name="12"/>
+      <ownedLiteral xmi:id="_ru4EgDrtEeG-aJb2h_4S8w" name="13"/>
+      <ownedLiteral xmi:id="_wqPyUDrtEeG-aJb2h_4S8w" name="14"/>
+      <ownedLiteral xmi:id="_1Mw7QDrtEeG-aJb2h_4S8w" name="15"/>
+      <ownedLiteral xmi:id="_3Wm8oDrtEeG-aJb2h_4S8w" name="16"/>
+      <ownedLiteral xmi:id="_66QpkDrtEeG-aJb2h_4S8w" name="41"/>
+      <ownedLiteral xmi:id="_AED08DruEeG-aJb2h_4S8w" name="42"/>
+      <ownedLiteral xmi:id="_D-lw0DruEeG-aJb2h_4S8w" name="43"/>
+      <ownedLiteral xmi:id="_HgGvwDruEeG-aJb2h_4S8w" name="47"/>
+      <ownedLiteral xmi:id="_K7q3sDruEeG-aJb2h_4S8w" name="AP"/>
+      <ownedLiteral xmi:id="_MhXDIDruEeG-aJb2h_4S8w" name="C1"/>
+      <ownedLiteral xmi:id="_RLQmcDruEeG-aJb2h_4S8w" name="CO"/>
+      <ownedLiteral xmi:id="_XRj2UDruEeG-aJb2h_4S8w" name="CP"/>
+      <ownedLiteral xmi:id="_qQV_EDrvEeG-aJb2h_4S8w" name="D"/>
+      <ownedLiteral xmi:id="_rvjvEDrvEeG-aJb2h_4S8w" name="DB"/>
+      <ownedLiteral xmi:id="_uUSVoDrvEeG-aJb2h_4S8w" name="EP"/>
+      <ownedLiteral xmi:id="_wC2JMDrvEeG-aJb2h_4S8w" name="FF"/>
+      <ownedLiteral xmi:id="_zv97MDrvEeG-aJb2h_4S8w" name="GP"/>
+      <ownedLiteral xmi:id="_104ZQDrvEeG-aJb2h_4S8w" name="HM"/>
+      <ownedLiteral xmi:id="_4GX6wDrvEeG-aJb2h_4S8w" name="HN"/>
+      <ownedLiteral xmi:id="_6m6k4DrvEeG-aJb2h_4S8w" name="HS"/>
+      <ownedLiteral xmi:id="_87_l4DrvEeG-aJb2h_4S8w" name="IN"/>
+      <ownedLiteral xmi:id="_-ekL4DrvEeG-aJb2h_4S8w" name="IP"/>
+      <ownedLiteral xmi:id="_APLN4DrwEeG-aJb2h_4S8w" name="LC"/>
+      <ownedLiteral xmi:id="_DpOS4DrwEeG-aJb2h_4S8w" name="LD"/>
+      <ownedLiteral xmi:id="_FeaS4DrwEeG-aJb2h_4S8w" name="LI"/>
+      <ownedLiteral xmi:id="_H46mcDrwEeG-aJb2h_4S8w" name="LT"/>
+      <ownedLiteral xmi:id="_eoIJUDrwEeG-aJb2h_4S8w" name="MA"/>
+      <ownedLiteral xmi:id="_g5iLQDrwEeG-aJb2h_4S8w" name="MB"/>
+      <ownedLiteral xmi:id="_jxYiIDrwEeG-aJb2h_4S8w" name="MC"/>
+      <ownedLiteral xmi:id="_D6d3EDr0EeG-aJb2h_4S8w" name="MH"/>
+      <ownedLiteral xmi:id="_GNZjADr0EeG-aJb2h_4S8w" name="MI"/>
+      <ownedLiteral xmi:id="_GL_GYDr3EeG-aJb2h_4S8w" name="MP"/>
+      <ownedLiteral xmi:id="_Iy6FUDr3EeG-aJb2h_4S8w" name="OT"/>
+      <ownedLiteral xmi:id="_Kt4kQDr3EeG-aJb2h_4S8w" name="PE"/>
+      <ownedLiteral xmi:id="_M_gooDr3EeG-aJb2h_4S8w" name="PL"/>
+      <ownedLiteral xmi:id="_PtdcoDr3EeG-aJb2h_4S8w" name="PP"/>
+      <ownedLiteral xmi:id="_RQ8ooDr3EeG-aJb2h_4S8w" name="PR"/>
+      <ownedLiteral xmi:id="_TOJVIDr3EeG-aJb2h_4S8w" name="PS"/>
+      <ownedLiteral xmi:id="_U8Y_oDr3EeG-aJb2h_4S8w" name="QM"/>
+      <ownedLiteral xmi:id="_W3GY0Dr3EeG-aJb2h_4S8w" name="RP"/>
+      <ownedLiteral xmi:id="_Za0SwDr3EeG-aJb2h_4S8w" name="SP"/>
+      <ownedLiteral xmi:id="_fW6dwDr3EeG-aJb2h_4S8w" name="TF"/>
+      <ownedLiteral xmi:id="_kUBQ8Dr3EeG-aJb2h_4S8w" name="WC"/>
+      <ownedLiteral xmi:id="_mP2EcDr3EeG-aJb2h_4S8w" name="WU"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -494,4 +541,52 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw"/>
   <term:CodeSystemVersion xmi:id="_svo1oTVVEeGIw7CntkyPQw" identifier="2.16.840.1.113883.6.101" fullName="NUCC Health Care Provider Taxonomy" base_Enumeration="_svo1oDVVEeGIw7CntkyPQw"/>
   <term:CodeSystemVersion xmi:id="_ZhyZUTVYEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.89" fullName="Participationsignature" base_Enumeration="_ZhyZUDVYEeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_tKTLkDrrEeG-aJb2h_4S8w"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_ru4rkDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer’s group health plan" base_EnumerationLiteral="_ru4EgDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_wqQZYDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary, No-fault Insurance including Auto is Primary" base_EnumerationLiteral="_wqPyUDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_1Mw7QTrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Worker’s Compensation" base_EnumerationLiteral="_1Mw7QDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_3WnjsDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Public Health Service (PHS)or Other Federal Agency" base_EnumerationLiteral="_3Wm8oDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_66RQoDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Black Lung" base_EnumerationLiteral="_66QpkDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_AEEcADruEeG-aJb2h_4S8w" conceptName="Medicare Secondary Veteran’s Administration" base_EnumerationLiteral="_AED08DruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_D-mX4DruEeG-aJb2h_4S8w" conceptName="Medicare Secondary Disabled Beneficiary Under Age 65 with Large Group Health Plan (LGHP)" base_EnumerationLiteral="_D-lw0DruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_HgHW0DruEeG-aJb2h_4S8w" conceptName="Medicare Secondary, Other Liability Insurance is Primary" base_EnumerationLiteral="_HgGvwDruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_K7rewDruEeG-aJb2h_4S8w" conceptName="Auto Insurance Policy" base_EnumerationLiteral="_K7q3sDruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_MhXqMDruEeG-aJb2h_4S8w" conceptName="Commercial" base_EnumerationLiteral="_MhXDIDruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_RLRNgDruEeG-aJb2h_4S8w" conceptName="Consolidated Omnibus Budget Reconciliation Act (COBRA)" base_EnumerationLiteral="_RLQmcDruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_XRkdYDruEeG-aJb2h_4S8w" conceptName="Medicare Conditionally Primary" base_EnumerationLiteral="_XRj2UDruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_qQWmIDrvEeG-aJb2h_4S8w" conceptName="Disability" base_EnumerationLiteral="_qQV_EDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_rvjvETrvEeG-aJb2h_4S8w" conceptName="Disability Benefits" base_EnumerationLiteral="_rvjvEDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_uUTjwDrvEeG-aJb2h_4S8w" conceptName="Exclusive Provider Organization" base_EnumerationLiteral="_uUSVoDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_wC2wQDrvEeG-aJb2h_4S8w" conceptName="Family or Friends" base_EnumerationLiteral="_wC2JMDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_zv_JUDrvEeG-aJb2h_4S8w" conceptName="Group Policy" base_EnumerationLiteral="_zv97MDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_105AUDrvEeG-aJb2h_4S8w" conceptName="Health Maintenance Organization (HMO)" base_EnumerationLiteral="_104ZQDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_4GYh0DrvEeG-aJb2h_4S8w" conceptName="Health Maintenance Organization (HMO) - Medicare Risk" base_EnumerationLiteral="_4GX6wDrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_6m7L8DrvEeG-aJb2h_4S8w" conceptName="Special Low Income Medicare Beneficiary" base_EnumerationLiteral="_6m6k4DrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_88A0ADrvEeG-aJb2h_4S8w" conceptName="Indemnity" base_EnumerationLiteral="_87_l4DrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_-ekL4TrvEeG-aJb2h_4S8w" conceptName="Individual Policy" base_EnumerationLiteral="_-ekL4DrvEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_APLN4TrwEeG-aJb2h_4S8w" conceptName="Long Term Care" base_EnumerationLiteral="_APLN4DrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_DpO58DrwEeG-aJb2h_4S8w" conceptName="Long Term Policy" base_EnumerationLiteral="_DpOS4DrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_Fea58DrwEeG-aJb2h_4S8w" conceptName="Life Insurance" base_EnumerationLiteral="_FeaS4DrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_H47NgDrwEeG-aJb2h_4S8w" conceptName="Litigation" base_EnumerationLiteral="_H46mcDrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_eoIJUTrwEeG-aJb2h_4S8w" conceptName="Medicare Part A" base_EnumerationLiteral="_eoIJUDrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_g5iyUDrwEeG-aJb2h_4S8w" conceptName="Medicare Part B" base_EnumerationLiteral="_g5iLQDrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_jxZJMDrwEeG-aJb2h_4S8w" conceptName="Medicaid" base_EnumerationLiteral="_jxYiIDrwEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_D6d3ETr0EeG-aJb2h_4S8w" conceptName="Medigap Part A" base_EnumerationLiteral="_D6d3EDr0EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_GNZjATr0EeG-aJb2h_4S8w" conceptName="Medigap Part B" base_EnumerationLiteral="_GNZjADr0EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_GL_tcDr3EeG-aJb2h_4S8w" conceptName="Medicare Primary" base_EnumerationLiteral="_GL_GYDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_Iy6sYDr3EeG-aJb2h_4S8w" conceptName="Other" base_EnumerationLiteral="_Iy6FUDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_Kt5LUDr3EeG-aJb2h_4S8w" conceptName="Property Insurance - Personal" base_EnumerationLiteral="_Kt4kQDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_M_hPsDr3EeG-aJb2h_4S8w" conceptName="Personal" base_EnumerationLiteral="_M_gooDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_PteDsDr3EeG-aJb2h_4S8w" conceptName="Personal Payment (Cash - No Insurance)" base_EnumerationLiteral="_PtdcoDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_RQ9PsDr3EeG-aJb2h_4S8w" conceptName="Preferred Provider Organization (PPO)" base_EnumerationLiteral="_RQ8ooDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_TOJ8MDr3EeG-aJb2h_4S8w" conceptName="Point of Service (POS)" base_EnumerationLiteral="_TOJVIDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_U8Y_oTr3EeG-aJb2h_4S8w" conceptName="Qualified Medicare Beneficiary" base_EnumerationLiteral="_U8Y_oDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_W3G_4Dr3EeG-aJb2h_4S8w" conceptName="Property Insurance - Real" base_EnumerationLiteral="_W3GY0Dr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_Za050Dr3EeG-aJb2h_4S8w" conceptName="Supplemental Policy" base_EnumerationLiteral="_Za0SwDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_fW6dwTr3EeG-aJb2h_4S8w" conceptName="Tax Equity Fiscal Responsibility Act (TEFRA)" base_EnumerationLiteral="_fW6dwDr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_kUB4ADr3EeG-aJb2h_4S8w" conceptName="Workers Compensation" base_EnumerationLiteral="_kUBQ8Dr3EeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
 </xmi:XMI>
