@@ -1027,16 +1027,15 @@ This clinical statement represents procedures whose immediate and primary outcom
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfHUMTWnEeG32vxjh5_fjg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w85ccDWmEeG32vxjh5_fjg" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_w85ccDWmEeG32vxjh5_fjg" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_w85ccjWmEeG32vxjh5_fjg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ewGfYDWnEeG32vxjh5_fjg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ewGfYTWnEeG32vxjh5_fjg"/>
-      <association href="../consol.uml#_w85ccjWmEeG32vxjh5_fjg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_zMF34DWmEeG32vxjh5_fjg" name="medicationActivity">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOfrkDWnEeG32vxjh5_fjg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOfrkTWnEeG32vxjh5_fjg"/>
-      <association href="../consol.uml#_zMF34jWmEeG32vxjh5_fjg"/>
+      <association href="consol-medications.uml#_zMF34jWmEeG32vxjh5_fjg"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_R1OXcDVyEeGaW4kr-GbV8Q" name="ComplicationsSection">
@@ -1145,4 +1144,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:CodeSystemConstraint xmi:id="_8E32cDWmEeG32vxjh5_fjg" code="59774-0" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_w85ccjWmEeG32vxjh5_fjg" memberEnd="_w85ccDWmEeG32vxjh5_fjg _w85cczWmEeG32vxjh5_fjg">
+    <ownedEnd xmi:id="_w85cczWmEeG32vxjh5_fjg" type="_OA_Q0DVyEeGaW4kr-GbV8Q" association="_w85ccjWmEeG32vxjh5_fjg"/>
+  </uml:Association>
 </xmi:XMI>

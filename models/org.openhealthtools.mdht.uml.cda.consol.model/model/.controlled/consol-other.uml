@@ -1393,4 +1393,10 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:CDATemplate xmi:id="_7ssdQDV1EeGaW4kr-GbV8Q" base_Class="_mEIgwDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.39"/>
   <CDA:CDATemplate xmi:id="_-ZsPADV1EeGaW4kr-GbV8Q" base_Class="_rNJpADVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.1"/>
   <CDA:CDATemplate xmi:id="_lrrAoDV2EeGaW4kr-GbV8Q" base_Class="_iy8nYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.2"/>
+  <uml:Class xmi:id="_W8pI4DszEeGvzMYhXuqAEA" name="AssessmentSection">
+    <generalization xmi:id="_W8pI4TszEeGvzMYhXuqAEA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_aByU4DszEeGvzMYhXuqAEA" base_Class="_W8pI4DszEeGvzMYhXuqAEA" templateId="2.16.840.1.113883.10.20.22.2.8"/>
 </xmi:XMI>

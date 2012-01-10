@@ -1773,4 +1773,11 @@ Entry Content Module.</body>
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7569</ruleId>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_zMF34jWmEeG32vxjh5_fjg">
+    <ownedEnd xmi:id="_zMF34zWmEeG32vxjh5_fjg" association="_zMF34jWmEeG32vxjh5_fjg">
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_OA_Q0DVyEeGaW4kr-GbV8Q"/>
+    </ownedEnd>
+    <memberEnd href="consol-procedures.uml#_zMF34DWmEeG32vxjh5_fjg"/>
+    <memberEnd href="#_zMF34zWmEeG32vxjh5_fjg"/>
+  </uml:Association>
 </xmi:XMI>
