@@ -1212,6 +1212,48 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass consultationNoteEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass consultationNote_ComponentOfEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass componentOf_EncompassingEncounter2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encompassingEncounter2_ResponsiblePartyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encompassingEncounter2_EncounterParticipantEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assessmentSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3659,6 +3701,84 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				197);
 		}
 		return subjectiveSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getConsultationNote() {
+		if (consultationNoteEClass == null) {
+			consultationNoteEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				198);
+		}
+		return consultationNoteEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getConsultationNote_ComponentOf() {
+		if (consultationNote_ComponentOfEClass == null) {
+			consultationNote_ComponentOfEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				199);
+		}
+		return consultationNote_ComponentOfEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getComponentOf_EncompassingEncounter2() {
+		if (componentOf_EncompassingEncounter2EClass == null) {
+			componentOf_EncompassingEncounter2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(200);
+		}
+		return componentOf_EncompassingEncounter2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEncompassingEncounter2_ResponsibleParty() {
+		if (encompassingEncounter2_ResponsiblePartyEClass == null) {
+			encompassingEncounter2_ResponsiblePartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(201);
+		}
+		return encompassingEncounter2_ResponsiblePartyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEncompassingEncounter2_EncounterParticipant() {
+		if (encompassingEncounter2_EncounterParticipantEClass == null) {
+			encompassingEncounter2_EncounterParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(202);
+		}
+		return encompassingEncounter2_EncounterParticipantEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAssessmentSection() {
+		if (assessmentSectionEClass == null) {
+			assessmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				203);
+		}
+		return assessmentSectionEClass;
 	}
 
 	/**
