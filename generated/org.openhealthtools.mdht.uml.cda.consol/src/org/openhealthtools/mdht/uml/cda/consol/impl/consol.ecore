@@ -8175,7 +8175,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.displayName" value="Relevant diagnostic tests and/or laboratory data"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1"/>
-      <details key="constraints.validation.error" value="ResultsSectionTemplateId ResultsSectionEntriesOptionalCode ResultsSectionText ResultsSectionTitle ResultsSectionResultOrganizer"/>
+      <details key="constraints.validation.error" value="ResultsSectionTemplateId ResultsSectionEntriesOptionalCode ResultsSectionTitle ResultsSectionText ResultsSectionResultOrganizer"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="30954-2"/>
     </eAnnotations>
@@ -8203,7 +8203,7 @@
         </eParameters>
       </contents>
     </eAnnotations>
-    <eOperations name="ResultsSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ResultsSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -8212,7 +8212,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ResultsSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ResultsSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -8299,13 +8299,22 @@
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation"/>
       <details key="moodCode.code" value="EVN"/>
       <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="constraints.validation.warning" value="ResultOrganizerCodeValue"/>
+      <details key="constraints.validation.warning" value="ResultOrganizerCodeValue ResultOrganizerClassCodeValue"/>
       <details key="classCode.codeSystemName" value="HL7ActClass"/>
       <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="classCode.code" value=""/>
       <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
     <eOperations name="ResultOrganizerCodeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultOrganizerClassCodeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -8367,17 +8376,35 @@
       <details key="moodCode.displayName" value="Event"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
       <details key="classCode.displayName" value="Observation"/>
-      <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue"/>
       <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
       <details key="constraints.validation.info" value="ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode"/>
       <details key="statusCode.code" value="completed"/>
       <details key="moodCode.code" value="EVN"/>
-      <details key="constraints.validation.warning" value="ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode"/>
+      <details key="constraints.validation.warning" value="ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode"/>
       <details key="classCode.codeSystemName" value="HL7ActClass"/>
       <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="classCode.code" value="OBS"/>
       <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
+    <eOperations name="ResultObservationTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultObservationTextReferenceValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="ResultObservationCodeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
