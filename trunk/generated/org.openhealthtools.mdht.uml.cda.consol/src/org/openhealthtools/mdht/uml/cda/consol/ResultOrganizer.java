@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' moodCode.code='EVN' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.warning='ResultOrganizerCodeValue' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' moodCode.code='EVN' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface ResultOrganizer extends Organizer {
@@ -36,6 +36,19 @@ public interface ResultOrganizer extends Organizer {
 	 * @generated
 	 */
 	boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)'"
+	 * @generated
+	 */
+	boolean validateResultOrganizerClassCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +86,7 @@ public interface ResultOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
 	 * @generated
 	 */
 	boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

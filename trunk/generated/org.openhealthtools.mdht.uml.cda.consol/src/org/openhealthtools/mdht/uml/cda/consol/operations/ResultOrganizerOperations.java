@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer#validateResultOrganizerCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer#validateResultOrganizerClassCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer#validateResultOrganizerId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer#validateResultOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}</li>
@@ -112,6 +113,61 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CODE_VALUE,
 					ConsolPlugin.INSTANCE.getString("ResultOrganizerCodeValue"), new Object[] { resultOrganizer }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateResultOrganizerClassCodeValue(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerClassCodeValue(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateResultOrganizerClassCodeValue(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerClassCodeValue(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)
+	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateResultOrganizerClassCodeValue(ResultOrganizer resultOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER);
+			try {
+				VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			resultOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE_VALUE,
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerClassCodeValue"), new Object[] { resultOrganizer }));
 			}
 			return false;
 		}
@@ -430,7 +486,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.RESULT_ORGANIZER,
-				ConsolPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(56));
+				ConsolPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(57));
 			try {
 				GET_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
