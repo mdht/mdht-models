@@ -1520,6 +1520,60 @@ public interface ConsolFactory extends EFactory {
 	SubjectiveSection createSubjectiveSection();
 
 	/**
+	 * Returns a new object of class '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Consultation Note</em>'.
+	 * @generated
+	 */
+	ConsultationNote createConsultationNote();
+
+	/**
+	 * Returns a new object of class '<em>Consultation Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Consultation Note Component Of</em>'.
+	 * @generated
+	 */
+	ConsultationNote_ComponentOf createConsultationNote_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter2</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter2 createComponentOf_EncompassingEncounter2();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter2 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter2 Responsible Party</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter2_ResponsibleParty createEncompassingEncounter2_ResponsibleParty();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter2 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter2 Encounter Participant</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter2_EncounterParticipant createEncompassingEncounter2_EncounterParticipant();
+
+	/**
+	 * Returns a new object of class '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assessment Section</em>'.
+	 * @generated
+	 */
+	AssessmentSection createAssessmentSection();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

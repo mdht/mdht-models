@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
+import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
@@ -54,6 +55,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
+import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.Specimen;
 import org.openhealthtools.mdht.uml.cda.Subject;
@@ -3693,6 +3695,111 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.CONSULTATION_NOTE: {
+				ConsultationNote consultationNote = (ConsultationNote) theEObject;
+				T result = caseConsultationNote(consultationNote);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(consultationNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(consultationNote);
+				}
+				if (result == null) {
+					result = caseAct(consultationNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consultationNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CONSULTATION_NOTE_COMPONENT_OF: {
+				ConsultationNote_ComponentOf consultationNote_ComponentOf = (ConsultationNote_ComponentOf) theEObject;
+				T result = caseConsultationNote_ComponentOf(consultationNote_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(consultationNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(consultationNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consultationNote_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER2: {
+				ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2 = (ComponentOf_EncompassingEncounter2) theEObject;
+				T result = caseComponentOf_EncompassingEncounter2(componentOf_EncompassingEncounter2);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter2);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY: {
+				EncompassingEncounter2_ResponsibleParty encompassingEncounter2_ResponsibleParty = (EncompassingEncounter2_ResponsibleParty) theEObject;
+				T result = caseEncompassingEncounter2_ResponsibleParty(encompassingEncounter2_ResponsibleParty);
+				if (result == null) {
+					result = caseResponsibleParty(encompassingEncounter2_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter2_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter2_ResponsibleParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT: {
+				EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant = (EncompassingEncounter2_EncounterParticipant) theEObject;
+				T result = caseEncompassingEncounter2_EncounterParticipant(encompassingEncounter2_EncounterParticipant);
+				if (result == null) {
+					result = caseEncounterParticipant(encompassingEncounter2_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter2_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter2_EncounterParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSESSMENT_SECTION: {
+				AssessmentSection assessmentSection = (AssessmentSection) theEObject;
+				T result = caseAssessmentSection(assessmentSection);
+				if (result == null) {
+					result = caseSection(assessmentSection);
+				}
+				if (result == null) {
+					result = caseAct(assessmentSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -6971,6 +7078,96 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsultationNote(ConsultationNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Consultation Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Consultation Note Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsultationNote_ComponentOf(ConsultationNote_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter2(ComponentOf_EncompassingEncounter2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter2 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter2 Responsible Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter2_ResponsibleParty(EncompassingEncounter2_ResponsibleParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter2 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter2 Encounter Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter2_EncounterParticipant(EncompassingEncounter2_EncounterParticipant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssessmentSection(AssessmentSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performer1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -7387,6 +7584,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSubject(Subject object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Responsible Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResponsibleParty(ResponsibleParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encounter Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncounterParticipant(EncounterParticipant object) {
 		return null;
 	}
 

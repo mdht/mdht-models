@@ -455,6 +455,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureSpecimensTakenSection();
 			case ConsolPackage.SUBJECTIVE_SECTION:
 				return createSubjectiveSection();
+			case ConsolPackage.CONSULTATION_NOTE:
+				return createConsultationNote();
+			case ConsolPackage.CONSULTATION_NOTE_COMPONENT_OF:
+				return createConsultationNote_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER2:
+				return createComponentOf_EncompassingEncounter2();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY:
+				return createEncompassingEncounter2_ResponsibleParty();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT:
+				return createEncompassingEncounter2_EncounterParticipant();
+			case ConsolPackage.ASSESSMENT_SECTION:
+				return createAssessmentSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2118,6 +2130,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SubjectiveSection createSubjectiveSection() {
 		SubjectiveSectionImpl subjectiveSection = new SubjectiveSectionImpl();
 		return subjectiveSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsultationNote createConsultationNote() {
+		ConsultationNoteImpl consultationNote = new ConsultationNoteImpl();
+		return consultationNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsultationNote_ComponentOf createConsultationNote_ComponentOf() {
+		ConsultationNote_ComponentOfImpl consultationNote_ComponentOf = new ConsultationNote_ComponentOfImpl();
+		return consultationNote_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter2 createComponentOf_EncompassingEncounter2() {
+		ComponentOf_EncompassingEncounter2Impl componentOf_EncompassingEncounter2 = new ComponentOf_EncompassingEncounter2Impl();
+		return componentOf_EncompassingEncounter2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter2_ResponsibleParty createEncompassingEncounter2_ResponsibleParty() {
+		EncompassingEncounter2_ResponsiblePartyImpl encompassingEncounter2_ResponsibleParty = new EncompassingEncounter2_ResponsiblePartyImpl();
+		return encompassingEncounter2_ResponsibleParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter2_EncounterParticipant createEncompassingEncounter2_EncounterParticipant() {
+		EncompassingEncounter2_EncounterParticipantImpl encompassingEncounter2_EncounterParticipant = new EncompassingEncounter2_EncounterParticipantImpl();
+		return encompassingEncounter2_EncounterParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssessmentSection createAssessmentSection() {
+		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
+		return assessmentSection;
 	}
 
 	/**

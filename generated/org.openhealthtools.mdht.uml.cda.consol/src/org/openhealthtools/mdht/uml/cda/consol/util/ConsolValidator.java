@@ -9678,12 +9678,340 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID = 1204;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Template Id' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID = 1205;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF = 1206;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF = 1207;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Assessment Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION = 1208;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Assessment And Plan Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1209;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Plan Of Care Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION = 1210;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note History Of Present Illness' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS = 1211;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Physical Exam Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION = 1212;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Reason For Referral Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION = 1213;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Reason For Visit Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION = 1214;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Allergies Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION = 1215;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Chief Complaint Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION = 1216;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Chief Complaint And Reason For Visit Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1217;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Family History Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION = 1218;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note General Status Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION = 1219;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note History Of Past Illness Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1220;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Immunizations Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION = 1221;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Medications Section Entries Optional' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1222;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Problem Section Entries Optional' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1223;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Procedures Section Entries Optional' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1224;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Results Section Entries Optional' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1225;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Review Of Systems Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1226;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Social History Section' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION = 1227;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Vital Signs Section Entries Optional' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1228;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of Order Id' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID = 1229;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of Order' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER = 1230;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant Assigned Entity' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1231;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party Assigned Entity' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1232;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Effective Time' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME = 1233;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Id' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID = 1234;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 1235;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 1236;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1237;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Component Of Encompassing Encounter' of 'Consultation Note Component Of'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1238;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter2 Effective Time' of 'Component Of Encompassing Encounter2'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2__ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME = 1239;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter2 Id' of 'Component Of Encompassing Encounter2'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2__ENCOMPASSING_ENCOUNTER2_ID = 1240;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter2 Responsible Party' of 'Component Of Encompassing Encounter2'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2__ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 1241;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter2 Encounter Participant' of 'Component Of Encompassing Encounter2'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2__ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 1242;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Responsible Party Assigned Entity' of 'Encompassing Encounter2 Responsible Party'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1243;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Participant Assigned Entity' of 'Encompassing Encounter2 Encounter Participant'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1244;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Template Id' of 'Assessment Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID = 1245;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1204;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1245;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -10191,6 +10519,21 @@ public class ConsolValidator extends EObjectValidator {
 					(ProcedureSpecimensTakenSection) value, diagnostics, context);
 			case ConsolPackage.SUBJECTIVE_SECTION:
 				return validateSubjectiveSection((SubjectiveSection) value, diagnostics, context);
+			case ConsolPackage.CONSULTATION_NOTE:
+				return validateConsultationNote((ConsultationNote) value, diagnostics, context);
+			case ConsolPackage.CONSULTATION_NOTE_COMPONENT_OF:
+				return validateConsultationNote_ComponentOf((ConsultationNote_ComponentOf) value, diagnostics, context);
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER2:
+				return validateComponentOf_EncompassingEncounter2(
+					(ComponentOf_EncompassingEncounter2) value, diagnostics, context);
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY:
+				return validateEncompassingEncounter2_ResponsibleParty(
+					(EncompassingEncounter2_ResponsibleParty) value, diagnostics, context);
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT:
+				return validateEncompassingEncounter2_EncounterParticipant(
+					(EncompassingEncounter2_EncounterParticipant) value, diagnostics, context);
+			case ConsolPackage.ASSESSMENT_SECTION:
+				return validateAssessmentSection((AssessmentSection) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -32198,6 +32541,1289 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateSubjectiveSection_validateSubjectiveSectionTemplateId(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return subjectiveSection.validateSubjectiveSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote(ConsultationNote consultationNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(consultationNote, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(consultationNote, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPerson(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteTemplateId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteInFulfillmentOf(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOf(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteAssessmentSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteAssessmentAndPlanSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNotePlanOfCareSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteHistoryOfPresentIllness(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNotePhysicalExamSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteReasonForReferralSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteReasonForVisitSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteAllergiesSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteChiefComplaintSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteChiefComplaintAndReasonForVisitSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteFamilyHistorySection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteGeneralStatusSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteHistoryOfPastIllnessSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteImmunizationsSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteMedicationsSectionEntriesOptional(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteProblemSectionEntriesOptional(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteProceduresSectionEntriesOptional(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteResultsSectionEntriesOptional(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteReviewOfSystemsSection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteSocialHistorySection(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteVitalSignsSectionEntriesOptional(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteInFulfillmentOfOrderId(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteInFulfillmentOfOrder(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2Id(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+				consultationNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter(
+				consultationNote, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateConsultationNoteTemplateId constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteTemplateId(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteInFulfillmentOf constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteInFulfillmentOf(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteInFulfillmentOf(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOf constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOf(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOf(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteAssessmentSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteAssessmentSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteAssessmentSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteAssessmentAndPlanSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteAssessmentAndPlanSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteAssessmentAndPlanSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNotePlanOfCareSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNotePlanOfCareSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNotePlanOfCareSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteHistoryOfPresentIllness constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteHistoryOfPresentIllness(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteHistoryOfPresentIllness(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNotePhysicalExamSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNotePhysicalExamSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNotePhysicalExamSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteReasonForReferralSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteReasonForReferralSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteReasonForReferralSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteReasonForVisitSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteReasonForVisitSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteReasonForVisitSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteAllergiesSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteAllergiesSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteAllergiesSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteChiefComplaintSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteChiefComplaintSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteChiefComplaintSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteChiefComplaintAndReasonForVisitSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteChiefComplaintAndReasonForVisitSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteChiefComplaintAndReasonForVisitSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteFamilyHistorySection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteFamilyHistorySection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteFamilyHistorySection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteGeneralStatusSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteGeneralStatusSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteGeneralStatusSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteHistoryOfPastIllnessSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteHistoryOfPastIllnessSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteHistoryOfPastIllnessSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteImmunizationsSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteImmunizationsSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteImmunizationsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteMedicationsSectionEntriesOptional constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteMedicationsSectionEntriesOptional(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteMedicationsSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteProblemSectionEntriesOptional constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteProblemSectionEntriesOptional(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteProblemSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteProceduresSectionEntriesOptional constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteProceduresSectionEntriesOptional(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteProceduresSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteResultsSectionEntriesOptional constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteResultsSectionEntriesOptional(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteResultsSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteReviewOfSystemsSection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteReviewOfSystemsSection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteReviewOfSystemsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteSocialHistorySection constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteSocialHistorySection(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteSocialHistorySection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteVitalSignsSectionEntriesOptional constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteVitalSignsSectionEntriesOptional(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteVitalSignsSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteInFulfillmentOfOrderId constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteInFulfillmentOfOrderId(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteInFulfillmentOfOrderId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteInFulfillmentOfOrder constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteInFulfillmentOfOrder(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteInFulfillmentOfOrder(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2Id constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2Id(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2Id(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConsultationNoteComponentOfEncompassingEncounter constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateConsultationNoteComponentOfEncompassingEncounter(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateConsultationNoteComponentOfEncompassingEncounter(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_ComponentOf(ConsultationNote_ComponentOf consultationNote_ComponentOf,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(consultationNote_ComponentOf, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(consultationNote_ComponentOf, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateComponent1_validateTypeCode(
+				consultationNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsultationNote_ComponentOf_validateComponentOfEncompassingEncounter(
+				consultationNote_ComponentOf, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateComponentOfEncompassingEncounter constraint of '<em>Consultation Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_ComponentOf_validateComponentOfEncompassingEncounter(
+			ConsultationNote_ComponentOf consultationNote_ComponentOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consultationNote_ComponentOf.validateComponentOfEncompassingEncounter(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter2(
+			ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(componentOf_EncompassingEncounter2, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(componentOf_EncompassingEncounter2, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEncompassingEncounter_validateClassCode(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEncompassingEncounter_validateMoodCode(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2EffectiveTime(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2Id(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2ResponsibleParty(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2EncounterParticipant(
+				componentOf_EncompassingEncounter2, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter2EffectiveTime constraint of '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2EffectiveTime(
+			ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter2.validateEncompassingEncounter2EffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter2Id constraint of '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2Id(
+			ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter2.validateEncompassingEncounter2Id(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter2ResponsibleParty constraint of '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2ResponsibleParty(
+			ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter2.validateEncompassingEncounter2ResponsibleParty(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter2EncounterParticipant constraint of '<em>Component Of Encompassing Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter2_validateEncompassingEncounter2EncounterParticipant(
+			ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter2.validateEncompassingEncounter2EncounterParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter2_ResponsibleParty(
+			EncompassingEncounter2_ResponsibleParty encompassingEncounter2_ResponsibleParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(encompassingEncounter2_ResponsibleParty, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateResponsibleParty_validateTypeCode(
+				encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter2_ResponsibleParty_validateResponsiblePartyAssignedEntity(
+				encompassingEncounter2_ResponsibleParty, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateResponsiblePartyAssignedEntity constraint of '<em>Encompassing Encounter2 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter2_ResponsibleParty_validateResponsiblePartyAssignedEntity(
+			EncompassingEncounter2_ResponsibleParty encompassingEncounter2_ResponsibleParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter2_ResponsibleParty.validateResponsiblePartyAssignedEntity(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter2_EncounterParticipant(
+			EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(encompassingEncounter2_EncounterParticipant, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(
+				encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter2_EncounterParticipant_validateEncounterParticipantAssignedEntity(
+				encompassingEncounter2_EncounterParticipant, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateEncounterParticipantAssignedEntity constraint of '<em>Encompassing Encounter2 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter2_EncounterParticipant_validateEncounterParticipantAssignedEntity(
+			EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter2_EncounterParticipant.validateEncounterParticipantAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentSection(AssessmentSection assessmentSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(assessmentSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(assessmentSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAssessmentSection_validateAssessmentSectionTemplateId(
+				assessmentSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateAssessmentSectionTemplateId constraint of '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentSection_validateAssessmentSectionTemplateId(AssessmentSection assessmentSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return assessmentSection.validateAssessmentSectionTemplateId(diagnostics, context);
 	}
 
 	/**
