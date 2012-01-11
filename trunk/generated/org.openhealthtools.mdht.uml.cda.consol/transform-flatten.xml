@@ -25,8 +25,14 @@
     </target>
 
     <target name="transformDomain" description="Flatten inherited templates.">
+    	<property name="generateDomainInterface" value="false"/>
+    	<property name="includeInterfaceRealization" value="false"/>
+    	<property name="generateDomainClasses" value="true"/>
+    	<property name="includeFixedValueGetters" value="false"/>
+    	<property name="useBusinessNames" value="true"/>
+    	
         <cdatools model="${modelPath.uml}">
-            <transformToDomainModel generateDomainInterface="true" domainModel="${domainModelPath.uml}"/>
+            <transformToDomainModel domainModel="${domainModelPath.uml}"/>
         </cdatools>
 		<antcall target="convertDomainPaths"/>
     	
