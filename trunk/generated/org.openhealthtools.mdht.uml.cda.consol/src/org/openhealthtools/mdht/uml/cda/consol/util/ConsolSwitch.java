@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
+import org.openhealthtools.mdht.uml.cda.Device;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
@@ -943,6 +944,40 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(productInstance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PRODUCT_INSTANCE_SCOPING_ENTITY: {
+				ProductInstance_ScopingEntity productInstance_ScopingEntity = (ProductInstance_ScopingEntity) theEObject;
+				T result = caseProductInstance_ScopingEntity(productInstance_ScopingEntity);
+				if (result == null) {
+					result = caseCDA_Entity(productInstance_ScopingEntity);
+				}
+				if (result == null) {
+					result = caseEntity(productInstance_ScopingEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productInstance_ScopingEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PRODUCT_INSTANCE_PLAYING_DEVICE: {
+				ProductInstance_PlayingDevice productInstance_PlayingDevice = (ProductInstance_PlayingDevice) theEObject;
+				T result = caseProductInstance_PlayingDevice(productInstance_PlayingDevice);
+				if (result == null) {
+					result = caseDevice(productInstance_PlayingDevice);
+				}
+				if (result == null) {
+					result = caseEntity(productInstance_PlayingDevice);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productInstance_PlayingDevice);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4466,6 +4501,36 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product Instance Scoping Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product Instance Scoping Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProductInstance_ScopingEntity(ProductInstance_ScopingEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product Instance Playing Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product Instance Playing Device</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProductInstance_PlayingDevice(ProductInstance_PlayingDevice object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Instructions</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6534,6 +6599,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSupply(Supply object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDA_Entity(org.openhealthtools.mdht.uml.cda.Entity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Device</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDevice(Device object) {
 		return null;
 	}
 

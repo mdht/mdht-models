@@ -151,6 +151,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDrugVehicle();
 			case ConsolPackage.PRODUCT_INSTANCE:
 				return createProductInstance();
+			case ConsolPackage.PRODUCT_INSTANCE_SCOPING_ENTITY:
+				return createProductInstance_ScopingEntity();
+			case ConsolPackage.PRODUCT_INSTANCE_PLAYING_DEVICE:
+				return createProductInstance_PlayingDevice();
 			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
 				return createAllergyStatusObservation();
 			case ConsolPackage.AGE_OBSERVATION:
@@ -910,6 +914,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProductInstance createProductInstance() {
 		ProductInstanceImpl productInstance = new ProductInstanceImpl();
 		return productInstance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductInstance_ScopingEntity createProductInstance_ScopingEntity() {
+		ProductInstance_ScopingEntityImpl productInstance_ScopingEntity = new ProductInstance_ScopingEntityImpl();
+		return productInstance_ScopingEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductInstance_PlayingDevice createProductInstance_PlayingDevice() {
+		ProductInstance_PlayingDeviceImpl productInstance_PlayingDevice = new ProductInstance_PlayingDeviceImpl();
+		return productInstance_PlayingDevice;
 	}
 
 	/**
