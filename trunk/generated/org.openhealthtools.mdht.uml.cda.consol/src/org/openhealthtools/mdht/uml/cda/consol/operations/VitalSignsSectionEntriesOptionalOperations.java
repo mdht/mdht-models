@@ -245,7 +245,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 			vitalSignsSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER,
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalVitalSignsOrganizer"),

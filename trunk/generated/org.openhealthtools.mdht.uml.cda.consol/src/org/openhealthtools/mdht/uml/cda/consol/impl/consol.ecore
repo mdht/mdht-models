@@ -7261,8 +7261,9 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4"/>
-      <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalText VitalSignsSectionEntriesOptionalTitle VitalSignsSectionEntriesOptionalVitalSignsOrganizer"/>
+      <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalText VitalSignsSectionEntriesOptionalTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.warning" value="VitalSignsSectionEntriesOptionalVitalSignsOrganizer"/>
       <details key="code.code" value="8716-3"/>
     </eAnnotations>
     <eOperations name="VitalSignsSectionEntriesOptionalTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
