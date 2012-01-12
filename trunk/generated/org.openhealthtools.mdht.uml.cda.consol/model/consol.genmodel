@@ -2526,27 +2526,71 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/getCoverageActivity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionCoverageActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionCoverageActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionCoverageActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/getCoverageActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CoverageActivity">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityStatusCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/CoverageActivityPolicyActivity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityPolicyActivity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoverageActivity/CoverageActivityPolicyActivity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/getPolicyActivity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoverageActivity/getPolicyActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PolicyActivity">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityMoodCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityAuthorizationActivity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityAuthorizationActivity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityAuthorizationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/PolicyActivityPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicyActivity/PolicyActivityPerformer/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicyActivity/getAuthorizationActivity"/>
     </genClasses>
