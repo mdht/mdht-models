@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -19,37 +20,29 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  * <!-- begin-model-doc -->
  * <p>
- *     <i>Payers</i> contains data on the patient's payers, whether a 'third party' insurance,
- *     self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the
- *     responsible fiduciary for the financial aspects of a patient's care.
+ * The Payers section contains data on the patient's payers, whether a 'third party' insurance, self-pay, 
+ * other payer or guarantor, or some combination of payers, and is used to define which entity is the
+ *  responsible fiduciary for the financial aspects of a patient's care.
  * </p>
  * <p>
- *     Each unique
- *     instance of a payer and all the pertinent data needed to contact, bill to, and collect from that payer should be
- *     included. Authorization information that can be used to define pertinent referral, authorization tracking number,
- *     procedure, therapy, intervention, device, or similar authorizations for the patient or provider, or both should be
- *     included. At a minimum, the patient's pertinent current payment sources should be listed.
+ * Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from
+ *  that payer should be included. Authorization information that can be used to define pertinent referral, 
+ * authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for 
+ * the patient or provider, or both should be included. At a minimum, the patient's pertinent current 
+ * payment sources should be listed.
  * </p>
  * <p>
- *     The CCD
- *     represents the sources of payment as a coverage act, which identifies all of the insurance policies or government or
- *     other programs that cover some or all of the patient's healthcare expenses. The policies or programs are sequenced by
- *     order of preference. Each policy or program identifies the covered party with respect to the payer, so that the
- *     identifiers can be recorded.
- * </p>
- * The Payers section contains data on the patient's payers, whether a 'third party' insurance, self-pay, other payer or
- * guarantor, or some combination.
- * <p>
- *     The Payers Section contains data on the patient's payers, whether a 'third party' insurance, self-pay,
- *     other payer or guarantor, or some combination. At a minimum, the patient's pertinent current payment sources should be
- *     listed. If no payment sources are supplied, the reason shall be supplied as free text in the narrative block (e.g., Not
- *     Insured, Payer Unknown, Medicare Pending, et cetera). 
+ * The sources of payment are represented as a Coverage Activity, which identifies all of the insurance 
+ * policies or government or other programs that cover some or all of the patient's healthcare expenses. 
+ * The policies or programs are sequenced by preference. The Coverage Activity has a sequence number 
+ * that represents the preference order. Each policy or program identifies the covered party 
+ * with respect to the payer, so that the identifiers can be recorded.
  * </p>
  * <!-- end-model-doc -->
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPayersSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.18' code.displayName='Payment sources' constraints.validation.error='PayersSectionTemplateId PayersSectionCode PayersSectionTitle PayersSectionText' code.codeSystemName='LOINC' code.code='48768-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Payment sources' templateId.root='2.16.840.1.113883.10.20.22.2.18' constraints.validation.error='PayersSectionTemplateId PayersSectionCode PayersSectionTitle PayersSectionText PayersSectionCoverageActivity' code.codeSystemName='LOINC' code.code='48768-6'"
  * @generated
  */
 public interface PayersSection extends Section {
@@ -111,13 +104,26 @@ public interface PayersSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity))->asSequence()->first().oclAsType(consol::CoverageActivity)
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::CoverageActivity))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity))->asSequence()->first().oclAsType(consol::CoverageActivity)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::CoverageActivity))'"
 	 * @generated
 	 */
-	CoverageActivity getCoverageActivity();
+	boolean validatePayersSectionCoverageActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity)).oclAsType(consol::CoverageActivity)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity)).oclAsType(consol::CoverageActivity)'"
+	 * @generated
+	 */
+	EList<CoverageActivity> getCoverageActivities();
 
 	/**
 	 * <!-- begin-user-doc -->

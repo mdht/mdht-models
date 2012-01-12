@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.ocl.ParserException;
@@ -42,7 +45,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#getCoverageActivity() <em>Get Coverage Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionCoverageActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#getCoverageActivities() <em>Get Coverage Activities</em>}</li>
  * </ul>
  * </p>
  *
@@ -280,48 +284,105 @@ public class PayersSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCoverageActivity(PayersSection) <em>Get Coverage Activity</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePayersSectionCoverageActivity(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCoverageActivity(PayersSection)
+	 * @see #validatePayersSectionCoverageActivity(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COVERAGE_ACTIVITY__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity))->asSequence()->first().oclAsType(consol::CoverageActivity)";
+	protected static final String VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::CoverageActivity))";
 
 	/**
-	 * The cached OCL query for the '{@link #getCoverageActivity(PayersSection) <em>Get Coverage Activity</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePayersSectionCoverageActivity(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCoverageActivity(PayersSection)
+	 * @see #validatePayersSectionCoverageActivity(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_COVERAGE_ACTIVITY__EOCL_QRY;
+	protected static Constraint VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity))->asSequence()->first().oclAsType(consol::CoverageActivity)
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::CoverageActivity))
 	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static CoverageActivity getCoverageActivity(PayersSection payersSection) {
-		if (GET_COVERAGE_ACTIVITY__EOCL_QRY == null) {
+	public static boolean validatePayersSectionCoverageActivity(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PAYERS_SECTION,
-				ConsolPackage.Literals.PAYERS_SECTION.getEAllOperations().get(59));
+			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
 			try {
-				GET_COVERAGE_ACTIVITY__EOCL_QRY = helper.createQuery(GET_COVERAGE_ACTIVITY__EOCL_EXP);
+				VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COVERAGE_ACTIVITY__EOCL_QRY);
-		return (CoverageActivity) query.evaluate(payersSection);
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payersSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_COVERAGE_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("PayersSectionCoverageActivity"), new Object[] { payersSection }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getCoverageActivities(PayersSection) <em>Get Coverage Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCoverageActivities(PayersSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_COVERAGE_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity)).oclAsType(consol::CoverageActivity)";
+
+	/**
+	 * The cached OCL query for the '{@link #getCoverageActivities(PayersSection) <em>Get Coverage Activities</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCoverageActivities(PayersSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_COVERAGE_ACTIVITIES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity)).oclAsType(consol::CoverageActivity)
+	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static EList<CoverageActivity> getCoverageActivities(PayersSection payersSection) {
+		if (GET_COVERAGE_ACTIVITIES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PAYERS_SECTION,
+				ConsolPackage.Literals.PAYERS_SECTION.getEAllOperations().get(60));
+			try {
+				GET_COVERAGE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_COVERAGE_ACTIVITIES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_COVERAGE_ACTIVITIES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<CoverageActivity> result = (Collection<CoverageActivity>) query.evaluate(payersSection);
+		return new BasicEList.UnmodifiableEList<CoverageActivity>(result.size(), result.toArray());
 	}
 
 } // PayersSectionOperations

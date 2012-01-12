@@ -14,22 +14,33 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
+import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
+import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDietSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeSummary;
+import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargePhysicalSection;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeStudiesSummarySection;
+import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
+import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeSummaryOperations;
@@ -70,9 +81,9 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryAdmissionMedicationHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryAdmissionMedicationHistorySection(
+	public boolean validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
 			this, diagnostics, context);
 	}
 
@@ -102,9 +113,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryAllergiesReactionsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryAllergiesReactionsSection(this, diagnostics, context);
+	public boolean validateDischargeSummaryAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryAllergiesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -112,9 +122,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryDischargeDiagnosisSection(DiagnosticChain diagnostics,
+	public boolean validateDischargeSummaryHospitalDischargeDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryDischargeDiagnosisSection(this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeDiagnosisSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +133,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryDischargeDiet(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryDischargeDiet(this, diagnostics, context);
+	public boolean validateDischargeSummaryDischargeDietSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryDischargeDietSection(this, diagnostics, context);
 	}
 
 	/**
@@ -131,9 +142,9 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeMedicationsSection(
+	public boolean validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
 			this, diagnostics, context);
 	}
 
@@ -152,9 +163,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryHistoryOfPresentIllness(DiagnosticChain diagnostics,
+	public boolean validateDischargeSummaryHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPresentIllness(this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPresentIllnessSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,17 +233,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryMedicationsAdministeredSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryMedicationsAdministeredSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDischargeSummaryVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryVitalSignsSection(this, diagnostics, context);
 	}
@@ -241,8 +242,253 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalAdmissionMedicationsSectionEntriesOptional getAdmissionMedicationHistorySection() {
-		return DischargeSummaryOperations.getAdmissionMedicationHistorySection(this);
+	public boolean validateDischargeSummaryComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOf(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintAndReasonForVisitSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryChiefComplaintSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryFamilyHistorySection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryHospitalConsultationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalConsultationsSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeInstructionsSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryHospitalDischargePhysicalSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargePhysicalSection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryHospitalDischargeStudiesSummarySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeStudiesSummarySection(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryImmunizationsSectionEntriesOptional(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryProblemSectionEntriesOptional(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryProblemSectionEntriesOptional(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryProceduresSectionEntriesOptional(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryReasonForVisitSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryReasonForVisitSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummarySocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummarySocialHistorySection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeSummaryComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
+		return DischargeSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}
 
 	/**
@@ -268,8 +514,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergiesSection getAllergiesReactionsSection() {
-		return DischargeSummaryOperations.getAllergiesReactionsSection(this);
+	public AllergiesSection getAllergiesSection() {
+		return DischargeSummaryOperations.getAllergiesSection(this);
 	}
 
 	/**
@@ -277,8 +523,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeDiagnosisSection getDischargeDiagnosisSection() {
-		return DischargeSummaryOperations.getDischargeDiagnosisSection(this);
+	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
+		return DischargeSummaryOperations.getHospitalDischargeDiagnosisSection(this);
 	}
 
 	/**
@@ -286,8 +532,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDietSection getDischargeDiet() {
-		return DischargeSummaryOperations.getDischargeDiet(this);
+	public DischargeDietSection getDischargeDietSection() {
+		return DischargeSummaryOperations.getDischargeDietSection(this);
 	}
 
 	/**
@@ -295,8 +541,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSection() {
-		return DischargeSummaryOperations.getHospitalDischargeMedicationsSection(this);
+	public HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSectionEntriesOptional() {
+		return DischargeSummaryOperations.getHospitalDischargeMedicationsSectionEntriesOptional(this);
 	}
 
 	/**
@@ -313,8 +559,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPresentIllness getHistoryOfPresentIllness() {
-		return DischargeSummaryOperations.getHistoryOfPresentIllness(this);
+	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
+		return DischargeSummaryOperations.getHistoryOfPresentIllnessSection(this);
 	}
 
 	/**
@@ -376,8 +622,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationsAdministeredSection getMedicationsAdministeredSection() {
-		return DischargeSummaryOperations.getMedicationsAdministeredSection(this);
+	public VitalSignsSection getVitalSignsSection() {
+		return DischargeSummaryOperations.getVitalSignsSection(this);
 	}
 
 	/**
@@ -385,8 +631,107 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VitalSignsSection getVitalSignsSection() {
-		return DischargeSummaryOperations.getVitalSignsSection(this);
+	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
+		return DischargeSummaryOperations.getChiefComplaintAndReasonForVisitSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChiefComplaintSection getChiefComplaintSection() {
+		return DischargeSummaryOperations.getChiefComplaintSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistorySection getFamilyHistorySection() {
+		return DischargeSummaryOperations.getFamilyHistorySection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalConsultationsSection getHospitalConsultationsSection() {
+		return DischargeSummaryOperations.getHospitalConsultationsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
+		return DischargeSummaryOperations.getHospitalDischargeInstructionsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargePhysicalSection getHospitalDischargePhysicalSection() {
+		return DischargeSummaryOperations.getHospitalDischargePhysicalSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeStudiesSummarySection getHospitalDischargeStudiesSummarySection() {
+		return DischargeSummaryOperations.getHospitalDischargeStudiesSummarySection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional() {
+		return DischargeSummaryOperations.getImmunizationsSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemSectionEntriesOptional getProblemSectionEntriesOptional() {
+		return DischargeSummaryOperations.getProblemSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional() {
+		return DischargeSummaryOperations.getProceduresSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForVisitSection getReasonForVisitSection() {
+		return DischargeSummaryOperations.getReasonForVisitSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistorySection getSocialHistorySection() {
+		return DischargeSummaryOperations.getSocialHistorySection(this);
 	}
 
 	/**

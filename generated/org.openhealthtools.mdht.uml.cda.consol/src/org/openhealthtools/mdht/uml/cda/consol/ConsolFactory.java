@@ -1214,13 +1214,13 @@ public interface ConsolFactory extends EFactory {
 	ReasonForReferralSection createReasonForReferralSection();
 
 	/**
-	 * Returns a new object of class '<em>History Of Present Illness</em>'.
+	 * Returns a new object of class '<em>History Of Present Illness Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>History Of Present Illness</em>'.
+	 * @return a new object of class '<em>History Of Present Illness Section</em>'.
 	 * @generated
 	 */
-	HistoryOfPresentIllness createHistoryOfPresentIllness();
+	HistoryOfPresentIllnessSection createHistoryOfPresentIllnessSection();
 
 	/**
 	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
@@ -1761,6 +1761,42 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DischargeSummary createDischargeSummary();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Summary Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Summary Component Of</em>'.
+	 * @generated
+	 */
+	DischargeSummary_ComponentOf createDischargeSummary_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter3</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter3 createComponentOf_EncompassingEncounter3();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter3 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter3 Responsible Party</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter3_ResponsibleParty createEncompassingEncounter3_ResponsibleParty();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter3 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter3 Encounter Participant</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter3_EncounterParticipant createEncompassingEncounter3_EncounterParticipant();
 
 	/**
 	 * Returns a new object of class '<em>Discharge Diet Section</em>'.
