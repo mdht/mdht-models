@@ -1228,4 +1228,14 @@
     <ruleId>CONF:8396</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_vZAiYjs5EeGXW8k29waQGA"/>
   </CDA:AssociationValidation>
+  
+  <CDA:PropertyValidation xmi:id="_W4zGMDosEeGSytqLITd2FA" severity="WARNING">
+    <ruleId>CONF:7904</ruleId>
+    <base_Property href=".controlled/consol-medications.uml#_SXxyEDosEeGSytqLITd2FA"/>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rRDYwDosEeGSytqLITd2FA">
+    <ruleId>CONF:7908</ruleId>
+    <base_Property href=".controlled/consol-medications.uml#_iJglcDosEeGSytqLITd2FA"/>
+  </CDA:PropertyValidation>
+
 </xmi:XMI>
