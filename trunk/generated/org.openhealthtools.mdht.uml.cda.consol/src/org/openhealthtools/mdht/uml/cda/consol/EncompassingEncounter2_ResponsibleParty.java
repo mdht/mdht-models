@@ -19,10 +19,24 @@ import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncompassingEncounter2_ResponsibleParty()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponsiblePartyAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ResponsiblePartyAssignedEntity'"
  * @generated
  */
 public interface EncompassingEncounter2_ResponsibleParty extends ResponsibleParty {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()'"
+	 * @generated
+	 */
+	boolean validateResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

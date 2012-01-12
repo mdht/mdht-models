@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getConsultationNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.1.4' constraints.validation.error='ConsultationNote TemplateId ConsultationNote InFulfillmentOf ConsultationNote ComponentOf ConsultationNote InFulfillmentOfOrderId ConsultationNote InFulfillmentOfOrder ConsultationNote ComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNote ComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNote ComponentOfEncompassingEncounter2EffectiveTime ConsultationNote ComponentOfEncompassingEncounter2Id ConsultationNote ComponentOfEncompassingEncounter2ResponsibleParty ConsultationNote ComponentOfEncompassingEncounter2EncounterParticipant ConsultationNote ComponentOfEncompassingEncounter' constraints.validation.info='ConsultationNote AssessmentSection ConsultationNote AssessmentAndPlanSection ConsultationNote PlanOfCareSection ConsultationNote HistoryOfPresentIllness ConsultationNote PhysicalExamSection ConsultationNote ReasonForReferralSection ConsultationNote ReasonForVisitSection ConsultationNote AllergiesSection ConsultationNote ChiefComplaintSection ConsultationNote ChiefComplaintAndReasonForVisitSection ConsultationNote FamilyHistorySection ConsultationNote GeneralStatusSection ConsultationNote HistoryOfPastIllnessSection ConsultationNote ImmunizationsSection ConsultationNote MedicationsSectionEntriesOptional ConsultationNote ProblemSectionEntriesOptional ConsultationNote ProceduresSectionEntriesOptional ConsultationNote ResultsSectionEntriesOptional ConsultationNote ReviewOfSystemsSection ConsultationNote SocialHistorySection ConsultationNote VitalSignsSectionEntriesOptional'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.1.4' constraints.validation.error='ConsultationNote TemplateId ConsultationNote InFulfillmentOf ConsultationNote ComponentOf ConsultationNote InFulfillmentOfOrderId ConsultationNote InFulfillmentOfOrder ConsultationNote ComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNote ComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNote ComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNote ComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNote ComponentOfEncompassingEncounter2EffectiveTime ConsultationNote ComponentOfEncompassingEncounter2Id ConsultationNote ComponentOfEncompassingEncounter2ResponsibleParty ConsultationNote ComponentOfEncompassingEncounter2EncounterParticipant ConsultationNote ComponentOfEncompassingEncounter' constraints.validation.info='ConsultationNote AssessmentSection ConsultationNote AssessmentAndPlanSection ConsultationNote PlanOfCareSection ConsultationNote HistoryOfPresentIllness ConsultationNote PhysicalExamSection ConsultationNote ReasonForReferralSection ConsultationNote ReasonForVisitSection ConsultationNote AllergiesSection ConsultationNote ChiefComplaintSection ConsultationNote ChiefComplaintAndReasonForVisitSection ConsultationNote FamilyHistorySection ConsultationNote GeneralStatusSection ConsultationNote HistoryOfPastIllnessSection ConsultationNote ImmunizationsSection ConsultationNote MedicationsSectionEntriesOptional ConsultationNote ProblemSectionEntriesOptional ConsultationNote ProceduresSectionEntriesOptional ConsultationNote ResultsSectionEntriesOptional ConsultationNote ReviewOfSystemsSection ConsultationNote SocialHistorySection ConsultationNote VitalSignsSectionEntriesOptional'"
  * @generated
  */
 public interface ConsultationNote extends GeneralHeaderConstraints {
@@ -103,11 +103,11 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllness))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllness))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))'"
 	 * @generated
 	 */
 	boolean validateConsultationNoteHistoryOfPresentIllness(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -369,6 +369,20 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.componentOf.encompassingEncounter.encounterParticipant->forAll(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf.encompassingEncounter.encounterParticipant->forAll(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.componentOf.encompassingEncounter.encounterParticipant->forAll(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role)))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -377,6 +391,20 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.componentOf.encompassingEncounter.responsibleParty->forAll(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf.encompassingEncounter.responsibleParty->forAll(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -503,13 +531,13 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllness))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllness)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllnessSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllness))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllness)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllnessSection)'"
 	 * @generated
 	 */
-	HistoryOfPresentIllness getHistoryOfPresentIllness();
+	HistoryOfPresentIllnessSection getHistoryOfPresentIllness();
 
 	/**
 	 * <!-- begin-user-doc -->

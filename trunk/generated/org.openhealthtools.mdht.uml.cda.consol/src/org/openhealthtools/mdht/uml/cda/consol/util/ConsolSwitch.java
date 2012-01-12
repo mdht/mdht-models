@@ -2568,17 +2568,17 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS: {
-				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness) theEObject;
-				T result = caseHistoryOfPresentIllness(historyOfPresentIllness);
+			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS_SECTION: {
+				HistoryOfPresentIllnessSection historyOfPresentIllnessSection = (HistoryOfPresentIllnessSection) theEObject;
+				T result = caseHistoryOfPresentIllnessSection(historyOfPresentIllnessSection);
 				if (result == null) {
-					result = caseSection(historyOfPresentIllness);
+					result = caseSection(historyOfPresentIllnessSection);
 				}
 				if (result == null) {
-					result = caseAct(historyOfPresentIllness);
+					result = caseAct(historyOfPresentIllnessSection);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(historyOfPresentIllness);
+					result = caseInfrastructureRoot(historyOfPresentIllnessSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2919,6 +2919,74 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.DISCHARGE_SUMMARY_COMPONENT_OF: {
+				DischargeSummary_ComponentOf dischargeSummary_ComponentOf = (DischargeSummary_ComponentOf) theEObject;
+				T result = caseDischargeSummary_ComponentOf(dischargeSummary_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(dischargeSummary_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(dischargeSummary_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeSummary_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3: {
+				ComponentOf_EncompassingEncounter3 componentOf_EncompassingEncounter3 = (ComponentOf_EncompassingEncounter3) theEObject;
+				T result = caseComponentOf_EncompassingEncounter3(componentOf_EncompassingEncounter3);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter3);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY: {
+				EncompassingEncounter3_ResponsibleParty encompassingEncounter3_ResponsibleParty = (EncompassingEncounter3_ResponsibleParty) theEObject;
+				T result = caseEncompassingEncounter3_ResponsibleParty(encompassingEncounter3_ResponsibleParty);
+				if (result == null) {
+					result = caseResponsibleParty(encompassingEncounter3_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter3_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter3_ResponsibleParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT: {
+				EncompassingEncounter3_EncounterParticipant encompassingEncounter3_EncounterParticipant = (EncompassingEncounter3_EncounterParticipant) theEObject;
+				T result = caseEncompassingEncounter3_EncounterParticipant(encompassingEncounter3_EncounterParticipant);
+				if (result == null) {
+					result = caseEncounterParticipant(encompassingEncounter3_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter3_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter3_EncounterParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
 				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection) theEObject;
 				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
@@ -3021,6 +3089,108 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION: {
+				ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection = (ChiefComplaintAndReasonForVisitSection) theEObject;
+				T result = caseChiefComplaintAndReasonForVisitSection(chiefComplaintAndReasonForVisitSection);
+				if (result == null) {
+					result = caseSection(chiefComplaintAndReasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseAct(chiefComplaintAndReasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chiefComplaintAndReasonForVisitSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION: {
+				HospitalConsultationsSection hospitalConsultationsSection = (HospitalConsultationsSection) theEObject;
+				T result = caseHospitalConsultationsSection(hospitalConsultationsSection);
+				if (result == null) {
+					result = caseSection(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalConsultationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION: {
+				HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection = (HospitalDischargeInstructionsSection) theEObject;
+				T result = caseHospitalDischargeInstructionsSection(hospitalDischargeInstructionsSection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeInstructionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION: {
+				HospitalDischargePhysicalSection hospitalDischargePhysicalSection = (HospitalDischargePhysicalSection) theEObject;
+				T result = caseHospitalDischargePhysicalSection(hospitalDischargePhysicalSection);
+				if (result == null) {
+					result = caseSection(hospitalDischargePhysicalSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargePhysicalSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargePhysicalSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
+				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection) theEObject;
+				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.REASON_FOR_VISIT_SECTION: {
+				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection) theEObject;
+				T result = caseReasonForVisitSection(reasonForVisitSection);
+				if (result == null) {
+					result = caseSection(reasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForVisitSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3149,40 +3319,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
-				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection) theEObject;
-				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION: {
-				HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection = (HospitalDischargeInstructionsSection) theEObject;
-				T result = caseHospitalDischargeInstructionsSection(hospitalDischargeInstructionsSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
 				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
 				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
@@ -3197,57 +3333,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION: {
-				HospitalDischargePhysicalSection hospitalDischargePhysicalSection = (HospitalDischargePhysicalSection) theEObject;
-				T result = caseHospitalDischargePhysicalSection(hospitalDischargePhysicalSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION: {
-				ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection = (ChiefComplaintAndReasonForVisitSection) theEObject;
-				T result = caseChiefComplaintAndReasonForVisitSection(chiefComplaintAndReasonForVisitSection);
-				if (result == null) {
-					result = caseSection(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseAct(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.REASON_FOR_VISIT_SECTION: {
-				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection) theEObject;
-				T result = caseReasonForVisitSection(reasonForVisitSection);
-				if (result == null) {
-					result = caseSection(reasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseAct(reasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reasonForVisitSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3418,23 +3503,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(findingsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION: {
-				HospitalConsultationsSection hospitalConsultationsSection = (HospitalConsultationsSection) theEObject;
-				T result = caseHospitalConsultationsSection(hospitalConsultationsSection);
-				if (result == null) {
-					result = caseSection(hospitalConsultationsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalConsultationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalConsultationsSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5971,17 +6039,17 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>History Of Present Illness Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>History Of Present Illness Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
+	public T caseHistoryOfPresentIllnessSection(HistoryOfPresentIllnessSection object) {
 		return null;
 	}
 
@@ -6418,6 +6486,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseDischargeSummary(DischargeSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Summary Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Summary Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeSummary_ComponentOf(DischargeSummary_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter3(ComponentOf_EncompassingEncounter3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter3 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter3 Responsible Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter3_ResponsibleParty(EncompassingEncounter3_ResponsibleParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter3 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter3 Encounter Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter3_EncounterParticipant(EncompassingEncounter3_EncounterParticipant object) {
 		return null;
 	}
 

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsultationNote;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
@@ -329,9 +329,31 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			this, diagnostics, context);
 	}
 
@@ -433,7 +455,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPresentIllness getHistoryOfPresentIllness() {
+	public HistoryOfPresentIllnessSection getHistoryOfPresentIllness() {
 		return ConsultationNoteOperations.getHistoryOfPresentIllness(this);
 	}
 

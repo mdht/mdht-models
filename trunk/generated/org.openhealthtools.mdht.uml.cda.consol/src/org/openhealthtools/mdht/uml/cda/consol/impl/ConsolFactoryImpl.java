@@ -323,8 +323,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createChiefComplaintSection();
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION:
 				return createReasonForReferralSection();
-			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS:
-				return createHistoryOfPresentIllness();
+			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS_SECTION:
+				return createHistoryOfPresentIllnessSection();
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
 				return createHospitalAdmissionDiagnosisSection();
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
@@ -365,6 +365,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReferralSummary();
 			case ConsolPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
+			case ConsolPackage.DISCHARGE_SUMMARY_COMPONENT_OF:
+				return createDischargeSummary_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3:
+				return createComponentOf_EncompassingEncounter3();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY:
+				return createEncompassingEncounter3_ResponsibleParty();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT:
+				return createEncompassingEncounter3_EncounterParticipant();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
 				return createHospitalDischargeDiagnosisSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS:
@@ -377,6 +385,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDischargeMedication();
 			case ConsolPackage.HOSPITAL_COURSE_SECTION:
 				return createHospitalCourseSection();
+			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION:
+				return createChiefComplaintAndReasonForVisitSection();
+			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION:
+				return createHospitalConsultationsSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION:
+				return createHospitalDischargeInstructionsSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
+				return createHospitalDischargePhysicalSection();
+			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return createHospitalDischargeStudiesSummarySection();
+			case ConsolPackage.REASON_FOR_VISIT_SECTION:
+				return createReasonForVisitSection();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
 				return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
@@ -391,18 +411,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationInformationManufacturedMaterial();
 			case ConsolPackage.FAMILY_HISTORY_SUBJECT:
 				return createFamilyHistorySubject();
-			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
-				return createHospitalDischargeStudiesSummarySection();
-			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION:
-				return createHospitalDischargeInstructionsSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
 				return createHospitalDischargeMedicationsSection();
-			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
-				return createHospitalDischargePhysicalSection();
-			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION:
-				return createChiefComplaintAndReasonForVisitSection();
-			case ConsolPackage.REASON_FOR_VISIT_SECTION:
-				return createReasonForVisitSection();
 			case ConsolPackage.RELATED_INFORMANT:
 				return createRelatedInformant();
 			case ConsolPackage.ENCOUNTER_PERFORMER:
@@ -423,8 +433,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDICOMObjectCatalogSection();
 			case ConsolPackage.FINDINGS_SECTION:
 				return createFindingsSection();
-			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION:
-				return createHospitalConsultationsSection();
 			case ConsolPackage.INTERVENTIONS_SECTION:
 				return createInterventionsSection();
 			case ConsolPackage.MEDICAL_HISTORY_SECTION:
@@ -1801,9 +1809,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPresentIllness createHistoryOfPresentIllness() {
-		HistoryOfPresentIllnessImpl historyOfPresentIllness = new HistoryOfPresentIllnessImpl();
-		return historyOfPresentIllness;
+	public HistoryOfPresentIllnessSection createHistoryOfPresentIllnessSection() {
+		HistoryOfPresentIllnessSectionImpl historyOfPresentIllnessSection = new HistoryOfPresentIllnessSectionImpl();
+		return historyOfPresentIllnessSection;
 	}
 
 	/**
@@ -2404,6 +2412,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeSummary_ComponentOf createDischargeSummary_ComponentOf() {
+		DischargeSummary_ComponentOfImpl dischargeSummary_ComponentOf = new DischargeSummary_ComponentOfImpl();
+		return dischargeSummary_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter3 createComponentOf_EncompassingEncounter3() {
+		ComponentOf_EncompassingEncounter3Impl componentOf_EncompassingEncounter3 = new ComponentOf_EncompassingEncounter3Impl();
+		return componentOf_EncompassingEncounter3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter3_ResponsibleParty createEncompassingEncounter3_ResponsibleParty() {
+		EncompassingEncounter3_ResponsiblePartyImpl encompassingEncounter3_ResponsibleParty = new EncompassingEncounter3_ResponsiblePartyImpl();
+		return encompassingEncounter3_ResponsibleParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter3_EncounterParticipant createEncompassingEncounter3_EncounterParticipant() {
+		EncompassingEncounter3_EncounterParticipantImpl encompassingEncounter3_EncounterParticipant = new EncompassingEncounter3_EncounterParticipantImpl();
+		return encompassingEncounter3_EncounterParticipant;
 	}
 
 	/**

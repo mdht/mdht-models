@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter2_EncounterParticipant#validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Participant Assigned Entity Has Person Organization Or Both</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter2_EncounterParticipant#validateEncounterParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Participant Assigned Entity</em>}</li>
  * </ul>
  * </p>
@@ -47,6 +48,65 @@ public class EncompassingEncounter2_EncounterParticipantOperations extends Parti
 	 */
 	protected EncompassingEncounter2_EncounterParticipantOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(EncompassingEncounter2_EncounterParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Participant Assigned Entity Has Person Organization Or Both</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(EncompassingEncounter2_EncounterParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(EncompassingEncounter2_EncounterParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Participant Assigned Entity Has Person Organization Or Both</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(EncompassingEncounter2_EncounterParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()
+	 * @param encompassingEncounter2_EncounterParticipant The receiving '<em><b>Encompassing Encounter2 Encounter Participant</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT);
+			try {
+				VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encompassingEncounter2_EncounterParticipant)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
+					ConsolPlugin.INSTANCE.getString("EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth"),
+					new Object[] { encompassingEncounter2_EncounterParticipant }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**

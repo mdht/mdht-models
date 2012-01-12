@@ -974,7 +974,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass historyOfPresentIllnessEClass = null;
+	private EClass historyOfPresentIllnessSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1395,6 +1395,34 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * @generated
 	 */
 	private EClass dischargeSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dischargeSummary_ComponentOfEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass componentOf_EncompassingEncounter3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encompassingEncounter3_ResponsiblePartyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encompassingEncounter3_EncounterParticipantEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3280,12 +3308,12 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getHistoryOfPresentIllness() {
-		if (historyOfPresentIllnessEClass == null) {
-			historyOfPresentIllnessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				132);
+	public EClass getHistoryOfPresentIllnessSection() {
+		if (historyOfPresentIllnessSectionEClass == null) {
+			historyOfPresentIllnessSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(132);
 		}
-		return historyOfPresentIllnessEClass;
+		return historyOfPresentIllnessSectionEClass;
 	}
 
 	/**
@@ -3309,7 +3337,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeDiagnosisSection() {
 		if (hospitalDischargeDiagnosisSectionEClass == null) {
 			hospitalDischargeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(153);
+				ConsolPackage.eNS_URI).getEClassifiers().get(157);
 		}
 		return hospitalDischargeDiagnosisSectionEClass;
 	}
@@ -3335,7 +3363,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeMedicationsSection() {
 		if (hospitalDischargeMedicationsSectionEClass == null) {
 			hospitalDischargeMedicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(168);
+				ConsolPackage.eNS_URI).getEClassifiers().get(176);
 		}
 		return hospitalDischargeMedicationsSectionEClass;
 	}
@@ -3348,7 +3376,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargePhysicalSection() {
 		if (hospitalDischargePhysicalSectionEClass == null) {
 			hospitalDischargePhysicalSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(169);
+				ConsolPackage.eNS_URI).getEClassifiers().get(166);
 		}
 		return hospitalDischargePhysicalSectionEClass;
 	}
@@ -3361,7 +3389,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getChiefComplaintAndReasonForVisitSection() {
 		if (chiefComplaintAndReasonForVisitSectionEClass == null) {
 			chiefComplaintAndReasonForVisitSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(170);
+				ConsolPackage.eNS_URI).getEClassifiers().get(163);
 		}
 		return chiefComplaintAndReasonForVisitSectionEClass;
 	}
@@ -3374,7 +3402,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getReasonForVisitSection() {
 		if (reasonForVisitSectionEClass == null) {
 			reasonForVisitSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				171);
+				168);
 		}
 		return reasonForVisitSectionEClass;
 	}
@@ -3387,7 +3415,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getRelatedInformant() {
 		if (relatedInformantEClass == null) {
 			relatedInformantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				172);
+				177);
 		}
 		return relatedInformantEClass;
 	}
@@ -3400,7 +3428,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getEncounterPerformer() {
 		if (encounterPerformerEClass == null) {
 			encounterPerformerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				173);
+				178);
 		}
 		return encounterPerformerEClass;
 	}
@@ -3413,7 +3441,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getEncounterPerformerAssignedEntity() {
 		if (encounterPerformerAssignedEntityEClass == null) {
 			encounterPerformerAssignedEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(174);
+				ConsolPackage.eNS_URI).getEClassifiers().get(179);
 		}
 		return encounterPerformerAssignedEntityEClass;
 	}
@@ -3426,7 +3454,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getAllergyObservationParticipant() {
 		if (allergyObservationParticipantEClass == null) {
 			allergyObservationParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				175);
+				180);
 		}
 		return allergyObservationParticipantEClass;
 	}
@@ -3439,7 +3467,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getAllergyObservationParticipantRole() {
 		if (allergyObservationParticipantRoleEClass == null) {
 			allergyObservationParticipantRoleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(176);
+				ConsolPackage.eNS_URI).getEClassifiers().get(181);
 		}
 		return allergyObservationParticipantRoleEClass;
 	}
@@ -3452,7 +3480,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getAllergyObservationPlayingEntity() {
 		if (allergyObservationPlayingEntityEClass == null) {
 			allergyObservationPlayingEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(177);
+				ConsolPackage.eNS_URI).getEClassifiers().get(182);
 		}
 		return allergyObservationPlayingEntityEClass;
 	}
@@ -3465,7 +3493,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getAnesthesiaSection() {
 		if (anesthesiaSectionEClass == null) {
 			anesthesiaSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				178);
+				183);
 		}
 		return anesthesiaSectionEClass;
 	}
@@ -3478,7 +3506,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getComplicationsSection() {
 		if (complicationsSectionEClass == null) {
 			complicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				179);
+				184);
 		}
 		return complicationsSectionEClass;
 	}
@@ -3491,7 +3519,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getDICOMObjectCatalogSection() {
 		if (dicomObjectCatalogSectionEClass == null) {
 			dicomObjectCatalogSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				180);
+				185);
 		}
 		return dicomObjectCatalogSectionEClass;
 	}
@@ -3504,7 +3532,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getFindingsSection() {
 		if (findingsSectionEClass == null) {
 			findingsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				181);
+				186);
 		}
 		return findingsSectionEClass;
 	}
@@ -3517,7 +3545,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalConsultationsSection() {
 		if (hospitalConsultationsSectionEClass == null) {
 			hospitalConsultationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				182);
+				164);
 		}
 		return hospitalConsultationsSectionEClass;
 	}
@@ -3530,7 +3558,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getInterventionsSection() {
 		if (interventionsSectionEClass == null) {
 			interventionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				183);
+				187);
 		}
 		return interventionsSectionEClass;
 	}
@@ -3543,7 +3571,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getMedicalHistorySection() {
 		if (medicalHistorySectionEClass == null) {
 			medicalHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				184);
+				188);
 		}
 		return medicalHistorySectionEClass;
 	}
@@ -3556,7 +3584,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getObjectiveSection() {
 		if (objectiveSectionEClass == null) {
 			objectiveSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				185);
+				189);
 		}
 		return objectiveSectionEClass;
 	}
@@ -3569,7 +3597,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getOperativeNoteFluidSection() {
 		if (operativeNoteFluidSectionEClass == null) {
 			operativeNoteFluidSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				186);
+				190);
 		}
 		return operativeNoteFluidSectionEClass;
 	}
@@ -3582,7 +3610,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getOperativeNoteSurgicalProcedureSection() {
 		if (operativeNoteSurgicalProcedureSectionEClass == null) {
 			operativeNoteSurgicalProcedureSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(187);
+				ConsolPackage.eNS_URI).getEClassifiers().get(191);
 		}
 		return operativeNoteSurgicalProcedureSectionEClass;
 	}
@@ -3595,7 +3623,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPlannedProcedureSection() {
 		if (plannedProcedureSectionEClass == null) {
 			plannedProcedureSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				188);
+				192);
 		}
 		return plannedProcedureSectionEClass;
 	}
@@ -3608,7 +3636,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPostoperativeDiagnosisSection() {
 		if (postoperativeDiagnosisSectionEClass == null) {
 			postoperativeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				189);
+				193);
 		}
 		return postoperativeDiagnosisSectionEClass;
 	}
@@ -3621,7 +3649,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPostprocedureDiagnosisSection() {
 		if (postprocedureDiagnosisSectionEClass == null) {
 			postprocedureDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				190);
+				194);
 		}
 		return postprocedureDiagnosisSectionEClass;
 	}
@@ -3634,7 +3662,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPreoperativeDiagnosisSection() {
 		if (preoperativeDiagnosisSectionEClass == null) {
 			preoperativeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				191);
+				195);
 		}
 		return preoperativeDiagnosisSectionEClass;
 	}
@@ -3647,7 +3675,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureDescriptionSection() {
 		if (procedureDescriptionSectionEClass == null) {
 			procedureDescriptionSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				192);
+				196);
 		}
 		return procedureDescriptionSectionEClass;
 	}
@@ -3660,7 +3688,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureDispositionSection() {
 		if (procedureDispositionSectionEClass == null) {
 			procedureDispositionSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				193);
+				197);
 		}
 		return procedureDispositionSectionEClass;
 	}
@@ -3673,7 +3701,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureEstimatedBloodLossSection() {
 		if (procedureEstimatedBloodLossSectionEClass == null) {
 			procedureEstimatedBloodLossSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(194);
+				ConsolPackage.eNS_URI).getEClassifiers().get(198);
 		}
 		return procedureEstimatedBloodLossSectionEClass;
 	}
@@ -3686,7 +3714,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureFindingsSection() {
 		if (procedureFindingsSectionEClass == null) {
 			procedureFindingsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				195);
+				199);
 		}
 		return procedureFindingsSectionEClass;
 	}
@@ -3699,7 +3727,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureImplantsSection() {
 		if (procedureImplantsSectionEClass == null) {
 			procedureImplantsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				196);
+				200);
 		}
 		return procedureImplantsSectionEClass;
 	}
@@ -3712,7 +3740,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureIndicationsSection() {
 		if (procedureIndicationsSectionEClass == null) {
 			procedureIndicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				197);
+				201);
 		}
 		return procedureIndicationsSectionEClass;
 	}
@@ -3725,7 +3753,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureSpecimensTakenSection() {
 		if (procedureSpecimensTakenSectionEClass == null) {
 			procedureSpecimensTakenSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(198);
+				ConsolPackage.eNS_URI).getEClassifiers().get(202);
 		}
 		return procedureSpecimensTakenSectionEClass;
 	}
@@ -3738,7 +3766,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getSubjectiveSection() {
 		if (subjectiveSectionEClass == null) {
 			subjectiveSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				199);
+				203);
 		}
 		return subjectiveSectionEClass;
 	}
@@ -3751,7 +3779,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getConsultationNote() {
 		if (consultationNoteEClass == null) {
 			consultationNoteEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				200);
+				204);
 		}
 		return consultationNoteEClass;
 	}
@@ -3764,7 +3792,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getConsultationNote_ComponentOf() {
 		if (consultationNote_ComponentOfEClass == null) {
 			consultationNote_ComponentOfEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				201);
+				205);
 		}
 		return consultationNote_ComponentOfEClass;
 	}
@@ -3777,7 +3805,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getComponentOf_EncompassingEncounter2() {
 		if (componentOf_EncompassingEncounter2EClass == null) {
 			componentOf_EncompassingEncounter2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(202);
+				ConsolPackage.eNS_URI).getEClassifiers().get(206);
 		}
 		return componentOf_EncompassingEncounter2EClass;
 	}
@@ -3790,7 +3818,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getEncompassingEncounter2_ResponsibleParty() {
 		if (encompassingEncounter2_ResponsiblePartyEClass == null) {
 			encompassingEncounter2_ResponsiblePartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(203);
+				ConsolPackage.eNS_URI).getEClassifiers().get(207);
 		}
 		return encompassingEncounter2_ResponsiblePartyEClass;
 	}
@@ -3803,7 +3831,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getEncompassingEncounter2_EncounterParticipant() {
 		if (encompassingEncounter2_EncounterParticipantEClass == null) {
 			encompassingEncounter2_EncounterParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(204);
+				ConsolPackage.eNS_URI).getEClassifiers().get(208);
 		}
 		return encompassingEncounter2_EncounterParticipantEClass;
 	}
@@ -3816,7 +3844,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getAssessmentSection() {
 		if (assessmentSectionEClass == null) {
 			assessmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				205);
+				209);
 		}
 		return assessmentSectionEClass;
 	}
@@ -3881,7 +3909,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalCourseSection() {
 		if (hospitalCourseSectionEClass == null) {
 			hospitalCourseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				158);
+				162);
 		}
 		return hospitalCourseSectionEClass;
 	}
@@ -4073,10 +4101,62 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDischargeSummary_ComponentOf() {
+		if (dischargeSummary_ComponentOfEClass == null) {
+			dischargeSummary_ComponentOfEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				153);
+		}
+		return dischargeSummary_ComponentOfEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getComponentOf_EncompassingEncounter3() {
+		if (componentOf_EncompassingEncounter3EClass == null) {
+			componentOf_EncompassingEncounter3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(154);
+		}
+		return componentOf_EncompassingEncounter3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEncompassingEncounter3_ResponsibleParty() {
+		if (encompassingEncounter3_ResponsiblePartyEClass == null) {
+			encompassingEncounter3_ResponsiblePartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(155);
+		}
+		return encompassingEncounter3_ResponsiblePartyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEncompassingEncounter3_EncounterParticipant() {
+		if (encompassingEncounter3_EncounterParticipantEClass == null) {
+			encompassingEncounter3_EncounterParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(156);
+		}
+		return encompassingEncounter3_EncounterParticipantEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDischargeDietSection() {
 		if (dischargeDietSectionEClass == null) {
 			dischargeDietSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				155);
+				159);
 		}
 		return dischargeDietSectionEClass;
 	}
@@ -4089,7 +4169,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeMedicationsSectionEntriesOptional() {
 		if (hospitalDischargeMedicationsSectionEntriesOptionalEClass == null) {
 			hospitalDischargeMedicationsSectionEntriesOptionalEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(156);
+				ConsolPackage.eNS_URI).getEClassifiers().get(160);
 		}
 		return hospitalDischargeMedicationsSectionEntriesOptionalEClass;
 	}
@@ -4102,7 +4182,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPreconditionForSubstanceAdministration() {
 		if (preconditionForSubstanceAdministrationEClass == null) {
 			preconditionForSubstanceAdministrationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(159);
+				ConsolPackage.eNS_URI).getEClassifiers().get(169);
 		}
 		return preconditionForSubstanceAdministrationEClass;
 	}
@@ -4115,7 +4195,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getImmunizationMedicationInformation() {
 		if (immunizationMedicationInformationEClass == null) {
 			immunizationMedicationInformationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(160);
+				ConsolPackage.eNS_URI).getEClassifiers().get(170);
 		}
 		return immunizationMedicationInformationEClass;
 	}
@@ -4128,7 +4208,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureSpecimen() {
 		if (procedureSpecimenEClass == null) {
 			procedureSpecimenEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				161);
+				171);
 		}
 		return procedureSpecimenEClass;
 	}
@@ -4141,7 +4221,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedurePerformer() {
 		if (procedurePerformerEClass == null) {
 			procedurePerformerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				162);
+				172);
 		}
 		return procedurePerformerEClass;
 	}
@@ -4154,7 +4234,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProcedureEncounter() {
 		if (procedureEncounterEClass == null) {
 			procedureEncounterEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				163);
+				173);
 		}
 		return procedureEncounterEClass;
 	}
@@ -4167,7 +4247,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getMedicationInformationManufacturedMaterial() {
 		if (medicationInformationManufacturedMaterialEClass == null) {
 			medicationInformationManufacturedMaterialEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(164);
+				ConsolPackage.eNS_URI).getEClassifiers().get(174);
 		}
 		return medicationInformationManufacturedMaterialEClass;
 	}
@@ -4180,7 +4260,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getFamilyHistorySubject() {
 		if (familyHistorySubjectEClass == null) {
 			familyHistorySubjectEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				165);
+				175);
 		}
 		return familyHistorySubjectEClass;
 	}
@@ -4193,7 +4273,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeStudiesSummarySection() {
 		if (hospitalDischargeStudiesSummarySectionEClass == null) {
 			hospitalDischargeStudiesSummarySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(166);
+				ConsolPackage.eNS_URI).getEClassifiers().get(167);
 		}
 		return hospitalDischargeStudiesSummarySectionEClass;
 	}
@@ -4206,7 +4286,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getDischargeMedication() {
 		if (dischargeMedicationEClass == null) {
 			dischargeMedicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				157);
+				161);
 		}
 		return dischargeMedicationEClass;
 	}
@@ -4219,7 +4299,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeDiagnosis() {
 		if (hospitalDischargeDiagnosisEClass == null) {
 			hospitalDischargeDiagnosisEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				154);
+				158);
 		}
 		return hospitalDischargeDiagnosisEClass;
 	}
@@ -4232,7 +4312,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHospitalDischargeInstructionsSection() {
 		if (hospitalDischargeInstructionsSectionEClass == null) {
 			hospitalDischargeInstructionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				ConsolPackage.eNS_URI).getEClassifiers().get(167);
+				ConsolPackage.eNS_URI).getEClassifiers().get(165);
 		}
 		return hospitalDischargeInstructionsSectionEClass;
 	}
