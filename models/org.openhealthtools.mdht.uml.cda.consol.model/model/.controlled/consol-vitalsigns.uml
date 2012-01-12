@@ -158,7 +158,9 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27"/>
+  <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27">
+    <ruleId>CONF:10527</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2OxoZRSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-413</ruleId>
   </CDA:ConstraintValidation>
@@ -267,7 +269,9 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <uml:Association xmi:id="_2OrhohSVEeGGzu7fmW9pXw" memberEnd="_2OlbGBSVEeGGzu7fmW9pXw _2OrhoxSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OrhoxSVEeGGzu7fmW9pXw" type="_2OlbCRSVEeGGzu7fmW9pXw" association="_2OrhohSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26"/>
+  <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26">
+    <ruleId>CONF:10528</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2O91hRSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-398</ruleId>
   </CDA:ConstraintValidation>

@@ -2659,10 +2659,9 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           <generalization xmi:id="_Q4cAMDsyEeGvzMYhXuqAEA">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5t1WAEcEEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_vZAiYDs5EeGXW8k29waQGA" name="assignedEntity">
+          <ownedAttribute xmi:id="_vZAiYDs5EeGXW8k29waQGA" name="assignedEntity" association="_vZAiYjs5EeGXW8k29waQGA">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vZAiYTs5EeGXW8k29waQGA"/>
-            <association href="../consol.uml#_vZAiYjs5EeGXW8k29waQGA"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -2846,5 +2845,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
   </uml:Association>
   <uml:Association xmi:id="_-Xb1EjsvEeGvzMYhXuqAEA" memberEnd="_-Xb1EDsvEeGvzMYhXuqAEA _-Xb1EzsvEeGvzMYhXuqAEA">
     <ownedEnd xmi:id="_-Xb1EzsvEeGvzMYhXuqAEA" type="_xf2eoDsvEeGvzMYhXuqAEA" association="_-Xb1EjsvEeGvzMYhXuqAEA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_vZAiYjs5EeGXW8k29waQGA" memberEnd="_vZAiYDs5EeGXW8k29waQGA _vZAiYzs5EeGXW8k29waQGA">
+    <ownedEnd xmi:id="_vZAiYzs5EeGXW8k29waQGA" type="_Or7FUDsyEeGvzMYhXuqAEA" association="_vZAiYjs5EeGXW8k29waQGA"/>
   </uml:Association>
 </xmi:XMI>
