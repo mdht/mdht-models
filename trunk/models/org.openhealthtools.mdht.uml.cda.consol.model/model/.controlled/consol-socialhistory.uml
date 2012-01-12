@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_2JKvgBSVEeGGzu7fmW9pXw" name="SocialHistorySection">
+    <ownedComment xmi:id="_LJ4sMDyWEeGOm9opnDhYAQ">
+      <body>This section contains data defining the patient's occupational, personal (e.g. lifestyle), social, and environmental history and health risk factors, as well as administrative data such as marital status, race, ethnicity and religious affiliation. Social history can have significant influence on a patient's physical, psychological and emotional health and wellbeing so should be considered in the development of a complete record.</body>
+    </ownedComment>
     <generalization xmi:id="_2Jrs4hSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
@@ -33,7 +36,7 @@
     <ownedEnd xmi:id="__3ADgxVVEeGbmN_W114JUw" type="_2JKvgBSVEeGGzu7fmW9pXw" association="__3ADghVVEeGbmN_W114JUw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2JKvhhSVEeGGzu7fmW9pXw" base_Class="_2JKvgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.17">
-    <ruleId>CONF-7936</ruleId>
+    <ruleId>CONF:7936</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2JoCgxSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-236</ruleId>
@@ -58,21 +61,24 @@
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2JL9oRSVEeGGzu7fmW9pXw" code="29762-2" displayName="Social history" base_Property="_2JL9oBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-7937</ruleId>
+    <ruleId>CONF:7937</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2JNLwRSVEeGGzu7fmW9pXw" base_Property="_2JNLwBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7938</ruleId>
+    <ruleId>CONF:7938</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2JNy0xSVEeGGzu7fmW9pXw" base_Property="_2JNy0BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7939</ruleId>
+    <ruleId>CONF:7939</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2JLWkxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2JLWkRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7953</ruleId>
+    <ruleId>CONF:7953</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_DRdYMBVWEeGbmN_W114JUw" severity="INFO" base_Association="__3ADghVVEeGbmN_W114JUw">
-    <ruleId>CONF-9132</ruleId>
+    <ruleId>CONF:9132</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2JOZ4BSVEeGGzu7fmW9pXw" name="SocialHistoryObservation">
+    <ownedComment xmi:id="_fG0UsDyWEeGOm9opnDhYAQ">
+      <body>This Social History Observation defines the patient's occupational, personal (e.g., lifestyle), social, and environmental history and health risk factors, as well as administrative data such as marital status, race, ethnicity, and religious affiliation.</body>
+    </ownedComment>
     <ownedRule xmi:id="_L9YKgBtsEeGT89b80j3MTg" name="originalText" constrainedElement="_2JOZ4BSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_nzLzwBtsEeGT89b80j3MTg">
         <language>Analysis</language>
@@ -124,23 +130,7 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_2JUggBSVEeGGzu7fmW9pXw" name="value" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_2JUggRSVEeGGzu7fmW9pXw">
-        <body>&lt;p>&#xD;
-The data type to use for each observation should be drawn from the table below.&#xD;
-Observations in the table above using the PQ data type have a unit in the form {xxx}/d,&#xD;
-{xxx}/wk or {xxx}/a represent the number of items per day, week or year respectively. The value attribute indicates the number of times of the act performed, and the units represent the&#xD;
-frequency.&#xD;
-&lt;/p>&#xD;
-&#xD;
-&lt;p>&#xD;
-229819007 Smoking  PQ  {pack}/d or {pack}/wk or {pack}/a&#xD;
-256235009 Exercise PQ {times}/wk&#xD;
-160573003 ETOH (Alcohol) Use PQ {drink}/d or {drink}/wk&#xD;
-364393001 Diet  CD  N/A&#xD;
-364703007 Employment CD  N/A&#xD;
-425400000 Toxic Exposure CD  N/A&#xD;
-363908000 Drug Use CD  N/A&#xD;
-228272008 Other Social History ANY N/A&#xD;
-&lt;/p></body>
+        <body>Observation/value can be any data type. Where Observation/value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQO8ABrbEeGJ_KU17uNyeA" value="1"/>
@@ -148,7 +138,7 @@ frequency.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2JOZ6xSVEeGGzu7fmW9pXw" base_Class="_2JOZ4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.38">
-    <ruleId>CONF-8550</ruleId>
+    <ruleId>CONF:8550</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2JffohSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF-243</ruleId>
@@ -164,10 +154,10 @@ frequency.&#xD;
   <CDA:ConstraintValidation xmi:id="_2Jh74hSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Jii8BSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_2JSrVBSVEeGGzu7fmW9pXw" base_Property="_2JSrURSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-8551</ruleId>
+    <ruleId>CONF:8551</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JPoABSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-8558</ruleId>
+    <ruleId>CONF:8558</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2JjKCRSVEeGGzu7fmW9pXw"/>
@@ -175,11 +165,11 @@ frequency.&#xD;
   <CDA:TextValue xmi:id="_2JRdMBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2JTSYRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2JTSYBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-8553</ruleId>
+    <ruleId>CONF:8553</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2JQ2IBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:PropertyValidation xmi:id="_2JUghBSVEeGGzu7fmW9pXw" message="Observation/value can be any data type. Where Observation/value is a physical quantity, the unit of measure SHALL be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF:8555). MDHT does not support a UCUM service and hence this constriant is unimplementable." severity="WARNING" base_Property="_2JUggBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-8559</ruleId>
+  <CDA:PropertyValidation xmi:id="_2JUghBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JUggBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8559</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2JVHkhSVEeGGzu7fmW9pXw" name="SocialHistoryStatusObservation">
     <ownedRule xmi:id="_2Jb1QBSVEeGGzu7fmW9pXw" name="targetOfEntryRelationship">
@@ -274,6 +264,9 @@ frequency.&#xD;
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2JWVsBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.17" name="SocialHistoryStatusCode" version="20061017" base_Property="_2JVHlBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2N6soBSVEeGGzu7fmW9pXw" name="PregnancyObservation">
+    <ownedComment xmi:id="_9RKMYDyWEeGOm9opnDhYAQ">
+      <body>This clinical statement represents current and/or prior pregnancy dates enabling investigators to determine if the subject of the case report was pregnant during the course of a condition.</body>
+    </ownedComment>
     <generalization xmi:id="_2N6sxxSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -313,47 +306,50 @@ frequency.&#xD;
   <CDA:CDATemplate xmi:id="_aXMCcBncEeGs5a462vYX5Q" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.15.3.8"/>
   <CDA:PropertyValidation xmi:id="_2N6swxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6stRSVEeGGzu7fmW9pXw" base_Property="_2N6soxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-454</ruleId>
+    <ruleId>CONF:454</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2N6sxRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2N6sxBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-455</ruleId>
+    <ruleId>CONF:455</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2N6suBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6suhSVEeGGzu7fmW9pXw" base_Property="_2N6ssBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-457</ruleId>
+    <ruleId>CONF:457</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2N6sthSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6stxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2N6suRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_fX96MBrYEeGJ_KU17uNyeA" base_Property="_2JSEQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-8548</ruleId>
+    <ruleId>CONF:8548</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_EqeHYBrZEeGJ_KU17uNyeA" base_Property="_2JSEQhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-8549</ruleId>
+    <ruleId>CONF:8549</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_v5G0cBrcEeGJ_KU17uNyeA" base_Property="_2N6svBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-451</ruleId>
+    <ruleId>CONF:451</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9IEwIBrcEeGJ_KU17uNyeA" base_Property="_2N6svhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-452</ruleId>
+    <ruleId>CONF:452</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_-exn4BrdEeGJ_KU17uNyeA" code="ASSERTION" displayName="Assertion" base_Property="_2N6soxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_hYNdMBrkEeGJ_KU17uNyeA" severity="WARNING" base_Property="_WJgwIBrkEeGJ_KU17uNyeA">
-    <ruleId>CONF-2018</ruleId>
+    <ruleId>CONF:2018</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_1wvtEBtnEeGL6omwPdOIng" code="77386006" displayName="Pregnant" base_Property="_2N6ssBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_oW16cBtsEeGT89b80j3MTg" severity="WARNING" base_Constraint="_L9YKgBtsEeGT89b80j3MTg">
-    <ruleId>CONF-8893</ruleId>
+    <ruleId>CONF:8893</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_BbV5sBttEeGT89b80j3MTg" severity="WARNING" base_Constraint="_4G8WIBtsEeGT89b80j3MTg">
-    <ruleId>CONF-8894</ruleId>
+    <ruleId>CONF:8894</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_vBswQBtpEeGT89b80j3MTg" name="EstimatedDateOfDelivery">
+    <ownedComment xmi:id="_rEXPUDyXEeGOm9opnDhYAQ">
+      <body>This clinical statement represents the anticipated date when a woman will give birth.</body>
+    </ownedComment>
     <generalization xmi:id="_vBvzkBtpEeGT89b80j3MTg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -378,7 +374,7 @@ frequency.&#xD;
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lcxCQBupEeG0YIoJCEsKqA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t1-9sBuuEeG0YIoJCEsKqA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t1-9sRuuEeG0YIoJCEsKqA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -387,25 +383,28 @@ frequency.&#xD;
   </uml:Class>
   <CDA:CDATemplate xmi:id="_DA2mUBtqEeGT89b80j3MTg" base_Class="_vBswQBtpEeGT89b80j3MTg" templateId="2.16.840.1.113883.10.20.15.3.1"/>
   <CDA:PropertyValidation xmi:id="_qzYhoBupEeG0YIoJCEsKqA" base_Property="_ct-GIBupEeG0YIoJCEsKqA">
-    <ruleId>CONF-444</ruleId>
+    <ruleId>CONF:444</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bwZ1MBuqEeG0YIoJCEsKqA" base_Property="_lcnRQBupEeG0YIoJCEsKqA">
-    <ruleId>CONF-446</ruleId>
+    <ruleId>CONF:446</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_wHqpQBuqEeG0YIoJCEsKqA" code="11778-8" base_Property="_lcnRQBupEeG0YIoJCEsKqA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_CDRIoBuqEeG0YIoJCEsKqA" base_Property="_lcnRQhupEeG0YIoJCEsKqA">
-    <ruleId>CONF-445</ruleId>
+    <ruleId>CONF:445</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_cVGWUButEeG0YIoJCEsKqA" code="completed" base_Property="_lcnRRBupEeG0YIoJCEsKqA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-448</ruleId>
+    <ruleId>CONF:448</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_KbRYkBuuEeG0YIoJCEsKqA" base_Property="_lcxCQBupEeG0YIoJCEsKqA">
-    <ruleId>CONF-450</ruleId>
+    <ruleId>CONF:450</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_5LuUQBtpEeGT89b80j3MTg" memberEnd="_5LtGIBtpEeGT89b80j3MTg _5LuUQRtpEeGT89b80j3MTg">
     <ownedEnd xmi:id="_5LuUQRtpEeGT89b80j3MTg" type="_2N6soBSVEeGGzu7fmW9pXw" association="_5LuUQBtpEeGT89b80j3MTg"/>
   </uml:Association>
+  <CDA:ConstraintValidation xmi:id="_p6vxUDyWEeGOm9opnDhYAQ" base_Constraint="_O-ANcBttEeGT89b80j3MTg">
+    <ruleId>CONF:8895</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
