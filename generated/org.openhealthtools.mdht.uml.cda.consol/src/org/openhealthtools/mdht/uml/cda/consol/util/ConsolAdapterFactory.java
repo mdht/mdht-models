@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
+import org.openhealthtools.mdht.uml.cda.Device;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
@@ -359,6 +360,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProductInstance(ProductInstance object) {
 			return createProductInstanceAdapter();
+		}
+
+		@Override
+		public Adapter caseProductInstance_ScopingEntity(ProductInstance_ScopingEntity object) {
+			return createProductInstance_ScopingEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseProductInstance_PlayingDevice(ProductInstance_PlayingDevice object) {
+			return createProductInstance_PlayingDeviceAdapter();
 		}
 
 		@Override
@@ -1365,6 +1376,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCDA_Entity(org.openhealthtools.mdht.uml.cda.Entity object) {
+			return createCDA_EntityAdapter();
+		}
+
+		@Override
+		public Adapter caseDevice(Device object) {
+			return createDeviceAdapter();
+		}
+
+		@Override
 		public Adapter caseSection(Section object) {
 			return createSectionAdapter();
 		}
@@ -2076,6 +2097,34 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProductInstanceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProductInstance_ScopingEntity <em>Product Instance Scoping Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProductInstance_ScopingEntity
+	 * @generated
+	 */
+	public Adapter createProductInstance_ScopingEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProductInstance_PlayingDevice <em>Product Instance Playing Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProductInstance_PlayingDevice
+	 * @generated
+	 */
+	public Adapter createProductInstance_PlayingDeviceAdapter() {
 		return null;
 	}
 
@@ -4008,6 +4057,34 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSupplyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Entity <em>Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Entity
+	 * @generated
+	 */
+	public Adapter createCDA_EntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Device <em>Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Device
+	 * @generated
+	 */
+	public Adapter createDeviceAdapter() {
 		return null;
 	}
 

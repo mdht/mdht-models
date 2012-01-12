@@ -18,23 +18,9 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * A representation of the model object '<em><b>Medical Equipment Section</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p>
- *     The Medical Equipment section defines a patient's implanted and external medical devices and equipment
- *     that their health status depends on, as well as any pertinent equipment or device history. This section is also used to
- *     itemize any pertinent current or historical durable medical equipment (DME) used to help maintain the patient's health
- *     status. All pertinent equipment relevant to the diagnosis, care, and treatment of a patient should be included.
- * </p>
- * The medical devices section contains narrative text describing the patient history of medical device use.
- * <p>
- *     The Medical Equipment section contains information describing a patient's implanted and external medical
- *     devices and equipment that their health status depends on, as well as any pertinent equipment or device history. 
- * </p>
- * <!-- end-model-doc -->
- *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='History of medical device use' templateId.root='2.16.840.1.113883.10.20.22.2.23' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity' code.code='46264-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Medical Equipment' templateId.root='2.16.840.1.113883.10.20.22.2.23' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity' code.code='46264-8'"
  * @generated
  */
 public interface MedicalEquipmentSection extends Section {

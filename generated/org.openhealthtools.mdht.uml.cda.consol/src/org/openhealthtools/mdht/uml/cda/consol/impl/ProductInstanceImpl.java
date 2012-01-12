@@ -55,15 +55,6 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProductInstanceHasScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProductInstanceOperations.validateProductInstanceHasScopingEntity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProductInstanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProductInstanceOperations.validateProductInstanceTemplateId(this, diagnostics, context);
 	}
@@ -75,6 +66,15 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 	 */
 	public boolean validateProductInstanceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProductInstanceOperations.validateProductInstanceClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductInstanceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductInstanceOperations.validateProductInstanceId(this, diagnostics, context);
 	}
 
 	/**

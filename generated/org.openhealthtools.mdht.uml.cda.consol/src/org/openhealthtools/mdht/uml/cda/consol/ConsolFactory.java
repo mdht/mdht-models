@@ -422,6 +422,24 @@ public interface ConsolFactory extends EFactory {
 	ProductInstance createProductInstance();
 
 	/**
+	 * Returns a new object of class '<em>Product Instance Scoping Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Instance Scoping Entity</em>'.
+	 * @generated
+	 */
+	ProductInstance_ScopingEntity createProductInstance_ScopingEntity();
+
+	/**
+	 * Returns a new object of class '<em>Product Instance Playing Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Instance Playing Device</em>'.
+	 * @generated
+	 */
+	ProductInstance_PlayingDevice createProductInstance_PlayingDevice();
+
+	/**
 	 * Returns a new object of class '<em>Instructions</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

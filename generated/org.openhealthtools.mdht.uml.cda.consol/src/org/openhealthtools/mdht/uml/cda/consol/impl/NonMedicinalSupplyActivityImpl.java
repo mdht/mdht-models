@@ -9,8 +9,6 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -57,302 +55,18 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasAuthor(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformer(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasParticipantLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasParticipantLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityInformationSource(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityInformationSource(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasProduct(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasIntentAuthor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasIntentAuthor(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasAuthorTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasAuthorTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasAssignedAuthor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasAssignedAuthor(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasAssignedAuthorID(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasAssignedAuthorID(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasAssignedAuthorPersonOrOrg(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformerTimeEvent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformerTimeEvent(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformerTimeIntent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformerTimeIntent(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformerAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformerAssignedEntityID(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformerAssignedEntityID(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasPerformerEntityPersonOrOrg(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityQuantityHasValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantityHasValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityOrderNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityOrderNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityOrderExpiration(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityOrderExpiration(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityQuantityOrdered(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantityOrdered(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityQuantityUnit(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantityUnit(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityPrescriptionNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityPrescriptionNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityAssigningAuthority(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityAssigningAuthority(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityDispenseDate(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityDispenseDate(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityDispensingPharmacyLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityDispensingPharmacyLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityQuantityDispensed(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantityDispensed(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNonMedicinalSupplyActivityHasFillNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityHasFillNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(
 			this, diagnostics, context);
 	}
 
@@ -391,17 +105,6 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityRepeatNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityRepeatNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(
 			this, diagnostics, context);
@@ -423,8 +126,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductInstance> getProductInstances() {
-		return NonMedicinalSupplyActivityOperations.getProductInstances(this);
+	public ProductInstance getProductInstance() {
+		return NonMedicinalSupplyActivityOperations.getProductInstance(this);
 	}
 
 	/**
