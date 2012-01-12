@@ -270,11 +270,10 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ownedAttribute xmi:id="_fqsDwBnZEeGs5a462vYX5Q" name="authorizationActivity" type="_XUoXwBnZEeGs5a462vYX5Q" association="_fqsDwhnZEeGs5a462vYX5Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqsDwRnZEeGs5a462vYX5Q"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_nuTYUDaKEeGUovy31cP2ng" name="performer">
+    <ownedAttribute xmi:id="_nuTYUDaKEeGUovy31cP2ng" name="performer" association="_nuTYUjaKEeGUovy31cP2ng">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zU3y0DaKEeGUovy31cP2ng" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zU3y0TaKEeGUovy31cP2ng" value="1"/>
-      <association href="../consol.uml#_nuTYUjaKEeGUovy31cP2ng"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_fqsDwhnZEeGs5a462vYX5Q" memberEnd="_fqsDwBnZEeGs5a462vYX5Q _fqsDwxnZEeGs5a462vYX5Q">
@@ -843,4 +842,10 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   <CDA:PropertyValidation xmi:id="_sHmwUDaJEeGUovy31cP2ng">
     <ruleId>CONF:8906</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_nuTYUjaKEeGUovy31cP2ng" memberEnd="_nuTYUDaKEeGUovy31cP2ng _nuTYUzaKEeGUovy31cP2ng">
+    <ownedComment xmi:id="_53uqcDzuEeGPMs_v-yMckw">
+      <body>This performer represents the Payer (CONF:9078)</body>
+    </ownedComment>
+    <ownedEnd xmi:id="_nuTYUzaKEeGUovy31cP2ng" type="_PZBdMBUlEeGvPruliC3crg" association="_nuTYUjaKEeGUovy31cP2ng"/>
+  </uml:Association>
 </xmi:XMI>
