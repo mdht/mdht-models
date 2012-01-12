@@ -369,7 +369,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PQJfhSVEeGGzu7fmW9pXw" base_Association="_2PQJfBSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2PcWsRSVEeGGzu7fmW9pXw" name="HistoryOfPresentIllness">
+  <uml:Class xmi:id="_2PcWsRSVEeGGzu7fmW9pXw" name="HistoryOfPresentIllnessSection">
     <ownedComment xmi:id="_2PidQBSVEeGGzu7fmW9pXw" annotatedElement="_2PcWsRSVEeGGzu7fmW9pXw">
       <body>The History of Present Illness section describes the history related to the reason for the encounter.  It contains the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</body>
     </ownedComment>

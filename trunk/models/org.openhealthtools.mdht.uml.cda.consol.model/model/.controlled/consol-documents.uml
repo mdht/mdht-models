@@ -935,7 +935,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Uz-4BSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Uz-4RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxlhSVEeGGzu7fmW9pXw" name="admissionMedicationHistorySection" association="_2UnxyxSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxlhSVEeGGzu7fmW9pXw" name="hospitalAdmissionMedicationsSectionEntriesOptional" association="_2UnxyxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj5BSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxlxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmBSVEeGGzu7fmW9pXw" value="1"/>
@@ -949,21 +949,21 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <type xmi:type="uml:Class" href="consol-advancedirectives.uml#_2KgzUBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxnRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxnhSVEeGGzu7fmW9pXw" name="allergiesReactionsSection" association="_2Unx1BSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxnhSVEeGGzu7fmW9pXw" name="allergiesSection" association="_2Unx1BSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxnxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="dischargeDiagnosisSection" association="_2Unx1xSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="hospitalDischargeDiagnosisSection" association="_2Unx1xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxohSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxpBSVEeGGzu7fmW9pXw" name="dischargeDiet" association="_2Ut4MhSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxpBSVEeGGzu7fmW9pXw" name="dischargeDietSection" association="_2Ut4MhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2Uz-4xSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxpRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxphSVEeGGzu7fmW9pXw" name="hospitalDischargeMedicationsSection" association="_2Ut4NRSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxphSVEeGGzu7fmW9pXw" name="hospitalDischargeMedicationsSectionEntriesOptional" association="_2Ut4NRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2Poj7RSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxpxSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxqBSVEeGGzu7fmW9pXw" value="1"/>
@@ -972,7 +972,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <type xmi:type="uml:Class" href="consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxrRSVEeGGzu7fmW9pXw" name="historyOfPresentIllness" association="_2Ut4PhSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxrRSVEeGGzu7fmW9pXw" name="historyOfPresentIllnessSection" association="_2Ut4PhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2PcWsRSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxrhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrxSVEeGGzu7fmW9pXw" value="1"/>
@@ -1001,20 +1001,150 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxvBSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxvRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxvhSVEeGGzu7fmW9pXw" name="reviewOfSystemsSection" association="_2Uz-1hSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-exams.uml#_2RqkMBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxvxSVEeGGzu7fmW9pXw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxwBSVEeGGzu7fmW9pXw" name="medicationsAdministeredSection" association="_2Uz-2RSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj_BSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxwRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxwhSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxwxSVEeGGzu7fmW9pXw" name="vitalSignsSection" association="_2Uz-3BSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_2OfUcxSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxxBSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxxRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_F6UhIDzEEeGMk58Mp9-wVA" name="componentOf" type="_7G6B4DzDEeGMk58Mp9-wVA" association="_F6UhIjzEEeGMk58Mp9-wVA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Izr68DzEEeGMk58Mp9-wVA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Izr68TzEEeGMk58Mp9-wVA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XBDRMDzHEeGMk58Mp9-wVA" name="chiefComplaintAndReasonForVisitSection" association="_XBDRMjzHEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_oI7CQCsaEeGHF88-qhhUMA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBDRMTzHEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Zufu4DzHEeGMk58Mp9-wVA" name="chiefComplaintSection" association="_Zufu4jzHEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PWQCBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zufu4TzHEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xJ2mEDzHEeGMk58Mp9-wVA" name="familyHistorySection" association="_xKAXETzHEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xKAXEDzHEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hcNMADzIEeGMk58Mp9-wVA" name="hospitalConsultationsSection " association="_hcNMAjzIEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_eKFbUDVyEeGaW4kr-GbV8Q"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hcNMATzIEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_64c84DzIEeGMk58Mp9-wVA" name="hospitalDischargeInstructionsSection" association="_64c84jzIEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_lBergCUMEeGiOPpZVnfEJA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_64c84TzIEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JDyaMDzJEeGMk58Mp9-wVA" name="hospitalDischargePhysicalSection" association="_JDyaMjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_WikGsCUTEeGiOPpZVnfEJA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JDyaMTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_N0z5MDzJEeGMk58Mp9-wVA" name="hospitalDischargeStudiesSummarySection" association="_N0z5MjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_38AXoCUTEeGiOPpZVnfEJA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N0z5MTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UcKAoDzJEeGMk58Mp9-wVA" name="immunizationsSectionEntriesOptional" association="_UcKAojzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-immunizations.uml#_EuPloBVeEeGQCvUGzi1kDQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UcKAoTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aeGU8DzJEeGMk58Mp9-wVA" name="problemSectionEntriesOptional" association="_aeGU8jzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_naxrkBVdEeGQCvUGzi1kDQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aeGU8TzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hj_ZkDzJEeGMk58Mp9-wVA" name="proceduresSectionEntriesOptional" association="_hj_ZkjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hj_ZkTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nJ6gQDzJEeGMk58Mp9-wVA" name="reasonForVisitSection" association="_nJ6gQjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_Nm64UCscEeGHF88-qhhUMA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nJ6gQTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rgQ1cDzJEeGMk58Mp9-wVA" name="reviewOfSystemsSection" association="_rgQ1cjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-exams.uml#_2RqkMBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rgQ1cTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_yQsncDzJEeGMk58Mp9-wVA" name="socialHistorySection" association="_yQsncjzJEeGMk58Mp9-wVA">
+      <type xmi:type="uml:Class" href="consol-socialhistory.uml#_2JKvgBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yQsncTzJEeGMk58Mp9-wVA"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_7G6B4DzDEeGMk58Mp9-wVA" name="ComponentOf">
+      <ownedComment xmi:id="_ceudYD0gEeGagp6xeAJzMA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_DZY1cDzEEeGMk58Mp9-wVA">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_bylN4DzEEeGMk58Mp9-wVA" name="encompassingEncounter" type="_TeTqkDzEEeGMk58Mp9-wVA" association="_bylN4jzEEeGMk58Mp9-wVA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_erzdwDzEEeGMk58Mp9-wVA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_erzdwTzEEeGMk58Mp9-wVA" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_TeTqkDzEEeGMk58Mp9-wVA" name="EncompassingEncounter3">
+        <ownedRule xmi:id="_8bTXEDzFEeGMk58Mp9-wVA" name="encompassingEncounterHasEffectiveTimeLow" constrainedElement="_TeTqkDzEEeGMk58Mp9-wVA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="__jugkDzFEeGMk58Mp9-wVA">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>This encompassingEncounter SHALL contain exactly one [1..1] effectiveTime/low</body>
+            <body>not self.effectiveTime.low.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_Ejp-QDzGEeGMk58Mp9-wVA" name="encompassingEncounterHasEffectiveTimeHigh" constrainedElement="_TeTqkDzEEeGMk58Mp9-wVA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ejp-QTzGEeGMk58Mp9-wVA">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>This encompassingEncounter SHALL contain exactly one [1..1] effectiveTime/high</body>
+            <body>not self.effectiveTime.high.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_liV3wDzEEeGMk58Mp9-wVA">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
+        </generalization>
+        <ownedAttribute xmi:id="_tzLskDzEEeGMk58Mp9-wVA" name="dischargeDispositionCode" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tzLskTzEEeGMk58Mp9-wVA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tzLskjzEEeGMk58Mp9-wVA"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_wOswwEozEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tzLskzzEEeGMk58Mp9-wVA" name="effectiveTime" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKO1wEozEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_wxzkYDzFEeGMk58Mp9-wVA" name="responsibleParty" type="_cALIgDzFEeGMk58Mp9-wVA" association="_wxzkYjzFEeGMk58Mp9-wVA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wxzkYTzFEeGMk58Mp9-wVA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_zQf0YDzFEeGMk58Mp9-wVA" name="encounterParticipant" type="_dTBQcDzFEeGMk58Mp9-wVA" association="_zQf0YjzFEeGMk58Mp9-wVA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQf0YTzFEeGMk58Mp9-wVA"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cALIgDzFEeGMk58Mp9-wVA" name="ResponsibleParty">
+          <ownedRule xmi:id="_cALIgTzFEeGMk58Mp9-wVA" name="assignedEntityHasPersonOrOrganization" constrainedElement="_cALIgDzFEeGMk58Mp9-wVA">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_cALIgjzFEeGMk58Mp9-wVA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>The responsibleParty element, if present, SHALL contain an assignedEntity element which SHALL contain an assignedPerson element, a representedOrganization element, or both.</body>
+              <body>not self.assignedEntity.assignedPerson.oclIsUndefined() or not self.assignedEntity.representedOrganization->isEmpty()</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_cALIgzzFEeGMk58Mp9-wVA">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hfdrgEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_0PA-kD0nEeGsYqsxu3WrRA" name="assignedEntity" association="_0PA-kj0nEeGsYqsxu3WrRA">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0PA-kT0nEeGsYqsxu3WrRA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_dTBQcDzFEeGMk58Mp9-wVA" name="EncounterParticipant">
+          <ownedRule xmi:id="_dTBQcTzFEeGMk58Mp9-wVA" name="assignedEntityHasPersonOrOrganization" constrainedElement="_tUQLcDswEeGvzMYhXuqAEA">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_dTBQcjzFEeGMk58Mp9-wVA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>The responsibleParty element, if present, SHALL contain an assignedEntity element which SHALL contain an assignedPerson element, a representedOrganization element, or both.</body>
+              <body>not self.assignedEntity.assignedPerson.oclIsUndefined() or not self.assignedEntity.representedOrganization->isEmpty()</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_dTBQczzFEeGMk58Mp9-wVA">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5t1WAEcEEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_4gASoD0nEeGsYqsxu3WrRA" name="assignedEntity" association="_4gASoj0nEeGsYqsxu3WrRA">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gASoT0nEeGsYqsxu3WrRA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2UnxyxSVEeGGzu7fmW9pXw" memberEnd="_2UnxlhSVEeGGzu7fmW9pXw _2UnxzBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2UnxzBSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2UnxyxSVEeGGzu7fmW9pXw"/>
@@ -1061,11 +1191,8 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_2Uz-0xSVEeGGzu7fmW9pXw" memberEnd="_2UnxuxSVEeGGzu7fmW9pXw _2Uz-1BSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Uz-1BSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-0xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2Uz-1hSVEeGGzu7fmW9pXw" memberEnd="_2UnxvhSVEeGGzu7fmW9pXw _2Uz-1xSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2Uz-1hSVEeGGzu7fmW9pXw" memberEnd="_2Uz-1xSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Uz-1xSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-1hSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_2Uz-2RSVEeGGzu7fmW9pXw" memberEnd="_2UnxwBSVEeGGzu7fmW9pXw _2Uz-2hSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2Uz-2hSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-2RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2Uz-3BSVEeGGzu7fmW9pXw" memberEnd="_2UnxwxSVEeGGzu7fmW9pXw _2Uz-3RSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Uz-3RSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-3BSVEeGGzu7fmW9pXw"/>
@@ -1074,56 +1201,53 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:CodeSystemConstraint xmi:id="_2Uz-4hSVEeGGzu7fmW9pXw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2UnxzRSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2UnxyxSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-2]</ruleId>
+  <CDA:AssociationValidation xmi:id="_2UnxzRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2UnxyxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:10111</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Unx0BSVEeGGzu7fmW9pXw" base_Association="_2UnxzhSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-3]</ruleId>
+    <ruleId>CONF:9928</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Unx0xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Unx0RSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-4]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Unx1hSVEeGGzu7fmW9pXw" base_Association="_2Unx1BSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-5]</ruleId>
+    <ruleId>CONF:9542</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4MRSVEeGGzu7fmW9pXw" base_Association="_2Unx1xSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-6]</ruleId>
+    <ruleId>CONF:9546</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4NBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4MhSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-7]</ruleId>
+    <ruleId>CONF:9558</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4NxSVEeGGzu7fmW9pXw" base_Association="_2Ut4NRSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-8]</ruleId>
+    <ruleId>CONF:9548</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4PRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4OxSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-10]</ruleId>
+    <ruleId>CONF:9562</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Ut4QBSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Ut4PhSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-11]</ruleId>
+  <CDA:AssociationValidation xmi:id="_2Ut4QBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4PhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9566</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4QxSVEeGGzu7fmW9pXw" base_Association="_2Ut4QRSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-12]</ruleId>
+    <ruleId>CONF:9544</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Ut4RhSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Ut4RBSVEeGGzu7fmW9pXw">
+  <CDA:AssociationValidation xmi:id="_2Ut4RhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4RBSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-13]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Ut4SRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4RxSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-15]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-0hSVEeGGzu7fmW9pXw" base_Association="_2Uz-0BSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-16]</ruleId>
+    <ruleId>CONF:9550</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Uz-1RSVEeGGzu7fmW9pXw" base_Association="_2Uz-0xSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-17]</ruleId>
+  <CDA:AssociationValidation xmi:id="_2Uz-1RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-0xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9564</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-1hSVEeGGzu7fmW9pXw">
     <ruleId>C48-[CT2-18]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Uz-2xSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Uz-2RSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-19]</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Uz-3hSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Uz-3BSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-20]</ruleId>
+  <CDA:AssociationValidation xmi:id="_2Uz-3hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-3BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9584</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2IJb0BSVEeGGzu7fmW9pXw" name="ContinuityOfCareDocument">
     <ownedComment xmi:id="_2IJb0RSVEeGGzu7fmW9pXw" annotatedElement="_2IJb0BSVEeGGzu7fmW9pXw">
@@ -2638,7 +2762,9 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           <ownedRule xmi:id="_M0h7UDsxEeGvzMYhXuqAEA" name="assignedEntityHasPersonOrganizationOrBoth" constrainedElement="_tUQLcDswEeGvzMYhXuqAEA">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_YI39YDsxEeGvzMYhXuqAEA">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>The responsibleParty element, if present, SHALL contain an assignedEntity element which SHALL contain an assignedPerson element, a representedOrganization element, or both.</body>
+              <body>not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_68HvUDswEeGvzMYhXuqAEA">
@@ -2653,7 +2779,9 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           <ownedRule xmi:id="_ybGekDsyEeGvzMYhXuqAEA" name="assignedEntityHasPersonOrganizationOrBoth" constrainedElement="_tUQLcDswEeGvzMYhXuqAEA">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_ybGekTsyEeGvzMYhXuqAEA">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>The responsibleParty element, if present, SHALL contain an assignedEntity element which SHALL contain an assignedPerson element, a representedOrganization element, or both.</body>
+              <body>not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty()</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_Q4cAMDsyEeGvzMYhXuqAEA">
@@ -2848,5 +2976,81 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
   </uml:Association>
   <uml:Association xmi:id="_vZAiYjs5EeGXW8k29waQGA" memberEnd="_vZAiYDs5EeGXW8k29waQGA _vZAiYzs5EeGXW8k29waQGA">
     <ownedEnd xmi:id="_vZAiYzs5EeGXW8k29waQGA" type="_Or7FUDsyEeGvzMYhXuqAEA" association="_vZAiYjs5EeGXW8k29waQGA"/>
+  </uml:Association>
+  <CDA:ValueSetConstraint xmi:id="_zNL3IDzEEeGMk58Mp9-wVA" base_Property="_tzLskDzEEeGMk58Mp9-wVA">
+    <ruleId>CONF:8476</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_5hMWYDzFEeGMk58Mp9-wVA" base_Property="_tzLskzzEEeGMk58Mp9-wVA">
+    <ruleId>CONF:8473</ruleId>
+    <ruleId>CONF:8475</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_-JbFwDzFEeGMk58Mp9-wVA" base_Constraint="_8bTXEDzFEeGMk58Mp9-wVA">
+    <ruleId>CONF:8473</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_OYyQUDzGEeGMk58Mp9-wVA" base_Constraint="_cALIgTzFEeGMk58Mp9-wVA">
+    <ruleId>CONF:8479</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_T2XTUDzGEeGMk58Mp9-wVA" base_Constraint="_dTBQcTzFEeGMk58Mp9-wVA">
+    <ruleId>CONF:8478</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_aIQIIDzGEeGMk58Mp9-wVA" base_Constraint="_Ejp-QDzGEeGMk58Mp9-wVA">
+    <ruleId>CONF:8475</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_F6UhIjzEEeGMk58Mp9-wVA" memberEnd="_F6UhIDzEEeGMk58Mp9-wVA _F6UhIzzEEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_F6UhIzzEEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_F6UhIjzEEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_bylN4jzEEeGMk58Mp9-wVA" memberEnd="_bylN4DzEEeGMk58Mp9-wVA _bylN4zzEEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_bylN4zzEEeGMk58Mp9-wVA" type="_7G6B4DzDEeGMk58Mp9-wVA" association="_bylN4jzEEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_wxzkYjzFEeGMk58Mp9-wVA" memberEnd="_wxzkYDzFEeGMk58Mp9-wVA _wxzkYzzFEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_wxzkYzzFEeGMk58Mp9-wVA" type="_TeTqkDzEEeGMk58Mp9-wVA" association="_wxzkYjzFEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_zQf0YjzFEeGMk58Mp9-wVA" memberEnd="_zQf0YDzFEeGMk58Mp9-wVA _zQf0YzzFEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_zQf0YzzFEeGMk58Mp9-wVA" type="_TeTqkDzEEeGMk58Mp9-wVA" association="_zQf0YjzFEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_XBDRMjzHEeGMk58Mp9-wVA" memberEnd="_XBDRMDzHEeGMk58Mp9-wVA _XBDRMzzHEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_XBDRMzzHEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_XBDRMjzHEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_Zufu4jzHEeGMk58Mp9-wVA" memberEnd="_Zufu4DzHEeGMk58Mp9-wVA _Zufu4zzHEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_Zufu4zzHEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_Zufu4jzHEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_xKAXETzHEeGMk58Mp9-wVA" memberEnd="_xJ2mEDzHEeGMk58Mp9-wVA _xKAXEjzHEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_xKAXEjzHEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_xKAXETzHEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_hcNMAjzIEeGMk58Mp9-wVA" memberEnd="_hcNMADzIEeGMk58Mp9-wVA _hcNMAzzIEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_hcNMAzzIEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_hcNMAjzIEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_64c84jzIEeGMk58Mp9-wVA" memberEnd="_64c84DzIEeGMk58Mp9-wVA _64c84zzIEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_64c84zzIEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_64c84jzIEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_JDyaMjzJEeGMk58Mp9-wVA" memberEnd="_JDyaMDzJEeGMk58Mp9-wVA _JDyaMzzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_JDyaMzzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_JDyaMjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_N0z5MjzJEeGMk58Mp9-wVA" memberEnd="_N0z5MDzJEeGMk58Mp9-wVA _N0z5MzzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_N0z5MzzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_N0z5MjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_UcKAojzJEeGMk58Mp9-wVA" memberEnd="_UcKAoDzJEeGMk58Mp9-wVA _UcKAozzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_UcKAozzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_UcKAojzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_aeGU8jzJEeGMk58Mp9-wVA" memberEnd="_aeGU8DzJEeGMk58Mp9-wVA _aeGU8zzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_aeGU8zzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_aeGU8jzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_hj_ZkjzJEeGMk58Mp9-wVA" memberEnd="_hj_ZkDzJEeGMk58Mp9-wVA _hj_ZkzzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_hj_ZkzzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_hj_ZkjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_nJ6gQjzJEeGMk58Mp9-wVA" memberEnd="_nJ6gQDzJEeGMk58Mp9-wVA _nJ6gQzzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_nJ6gQzzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_nJ6gQjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_rgQ1cjzJEeGMk58Mp9-wVA" memberEnd="_rgQ1cDzJEeGMk58Mp9-wVA _rgQ1czzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_rgQ1czzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_rgQ1cjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_yQsncjzJEeGMk58Mp9-wVA" memberEnd="_yQsncDzJEeGMk58Mp9-wVA _yQsnczzJEeGMk58Mp9-wVA">
+    <ownedEnd xmi:id="_yQsnczzJEeGMk58Mp9-wVA" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_yQsncjzJEeGMk58Mp9-wVA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_0PA-kj0nEeGsYqsxu3WrRA" memberEnd="_0PA-kD0nEeGsYqsxu3WrRA _0PA-kz0nEeGsYqsxu3WrRA">
+    <ownedEnd xmi:id="_0PA-kz0nEeGsYqsxu3WrRA" type="_cALIgDzFEeGMk58Mp9-wVA" association="_0PA-kj0nEeGsYqsxu3WrRA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_4gASoj0nEeGsYqsxu3WrRA" memberEnd="_4gASoD0nEeGsYqsxu3WrRA _4gASoz0nEeGsYqsxu3WrRA">
+    <ownedEnd xmi:id="_4gASoz0nEeGsYqsxu3WrRA" type="_dTBQcDzFEeGMk58Mp9-wVA" association="_4gASoj0nEeGsYqsxu3WrRA"/>
   </uml:Association>
 </xmi:XMI>
