@@ -1397,6 +1397,25 @@ attribute should be set to &quot;NA&quot;.</body>
     <generalization xmi:id="_W8pI4TszEeGvzMYhXuqAEA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_8PsPYD32EeGYzOhiGkMbTA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8PsPYT32EeGYzOhiGkMbTA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8PsPYj32EeGYzOhiGkMbTA"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_8PsPYz32EeGYzOhiGkMbTA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8PsPZD32EeGYzOhiGkMbTA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8PsPZT32EeGYzOhiGkMbTA"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aByU4DszEeGvzMYhXuqAEA" base_Class="_W8pI4DszEeGvzMYhXuqAEA" templateId="2.16.840.1.113883.10.20.22.2.8"/>
+  <CDA:CodeSystemConstraint xmi:id="_83CjQD32EeGYzOhiGkMbTA" code="2. 51848-0" displayName="2.  Assessments" base_Property="_8PsPYD32EeGYzOhiGkMbTA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10382</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_IWSNwD33EeGYzOhiGkMbTA" base_Property="_8PsPYz32EeGYzOhiGkMbTA">
+    <ruleId>CONF:7713</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
