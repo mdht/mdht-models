@@ -946,6 +946,12 @@ The UDI should be sent in the participantRole/id.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_51hAUTiCEeGSytqLITd2FA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_4IPrwD2cEeG0sO4MiUmR4Q" name="scopingEntity" type="_hLqdIDosEeGSytqLITd2FA" association="_4IQS0D2cEeG0sO4MiUmR4Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IPrwT2cEeG0sO4MiUmR4Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_51HdQD2cEeG0sO4MiUmR4Q" name="playingDevice" type="_Jv3hEDosEeGSytqLITd2FA" association="_51IEUD2cEeG0sO4MiUmR4Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_51HdQT2cEeG0sO4MiUmR4Q"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hLqdIDosEeGSytqLITd2FA" name="ScopingEntity">
       <ownedComment xmi:id="_47CAQDv_EeGtp7JtQeULVw">
         <body>INLINE</body>
@@ -1383,4 +1389,10 @@ Entry Content Module.</body>
   <CDA:ClassValidation xmi:id="_Q5wfsDv_EeGtp7JtQeULVw" base_Class="_Jv3hEDosEeGSytqLITd2FA">
     <ruleId>CONF:7903</ruleId>
   </CDA:ClassValidation>
+  <uml:Association xmi:id="_4IQS0D2cEeG0sO4MiUmR4Q" memberEnd="_4IPrwD2cEeG0sO4MiUmR4Q _4IQ54D2cEeG0sO4MiUmR4Q">
+    <ownedEnd xmi:id="_4IQ54D2cEeG0sO4MiUmR4Q" type="_2G2bUxSVEeGGzu7fmW9pXw" association="_4IQS0D2cEeG0sO4MiUmR4Q"/>
+  </uml:Association>
+  <uml:Association xmi:id="_51IEUD2cEeG0sO4MiUmR4Q" memberEnd="_51HdQD2cEeG0sO4MiUmR4Q _51IEUT2cEeG0sO4MiUmR4Q">
+    <ownedEnd xmi:id="_51IEUT2cEeG0sO4MiUmR4Q" type="_2G2bUxSVEeGGzu7fmW9pXw" association="_51IEUD2cEeG0sO4MiUmR4Q"/>
+  </uml:Association>
 </xmi:XMI>
