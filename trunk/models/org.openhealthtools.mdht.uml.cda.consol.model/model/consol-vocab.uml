@@ -357,6 +357,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z8iQMDstEeGvzMYhXuqAEA" name="ConsultDocumentType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_R_D60DzDEeGMk58Mp9-wVA" name="DischargeSummaryDocumentTypeCode"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MBuukD1kEeG3tde5scYNWA" name="HPDocumentType"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -593,6 +594,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
   <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA"/>
   <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
 </xmi:XMI>
