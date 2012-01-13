@@ -82,6 +82,42 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProductInstanceScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductInstanceOperations.validateProductInstanceScopingEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductInstancePlayingDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductInstanceOperations.validateProductInstancePlayingDevice(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductInstanceScopingEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductInstanceOperations.validateProductInstanceScopingEntityId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductInstancePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductInstanceOperations.validateProductInstancePlayingDeviceCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProductInstance init() {
 		CDAUtil.init(this);
 		return this;
