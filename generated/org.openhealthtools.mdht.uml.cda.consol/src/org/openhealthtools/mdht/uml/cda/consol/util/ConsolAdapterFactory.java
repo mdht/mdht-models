@@ -1187,6 +1187,32 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseHistoryAndPhysicalNote(HistoryAndPhysicalNote object) {
+			return createHistoryAndPhysicalNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryAndPhysicalNote_ComponentOf(HistoryAndPhysicalNote_ComponentOf object) {
+			return createHistoryAndPhysicalNote_ComponentOfAdapter();
+		}
+
+		@Override
+		public Adapter caseComponentOf_EncompassingEncounter4(ComponentOf_EncompassingEncounter4 object) {
+			return createComponentOf_EncompassingEncounter4Adapter();
+		}
+
+		@Override
+		public Adapter caseEncompassingEncounter4_ResponsibleParty(EncompassingEncounter4_ResponsibleParty object) {
+			return createEncompassingEncounter4_ResponsiblePartyAdapter();
+		}
+
+		@Override
+		public Adapter caseEncompassingEncounter4_EncounterParticipant(
+				EncompassingEncounter4_EncounterParticipant object) {
+			return createEncompassingEncounter4_EncounterParticipantAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4750,6 +4776,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAssessmentSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote <em>History And Physical Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote
+	 * @generated
+	 */
+	public Adapter createHistoryAndPhysicalNoteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote_ComponentOf <em>History And Physical Note Component Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote_ComponentOf
+	 * @generated
+	 */
+	public Adapter createHistoryAndPhysicalNote_ComponentOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter4 <em>Component Of Encompassing Encounter4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter4
+	 * @generated
+	 */
+	public Adapter createComponentOf_EncompassingEncounter4Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter4_ResponsibleParty <em>Encompassing Encounter4 Responsible Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter4_ResponsibleParty
+	 * @generated
+	 */
+	public Adapter createEncompassingEncounter4_ResponsiblePartyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter4_EncounterParticipant <em>Encompassing Encounter4 Encounter Participant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter4_EncounterParticipant
+	 * @generated
+	 */
+	public Adapter createEncompassingEncounter4_EncounterParticipantAdapter() {
 		return null;
 	}
 

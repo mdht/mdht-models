@@ -1592,6 +1592,51 @@ public interface ConsolFactory extends EFactory {
 	AssessmentSection createAssessmentSection();
 
 	/**
+	 * Returns a new object of class '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History And Physical Note</em>'.
+	 * @generated
+	 */
+	HistoryAndPhysicalNote createHistoryAndPhysicalNote();
+
+	/**
+	 * Returns a new object of class '<em>History And Physical Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History And Physical Note Component Of</em>'.
+	 * @generated
+	 */
+	HistoryAndPhysicalNote_ComponentOf createHistoryAndPhysicalNote_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter4</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter4 createComponentOf_EncompassingEncounter4();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter4_ResponsibleParty createEncompassingEncounter4_ResponsibleParty();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

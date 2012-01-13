@@ -64,6 +64,24 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentSectionOperations.validateAssessmentSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentSectionOperations.validateAssessmentSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentSection init() {
 		CDAUtil.init(this);
 		return this;

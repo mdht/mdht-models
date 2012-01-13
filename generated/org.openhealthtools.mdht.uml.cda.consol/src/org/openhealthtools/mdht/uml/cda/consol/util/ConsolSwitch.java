@@ -3903,6 +3903,94 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE: {
+				HistoryAndPhysicalNote historyAndPhysicalNote = (HistoryAndPhysicalNote) theEObject;
+				T result = caseHistoryAndPhysicalNote(historyAndPhysicalNote);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(historyAndPhysicalNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(historyAndPhysicalNote);
+				}
+				if (result == null) {
+					result = caseAct(historyAndPhysicalNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyAndPhysicalNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF: {
+				HistoryAndPhysicalNote_ComponentOf historyAndPhysicalNote_ComponentOf = (HistoryAndPhysicalNote_ComponentOf) theEObject;
+				T result = caseHistoryAndPhysicalNote_ComponentOf(historyAndPhysicalNote_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(historyAndPhysicalNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(historyAndPhysicalNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyAndPhysicalNote_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER4: {
+				ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4 = (ComponentOf_EncompassingEncounter4) theEObject;
+				T result = caseComponentOf_EncompassingEncounter4(componentOf_EncompassingEncounter4);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter4);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY: {
+				EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty = (EncompassingEncounter4_ResponsibleParty) theEObject;
+				T result = caseEncompassingEncounter4_ResponsibleParty(encompassingEncounter4_ResponsibleParty);
+				if (result == null) {
+					result = caseResponsibleParty(encompassingEncounter4_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter4_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter4_ResponsibleParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT: {
+				EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant = (EncompassingEncounter4_EncounterParticipant) theEObject;
+				T result = caseEncompassingEncounter4_EncounterParticipant(encompassingEncounter4_EncounterParticipant);
+				if (result == null) {
+					result = caseEncounterParticipant(encompassingEncounter4_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter4_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter4_EncounterParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7387,6 +7475,81 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAssessmentSection(AssessmentSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History And Physical Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHistoryAndPhysicalNote(HistoryAndPhysicalNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>History And Physical Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History And Physical Note Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHistoryAndPhysicalNote_ComponentOf(HistoryAndPhysicalNote_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter4(ComponentOf_EncompassingEncounter4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter4_ResponsibleParty(EncompassingEncounter4_ResponsibleParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter4_EncounterParticipant(EncompassingEncounter4_EncounterParticipant object) {
 		return null;
 	}
 
