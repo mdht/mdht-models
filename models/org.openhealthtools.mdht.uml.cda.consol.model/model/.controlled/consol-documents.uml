@@ -3061,6 +3061,22 @@ The next portion of the report contains information obtained by physically exami
 The report ends with the clinician's assessment of the patient's situation and the intended plan to address those issues. 
 A History and Physical Examination is required upon hospital admission as well as before operative procedures. An initial evaluation in an ambulatory setting is often documented in the form of an H&amp;P Note.</body>
     </ownedComment>
+    <ownedRule xmi:id="_OMdNYD3rEeGYzOhiGkMbTA" name="hasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q_ShYD3rEeGYzOhiGkMbTA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL include an Assessment and Plan Section, or an Assessment Section and a Plan Section</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_sAyY0D3rEeGYzOhiGkMbTA" name="doesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t0LpED3rEeGYzOhiGkMbTA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_-QelMD1jEeG3tde5scYNWA" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_-2L6UD1jEeG3tde5scYNWA" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -3420,4 +3436,8 @@ A History and Physical Examination is required upon hospital admission as well a
   <uml:Association xmi:id="_en3RUD1mEeG3tde5scYNWA" memberEnd="_en2qQD1mEeG3tde5scYNWA _en3RUT1mEeG3tde5scYNWA">
     <ownedEnd xmi:id="_en3RUT1mEeG3tde5scYNWA" type="_B9BdgD1mEeG3tde5scYNWA" association="_en3RUD1mEeG3tde5scYNWA"/>
   </uml:Association>
+  <CDA:ConstraintValidation xmi:id="_cOVMsD3rEeGYzOhiGkMbTA" base_Constraint="_OMdNYD3rEeGYzOhiGkMbTA">
+    <ruleId>CONF:9986</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5kEXoD3rEeGYzOhiGkMbTA" base_Constraint="_sAyY0D3rEeGYzOhiGkMbTA"/>
 </xmi:XMI>
