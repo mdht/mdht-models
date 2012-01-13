@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Author;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Represents the author of the original content. It additionally can encode the original author?s institution in the subelement representedOrganization. Information regarding the original author and his/her institution shall be included, if it is known. In many cases this will have to be supplied by the operator.
+ * Represents the author of the original content. It additionally can encode the original author‟s institution in the subelement representedOrganization. Information regarding the original author and his/her institution shall be included, if it is known. In many cases this will have to be supplied by the operator.
  * <!-- end-model-doc -->
  *
  *

@@ -479,6 +479,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncompassingEncounter2_EncounterParticipant();
 			case ConsolPackage.ASSESSMENT_SECTION:
 				return createAssessmentSection();
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE:
+				return createHistoryAndPhysicalNote();
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF:
+				return createHistoryAndPhysicalNote_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER4:
+				return createComponentOf_EncompassingEncounter4();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY:
+				return createEncompassingEncounter4_ResponsibleParty();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT:
+				return createEncompassingEncounter4_EncounterParticipant();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2222,6 +2232,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryAndPhysicalNote createHistoryAndPhysicalNote() {
+		HistoryAndPhysicalNoteImpl historyAndPhysicalNote = new HistoryAndPhysicalNoteImpl();
+		return historyAndPhysicalNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryAndPhysicalNote_ComponentOf createHistoryAndPhysicalNote_ComponentOf() {
+		HistoryAndPhysicalNote_ComponentOfImpl historyAndPhysicalNote_ComponentOf = new HistoryAndPhysicalNote_ComponentOfImpl();
+		return historyAndPhysicalNote_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter4 createComponentOf_EncompassingEncounter4() {
+		ComponentOf_EncompassingEncounter4Impl componentOf_EncompassingEncounter4 = new ComponentOf_EncompassingEncounter4Impl();
+		return componentOf_EncompassingEncounter4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter4_ResponsibleParty createEncompassingEncounter4_ResponsibleParty() {
+		EncompassingEncounter4_ResponsiblePartyImpl encompassingEncounter4_ResponsibleParty = new EncompassingEncounter4_ResponsiblePartyImpl();
+		return encompassingEncounter4_ResponsibleParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant() {
+		EncompassingEncounter4_EncounterParticipantImpl encompassingEncounter4_EncounterParticipant = new EncompassingEncounter4_EncounterParticipantImpl();
+		return encompassingEncounter4_EncounterParticipant;
 	}
 
 	/**

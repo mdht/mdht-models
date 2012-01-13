@@ -10178,12 +10178,396 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID = 1267;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Code' of 'Assessment Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE = 1268;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Text' of 'Assessment Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEXT = 1269;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Has An Assement And Plan Section Or Individual Assement And Plan Sections' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS = 1270;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Does Not Have Individual Assement And Plan Sections When Assement And Plan Section Present' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT = 1271;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Template Id' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_TEMPLATE_ID = 1272;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note In Fulfillment Of' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF = 1273;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF = 1274;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Allergies Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 1275;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Assessment Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION = 1276;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Plan Of Care Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION = 1277;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Assessment And Plan Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1278;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Chief Complaint Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION = 1279;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Chief Complaint And Reason For Visit Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1280;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Family History Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION = 1281;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note General Status Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION = 1282;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note History Of Past Illness Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1283;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Medications Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1284;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Physical Exam Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION = 1285;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Reason For Visit Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION = 1286;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Results Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1287;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Review Of Systems Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1288;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Social History Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION = 1289;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note History Of Present Illness Section' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 1290;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Immunizations Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL = 1291;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Problem Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1292;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Procedures Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1293;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Vital Signs Section Entries Optional' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1294;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity Has Person Or Organization' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1295;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1296;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1297;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1298;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME = 1299;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Id' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID = 1300;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Location' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION = 1301;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 1302;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 1303;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1304;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1305;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Component Of Encompassing Encounter' of 'History And Physical Note Component Of'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1306;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter4 Effective Time' of 'Component Of Encompassing Encounter4'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4__ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME = 1307;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter4 Id' of 'Component Of Encompassing Encounter4'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4__ENCOMPASSING_ENCOUNTER4_ID = 1308;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter4 Location' of 'Component Of Encompassing Encounter4'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4__ENCOMPASSING_ENCOUNTER4_LOCATION = 1309;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter4 Responsible Party' of 'Component Of Encompassing Encounter4'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4__ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 1310;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter4 Encounter Participant' of 'Component Of Encompassing Encounter4'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4__ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 1311;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Responsible Party Assigned Entity Has Person Or Organization' of 'Encompassing Encounter4 Responsible Party'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1312;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Responsible Party Assigned Entity' of 'Encompassing Encounter4 Responsible Party'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1313;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Participant Assigned Entity Has Person Or Organization' of 'Encompassing Encounter4 Encounter Participant'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1314;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Participant Assigned Entity' of 'Encompassing Encounter4 Encounter Participant'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1315;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1267;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1315;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -10724,6 +11108,20 @@ public class ConsolValidator extends EObjectValidator {
 					(EncompassingEncounter2_EncounterParticipant) value, diagnostics, context);
 			case ConsolPackage.ASSESSMENT_SECTION:
 				return validateAssessmentSection((AssessmentSection) value, diagnostics, context);
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE:
+				return validateHistoryAndPhysicalNote((HistoryAndPhysicalNote) value, diagnostics, context);
+			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF:
+				return validateHistoryAndPhysicalNote_ComponentOf(
+					(HistoryAndPhysicalNote_ComponentOf) value, diagnostics, context);
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER4:
+				return validateComponentOf_EncompassingEncounter4(
+					(ComponentOf_EncompassingEncounter4) value, diagnostics, context);
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY:
+				return validateEncompassingEncounter4_ResponsibleParty(
+					(EncompassingEncounter4_ResponsibleParty) value, diagnostics, context);
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT:
+				return validateEncompassingEncounter4_EncounterParticipant(
+					(EncompassingEncounter4_EncounterParticipant) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -33896,6 +34294,12 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateAssessmentSection_validateAssessmentSectionTemplateId(
 				assessmentSection, diagnostics, context);
 		}
+		if (result || diagnostics != null) {
+			result &= validateAssessmentSection_validateAssessmentSectionCode(assessmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAssessmentSection_validateAssessmentSectionText(assessmentSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -33908,6 +34312,1365 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateAssessmentSection_validateAssessmentSectionTemplateId(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return assessmentSection.validateAssessmentSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAssessmentSectionCode constraint of '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentSection_validateAssessmentSectionCode(AssessmentSection assessmentSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return assessmentSection.validateAssessmentSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAssessmentSectionText constraint of '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentSection_validateAssessmentSectionText(AssessmentSection assessmentSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return assessmentSection.validateAssessmentSectionText(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote(HistoryAndPhysicalNote historyAndPhysicalNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(historyAndPhysicalNote, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(historyAndPhysicalNote, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPerson(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteTemplateId(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteInFulfillmentOf(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOf(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAssessmentSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNotePlanOfCareSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAssessmentAndPlanSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteChiefComplaintSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteFamilyHistorySection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteGeneralStatusSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNotePhysicalExamSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteReasonForVisitSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteReviewOfSystemsSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteSocialHistorySection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
+				historyAndPhysicalNote, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteTemplateId constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteTemplateId(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteInFulfillmentOf constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteInFulfillmentOf(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteInFulfillmentOf(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOf constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOf(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOf(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteAssessmentSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAssessmentSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteAssessmentSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNotePlanOfCareSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNotePlanOfCareSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNotePlanOfCareSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteAssessmentAndPlanSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteAssessmentAndPlanSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteAssessmentAndPlanSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteChiefComplaintSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteChiefComplaintSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteChiefComplaintSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteFamilyHistorySection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteFamilyHistorySection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteFamilyHistorySection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteGeneralStatusSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteGeneralStatusSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteGeneralStatusSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNotePhysicalExamSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNotePhysicalExamSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNotePhysicalExamSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteReasonForVisitSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteReasonForVisitSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteReasonForVisitSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteResultsSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteReviewOfSystemsSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteReviewOfSystemsSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteReviewOfSystemsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteSocialHistorySection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteSocialHistorySection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteSocialHistorySection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteProblemSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCode(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_ComponentOf(
+			HistoryAndPhysicalNote_ComponentOf historyAndPhysicalNote_ComponentOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(historyAndPhysicalNote_ComponentOf, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateComponent1_validateTypeCode(
+				historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryAndPhysicalNote_ComponentOf_validateComponentOfEncompassingEncounter(
+				historyAndPhysicalNote_ComponentOf, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateComponentOfEncompassingEncounter constraint of '<em>History And Physical Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_ComponentOf_validateComponentOfEncompassingEncounter(
+			HistoryAndPhysicalNote_ComponentOf historyAndPhysicalNote_ComponentOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return historyAndPhysicalNote_ComponentOf.validateComponentOfEncompassingEncounter(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(componentOf_EncompassingEncounter4, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(componentOf_EncompassingEncounter4, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEncompassingEncounter_validateClassCode(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEncompassingEncounter_validateMoodCode(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4EffectiveTime(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4Id(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4Location(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4ResponsibleParty(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4EncounterParticipant(
+				componentOf_EncompassingEncounter4, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter4EffectiveTime constraint of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4EffectiveTime(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter4.validateEncompassingEncounter4EffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter4Id constraint of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4Id(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter4.validateEncompassingEncounter4Id(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter4Location constraint of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4Location(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter4.validateEncompassingEncounter4Location(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter4ResponsibleParty constraint of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4ResponsibleParty(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter4.validateEncompassingEncounter4ResponsibleParty(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncompassingEncounter4EncounterParticipant constraint of '<em>Component Of Encompassing Encounter4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComponentOf_EncompassingEncounter4_validateEncompassingEncounter4EncounterParticipant(
+			ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return componentOf_EncompassingEncounter4.validateEncompassingEncounter4EncounterParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_ResponsibleParty(
+			EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(encompassingEncounter4_ResponsibleParty, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateResponsibleParty_validateTypeCode(
+				encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter4_ResponsibleParty_validateResponsiblePartyAssignedEntityHasPersonOrOrganization(
+				encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter4_ResponsibleParty_validateResponsiblePartyAssignedEntity(
+				encompassingEncounter4_ResponsibleParty, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateResponsiblePartyAssignedEntityHasPersonOrOrganization constraint of '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_ResponsibleParty_validateResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter4_ResponsibleParty.validateResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResponsiblePartyAssignedEntity constraint of '<em>Encompassing Encounter4 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_ResponsibleParty_validateResponsiblePartyAssignedEntity(
+			EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter4_ResponsibleParty.validateResponsiblePartyAssignedEntity(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_EncounterParticipant(
+			EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(encompassingEncounter4_EncounterParticipant, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(
+				encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter4_EncounterParticipant_validateEncounterParticipantAssignedEntityHasPersonOrOrganization(
+				encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncompassingEncounter4_EncounterParticipant_validateEncounterParticipantAssignedEntity(
+				encompassingEncounter4_EncounterParticipant, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateEncounterParticipantAssignedEntityHasPersonOrOrganization constraint of '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_EncounterParticipant_validateEncounterParticipantAssignedEntityHasPersonOrOrganization(
+			EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter4_EncounterParticipant.validateEncounterParticipantAssignedEntityHasPersonOrOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncounterParticipantAssignedEntity constraint of '<em>Encompassing Encounter4 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncompassingEncounter4_EncounterParticipant_validateEncounterParticipantAssignedEntity(
+			EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encompassingEncounter4_EncounterParticipant.validateEncounterParticipantAssignedEntity(
+			diagnostics, context);
 	}
 
 	/**
