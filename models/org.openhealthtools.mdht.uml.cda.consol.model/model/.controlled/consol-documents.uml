@@ -3053,7 +3053,7 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
   <uml:Association xmi:id="_4gASoj0nEeGsYqsxu3WrRA" memberEnd="_4gASoD0nEeGsYqsxu3WrRA _4gASoz0nEeGsYqsxu3WrRA">
     <ownedEnd xmi:id="_4gASoz0nEeGsYqsxu3WrRA" type="_dTBQcDzFEeGMk58Mp9-wVA" association="_4gASoj0nEeGsYqsxu3WrRA"/>
   </uml:Association>
-  <uml:Class xmi:id="_-Qa60D1jEeG3tde5scYNWA" name="HistoryandPhysicalNote">
+  <uml:Class xmi:id="_-Qa60D1jEeG3tde5scYNWA" name="HistoryAndPhysicalNote">
     <ownedComment xmi:id="_BkJVYD1kEeG3tde5scYNWA">
       <body>A History and Physical (H&amp;P) Note is a medical report that documents the current and past conditions of the patient. It contains essential information that helps determine an individual's health status. 
 The first portion of the report is a current collection of organized information unique to an individual, typically supplied by the patient or their caregiver, about the current medical problem or the reason for the patient encounter. This information is followed by a description of any past or ongoing medical issues, including current medications and allergies. Information is also obtained about the patient's lifestyle, habits, and diseases among family members.
@@ -3145,8 +3145,8 @@ A History and Physical Examination is required upon hospital admission as well a
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lxJ9UD1oEeG3tde5scYNWA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lxJ9UT1oEeG3tde5scYNWA" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_sIfIQD1nEeG3tde5scYNWA" name="historyOfPastIllnessSection" association="_sIfIQj1nEeG3tde5scYNWA">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2PQJcxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_sIfIQD1nEeG3tde5scYNWA" name="historyOfPresentIllnessSection" association="_sIfIQj1nEeG3tde5scYNWA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2PcWsRSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m23oMD1oEeG3tde5scYNWA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m23oMT1oEeG3tde5scYNWA" value="1"/>
     </ownedAttribute>
@@ -3168,6 +3168,9 @@ A History and Physical Examination is required upon hospital admission as well a
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ne-KAD1oEeG3tde5scYNWA" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_A4JVkD1lEeG3tde5scYNWA" name="ComponentOf">
+      <ownedComment xmi:id="_kbHGsD2EEeGYzOhiGkMbTA">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_FX2bED1lEeG3tde5scYNWA">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
@@ -3384,7 +3387,7 @@ A History and Physical Examination is required upon hospital admission as well a
   <CDA:AssociationValidation xmi:id="_F3nY4D1oEeG3tde5scYNWA" base_Association="_phhtET1nEeG3tde5scYNWA">
     <ruleId>CONF:9633</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_GSPfYD1oEeG3tde5scYNWA" base_Association="_sIfIQj1nEeG3tde5scYNWA">
+  <CDA:AssociationValidation xmi:id="_GSPfYD1oEeG3tde5scYNWA" severity="WARNING" base_Association="_sIfIQj1nEeG3tde5scYNWA">
     <ruleId>CONF:9621</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_GqzwYD1oEeG3tde5scYNWA" severity="INFO" base_Association="_x7eakT1nEeG3tde5scYNWA">
