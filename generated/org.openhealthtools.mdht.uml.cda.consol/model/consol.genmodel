@@ -1512,6 +1512,22 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProductInstance/ProductInstanceScopingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceScopingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceScopingEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProductInstance/ProductInstancePlayingDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstancePlayingDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstancePlayingDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProductInstance/ProductInstanceScopingEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceScopingEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstanceScopingEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProductInstance/ProductInstancePlayingDeviceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstancePlayingDeviceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProductInstance/ProductInstancePlayingDeviceCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProductInstance_ScopingEntity">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProductInstance_ScopingEntity/ScopingEntityId">
