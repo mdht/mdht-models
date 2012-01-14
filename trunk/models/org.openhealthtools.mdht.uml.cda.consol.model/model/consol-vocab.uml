@@ -358,6 +358,12 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z8iQMDstEeGvzMYhXuqAEA" name="ConsultDocumentType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_R_D60DzDEeGMk58Mp9-wVA" name="DischargeSummaryDocumentTypeCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_MBuukD1kEeG3tde5scYNWA" name="HPDocumentType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IuPWwD4jEeGhnL_c4sBHGg" name="SurgicalOperationNoteDocumentTypeCode"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UcKZoD4nEeGtCLm-c2g23Q" name="ProviderType">
+      <ownedComment xmi:id="_b_Jp8D4nEeGtCLm-c2g23Q">
+        <body>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -599,4 +605,8 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" url="http://www.nucc.org/index.php?option=com_content&amp;task=view&amp;id=14&amp;Itemid=40" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>
 </xmi:XMI>
