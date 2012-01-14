@@ -10594,12 +10594,324 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1319;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Template Id' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_TEMPLATE_ID = 1320;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF = 1321;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Anesthesia Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION = 1322;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Complications Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION = 1323;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Postoperative Diagnosis Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION = 1324;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Preoperative Diagnosis Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION = 1325;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Estimated Blood Loss Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 1326;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Findings Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION = 1327;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Specimens Taken Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 1328;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Description Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 1329;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Implants Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION = 1330;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Operative Note Fluid Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION = 1331;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Operative Note Surgical Procedure Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION = 1332;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Plan Of Care Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION = 1333;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Planned Procedure Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION = 1334;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Disposition Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION = 1335;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Indications Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION = 1336;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Surgical Drains Section' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION = 1337;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Function Code' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE = 1338;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Type Code' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE = 1339;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Procedure Codes' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES = 1340;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time Has Low' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW = 1341;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1342;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time No High If Width' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1343;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Any Assistants As Secondary' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY = 1344;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Code' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE = 1345;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 1346;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT = 1347;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1348;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Documentation Of Service Event' of 'Operative Note Documentation Of'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE_DOCUMENTATION_OF__DOCUMENTATION_OF_SERVICE_EVENT = 1349;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Procedure Codes' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_PROCEDURE_CODES = 1350;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Effective Time Has Low' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW = 1351;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Effective Time Has High When No Width' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1352;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Effective Time No High If Width' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1353;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Any Assistants As Secondary' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY = 1354;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Code' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_CODE = 1355;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event Effective Time' of 'Documentation Of Service Event'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME = 1356;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Primary Performer Function Code' of 'Service Event Primary Performer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_FUNCTION_CODE = 1357;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Primary Performer Type Code' of 'Service Event Primary Performer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_TYPE_CODE = 1358;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1319;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1358;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -11154,6 +11466,16 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT:
 				return validateEncompassingEncounter4_EncounterParticipant(
 					(EncompassingEncounter4_EncounterParticipant) value, diagnostics, context);
+			case ConsolPackage.OPERATIVE_NOTE:
+				return validateOperativeNote((OperativeNote) value, diagnostics, context);
+			case ConsolPackage.OPERATIVE_NOTE_DOCUMENTATION_OF:
+				return validateOperativeNote_DocumentationOf(
+					(OperativeNote_DocumentationOf) value, diagnostics, context);
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT:
+				return validateDocumentationOf_ServiceEvent((DocumentationOf_ServiceEvent) value, diagnostics, context);
+			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER:
+				return validateServiceEvent_PrimaryPerformer(
+					(ServiceEvent_PrimaryPerformer) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -35763,6 +36085,1167 @@ public class ConsolValidator extends EObjectValidator {
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encompassingEncounter4_EncounterParticipant.validateEncounterParticipantAssignedEntity(
 			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote(OperativeNote operativeNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(operativeNote, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(operativeNote, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateGeneralHeaderConstraintsCode(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPerson(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteTemplateId(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOf(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteAnesthesiaSection(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteComplicationsSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNotePostoperativeDiagnosisSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNotePreoperativeDiagnosisSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureEstimatedBloodLossSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureFindingsSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureSpecimensTakenSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureDescriptionSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureImplantsSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteOperativeNoteFluidSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteOperativeNoteSurgicalProcedureSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNotePlanOfCareSection(operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNotePlannedProcedureSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureDispositionSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteProcedureIndicationsSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteSurgicalDrainsSection(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventProcedureCodes(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventCode(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTime(
+				operativeNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_validateOperativeNoteDocumentationOfServiceEvent(
+				operativeNote, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateOperativeNoteTemplateId constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteTemplateId(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOf constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOf(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOf(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteAnesthesiaSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteAnesthesiaSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteAnesthesiaSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteComplicationsSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteComplicationsSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteComplicationsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNotePostoperativeDiagnosisSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNotePostoperativeDiagnosisSection(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNotePostoperativeDiagnosisSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNotePreoperativeDiagnosisSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNotePreoperativeDiagnosisSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNotePreoperativeDiagnosisSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureEstimatedBloodLossSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureEstimatedBloodLossSection(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureEstimatedBloodLossSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureFindingsSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureFindingsSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureFindingsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureSpecimensTakenSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureSpecimensTakenSection(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureSpecimensTakenSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureDescriptionSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureDescriptionSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureDescriptionSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureImplantsSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureImplantsSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureImplantsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteOperativeNoteFluidSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteOperativeNoteFluidSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteOperativeNoteFluidSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteOperativeNoteSurgicalProcedureSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteOperativeNoteSurgicalProcedureSection(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteOperativeNoteSurgicalProcedureSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNotePlanOfCareSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNotePlanOfCareSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNotePlanOfCareSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNotePlannedProcedureSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNotePlannedProcedureSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNotePlannedProcedureSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureDispositionSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureDispositionSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureDispositionSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteProcedureIndicationsSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteProcedureIndicationsSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteProcedureIndicationsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteSurgicalDrainsSection constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteSurgicalDrainsSection(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteSurgicalDrainsSection(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventProcedureCodes constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventProcedureCodes(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventProcedureCodes(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventCode constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventCode(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEventEffectiveTime constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEventEffectiveTime(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEventEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOperativeNoteDocumentationOfServiceEvent constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateOperativeNoteDocumentationOfServiceEvent(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateOperativeNoteDocumentationOfServiceEvent(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateGeneralHeaderConstraintsCode(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_DocumentationOf(OperativeNote_DocumentationOf operativeNote_DocumentationOf,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(operativeNote_DocumentationOf, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(operativeNote_DocumentationOf, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateDocumentationOf_validateTypeCode(
+				operativeNote_DocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOperativeNote_DocumentationOf_validateDocumentationOfServiceEvent(
+				operativeNote_DocumentationOf, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateDocumentationOfServiceEvent constraint of '<em>Operative Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_DocumentationOf_validateDocumentationOfServiceEvent(
+			OperativeNote_DocumentationOf operativeNote_DocumentationOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return operativeNote_DocumentationOf.validateDocumentationOfServiceEvent(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent(DocumentationOf_ServiceEvent documentationOf_ServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(documentationOf_ServiceEvent, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(documentationOf_ServiceEvent, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateServiceEvent_validateMoodCode(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventProcedureCodes(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeHasLow(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeHasHighWhenNoWidth(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeNoHighIfWidth(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventAnyAssistantsAsSecondary(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventCode(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTime(
+				documentationOf_ServiceEvent, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateServiceEventProcedureCodes constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventProcedureCodes(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventProcedureCodes(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventEffectiveTimeHasLow constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeHasLow(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventEffectiveTimeHasLow(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventEffectiveTimeHasHighWhenNoWidth constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeHasHighWhenNoWidth(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventEffectiveTimeHasHighWhenNoWidth(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventEffectiveTimeNoHighIfWidth constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTimeNoHighIfWidth(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventEffectiveTimeNoHighIfWidth(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventAnyAssistantsAsSecondary constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventAnyAssistantsAsSecondary(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventAnyAssistantsAsSecondary(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventCode constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventCode(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateServiceEventEffectiveTime constraint of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDocumentationOf_ServiceEvent_validateServiceEventEffectiveTime(
+			DocumentationOf_ServiceEvent documentationOf_ServiceEvent, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return documentationOf_ServiceEvent.validateServiceEventEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateServiceEvent_PrimaryPerformer(ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(serviceEvent_PrimaryPerformer, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(serviceEvent_PrimaryPerformer, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateServiceEvent_PrimaryPerformer_validatePrimaryPerformerFunctionCode(
+				serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateServiceEvent_PrimaryPerformer_validatePrimaryPerformerTypeCode(
+				serviceEvent_PrimaryPerformer, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePrimaryPerformerFunctionCode constraint of '<em>Service Event Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateServiceEvent_PrimaryPerformer_validatePrimaryPerformerFunctionCode(
+			ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return serviceEvent_PrimaryPerformer.validatePrimaryPerformerFunctionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePrimaryPerformerTypeCode constraint of '<em>Service Event Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateServiceEvent_PrimaryPerformer_validatePrimaryPerformerTypeCode(
+			ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return serviceEvent_PrimaryPerformer.validatePrimaryPerformerTypeCode(diagnostics, context);
 	}
 
 	/**

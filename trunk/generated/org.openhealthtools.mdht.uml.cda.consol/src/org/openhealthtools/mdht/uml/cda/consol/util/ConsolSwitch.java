@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 import org.openhealthtools.mdht.uml.cda.Device;
+import org.openhealthtools.mdht.uml.cda.DocumentationOf;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
@@ -58,6 +59,7 @@ import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.Specimen;
 import org.openhealthtools.mdht.uml.cda.Subject;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
@@ -3991,6 +3993,77 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.OPERATIVE_NOTE: {
+				OperativeNote operativeNote = (OperativeNote) theEObject;
+				T result = caseOperativeNote(operativeNote);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(operativeNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(operativeNote);
+				}
+				if (result == null) {
+					result = caseAct(operativeNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(operativeNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.OPERATIVE_NOTE_DOCUMENTATION_OF: {
+				OperativeNote_DocumentationOf operativeNote_DocumentationOf = (OperativeNote_DocumentationOf) theEObject;
+				T result = caseOperativeNote_DocumentationOf(operativeNote_DocumentationOf);
+				if (result == null) {
+					result = caseDocumentationOf(operativeNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(operativeNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(operativeNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT: {
+				DocumentationOf_ServiceEvent documentationOf_ServiceEvent = (DocumentationOf_ServiceEvent) theEObject;
+				T result = caseDocumentationOf_ServiceEvent(documentationOf_ServiceEvent);
+				if (result == null) {
+					result = caseServiceEvent(documentationOf_ServiceEvent);
+				}
+				if (result == null) {
+					result = caseAct(documentationOf_ServiceEvent);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(documentationOf_ServiceEvent);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER: {
+				ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer = (ServiceEvent_PrimaryPerformer) theEObject;
+				T result = caseServiceEvent_PrimaryPerformer(serviceEvent_PrimaryPerformer);
+				if (result == null) {
+					result = casePerformer1(serviceEvent_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = caseParticipation(serviceEvent_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(serviceEvent_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7554,6 +7627,66 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operative Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOperativeNote(OperativeNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operative Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operative Note Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOperativeNote_DocumentationOf(OperativeNote_DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of Service Event</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf_ServiceEvent(DocumentationOf_ServiceEvent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Service Event Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Service Event Primary Performer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseServiceEvent_PrimaryPerformer(ServiceEvent_PrimaryPerformer object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performer1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -7970,6 +8103,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSubject(Subject object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf(DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Service Event</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseServiceEvent(ServiceEvent object) {
 		return null;
 	}
 
