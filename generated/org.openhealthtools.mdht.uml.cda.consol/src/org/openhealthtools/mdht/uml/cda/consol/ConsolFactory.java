@@ -1637,6 +1637,42 @@ public interface ConsolFactory extends EFactory {
 	EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant();
 
 	/**
+	 * Returns a new object of class '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operative Note</em>'.
+	 * @generated
+	 */
+	OperativeNote createOperativeNote();
+
+	/**
+	 * Returns a new object of class '<em>Operative Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operative Note Documentation Of</em>'.
+	 * @generated
+	 */
+	OperativeNote_DocumentationOf createOperativeNote_DocumentationOf();
+
+	/**
+	 * Returns a new object of class '<em>Documentation Of Service Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Documentation Of Service Event</em>'.
+	 * @generated
+	 */
+	DocumentationOf_ServiceEvent createDocumentationOf_ServiceEvent();
+
+	/**
+	 * Returns a new object of class '<em>Service Event Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Service Event Primary Performer</em>'.
+	 * @generated
+	 */
+	ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -489,6 +489,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncompassingEncounter4_ResponsibleParty();
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT:
 				return createEncompassingEncounter4_EncounterParticipant();
+			case ConsolPackage.OPERATIVE_NOTE:
+				return createOperativeNote();
+			case ConsolPackage.OPERATIVE_NOTE_DOCUMENTATION_OF:
+				return createOperativeNote_DocumentationOf();
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT:
+				return createDocumentationOf_ServiceEvent();
+			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER:
+				return createServiceEvent_PrimaryPerformer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2282,6 +2290,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant() {
 		EncompassingEncounter4_EncounterParticipantImpl encompassingEncounter4_EncounterParticipant = new EncompassingEncounter4_EncounterParticipantImpl();
 		return encompassingEncounter4_EncounterParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNote createOperativeNote() {
+		OperativeNoteImpl operativeNote = new OperativeNoteImpl();
+		return operativeNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNote_DocumentationOf createOperativeNote_DocumentationOf() {
+		OperativeNote_DocumentationOfImpl operativeNote_DocumentationOf = new OperativeNote_DocumentationOfImpl();
+		return operativeNote_DocumentationOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DocumentationOf_ServiceEvent createDocumentationOf_ServiceEvent() {
+		DocumentationOf_ServiceEventImpl documentationOf_ServiceEvent = new DocumentationOf_ServiceEventImpl();
+		return documentationOf_ServiceEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer() {
+		ServiceEvent_PrimaryPerformerImpl serviceEvent_PrimaryPerformer = new ServiceEvent_PrimaryPerformerImpl();
+		return serviceEvent_PrimaryPerformer;
 	}
 
 	/**
