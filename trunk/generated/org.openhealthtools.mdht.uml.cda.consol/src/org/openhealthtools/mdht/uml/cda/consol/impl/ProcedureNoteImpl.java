@@ -81,6 +81,28 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteTemplateId(this, diagnostics, context);
 	}
@@ -399,6 +421,83 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteIndividualTypeId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteIndividualTypeId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Code(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Code(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Location(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Location(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(
+			this, diagnostics, context);
 	}
 
 	/**
