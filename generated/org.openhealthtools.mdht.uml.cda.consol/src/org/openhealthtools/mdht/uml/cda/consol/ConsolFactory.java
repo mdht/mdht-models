@@ -1673,6 +1673,123 @@ public interface ConsolFactory extends EFactory {
 	ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer();
 
 	/**
+	 * Returns a new object of class '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note</em>'.
+	 * @generated
+	 */
+	ProcedureNote createProcedureNote();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note Component Of</em>'.
+	 * @generated
+	 */
+	ProcedureNote_ComponentOf createProcedureNote_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter5</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter5</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter5 createComponentOf_EncompassingEncounter5();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter5 Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter5 Location</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter5_Location createEncompassingEncounter5_Location();
+
+	/**
+	 * Returns a new object of class '<em>Location Health Care Facility</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Location Health Care Facility</em>'.
+	 * @generated
+	 */
+	Location_HealthCareFacility createLocation_HealthCareFacility();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter5 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter5 Encounter Participant</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter5_EncounterParticipant createEncompassingEncounter5_EncounterParticipant();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note Individual</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note Individual</em>'.
+	 * @generated
+	 */
+	ProcedureNote_Individual createProcedureNote_Individual();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note Primary Care Physician</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note Primary Care Physician</em>'.
+	 * @generated
+	 */
+	ProcedureNote_PrimaryCarePhysician createProcedureNote_PrimaryCarePhysician();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note Provider</em>'.
+	 * @generated
+	 */
+	ProcedureNote_Provider createProcedureNote_Provider();
+
+	/**
+	 * Returns a new object of class '<em>Provider Associated Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Provider Associated Entity</em>'.
+	 * @generated
+	 */
+	Provider_AssociatedEntity createProvider_AssociatedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Note Documentation Of</em>'.
+	 * @generated
+	 */
+	ProcedureNote_DocumentationOf createProcedureNote_DocumentationOf();
+
+	/**
+	 * Returns a new object of class '<em>Documentation Of Service Event1</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Documentation Of Service Event1</em>'.
+	 * @generated
+	 */
+	DocumentationOf_ServiceEvent1 createDocumentationOf_ServiceEvent1();
+
+	/**
+	 * Returns a new object of class '<em>Service Event1 Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Service Event1 Primary Performer</em>'.
+	 * @generated
+	 */
+	ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

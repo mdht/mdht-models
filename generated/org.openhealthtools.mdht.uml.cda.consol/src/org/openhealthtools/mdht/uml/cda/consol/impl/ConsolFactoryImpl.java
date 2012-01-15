@@ -497,6 +497,32 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDocumentationOf_ServiceEvent();
 			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER:
 				return createServiceEvent_PrimaryPerformer();
+			case ConsolPackage.PROCEDURE_NOTE:
+				return createProcedureNote();
+			case ConsolPackage.PROCEDURE_NOTE_COMPONENT_OF:
+				return createProcedureNote_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5:
+				return createComponentOf_EncompassingEncounter5();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_LOCATION:
+				return createEncompassingEncounter5_Location();
+			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY:
+				return createLocation_HealthCareFacility();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT:
+				return createEncompassingEncounter5_EncounterParticipant();
+			case ConsolPackage.PROCEDURE_NOTE_INDIVIDUAL:
+				return createProcedureNote_Individual();
+			case ConsolPackage.PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN:
+				return createProcedureNote_PrimaryCarePhysician();
+			case ConsolPackage.PROCEDURE_NOTE_PROVIDER:
+				return createProcedureNote_Provider();
+			case ConsolPackage.PROVIDER_ASSOCIATED_ENTITY:
+				return createProvider_AssociatedEntity();
+			case ConsolPackage.PROCEDURE_NOTE_DOCUMENTATION_OF:
+				return createProcedureNote_DocumentationOf();
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT1:
+				return createDocumentationOf_ServiceEvent1();
+			case ConsolPackage.SERVICE_EVENT1_PRIMARY_PERFORMER:
+				return createServiceEvent1_PrimaryPerformer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2330,6 +2356,136 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer() {
 		ServiceEvent_PrimaryPerformerImpl serviceEvent_PrimaryPerformer = new ServiceEvent_PrimaryPerformerImpl();
 		return serviceEvent_PrimaryPerformer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote createProcedureNote() {
+		ProcedureNoteImpl procedureNote = new ProcedureNoteImpl();
+		return procedureNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote_ComponentOf createProcedureNote_ComponentOf() {
+		ProcedureNote_ComponentOfImpl procedureNote_ComponentOf = new ProcedureNote_ComponentOfImpl();
+		return procedureNote_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter5 createComponentOf_EncompassingEncounter5() {
+		ComponentOf_EncompassingEncounter5Impl componentOf_EncompassingEncounter5 = new ComponentOf_EncompassingEncounter5Impl();
+		return componentOf_EncompassingEncounter5;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter5_Location createEncompassingEncounter5_Location() {
+		EncompassingEncounter5_LocationImpl encompassingEncounter5_Location = new EncompassingEncounter5_LocationImpl();
+		return encompassingEncounter5_Location;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Location_HealthCareFacility createLocation_HealthCareFacility() {
+		Location_HealthCareFacilityImpl location_HealthCareFacility = new Location_HealthCareFacilityImpl();
+		return location_HealthCareFacility;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter5_EncounterParticipant createEncompassingEncounter5_EncounterParticipant() {
+		EncompassingEncounter5_EncounterParticipantImpl encompassingEncounter5_EncounterParticipant = new EncompassingEncounter5_EncounterParticipantImpl();
+		return encompassingEncounter5_EncounterParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote_Individual createProcedureNote_Individual() {
+		ProcedureNote_IndividualImpl procedureNote_Individual = new ProcedureNote_IndividualImpl();
+		return procedureNote_Individual;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote_PrimaryCarePhysician createProcedureNote_PrimaryCarePhysician() {
+		ProcedureNote_PrimaryCarePhysicianImpl procedureNote_PrimaryCarePhysician = new ProcedureNote_PrimaryCarePhysicianImpl();
+		return procedureNote_PrimaryCarePhysician;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote_Provider createProcedureNote_Provider() {
+		ProcedureNote_ProviderImpl procedureNote_Provider = new ProcedureNote_ProviderImpl();
+		return procedureNote_Provider;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Provider_AssociatedEntity createProvider_AssociatedEntity() {
+		Provider_AssociatedEntityImpl provider_AssociatedEntity = new Provider_AssociatedEntityImpl();
+		return provider_AssociatedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNote_DocumentationOf createProcedureNote_DocumentationOf() {
+		ProcedureNote_DocumentationOfImpl procedureNote_DocumentationOf = new ProcedureNote_DocumentationOfImpl();
+		return procedureNote_DocumentationOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DocumentationOf_ServiceEvent1 createDocumentationOf_ServiceEvent1() {
+		DocumentationOf_ServiceEvent1Impl documentationOf_ServiceEvent1 = new DocumentationOf_ServiceEvent1Impl();
+		return documentationOf_ServiceEvent1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer() {
+		ServiceEvent1_PrimaryPerformerImpl serviceEvent1_PrimaryPerformer = new ServiceEvent1_PrimaryPerformerImpl();
+		return serviceEvent1_PrimaryPerformer;
 	}
 
 	/**

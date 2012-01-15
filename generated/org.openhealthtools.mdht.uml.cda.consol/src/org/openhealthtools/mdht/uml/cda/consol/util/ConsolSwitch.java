@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
 import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.AuthoringDevice;
@@ -30,12 +31,14 @@ import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
+import org.openhealthtools.mdht.uml.cda.HealthCareFacility;
 import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
 import org.openhealthtools.mdht.uml.cda.Informant12;
 import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
+import org.openhealthtools.mdht.uml.cda.Location;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -4064,6 +4067,230 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROCEDURE_NOTE: {
+				ProcedureNote procedureNote = (ProcedureNote) theEObject;
+				T result = caseProcedureNote(procedureNote);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(procedureNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(procedureNote);
+				}
+				if (result == null) {
+					result = caseAct(procedureNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE_COMPONENT_OF: {
+				ProcedureNote_ComponentOf procedureNote_ComponentOf = (ProcedureNote_ComponentOf) theEObject;
+				T result = caseProcedureNote_ComponentOf(procedureNote_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(procedureNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(procedureNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5: {
+				ComponentOf_EncompassingEncounter5 componentOf_EncompassingEncounter5 = (ComponentOf_EncompassingEncounter5) theEObject;
+				T result = caseComponentOf_EncompassingEncounter5(componentOf_EncompassingEncounter5);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter5);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter5);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter5);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_LOCATION: {
+				EncompassingEncounter5_Location encompassingEncounter5_Location = (EncompassingEncounter5_Location) theEObject;
+				T result = caseEncompassingEncounter5_Location(encompassingEncounter5_Location);
+				if (result == null) {
+					result = caseLocation(encompassingEncounter5_Location);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter5_Location);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter5_Location);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY: {
+				Location_HealthCareFacility location_HealthCareFacility = (Location_HealthCareFacility) theEObject;
+				T result = caseLocation_HealthCareFacility(location_HealthCareFacility);
+				if (result == null) {
+					result = caseHealthCareFacility(location_HealthCareFacility);
+				}
+				if (result == null) {
+					result = caseRole(location_HealthCareFacility);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(location_HealthCareFacility);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT: {
+				EncompassingEncounter5_EncounterParticipant encompassingEncounter5_EncounterParticipant = (EncompassingEncounter5_EncounterParticipant) theEObject;
+				T result = caseEncompassingEncounter5_EncounterParticipant(encompassingEncounter5_EncounterParticipant);
+				if (result == null) {
+					result = caseEncounterParticipant(encompassingEncounter5_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter5_EncounterParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter5_EncounterParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE_INDIVIDUAL: {
+				ProcedureNote_Individual procedureNote_Individual = (ProcedureNote_Individual) theEObject;
+				T result = caseProcedureNote_Individual(procedureNote_Individual);
+				if (result == null) {
+					result = caseParticipant1(procedureNote_Individual);
+				}
+				if (result == null) {
+					result = caseParticipation(procedureNote_Individual);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote_Individual);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN: {
+				ProcedureNote_PrimaryCarePhysician procedureNote_PrimaryCarePhysician = (ProcedureNote_PrimaryCarePhysician) theEObject;
+				T result = caseProcedureNote_PrimaryCarePhysician(procedureNote_PrimaryCarePhysician);
+				if (result == null) {
+					result = caseParticipant1(procedureNote_PrimaryCarePhysician);
+				}
+				if (result == null) {
+					result = caseParticipation(procedureNote_PrimaryCarePhysician);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote_PrimaryCarePhysician);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE_PROVIDER: {
+				ProcedureNote_Provider procedureNote_Provider = (ProcedureNote_Provider) theEObject;
+				T result = caseProcedureNote_Provider(procedureNote_Provider);
+				if (result == null) {
+					result = caseParticipant1(procedureNote_Provider);
+				}
+				if (result == null) {
+					result = caseParticipation(procedureNote_Provider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote_Provider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROVIDER_ASSOCIATED_ENTITY: {
+				Provider_AssociatedEntity provider_AssociatedEntity = (Provider_AssociatedEntity) theEObject;
+				T result = caseProvider_AssociatedEntity(provider_AssociatedEntity);
+				if (result == null) {
+					result = caseAssociatedEntity(provider_AssociatedEntity);
+				}
+				if (result == null) {
+					result = caseRole(provider_AssociatedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(provider_AssociatedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_NOTE_DOCUMENTATION_OF: {
+				ProcedureNote_DocumentationOf procedureNote_DocumentationOf = (ProcedureNote_DocumentationOf) theEObject;
+				T result = caseProcedureNote_DocumentationOf(procedureNote_DocumentationOf);
+				if (result == null) {
+					result = caseDocumentationOf(procedureNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(procedureNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT1: {
+				DocumentationOf_ServiceEvent1 documentationOf_ServiceEvent1 = (DocumentationOf_ServiceEvent1) theEObject;
+				T result = caseDocumentationOf_ServiceEvent1(documentationOf_ServiceEvent1);
+				if (result == null) {
+					result = caseServiceEvent(documentationOf_ServiceEvent1);
+				}
+				if (result == null) {
+					result = caseAct(documentationOf_ServiceEvent1);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(documentationOf_ServiceEvent1);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SERVICE_EVENT1_PRIMARY_PERFORMER: {
+				ServiceEvent1_PrimaryPerformer serviceEvent1_PrimaryPerformer = (ServiceEvent1_PrimaryPerformer) theEObject;
+				T result = caseServiceEvent1_PrimaryPerformer(serviceEvent1_PrimaryPerformer);
+				if (result == null) {
+					result = casePerformer1(serviceEvent1_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = caseParticipation(serviceEvent1_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(serviceEvent1_PrimaryPerformer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7687,6 +7914,201 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote(ProcedureNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote_ComponentOf(ProcedureNote_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter5</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter5</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter5(ComponentOf_EncompassingEncounter5 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter5 Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter5 Location</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter5_Location(EncompassingEncounter5_Location object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Location Health Care Facility</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Location Health Care Facility</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLocation_HealthCareFacility(Location_HealthCareFacility object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter5 Encounter Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter5 Encounter Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter5_EncounterParticipant(EncompassingEncounter5_EncounterParticipant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note Individual</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note Individual</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote_Individual(ProcedureNote_Individual object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note Primary Care Physician</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note Primary Care Physician</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote_PrimaryCarePhysician(ProcedureNote_PrimaryCarePhysician object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note Provider</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote_Provider(ProcedureNote_Provider object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Provider Associated Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Provider Associated Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProvider_AssociatedEntity(Provider_AssociatedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Note Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureNote_DocumentationOf(ProcedureNote_DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of Service Event1</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of Service Event1</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf_ServiceEvent1(DocumentationOf_ServiceEvent1 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Service Event1 Primary Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Service Event1 Primary Performer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseServiceEvent1_PrimaryPerformer(ServiceEvent1_PrimaryPerformer object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performer1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8133,6 +8555,51 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseServiceEvent(ServiceEvent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Location</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLocation(Location object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Care Facility</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Care Facility</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthCareFacility(HealthCareFacility object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Associated Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Associated Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssociatedEntity(AssociatedEntity object) {
 		return null;
 	}
 

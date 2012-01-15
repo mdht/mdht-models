@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
 import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.AuthoringDevice;
@@ -32,12 +33,14 @@ import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
+import org.openhealthtools.mdht.uml.cda.HealthCareFacility;
 import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
 import org.openhealthtools.mdht.uml.cda.Informant12;
 import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
+import org.openhealthtools.mdht.uml.cda.Location;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -1235,6 +1238,72 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProcedureNote(ProcedureNote object) {
+			return createProcedureNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote_ComponentOf(ProcedureNote_ComponentOf object) {
+			return createProcedureNote_ComponentOfAdapter();
+		}
+
+		@Override
+		public Adapter caseComponentOf_EncompassingEncounter5(ComponentOf_EncompassingEncounter5 object) {
+			return createComponentOf_EncompassingEncounter5Adapter();
+		}
+
+		@Override
+		public Adapter caseEncompassingEncounter5_Location(EncompassingEncounter5_Location object) {
+			return createEncompassingEncounter5_LocationAdapter();
+		}
+
+		@Override
+		public Adapter caseLocation_HealthCareFacility(Location_HealthCareFacility object) {
+			return createLocation_HealthCareFacilityAdapter();
+		}
+
+		@Override
+		public Adapter caseEncompassingEncounter5_EncounterParticipant(
+				EncompassingEncounter5_EncounterParticipant object) {
+			return createEncompassingEncounter5_EncounterParticipantAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote_Individual(ProcedureNote_Individual object) {
+			return createProcedureNote_IndividualAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote_PrimaryCarePhysician(ProcedureNote_PrimaryCarePhysician object) {
+			return createProcedureNote_PrimaryCarePhysicianAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote_Provider(ProcedureNote_Provider object) {
+			return createProcedureNote_ProviderAdapter();
+		}
+
+		@Override
+		public Adapter caseProvider_AssociatedEntity(Provider_AssociatedEntity object) {
+			return createProvider_AssociatedEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureNote_DocumentationOf(ProcedureNote_DocumentationOf object) {
+			return createProcedureNote_DocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter caseDocumentationOf_ServiceEvent1(DocumentationOf_ServiceEvent1 object) {
+			return createDocumentationOf_ServiceEvent1Adapter();
+		}
+
+		@Override
+		public Adapter caseServiceEvent1_PrimaryPerformer(ServiceEvent1_PrimaryPerformer object) {
+			return createServiceEvent1_PrimaryPerformerAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -1542,6 +1611,21 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseServiceEvent(ServiceEvent object) {
 			return createServiceEventAdapter();
+		}
+
+		@Override
+		public Adapter caseLocation(Location object) {
+			return createLocationAdapter();
+		}
+
+		@Override
+		public Adapter caseHealthCareFacility(HealthCareFacility object) {
+			return createHealthCareFacilityAdapter();
+		}
+
+		@Override
+		public Adapter caseAssociatedEntity(AssociatedEntity object) {
+			return createAssociatedEntityAdapter();
 		}
 
 		@Override
@@ -4938,6 +5022,188 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote <em>Procedure Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote
+	 * @generated
+	 */
+	public Adapter createProcedureNoteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_ComponentOf <em>Procedure Note Component Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_ComponentOf
+	 * @generated
+	 */
+	public Adapter createProcedureNote_ComponentOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter5 <em>Component Of Encompassing Encounter5</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter5
+	 * @generated
+	 */
+	public Adapter createComponentOf_EncompassingEncounter5Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter5_Location <em>Encompassing Encounter5 Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter5_Location
+	 * @generated
+	 */
+	public Adapter createEncompassingEncounter5_LocationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Location_HealthCareFacility <em>Location Health Care Facility</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Location_HealthCareFacility
+	 * @generated
+	 */
+	public Adapter createLocation_HealthCareFacilityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter5_EncounterParticipant <em>Encompassing Encounter5 Encounter Participant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter5_EncounterParticipant
+	 * @generated
+	 */
+	public Adapter createEncompassingEncounter5_EncounterParticipantAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_Individual <em>Procedure Note Individual</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_Individual
+	 * @generated
+	 */
+	public Adapter createProcedureNote_IndividualAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_PrimaryCarePhysician <em>Procedure Note Primary Care Physician</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_PrimaryCarePhysician
+	 * @generated
+	 */
+	public Adapter createProcedureNote_PrimaryCarePhysicianAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_Provider <em>Procedure Note Provider</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_Provider
+	 * @generated
+	 */
+	public Adapter createProcedureNote_ProviderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Provider_AssociatedEntity <em>Provider Associated Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Provider_AssociatedEntity
+	 * @generated
+	 */
+	public Adapter createProvider_AssociatedEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_DocumentationOf <em>Procedure Note Documentation Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureNote_DocumentationOf
+	 * @generated
+	 */
+	public Adapter createProcedureNote_DocumentationOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent1 <em>Documentation Of Service Event1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent1
+	 * @generated
+	 */
+	public Adapter createDocumentationOf_ServiceEvent1Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ServiceEvent1_PrimaryPerformer <em>Service Event1 Primary Performer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ServiceEvent1_PrimaryPerformer
+	 * @generated
+	 */
+	public Adapter createServiceEvent1_PrimaryPerformerAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Performer1 <em>Performer1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5354,6 +5620,48 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createServiceEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Location <em>Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Location
+	 * @generated
+	 */
+	public Adapter createLocationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.HealthCareFacility <em>Health Care Facility</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.HealthCareFacility
+	 * @generated
+	 */
+	public Adapter createHealthCareFacilityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.AssociatedEntity <em>Associated Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.AssociatedEntity
+	 * @generated
+	 */
+	public Adapter createAssociatedEntityAdapter() {
 		return null;
 	}
 
