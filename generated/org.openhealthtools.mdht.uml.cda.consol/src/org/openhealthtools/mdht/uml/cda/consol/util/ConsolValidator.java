@@ -10906,12 +10906,28 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_TYPE_CODE = 1358;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Has An Assement And Plan Section Or Individual Assement And Plan Sections' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS = 1359;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Does Not Have Individual Assement And Plan Sections When Assement And Plan Section Present' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT = 1360;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Template Id' of 'Procedure Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_TEMPLATE_ID = 1359;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_TEMPLATE_ID = 1361;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Individual' of 'Procedure Note'.
@@ -10919,7 +10935,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL = 1360;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL = 1362;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of' of 'Procedure Note'.
@@ -10927,7 +10943,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF = 1361;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF = 1363;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Primary Care Physician' of 'Procedure Note'.
@@ -10935,7 +10951,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN = 1362;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN = 1364;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Provider' of 'Procedure Note'.
@@ -10943,7 +10959,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER = 1363;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER = 1365;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Assessment Section' of 'Procedure Note'.
@@ -10951,7 +10967,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION = 1364;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION = 1366;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Plan Of Care Section' of 'Procedure Note'.
@@ -10959,7 +10975,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION = 1365;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION = 1367;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Assessment And Plan Section' of 'Procedure Note'.
@@ -10967,7 +10983,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1366;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1368;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Complications Section' of 'Procedure Note'.
@@ -10975,7 +10991,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPLICATIONS_SECTION = 1367;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPLICATIONS_SECTION = 1369;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Postprocedure Diagnosis Section' of 'Procedure Note'.
@@ -10983,7 +10999,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION = 1368;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION = 1370;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Description Section' of 'Procedure Note'.
@@ -10991,7 +11007,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 1369;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 1371;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Indications Section' of 'Procedure Note'.
@@ -10999,7 +11015,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION = 1370;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION = 1372;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Allergies Section Entries Optional' of 'Procedure Note'.
@@ -11007,7 +11023,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 1371;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 1373;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Anesthesia Section' of 'Procedure Note'.
@@ -11015,7 +11031,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION = 1372;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION = 1374;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Chief Complaint Section' of 'Procedure Note'.
@@ -11023,7 +11039,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION = 1373;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION = 1375;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Chief Complaint And Reason For Visit Section' of 'Procedure Note'.
@@ -11031,7 +11047,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1374;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1376;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Family History Section' of 'Procedure Note'.
@@ -11039,7 +11055,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_FAMILY_HISTORY_SECTION = 1375;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_FAMILY_HISTORY_SECTION = 1377;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note History Of Past Illness Section' of 'Procedure Note'.
@@ -11047,7 +11063,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1376;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1378;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note History Of Present Illness Section' of 'Procedure Note'.
@@ -11055,7 +11071,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 1377;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 1379;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medical History Section' of 'Procedure Note'.
@@ -11063,7 +11079,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION = 1378;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION = 1380;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medications Section Entries Optional' of 'Procedure Note'.
@@ -11071,7 +11087,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1379;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1381;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medications Administered Section' of 'Procedure Note'.
@@ -11079,7 +11095,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION = 1380;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION = 1382;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Physical Exam Section' of 'Procedure Note'.
@@ -11087,7 +11103,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION = 1381;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION = 1383;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Planned Procedure Section' of 'Procedure Note'.
@@ -11095,7 +11111,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION = 1382;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION = 1384;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Disposition Section' of 'Procedure Note'.
@@ -11103,7 +11119,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION = 1383;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION = 1385;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Estimated Blood Loss Section' of 'Procedure Note'.
@@ -11111,7 +11127,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 1384;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 1386;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Findings Section' of 'Procedure Note'.
@@ -11119,7 +11135,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION = 1385;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION = 1387;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Implants Section' of 'Procedure Note'.
@@ -11127,7 +11143,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION = 1386;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION = 1388;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Specimens Taken Section' of 'Procedure Note'.
@@ -11135,7 +11151,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 1387;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 1389;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedures Section Entries Optional' of 'Procedure Note'.
@@ -11143,7 +11159,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1388;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1390;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Reason For Visit Section' of 'Procedure Note'.
@@ -11151,7 +11167,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION = 1389;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION = 1391;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Review Of Systems Section' of 'Procedure Note'.
@@ -11159,7 +11175,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1390;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1392;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Social History Section' of 'Procedure Note'.
@@ -11167,7 +11183,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION = 1391;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION = 1393;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Individual Type Id' of 'Procedure Note'.
@@ -11175,7 +11191,63 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID = 1392;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID = 1394;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location Health Care Facility Id' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID = 1395;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location Health Care Facility' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY = 1396;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Encounter Participant Type Code' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE = 1397;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Code' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE = 1398;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION = 1399;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Encounter Participant' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 1400;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 1401;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Provider Associated Entity Associated Person' of 'Procedure Note'.
@@ -11183,7 +11255,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 1393;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 1402;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Procedure Note'.
@@ -11191,7 +11263,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1394;
+	public static final int PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1403;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Component Of Encompassing Encounter5' of 'Procedure Note Component Of'.
@@ -11199,7 +11271,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 1395;
+	public static final int PROCEDURE_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 1404;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter5 Code' of 'Component Of Encompassing Encounter5'.
@@ -11207,7 +11279,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_CODE = 1396;
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_CODE = 1405;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter5 Location' of 'Component Of Encompassing Encounter5'.
@@ -11215,7 +11287,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_LOCATION = 1397;
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_LOCATION = 1406;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encompassing Encounter5 Encounter Participant' of 'Component Of Encompassing Encounter5'.
@@ -11223,7 +11295,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 1398;
+	public static final int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 1407;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Location Health Care Facility' of 'Encompassing Encounter5 Location'.
@@ -11231,7 +11303,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOMPASSING_ENCOUNTER5_LOCATION__LOCATION_HEALTH_CARE_FACILITY = 1399;
+	public static final int ENCOMPASSING_ENCOUNTER5_LOCATION__LOCATION_HEALTH_CARE_FACILITY = 1408;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Care Facility Id' of 'Location Health Care Facility'.
@@ -11239,7 +11311,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LOCATION_HEALTH_CARE_FACILITY__HEALTH_CARE_FACILITY_ID = 1400;
+	public static final int LOCATION_HEALTH_CARE_FACILITY__HEALTH_CARE_FACILITY_ID = 1409;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Participant Type Code' of 'Encompassing Encounter5 Encounter Participant'.
@@ -11247,7 +11319,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_TYPE_CODE = 1401;
+	public static final int ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_TYPE_CODE = 1410;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Individual Type Id' of 'Procedure Note Individual'.
@@ -11255,7 +11327,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE_INDIVIDUAL__INDIVIDUAL_TYPE_ID = 1402;
+	public static final int PROCEDURE_NOTE_INDIVIDUAL__INDIVIDUAL_TYPE_ID = 1411;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Associated Entity Associated Person' of 'Provider Associated Entity'.
@@ -11263,7 +11335,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROVIDER_ASSOCIATED_ENTITY__ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 1403;
+	public static final int PROVIDER_ASSOCIATED_ENTITY__ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 1412;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Procedure Codes' of 'Documentation Of Service Event1'.
@@ -11271,7 +11343,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_PROCEDURE_CODES = 1404;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_PROCEDURE_CODES = 1413;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Effective Time Has Low' of 'Documentation Of Service Event1'.
@@ -11279,7 +11351,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_HAS_LOW = 1405;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_HAS_LOW = 1414;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Effective Time Has High When No Width' of 'Documentation Of Service Event1'.
@@ -11287,7 +11359,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1406;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1415;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Effective Time No High If Width' of 'Documentation Of Service Event1'.
@@ -11295,7 +11367,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1407;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1416;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Any Assistants As Secondary' of 'Documentation Of Service Event1'.
@@ -11303,7 +11375,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_ANY_ASSISTANTS_AS_SECONDARY = 1408;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_ANY_ASSISTANTS_AS_SECONDARY = 1417;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Code' of 'Documentation Of Service Event1'.
@@ -11311,7 +11383,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_CODE = 1409;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_CODE = 1418;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Event1 Effective Time' of 'Documentation Of Service Event1'.
@@ -11319,7 +11391,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME = 1410;
+	public static final int DOCUMENTATION_OF_SERVICE_EVENT1__SERVICE_EVENT1_EFFECTIVE_TIME = 1419;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Primary Performer Function Code' of 'Service Event1 Primary Performer'.
@@ -11327,7 +11399,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_EVENT1_PRIMARY_PERFORMER__PRIMARY_PERFORMER_FUNCTION_CODE = 1411;
+	public static final int SERVICE_EVENT1_PRIMARY_PERFORMER__PRIMARY_PERFORMER_FUNCTION_CODE = 1420;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -11335,7 +11407,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1411;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 1420;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -38168,6 +38240,14 @@ public class ConsolValidator extends EObjectValidator {
 				procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateProcedureNote_validateProcedureNoteTemplateId(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -38296,10 +38376,62 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateProcedureNote_validateProcedureNoteIndividualTypeId(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5Code(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5Location(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5(
+				procedureNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateProcedureNote_validateProcedureNoteProviderAssociatedEntityAssociatedPerson(
 				procedureNote, diagnostics, context);
 		}
 		return result;
+	}
+
+	/**
+	 * Validates the validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			diagnostics, context);
 	}
 
 	/**
@@ -38674,6 +38806,87 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateProcedureNote_validateProcedureNoteIndividualTypeId(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedureNote.validateProcedureNoteIndividualTypeId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5Code constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5Code(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5Code(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5Location constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5Location(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5Location(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureNoteComponentOfEncompassingEncounter5 constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateProcedureNoteComponentOfEncompassingEncounter5(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateProcedureNoteComponentOfEncompassingEncounter5(diagnostics, context);
 	}
 
 	/**

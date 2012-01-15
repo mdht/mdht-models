@@ -5989,6 +5989,14 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProcedureNote">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteTemplateId/context"/>
@@ -6124,6 +6132,34 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteIndividualTypeId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteIndividualTypeId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteIndividualTypeId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Code">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Code/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Code/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Location">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Location/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5Location/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOfEncompassingEncounter5/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteProviderAssociatedEntityAssociatedPerson">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteProviderAssociatedEntityAssociatedPerson/diagnostics"/>
