@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.openhealthtools.org/mdht/uml/cda/consoltoc"
+            class="org.openhealthtools.mdht.uml.cda.consoltoc.ConsoltocPackage"
+            genModel="model/consoltoc.genmodel"/>
+   </extension>
+
+</plugin>

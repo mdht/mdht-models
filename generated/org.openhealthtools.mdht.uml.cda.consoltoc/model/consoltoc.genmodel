@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.consoltoc/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.consoltoc" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="consoltoc_Ecore" modelPluginClass="ConsoltocPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    runtimeVersion="2.5" usedGenPackages="../../org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.genmodel#//consol platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>consoltoc_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Consoltoc" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="consoltoc.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.consoltoc.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consoltoc.ecore#//DischargeSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHospitalCourseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHospitalDischargeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHospitalDischargeMedicationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getProblemSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getChiefComplaintAndReasonForVisitSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getDischargeDietSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHistoryOfPresentIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHospitalDischargePhysicalSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getHospitalDischargeStudiesSummarySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getProceduresSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getReasonForVisitSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getReviewOfSystemsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getVitalSignsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeSummary/getImmunizationsSectionEntriesOptional"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consoltoc.ecore#//ConsultationRequest">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getAssessmentAndPlanSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getHistoryOfPresentIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getPhysicalExamSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getReasonForReferralSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getMedicationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getProblemSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getProceduresSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getResultsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getAdvanceDirectivesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getEncountersSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getImmunizationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getVitalSignsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getChiefComplaintAndReasonForVisitSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getGeneralStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getHistoryOfPastIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationRequest/getPayersSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consoltoc.ecore#//ConsultationSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getMedicationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getProblemSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getResultsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getAdvanceDirectivesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getEncountersSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getImmunizationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getProceduresSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getPayersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//ConsultationSummary/getVitalSignsSectionEntriesOptional"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consoltoc.ecore#//DischargeInstructions">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getProblemSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getHospitalDischargeMedicationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAdvanceDirectivesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getImmunizationsSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAdvanceDirectivesSectionEntriesOptional2"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
