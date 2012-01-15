@@ -3710,6 +3710,22 @@ A History and Physical Examination is required upon hospital admission as well a
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_dGMJMD-VEeGvOdejHZ7dYg" base_Constraint="_w0p5MD4nEeGtCLm-c2g23Q"/>
   <uml:Class xmi:id="_LuYEsD7YEeGvOdejHZ7dYg" name="ProcedureNote">
+    <ownedRule xmi:id="_NBpHsD-6EeGtTIIxHid14Q" name="hasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_NBpHsT-6EeGtTIIxHid14Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL include an Assessment and Plan Section, or an Assessment Section and a Plan Section</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Ot-tsD-6EeGtTIIxHid14Q" name="doesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ot-tsT-6EeGtTIIxHid14Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_Luag8D7YEeGvOdejHZ7dYg" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_S9Np8D7YEeGvOdejHZ7dYg" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -3846,6 +3862,9 @@ A History and Physical Examination is required upon hospital admission as well a
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NopyQT-XEeGvOdejHZ7dYg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5JnTkD7YEeGvOdejHZ7dYg" name="ComponentOf">
+      <ownedComment xmi:id="_gIsSED-vEeGtTIIxHid14Q">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_DkNqMD7ZEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
@@ -3920,7 +3939,7 @@ A History and Physical Examination is required upon hospital admission as well a
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_UAm-YD-NEeGvOdejHZ7dYg" name="PrimaryCarePhysician">
       <ownedComment xmi:id="_ybOGsD-NEeGvOdejHZ7dYg">
-        <body>INLINE&amp;typeCode=vocab::ParticipationType::PCP</body>
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::PRCP</body>
       </ownedComment>
       <generalization xmi:id="_ZbTFcD-NEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
@@ -3928,7 +3947,7 @@ A History and Physical Examination is required upon hospital admission as well a
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_-bwgYD-NEeGvOdejHZ7dYg" name="Provider">
       <ownedComment xmi:id="_Fl39sD-OEeGvOdejHZ7dYg">
-        <body>INLINE&amp;typeCode&lt;>vocab::ParticipationType::PCP and typeCode&lt;>vocab::ParticipationType::IND</body>
+        <body>INLINE&amp;typeCode&lt;>vocab::ParticipationType::PRCP and typeCode&lt;>vocab::ParticipationType::IND</body>
       </ownedComment>
       <generalization xmi:id="_HxWWwD-OEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
@@ -3947,6 +3966,9 @@ A History and Physical Examination is required upon hospital admission as well a
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_aYrE8D-TEeGvOdejHZ7dYg" name="DocumentationOf">
+      <ownedComment xmi:id="_hpGU4D-vEeGtTIIxHid14Q">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_gQbigD-TEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
@@ -4286,4 +4308,10 @@ A History and Physical Examination is required upon hospital admission as well a
   <uml:Association xmi:id="_6l3FgD-QEeGvOdejHZ7dYg" memberEnd="_6l2ecD-QEeGvOdejHZ7dYg _6l3FgT-QEeGvOdejHZ7dYg">
     <ownedEnd xmi:id="_6l3FgT-QEeGvOdejHZ7dYg" type="_6-yFcD7YEeGvOdejHZ7dYg" association="_6l3FgD-QEeGvOdejHZ7dYg"/>
   </uml:Association>
+  <CDA:ConstraintValidation xmi:id="_QFc28D-6EeGtTIIxHid14Q" base_Constraint="_NBpHsD-6EeGtTIIxHid14Q">
+    <ruleId>CONF:9643</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Qex88D-6EeGtTIIxHid14Q" base_Constraint="_Ot-tsD-6EeGtTIIxHid14Q">
+    <ruleId>CONF:10064</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
