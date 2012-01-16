@@ -4291,6 +4291,128 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROGRESS_NOTE: {
+				ProgressNote progressNote = (ProgressNote) theEObject;
+				T result = caseProgressNote(progressNote);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(progressNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(progressNote);
+				}
+				if (result == null) {
+					result = caseAct(progressNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGRESS_NOTE_DOCUMENTATION_OF: {
+				ProgressNote_DocumentationOf progressNote_DocumentationOf = (ProgressNote_DocumentationOf) theEObject;
+				T result = caseProgressNote_DocumentationOf(progressNote_DocumentationOf);
+				if (result == null) {
+					result = caseDocumentationOf(progressNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(progressNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressNote_DocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT2: {
+				DocumentationOf_ServiceEvent2 documentationOf_ServiceEvent2 = (DocumentationOf_ServiceEvent2) theEObject;
+				T result = caseDocumentationOf_ServiceEvent2(documentationOf_ServiceEvent2);
+				if (result == null) {
+					result = caseServiceEvent(documentationOf_ServiceEvent2);
+				}
+				if (result == null) {
+					result = caseAct(documentationOf_ServiceEvent2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(documentationOf_ServiceEvent2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGRESS_NOTE_COMPONENT_OF: {
+				ProgressNote_ComponentOf progressNote_ComponentOf = (ProgressNote_ComponentOf) theEObject;
+				T result = caseProgressNote_ComponentOf(progressNote_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(progressNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(progressNote_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressNote_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6: {
+				ComponentOf_EncompassingEncounter6 componentOf_EncompassingEncounter6 = (ComponentOf_EncompassingEncounter6) theEObject;
+				T result = caseComponentOf_EncompassingEncounter6(componentOf_EncompassingEncounter6);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter6);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter6);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter6);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER6_LOCATION: {
+				EncompassingEncounter6_Location encompassingEncounter6_Location = (EncompassingEncounter6_Location) theEObject;
+				T result = caseEncompassingEncounter6_Location(encompassingEncounter6_Location);
+				if (result == null) {
+					result = caseLocation(encompassingEncounter6_Location);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter6_Location);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter6_Location);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY1: {
+				Location_HealthCareFacility1 location_HealthCareFacility1 = (Location_HealthCareFacility1) theEObject;
+				T result = caseLocation_HealthCareFacility1(location_HealthCareFacility1);
+				if (result == null) {
+					result = caseHealthCareFacility(location_HealthCareFacility1);
+				}
+				if (result == null) {
+					result = caseRole(location_HealthCareFacility1);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(location_HealthCareFacility1);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -8105,6 +8227,111 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseServiceEvent1_PrimaryPerformer(ServiceEvent1_PrimaryPerformer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProgressNote(ProgressNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Note Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProgressNote_DocumentationOf(ProgressNote_DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of Service Event2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of Service Event2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf_ServiceEvent2(DocumentationOf_ServiceEvent2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Note Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProgressNote_ComponentOf(ProgressNote_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter6</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter6</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter6(ComponentOf_EncompassingEncounter6 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter6 Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter6 Location</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter6_Location(EncompassingEncounter6_Location object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Location Health Care Facility1</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Location Health Care Facility1</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLocation_HealthCareFacility1(Location_HealthCareFacility1 object) {
 		return null;
 	}
 

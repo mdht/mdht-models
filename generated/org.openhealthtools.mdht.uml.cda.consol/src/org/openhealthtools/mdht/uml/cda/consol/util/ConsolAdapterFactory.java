@@ -1304,6 +1304,41 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProgressNote(ProgressNote object) {
+			return createProgressNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseProgressNote_DocumentationOf(ProgressNote_DocumentationOf object) {
+			return createProgressNote_DocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter caseDocumentationOf_ServiceEvent2(DocumentationOf_ServiceEvent2 object) {
+			return createDocumentationOf_ServiceEvent2Adapter();
+		}
+
+		@Override
+		public Adapter caseProgressNote_ComponentOf(ProgressNote_ComponentOf object) {
+			return createProgressNote_ComponentOfAdapter();
+		}
+
+		@Override
+		public Adapter caseComponentOf_EncompassingEncounter6(ComponentOf_EncompassingEncounter6 object) {
+			return createComponentOf_EncompassingEncounter6Adapter();
+		}
+
+		@Override
+		public Adapter caseEncompassingEncounter6_Location(EncompassingEncounter6_Location object) {
+			return createEncompassingEncounter6_LocationAdapter();
+		}
+
+		@Override
+		public Adapter caseLocation_HealthCareFacility1(Location_HealthCareFacility1 object) {
+			return createLocation_HealthCareFacility1Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -5200,6 +5235,104 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createServiceEvent1_PrimaryPerformerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote <em>Progress Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProgressNote
+	 * @generated
+	 */
+	public Adapter createProgressNoteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote_DocumentationOf <em>Progress Note Documentation Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProgressNote_DocumentationOf
+	 * @generated
+	 */
+	public Adapter createProgressNote_DocumentationOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent2 <em>Documentation Of Service Event2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent2
+	 * @generated
+	 */
+	public Adapter createDocumentationOf_ServiceEvent2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote_ComponentOf <em>Progress Note Component Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProgressNote_ComponentOf
+	 * @generated
+	 */
+	public Adapter createProgressNote_ComponentOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter6 <em>Component Of Encompassing Encounter6</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ComponentOf_EncompassingEncounter6
+	 * @generated
+	 */
+	public Adapter createComponentOf_EncompassingEncounter6Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter6_Location <em>Encompassing Encounter6 Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncompassingEncounter6_Location
+	 * @generated
+	 */
+	public Adapter createEncompassingEncounter6_LocationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Location_HealthCareFacility1 <em>Location Health Care Facility1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Location_HealthCareFacility1
+	 * @generated
+	 */
+	public Adapter createLocation_HealthCareFacility1Adapter() {
 		return null;
 	}
 

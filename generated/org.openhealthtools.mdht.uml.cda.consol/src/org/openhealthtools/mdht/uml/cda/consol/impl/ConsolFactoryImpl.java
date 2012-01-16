@@ -523,6 +523,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDocumentationOf_ServiceEvent1();
 			case ConsolPackage.SERVICE_EVENT1_PRIMARY_PERFORMER:
 				return createServiceEvent1_PrimaryPerformer();
+			case ConsolPackage.PROGRESS_NOTE:
+				return createProgressNote();
+			case ConsolPackage.PROGRESS_NOTE_DOCUMENTATION_OF:
+				return createProgressNote_DocumentationOf();
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT2:
+				return createDocumentationOf_ServiceEvent2();
+			case ConsolPackage.PROGRESS_NOTE_COMPONENT_OF:
+				return createProgressNote_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6:
+				return createComponentOf_EncompassingEncounter6();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER6_LOCATION:
+				return createEncompassingEncounter6_Location();
+			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY1:
+				return createLocation_HealthCareFacility1();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2486,6 +2500,76 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer() {
 		ServiceEvent1_PrimaryPerformerImpl serviceEvent1_PrimaryPerformer = new ServiceEvent1_PrimaryPerformerImpl();
 		return serviceEvent1_PrimaryPerformer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressNote createProgressNote() {
+		ProgressNoteImpl progressNote = new ProgressNoteImpl();
+		return progressNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressNote_DocumentationOf createProgressNote_DocumentationOf() {
+		ProgressNote_DocumentationOfImpl progressNote_DocumentationOf = new ProgressNote_DocumentationOfImpl();
+		return progressNote_DocumentationOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DocumentationOf_ServiceEvent2 createDocumentationOf_ServiceEvent2() {
+		DocumentationOf_ServiceEvent2Impl documentationOf_ServiceEvent2 = new DocumentationOf_ServiceEvent2Impl();
+		return documentationOf_ServiceEvent2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressNote_ComponentOf createProgressNote_ComponentOf() {
+		ProgressNote_ComponentOfImpl progressNote_ComponentOf = new ProgressNote_ComponentOfImpl();
+		return progressNote_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter6 createComponentOf_EncompassingEncounter6() {
+		ComponentOf_EncompassingEncounter6Impl componentOf_EncompassingEncounter6 = new ComponentOf_EncompassingEncounter6Impl();
+		return componentOf_EncompassingEncounter6;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter6_Location createEncompassingEncounter6_Location() {
+		EncompassingEncounter6_LocationImpl encompassingEncounter6_Location = new EncompassingEncounter6_LocationImpl();
+		return encompassingEncounter6_Location;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Location_HealthCareFacility1 createLocation_HealthCareFacility1() {
+		Location_HealthCareFacility1Impl location_HealthCareFacility1 = new Location_HealthCareFacility1Impl();
+		return location_HealthCareFacility1;
 	}
 
 	/**
