@@ -28,105 +28,105 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional;
 public interface DischargeInstructions extends GeneralHeaderConstraints
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(PlanOfCareSection))->asSequence()->first().oclAsType(PlanOfCareSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(PlanOfCareSection))->asSequence()->first().oclAsType(PlanOfCareSection)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)'"
+   * @generated
+   */
   PlanOfCareSection getPlanOfCareSection();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(AllergiesSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(AllergiesSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)'"
+   * @generated
+   */
   AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(ProblemSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(ProblemSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)'"
+   * @generated
+   */
   ProblemSectionEntriesOptional getProblemSectionEntriesOptional();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(HospitalDischargeMedicationsSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(HospitalDischargeMedicationsSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::HospitalDischargeMedicationsSectionEntriesOptional)'"
+   * @generated
+   */
   HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSectionEntriesOptional();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(AdvanceDirectivesSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(AdvanceDirectivesSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)'"
+   * @generated
+   */
   AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(ImmunizationsSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(ImmunizationsSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
+   * @generated
+   */
   ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(MedicalEquipmentSection))->asSequence()->first().oclAsType(MedicalEquipmentSection)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(MedicalEquipmentSection))->asSequence()->first().oclAsType(MedicalEquipmentSection)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->first().oclAsType(consol::MedicalEquipmentSection)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->first().oclAsType(consol::MedicalEquipmentSection)'"
+   * @generated
+   */
   MedicalEquipmentSection getMedicalEquipmentSection();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(AdvanceDirectivesSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(AdvanceDirectivesSectionEntriesOptional)'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)'"
+   * @generated
+   */
   AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional2();
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DischargeInstructions init();
 } // DischargeInstructions

@@ -39,124 +39,125 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl implements DischargeInstructions
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected DischargeInstructionsImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS;
-	}
+    return ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PlanOfCareSection getPlanOfCareSection()
   {
-		return DischargeInstructionsOperations.getPlanOfCareSection(this);
-	}
+    return DischargeInstructionsOperations.getPlanOfCareSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional()
   {
-		return DischargeInstructionsOperations.getAllergiesSectionEntriesOptional(this);
-	}
+    return DischargeInstructionsOperations.getAllergiesSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ProblemSectionEntriesOptional getProblemSectionEntriesOptional()
   {
-		return DischargeInstructionsOperations.getProblemSectionEntriesOptional(this);
-	}
+    return DischargeInstructionsOperations.getProblemSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSectionEntriesOptional()
   {
-		return DischargeInstructionsOperations.getHospitalDischargeMedicationsSectionEntriesOptional(this);
-	}
+    return DischargeInstructionsOperations.getHospitalDischargeMedicationsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional()
   {
-		return DischargeInstructionsOperations.getAdvanceDirectivesSectionEntriesOptional(this);
-	}
+    return DischargeInstructionsOperations.getAdvanceDirectivesSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional()
   {
-		return DischargeInstructionsOperations.getImmunizationsSectionEntriesOptional(this);
-	}
+    return DischargeInstructionsOperations.getImmunizationsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MedicalEquipmentSection getMedicalEquipmentSection()
   {
-		return DischargeInstructionsOperations.getMedicalEquipmentSection(this);
-	}
+    return DischargeInstructionsOperations.getMedicalEquipmentSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional2()
   {
-		return DischargeInstructionsOperations.getAdvanceDirectivesSectionEntriesOptional2(this);
-	}
+    return DischargeInstructionsOperations.getAdvanceDirectivesSectionEntriesOptional2(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return DischargeInstructionsOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-	}
+    return DischargeInstructionsOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public DischargeInstructions init() {
+   * @generated
+   */
+  @Override
+public DischargeInstructions init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } //DischargeInstructionsImpl
