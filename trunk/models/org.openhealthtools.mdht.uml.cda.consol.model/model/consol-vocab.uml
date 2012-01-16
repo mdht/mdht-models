@@ -366,6 +366,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_oDaAkD7YEeGvOdejHZ7dYg" name="ProcedureNoteDocumentTypeCodes"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_-bWMgD-UEeGvOdejHZ7dYg" name="HealthcareProviderTaxonomy"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6yjb4D_LEeGXieeKs7NJjA" name="ProgressNoteDocumentTypeCode"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -615,4 +616,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_-bWMgT-UEeGvOdejHZ7dYg" identifier="2.16.840.1.114222.4.11.1066" fullName="NUCC - HIPAA Health Care Provider Taxonomy" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_-bWMgD-UEeGvOdejHZ7dYg"/>
+  <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
