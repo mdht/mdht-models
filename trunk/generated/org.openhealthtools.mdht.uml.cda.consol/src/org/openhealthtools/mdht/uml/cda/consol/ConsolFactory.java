@@ -1790,6 +1790,69 @@ public interface ConsolFactory extends EFactory {
 	ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer();
 
 	/**
+	 * Returns a new object of class '<em>Progress Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Progress Note</em>'.
+	 * @generated
+	 */
+	ProgressNote createProgressNote();
+
+	/**
+	 * Returns a new object of class '<em>Progress Note Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Progress Note Documentation Of</em>'.
+	 * @generated
+	 */
+	ProgressNote_DocumentationOf createProgressNote_DocumentationOf();
+
+	/**
+	 * Returns a new object of class '<em>Documentation Of Service Event2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Documentation Of Service Event2</em>'.
+	 * @generated
+	 */
+	DocumentationOf_ServiceEvent2 createDocumentationOf_ServiceEvent2();
+
+	/**
+	 * Returns a new object of class '<em>Progress Note Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Progress Note Component Of</em>'.
+	 * @generated
+	 */
+	ProgressNote_ComponentOf createProgressNote_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter6</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter6</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter6 createComponentOf_EncompassingEncounter6();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter6 Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter6 Location</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter6_Location createEncompassingEncounter6_Location();
+
+	/**
+	 * Returns a new object of class '<em>Location Health Care Facility1</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Location Health Care Facility1</em>'.
+	 * @generated
+	 */
+	Location_HealthCareFacility1 createLocation_HealthCareFacility1();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
