@@ -55,274 +55,275 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ConsultationRequestImpl extends GeneralHeaderConstraintsImpl implements ConsultationRequest
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected ConsultationRequestImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return ConsoltocPackage.Literals.CONSULTATION_REQUEST;
-	}
+    return ConsoltocPackage.Literals.CONSULTATION_REQUEST;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getAllergiesSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getAllergiesSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AssessmentAndPlanSection getAssessmentAndPlanSection()
   {
-		return ConsultationRequestOperations.getAssessmentAndPlanSection(this);
-	}
+    return ConsultationRequestOperations.getAssessmentAndPlanSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection()
   {
-		return ConsultationRequestOperations.getHistoryOfPresentIllnessSection(this);
-	}
+    return ConsultationRequestOperations.getHistoryOfPresentIllnessSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PhysicalExamSection getPhysicalExamSection()
   {
-		return ConsultationRequestOperations.getPhysicalExamSection(this);
-	}
+    return ConsultationRequestOperations.getPhysicalExamSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ReasonForReferralSection getReasonForReferralSection()
   {
-		return ConsultationRequestOperations.getReasonForReferralSection(this);
-	}
+    return ConsultationRequestOperations.getReasonForReferralSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getMedicationsSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getMedicationsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ProblemSectionEntriesOptional getProblemSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getProblemSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getProblemSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getProceduresSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getProceduresSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ResultsSectionEntriesOptional getResultsSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getResultsSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getResultsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getAdvanceDirectivesSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getAdvanceDirectivesSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EncountersSectionEntriesOptional getEncountersSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getEncountersSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getEncountersSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public FamilyHistorySection getFamilyHistorySection()
   {
-		return ConsultationRequestOperations.getFamilyHistorySection(this);
-	}
+    return ConsultationRequestOperations.getFamilyHistorySection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public FunctionalStatusSection getFunctionalStatusSection()
   {
-		return ConsultationRequestOperations.getFunctionalStatusSection(this);
-	}
+    return ConsultationRequestOperations.getFunctionalStatusSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getImmunizationsSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getImmunizationsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MedicalEquipmentSection getMedicalEquipmentSection()
   {
-		return ConsultationRequestOperations.getMedicalEquipmentSection(this);
-	}
+    return ConsultationRequestOperations.getMedicalEquipmentSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PlanOfCareSection getPlanOfCareSection()
   {
-		return ConsultationRequestOperations.getPlanOfCareSection(this);
-	}
+    return ConsultationRequestOperations.getPlanOfCareSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SocialHistorySection getSocialHistorySection()
   {
-		return ConsultationRequestOperations.getSocialHistorySection(this);
-	}
+    return ConsultationRequestOperations.getSocialHistorySection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional()
   {
-		return ConsultationRequestOperations.getVitalSignsSectionEntriesOptional(this);
-	}
+    return ConsultationRequestOperations.getVitalSignsSectionEntriesOptional(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ChiefComplaintSection getChiefComplaintSection()
   {
-		return ConsultationRequestOperations.getChiefComplaintSection(this);
-	}
+    return ConsultationRequestOperations.getChiefComplaintSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection()
   {
-		return ConsultationRequestOperations.getChiefComplaintAndReasonForVisitSection(this);
-	}
+    return ConsultationRequestOperations.getChiefComplaintAndReasonForVisitSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public GeneralStatusSection getGeneralStatusSection()
   {
-		return ConsultationRequestOperations.getGeneralStatusSection(this);
-	}
+    return ConsultationRequestOperations.getGeneralStatusSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection()
   {
-		return ConsultationRequestOperations.getHistoryOfPastIllnessSection(this);
-	}
+    return ConsultationRequestOperations.getHistoryOfPastIllnessSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PayersSection getPayersSection()
   {
-		return ConsultationRequestOperations.getPayersSection(this);
-	}
+    return ConsultationRequestOperations.getPayersSection(this);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-		return ConsultationRequestOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
-	}
+    return ConsultationRequestOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public ConsultationRequest init() {
+   * @generated
+   */
+  @Override
+public ConsultationRequest init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } //ConsultationRequestImpl

@@ -25,118 +25,122 @@ import org.openhealthtools.mdht.uml.cda.consoltoc.*;
 public class ConsoltocFactoryImpl extends EFactoryImpl implements ConsoltocFactory
 {
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ConsoltocFactory init()
   {
-		try {
-			ConsoltocFactory theConsoltocFactory = (ConsoltocFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consoltoc"); 
-			if (theConsoltocFactory != null) {
-				return theConsoltocFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new ConsoltocFactoryImpl();
-	}
+    try
+    {
+      ConsoltocFactory theConsoltocFactory = (ConsoltocFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consoltoc"); 
+      if (theConsoltocFactory != null)
+      {
+        return theConsoltocFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new ConsoltocFactoryImpl();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ConsoltocFactoryImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass)
   {
-		switch (eClass.getClassifierID()) {
-			case ConsoltocPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
-			case ConsoltocPackage.CONSULTATION_REQUEST: return createConsultationRequest();
-			case ConsoltocPackage.CONSULTATION_SUMMARY: return createConsultationSummary();
-			case ConsoltocPackage.DISCHARGE_INSTRUCTIONS: return createDischargeInstructions();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case ConsoltocPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
+      case ConsoltocPackage.CONSULTATION_REQUEST: return createConsultationRequest();
+      case ConsoltocPackage.CONSULTATION_SUMMARY: return createConsultationSummary();
+      case ConsoltocPackage.DISCHARGE_INSTRUCTIONS: return createDischargeInstructions();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DischargeSummary createDischargeSummary()
   {
-		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
-		return dischargeSummary;
-	}
+    DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
+    return dischargeSummary;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ConsultationRequest createConsultationRequest()
   {
-		ConsultationRequestImpl consultationRequest = new ConsultationRequestImpl();
-		return consultationRequest;
-	}
+    ConsultationRequestImpl consultationRequest = new ConsultationRequestImpl();
+    return consultationRequest;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ConsultationSummary createConsultationSummary()
   {
-		ConsultationSummaryImpl consultationSummary = new ConsultationSummaryImpl();
-		return consultationSummary;
-	}
+    ConsultationSummaryImpl consultationSummary = new ConsultationSummaryImpl();
+    return consultationSummary;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DischargeInstructions createDischargeInstructions()
   {
-		DischargeInstructionsImpl dischargeInstructions = new DischargeInstructionsImpl();
-		return dischargeInstructions;
-	}
+    DischargeInstructionsImpl dischargeInstructions = new DischargeInstructionsImpl();
+    return dischargeInstructions;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ConsoltocPackage getConsoltocPackage()
   {
-		return (ConsoltocPackage)getEPackage();
-	}
+    return (ConsoltocPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static ConsoltocPackage getPackage()
   {
-		return ConsoltocPackage.eINSTANCE;
-	}
+    return ConsoltocPackage.eINSTANCE;
+  }
 
 } //ConsoltocFactoryImpl

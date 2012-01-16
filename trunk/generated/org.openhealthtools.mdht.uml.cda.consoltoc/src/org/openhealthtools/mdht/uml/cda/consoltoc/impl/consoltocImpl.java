@@ -69,7 +69,8 @@ public class consoltocImpl extends GeneralHeaderConstraintsImpl implements conso
    * <!-- end-user-doc -->
    * @generated
    */
-  public consoltoc init() {
+  @Override
+public consoltoc init() {
     	CDAUtil.init(this);
     	return this;
   }
