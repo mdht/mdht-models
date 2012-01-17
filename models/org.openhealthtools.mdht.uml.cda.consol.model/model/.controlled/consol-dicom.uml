@@ -6,10 +6,19 @@
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_ZcC-4DVyEeGaW4kr-GbV8Q" name="FindingsSection ">
+    <ownedRule xmi:id="_oD0Z4ECREeGELr7uj3LK_Q" name="findingSectionText" constrainedElement="_ZcC-4DVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rDl9sECREeGELr7uj3LK_Q">
+        <language>Analysis</language>
+        <body>This section SHOULD contain only the direct observations in the report, with topics such as Reason for Study, History, and Impression placed in separate sections. However, in cases where the source of report content provides a single block of text not separated into these sections, that text SHALL be placed in the Findings section.</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_ZcC-4TVyEeGaW4kr-GbV8Q">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_mE0V4DV1EeGaW4kr-GbV8Q" base_Class="_WPTWEDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.6.1.1"/>
   <CDA:CDATemplate xmi:id="_psFXgDV1EeGaW4kr-GbV8Q" base_Class="_ZcC-4DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.6.1.2"/>
+  <CDA:ConstraintValidation xmi:id="_yY1s8ECREeGELr7uj3LK_Q" base_Constraint="_oD0Z4ECREeGELr7uj3LK_Q">
+    <ruleId>CONF:8532</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

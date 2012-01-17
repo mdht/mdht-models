@@ -64,6 +64,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:ConstraintValidation xmi:id="_2Pxt3RSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt4xSVEeGGzu7fmW9pXw" code="29545-1" displayName="PHYSICAL EXAMINATION" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7807</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2RqkMBSVEeGGzu7fmW9pXw" name="ReviewOfSystemsSection">
     <ownedComment xmi:id="_2RqkOBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
