@@ -65,6 +65,33 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOperativeNoteFluidSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteFluidSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteFluidSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public OperativeNoteFluidSection init() {
 		CDAUtil.init(this);
 		return this;

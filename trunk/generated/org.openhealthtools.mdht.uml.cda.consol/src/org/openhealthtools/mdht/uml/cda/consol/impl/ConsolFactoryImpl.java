@@ -329,6 +329,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHospitalAdmissionDiagnosisSection();
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createHospitalAdmissionMedicationsSectionEntriesOptional();
+			case ConsolPackage.ADMISSION_MEDICATION:
+				return createAdmissionMedication();
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION:
 				return createMedicationsAdministeredSection();
 			case ConsolPackage.PHYSICAL_EXAM_SECTION:
@@ -351,6 +353,24 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSurgicalDrainsSection();
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT:
 				return createUnstructuredDocument();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_RECORD_TARGET:
+				return createUnstructuredDocument_RecordTarget();
+			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE2:
+				return createRecordTarget_PatientRole2();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_AUTHOR:
+				return createUnstructuredDocument_Author();
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR2:
+				return createAuthor_AssignedAuthor2();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_CUSTODIAN:
+				return createUnstructuredDocument_Custodian();
+			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN3:
+				return createCustodian_AssignedCustodian3();
+			case ConsolPackage.ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION:
+				return createAssignedCustodian3_CustodianOrganization();
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_COMPONENT:
+				return createUnstructuredDocument_Component();
+			case ConsolPackage.COMPONENT_NON_XML_BODY:
+				return createComponent_NonXMLBody();
 			case ConsolPackage.SCAN_ORIGINAL_AUTHOR:
 				return createScanOriginalAuthor();
 			case ConsolPackage.SCANNING_DEVICE:
@@ -449,6 +469,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPostoperativeDiagnosisSection();
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION:
 				return createPostprocedureDiagnosisSection();
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS:
+				return createPostprocedureDiagnosis();
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION:
 				return createPreoperativeDiagnosisSection();
 			case ConsolPackage.PROCEDURE_DESCRIPTION_SECTION:
@@ -537,6 +559,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncompassingEncounter6_Location();
 			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY1:
 				return createLocation_HealthCareFacility1();
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS:
+				return createPreoperativeDiagnosis();
+			case ConsolPackage.INSTRUCTIONS_SECTION:
+				return createInstructionsSection();
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS:
+				return createHospitalAdmissionDiagnosis();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1907,6 +1935,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AdmissionMedication createAdmissionMedication() {
+		AdmissionMedicationImpl admissionMedication = new AdmissionMedicationImpl();
+		return admissionMedication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeMedicationsSection createHospitalDischargeMedicationsSection() {
 		HospitalDischargeMedicationsSectionImpl hospitalDischargeMedicationsSection = new HospitalDischargeMedicationsSectionImpl();
 		return hospitalDischargeMedicationsSection;
@@ -2130,6 +2168,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PostprocedureDiagnosisSection createPostprocedureDiagnosisSection() {
 		PostprocedureDiagnosisSectionImpl postprocedureDiagnosisSection = new PostprocedureDiagnosisSectionImpl();
 		return postprocedureDiagnosisSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostprocedureDiagnosis createPostprocedureDiagnosis() {
+		PostprocedureDiagnosisImpl postprocedureDiagnosis = new PostprocedureDiagnosisImpl();
+		return postprocedureDiagnosis;
 	}
 
 	/**
@@ -2577,6 +2625,36 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public PreoperativeDiagnosis createPreoperativeDiagnosis() {
+		PreoperativeDiagnosisImpl preoperativeDiagnosis = new PreoperativeDiagnosisImpl();
+		return preoperativeDiagnosis;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstructionsSection createInstructionsSection() {
+		InstructionsSectionImpl instructionsSection = new InstructionsSectionImpl();
+		return instructionsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis() {
+		HospitalAdmissionDiagnosisImpl hospitalAdmissionDiagnosis = new HospitalAdmissionDiagnosisImpl();
+		return hospitalAdmissionDiagnosis;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;
@@ -2690,6 +2768,96 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public UnstructuredDocument createUnstructuredDocument() {
 		UnstructuredDocumentImpl unstructuredDocument = new UnstructuredDocumentImpl();
 		return unstructuredDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument_RecordTarget createUnstructuredDocument_RecordTarget() {
+		UnstructuredDocument_RecordTargetImpl unstructuredDocument_RecordTarget = new UnstructuredDocument_RecordTargetImpl();
+		return unstructuredDocument_RecordTarget;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RecordTarget_PatientRole2 createRecordTarget_PatientRole2() {
+		RecordTarget_PatientRole2Impl recordTarget_PatientRole2 = new RecordTarget_PatientRole2Impl();
+		return recordTarget_PatientRole2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument_Author createUnstructuredDocument_Author() {
+		UnstructuredDocument_AuthorImpl unstructuredDocument_Author = new UnstructuredDocument_AuthorImpl();
+		return unstructuredDocument_Author;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Author_AssignedAuthor2 createAuthor_AssignedAuthor2() {
+		Author_AssignedAuthor2Impl author_AssignedAuthor2 = new Author_AssignedAuthor2Impl();
+		return author_AssignedAuthor2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument_Custodian createUnstructuredDocument_Custodian() {
+		UnstructuredDocument_CustodianImpl unstructuredDocument_Custodian = new UnstructuredDocument_CustodianImpl();
+		return unstructuredDocument_Custodian;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Custodian_AssignedCustodian3 createCustodian_AssignedCustodian3() {
+		Custodian_AssignedCustodian3Impl custodian_AssignedCustodian3 = new Custodian_AssignedCustodian3Impl();
+		return custodian_AssignedCustodian3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedCustodian3_CustodianOrganization createAssignedCustodian3_CustodianOrganization() {
+		AssignedCustodian3_CustodianOrganizationImpl assignedCustodian3_CustodianOrganization = new AssignedCustodian3_CustodianOrganizationImpl();
+		return assignedCustodian3_CustodianOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument_Component createUnstructuredDocument_Component() {
+		UnstructuredDocument_ComponentImpl unstructuredDocument_Component = new UnstructuredDocument_ComponentImpl();
+		return unstructuredDocument_Component;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Component_NonXMLBody createComponent_NonXMLBody() {
+		Component_NonXMLBodyImpl component_NonXMLBody = new Component_NonXMLBodyImpl();
+		return component_NonXMLBody;
 	}
 
 	/**

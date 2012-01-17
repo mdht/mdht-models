@@ -289,7 +289,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (not self.maritalStatusCode.oclIsUndefined() and self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in ("
 			+ "value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))";
 
@@ -307,7 +307,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (not self.maritalStatusCode.oclIsUndefined() and self.maritalStatusCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in (
 	 * value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
@@ -402,7 +402,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (not self.raceCode.oclIsUndefined() and self.raceCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in ("
 			+ "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
 
@@ -420,7 +420,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (not self.raceCode.oclIsUndefined() and self.raceCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in (
 	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
@@ -460,7 +460,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (not self.religiousAffiliationCode.oclIsUndefined() and self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in ("
 			+ "value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))";
 
@@ -478,7 +478,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (not self.religiousAffiliationCode.oclIsUndefined() and self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in (
 	 * value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.

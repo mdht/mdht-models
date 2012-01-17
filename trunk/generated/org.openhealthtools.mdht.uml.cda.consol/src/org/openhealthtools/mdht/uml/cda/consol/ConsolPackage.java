@@ -11795,7 +11795,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION = 157;
+	int HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION = 167;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionMedicationsSectionEntriesOptionalImpl <em>Hospital Admission Medications Section Entries Optional</em>}' class.
@@ -11815,7 +11815,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 176;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 186;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargePhysicalSectionImpl <em>Hospital Discharge Physical Section</em>}' class.
@@ -11825,7 +11825,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargePhysicalSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_PHYSICAL_SECTION = 166;
+	int HOSPITAL_DISCHARGE_PHYSICAL_SECTION = 176;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
@@ -11835,7 +11835,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 135;
+	int MEDICATIONS_ADMINISTERED_SECTION = 136;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PhysicalExamSectionImpl <em>Physical Exam Section</em>}' class.
@@ -11845,7 +11845,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 136;
+	int PHYSICAL_EXAM_SECTION = 137;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GeneralStatusSectionImpl <em>General Status Section</em>}' class.
@@ -11855,7 +11855,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGeneralStatusSection()
 	 * @generated
 	 */
-	int GENERAL_STATUS_SECTION = 137;
+	int GENERAL_STATUS_SECTION = 138;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReviewOfSystemsSectionImpl <em>Review Of Systems Section</em>}' class.
@@ -11865,7 +11865,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 138;
+	int REVIEW_OF_SYSTEMS_SECTION = 139;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalCourseSectionImpl <em>Hospital Course Section</em>}' class.
@@ -11875,7 +11875,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 162;
+	int HOSPITAL_COURSE_SECTION = 172;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -11885,7 +11885,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 139;
+	int ASSESSMENT_AND_PLAN_SECTION = 140;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.LanguageSpokenImpl <em>Language Spoken</em>}' class.
@@ -11895,7 +11895,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getLanguageSpoken()
 	 * @generated
 	 */
-	int LANGUAGE_SPOKEN = 140;
+	int LANGUAGE_SPOKEN = 141;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HealthcareProviderImpl <em>Healthcare Provider</em>}' class.
@@ -11905,7 +11905,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHealthcareProvider()
 	 * @generated
 	 */
-	int HEALTHCARE_PROVIDER = 141;
+	int HEALTHCARE_PROVIDER = 142;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
@@ -11915,7 +11915,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSupportGuardian()
 	 * @generated
 	 */
-	int SUPPORT_GUARDIAN = 142;
+	int SUPPORT_GUARDIAN = 143;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
@@ -11925,7 +11925,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSupportParticipant()
 	 * @generated
 	 */
-	int SUPPORT_PARTICIPANT = 143;
+	int SUPPORT_PARTICIPANT = 144;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocumentImpl <em>Unstructured Document</em>}' class.
@@ -11935,7 +11935,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_DOCUMENT = 145;
+	int UNSTRUCTURED_DOCUMENT = 146;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ScanOriginalAuthorImpl <em>Scan Original Author</em>}' class.
@@ -11945,7 +11945,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanOriginalAuthor()
 	 * @generated
 	 */
-	int SCAN_ORIGINAL_AUTHOR = 146;
+	int SCAN_ORIGINAL_AUTHOR = 156;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ScanningDeviceImpl <em>Scanning Device</em>}' class.
@@ -11955,7 +11955,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanningDevice()
 	 * @generated
 	 */
-	int SCANNING_DEVICE = 147;
+	int SCANNING_DEVICE = 157;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ScanDataEntererImpl <em>Scan Data Enterer</em>}' class.
@@ -11965,7 +11965,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getScanDataEnterer()
 	 * @generated
 	 */
-	int SCAN_DATA_ENTERER = 148;
+	int SCAN_DATA_ENTERER = 158;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
@@ -11975,7 +11975,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationInformation()
 	 * @generated
 	 */
-	int MEDICATION_INFORMATION = 149;
+	int MEDICATION_INFORMATION = 159;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
@@ -11985,7 +11985,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredOrScannedDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 150;
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 160;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
@@ -11995,7 +11995,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReferralSummary()
 	 * @generated
 	 */
-	int REFERRAL_SUMMARY = 151;
+	int REFERRAL_SUMMARY = 161;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
@@ -12005,7 +12005,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY = 152;
+	int DISCHARGE_SUMMARY = 162;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeDietSectionImpl <em>Discharge Diet Section</em>}' class.
@@ -12015,7 +12015,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeDietSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIET_SECTION = 159;
+	int DISCHARGE_DIET_SECTION = 169;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionEntriesOptionalImpl <em>Hospital Discharge Medications Section Entries Optional</em>}' class.
@@ -12025,7 +12025,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeMedicationsSectionEntriesOptional()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 160;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 170;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreconditionForSubstanceAdministrationImpl <em>Precondition For Substance Administration</em>}' class.
@@ -12035,7 +12035,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreconditionForSubstanceAdministration()
 	 * @generated
 	 */
-	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION = 169;
+	int PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION = 179;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ImmunizationMedicationInformationImpl <em>Immunization Medication Information</em>}' class.
@@ -12045,7 +12045,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getImmunizationMedicationInformation()
 	 * @generated
 	 */
-	int IMMUNIZATION_MEDICATION_INFORMATION = 170;
+	int IMMUNIZATION_MEDICATION_INFORMATION = 180;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureSpecimenImpl <em>Procedure Specimen</em>}' class.
@@ -12055,7 +12055,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureSpecimen()
 	 * @generated
 	 */
-	int PROCEDURE_SPECIMEN = 171;
+	int PROCEDURE_SPECIMEN = 181;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedurePerformerImpl <em>Procedure Performer</em>}' class.
@@ -12065,7 +12065,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedurePerformer()
 	 * @generated
 	 */
-	int PROCEDURE_PERFORMER = 172;
+	int PROCEDURE_PERFORMER = 182;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureEncounterImpl <em>Procedure Encounter</em>}' class.
@@ -12075,7 +12075,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureEncounter()
 	 * @generated
 	 */
-	int PROCEDURE_ENCOUNTER = 173;
+	int PROCEDURE_ENCOUNTER = 183;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationInformationManufacturedMaterialImpl <em>Medication Information Manufactured Material</em>}' class.
@@ -12085,7 +12085,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationInformationManufacturedMaterial()
 	 * @generated
 	 */
-	int MEDICATION_INFORMATION_MANUFACTURED_MATERIAL = 174;
+	int MEDICATION_INFORMATION_MANUFACTURED_MATERIAL = 184;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FamilyHistorySubjectImpl <em>Family History Subject</em>}' class.
@@ -12095,7 +12095,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFamilyHistorySubject()
 	 * @generated
 	 */
-	int FAMILY_HISTORY_SUBJECT = 175;
+	int FAMILY_HISTORY_SUBJECT = 185;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeStudiesSummarySectionImpl <em>Hospital Discharge Studies Summary Section</em>}' class.
@@ -12105,7 +12105,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeStudiesSummarySection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION = 167;
+	int HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION = 177;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DischargeMedicationImpl <em>Discharge Medication</em>}' class.
@@ -12115,7 +12115,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeMedication()
 	 * @generated
 	 */
-	int DISCHARGE_MEDICATION = 161;
+	int DISCHARGE_MEDICATION = 171;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeDiagnosisImpl <em>Hospital Discharge Diagnosis</em>}' class.
@@ -12125,7 +12125,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeDiagnosis()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_DIAGNOSIS = 158;
+	int HOSPITAL_DISCHARGE_DIAGNOSIS = 168;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeInstructionsSectionImpl <em>Hospital Discharge Instructions Section</em>}' class.
@@ -12135,7 +12135,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalDischargeInstructionsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 165;
+	int HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 175;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ChiefComplaintAndReasonForVisitSectionImpl <em>Chief Complaint And Reason For Visit Section</em>}' class.
@@ -12145,7 +12145,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getChiefComplaintAndReasonForVisitSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 163;
+	int CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 173;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReasonForVisitSectionImpl <em>Reason For Visit Section</em>}' class.
@@ -12155,7 +12155,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReasonForVisitSection()
 	 * @generated
 	 */
-	int REASON_FOR_VISIT_SECTION = 168;
+	int REASON_FOR_VISIT_SECTION = 178;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveObservation_VerifierImpl <em>Advance Directive Observation Verifier</em>}' class.
@@ -12185,7 +12185,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getRelatedInformant()
 	 * @generated
 	 */
-	int RELATED_INFORMANT = 177;
+	int RELATED_INFORMANT = 187;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncounterPerformerImpl <em>Encounter Performer</em>}' class.
@@ -12195,7 +12195,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncounterPerformer()
 	 * @generated
 	 */
-	int ENCOUNTER_PERFORMER = 178;
+	int ENCOUNTER_PERFORMER = 188;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.EncounterPerformerAssignedEntityImpl <em>Encounter Performer Assigned Entity</em>}' class.
@@ -12205,7 +12205,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncounterPerformerAssignedEntity()
 	 * @generated
 	 */
-	int ENCOUNTER_PERFORMER_ASSIGNED_ENTITY = 179;
+	int ENCOUNTER_PERFORMER_ASSIGNED_ENTITY = 189;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25803,6 +25803,232 @@ public interface ConsolPackage extends EPackage {
 	int HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationImpl <em>Admission Medication</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedication()
+	 * @generated
+	 */
+	int ADMISSION_MEDICATION = 135;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Admission Medication</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26845,7 +27071,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSurgicalDrainsSection()
 	 * @generated
 	 */
-	int SURGICAL_DRAINS_SECTION = 144;
+	int SURGICAL_DRAINS_SECTION = 145;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27296,6 +27522,870 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNSTRUCTURED_DOCUMENT_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_RecordTargetImpl <em>Unstructured Document Record Target</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_RecordTargetImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_RecordTarget()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET = 147;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__REALM_CODE = CDAPackage.RECORD_TARGET__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__TYPE_ID = CDAPackage.RECORD_TARGET__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__TEMPLATE_ID = CDAPackage.RECORD_TARGET__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Patient Role</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__PATIENT_ROLE = CDAPackage.RECORD_TARGET__PATIENT_ROLE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__NULL_FLAVOR = CDAPackage.RECORD_TARGET__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__TYPE_CODE = CDAPackage.RECORD_TARGET__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET__CONTEXT_CONTROL_CODE = CDAPackage.RECORD_TARGET__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Document Record Target</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_RECORD_TARGET_FEATURE_COUNT = CDAPackage.RECORD_TARGET_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.RecordTarget_PatientRole2Impl <em>Record Target Patient Role2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.RecordTarget_PatientRole2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getRecordTarget_PatientRole2()
+	 * @generated
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2 = 148;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__REALM_CODE = CDAPackage.PATIENT_ROLE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__TYPE_ID = CDAPackage.PATIENT_ROLE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__TEMPLATE_ID = CDAPackage.PATIENT_ROLE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__ID = CDAPackage.PATIENT_ROLE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Addr</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__ADDR = CDAPackage.PATIENT_ROLE__ADDR;
+
+	/**
+	 * The feature id for the '<em><b>Telecom</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__TELECOM = CDAPackage.PATIENT_ROLE__TELECOM;
+
+	/**
+	 * The feature id for the '<em><b>Patient</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__PATIENT = CDAPackage.PATIENT_ROLE__PATIENT;
+
+	/**
+	 * The feature id for the '<em><b>Provider Organization</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__PROVIDER_ORGANIZATION = CDAPackage.PATIENT_ROLE__PROVIDER_ORGANIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__NULL_FLAVOR = CDAPackage.PATIENT_ROLE__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2__CLASS_CODE = CDAPackage.PATIENT_ROLE__CLASS_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Record Target Patient Role2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORD_TARGET_PATIENT_ROLE2_FEATURE_COUNT = CDAPackage.PATIENT_ROLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_AuthorImpl <em>Unstructured Document Author</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_AuthorImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Author()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR = 149;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__REALM_CODE = CDAPackage.AUTHOR__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__TYPE_ID = CDAPackage.AUTHOR__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__TEMPLATE_ID = CDAPackage.AUTHOR__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Function Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__FUNCTION_CODE = CDAPackage.AUTHOR__FUNCTION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__TIME = CDAPackage.AUTHOR__TIME;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Author</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__ASSIGNED_AUTHOR = CDAPackage.AUTHOR__ASSIGNED_AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__NULL_FLAVOR = CDAPackage.AUTHOR__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__TYPE_CODE = CDAPackage.AUTHOR__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR__CONTEXT_CONTROL_CODE = CDAPackage.AUTHOR__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Document Author</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_AUTHOR_FEATURE_COUNT = CDAPackage.AUTHOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Author_AssignedAuthor2Impl <em>Author Assigned Author2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Author_AssignedAuthor2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAuthor_AssignedAuthor2()
+	 * @generated
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2 = 150;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__REALM_CODE = CDAPackage.ASSIGNED_AUTHOR__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__TYPE_ID = CDAPackage.ASSIGNED_AUTHOR__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__TEMPLATE_ID = CDAPackage.ASSIGNED_AUTHOR__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__ID = CDAPackage.ASSIGNED_AUTHOR__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__CODE = CDAPackage.ASSIGNED_AUTHOR__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Addr</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__ADDR = CDAPackage.ASSIGNED_AUTHOR__ADDR;
+
+	/**
+	 * The feature id for the '<em><b>Telecom</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__TELECOM = CDAPackage.ASSIGNED_AUTHOR__TELECOM;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Person</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__ASSIGNED_PERSON = CDAPackage.ASSIGNED_AUTHOR__ASSIGNED_PERSON;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Authoring Device</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__ASSIGNED_AUTHORING_DEVICE = CDAPackage.ASSIGNED_AUTHOR__ASSIGNED_AUTHORING_DEVICE;
+
+	/**
+	 * The feature id for the '<em><b>Represented Organization</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__REPRESENTED_ORGANIZATION = CDAPackage.ASSIGNED_AUTHOR__REPRESENTED_ORGANIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__NULL_FLAVOR = CDAPackage.ASSIGNED_AUTHOR__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2__CLASS_CODE = CDAPackage.ASSIGNED_AUTHOR__CLASS_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Author Assigned Author2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_ASSIGNED_AUTHOR2_FEATURE_COUNT = CDAPackage.ASSIGNED_AUTHOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_CustodianImpl <em>Unstructured Document Custodian</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_CustodianImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Custodian()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN = 151;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__REALM_CODE = CDAPackage.CUSTODIAN__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__TYPE_ID = CDAPackage.CUSTODIAN__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__TEMPLATE_ID = CDAPackage.CUSTODIAN__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__ASSIGNED_CUSTODIAN = CDAPackage.CUSTODIAN__ASSIGNED_CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__NULL_FLAVOR = CDAPackage.CUSTODIAN__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN__TYPE_CODE = CDAPackage.CUSTODIAN__TYPE_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Document Custodian</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_CUSTODIAN_FEATURE_COUNT = CDAPackage.CUSTODIAN_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Custodian_AssignedCustodian3Impl <em>Custodian Assigned Custodian3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Custodian_AssignedCustodian3Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCustodian_AssignedCustodian3()
+	 * @generated
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3 = 152;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__REALM_CODE = CDAPackage.ASSIGNED_CUSTODIAN__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__TYPE_ID = CDAPackage.ASSIGNED_CUSTODIAN__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__TEMPLATE_ID = CDAPackage.ASSIGNED_CUSTODIAN__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Represented Custodian Organization</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__REPRESENTED_CUSTODIAN_ORGANIZATION = CDAPackage.ASSIGNED_CUSTODIAN__REPRESENTED_CUSTODIAN_ORGANIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__NULL_FLAVOR = CDAPackage.ASSIGNED_CUSTODIAN__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3__CLASS_CODE = CDAPackage.ASSIGNED_CUSTODIAN__CLASS_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Custodian Assigned Custodian3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTODIAN_ASSIGNED_CUSTODIAN3_FEATURE_COUNT = CDAPackage.ASSIGNED_CUSTODIAN_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AssignedCustodian3_CustodianOrganizationImpl <em>Assigned Custodian3 Custodian Organization</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AssignedCustodian3_CustodianOrganizationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssignedCustodian3_CustodianOrganization()
+	 * @generated
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION = 153;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__REALM_CODE = CDAPackage.CUSTODIAN_ORGANIZATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__TYPE_ID = CDAPackage.CUSTODIAN_ORGANIZATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__TEMPLATE_ID = CDAPackage.CUSTODIAN_ORGANIZATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__ID = CDAPackage.CUSTODIAN_ORGANIZATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__NAME = CDAPackage.CUSTODIAN_ORGANIZATION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Telecom</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__TELECOM = CDAPackage.CUSTODIAN_ORGANIZATION__TELECOM;
+
+	/**
+	 * The feature id for the '<em><b>Addr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__ADDR = CDAPackage.CUSTODIAN_ORGANIZATION__ADDR;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__NULL_FLAVOR = CDAPackage.CUSTODIAN_ORGANIZATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__CLASS_CODE = CDAPackage.CUSTODIAN_ORGANIZATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Determiner Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DETERMINER_CODE = CDAPackage.CUSTODIAN_ORGANIZATION__DETERMINER_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Assigned Custodian3 Custodian Organization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_FEATURE_COUNT = CDAPackage.CUSTODIAN_ORGANIZATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_ComponentImpl <em>Unstructured Document Component</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_ComponentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Component()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT = 154;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__REALM_CODE = CDAPackage.COMPONENT2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__TYPE_ID = CDAPackage.COMPONENT2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__TEMPLATE_ID = CDAPackage.COMPONENT2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Non XML Body</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__NON_XML_BODY = CDAPackage.COMPONENT2__NON_XML_BODY;
+
+	/**
+	 * The feature id for the '<em><b>Structured Body</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__STRUCTURED_BODY = CDAPackage.COMPONENT2__STRUCTURED_BODY;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__NULL_FLAVOR = CDAPackage.COMPONENT2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__TYPE_CODE = CDAPackage.COMPONENT2__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Conduction Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT__CONTEXT_CONDUCTION_IND = CDAPackage.COMPONENT2__CONTEXT_CONDUCTION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Document Component</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT_COMPONENT_FEATURE_COUNT = CDAPackage.COMPONENT2_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Component_NonXMLBodyImpl <em>Component Non XML Body</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Component_NonXMLBodyImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponent_NonXMLBody()
+	 * @generated
+	 */
+	int COMPONENT_NON_XML_BODY = 155;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__REALM_CODE = CDAPackage.NON_XML_BODY__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__TYPE_ID = CDAPackage.NON_XML_BODY__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__TEMPLATE_ID = CDAPackage.NON_XML_BODY__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__TEXT = CDAPackage.NON_XML_BODY__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__CONFIDENTIALITY_CODE = CDAPackage.NON_XML_BODY__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__LANGUAGE_CODE = CDAPackage.NON_XML_BODY__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__NULL_FLAVOR = CDAPackage.NON_XML_BODY__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__CLASS_CODE = CDAPackage.NON_XML_BODY__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY__MOOD_CODE = CDAPackage.NON_XML_BODY__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Component Non XML Body</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_NON_XML_BODY_FEATURE_COUNT = CDAPackage.NON_XML_BODY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28493,7 +29583,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDischargeSummary_ComponentOf()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY_COMPONENT_OF = 153;
+	int DISCHARGE_SUMMARY_COMPONENT_OF = 163;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28566,7 +29656,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponentOf_EncompassingEncounter3()
 	 * @generated
 	 */
-	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER3 = 154;
+	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER3 = 164;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28702,7 +29792,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter3_ResponsibleParty()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY = 155;
+	int ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY = 165;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28775,7 +29865,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter3_EncounterParticipant()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT = 156;
+	int ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT = 166;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -30144,7 +31234,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergyObservationParticipant()
 	 * @generated
 	 */
-	int ALLERGY_OBSERVATION_PARTICIPANT = 180;
+	int ALLERGY_OBSERVATION_PARTICIPANT = 190;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergyObservationParticipantRoleImpl <em>Allergy Observation Participant Role</em>}' class.
@@ -30154,7 +31244,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergyObservationParticipantRole()
 	 * @generated
 	 */
-	int ALLERGY_OBSERVATION_PARTICIPANT_ROLE = 181;
+	int ALLERGY_OBSERVATION_PARTICIPANT_ROLE = 191;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergyObservationPlayingEntityImpl <em>Allergy Observation Playing Entity</em>}' class.
@@ -30164,7 +31254,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAllergyObservationPlayingEntity()
 	 * @generated
 	 */
-	int ALLERGY_OBSERVATION_PLAYING_ENTITY = 182;
+	int ALLERGY_OBSERVATION_PLAYING_ENTITY = 192;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AnesthesiaSectionImpl <em>Anesthesia Section</em>}' class.
@@ -30174,7 +31264,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAnesthesiaSection()
 	 * @generated
 	 */
-	int ANESTHESIA_SECTION = 183;
+	int ANESTHESIA_SECTION = 193;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ComplicationsSectionImpl <em>Complications Section</em>}' class.
@@ -30184,7 +31274,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComplicationsSection()
 	 * @generated
 	 */
-	int COMPLICATIONS_SECTION = 184;
+	int COMPLICATIONS_SECTION = 194;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.DICOMObjectCatalogSectionImpl <em>DICOM Object Catalog Section</em>}' class.
@@ -30194,7 +31284,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDICOMObjectCatalogSection()
 	 * @generated
 	 */
-	int DICOM_OBJECT_CATALOG_SECTION = 185;
+	int DICOM_OBJECT_CATALOG_SECTION = 195;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.FindingsSectionImpl <em>Findings Section</em>}' class.
@@ -30204,7 +31294,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getFindingsSection()
 	 * @generated
 	 */
-	int FINDINGS_SECTION = 186;
+	int FINDINGS_SECTION = 196;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalConsultationsSectionImpl <em>Hospital Consultations Section</em>}' class.
@@ -30214,7 +31304,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalConsultationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_CONSULTATIONS_SECTION = 164;
+	int HOSPITAL_CONSULTATIONS_SECTION = 174;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33221,7 +34311,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInterventionsSection()
 	 * @generated
 	 */
-	int INTERVENTIONS_SECTION = 187;
+	int INTERVENTIONS_SECTION = 197;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33402,7 +34492,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicalHistorySection()
 	 * @generated
 	 */
-	int MEDICAL_HISTORY_SECTION = 188;
+	int MEDICAL_HISTORY_SECTION = 198;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33583,7 +34673,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getObjectiveSection()
 	 * @generated
 	 */
-	int OBJECTIVE_SECTION = 189;
+	int OBJECTIVE_SECTION = 199;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33764,7 +34854,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getOperativeNoteFluidSection()
 	 * @generated
 	 */
-	int OPERATIVE_NOTE_FLUID_SECTION = 190;
+	int OPERATIVE_NOTE_FLUID_SECTION = 200;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33945,7 +35035,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getOperativeNoteSurgicalProcedureSection()
 	 * @generated
 	 */
-	int OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION = 191;
+	int OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION = 201;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -34126,7 +35216,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPlannedProcedureSection()
 	 * @generated
 	 */
-	int PLANNED_PROCEDURE_SECTION = 192;
+	int PLANNED_PROCEDURE_SECTION = 202;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -34307,7 +35397,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostoperativeDiagnosisSection()
 	 * @generated
 	 */
-	int POSTOPERATIVE_DIAGNOSIS_SECTION = 193;
+	int POSTOPERATIVE_DIAGNOSIS_SECTION = 203;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -34488,7 +35578,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosisSection()
 	 * @generated
 	 */
-	int POSTPROCEDURE_DIAGNOSIS_SECTION = 194;
+	int POSTPROCEDURE_DIAGNOSIS_SECTION = 204;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -34662,6 +35752,232 @@ public interface ConsolPackage extends EPackage {
 	int POSTPROCEDURE_DIAGNOSIS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisImpl <em>Postprocedure Diagnosis</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosis()
+	 * @generated
+	 */
+	int POSTPROCEDURE_DIAGNOSIS = 205;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Postprocedure Diagnosis</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisSectionImpl <em>Preoperative Diagnosis Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34669,7 +35985,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosisSection()
 	 * @generated
 	 */
-	int PREOPERATIVE_DIAGNOSIS_SECTION = 195;
+	int PREOPERATIVE_DIAGNOSIS_SECTION = 206;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -34850,7 +36166,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureDescriptionSection()
 	 * @generated
 	 */
-	int PROCEDURE_DESCRIPTION_SECTION = 196;
+	int PROCEDURE_DESCRIPTION_SECTION = 207;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35031,7 +36347,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureDispositionSection()
 	 * @generated
 	 */
-	int PROCEDURE_DISPOSITION_SECTION = 197;
+	int PROCEDURE_DISPOSITION_SECTION = 208;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35212,7 +36528,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureEstimatedBloodLossSection()
 	 * @generated
 	 */
-	int PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 198;
+	int PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 209;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35393,7 +36709,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureFindingsSection()
 	 * @generated
 	 */
-	int PROCEDURE_FINDINGS_SECTION = 199;
+	int PROCEDURE_FINDINGS_SECTION = 210;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35574,7 +36890,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureImplantsSection()
 	 * @generated
 	 */
-	int PROCEDURE_IMPLANTS_SECTION = 200;
+	int PROCEDURE_IMPLANTS_SECTION = 211;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35755,7 +37071,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureIndicationsSection()
 	 * @generated
 	 */
-	int PROCEDURE_INDICATIONS_SECTION = 201;
+	int PROCEDURE_INDICATIONS_SECTION = 212;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -35936,7 +37252,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureSpecimensTakenSection()
 	 * @generated
 	 */
-	int PROCEDURE_SPECIMENS_TAKEN_SECTION = 202;
+	int PROCEDURE_SPECIMENS_TAKEN_SECTION = 213;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36117,7 +37433,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSubjectiveSection()
 	 * @generated
 	 */
-	int SUBJECTIVE_SECTION = 203;
+	int SUBJECTIVE_SECTION = 214;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36298,7 +37614,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConsultationNote()
 	 * @generated
 	 */
-	int CONSULTATION_NOTE = 204;
+	int CONSULTATION_NOTE = 215;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36587,7 +37903,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getConsultationNote_ComponentOf()
 	 * @generated
 	 */
-	int CONSULTATION_NOTE_COMPONENT_OF = 205;
+	int CONSULTATION_NOTE_COMPONENT_OF = 216;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36660,7 +37976,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponentOf_EncompassingEncounter2()
 	 * @generated
 	 */
-	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2 = 206;
+	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER2 = 217;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36796,7 +38112,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter2_ResponsibleParty()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 207;
+	int ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 218;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36869,7 +38185,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter2_EncounterParticipant()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 208;
+	int ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 219;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -36951,7 +38267,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssessmentSection()
 	 * @generated
 	 */
-	int ASSESSMENT_SECTION = 209;
+	int ASSESSMENT_SECTION = 220;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37132,7 +38448,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryAndPhysicalNote()
 	 * @generated
 	 */
-	int HISTORY_AND_PHYSICAL_NOTE = 210;
+	int HISTORY_AND_PHYSICAL_NOTE = 221;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37421,7 +38737,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHistoryAndPhysicalNote_ComponentOf()
 	 * @generated
 	 */
-	int HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF = 211;
+	int HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF = 222;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37494,7 +38810,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponentOf_EncompassingEncounter4()
 	 * @generated
 	 */
-	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4 = 212;
+	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER4 = 223;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37630,7 +38946,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter4_ResponsibleParty()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 213;
+	int ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 224;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37703,7 +39019,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter4_EncounterParticipant()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 214;
+	int ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 225;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -37785,7 +39101,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getOperativeNote()
 	 * @generated
 	 */
-	int OPERATIVE_NOTE = 215;
+	int OPERATIVE_NOTE = 226;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38074,7 +39390,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getOperativeNote_DocumentationOf()
 	 * @generated
 	 */
-	int OPERATIVE_NOTE_DOCUMENTATION_OF = 216;
+	int OPERATIVE_NOTE_DOCUMENTATION_OF = 227;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38147,7 +39463,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDocumentationOf_ServiceEvent()
 	 * @generated
 	 */
-	int DOCUMENTATION_OF_SERVICE_EVENT = 217;
+	int DOCUMENTATION_OF_SERVICE_EVENT = 228;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38256,7 +39572,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getServiceEvent_PrimaryPerformer()
 	 * @generated
 	 */
-	int SERVICE_EVENT_PRIMARY_PERFORMER = 218;
+	int SERVICE_EVENT_PRIMARY_PERFORMER = 229;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38347,7 +39663,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE = 219;
+	int PROCEDURE_NOTE = 230;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38636,7 +39952,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote_ComponentOf()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE_COMPONENT_OF = 220;
+	int PROCEDURE_NOTE_COMPONENT_OF = 231;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38709,7 +40025,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponentOf_EncompassingEncounter5()
 	 * @generated
 	 */
-	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 221;
+	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 232;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38845,7 +40161,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter5_Location()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER5_LOCATION = 222;
+	int ENCOMPASSING_ENCOUNTER5_LOCATION = 233;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -38918,7 +40234,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getLocation_HealthCareFacility()
 	 * @generated
 	 */
-	int LOCATION_HEALTH_CARE_FACILITY = 223;
+	int LOCATION_HEALTH_CARE_FACILITY = 234;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39018,7 +40334,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter5_EncounterParticipant()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 224;
+	int ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 235;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39100,7 +40416,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote_Individual()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE_INDIVIDUAL = 225;
+	int PROCEDURE_NOTE_INDIVIDUAL = 236;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39200,7 +40516,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote_PrimaryCarePhysician()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN = 226;
+	int PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN = 237;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39300,7 +40616,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote_Provider()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE_PROVIDER = 227;
+	int PROCEDURE_NOTE_PROVIDER = 238;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39400,7 +40716,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProvider_AssociatedEntity()
 	 * @generated
 	 */
-	int PROVIDER_ASSOCIATED_ENTITY = 228;
+	int PROVIDER_ASSOCIATED_ENTITY = 239;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39527,7 +40843,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureNote_DocumentationOf()
 	 * @generated
 	 */
-	int PROCEDURE_NOTE_DOCUMENTATION_OF = 229;
+	int PROCEDURE_NOTE_DOCUMENTATION_OF = 240;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39600,7 +40916,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDocumentationOf_ServiceEvent1()
 	 * @generated
 	 */
-	int DOCUMENTATION_OF_SERVICE_EVENT1 = 230;
+	int DOCUMENTATION_OF_SERVICE_EVENT1 = 241;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39709,7 +41025,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getServiceEvent1_PrimaryPerformer()
 	 * @generated
 	 */
-	int SERVICE_EVENT1_PRIMARY_PERFORMER = 231;
+	int SERVICE_EVENT1_PRIMARY_PERFORMER = 242;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -39800,7 +41116,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProgressNote()
 	 * @generated
 	 */
-	int PROGRESS_NOTE = 232;
+	int PROGRESS_NOTE = 243;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40089,7 +41405,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProgressNote_DocumentationOf()
 	 * @generated
 	 */
-	int PROGRESS_NOTE_DOCUMENTATION_OF = 233;
+	int PROGRESS_NOTE_DOCUMENTATION_OF = 244;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40162,7 +41478,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getDocumentationOf_ServiceEvent2()
 	 * @generated
 	 */
-	int DOCUMENTATION_OF_SERVICE_EVENT2 = 234;
+	int DOCUMENTATION_OF_SERVICE_EVENT2 = 245;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40271,7 +41587,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProgressNote_ComponentOf()
 	 * @generated
 	 */
-	int PROGRESS_NOTE_COMPONENT_OF = 235;
+	int PROGRESS_NOTE_COMPONENT_OF = 246;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40344,7 +41660,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponentOf_EncompassingEncounter6()
 	 * @generated
 	 */
-	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER6 = 236;
+	int COMPONENT_OF_ENCOMPASSING_ENCOUNTER6 = 247;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40480,7 +41796,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getEncompassingEncounter6_Location()
 	 * @generated
 	 */
-	int ENCOMPASSING_ENCOUNTER6_LOCATION = 237;
+	int ENCOMPASSING_ENCOUNTER6_LOCATION = 248;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40553,7 +41869,7 @@ public interface ConsolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getLocation_HealthCareFacility1()
 	 * @generated
 	 */
-	int LOCATION_HEALTH_CARE_FACILITY1 = 238;
+	int LOCATION_HEALTH_CARE_FACILITY1 = 249;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -40644,6 +41960,639 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int LOCATION_HEALTH_CARE_FACILITY1_FEATURE_COUNT = CDAPackage.HEALTH_CARE_FACILITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisImpl <em>Preoperative Diagnosis</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosis()
+	 * @generated
+	 */
+	int PREOPERATIVE_DIAGNOSIS = 250;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Preoperative Diagnosis</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsSectionImpl <em>Instructions Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInstructionsSection()
+	 * @generated
+	 */
+	int INSTRUCTIONS_SECTION = 251;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__ID = CDAPackage.SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__CODE = CDAPackage.SECTION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Instructions Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisImpl <em>Hospital Admission Diagnosis</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosis()
+	 * @generated
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS = 252;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Hospital Admission Diagnosis</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
@@ -42006,6 +43955,16 @@ public interface ConsolPackage extends EPackage {
 	EClass getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication <em>Admission Medication</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Admission Medication</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication
+	 * @generated
+	 */
+	EClass getAdmissionMedication();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection <em>Hospital Discharge Medications Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42234,6 +44193,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPostprocedureDiagnosisSection();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis <em>Postprocedure Diagnosis</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Postprocedure Diagnosis</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis
+	 * @generated
+	 */
+	EClass getPostprocedureDiagnosis();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection <em>Preoperative Diagnosis Section</em>}'.
@@ -42676,6 +44645,36 @@ public interface ConsolPackage extends EPackage {
 	EClass getLocation_HealthCareFacility1();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis <em>Preoperative Diagnosis</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Preoperative Diagnosis</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis
+	 * @generated
+	 */
+	EClass getPreoperativeDiagnosis();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection <em>Instructions Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Instructions Section</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.InstructionsSection
+	 * @generated
+	 */
+	EClass getInstructionsSection();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis <em>Hospital Admission Diagnosis</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hospital Admission Diagnosis</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis
+	 * @generated
+	 */
+	EClass getHospitalAdmissionDiagnosis();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42794,6 +44793,96 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUnstructuredDocument();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_RecordTarget <em>Unstructured Document Record Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Document Record Target</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_RecordTarget
+	 * @generated
+	 */
+	EClass getUnstructuredDocument_RecordTarget();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.RecordTarget_PatientRole2 <em>Record Target Patient Role2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Record Target Patient Role2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.RecordTarget_PatientRole2
+	 * @generated
+	 */
+	EClass getRecordTarget_PatientRole2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Author <em>Unstructured Document Author</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Document Author</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Author
+	 * @generated
+	 */
+	EClass getUnstructuredDocument_Author();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Author_AssignedAuthor2 <em>Author Assigned Author2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Author Assigned Author2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Author_AssignedAuthor2
+	 * @generated
+	 */
+	EClass getAuthor_AssignedAuthor2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Custodian <em>Unstructured Document Custodian</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Document Custodian</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Custodian
+	 * @generated
+	 */
+	EClass getUnstructuredDocument_Custodian();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Custodian_AssignedCustodian3 <em>Custodian Assigned Custodian3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Custodian Assigned Custodian3</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Custodian_AssignedCustodian3
+	 * @generated
+	 */
+	EClass getCustodian_AssignedCustodian3();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AssignedCustodian3_CustodianOrganization <em>Assigned Custodian3 Custodian Organization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assigned Custodian3 Custodian Organization</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AssignedCustodian3_CustodianOrganization
+	 * @generated
+	 */
+	EClass getAssignedCustodian3_CustodianOrganization();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Component <em>Unstructured Document Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Document Component</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument_Component
+	 * @generated
+	 */
+	EClass getUnstructuredDocument_Component();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.Component_NonXMLBody <em>Component Non XML Body</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Component Non XML Body</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Component_NonXMLBody
+	 * @generated
+	 */
+	EClass getComponent_NonXMLBody();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ScanOriginalAuthor <em>Scan Original Author</em>}'.
@@ -44358,6 +46447,16 @@ public interface ConsolPackage extends EPackage {
 		EClass HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = eINSTANCE.getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationImpl <em>Admission Medication</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AdmissionMedicationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAdmissionMedication()
+		 * @generated
+		 */
+		EClass ADMISSION_MEDICATION = eINSTANCE.getAdmissionMedication();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalDischargeMedicationsSectionImpl <em>Hospital Discharge Medications Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -44586,6 +46685,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass POSTPROCEDURE_DIAGNOSIS_SECTION = eINSTANCE.getPostprocedureDiagnosisSection();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisImpl <em>Postprocedure Diagnosis</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosisImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosis()
+		 * @generated
+		 */
+		EClass POSTPROCEDURE_DIAGNOSIS = eINSTANCE.getPostprocedureDiagnosis();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisSectionImpl <em>Preoperative Diagnosis Section</em>}' class.
@@ -45028,6 +47137,36 @@ public interface ConsolPackage extends EPackage {
 		EClass LOCATION_HEALTH_CARE_FACILITY1 = eINSTANCE.getLocation_HealthCareFacility1();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisImpl <em>Preoperative Diagnosis</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosisImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosis()
+		 * @generated
+		 */
+		EClass PREOPERATIVE_DIAGNOSIS = eINSTANCE.getPreoperativeDiagnosis();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsSectionImpl <em>Instructions Section</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.InstructionsSectionImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInstructionsSection()
+		 * @generated
+		 */
+		EClass INSTRUCTIONS_SECTION = eINSTANCE.getInstructionsSection();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisImpl <em>Hospital Admission Diagnosis</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.HospitalAdmissionDiagnosisImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getHospitalAdmissionDiagnosis()
+		 * @generated
+		 */
+		EClass HOSPITAL_ADMISSION_DIAGNOSIS = eINSTANCE.getHospitalAdmissionDiagnosis();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AdvanceDirectiveObservation_VerifierImpl <em>Advance Directive Observation Verifier</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -45206,6 +47345,96 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UNSTRUCTURED_DOCUMENT = eINSTANCE.getUnstructuredDocument();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_RecordTargetImpl <em>Unstructured Document Record Target</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_RecordTargetImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_RecordTarget()
+		 * @generated
+		 */
+		EClass UNSTRUCTURED_DOCUMENT_RECORD_TARGET = eINSTANCE.getUnstructuredDocument_RecordTarget();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.RecordTarget_PatientRole2Impl <em>Record Target Patient Role2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.RecordTarget_PatientRole2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getRecordTarget_PatientRole2()
+		 * @generated
+		 */
+		EClass RECORD_TARGET_PATIENT_ROLE2 = eINSTANCE.getRecordTarget_PatientRole2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_AuthorImpl <em>Unstructured Document Author</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_AuthorImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Author()
+		 * @generated
+		 */
+		EClass UNSTRUCTURED_DOCUMENT_AUTHOR = eINSTANCE.getUnstructuredDocument_Author();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Author_AssignedAuthor2Impl <em>Author Assigned Author2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Author_AssignedAuthor2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAuthor_AssignedAuthor2()
+		 * @generated
+		 */
+		EClass AUTHOR_ASSIGNED_AUTHOR2 = eINSTANCE.getAuthor_AssignedAuthor2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_CustodianImpl <em>Unstructured Document Custodian</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_CustodianImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Custodian()
+		 * @generated
+		 */
+		EClass UNSTRUCTURED_DOCUMENT_CUSTODIAN = eINSTANCE.getUnstructuredDocument_Custodian();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Custodian_AssignedCustodian3Impl <em>Custodian Assigned Custodian3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Custodian_AssignedCustodian3Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getCustodian_AssignedCustodian3()
+		 * @generated
+		 */
+		EClass CUSTODIAN_ASSIGNED_CUSTODIAN3 = eINSTANCE.getCustodian_AssignedCustodian3();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AssignedCustodian3_CustodianOrganizationImpl <em>Assigned Custodian3 Custodian Organization</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AssignedCustodian3_CustodianOrganizationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAssignedCustodian3_CustodianOrganization()
+		 * @generated
+		 */
+		EClass ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION = eINSTANCE.getAssignedCustodian3_CustodianOrganization();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_ComponentImpl <em>Unstructured Document Component</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.UnstructuredDocument_ComponentImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getUnstructuredDocument_Component()
+		 * @generated
+		 */
+		EClass UNSTRUCTURED_DOCUMENT_COMPONENT = eINSTANCE.getUnstructuredDocument_Component();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.Component_NonXMLBodyImpl <em>Component Non XML Body</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.Component_NonXMLBodyImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getComponent_NonXMLBody()
+		 * @generated
+		 */
+		EClass COMPONENT_NON_XML_BODY = eINSTANCE.getComponent_NonXMLBody();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ScanOriginalAuthorImpl <em>Scan Original Author</em>}' class.

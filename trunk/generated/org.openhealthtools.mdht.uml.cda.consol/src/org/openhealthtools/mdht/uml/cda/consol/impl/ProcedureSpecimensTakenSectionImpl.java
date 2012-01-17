@@ -66,6 +66,36 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureSpecimensTakenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureSpecimensTakenSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureSpecimensTakenSection init() {
 		CDAUtil.init(this);
 		return this;

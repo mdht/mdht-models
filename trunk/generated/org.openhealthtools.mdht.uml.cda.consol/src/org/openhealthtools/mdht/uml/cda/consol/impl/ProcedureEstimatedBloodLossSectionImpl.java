@@ -66,6 +66,39 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureEstimatedBloodLossSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEstimatedBloodLossSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureEstimatedBloodLossSection init() {
 		CDAUtil.init(this);
 		return this;

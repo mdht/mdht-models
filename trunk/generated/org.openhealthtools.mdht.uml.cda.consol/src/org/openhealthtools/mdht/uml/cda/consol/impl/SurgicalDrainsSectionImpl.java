@@ -64,6 +64,33 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSurgicalDrainsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSurgicalDrainsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSurgicalDrainsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SurgicalDrainsSection init() {
 		CDAUtil.init(this);
 		return this;

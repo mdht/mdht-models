@@ -66,6 +66,36 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePostoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection init() {
 		CDAUtil.init(this);
 		return this;

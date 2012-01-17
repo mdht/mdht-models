@@ -64,6 +64,33 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistorySectionOperations.validateMedicalHistorySectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistorySectionOperations.validateMedicalHistorySectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalHistorySectionOperations.validateMedicalHistorySectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicalHistorySection init() {
 		CDAUtil.init(this);
 		return this;

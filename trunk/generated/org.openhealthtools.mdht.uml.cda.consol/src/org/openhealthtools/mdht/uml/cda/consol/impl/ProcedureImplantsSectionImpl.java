@@ -64,6 +64,33 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureImplantsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureImplantsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureImplantsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureImplantsSection init() {
 		CDAUtil.init(this);
 		return this;

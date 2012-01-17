@@ -1250,6 +1250,15 @@ public interface ConsolFactory extends EFactory {
 	HospitalAdmissionMedicationsSectionEntriesOptional createHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
+	 * Returns a new object of class '<em>Admission Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Admission Medication</em>'.
+	 * @generated
+	 */
+	AdmissionMedication createAdmissionMedication();
+
+	/**
 	 * Returns a new object of class '<em>Hospital Discharge Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1455,6 +1464,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PostprocedureDiagnosisSection createPostprocedureDiagnosisSection();
+
+	/**
+	 * Returns a new object of class '<em>Postprocedure Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postprocedure Diagnosis</em>'.
+	 * @generated
+	 */
+	PostprocedureDiagnosis createPostprocedureDiagnosis();
 
 	/**
 	 * Returns a new object of class '<em>Preoperative Diagnosis Section</em>'.
@@ -1853,6 +1871,33 @@ public interface ConsolFactory extends EFactory {
 	Location_HealthCareFacility1 createLocation_HealthCareFacility1();
 
 	/**
+	 * Returns a new object of class '<em>Preoperative Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Preoperative Diagnosis</em>'.
+	 * @generated
+	 */
+	PreoperativeDiagnosis createPreoperativeDiagnosis();
+
+	/**
+	 * Returns a new object of class '<em>Instructions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instructions Section</em>'.
+	 * @generated
+	 */
+	InstructionsSection createInstructionsSection();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Admission Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Admission Diagnosis</em>'.
+	 * @generated
+	 */
+	HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1959,6 +2004,87 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	UnstructuredDocument createUnstructuredDocument();
+
+	/**
+	 * Returns a new object of class '<em>Unstructured Document Record Target</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document Record Target</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument_RecordTarget createUnstructuredDocument_RecordTarget();
+
+	/**
+	 * Returns a new object of class '<em>Record Target Patient Role2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Record Target Patient Role2</em>'.
+	 * @generated
+	 */
+	RecordTarget_PatientRole2 createRecordTarget_PatientRole2();
+
+	/**
+	 * Returns a new object of class '<em>Unstructured Document Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document Author</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument_Author createUnstructuredDocument_Author();
+
+	/**
+	 * Returns a new object of class '<em>Author Assigned Author2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Author Assigned Author2</em>'.
+	 * @generated
+	 */
+	Author_AssignedAuthor2 createAuthor_AssignedAuthor2();
+
+	/**
+	 * Returns a new object of class '<em>Unstructured Document Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document Custodian</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument_Custodian createUnstructuredDocument_Custodian();
+
+	/**
+	 * Returns a new object of class '<em>Custodian Assigned Custodian3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custodian Assigned Custodian3</em>'.
+	 * @generated
+	 */
+	Custodian_AssignedCustodian3 createCustodian_AssignedCustodian3();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Custodian3 Custodian Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Custodian3 Custodian Organization</em>'.
+	 * @generated
+	 */
+	AssignedCustodian3_CustodianOrganization createAssignedCustodian3_CustodianOrganization();
+
+	/**
+	 * Returns a new object of class '<em>Unstructured Document Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document Component</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument_Component createUnstructuredDocument_Component();
+
+	/**
+	 * Returns a new object of class '<em>Component Non XML Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Non XML Body</em>'.
+	 * @generated
+	 */
+	Component_NonXMLBody createComponent_NonXMLBody();
 
 	/**
 	 * Returns a new object of class '<em>Scan Original Author</em>'.
