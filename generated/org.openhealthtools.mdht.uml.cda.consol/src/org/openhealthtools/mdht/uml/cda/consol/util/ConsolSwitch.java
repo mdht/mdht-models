@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Birthplace;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Component1;
+import org.openhealthtools.mdht.uml.cda.Component2;
 import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
@@ -41,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.Location;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
+import org.openhealthtools.mdht.uml.cda.NonXMLBody;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Order;
 import org.openhealthtools.mdht.uml.cda.Organization;
@@ -2624,6 +2626,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.ADMISSION_MEDICATION: {
+				AdmissionMedication admissionMedication = (AdmissionMedication) theEObject;
+				T result = caseAdmissionMedication(admissionMedication);
+				if (result == null) {
+					result = caseCDA_Act(admissionMedication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(admissionMedication);
+				}
+				if (result == null) {
+					result = caseAct(admissionMedication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(admissionMedication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
 				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection) theEObject;
 				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
@@ -2790,6 +2812,159 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(unstructuredDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_RECORD_TARGET: {
+				UnstructuredDocument_RecordTarget unstructuredDocument_RecordTarget = (UnstructuredDocument_RecordTarget) theEObject;
+				T result = caseUnstructuredDocument_RecordTarget(unstructuredDocument_RecordTarget);
+				if (result == null) {
+					result = caseRecordTarget(unstructuredDocument_RecordTarget);
+				}
+				if (result == null) {
+					result = caseParticipation(unstructuredDocument_RecordTarget);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument_RecordTarget);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE2: {
+				RecordTarget_PatientRole2 recordTarget_PatientRole2 = (RecordTarget_PatientRole2) theEObject;
+				T result = caseRecordTarget_PatientRole2(recordTarget_PatientRole2);
+				if (result == null) {
+					result = casePatientRole(recordTarget_PatientRole2);
+				}
+				if (result == null) {
+					result = caseRole(recordTarget_PatientRole2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(recordTarget_PatientRole2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_AUTHOR: {
+				UnstructuredDocument_Author unstructuredDocument_Author = (UnstructuredDocument_Author) theEObject;
+				T result = caseUnstructuredDocument_Author(unstructuredDocument_Author);
+				if (result == null) {
+					result = caseAuthor(unstructuredDocument_Author);
+				}
+				if (result == null) {
+					result = caseParticipation(unstructuredDocument_Author);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument_Author);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR2: {
+				Author_AssignedAuthor2 author_AssignedAuthor2 = (Author_AssignedAuthor2) theEObject;
+				T result = caseAuthor_AssignedAuthor2(author_AssignedAuthor2);
+				if (result == null) {
+					result = caseAssignedAuthor(author_AssignedAuthor2);
+				}
+				if (result == null) {
+					result = caseRole(author_AssignedAuthor2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(author_AssignedAuthor2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_CUSTODIAN: {
+				UnstructuredDocument_Custodian unstructuredDocument_Custodian = (UnstructuredDocument_Custodian) theEObject;
+				T result = caseUnstructuredDocument_Custodian(unstructuredDocument_Custodian);
+				if (result == null) {
+					result = caseCustodian(unstructuredDocument_Custodian);
+				}
+				if (result == null) {
+					result = caseParticipation(unstructuredDocument_Custodian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument_Custodian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN3: {
+				Custodian_AssignedCustodian3 custodian_AssignedCustodian3 = (Custodian_AssignedCustodian3) theEObject;
+				T result = caseCustodian_AssignedCustodian3(custodian_AssignedCustodian3);
+				if (result == null) {
+					result = caseAssignedCustodian(custodian_AssignedCustodian3);
+				}
+				if (result == null) {
+					result = caseRole(custodian_AssignedCustodian3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(custodian_AssignedCustodian3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION: {
+				AssignedCustodian3_CustodianOrganization assignedCustodian3_CustodianOrganization = (AssignedCustodian3_CustodianOrganization) theEObject;
+				T result = caseAssignedCustodian3_CustodianOrganization(assignedCustodian3_CustodianOrganization);
+				if (result == null) {
+					result = caseCustodianOrganization(assignedCustodian3_CustodianOrganization);
+				}
+				if (result == null) {
+					result = caseEntity(assignedCustodian3_CustodianOrganization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assignedCustodian3_CustodianOrganization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UNSTRUCTURED_DOCUMENT_COMPONENT: {
+				UnstructuredDocument_Component unstructuredDocument_Component = (UnstructuredDocument_Component) theEObject;
+				T result = caseUnstructuredDocument_Component(unstructuredDocument_Component);
+				if (result == null) {
+					result = caseComponent2(unstructuredDocument_Component);
+				}
+				if (result == null) {
+					result = caseActRelationship(unstructuredDocument_Component);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument_Component);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_NON_XML_BODY: {
+				Component_NonXMLBody component_NonXMLBody = (Component_NonXMLBody) theEObject;
+				T result = caseComponent_NonXMLBody(component_NonXMLBody);
+				if (result == null) {
+					result = caseNonXMLBody(component_NonXMLBody);
+				}
+				if (result == null) {
+					result = caseAct(component_NonXMLBody);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(component_NonXMLBody);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3650,6 +3825,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS: {
+				PostprocedureDiagnosis postprocedureDiagnosis = (PostprocedureDiagnosis) theEObject;
+				T result = casePostprocedureDiagnosis(postprocedureDiagnosis);
+				if (result == null) {
+					result = caseCDA_Act(postprocedureDiagnosis);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(postprocedureDiagnosis);
+				}
+				if (result == null) {
+					result = caseAct(postprocedureDiagnosis);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(postprocedureDiagnosis);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: {
 				PreoperativeDiagnosisSection preoperativeDiagnosisSection = (PreoperativeDiagnosisSection) theEObject;
 				T result = casePreoperativeDiagnosisSection(preoperativeDiagnosisSection);
@@ -4407,6 +4602,63 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(location_HealthCareFacility1);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS: {
+				PreoperativeDiagnosis preoperativeDiagnosis = (PreoperativeDiagnosis) theEObject;
+				T result = casePreoperativeDiagnosis(preoperativeDiagnosis);
+				if (result == null) {
+					result = caseCDA_Act(preoperativeDiagnosis);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(preoperativeDiagnosis);
+				}
+				if (result == null) {
+					result = caseAct(preoperativeDiagnosis);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(preoperativeDiagnosis);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INSTRUCTIONS_SECTION: {
+				InstructionsSection instructionsSection = (InstructionsSection) theEObject;
+				T result = caseInstructionsSection(instructionsSection);
+				if (result == null) {
+					result = caseSection(instructionsSection);
+				}
+				if (result == null) {
+					result = caseAct(instructionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(instructionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS: {
+				HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis = (HospitalAdmissionDiagnosis) theEObject;
+				T result = caseHospitalAdmissionDiagnosis(hospitalAdmissionDiagnosis);
+				if (result == null) {
+					result = caseCDA_Act(hospitalAdmissionDiagnosis);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(hospitalAdmissionDiagnosis);
+				}
+				if (result == null) {
+					result = caseAct(hospitalAdmissionDiagnosis);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalAdmissionDiagnosis);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -6610,6 +6862,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Admission Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Admission Medication</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdmissionMedication(AdmissionMedication object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -6891,6 +7158,141 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseUnstructuredDocument(UnstructuredDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document Record Target</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document Record Target</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument_RecordTarget(UnstructuredDocument_RecordTarget object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Record Target Patient Role2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Record Target Patient Role2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRecordTarget_PatientRole2(RecordTarget_PatientRole2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document Author</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument_Author(UnstructuredDocument_Author object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Author Assigned Author2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Author Assigned Author2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthor_AssignedAuthor2(Author_AssignedAuthor2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document Custodian</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document Custodian</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument_Custodian(UnstructuredDocument_Custodian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Custodian Assigned Custodian3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Custodian Assigned Custodian3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCustodian_AssignedCustodian3(Custodian_AssignedCustodian3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assigned Custodian3 Custodian Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assigned Custodian3 Custodian Organization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignedCustodian3_CustodianOrganization(AssignedCustodian3_CustodianOrganization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document Component</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument_Component(UnstructuredDocument_Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Non XML Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Non XML Body</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponent_NonXMLBody(Component_NonXMLBody object) {
 		return null;
 	}
 
@@ -7676,6 +8078,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePostprocedureDiagnosis(PostprocedureDiagnosis object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8336,6 +8753,51 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Preoperative Diagnosis</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePreoperativeDiagnosis(PreoperativeDiagnosis object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Instructions Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInstructionsSection(InstructionsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosis object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performer1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8347,6 +8809,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePerformer1(Performer1 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponent2(Component2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Non XML Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Non XML Body</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNonXMLBody(NonXMLBody object) {
 		return null;
 	}
 

@@ -66,6 +66,34 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureDispositionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureDispositionSection init() {
 		CDAUtil.init(this);
 		return this;

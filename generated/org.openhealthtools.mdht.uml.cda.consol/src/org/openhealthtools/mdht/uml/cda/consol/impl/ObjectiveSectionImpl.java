@@ -64,6 +64,33 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateObjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ObjectiveSection init() {
 		CDAUtil.init(this);
 		return this;

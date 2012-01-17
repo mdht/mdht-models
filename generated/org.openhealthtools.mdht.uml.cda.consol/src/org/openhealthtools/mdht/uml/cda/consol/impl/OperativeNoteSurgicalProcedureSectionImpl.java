@@ -67,6 +67,39 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public OperativeNoteSurgicalProcedureSection init() {
 		CDAUtil.init(this);
 		return this;

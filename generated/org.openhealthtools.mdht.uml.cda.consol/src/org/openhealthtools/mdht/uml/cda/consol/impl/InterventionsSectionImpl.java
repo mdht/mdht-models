@@ -64,6 +64,33 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInterventionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSectionOperations.validateInterventionsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInterventionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInterventionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSectionOperations.validateInterventionsSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public InterventionsSection init() {
 		CDAUtil.init(this);
 		return this;

@@ -18,17 +18,12 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * The hospital admitting diagnosis section shall contain a narrative description of the primary reason for admission to a
- * hospital facility. It shall include entries for observations as described in the Entry Content Modules.
- * <p>
- *     The Hospital Admitting Diagnosis Section contains information about the primary reason for admission to
- *     a hospital facility. 
- * </p>
+ * The Hospital Admitting Diagnosis section contains a narrative description of the primary reason for admission to a hospital facility. The section includes an optional entry to record patient conditions.
  * <!-- end-model-doc -->
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL ADMISSION DX' templateId.root='2.16.840.1.113883.10.20.22.2.43' constraints.validation.error='HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCondition' code.codeSystemName='LOINC' code.code='46241-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.43' code.displayName='HOSPITAL ADMISSION DX' constraints.validation.error='HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode' code.codeSystemName='LOINC' code.code='46241-6'"
  * @generated
  */
 public interface HospitalAdmissionDiagnosisSection extends Section {
@@ -59,31 +54,6 @@ public interface HospitalAdmissionDiagnosisSection extends Section {
 	 * @generated
 	 */
 	boolean validateHospitalAdmissionDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))'"
-	 * @generated
-	 */
-	boolean validateHospitalAdmissionDiagnosisSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct))->asSequence()->first().oclAsType(consol::ProblemConcernAct)'"
-	 * @generated
-	 */
-	ProblemConcernAct getCondition();
 
 	/**
 	 * <!-- begin-user-doc -->

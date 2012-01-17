@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureIndicationsSectionOperations;
@@ -59,6 +60,54 @@ public class ProcedureIndicationsSectionImpl extends SectionImpl implements Proc
 			Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureIndicationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureIndicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureIndicationsSectionIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionIndication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Indication getIndication() {
+		return ProcedureIndicationsSectionOperations.getIndication(this);
 	}
 
 	/**

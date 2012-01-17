@@ -66,6 +66,36 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHospitalConsultationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalConsultationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalConsultationsSection init() {
 		CDAUtil.init(this);
 		return this;

@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureSectionOperations;
@@ -57,6 +58,53 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 */
 	public boolean validatePlannedProcedureSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
+		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedure(this);
 	}
 
 	/**
