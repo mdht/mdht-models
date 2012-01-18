@@ -566,6 +566,60 @@ public interface ConsolFactory extends EFactory {
 	ContinuityOfCareDocument createContinuityOfCareDocument();
 
 	/**
+	 * Returns a new object of class '<em>Continuity Of Care Document Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Continuity Of Care Document Documentation Of</em>'.
+	 * @generated
+	 */
+	ContinuityOfCareDocument_DocumentationOf createContinuityOfCareDocument_DocumentationOf();
+
+	/**
+	 * Returns a new object of class '<em>Documentation Of Service Event3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Documentation Of Service Event3</em>'.
+	 * @generated
+	 */
+	DocumentationOf_ServiceEvent3 createDocumentationOf_ServiceEvent3();
+
+	/**
+	 * Returns a new object of class '<em>Service Event3 Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Service Event3 Performer</em>'.
+	 * @generated
+	 */
+	ServiceEvent3_Performer createServiceEvent3_Performer();
+
+	/**
+	 * Returns a new object of class '<em>Performer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Performer Assigned Entity</em>'.
+	 * @generated
+	 */
+	Performer_AssignedEntity createPerformer_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Continuity Of Care Document Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Continuity Of Care Document Author</em>'.
+	 * @generated
+	 */
+	ContinuityOfCareDocument_Author createContinuityOfCareDocument_Author();
+
+	/**
+	 * Returns a new object of class '<em>Author Assigned Author3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Author Assigned Author3</em>'.
+	 * @generated
+	 */
+	Author_AssignedAuthor3 createAuthor_AssignedAuthor3();
+
+	/**
 	 * Returns a new object of class '<em>Advance Directives Section Entries Optional</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

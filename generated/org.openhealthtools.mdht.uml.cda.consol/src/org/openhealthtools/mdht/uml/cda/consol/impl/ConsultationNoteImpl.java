@@ -618,6 +618,16 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ConsultationNote init() {
 		CDAUtil.init(this);
 		return this;

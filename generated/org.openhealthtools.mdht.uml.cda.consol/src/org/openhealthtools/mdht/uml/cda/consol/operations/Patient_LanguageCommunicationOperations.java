@@ -31,7 +31,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Patient_LanguageCommunication#validateLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Language Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Patient_LanguageCommunication#validateLanguageCommunicationPreferenceInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Preference Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Patient_LanguageCommunication#validateLanguageCommunicationProficiencyLevelCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Proficiency Level Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Patient_LanguageCommunication#validateLanguageCommunicationModeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Mode Code</em>}</li>
  * </ul>
  * </p>
@@ -55,6 +57,67 @@ public class Patient_LanguageCommunicationOperations {
 	 */
 	protected Patient_LanguageCommunicationOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Language Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Language Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in (
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
+	 * @param patient_LanguageCommunication The receiving '<em><b>Patient Language Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateLanguageCommunicationLanguageCode(
+			Patient_LanguageCommunication patient_LanguageCommunication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
+			try {
+				VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patient_LanguageCommunication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
+					ConsolPlugin.INSTANCE.getString("LanguageCommunicationLanguageCode"),
+					new Object[] { patient_LanguageCommunication }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -107,6 +170,68 @@ public class Patient_LanguageCommunicationOperations {
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PREFERENCE_IND,
 					ConsolPlugin.INSTANCE.getString("LanguageCommunicationPreferenceInd"),
+					new Object[] { patient_LanguageCommunication }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateLanguageCommunicationProficiencyLevelCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Proficiency Level Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLanguageCommunicationProficiencyLevelCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationProficiencyLevelCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Proficiency Level Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLanguageCommunicationProficiencyLevelCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in (
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
+	 * @param patient_LanguageCommunication The receiving '<em><b>Patient Language Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateLanguageCommunicationProficiencyLevelCode(
+			Patient_LanguageCommunication patient_LanguageCommunication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
+			try {
+				VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patient_LanguageCommunication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE,
+					ConsolPlugin.INSTANCE.getString("LanguageCommunicationProficiencyLevelCode"),
 					new Object[] { patient_LanguageCommunication }));
 			}
 			return false;
