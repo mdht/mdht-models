@@ -41,37 +41,23 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_2H6yUBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_2IJb0BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_dXx-gCzIEeGMXrZ0DiQwGg"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IMfIRSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2INGMBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IOUUBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IO7YBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IPicBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IPicxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IQJgBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IRXoBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2IR-shSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-familyhistory.uml#_2IYFURSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-familyhistory.uml#_2IbIoBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-familyhistory.uml#_2IpyIxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-familyhistory.uml#_2Iv4wBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-familyhistory.uml#_2I6Q0BSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2JKIcBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2JKvgBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_2JLWkRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2JOZ4BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_2JVHkhSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2JsT8BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2Js7AxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2JxzgBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_2JxzhxSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2KEHYBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_2KHxwxSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2KKOABSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2KT_ARSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2KVNIBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2KYQcRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2KZekBSVEeGGzu7fmW9pXw"/>
@@ -219,7 +205,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_daTqABVOEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_o-v9khVOEeGbmN_W114JUw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#__3ADghVVEeGbmN_W114JUw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_4-pu0hVZEeGrgeKDUiwadw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_bGzYgBVdEeGQCvUGzi1kDQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_iAoXEBVdEeGQCvUGzi1kDQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_naxrkBVdEeGQCvUGzi1kDQ"/>
@@ -561,6 +546,27 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_IfrmAkFHEeGorO80f-Cppg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_5K6mAEFHEeGorO80f-Cppg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_SgUIAkFIEeGorO80f-Cppg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_h3HA4kIOEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_5hqxskIOEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_1pCBUkIQEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_81oK4kIQEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_OUupkEISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_WpAM4kISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_ifn1kkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_li0g0kISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_odilgkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_q9INYEISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_tK1bEkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_vtaFgEISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_yWY58kISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_07pE8kISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_3MoQIkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_52DwgkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_-yGzwkISEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_AM26gkITEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_CL0hkkITEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_D86rwkITEeGfG6GbxF_VQQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_FhDYAkITEeGfG6GbxF_VQQ"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -1632,5 +1638,89 @@
     <ruleId>CONF:10102</ruleId>
     <ruleId>CONF:10110</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_IfrmAkFHEeGorO80f-Cppg"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_oSHgAEIPEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:8459</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_5hqxskIOEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_v2G14EIPEeGfG6GbxF_VQQ" severity="WARNING">
+    <ruleId>CONF:8482</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_h3HA4kIOEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_3NT3gEIQEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8452</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_1pCBUkIQEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="__DyEgEIQEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8480</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_81oK4kIQEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_QqyiAEISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9442</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_OUupkEISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ZDOzoEISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9443</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_WpAM4kISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_M2lbIEITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9445</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_ifn1kkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_NMWPwEITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9447</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_li0g0kISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_NiGdUEITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9449</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_odilgkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_N5C9sEITEeGfG6GbxF_VQQ" severity="WARNING">
+    <ruleId>CONF:9451</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_q9INYEISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_PuUdQEITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9453</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_tK1bEkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_QLhWoEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9455</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_vtaFgEISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_QixZAEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9457</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_yWY58kISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Q8QQAEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9459</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_07pE8kISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ShSUIEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9461</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_3MoQIkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_S8Gn4EITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9463</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_52DwgkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_TPeP0EITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9466</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_-yGzwkISEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Tnw0AEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9468</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_AM26gkITEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_UAgEIEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9470</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_CL0hkkITEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_UV9WwEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9472</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_D86rwkITEeGfG6GbxF_VQQ"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_UsAfQEITEeGfG6GbxF_VQQ" severity="INFO">
+    <ruleId>CONF:9474</ruleId>
+    <base_Association href=".controlled/consol-documents.uml#_FhDYAkITEeGfG6GbxF_VQQ"/>
   </CDA:AssociationValidation>
 </xmi:XMI>

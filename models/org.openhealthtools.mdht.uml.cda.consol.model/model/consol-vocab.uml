@@ -479,7 +479,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="DYNAMIC" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2SbZPhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.12249" version="1" fullName="LanguageAbilityMode Value Set" definition="This identifies the language ability of the individual. A value representing the method of expression of the language." revisionDate="07/23/2009" base_Enumeration="_2SbZNxSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dLvLYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -512,7 +514,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_dGk9kSBCEeG938evaWkvcA" conceptName="Week" base_EnumerationLiteral="_dGk9kCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
-  <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw"/>
+  <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" binding="Dynamic" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag"/>
   <term:ValueSetVersion xmi:id="_cOR30CXNEeGnSfJ2zNllag" identifier="2.16.840.1.113883.3.88.12.3221.6.8" binding="Dynamic" base_Enumeration="_Zpfm4CXNEeGnSfJ2zNllag">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -550,11 +554,13 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" codeSystem="_vNtCQTVPEeGIw7CntkyPQw" base_Enumeration="_8K870DVPEeGIw7CntkyPQw"/>
   <term:CodeSystemVersion xmi:id="_KAjkQDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.1" base_Enumeration="__Nb_8DVQEeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
-  <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_svo1oTVVEeGIw7CntkyPQw" identifier="2.16.840.1.113883.6.101" fullName="NUCC Health Care Provider Taxonomy" base_Enumeration="_svo1oDVVEeGIw7CntkyPQw"/>
   <term:CodeSystemVersion xmi:id="_ZhyZUTVYEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.89" fullName="Participationsignature" base_Enumeration="_ZhyZUDVYEeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_tKTLkDrrEeG-aJb2h_4S8w"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_ru4rkDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer’s group health plan" base_EnumerationLiteral="_ru4EgDrtEeG-aJb2h_4S8w"/>
@@ -601,7 +607,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_fW6dwTr3EeG-aJb2h_4S8w" conceptName="Tax Equity Fiscal Responsibility Act (TEFRA)" base_EnumerationLiteral="_fW6dwDr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_kUB4ADr3EeG-aJb2h_4S8w" conceptName="Workers Compensation" base_EnumerationLiteral="_kUBQ8Dr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
-  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA"/>
+  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -617,6 +625,17 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_-bWMgT-UEeGvOdejHZ7dYg" identifier="2.16.840.1.114222.4.11.1066" fullName="NUCC - HIPAA Health Care Provider Taxonomy" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_-bWMgD-UEeGvOdejHZ7dYg"/>
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_1VJ6wEFaEeGFqszUdHc61Q" base_Enumeration="_dfcxkKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_3hiSwEFaEeGFqszUdHc61Q" base_Enumeration="_dfoXwKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA"/>
+  <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_--QGgEFbEeGFqszUdHc61Q" base_Enumeration="_dRQkkKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
 </xmi:XMI>
