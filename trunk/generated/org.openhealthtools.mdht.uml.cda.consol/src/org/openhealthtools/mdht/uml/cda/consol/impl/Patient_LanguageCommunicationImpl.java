@@ -56,8 +56,29 @@ public class Patient_LanguageCommunicationImpl extends LanguageCommunicationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateLanguageCommunicationLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationLanguageCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateLanguageCommunicationPreferenceInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationPreferenceInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLanguageCommunicationProficiencyLevelCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationProficiencyLevelCode(
 			this, diagnostics, context);
 	}
 

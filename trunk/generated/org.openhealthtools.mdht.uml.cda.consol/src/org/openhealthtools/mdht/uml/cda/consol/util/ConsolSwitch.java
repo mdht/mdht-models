@@ -1271,6 +1271,393 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF: {
+				ContinuityOfCareDocument_DocumentationOf continuityOfCareDocument_DocumentationOf = (ContinuityOfCareDocument_DocumentationOf) theEObject;
+				T result = caseContinuityOfCareDocument_DocumentationOf(continuityOfCareDocument_DocumentationOf);
+				if (result == null) {
+					result = caseDocumentationOf(continuityOfCareDocument_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(continuityOfCareDocument_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(continuityOfCareDocument_DocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT3: {
+				DocumentationOf_ServiceEvent3 documentationOf_ServiceEvent3 = (DocumentationOf_ServiceEvent3) theEObject;
+				T result = caseDocumentationOf_ServiceEvent3(documentationOf_ServiceEvent3);
+				if (result == null) {
+					result = caseServiceEvent(documentationOf_ServiceEvent3);
+				}
+				if (result == null) {
+					result = caseAct(documentationOf_ServiceEvent3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(documentationOf_ServiceEvent3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SERVICE_EVENT3_PERFORMER: {
+				ServiceEvent3_Performer serviceEvent3_Performer = (ServiceEvent3_Performer) theEObject;
+				T result = caseServiceEvent3_Performer(serviceEvent3_Performer);
+				if (result == null) {
+					result = casePerformer1(serviceEvent3_Performer);
+				}
+				if (result == null) {
+					result = caseParticipation(serviceEvent3_Performer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(serviceEvent3_Performer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PERFORMER_ASSIGNED_ENTITY: {
+				Performer_AssignedEntity performer_AssignedEntity = (Performer_AssignedEntity) theEObject;
+				T result = casePerformer_AssignedEntity(performer_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(performer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(performer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(performer_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR: {
+				ContinuityOfCareDocument_Author continuityOfCareDocument_Author = (ContinuityOfCareDocument_Author) theEObject;
+				T result = caseContinuityOfCareDocument_Author(continuityOfCareDocument_Author);
+				if (result == null) {
+					result = caseAuthor(continuityOfCareDocument_Author);
+				}
+				if (result == null) {
+					result = caseParticipation(continuityOfCareDocument_Author);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(continuityOfCareDocument_Author);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR3: {
+				Author_AssignedAuthor3 author_AssignedAuthor3 = (Author_AssignedAuthor3) theEObject;
+				T result = caseAuthor_AssignedAuthor3(author_AssignedAuthor3);
+				if (result == null) {
+					result = caseAssignedAuthor(author_AssignedAuthor3);
+				}
+				if (result == null) {
+					result = caseRole(author_AssignedAuthor3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(author_AssignedAuthor3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGIES_SECTION: {
+				AllergiesSection allergiesSection = (AllergiesSection) theEObject;
+				T result = caseAllergiesSection(allergiesSection);
+				if (result == null) {
+					result = caseAllergiesSectionEntriesOptional(allergiesSection);
+				}
+				if (result == null) {
+					result = caseSection(allergiesSection);
+				}
+				if (result == null) {
+					result = caseAct(allergiesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergiesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
+				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional) theEObject;
+				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(allergiesSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(allergiesSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICATIONS_SECTION: {
+				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
+				T result = caseMedicationsSection(medicationsSection);
+				if (result == null) {
+					result = caseMedicationsSectionEntriesOptional(medicationsSection);
+				}
+				if (result == null) {
+					result = caseSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
+				MedicationsSectionEntriesOptional medicationsSectionEntriesOptional = (MedicationsSectionEntriesOptional) theEObject;
+				T result = caseMedicationsSectionEntriesOptional(medicationsSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(medicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(medicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_SECTION: {
+				ProblemSection problemSection = (ProblemSection) theEObject;
+				T result = caseProblemSection(problemSection);
+				if (result == null) {
+					result = caseProblemSectionEntriesOptional(problemSection);
+				}
+				if (result == null) {
+					result = caseSection(problemSection);
+				}
+				if (result == null) {
+					result = caseAct(problemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL: {
+				ProblemSectionEntriesOptional problemSectionEntriesOptional = (ProblemSectionEntriesOptional) theEObject;
+				T result = caseProblemSectionEntriesOptional(problemSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(problemSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(problemSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURES_SECTION: {
+				ProceduresSection proceduresSection = (ProceduresSection) theEObject;
+				T result = caseProceduresSection(proceduresSection);
+				if (result == null) {
+					result = caseProceduresSectionEntriesOptional(proceduresSection);
+				}
+				if (result == null) {
+					result = caseSection(proceduresSection);
+				}
+				if (result == null) {
+					result = caseAct(proceduresSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(proceduresSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL: {
+				ProceduresSectionEntriesOptional proceduresSectionEntriesOptional = (ProceduresSectionEntriesOptional) theEObject;
+				T result = caseProceduresSectionEntriesOptional(proceduresSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(proceduresSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(proceduresSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(proceduresSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: {
+				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation) theEObject;
+				T result = caseProcedureActivityObservation(procedureActivityObservation);
+				if (result == null) {
+					result = caseObservation(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
+				T result = caseProcedureActivityAct(procedureActivityAct);
+				if (result == null) {
+					result = caseCDA_Act(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULTS_SECTION: {
+				ResultsSection resultsSection = (ResultsSection) theEObject;
+				T result = caseResultsSection(resultsSection);
+				if (result == null) {
+					result = caseResultsSectionEntriesOptional(resultsSection);
+				}
+				if (result == null) {
+					result = caseSection(resultsSection);
+				}
+				if (result == null) {
+					result = caseAct(resultsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL: {
+				ResultsSectionEntriesOptional resultsSectionEntriesOptional = (ResultsSectionEntriesOptional) theEObject;
+				T result = caseResultsSectionEntriesOptional(resultsSectionEntriesOptional);
+				if (result == null) {
+					result = caseSection(resultsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseAct(resultsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultsSectionEntriesOptional);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_ORGANIZER: {
+				ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
+				T result = caseResultOrganizer(resultOrganizer);
+				if (result == null) {
+					result = caseOrganizer(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_OBSERVATION: {
+				ResultObservation resultObservation = (ResultObservation) theEObject;
+				T result = caseResultObservation(resultObservation);
+				if (result == null) {
+					result = caseObservation(resultObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultObservation);
+				}
+				if (result == null) {
+					result = caseAct(resultObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: {
+				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
+				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
+				if (result == null) {
+					result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: {
 				AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional = (AdvanceDirectivesSectionEntriesOptional) theEObject;
 				T result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSectionEntriesOptional);
@@ -1410,37 +1797,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.ALLERGIES_SECTION: {
-				AllergiesSection allergiesSection = (AllergiesSection) theEObject;
-				T result = caseAllergiesSection(allergiesSection);
+			case ConsolPackage.ENCOUNTERS_SECTION: {
+				EncountersSection encountersSection = (EncountersSection) theEObject;
+				T result = caseEncountersSection(encountersSection);
 				if (result == null) {
-					result = caseAllergiesSectionEntriesOptional(allergiesSection);
+					result = caseEncountersSectionEntriesOptional(encountersSection);
 				}
 				if (result == null) {
-					result = caseSection(allergiesSection);
+					result = caseSection(encountersSection);
 				}
 				if (result == null) {
-					result = caseAct(allergiesSection);
+					result = caseAct(encountersSection);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(allergiesSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
-				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional) theEObject;
-				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(allergiesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(allergiesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
+					result = caseInfrastructureRoot(encountersSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1478,6 +1848,100 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(encounterActivities);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_SECTION: {
+				FamilyHistorySection familyHistorySection = (FamilyHistorySection) theEObject;
+				T result = caseFamilyHistorySection(familyHistorySection);
+				if (result == null) {
+					result = caseSection(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: {
+				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
+				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: {
+				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
+				T result = caseFamilyHistoryObservation(familyHistoryObservation);
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION: {
+				FamilyHistoryDeathObservation familyHistoryDeathObservation = (FamilyHistoryDeathObservation) theEObject;
+				T result = caseFamilyHistoryDeathObservation(familyHistoryDeathObservation);
+				if (result == null) {
+					result = caseObservation(familyHistoryDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: {
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
+				T result = caseFunctionalStatusSection(functionalStatusSection);
+				if (result == null) {
+					result = caseSection(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1535,6 +1999,23 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(immunizationRefusalReason);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: {
+				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection) theEObject;
+				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
+				if (result == null) {
+					result = caseSection(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseAct(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalEquipmentSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1612,43 +2093,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(authorizationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICATIONS_SECTION: {
-				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
-				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) {
-					result = caseMedicationsSectionEntriesOptional(medicationsSection);
-				}
-				if (result == null) {
-					result = caseSection(medicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(medicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
-				MedicationsSectionEntriesOptional medicationsSectionEntriesOptional = (MedicationsSectionEntriesOptional) theEObject;
-				T result = caseMedicationsSectionEntriesOptional(medicationsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(medicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(medicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationsSectionEntriesOptional);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1792,217 +2236,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PROCEDURES_SECTION: {
-				ProceduresSection proceduresSection = (ProceduresSection) theEObject;
-				T result = caseProceduresSection(proceduresSection);
-				if (result == null) {
-					result = caseProceduresSectionEntriesOptional(proceduresSection);
-				}
-				if (result == null) {
-					result = caseSection(proceduresSection);
-				}
-				if (result == null) {
-					result = caseAct(proceduresSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(proceduresSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL: {
-				ProceduresSectionEntriesOptional proceduresSectionEntriesOptional = (ProceduresSectionEntriesOptional) theEObject;
-				T result = caseProceduresSectionEntriesOptional(proceduresSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: {
-				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation) theEObject;
-				T result = caseProcedureActivityObservation(procedureActivityObservation);
-				if (result == null) {
-					result = caseObservation(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
-				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
-				T result = caseProcedureActivityAct(procedureActivityAct);
-				if (result == null) {
-					result = caseCDA_Act(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: {
-				VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional = (VitalSignsSectionEntriesOptional) theEObject;
-				T result = caseVitalSignsSectionEntriesOptional(vitalSignsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
-				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) {
-					result = caseOrganizer(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.VITAL_SIGN_OBSERVATION: {
-				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
-				T result = caseVitalSignObservation(vitalSignObservation);
-				if (result == null) {
-					result = caseObservation(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_SECTION: {
-				FamilyHistorySection familyHistorySection = (FamilyHistorySection) theEObject;
-				T result = caseFamilyHistorySection(familyHistorySection);
-				if (result == null) {
-					result = caseSection(familyHistorySection);
-				}
-				if (result == null) {
-					result = caseAct(familyHistorySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistorySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: {
-				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
-				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
-				if (result == null) {
-					result = caseOrganizer(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
-				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) {
-					result = caseObservation(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION: {
-				FamilyHistoryDeathObservation familyHistoryDeathObservation = (FamilyHistoryDeathObservation) theEObject;
-				T result = caseFamilyHistoryDeathObservation(familyHistoryDeathObservation);
-				if (result == null) {
-					result = caseObservation(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.SOCIAL_HISTORY_SECTION: {
 				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
@@ -2080,148 +2313,57 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.RESULTS_SECTION: {
-				ResultsSection resultsSection = (ResultsSection) theEObject;
-				T result = caseResultsSection(resultsSection);
+			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: {
+				VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional = (VitalSignsSectionEntriesOptional) theEObject;
+				T result = caseVitalSignsSectionEntriesOptional(vitalSignsSectionEntriesOptional);
 				if (result == null) {
-					result = caseResultsSectionEntriesOptional(resultsSection);
+					result = caseSection(vitalSignsSectionEntriesOptional);
 				}
 				if (result == null) {
-					result = caseSection(resultsSection);
+					result = caseAct(vitalSignsSectionEntriesOptional);
 				}
 				if (result == null) {
-					result = caseAct(resultsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultsSection);
+					result = caseInfrastructureRoot(vitalSignsSectionEntriesOptional);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL: {
-				ResultsSectionEntriesOptional resultsSectionEntriesOptional = (ResultsSectionEntriesOptional) theEObject;
-				T result = caseResultsSectionEntriesOptional(resultsSectionEntriesOptional);
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER: {
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
+				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
 				if (result == null) {
-					result = caseSection(resultsSectionEntriesOptional);
+					result = caseOrganizer(vitalSignsOrganizer);
 				}
 				if (result == null) {
-					result = caseAct(resultsSectionEntriesOptional);
+					result = caseClinicalStatement(vitalSignsOrganizer);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(resultsSectionEntriesOptional);
+					result = caseAct(vitalSignsOrganizer);
 				}
 				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.RESULT_ORGANIZER: {
-				ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
-				T result = caseResultOrganizer(resultOrganizer);
-				if (result == null) {
-					result = caseOrganizer(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultOrganizer);
+					result = caseInfrastructureRoot(vitalSignsOrganizer);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case ConsolPackage.RESULT_OBSERVATION: {
-				ResultObservation resultObservation = (ResultObservation) theEObject;
-				T result = caseResultObservation(resultObservation);
+			case ConsolPackage.VITAL_SIGN_OBSERVATION: {
+				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
+				T result = caseVitalSignObservation(vitalSignObservation);
 				if (result == null) {
-					result = caseObservation(resultObservation);
+					result = caseObservation(vitalSignObservation);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(resultObservation);
+					result = caseClinicalStatement(vitalSignObservation);
 				}
 				if (result == null) {
-					result = caseAct(resultObservation);
+					result = caseAct(vitalSignObservation);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(resultObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: {
-				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection) theEObject;
-				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) {
-					result = caseSection(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = caseAct(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
-				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) {
-					result = caseSection(functionalStatusSection);
-				}
-				if (result == null) {
-					result = caseAct(functionalStatusSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(functionalStatusSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_SECTION: {
-				ProblemSection problemSection = (ProblemSection) theEObject;
-				T result = caseProblemSection(problemSection);
-				if (result == null) {
-					result = caseProblemSectionEntriesOptional(problemSection);
-				}
-				if (result == null) {
-					result = caseSection(problemSection);
-				}
-				if (result == null) {
-					result = caseAct(problemSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL: {
-				ProblemSectionEntriesOptional problemSectionEntriesOptional = (ProblemSectionEntriesOptional) theEObject;
-				T result = caseProblemSectionEntriesOptional(problemSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(problemSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(problemSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemSectionEntriesOptional);
+					result = caseInfrastructureRoot(vitalSignObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2285,26 +2427,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: {
-				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
-				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) {
-					result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseSection(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
 				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification) theEObject;
 				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
@@ -2336,26 +2458,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ENCOUNTERS_SECTION: {
-				EncountersSection encountersSection = (EncountersSection) theEObject;
-				T result = caseEncountersSection(encountersSection);
-				if (result == null) {
-					result = caseEncountersSectionEntriesOptional(encountersSection);
-				}
-				if (result == null) {
-					result = caseSection(encountersSection);
-				}
-				if (result == null) {
-					result = caseAct(encountersSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encountersSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -5567,6 +5669,96 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseContinuityOfCareDocument(ContinuityOfCareDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Continuity Of Care Document Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Continuity Of Care Document Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContinuityOfCareDocument_DocumentationOf(ContinuityOfCareDocument_DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of Service Event3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of Service Event3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf_ServiceEvent3(DocumentationOf_ServiceEvent3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Service Event3 Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Service Event3 Performer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseServiceEvent3_Performer(ServiceEvent3_Performer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Performer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Performer Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePerformer_AssignedEntity(Performer_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Continuity Of Care Document Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Continuity Of Care Document Author</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContinuityOfCareDocument_Author(ContinuityOfCareDocument_Author object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Author Assigned Author3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Author Assigned Author3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthor_AssignedAuthor3(Author_AssignedAuthor3 object) {
 		return null;
 	}
 

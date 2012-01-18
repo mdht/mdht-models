@@ -183,6 +183,48 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProblemStatus();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT:
 				return createContinuityOfCareDocument();
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF:
+				return createContinuityOfCareDocument_DocumentationOf();
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT3:
+				return createDocumentationOf_ServiceEvent3();
+			case ConsolPackage.SERVICE_EVENT3_PERFORMER:
+				return createServiceEvent3_Performer();
+			case ConsolPackage.PERFORMER_ASSIGNED_ENTITY:
+				return createPerformer_AssignedEntity();
+			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR:
+				return createContinuityOfCareDocument_Author();
+			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR3:
+				return createAuthor_AssignedAuthor3();
+			case ConsolPackage.ALLERGIES_SECTION:
+				return createAllergiesSection();
+			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
+				return createAllergiesSectionEntriesOptional();
+			case ConsolPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
+				return createMedicationsSectionEntriesOptional();
+			case ConsolPackage.PROBLEM_SECTION:
+				return createProblemSection();
+			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL:
+				return createProblemSectionEntriesOptional();
+			case ConsolPackage.PROCEDURES_SECTION:
+				return createProceduresSection();
+			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
+				return createProceduresSectionEntriesOptional();
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
+				return createProcedureActivityObservation();
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
+				return createProcedureActivityAct();
+			case ConsolPackage.RESULTS_SECTION:
+				return createResultsSection();
+			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL:
+				return createResultsSectionEntriesOptional();
+			case ConsolPackage.RESULT_ORGANIZER:
+				return createResultOrganizer();
+			case ConsolPackage.RESULT_OBSERVATION:
+				return createResultObservation();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION:
+				return createAdvanceDirectivesSection();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
 				return createAdvanceDirectivesSectionEntriesOptional();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
@@ -199,20 +241,30 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCustodianRole_CustodianEntity();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER:
 				return createAdvanceDirectiveObservation_Verifier();
-			case ConsolPackage.ALLERGIES_SECTION:
-				return createAllergiesSection();
-			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
-				return createAllergiesSectionEntriesOptional();
+			case ConsolPackage.ENCOUNTERS_SECTION:
+				return createEncountersSection();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL:
 				return createEncountersSectionEntriesOptional();
 			case ConsolPackage.ENCOUNTER_ACTIVITIES:
 				return createEncounterActivities();
+			case ConsolPackage.FAMILY_HISTORY_SECTION:
+				return createFamilyHistorySection();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER:
+				return createFamilyHistoryOrganizer();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION:
+				return createFamilyHistoryDeathObservation();
+			case ConsolPackage.FUNCTIONAL_STATUS_SECTION:
+				return createFunctionalStatusSection();
 			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL:
 				return createImmunizationsSectionEntriesOptional();
 			case ConsolPackage.IMMUNIZATION_ACTIVITY:
 				return createImmunizationActivity();
 			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
 				return createImmunizationRefusalReason();
+			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION:
+				return createMedicalEquipmentSection();
 			case ConsolPackage.PAYERS_SECTION:
 				return createPayersSection();
 			case ConsolPackage.COVERAGE_ACTIVITY:
@@ -221,10 +273,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPolicyActivity();
 			case ConsolPackage.AUTHORIZATION_ACTIVITY:
 				return createAuthorizationActivity();
-			case ConsolPackage.MEDICATIONS_SECTION:
-				return createMedicationsSection();
-			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
-				return createMedicationsSectionEntriesOptional();
 			case ConsolPackage.PLAN_OF_CARE_SECTION:
 				return createPlanOfCareSection();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT:
@@ -239,28 +287,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPlanOfCareActivitySubstanceAdministration();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
 				return createPlanOfCareActivitySupply();
-			case ConsolPackage.PROCEDURES_SECTION:
-				return createProceduresSection();
-			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
-				return createProceduresSectionEntriesOptional();
-			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
-				return createProcedureActivityObservation();
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
-				return createProcedureActivityAct();
-			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
-				return createVitalSignsSectionEntriesOptional();
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
-				return createVitalSignsOrganizer();
-			case ConsolPackage.VITAL_SIGN_OBSERVATION:
-				return createVitalSignObservation();
-			case ConsolPackage.FAMILY_HISTORY_SECTION:
-				return createFamilyHistorySection();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER:
-				return createFamilyHistoryOrganizer();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION:
-				return createFamilyHistoryObservation();
-			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION:
-				return createFamilyHistoryDeathObservation();
 			case ConsolPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
 			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION:
@@ -269,36 +295,22 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPregnancyObservation();
 			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY:
 				return createEstimatedDateOfDelivery();
-			case ConsolPackage.RESULTS_SECTION:
-				return createResultsSection();
-			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL:
-				return createResultsSectionEntriesOptional();
-			case ConsolPackage.RESULT_ORGANIZER:
-				return createResultOrganizer();
-			case ConsolPackage.RESULT_OBSERVATION:
-				return createResultObservation();
-			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION:
-				return createMedicalEquipmentSection();
-			case ConsolPackage.FUNCTIONAL_STATUS_SECTION:
-				return createFunctionalStatusSection();
-			case ConsolPackage.PROBLEM_SECTION:
-				return createProblemSection();
-			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL:
-				return createProblemSectionEntriesOptional();
+			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
+				return createVitalSignsSectionEntriesOptional();
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case ConsolPackage.VITAL_SIGN_OBSERVATION:
+				return createVitalSignObservation();
 			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
 				return createSocialHistoryStatusObservation();
 			case ConsolPackage.PURPOSE_SECTION:
 				return createPurposeSection();
 			case ConsolPackage.PURPOSE_ACTIVITY:
 				return createPurposeActivity();
-			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION:
-				return createAdvanceDirectivesSection();
 			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION:
 				return createAdvanceDirectiveVerification();
 			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
 				return createAdvanceDirectiveStatusObservation();
-			case ConsolPackage.ENCOUNTERS_SECTION:
-				return createEncountersSection();
 			case ConsolPackage.ENCOUNTER:
 				return createEncounter();
 			case ConsolPackage.IMMUNIZATIONS_SECTION:
@@ -1168,6 +1180,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ContinuityOfCareDocument createContinuityOfCareDocument() {
 		ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
 		return continuityOfCareDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ContinuityOfCareDocument_DocumentationOf createContinuityOfCareDocument_DocumentationOf() {
+		ContinuityOfCareDocument_DocumentationOfImpl continuityOfCareDocument_DocumentationOf = new ContinuityOfCareDocument_DocumentationOfImpl();
+		return continuityOfCareDocument_DocumentationOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DocumentationOf_ServiceEvent3 createDocumentationOf_ServiceEvent3() {
+		DocumentationOf_ServiceEvent3Impl documentationOf_ServiceEvent3 = new DocumentationOf_ServiceEvent3Impl();
+		return documentationOf_ServiceEvent3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceEvent3_Performer createServiceEvent3_Performer() {
+		ServiceEvent3_PerformerImpl serviceEvent3_Performer = new ServiceEvent3_PerformerImpl();
+		return serviceEvent3_Performer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Performer_AssignedEntity createPerformer_AssignedEntity() {
+		Performer_AssignedEntityImpl performer_AssignedEntity = new Performer_AssignedEntityImpl();
+		return performer_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ContinuityOfCareDocument_Author createContinuityOfCareDocument_Author() {
+		ContinuityOfCareDocument_AuthorImpl continuityOfCareDocument_Author = new ContinuityOfCareDocument_AuthorImpl();
+		return continuityOfCareDocument_Author;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Author_AssignedAuthor3 createAuthor_AssignedAuthor3() {
+		Author_AssignedAuthor3Impl author_AssignedAuthor3 = new Author_AssignedAuthor3Impl();
+		return author_AssignedAuthor3;
 	}
 
 	/**

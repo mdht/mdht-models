@@ -64,6 +64,15 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateLanguageSpokenLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LanguageSpokenOperations.validateLanguageSpokenLanguageCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateLanguageSpokenModeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LanguageSpokenOperations.validateLanguageSpokenModeCode(this, diagnostics, context);
 	}

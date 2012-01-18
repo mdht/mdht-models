@@ -450,6 +450,111 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseContinuityOfCareDocument_DocumentationOf(ContinuityOfCareDocument_DocumentationOf object) {
+			return createContinuityOfCareDocument_DocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter caseDocumentationOf_ServiceEvent3(DocumentationOf_ServiceEvent3 object) {
+			return createDocumentationOf_ServiceEvent3Adapter();
+		}
+
+		@Override
+		public Adapter caseServiceEvent3_Performer(ServiceEvent3_Performer object) {
+			return createServiceEvent3_PerformerAdapter();
+		}
+
+		@Override
+		public Adapter casePerformer_AssignedEntity(Performer_AssignedEntity object) {
+			return createPerformer_AssignedEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseContinuityOfCareDocument_Author(ContinuityOfCareDocument_Author object) {
+			return createContinuityOfCareDocument_AuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseAuthor_AssignedAuthor3(Author_AssignedAuthor3 object) {
+			return createAuthor_AssignedAuthor3Adapter();
+		}
+
+		@Override
+		public Adapter caseAllergiesSection(AllergiesSection object) {
+			return createAllergiesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergiesSectionEntriesOptional(AllergiesSectionEntriesOptional object) {
+			return createAllergiesSectionEntriesOptionalAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationsSection(MedicationsSection object) {
+			return createMedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationsSectionEntriesOptional(MedicationsSectionEntriesOptional object) {
+			return createMedicationsSectionEntriesOptionalAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemSection(ProblemSection object) {
+			return createProblemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemSectionEntriesOptional(ProblemSectionEntriesOptional object) {
+			return createProblemSectionEntriesOptionalAdapter();
+		}
+
+		@Override
+		public Adapter caseProceduresSection(ProceduresSection object) {
+			return createProceduresSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
+			return createProceduresSectionEntriesOptionalAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityObservation(ProcedureActivityObservation object) {
+			return createProcedureActivityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityAct(ProcedureActivityAct object) {
+			return createProcedureActivityActAdapter();
+		}
+
+		@Override
+		public Adapter caseResultsSection(ResultsSection object) {
+			return createResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseResultsSectionEntriesOptional(ResultsSectionEntriesOptional object) {
+			return createResultsSectionEntriesOptionalAdapter();
+		}
+
+		@Override
+		public Adapter caseResultOrganizer(ResultOrganizer object) {
+			return createResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResultObservation(ResultObservation object) {
+			return createResultObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectivesSection(AdvanceDirectivesSection object) {
+			return createAdvanceDirectivesSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseAdvanceDirectivesSectionEntriesOptional(AdvanceDirectivesSectionEntriesOptional object) {
 			return createAdvanceDirectivesSectionEntriesOptionalAdapter();
 		}
@@ -490,13 +595,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAllergiesSection(AllergiesSection object) {
-			return createAllergiesSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseAllergiesSectionEntriesOptional(AllergiesSectionEntriesOptional object) {
-			return createAllergiesSectionEntriesOptionalAdapter();
+		public Adapter caseEncountersSection(EncountersSection object) {
+			return createEncountersSectionAdapter();
 		}
 
 		@Override
@@ -507,6 +607,31 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEncounterActivities(EncounterActivities object) {
 			return createEncounterActivitiesAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistorySection(FamilyHistorySection object) {
+			return createFamilyHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
+			return createFamilyHistoryOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation(FamilyHistoryObservation object) {
+			return createFamilyHistoryObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryDeathObservation(FamilyHistoryDeathObservation object) {
+			return createFamilyHistoryDeathObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseFunctionalStatusSection(FunctionalStatusSection object) {
+			return createFunctionalStatusSectionAdapter();
 		}
 
 		@Override
@@ -522,6 +647,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseImmunizationRefusalReason(ImmunizationRefusalReason object) {
 			return createImmunizationRefusalReasonAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalEquipmentSection(MedicalEquipmentSection object) {
+			return createMedicalEquipmentSectionAdapter();
 		}
 
 		@Override
@@ -542,16 +672,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAuthorizationActivity(AuthorizationActivity object) {
 			return createAuthorizationActivityAdapter();
-		}
-
-		@Override
-		public Adapter caseMedicationsSection(MedicationsSection object) {
-			return createMedicationsSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseMedicationsSectionEntriesOptional(MedicationsSectionEntriesOptional object) {
-			return createMedicationsSectionEntriesOptionalAdapter();
 		}
 
 		@Override
@@ -590,61 +710,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProceduresSection(ProceduresSection object) {
-			return createProceduresSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
-			return createProceduresSectionEntriesOptionalAdapter();
-		}
-
-		@Override
-		public Adapter caseProcedureActivityObservation(ProcedureActivityObservation object) {
-			return createProcedureActivityObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProcedureActivityAct(ProcedureActivityAct object) {
-			return createProcedureActivityActAdapter();
-		}
-
-		@Override
-		public Adapter caseVitalSignsSectionEntriesOptional(VitalSignsSectionEntriesOptional object) {
-			return createVitalSignsSectionEntriesOptionalAdapter();
-		}
-
-		@Override
-		public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
-			return createVitalSignsOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter caseVitalSignObservation(VitalSignObservation object) {
-			return createVitalSignObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistorySection(FamilyHistorySection object) {
-			return createFamilyHistorySectionAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
-			return createFamilyHistoryOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryObservation(FamilyHistoryObservation object) {
-			return createFamilyHistoryObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryDeathObservation(FamilyHistoryDeathObservation object) {
-			return createFamilyHistoryDeathObservationAdapter();
-		}
-
-		@Override
 		public Adapter caseSocialHistorySection(SocialHistorySection object) {
 			return createSocialHistorySectionAdapter();
 		}
@@ -665,43 +730,18 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseResultsSection(ResultsSection object) {
-			return createResultsSectionAdapter();
+		public Adapter caseVitalSignsSectionEntriesOptional(VitalSignsSectionEntriesOptional object) {
+			return createVitalSignsSectionEntriesOptionalAdapter();
 		}
 
 		@Override
-		public Adapter caseResultsSectionEntriesOptional(ResultsSectionEntriesOptional object) {
-			return createResultsSectionEntriesOptionalAdapter();
+		public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
+			return createVitalSignsOrganizerAdapter();
 		}
 
 		@Override
-		public Adapter caseResultOrganizer(ResultOrganizer object) {
-			return createResultOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter caseResultObservation(ResultObservation object) {
-			return createResultObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseMedicalEquipmentSection(MedicalEquipmentSection object) {
-			return createMedicalEquipmentSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseFunctionalStatusSection(FunctionalStatusSection object) {
-			return createFunctionalStatusSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemSection(ProblemSection object) {
-			return createProblemSectionAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemSectionEntriesOptional(ProblemSectionEntriesOptional object) {
-			return createProblemSectionEntriesOptionalAdapter();
+		public Adapter caseVitalSignObservation(VitalSignObservation object) {
+			return createVitalSignObservationAdapter();
 		}
 
 		@Override
@@ -720,11 +760,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectivesSection(AdvanceDirectivesSection object) {
-			return createAdvanceDirectivesSectionAdapter();
-		}
-
-		@Override
 		public Adapter caseAdvanceDirectiveVerification(AdvanceDirectiveVerification object) {
 			return createAdvanceDirectiveVerificationAdapter();
 		}
@@ -732,11 +767,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
 			return createAdvanceDirectiveStatusObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseEncountersSection(EncountersSection object) {
-			return createEncountersSectionAdapter();
 		}
 
 		@Override
@@ -1631,8 +1661,28 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDocumentationOf(DocumentationOf object) {
+			return createDocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter caseServiceEvent(ServiceEvent object) {
+			return createServiceEventAdapter();
+		}
+
+		@Override
+		public Adapter casePerformer1(Performer1 object) {
+			return createPerformer1Adapter();
+		}
+
+		@Override
 		public Adapter caseSection(Section object) {
 			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
 		}
 
 		@Override
@@ -1658,16 +1708,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
 			return createCDA_EncounterAdapter();
-		}
-
-		@Override
-		public Adapter caseOrganizer(Organizer object) {
-			return createOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter casePerformer1(Performer1 object) {
-			return createPerformer1Adapter();
 		}
 
 		@Override
@@ -1718,16 +1758,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseSubject(Subject object) {
 			return createSubjectAdapter();
-		}
-
-		@Override
-		public Adapter caseDocumentationOf(DocumentationOf object) {
-			return createDocumentationOfAdapter();
-		}
-
-		@Override
-		public Adapter caseServiceEvent(ServiceEvent object) {
-			return createServiceEventAdapter();
 		}
 
 		@Override
@@ -2601,6 +2631,90 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createContinuityOfCareDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument_DocumentationOf <em>Continuity Of Care Document Documentation Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument_DocumentationOf
+	 * @generated
+	 */
+	public Adapter createContinuityOfCareDocument_DocumentationOfAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent3 <em>Documentation Of Service Event3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DocumentationOf_ServiceEvent3
+	 * @generated
+	 */
+	public Adapter createDocumentationOf_ServiceEvent3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ServiceEvent3_Performer <em>Service Event3 Performer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ServiceEvent3_Performer
+	 * @generated
+	 */
+	public Adapter createServiceEvent3_PerformerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Performer_AssignedEntity <em>Performer Assigned Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Performer_AssignedEntity
+	 * @generated
+	 */
+	public Adapter createPerformer_AssignedEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument_Author <em>Continuity Of Care Document Author</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument_Author
+	 * @generated
+	 */
+	public Adapter createContinuityOfCareDocument_AuthorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Author_AssignedAuthor3 <em>Author Assigned Author3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Author_AssignedAuthor3
+	 * @generated
+	 */
+	public Adapter createAuthor_AssignedAuthor3Adapter() {
 		return null;
 	}
 
