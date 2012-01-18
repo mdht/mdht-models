@@ -525,14 +525,6 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2EuUYBSVEeGGzu7fmW9pXw" base_Property="_2EqqCxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7617</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_4-pu0hVZEeGrgeKDUiwadw">
-    <ownedEnd xmi:id="_4-pu0xVZEeGrgeKDUiwadw" association="_4-pu0hVZEeGrgeKDUiwadw">
-      <type xmi:type="uml:Class" href="consol-documents.uml#_2IJb0BSVEeGGzu7fmW9pXw"/>
-    </ownedEnd>
-    <memberEnd href="consol-documents.uml#_4-pu0BVZEeGrgeKDUiwadw"/>
-    <memberEnd href="#_4-pu0xVZEeGrgeKDUiwadw"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="__ZLiQBVZEeGrgeKDUiwadw" base_Association="_4-pu0hVZEeGrgeKDUiwadw"/>
   <uml:Association xmi:id="_1CFA0hUzEeGbmN_W114JUw" memberEnd="_1CFA0BUzEeGbmN_W114JUw _1CFA0xUzEeGbmN_W114JUw">
     <ownedEnd xmi:id="_1CFA0xUzEeGbmN_W114JUw" type="_2H6yUBSVEeGGzu7fmW9pXw" association="_1CFA0hUzEeGbmN_W114JUw"/>
   </uml:Association>

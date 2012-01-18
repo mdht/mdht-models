@@ -271,7 +271,11 @@
         <body>Contains a case-insensitive language-insensitive text string containing 'advance directives'.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_8UhPsBVfEeGQCvUGzi1kDQ" general="_1RZdIBVdEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_8UhPsBVfEeGQCvUGzi1kDQ" general="_1RZdIBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_94HnEEFqEeGleIzZ12qTpQ">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_2KiBcBSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
