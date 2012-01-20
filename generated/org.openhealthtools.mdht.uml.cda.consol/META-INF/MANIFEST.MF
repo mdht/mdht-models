@@ -17,5 +17,6 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin$Implementation
 Export-Package: org.openhealthtools.mdht.uml.cda.consol,
+ org.openhealthtools.mdht.uml.cda.consol.impl,
  org.openhealthtools.mdht.uml.cda.consol.operations,
  org.openhealthtools.mdht.uml.cda.consol.util
