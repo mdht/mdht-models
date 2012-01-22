@@ -1183,7 +1183,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZUDMUEwEeGdmoWy_aLP0Q"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Class xmi:id="_Cu6qMDVzEeGaW4kr-GbV8Q" name="PreoperativeDiagnosisSection ">
+  <uml:Class xmi:id="_Cu6qMDVzEeGaW4kr-GbV8Q" name="PreoperativeDiagnosisSection">
     <ownedComment xmi:id="_4B0fsEE2EeGdmoWy_aLP0Q">
       <body>The Preoperative Diagnosis section records the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -1243,7 +1243,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Class xmi:id="_TvcL8DVzEeGaW4kr-GbV8Q" name="ProcedureEstimatedBloodLossSection ">
+  <uml:Class xmi:id="_TvcL8DVzEeGaW4kr-GbV8Q" name="ProcedureEstimatedBloodLossSection">
     <ownedComment xmi:id="_BuKCIEE3EeGdmoWy_aLP0Q">
       <body>The Estimated Blood Loss section may be a subsection of another section such as the Procedure Description section. The Estimated Blood Loss section records the approximate amount of blood that the patient lost during the procedure or surgery. It may be an accurate quantitative amount, e.g., 250 milliliters, or it may be descriptive, e.g., &quot;minimal&quot; or &quot;none&quot;.</body>
     </ownedComment>

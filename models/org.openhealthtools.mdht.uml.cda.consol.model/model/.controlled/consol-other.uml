@@ -1347,7 +1347,7 @@ attribute should be set to &quot;NA&quot;.</body>
   <uml:Association xmi:id="_U6kJgCznEeGanY0p4MnU2w" memberEnd="_U6i7YCznEeGanY0p4MnU2w _U6kwkCznEeGanY0p4MnU2w">
     <ownedEnd xmi:id="_U6kwkCznEeGanY0p4MnU2w" type="_2PQJcxSVEeGGzu7fmW9pXw" association="_U6kJgCznEeGanY0p4MnU2w"/>
   </uml:Association>
-  <uml:Class xmi:id="_eKFbUDVyEeGaW4kr-GbV8Q" name="HospitalConsultationsSection ">
+  <uml:Class xmi:id="_eKFbUDVyEeGaW4kr-GbV8Q" name="HospitalConsultationsSection">
     <ownedComment xmi:id="_dFR2MEE1EeGdmoWy_aLP0Q">
       <body>The Hospital Consultations section records consultations that occurred during the admission.</body>
     </ownedComment>
@@ -1425,7 +1425,7 @@ attribute should be set to &quot;NA&quot;.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Class xmi:id="_rNJpADVyEeGaW4kr-GbV8Q" name="ObjectiveSection ">
+  <uml:Class xmi:id="_rNJpADVyEeGaW4kr-GbV8Q" name="ObjectiveSection">
     <ownedComment xmi:id="_mHeaAEE2EeGdmoWy_aLP0Q">
       <body>The Objective section contains data about the patient gathered through tests, measures, or observations that produce a quantified or categorized result. It includes important and relevant positive and negative test results, physical findings, review of systems, and other measurements and observations.</body>
     </ownedComment>
