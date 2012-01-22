@@ -51,10 +51,6 @@
   <CDA:PropertyValidation xmi:id="_2NJ3qxSVEeGGzu7fmW9pXw" base_Property="_2NJ3qBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7571</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2NJ3oxSVEeGGzu7fmW9pXw" base_Association="_2NJ3oRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7572</ruleId>
-    <ruleId>CONF:7573</ruleId>
-  </CDA:AssociationValidation>
   <uml:Class xmi:id="_2GHbgBSVEeGGzu7fmW9pXw" name="MedicationActivity">
     <ownedComment xmi:id="_NWhH8B-vEeGKirKJsFylGA">
       <body>A medication activity describes substance administrations that have actually occurred (e.g. pills ingested or injections given) or are intended to occur (e.g. &quot;take 2 tablets twice a day for the next 10 days&quot;). Medication activities in &quot;INT&quot; mood are reflections of what a clinician intends a patient to be taking. Medication activities in &quot;EVN&quot; mood reflect actual use.&#xD;
@@ -1466,4 +1462,5 @@ Entry Content Module.</body>
   <uml:Association xmi:id="_IfrmAkFHEeGorO80f-Cppg" memberEnd="_IfrmAEFHEeGorO80f-Cppg _IfrmA0FHEeGorO80f-Cppg">
     <ownedEnd xmi:id="_IfrmA0FHEeGorO80f-Cppg" type="_2Poj5BSVEeGGzu7fmW9pXw" association="_IfrmAkFHEeGorO80f-Cppg"/>
   </uml:Association>
+  <CDA:Entry xmi:id="_LX3zQET5EeGdjYFxI4LSZA" base_Association="_2NJ3oRSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

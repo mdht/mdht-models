@@ -168,7 +168,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Dhi68BueEeGnMahsPjlwOw" name="PatientEducation"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_IzJFYB-ZEeGtfPlBCjHWkw" name="HealthcareServiceLocation"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Aqy5cCBCEeG938evaWkvcA" name="AgePQ_UCUM ">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Aqy5cCBCEeG938evaWkvcA" name="AgePQ_UCUM">
       <ownedComment xmi:id="_RZcoECBCEeG938evaWkvcA">
         <body>A valueSet of UCUM codes for representing age value units.</body>
       </ownedComment>
@@ -230,7 +230,7 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015
 http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523.htm</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vNtCQDVPEeGIw7CntkyPQw" name="ConfidentialityCode "/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vNtCQDVPEeGIw7CntkyPQw" name="ConfidentialityCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_8K870DVPEeGIw7CntkyPQw" name="BasicConfidentialityKind"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="__Nb_8DVQEeGIw7CntkyPQw" name="AdministrativeGenderCode">
       <ownedComment xmi:id="__Nb_8TVQEeGIw7CntkyPQw">
@@ -256,7 +256,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_dRRyt6DqEd-dVeaMP0XXQw" name="P"/>
       <ownedLiteral xmi:id="_dRSZwaDqEd-dVeaMP0XXQw" name="W"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfcxkKDqEd-dVeaMP0XXQw" name="Race and Ethnicity - CDC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfcxkKDqEd-dVeaMP0XXQw" name="RaceandEthnicityCDC"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="RoleCode">
       <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
@@ -619,7 +619,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" url="http://www.nucc.org/index.php?option=com_content&amp;task=view&amp;id=14&amp;Itemid=40" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>
+  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>
   <term:ValueSetVersion xmi:id="_oDanoD7YEeGvOdejHZ7dYg" identifier="2.16.840.1.113883.11.20.6.1" fullName="Procedure Note LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_oDaAkD7YEeGvOdejHZ7dYg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>

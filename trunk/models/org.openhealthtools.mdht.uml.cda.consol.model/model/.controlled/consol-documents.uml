@@ -2313,7 +2313,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <uml:Association xmi:id="_dXx-gCzIEeGMXrZ0DiQwGg" memberEnd="_dXxXcCzIEeGMXrZ0DiQwGg _dXx-gSzIEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_dXx-gSzIEeGMXrZ0DiQwGg" type="_OgZroCypEeGMXrZ0DiQwGg" association="_dXx-gCzIEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <uml:Class xmi:id="_R-vIoDssEeGvzMYhXuqAEA" name="ConsultationNote ">
+  <uml:Class xmi:id="_R-vIoDssEeGvzMYhXuqAEA" name="ConsultationNote">
     <ownedComment xmi:id="_OaB2UDstEeGvzMYhXuqAEA">
       <body>For the purpose of this Implementation Guide, a consultation visit is defined by the evaluation and management guidelines for a consultation established by the Centers for Medicare and Medicaid Services (CMS). According to those guidelines, a Consultation Note must be generated as a result of a physician or nonphysician practitioner's (NPP) request for an opinion or advice from another physician or NPP. Consultations must involve face-to-face time with the patient or fall under guidelines for telemedicine visits. &#xD;
 A Consultation Note must be provided to the referring physician or NPP and must include the reason for the referral, history of present illness, physical examination, and decision-making component (Assessment and Plan). &#xD;
