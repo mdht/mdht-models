@@ -290,7 +290,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           </nestedClassifier>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_6j680CytEeGMXrZ0DiQwGg" name="ProviderOrganization">
-          <ownedRule xmi:id="_oGeuoDVUEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+          <ownedRule xmi:id="_oGeuoDVUEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_qF4akDVUEeGIw7CntkyPQw">
               <language>Analysis</language>
               <language>OCL</language>
@@ -385,7 +385,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             <body>assignedPerson.oclIsUndefined() xor assignedAuthoringDevice.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_BEoOQDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_BEoOQDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BEoOQTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
@@ -470,7 +470,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jXhNASzAEeGMXrZ0DiQwGg"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_HOG0oCynEeGMXrZ0DiQwGg" name="AssignedEntity">
-        <ownedRule xmi:id="_YXfQwDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_YXfQwDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_YXfQwTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
@@ -533,7 +533,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yffxYCzDEeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yEoEACynEeGMXrZ0DiQwGg" name="CustodianOrganization">
-          <ownedRule xmi:id="__ERYsDVXEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+          <ownedRule xmi:id="__ERYsDVXEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="__ERYsTVXEeGIw7CntkyPQw">
               <language>Analysis</language>
               <language>OCL</language>
@@ -637,7 +637,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mbIwTVYEeGIw7CntkyPQw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_nlqjwDVYEeGIw7CntkyPQw" name="AssignedEntity">
-        <ownedRule xmi:id="_nlqjwTVYEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_nlqjwTVYEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_nlqjwjVYEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
@@ -700,7 +700,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lwJK0TTPEeGuZq9ndAdRXA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_GEiMYCzGEeGMXrZ0DiQwGg" name="AssignedEntity">
-        <ownedRule xmi:id="_UfqGwDVZEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_UfqGwDVZEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_UfqGwTVZEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
@@ -769,7 +769,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5sn0ATVWEeGIw7CntkyPQw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_NmVGsCzCEeGMXrZ0DiQwGg" name="AssignedEntity">
-        <ownedRule xmi:id="_JKUtkDVWEeGIw7CntkyPQw" name="hasNationalProviderIdentifier " constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_JKUtkDVWEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_JKUtkTVWEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
@@ -1023,7 +1023,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <type xmi:type="uml:Class" href="consol-familyhistory.uml#_2IWQIxSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xKAXEDzHEeGMk58Mp9-wVA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_hcNMADzIEeGMk58Mp9-wVA" name="hospitalConsultationsSection " association="_hcNMAjzIEeGMk58Mp9-wVA">
+    <ownedAttribute xmi:id="_hcNMADzIEeGMk58Mp9-wVA" name="hospitalConsultationsSection" association="_hcNMAjzIEeGMk58Mp9-wVA">
       <type xmi:type="uml:Class" href="consol-other.uml#_eKFbUDVyEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hcNMATzIEeGMk58Mp9-wVA"/>
     </ownedAttribute>
@@ -3162,11 +3162,11 @@ A History and Physical Examination is required upon hospital admission as well a
       <type xmi:type="uml:Class" href="consol-procedures.uml#_7UA-4DVyEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ln4rID4oEeGtCLm-c2g23Q"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_NqgDID4oEeGtCLm-c2g23Q" name="preoperativeDiagnosisSection " association="_NqgqMD4oEeGtCLm-c2g23Q">
+    <ownedAttribute xmi:id="_NqgDID4oEeGtCLm-c2g23Q" name="preoperativeDiagnosisSection" association="_NqgqMD4oEeGtCLm-c2g23Q">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_Cu6qMDVzEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NqgDIT4oEeGtCLm-c2g23Q"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_P2RXID4oEeGtCLm-c2g23Q" name="procedureEstimatedBloodLossSection " association="_P2R-MD4oEeGtCLm-c2g23Q">
+    <ownedAttribute xmi:id="_P2RXID4oEeGtCLm-c2g23Q" name="procedureEstimatedBloodLossSection" association="_P2R-MD4oEeGtCLm-c2g23Q">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_TvcL8DVzEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P2RXIT4oEeGtCLm-c2g23Q"/>
     </ownedAttribute>
@@ -3528,7 +3528,7 @@ A History and Physical Examination is required upon hospital admission as well a
       <type xmi:type="uml:Class" href="consol-procedures.uml#_QhXGYDVzEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5_rnkT-WEeGvOdejHZ7dYg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8abLsD-WEeGvOdejHZ7dYg" name="procedureEstimatedBloodLossSection " association="_8abLsj-WEeGvOdejHZ7dYg">
+    <ownedAttribute xmi:id="_8abLsD-WEeGvOdejHZ7dYg" name="procedureEstimatedBloodLossSection" association="_8abLsj-WEeGvOdejHZ7dYg">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_TvcL8DVzEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8abLsT-WEeGvOdejHZ7dYg"/>
     </ownedAttribute>
@@ -4081,7 +4081,7 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
       <type xmi:type="uml:Class" href="consol-medications.uml#_iAoXEBVdEeGQCvUGzi1kDQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WVlO4T_TEeGXieeKs7NJjA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YYjzQD_TEeGXieeKs7NJjA" name="objectiveSection " association="_YYjzQj_TEeGXieeKs7NJjA">
+    <ownedAttribute xmi:id="_YYjzQD_TEeGXieeKs7NJjA" name="objectiveSection" association="_YYjzQj_TEeGXieeKs7NJjA">
       <type xmi:type="uml:Class" href="consol-other.uml#_rNJpADVyEeGaW4kr-GbV8Q"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YYjzQT_TEeGXieeKs7NJjA"/>
     </ownedAttribute>

@@ -114,9 +114,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NWE8BSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWE8RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2NWE-xSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2NWE8xSVEeGGzu7fmW9pXw" base_Class="_2NWE5xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.39" contextDependent="true">
     <ruleId>CONF:8544.CONF:10510</ruleId>
@@ -316,7 +313,7 @@
   <CDA:CodeSystemConstraint xmi:id="_oLp3wCoKEeGHF88-qhhUMA" name="" code="" displayName="" base_Property="_2NWE-RSVEeGGzu7fmW9pXw" message="">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.23" name="Plan of Care moodCode (Act/Encounter/Procedure) " base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message=""/>
+  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.23" name="Plan of Care moodCode (Act/Encounter/Procedure)" base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message=""/>
   <CDA:PropertyValidation xmi:id="__Lp9wCoMEeGHF88-qhhUMA">
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>

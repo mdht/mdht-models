@@ -254,11 +254,13 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     </ownedAttribute>
     <ownedAttribute xmi:id="_jCDa0BU8EeGbmN_W114JUw" name="problemObservation" association="_jCNL0BU8EeGbmN_W114JUw">
       <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jCDa0RU8EeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4UEk4EbqEeGjG5GFhhP4eQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4UEk4UbqEeGjG5GFhhP4eQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lr7nIBU8EeGbmN_W114JUw" name="resultObservation" association="_lr7nIhU8EeGbmN_W114JUw">
       <type xmi:type="uml:Class" href="consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lr7nIRU8EeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6DCBEEbqEeGjG5GFhhP4eQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6DCBEUbqEeGjG5GFhhP4eQ"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_jCNL0BU8EeGbmN_W114JUw" memberEnd="_jCDa0BU8EeGbmN_W114JUw _jCNL0RU8EeGbmN_W114JUw">
