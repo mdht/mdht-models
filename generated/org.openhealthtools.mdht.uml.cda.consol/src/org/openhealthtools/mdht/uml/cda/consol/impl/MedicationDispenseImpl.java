@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 
@@ -21,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispenseOper
 import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.hl7.rim.Role;
 
 /**
  * <!-- begin-user-doc -->
@@ -120,6 +120,15 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationDispenseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispenseQuantity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformer2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformer2(this, diagnostics, context);
 	}
@@ -138,6 +147,15 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationDispenseProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispenseProduct(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
@@ -148,7 +166,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Role getAssignedEntity() {
+	public AssignedEntity getAssignedEntity() {
 		return MedicationDispenseOperations.getAssignedEntity(this);
 	}
 

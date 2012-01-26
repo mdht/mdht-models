@@ -18,10 +18,24 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' classCode='SPLY' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' classCode='SPLY' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity extends Supply {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::PRD)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::PRD)'"
+	 * @generated
+	 */
+	boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

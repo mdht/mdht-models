@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -100,12 +101,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalConsultationsSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalConsultationsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionTemplateId"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 			return false;
@@ -166,12 +162,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalConsultationsSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalConsultationsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionCode"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 			return false;
@@ -228,12 +219,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalConsultationsSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalConsultationsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionText"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 			return false;
@@ -290,12 +276,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalConsultationsSectionTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalConsultationsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionTitle"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 			return false;

@@ -55,6 +55,17 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
 			this, diagnostics, context);

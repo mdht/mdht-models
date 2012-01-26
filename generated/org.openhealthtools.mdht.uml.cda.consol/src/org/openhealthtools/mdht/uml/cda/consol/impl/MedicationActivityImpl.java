@@ -62,6 +62,86 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEffectiveTimeIVLTS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEffectiveTimeIVLTS(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEffectiveTimePIVLTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEffectiveTimePIVLTS(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityDoseQuantityUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityUnit(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityDrugVehicleTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityDrugVehicleTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityPreconditionSubstanceAdmTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
@@ -100,15 +180,6 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityStatusCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationActivityEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityEffectiveTime(this, diagnostics, context);
 	}
 
 	/**

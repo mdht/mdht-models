@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -115,8 +116,8 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemObservation getProblemObservation() {
-		return FunctionalStatusSectionOperations.getProblemObservation(this);
+	public EList<ProblemObservation> getProblemObservations() {
+		return FunctionalStatusSectionOperations.getProblemObservations(this);
 	}
 
 	/**
@@ -124,8 +125,8 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultObservation getResultObservation() {
-		return FunctionalStatusSectionOperations.getResultObservation(this);
+	public EList<ResultObservation> getResultObservations() {
+		return FunctionalStatusSectionOperations.getResultObservations(this);
 	}
 
 	/**

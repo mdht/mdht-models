@@ -467,6 +467,15 @@ public interface ConsolFactory extends EFactory {
 	MedicationDispense createMedicationDispense();
 
 	/**
+	 * Returns a new object of class '<em>Medication Dispense Product</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense Product</em>'.
+	 * @generated
+	 */
+	MedicationDispense_Product createMedicationDispense_Product();
+
+	/**
 	 * Returns a new object of class '<em>Medication Supply Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -476,6 +485,15 @@ public interface ConsolFactory extends EFactory {
 	MedicationSupplyOrder createMedicationSupplyOrder();
 
 	/**
+	 * Returns a new object of class '<em>Medication Supply Order Product</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Supply Order Product</em>'.
+	 * @generated
+	 */
+	MedicationSupplyOrder_Product createMedicationSupplyOrder_Product();
+
+	/**
 	 * Returns a new object of class '<em>Drug Vehicle</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -483,24 +501,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DrugVehicle createDrugVehicle();
-
-	/**
-	 * Returns a new object of class '<em>Medication Series Number Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Series Number Observation</em>'.
-	 * @generated
-	 */
-	MedicationSeriesNumberObservation createMedicationSeriesNumberObservation();
-
-	/**
-	 * Returns a new object of class '<em>Medication Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Status Observation</em>'.
-	 * @generated
-	 */
-	MedicationStatusObservation createMedicationStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Internal Reference</em>'.
@@ -1950,6 +1950,24 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis();
+
+	/**
+	 * Returns a new object of class '<em>Medication Dispense Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense Assigned Entity</em>'.
+	 * @generated
+	 */
+	MedicationDispenseAssignedEntity createMedicationDispenseAssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Medication Information Manufactured Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Medication Information Manufactured Material</em>'.
+	 * @generated
+	 */
+	ImmunizationMedicationInformationManufacturedMaterial createImmunizationMedicationInformationManufacturedMaterial();
 
 	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.

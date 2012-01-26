@@ -36,7 +36,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ManufacturedProductOperations
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Organization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationManufacturerOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufacturer Organization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation#validateImmunizationMedicationInformationManufacturedMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material</em>}</li>
  * </ul>
  * </p>
  *
@@ -228,24 +229,24 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Organization</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturerOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufacturer Organization</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationMedicationInformationOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateImmunizationMedicationInformationManufacturerOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturerOrganization->one(manufacturerOrganization : cda::Organization | not manufacturerOrganization.oclIsUndefined() and manufacturerOrganization.oclIsKindOf(rim::Entity))";
+	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturerOrganization->one(manufacturerOrganization : cda::Organization | not manufacturerOrganization.oclIsUndefined() and manufacturerOrganization.oclIsKindOf(rim::Entity))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Organization</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturerOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufacturer Organization</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationMedicationInformationOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateImmunizationMedicationInformationManufacturerOrganization(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,27 +259,86 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateImmunizationMedicationInformationOrganization(
+	public static boolean validateImmunizationMedicationInformationManufacturerOrganization(
 			ImmunizationMedicationInformation immunizationMedicationInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION);
 			try {
-				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			immunizationMedicationInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_ORGANIZATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationOrganization"),
+					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION,
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturerOrganization"),
+					new Object[] { immunizationMedicationInformation }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterial(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterial(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial->one(manufacturedMaterial : cda::Material | not manufacturedMaterial.oclIsUndefined() and manufacturedMaterial.oclIsKindOf(cda::Material))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterial(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterial(ImmunizationMedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.manufacturedMaterial->one(manufacturedMaterial : cda::Material | not manufacturedMaterial.oclIsUndefined() and manufacturedMaterial.oclIsKindOf(cda::Material))
+	 * @param immunizationMedicationInformation The receiving '<em><b>Immunization Medication Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateImmunizationMedicationInformationManufacturedMaterial(
+			ImmunizationMedicationInformation immunizationMedicationInformation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION);
+			try {
+				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationMedicationInformation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL,
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterial"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 			return false;

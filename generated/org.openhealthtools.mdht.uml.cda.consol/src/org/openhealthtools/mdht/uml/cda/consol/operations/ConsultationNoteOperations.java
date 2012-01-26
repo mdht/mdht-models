@@ -174,15 +174,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteTemplateId"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -235,14 +229,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteInFulfillmentOf",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteInFulfillmentOf"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -296,15 +285,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteComponentOf",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOf"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -357,14 +340,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteAssessmentSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAssessmentSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -419,14 +397,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteAssessmentAndPlanSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAssessmentAndPlanSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -480,14 +453,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNotePlanOfCareSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNotePlanOfCareSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -541,14 +509,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteHistoryOfPresentIllness",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPresentIllness"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -602,14 +565,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNotePhysicalExamSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNotePhysicalExamSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -664,14 +622,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteReasonForReferralSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReasonForReferralSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -725,14 +678,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteReasonForVisitSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReasonForVisitSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -786,14 +734,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteAllergiesSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAllergiesSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -847,14 +790,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteChiefComplaintSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteChiefComplaintSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -909,13 +847,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteChiefComplaintAndReasonForVisitSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteChiefComplaintAndReasonForVisitSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -969,14 +903,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteFamilyHistorySection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteFamilyHistorySection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1030,14 +959,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteGeneralStatusSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralStatusSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1092,13 +1016,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteHistoryOfPastIllnessSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPastIllnessSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1152,14 +1072,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteImmunizationsSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteImmunizationsSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1214,13 +1129,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteMedicationsSectionEntriesOptional",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteMedicationsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1275,13 +1186,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteProblemSectionEntriesOptional",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteProblemSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1336,13 +1243,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteProceduresSectionEntriesOptional",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteProceduresSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1397,13 +1300,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteResultsSectionEntriesOptional",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteResultsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1457,14 +1356,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteReviewOfSystemsSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReviewOfSystemsSection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1518,14 +1412,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteSocialHistorySection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteSocialHistorySection"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1580,13 +1469,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteVitalSignsSectionEntriesOptional",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteVitalSignsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1640,14 +1525,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteInFulfillmentOfOrderId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteInFulfillmentOfOrderId"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1701,14 +1581,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteInFulfillmentOfOrder",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteInFulfillmentOfOrder"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1766,11 +1641,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1828,10 +1699,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1889,11 +1757,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -1951,10 +1815,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -2012,10 +1873,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -2070,13 +1928,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2Id",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2Id"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -2134,10 +1988,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -2195,10 +2046,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant"),
 					new Object[] { consultationNote }));
 			}
 			return false;
@@ -2253,13 +2101,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ConsultationNoteComponentOfEncompassingEncounter",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter"),
 					new Object[] { consultationNote }));
 			}
 			return false;

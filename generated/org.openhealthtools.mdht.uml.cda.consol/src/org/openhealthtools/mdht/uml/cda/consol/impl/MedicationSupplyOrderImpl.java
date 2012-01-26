@@ -56,6 +56,17 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
 	}
@@ -121,6 +132,15 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationSupplyOrderProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProduct(this, diagnostics, context);
 	}
 
 	/**

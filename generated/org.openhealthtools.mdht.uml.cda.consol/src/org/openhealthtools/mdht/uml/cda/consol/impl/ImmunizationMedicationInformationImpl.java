@@ -88,9 +88,20 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationMedicationInformationOrganization(DiagnosticChain diagnostics,
+	public boolean validateImmunizationMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationOrganization(
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(
 			this, diagnostics, context);
 	}
 

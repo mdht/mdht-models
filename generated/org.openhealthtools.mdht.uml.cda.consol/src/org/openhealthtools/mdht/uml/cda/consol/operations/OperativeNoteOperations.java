@@ -391,7 +391,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection ))";
+	protected static final String VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNotePreoperativeDiagnosisSection(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Preoperative Diagnosis Section</em>}' invariant operation.
@@ -407,7 +407,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection ))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))
 	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -447,7 +447,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection ))";
+	protected static final String VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNoteProcedureEstimatedBloodLossSection(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Estimated Blood Loss Section</em>}' invariant operation.
@@ -463,7 +463,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection ))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))
 	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1835,7 +1835,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection ))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection )";
+	protected static final String GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPreoperativeDiagnosisSection(OperativeNote) <em>Get Preoperative Diagnosis Section</em>}' query operation.
@@ -1851,7 +1851,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection ))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection )
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection)
 	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1880,7 +1880,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection ))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection )";
+	protected static final String GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProcedureEstimatedBloodLossSection(OperativeNote) <em>Get Procedure Estimated Blood Loss Section</em>}' query operation.
@@ -1896,7 +1896,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection ))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection )
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection)
 	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

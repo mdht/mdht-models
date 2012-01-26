@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
@@ -27,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.SupplyOperations;
-import org.openhealthtools.mdht.uml.hl7.rim.Role;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,11 +44,13 @@ import org.openhealthtools.mdht.uml.hl7.rim.Role;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseMedicationSupplyOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Medication Supply Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#getAssignedEntity() <em>Get Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseProduct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Product</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#getMedicationSupplyOrder() <em>Get Medication Supply Order</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#getAssignedEntity() <em>Get Assigned Entity</em>}</li>
  * </ul>
  * </p>
  *
@@ -405,7 +407,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "
+	protected static final String VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
 			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
 			+ "value.codeSystem = '2.16.840.1.113883.5.14' and (value.code = 'aborted' or value.code = 'completed')))";
 
@@ -423,7 +425,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
 	 * value.codeSystem = '2.16.840.1.113883.5.14' and (value.code = 'aborted' or value.code = 'completed')))
 	 * @param medicationDispense The receiving '<em><b>Medication Dispense</b></em>' model object.
@@ -451,6 +453,61 @@ public class MedicationDispenseOperations extends SupplyOperations {
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("MedicationDispenseStatusCode"),
 					new Object[] { medicationDispense }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationDispenseQuantity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Quantity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseQuantity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.quantity.oclIsUndefined() or self.quantity.isNullFlavorUndefined()) implies (not self.quantity.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationDispenseQuantity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Quantity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseQuantity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.quantity.oclIsUndefined() or self.quantity.isNullFlavorUndefined()) implies (not self.quantity.oclIsUndefined())
+	 * @param medicationDispense The receiving '<em><b>Medication Dispense</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateMedicationDispenseQuantity(MedicationDispense medicationDispense,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE);
+			try {
+				VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationDispense)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_QUANTITY,
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseQuantity"), new Object[] { medicationDispense }));
 			}
 			return false;
 		}
@@ -514,30 +571,10 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(rim::Role))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(rim::Role))
+	 * self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))
 	 * @param medicationDispense The receiving '<em><b>Medication Dispense</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -570,6 +607,41 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))
+	 * @param medicationDispense The receiving '<em><b>Medication Dispense</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateMedicationDispenseProduct(MedicationDispense medicationDispense,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE);
+			try {
+				VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationDispense)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_PRODUCT,
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseProduct"), new Object[] { medicationDispense }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateMedicationDispenseMedicationSupplyOrder(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Medication Supply Order</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -588,6 +660,46 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseAssignedEntity(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationDispenseProduct(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Product</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseProduct(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationDispenseProduct(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Product</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationDispenseProduct(MedicationDispense, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_MEDICATION_DISPENSE_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -626,40 +738,20 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAssignedEntity(MedicationDispense) <em>Get Assigned Entity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAssignedEntity(MedicationDispense)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ASSIGNED_ENTITY__EOCL_EXP = "self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role))->asSequence()->first().oclAsType(rim::Role)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAssignedEntity(MedicationDispense) <em>Get Assigned Entity</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAssignedEntity(MedicationDispense)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_ASSIGNED_ENTITY__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role))->asSequence()->first().oclAsType(rim::Role)
+	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)
 	 * @param medicationDispense The receiving '<em><b>Medication Dispense</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static Role getAssignedEntity(MedicationDispense medicationDispense) {
+	public static AssignedEntity getAssignedEntity(MedicationDispense medicationDispense) {
 		if (GET_ASSIGNED_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_DISPENSE,
-				ConsolPackage.Literals.MEDICATION_DISPENSE.getEAllOperations().get(60));
+				ConsolPackage.Literals.MEDICATION_DISPENSE.getEAllOperations().get(63));
 			try {
 				GET_ASSIGNED_ENTITY__EOCL_QRY = helper.createQuery(GET_ASSIGNED_ENTITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -667,7 +759,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ASSIGNED_ENTITY__EOCL_QRY);
-		return (Role) query.evaluate(medicationDispense);
+		return (AssignedEntity) query.evaluate(medicationDispense);
 	}
 
 	/**
@@ -691,6 +783,26 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	protected static OCLExpression<EClassifier> GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY;
 
 	/**
+	 * The cached OCL expression body for the '{@link #getAssignedEntity(MedicationDispense) <em>Get Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssignedEntity(MedicationDispense)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_ASSIGNED_ENTITY__EOCL_EXP = "self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)";
+
+	/**
+	 * The cached OCL query for the '{@link #getAssignedEntity(MedicationDispense) <em>Get Assigned Entity</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssignedEntity(MedicationDispense)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_ASSIGNED_ENTITY__EOCL_QRY;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -704,7 +816,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_DISPENSE,
-				ConsolPackage.Literals.MEDICATION_DISPENSE.getEAllOperations().get(61));
+				ConsolPackage.Literals.MEDICATION_DISPENSE.getEAllOperations().get(62));
 			try {
 				GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP);
 			} catch (ParserException pe) {

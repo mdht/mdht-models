@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.2.34' constraints.validation.error='PreoperativeDiagnosisSection TemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.2.34' constraints.validation.error='PreoperativeDiagnosisSectionTemplateId'"
  * @generated
  */
 public interface PreoperativeDiagnosisSection extends Section {

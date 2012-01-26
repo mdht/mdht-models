@@ -38,10 +38,75 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityClassCode ImmunizationActivityId ImmunizationActivityCode ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd ImmunizationActivityConsumable' classCode='SBADM' constraints.validation.warning='ImmunizationActivityDoseQuantity ImmunizationActivityText ImmunizationActivityPerformer' moodCode.codeSystem='2.16.840.1.113883.5.1001' constraints.validation.info='ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityPrecondition ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder' negationInd='false' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityPreconditionTypeCode ImmunizationActivityClassCode ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd ImmunizationActivityConsumable' classCode='SBADM' constraints.validation.warning='ImmunizationActivityTextReference ImmunizationActivityDoseQuantityUnit ImmunizationActivityDoseQuantity ImmunizationActivityText ImmunizationActivityPerformer' moodCode.codeSystem='2.16.840.1.113883.5.1001' constraints.validation.info='ImmunizationActivityCode ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityPrecondition ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder' negationInd='false' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface ImmunizationActivity extends SubstanceAdministration {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.doseQuantity.oclIsUndefined() implies not self.doseQuantity.unit.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.doseQuantity.oclIsUndefined() implies not self.doseQuantity.unit.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityDoseQuantityUnit(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityInstructionInversion(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::DrugVehicle))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::CSM)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::DrugVehicle))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::CSM)'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityDrugVehicleTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)'"
+	 * @generated
+	 */
+	boolean validateImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -130,7 +195,7 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,7 +210,7 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -212,7 +277,7 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateImmunizationActivityAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context);
