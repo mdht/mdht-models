@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -97,15 +98,9 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			objectiveSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ObjectiveSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(objectiveSection, context) }),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionTemplateId"), new Object[] { objectiveSection }));
 			}
 			return false;
 		}
@@ -162,15 +157,9 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			objectiveSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ObjectiveSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(objectiveSection, context) }),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionCode"), new Object[] { objectiveSection }));
 			}
 			return false;
 		}
@@ -223,15 +212,9 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			objectiveSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ObjectiveSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(objectiveSection, context) }),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionText"), new Object[] { objectiveSection }));
 			}
 			return false;
 		}
@@ -284,15 +267,9 @@ public class ObjectiveSectionOperations extends SectionOperations {
 			objectiveSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ObjectiveSectionTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(objectiveSection, context) }),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionTitle"), new Object[] { objectiveSection }));
 			}
 			return false;
 		}

@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -102,12 +103,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ProcedureEstimatedBloodLossSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									procedureEstimatedBloodLossSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTemplateId"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 			return false;
@@ -169,12 +165,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ProcedureEstimatedBloodLossSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									procedureEstimatedBloodLossSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionCode"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 			return false;
@@ -232,12 +223,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ProcedureEstimatedBloodLossSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									procedureEstimatedBloodLossSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionText"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 			return false;
@@ -295,12 +281,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ProcedureEstimatedBloodLossSectionTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									procedureEstimatedBloodLossSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTitle"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 			return false;

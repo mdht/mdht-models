@@ -143,10 +143,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationActivity();
 			case ConsolPackage.MEDICATION_SUPPLY_ORDER:
 				return createMedicationSupplyOrder();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER_PRODUCT:
+				return createMedicationSupplyOrder_Product();
 			case ConsolPackage.INSTRUCTIONS:
 				return createInstructions();
 			case ConsolPackage.MEDICATION_DISPENSE:
 				return createMedicationDispense();
+			case ConsolPackage.MEDICATION_DISPENSE_PRODUCT:
+				return createMedicationDispense_Product();
 			case ConsolPackage.DRUG_VEHICLE:
 				return createDrugVehicle();
 			case ConsolPackage.PRODUCT_INSTANCE:
@@ -163,10 +167,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHealthStatusObservation();
 			case ConsolPackage.COMMENT:
 				return createComment();
-			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
-				return createMedicationSeriesNumberObservation();
-			case ConsolPackage.MEDICATION_STATUS_OBSERVATION:
-				return createMedicationStatusObservation();
 			case ConsolPackage.INTERNAL_REFERENCE:
 				return createInternalReference();
 			case ConsolPackage.MEDICATION_TYPE:
@@ -577,6 +577,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createInstructionsSection();
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS:
 				return createHospitalAdmissionDiagnosis();
+			case ConsolPackage.MEDICATION_DISPENSE_ASSIGNED_ENTITY:
+				return createMedicationDispenseAssignedEntity();
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
+				return createImmunizationMedicationInformationManufacturedMaterial();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1077,6 +1081,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public MedicationDispense_Product createMedicationDispense_Product() {
+		MedicationDispense_ProductImpl medicationDispense_Product = new MedicationDispense_ProductImpl();
+		return medicationDispense_Product;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationSupplyOrder createMedicationSupplyOrder() {
 		MedicationSupplyOrderImpl medicationSupplyOrder = new MedicationSupplyOrderImpl();
 		return medicationSupplyOrder;
@@ -1087,29 +1101,19 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public MedicationSupplyOrder_Product createMedicationSupplyOrder_Product() {
+		MedicationSupplyOrder_ProductImpl medicationSupplyOrder_Product = new MedicationSupplyOrder_ProductImpl();
+		return medicationSupplyOrder_Product;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DrugVehicle createDrugVehicle() {
 		DrugVehicleImpl drugVehicle = new DrugVehicleImpl();
 		return drugVehicle;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationSeriesNumberObservation createMedicationSeriesNumberObservation() {
-		MedicationSeriesNumberObservationImpl medicationSeriesNumberObservation = new MedicationSeriesNumberObservationImpl();
-		return medicationSeriesNumberObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationStatusObservation createMedicationStatusObservation() {
-		MedicationStatusObservationImpl medicationStatusObservation = new MedicationStatusObservationImpl();
-		return medicationStatusObservation;
 	}
 
 	/**
@@ -2720,6 +2724,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis() {
 		HospitalAdmissionDiagnosisImpl hospitalAdmissionDiagnosis = new HospitalAdmissionDiagnosisImpl();
 		return hospitalAdmissionDiagnosis;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationDispenseAssignedEntity createMedicationDispenseAssignedEntity() {
+		MedicationDispenseAssignedEntityImpl medicationDispenseAssignedEntity = new MedicationDispenseAssignedEntityImpl();
+		return medicationDispenseAssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationMedicationInformationManufacturedMaterial createImmunizationMedicationInformationManufacturedMaterial() {
+		ImmunizationMedicationInformationManufacturedMaterialImpl immunizationMedicationInformationManufacturedMaterial = new ImmunizationMedicationInformationManufacturedMaterialImpl();
+		return immunizationMedicationInformationManufacturedMaterial;
 	}
 
 	/**

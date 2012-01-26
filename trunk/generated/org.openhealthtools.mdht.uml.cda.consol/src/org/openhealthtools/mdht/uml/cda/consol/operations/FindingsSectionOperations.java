@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.FindingsSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -94,15 +95,9 @@ public class FindingsSectionOperations extends SectionOperations {
 			findingsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FINDINGS_SECTION__FINDINGS_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FindingsSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(findingsSection, context) }),
-					new Object[] { findingsSection }));
+					ConsolPlugin.INSTANCE.getString("FindingsSectionTemplateId"), new Object[] { findingsSection }));
 			}
 			return false;
 		}

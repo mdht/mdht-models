@@ -59,6 +59,7 @@ import org.openhealthtools.mdht.uml.cda.Place;
 import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.openhealthtools.mdht.uml.cda.Product;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
@@ -883,6 +884,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER_PRODUCT: {
+				MedicationSupplyOrder_Product medicationSupplyOrder_Product = (MedicationSupplyOrder_Product) theEObject;
+				T result = caseMedicationSupplyOrder_Product(medicationSupplyOrder_Product);
+				if (result == null) {
+					result = caseProduct(medicationSupplyOrder_Product);
+				}
+				if (result == null) {
+					result = caseParticipation(medicationSupplyOrder_Product);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationSupplyOrder_Product);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.INSTRUCTIONS: {
 				Instructions instructions = (Instructions) theEObject;
 				T result = caseInstructions(instructions);
@@ -917,6 +935,23 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(medicationDispense);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICATION_DISPENSE_PRODUCT: {
+				MedicationDispense_Product medicationDispense_Product = (MedicationDispense_Product) theEObject;
+				T result = caseMedicationDispense_Product(medicationDispense_Product);
+				if (result == null) {
+					result = caseProduct(medicationDispense_Product);
+				}
+				if (result == null) {
+					result = caseParticipation(medicationDispense_Product);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationDispense_Product);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1065,46 +1100,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(comment);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: {
-				MedicationSeriesNumberObservation medicationSeriesNumberObservation = (MedicationSeriesNumberObservation) theEObject;
-				T result = caseMedicationSeriesNumberObservation(medicationSeriesNumberObservation);
-				if (result == null) {
-					result = caseObservation(medicationSeriesNumberObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationSeriesNumberObservation);
-				}
-				if (result == null) {
-					result = caseAct(medicationSeriesNumberObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationSeriesNumberObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: {
-				MedicationStatusObservation medicationStatusObservation = (MedicationStatusObservation) theEObject;
-				T result = caseMedicationStatusObservation(medicationStatusObservation);
-				if (result == null) {
-					result = caseObservation(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(medicationStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4767,6 +4762,40 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_DISPENSE_ASSIGNED_ENTITY: {
+				MedicationDispenseAssignedEntity medicationDispenseAssignedEntity = (MedicationDispenseAssignedEntity) theEObject;
+				T result = caseMedicationDispenseAssignedEntity(medicationDispenseAssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(medicationDispenseAssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(medicationDispenseAssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationDispenseAssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: {
+				ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial = (ImmunizationMedicationInformationManufacturedMaterial) theEObject;
+				T result = caseImmunizationMedicationInformationManufacturedMaterial(immunizationMedicationInformationManufacturedMaterial);
+				if (result == null) {
+					result = caseMaterial(immunizationMedicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = caseEntity(immunizationMedicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationMedicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -5508,6 +5537,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Dispense Product</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Dispense Product</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationDispense_Product(MedicationDispense_Product object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Medication Supply Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -5523,6 +5567,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Supply Order Product</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Supply Order Product</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationSupplyOrder_Product(MedicationSupplyOrder_Product object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Drug Vehicle</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -5534,36 +5593,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseDrugVehicle(DrugVehicle object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medication Series Number Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medication Series Number Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMedicationSeriesNumberObservation(MedicationSeriesNumberObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Medication Status Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMedicationStatusObservation(MedicationStatusObservation object) {
 		return null;
 	}
 
@@ -7835,6 +7864,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProduct(Product object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Entity</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8986,6 +9030,37 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseHospitalAdmissionDiagnosis(HospitalAdmissionDiagnosis object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Dispense Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Dispense Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationDispenseAssignedEntity(MedicationDispenseAssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immunization Medication Information Manufactured Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immunization Medication Information Manufactured Material</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmunizationMedicationInformationManufacturedMaterial(
+			ImmunizationMedicationInformationManufacturedMaterial object) {
 		return null;
 	}
 
