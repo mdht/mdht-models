@@ -89,20 +89,20 @@ public class EncompassingEncounter4_EncounterParticipantOperations extends Parti
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT);
 			try {
 				VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encompassingEncounter4_EncounterParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter4_EncounterParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-					ConsolPlugin.INSTANCE.getString("EncounterParticipantAssignedEntityHasPersonOrOrganization"),
-					new Object[] { encompassingEncounter4_EncounterParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("EncounterParticipantAssignedEntityHasPersonOrOrganization"),
+						 new Object [] { encompassingEncounter4_EncounterParticipant }));
 			}
 			return false;
 		}
@@ -148,19 +148,20 @@ public class EncompassingEncounter4_EncounterParticipantOperations extends Parti
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT);
 			try {
 				VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encompassingEncounter4_EncounterParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter4_EncounterParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("EncounterParticipantAssignedEntity"),
-					new Object[] { encompassingEncounter4_EncounterParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("EncounterParticipantAssignedEntity"),
+						 new Object [] { encompassingEncounter4_EncounterParticipant }));
 			}
 			return false;
 		}

@@ -127,8 +127,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureEstimatedBloodLossSection(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteProcedureEstimatedBloodLossSection(this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +187,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(this, diagnostics, context);
 	}
 
 	/**
@@ -246,8 +244,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -257,8 +254,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -268,8 +264,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventProcedureCodes(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventProcedureCodes(this, diagnostics, context);
 	}
 
 	/**
@@ -279,8 +274,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(this, diagnostics, context);
 	}
 
 	/**
@@ -290,8 +284,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -301,8 +294,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -312,8 +304,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary(this, diagnostics, context);
 	}
 
 	/**
@@ -333,8 +324,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -508,7 +498,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	@Override
 	public OperativeNote init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // OperativeNoteImpl

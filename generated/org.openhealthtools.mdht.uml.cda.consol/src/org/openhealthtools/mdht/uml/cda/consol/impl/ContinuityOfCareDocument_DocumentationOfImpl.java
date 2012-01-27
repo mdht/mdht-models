@@ -57,8 +57,7 @@ public class ContinuityOfCareDocument_DocumentationOfImpl extends DocumentationO
 	 * @generated
 	 */
 	public boolean validateDocumentationOfServiceEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument_DocumentationOfOperations.validateDocumentationOfServiceEvent(
-			this, diagnostics, context);
+		return ContinuityOfCareDocument_DocumentationOfOperations.validateDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class ContinuityOfCareDocument_DocumentationOfImpl extends DocumentationO
 	 * @generated
 	 */
 	public ContinuityOfCareDocument_DocumentationOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ContinuityOfCareDocument_DocumentationOfImpl

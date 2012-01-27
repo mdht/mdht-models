@@ -65,8 +65,7 @@ public class DocumentationOf_ServiceEvent3Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public boolean validateServiceEvent3EffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent3Operations.validateServiceEvent3EffectiveTimeHigh(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent3Operations.validateServiceEvent3EffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +101,7 @@ public class DocumentationOf_ServiceEvent3Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public DocumentationOf_ServiceEvent3 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DocumentationOf_ServiceEvent3Impl

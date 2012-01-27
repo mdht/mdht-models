@@ -66,8 +66,7 @@ public class GeneralHeaderConstraints_AuthenticatorImpl extends AuthenticatorImp
 	 * @generated
 	 */
 	public boolean validateAuthenticatorSignatureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_AuthenticatorOperations.validateAuthenticatorSignatureCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_AuthenticatorOperations.validateAuthenticatorSignatureCode(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +75,7 @@ public class GeneralHeaderConstraints_AuthenticatorImpl extends AuthenticatorImp
 	 * @generated
 	 */
 	public boolean validateAuthenticatorAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_AuthenticatorOperations.validateAuthenticatorAssignedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_AuthenticatorOperations.validateAuthenticatorAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +84,7 @@ public class GeneralHeaderConstraints_AuthenticatorImpl extends AuthenticatorImp
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_Authenticator init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_AuthenticatorImpl

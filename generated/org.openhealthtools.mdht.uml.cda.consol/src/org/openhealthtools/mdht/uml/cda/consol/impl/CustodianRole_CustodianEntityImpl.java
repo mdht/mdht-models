@@ -65,7 +65,7 @@ public class CustodianRole_CustodianEntityImpl extends PlayingEntityImpl impleme
 	 * @generated
 	 */
 	public CustodianRole_CustodianEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CustodianRole_CustodianEntityImpl

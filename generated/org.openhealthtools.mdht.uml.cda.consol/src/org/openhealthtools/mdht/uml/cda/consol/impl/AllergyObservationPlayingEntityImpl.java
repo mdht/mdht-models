@@ -57,8 +57,7 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 */
 	public boolean validateAllergyObservationPlayingEntityCodeOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCodeOriginalText(
-			this, diagnostics, context);
+		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 */
 	public boolean validateAllergyObservationPlayingEntityCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCodeTranslation(
-			this, diagnostics, context);
+		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCodeTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 */
 	public boolean validateAllergyObservationPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityClassCode(
-			this, diagnostics, context);
+		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 * @generated
 	 */
 	public boolean validateAllergyObservationPlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCode(
-			this, diagnostics, context);
+		return AllergyObservationPlayingEntityOperations.validateAllergyObservationPlayingEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +95,7 @@ public class AllergyObservationPlayingEntityImpl extends PlayingEntityImpl imple
 	 * @generated
 	 */
 	public AllergyObservationPlayingEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyObservationPlayingEntityImpl

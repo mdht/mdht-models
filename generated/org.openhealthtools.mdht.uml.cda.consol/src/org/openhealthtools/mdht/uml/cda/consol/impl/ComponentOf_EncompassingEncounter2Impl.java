@@ -57,8 +57,7 @@ public class ComponentOf_EncompassingEncounter2Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2EffectiveTime(
-			this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +76,7 @@ public class ComponentOf_EncompassingEncounter2Impl extends EncompassingEncounte
 	 */
 	public boolean validateEncompassingEncounter2ResponsibleParty(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2ResponsibleParty(
-			this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2ResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +86,7 @@ public class ComponentOf_EncompassingEncounter2Impl extends EncompassingEncounte
 	 */
 	public boolean validateEncompassingEncounter2EncounterParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2EncounterParticipant(
-			this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter2Operations.validateEncompassingEncounter2EncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -98,7 +95,7 @@ public class ComponentOf_EncompassingEncounter2Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public ComponentOf_EncompassingEncounter2 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ComponentOf_EncompassingEncounter2Impl

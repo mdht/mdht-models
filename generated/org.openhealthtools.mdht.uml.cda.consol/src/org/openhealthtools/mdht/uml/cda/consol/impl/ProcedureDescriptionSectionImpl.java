@@ -57,8 +57,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +84,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +93,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public ProcedureDescriptionSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureDescriptionSectionImpl

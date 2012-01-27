@@ -57,8 +57,7 @@ public class Custodian_AssignedCustodianImpl extends AssignedCustodianImpl imple
 	 */
 	public boolean validateAssignedCustodianRepresentedCustodianOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Custodian_AssignedCustodianOperations.validateAssignedCustodianRepresentedCustodianOrganization(
-			this, diagnostics, context);
+		return Custodian_AssignedCustodianOperations.validateAssignedCustodianRepresentedCustodianOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class Custodian_AssignedCustodianImpl extends AssignedCustodianImpl imple
 	 * @generated
 	 */
 	public Custodian_AssignedCustodian init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Custodian_AssignedCustodianImpl

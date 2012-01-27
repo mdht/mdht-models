@@ -57,8 +57,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 */
 	public boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(
-			this, diagnostics, context);
+		return ScanningDeviceOperations.validateScanningDeviceTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +105,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 */
 	public boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(
-			this, diagnostics, context);
+		return ScanningDeviceOperations.validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +114,7 @@ public class ScanningDeviceImpl extends AuthorImpl implements ScanningDevice {
 	 * @generated
 	 */
 	public ScanningDevice init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ScanningDeviceImpl

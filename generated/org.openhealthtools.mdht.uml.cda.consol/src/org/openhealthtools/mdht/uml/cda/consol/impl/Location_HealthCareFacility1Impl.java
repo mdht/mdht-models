@@ -65,7 +65,7 @@ public class Location_HealthCareFacility1Impl extends HealthCareFacilityImpl imp
 	 * @generated
 	 */
 	public Location_HealthCareFacility1 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Location_HealthCareFacility1Impl
