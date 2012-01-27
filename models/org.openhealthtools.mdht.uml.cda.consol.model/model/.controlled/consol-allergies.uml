@@ -295,16 +295,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UD7aQCWFEeGWfpmyutaqOA">
         <language>OCL</language>
         <language>Analysis</language>
-        <body>(self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies not self.effectiveTime.low.oclIsUndefined()</body>
-        <body>If statusCode = &quot;active|supended&quot;, then effectiveTime SHALL contain [1..1] low</body>
+        <body>(self.statusCode.code = '55561003') implies not self.effectiveTime.low.oclIsUndefined()</body>
+        <body>If statusCode = &quot;55561003&quot; Active, then effectiveTime SHALL contain [1..1] low (CONF:7504).</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeHigh">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If statusCode = &quot;aborted|completed&quot;, then effectiveTime SHALL contain  high [1..1].</body>
-        <body>(self.statusCode.code = 'aborted' or self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
+        <body>If statusCode = &quot;413322009&quot;, then effectiveTime SHALL contain  high [1..1] (CONF:10085).</body>
+        <body>(self.statusCode.code = '413322009') implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
