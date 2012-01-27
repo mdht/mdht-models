@@ -75,7 +75,7 @@ public class ReferralSummaryImpl extends GeneralHeaderConstraintsImpl implements
 	 */
 	@Override
 	public ReferralSummary init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReferralSummaryImpl

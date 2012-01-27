@@ -89,18 +89,20 @@ public class GeneralHeaderConstraints_LegalAuthenticatorOperations extends Legal
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR);
 			try {
 				VALIDATE_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			generalHeaderConstraints_LegalAuthenticator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_LegalAuthenticator)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__LEGAL_AUTHENTICATOR_TIME,
-					ConsolPlugin.INSTANCE.getString("LegalAuthenticatorTime"),
-					new Object[] { generalHeaderConstraints_LegalAuthenticator }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__LEGAL_AUTHENTICATOR_TIME,
+						 ConsolPlugin.INSTANCE.getString("LegalAuthenticatorTime"),
+						 new Object [] { generalHeaderConstraints_LegalAuthenticator }));
 			}
 			return false;
 		}
@@ -115,8 +117,9 @@ public class GeneralHeaderConstraints_LegalAuthenticatorOperations extends Legal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (" + "value.code = 's'))";
+	protected static final String VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in ("+
+"value.code = 's'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLegalAuthenticatorSignatureCode(GeneralHeaderConstraints_LegalAuthenticator, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Legal Authenticator Signature Code</em>}' invariant operation.
@@ -149,18 +152,20 @@ public class GeneralHeaderConstraints_LegalAuthenticatorOperations extends Legal
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR);
 			try {
 				VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			generalHeaderConstraints_LegalAuthenticator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_LegalAuthenticator)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__LEGAL_AUTHENTICATOR_SIGNATURE_CODE,
-					ConsolPlugin.INSTANCE.getString("LegalAuthenticatorSignatureCode"),
-					new Object[] { generalHeaderConstraints_LegalAuthenticator }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__LEGAL_AUTHENTICATOR_SIGNATURE_CODE,
+						 ConsolPlugin.INSTANCE.getString("LegalAuthenticatorSignatureCode"),
+						 new Object [] { generalHeaderConstraints_LegalAuthenticator }));
 			}
 			return false;
 		}

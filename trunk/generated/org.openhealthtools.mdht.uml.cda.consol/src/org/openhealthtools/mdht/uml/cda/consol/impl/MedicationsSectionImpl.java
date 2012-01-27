@@ -105,8 +105,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +115,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 */
 	@Override
 	public MedicationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationsSectionImpl

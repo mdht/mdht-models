@@ -57,8 +57,7 @@ public class AssignedCustodian3_CustodianOrganizationImpl extends CustodianOrgan
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationAddr(
-			this, diagnostics, context);
+		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class AssignedCustodian3_CustodianOrganizationImpl extends CustodianOrgan
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationId(
-			this, diagnostics, context);
+		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class AssignedCustodian3_CustodianOrganizationImpl extends CustodianOrgan
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationName(
-			this, diagnostics, context);
+		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +84,7 @@ public class AssignedCustodian3_CustodianOrganizationImpl extends CustodianOrgan
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationTelecom(
-			this, diagnostics, context);
+		return AssignedCustodian3_CustodianOrganizationOperations.validateCustodianOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +93,7 @@ public class AssignedCustodian3_CustodianOrganizationImpl extends CustodianOrgan
 	 * @generated
 	 */
 	public AssignedCustodian3_CustodianOrganization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AssignedCustodian3_CustodianOrganizationImpl

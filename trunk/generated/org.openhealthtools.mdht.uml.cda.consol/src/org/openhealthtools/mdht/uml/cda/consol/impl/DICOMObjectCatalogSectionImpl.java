@@ -56,8 +56,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
-			this, diagnostics, context);
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +65,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public DICOMObjectCatalogSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DICOMObjectCatalogSectionImpl

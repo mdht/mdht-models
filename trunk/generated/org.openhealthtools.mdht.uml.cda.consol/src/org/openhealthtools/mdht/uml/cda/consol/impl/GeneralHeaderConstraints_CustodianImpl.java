@@ -56,8 +56,7 @@ public class GeneralHeaderConstraints_CustodianImpl extends CustodianImpl implem
 	 * @generated
 	 */
 	public boolean validateCustodianAssignedCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_CustodianOperations.validateCustodianAssignedCustodian(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_CustodianOperations.validateCustodianAssignedCustodian(this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +65,7 @@ public class GeneralHeaderConstraints_CustodianImpl extends CustodianImpl implem
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_Custodian init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_CustodianImpl

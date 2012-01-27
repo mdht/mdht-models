@@ -74,7 +74,7 @@ public class Informant_RelatedEntityImpl extends RelatedEntityImpl implements In
 	 * @generated
 	 */
 	public Informant_RelatedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Informant_RelatedEntityImpl

@@ -33,11 +33,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies not self.effectiveTime.low.oclIsUndefined()
+	 * (self.statusCode.code = '55561003') implies not self.effectiveTime.low.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'active\' or self.statusCode.code = \'suspended\') implies not self.effectiveTime.low.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'55561003\') implies not self.effectiveTime.low.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -46,11 +46,11 @@ public interface AllergyProblemAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.code = 'aborted' or self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()
+	 * (self.statusCode.code = '413322009') implies not self.effectiveTime.high.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'aborted\' or self.statusCode.code = \'completed\') implies not self.effectiveTime.high.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'413322009\') implies not self.effectiveTime.high.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -117,7 +117,7 @@ public interface AllergyProblemAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -132,7 +132,7 @@ public interface AllergyProblemAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'55561003\' or value.code = \'73425007\' or value.code = \'413322009\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'55561003\' or value.code = \'73425007\' or value.code = \'413322009\')))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

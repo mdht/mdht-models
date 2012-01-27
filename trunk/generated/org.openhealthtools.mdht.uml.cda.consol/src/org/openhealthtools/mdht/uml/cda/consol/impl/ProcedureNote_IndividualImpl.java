@@ -65,7 +65,7 @@ public class ProcedureNote_IndividualImpl extends Participant1Impl implements Pr
 	 * @generated
 	 */
 	public ProcedureNote_Individual init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureNote_IndividualImpl

@@ -57,8 +57,7 @@ public class Performer_AssignedEntityImpl extends AssignedEntityImpl implements 
 	 */
 	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Performer_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return Performer_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +84,7 @@ public class Performer_AssignedEntityImpl extends AssignedEntityImpl implements 
 	 * @generated
 	 */
 	public Performer_AssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Performer_AssignedEntityImpl

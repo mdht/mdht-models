@@ -93,17 +93,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceTemplateId"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProductInstanceTemplateId"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -148,17 +151,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceClassCode"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProductInstanceClassCode"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -203,16 +209,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceId"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProductInstanceId"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -257,17 +267,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntity"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntity"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -312,17 +325,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
-					ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDevice"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
+						 ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDevice"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -367,17 +383,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntityId"), new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
+						 ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntityId"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}
@@ -422,18 +441,20 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDeviceCode"),
-					new Object[] { productInstance }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDeviceCode"),
+						 new Object [] { productInstance }));
 			}
 			return false;
 		}

@@ -67,9 +67,9 @@ public class Patient_LanguageCommunicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Language Code</em>}' invariant operation.
@@ -102,18 +102,20 @@ public class Patient_LanguageCommunicationOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
 			try {
 				VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patient_LanguageCommunication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patient_LanguageCommunication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("LanguageCommunicationLanguageCode"),
-					new Object[] { patient_LanguageCommunication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
+						 ConsolPlugin.INSTANCE.getString("LanguageCommunicationLanguageCode"),
+						 new Object [] { patient_LanguageCommunication }));
 			}
 			return false;
 		}
@@ -159,18 +161,20 @@ public class Patient_LanguageCommunicationOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
 			try {
 				VALIDATE_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patient_LanguageCommunication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patient_LanguageCommunication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PREFERENCE_IND,
-					ConsolPlugin.INSTANCE.getString("LanguageCommunicationPreferenceInd"),
-					new Object[] { patient_LanguageCommunication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PREFERENCE_IND,
+						 ConsolPlugin.INSTANCE.getString("LanguageCommunicationPreferenceInd"),
+						 new Object [] { patient_LanguageCommunication }));
 			}
 			return false;
 		}
@@ -185,9 +189,9 @@ public class Patient_LanguageCommunicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationProficiencyLevelCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Proficiency Level Code</em>}' invariant operation.
@@ -220,19 +224,20 @@ public class Patient_LanguageCommunicationOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
 			try {
 				VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patient_LanguageCommunication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patient_LanguageCommunication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE,
-					ConsolPlugin.INSTANCE.getString("LanguageCommunicationProficiencyLevelCode"),
-					new Object[] { patient_LanguageCommunication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE,
+						 ConsolPlugin.INSTANCE.getString("LanguageCommunicationProficiencyLevelCode"),
+						 new Object [] { patient_LanguageCommunication }));
 			}
 			return false;
 		}
@@ -247,9 +252,9 @@ public class Patient_LanguageCommunicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))";
+	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationModeCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Mode Code</em>}' invariant operation.
@@ -282,18 +287,20 @@ public class Patient_LanguageCommunicationOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_LANGUAGE_COMMUNICATION);
 			try {
 				VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patient_LanguageCommunication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patient_LanguageCommunication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_MODE_CODE,
-					ConsolPlugin.INSTANCE.getString("LanguageCommunicationModeCode"),
-					new Object[] { patient_LanguageCommunication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_LANGUAGE_COMMUNICATION__LANGUAGE_COMMUNICATION_MODE_CODE,
+						 ConsolPlugin.INSTANCE.getString("LanguageCommunicationModeCode"),
+						 new Object [] { patient_LanguageCommunication }));
 			}
 			return false;
 		}

@@ -74,7 +74,7 @@ public class InternalReferenceImpl extends ActImpl implements InternalReference 
 	 * @generated
 	 */
 	public InternalReference init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // InternalReferenceImpl

@@ -74,7 +74,7 @@ public class DocumentationOf_ServiceEvent2Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public DocumentationOf_ServiceEvent2 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DocumentationOf_ServiceEvent2Impl

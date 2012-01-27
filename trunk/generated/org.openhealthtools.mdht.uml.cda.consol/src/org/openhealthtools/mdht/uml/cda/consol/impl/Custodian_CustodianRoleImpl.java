@@ -92,7 +92,7 @@ public class Custodian_CustodianRoleImpl extends ParticipantRoleImpl implements 
 	 * @generated
 	 */
 	public Custodian_CustodianRole init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Custodian_CustodianRoleImpl

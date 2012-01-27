@@ -57,8 +57,7 @@ public class EncompassingEncounter5_EncounterParticipantImpl extends EncounterPa
 	 * @generated
 	 */
 	public boolean validateEncounterParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncompassingEncounter5_EncounterParticipantOperations.validateEncounterParticipantTypeCode(
-			this, diagnostics, context);
+		return EncompassingEncounter5_EncounterParticipantOperations.validateEncounterParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class EncompassingEncounter5_EncounterParticipantImpl extends EncounterPa
 	 * @generated
 	 */
 	public EncompassingEncounter5_EncounterParticipant init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncompassingEncounter5_EncounterParticipantImpl
