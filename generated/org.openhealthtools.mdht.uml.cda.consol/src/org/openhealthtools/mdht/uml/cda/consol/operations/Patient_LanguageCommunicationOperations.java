@@ -69,7 +69,7 @@ public class Patient_LanguageCommunicationOperations {
 	 */
 	protected static final String VALIDATE_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and "+
 "let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+"not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageCommunicationLanguageCode(Patient_LanguageCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Communication Language Code</em>}' invariant operation.
@@ -87,7 +87,7 @@ public class Patient_LanguageCommunicationOperations {
 	 * <!-- begin-model-doc -->
 	 * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
+	 * not value.code.oclIsUndefined()))
 	 * @param patient_LanguageCommunication The receiving '<em><b>Patient Language Communication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
