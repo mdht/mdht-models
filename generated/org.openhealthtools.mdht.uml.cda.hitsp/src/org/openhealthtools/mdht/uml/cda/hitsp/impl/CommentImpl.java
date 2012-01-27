@@ -62,6 +62,15 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Comme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHITSPCommentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentOperations.validateHITSPCommentAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Comment init() {
 		CDAUtil.init(this);

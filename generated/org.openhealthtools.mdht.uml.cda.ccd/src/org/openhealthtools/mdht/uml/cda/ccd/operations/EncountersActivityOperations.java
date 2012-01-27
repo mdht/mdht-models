@@ -49,6 +49,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#validateEncountersActivityEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#validateEncountersActivityPatientInstruction(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Patient Instruction</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#validateEncountersActivityAgeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Age Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#validateEncountersActivityEncounterLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Encounter Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#getPatientInstructions() <em>Get Patient Instructions</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity#getAgeObservation() <em>Get Age Observation</em>}</li>
  * </ul>
@@ -623,6 +624,64 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateEncountersActivityEncounterLocation(EncountersActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Encounter Location</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncountersActivityEncounterLocation(EncountersActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEncountersActivityEncounterLocation(EncountersActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Activity Encounter Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEncountersActivityEncounterLocation(EncountersActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))
+	 * @param encountersActivity The receiving '<em><b>Encounters Activity</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateEncountersActivityEncounterLocation(EncountersActivity encountersActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
+			try {
+				VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTERS_ACTIVITY__ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION,
+					CCDPlugin.INSTANCE.getString("EncountersActivityEncounterLocation"),
+					new Object[] { encountersActivity }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getPatientInstructions(EncountersActivity) <em>Get Patient Instructions</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -656,7 +715,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ENCOUNTERS_ACTIVITY,
-				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(59));
+				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(60));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -703,7 +762,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ENCOUNTERS_ACTIVITY,
-				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(60));
+				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(61));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAdvanceDirectiveObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' templateId.root='2.16.840.1.113883.10.20.1.17' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationCode AdvanceDirectiveObservationAdvanceDirectiveStatusObservation' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet' statusCode.code='completed' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem AdvanceDirectiveObservationEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' templateId.root='2.16.840.1.113883.10.20.1.17' constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationCode AdvanceDirectiveObservationAdvanceDirectiveStatusObservation' constraints.validation.info='AdvanceDirectiveObservationAdvDirectiveCodeValueSet AdvanceDirectiveObservationAdvanceDirectiveVerification AdvanceDirectiveObservationAdvanceDirectiveReference' statusCode.code='completed' constraints.validation.warning='AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem AdvanceDirectiveObservationEffectiveTime'"
  * @generated
  */
 public interface AdvanceDirectiveObservation extends Observation {
@@ -151,6 +151,20 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::AdvanceDirectiveVerification))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::AdvanceDirectiveVerification))'"
+	 * @generated
+	 */
+	boolean validateAdvanceDirectiveObservationAdvanceDirectiveVerification(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::AdvanceDirectiveStatusObservation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -159,6 +173,20 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.reference->one(reference : cda::Reference | not reference.oclIsUndefined() and reference.oclIsKindOf(ccd::AdvanceDirectiveReference))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->one(reference : cda::Reference | not reference.oclIsUndefined() and reference.oclIsKindOf(ccd::AdvanceDirectiveReference))'"
+	 * @generated
+	 */
+	boolean validateAdvanceDirectiveObservationAdvanceDirectiveReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

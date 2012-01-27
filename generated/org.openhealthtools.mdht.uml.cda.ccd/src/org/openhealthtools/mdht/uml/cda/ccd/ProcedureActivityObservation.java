@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getProcedureActivityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' moodCode='EVN' constraints.validation.info='ProcedureActivityObservationProblemObservation ProcedureActivityObservationAgeObservation ProcedureActivityObservationMedicationActivity ProcedureActivityObservationPatientInstruction ProcedureActivityObservationProblemAct' constraints.validation.error='ProcedureActivityObservationTemplateId ProcedureActivityObservationMoodCode ProcedureActivityObservationCode ProcedureActivityObservationId ProcedureActivityObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.1.29' constraints.validation.warning='ProcedureActivityObservationEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' moodCode='EVN' constraints.validation.info='ProcedureActivityObservationEncounterLocation ProcedureActivityObservationPerformer2 ProcedureActivityObservationProblemObservation ProcedureActivityObservationAgeObservation ProcedureActivityObservationMedicationActivity ProcedureActivityObservationPatientInstruction ProcedureActivityObservationProblemAct' constraints.validation.error='ProcedureActivityObservationTemplateId ProcedureActivityObservationMoodCode ProcedureActivityObservationCode ProcedureActivityObservationId ProcedureActivityObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.1.29' constraints.validation.warning='ProcedureActivityObservationEffectiveTime'"
  * @generated
  */
 public interface ProcedureActivityObservation extends Observation, ProcedureActivity {
@@ -104,6 +104,33 @@ public interface ProcedureActivityObservation extends Observation, ProcedureActi
 	 * @generated
 	 */
 	boolean validateProcedureActivityObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityObservationEncounterLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityObservationPerformer2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -1,26 +1,28 @@
-/*******************************************************************************
- * Copyright (c) 2009, 2011 David A Carlson and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
+
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersActivityOperations;
+
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+
 import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterActivityOperations;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -140,6 +142,15 @@ public class EncounterActivityImpl extends EncounterEntryImpl implements Encount
 	 */
 	public boolean validateEncountersActivityAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityAgeObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersActivityEncounterLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersActivityOperations.validateEncountersActivityEncounterLocation(this, diagnostics, context);
 	}
 
 	/**

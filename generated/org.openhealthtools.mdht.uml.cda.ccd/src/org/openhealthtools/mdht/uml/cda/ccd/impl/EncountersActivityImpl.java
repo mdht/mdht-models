@@ -147,6 +147,15 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncountersActivityEncounterLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersActivityOperations.validateEncountersActivityEncounterLocation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<PatientInstruction> getPatientInstructions() {
 		return EncountersActivityOperations.getPatientInstructions(this);
 	}

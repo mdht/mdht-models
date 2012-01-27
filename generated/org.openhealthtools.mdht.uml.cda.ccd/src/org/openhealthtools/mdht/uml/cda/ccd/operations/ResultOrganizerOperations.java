@@ -47,6 +47,7 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer#validateResultOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer#validateResultOrganizerResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer#validateResultOrganizerSpecimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Specimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer#getResultObservations() <em>Get Result Observations</em>}</li>
  * </ul>
  * </p>
@@ -563,6 +564,63 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateResultOrganizerSpecimen(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Specimen</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerSpecimen(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.specimen->exists(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(rim::Participation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateResultOrganizerSpecimen(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Specimen</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerSpecimen(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.specimen->exists(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(rim::Participation))
+	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateResultOrganizerSpecimen(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
+			try {
+				VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			resultOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_SPECIMEN,
+					CCDPlugin.INSTANCE.getString("ResultOrganizerSpecimen"), new Object[] { resultOrganizer }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getResultObservations(ResultOrganizer) <em>Get Result Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -595,7 +653,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 		if (GET_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.RESULT_ORGANIZER, CCDPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(59));
+				CCDPackage.Literals.RESULT_ORGANIZER, CCDPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(60));
 			try {
 				GET_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

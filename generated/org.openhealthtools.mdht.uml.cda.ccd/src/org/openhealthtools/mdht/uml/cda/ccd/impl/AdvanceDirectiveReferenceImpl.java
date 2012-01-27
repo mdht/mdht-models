@@ -99,6 +99,17 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveReferenceExternalDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceExternalDocument(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AdvanceDirectiveReference init() {
 		CDAUtil.init(this);
 		return this;

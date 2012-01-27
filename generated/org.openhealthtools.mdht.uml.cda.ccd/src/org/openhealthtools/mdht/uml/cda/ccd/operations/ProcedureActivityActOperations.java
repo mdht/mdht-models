@@ -47,6 +47,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActEncounterLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Encounter Location</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActPerformer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Performer2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActProblemAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Problem Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Problem Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct#validateProcedureActivityActAgeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Age Observation</em>}</li>
@@ -343,6 +345,122 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
 					CCDValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID,
 					CCDPlugin.INSTANCE.getString("ProcedureActivityActId"), new Object[] { procedureActivityAct }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEncounterLocation(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Encounter Location</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActEncounterLocation(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEncounterLocation(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Encounter Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActEncounterLocation(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureActivityActEncounterLocation(ProcedureActivityAct procedureActivityAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureActivityAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_LOCATION,
+					CCDPlugin.INSTANCE.getString("ProcedureActivityActEncounterLocation"),
+					new Object[] { procedureActivityAct }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActPerformer2(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Performer2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActPerformer2(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActPerformer2(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Performer2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActPerformer2(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureActivityActPerformer2(ProcedureActivityAct procedureActivityAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureActivityAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PERFORMER2,
+					CCDPlugin.INSTANCE.getString("ProcedureActivityActPerformer2"),
+					new Object[] { procedureActivityAct }));
 			}
 			return false;
 		}
@@ -663,7 +781,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(59));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(61));
 			try {
 				GET_PROBLEM_ACT__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACT__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -708,7 +826,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(60));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(62));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -753,7 +871,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(61));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(63));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -798,7 +916,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(62));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(64));
 			try {
 				GET_MEDICATION_ACTIVITY__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -843,7 +961,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(63));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_ACT.getEAllOperations().get(65));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
