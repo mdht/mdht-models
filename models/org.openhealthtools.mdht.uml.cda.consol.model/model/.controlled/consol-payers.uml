@@ -44,7 +44,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   <uml:Association xmi:id="_eyK8AhUmEeGvPruliC3crg" memberEnd="_eyK8ABUmEeGvPruliC3crg _eyK8AxUmEeGvPruliC3crg">
     <ownedEnd xmi:id="_eyK8AxUmEeGvPruliC3crg" type="_2MV_UBSVEeGGzu7fmW9pXw" association="_eyK8AhUmEeGvPruliC3crg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_2MV_VhSVEeGGzu7fmW9pXw" message="The Payers section contains data on the patient’s payers, whether a ‘third party’ insurance, self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the responsible fiduciary for the financial aspects of a patient’s care." base_Class="_2MV_UBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.18">
+  <CDA:CDATemplate xmi:id="_2MV_VhSVEeGGzu7fmW9pXw" base_Class="_2MV_UBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.18">
     <ruleId>CONF:7924</ruleId>
     <ruleId>CONF:10434</ruleId>
   </CDA:CDATemplate>
