@@ -58,7 +58,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +77,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +97,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +116,7 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public HistoryOfPastIllnessSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryOfPastIllnessSectionImpl

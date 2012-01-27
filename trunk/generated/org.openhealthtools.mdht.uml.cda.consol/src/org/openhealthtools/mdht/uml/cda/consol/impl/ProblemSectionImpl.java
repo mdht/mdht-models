@@ -86,7 +86,7 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 */
 	@Override
 	public ProblemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProblemSectionImpl

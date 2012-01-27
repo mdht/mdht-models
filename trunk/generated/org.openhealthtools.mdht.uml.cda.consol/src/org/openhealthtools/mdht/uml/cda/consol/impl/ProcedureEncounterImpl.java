@@ -83,7 +83,7 @@ public class ProcedureEncounterImpl extends EncounterImpl implements ProcedureEn
 	 * @generated
 	 */
 	public ProcedureEncounter init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureEncounterImpl

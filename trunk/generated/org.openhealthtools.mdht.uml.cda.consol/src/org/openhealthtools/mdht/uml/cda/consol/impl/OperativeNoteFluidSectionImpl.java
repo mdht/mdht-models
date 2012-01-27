@@ -56,7 +56,8 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * @generated
 	 */
 	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(this, diagnostics, context);
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +93,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * @generated
 	 */
 	public OperativeNoteFluidSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // OperativeNoteFluidSectionImpl

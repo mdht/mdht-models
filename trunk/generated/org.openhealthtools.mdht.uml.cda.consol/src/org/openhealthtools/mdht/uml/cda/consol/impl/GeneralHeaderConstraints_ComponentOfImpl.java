@@ -57,7 +57,8 @@ public class GeneralHeaderConstraints_ComponentOfImpl extends Component1Impl imp
 	 * @generated
 	 */
 	public boolean validateComponentOfEncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_ComponentOfOperations.validateComponentOfEncompassingEncounter(this, diagnostics, context);
+		return GeneralHeaderConstraints_ComponentOfOperations.validateComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class GeneralHeaderConstraints_ComponentOfImpl extends Component1Impl imp
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_ComponentOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_ComponentOfImpl

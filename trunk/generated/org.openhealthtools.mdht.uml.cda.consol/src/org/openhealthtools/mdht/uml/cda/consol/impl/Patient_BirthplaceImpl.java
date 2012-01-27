@@ -65,7 +65,7 @@ public class Patient_BirthplaceImpl extends BirthplaceImpl implements Patient_Bi
 	 * @generated
 	 */
 	public Patient_Birthplace init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Patient_BirthplaceImpl

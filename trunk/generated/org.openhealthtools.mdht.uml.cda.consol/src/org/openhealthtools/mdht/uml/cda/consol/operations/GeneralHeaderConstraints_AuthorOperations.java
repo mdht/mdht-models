@@ -87,20 +87,18 @@ public class GeneralHeaderConstraints_AuthorOperations extends AuthorOperations 
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_AUTHOR);
 			try {
 				VALIDATE_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Author)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Author)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHOR__AUTHOR_ASSIGNED_AUTHOR,
-						 ConsolPlugin.INSTANCE.getString("AuthorAssignedAuthor"),
-						 new Object [] { generalHeaderConstraints_Author }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHOR__AUTHOR_ASSIGNED_AUTHOR,
+					ConsolPlugin.INSTANCE.getString("AuthorAssignedAuthor"),
+					new Object[] { generalHeaderConstraints_Author }));
 			}
 			return false;
 		}

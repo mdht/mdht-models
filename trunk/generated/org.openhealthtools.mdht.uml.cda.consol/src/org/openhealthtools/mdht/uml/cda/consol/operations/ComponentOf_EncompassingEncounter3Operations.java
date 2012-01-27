@@ -92,20 +92,20 @@ public class ComponentOf_EncompassingEncounter3Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter3)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow"),
-						 new Object [] { componentOf_EncompassingEncounter3 }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow"),
+					new Object[] { componentOf_EncompassingEncounter3 }));
 			}
 			return false;
 		}
@@ -151,20 +151,20 @@ public class ComponentOf_EncompassingEncounter3Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter3)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh"),
-						 new Object [] { componentOf_EncompassingEncounter3 }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh"),
+					new Object[] { componentOf_EncompassingEncounter3 }));
 			}
 			return false;
 		}
@@ -210,20 +210,18 @@ public class ComponentOf_EncompassingEncounter3Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter3)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EffectiveTime"),
-						 new Object [] { componentOf_EncompassingEncounter3 }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EffectiveTime"),
+					new Object[] { componentOf_EncompassingEncounter3 }));
 			}
 			return false;
 		}
@@ -269,20 +267,18 @@ public class ComponentOf_EncompassingEncounter3Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter3)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter3ResponsibleParty"),
-						 new Object [] { componentOf_EncompassingEncounter3 }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounter3ResponsibleParty"),
+					new Object[] { componentOf_EncompassingEncounter3 }));
 			}
 			return false;
 		}
@@ -328,20 +324,20 @@ public class ComponentOf_EncompassingEncounter3Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter3)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncounterParticipant"),
-						 new Object [] { componentOf_EncompassingEncounter3 }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3__ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounter3EncounterParticipant"),
+					new Object[] { componentOf_EncompassingEncounter3 }));
 			}
 			return false;
 		}

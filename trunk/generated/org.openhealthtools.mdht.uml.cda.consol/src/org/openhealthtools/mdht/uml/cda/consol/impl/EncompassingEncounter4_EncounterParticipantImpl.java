@@ -58,7 +58,8 @@ public class EncompassingEncounter4_EncounterParticipantImpl extends EncounterPa
 	 */
 	public boolean validateEncounterParticipantAssignedEntityHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncompassingEncounter4_EncounterParticipantOperations.validateEncounterParticipantAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
+		return EncompassingEncounter4_EncounterParticipantOperations.validateEncounterParticipantAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class EncompassingEncounter4_EncounterParticipantImpl extends EncounterPa
 	 * @generated
 	 */
 	public boolean validateEncounterParticipantAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncompassingEncounter4_EncounterParticipantOperations.validateEncounterParticipantAssignedEntity(this, diagnostics, context);
+		return EncompassingEncounter4_EncounterParticipantOperations.validateEncounterParticipantAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,7 @@ public class EncompassingEncounter4_EncounterParticipantImpl extends EncounterPa
 	 * @generated
 	 */
 	public EncompassingEncounter4_EncounterParticipant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncompassingEncounter4_EncounterParticipantImpl

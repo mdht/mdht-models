@@ -75,7 +75,8 @@ public class AdvanceDirectiveObservation_VerifierImpl extends Participant2Impl i
 	 * @generated
 	 */
 	public boolean validateVerifierParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservation_VerifierOperations.validateVerifierParticipantRole(this, diagnostics, context);
+		return AdvanceDirectiveObservation_VerifierOperations.validateVerifierParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +85,7 @@ public class AdvanceDirectiveObservation_VerifierImpl extends Participant2Impl i
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation_Verifier init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveObservation_VerifierImpl

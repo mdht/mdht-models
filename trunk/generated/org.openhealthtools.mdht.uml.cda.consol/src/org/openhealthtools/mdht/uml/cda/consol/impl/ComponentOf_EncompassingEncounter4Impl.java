@@ -57,7 +57,8 @@ public class ComponentOf_EncompassingEncounter4Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounter4EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4EffectiveTime(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4EffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class ComponentOf_EncompassingEncounter4Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounter4Location(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4Location(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4Location(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +87,8 @@ public class ComponentOf_EncompassingEncounter4Impl extends EncompassingEncounte
 	 */
 	public boolean validateEncompassingEncounter4ResponsibleParty(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4ResponsibleParty(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4ResponsibleParty(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +98,8 @@ public class ComponentOf_EncompassingEncounter4Impl extends EncompassingEncounte
 	 */
 	public boolean validateEncompassingEncounter4EncounterParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4EncounterParticipant(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter4Operations.validateEncompassingEncounter4EncounterParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +108,7 @@ public class ComponentOf_EncompassingEncounter4Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public ComponentOf_EncompassingEncounter4 init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ComponentOf_EncompassingEncounter4Impl

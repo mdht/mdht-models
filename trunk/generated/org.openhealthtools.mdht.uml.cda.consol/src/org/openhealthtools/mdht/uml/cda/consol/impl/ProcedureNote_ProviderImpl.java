@@ -50,7 +50,7 @@ public class ProcedureNote_ProviderImpl extends Participant1Impl implements Proc
 	 * @generated
 	 */
 	public ProcedureNote_Provider init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureNote_ProviderImpl

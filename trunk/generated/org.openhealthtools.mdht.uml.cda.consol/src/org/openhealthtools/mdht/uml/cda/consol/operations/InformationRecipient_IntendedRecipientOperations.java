@@ -89,20 +89,18 @@ public class InformationRecipient_IntendedRecipientOperations extends RoleOperat
 			helper.setContext(ConsolPackage.Literals.INFORMATION_RECIPIENT_INTENDED_RECIPIENT);
 			try {
 				VALIDATE_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationRecipient_IntendedRecipient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			informationRecipient_IntendedRecipient)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INFORMATION_RECIPIENT_INTENDED_RECIPIENT__INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-						 ConsolPlugin.INSTANCE.getString("IntendedRecipientInformationRecipient"),
-						 new Object [] { informationRecipient_IntendedRecipient }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INFORMATION_RECIPIENT_INTENDED_RECIPIENT__INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
+					ConsolPlugin.INSTANCE.getString("IntendedRecipientInformationRecipient"),
+					new Object[] { informationRecipient_IntendedRecipient }));
 			}
 			return false;
 		}
@@ -148,20 +146,18 @@ public class InformationRecipient_IntendedRecipientOperations extends RoleOperat
 			helper.setContext(ConsolPackage.Literals.INFORMATION_RECIPIENT_INTENDED_RECIPIENT);
 			try {
 				VALIDATE_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationRecipient_IntendedRecipient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			informationRecipient_IntendedRecipient)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INFORMATION_RECIPIENT_INTENDED_RECIPIENT__INTENDED_RECIPIENT_RECIEVED_ORGANIZATION,
-						 ConsolPlugin.INSTANCE.getString("IntendedRecipientRecievedOrganization"),
-						 new Object [] { informationRecipient_IntendedRecipient }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INFORMATION_RECIPIENT_INTENDED_RECIPIENT__INTENDED_RECIPIENT_RECIEVED_ORGANIZATION,
+					ConsolPlugin.INSTANCE.getString("IntendedRecipientRecievedOrganization"),
+					new Object[] { informationRecipient_IntendedRecipient }));
 			}
 			return false;
 		}

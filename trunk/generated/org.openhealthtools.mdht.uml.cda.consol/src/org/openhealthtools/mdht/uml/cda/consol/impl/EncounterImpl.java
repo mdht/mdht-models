@@ -100,7 +100,7 @@ public class EncounterImpl extends org.openhealthtools.mdht.uml.cda.impl.Encount
 	 * @generated
 	 */
 	public Encounter init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncounterImpl

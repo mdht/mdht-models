@@ -54,7 +54,8 @@ public class ComponentOf_EncompassingEncounter5Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounter5Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5Code(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5Code(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,7 +64,8 @@ public class ComponentOf_EncompassingEncounter5Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounter5Location(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5Location(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5Location(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,8 @@ public class ComponentOf_EncompassingEncounter5Impl extends EncompassingEncounte
 	 */
 	public boolean validateEncompassingEncounter5EncounterParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5EncounterParticipant(this, diagnostics, context);
+		return ComponentOf_EncompassingEncounter5Operations.validateEncompassingEncounter5EncounterParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +85,7 @@ public class ComponentOf_EncompassingEncounter5Impl extends EncompassingEncounte
 	 * @generated
 	 */
 	public ComponentOf_EncompassingEncounter5 init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ComponentOf_EncompassingEncounter5Impl

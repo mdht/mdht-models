@@ -92,20 +92,20 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_ASSIGNED_AUTHORING_DEVICE,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice"),
+					new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
@@ -150,20 +150,19 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorHasNationalProviderIdentifier"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorHasNationalProviderIdentifier"),
+					new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
@@ -208,20 +207,17 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_ADDR,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorAddr"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_ADDR,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorAddr"), new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
@@ -266,20 +262,17 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_CODE,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorCode"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_CODE,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorCode"), new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
@@ -324,20 +317,17 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_ID,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorId"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_ID,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorId"), new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
@@ -382,20 +372,17 @@ public class Author_AssignedAuthorOperations extends AssignedAuthorOperations {
 			helper.setContext(ConsolPackage.Literals.AUTHOR_ASSIGNED_AUTHOR);
 			try {
 				VALIDATE_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(author_AssignedAuthor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			author_AssignedAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("AssignedAuthorTelecom"),
-						 new Object [] { author_AssignedAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.AUTHOR_ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_TELECOM,
+					ConsolPlugin.INSTANCE.getString("AssignedAuthorTelecom"), new Object[] { author_AssignedAuthor }));
 			}
 			return false;
 		}
