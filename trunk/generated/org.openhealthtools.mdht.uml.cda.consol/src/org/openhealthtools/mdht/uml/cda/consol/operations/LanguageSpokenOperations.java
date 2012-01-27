@@ -126,7 +126,7 @@ public class LanguageSpokenOperations {
 	 */
 	protected static final String VALIDATE_LANGUAGE_SPOKEN_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and "+
 "let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+"not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageSpokenLanguageCode(LanguageSpoken, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Spoken Language Code</em>}' invariant operation.
@@ -144,7 +144,7 @@ public class LanguageSpokenOperations {
 	 * <!-- begin-model-doc -->
 	 * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
+	 * not value.code.oclIsUndefined()))
 	 * @param languageSpoken The receiving '<em><b>Language Spoken</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
