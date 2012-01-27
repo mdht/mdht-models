@@ -74,7 +74,7 @@ public class RelatedInformantImpl extends RelatedEntityImpl implements RelatedIn
 	 * @generated
 	 */
 	public RelatedInformant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // RelatedInformantImpl

@@ -57,7 +57,8 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	 */
 	public boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
+		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +85,7 @@ public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnte
 	 * @generated
 	 */
 	public ScanDataEnterer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ScanDataEntererImpl

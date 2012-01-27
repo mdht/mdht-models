@@ -57,7 +57,8 @@ public class HistoryAndPhysicalNote_ComponentOfImpl extends Component1Impl imple
 	 * @generated
 	 */
 	public boolean validateComponentOfEncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote_ComponentOfOperations.validateComponentOfEncompassingEncounter(this, diagnostics, context);
+		return HistoryAndPhysicalNote_ComponentOfOperations.validateComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class HistoryAndPhysicalNote_ComponentOfImpl extends Component1Impl imple
 	 * @generated
 	 */
 	public HistoryAndPhysicalNote_ComponentOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryAndPhysicalNote_ComponentOfImpl

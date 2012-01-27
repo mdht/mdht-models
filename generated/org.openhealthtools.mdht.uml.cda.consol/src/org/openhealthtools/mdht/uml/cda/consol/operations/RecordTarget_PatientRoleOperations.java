@@ -90,20 +90,17 @@ public class RecordTarget_PatientRoleOperations extends PatientRoleOperations {
 			helper.setContext(ConsolPackage.Literals.RECORD_TARGET_PATIENT_ROLE);
 			try {
 				VALIDATE_PATIENT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(recordTarget_PatientRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			recordTarget_PatientRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_ADDR,
-						 ConsolPlugin.INSTANCE.getString("PatientRoleAddr"),
-						 new Object [] { recordTarget_PatientRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_ADDR,
+					ConsolPlugin.INSTANCE.getString("PatientRoleAddr"), new Object[] { recordTarget_PatientRole }));
 			}
 			return false;
 		}
@@ -148,20 +145,17 @@ public class RecordTarget_PatientRoleOperations extends PatientRoleOperations {
 			helper.setContext(ConsolPackage.Literals.RECORD_TARGET_PATIENT_ROLE);
 			try {
 				VALIDATE_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(recordTarget_PatientRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			recordTarget_PatientRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_ID,
-						 ConsolPlugin.INSTANCE.getString("PatientRoleId"),
-						 new Object [] { recordTarget_PatientRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_ID,
+					ConsolPlugin.INSTANCE.getString("PatientRoleId"), new Object[] { recordTarget_PatientRole }));
 			}
 			return false;
 		}
@@ -206,20 +200,17 @@ public class RecordTarget_PatientRoleOperations extends PatientRoleOperations {
 			helper.setContext(ConsolPackage.Literals.RECORD_TARGET_PATIENT_ROLE);
 			try {
 				VALIDATE_PATIENT_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(recordTarget_PatientRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			recordTarget_PatientRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("PatientRoleTelecom"),
-						 new Object [] { recordTarget_PatientRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_TELECOM,
+					ConsolPlugin.INSTANCE.getString("PatientRoleTelecom"), new Object[] { recordTarget_PatientRole }));
 			}
 			return false;
 		}
@@ -264,20 +255,17 @@ public class RecordTarget_PatientRoleOperations extends PatientRoleOperations {
 			helper.setContext(ConsolPackage.Literals.RECORD_TARGET_PATIENT_ROLE);
 			try {
 				VALIDATE_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(recordTarget_PatientRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			recordTarget_PatientRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_PATIENT,
-						 ConsolPlugin.INSTANCE.getString("PatientRolePatient"),
-						 new Object [] { recordTarget_PatientRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RECORD_TARGET_PATIENT_ROLE__PATIENT_ROLE_PATIENT,
+					ConsolPlugin.INSTANCE.getString("PatientRolePatient"), new Object[] { recordTarget_PatientRole }));
 			}
 			return false;
 		}

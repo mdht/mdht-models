@@ -50,7 +50,7 @@ public class Author_AssignedAuthor3Impl extends AssignedAuthorImpl implements Au
 	 * @generated
 	 */
 	public Author_AssignedAuthor3 init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Author_AssignedAuthor3Impl

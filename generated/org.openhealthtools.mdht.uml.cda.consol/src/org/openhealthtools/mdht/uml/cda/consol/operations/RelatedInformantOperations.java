@@ -88,20 +88,17 @@ public class RelatedInformantOperations extends RoleOperations {
 			helper.setContext(ConsolPackage.Literals.RELATED_INFORMANT);
 			try {
 				VALIDATE_RELATED_INFORMANT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RELATED_INFORMANT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_INFORMANT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(relatedInformant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_INFORMANT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			relatedInformant)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RELATED_INFORMANT__RELATED_INFORMANT_ADDR,
-						 ConsolPlugin.INSTANCE.getString("RelatedInformantAddr"),
-						 new Object [] { relatedInformant }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RELATED_INFORMANT__RELATED_INFORMANT_ADDR,
+					ConsolPlugin.INSTANCE.getString("RelatedInformantAddr"), new Object[] { relatedInformant }));
 			}
 			return false;
 		}
@@ -146,20 +143,17 @@ public class RelatedInformantOperations extends RoleOperations {
 			helper.setContext(ConsolPackage.Literals.RELATED_INFORMANT);
 			try {
 				VALIDATE_RELATED_INFORMANT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RELATED_INFORMANT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_INFORMANT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(relatedInformant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_INFORMANT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			relatedInformant)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RELATED_INFORMANT__RELATED_INFORMANT_CODE,
-						 ConsolPlugin.INSTANCE.getString("RelatedInformantCode"),
-						 new Object [] { relatedInformant }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.RELATED_INFORMANT__RELATED_INFORMANT_CODE,
+					ConsolPlugin.INSTANCE.getString("RelatedInformantCode"), new Object[] { relatedInformant }));
 			}
 			return false;
 		}

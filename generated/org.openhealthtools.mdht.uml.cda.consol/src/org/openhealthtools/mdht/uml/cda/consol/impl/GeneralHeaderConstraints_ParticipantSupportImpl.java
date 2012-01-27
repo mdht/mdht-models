@@ -58,7 +58,8 @@ public class GeneralHeaderConstraints_ParticipantSupportImpl extends Participant
 	 */
 	public boolean validateParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(this, diagnostics, context);
+		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class GeneralHeaderConstraints_ParticipantSupportImpl extends Participant
 	 * @generated
 	 */
 	public boolean validateParticipantSupportTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportTime(this, diagnostics, context);
+		return GeneralHeaderConstraints_ParticipantSupportOperations.validateParticipantSupportTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,7 @@ public class GeneralHeaderConstraints_ParticipantSupportImpl extends Participant
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_ParticipantSupport init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_ParticipantSupportImpl

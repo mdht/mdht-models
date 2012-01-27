@@ -58,7 +58,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,7 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public ChiefComplaintAndReasonForVisitSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ChiefComplaintAndReasonForVisitSectionImpl

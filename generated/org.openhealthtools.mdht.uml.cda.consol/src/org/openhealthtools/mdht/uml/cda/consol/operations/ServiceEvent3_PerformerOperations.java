@@ -88,20 +88,17 @@ public class ServiceEvent3_PerformerOperations extends ParticipationOperations {
 			helper.setContext(ConsolPackage.Literals.SERVICE_EVENT3_PERFORMER);
 			try {
 				VALIDATE_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceEvent3_Performer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceEvent3_Performer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_EVENT3_PERFORMER__PERFORMER_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PerformerTypeCode"),
-						 new Object [] { serviceEvent3_Performer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_EVENT3_PERFORMER__PERFORMER_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("PerformerTypeCode"), new Object[] { serviceEvent3_Performer }));
 			}
 			return false;
 		}
@@ -146,20 +143,18 @@ public class ServiceEvent3_PerformerOperations extends ParticipationOperations {
 			helper.setContext(ConsolPackage.Literals.SERVICE_EVENT3_PERFORMER);
 			try {
 				VALIDATE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceEvent3_Performer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceEvent3_Performer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_EVENT3_PERFORMER__PERFORMER_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("PerformerAssignedEntity"),
-						 new Object [] { serviceEvent3_Performer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_EVENT3_PERFORMER__PERFORMER_ASSIGNED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("PerformerAssignedEntity"),
+					new Object[] { serviceEvent3_Performer }));
 			}
 			return false;
 		}

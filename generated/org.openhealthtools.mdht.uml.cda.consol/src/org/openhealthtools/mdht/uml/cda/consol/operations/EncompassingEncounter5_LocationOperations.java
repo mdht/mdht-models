@@ -88,20 +88,18 @@ public class EncompassingEncounter5_LocationOperations extends LocationOperation
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER5_LOCATION);
 			try {
 				VALIDATE_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter5_Location)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encompassingEncounter5_Location)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOMPASSING_ENCOUNTER5_LOCATION__LOCATION_HEALTH_CARE_FACILITY,
-						 ConsolPlugin.INSTANCE.getString("LocationHealthCareFacility"),
-						 new Object [] { encompassingEncounter5_Location }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOMPASSING_ENCOUNTER5_LOCATION__LOCATION_HEALTH_CARE_FACILITY,
+					ConsolPlugin.INSTANCE.getString("LocationHealthCareFacility"),
+					new Object[] { encompassingEncounter5_Location }));
 			}
 			return false;
 		}

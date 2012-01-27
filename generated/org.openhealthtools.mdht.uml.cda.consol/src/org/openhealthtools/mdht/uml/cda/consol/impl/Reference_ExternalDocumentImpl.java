@@ -74,7 +74,7 @@ public class Reference_ExternalDocumentImpl extends ExternalDocumentImpl impleme
 	 * @generated
 	 */
 	public Reference_ExternalDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Reference_ExternalDocumentImpl

@@ -65,7 +65,7 @@ public class ContinuityOfCareDocument_AuthorImpl extends AuthorImpl implements C
 	 * @generated
 	 */
 	public ContinuityOfCareDocument_Author init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ContinuityOfCareDocument_AuthorImpl

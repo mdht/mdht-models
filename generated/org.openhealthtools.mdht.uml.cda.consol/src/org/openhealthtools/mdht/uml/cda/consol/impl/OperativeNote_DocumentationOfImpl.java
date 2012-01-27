@@ -65,7 +65,7 @@ public class OperativeNote_DocumentationOfImpl extends DocumentationOfImpl imple
 	 * @generated
 	 */
 	public OperativeNote_DocumentationOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // OperativeNote_DocumentationOfImpl

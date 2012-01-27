@@ -148,7 +148,7 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * @generated
 	 */
 	public ProblemConcernAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProblemConcernActImpl

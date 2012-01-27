@@ -65,7 +65,7 @@ public class ProductInstance_ScopingEntityImpl extends EntityImpl implements Pro
 	 * @generated
 	 */
 	public ProductInstance_ScopingEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProductInstance_ScopingEntityImpl

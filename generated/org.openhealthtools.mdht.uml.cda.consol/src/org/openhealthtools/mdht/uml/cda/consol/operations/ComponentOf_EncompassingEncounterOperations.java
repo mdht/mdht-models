@@ -89,20 +89,18 @@ public class ComponentOf_EncompassingEncounterOperations extends EncompassingEnc
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER__ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounterEffectiveTime"),
-						 new Object [] { componentOf_EncompassingEncounter }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER__ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounterEffectiveTime"),
+					new Object[] { componentOf_EncompassingEncounter }));
 			}
 			return false;
 		}
@@ -148,20 +146,18 @@ public class ComponentOf_EncompassingEncounterOperations extends EncompassingEnc
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			componentOf_EncompassingEncounter)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER__ENCOMPASSING_ENCOUNTER_ID,
-						 ConsolPlugin.INSTANCE.getString("EncompassingEncounterId"),
-						 new Object [] { componentOf_EncompassingEncounter }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER__ENCOMPASSING_ENCOUNTER_ID,
+					ConsolPlugin.INSTANCE.getString("EncompassingEncounterId"),
+					new Object[] { componentOf_EncompassingEncounter }));
 			}
 			return false;
 		}

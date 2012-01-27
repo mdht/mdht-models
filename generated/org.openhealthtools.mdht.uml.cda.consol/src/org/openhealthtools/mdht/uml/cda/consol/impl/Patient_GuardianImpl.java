@@ -92,7 +92,7 @@ public class Patient_GuardianImpl extends GuardianImpl implements Patient_Guardi
 	 * @generated
 	 */
 	public Patient_Guardian init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Patient_GuardianImpl

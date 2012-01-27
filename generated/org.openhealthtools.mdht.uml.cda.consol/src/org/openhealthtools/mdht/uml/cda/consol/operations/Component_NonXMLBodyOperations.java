@@ -84,20 +84,18 @@ public class Component_NonXMLBodyOperations extends NonXMLBodyOperations {
 			helper.setContext(ConsolPackage.Literals.COMPONENT_NON_XML_BODY);
 			try {
 				VALIDATE_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(component_NonXMLBody)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			component_NonXMLBody)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION,
-						 ConsolPlugin.INSTANCE.getString("NonXMLBodyHasReferenceOrRepresentation"),
-						 new Object [] { component_NonXMLBody }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION,
+					ConsolPlugin.INSTANCE.getString("NonXMLBodyHasReferenceOrRepresentation"),
+					new Object[] { component_NonXMLBody }));
 			}
 			return false;
 		}
@@ -142,20 +140,18 @@ public class Component_NonXMLBodyOperations extends NonXMLBodyOperations {
 			helper.setContext(ConsolPackage.Literals.COMPONENT_NON_XML_BODY);
 			try {
 				VALIDATE_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(component_NonXMLBody)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			component_NonXMLBody)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
-						 ConsolPlugin.INSTANCE.getString("NonXMLBodyMediaTypeFileFormats"),
-						 new Object [] { component_NonXMLBody }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
+					ConsolPlugin.INSTANCE.getString("NonXMLBodyMediaTypeFileFormats"),
+					new Object[] { component_NonXMLBody }));
 			}
 			return false;
 		}
@@ -200,20 +196,17 @@ public class Component_NonXMLBodyOperations extends NonXMLBodyOperations {
 			helper.setContext(ConsolPackage.Literals.COMPONENT_NON_XML_BODY);
 			try {
 				VALIDATE_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(component_NonXMLBody)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			component_NonXMLBody)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_TEXT,
-						 ConsolPlugin.INSTANCE.getString("NonXMLBodyText"),
-						 new Object [] { component_NonXMLBody }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COMPONENT_NON_XML_BODY__NON_XML_BODY_TEXT,
+					ConsolPlugin.INSTANCE.getString("NonXMLBodyText"), new Object[] { component_NonXMLBody }));
 			}
 			return false;
 		}

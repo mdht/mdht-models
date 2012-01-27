@@ -110,7 +110,7 @@ public class AgeObservationImpl extends ObservationImpl implements AgeObservatio
 	 * @generated
 	 */
 	public AgeObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AgeObservationImpl

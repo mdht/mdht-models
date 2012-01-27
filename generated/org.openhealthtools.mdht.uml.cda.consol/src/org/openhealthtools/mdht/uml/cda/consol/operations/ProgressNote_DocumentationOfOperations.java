@@ -88,20 +88,18 @@ public class ProgressNote_DocumentationOfOperations extends DocumentationOfOpera
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE_DOCUMENTATION_OF);
 			try {
 				VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote_DocumentationOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			progressNote_DocumentationOf)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGRESS_NOTE_DOCUMENTATION_OF__DOCUMENTATION_OF_SERVICE_EVENT2,
-						 ConsolPlugin.INSTANCE.getString("DocumentationOfServiceEvent2"),
-						 new Object [] { progressNote_DocumentationOf }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROGRESS_NOTE_DOCUMENTATION_OF__DOCUMENTATION_OF_SERVICE_EVENT2,
+					ConsolPlugin.INSTANCE.getString("DocumentationOfServiceEvent2"),
+					new Object[] { progressNote_DocumentationOf }));
 			}
 			return false;
 		}
