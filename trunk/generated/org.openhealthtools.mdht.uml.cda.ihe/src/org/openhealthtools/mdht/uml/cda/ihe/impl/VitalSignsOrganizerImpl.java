@@ -114,6 +114,15 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIHEVitalSignsOrganizerAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateIHEVitalSignsOrganizerAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<VitalSignObservation> getVitalSignObservations() {
 		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
 	}

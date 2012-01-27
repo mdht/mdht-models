@@ -122,6 +122,28 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityObservationEncounterLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEncounterLocation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservationPerformer2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPerformer2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProblemObservation(

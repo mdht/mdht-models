@@ -140,6 +140,15 @@ public class StatusObservationImpl extends ObservationImpl implements StatusObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTargetOfEntryRelationship() {
+		return StatusObservationOperations.validateTargetOfEntryRelationship(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public StatusObservation init() {
 		CDAUtil.init(this);
 		return this;

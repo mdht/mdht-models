@@ -411,7 +411,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-          <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(ccd::StatusObservation))->exists(er1 : cda::EntryRelationship | er1.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
+          <body>self.validateTargetOfEntryRelationship()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nPDbgBWiEd-6K-YJpbwRmQ" name="noAdditionalAttributes" constrainedElement="_V3Jy4HrTEd68l9lQ-TLEBQ">
@@ -465,6 +465,11 @@
       <ownedAttribute xmi:id="_2XdYUHvDEd6jfbAJq2V82w" name="value" visibility="private">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_kbkwkECAEeGZAN_vR_BCDQ" name="validateTargetOfEntryRelationship" isQuery="true">
+        <ownedParameter xmi:id="_oAdMkECAEeGZAN_vR_BCDQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>

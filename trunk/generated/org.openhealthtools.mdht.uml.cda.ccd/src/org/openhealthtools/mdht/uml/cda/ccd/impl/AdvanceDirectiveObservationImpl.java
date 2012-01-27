@@ -148,9 +148,31 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveVerification(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveVerification(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveObservationAdvanceDirectiveReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationAdvanceDirectiveReference(
 			this, diagnostics, context);
 	}
 

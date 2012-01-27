@@ -108,6 +108,15 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.Comme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIHECommentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentOperations.validateIHECommentAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCommentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentOperations.validateCommentTemplateId(this, diagnostics, context);

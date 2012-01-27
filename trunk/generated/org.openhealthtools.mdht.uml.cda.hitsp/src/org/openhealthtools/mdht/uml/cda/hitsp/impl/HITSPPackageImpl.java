@@ -4140,6 +4140,16 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			commentEClass, ecorePackage.getEBoolean(), "validateHITSPCommentAuthor", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(
 			medicationNormalDoseEClass, MedicationNormalDose.class, "MedicationNormalDose", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4897,8 +4907,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.4", "constraints.validation.error",
 				"HealthcareProviderTemplateId" });
 		addAnnotation(commentEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.11", "constraints.validation.error",
-				"HITSPCommentTemplateId" });
+				"constraints.validation.error", "HITSPCommentTemplateId HITSPCommentAuthor", "templateId.root",
+				"2.16.840.1.113883.3.88.11.83.11" });
 		addAnnotation(medicationTaperedDoseEClass, source, new String[] {
 				"templateId.root", "null", "constraints.validation.error", "MedicationTaperedDoseTemplateId" });
 		addAnnotation(supportGuardianEClass, source, new String[] {

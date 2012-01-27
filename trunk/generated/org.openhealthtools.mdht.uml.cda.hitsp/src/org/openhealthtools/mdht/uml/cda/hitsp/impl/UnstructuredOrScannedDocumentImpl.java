@@ -9,13 +9,19 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.cdt.impl.UnstructuredDocumentImpl;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.UnstructuredDocumentOperations;
+
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ScannedDocumentOperations;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -299,6 +305,51 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 */
 	public boolean validateScannedDocumentTypeId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentTypeId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanOriginalAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanOriginalAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanningDevice(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanDataEnterer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentLegalAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticator(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentDocumentationOf(this, diagnostics, context);
 	}
 
 	/**

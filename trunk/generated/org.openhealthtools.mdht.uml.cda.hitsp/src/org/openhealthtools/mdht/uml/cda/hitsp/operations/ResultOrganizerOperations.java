@@ -140,7 +140,7 @@ public class ResultOrganizerOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.RESULT_ORGANIZER,
-				HITSPPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(61));
+				HITSPPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(62));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -121,6 +121,17 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AuthorizationActivity init() {
 		CDAUtil.init(this);
 		return this;

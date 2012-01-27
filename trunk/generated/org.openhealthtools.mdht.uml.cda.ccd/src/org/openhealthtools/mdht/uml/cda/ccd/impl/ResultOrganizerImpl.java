@@ -137,6 +137,15 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultOrganizerSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validateResultOrganizerSpecimen(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ResultObservation> getResultObservations() {
 		return ResultOrganizerOperations.getResultObservations(this);
 	}

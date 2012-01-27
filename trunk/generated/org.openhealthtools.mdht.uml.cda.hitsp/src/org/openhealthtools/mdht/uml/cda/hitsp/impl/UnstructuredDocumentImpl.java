@@ -1,24 +1,26 @@
-/*******************************************************************************
- * Copyright (c) 2009, 2011 David A Carlson and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.UnstructuredDocumentOperations;
+
 import org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalDocumentImpl;
+
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ScannedDocumentOperations;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -292,6 +294,51 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 */
 	public boolean validateScannedDocumentTypeId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentTypeId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanOriginalAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanOriginalAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanningDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanningDevice(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentScanDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentScanDataEnterer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentLegalAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticator(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScannedDocumentDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
