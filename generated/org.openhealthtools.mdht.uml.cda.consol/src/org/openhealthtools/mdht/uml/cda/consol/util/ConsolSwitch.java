@@ -62,6 +62,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Product;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.Reference;
+import org.openhealthtools.mdht.uml.cda.RelatedDocument;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.Section;
@@ -3769,6 +3770,126 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.STUDY_ACT: {
+				StudyAct studyAct = (StudyAct) theEObject;
+				T result = caseStudyAct(studyAct);
+				if (result == null) {
+					result = caseCDA_Act(studyAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(studyAct);
+				}
+				if (result == null) {
+					result = caseAct(studyAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(studyAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SERIES_ACT: {
+				SeriesAct seriesAct = (SeriesAct) theEObject;
+				T result = caseSeriesAct(seriesAct);
+				if (result == null) {
+					result = caseCDA_Act(seriesAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(seriesAct);
+				}
+				if (result == null) {
+					result = caseAct(seriesAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(seriesAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SOP_INSTANCE_OBSERVATION: {
+				SOPInstanceObservation sopInstanceObservation = (SOPInstanceObservation) theEObject;
+				T result = caseSOPInstanceObservation(sopInstanceObservation);
+				if (result == null) {
+					result = caseObservation(sopInstanceObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(sopInstanceObservation);
+				}
+				if (result == null) {
+					result = caseAct(sopInstanceObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(sopInstanceObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PURPOSEOF_REFERENCE_OBSERVATION: {
+				PurposeofReferenceObservation purposeofReferenceObservation = (PurposeofReferenceObservation) theEObject;
+				T result = casePurposeofReferenceObservation(purposeofReferenceObservation);
+				if (result == null) {
+					result = caseObservation(purposeofReferenceObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(purposeofReferenceObservation);
+				}
+				if (result == null) {
+					result = caseAct(purposeofReferenceObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(purposeofReferenceObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.REFERENCED_FRAMES_OBSERVATION: {
+				ReferencedFramesObservation referencedFramesObservation = (ReferencedFramesObservation) theEObject;
+				T result = caseReferencedFramesObservation(referencedFramesObservation);
+				if (result == null) {
+					result = caseObservation(referencedFramesObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(referencedFramesObservation);
+				}
+				if (result == null) {
+					result = caseAct(referencedFramesObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(referencedFramesObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.BOUNDARY_OBSERVATION: {
+				BoundaryObservation boundaryObservation = (BoundaryObservation) theEObject;
+				T result = caseBoundaryObservation(boundaryObservation);
+				if (result == null) {
+					result = caseObservation(boundaryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(boundaryObservation);
+				}
+				if (result == null) {
+					result = caseAct(boundaryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(boundaryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.FINDINGS_SECTION: {
 				FindingsSection findingsSection = (FindingsSection) theEObject;
 				T result = caseFindingsSection(findingsSection);
@@ -4790,6 +4911,378 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(immunizationMedicationInformationManufacturedMaterial);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT: {
+				DiagnosticImagingReport diagnosticImagingReport = (DiagnosticImagingReport) theEObject;
+				T result = caseDiagnosticImagingReport(diagnosticImagingReport);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(diagnosticImagingReport);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(diagnosticImagingReport);
+				}
+				if (result == null) {
+					result = caseAct(diagnosticImagingReport);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT: {
+				DiagnosticImagingReport_Participant diagnosticImagingReport_Participant = (DiagnosticImagingReport_Participant) theEObject;
+				T result = caseDiagnosticImagingReport_Participant(diagnosticImagingReport_Participant);
+				if (result == null) {
+					result = caseParticipant1(diagnosticImagingReport_Participant);
+				}
+				if (result == null) {
+					result = caseParticipation(diagnosticImagingReport_Participant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport_Participant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PARTICIPANT_ASSOCIATED_ENTITY: {
+				Participant_AssociatedEntity participant_AssociatedEntity = (Participant_AssociatedEntity) theEObject;
+				T result = caseParticipant_AssociatedEntity(participant_AssociatedEntity);
+				if (result == null) {
+					result = caseAssociatedEntity(participant_AssociatedEntity);
+				}
+				if (result == null) {
+					result = caseRole(participant_AssociatedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(participant_AssociatedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSOCIATED_ENTITY_PERSON: {
+				AssociatedEntity_Person associatedEntity_Person = (AssociatedEntity_Person) theEObject;
+				T result = caseAssociatedEntity_Person(associatedEntity_Person);
+				if (result == null) {
+					result = casePerson(associatedEntity_Person);
+				}
+				if (result == null) {
+					result = caseEntity(associatedEntity_Person);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(associatedEntity_Person);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF: {
+				DiagnosticImagingReport_InFulfillmentOf diagnosticImagingReport_InFulfillmentOf = (DiagnosticImagingReport_InFulfillmentOf) theEObject;
+				T result = caseDiagnosticImagingReport_InFulfillmentOf(diagnosticImagingReport_InFulfillmentOf);
+				if (result == null) {
+					result = caseInFulfillmentOf(diagnosticImagingReport_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(diagnosticImagingReport_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport_InFulfillmentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF: {
+				DiagnosticImagingReport_DocumentationOf diagnosticImagingReport_DocumentationOf = (DiagnosticImagingReport_DocumentationOf) theEObject;
+				T result = caseDiagnosticImagingReport_DocumentationOf(diagnosticImagingReport_DocumentationOf);
+				if (result == null) {
+					result = caseDocumentationOf(diagnosticImagingReport_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(diagnosticImagingReport_DocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport_DocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT4: {
+				DocumentationOf_ServiceEvent4 documentationOf_ServiceEvent4 = (DocumentationOf_ServiceEvent4) theEObject;
+				T result = caseDocumentationOf_ServiceEvent4(documentationOf_ServiceEvent4);
+				if (result == null) {
+					result = caseServiceEvent(documentationOf_ServiceEvent4);
+				}
+				if (result == null) {
+					result = caseAct(documentationOf_ServiceEvent4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(documentationOf_ServiceEvent4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT: {
+				DiagnosticImagingReport_RelatedDocument diagnosticImagingReport_RelatedDocument = (DiagnosticImagingReport_RelatedDocument) theEObject;
+				T result = caseDiagnosticImagingReport_RelatedDocument(diagnosticImagingReport_RelatedDocument);
+				if (result == null) {
+					result = caseRelatedDocument(diagnosticImagingReport_RelatedDocument);
+				}
+				if (result == null) {
+					result = caseActRelationship(diagnosticImagingReport_RelatedDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport_RelatedDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF: {
+				DiagnosticImagingReport_ComponentOf diagnosticImagingReport_ComponentOf = (DiagnosticImagingReport_ComponentOf) theEObject;
+				T result = caseDiagnosticImagingReport_ComponentOf(diagnosticImagingReport_ComponentOf);
+				if (result == null) {
+					result = caseComponent1(diagnosticImagingReport_ComponentOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(diagnosticImagingReport_ComponentOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticImagingReport_ComponentOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER7: {
+				ComponentOf_EncompassingEncounter7 componentOf_EncompassingEncounter7 = (ComponentOf_EncompassingEncounter7) theEObject;
+				T result = caseComponentOf_EncompassingEncounter7(componentOf_EncompassingEncounter7);
+				if (result == null) {
+					result = caseEncompassingEncounter(componentOf_EncompassingEncounter7);
+				}
+				if (result == null) {
+					result = caseAct(componentOf_EncompassingEncounter7);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(componentOf_EncompassingEncounter7);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY: {
+				EncompassingEncounter7_ResponsibleParty encompassingEncounter7_ResponsibleParty = (EncompassingEncounter7_ResponsibleParty) theEObject;
+				T result = caseEncompassingEncounter7_ResponsibleParty(encompassingEncounter7_ResponsibleParty);
+				if (result == null) {
+					result = caseResponsibleParty(encompassingEncounter7_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseParticipation(encompassingEncounter7_ResponsibleParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encompassingEncounter7_ResponsibleParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESPONSIBLE_PARTY_ASSIGNED_ENTITY: {
+				ResponsibleParty_AssignedEntity responsibleParty_AssignedEntity = (ResponsibleParty_AssignedEntity) theEObject;
+				T result = caseResponsibleParty_AssignedEntity(responsibleParty_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(responsibleParty_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(responsibleParty_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(responsibleParty_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER: {
+				PhysicianReadingStudyPerformer physicianReadingStudyPerformer = (PhysicianReadingStudyPerformer) theEObject;
+				T result = casePhysicianReadingStudyPerformer(physicianReadingStudyPerformer);
+				if (result == null) {
+					result = casePerformer1(physicianReadingStudyPerformer);
+				}
+				if (result == null) {
+					result = caseParticipation(physicianReadingStudyPerformer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicianReadingStudyPerformer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY: {
+				PhysicianReadingStudyPerformer_AssignedEntity physicianReadingStudyPerformer_AssignedEntity = (PhysicianReadingStudyPerformer_AssignedEntity) theEObject;
+				T result = casePhysicianReadingStudyPerformer_AssignedEntity(physicianReadingStudyPerformer_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(physicianReadingStudyPerformer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(physicianReadingStudyPerformer_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicianReadingStudyPerformer_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT: {
+				PhysicianofRecordParticipant physicianofRecordParticipant = (PhysicianofRecordParticipant) theEObject;
+				T result = casePhysicianofRecordParticipant(physicianofRecordParticipant);
+				if (result == null) {
+					result = caseEncounterParticipant(physicianofRecordParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(physicianofRecordParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicianofRecordParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY: {
+				PhysicianofRecordParticipant_AssignedEntity physicianofRecordParticipant_AssignedEntity = (PhysicianofRecordParticipant_AssignedEntity) theEObject;
+				T result = casePhysicianofRecordParticipant_AssignedEntity(physicianofRecordParticipant_AssignedEntity);
+				if (result == null) {
+					result = caseAssignedEntity(physicianofRecordParticipant_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseRole(physicianofRecordParticipant_AssignedEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicianofRecordParticipant_AssignedEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSIGNED_ENTITY_ASSIGNED_PERSON: {
+				AssignedEntity_AssignedPerson assignedEntity_AssignedPerson = (AssignedEntity_AssignedPerson) theEObject;
+				T result = caseAssignedEntity_AssignedPerson(assignedEntity_AssignedPerson);
+				if (result == null) {
+					result = casePerson(assignedEntity_AssignedPerson);
+				}
+				if (result == null) {
+					result = caseEntity(assignedEntity_AssignedPerson);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assignedEntity_AssignedPerson);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.TEXT_OBSERVATION: {
+				TextObservation textObservation = (TextObservation) theEObject;
+				T result = caseTextObservation(textObservation);
+				if (result == null) {
+					result = caseObservation(textObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(textObservation);
+				}
+				if (result == null) {
+					result = caseAct(textObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(textObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.QUANTITY_MEASUREMENT_OBSERVATION: {
+				QuantityMeasurementObservation quantityMeasurementObservation = (QuantityMeasurementObservation) theEObject;
+				T result = caseQuantityMeasurementObservation(quantityMeasurementObservation);
+				if (result == null) {
+					result = caseObservation(quantityMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(quantityMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseAct(quantityMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(quantityMeasurementObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CODE_OBSERVATIONS: {
+				CodeObservations codeObservations = (CodeObservations) theEObject;
+				T result = caseCodeObservations(codeObservations);
+				if (result == null) {
+					result = caseObservation(codeObservations);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(codeObservations);
+				}
+				if (result == null) {
+					result = caseAct(codeObservations);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codeObservations);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_CONTEXT: {
+				ProcedureContext procedureContext = (ProcedureContext) theEObject;
+				T result = caseProcedureContext(procedureContext);
+				if (result == null) {
+					result = caseCDA_Act(procedureContext);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureContext);
+				}
+				if (result == null) {
+					result = caseAct(procedureContext);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureContext);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -8164,6 +8657,96 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Study Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Study Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStudyAct(StudyAct object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Series Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Series Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSeriesAct(SeriesAct object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>SOP Instance Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>SOP Instance Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSOPInstanceObservation(SOPInstanceObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Purposeof Reference Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Purposeof Reference Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePurposeofReferenceObservation(PurposeofReferenceObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Referenced Frames Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Referenced Frames Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReferencedFramesObservation(ReferencedFramesObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Boundary Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Boundary Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBoundaryObservation(BoundaryObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Findings Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9065,6 +9648,321 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport(DiagnosticImagingReport object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport_Participant(DiagnosticImagingReport_Participant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Participant Associated Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Participant Associated Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseParticipant_AssociatedEntity(Participant_AssociatedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Associated Entity Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Associated Entity Person</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssociatedEntity_Person(AssociatedEntity_Person object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport_InFulfillmentOf(DiagnosticImagingReport_InFulfillmentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Documentation Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport_DocumentationOf(DiagnosticImagingReport_DocumentationOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documentation Of Service Event4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documentation Of Service Event4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumentationOf_ServiceEvent4(DocumentationOf_ServiceEvent4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Related Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Related Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport_RelatedDocument(DiagnosticImagingReport_RelatedDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Imaging Report Component Of</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiagnosticImagingReport_ComponentOf(DiagnosticImagingReport_ComponentOf object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter7</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Of Encompassing Encounter7</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseComponentOf_EncompassingEncounter7(ComponentOf_EncompassingEncounter7 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encompassing Encounter7 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encompassing Encounter7 Responsible Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncompassingEncounter7_ResponsibleParty(EncompassingEncounter7_ResponsibleParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Responsible Party Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Responsible Party Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResponsibleParty_AssignedEntity(ResponsibleParty_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physician Reading Study Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physician Reading Study Performer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicianReadingStudyPerformer(PhysicianReadingStudyPerformer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physician Reading Study Performer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physician Reading Study Performer Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicianReadingStudyPerformer_AssignedEntity(PhysicianReadingStudyPerformer_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physicianof Record Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physicianof Record Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicianofRecordParticipant(PhysicianofRecordParticipant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physicianof Record Participant Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physicianof Record Participant Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicianofRecordParticipant_AssignedEntity(PhysicianofRecordParticipant_AssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assigned Entity Assigned Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assigned Entity Assigned Person</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignedEntity_AssignedPerson(AssignedEntity_AssignedPerson object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Text Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Text Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTextObservation(TextObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Quantity Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Quantity Measurement Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseQuantityMeasurementObservation(QuantityMeasurementObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Code Observations</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Code Observations</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCodeObservations(CodeObservations object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Context</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Context</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureContext(ProcedureContext object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performer1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9586,6 +10484,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAssociatedEntity(AssociatedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Related Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Related Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRelatedDocument(RelatedDocument object) {
 		return null;
 	}
 

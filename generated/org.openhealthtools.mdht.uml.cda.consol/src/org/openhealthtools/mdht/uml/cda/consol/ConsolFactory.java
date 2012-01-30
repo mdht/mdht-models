@@ -1430,6 +1430,60 @@ public interface ConsolFactory extends EFactory {
 	DICOMObjectCatalogSection createDICOMObjectCatalogSection();
 
 	/**
+	 * Returns a new object of class '<em>Study Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Study Act</em>'.
+	 * @generated
+	 */
+	StudyAct createStudyAct();
+
+	/**
+	 * Returns a new object of class '<em>Series Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Series Act</em>'.
+	 * @generated
+	 */
+	SeriesAct createSeriesAct();
+
+	/**
+	 * Returns a new object of class '<em>SOP Instance Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>SOP Instance Observation</em>'.
+	 * @generated
+	 */
+	SOPInstanceObservation createSOPInstanceObservation();
+
+	/**
+	 * Returns a new object of class '<em>Purposeof Reference Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Purposeof Reference Observation</em>'.
+	 * @generated
+	 */
+	PurposeofReferenceObservation createPurposeofReferenceObservation();
+
+	/**
+	 * Returns a new object of class '<em>Referenced Frames Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Referenced Frames Observation</em>'.
+	 * @generated
+	 */
+	ReferencedFramesObservation createReferencedFramesObservation();
+
+	/**
+	 * Returns a new object of class '<em>Boundary Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Boundary Observation</em>'.
+	 * @generated
+	 */
+	BoundaryObservation createBoundaryObservation();
+
+	/**
 	 * Returns a new object of class '<em>Findings Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1968,6 +2022,195 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ImmunizationMedicationInformationManufacturedMaterial createImmunizationMedicationInformationManufacturedMaterial();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport createDiagnosticImagingReport();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report Participant</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport_Participant createDiagnosticImagingReport_Participant();
+
+	/**
+	 * Returns a new object of class '<em>Participant Associated Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Participant Associated Entity</em>'.
+	 * @generated
+	 */
+	Participant_AssociatedEntity createParticipant_AssociatedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Associated Entity Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Associated Entity Person</em>'.
+	 * @generated
+	 */
+	AssociatedEntity_Person createAssociatedEntity_Person();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport_InFulfillmentOf createDiagnosticImagingReport_InFulfillmentOf();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report Documentation Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report Documentation Of</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport_DocumentationOf createDiagnosticImagingReport_DocumentationOf();
+
+	/**
+	 * Returns a new object of class '<em>Documentation Of Service Event4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Documentation Of Service Event4</em>'.
+	 * @generated
+	 */
+	DocumentationOf_ServiceEvent4 createDocumentationOf_ServiceEvent4();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report Related Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report Related Document</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport_RelatedDocument createDiagnosticImagingReport_RelatedDocument();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Imaging Report Component Of</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Imaging Report Component Of</em>'.
+	 * @generated
+	 */
+	DiagnosticImagingReport_ComponentOf createDiagnosticImagingReport_ComponentOf();
+
+	/**
+	 * Returns a new object of class '<em>Component Of Encompassing Encounter7</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Of Encompassing Encounter7</em>'.
+	 * @generated
+	 */
+	ComponentOf_EncompassingEncounter7 createComponentOf_EncompassingEncounter7();
+
+	/**
+	 * Returns a new object of class '<em>Encompassing Encounter7 Responsible Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encompassing Encounter7 Responsible Party</em>'.
+	 * @generated
+	 */
+	EncompassingEncounter7_ResponsibleParty createEncompassingEncounter7_ResponsibleParty();
+
+	/**
+	 * Returns a new object of class '<em>Responsible Party Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Responsible Party Assigned Entity</em>'.
+	 * @generated
+	 */
+	ResponsibleParty_AssignedEntity createResponsibleParty_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Physician Reading Study Performer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physician Reading Study Performer</em>'.
+	 * @generated
+	 */
+	PhysicianReadingStudyPerformer createPhysicianReadingStudyPerformer();
+
+	/**
+	 * Returns a new object of class '<em>Physician Reading Study Performer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physician Reading Study Performer Assigned Entity</em>'.
+	 * @generated
+	 */
+	PhysicianReadingStudyPerformer_AssignedEntity createPhysicianReadingStudyPerformer_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Physicianof Record Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physicianof Record Participant</em>'.
+	 * @generated
+	 */
+	PhysicianofRecordParticipant createPhysicianofRecordParticipant();
+
+	/**
+	 * Returns a new object of class '<em>Physicianof Record Participant Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physicianof Record Participant Assigned Entity</em>'.
+	 * @generated
+	 */
+	PhysicianofRecordParticipant_AssignedEntity createPhysicianofRecordParticipant_AssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Assigned Entity Assigned Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assigned Entity Assigned Person</em>'.
+	 * @generated
+	 */
+	AssignedEntity_AssignedPerson createAssignedEntity_AssignedPerson();
+
+	/**
+	 * Returns a new object of class '<em>Text Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Text Observation</em>'.
+	 * @generated
+	 */
+	TextObservation createTextObservation();
+
+	/**
+	 * Returns a new object of class '<em>Quantity Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Quantity Measurement Observation</em>'.
+	 * @generated
+	 */
+	QuantityMeasurementObservation createQuantityMeasurementObservation();
+
+	/**
+	 * Returns a new object of class '<em>Code Observations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Code Observations</em>'.
+	 * @generated
+	 */
+	CodeObservations createCodeObservations();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Context</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Context</em>'.
+	 * @generated
+	 */
+	ProcedureContext createProcedureContext();
 
 	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
