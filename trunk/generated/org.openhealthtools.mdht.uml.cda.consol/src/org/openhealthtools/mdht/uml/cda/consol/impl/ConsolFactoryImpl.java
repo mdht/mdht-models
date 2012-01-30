@@ -463,6 +463,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createComplicationsSection();
 			case ConsolPackage.DICOM_OBJECT_CATALOG_SECTION:
 				return createDICOMObjectCatalogSection();
+			case ConsolPackage.STUDY_ACT:
+				return createStudyAct();
+			case ConsolPackage.SERIES_ACT:
+				return createSeriesAct();
+			case ConsolPackage.SOP_INSTANCE_OBSERVATION:
+				return createSOPInstanceObservation();
+			case ConsolPackage.PURPOSEOF_REFERENCE_OBSERVATION:
+				return createPurposeofReferenceObservation();
+			case ConsolPackage.REFERENCED_FRAMES_OBSERVATION:
+				return createReferencedFramesObservation();
+			case ConsolPackage.BOUNDARY_OBSERVATION:
+				return createBoundaryObservation();
 			case ConsolPackage.FINDINGS_SECTION:
 				return createFindingsSection();
 			case ConsolPackage.INTERVENTIONS_SECTION:
@@ -581,6 +593,48 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationDispenseAssignedEntity();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
 				return createImmunizationMedicationInformationManufacturedMaterial();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT:
+				return createDiagnosticImagingReport();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT:
+				return createDiagnosticImagingReport_Participant();
+			case ConsolPackage.PARTICIPANT_ASSOCIATED_ENTITY:
+				return createParticipant_AssociatedEntity();
+			case ConsolPackage.ASSOCIATED_ENTITY_PERSON:
+				return createAssociatedEntity_Person();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF:
+				return createDiagnosticImagingReport_InFulfillmentOf();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF:
+				return createDiagnosticImagingReport_DocumentationOf();
+			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT4:
+				return createDocumentationOf_ServiceEvent4();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT:
+				return createDiagnosticImagingReport_RelatedDocument();
+			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF:
+				return createDiagnosticImagingReport_ComponentOf();
+			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER7:
+				return createComponentOf_EncompassingEncounter7();
+			case ConsolPackage.ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY:
+				return createEncompassingEncounter7_ResponsibleParty();
+			case ConsolPackage.RESPONSIBLE_PARTY_ASSIGNED_ENTITY:
+				return createResponsibleParty_AssignedEntity();
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER:
+				return createPhysicianReadingStudyPerformer();
+			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY:
+				return createPhysicianReadingStudyPerformer_AssignedEntity();
+			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT:
+				return createPhysicianofRecordParticipant();
+			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY:
+				return createPhysicianofRecordParticipant_AssignedEntity();
+			case ConsolPackage.ASSIGNED_ENTITY_ASSIGNED_PERSON:
+				return createAssignedEntity_AssignedPerson();
+			case ConsolPackage.TEXT_OBSERVATION:
+				return createTextObservation();
+			case ConsolPackage.QUANTITY_MEASUREMENT_OBSERVATION:
+				return createQuantityMeasurementObservation();
+			case ConsolPackage.CODE_OBSERVATIONS:
+				return createCodeObservations();
+			case ConsolPackage.PROCEDURE_CONTEXT:
+				return createProcedureContext();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2151,6 +2205,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public StudyAct createStudyAct() {
+		StudyActImpl studyAct = new StudyActImpl();
+		return studyAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeriesAct createSeriesAct() {
+		SeriesActImpl seriesAct = new SeriesActImpl();
+		return seriesAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SOPInstanceObservation createSOPInstanceObservation() {
+		SOPInstanceObservationImpl sopInstanceObservation = new SOPInstanceObservationImpl();
+		return sopInstanceObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PurposeofReferenceObservation createPurposeofReferenceObservation() {
+		PurposeofReferenceObservationImpl purposeofReferenceObservation = new PurposeofReferenceObservationImpl();
+		return purposeofReferenceObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReferencedFramesObservation createReferencedFramesObservation() {
+		ReferencedFramesObservationImpl referencedFramesObservation = new ReferencedFramesObservationImpl();
+		return referencedFramesObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BoundaryObservation createBoundaryObservation() {
+		BoundaryObservationImpl boundaryObservation = new BoundaryObservationImpl();
+		return boundaryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FindingsSection createFindingsSection() {
 		FindingsSectionImpl findingsSection = new FindingsSectionImpl();
 		return findingsSection;
@@ -2744,6 +2858,216 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ImmunizationMedicationInformationManufacturedMaterial createImmunizationMedicationInformationManufacturedMaterial() {
 		ImmunizationMedicationInformationManufacturedMaterialImpl immunizationMedicationInformationManufacturedMaterial = new ImmunizationMedicationInformationManufacturedMaterialImpl();
 		return immunizationMedicationInformationManufacturedMaterial;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport createDiagnosticImagingReport() {
+		DiagnosticImagingReportImpl diagnosticImagingReport = new DiagnosticImagingReportImpl();
+		return diagnosticImagingReport;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport_Participant createDiagnosticImagingReport_Participant() {
+		DiagnosticImagingReport_ParticipantImpl diagnosticImagingReport_Participant = new DiagnosticImagingReport_ParticipantImpl();
+		return diagnosticImagingReport_Participant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Participant_AssociatedEntity createParticipant_AssociatedEntity() {
+		Participant_AssociatedEntityImpl participant_AssociatedEntity = new Participant_AssociatedEntityImpl();
+		return participant_AssociatedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssociatedEntity_Person createAssociatedEntity_Person() {
+		AssociatedEntity_PersonImpl associatedEntity_Person = new AssociatedEntity_PersonImpl();
+		return associatedEntity_Person;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport_InFulfillmentOf createDiagnosticImagingReport_InFulfillmentOf() {
+		DiagnosticImagingReport_InFulfillmentOfImpl diagnosticImagingReport_InFulfillmentOf = new DiagnosticImagingReport_InFulfillmentOfImpl();
+		return diagnosticImagingReport_InFulfillmentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport_DocumentationOf createDiagnosticImagingReport_DocumentationOf() {
+		DiagnosticImagingReport_DocumentationOfImpl diagnosticImagingReport_DocumentationOf = new DiagnosticImagingReport_DocumentationOfImpl();
+		return diagnosticImagingReport_DocumentationOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DocumentationOf_ServiceEvent4 createDocumentationOf_ServiceEvent4() {
+		DocumentationOf_ServiceEvent4Impl documentationOf_ServiceEvent4 = new DocumentationOf_ServiceEvent4Impl();
+		return documentationOf_ServiceEvent4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport_RelatedDocument createDiagnosticImagingReport_RelatedDocument() {
+		DiagnosticImagingReport_RelatedDocumentImpl diagnosticImagingReport_RelatedDocument = new DiagnosticImagingReport_RelatedDocumentImpl();
+		return diagnosticImagingReport_RelatedDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiagnosticImagingReport_ComponentOf createDiagnosticImagingReport_ComponentOf() {
+		DiagnosticImagingReport_ComponentOfImpl diagnosticImagingReport_ComponentOf = new DiagnosticImagingReport_ComponentOfImpl();
+		return diagnosticImagingReport_ComponentOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComponentOf_EncompassingEncounter7 createComponentOf_EncompassingEncounter7() {
+		ComponentOf_EncompassingEncounter7Impl componentOf_EncompassingEncounter7 = new ComponentOf_EncompassingEncounter7Impl();
+		return componentOf_EncompassingEncounter7;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncompassingEncounter7_ResponsibleParty createEncompassingEncounter7_ResponsibleParty() {
+		EncompassingEncounter7_ResponsiblePartyImpl encompassingEncounter7_ResponsibleParty = new EncompassingEncounter7_ResponsiblePartyImpl();
+		return encompassingEncounter7_ResponsibleParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponsibleParty_AssignedEntity createResponsibleParty_AssignedEntity() {
+		ResponsibleParty_AssignedEntityImpl responsibleParty_AssignedEntity = new ResponsibleParty_AssignedEntityImpl();
+		return responsibleParty_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianReadingStudyPerformer createPhysicianReadingStudyPerformer() {
+		PhysicianReadingStudyPerformerImpl physicianReadingStudyPerformer = new PhysicianReadingStudyPerformerImpl();
+		return physicianReadingStudyPerformer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianReadingStudyPerformer_AssignedEntity createPhysicianReadingStudyPerformer_AssignedEntity() {
+		PhysicianReadingStudyPerformer_AssignedEntityImpl physicianReadingStudyPerformer_AssignedEntity = new PhysicianReadingStudyPerformer_AssignedEntityImpl();
+		return physicianReadingStudyPerformer_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianofRecordParticipant createPhysicianofRecordParticipant() {
+		PhysicianofRecordParticipantImpl physicianofRecordParticipant = new PhysicianofRecordParticipantImpl();
+		return physicianofRecordParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianofRecordParticipant_AssignedEntity createPhysicianofRecordParticipant_AssignedEntity() {
+		PhysicianofRecordParticipant_AssignedEntityImpl physicianofRecordParticipant_AssignedEntity = new PhysicianofRecordParticipant_AssignedEntityImpl();
+		return physicianofRecordParticipant_AssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedEntity_AssignedPerson createAssignedEntity_AssignedPerson() {
+		AssignedEntity_AssignedPersonImpl assignedEntity_AssignedPerson = new AssignedEntity_AssignedPersonImpl();
+		return assignedEntity_AssignedPerson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TextObservation createTextObservation() {
+		TextObservationImpl textObservation = new TextObservationImpl();
+		return textObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public QuantityMeasurementObservation createQuantityMeasurementObservation() {
+		QuantityMeasurementObservationImpl quantityMeasurementObservation = new QuantityMeasurementObservationImpl();
+		return quantityMeasurementObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CodeObservations createCodeObservations() {
+		CodeObservationsImpl codeObservations = new CodeObservationsImpl();
+		return codeObservations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureContext createProcedureContext() {
+		ProcedureContextImpl procedureContext = new ProcedureContextImpl();
+		return procedureContext;
 	}
 
 	/**
