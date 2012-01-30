@@ -367,6 +367,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_oDaAkD7YEeGvOdejHZ7dYg" name="ProcedureNoteDocumentTypeCodes"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_-bWMgD-UEeGvOdejHZ7dYg" name="HealthcareProviderTaxonomy"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6yjb4D_LEeGXieeKs7NJjA" name="ProgressNoteDocumentTypeCode"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hJA70EUvEeGdQ4KWAmnbhw" name="DIRDocumentTypeCodes"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_TYKKYEb4EeGp67IkyTw1fg" name="DCM"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jyBH4ErhEeGJpZWiuxRVIw" name="DICOMPurposeOfReference "/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -638,4 +641,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_--QGgEFbEeGFqszUdHc61Q" base_Enumeration="_dRQkkKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_hJA70UUvEeGdQ4KWAmnbhw" identifier="2.16.840.1.113883.11.20.9.32" fullName="DIR LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_hJA70EUvEeGdQ4KWAmnbhw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_TYKKYUb4EeGp67IkyTw1fg" identifier="1.2.840.10008.2.16.4" fullName="Dicom" base_Enumeration="_TYKKYEb4EeGp67IkyTw1fg"/>
+  <term:ValueSetVersion xmi:id="_jyBH4UrhEeGJpZWiuxRVIw" identifier="2.16.840.1.113883.11.20.9.28" fullName="DICOMPurposeOfReference" binding="Dynamic" codeSystem="_TYKKYUb4EeGp67IkyTw1fg" base_Enumeration="_jyBH4ErhEeGJpZWiuxRVIw"/>
 </xmi:XMI>

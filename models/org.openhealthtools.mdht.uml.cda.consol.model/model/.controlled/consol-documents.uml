@@ -4441,4 +4441,362 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <uml:Association xmi:id="_FhDYAkITEeGfG6GbxF_VQQ" memberEnd="_FhDYAEITEeGfG6GbxF_VQQ _FhDYA0ITEeGfG6GbxF_VQQ">
     <ownedEnd xmi:id="_FhDYA0ITEeGfG6GbxF_VQQ" type="_2IJb0BSVEeGGzu7fmW9pXw" association="_FhDYAkITEeGfG6GbxF_VQQ"/>
   </uml:Association>
+  <uml:Class xmi:id="_XwBooEUuEeGdQ4KWAmnbhw" name="DiagnosticImagingReport">
+    <ownedComment xmi:id="_kSJscEUuEeGdQ4KWAmnbhw">
+      <body>A Diagnostic Imaging Report (DIR) is a document that contains a consulting specialist's interpretation of image data.  It conveys the interpretation to the referring (ordering) physician and becomes part of the patient's medical record.  It is for use in Radiology, Endoscopy, Cardiology, and other imaging specialties.</body>
+    </ownedComment>
+    <ownedRule xmi:id="__CBy8EUvEeGdQ4KWAmnbhw" name="useDiagnosticImagingCode" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RwFNgEUwEeGdQ4KWAmnbhw">
+        <language>Analysis</language>
+        <body>This code SHOULD contain zero or one [0..1] @code=&quot;18748-4&quot; Diagnostic Imaging Report (CodeSystem: LOINC2.16.840.1.113883.6.1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wectUErYEeGJpZWiuxRVIw" name="objectCatalogSectionIsFirst" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yz6I0ErYEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>The DICOM Object Catalog section (templateId 2.16.840.1.113883.10.20.6.1.1), if present, SHALL be the first section in the document Body</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_CldWAErZEeGJpZWiuxRVIw" name="allSectionsHaveTitle" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DuVCkErZEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>With the exception of the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all sections within the Diagnostic Imaging Report content SHOULD contain a title element</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OjhqgErZEeGJpZWiuxRVIw" name="sectionCodes" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <ownedComment xmi:id="_dnoi4ErZEeGJpZWiuxRVIw">
+        <body>Descriptions for sections is under development in DICOM in cooperation with the RSNA reporting initiative</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_QFudEErZEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>The section/code SHOULD be selected from LOINC or DICOM for sections not listed in the DIR Section Type Codes table</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_k4aB0ErZEeGJpZWiuxRVIw" name="hasTopLevelSections" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_l9_J0ErZEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>All sections defined in the DIR Section Type Codes table SHALL be top-level sections</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qj_roErZEeGJpZWiuxRVIw" name="sectionCodes2" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uMJeEErZEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>A section element SHALL have a code element which SHALL contain a LOINC code or DCM code for sections which have no LOINC equivalent. This only applies to sections described inthe DIR Section Type Codes table</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5AKaQErZEeGJpZWiuxRVIw" name="sectionsHaveText" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6sfZMErZEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>Apart from the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all other instances of section SHALL contain at least one text element or one or more component elements</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_E-0koEraEeGJpZWiuxRVIw" name="hasPCDATA" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Hvjm4EraEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>All text or component elements SHALL contain content. text elements SHALL contain PCDATA or child elements, and component elements SHALL contain child elements</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_R23OEEraEeGJpZWiuxRVIw" name="textWebAccess" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXbB4EraEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>The text elements (and their children) MAY contain Web Access to DICOM Persistent Object (WADO) references to DICOM objects by including a linkHtml element where @href is a valid WADO URL and the text content of linkHtml is the visible text of the hyperlink</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_gAs2kEraEeGJpZWiuxRVIw" name="textHasClinicalStatement" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hghDgEraEeGJpZWiuxRVIw">
+        <language>Analysis</language>
+        <body>If clinical statements are present, the section/text SHALL represent faithfully all such statements and MAY contain additional text</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XwdtgEUuEeGdQ4KWAmnbhw" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_Z-7JIEUuEeGdQ4KWAmnbhw" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_eLp9YEUwEeGdQ4KWAmnbhw">
+        <body>Given that DIR documents may be transformed from established collections of imaging reports already stored with their own type codes, there is no static set of Document Type codes. The set of LOINC codes listed in the DIR LOINC Document Type Codes table may be extended by additions to LOINC and supplemented by local codes as translations.&#xD;
+The DIR document recommends use of a single document type code, 18748-4 &quot;Diagnostic Imaging Report&quot;, with further specification provided by author or performer, setting, or specialty. Some of these codes in the DIR LOINC Document Type Codes table are pre-coordinated with either the imaging modality, body part examined, or specific imaging method such as the view.  Use of these codes is not recommended, as this duplicates information potentially present with the header. When pre-coordinated codes are used, any coded values describing the author or performer of the service act or the practice setting must be consistent with the LOINC document type. This table is drawn from LOINC Version 2.36, June 30, 2011, and consists of codes whose scale is DOC and that refer to reports for diagnostic imaging procedures.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z-7JIUUuEeGdQ4KWAmnbhw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-7JIkUuEeGdQ4KWAmnbhw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_8mwqYEUvEeGdQ4KWAmnbhw" value="18748-4"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Z_g_AEUuEeGdQ4KWAmnbhw" name="id" visibility="private" aggregation="composite" redefinedProperty="_2DNR7RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z_g_AUUuEeGdQ4KWAmnbhw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z_g_AkUuEeGdQ4KWAmnbhw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0kIl0EUxEeGAh_iQGJvI5w" name="informant">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GUBDUEcZEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27018EUxEeGAh_iQGJvI5w"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27018UUxEeGAh_iQGJvI5w"/>
+      <association href="consol-dicom.uml#_0kSW0UUxEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_EHrzQEUyEeGAh_iQGJvI5w" name="informationRecipient">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gvne0EUyEeGAh_iQGJvI5w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gvne0UUyEeGAh_iQGJvI5w"/>
+      <association href="consol-dicom.uml#_EHrzQkUyEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_C2NH0EUzEeGAh_iQGJvI5w" name="participant1" type="_LMQz0EUzEeGAh_iQGJvI5w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C2NH0UUzEeGAh_iQGJvI5w"/>
+      <association href="consol-dicom.uml#_C2NH0kUzEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YQPCoEVCEeGAh_iQGJvI5w" name="inFulfillmentOf" type="_MbQYsEVCEeGAh_iQGJvI5w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YQPCoUVCEeGAh_iQGJvI5w"/>
+      <association href="consol-dicom.uml#_YQPCokVCEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uXP9EEVCEeGAh_iQGJvI5w" name="documentationOf" type="_mZ7hMEVCEeGAh_iQGJvI5w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-TlRIErYEeGJpZWiuxRVIw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-TlRIUrYEeGJpZWiuxRVIw" value="1"/>
+      <association href="consol-dicom.uml#_uXP9EkVCEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OtU6QEVIEeGAh_iQGJvI5w" name="relatedDocument " type="_69jkAEVHEeGAh_iQGJvI5w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtU6QUVIEeGAh_iQGJvI5w"/>
+      <association href="consol-dicom.uml#_OtU6QkVIEeGAh_iQGJvI5w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Et81MEb3EeGp67IkyTw1fg" name="componentOf" type="_Do_YMEVKEeGAh_iQGJvI5w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Et81MUb3EeGp67IkyTw1fg"/>
+      <association href="consol-dicom.uml#_Et81Mkb3EeGp67IkyTw1fg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_50ugMErYEeGJpZWiuxRVIw" name="findingsSection">
+      <type xmi:type="uml:Class" href="consol-dicom.uml#_ZcC-4DVyEeGaW4kr-GbV8Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xmlcErYEeGJpZWiuxRVIw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xmlcUrYEeGJpZWiuxRVIw" value="1"/>
+      <association href="consol-dicom.uml#_50ugMkrYEeGJpZWiuxRVIw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_LMQz0EUzEeGAh_iQGJvI5w" name="Participant">
+      <ownedComment xmi:id="_mu4_IErVEeGJpZWiuxRVIw">
+        <body>If participant is present, the assignedEntity/assignedPerson element SHALL be present and SHALL represent the physician requesting the imaging procedure (the referring physician AssociatedEntity that is the target of ClincalDocument/participant@typeCode=REF).</body>
+      </ownedComment>
+      <generalization xmi:id="_OFoNoEUzEeGAh_iQGJvI5w">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_mTpQ0EUzEeGAh_iQGJvI5w" name="associatedEntity" type="_WhDh0EUzEeGAh_iQGJvI5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qC0RQEUzEeGAh_iQGJvI5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qC0RQUUzEeGAh_iQGJvI5w" value="1"/>
+        <association href="consol-dicom.uml#_mTpQ0kUzEeGAh_iQGJvI5w"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_WhDh0EUzEeGAh_iQGJvI5w" name="AssociatedEntity">
+        <generalization xmi:id="_eYQuoEUzEeGAh_iQGJvI5w">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8OcHAEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_i4AQYEUzEeGAh_iQGJvI5w" name="associatedPerson" type="_f71kwEU0EeGAh_iQGJvI5w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q-kH0EUzEeGAh_iQGJvI5w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q-kH0UUzEeGAh_iQGJvI5w" value="1"/>
+          <association href="consol-dicom.uml#_i4KBYEUzEeGAh_iQGJvI5w"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_f71kwEU0EeGAh_iQGJvI5w" name="Person">
+          <generalization xmi:id="_hqQOYEU0EeGAh_iQGJvI5w">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_qy-GYEU0EeGAh_iQGJvI5w" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_svQM4EU0EeGAh_iQGJvI5w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_svQM4UU0EeGAh_iQGJvI5w" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_MbQYsEVCEeGAh_iQGJvI5w" name="InFulfillmentOf">
+      <ownedComment xmi:id="_0RY60ErVEeGJpZWiuxRVIw">
+        <body>An inFulfillmentOf element represents the Placer Order that is either a group of orders (modeled as PlacerGroup in the Placer Order RMIM of the Orders &amp; Observations domain) or a single order item (modeled as ObservationRequest in the same RMIM).  This optionality reflects two major approaches to the grouping of procedures as implemented in the installed base of imaging information systems.  These approaches differ in their handling of grouped procedures and how they are mapped to identifiers in the Digital Imaging and Communications in Medicine (DICOM) image and structured reporting data.  The example of a CT examination covering chest, abdomen, and pelvis will be used in the discussion below.&#xD;
+In the IHE Scheduled Workflow model, the Chest CT, Abdomen CT, and Pelvis CT each represent a Requested Procedure, and all three procedures are grouped under a single Filler Order.  The Filler Order number maps directly to the DICOM Accession Number in the DICOM imaging and report data.&#xD;
+A widely deployed alternative approach maps the requested procedure identifiers directly to the DICOM Accession Number.  The Requested Procedure ID in such implementations may or may not be different from the Accession Number, but is of little identifying importance because there is only one Requested Procedure per Accession Number.  There is no identifier that formally connects the requested procedures ordered in this group.&#xD;
+In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number in the imaging data.</body>
+      </ownedComment>
+      <generalization xmi:id="_V95zoEVCEeGAh_iQGJvI5w">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Li14oEcZEd6besF9iFIJkQ"/>
+      </generalization>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mZ7hMEVCEeGAh_iQGJvI5w" name="DocumentationOf">
+      <ownedComment xmi:id="_7DnckErVEeGJpZWiuxRVIw">
+        <body>Each documentationOf/serviceEvent indicates an imaging procedure that the provider describes and interprets in the content of the DIR. The main activity being described by this document is the interpretation of the imaging procedure. This is shown by setting the value of the @classCode attribute of the serviceEvent element to ACT, and indicating the duration over which care was provided in the effectiveTime element. Within each documentationOf element, there is one serviceEvent element. This event is the unit imaging procedure corresponding to a billable item. The type of imaging procedure may be further described in the serviceEvent/code element.  This guide makes no specific recommendations about the vocabulary to use for describing this event.&#xD;
+ &#xD;
+In IHE Scheduled Workflow environments, one serviceEvent/id element contains the DICOM Study Instance UID from the Modality Worklist, and the second serviceEvent/id element contains the DICOM Requested Procedure ID from the Modality Worklist. These two ids are in a single serviceEvent.&#xD;
+The effectiveTime for the serviceEvent covers the duration of the imaging procedure being reported. This event should have one or more performers, which may participate at the same or different periods of time.</body>
+      </ownedComment>
+      <generalization xmi:id="_01DuAEVCEeGAh_iQGJvI5w">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Hgkx8EVDEeGAh_iQGJvI5w" name="serviceEvent3" type="_45OuEEVCEeGAh_iQGJvI5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s_g4oEVDEeGAh_iQGJvI5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s_g4oUVDEeGAh_iQGJvI5w" value="1"/>
+        <association href="consol-dicom.uml#_Hgkx8kVDEeGAh_iQGJvI5w"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_45OuEEVCEeGAh_iQGJvI5w" name="ServiceEvent4">
+        <generalization xmi:id="_9QebIEVCEeGAh_iQGJvI5w">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_WrF0UEVDEeGAh_iQGJvI5w" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVe2UDcEd6xYZuu1VKCVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ahjIgEVDEeGAh_iQGJvI5w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ahjIgUVDEeGAh_iQGJvI5w" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U70MIEroEd6FXKclYGEDCw"/>
+          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_WrF0U0VDEeGAh_iQGJvI5w" name="ACT">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVe2UDcEd6xYZuu1VKCVw"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVe2kDcEd6xYZuu1VKCVw"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_WrF0VEVDEeGAh_iQGJvI5w" name="code" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_lbXxwEVDEeGAh_iQGJvI5w">
+            <body>The value of serviceEvent/code SHALL NOT conflict with the ClininicalDocument/code. When transforming from DICOM SR documents that do not contain a procedure code, an appropriate nullFlavor SHALL be used on serviceEvent/code.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEDdEEVDEeGAh_iQGJvI5w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEDdEUVDEeGAh_iQGJvI5w" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I4F7kEroEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_WrF0V0VDEeGAh_iQGJvI5w" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPJgEEVDEeGAh_iQGJvI5w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPJgEUVDEeGAh_iQGJvI5w" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2UUeYErnEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_WvYhoEVHEeGAh_iQGJvI5w" name="physicianReadingStudyPerformer">
+          <type xmi:type="uml:Class" href="consol-dicom.uml#_H1UdcEVEEeGAh_iQGJvI5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PgYbsErWEeGJpZWiuxRVIw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PgYbsUrWEeGJpZWiuxRVIw"/>
+          <association href="consol-dicom.uml#_WvYhokVHEeGAh_iQGJvI5w"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_69jkAEVHEeGAh_iQGJvI5w" name="RelatedDocument ">
+      <ownedComment xmi:id="_wgSJYEbzEeGp67IkyTw1fg">
+        <body>When a Diagnostic Imaging Report has been transformed from a DICOM SR document, relatedDocument/@typeCode SHALL be XFRM, and relatedDocument/parentDocument/id SHALL contain the SOP Instance UID of the original DICOM SR document.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_xVbWsEVIEeGAh_iQGJvI5w" name="idRootIsOID" constrainedElement="_69jkAEVHEeGAh_iQGJvI5w">
+        <ownedComment xmi:id="_rF3xAErWEeGJpZWiuxRVIw">
+          <body>OIDs SHALL be represented in dotted decimal notation, where each decimal number is either 0 or starts with a nonzero digit. More formally, an OID SHALL be in the form ([0-2])(.([1-9][0-9]*|0))+.&#xD;
+&#xD;
+OIDs SHALL be no more than 64 characters in length..</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zlOPEEVIEeGAh_iQGJvI5w">
+          <language>Analysis</language>
+          <body>The relatedDocument/id/@root attribute SHALL be a syntactically correct OID, and SHALL NOT be a UUID.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_DX7vUEVIEeGAh_iQGJvI5w">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_d3mM8EcaEd6besF9iFIJkQ"/>
+      </generalization>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Do_YMEVKEeGAh_iQGJvI5w" name="ComponentOf">
+      <generalization xmi:id="_LWNikEVKEeGAh_iQGJvI5w">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_OrbK8Eb3EeGp67IkyTw1fg" name="encompassingEncounter" type="_lxDCoEVKEeGAh_iQGJvI5w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OrbK8Ub3EeGp67IkyTw1fg"/>
+        <association href="consol-dicom.uml#_OrkU4Eb3EeGp67IkyTw1fg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_lxDCoEVKEeGAh_iQGJvI5w" name="EncompassingEncounter7">
+        <generalization xmi:id="_pJ3YkEVKEeGAh_iQGJvI5w">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
+        </generalization>
+        <ownedAttribute xmi:id="_yjuD4EVKEeGAh_iQGJvI5w" name="effectiveTime" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKO1wEozEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yjuD4UVKEeGAh_iQGJvI5w" name="id" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="__KaUIEb2EeGp67IkyTw1fg">
+            <body>In the case of transformed DICOM SR documents, an appropriate null flavor MAY be used if the id is unavailable.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yjuD4kVKEeGAh_iQGJvI5w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yjuD40VKEeGAh_iQGJvI5w"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_kfYp8EozEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_v99YEEb2EeGp67IkyTw1fg" name="physicianofRecordParticipant">
+          <type xmi:type="uml:Class" href="consol-dicom.uml#_H_izsEb1EeGp67IkyTw1fg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v99YEUb2EeGp67IkyTw1fg"/>
+          <association href="consol-dicom.uml#_v-GiAEb2EeGp67IkyTw1fg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HfEbMErXEeGJpZWiuxRVIw" name="responsibleParty" type="_SYZ6YEb0EeGp67IkyTw1fg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HfEbMUrXEeGJpZWiuxRVIw"/>
+          <association href="consol-payers.uml#_HfEbMkrXEeGJpZWiuxRVIw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_SYZ6YEb0EeGp67IkyTw1fg" name="ResponsibleParty">
+          <generalization xmi:id="_b3oN4Eb0EeGp67IkyTw1fg">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hfdrgEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_dTg1sEb3EeGp67IkyTw1fg" name="assignedEntity" type="_ftDAQEb0EeGp67IkyTw1fg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dTg1sUb3EeGp67IkyTw1fg"/>
+            <association href="consol-dicom.uml#_dTp_oEb3EeGp67IkyTw1fg"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ftDAQEb0EeGp67IkyTw1fg" name="AssignedEntity">
+            <ownedRule xmi:id="_w4TyYEb0EeGp67IkyTw1fg" name="hasAssignPersonOrRepresentedOrganization" constrainedElement="_ftDAQEb0EeGp67IkyTw1fg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ysr6EEb0EeGp67IkyTw1fg">
+                <language>Analysis</language>
+                <body>SHOULD contain zero or one [0..1] assignedPerson OR contain zero or one [0..1] representedOrganization</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_rVqCIEb0EeGp67IkyTw1fg">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            </generalization>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_gWBOEEUuEeGdQ4KWAmnbhw" base_Class="_XwBooEUuEeGdQ4KWAmnbhw" templateId="2.16.840.1.113883.10.20.22.1.5">
+    <ruleId>CONF:8404</ruleId>
+    <ruleId>CONF:10042</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_HAihoEUwEeGdQ4KWAmnbhw" severity="WARNING" base_Constraint="__CBy8EUvEeGdQ4KWAmnbhw">
+    <ruleId>CONF:8409</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConformsTo xmi:id="_rQcUQEUuEeGdQ4KWAmnbhw" base_Generalization="_XwdtgEUuEeGdQ4KWAmnbhw" requiresParentId="true">
+    <ruleId>CONF:9405</ruleId>
+    <ruleId>CONF:10041</ruleId>
+  </CDA:ConformsTo>
+  <CDA:PropertyValidation xmi:id="_Z-7JI0UuEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
+    <ruleId>CONF:8408</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_4p4lIEUvEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
+    <reference href="../consol-vocab.uml#_hJA70UUvEeGdQ4KWAmnbhw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_Z_g_A0UuEeGdQ4KWAmnbhw" base_Property="_Z_g_AEUuEeGdQ4KWAmnbhw">
+    <ruleId>CONF:5363</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sLoicEU0EeGAh_iQGJvI5w" base_Property="_qy-GYEU0EeGAh_iQGJvI5w">
+    <ruleId>CONF:9406</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gNIyUEVDEeGAh_iQGJvI5w" severity="WARNING" base_Property="_WrF0V0VDEeGAh_iQGJvI5w">
+    <ruleId>CONF:8418</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gqMhwEVDEeGAh_iQGJvI5w" base_Property="_WrF0VEVDEeGAh_iQGJvI5w">
+    <ruleId>CONF:8419</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hD1JwEVDEeGAh_iQGJvI5w" base_Property="_WrF0UEVDEeGAh_iQGJvI5w">
+    <ruleId>CONF:8430</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_XzsMYEVJEeGAh_iQGJvI5w" base_Constraint="_xVbWsEVIEeGAh_iQGJvI5w">
+    <ruleId>CONF:10030</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5UU8cEb0EeGp67IkyTw1fg" severity="WARNING" base_Constraint="_w4TyYEb0EeGp67IkyTw1fg">
+    <ruleId>CONF:8439</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_2d_9oEb2EeGp67IkyTw1fg" base_Property="_yjuD4UVKEeGAh_iQGJvI5w">
+    <ruleId>CONF:8435</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_25HzYEb2EeGp67IkyTw1fg" base_Property="_yjuD4EVKEeGAh_iQGJvI5w">
+    <ruleId>CONF:8437</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_GXwi8ErZEeGJpZWiuxRVIw" base_Constraint="_CldWAErZEeGJpZWiuxRVIw">
+    <ruleId>CONF:9409</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_bXivkErZEeGJpZWiuxRVIw" severity="WARNING" base_Constraint="_OjhqgErZEeGJpZWiuxRVIw">
+    <ruleId>CONF:9410</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mSQJoErZEeGJpZWiuxRVIw" base_Constraint="_k4aB0ErZEeGJpZWiuxRVIw">
+    <ruleId>CONF:9411</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_9LMQQErZEeGJpZWiuxRVIw" base_Constraint="_5AKaQErZEeGJpZWiuxRVIw">
+    <ruleId>CONF:9413</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_AWl1QEraEeGJpZWiuxRVIw" base_Constraint="_qj_roErZEeGJpZWiuxRVIw">
+    <ruleId>CONF:9412</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_N9kBQEraEeGJpZWiuxRVIw" base_Constraint="_E-0koEraEeGJpZWiuxRVIw">
+    <ruleId>CONF:9414</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_TqV94EraEeGJpZWiuxRVIw" severity="INFO" base_Constraint="_R23OEEraEeGJpZWiuxRVIw"/>
 </xmi:XMI>

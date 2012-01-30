@@ -501,9 +501,8 @@ Medication timing is complex. This template requires that there be a substanceAd
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__c0hcELSEeGo1o5_NrjDhQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__c0hcULSEeGo1o5_NrjDhQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ikLsgEhUEeGoJ-JrsiBorA" name="product" type="_cJ5wsEhUEeGoJ-JrsiBorA">
+    <ownedAttribute xmi:id="_ikLsgEhUEeGoJ-JrsiBorA" name="product" type="_cJ5wsEhUEeGoJ-JrsiBorA" association="_ikMTkEhUEeGoJ-JrsiBorA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ikLsgUhUEeGoJ-JrsiBorA"/>
-      <association href="../consol.uml#_ikMTkEhUEeGoJ-JrsiBorA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_cJ5wsEhUEeGoJ-JrsiBorA" name="Product">
       <ownedComment xmi:id="_Z1CVoEhVEeGoJ-JrsiBorA">
@@ -1546,4 +1545,7 @@ Entry Content Module.</body>
     <ruleId>CONF:9332</ruleId>
     <ruleId>CONF:9333</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_ikMTkEhUEeGoJ-JrsiBorA" memberEnd="_ikLsgEhUEeGoJ-JrsiBorA _ikMTkUhUEeGoJ-JrsiBorA">
+    <ownedEnd xmi:id="_ikMTkUhUEeGoJ-JrsiBorA" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_ikMTkEhUEeGoJ-JrsiBorA"/>
+  </uml:Association>
 </xmi:XMI>
