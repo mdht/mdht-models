@@ -848,4 +848,11 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedComment>
     <ownedEnd xmi:id="_nuTYUzaKEeGUovy31cP2ng" type="_PZBdMBUlEeGvPruliC3crg" association="_nuTYUjaKEeGUovy31cP2ng"/>
   </uml:Association>
+  <uml:Association xmi:id="_HfEbMkrXEeGJpZWiuxRVIw">
+    <ownedEnd xmi:id="_HfEbM0rXEeGJpZWiuxRVIw" association="_HfEbMkrXEeGJpZWiuxRVIw">
+      <type xmi:type="uml:Class" href="consol-documents.uml#_lxDCoEVKEeGAh_iQGJvI5w"/>
+    </ownedEnd>
+    <memberEnd href="consol-documents.uml#_HfEbMErXEeGJpZWiuxRVIw"/>
+    <memberEnd href="#_HfEbM0rXEeGJpZWiuxRVIw"/>
+  </uml:Association>
 </xmi:XMI>

@@ -565,13 +565,46 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_abVpYEOvEeG2teg5w9C5Rg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_wJHu0EX8EeG6e5lG0YsSyQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ooc9QEX9EeG6e5lG0YsSyQ"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ikMTkEhUEeGoJ-JrsiBorA">
-      <ownedEnd xmi:id="_ikMTkUhUEeGoJ-JrsiBorA" association="_ikMTkEhUEeGoJ-JrsiBorA">
-        <type xmi:type="uml:Class" href=".controlled/consol-medications.uml#_DpoGkBUUEeG6PvUxSTZnaw"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-medications.uml#_ikLsgEhUEeGoJ-JrsiBorA"/>
-      <memberEnd href="#_ikMTkUhUEeGoJ-JrsiBorA"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ikMTkEhUEeGoJ-JrsiBorA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_XwBooEUuEeGdQ4KWAmnbhw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_0kSW0UUxEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_EHrzQkUyEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_C2NH0kUzEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_i4KBYEUzEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_mTpQ0kUzEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_YQPCokVCEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_uXP9EkVCEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_Hgkx8kVDEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_H1UdcEVEEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_WvYhokVHEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_OtU6QkVIEeGAh_iQGJvI5w"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_H_izsEb1EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_v-GiAEb2EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_Et81Mkb3EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_OrkU4Eb3EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_dTp_oEb3EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_vjf-wEb4EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_N2wscEb6EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_9o7WcEb6EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_J-F8UEb7EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_1Zyf4Eb8EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_9Yv6gEb8EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_9xjKIEb-EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_Px2t4Eb_EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_pmiz8Eb_EeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-dicom.uml#_crHC0EcAEeGp67IkyTw1fg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-payers.uml#_HfEbMkrXEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_1B44wkrXEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_QLNPckrYEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_g5aSIkrYEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_50ugMkrYEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_ANaZMkrcEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_ZpQE8krdEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_0dvlskreEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_BlKScUrgEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_L3pO4ErgEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_c7ACMkrgEeGJpZWiuxRVIw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_herW0EriEeGJpZWiuxRVIw"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -1728,8 +1761,116 @@
     <ruleId>CONF:9006</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_ooc9QEX9EeG6e5lG0YsSyQ"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_HNDt4EhVEeGoJ-JrsiBorA" base_Association="_ikMTkEhUEeGoJ-JrsiBorA">
+  <CDA:AssociationValidation xmi:id="_HNDt4EhVEeGoJ-JrsiBorA">
     <ruleId>CONF:7459</ruleId>
     <ruleId>CONF:9331</ruleId>
+    <base_Association href=".controlled/consol-medications.uml#_ikMTkEhUEeGoJ-JrsiBorA"/>
   </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_1MN5gEUxEeGAh_iQGJvI5w">
+    <ruleId>CONF:8410</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_0kSW0UUxEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_U-YDkEUyEeGAh_iQGJvI5w" severity="INFO">
+    <ruleId>CONF:8411</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_EHrzQkUyEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_G6OW4EUzEeGAh_iQGJvI5w" severity="INFO">
+    <ruleId>CONF:8414</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_C2NH0kUzEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_3zUzwEUzEeGAh_iQGJvI5w">
+    <base_Association href=".controlled/consol-dicom.uml#_i4KBYEUzEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Y2rXkEVCEeGAh_iQGJvI5w" severity="INFO">
+    <base_Association href=".controlled/consol-dicom.uml#_YQPCokVCEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xqi50EVCEeGAh_iQGJvI5w">
+    <ruleId>CONF:8416</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_uXP9EkVCEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_sIYcUEVDEeGAh_iQGJvI5w">
+    <ruleId>CONF:8431</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_Hgkx8kVDEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ayz60EVHEeGAh_iQGJvI5w" severity="WARNING">
+    <ruleId>CONF:8422</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_WvYhokVHEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_QOLpAEVIEeGAh_iQGJvI5w" severity="INFO">
+    <ruleId>CONF:8432</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_OtU6QkVIEeGAh_iQGJvI5w"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xrxkwEb2EeGp67IkyTw1fg" severity="WARNING">
+    <ruleId>CONF:8448</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_v-GiAEb2EeGp67IkyTw1fg"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_GsBEYEb3EeGp67IkyTw1fg" severity="INFO">
+    <ruleId>CONF:8434</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_Et81Mkb3EeGp67IkyTw1fg"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_W25XkEb3EeGp67IkyTw1fg">
+    <ruleId>CONF:8449</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_OrkU4Eb3EeGp67IkyTw1fg"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_iLZKoEb3EeGp67IkyTw1fg">
+    <ruleId>CONF:9407</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_dTp_oEb3EeGp67IkyTw1fg"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_LIbHgErXEeGJpZWiuxRVIw" severity="INFO">
+    <ruleId>CONF:8438</ruleId>
+    <base_Association href=".controlled/consol-payers.uml#_HfEbMkrXEeGJpZWiuxRVIw"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_4On6gErXEeGJpZWiuxRVIw">
+    <ruleId>CONF:8426</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_1B44wkrXEeGJpZWiuxRVIw"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_RN9s8ErYEeGJpZWiuxRVIw">
+    <ruleId>CONF:8886</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_QLNPckrYEeGJpZWiuxRVIw"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_8u_48ErYEeGJpZWiuxRVIw">
+    <ruleId>CONF:8776</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_50ugMkrYEeGJpZWiuxRVIw"/>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_C915cErcEeGJpZWiuxRVIw">
+    <ruleId>CONF:8530</ruleId>
+    <ruleId>CONF:10501</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_ANaZMkrcEeGJpZWiuxRVIw"/>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_aaRSMErdEeGJpZWiuxRVIw" typeCode="COMP">
+    <ruleId>CONF:9219</ruleId>
+    <ruleId>CONF:9220</ruleId>
+    <ruleId>CONF:9221</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_ZpQE8krdEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_1_fsUEreEeGJpZWiuxRVIw" typeCode="COMP">
+    <ruleId>CONF:9237</ruleId>
+    <ruleId>CONF:9238</ruleId>
+    <ruleId>CONF:9239</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_0dvlskreEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_EdoUYErgEeGJpZWiuxRVIw" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF:9254</ruleId>
+    <ruleId>CONF:9255</ruleId>
+    <ruleId>CONF:9256</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_BlKScUrgEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_NkRIwErgEeGJpZWiuxRVIw" severity="INFO" typeCode="RSON">
+    <ruleId>CONF:9257</ruleId>
+    <ruleId>CONF:9258</ruleId>
+    <ruleId>CONF:9259</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_L3pO4ErgEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_f2AawErgEeGJpZWiuxRVIw" severity="INFO" typeCode="COMP">
+    <ruleId>CONF:9260</ruleId>
+    <ruleId>CONF:9261</ruleId>
+    <ruleId>CONF:9262</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_c7ACMkrgEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_kJ4_4EriEeGJpZWiuxRVIw" typeCode="COMP">
+    <ruleId>CONF:9279</ruleId>
+    <ruleId>CONF:9280</ruleId>
+    <ruleId>CONF:9281</ruleId>
+    <base_Association href=".controlled/consol-dicom.uml#_herW0EriEeGJpZWiuxRVIw"/>
+  </CDA:EntryRelationship>
 </xmi:XMI>
