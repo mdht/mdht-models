@@ -1499,7 +1499,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY,
 					ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty"),
@@ -1537,7 +1537,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT,
 					ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant"),

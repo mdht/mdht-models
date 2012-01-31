@@ -1948,7 +1948,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 			historyAndPhysicalNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION,
 					ConsolPlugin.INSTANCE.getString("HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location"),
@@ -2006,7 +2006,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 			historyAndPhysicalNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY,
 					ConsolPlugin.INSTANCE.getString("HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty"),
@@ -2064,7 +2064,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 			historyAndPhysicalNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT,
 					ConsolPlugin.INSTANCE.getString("HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant"),

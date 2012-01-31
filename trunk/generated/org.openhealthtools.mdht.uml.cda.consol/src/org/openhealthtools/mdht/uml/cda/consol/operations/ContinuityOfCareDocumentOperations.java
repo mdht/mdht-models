@@ -718,7 +718,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier"),
@@ -758,7 +758,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY_CODE,
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode"),
@@ -872,7 +872,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY,
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity"),
@@ -1062,7 +1062,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			continuityOfCareDocument)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER,
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent3Performer"),

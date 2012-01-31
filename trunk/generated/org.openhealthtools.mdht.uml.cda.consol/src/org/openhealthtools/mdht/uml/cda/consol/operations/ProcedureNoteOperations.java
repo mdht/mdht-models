@@ -2156,7 +2156,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteIndividualTypeId"), new Object[] { procedureNote }));
 			}
@@ -2212,7 +2212,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId"),
@@ -2270,7 +2270,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility"),
@@ -2328,7 +2328,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode"),
@@ -2386,7 +2386,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5Code"),
 					new Object[] { procedureNote }));
@@ -2443,7 +2443,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5Location"),
 					new Object[] { procedureNote }));
@@ -2500,7 +2500,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant"),

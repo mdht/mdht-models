@@ -1207,7 +1207,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			progressNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOfServiceEvent2ClassCode"),
 					new Object[] { progressNote }));
@@ -1320,7 +1320,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOfServiceEvent2"),
 					new Object[] { progressNote }));
