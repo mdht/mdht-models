@@ -809,7 +809,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationVerifierTime"),
 					new Object[] { advanceDirectiveObservation }));
@@ -867,7 +867,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TYPE_CODE,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationVerifierTypeCode"),
 					new Object[] { advanceDirectiveObservation }));
@@ -925,7 +925,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationVerifierParticipantRole"),
@@ -984,7 +984,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName"),
@@ -1102,7 +1102,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianCustodianRoleClassCode"),
@@ -1220,7 +1220,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity"),
@@ -1279,7 +1279,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianTypeCode"),
 					new Object[] { advanceDirectiveObservation }));
@@ -1337,7 +1337,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole"),
@@ -1396,7 +1396,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentId"),
@@ -1455,7 +1455,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocumentText"),
@@ -1514,7 +1514,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT,
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReferenceExternalDocument"),

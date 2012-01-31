@@ -430,7 +430,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			productInstance)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
 					ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDeviceCode"),
 					new Object[] { productInstance }));

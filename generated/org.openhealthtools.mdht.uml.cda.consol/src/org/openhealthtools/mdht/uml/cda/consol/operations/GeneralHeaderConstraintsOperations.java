@@ -1736,7 +1736,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthorAssignedAuthorCode"),
 					new Object[] { generalHeaderConstraints }));
@@ -1965,7 +1965,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier"),
@@ -2023,7 +2023,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityAddr"),
@@ -2085,7 +2085,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityCode"),
@@ -2143,7 +2143,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityId"),
@@ -2201,7 +2201,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_TELECOM,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityTelecom"),
@@ -2259,7 +2259,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson"),
@@ -2723,7 +2723,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ORGANIZATION_NAME,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName"),
@@ -2897,7 +2897,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformationRecipientIntendedRecipient"),
@@ -2955,7 +2955,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier"),
@@ -3013,7 +3013,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr"),
@@ -3133,7 +3133,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId"),
@@ -3191,7 +3191,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_TELECOM,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom"),
@@ -3249,7 +3249,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson"),
@@ -3307,7 +3307,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_TIME,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorTime"),
 					new Object[] { generalHeaderConstraints }));
@@ -3368,7 +3368,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_SIGNATURE_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorSignatureCode"),
@@ -3426,7 +3426,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier"),
@@ -3484,7 +3484,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr"),
@@ -3600,7 +3600,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntityId"),
@@ -3658,7 +3658,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_TELECOM,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom"),
@@ -3716,7 +3716,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_TIME,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorTime"),
 					new Object[] { generalHeaderConstraints }));
@@ -3777,7 +3777,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_SIGNATURE_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorSignatureCode"),
@@ -3835,7 +3835,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntity"),
@@ -3893,7 +3893,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier"),
@@ -3931,7 +3931,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr"),
@@ -3971,7 +3971,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode"),
@@ -4009,7 +4009,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom"),
@@ -4123,7 +4123,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay"),
@@ -4237,7 +4237,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"),
@@ -4355,7 +4355,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime"),
@@ -4393,7 +4393,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
@@ -4589,7 +4589,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian"),
@@ -4627,7 +4627,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace"),
@@ -4665,7 +4665,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"),
@@ -5718,7 +5718,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime"),
@@ -5776,7 +5776,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOfEncompassingEncounterId"),
@@ -5834,7 +5834,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOfEncompassingEncounter"),
@@ -5872,7 +5872,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityAddr"),
@@ -5912,7 +5912,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityCode"),
@@ -5950,7 +5950,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityId"),
@@ -5988,7 +5988,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityPerson"),
@@ -6026,7 +6026,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity"),
@@ -6064,7 +6064,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization"),
@@ -6122,7 +6122,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantRelatedEntityAddr"),
@@ -6180,7 +6180,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantRelatedEntityPerson"),
@@ -6360,7 +6360,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
+					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier"),
@@ -6475,7 +6475,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF_ORDER_ID,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInFulfillmentOfOrderId"),
 					new Object[] { generalHeaderConstraints }));
@@ -6532,7 +6532,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF_ORDER,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInFulfillmentOfOrder"),
 					new Object[] { generalHeaderConstraints }));
