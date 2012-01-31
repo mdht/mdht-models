@@ -188,8 +188,8 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbwhSVEeGGzu7fmW9pXw" name="doseQuantity" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_aSOw0EInEeG4bZAl2IGXmQ">
-        <body>a.	Pre-coordinated consumable: If the consumable code is a precoordinated unit dose (e.g. &quot;metoprolol 25mg tablet&quot;) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. &quot;2&quot;, meaning 2 x &quot;metoprolol 25mg tablet&quot;) &lt;/p>&#xD;
-&lt;p>Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply &quot;metoprolol&quot;), then doseQuantity must represent a physical quantity with @unit, e.g. &quot;25&quot; and &quot;mg&quot;, specifying the amount of product given per administration &lt;/p></body>
+        <body>Pre-coordinated consumable: If the consumable code is a precoordinated unit dose (e.g. metoprolol 25mg tablet) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. 2, meaning 2 x metoprolol 25mg tablet) 
+Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply metoprolol), then doseQuantity must represent a physical quantity with @unit, e.g. 25 and mg, specifying the amount of product given per administration</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fyAg8B-xEeGKirKJsFylGA" value="1"/>

@@ -4549,7 +4549,7 @@ The DIR document recommends use of a single document type code, 18748-4 &quot;Di
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-TlRIUrYEeGJpZWiuxRVIw" value="1"/>
       <association href="consol-dicom.uml#_uXP9EkVCEeGAh_iQGJvI5w"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_OtU6QEVIEeGAh_iQGJvI5w" name="relatedDocument " type="_69jkAEVHEeGAh_iQGJvI5w">
+    <ownedAttribute xmi:id="_OtU6QEVIEeGAh_iQGJvI5w" name="relatedDocument" type="_69jkAEVHEeGAh_iQGJvI5w">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtU6QUVIEeGAh_iQGJvI5w"/>
       <association href="consol-dicom.uml#_OtU6QkVIEeGAh_iQGJvI5w"/>
     </ownedAttribute>
@@ -4660,7 +4660,7 @@ The effectiveTime for the serviceEvent covers the duration of the imaging proced
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_69jkAEVHEeGAh_iQGJvI5w" name="RelatedDocument ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_69jkAEVHEeGAh_iQGJvI5w" name="RelatedDocument">
       <ownedComment xmi:id="_wgSJYEbzEeGp67IkyTw1fg">
         <body>When a Diagnostic Imaging Report has been transformed from a DICOM SR document, relatedDocument/@typeCode SHALL be XFRM, and relatedDocument/parentDocument/id SHALL contain the SOP Instance UID of the original DICOM SR document.</body>
       </ownedComment>
