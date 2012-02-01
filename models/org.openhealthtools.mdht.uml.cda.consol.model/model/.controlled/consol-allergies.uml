@@ -184,8 +184,8 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLehSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KfVPYDI6EeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KfVPYTI6EeG6R8Pb5FT2Ow" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E_g2UEyJEeG-cvwiqdenrA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E_g2UUyJEeG-cvwiqdenrA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
