@@ -50,7 +50,7 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	 * @generated
 	 */
 	public EncounterPerformer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncounterPerformerImpl

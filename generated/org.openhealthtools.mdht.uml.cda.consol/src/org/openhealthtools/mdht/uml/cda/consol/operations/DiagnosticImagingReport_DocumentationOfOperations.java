@@ -88,18 +88,20 @@ public class DiagnosticImagingReport_DocumentationOfOperations extends Documenta
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF);
 			try {
 				VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport_DocumentationOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport_DocumentationOf)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF__DOCUMENTATION_OF_SERVICE_EVENT3,
-					ConsolPlugin.INSTANCE.getString("DocumentationOfServiceEvent3"),
-					new Object[] { diagnosticImagingReport_DocumentationOf }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF__DOCUMENTATION_OF_SERVICE_EVENT3,
+						 ConsolPlugin.INSTANCE.getString("DocumentationOfServiceEvent3"),
+						 new Object [] { diagnosticImagingReport_DocumentationOf }));
 			}
 			return false;
 		}

@@ -58,8 +58,7 @@ public class AllergyObservationParticipantRoleImpl extends ParticipantRoleImpl i
 	 */
 	public boolean validateAllergyObservationParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationParticipantRoleOperations.validateAllergyObservationParticipantRolePlayingEntity(
-			this, diagnostics, context);
+		return AllergyObservationParticipantRoleOperations.validateAllergyObservationParticipantRolePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +67,7 @@ public class AllergyObservationParticipantRoleImpl extends ParticipantRoleImpl i
 	 * @generated
 	 */
 	public AllergyObservationParticipantRole init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyObservationParticipantRoleImpl

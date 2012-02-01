@@ -57,8 +57,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
-			this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
-			this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +75,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationsAdministeredSectionImpl

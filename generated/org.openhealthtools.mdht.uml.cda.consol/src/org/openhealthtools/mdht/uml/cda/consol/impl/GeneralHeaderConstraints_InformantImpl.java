@@ -55,8 +55,7 @@ public class GeneralHeaderConstraints_InformantImpl extends Informant12Impl impl
 	 */
 	public boolean validateInformantHasAssignedEntityOrRelatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraints_InformantOperations.validateInformantHasAssignedEntityOrRelatedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_InformantOperations.validateInformantHasAssignedEntityOrRelatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +64,7 @@ public class GeneralHeaderConstraints_InformantImpl extends Informant12Impl impl
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_Informant init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_InformantImpl

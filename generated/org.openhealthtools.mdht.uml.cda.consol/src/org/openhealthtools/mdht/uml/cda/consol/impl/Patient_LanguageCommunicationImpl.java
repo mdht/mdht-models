@@ -57,8 +57,7 @@ public class Patient_LanguageCommunicationImpl extends LanguageCommunicationImpl
 	 * @generated
 	 */
 	public boolean validateLanguageCommunicationLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationLanguageCode(
-			this, diagnostics, context);
+		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class Patient_LanguageCommunicationImpl extends LanguageCommunicationImpl
 	 * @generated
 	 */
 	public boolean validateLanguageCommunicationPreferenceInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationPreferenceInd(
-			this, diagnostics, context);
+		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationPreferenceInd(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class Patient_LanguageCommunicationImpl extends LanguageCommunicationImpl
 	 */
 	public boolean validateLanguageCommunicationProficiencyLevelCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationProficiencyLevelCode(
-			this, diagnostics, context);
+		return Patient_LanguageCommunicationOperations.validateLanguageCommunicationProficiencyLevelCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +94,7 @@ public class Patient_LanguageCommunicationImpl extends LanguageCommunicationImpl
 	 * @generated
 	 */
 	public Patient_LanguageCommunication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Patient_LanguageCommunicationImpl

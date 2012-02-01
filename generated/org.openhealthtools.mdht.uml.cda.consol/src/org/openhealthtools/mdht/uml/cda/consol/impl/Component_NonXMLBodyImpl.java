@@ -81,7 +81,7 @@ public class Component_NonXMLBodyImpl extends NonXMLBodyImpl implements Componen
 	 * @generated
 	 */
 	public Component_NonXMLBody init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Component_NonXMLBodyImpl

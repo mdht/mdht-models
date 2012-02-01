@@ -88,20 +88,20 @@ public class Custodian_AssignedCustodianOperations extends AssignedCustodianOper
 			helper.setContext(ConsolPackage.Literals.CUSTODIAN_ASSIGNED_CUSTODIAN);
 			try {
 				VALIDATE_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			custodian_AssignedCustodian)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(custodian_AssignedCustodian)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CUSTODIAN_ASSIGNED_CUSTODIAN__ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
-					ConsolPlugin.INSTANCE.getString("AssignedCustodianRepresentedCustodianOrganization"),
-					new Object[] { custodian_AssignedCustodian }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CUSTODIAN_ASSIGNED_CUSTODIAN__ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("AssignedCustodianRepresentedCustodianOrganization"),
+						 new Object [] { custodian_AssignedCustodian }));
 			}
 			return false;
 		}

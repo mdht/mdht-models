@@ -57,8 +57,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	public boolean validateHistoryOfPresentIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * @generated
 	 */
 	public boolean validateHistoryOfPresentIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * @generated
 	 */
 	public boolean validateHistoryOfPresentIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +84,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * @generated
 	 */
 	public boolean validateHistoryOfPresentIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +93,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * @generated
 	 */
 	public HistoryOfPresentIllnessSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HistoryOfPresentIllnessSectionImpl

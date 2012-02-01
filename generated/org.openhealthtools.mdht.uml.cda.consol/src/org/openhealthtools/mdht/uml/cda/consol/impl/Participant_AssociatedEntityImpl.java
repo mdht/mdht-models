@@ -56,8 +56,7 @@ public class Participant_AssociatedEntityImpl extends AssociatedEntityImpl imple
 	 * @generated
 	 */
 	public boolean validateAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Participant_AssociatedEntityOperations.validateAssociatedEntityAssociatedPerson(
-			this, diagnostics, context);
+		return Participant_AssociatedEntityOperations.validateAssociatedEntityAssociatedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +65,7 @@ public class Participant_AssociatedEntityImpl extends AssociatedEntityImpl imple
 	 * @generated
 	 */
 	public Participant_AssociatedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Participant_AssociatedEntityImpl

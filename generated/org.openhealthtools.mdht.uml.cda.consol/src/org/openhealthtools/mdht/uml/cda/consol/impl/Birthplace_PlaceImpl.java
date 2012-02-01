@@ -65,7 +65,7 @@ public class Birthplace_PlaceImpl extends PlaceImpl implements Birthplace_Place 
 	 * @generated
 	 */
 	public Birthplace_Place init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Birthplace_PlaceImpl

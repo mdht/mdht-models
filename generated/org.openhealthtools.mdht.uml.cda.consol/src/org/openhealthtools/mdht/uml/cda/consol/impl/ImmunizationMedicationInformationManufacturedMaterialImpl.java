@@ -58,8 +58,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +97,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	 * @generated
 	 */
 	public ImmunizationMedicationInformationManufacturedMaterial init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ImmunizationMedicationInformationManufacturedMaterialImpl
