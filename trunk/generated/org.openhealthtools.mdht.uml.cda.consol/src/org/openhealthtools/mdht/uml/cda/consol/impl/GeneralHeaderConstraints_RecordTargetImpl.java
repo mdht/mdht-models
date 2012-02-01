@@ -57,8 +57,7 @@ public class GeneralHeaderConstraints_RecordTargetImpl extends RecordTargetImpl 
 	 * @generated
 	 */
 	public boolean validateRecordTargetPatientRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_RecordTargetOperations.validateRecordTargetPatientRole(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_RecordTargetOperations.validateRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class GeneralHeaderConstraints_RecordTargetImpl extends RecordTargetImpl 
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_RecordTarget init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_RecordTargetImpl

@@ -65,7 +65,7 @@ public class ServiceEvent1_PrimaryPerformerImpl extends Performer1Impl implement
 	 * @generated
 	 */
 	public ServiceEvent1_PrimaryPerformer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ServiceEvent1_PrimaryPerformerImpl

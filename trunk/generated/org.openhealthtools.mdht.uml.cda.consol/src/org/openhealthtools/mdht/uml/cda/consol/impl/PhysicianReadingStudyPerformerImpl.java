@@ -57,8 +57,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 * @generated
 	 */
 	public boolean validatePhysicianReadingStudyPerformerTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +95,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 * @generated
 	 */
 	public PhysicianReadingStudyPerformer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PhysicianReadingStudyPerformerImpl
