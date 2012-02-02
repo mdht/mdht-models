@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservation_Verifier()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VerifierTime VerifierTypeCode VerifierParticipantRole' typeCode='VRF'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='VRF' constraints.validation.error='VerifierTime VerifierTypeCode VerifierParticipantRole'"
  * @generated
  */
 public interface AdvanceDirectiveObservation_Verifier extends Participant2 {

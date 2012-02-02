@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='2.16.840.1.113883.10.20.22.4.39' classCode.displayName='' constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' classCode.code=''"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.codeSystemName='HL7ActClass' classCode.displayName='' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.code='' templateId.root='2.16.840.1.113883.10.20.22.4.39' constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActId'"
  * @generated
  */
 public interface PlanOfCareActivityAct extends Act {

@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeMedicationsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' templateId.root='2.16.840.1.113883.10.20.22.2.11' constraints.validation.error='HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication' code.code='10183-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.error='HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.11' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10183-2' constraints.validation.warning='HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication'"
  * @generated
  */
 public interface HospitalDischargeMedicationsSectionEntriesOptional extends Section {

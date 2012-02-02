@@ -17,7 +17,7 @@ import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getComponentOf_EncompassingEncounter5()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncompassingEncounter5Code EncompassingEncounter5Location' constraints.validation.info='EncompassingEncounter5EncounterParticipant'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='EncompassingEncounter5EncounterParticipant' constraints.validation.error='EncompassingEncounter5Code EncompassingEncounter5Location'"
  * @generated
  */
 public interface ComponentOf_EncompassingEncounter5 extends EncompassingEncounter {

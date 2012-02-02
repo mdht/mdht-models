@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservationParticipantRole()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.displayName='Manufactured Product' constraints.validation.error='AllergyObservationParticipantRolePlayingEntity' classCode.codeSystem='2.16.840.1.113883.5.110' classCode.codeSystemName='HL7RoleClass' classCode.code='MANU'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.codeSystemName='HL7RoleClass' classCode.displayName='Manufactured Product' classCode.codeSystem='2.16.840.1.113883.5.110' classCode.code='MANU' constraints.validation.error='AllergyObservationParticipantRolePlayingEntity'"
  * @generated
  */
 public interface AllergyObservationParticipantRole extends ParticipantRole {

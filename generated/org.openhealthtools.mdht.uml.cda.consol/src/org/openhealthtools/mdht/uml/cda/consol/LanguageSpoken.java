@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getLanguageSpoken()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='LanguageSpokenLanguageCode LanguageSpokenModeCode' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode' modeCode.codeSystem='2.16.840.1.113883.5.60' modeCode.codeSystemName='LanguageAbilityMode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation modeCode.codeSystemName='LanguageAbilityMode' modeCode.codeSystem='2.16.840.1.113883.5.60' constraints.validation.error='LanguageSpokenLanguageCode LanguageSpokenModeCode' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode'"
  * @generated
  */
 public interface LanguageSpoken extends LanguageCommunication {

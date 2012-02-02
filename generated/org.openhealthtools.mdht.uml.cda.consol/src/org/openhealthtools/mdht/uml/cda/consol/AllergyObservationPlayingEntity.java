@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.PlayingEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservationPlayingEntity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationPlayingEntityClassCode AllergyObservationPlayingEntityCode' classCode='MMAT' constraints.validation.warning='AllergyObservationPlayingEntityCodeOriginalText' constraints.validation.info='AllergyObservationPlayingEntityCodeTranslation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MMAT' constraints.validation.info='AllergyObservationPlayingEntityCodeTranslation' constraints.validation.error='AllergyObservationPlayingEntityClassCode AllergyObservationPlayingEntityCode' constraints.validation.warning='AllergyObservationPlayingEntityCodeOriginalText'"
  * @generated
  */
 public interface AllergyObservationPlayingEntity extends PlayingEntity {

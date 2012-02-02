@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncompassingEncounter5_EncounterParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterParticipantTypeCode' typeCode='REF'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='REF' constraints.validation.error='EncounterParticipantTypeCode'"
  * @generated
  */
 public interface EncompassingEncounter5_EncounterParticipant extends EncounterParticipant {
