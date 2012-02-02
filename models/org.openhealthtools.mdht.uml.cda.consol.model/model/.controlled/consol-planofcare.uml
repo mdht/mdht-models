@@ -115,7 +115,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWE8RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2NWE8xSVEeGGzu7fmW9pXw" base_Class="_2NWE5xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.39" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NWE8xSVEeGGzu7fmW9pXw" base_Class="_2NWE5xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.39">
     <ruleId>CONF:8544.CONF:10510</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2NWE9hSVEeGGzu7fmW9pXw">
@@ -151,7 +151,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWFDhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2NWFEhSVEeGGzu7fmW9pXw" base_Class="_2NWFBBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.40" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NWFEhSVEeGGzu7fmW9pXw" base_Class="_2NWFBBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.40">
     <ruleId>CONF:8566</ruleId>
     <ruleId>CONF:10511</ruleId>
   </CDA:CDATemplate>
@@ -185,7 +185,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NcLmBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2NcLmhSVEeGGzu7fmW9pXw" base_Class="_2NcLjhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NcLmhSVEeGGzu7fmW9pXw" base_Class="_2NcLjhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.25" assigningAuthorityName="">
     <ruleId>CONF:8583</ruleId>
     <ruleId>CONF:10512</ruleId>
   </CDA:CDATemplate>
@@ -219,7 +219,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NiSNBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2NiSNhSVEeGGzu7fmW9pXw" base_Class="_2NiSKhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.41" assigningAuthorityName="" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NiSNhSVEeGGzu7fmW9pXw" base_Class="_2NiSKhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.41" assigningAuthorityName="">
     <ruleId>CONF:8570</ruleId>
     <ruleId>CONF:10513</ruleId>
   </CDA:CDATemplate>
@@ -257,7 +257,7 @@
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2NoY2xSVEeGGzu7fmW9pXw"/>
-  <CDA:CDATemplate xmi:id="_2NoYzxSVEeGGzu7fmW9pXw" base_Class="_2NoYwxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.25" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NoYzxSVEeGGzu7fmW9pXw" base_Class="_2NoYwxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.25">
     <ruleId>CONF:8574</ruleId>
     <ruleId>CONF:10514</ruleId>
   </CDA:CDATemplate>
@@ -291,7 +291,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NoY7hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2NoY8BSVEeGGzu7fmW9pXw" base_Class="_2NoY5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.43" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_2NoY8BSVEeGGzu7fmW9pXw" base_Class="_2NoY5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.43">
     <ruleId>CONF:8579</ruleId>
     <ruleId>CONF:10515</ruleId>
   </CDA:CDATemplate>
