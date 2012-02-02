@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProductInstance()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.37' constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' constraints.validation.warning='ProductInstancePlayingDeviceCode' classCode='MANU'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' templateId.root='2.16.840.1.113883.10.20.22.4.37' constraints.validation.warning='ProductInstancePlayingDeviceCode'"
  * @generated
  */
 public interface ProductInstance extends ParticipantRole {

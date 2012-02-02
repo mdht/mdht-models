@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' classCode='SPLY' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.codeSystemName='HL7ActMood' classCode='SPLY' moodCode.codeSystem='2.16.840.1.113883.5.1001' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity extends Supply {

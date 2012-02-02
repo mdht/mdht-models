@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectivesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Advance directives' templateId.root='2.16.840.1.113883.10.20.22.2.21.1' constraints.validation.error='AdvanceDirectivesSectionTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionTitle AdvanceDirectivesSectionText AdvanceDirectivesSectionAdvanceDirectiveObservation' code.codeSystemName='LOINC' code.code='42348-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.error='AdvanceDirectivesSectionTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionTitle AdvanceDirectivesSectionText AdvanceDirectivesSectionAdvanceDirectiveObservation' templateId.root='2.16.840.1.113883.10.20.22.2.21.1' code.displayName='Advance directives' code.codeSystem='2.16.840.1.113883.6.1' code.code='42348-3'"
  * @generated
  */
 public interface AdvanceDirectivesSection extends AdvanceDirectivesSectionEntriesOptional {

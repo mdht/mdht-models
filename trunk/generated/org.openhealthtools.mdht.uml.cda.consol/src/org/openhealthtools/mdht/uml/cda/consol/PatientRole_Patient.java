@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Patient;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatientRole_Patient()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation raceCode.codeSystem='2.16.840.1.113883.6.238' raceCode.codeSystemName='Race and Ethnicity - CDC' religiousAffiliationCode.codeSystem='2.16.840.1.113883.5.1076' maritalStatusCode.codeSystemName='MaritalStatus' constraints.validation.error='PatientBirthTimePreciseToYear PatientBirthTime PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode' constraints.validation.warning='PatientBirthTimePreciseToDay PatientLanguageCommunication' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' religiousAffiliationCode.codeSystemName='ReligiousAffiliation' constraints.validation.info='PatientEthnicGroupCode PatientGuardian PatientBirthplace'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation maritalStatusCode.codeSystemName='MaritalStatus' religiousAffiliationCode.codeSystemName='ReligiousAffiliation' raceCode.codeSystemName='Race and Ethnicity - CDC' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' religiousAffiliationCode.codeSystem='2.16.840.1.113883.5.1076' constraints.validation.info='PatientEthnicGroupCode PatientGuardian PatientBirthplace' constraints.validation.error='PatientBirthTimePreciseToYear PatientBirthTime PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode' raceCode.codeSystem='2.16.840.1.113883.6.238' constraints.validation.warning='PatientBirthTimePreciseToDay PatientLanguageCommunication'"
  * @generated
  */
 public interface PatientRole_Patient extends Patient {

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Reference;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservation_Reference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode.codeSystemName='HL7ActRelationshipType' constraints.validation.error='ReferenceExternalDocument' typeCode.codeSystem='2.16.840.1.113883.5.1002' typeCode.code='REFR'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode.codeSystem='2.16.840.1.113883.5.1002' typeCode.code='REFR' constraints.validation.error='ReferenceExternalDocument' typeCode.codeSystemName='HL7ActRelationshipType'"
  * @generated
  */
 public interface AdvanceDirectiveObservation_Reference extends Reference {

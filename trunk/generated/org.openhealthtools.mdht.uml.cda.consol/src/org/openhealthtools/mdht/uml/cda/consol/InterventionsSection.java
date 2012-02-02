@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInterventionsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.21.2.3' constraints.validation.error='InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionText InterventionsSectionTitle' code.codeSystemName='LOINC' code.code='62387-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.21.2.3' constraints.validation.error='InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionText InterventionsSectionTitle' code.codeSystem='2.16.840.1.113883.6.1' code.code='62387-6'"
  * @generated
  */
 public interface InterventionsSection extends Section {
