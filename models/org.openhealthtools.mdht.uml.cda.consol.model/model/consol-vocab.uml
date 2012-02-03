@@ -242,9 +242,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_DMi50jVREeGIw7CntkyPQw" name="M"/>
       <ownedLiteral xmi:id="_DMi50zVREeGIw7CntkyPQw" name="UN"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfoXwKDqEd-dVeaMP0XXQw" name="ReligiousAffiliation"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfhqEKDqEd-dVeaMP0XXQw" name="Religious Affiliation"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRQkkKDqEd-dVeaMP0XXQw" name="MaritalStatus"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRMTIKDqEd-dVeaMP0XXQw" name="Marital Status">
       <ownedLiteral xmi:id="_dRRLoKDqEd-dVeaMP0XXQw" name="A"/>
       <ownedLiteral xmi:id="_dRRLoqDqEd-dVeaMP0XXQw" name="D"/>
@@ -630,16 +628,16 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw"/>
-  <term:ValueSetVersion xmi:id="_1VJ6wEFaEeGFqszUdHc61Q" base_Enumeration="_dfcxkKDqEd-dVeaMP0XXQw"/>
-  <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw"/>
-  <term:ValueSetVersion xmi:id="_3hiSwEFaEeGFqszUdHc61Q" base_Enumeration="_dfoXwKDqEd-dVeaMP0XXQw"/>
-  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA"/>
-  <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_--QGgEFbEeGFqszUdHc61Q" base_Enumeration="_dRQkkKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  <term:ValueSetVersion xmi:id="_1VJ6wEFaEeGFqszUdHc61Q" base_Enumeration="_dfcxkKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA"/>
+  <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_hJA70UUvEeGdQ4KWAmnbhw" identifier="2.16.840.1.113883.11.20.9.32" fullName="DIR LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_hJA70EUvEeGdQ4KWAmnbhw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>

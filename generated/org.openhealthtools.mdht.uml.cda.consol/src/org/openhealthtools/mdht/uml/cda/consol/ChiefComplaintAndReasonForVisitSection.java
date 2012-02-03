@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getChiefComplaintAndReasonForVisitSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.13' constraints.validation.error='ChiefComplaintAndReasonForVisitSectionTemplateId ChiefComplaintAndReasonForVisitSectionCode ChiefComplaintAndReasonForVisitSectionText ChiefComplaintAndReasonForVisitSectionTitle' code.displayName='Chief Complaint and Reason for Visit' code.codeSystem='2.16.840.1.113883.6.1' code.code='46239-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.13' code.displayName='Chief Complaint and Reason for Visit' constraints.validation.error='ChiefComplaintAndReasonForVisitSectionTemplateId ChiefComplaintAndReasonForVisitSectionCode ChiefComplaintAndReasonForVisitSectionText ChiefComplaintAndReasonForVisitSectionTitle' code.codeSystemName='LOINC' code.code='46239-0'"
  * @generated
  */
 public interface ChiefComplaintAndReasonForVisitSection extends Section {

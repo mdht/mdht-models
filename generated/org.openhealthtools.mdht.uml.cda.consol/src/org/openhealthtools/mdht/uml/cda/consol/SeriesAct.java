@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeriesAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.22.4.63' constraints.validation.error='SeriesActTemplateId SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' constraints.validation.info='SeriesActText' code.codeSystem='1.2.840.10008.2.16.4' code.code='113015' constraints.validation.warning='SeriesActEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.22.4.63' constraints.validation.error='SeriesActTemplateId SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' code.codeSystemName='DCM' classCode='ACT' constraints.validation.warning='SeriesActEffectiveTime' code.code='113015' moodCode='EVN' constraints.validation.info='SeriesActText'"
  * @generated
  */
 public interface SeriesAct extends Act {

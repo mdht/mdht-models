@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ServiceEvent;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDocumentationOf_ServiceEvent2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='PCPR' constraints.validation.error='ServiceEvent2ClassCode' constraints.validation.warning='ServiceEvent2EffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ServiceEvent2ClassCode' constraints.validation.warning='ServiceEvent2EffectiveTime' classCode='PCPR'"
  * @generated
  */
 public interface DocumentationOf_ServiceEvent2 extends ServiceEvent {

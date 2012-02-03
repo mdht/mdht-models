@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReferencedFramesObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ROIBND' code.codeSystemName='DCM' constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' templateId.root='2.16.840.1.113883.10.20.6.2.10' code.codeSystem='1.2.840.10008.2.16.4' code.code='121190'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.6.2.10' constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' code.codeSystemName='DCM' classCode='ROIBND' code.code='121190' moodCode='EVN'"
  * @generated
  */
 public interface ReferencedFramesObservation extends Observation {

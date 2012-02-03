@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ServiceEvent;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDocumentationOf_ServiceEvent3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='PCPR' constraints.validation.error='ServiceEvent3EffectiveTimeLow ServiceEvent3EffectiveTimeHigh ServiceEvent3ClassCode ServiceEvent3EffectiveTime' constraints.validation.warning='ServiceEvent3Performer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ServiceEvent3EffectiveTimeLow ServiceEvent3EffectiveTimeHigh ServiceEvent3ClassCode ServiceEvent3EffectiveTime' constraints.validation.warning='ServiceEvent3Performer' classCode='PCPR'"
  * @generated
  */
 public interface DocumentationOf_ServiceEvent3 extends ServiceEvent {

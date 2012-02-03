@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='SNOMEDCT' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationReferenceValue SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.38' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='SocialHistoryObservationOriginalText SocialHistoryObservationReference SocialHistoryObservationCode SocialHistoryObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.38' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationReferenceValue SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SocialHistoryObservationOriginalText SocialHistoryObservationReference SocialHistoryObservationCode SocialHistoryObservationValue' classCode='OBS' moodCode='EVN'"
  * @generated
  */
 public interface SocialHistoryObservation extends Observation {

@@ -299,7 +299,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (not self.maritalStatusCode.oclIsUndefined() and self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "+
+	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in ("+
 "value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))";
 
@@ -317,7 +317,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (not self.maritalStatusCode.oclIsUndefined() and self.maritalStatusCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in (
 	 * value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
@@ -342,7 +342,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.ERROR,
+						(Diagnostic.WARNING,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
 						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_MARITAL_STATUS_CODE,
 						 ConsolPlugin.INSTANCE.getString("PatientMaritalStatusCode"),
@@ -361,7 +361,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.name->isEmpty() or self.name->exists(element | element.isNullFlavorUndefined())) implies (not self.name->isEmpty())";
+	protected static final String VALIDATE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.name->isEmpty() or self.name->exists(element | element.isNullFlavorUndefined())) implies (self.name->size() = 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientName(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Name</em>}' invariant operation.
@@ -377,7 +377,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.name->isEmpty() or self.name->exists(element | element.isNullFlavorUndefined())) implies (not self.name->isEmpty())
+	 * (self.name->isEmpty() or self.name->exists(element | element.isNullFlavorUndefined())) implies (self.name->size() = 1)
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -419,9 +419,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (not self.raceCode.oclIsUndefined() and self.raceCode.oclIsKindOf(datatypes::CE) and "+
+	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
+"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientRaceCode(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Race Code</em>}' invariant operation.
@@ -437,9 +437,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (not self.raceCode.oclIsUndefined() and self.raceCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -462,7 +462,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.ERROR,
+						(Diagnostic.INFO,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
 						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RACE_CODE,
 						 ConsolPlugin.INSTANCE.getString("PatientRaceCode"),
@@ -481,9 +481,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (not self.religiousAffiliationCode.oclIsUndefined() and self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "+
+	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))";
+"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReligiousAffiliationCode(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Religious Affiliation Code</em>}' invariant operation.
@@ -499,9 +499,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (not self.religiousAffiliationCode.oclIsUndefined() and self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
 	 * @param patientRole_Patient The receiving '<em><b>Patient Role Patient</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -524,7 +524,7 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.ERROR,
+						(Diagnostic.INFO,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
 						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RELIGIOUS_AFFILIATION_CODE,
 						 ConsolPlugin.INSTANCE.getString("PatientReligiousAffiliationCode"),

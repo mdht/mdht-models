@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralHeaderConstraints_LegalAuthenticator()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation signatureCode.code='s' constraints.validation.error='LegalAuthenticatorTime LegalAuthenticatorSignatureCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='LegalAuthenticatorTime LegalAuthenticatorSignatureCode' signatureCode.code='s'"
  * @generated
  */
 public interface GeneralHeaderConstraints_LegalAuthenticator extends LegalAuthenticator {
