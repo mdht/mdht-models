@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivitySubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.codeSystemName='HL7ActClass' classCode.displayName='' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.code='' templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' classCode.displayName='' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' classCode.code=''"
  * @generated
  */
 public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdministration {

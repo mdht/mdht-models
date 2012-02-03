@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.codeSystemName='HL7ActClass' moodCode.codeSystemName='HL7ActMood' moodCode.displayName='Event' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.code='' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.code='EVN' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' templateId.root='2.16.840.1.113883.10.20.22.4.1' statusCode.code='completed' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' moodCode.code='EVN' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface ResultOrganizer extends Organizer {

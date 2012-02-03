@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedProcedureSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='PlannedProcedureSectionPlanOfCareActivityProcedure' constraints.validation.error='PlannedProcedureSectionTemplateId PlannedProcedureSectionCode PlannedProcedureSectionText PlannedProcedureSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.30' code.displayName='Planned Procedure' code.codeSystem='2.16.840.1.113883.6.1' code.code='59772-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Planned Procedure' templateId.root='2.16.840.1.113883.10.20.22.2.30' constraints.validation.error='PlannedProcedureSectionTemplateId PlannedProcedureSectionCode PlannedProcedureSectionText PlannedProcedureSectionTitle' code.codeSystemName='LOINC' code.code='59772-4' constraints.validation.info='PlannedProcedureSectionPlanOfCareActivityProcedure'"
  * @generated
  */
 public interface PlannedProcedureSection extends Section {

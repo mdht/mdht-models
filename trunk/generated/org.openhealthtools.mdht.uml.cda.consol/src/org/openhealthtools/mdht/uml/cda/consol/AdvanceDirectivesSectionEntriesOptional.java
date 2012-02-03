@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectivesSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation' constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.21' code.displayName='Advance Directives' code.codeSystem='2.16.840.1.113883.6.1' code.code='42348-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Advance Directives' templateId.root='2.16.840.1.113883.10.20.22.2.21' constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText' code.codeSystemName='LOINC' code.code='42348-3' constraints.validation.info='AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation'"
  * @generated
  */
 public interface AdvanceDirectivesSectionEntriesOptional extends Section {

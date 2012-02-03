@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Guardian;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatient_Guardian()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='RoleCode' constraints.validation.error='GuardianGuardianPerson' constraints.validation.info='GuardianTelecom' code.codeSystem='2.16.840.1.113883.5.111' constraints.validation.warning='GuardianAddr GuardianCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.111' constraints.validation.error='GuardianGuardianPerson' code.codeSystemName='RoleCode' constraints.validation.warning='GuardianAddr GuardianCode' constraints.validation.info='GuardianTelecom'"
  * @generated
  */
 public interface Patient_Guardian extends Guardian {

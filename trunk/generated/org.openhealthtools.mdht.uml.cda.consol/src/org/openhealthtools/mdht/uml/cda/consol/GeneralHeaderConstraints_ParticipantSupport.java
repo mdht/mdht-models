@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Participant1;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralHeaderConstraints_ParticipantSupport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ParticipantSupportTime' constraints.validation.error='ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization' constraints.validation.info='ParticipantSupportTime'"
  * @generated
  */
 public interface GeneralHeaderConstraints_ParticipantSupport extends Participant1 {

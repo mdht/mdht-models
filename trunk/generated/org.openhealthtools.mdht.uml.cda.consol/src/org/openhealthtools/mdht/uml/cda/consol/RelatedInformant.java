@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.RelatedEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getRelatedInformant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='RelatedInformantCode' constraints.validation.warning='RelatedInformantAddr'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='RelatedInformantAddr' constraints.validation.info='RelatedInformantCode'"
  * @generated
  */
 public interface RelatedInformant extends RelatedEntity {

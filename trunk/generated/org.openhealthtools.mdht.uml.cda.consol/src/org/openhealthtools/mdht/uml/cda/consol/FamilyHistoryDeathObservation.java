@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryDeathObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' value.codeSystemName='SNOMEDCT' classCode='OBS' code.codeSystemName='HL7ActCode' value.code='419099009' constraints.validation.error='FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationClassCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationCode FamilyHistoryDeathObservationStatusCode FamilyHistoryDeathObservationValue' code.displayName='Assertion' code.code='ASSERTION' value.displayName='Dead' value.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.47' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.47' code.displayName='Assertion' constraints.validation.error='FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationClassCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationCode FamilyHistoryDeathObservationStatusCode FamilyHistoryDeathObservationValue' code.code='ASSERTION' value.displayName='Dead' statusCode.code='completed' value.code='419099009' code.codeSystemName='HL7ActCode' classCode='OBS' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface FamilyHistoryDeathObservation extends Observation {

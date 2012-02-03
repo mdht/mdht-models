@@ -182,26 +182,26 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           </ownedAttribute>
           <ownedAttribute xmi:id="_7Otf4SylEeGMXrZ0DiQwGg" name="maritalStatusCode" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CWCHAEEiEeGdmoWy_aLP0Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CWCHAUEiEeGdmoWy_aLP0Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UuyLcE4REeGug8Lotu3QeQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UuyLcU4REeGug8Lotu3QeQ"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9DbJwEreEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7OuG8SylEeGMXrZ0DiQwGg" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uwhhkDVQEeGIw7CntkyPQw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uwhhkTVQEeGIw7CntkyPQw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mZLwoE4REeGug8Lotu3QeQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mZLwoU4REeGug8Lotu3QeQ" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QcivsEAMEd6wZe6nFLrjsw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7OuuACylEeGMXrZ0DiQwGg" name="raceCode" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C4mokEEiEeGdmoWy_aLP0Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C4mokUEiEeGdmoWy_aLP0Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dZl_cE4REeGug8Lotu3QeQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dZl_cU4REeGug8Lotu3QeQ"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_INfOcErfEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7OvVECylEeGMXrZ0DiQwGg" name="religiousAffiliationCode" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_De5zkEEiEeGdmoWy_aLP0Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_De5zkUEiEeGdmoWy_aLP0Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gJPckE4REeGug8Lotu3QeQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gJPckU4REeGug8Lotu3QeQ"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__nV4AEreEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_2jzBMCyrEeGMXrZ0DiQwGg" name="guardian" type="_-vjwcCylEeGMXrZ0DiQwGg" association="_2jzoQCyrEeGMXrZ0DiQwGg">
@@ -2164,14 +2164,14 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_jCk3QDVREeGIw7CntkyPQw" base_Constraint="_dqXccDVREeGIw7CntkyPQw"/>
   <CDA:ConstraintValidation xmi:id="_nYyCgDVREeGIw7CntkyPQw" severity="WARNING" base_Constraint="_kIBcYDVREeGIw7CntkyPQw"/>
-  <CDA:ValueSetConstraint xmi:id="_IliiUDVSEeGIw7CntkyPQw" base_Property="_7OvVECylEeGMXrZ0DiQwGg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dfiRIKDqEd-dVeaMP0XXQw"/>
+  <CDA:ValueSetConstraint xmi:id="_IliiUDVSEeGIw7CntkyPQw" base_Property="_7OvVECylEeGMXrZ0DiQwGg" severity="INFO">
+    <reference href="../consol-vocab.uml#_2aTk8EFaEeGFqszUdHc61Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_2Odn4DVSEeGIw7CntkyPQw" base_Property="_7Otf4SylEeGMXrZ0DiQwGg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dRMTIaDqEd-dVeaMP0XXQw"/>
+  <CDA:ValueSetConstraint xmi:id="_2Odn4DVSEeGIw7CntkyPQw" base_Property="_7Otf4SylEeGMXrZ0DiQwGg" severity="WARNING">
+    <reference href="../consol-vocab.uml#_9lb5cEFbEeGFqszUdHc61Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_4sRHEDVSEeGIw7CntkyPQw" base_Property="_7OuuACylEeGMXrZ0DiQwGg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dfTnoaDqEd-dVeaMP0XXQw"/>
+  <CDA:ValueSetConstraint xmi:id="_4sRHEDVSEeGIw7CntkyPQw" base_Property="_7OuuACylEeGMXrZ0DiQwGg" severity="INFO">
+    <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_trWscDVUEeGIw7CntkyPQw" severity="WARNING" base_Constraint="_oGeuoDVUEeGIw7CntkyPQw">
     <ruleId>CONF:9996</ruleId>

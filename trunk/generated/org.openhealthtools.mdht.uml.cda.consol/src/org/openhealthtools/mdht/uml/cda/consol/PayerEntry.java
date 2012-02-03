@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPayerEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.error='PayerEntryPayerEntityIsRequired PayerEntryCoveredPartyIsRequired PayerEntryEntryRelationshipREFR PayerEntryClassCode PayerEntryMoodCode PayerEntryId PayerEntryStatusCode PayerEntryPayerEntity PayerEntryCoveredParty' constraints.validation.info='PayerEntryCoveredPartyTime PayerEntrySubscriberIsAllowed PayerEntrySubscriberTime PayerEntrySubscriber' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' constraints.validation.error='PayerEntryPayerEntityIsRequired PayerEntryCoveredPartyIsRequired PayerEntryEntryRelationshipREFR PayerEntryClassCode PayerEntryMoodCode PayerEntryId PayerEntryStatusCode PayerEntryPayerEntity PayerEntryCoveredParty' classCode='ACT' constraints.validation.info='PayerEntryCoveredPartyTime PayerEntrySubscriberIsAllowed PayerEntrySubscriberTime PayerEntrySubscriber' moodCode='EVN'"
  * @generated
  */
 public interface PayerEntry extends Act {
