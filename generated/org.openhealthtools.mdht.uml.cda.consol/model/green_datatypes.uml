@@ -782,7 +782,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Lk-KRyVEeGBz7RHLRKZDw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-Lk-KhyVEeGBz7RHLRKZDw" name="qualifier" type="_-KupkRyVEeGBz7RHLRKZDw" aggregation="composite" association="_-LllMRyVEeGBz7RHLRKZDw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LllMByVEeGBz7RHLRKZDw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDM7cCtjEeGNidxV7Y-XKQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jDM7cStjEeGNidxV7Y-XKQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-LllMRyVEeGBz7RHLRKZDw" memberEnd="_-LllMhyVEeGBz7RHLRKZDw _-Lk-KhyVEeGBz7RHLRKZDw">
@@ -854,6 +855,49 @@
       <ownedLiteral xmi:id="_-LqdshyVEeGBz7RHLRKZDw" name="N"/>
       <ownedLiteral xmi:id="_-LqdsxyVEeGBz7RHLRKZDw" name="R"/>
       <ownedLiteral xmi:id="_-LqdtByVEeGBz7RHLRKZDw" name="V"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZSHjQCtgEeGNidxV7Y-XKQ" name="Ratio">
+      <ownedComment xmi:id="_8Hu3QCtgEeGNidxV7Y-XKQ">
+        <body>A quantity constructed as the quotient of a numerator quantity divided by a denominator quantity. Common factors in the numerator and denominator are not automatically cancelled out. The Ratio data type supports titers (e.g., &quot;1:128&quot;) and other quantities produced by laboratories that truly represent ratios. Ratios are not simply &quot;structured numerics&quot;, particularly blood pressure measurements (e.g. &quot;120/60&quot;) are not ratios.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_bJ3IACtgEeGNidxV7Y-XKQ" name="numerator" type="_-K8E9RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XugMsCtmEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XugMsStmEeGNidxV7Y-XKQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_dipkUCtgEeGNidxV7Y-XKQ" name="denominator" type="_-K8E9RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YJk_ICtmEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YJlmMCtmEeGNidxV7Y-XKQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YsrB8CtiEeGNidxV7Y-XKQ" name="IntegerNumber">
+      <ownedAttribute xmi:id="_acR-YCtiEeGNidxV7Y-XKQ" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g49t8CtiEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4-VACtiEeGNidxV7Y-XKQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fsWJ0CtiEeGNidxV7Y-XKQ" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fsWJ0StiEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fsWJ0itiEeGNidxV7Y-XKQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N2v54CtlEeGNidxV7Y-XKQ" name="CodedWithEnumeration">
+      <ownedComment xmi:id="_CriJMCtmEeGNidxV7Y-XKQ">
+        <body>This datatype should be restricted to require a specified enumeration for 'code'.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_WyjXQCtlEeGNidxV7Y-XKQ" name="code">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c4-i8CtlEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c4-i8StlEeGNidxV7Y-XKQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X24iECtlEeGNidxV7Y-XKQ" name="displayName">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_daIvQCtlEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_daJWUCtlEeGNidxV7Y-XKQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ixyJYCtlEeGNidxV7Y-XKQ" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixyJYStlEeGNidxV7Y-XKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixyJYitlEeGNidxV7Y-XKQ"/>
+      </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:id="_-JUUUByVEeGBz7RHLRKZDw">
       <eAnnotations xmi:id="_-JUUURyVEeGBz7RHLRKZDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -942,4 +986,9 @@
   <xsd:Restriction xmi:id="_-Lk-JhyVEeGBz7RHLRKZDw" base_Generalization="_-Lk-JRyVEeGBz7RHLRKZDw"/>
   <xsd:Element xmi:id="_-Lk-KxyVEeGBz7RHLRKZDw" base_Property="_-Lk-KhyVEeGBz7RHLRKZDw" prohibited="true"/>
   <XSDGeneration:SchemaGen xmi:id="_iLwHsB0NEeGzVb7D37zbYQ" base_Package="_-IoX0ByVEeGBz7RHLRKZDw" elementNameMapping="omitElement"/>
+  <xsd:Attribute xmi:id="_e3I4wCtlEeGNidxV7Y-XKQ" base_Property="_WyjXQCtlEeGNidxV7Y-XKQ"/>
+  <xsd:Attribute xmi:id="_ffNlYCtlEeGNidxV7Y-XKQ" base_Property="_X24iECtlEeGNidxV7Y-XKQ"/>
+  <xsd:Attribute xmi:id="_kD21QCtlEeGNidxV7Y-XKQ" base_Property="_ixyJYCtlEeGNidxV7Y-XKQ"/>
+  <xsd:Attribute xmi:id="_l5gIQCtlEeGNidxV7Y-XKQ" base_Property="_acR-YCtiEeGNidxV7Y-XKQ"/>
+  <xsd:Attribute xmi:id="_mdPugCtlEeGNidxV7Y-XKQ" base_Property="_fsWJ0CtiEeGNidxV7Y-XKQ"/>
 </xmi:XMI>
