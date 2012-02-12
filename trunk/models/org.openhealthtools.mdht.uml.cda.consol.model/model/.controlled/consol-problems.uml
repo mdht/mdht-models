@@ -390,7 +390,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Age Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::AgeObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | not er.observation.oclIsUndefined() and er.observation.oclIsKindOf(consol::AgeObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_5Ha7ARUyEeGbmN_W114JUw">

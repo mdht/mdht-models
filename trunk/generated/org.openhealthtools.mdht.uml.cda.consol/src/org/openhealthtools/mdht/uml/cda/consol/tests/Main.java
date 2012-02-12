@@ -13,8 +13,10 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 
 import java.io.FileInputStream;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.util.CDADiagnostic;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 
@@ -30,6 +32,7 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("=========================");
 		testDS("DS.sample.l3.conformances");
+		validateDS("DischargeSummary_sample");
 		System.out.println("=========================");
 	}
 
@@ -51,4 +54,22 @@ public class Main {
 		}
 	}
 
+	public static void validateDS(String fileName) {
+		StringBuffer sb = new StringBuffer();
+		String path = "samples/";
+		ConsolPackage.eINSTANCE.eClass();
+		ValidationResult result = new ValidationResult();
+		try {
+			ClinicalDocument clinicalDocument = CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
+			for (Diagnostic dq : result.getErrorDiagnostics()) {
+				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
+				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|" +
+						cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
+				sb.append("\n");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(sb);
+	}
 }
