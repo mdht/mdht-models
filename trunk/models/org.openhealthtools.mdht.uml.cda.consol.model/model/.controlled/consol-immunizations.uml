@@ -52,7 +52,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | not er.act.oclIsUndefined() and er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_bnbB0EX7EeG6e5lG0YsSyQ" name="drugVehicleTypeCode" constrainedElement="_aXWsMCQ9EeG4DdjGPr5_Vg">
@@ -148,7 +148,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JEY5wRVOEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_o-v9kBVOEeGbmN_W114JUw" name="consumable" type="_daTqABVOEeGbmN_W114JUw" association="_o-v9khVOEeGbmN_W114JUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-v9kRVOEeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YCsK8FOdEeG3yrl4EsoEVQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YCsK8VOdEeG3yrl4EsoEVQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1GG0sBqjEeGo461UQq-B1g" name="negationInd" visibility="private">
       <ownedComment xmi:id="_G7aCUBqkEeGo461UQq-B1g">
