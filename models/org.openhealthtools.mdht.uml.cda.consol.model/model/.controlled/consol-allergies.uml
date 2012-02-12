@@ -483,7 +483,7 @@ historical purposes.&#xD;
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FLAURSVEeGGzu7fmW9pXw" value="EVN"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FLAUxSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2FLAUxSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu5xSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">

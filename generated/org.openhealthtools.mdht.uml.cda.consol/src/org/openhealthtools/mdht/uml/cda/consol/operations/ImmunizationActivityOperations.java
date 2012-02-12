@@ -218,7 +218,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)";
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er : cda::EntryRelationship | not er.act.oclIsUndefined() and er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationActivityInstructionInversion(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Instruction Inversion</em>}' invariant operation.
@@ -234,7 +234,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)
+	 * self.entryRelationship->select(er : cda::EntryRelationship | not er.act.oclIsUndefined() and er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)
 	 * @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
