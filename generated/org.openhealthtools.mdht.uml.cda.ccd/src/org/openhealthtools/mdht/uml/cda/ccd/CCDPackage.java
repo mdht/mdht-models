@@ -9238,7 +9238,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__REALM_CODE = MEDICATIONS_SECTION__REALM_CODE;
+	int IMMUNIZATIONS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -9247,7 +9247,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__TYPE_ID = MEDICATIONS_SECTION__TYPE_ID;
+	int IMMUNIZATIONS_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -9256,7 +9256,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__TEMPLATE_ID = MEDICATIONS_SECTION__TEMPLATE_ID;
+	int IMMUNIZATIONS_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -9265,7 +9265,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__ID = MEDICATIONS_SECTION__ID;
+	int IMMUNIZATIONS_SECTION__ID = CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -9274,7 +9274,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__CODE = MEDICATIONS_SECTION__CODE;
+	int IMMUNIZATIONS_SECTION__CODE = CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -9283,7 +9283,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__TITLE = MEDICATIONS_SECTION__TITLE;
+	int IMMUNIZATIONS_SECTION__TITLE = CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -9292,7 +9292,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__TEXT = MEDICATIONS_SECTION__TEXT;
+	int IMMUNIZATIONS_SECTION__TEXT = CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -9301,7 +9301,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__CONFIDENTIALITY_CODE = MEDICATIONS_SECTION__CONFIDENTIALITY_CODE;
+	int IMMUNIZATIONS_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9310,7 +9310,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__LANGUAGE_CODE = MEDICATIONS_SECTION__LANGUAGE_CODE;
+	int IMMUNIZATIONS_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9319,7 +9319,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__SUBJECT = MEDICATIONS_SECTION__SUBJECT;
+	int IMMUNIZATIONS_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9328,7 +9328,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__AUTHOR = MEDICATIONS_SECTION__AUTHOR;
+	int IMMUNIZATIONS_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9337,7 +9337,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__INFORMANT = MEDICATIONS_SECTION__INFORMANT;
+	int IMMUNIZATIONS_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -9346,7 +9346,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__ENTRY = MEDICATIONS_SECTION__ENTRY;
+	int IMMUNIZATIONS_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -9355,7 +9355,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__COMPONENT = MEDICATIONS_SECTION__COMPONENT;
+	int IMMUNIZATIONS_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -9364,7 +9364,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__SECTION_ID = MEDICATIONS_SECTION__SECTION_ID;
+	int IMMUNIZATIONS_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9373,7 +9373,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__NULL_FLAVOR = MEDICATIONS_SECTION__NULL_FLAVOR;
+	int IMMUNIZATIONS_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9382,7 +9382,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__CLASS_CODE = MEDICATIONS_SECTION__CLASS_CODE;
+	int IMMUNIZATIONS_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9391,7 +9391,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION__MOOD_CODE = MEDICATIONS_SECTION__MOOD_CODE;
+	int IMMUNIZATIONS_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Immunizations Section</em>' class.
@@ -9400,7 +9400,7 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMUNIZATIONS_SECTION_FEATURE_COUNT = MEDICATIONS_SECTION_FEATURE_COUNT + 0;
+	int IMMUNIZATIONS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.

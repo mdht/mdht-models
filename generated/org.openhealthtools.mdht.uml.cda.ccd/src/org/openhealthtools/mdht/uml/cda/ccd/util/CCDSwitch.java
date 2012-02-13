@@ -933,9 +933,6 @@ public class CCDSwitch<T> {
 				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
 				if (result == null) {
-					result = caseMedicationsSection(immunizationsSection);
-				}
-				if (result == null) {
 					result = caseSection(immunizationsSection);
 				}
 				if (result == null) {

@@ -14,8 +14,25 @@
         <body>Contains a case-insensitive language-insensitive string containing 'immunization'.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_fXtO8FUsEeCUesz7J0dFlQ">
-      <general xmi:type="uml:Class" href="ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+    <ownedRule xmi:id="_ItcjAFaBEeGCdLgBm6VHOQ" name="hasMedicationOrSupplyActivity" constrainedElement="_CinbMHDPEd6eItyqb1FoWg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dvKpUFaBEeGCdLgBm6VHOQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
+        <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_hth8UFaBEeGCdLgBm6VHOQ" name="absenceOfMedications" constrainedElement="_CinbMHDPEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_rVswcFaBEeGCdLgBm6VHOQ">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_nfO1MFaBEeGCdLgBm6VHOQ">
+        <language>Analysis</language>
+        <body>The absence of known medications is explicitly asserted.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_4l1mQFaAEeGCdLgBm6VHOQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_ZeXjEcikEd6mWrHPmrIIfQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -28,6 +45,16 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nyqpYBtJEd-vGNAsDUJvgw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nyrQcBtJEd-vGNAsDUJvgw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1GBQcFaAEeGCdLgBm6VHOQ" name="medicationActivity" association="_1GBQclaAEeGCdLgBm6VHOQ">
+      <type xmi:type="uml:Class" href="ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBx8QFaBEeGCdLgBm6VHOQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBx8QVaBEeGCdLgBm6VHOQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_20vcEFaAEeGCdLgBm6VHOQ" name="supplyActivity" association="_20vcElaAEeGCdLgBm6VHOQ">
+      <type xmi:type="uml:Class" href="ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cl_ckFaBEeGCdLgBm6VHOQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cl_ckVaBEeGCdLgBm6VHOQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dqEZAHo4Ed6UPbrR4QTFoQ" base_Class="_CinbMHDPEd6eItyqb1FoWg" templateId="2.16.840.1.113883.10.20.1.6" assigningAuthorityName="CCD"/>
@@ -48,4 +75,17 @@
   <CDA:ConstraintValidation xmi:id="_DW_N4Hi8Ed-6wJLq2P_7OA" severity="WARNING">
     <ruleId>CONF-376</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_1GBQclaAEeGCdLgBm6VHOQ" memberEnd="_1GBQcFaAEeGCdLgBm6VHOQ _1GBQc1aAEeGCdLgBm6VHOQ">
+    <ownedEnd xmi:id="_1GBQc1aAEeGCdLgBm6VHOQ" type="_CinbMHDPEd6eItyqb1FoWg" association="_1GBQclaAEeGCdLgBm6VHOQ"/>
+  </uml:Association>
+  <uml:Association xmi:id="_20vcElaAEeGCdLgBm6VHOQ" memberEnd="_20vcEFaAEeGCdLgBm6VHOQ _20vcE1aAEeGCdLgBm6VHOQ">
+    <ownedEnd xmi:id="_20vcE1aAEeGCdLgBm6VHOQ" type="_CinbMHDPEd6eItyqb1FoWg" association="_20vcElaAEeGCdLgBm6VHOQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_9JwdYFaAEeGCdLgBm6VHOQ" severity="WARNING" base_Association="_1GBQclaAEeGCdLgBm6VHOQ">
+    <ruleId>CONF-298</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_94P7EFaAEeGCdLgBm6VHOQ" severity="WARNING" base_Association="_20vcElaAEeGCdLgBm6VHOQ">
+    <ruleId>CONF-298</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_bmhh0FaBEeGCdLgBm6VHOQ" severity="WARNING" base_Constraint="_ItcjAFaBEeGCdLgBm6VHOQ"/>
 </xmi:XMI>

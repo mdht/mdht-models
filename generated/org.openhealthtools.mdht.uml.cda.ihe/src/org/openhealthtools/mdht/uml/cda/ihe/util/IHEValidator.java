@@ -1296,6 +1296,14 @@ public class IHEValidator extends EObjectValidator {
 	public static final int COVERAGE_ENTRY__COVERAGE_ENTRY_PAYER_ENTRY = 156;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Policy Activity Template Id' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__POLICY_ACTIVITY_TEMPLATE_ID = 157;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History Of Past Illness Section Template Id' of 'History Of Past Illness Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2784,14 +2792,6 @@ public class IHEValidator extends EObjectValidator {
 	public static final int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE__PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE = 343;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Policy Activity Template Id' of 'Payer Entry'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PAYER_ENTRY__POLICY_ACTIVITY_TEMPLATE_ID = 157;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHR Extract Template Id' of 'PHR Extract'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3902,31 +3902,15 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionHasMedicationOrSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionTemplateId(
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionCode(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3935,6 +3919,14 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionText(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionMedicationActivity(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9243,6 +9235,106 @@ public class IHEValidator extends EObjectValidator {
 	public boolean validateCoverageEntry_validateCoverageEntryPayerEntry(CoverageEntry coverageEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return coverageEntry.validateCoverageEntryPayerEntry(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(payerEntry, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(payerEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityPayerEntityIsRequired(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredPartyIsRequired(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredPartyTime(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriberIsAllowed(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriberTime(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityEntryRelationshipREFR(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityEntryRelationshipTarget(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePolicyActivityTemplateId(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityClassCode(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityMoodCode(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityId(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityStatusCode(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityPayerEntity(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredParty(
+				payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriber(
+				payerEntry, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePolicyActivityTemplateId constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePolicyActivityTemplateId(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePolicyActivityTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -15065,106 +15157,6 @@ public class IHEValidator extends EObjectValidator {
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedureEntryPlanOfCareActivityProcedure.validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
 			diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePayerEntry(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(payerEntry, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(payerEntry, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityPayerEntityIsRequired(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredPartyIsRequired(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredPartyTime(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriberIsAllowed(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriberTime(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityEntryRelationshipREFR(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityEntryRelationshipTarget(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePayerEntry_validatePolicyActivityTemplateId(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityClassCode(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityMoodCode(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityId(payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityStatusCode(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityPayerEntity(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityCoveredParty(
-				payerEntry, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriber(
-				payerEntry, diagnostics, context);
-		}
-		return result;
-	}
-
-	/**
-	 * Validates the validatePolicyActivityTemplateId constraint of '<em>Payer Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePayerEntry_validatePolicyActivityTemplateId(PayerEntry payerEntry,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return payerEntry.validatePolicyActivityTemplateId(diagnostics, context);
 	}
 
 	/**

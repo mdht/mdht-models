@@ -13,10 +13,14 @@ package org.openhealthtools.mdht.uml.cda.ccd.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ImmunizationsSectionOperations;
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -28,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements ImmunizationsSection {
+public class ImmunizationsSectionImpl extends SectionImpl implements ImmunizationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -46,6 +50,35 @@ public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements 
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.IMMUNIZATIONS_SECTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionHasMedicationOrSupplyActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -71,9 +104,9 @@ public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateMedicationsSectionTemplateId(this, diagnostics, context);
+	public boolean validateImmunizationsSectionMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -81,9 +114,8 @@ public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateMedicationsSectionCode(this, diagnostics, context);
+	public boolean validateImmunizationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +123,24 @@ public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public EList<MedicationActivity> getMedicationActivities() {
+		return ImmunizationsSectionOperations.getMedicationActivities(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SupplyActivity> getSupplyActivities() {
+		return ImmunizationsSectionOperations.getSupplyActivities(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ImmunizationsSection init() {
 		CDAUtil.init(this);
 		return this;
