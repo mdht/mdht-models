@@ -3928,6 +3928,17 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			familyHistoryEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryHasSDTCid", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			familyHistoryEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryHasFamilyName", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -4882,9 +4893,11 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			familyHistoryEClass,
 			source,
 			new String[] {
+					"templateId.root",
+					"2.16.840.1.113883.3.88.11.83.18",
 					"constraints.validation.error",
-					"FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition",
-					"templateId.root", "2.16.840.1.113883.3.88.11.83.18", "constraints.validation.warning",
+					"FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasSDTCid FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition",
+					"constraints.validation.warning",
 					"FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation" });
 		addAnnotation(socialHistorySectionEClass, source, new String[] {
 				"constraints.validation.info", "HITSPSocialHistorySectionSocialHistory",

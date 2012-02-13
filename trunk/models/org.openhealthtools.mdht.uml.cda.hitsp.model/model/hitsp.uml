@@ -1114,7 +1114,9 @@ resolved</body>
         <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_7wLKkMkCEeChgrgmBsw26A"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_I3dK0cm8EeCDOYZyQPaRHg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>One RelatedSubject/subject/sdtc:id element SHALL be present.</body>
+          <body>self.subject.relatedSubject.subject.sDTCId->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_TGqJwMm8EeCDOYZyQPaRHg" name="hasFamilyName" constrainedElement="_I3dK0Mm8EeCDOYZyQPaRHg">

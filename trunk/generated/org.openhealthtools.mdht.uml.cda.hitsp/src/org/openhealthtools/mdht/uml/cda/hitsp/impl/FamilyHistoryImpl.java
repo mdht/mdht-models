@@ -62,6 +62,15 @@ public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryHasSDTCid(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOperations.validateFamilyHistoryHasSDTCid(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryHasFamilyName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryHasFamilyName(this, diagnostics, context);
 	}

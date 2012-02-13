@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getFamilyHistory()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition' templateId.root='2.16.840.1.113883.3.88.11.83.18' constraints.validation.warning='FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.18' constraints.validation.error='FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasSDTCid FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition' constraints.validation.warning='FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation'"
  * @generated
  */
 public interface FamilyHistory extends FamilyHistoryOrganizer {
@@ -36,6 +36,19 @@ public interface FamilyHistory extends FamilyHistoryOrganizer {
 	 * @generated
 	 */
 	boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.subject.relatedSubject.subject.sDTCId->size() = 1
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject.sDTCId->size() = 1'"
+	 * @generated
+	 */
+	boolean validateFamilyHistoryHasSDTCid(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
