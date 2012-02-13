@@ -245,6 +245,23 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-dOYwCqAEeGiFpKeZIy4Pg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-dOYwSqAEeGiFpKeZIy4Pg" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_aAJAkFGkEeG3H6xvuD7Z0Q" name="code" visibility="private" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aAJAklGkEeG3H6xvuD7Z0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAJAk1GkEeG3H6xvuD7Z0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAJAlFGkEeG3H6xvuD7Z0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="#_zaJvUCUOEeGiOPpZVnfEJA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aAJAllGkEeG3H6xvuD7Z0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAJAl1GkEeG3H6xvuD7Z0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAJAmFGkEeG3H6xvuD7Z0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="#_zaK9cCUOEeGiOPpZVnfEJA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:ClassValidation xmi:id="_fQfngCUQEeGiOPpZVnfEJA" base_Class="_TytVkCUQEeGiOPpZVnfEJA">
     <ruleId>CONF:10397</ruleId>
@@ -386,4 +403,14 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <CDA:PropertyValidation xmi:id="_9QG1kCtVEeGlWN0TVxk9LA" base_Property="_7Ap7cCtVEeGlWN0TVxk9LA">
     <ruleId>CONF:7978</ruleId>
   </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_aAJAkVGkEeG3H6xvuD7Z0Q" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_aAJAkFGkEeG3H6xvuD7Z0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7823</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_aAJAlVGkEeG3H6xvuD7Z0Q" base_Property="_aAJAklGkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:7825</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_aAJAmVGkEeG3H6xvuD7Z0Q" base_Property="_aAJAllGkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:7824</ruleId>
+  </CDA:TextValue>
 </xmi:XMI>
