@@ -35,6 +35,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyHistoryOrganizerOpe
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory#validateFamilyHistoryRelatedSubjectCodeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Related Subject Code Value Set</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory#validateFamilyHistoryHasSDTCid(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has SDT Cid</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory#validateFamilyHistoryHasFamilyName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has Family Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory#validateFamilyHistoryHasGenderCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has Gender Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory#validateFamilyHistoryFamilyMemberCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Family Member Condition</em>}</li>
@@ -106,6 +107,63 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_RELATED_SUBJECT_CODE_VALUE_SET,
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryRelatedSubjectCodeValueSet"),
 					new Object[] { familyHistory }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateFamilyHistoryHasSDTCid(FamilyHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has SDT Cid</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFamilyHistoryHasSDTCid(FamilyHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.subject.sDTCId->size() = 1";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFamilyHistoryHasSDTCid(FamilyHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has SDT Cid</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFamilyHistoryHasSDTCid(FamilyHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.subject.relatedSubject.subject.sDTCId->size() = 1
+	 * @param familyHistory The receiving '<em><b>Family History</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateFamilyHistoryHasSDTCid(FamilyHistory familyHistory, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
+			try {
+				VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistory)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_HAS_SDT_CID,
+					HITSPPlugin.INSTANCE.getString("FamilyHistoryHasSDTCid"), new Object[] { familyHistory }));
 			}
 			return false;
 		}
@@ -422,7 +480,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 		if (GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.FAMILY_HISTORY, HITSPPackage.Literals.FAMILY_HISTORY.getEAllOperations().get(80));
+				HITSPPackage.Literals.FAMILY_HISTORY, HITSPPackage.Literals.FAMILY_HISTORY.getEAllOperations().get(81));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
