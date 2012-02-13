@@ -97,7 +97,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +108,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedureInversionInd(this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedureInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +119,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationMedicationActivityInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationMedicationActivityInversionInd(this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationMedicationActivityInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -218,7 +221,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -264,7 +268,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	public ReactionObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ReactionObservationImpl

@@ -50,7 +50,7 @@ public class UnstructuredDocument_AuthorImpl extends AuthorImpl implements Unstr
 	 * @generated
 	 */
 	public UnstructuredDocument_Author init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // UnstructuredDocument_AuthorImpl

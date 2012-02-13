@@ -58,9 +58,9 @@ public class ServiceEvent_PrimaryPerformerOperations extends ParticipationOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.functionCode.oclIsUndefined() or self.functionCode.isNullFlavorUndefined()) implies (self.functionCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.functionCode.oclIsUndefined() or self.functionCode.isNullFlavorUndefined()) implies (self.functionCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrimaryPerformerFunctionCode(ServiceEvent_PrimaryPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Primary Performer Function Code</em>}' invariant operation.
@@ -93,20 +93,18 @@ public class ServiceEvent_PrimaryPerformerOperations extends ParticipationOperat
 			helper.setContext(ConsolPackage.Literals.SERVICE_EVENT_PRIMARY_PERFORMER);
 			try {
 				VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceEvent_PrimaryPerformer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceEvent_PrimaryPerformer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_FUNCTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrimaryPerformerFunctionCode"),
-						 new Object [] { serviceEvent_PrimaryPerformer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_FUNCTION_CODE,
+					ConsolPlugin.INSTANCE.getString("PrimaryPerformerFunctionCode"),
+					new Object[] { serviceEvent_PrimaryPerformer }));
 			}
 			return false;
 		}
@@ -151,20 +149,18 @@ public class ServiceEvent_PrimaryPerformerOperations extends ParticipationOperat
 			helper.setContext(ConsolPackage.Literals.SERVICE_EVENT_PRIMARY_PERFORMER);
 			try {
 				VALIDATE_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceEvent_PrimaryPerformer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceEvent_PrimaryPerformer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrimaryPerformerTypeCode"),
-						 new Object [] { serviceEvent_PrimaryPerformer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_EVENT_PRIMARY_PERFORMER__PRIMARY_PERFORMER_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("PrimaryPerformerTypeCode"),
+					new Object[] { serviceEvent_PrimaryPerformer }));
 			}
 			return false;
 		}

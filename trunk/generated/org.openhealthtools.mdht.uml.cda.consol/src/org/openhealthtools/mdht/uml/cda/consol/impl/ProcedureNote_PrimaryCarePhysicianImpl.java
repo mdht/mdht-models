@@ -51,7 +51,7 @@ public class ProcedureNote_PrimaryCarePhysicianImpl extends Participant1Impl imp
 	 * @generated
 	 */
 	public ProcedureNote_PrimaryCarePhysician init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureNote_PrimaryCarePhysicianImpl

@@ -112,7 +112,7 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * @generated
 	 */
 	public FamilyHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // FamilyHistorySectionImpl

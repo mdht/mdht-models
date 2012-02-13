@@ -92,7 +92,7 @@ public class RecordTarget_PatientRoleImpl extends PatientRoleImpl implements Rec
 	 * @generated
 	 */
 	public RecordTarget_PatientRole init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // RecordTarget_PatientRoleImpl

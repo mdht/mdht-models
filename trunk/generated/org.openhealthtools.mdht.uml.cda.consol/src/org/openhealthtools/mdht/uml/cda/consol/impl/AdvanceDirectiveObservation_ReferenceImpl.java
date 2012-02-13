@@ -57,7 +57,8 @@ public class AdvanceDirectiveObservation_ReferenceImpl extends ReferenceImpl imp
 	 * @generated
 	 */
 	public boolean validateReferenceExternalDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservation_ReferenceOperations.validateReferenceExternalDocument(this, diagnostics, context);
+		return AdvanceDirectiveObservation_ReferenceOperations.validateReferenceExternalDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class AdvanceDirectiveObservation_ReferenceImpl extends ReferenceImpl imp
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation_Reference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveObservation_ReferenceImpl

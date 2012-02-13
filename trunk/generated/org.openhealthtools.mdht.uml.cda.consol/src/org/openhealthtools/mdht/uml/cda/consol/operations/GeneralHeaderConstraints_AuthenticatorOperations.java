@@ -90,20 +90,18 @@ public class GeneralHeaderConstraints_AuthenticatorOperations extends Authentica
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR);
 			try {
 				VALIDATE_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Authenticator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Authenticator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_TIME,
-						 ConsolPlugin.INSTANCE.getString("AuthenticatorTime"),
-						 new Object [] { generalHeaderConstraints_Authenticator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_TIME,
+					ConsolPlugin.INSTANCE.getString("AuthenticatorTime"),
+					new Object[] { generalHeaderConstraints_Authenticator }));
 			}
 			return false;
 		}
@@ -118,9 +116,8 @@ public class GeneralHeaderConstraints_AuthenticatorOperations extends Authentica
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in ("+
-"value.code = 's'))";
+	protected static final String VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (" + "value.code = 's'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAuthenticatorSignatureCode(GeneralHeaderConstraints_Authenticator, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Authenticator Signature Code</em>}' invariant operation.
@@ -153,20 +150,18 @@ public class GeneralHeaderConstraints_AuthenticatorOperations extends Authentica
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR);
 			try {
 				VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Authenticator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Authenticator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_SIGNATURE_CODE,
-						 ConsolPlugin.INSTANCE.getString("AuthenticatorSignatureCode"),
-						 new Object [] { generalHeaderConstraints_Authenticator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_SIGNATURE_CODE,
+					ConsolPlugin.INSTANCE.getString("AuthenticatorSignatureCode"),
+					new Object[] { generalHeaderConstraints_Authenticator }));
 			}
 			return false;
 		}
@@ -212,20 +207,18 @@ public class GeneralHeaderConstraints_AuthenticatorOperations extends Authentica
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR);
 			try {
 				VALIDATE_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Authenticator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Authenticator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("AuthenticatorAssignedEntity"),
-						 new Object [] { generalHeaderConstraints_Authenticator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__AUTHENTICATOR_ASSIGNED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("AuthenticatorAssignedEntity"),
+					new Object[] { generalHeaderConstraints_Authenticator }));
 			}
 			return false;
 		}

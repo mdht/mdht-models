@@ -138,7 +138,7 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * @generated
 	 */
 	public SeriesAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SeriesActImpl

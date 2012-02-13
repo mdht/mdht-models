@@ -65,7 +65,7 @@ public class EncompassingEncounter5_LocationImpl extends LocationImpl implements
 	 * @generated
 	 */
 	public EncompassingEncounter5_Location init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncompassingEncounter5_LocationImpl

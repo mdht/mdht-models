@@ -62,7 +62,7 @@ public class UnstructuredDocument_CustodianImpl extends CustodianImpl implements
 	 * @generated
 	 */
 	public UnstructuredDocument_Custodian init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // UnstructuredDocument_CustodianImpl

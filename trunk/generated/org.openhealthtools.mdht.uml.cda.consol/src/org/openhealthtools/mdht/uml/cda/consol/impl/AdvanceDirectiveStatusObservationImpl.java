@@ -57,7 +57,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationNoAdditionalParticipants(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationNoAdditionalParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationNoAdditionalRelationships(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationNoAdditionalRelationships(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationTemplateId(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationClassCode(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationMoodCode(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +112,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationCode(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +123,8 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateAdvanceDirectiveStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationStatusCode(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateAdvanceDirectiveStatusObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,7 +133,7 @@ public class AdvanceDirectiveStatusObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public AdvanceDirectiveStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveStatusObservationImpl

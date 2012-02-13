@@ -88,20 +88,20 @@ public class GeneralHeaderConstraints_InformantOperations extends Informant12Ope
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_INFORMANT);
 			try {
 				VALIDATE_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Informant)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Informant)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_INFORMANT__INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("InformantHasAssignedEntityOrRelatedEntity"),
-						 new Object [] { generalHeaderConstraints_Informant }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_INFORMANT__INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("InformantHasAssignedEntityOrRelatedEntity"),
+					new Object[] { generalHeaderConstraints_Informant }));
 			}
 			return false;
 		}

@@ -62,7 +62,7 @@ public class ProcedureNote_ComponentOfImpl extends Component1Impl implements Pro
 	 * @generated
 	 */
 	public ProcedureNote_ComponentOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureNote_ComponentOfImpl

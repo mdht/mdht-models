@@ -87,20 +87,17 @@ public class ProductInstance_ScopingEntityOperations extends EntityOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE_SCOPING_ENTITY);
 			try {
 				VALIDATE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance_ScopingEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			productInstance_ScopingEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRODUCT_INSTANCE_SCOPING_ENTITY__SCOPING_ENTITY_ID,
-						 ConsolPlugin.INSTANCE.getString("ScopingEntityId"),
-						 new Object [] { productInstance_ScopingEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PRODUCT_INSTANCE_SCOPING_ENTITY__SCOPING_ENTITY_ID,
+					ConsolPlugin.INSTANCE.getString("ScopingEntityId"), new Object[] { productInstance_ScopingEntity }));
 			}
 			return false;
 		}

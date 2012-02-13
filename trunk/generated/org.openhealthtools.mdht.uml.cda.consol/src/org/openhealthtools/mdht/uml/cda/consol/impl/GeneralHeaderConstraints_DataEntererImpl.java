@@ -51,7 +51,7 @@ public class GeneralHeaderConstraints_DataEntererImpl extends DataEntererImpl im
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_DataEnterer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_DataEntererImpl

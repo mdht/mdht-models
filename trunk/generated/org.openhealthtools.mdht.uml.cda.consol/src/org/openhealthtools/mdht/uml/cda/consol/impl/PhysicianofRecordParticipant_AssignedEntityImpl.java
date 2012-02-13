@@ -57,7 +57,8 @@ public class PhysicianofRecordParticipant_AssignedEntityImpl extends AssignedEnt
 	 * @generated
 	 */
 	public boolean validateAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant_AssignedEntityOperations.validateAssignedEntityCode(this, diagnostics, context);
+		return PhysicianofRecordParticipant_AssignedEntityOperations.validateAssignedEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class PhysicianofRecordParticipant_AssignedEntityImpl extends AssignedEnt
 	 * @generated
 	 */
 	public boolean validateAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant_AssignedEntityOperations.validateAssignedEntityId(this, diagnostics, context);
+		return PhysicianofRecordParticipant_AssignedEntityOperations.validateAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,7 @@ public class PhysicianofRecordParticipant_AssignedEntityImpl extends AssignedEnt
 	 * @generated
 	 */
 	public PhysicianofRecordParticipant_AssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PhysicianofRecordParticipant_AssignedEntityImpl

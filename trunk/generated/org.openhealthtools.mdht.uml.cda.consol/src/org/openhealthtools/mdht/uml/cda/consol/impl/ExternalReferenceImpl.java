@@ -75,7 +75,8 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(this, diagnostics, context);
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +86,8 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(this, diagnostics, context);
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +97,8 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(this, diagnostics, context);
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -149,7 +152,7 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * @generated
 	 */
 	public ExternalReference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ExternalReferenceImpl

@@ -88,20 +88,17 @@ public class Reference_ExternalDocumentOperations extends ExternalDocumentOperat
 			helper.setContext(ConsolPackage.Literals.REFERENCE_EXTERNAL_DOCUMENT);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reference_ExternalDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reference_ExternalDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.REFERENCE_EXTERNAL_DOCUMENT__EXTERNAL_DOCUMENT_ID,
-						 ConsolPlugin.INSTANCE.getString("ExternalDocumentId"),
-						 new Object [] { reference_ExternalDocument }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.REFERENCE_EXTERNAL_DOCUMENT__EXTERNAL_DOCUMENT_ID,
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentId"), new Object[] { reference_ExternalDocument }));
 			}
 			return false;
 		}
@@ -146,20 +143,18 @@ public class Reference_ExternalDocumentOperations extends ExternalDocumentOperat
 			helper.setContext(ConsolPackage.Literals.REFERENCE_EXTERNAL_DOCUMENT);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reference_ExternalDocument)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reference_ExternalDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.REFERENCE_EXTERNAL_DOCUMENT__EXTERNAL_DOCUMENT_TEXT,
-						 ConsolPlugin.INSTANCE.getString("ExternalDocumentText"),
-						 new Object [] { reference_ExternalDocument }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.REFERENCE_EXTERNAL_DOCUMENT__EXTERNAL_DOCUMENT_TEXT,
+					ConsolPlugin.INSTANCE.getString("ExternalDocumentText"),
+					new Object[] { reference_ExternalDocument }));
 			}
 			return false;
 		}

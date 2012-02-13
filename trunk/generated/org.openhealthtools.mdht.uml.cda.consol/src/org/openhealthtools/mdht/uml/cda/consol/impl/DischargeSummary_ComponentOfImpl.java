@@ -56,7 +56,8 @@ public class DischargeSummary_ComponentOfImpl extends Component1Impl implements 
 	 * @generated
 	 */
 	public boolean validateComponentOfEncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary_ComponentOfOperations.validateComponentOfEncompassingEncounter(this, diagnostics, context);
+		return DischargeSummary_ComponentOfOperations.validateComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,7 @@ public class DischargeSummary_ComponentOfImpl extends Component1Impl implements 
 	 * @generated
 	 */
 	public DischargeSummary_ComponentOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DischargeSummary_ComponentOfImpl

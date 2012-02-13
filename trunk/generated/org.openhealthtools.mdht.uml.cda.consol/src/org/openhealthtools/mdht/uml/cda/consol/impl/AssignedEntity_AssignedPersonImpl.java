@@ -65,7 +65,7 @@ public class AssignedEntity_AssignedPersonImpl extends PersonImpl implements Ass
 	 * @generated
 	 */
 	public AssignedEntity_AssignedPerson init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AssignedEntity_AssignedPersonImpl
