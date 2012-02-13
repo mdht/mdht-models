@@ -58,8 +58,8 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.id->forAll(ident : datatypes::II |"+
-"   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())";
+	protected static final String VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.id->forAll(ident : datatypes::II |"
+			+ "   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScanOriginalAuthorHasAssignedAuthorId(ScanOriginalAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scan Original Author Has Assigned Author Id</em>}' invariant operation.
@@ -90,20 +90,18 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 			helper.setContext(ConsolPackage.Literals.SCAN_ORIGINAL_AUTHOR);
 			try {
 				VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanOriginalAuthor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			scanOriginalAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SCAN_ORIGINAL_AUTHOR__SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID,
-						 ConsolPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorId"),
-						 new Object [] { scanOriginalAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SCAN_ORIGINAL_AUTHOR__SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID,
+					ConsolPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorId"),
+					new Object[] { scanOriginalAuthor }));
 			}
 			return false;
 		}
@@ -118,8 +116,8 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |"+
-"   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())";
+	protected static final String VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |"
+			+ "   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(ScanOriginalAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scan Original Author Has Assigned Author Represented Organization Id</em>}' invariant operation.
@@ -150,20 +148,20 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 			helper.setContext(ConsolPackage.Literals.SCAN_ORIGINAL_AUTHOR);
 			try {
 				VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scanOriginalAuthor)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			scanOriginalAuthor)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SCAN_ORIGINAL_AUTHOR__SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
-						 ConsolPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId"),
-						 new Object [] { scanOriginalAuthor }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SCAN_ORIGINAL_AUTHOR__SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
+					ConsolPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId"),
+					new Object[] { scanOriginalAuthor }));
 			}
 			return false;
 		}

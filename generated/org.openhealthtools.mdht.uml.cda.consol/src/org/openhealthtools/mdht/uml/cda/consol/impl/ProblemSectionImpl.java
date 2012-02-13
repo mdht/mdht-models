@@ -55,6 +55,24 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemSectionProblemConcern(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionProblemConcern(this, diagnostics, context);
 	}
@@ -85,8 +103,18 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
+	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ProblemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProblemSectionImpl

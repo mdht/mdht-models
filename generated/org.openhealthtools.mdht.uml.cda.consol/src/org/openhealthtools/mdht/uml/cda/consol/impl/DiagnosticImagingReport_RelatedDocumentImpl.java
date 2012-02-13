@@ -51,7 +51,7 @@ public class DiagnosticImagingReport_RelatedDocumentImpl extends RelatedDocument
 	 * @generated
 	 */
 	public DiagnosticImagingReport_RelatedDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DiagnosticImagingReport_RelatedDocumentImpl

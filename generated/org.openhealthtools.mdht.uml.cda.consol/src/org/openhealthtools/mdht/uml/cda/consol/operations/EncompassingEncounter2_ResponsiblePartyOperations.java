@@ -89,20 +89,20 @@ public class EncompassingEncounter2_ResponsiblePartyOperations extends Responsib
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY);
 			try {
 				VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter2_ResponsibleParty)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encompassingEncounter2_ResponsibleParty)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-						 ConsolPlugin.INSTANCE.getString("ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
-						 new Object [] { encompassingEncounter2_ResponsibleParty }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
+					ConsolPlugin.INSTANCE.getString("ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
+					new Object[] { encompassingEncounter2_ResponsibleParty }));
 			}
 			return false;
 		}
@@ -148,20 +148,18 @@ public class EncompassingEncounter2_ResponsiblePartyOperations extends Responsib
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY);
 			try {
 				VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter2_ResponsibleParty)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encompassingEncounter2_ResponsibleParty)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("ResponsiblePartyAssignedEntity"),
-						 new Object [] { encompassingEncounter2_ResponsibleParty }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("ResponsiblePartyAssignedEntity"),
+					new Object[] { encompassingEncounter2_ResponsibleParty }));
 			}
 			return false;
 		}

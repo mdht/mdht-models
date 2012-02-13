@@ -55,7 +55,8 @@ public class EncompassingEncounter3_ResponsiblePartyImpl extends ResponsiblePart
 	 */
 	public boolean validateResponsiblePartyAssignedEntityHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncompassingEncounter3_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
+		return EncompassingEncounter3_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,8 @@ public class EncompassingEncounter3_ResponsiblePartyImpl extends ResponsiblePart
 	 * @generated
 	 */
 	public boolean validateResponsiblePartyAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncompassingEncounter3_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntity(this, diagnostics, context);
+		return EncompassingEncounter3_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,7 @@ public class EncompassingEncounter3_ResponsiblePartyImpl extends ResponsiblePart
 	 * @generated
 	 */
 	public EncompassingEncounter3_ResponsibleParty init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncompassingEncounter3_ResponsiblePartyImpl

@@ -50,7 +50,7 @@ public class MedicationSupplyOrder_ProductImpl extends ProductImpl implements Me
 	 * @generated
 	 */
 	public MedicationSupplyOrder_Product init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationSupplyOrder_ProductImpl

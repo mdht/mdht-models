@@ -57,7 +57,8 @@ public class GeneralHeaderConstraints_LegalAuthenticatorImpl extends LegalAuthen
 	 * @generated
 	 */
 	public boolean validateLegalAuthenticatorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_LegalAuthenticatorOperations.validateLegalAuthenticatorTime(this, diagnostics, context);
+		return GeneralHeaderConstraints_LegalAuthenticatorOperations.validateLegalAuthenticatorTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class GeneralHeaderConstraints_LegalAuthenticatorImpl extends LegalAuthen
 	 * @generated
 	 */
 	public boolean validateLegalAuthenticatorSignatureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_LegalAuthenticatorOperations.validateLegalAuthenticatorSignatureCode(this, diagnostics, context);
+		return GeneralHeaderConstraints_LegalAuthenticatorOperations.validateLegalAuthenticatorSignatureCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,7 @@ public class GeneralHeaderConstraints_LegalAuthenticatorImpl extends LegalAuthen
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_LegalAuthenticator init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_LegalAuthenticatorImpl

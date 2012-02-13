@@ -57,7 +57,8 @@ public class DiagnosticImagingReport_ParticipantImpl extends Participant1Impl im
 	 * @generated
 	 */
 	public boolean validateParticipantAssociatedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport_ParticipantOperations.validateParticipantAssociatedEntity(this, diagnostics, context);
+		return DiagnosticImagingReport_ParticipantOperations.validateParticipantAssociatedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class DiagnosticImagingReport_ParticipantImpl extends Participant1Impl im
 	 * @generated
 	 */
 	public DiagnosticImagingReport_Participant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DiagnosticImagingReport_ParticipantImpl

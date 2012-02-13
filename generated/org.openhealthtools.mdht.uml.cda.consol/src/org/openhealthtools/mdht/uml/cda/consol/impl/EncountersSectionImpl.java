@@ -54,6 +54,24 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncountersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
 	}
@@ -75,7 +93,18 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +114,7 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public EncountersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncountersSectionImpl

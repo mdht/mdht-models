@@ -88,20 +88,18 @@ public class Participant_AssociatedEntityOperations extends RoleOperations {
 			helper.setContext(ConsolPackage.Literals.PARTICIPANT_ASSOCIATED_ENTITY);
 			try {
 				VALIDATE_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(participant_AssociatedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			participant_AssociatedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PARTICIPANT_ASSOCIATED_ENTITY__ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						 ConsolPlugin.INSTANCE.getString("AssociatedEntityAssociatedPerson"),
-						 new Object [] { participant_AssociatedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PARTICIPANT_ASSOCIATED_ENTITY__ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+					ConsolPlugin.INSTANCE.getString("AssociatedEntityAssociatedPerson"),
+					new Object[] { participant_AssociatedEntity }));
 			}
 			return false;
 		}

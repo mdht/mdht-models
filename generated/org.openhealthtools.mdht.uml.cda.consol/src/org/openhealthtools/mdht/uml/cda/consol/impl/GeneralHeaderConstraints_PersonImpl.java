@@ -50,7 +50,7 @@ public class GeneralHeaderConstraints_PersonImpl extends PersonImpl implements G
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_Person init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_PersonImpl

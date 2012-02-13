@@ -58,7 +58,8 @@ public class LegalAuthenticator_AssignedEntityImpl extends AssignedEntityImpl im
 	 */
 	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
+		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +104,8 @@ public class LegalAuthenticator_AssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public boolean validateAssignedEntityAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityAssignedPerson(this, diagnostics, context);
+		return LegalAuthenticator_AssignedEntityOperations.validateAssignedEntityAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +114,7 @@ public class LegalAuthenticator_AssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public LegalAuthenticator_AssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // LegalAuthenticator_AssignedEntityImpl

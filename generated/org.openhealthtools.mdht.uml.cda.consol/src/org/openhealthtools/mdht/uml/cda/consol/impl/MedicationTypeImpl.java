@@ -65,7 +65,7 @@ public class MedicationTypeImpl extends ObservationImpl implements MedicationTyp
 	 * @generated
 	 */
 	public MedicationType init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationTypeImpl

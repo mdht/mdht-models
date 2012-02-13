@@ -72,10 +72,30 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +105,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public ProceduresSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProceduresSectionImpl

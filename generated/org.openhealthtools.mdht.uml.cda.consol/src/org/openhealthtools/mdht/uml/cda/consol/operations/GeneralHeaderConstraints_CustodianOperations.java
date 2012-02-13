@@ -88,20 +88,18 @@ public class GeneralHeaderConstraints_CustodianOperations extends CustodianOpera
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN);
 			try {
 				VALIDATE_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Custodian)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Custodian)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__CUSTODIAN_ASSIGNED_CUSTODIAN,
-						 ConsolPlugin.INSTANCE.getString("CustodianAssignedCustodian"),
-						 new Object [] { generalHeaderConstraints_Custodian }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__CUSTODIAN_ASSIGNED_CUSTODIAN,
+					ConsolPlugin.INSTANCE.getString("CustodianAssignedCustodian"),
+					new Object[] { generalHeaderConstraints_Custodian }));
 			}
 			return false;
 		}

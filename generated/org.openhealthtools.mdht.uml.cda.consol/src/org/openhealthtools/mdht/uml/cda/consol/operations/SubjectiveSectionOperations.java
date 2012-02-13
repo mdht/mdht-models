@@ -90,20 +90,17 @@ public class SubjectiveSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
 			try {
 				VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			subjectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("SubjectiveSectionTemplateId"),
-						 new Object [] { subjectiveSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTemplateId"), new Object[] { subjectiveSection }));
 			}
 			return false;
 		}
@@ -118,9 +115,9 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '61150-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '61150-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSubjectiveSectionCode(SubjectiveSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Subjective Section Code</em>}' invariant operation.
@@ -152,20 +149,17 @@ public class SubjectiveSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
 			try {
 				VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			subjectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("SubjectiveSectionCode"),
-						 new Object [] { subjectiveSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionCode"), new Object[] { subjectiveSection }));
 			}
 			return false;
 		}
@@ -210,20 +204,17 @@ public class SubjectiveSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
 			try {
 				VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			subjectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("SubjectiveSectionText"),
-						 new Object [] { subjectiveSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionText"), new Object[] { subjectiveSection }));
 			}
 			return false;
 		}
@@ -268,20 +259,17 @@ public class SubjectiveSectionOperations extends SectionOperations {
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
 			try {
 				VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectiveSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			subjectiveSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE,
-						 ConsolPlugin.INSTANCE.getString("SubjectiveSectionTitle"),
-						 new Object [] { subjectiveSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTitle"), new Object[] { subjectiveSection }));
 			}
 			return false;
 		}

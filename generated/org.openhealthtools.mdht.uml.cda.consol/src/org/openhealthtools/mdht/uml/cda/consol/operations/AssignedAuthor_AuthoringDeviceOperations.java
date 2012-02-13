@@ -89,20 +89,18 @@ public class AssignedAuthor_AuthoringDeviceOperations extends AuthoringDeviceOpe
 			helper.setContext(ConsolPackage.Literals.ASSIGNED_AUTHOR_AUTHORING_DEVICE);
 			try {
 				VALIDATE_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assignedAuthor_AuthoringDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			assignedAuthor_AuthoringDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ASSIGNED_AUTHOR_AUTHORING_DEVICE__AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME,
-						 ConsolPlugin.INSTANCE.getString("AuthoringDeviceManufacturerModelName"),
-						 new Object [] { assignedAuthor_AuthoringDevice }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ASSIGNED_AUTHOR_AUTHORING_DEVICE__AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME,
+					ConsolPlugin.INSTANCE.getString("AuthoringDeviceManufacturerModelName"),
+					new Object[] { assignedAuthor_AuthoringDevice }));
 			}
 			return false;
 		}
@@ -148,20 +146,18 @@ public class AssignedAuthor_AuthoringDeviceOperations extends AuthoringDeviceOpe
 			helper.setContext(ConsolPackage.Literals.ASSIGNED_AUTHOR_AUTHORING_DEVICE);
 			try {
 				VALIDATE_AUTHORING_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHORING_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHORING_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assignedAuthor_AuthoringDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHORING_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			assignedAuthor_AuthoringDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ASSIGNED_AUTHOR_AUTHORING_DEVICE__AUTHORING_DEVICE_SOFTWARE_NAME,
-						 ConsolPlugin.INSTANCE.getString("AuthoringDeviceSoftwareName"),
-						 new Object [] { assignedAuthor_AuthoringDevice }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ASSIGNED_AUTHOR_AUTHORING_DEVICE__AUTHORING_DEVICE_SOFTWARE_NAME,
+					ConsolPlugin.INSTANCE.getString("AuthoringDeviceSoftwareName"),
+					new Object[] { assignedAuthor_AuthoringDevice }));
 			}
 			return false;
 		}
