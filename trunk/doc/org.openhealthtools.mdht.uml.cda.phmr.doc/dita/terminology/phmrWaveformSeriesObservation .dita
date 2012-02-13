@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>phmrWaveformSeriesObservation </title>
+<prolog id="prolog">
+<resourceid id="1.2.3.4.100.1"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>phmrWaveformSeriesObservation  - 1.2.3.4.100.1</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Definition</entry><entry>The SNOMED CT has been limited to a value set that indicates the level of medical judgment used to determine the existence of a problem.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>404684003</entry><entry>Finding</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>409586006</entry><entry>Complaint</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>282291009</entry><entry>Diagnosis</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>64572001</entry><entry>Condition</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>248536006</entry><entry>Functional limitation</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>418799008</entry><entry>Symptom</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>55607006</entry><entry>Problem</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
