@@ -1105,6 +1105,8 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_lD9-wA_XEeG7sMwiyo3Ifw" memberEnd="_lD9XsA_XEeG7sMwiyo3Ifw _lD9-wQ_XEeG7sMwiyo3Ifw">
       <ownedEnd xmi:id="_lD9-wQ_XEeG7sMwiyo3Ifw" type="_56Z3kA_WEeG7sMwiyo3Ifw" association="_lD9-wA_XEeG7sMwiyo3Ifw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-immunizations.uml#_1GBQclaAEeGCdLgBm6VHOQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-immunizations.uml#_20vcElaAEeGCdLgBm6VHOQ"/>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>

@@ -720,11 +720,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
-			return createCCD_MedicationsSectionAdapter();
-		}
-
-		@Override
 		public Adapter caseCCD_ImmunizationsSection(org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection object) {
 			return createCCD_ImmunizationsSectionAdapter();
 		}
@@ -823,6 +818,11 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFulfillmentInstruction(FulfillmentInstruction object) {
 			return createFulfillmentInstructionAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
+			return createCCD_MedicationsSectionAdapter();
 		}
 
 		@Override

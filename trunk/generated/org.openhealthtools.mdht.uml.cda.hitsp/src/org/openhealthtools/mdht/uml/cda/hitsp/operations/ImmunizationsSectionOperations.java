@@ -202,7 +202,7 @@ public class ImmunizationsSectionOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.IMMUNIZATIONS_SECTION,
-				HITSPPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(71));
+				HITSPPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(69));
 			try {
 				GET_HITSP_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_HITSP_IMMUNIZATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
