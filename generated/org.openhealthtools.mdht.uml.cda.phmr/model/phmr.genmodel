@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" copyrightText="Copyright (C) 2009, OFFIS&#xD;&#xA;All rights reserved. This program and the accompanying materials&#xD;&#xA;are made available under the terms of the Eclipse Public License v1.0&#xD;&#xA;which accompanies this distribution, and is available at&#xD;&#xA;http://www.eclipse.org/legal/epl-v10.html&#xD;&#xA;&#xD;&#xA;This software and supporting documentation were developed by&#xD;&#xA;&#xD;&#xA;  OFFIS e.V.&#xD;&#xA;  Escherweg 2, 26121 Oldenburg&#xD;&#xA; &#xD;&#xA;THIS SOFTWARE IS MADE AVAILABLE,  AS IS,  AND OFFIS &#xD;&#xA;MAKES NO  WARRANTY REGARDING  THE  SOFTWARE,  ITS  PERFORMANCE,  ITS  &#xD;&#xA;MERCHANTABILITY  OR FITNESS FOR ANY PARTICULAR USE, FREEDOM FROM ANY &#xD;&#xA;COMPUTER DISEASES  OR ITS CONFORMITY TO ANY SPECIFICATION. THE ENTIRE RISK &#xD;&#xA;AS TO QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH THE USER.&#xD;&#xA; &#xD;&#xA;Author:  Myriam Lipprandt &lt;myriam.lipprandt@offis.de>, OFFIS e.V.&#xD;&#xA;Date: 2011-12-14&#xD;&#xA;"
+    modelDirectory="org.openhealthtools.mdht.uml.cda.phmr/src" modelPluginID="org.openhealthtools.mdht.uml.cda.phmr"
+    templateDirectory="/org.openhealthtools.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="phmr_Ecore" modelPluginClass="PhmrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" language=""
+    usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>phmr_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Phmr" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="phmr.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.phmr.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//DeviceAccuracyObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceAccuracyObservation/DeviceAccuracyObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//DeviceDefinitionOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerSamplingFrequencyObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerSamplingFrequencyObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerSamplingFrequencyObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceMeasurementRangeObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceMeasurementRangeObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceMeasurementRangeObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceResolutionObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceResolutionObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceResolutionObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceAccuracyObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceAccuracyObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceDefinitionOrganizer/DeviceDefinitionOrganizerDeviceAccuracyObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/getSamplingFrequencyObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/getDeviceMeasurementRangeObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/getDeviceResolutionObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceDefinitionOrganizer/getDeviceAccuracyObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//SamplingFrequencyObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//SamplingFrequencyObservation/SamplingFrequencyObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//DeviceMeasurementRangeObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceMeasurementRangeObservation/DeviceMeasurementRangeObservationMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//DeviceResolutionObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//DeviceResolutionObservation/DeviceResolutionObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//EventObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//EventObservation/EventObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//EventObservation/EventObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//EventObservation/EventObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//EventObservation/EventObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//EventObservation/EventObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//EventObservation/EventObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//MedicalEquipment">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//MedicalEquipment/MedicalEquipmentText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//MedicalEquipment/MedicalEquipmentText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//MedicalEquipment/MedicalEquipmentText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//MedicalEquipment/MedicalEquipmentDeviceDefinitionOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//MedicalEquipment/MedicalEquipmentDeviceDefinitionOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//MedicalEquipment/MedicalEquipmentDeviceDefinitionOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//MedicalEquipment/getDeviceDefinitionOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//NumericObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//NumericObservation/NumericObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//NumericObservation/NumericObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//NumericObservation/NumericObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//NumericObservation/NumericObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//NumericObservation/NumericObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//ObservationMediaJPG">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationMediaJPG/ObservationMediaJPGValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//ObservationNullFlavor">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformSamplePeriodObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformSamplePeriodObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ObservationNullFlavor/ObservationNullFlavorWaveformSamplePeriodObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/getWaveformObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ObservationNullFlavor/getWaveformSamplePeriodObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//WaveformObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformObservation/WaveformObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformObservation/WaveformObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformObservation/WaveformObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformObservation/WaveformObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformObservation/WaveformObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformObservation/WaveformObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//WaveformSamplePeriodObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSamplePeriodObservation/WaveformSamplePeriodObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//Participant">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//Participant/ParticipantTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//Participant/ParticipantTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//Participant/ParticipantTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//PersonalHealthcareMonitoringReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportVitalSigns">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportVitalSigns/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportVitalSigns/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportResults">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportResults/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportResults/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedicalEquipment">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedicalEquipment/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedicalEquipment/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportFunctionalStatus">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportFunctionalStatus/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportFunctionalStatus/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportPurpose">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportPurpose/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PersonalHealthcareMonitoringReport/PersonalHealthcareMonitoringReportPurpose/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getVitalSigns"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getResults"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getMedicalEquipment"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getFunctionalStatus"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getMedication"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PersonalHealthcareMonitoringReport/getPurpose"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//GeneralHeaderConstraints">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//VitalSigns">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//VitalSigns/VitalSignsVitalSignsOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//VitalSigns/VitalSignsVitalSignsOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//VitalSigns/VitalSignsVitalSignsOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//VitalSigns/getPhmrVitalSignsOrganizer"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//ResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerNumericObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerNumericObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerNumericObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerWaveformSeriesObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerWaveformSeriesObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ResultOrganizer/PhmrResultOrganizerWaveformSeriesObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ResultOrganizer/getNumericObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ResultOrganizer/getWaveformSeriesObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//WaveformSeriesObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationMediaJPG">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationMediaJPG/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationMediaJPG/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationNullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationNullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//WaveformSeriesObservation/WaveformSeriesObservationObservationNullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/getObservationMediaJPG"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//WaveformSeriesObservation/getObservationNullFlavor"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//Results">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//Results/ResultsResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//Results/ResultsResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//Results/ResultsResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//Results/getPhmrResultOrganizer"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//ParticipantRole">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ParticipantRole/PhmrParticipantRoleTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ParticipantRole/PhmrParticipantRoleTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ParticipantRole/PhmrParticipantRoleTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ParticipantRole/PhmrParticipantRoleId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ParticipantRole/PhmrParticipantRoleId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ParticipantRole/PhmrParticipantRoleId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//PHMRProductInstance">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstance/PHMRProductInstanceId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//PHMRProductInstanceReference">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PHMRProductInstanceReference/PHMRProductInstanceReferenceTypeCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//PlayingDevice">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PlayingDevice/PlayingDeviceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PlayingDevice/PlayingDeviceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//PlayingDevice/PlayingDeviceManufacturerModelName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceManufacturerModelName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//PlayingDevice/PlayingDeviceManufacturerModelName/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//ScopingEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ScopingEntity/ScopingEntityTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ScopingEntity/ScopingEntityTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ScopingEntity/ScopingEntityTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//ScopingEntity/ScopingEntityDesc">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ScopingEntity/ScopingEntityDesc/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//ScopingEntity/ScopingEntityDesc/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//VitalSignsOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="phmr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="phmr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//Purpose"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//Medication"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="phmr.ecore#//FunctionalStatus"/>
+  </genPackages>
+</genmodel:GenModel>
