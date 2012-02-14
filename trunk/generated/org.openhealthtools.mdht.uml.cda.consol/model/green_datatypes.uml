@@ -899,6 +899,117 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixyJYitlEeGNidxV7Y-XKQ"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KQ8FYFNoEeGmnJl1BJHcaA" name="IntervalOfInteger">
+      <ownedAttribute xmi:id="_KQ8FbVNoEeGmnJl1BJHcaA" name="value">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FblNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8Fb1NoEeGmnJl1BJHcaA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8FcFNoEeGmnJl1BJHcaA" name="nullFlavor" type="_-KxF1RyVEeGBz7RHLRKZDw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FcVNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FclNoEeGmnJl1BJHcaA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8Fc1NoEeGmnJl1BJHcaA" name="operator">
+        <type xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJWUtXEdqhPYJq3sEkGA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FdFNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FdVNoEeGmnJl1BJHcaA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8FYVNoEeGmnJl1BJHcaA" name="_sequence1" type="_KQ8FdlNoEeGmnJl1BJHcaA" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FYlNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FY1NoEeGmnJl1BJHcaA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8FZFNoEeGmnJl1BJHcaA" name="high" type="_YsrB8CtiEeGNidxV7Y-XKQ" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FZVNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FZlNoEeGmnJl1BJHcaA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8FZ1NoEeGmnJl1BJHcaA" name="_sequence2" type="_KQ8Fh1NoEeGmnJl1BJHcaA" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FaFNoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FaVNoEeGmnJl1BJHcaA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQ8FalNoEeGmnJl1BJHcaA" name="_sequence3" type="_KQ8FkFNoEeGmnJl1BJHcaA" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8Fa1NoEeGmnJl1BJHcaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FbFNoEeGmnJl1BJHcaA" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KQ8FdlNoEeGmnJl1BJHcaA" name="_Sequence1" visibility="private">
+        <ownedAttribute xmi:id="_KQ8Fd1NoEeGmnJl1BJHcaA" name="low" type="_YsrB8CtiEeGNidxV7Y-XKQ" aggregation="composite">
+          <ownedComment xmi:id="_KQ8FeFNoEeGmnJl1BJHcaA">
+            <body>The low limit of the interval.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FeVNoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FelNoEeGmnJl1BJHcaA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_KQ8Fe1NoEeGmnJl1BJHcaA" name="_choice1" type="_KQ8FflNoEeGmnJl1BJHcaA" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FfFNoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FfVNoEeGmnJl1BJHcaA"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_KQ8FflNoEeGmnJl1BJHcaA" name="_Choice1" visibility="private">
+          <ownedAttribute xmi:id="_KQ8Ff1NoEeGmnJl1BJHcaA" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite">
+            <ownedComment xmi:id="_KQ8FgFNoEeGmnJl1BJHcaA">
+              <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FgVNoEeGmnJl1BJHcaA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FglNoEeGmnJl1BJHcaA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_KQ8Fg1NoEeGmnJl1BJHcaA" name="high" type="_YsrB8CtiEeGNidxV7Y-XKQ" aggregation="composite">
+            <ownedComment xmi:id="_KQ8FhFNoEeGmnJl1BJHcaA">
+              <body>The high limit of the interval.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FhVNoEeGmnJl1BJHcaA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FhlNoEeGmnJl1BJHcaA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KQ8Fh1NoEeGmnJl1BJHcaA" name="_Sequence2" visibility="private">
+        <ownedAttribute xmi:id="_KQ8FiFNoEeGmnJl1BJHcaA" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite">
+          <ownedComment xmi:id="_KQ8FiVNoEeGmnJl1BJHcaA">
+            <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FilNoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8Fi1NoEeGmnJl1BJHcaA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_KQ8FjFNoEeGmnJl1BJHcaA" name="high" type="_YsrB8CtiEeGNidxV7Y-XKQ" aggregation="composite">
+          <ownedComment xmi:id="_KQ8FjVNoEeGmnJl1BJHcaA">
+            <body>The high limit of the interval.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8FjlNoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8Fj1NoEeGmnJl1BJHcaA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KQ8FkFNoEeGmnJl1BJHcaA" name="_Sequence3" visibility="private">
+        <ownedAttribute xmi:id="_KQ8FkVNoEeGmnJl1BJHcaA" name="center" type="_YsrB8CtiEeGNidxV7Y-XKQ" aggregation="composite">
+          <ownedComment xmi:id="_KQ8FklNoEeGmnJl1BJHcaA">
+            <body>The arithmetic mean of the interval (low plus high
+                           divided by 2). The purpose of distinguishing the center
+                           as a semantic property is for conversions of intervals
+                           from and to point values.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8Fk1NoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FlFNoEeGmnJl1BJHcaA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_KQ8FlVNoEeGmnJl1BJHcaA" name="width" type="_-K8E9RyVEeGBz7RHLRKZDw" aggregation="composite">
+          <ownedComment xmi:id="_KQ8FllNoEeGmnJl1BJHcaA">
+            <body>The difference between high and low boundary. The
+                           purpose of distinguishing a width property is to
+                           handle all cases of incomplete information
+                           symmetrically. In any interval representation only
+                           two of the three properties high, low, and width need
+                           to be stated and the third can be derived.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQ8Fl1NoEeGmnJl1BJHcaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQ8FmFNoEeGmnJl1BJHcaA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
     <profileApplication xmi:id="_-JUUUByVEeGBz7RHLRKZDw">
       <eAnnotations xmi:id="_-JUUURyVEeGBz7RHLRKZDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg"/>
@@ -991,4 +1102,17 @@
   <xsd:Attribute xmi:id="_kD21QCtlEeGNidxV7Y-XKQ" base_Property="_ixyJYCtlEeGNidxV7Y-XKQ"/>
   <xsd:Attribute xmi:id="_l5gIQCtlEeGNidxV7Y-XKQ" base_Property="_acR-YCtiEeGNidxV7Y-XKQ"/>
   <xsd:Attribute xmi:id="_mdPugCtlEeGNidxV7Y-XKQ" base_Property="_fsWJ0CtiEeGNidxV7Y-XKQ"/>
+  <xsd:Group xmi:id="_vurcwFNpEeGmnJl1BJHcaA" base_Class="_KQ8FdlNoEeGmnJl1BJHcaA"/>
+  <xsd:Sequence xmi:id="_vusD0FNpEeGmnJl1BJHcaA" base_Class="_KQ8FdlNoEeGmnJl1BJHcaA"/>
+  <xsd:Group xmi:id="_x5ZA0FNpEeGmnJl1BJHcaA" base_Class="_KQ8Fh1NoEeGmnJl1BJHcaA"/>
+  <xsd:Sequence xmi:id="_x5ZA0VNpEeGmnJl1BJHcaA" base_Class="_KQ8Fh1NoEeGmnJl1BJHcaA"/>
+  <xsd:Group xmi:id="_zSndkFNpEeGmnJl1BJHcaA" base_Class="_KQ8FkFNoEeGmnJl1BJHcaA"/>
+  <xsd:Sequence xmi:id="_zSoEoFNpEeGmnJl1BJHcaA" base_Class="_KQ8FkFNoEeGmnJl1BJHcaA"/>
+  <xsd:Attribute xmi:id="_3swRIFNqEeGmnJl1BJHcaA" base_Property="_KQ8FbVNoEeGmnJl1BJHcaA"/>
+  <xsd:Attribute xmi:id="_425JAFNqEeGmnJl1BJHcaA" base_Property="_KQ8FcFNoEeGmnJl1BJHcaA"/>
+  <xsd:Attribute xmi:id="_6wH7gFNqEeGmnJl1BJHcaA" base_Property="_KQ8Fc1NoEeGmnJl1BJHcaA"/>
+  <xsd:Group xmi:id="_IWVSgFNrEeGmnJl1BJHcaA" base_Class="_KQ8FflNoEeGmnJl1BJHcaA"/>
+  <xsd:Choice xmi:id="_IWVSgVNrEeGmnJl1BJHcaA" base_Class="_KQ8FflNoEeGmnJl1BJHcaA"/>
+  <xsd:ComplexType xmi:id="_MIlcIFNrEeGmnJl1BJHcaA" contentLower="0" base_Class="_KQ8FYFNoEeGmnJl1BJHcaA"/>
+  <xsd:Choice xmi:id="_MIlcIVNrEeGmnJl1BJHcaA" base_Class="_KQ8FYFNoEeGmnJl1BJHcaA"/>
 </xmi:XMI>
