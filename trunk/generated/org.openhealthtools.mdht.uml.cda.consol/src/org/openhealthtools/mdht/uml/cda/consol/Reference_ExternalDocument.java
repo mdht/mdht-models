@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ExternalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReference_ExternalDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ExternalDocumentId' constraints.validation.info='ExternalDocumentText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ExternalDocumentText' constraints.validation.error='ExternalDocumentId'"
  * @generated
  */
 public interface Reference_ExternalDocument extends ExternalDocument {

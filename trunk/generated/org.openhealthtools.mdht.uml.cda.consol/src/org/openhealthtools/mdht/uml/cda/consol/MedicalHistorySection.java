@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.39' constraints.validation.error='MedicalHistorySectionTemplateId MedicalHistorySectionCode MedicalHistorySectionText MedicalHistorySectionTitle' code.codeSystemName='LOINC' code.code='11329-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.39' constraints.validation.error='MedicalHistorySectionTemplateId MedicalHistorySectionCode MedicalHistorySectionText MedicalHistorySectionTitle' code.codeSystem='2.16.840.1.113883.6.1' code.code='11329-0'"
  * @generated
  */
 public interface MedicalHistorySection extends Section {

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getServiceDeliveryLocation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.32' constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationCode' classCode.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='LOINC' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom' classCode.codeSystemName='RoleCode' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode.codeSystemName='RoleCode' classCode.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='LOINC' constraints.validation.info='ServiceDeliveryLocationHasPlayingEntity' constraints.validation.error='ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationCode' templateId.root='2.16.840.1.113883.10.20.22.4.32' code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.warning='ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom'"
  * @generated
  */
 public interface ServiceDeliveryLocation extends ParticipantRole {

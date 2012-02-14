@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCustodian_CustodianRole()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CustodianRoleClassCode CustodianRolePlayingEntity' constraints.validation.warning='CustodianRoleAddr CustodianRoleTelecom' classCode='ROL'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ROL' constraints.validation.error='CustodianRoleClassCode CustodianRolePlayingEntity' constraints.validation.warning='CustodianRoleAddr CustodianRoleTelecom'"
  * @generated
  */
 public interface Custodian_CustodianRole extends ParticipantRole {

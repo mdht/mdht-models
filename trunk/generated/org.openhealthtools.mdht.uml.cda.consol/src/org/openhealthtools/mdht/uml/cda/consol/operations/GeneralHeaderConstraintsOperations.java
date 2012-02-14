@@ -6,14 +6,19 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
@@ -28,6 +33,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsUSRealmAddress(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsUSRealmPatientName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Patient Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Realm Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTypeId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Type Id</em>}</li>
@@ -151,6 +158,351 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected GeneralHeaderConstraintsOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddress(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsUSRealmAddress(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "datatypes::AD.allInstances()->reject("
+			+ "    addr : datatypes::AD | "
+			+ "    not addr.use->isEmpty() and"
+			+ "    addr.use->forAll("
+			+ "        use : vocab::PostalAddressUse |"
+			+ "        use=vocab::PostalAddressUse::BAD or"
+			+ "        use=vocab::PostalAddressUse::DIR or"
+			+ "        use=vocab::PostalAddressUse::H or"
+			+ "        use=vocab::PostalAddressUse::HP or"
+			+ "        use=vocab::PostalAddressUse::HV or"
+			+ "        use=vocab::PostalAddressUse::PHYS or"
+			+ "        use=vocab::PostalAddressUse::PST or"
+			+ "        use=vocab::PostalAddressUse::PUB or"
+			+ "        use=vocab::PostalAddressUse::TMP or"
+			+ "        use=vocab::PostalAddressUse::WP"
+			+ "    ) and"
+			+ "    addr.streetAddressLine->size() >= 1 and"
+			+ "    addr.streetAddressLine->size() <= 4 and"
+			+ "    addr.city->size() = 1 and"
+			+ "    addr.country->size() <= 1 and"
+			+ "    ("
+			+ "        ("
+			+ "            addr.country->size() = 0 or"
+			+ "            ("
+			+ "                addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'"
+			+ "            )"
+			+ "        ) implies addr.state->size() = 1 and addr.postalCode->size() = 1"
+			+ "    )"
+			+ ")";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddress(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsUSRealmAddress(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * datatypes::AD.allInstances()->reject(
+	 *     addr : datatypes::AD | 
+	 *     not addr.use->isEmpty() and
+	 *     addr.use->forAll(
+	 *         use : vocab::PostalAddressUse |
+	 *         use=vocab::PostalAddressUse::BAD or
+	 *         use=vocab::PostalAddressUse::DIR or
+	 *         use=vocab::PostalAddressUse::H or
+	 *         use=vocab::PostalAddressUse::HP or
+	 *         use=vocab::PostalAddressUse::HV or
+	 *         use=vocab::PostalAddressUse::PHYS or
+	 *         use=vocab::PostalAddressUse::PST or
+	 *         use=vocab::PostalAddressUse::PUB or
+	 *         use=vocab::PostalAddressUse::TMP or
+	 *         use=vocab::PostalAddressUse::WP
+	 *     ) and
+	 *     addr.streetAddressLine->size() >= 1 and
+	 *     addr.streetAddressLine->size() <= 4 and
+	 *     addr.city->size() = 1 and
+	 *     addr.country->size() <= 1 and
+	 *     (
+	 *         (
+	 *             addr.country->size() = 0 or
+	 *             (
+	 *                 addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'
+	 *             )
+	 *         ) implies addr.state->size() = 1 and addr.postalCode->size() = 1
+	 *     )
+	 * )
+	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsUSRealmAddress(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+		try {
+			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+		} catch (ParserException pe) {
+			throw new UnsupportedOperationException(pe.getLocalizedMessage());
+		}
+
+		Object oclResultSet = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(generalHeaderConstraints);
+		if (oclResultSet != null && oclResultSet instanceof Collection) {
+			if (diagnostics != null) {
+				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS,
+						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsUSRealmAddress"),
+						new Object[] { eObject }));
+				}
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmPatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Patient Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsUSRealmPatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "datatypes::PN.allInstances()->reject("
+			+ "    name : datatypes::PN |"
+			+ "    name.use->forAll("
+			+ "        use : vocab::EntityNameUse |"
+			+ "        use=vocab::EntityNameUse::A or"
+			+ "        use=vocab::EntityNameUse::ABC or"
+			+ "        use=vocab::EntityNameUse::ASGN or"
+			+ "        use=vocab::EntityNameUse::C or"
+			+ "        use=vocab::EntityNameUse::I or"
+			+ "        use=vocab::EntityNameUse::IDE or"
+			+ "        use=vocab::EntityNameUse::L or"
+			+ "        use=vocab::EntityNameUse::P or"
+			+ "        use=vocab::EntityNameUse::PHON or"
+			+ "        use=vocab::EntityNameUse::R or"
+			+ "        use=vocab::EntityNameUse::SNDX or"
+			+ "        use=vocab::EntityNameUse::SRCH or"
+			+ "        use=vocab::EntityNameUse::SYL"
+			+ "    ) and"
+			+ "    name.prefix->forAll("
+			+ "        prefix : datatypes::ENXP |"
+			+ "        prefix.qualifier->forAll("
+			+ "            qualifier : vocab::EntityNamePartQualifier |"
+			+ "            qualifier=vocab::EntityNamePartQualifier::AC or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::AD or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::BR or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::CL or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::IN or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::NB or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::PR or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::SP or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::TITLE or"
+			+ "            qualifier=vocab::EntityNamePartQualifier::VV"
+			+ "        )"
+			+ "    ) and"
+			+ "    name.given->size() >= 1 and"
+			+ "    name.given->forAll("
+			+ "        given : datatypes::ENXP |"
+			+ "        given.qualifier->forAll("
+			+ "            qualifier : vocab::EntityNamePartQualifier |"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AC or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AD or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::BR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::CL or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::IN or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::NB or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::PR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::SP or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::TITLE or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::VV"
+			+ "        )"
+			+ "    ) and"
+			+ "    name.family->size() = 1 and"
+			+ "    name.family->forAll("
+			+ "        family : datatypes::ENXP |"
+			+ "        family.qualifier->forAll("
+			+ "            qualifier : vocab::EntityNamePartQualifier |"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AC or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AD or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::BR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::CL or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::IN or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::NB or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::PR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::SP or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::TITLE or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::VV"
+			+ "        )"
+			+ "    ) and"
+			+ "    name.suffix->size() <= 1 and"
+			+ "    name.suffix->forAll("
+			+ "        suffix : datatypes::ENXP |"
+			+ "        suffix.qualifier->forAll("
+			+ "            qualifier : vocab::EntityNamePartQualifier |"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AC or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::AD or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::BR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::CL or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::IN or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::NB or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::PR or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::SP or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::TITLE or"
+			+ "	    qualifier=vocab::EntityNamePartQualifier::VV" + "        )" + "    )" + ")";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmPatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Patient Name</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsUSRealmPatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * datatypes::PN.allInstances()->reject(
+	 *     name : datatypes::PN |
+	 *     name.use->forAll(
+	 *         use : vocab::EntityNameUse |
+	 *         use=vocab::EntityNameUse::A or
+	 *         use=vocab::EntityNameUse::ABC or
+	 *         use=vocab::EntityNameUse::ASGN or
+	 *         use=vocab::EntityNameUse::C or
+	 *         use=vocab::EntityNameUse::I or
+	 *         use=vocab::EntityNameUse::IDE or
+	 *         use=vocab::EntityNameUse::L or
+	 *         use=vocab::EntityNameUse::P or
+	 *         use=vocab::EntityNameUse::PHON or
+	 *         use=vocab::EntityNameUse::R or
+	 *         use=vocab::EntityNameUse::SNDX or
+	 *         use=vocab::EntityNameUse::SRCH or
+	 *         use=vocab::EntityNameUse::SYL
+	 *     ) and
+	 *     name.prefix->forAll(
+	 *         prefix : datatypes::ENXP |
+	 *         prefix.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 *             qualifier=vocab::EntityNamePartQualifier::AC or
+	 *             qualifier=vocab::EntityNamePartQualifier::AD or
+	 *             qualifier=vocab::EntityNamePartQualifier::BR or
+	 *             qualifier=vocab::EntityNamePartQualifier::CL or
+	 *             qualifier=vocab::EntityNamePartQualifier::IN or
+	 *             qualifier=vocab::EntityNamePartQualifier::NB or
+	 *             qualifier=vocab::EntityNamePartQualifier::PR or
+	 *             qualifier=vocab::EntityNamePartQualifier::SP or
+	 *             qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 *             qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.given->size() >= 1 and
+	 *     name.given->forAll(
+	 *         given : datatypes::ENXP |
+	 *         given.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.family->size() = 1 and
+	 *     name.family->forAll(
+	 *         family : datatypes::ENXP |
+	 *         family.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.suffix->size() <= 1 and
+	 *     name.suffix->forAll(
+	 *         suffix : datatypes::ENXP |
+	 *         suffix.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     )
+	 * )
+	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsUSRealmPatientName(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+		try {
+			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+		} catch (ParserException pe) {
+			throw new UnsupportedOperationException(pe.getLocalizedMessage());
+		}
+
+		Object oclResultSet = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(generalHeaderConstraints);
+		if (oclResultSet != null && oclResultSet instanceof Collection) {
+			if (diagnostics != null) {
+				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME,
+						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsUSRealmPatientName"),
+						new Object[] { eObject }));
+				}
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**

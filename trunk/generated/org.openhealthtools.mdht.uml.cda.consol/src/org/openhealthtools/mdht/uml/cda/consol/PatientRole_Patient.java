@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Patient;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatientRole_Patient()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation maritalStatusCode.codeSystemName='MaritalStatus' constraints.validation.error='PatientBirthTimePreciseToYear PatientBirthTime PatientName' constraints.validation.warning='PatientBirthTimePreciseToDay PatientMaritalStatusCode PatientLanguageCommunication' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' constraints.validation.info='PatientEthnicGroupCode PatientRaceCode PatientReligiousAffiliationCode PatientGuardian PatientBirthplace'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation maritalStatusCode.codeSystemName='MaritalStatus' maritalStatusCode.codeSystem='2.16.840.1.113883.5.2' constraints.validation.info='PatientEthnicGroupCode PatientRaceCode PatientReligiousAffiliationCode PatientGuardian PatientBirthplace' constraints.validation.error='PatientBirthTimePreciseToYear PatientBirthTime PatientName' constraints.validation.warning='PatientBirthTimePreciseToDay PatientMaritalStatusCode PatientLanguageCommunication'"
  * @generated
  */
 public interface PatientRole_Patient extends Patient {

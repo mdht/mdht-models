@@ -26,10 +26,149 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralHeaderConstraints()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.1.1' constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTypeId GeneralHeaderConstraintsId GeneralHeaderConstraintsCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsConfidentialityCode GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsAuthor GeneralHeaderConstraintsCustodian GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier GeneralHeaderConstraintsAuthorAssignedAuthorAddr GeneralHeaderConstraintsAuthorAssignedAuthorId GeneralHeaderConstraintsAuthorAssignedAuthorTelecom GeneralHeaderConstraintsAuthorAssignedAuthor GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsDataEntererAssignedEntityAddr GeneralHeaderConstraintsDataEntererAssignedEntityCode GeneralHeaderConstraintsDataEntererAssignedEntityId GeneralHeaderConstraintsDataEntererAssignedEntityTelecom GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom GeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization GeneralHeaderConstraintsCustodianAssignedCustodian GeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName GeneralHeaderConstraintsInformationRecipientIntendedRecipient GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson GeneralHeaderConstraintsLegalAuthenticatorTime GeneralHeaderConstraintsLegalAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsAuthenticatorAssignedEntityId GeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsAuthenticatorTime GeneralHeaderConstraintsAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRoleAddr GeneralHeaderConstraintsRecordTargetPatientRoleId GeneralHeaderConstraintsRecordTargetPatientRoleTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime GeneralHeaderConstraintsComponentOfEncompassingEncounterId GeneralHeaderConstraintsComponentOfEncompassingEncounter GeneralHeaderConstraintsInformantRelatedEntityPerson GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsInformantAssignedEntityCode GeneralHeaderConstraintsInformantAssignedEntityPerson GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization GeneralHeaderConstraintsInFulfillmentOfOrderId GeneralHeaderConstraintsInFulfillmentOfOrder' constraints.validation.warning='GeneralHeaderConstraintsLegalAuthenticator GeneralHeaderConstraintsAuthorAssignedAuthorCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsInformantRelatedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityId' confidentialityCode.codeSystemName='ConfidentialityCode' realmCode.code='US' confidentialityCode.codeSystem='2.16.840.1.113883.5.25' constraints.validation.info='GeneralHeaderConstraintsSetId GeneralHeaderConstraintsVersionNumber GeneralHeaderConstraintsDataEnterer GeneralHeaderConstraintsInformationRecipient GeneralHeaderConstraintsAuthenticator GeneralHeaderConstraintsComponentOf GeneralHeaderConstraintsInformant GeneralHeaderConstraintsSupportParticipant GeneralHeaderConstraintsInFulfillmentOf GeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization GeneralHeaderConstraintsAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace GeneralHeaderConstraintsParticipantSupportTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation confidentialityCode.codeSystemName='ConfidentialityCode' confidentialityCode.codeSystem='2.16.840.1.113883.5.25' constraints.validation.info='GeneralHeaderConstraintsSetId GeneralHeaderConstraintsVersionNumber GeneralHeaderConstraintsDataEnterer GeneralHeaderConstraintsInformationRecipient GeneralHeaderConstraintsAuthenticator GeneralHeaderConstraintsComponentOf GeneralHeaderConstraintsInformant GeneralHeaderConstraintsSupportParticipant GeneralHeaderConstraintsInFulfillmentOf GeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization GeneralHeaderConstraintsAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace GeneralHeaderConstraintsParticipantSupportTime' constraints.validation.query='GeneralHeaderConstraintsUSRealmAddress GeneralHeaderConstraintsUSRealmPatientName' constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsUSRealmAddress GeneralHeaderConstraintsUSRealmPatientName GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTypeId GeneralHeaderConstraintsId GeneralHeaderConstraintsCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsConfidentialityCode GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsAuthor GeneralHeaderConstraintsCustodian GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier GeneralHeaderConstraintsAuthorAssignedAuthorAddr GeneralHeaderConstraintsAuthorAssignedAuthorId GeneralHeaderConstraintsAuthorAssignedAuthorTelecom GeneralHeaderConstraintsAuthorAssignedAuthor GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsDataEntererAssignedEntityAddr GeneralHeaderConstraintsDataEntererAssignedEntityCode GeneralHeaderConstraintsDataEntererAssignedEntityId GeneralHeaderConstraintsDataEntererAssignedEntityTelecom GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom GeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization GeneralHeaderConstraintsCustodianAssignedCustodian GeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName GeneralHeaderConstraintsInformationRecipientIntendedRecipient GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson GeneralHeaderConstraintsLegalAuthenticatorTime GeneralHeaderConstraintsLegalAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsAuthenticatorAssignedEntityId GeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsAuthenticatorTime GeneralHeaderConstraintsAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRoleAddr GeneralHeaderConstraintsRecordTargetPatientRoleId GeneralHeaderConstraintsRecordTargetPatientRoleTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime GeneralHeaderConstraintsComponentOfEncompassingEncounterId GeneralHeaderConstraintsComponentOfEncompassingEncounter GeneralHeaderConstraintsInformantRelatedEntityPerson GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsInformantAssignedEntityCode GeneralHeaderConstraintsInformantAssignedEntityPerson GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization GeneralHeaderConstraintsInFulfillmentOfOrderId GeneralHeaderConstraintsInFulfillmentOfOrder' templateId.root='2.16.840.1.113883.10.20.22.1.1' constraints.validation.warning='GeneralHeaderConstraintsLegalAuthenticator GeneralHeaderConstraintsAuthorAssignedAuthorCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsInformantRelatedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityId' realmCode.code='US'"
  * @generated
  */
 public interface GeneralHeaderConstraints extends ClinicalDocument {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * datatypes::AD.allInstances()->reject(
+	 *     addr : datatypes::AD | 
+	 *     not addr.use->isEmpty() and
+	 *     addr.use->forAll(
+	 *         use : vocab::PostalAddressUse |
+	 *         use=vocab::PostalAddressUse::BAD or
+	 *         use=vocab::PostalAddressUse::DIR or
+	 *         use=vocab::PostalAddressUse::H or
+	 *         use=vocab::PostalAddressUse::HP or
+	 *         use=vocab::PostalAddressUse::HV or
+	 *         use=vocab::PostalAddressUse::PHYS or
+	 *         use=vocab::PostalAddressUse::PST or
+	 *         use=vocab::PostalAddressUse::PUB or
+	 *         use=vocab::PostalAddressUse::TMP or
+	 *         use=vocab::PostalAddressUse::WP
+	 *     ) and
+	 *     addr.streetAddressLine->size() >= 1 and
+	 *     addr.streetAddressLine->size() <= 4 and
+	 *     addr.city->size() = 1 and
+	 *     addr.country->size() <= 1 and
+	 *     (
+	 *         (
+	 *             addr.country->size() = 0 or
+	 *             (
+	 *                 addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'
+	 *             )
+	 *         ) implies addr.state->size() = 1 and addr.postalCode->size() = 1
+	 *     )
+	 * )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::AD.allInstances()->reject(\r\n    addr : datatypes::AD | \r\n    not addr.use->isEmpty() and\r\n    addr.use->forAll(\r\n        use : vocab::PostalAddressUse |\r\n        use=vocab::PostalAddressUse::BAD or\r\n        use=vocab::PostalAddressUse::DIR or\r\n        use=vocab::PostalAddressUse::H or\r\n        use=vocab::PostalAddressUse::HP or\r\n        use=vocab::PostalAddressUse::HV or\r\n        use=vocab::PostalAddressUse::PHYS or\r\n        use=vocab::PostalAddressUse::PST or\r\n        use=vocab::PostalAddressUse::PUB or\r\n        use=vocab::PostalAddressUse::TMP or\r\n        use=vocab::PostalAddressUse::WP\r\n    ) and\r\n    addr.streetAddressLine->size() >= 1 and\r\n    addr.streetAddressLine->size() <= 4 and\r\n    addr.city->size() = 1 and\r\n    addr.country->size() <= 1 and\r\n    (\r\n        (\r\n            addr.country->size() = 0 or\r\n            (\r\n                addr.country->size() = 1 and addr.country->asSequence()->first().getText()=\'US\'\r\n            )\r\n        ) implies addr.state->size() = 1 and addr.postalCode->size() = 1\r\n    )\r\n)'"
+	 * @generated
+	 */
+	boolean validateGeneralHeaderConstraintsUSRealmAddress(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * datatypes::PN.allInstances()->reject(
+	 *     name : datatypes::PN |
+	 *     name.use->forAll(
+	 *         use : vocab::EntityNameUse |
+	 *         use=vocab::EntityNameUse::A or
+	 *         use=vocab::EntityNameUse::ABC or
+	 *         use=vocab::EntityNameUse::ASGN or
+	 *         use=vocab::EntityNameUse::C or
+	 *         use=vocab::EntityNameUse::I or
+	 *         use=vocab::EntityNameUse::IDE or
+	 *         use=vocab::EntityNameUse::L or
+	 *         use=vocab::EntityNameUse::P or
+	 *         use=vocab::EntityNameUse::PHON or
+	 *         use=vocab::EntityNameUse::R or
+	 *         use=vocab::EntityNameUse::SNDX or
+	 *         use=vocab::EntityNameUse::SRCH or
+	 *         use=vocab::EntityNameUse::SYL
+	 *     ) and
+	 *     name.prefix->forAll(
+	 *         prefix : datatypes::ENXP |
+	 *         prefix.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 *             qualifier=vocab::EntityNamePartQualifier::AC or
+	 *             qualifier=vocab::EntityNamePartQualifier::AD or
+	 *             qualifier=vocab::EntityNamePartQualifier::BR or
+	 *             qualifier=vocab::EntityNamePartQualifier::CL or
+	 *             qualifier=vocab::EntityNamePartQualifier::IN or
+	 *             qualifier=vocab::EntityNamePartQualifier::NB or
+	 *             qualifier=vocab::EntityNamePartQualifier::PR or
+	 *             qualifier=vocab::EntityNamePartQualifier::SP or
+	 *             qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 *             qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.given->size() >= 1 and
+	 *     name.given->forAll(
+	 *         given : datatypes::ENXP |
+	 *         given.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.family->size() = 1 and
+	 *     name.family->forAll(
+	 *         family : datatypes::ENXP |
+	 *         family.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     ) and
+	 *     name.suffix->size() <= 1 and
+	 *     name.suffix->forAll(
+	 *         suffix : datatypes::ENXP |
+	 *         suffix.qualifier->forAll(
+	 *             qualifier : vocab::EntityNamePartQualifier |
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AC or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::AD or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::BR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::CL or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::IN or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::NB or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::PR or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::SP or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::TITLE or
+	 * 	    qualifier=vocab::EntityNamePartQualifier::VV
+	 *         )
+	 *     )
+	 * )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::PN.allInstances()->reject(\r\n    name : datatypes::PN |\r\n    name.use->forAll(\r\n        use : vocab::EntityNameUse |\r\n        use=vocab::EntityNameUse::A or\r\n        use=vocab::EntityNameUse::ABC or\r\n        use=vocab::EntityNameUse::ASGN or\r\n        use=vocab::EntityNameUse::C or\r\n        use=vocab::EntityNameUse::I or\r\n        use=vocab::EntityNameUse::IDE or\r\n        use=vocab::EntityNameUse::L or\r\n        use=vocab::EntityNameUse::P or\r\n        use=vocab::EntityNameUse::PHON or\r\n        use=vocab::EntityNameUse::R or\r\n        use=vocab::EntityNameUse::SNDX or\r\n        use=vocab::EntityNameUse::SRCH or\r\n        use=vocab::EntityNameUse::SYL\r\n    ) and\r\n    name.prefix->forAll(\r\n        prefix : datatypes::ENXP |\r\n        prefix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n            qualifier=vocab::EntityNamePartQualifier::AC or\r\n            qualifier=vocab::EntityNamePartQualifier::AD or\r\n            qualifier=vocab::EntityNamePartQualifier::BR or\r\n            qualifier=vocab::EntityNamePartQualifier::CL or\r\n            qualifier=vocab::EntityNamePartQualifier::IN or\r\n            qualifier=vocab::EntityNamePartQualifier::NB or\r\n            qualifier=vocab::EntityNamePartQualifier::PR or\r\n            qualifier=vocab::EntityNamePartQualifier::SP or\r\n            qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n            qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.given->size() >= 1 and\r\n    name.given->forAll(\r\n        given : datatypes::ENXP |\r\n        given.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.family->size() = 1 and\r\n    name.family->forAll(\r\n        family : datatypes::ENXP |\r\n        family.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    ) and\r\n    name.suffix->size() <= 1 and\r\n    name.suffix->forAll(\r\n        suffix : datatypes::ENXP |\r\n        suffix.qualifier->forAll(\r\n            qualifier : vocab::EntityNamePartQualifier |\r\n\t    qualifier=vocab::EntityNamePartQualifier::AC or\r\n\t    qualifier=vocab::EntityNamePartQualifier::AD or\r\n\t    qualifier=vocab::EntityNamePartQualifier::BR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::CL or\r\n\t    qualifier=vocab::EntityNamePartQualifier::IN or\r\n\t    qualifier=vocab::EntityNamePartQualifier::NB or\r\n\t    qualifier=vocab::EntityNamePartQualifier::PR or\r\n\t    qualifier=vocab::EntityNamePartQualifier::SP or\r\n\t    qualifier=vocab::EntityNamePartQualifier::TITLE or\r\n\t    qualifier=vocab::EntityNamePartQualifier::VV\r\n        )\r\n    )\r\n)'"
+	 * @generated
+	 */
+	boolean validateGeneralHeaderConstraintsUSRealmPatientName(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

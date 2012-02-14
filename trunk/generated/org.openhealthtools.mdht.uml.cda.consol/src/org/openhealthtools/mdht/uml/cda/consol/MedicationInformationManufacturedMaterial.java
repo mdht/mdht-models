@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Material;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformationManufacturedMaterial()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.88' constraints.validation.error='MedicationInformationManufacturedMaterialCode' code.codeSystemName='RxNorm' constraints.validation.warning='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference' constraints.validation.info='MedicationInformationManufacturedMaterialCodeTranslation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationManufacturedMaterialCode' constraints.validation.info='MedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.6.88' constraints.validation.warning='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference'"
  * @generated
  */
 public interface MedicationInformationManufacturedMaterial extends Material {

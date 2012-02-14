@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity MedicationDispenseProduct' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity' classCode='SPLY' moodCode='EVN' constraints.validation.info='MedicationDispensePerformer2 MedicationDispenseMedicationSupplyOrder'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='SPLY' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity MedicationDispenseProduct' templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.info='MedicationDispensePerformer2 MedicationDispenseMedicationSupplyOrder' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
