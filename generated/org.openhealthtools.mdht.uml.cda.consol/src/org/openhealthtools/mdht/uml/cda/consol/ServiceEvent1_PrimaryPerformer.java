@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Performer1;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getServiceEvent1_PrimaryPerformer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrimaryPerformerFunctionCode' functionCode.codeSystem='2.16.840.1.113883.6.101' functionCode.codeSystemName='NUCCHealthCareProviderTaxonomy'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation functionCode.codeSystemName='NUCCHealthCareProviderTaxonomy' functionCode.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='PrimaryPerformerFunctionCode'"
  * @generated
  */
 public interface ServiceEvent1_PrimaryPerformer extends Performer1 {

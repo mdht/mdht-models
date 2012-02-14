@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getStudyAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.6.2.6' constraints.validation.error='StudyActTemplateId StudyActClassCode StudyActMoodCode StudyActId StudyActCode StudyActSeriesAct' code.codeSystemName='DCM' constraints.validation.warning='StudyActEffectiveTime' classCode='ACT' code.code='113014' moodCode='EVN' constraints.validation.info='StudyActText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.6.2.6' constraints.validation.error='StudyActTemplateId StudyActClassCode StudyActMoodCode StudyActId StudyActCode StudyActSeriesAct' constraints.validation.info='StudyActText' code.codeSystem='1.2.840.10008.2.16.4' code.code='113014' constraints.validation.warning='StudyActEffectiveTime'"
  * @generated
  */
 public interface StudyAct extends Act {

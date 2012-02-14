@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDataEnterer_AssignedEntity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityCode AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityCode AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystem='2.16.840.1.113883.6.101'"
  * @generated
  */
 public interface DataEnterer_AssignedEntity extends AssignedEntity {

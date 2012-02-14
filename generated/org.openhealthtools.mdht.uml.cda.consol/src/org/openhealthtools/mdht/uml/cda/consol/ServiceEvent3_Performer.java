@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Performer1;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getServiceEvent3_Performer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PerformerTypeCode' typeCode='PRF' constraints.validation.info='PerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='PRF' constraints.validation.info='PerformerAssignedEntity' constraints.validation.error='PerformerTypeCode'"
  * @generated
  */
 public interface ServiceEvent3_Performer extends Performer1 {

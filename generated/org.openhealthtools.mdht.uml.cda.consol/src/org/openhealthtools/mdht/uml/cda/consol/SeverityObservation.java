@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeverityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' code.codeSystemName='HL7ActCode' classCode='OBS' constraints.validation.warning='SeverityObservationTextReference SeverityObservationText' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' value.codeSystemName='SNOMEDCT' classCode='OBS' code.codeSystemName='HL7ActCode' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.8' code.displayName='Severity observation' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' code.code='SEV' constraints.validation.warning='SeverityObservationTextReference SeverityObservationText'"
  * @generated
  */
 public interface SeverityObservation extends Observation {

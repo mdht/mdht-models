@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getLegalAuthenticator_AssignedEntity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.warning='AssignedEntityCode'"
  * @generated
  */
 public interface LegalAuthenticator_AssignedEntity extends AssignedEntity {

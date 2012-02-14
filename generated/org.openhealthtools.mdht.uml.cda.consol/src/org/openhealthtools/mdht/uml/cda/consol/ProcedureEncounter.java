@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureEncounter()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureEncounterClassCode ProcedureEncounterMoodCode ProcedureEncounterId' classCode='ENC' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ENC' constraints.validation.error='ProcedureEncounterClassCode ProcedureEncounterMoodCode ProcedureEncounterId'"
  * @generated
  */
 public interface ProcedureEncounter extends Encounter {

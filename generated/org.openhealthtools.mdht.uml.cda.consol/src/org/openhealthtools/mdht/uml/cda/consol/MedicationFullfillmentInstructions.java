@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationFullfillmentInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' constraints.validation.error='MedicationFullfillmentInstructionsMoodCode MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsText MedicationFullfillmentInstructionsStatusCode' code.codeSystemName='IHEActCode' code.code='FINSTRUCT' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='INT' code.codeSystemName='IHEActCode' constraints.validation.error='MedicationFullfillmentInstructionsMoodCode MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsText MedicationFullfillmentInstructionsStatusCode' code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' code.code='FINSTRUCT'"
  * @generated
  */
 public interface MedicationFullfillmentInstructions extends Act {

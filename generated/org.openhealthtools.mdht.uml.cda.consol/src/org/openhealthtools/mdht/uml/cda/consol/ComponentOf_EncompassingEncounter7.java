@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getComponentOf_EncompassingEncounter7()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncompassingEncounter7EffectiveTime EncompassingEncounter7Id' constraints.validation.warning='EncompassingEncounter7PhysicianofRecordParticipant' constraints.validation.info='EncompassingEncounter7ResponsibleParty'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='EncompassingEncounter7ResponsibleParty' constraints.validation.error='EncompassingEncounter7EffectiveTime EncompassingEncounter7Id' constraints.validation.warning='EncompassingEncounter7PhysicianofRecordParticipant'"
  * @generated
  */
 public interface ComponentOf_EncompassingEncounter7 extends EncompassingEncounter {

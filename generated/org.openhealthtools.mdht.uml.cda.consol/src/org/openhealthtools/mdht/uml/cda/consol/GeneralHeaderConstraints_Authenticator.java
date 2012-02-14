@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Authenticator;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralHeaderConstraints_Authenticator()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthenticatorTime AuthenticatorSignatureCode AuthenticatorAssignedEntity' signatureCode.code='s'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation signatureCode.code='s' constraints.validation.error='AuthenticatorTime AuthenticatorSignatureCode AuthenticatorAssignedEntity'"
  * @generated
  */
 public interface GeneralHeaderConstraints_Authenticator extends Authenticator {
