@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdmissionMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='LOINC' constraints.validation.error='AdmissionMedicationTemplateId AdmissionMedicationClassCode AdmissionMedicationCode AdmissionMedicationMoodCode AdmissionMedicationMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.4.36' code.codeSystem='2.16.840.1.113883.6.1' code.code='42346-7'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.36' constraints.validation.error='AdmissionMedicationTemplateId AdmissionMedicationClassCode AdmissionMedicationCode AdmissionMedicationMoodCode AdmissionMedicationMedicationActivity' code.codeSystemName='LOINC' classCode='ACT' code.code='42346-7' moodCode='EVN'"
  * @generated
  */
 public interface AdmissionMedication extends Act {

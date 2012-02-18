@@ -56,8 +56,7 @@ public class ConsultationNote_ComponentOfImpl extends Component1Impl implements 
 	 * @generated
 	 */
 	public boolean validateComponentOfEncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote_ComponentOfOperations.validateComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return ConsultationNote_ComponentOfOperations.validateComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +65,7 @@ public class ConsultationNote_ComponentOfImpl extends Component1Impl implements 
 	 * @generated
 	 */
 	public ConsultationNote_ComponentOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ConsultationNote_ComponentOfImpl

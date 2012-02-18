@@ -50,7 +50,7 @@ public class Custodian_AssignedCustodian3Impl extends AssignedCustodianImpl impl
 	 * @generated
 	 */
 	public Custodian_AssignedCustodian3 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Custodian_AssignedCustodian3Impl

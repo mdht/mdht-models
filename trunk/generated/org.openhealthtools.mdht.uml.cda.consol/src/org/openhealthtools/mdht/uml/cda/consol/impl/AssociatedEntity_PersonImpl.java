@@ -65,7 +65,7 @@ public class AssociatedEntity_PersonImpl extends PersonImpl implements Associate
 	 * @generated
 	 */
 	public AssociatedEntity_Person init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AssociatedEntity_PersonImpl

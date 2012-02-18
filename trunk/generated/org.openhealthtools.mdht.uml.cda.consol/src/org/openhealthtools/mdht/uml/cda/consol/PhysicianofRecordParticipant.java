@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicianofRecordParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='ATND' constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantTypeCode PhysicianofRecordParticipantAssignedEntity' templateId.root='2.16.840.1.113883.10.20.6.2.2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.6.2.2' constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantTypeCode PhysicianofRecordParticipantAssignedEntity' typeCode='ATND'"
  * @generated
  */
 public interface PhysicianofRecordParticipant extends EncounterParticipant {

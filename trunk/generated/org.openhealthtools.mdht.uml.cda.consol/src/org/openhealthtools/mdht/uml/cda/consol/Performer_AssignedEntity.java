@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPerformer_AssignedEntity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssignedEntityId' constraints.validation.info='AssignedEntityCode' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssignedEntityId' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier' constraints.validation.info='AssignedEntityCode'"
  * @generated
  */
 public interface Performer_AssignedEntity extends AssignedEntity {

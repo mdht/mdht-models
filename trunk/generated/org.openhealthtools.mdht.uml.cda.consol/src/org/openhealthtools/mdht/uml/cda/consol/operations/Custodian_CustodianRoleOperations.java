@@ -90,17 +90,20 @@ public class Custodian_CustodianRoleOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.CUSTODIAN_CUSTODIAN_ROLE);
 			try {
 				VALIDATE_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			custodian_CustodianRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(custodian_CustodianRole)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_ADDR,
-					ConsolPlugin.INSTANCE.getString("CustodianRoleAddr"), new Object[] { custodian_CustodianRole }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_ADDR,
+						 ConsolPlugin.INSTANCE.getString("CustodianRoleAddr"),
+						 new Object [] { custodian_CustodianRole }));
 			}
 			return false;
 		}
@@ -145,17 +148,20 @@ public class Custodian_CustodianRoleOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.CUSTODIAN_CUSTODIAN_ROLE);
 			try {
 				VALIDATE_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			custodian_CustodianRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(custodian_CustodianRole)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CustodianRoleClassCode"), new Object[] { custodian_CustodianRole }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CustodianRoleClassCode"),
+						 new Object [] { custodian_CustodianRole }));
 			}
 			return false;
 		}
@@ -200,17 +206,20 @@ public class Custodian_CustodianRoleOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.CUSTODIAN_CUSTODIAN_ROLE);
 			try {
 				VALIDATE_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			custodian_CustodianRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(custodian_CustodianRole)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_TELECOM,
-					ConsolPlugin.INSTANCE.getString("CustodianRoleTelecom"), new Object[] { custodian_CustodianRole }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_TELECOM,
+						 ConsolPlugin.INSTANCE.getString("CustodianRoleTelecom"),
+						 new Object [] { custodian_CustodianRole }));
 			}
 			return false;
 		}
@@ -255,18 +264,20 @@ public class Custodian_CustodianRoleOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.CUSTODIAN_CUSTODIAN_ROLE);
 			try {
 				VALIDATE_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			custodian_CustodianRole)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(custodian_CustodianRole)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_PLAYING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("CustodianRolePlayingEntity"),
-					new Object[] { custodian_CustodianRole }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CUSTODIAN_CUSTODIAN_ROLE__CUSTODIAN_ROLE_PLAYING_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("CustodianRolePlayingEntity"),
+						 new Object [] { custodian_CustodianRole }));
 			}
 			return false;
 		}

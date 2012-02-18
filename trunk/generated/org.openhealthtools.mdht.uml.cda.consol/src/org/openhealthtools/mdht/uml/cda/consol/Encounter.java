@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounter()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ENC' code.codeSystemName='CPT-4' constraints.validation.error='ConsolEncounterAdmissionSourceValueSet ConsolEncounterClassCode ConsolEncounterId ConsolEncounterText' code.codeSystem='2.16.840.1.113883.6.12' constraints.validation.warning='ConsolEncounterCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' constraints.validation.error='ConsolEncounterAdmissionSourceValueSet ConsolEncounterClassCode ConsolEncounterId ConsolEncounterText' code.codeSystemName='CPT-4' classCode='ENC' constraints.validation.warning='ConsolEncounterCode'"
  * @generated
  */
 public interface Encounter extends org.openhealthtools.mdht.uml.cda.Encounter {

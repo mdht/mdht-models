@@ -495,14 +495,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_jXhNACzAEeGMXrZ0DiQwGg" name="assignedEntity" type="_HOG0oCynEeGMXrZ0DiQwGg" association="_jXh0ECzAEeGMXrZ0DiQwGg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jXhNASzAEeGMXrZ0DiQwGg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UXCGAFjWEeGKdMKWzrgL_Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UXCGAVjWEeGKdMKWzrgL_Q" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_HOG0oCynEeGMXrZ0DiQwGg" name="AssignedEntity">
         <ownedRule xmi:id="_YXfQwDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_YXfQwTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
             <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
@@ -511,8 +512,8 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         </generalization>
         <ownedAttribute xmi:id="_NItK0CynEeGMXrZ0DiQwGg" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NItK0SynEeGMXrZ0DiQwGg" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NItK0iynEeGMXrZ0DiQwGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NmtvIFjeEeGKdMKWzrgL_Q" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NmtvIVjeEeGKdMKWzrgL_Q" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NIuY8CynEeGMXrZ0DiQwGg" name="code" visibility="private" aggregation="composite">
@@ -534,8 +535,8 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3EIhkCzAEeGMXrZ0DiQwGg" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_3EIhkizAEeGMXrZ0DiQwGg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_99ipYCzAEeGMXrZ0DiQwGg" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_99ipYSzAEeGMXrZ0DiQwGg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xg9KsFjeEeGKdMKWzrgL_Q" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xg9KsVjeEeGKdMKWzrgL_Q" value="1"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -2204,8 +2205,9 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:ConstraintValidation xmi:id="_trWscDVUEeGIw7CntkyPQw" severity="WARNING" base_Constraint="_oGeuoDVUEeGIw7CntkyPQw">
     <ruleId>CONF:9996</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_1diZ4DVVEeGIw7CntkyPQw" base_Property="_NIuY8CynEeGMXrZ0DiQwGg">
+  <CDA:CodeSystemConstraint xmi:id="_1diZ4DVVEeGIw7CntkyPQw" base_Property="_NIuY8CynEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
+    <ruleId>CONF:9944</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_LwnaYDVWEeGIw7CntkyPQw" base_Property="_NmVGtSzCEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
@@ -4830,4 +4832,13 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_TvlesFcZEeGCdLgBm6VHOQ" base_Constraint="_Fz5m8FcZEeGCdLgBm6VHOQ"/>
   <CDA:ConstraintValidation xmi:id="_Vks-gFcfEeGCdLgBm6VHOQ" base_Constraint="_NiUccFcfEeGCdLgBm6VHOQ"/>
   <CDA:ConstraintValidation xmi:id="_dczjMFcfEeGCdLgBm6VHOQ" base_Constraint="_WnwW8FcfEeGCdLgBm6VHOQ"/>
+  <CDA:AssociationValidation xmi:id="_Uqz9oFjWEeGKdMKWzrgL_Q" base_Association="_jXh0ECzAEeGMXrZ0DiQwGg">
+    <ruleId>CONF:5442</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_rf2bsFjWEeGKdMKWzrgL_Q" severity="WARNING" base_Constraint="_YXfQwDVVEeGIw7CntkyPQw">
+    <ruleId>CONF:9943</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_bCo2IFn5EeGKdMKWzrgL_Q" base_Property="_IfG-8CymEeGMXrZ0DiQwGg">
+    <ruleId>CONF:5470</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDataEnterer_AssignedEntity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityCode AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystem='2.16.840.1.113883.6.101'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier AssignedEntityCode'"
  * @generated
  */
 public interface DataEnterer_AssignedEntity extends AssignedEntity {
@@ -94,11 +94,11 @@ public interface DataEnterer_AssignedEntity extends AssignedEntity {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedPerson->exists(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))
+	 * self.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedPerson->exists(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))'"
 	 * @generated
 	 */
 	boolean validateAssignedEntityAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);

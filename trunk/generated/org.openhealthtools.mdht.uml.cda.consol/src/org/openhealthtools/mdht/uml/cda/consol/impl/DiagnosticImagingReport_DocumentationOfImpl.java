@@ -57,8 +57,7 @@ public class DiagnosticImagingReport_DocumentationOfImpl extends DocumentationOf
 	 * @generated
 	 */
 	public boolean validateDocumentationOfServiceEvent3(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport_DocumentationOfOperations.validateDocumentationOfServiceEvent3(
-			this, diagnostics, context);
+		return DiagnosticImagingReport_DocumentationOfOperations.validateDocumentationOfServiceEvent3(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class DiagnosticImagingReport_DocumentationOfImpl extends DocumentationOf
 	 * @generated
 	 */
 	public DiagnosticImagingReport_DocumentationOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DiagnosticImagingReport_DocumentationOfImpl

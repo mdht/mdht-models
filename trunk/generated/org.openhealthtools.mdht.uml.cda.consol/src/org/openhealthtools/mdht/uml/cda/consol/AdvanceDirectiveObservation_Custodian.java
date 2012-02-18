@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectiveObservation_Custodian()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CST' constraints.validation.error='CustodianTypeCode CustodianAdvanceDirectiveObservationCustodianRole'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CustodianTypeCode CustodianAdvanceDirectiveObservationCustodianRole' typeCode='CST'"
  * @generated
  */
 public interface AdvanceDirectiveObservation_Custodian extends Participant2 {

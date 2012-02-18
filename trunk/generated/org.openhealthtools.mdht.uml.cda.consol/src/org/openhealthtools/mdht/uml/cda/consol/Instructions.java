@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='INT' classCode='ACT' constraints.validation.error='InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.20' statusCode.code='completed' constraints.validation.warning='InstructionsTextReference InstructionsText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.20' constraints.validation.error='InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsStatusCode' classCode='ACT' constraints.validation.warning='InstructionsTextReference InstructionsText' moodCode='INT'"
  * @generated
  */
 public interface Instructions extends Act {

@@ -58,8 +58,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCriterionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionCode(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCriterionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionText(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionText(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCriterionValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionValue(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterionValue(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +98,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCriterion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterion(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCriterion(this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +107,7 @@ public class PreconditionForSubstanceAdministrationImpl extends PreconditionImpl
 	 * @generated
 	 */
 	public PreconditionForSubstanceAdministration init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PreconditionForSubstanceAdministrationImpl

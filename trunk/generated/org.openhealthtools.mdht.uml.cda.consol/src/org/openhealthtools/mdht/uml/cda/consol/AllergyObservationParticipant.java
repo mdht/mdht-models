@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservationParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode.codeSystem='2.16.840.1.113883.5.90' typeCode.code='CSM' typeCode.displayName='Consumable' constraints.validation.error='AllergyObservationParticipantParticipantRole' typeCode.codeSystemName='HL7ParticipationType'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode.displayName='Consumable' typeCode.codeSystemName='HL7ParticipationType' constraints.validation.error='AllergyObservationParticipantParticipantRole' typeCode.codeSystem='2.16.840.1.113883.5.90' typeCode.code='CSM'"
  * @generated
  */
 public interface AllergyObservationParticipant extends Participant2 {

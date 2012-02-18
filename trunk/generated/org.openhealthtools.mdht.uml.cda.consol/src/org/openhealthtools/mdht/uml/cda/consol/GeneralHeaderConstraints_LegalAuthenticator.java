@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralHeaderConstraints_LegalAuthenticator()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation signatureCode.code='s' constraints.validation.error='LegalAuthenticatorTime LegalAuthenticatorSignatureCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='LegalAuthenticatorTime LegalAuthenticatorSignatureCode' signatureCode.code='S'"
  * @generated
  */
 public interface GeneralHeaderConstraints_LegalAuthenticator extends LegalAuthenticator {
@@ -42,11 +42,11 @@ public interface GeneralHeaderConstraints_LegalAuthenticator extends LegalAuthen
 	 * <!-- begin-model-doc -->
 	 * (self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (
-	 * value.code = 's'))
+	 * value.code = 'S'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'s\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.signatureCode.oclIsUndefined() or self.signatureCode.isNullFlavorUndefined()) implies (not self.signatureCode.oclIsUndefined() and self.signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.signatureCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'S\'))'"
 	 * @generated
 	 */
 	boolean validateLegalAuthenticatorSignatureCode(DiagnosticChain diagnostics, Map<Object, Object> context);

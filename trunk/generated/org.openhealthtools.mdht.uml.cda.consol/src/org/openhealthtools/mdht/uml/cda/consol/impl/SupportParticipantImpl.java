@@ -49,7 +49,7 @@ public class SupportParticipantImpl extends SupportImpl implements SupportPartic
 	 */
 	@Override
 	public SupportParticipant init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SupportParticipantImpl

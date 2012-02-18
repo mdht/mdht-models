@@ -1105,9 +1105,10 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_T_SsgCzFEeGMXrZ0DiQwGg">
     <ruleId>CONF:5583</ruleId>
+    <ruleId>CONF:5584</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="s">
+  <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="S">
     <reference href="consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:CodeSystemConstraint>

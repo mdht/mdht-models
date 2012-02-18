@@ -104,19 +104,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructionInversionInd"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructionInversionInd"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -161,18 +162,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderTemplateId"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderTemplateId"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -217,18 +220,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderClassCode"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderClassCode"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -273,18 +278,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderEffectiveTime"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderEffectiveTime"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -329,18 +336,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMoodCode"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMoodCode"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -385,18 +394,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderQuantity"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_QUANTITY,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderQuantity"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -441,18 +452,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderRepeatNumber"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderRepeatNumber"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -497,18 +510,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderStatusCode"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderStatusCode"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -553,17 +568,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderId"), new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderId"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -608,18 +626,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_PRODUCT,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderProduct"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_PRODUCT,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderProduct"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -664,18 +684,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderAuthor"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_AUTHOR,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderAuthor"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -720,18 +742,20 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			helper.setContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER);
 			try {
 				VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationSupplyOrder)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationSupplyOrder)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructions"),
-					new Object[] { medicationSupplyOrder }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS,
+						 ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructions"),
+						 new Object [] { medicationSupplyOrder }));
 			}
 			return false;
 		}
@@ -770,12 +794,11 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static Instructions getInstructions(MedicationSupplyOrder medicationSupplyOrder) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER,
-				ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER.getEAllOperations().get(62));
+			helper.setOperationContext(ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER, ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER.getEAllOperations().get(62));
 			try {
 				GET_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -87,16 +87,20 @@ public class Patient_BirthplaceOperations extends BirthplaceOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_BIRTHPLACE);
 			try {
 				VALIDATE_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patient_Birthplace)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_BIRTHPLACE__BIRTHPLACE_PLACE,
-					ConsolPlugin.INSTANCE.getString("BirthplacePlace"), new Object[] { patient_Birthplace }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_BIRTHPLACE__BIRTHPLACE_PLACE,
+						 ConsolPlugin.INSTANCE.getString("BirthplacePlace"),
+						 new Object [] { patient_Birthplace }));
 			}
 			return false;
 		}

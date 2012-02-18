@@ -65,7 +65,7 @@ public class IntendedRecipient_OrganizationImpl extends OrganizationImpl impleme
 	 * @generated
 	 */
 	public IntendedRecipient_Organization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // IntendedRecipient_OrganizationImpl

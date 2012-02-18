@@ -303,7 +303,12 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_ddYVAKDqEd-dVeaMP0XXQw" name="UNCLE"/>
       <ownedLiteral xmi:id="_ddYVAqDqEd-dVeaMP0XXQw" name="FRND"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency">
+      <ownedLiteral xmi:id="_gzUsQFoCEeGKdMKWzrgL_Q" name="E"/>
+      <ownedLiteral xmi:id="_mLUEoFoCEeGKdMKWzrgL_Q" name="F"/>
+      <ownedLiteral xmi:id="_qlnFsFoCEeGKdMKWzrgL_Q" name="G"/>
+      <ownedLiteral xmi:id="_vRMEAFoCEeGKdMKWzrgL_Q" name="P"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_svo1oDVVEeGIw7CntkyPQw" name="NUCCHealthCareProviderTaxonomy"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZhyZUDVYEeGIw7CntkyPQw" name="Participationsignature"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type">
@@ -644,4 +649,8 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_TYKKYUb4EeGp67IkyTw1fg" identifier="1.2.840.10008.2.16.4" fullName="Dicom" base_Enumeration="_TYKKYEb4EeGp67IkyTw1fg"/>
   <term:ValueSetVersion xmi:id="_jyBH4UrhEeGJpZWiuxRVIw" identifier="2.16.840.1.113883.11.20.9.28" fullName="DICOMPurposeOfReference" binding="Dynamic" codeSystem="_TYKKYUb4EeGp67IkyTw1fg" base_Enumeration="_jyBH4ErhEeGJpZWiuxRVIw"/>
+  <term:ValueSetCode xmi:id="_gzUsQVoCEeGKdMKWzrgL_Q" conceptName="Excellent" base_EnumerationLiteral="_gzUsQFoCEeGKdMKWzrgL_Q"/>
+  <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
+  <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
+  <term:ValueSetCode xmi:id="_vRMEAVoCEeGKdMKWzrgL_Q" conceptName="Poor" base_EnumerationLiteral="_vRMEAFoCEeGKdMKWzrgL_Q"/>
 </xmi:XMI>

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ServiceEvent;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDocumentationOf_ServiceEvent4()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ACT' constraints.validation.error='ServiceEvent4ClassCode ServiceEvent4Code' constraints.validation.warning='ServiceEvent4Id ServiceEvent4PhysicianReadingStudyPerformer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ServiceEvent4ClassCode ServiceEvent4Code' classCode='ACT' constraints.validation.warning='ServiceEvent4Id ServiceEvent4PhysicianReadingStudyPerformer'"
  * @generated
  */
 public interface DocumentationOf_ServiceEvent4 extends ServiceEvent {

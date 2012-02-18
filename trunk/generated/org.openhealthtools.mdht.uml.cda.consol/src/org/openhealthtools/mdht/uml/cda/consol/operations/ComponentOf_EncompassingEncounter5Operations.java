@@ -90,18 +90,20 @@ public class ComponentOf_EncompassingEncounter5Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter5)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter5)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_CODE,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter5Code"),
-					new Object[] { componentOf_EncompassingEncounter5 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_CODE,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter5Code"),
+						 new Object [] { componentOf_EncompassingEncounter5 }));
 			}
 			return false;
 		}
@@ -147,18 +149,20 @@ public class ComponentOf_EncompassingEncounter5Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter5)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter5)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_LOCATION,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter5Location"),
-					new Object[] { componentOf_EncompassingEncounter5 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_LOCATION,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter5Location"),
+						 new Object [] { componentOf_EncompassingEncounter5 }));
 			}
 			return false;
 		}
@@ -204,20 +208,20 @@ public class ComponentOf_EncompassingEncounter5Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter5)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter5)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter5EncounterParticipant"),
-					new Object[] { componentOf_EncompassingEncounter5 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter5EncounterParticipant"),
+						 new Object [] { componentOf_EncompassingEncounter5 }));
 			}
 			return false;
 		}

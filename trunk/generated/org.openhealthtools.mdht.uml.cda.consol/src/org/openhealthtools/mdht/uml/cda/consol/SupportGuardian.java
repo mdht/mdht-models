@@ -21,7 +21,7 @@ package org.openhealthtools.mdht.uml.cda.consol;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSupportGuardian()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='RoleCode' code.codeSystem='2.16.840.1.113883.5.111'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode'"
  * @generated
  */
 public interface SupportGuardian extends Support {

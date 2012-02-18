@@ -88,18 +88,20 @@ public class ProcedureNote_ComponentOfOperations extends Component1Operations {
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE_COMPONENT_OF);
 			try {
 				VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNote_ComponentOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNote_ComponentOf)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER5,
-					ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter5"),
-					new Object[] { procedureNote_ComponentOf }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER5,
+						 ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter5"),
+						 new Object [] { procedureNote_ComponentOf }));
 			}
 			return false;
 		}
