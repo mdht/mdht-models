@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostprocedureDiagnosis()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='LOINC' constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisClassCode PostprocedureDiagnosisCode PostprocedureDiagnosisMoodCode PostprocedureDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.51' code.displayName='Postprocedure Diagnosis' code.codeSystem='2.16.840.1.113883.6.1' code.code='59769-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Postprocedure Diagnosis' templateId.root='2.16.840.1.113883.10.20.22.4.51' constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisClassCode PostprocedureDiagnosisCode PostprocedureDiagnosisMoodCode PostprocedureDiagnosisProblemObservation' code.codeSystemName='LOINC' classCode='ACT' code.code='59769-0' moodCode='EVN'"
  * @generated
  */
 public interface PostprocedureDiagnosis extends Act {

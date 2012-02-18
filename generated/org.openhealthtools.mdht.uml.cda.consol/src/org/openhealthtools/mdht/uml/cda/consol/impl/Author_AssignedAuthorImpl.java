@@ -57,8 +57,7 @@ public class Author_AssignedAuthorImpl extends AssignedAuthorImpl implements Aut
 	 */
 	public boolean validateAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Author_AssignedAuthorOperations.validateAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return Author_AssignedAuthorOperations.validateAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class Author_AssignedAuthorImpl extends AssignedAuthorImpl implements Aut
 	 */
 	public boolean validateAssignedAuthorHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Author_AssignedAuthorOperations.validateAssignedAuthorHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return Author_AssignedAuthorOperations.validateAssignedAuthorHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -114,7 +112,7 @@ public class Author_AssignedAuthorImpl extends AssignedAuthorImpl implements Aut
 	 * @generated
 	 */
 	public Author_AssignedAuthor init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Author_AssignedAuthorImpl

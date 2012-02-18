@@ -57,8 +57,7 @@ public class ComponentOf_EncompassingEncounterImpl extends EncompassingEncounter
 	 * @generated
 	 */
 	public boolean validateEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComponentOf_EncompassingEncounterOperations.validateEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return ComponentOf_EncompassingEncounterOperations.validateEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +75,7 @@ public class ComponentOf_EncompassingEncounterImpl extends EncompassingEncounter
 	 * @generated
 	 */
 	public ComponentOf_EncompassingEncounter init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ComponentOf_EncompassingEncounterImpl

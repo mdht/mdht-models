@@ -6,11 +6,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints_Person;
 
+import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraints_PersonOperations;
 import org.openhealthtools.mdht.uml.cda.impl.PersonImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -49,8 +52,17 @@ public class GeneralHeaderConstraints_PersonImpl extends PersonImpl implements G
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePersonName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraints_PersonOperations.validatePersonName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public GeneralHeaderConstraints_Person init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_PersonImpl

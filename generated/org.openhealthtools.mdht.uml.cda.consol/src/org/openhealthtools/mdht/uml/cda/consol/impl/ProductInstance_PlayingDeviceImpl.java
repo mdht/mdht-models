@@ -65,7 +65,7 @@ public class ProductInstance_PlayingDeviceImpl extends DeviceImpl implements Pro
 	 * @generated
 	 */
 	public ProductInstance_PlayingDevice init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProductInstance_PlayingDeviceImpl

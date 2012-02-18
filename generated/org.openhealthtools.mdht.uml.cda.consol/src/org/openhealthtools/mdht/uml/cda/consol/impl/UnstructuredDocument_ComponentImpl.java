@@ -50,7 +50,7 @@ public class UnstructuredDocument_ComponentImpl extends Component2Impl implement
 	 * @generated
 	 */
 	public UnstructuredDocument_Component init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // UnstructuredDocument_ComponentImpl

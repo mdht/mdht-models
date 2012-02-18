@@ -58,8 +58,7 @@ public class InformationRecipient_IntendedRecipientImpl extends IntendedRecipien
 	 */
 	public boolean validateIntendedRecipientInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InformationRecipient_IntendedRecipientOperations.validateIntendedRecipientInformationRecipient(
-			this, diagnostics, context);
+		return InformationRecipient_IntendedRecipientOperations.validateIntendedRecipientInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class InformationRecipient_IntendedRecipientImpl extends IntendedRecipien
 	 */
 	public boolean validateIntendedRecipientRecievedOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InformationRecipient_IntendedRecipientOperations.validateIntendedRecipientRecievedOrganization(
-			this, diagnostics, context);
+		return InformationRecipient_IntendedRecipientOperations.validateIntendedRecipientRecievedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -79,7 +77,7 @@ public class InformationRecipient_IntendedRecipientImpl extends IntendedRecipien
 	 * @generated
 	 */
 	public InformationRecipient_IntendedRecipient init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // InformationRecipient_IntendedRecipientImpl

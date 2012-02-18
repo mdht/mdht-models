@@ -95,8 +95,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 */
 	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
-			this, diagnostics, context);
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -114,7 +113,7 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	public ProcedureFindingsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureFindingsSectionImpl

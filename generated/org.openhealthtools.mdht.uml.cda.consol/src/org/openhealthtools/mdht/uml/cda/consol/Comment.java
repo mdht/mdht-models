@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getComment()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.4.64' constraints.validation.error='CommentTemplateId CommentHasTextReference CommentEffectiveTimeWhenAuthorPresent CommentHasAuthorId CommentHasAuthorOrganization CommentClassCode CommentMoodCode CommentCode CommentText CommentStatusCode CommentAuthor' statusCode.code='completed' code.displayName='Annotation comment' code.codeSystem='2.16.840.1.113883.6.1' code.code='48767-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.64' code.displayName='Annotation comment' constraints.validation.error='CommentTemplateId CommentHasTextReference CommentEffectiveTimeWhenAuthorPresent CommentHasAuthorId CommentHasAuthorOrganization CommentClassCode CommentMoodCode CommentCode CommentText CommentStatusCode CommentAuthor' code.codeSystemName='LOINC' classCode='ACT' code.code='48767-8' moodCode='EVN'"
  * @generated
  */
 public interface Comment extends Act {

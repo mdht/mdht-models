@@ -6,11 +6,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints_DataEnterer;
 
+import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraints_DataEntererOperations;
 import org.openhealthtools.mdht.uml.cda.impl.DataEntererImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -50,8 +53,17 @@ public class GeneralHeaderConstraints_DataEntererImpl extends DataEntererImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDataEntererAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraints_DataEntererOperations.validateDataEntererAssignedEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public GeneralHeaderConstraints_DataEnterer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_DataEntererImpl

@@ -87,16 +87,20 @@ public class InFulfillmentOf_OrderOperations extends OrderOperations {
 			helper.setContext(ConsolPackage.Literals.IN_FULFILLMENT_OF_ORDER);
 			try {
 				VALIDATE_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inFulfillmentOf_Order)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IN_FULFILLMENT_OF_ORDER__ORDER_ID, ConsolPlugin.INSTANCE.getString("OrderId"),
-					new Object[] { inFulfillmentOf_Order }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IN_FULFILLMENT_OF_ORDER__ORDER_ID,
+						 ConsolPlugin.INSTANCE.getString("OrderId"),
+						 new Object [] { inFulfillmentOf_Order }));
 			}
 			return false;
 		}

@@ -89,18 +89,20 @@ public class PhysicianReadingStudyPerformer_AssignedEntityOperations extends Ass
 			helper.setContext(ConsolPackage.Literals.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianReadingStudyPerformer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianReadingStudyPerformer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
-					ConsolPlugin.INSTANCE.getString("AssignedEntityCode"),
-					new Object[] { physicianReadingStudyPerformer_AssignedEntity }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssignedEntityCode"),
+						 new Object [] { physicianReadingStudyPerformer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -146,18 +148,20 @@ public class PhysicianReadingStudyPerformer_AssignedEntityOperations extends Ass
 			helper.setContext(ConsolPackage.Literals.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianReadingStudyPerformer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianReadingStudyPerformer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
-					ConsolPlugin.INSTANCE.getString("AssignedEntityId"),
-					new Object[] { physicianReadingStudyPerformer_AssignedEntity }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
+						 ConsolPlugin.INSTANCE.getString("AssignedEntityId"),
+						 new Object [] { physicianReadingStudyPerformer_AssignedEntity }));
 			}
 			return false;
 		}

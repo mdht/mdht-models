@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalTitle ImmunizationsSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.2' code.codeSystem='2.16.840.1.113883.6.1' code.code='11369-6' constraints.validation.warning='ImmunizationsSectionEntriesOptionalImmunizationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.2' constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalTitle ImmunizationsSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='ImmunizationsSectionEntriesOptionalImmunizationActivity' code.code='11369-6'"
  * @generated
  */
 public interface ImmunizationsSectionEntriesOptional extends Section {

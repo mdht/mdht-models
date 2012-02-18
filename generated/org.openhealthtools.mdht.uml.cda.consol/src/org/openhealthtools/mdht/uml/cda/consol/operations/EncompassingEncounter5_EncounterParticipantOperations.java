@@ -88,18 +88,20 @@ public class EncompassingEncounter5_EncounterParticipantOperations extends Parti
 			helper.setContext(ConsolPackage.Literals.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT);
 			try {
 				VALIDATE_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encompassingEncounter5_EncounterParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encompassingEncounter5_EncounterParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterParticipantTypeCode"),
-					new Object[] { encompassingEncounter5_EncounterParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__ENCOUNTER_PARTICIPANT_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("EncounterParticipantTypeCode"),
+						 new Object [] { encompassingEncounter5_EncounterParticipant }));
 			}
 			return false;
 		}

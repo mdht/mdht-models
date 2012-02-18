@@ -136,11 +136,13 @@ public class ConsolSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		} else {
+		}
+		else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return eSuperTypes.isEmpty()
-					? defaultCase(theEObject)
-					: doSwitch(eSuperTypes.get(0), theEObject);
+			return
+				eSuperTypes.isEmpty() ?
+					defaultCase(theEObject) :
+					doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -154,5143 +156,2678 @@ public class ConsolSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS: {
-				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints) theEObject;
+				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints)theEObject;
 				T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) {
-					result = caseClinicalDocument(generalHeaderConstraints);
-				}
-				if (result == null) {
-					result = caseAct(generalHeaderConstraints);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseClinicalDocument(generalHeaderConstraints);
+				if (result == null) result = caseAct(generalHeaderConstraints);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET: {
-				GeneralHeaderConstraints_RecordTarget generalHeaderConstraints_RecordTarget = (GeneralHeaderConstraints_RecordTarget) theEObject;
+				GeneralHeaderConstraints_RecordTarget generalHeaderConstraints_RecordTarget = (GeneralHeaderConstraints_RecordTarget)theEObject;
 				T result = caseGeneralHeaderConstraints_RecordTarget(generalHeaderConstraints_RecordTarget);
-				if (result == null) {
-					result = caseRecordTarget(generalHeaderConstraints_RecordTarget);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_RecordTarget);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_RecordTarget);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseRecordTarget(generalHeaderConstraints_RecordTarget);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_RecordTarget);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_RecordTarget);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE: {
-				RecordTarget_PatientRole recordTarget_PatientRole = (RecordTarget_PatientRole) theEObject;
+				RecordTarget_PatientRole recordTarget_PatientRole = (RecordTarget_PatientRole)theEObject;
 				T result = caseRecordTarget_PatientRole(recordTarget_PatientRole);
-				if (result == null) {
-					result = casePatientRole(recordTarget_PatientRole);
-				}
-				if (result == null) {
-					result = caseRole(recordTarget_PatientRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(recordTarget_PatientRole);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePatientRole(recordTarget_PatientRole);
+				if (result == null) result = caseRole(recordTarget_PatientRole);
+				if (result == null) result = caseInfrastructureRoot(recordTarget_PatientRole);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PATIENT_ROLE_PATIENT: {
-				PatientRole_Patient patientRole_Patient = (PatientRole_Patient) theEObject;
+				PatientRole_Patient patientRole_Patient = (PatientRole_Patient)theEObject;
 				T result = casePatientRole_Patient(patientRole_Patient);
-				if (result == null) {
-					result = casePatient(patientRole_Patient);
-				}
-				if (result == null) {
-					result = caseEntity(patientRole_Patient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientRole_Patient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePatient(patientRole_Patient);
+				if (result == null) result = caseEntity(patientRole_Patient);
+				if (result == null) result = caseInfrastructureRoot(patientRole_Patient);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PATIENT_GUARDIAN: {
-				Patient_Guardian patient_Guardian = (Patient_Guardian) theEObject;
+				Patient_Guardian patient_Guardian = (Patient_Guardian)theEObject;
 				T result = casePatient_Guardian(patient_Guardian);
-				if (result == null) {
-					result = caseGuardian(patient_Guardian);
-				}
-				if (result == null) {
-					result = caseRole(patient_Guardian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patient_Guardian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGuardian(patient_Guardian);
+				if (result == null) result = caseRole(patient_Guardian);
+				if (result == null) result = caseInfrastructureRoot(patient_Guardian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PATIENT_LANGUAGE_COMMUNICATION: {
-				Patient_LanguageCommunication patient_LanguageCommunication = (Patient_LanguageCommunication) theEObject;
+				Patient_LanguageCommunication patient_LanguageCommunication = (Patient_LanguageCommunication)theEObject;
 				T result = casePatient_LanguageCommunication(patient_LanguageCommunication);
-				if (result == null) {
-					result = caseLanguageCommunication(patient_LanguageCommunication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseLanguageCommunication(patient_LanguageCommunication);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PATIENT_BIRTHPLACE: {
-				Patient_Birthplace patient_Birthplace = (Patient_Birthplace) theEObject;
+				Patient_Birthplace patient_Birthplace = (Patient_Birthplace)theEObject;
 				T result = casePatient_Birthplace(patient_Birthplace);
-				if (result == null) {
-					result = caseBirthplace(patient_Birthplace);
-				}
-				if (result == null) {
-					result = caseRole(patient_Birthplace);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patient_Birthplace);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseBirthplace(patient_Birthplace);
+				if (result == null) result = caseRole(patient_Birthplace);
+				if (result == null) result = caseInfrastructureRoot(patient_Birthplace);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.BIRTHPLACE_PLACE: {
-				Birthplace_Place birthplace_Place = (Birthplace_Place) theEObject;
+				Birthplace_Place birthplace_Place = (Birthplace_Place)theEObject;
 				T result = caseBirthplace_Place(birthplace_Place);
-				if (result == null) {
-					result = casePlace(birthplace_Place);
-				}
-				if (result == null) {
-					result = caseEntity(birthplace_Place);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(birthplace_Place);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePlace(birthplace_Place);
+				if (result == null) result = caseEntity(birthplace_Place);
+				if (result == null) result = caseInfrastructureRoot(birthplace_Place);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PATIENT_ROLE_PROVIDER_ORGANIZATION: {
-				PatientRole_ProviderOrganization patientRole_ProviderOrganization = (PatientRole_ProviderOrganization) theEObject;
+				PatientRole_ProviderOrganization patientRole_ProviderOrganization = (PatientRole_ProviderOrganization)theEObject;
 				T result = casePatientRole_ProviderOrganization(patientRole_ProviderOrganization);
-				if (result == null) {
-					result = caseOrganization(patientRole_ProviderOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(patientRole_ProviderOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientRole_ProviderOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrganization(patientRole_ProviderOrganization);
+				if (result == null) result = caseEntity(patientRole_ProviderOrganization);
+				if (result == null) result = caseInfrastructureRoot(patientRole_ProviderOrganization);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF: {
-				GeneralHeaderConstraints_ComponentOf generalHeaderConstraints_ComponentOf = (GeneralHeaderConstraints_ComponentOf) theEObject;
+				GeneralHeaderConstraints_ComponentOf generalHeaderConstraints_ComponentOf = (GeneralHeaderConstraints_ComponentOf)theEObject;
 				T result = caseGeneralHeaderConstraints_ComponentOf(generalHeaderConstraints_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(generalHeaderConstraints_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(generalHeaderConstraints_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(generalHeaderConstraints_ComponentOf);
+				if (result == null) result = caseActRelationship(generalHeaderConstraints_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER: {
-				ComponentOf_EncompassingEncounter componentOf_EncompassingEncounter = (ComponentOf_EncompassingEncounter) theEObject;
+				ComponentOf_EncompassingEncounter componentOf_EncompassingEncounter = (ComponentOf_EncompassingEncounter)theEObject;
 				T result = caseComponentOf_EncompassingEncounter(componentOf_EncompassingEncounter);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHOR: {
-				GeneralHeaderConstraints_Author generalHeaderConstraints_Author = (GeneralHeaderConstraints_Author) theEObject;
+				GeneralHeaderConstraints_Author generalHeaderConstraints_Author = (GeneralHeaderConstraints_Author)theEObject;
 				T result = caseGeneralHeaderConstraints_Author(generalHeaderConstraints_Author);
-				if (result == null) {
-					result = caseAuthor(generalHeaderConstraints_Author);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_Author);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_Author);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthor(generalHeaderConstraints_Author);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_Author);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_Author);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR: {
-				Author_AssignedAuthor author_AssignedAuthor = (Author_AssignedAuthor) theEObject;
+				Author_AssignedAuthor author_AssignedAuthor = (Author_AssignedAuthor)theEObject;
 				T result = caseAuthor_AssignedAuthor(author_AssignedAuthor);
-				if (result == null) {
-					result = caseAssignedAuthor(author_AssignedAuthor);
-				}
-				if (result == null) {
-					result = caseRole(author_AssignedAuthor);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(author_AssignedAuthor);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedAuthor(author_AssignedAuthor);
+				if (result == null) result = caseRole(author_AssignedAuthor);
+				if (result == null) result = caseInfrastructureRoot(author_AssignedAuthor);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSIGNED_AUTHOR_AUTHORING_DEVICE: {
-				AssignedAuthor_AuthoringDevice assignedAuthor_AuthoringDevice = (AssignedAuthor_AuthoringDevice) theEObject;
+				AssignedAuthor_AuthoringDevice assignedAuthor_AuthoringDevice = (AssignedAuthor_AuthoringDevice)theEObject;
 				T result = caseAssignedAuthor_AuthoringDevice(assignedAuthor_AuthoringDevice);
-				if (result == null) {
-					result = caseAuthoringDevice(assignedAuthor_AuthoringDevice);
-				}
-				if (result == null) {
-					result = caseEntity(assignedAuthor_AuthoringDevice);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedAuthor_AuthoringDevice);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthoringDevice(assignedAuthor_AuthoringDevice);
+				if (result == null) result = caseEntity(assignedAuthor_AuthoringDevice);
+				if (result == null) result = caseInfrastructureRoot(assignedAuthor_AuthoringDevice);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PERSON: {
-				GeneralHeaderConstraints_Person generalHeaderConstraints_Person = (GeneralHeaderConstraints_Person) theEObject;
+				GeneralHeaderConstraints_Person generalHeaderConstraints_Person = (GeneralHeaderConstraints_Person)theEObject;
 				T result = caseGeneralHeaderConstraints_Person(generalHeaderConstraints_Person);
-				if (result == null) {
-					result = casePerson(generalHeaderConstraints_Person);
-				}
-				if (result == null) {
-					result = caseEntity(generalHeaderConstraints_Person);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_Person);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerson(generalHeaderConstraints_Person);
+				if (result == null) result = caseEntity(generalHeaderConstraints_Person);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_Person);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER: {
-				GeneralHeaderConstraints_DataEnterer generalHeaderConstraints_DataEnterer = (GeneralHeaderConstraints_DataEnterer) theEObject;
+				GeneralHeaderConstraints_DataEnterer generalHeaderConstraints_DataEnterer = (GeneralHeaderConstraints_DataEnterer)theEObject;
 				T result = caseGeneralHeaderConstraints_DataEnterer(generalHeaderConstraints_DataEnterer);
-				if (result == null) {
-					result = caseDataEnterer(generalHeaderConstraints_DataEnterer);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_DataEnterer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_DataEnterer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDataEnterer(generalHeaderConstraints_DataEnterer);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_DataEnterer);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_DataEnterer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DATA_ENTERER_ASSIGNED_ENTITY: {
-				DataEnterer_AssignedEntity dataEnterer_AssignedEntity = (DataEnterer_AssignedEntity) theEObject;
+				DataEnterer_AssignedEntity dataEnterer_AssignedEntity = (DataEnterer_AssignedEntity)theEObject;
 				T result = caseDataEnterer_AssignedEntity(dataEnterer_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(dataEnterer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(dataEnterer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dataEnterer_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(dataEnterer_AssignedEntity);
+				if (result == null) result = caseRole(dataEnterer_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(dataEnterer_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN: {
-				GeneralHeaderConstraints_Custodian generalHeaderConstraints_Custodian = (GeneralHeaderConstraints_Custodian) theEObject;
+				GeneralHeaderConstraints_Custodian generalHeaderConstraints_Custodian = (GeneralHeaderConstraints_Custodian)theEObject;
 				T result = caseGeneralHeaderConstraints_Custodian(generalHeaderConstraints_Custodian);
-				if (result == null) {
-					result = caseCustodian(generalHeaderConstraints_Custodian);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_Custodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_Custodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCustodian(generalHeaderConstraints_Custodian);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_Custodian);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_Custodian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN: {
-				Custodian_AssignedCustodian custodian_AssignedCustodian = (Custodian_AssignedCustodian) theEObject;
+				Custodian_AssignedCustodian custodian_AssignedCustodian = (Custodian_AssignedCustodian)theEObject;
 				T result = caseCustodian_AssignedCustodian(custodian_AssignedCustodian);
-				if (result == null) {
-					result = caseAssignedCustodian(custodian_AssignedCustodian);
-				}
-				if (result == null) {
-					result = caseRole(custodian_AssignedCustodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodian_AssignedCustodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedCustodian(custodian_AssignedCustodian);
+				if (result == null) result = caseRole(custodian_AssignedCustodian);
+				if (result == null) result = caseInfrastructureRoot(custodian_AssignedCustodian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION: {
-				AssignedCustodian_CustodianOrganization assignedCustodian_CustodianOrganization = (AssignedCustodian_CustodianOrganization) theEObject;
+				AssignedCustodian_CustodianOrganization assignedCustodian_CustodianOrganization = (AssignedCustodian_CustodianOrganization)theEObject;
 				T result = caseAssignedCustodian_CustodianOrganization(assignedCustodian_CustodianOrganization);
-				if (result == null) {
-					result = caseCustodianOrganization(assignedCustodian_CustodianOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(assignedCustodian_CustodianOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedCustodian_CustodianOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCustodianOrganization(assignedCustodian_CustodianOrganization);
+				if (result == null) result = caseEntity(assignedCustodian_CustodianOrganization);
+				if (result == null) result = caseInfrastructureRoot(assignedCustodian_CustodianOrganization);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT: {
-				GeneralHeaderConstraints_InformationRecipient generalHeaderConstraints_InformationRecipient = (GeneralHeaderConstraints_InformationRecipient) theEObject;
+				GeneralHeaderConstraints_InformationRecipient generalHeaderConstraints_InformationRecipient = (GeneralHeaderConstraints_InformationRecipient)theEObject;
 				T result = caseGeneralHeaderConstraints_InformationRecipient(generalHeaderConstraints_InformationRecipient);
-				if (result == null) {
-					result = caseInformationRecipient(generalHeaderConstraints_InformationRecipient);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_InformationRecipient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_InformationRecipient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseInformationRecipient(generalHeaderConstraints_InformationRecipient);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_InformationRecipient);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_InformationRecipient);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INFORMATION_RECIPIENT_INTENDED_RECIPIENT: {
-				InformationRecipient_IntendedRecipient informationRecipient_IntendedRecipient = (InformationRecipient_IntendedRecipient) theEObject;
+				InformationRecipient_IntendedRecipient informationRecipient_IntendedRecipient = (InformationRecipient_IntendedRecipient)theEObject;
 				T result = caseInformationRecipient_IntendedRecipient(informationRecipient_IntendedRecipient);
-				if (result == null) {
-					result = caseIntendedRecipient(informationRecipient_IntendedRecipient);
-				}
-				if (result == null) {
-					result = caseRole(informationRecipient_IntendedRecipient);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(informationRecipient_IntendedRecipient);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseIntendedRecipient(informationRecipient_IntendedRecipient);
+				if (result == null) result = caseRole(informationRecipient_IntendedRecipient);
+				if (result == null) result = caseInfrastructureRoot(informationRecipient_IntendedRecipient);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INTENDED_RECIPIENT_ORGANIZATION: {
-				IntendedRecipient_Organization intendedRecipient_Organization = (IntendedRecipient_Organization) theEObject;
+				IntendedRecipient_Organization intendedRecipient_Organization = (IntendedRecipient_Organization)theEObject;
 				T result = caseIntendedRecipient_Organization(intendedRecipient_Organization);
-				if (result == null) {
-					result = caseOrganization(intendedRecipient_Organization);
-				}
-				if (result == null) {
-					result = caseEntity(intendedRecipient_Organization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(intendedRecipient_Organization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrganization(intendedRecipient_Organization);
+				if (result == null) result = caseEntity(intendedRecipient_Organization);
+				if (result == null) result = caseInfrastructureRoot(intendedRecipient_Organization);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR: {
-				GeneralHeaderConstraints_LegalAuthenticator generalHeaderConstraints_LegalAuthenticator = (GeneralHeaderConstraints_LegalAuthenticator) theEObject;
+				GeneralHeaderConstraints_LegalAuthenticator generalHeaderConstraints_LegalAuthenticator = (GeneralHeaderConstraints_LegalAuthenticator)theEObject;
 				T result = caseGeneralHeaderConstraints_LegalAuthenticator(generalHeaderConstraints_LegalAuthenticator);
-				if (result == null) {
-					result = caseLegalAuthenticator(generalHeaderConstraints_LegalAuthenticator);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_LegalAuthenticator);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_LegalAuthenticator);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseLegalAuthenticator(generalHeaderConstraints_LegalAuthenticator);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_LegalAuthenticator);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_LegalAuthenticator);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY: {
-				LegalAuthenticator_AssignedEntity legalAuthenticator_AssignedEntity = (LegalAuthenticator_AssignedEntity) theEObject;
+				LegalAuthenticator_AssignedEntity legalAuthenticator_AssignedEntity = (LegalAuthenticator_AssignedEntity)theEObject;
 				T result = caseLegalAuthenticator_AssignedEntity(legalAuthenticator_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(legalAuthenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(legalAuthenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(legalAuthenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(legalAuthenticator_AssignedEntity);
+				if (result == null) result = caseRole(legalAuthenticator_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(legalAuthenticator_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR: {
-				GeneralHeaderConstraints_Authenticator generalHeaderConstraints_Authenticator = (GeneralHeaderConstraints_Authenticator) theEObject;
+				GeneralHeaderConstraints_Authenticator generalHeaderConstraints_Authenticator = (GeneralHeaderConstraints_Authenticator)theEObject;
 				T result = caseGeneralHeaderConstraints_Authenticator(generalHeaderConstraints_Authenticator);
-				if (result == null) {
-					result = caseAuthenticator(generalHeaderConstraints_Authenticator);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_Authenticator);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_Authenticator);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthenticator(generalHeaderConstraints_Authenticator);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_Authenticator);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_Authenticator);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AUTHENTICATOR_ASSIGNED_ENTITY: {
-				Authenticator_AssignedEntity authenticator_AssignedEntity = (Authenticator_AssignedEntity) theEObject;
+				Authenticator_AssignedEntity authenticator_AssignedEntity = (Authenticator_AssignedEntity)theEObject;
 				T result = caseAuthenticator_AssignedEntity(authenticator_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(authenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(authenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(authenticator_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(authenticator_AssignedEntity);
+				if (result == null) result = caseRole(authenticator_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(authenticator_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMANT: {
-				GeneralHeaderConstraints_Informant generalHeaderConstraints_Informant = (GeneralHeaderConstraints_Informant) theEObject;
+				GeneralHeaderConstraints_Informant generalHeaderConstraints_Informant = (GeneralHeaderConstraints_Informant)theEObject;
 				T result = caseGeneralHeaderConstraints_Informant(generalHeaderConstraints_Informant);
-				if (result == null) {
-					result = caseInformant12(generalHeaderConstraints_Informant);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_Informant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_Informant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseInformant12(generalHeaderConstraints_Informant);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_Informant);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_Informant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INFORMANT_ASSIGNED_ENTITY: {
-				Informant_AssignedEntity informant_AssignedEntity = (Informant_AssignedEntity) theEObject;
+				Informant_AssignedEntity informant_AssignedEntity = (Informant_AssignedEntity)theEObject;
 				T result = caseInformant_AssignedEntity(informant_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(informant_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(informant_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(informant_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(informant_AssignedEntity);
+				if (result == null) result = caseRole(informant_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(informant_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INFORMANT_RELATED_ENTITY: {
-				Informant_RelatedEntity informant_RelatedEntity = (Informant_RelatedEntity) theEObject;
+				Informant_RelatedEntity informant_RelatedEntity = (Informant_RelatedEntity)theEObject;
 				T result = caseInformant_RelatedEntity(informant_RelatedEntity);
-				if (result == null) {
-					result = caseRelatedEntity(informant_RelatedEntity);
-				}
-				if (result == null) {
-					result = caseRole(informant_RelatedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(informant_RelatedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseRelatedEntity(informant_RelatedEntity);
+				if (result == null) result = caseRole(informant_RelatedEntity);
+				if (result == null) result = caseInfrastructureRoot(informant_RelatedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT: {
-				GeneralHeaderConstraints_ParticipantSupport generalHeaderConstraints_ParticipantSupport = (GeneralHeaderConstraints_ParticipantSupport) theEObject;
+				GeneralHeaderConstraints_ParticipantSupport generalHeaderConstraints_ParticipantSupport = (GeneralHeaderConstraints_ParticipantSupport)theEObject;
 				T result = caseGeneralHeaderConstraints_ParticipantSupport(generalHeaderConstraints_ParticipantSupport);
-				if (result == null) {
-					result = caseParticipant1(generalHeaderConstraints_ParticipantSupport);
-				}
-				if (result == null) {
-					result = caseParticipation(generalHeaderConstraints_ParticipantSupport);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_ParticipantSupport);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant1(generalHeaderConstraints_ParticipantSupport);
+				if (result == null) result = caseParticipation(generalHeaderConstraints_ParticipantSupport);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_ParticipantSupport);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF: {
-				GeneralHeaderConstraints_InFulfillmentOf generalHeaderConstraints_InFulfillmentOf = (GeneralHeaderConstraints_InFulfillmentOf) theEObject;
+				GeneralHeaderConstraints_InFulfillmentOf generalHeaderConstraints_InFulfillmentOf = (GeneralHeaderConstraints_InFulfillmentOf)theEObject;
 				T result = caseGeneralHeaderConstraints_InFulfillmentOf(generalHeaderConstraints_InFulfillmentOf);
-				if (result == null) {
-					result = caseInFulfillmentOf(generalHeaderConstraints_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(generalHeaderConstraints_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalHeaderConstraints_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseInFulfillmentOf(generalHeaderConstraints_InFulfillmentOf);
+				if (result == null) result = caseActRelationship(generalHeaderConstraints_InFulfillmentOf);
+				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints_InFulfillmentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IN_FULFILLMENT_OF_ORDER: {
-				InFulfillmentOf_Order inFulfillmentOf_Order = (InFulfillmentOf_Order) theEObject;
+				InFulfillmentOf_Order inFulfillmentOf_Order = (InFulfillmentOf_Order)theEObject;
 				T result = caseInFulfillmentOf_Order(inFulfillmentOf_Order);
-				if (result == null) {
-					result = caseOrder(inFulfillmentOf_Order);
-				}
-				if (result == null) {
-					result = caseAct(inFulfillmentOf_Order);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(inFulfillmentOf_Order);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrder(inFulfillmentOf_Order);
+				if (result == null) result = caseAct(inFulfillmentOf_Order);
+				if (result == null) result = caseInfrastructureRoot(inFulfillmentOf_Order);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_PROBLEM_ACT: {
-				AllergyProblemAct allergyProblemAct = (AllergyProblemAct) theEObject;
+				AllergyProblemAct allergyProblemAct = (AllergyProblemAct)theEObject;
 				T result = caseAllergyProblemAct(allergyProblemAct);
-				if (result == null) {
-					result = caseCDA_Act(allergyProblemAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(allergyProblemAct);
-				}
-				if (result == null) {
-					result = caseAct(allergyProblemAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyProblemAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(allergyProblemAct);
+				if (result == null) result = caseClinicalStatement(allergyProblemAct);
+				if (result == null) result = caseAct(allergyProblemAct);
+				if (result == null) result = caseInfrastructureRoot(allergyProblemAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_OBSERVATION: {
-				AllergyObservation allergyObservation = (AllergyObservation) theEObject;
+				AllergyObservation allergyObservation = (AllergyObservation)theEObject;
 				T result = caseAllergyObservation(allergyObservation);
-				if (result == null) {
-					result = caseObservation(allergyObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(allergyObservation);
-				}
-				if (result == null) {
-					result = caseAct(allergyObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(allergyObservation);
+				if (result == null) result = caseClinicalStatement(allergyObservation);
+				if (result == null) result = caseAct(allergyObservation);
+				if (result == null) result = caseInfrastructureRoot(allergyObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REACTION_OBSERVATION: {
-				ReactionObservation reactionObservation = (ReactionObservation) theEObject;
+				ReactionObservation reactionObservation = (ReactionObservation)theEObject;
 				T result = caseReactionObservation(reactionObservation);
-				if (result == null) {
-					result = caseObservation(reactionObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(reactionObservation);
-				}
-				if (result == null) {
-					result = caseAct(reactionObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reactionObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(reactionObservation);
+				if (result == null) result = caseClinicalStatement(reactionObservation);
+				if (result == null) result = caseAct(reactionObservation);
+				if (result == null) result = caseInfrastructureRoot(reactionObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SEVERITY_OBSERVATION: {
-				SeverityObservation severityObservation = (SeverityObservation) theEObject;
+				SeverityObservation severityObservation = (SeverityObservation)theEObject;
 				T result = caseSeverityObservation(severityObservation);
-				if (result == null) {
-					result = caseObservation(severityObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(severityObservation);
-				}
-				if (result == null) {
-					result = caseAct(severityObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(severityObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(severityObservation);
+				if (result == null) result = caseClinicalStatement(severityObservation);
+				if (result == null) result = caseAct(severityObservation);
+				if (result == null) result = caseInfrastructureRoot(severityObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
+				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure)theEObject;
 				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
-				if (result == null) {
-					result = caseProcedure(procedureActivityProcedure);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityProcedure);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityProcedure);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityProcedure);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProcedure(procedureActivityProcedure);
+				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
+				if (result == null) result = caseAct(procedureActivityProcedure);
+				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INDICATION: {
-				Indication indication = (Indication) theEObject;
+				Indication indication = (Indication)theEObject;
 				T result = caseIndication(indication);
-				if (result == null) {
-					result = caseObservation(indication);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(indication);
-				}
-				if (result == null) {
-					result = caseAct(indication);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(indication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(indication);
+				if (result == null) result = caseClinicalStatement(indication);
+				if (result == null) result = caseAct(indication);
+				if (result == null) result = caseInfrastructureRoot(indication);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SERVICE_DELIVERY_LOCATION: {
-				ServiceDeliveryLocation serviceDeliveryLocation = (ServiceDeliveryLocation) theEObject;
+				ServiceDeliveryLocation serviceDeliveryLocation = (ServiceDeliveryLocation)theEObject;
 				T result = caseServiceDeliveryLocation(serviceDeliveryLocation);
-				if (result == null) {
-					result = caseParticipantRole(serviceDeliveryLocation);
-				}
-				if (result == null) {
-					result = caseRole(serviceDeliveryLocation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(serviceDeliveryLocation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(serviceDeliveryLocation);
+				if (result == null) result = caseRole(serviceDeliveryLocation);
+				if (result == null) result = caseInfrastructureRoot(serviceDeliveryLocation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_ACTIVITY: {
-				MedicationActivity medicationActivity = (MedicationActivity) theEObject;
+				MedicationActivity medicationActivity = (MedicationActivity)theEObject;
 				T result = caseMedicationActivity(medicationActivity);
-				if (result == null) {
-					result = caseSubstanceAdministration(medicationActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationActivity);
-				}
-				if (result == null) {
-					result = caseAct(medicationActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSubstanceAdministration(medicationActivity);
+				if (result == null) result = caseClinicalStatement(medicationActivity);
+				if (result == null) result = caseAct(medicationActivity);
+				if (result == null) result = caseInfrastructureRoot(medicationActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_SUPPLY_ORDER: {
-				MedicationSupplyOrder medicationSupplyOrder = (MedicationSupplyOrder) theEObject;
+				MedicationSupplyOrder medicationSupplyOrder = (MedicationSupplyOrder)theEObject;
 				T result = caseMedicationSupplyOrder(medicationSupplyOrder);
-				if (result == null) {
-					result = caseSupply(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseAct(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationSupplyOrder);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupply(medicationSupplyOrder);
+				if (result == null) result = caseClinicalStatement(medicationSupplyOrder);
+				if (result == null) result = caseAct(medicationSupplyOrder);
+				if (result == null) result = caseInfrastructureRoot(medicationSupplyOrder);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_SUPPLY_ORDER_PRODUCT: {
-				MedicationSupplyOrder_Product medicationSupplyOrder_Product = (MedicationSupplyOrder_Product) theEObject;
+				MedicationSupplyOrder_Product medicationSupplyOrder_Product = (MedicationSupplyOrder_Product)theEObject;
 				T result = caseMedicationSupplyOrder_Product(medicationSupplyOrder_Product);
-				if (result == null) {
-					result = caseProduct(medicationSupplyOrder_Product);
-				}
-				if (result == null) {
-					result = caseParticipation(medicationSupplyOrder_Product);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationSupplyOrder_Product);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProduct(medicationSupplyOrder_Product);
+				if (result == null) result = caseParticipation(medicationSupplyOrder_Product);
+				if (result == null) result = caseInfrastructureRoot(medicationSupplyOrder_Product);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INSTRUCTIONS: {
-				Instructions instructions = (Instructions) theEObject;
+				Instructions instructions = (Instructions)theEObject;
 				T result = caseInstructions(instructions);
-				if (result == null) {
-					result = caseCDA_Act(instructions);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(instructions);
-				}
-				if (result == null) {
-					result = caseAct(instructions);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(instructions);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(instructions);
+				if (result == null) result = caseClinicalStatement(instructions);
+				if (result == null) result = caseAct(instructions);
+				if (result == null) result = caseInfrastructureRoot(instructions);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_DISPENSE: {
-				MedicationDispense medicationDispense = (MedicationDispense) theEObject;
+				MedicationDispense medicationDispense = (MedicationDispense)theEObject;
 				T result = caseMedicationDispense(medicationDispense);
-				if (result == null) {
-					result = caseSupply(medicationDispense);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationDispense);
-				}
-				if (result == null) {
-					result = caseAct(medicationDispense);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationDispense);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupply(medicationDispense);
+				if (result == null) result = caseClinicalStatement(medicationDispense);
+				if (result == null) result = caseAct(medicationDispense);
+				if (result == null) result = caseInfrastructureRoot(medicationDispense);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_DISPENSE_PRODUCT: {
-				MedicationDispense_Product medicationDispense_Product = (MedicationDispense_Product) theEObject;
+				MedicationDispense_Product medicationDispense_Product = (MedicationDispense_Product)theEObject;
 				T result = caseMedicationDispense_Product(medicationDispense_Product);
-				if (result == null) {
-					result = caseProduct(medicationDispense_Product);
-				}
-				if (result == null) {
-					result = caseParticipation(medicationDispense_Product);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationDispense_Product);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProduct(medicationDispense_Product);
+				if (result == null) result = caseParticipation(medicationDispense_Product);
+				if (result == null) result = caseInfrastructureRoot(medicationDispense_Product);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DRUG_VEHICLE: {
-				DrugVehicle drugVehicle = (DrugVehicle) theEObject;
+				DrugVehicle drugVehicle = (DrugVehicle)theEObject;
 				T result = caseDrugVehicle(drugVehicle);
-				if (result == null) {
-					result = caseParticipantRole(drugVehicle);
-				}
-				if (result == null) {
-					result = caseRole(drugVehicle);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(drugVehicle);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(drugVehicle);
+				if (result == null) result = caseRole(drugVehicle);
+				if (result == null) result = caseInfrastructureRoot(drugVehicle);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PRODUCT_INSTANCE: {
-				ProductInstance productInstance = (ProductInstance) theEObject;
+				ProductInstance productInstance = (ProductInstance)theEObject;
 				T result = caseProductInstance(productInstance);
-				if (result == null) {
-					result = caseParticipantRole(productInstance);
-				}
-				if (result == null) {
-					result = caseRole(productInstance);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(productInstance);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(productInstance);
+				if (result == null) result = caseRole(productInstance);
+				if (result == null) result = caseInfrastructureRoot(productInstance);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PRODUCT_INSTANCE_SCOPING_ENTITY: {
-				ProductInstance_ScopingEntity productInstance_ScopingEntity = (ProductInstance_ScopingEntity) theEObject;
+				ProductInstance_ScopingEntity productInstance_ScopingEntity = (ProductInstance_ScopingEntity)theEObject;
 				T result = caseProductInstance_ScopingEntity(productInstance_ScopingEntity);
-				if (result == null) {
-					result = caseCDA_Entity(productInstance_ScopingEntity);
-				}
-				if (result == null) {
-					result = caseEntity(productInstance_ScopingEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(productInstance_ScopingEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Entity(productInstance_ScopingEntity);
+				if (result == null) result = caseEntity(productInstance_ScopingEntity);
+				if (result == null) result = caseInfrastructureRoot(productInstance_ScopingEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PRODUCT_INSTANCE_PLAYING_DEVICE: {
-				ProductInstance_PlayingDevice productInstance_PlayingDevice = (ProductInstance_PlayingDevice) theEObject;
+				ProductInstance_PlayingDevice productInstance_PlayingDevice = (ProductInstance_PlayingDevice)theEObject;
 				T result = caseProductInstance_PlayingDevice(productInstance_PlayingDevice);
-				if (result == null) {
-					result = caseDevice(productInstance_PlayingDevice);
-				}
-				if (result == null) {
-					result = caseEntity(productInstance_PlayingDevice);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(productInstance_PlayingDevice);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDevice(productInstance_PlayingDevice);
+				if (result == null) result = caseEntity(productInstance_PlayingDevice);
+				if (result == null) result = caseInfrastructureRoot(productInstance_PlayingDevice);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: {
-				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation) theEObject;
+				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation)theEObject;
 				T result = caseAllergyStatusObservation(allergyStatusObservation);
-				if (result == null) {
-					result = caseObservation(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(allergyStatusObservation);
+				if (result == null) result = caseClinicalStatement(allergyStatusObservation);
+				if (result == null) result = caseAct(allergyStatusObservation);
+				if (result == null) result = caseInfrastructureRoot(allergyStatusObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation) theEObject;
+				AgeObservation ageObservation = (AgeObservation)theEObject;
 				T result = caseAgeObservation(ageObservation);
-				if (result == null) {
-					result = caseObservation(ageObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(ageObservation);
-				}
-				if (result == null) {
-					result = caseAct(ageObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(ageObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(ageObservation);
+				if (result == null) result = caseClinicalStatement(ageObservation);
+				if (result == null) result = caseAct(ageObservation);
+				if (result == null) result = caseInfrastructureRoot(ageObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION: {
-				HealthStatusObservation healthStatusObservation = (HealthStatusObservation) theEObject;
+				HealthStatusObservation healthStatusObservation = (HealthStatusObservation)theEObject;
 				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) {
-					result = caseObservation(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(healthStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(healthStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(healthStatusObservation);
+				if (result == null) result = caseClinicalStatement(healthStatusObservation);
+				if (result == null) result = caseAct(healthStatusObservation);
+				if (result == null) result = caseInfrastructureRoot(healthStatusObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMMENT: {
-				Comment comment = (Comment) theEObject;
+				Comment comment = (Comment)theEObject;
 				T result = caseComment(comment);
-				if (result == null) {
-					result = caseCDA_Act(comment);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(comment);
-				}
-				if (result == null) {
-					result = caseAct(comment);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(comment);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(comment);
+				if (result == null) result = caseClinicalStatement(comment);
+				if (result == null) result = caseAct(comment);
+				if (result == null) result = caseInfrastructureRoot(comment);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INTERNAL_REFERENCE: {
-				InternalReference internalReference = (InternalReference) theEObject;
+				InternalReference internalReference = (InternalReference)theEObject;
 				T result = caseInternalReference(internalReference);
-				if (result == null) {
-					result = caseCDA_Act(internalReference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(internalReference);
-				}
-				if (result == null) {
-					result = caseAct(internalReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(internalReference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(internalReference);
+				if (result == null) result = caseClinicalStatement(internalReference);
+				if (result == null) result = caseAct(internalReference);
+				if (result == null) result = caseInfrastructureRoot(internalReference);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_TYPE: {
-				MedicationType medicationType = (MedicationType) theEObject;
+				MedicationType medicationType = (MedicationType)theEObject;
 				T result = caseMedicationType(medicationType);
-				if (result == null) {
-					result = caseObservation(medicationType);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationType);
-				}
-				if (result == null) {
-					result = caseAct(medicationType);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationType);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(medicationType);
+				if (result == null) result = caseClinicalStatement(medicationType);
+				if (result == null) result = caseAct(medicationType);
+				if (result == null) result = caseInfrastructureRoot(medicationType);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY: {
-				NonMedicinalSupplyActivity nonMedicinalSupplyActivity = (NonMedicinalSupplyActivity) theEObject;
+				NonMedicinalSupplyActivity nonMedicinalSupplyActivity = (NonMedicinalSupplyActivity)theEObject;
 				T result = caseNonMedicinalSupplyActivity(nonMedicinalSupplyActivity);
-				if (result == null) {
-					result = caseSupply(nonMedicinalSupplyActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(nonMedicinalSupplyActivity);
-				}
-				if (result == null) {
-					result = caseAct(nonMedicinalSupplyActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(nonMedicinalSupplyActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupply(nonMedicinalSupplyActivity);
+				if (result == null) result = caseClinicalStatement(nonMedicinalSupplyActivity);
+				if (result == null) result = caseAct(nonMedicinalSupplyActivity);
+				if (result == null) result = caseInfrastructureRoot(nonMedicinalSupplyActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
-				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions) theEObject;
+				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions)theEObject;
 				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
-				if (result == null) {
-					result = caseCDA_Act(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseAct(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationFullfillmentInstructions);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(medicationFullfillmentInstructions);
+				if (result == null) result = caseClinicalStatement(medicationFullfillmentInstructions);
+				if (result == null) result = caseAct(medicationFullfillmentInstructions);
+				if (result == null) result = caseInfrastructureRoot(medicationFullfillmentInstructions);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROBLEM_CONCERN_ACT: {
-				ProblemConcernAct problemConcernAct = (ProblemConcernAct) theEObject;
+				ProblemConcernAct problemConcernAct = (ProblemConcernAct)theEObject;
 				T result = caseProblemConcernAct(problemConcernAct);
-				if (result == null) {
-					result = caseCDA_Act(problemConcernAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemConcernAct);
-				}
-				if (result == null) {
-					result = caseAct(problemConcernAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemConcernAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(problemConcernAct);
+				if (result == null) result = caseClinicalStatement(problemConcernAct);
+				if (result == null) result = caseAct(problemConcernAct);
+				if (result == null) result = caseInfrastructureRoot(problemConcernAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROBLEM_OBSERVATION: {
-				ProblemObservation problemObservation = (ProblemObservation) theEObject;
+				ProblemObservation problemObservation = (ProblemObservation)theEObject;
 				T result = caseProblemObservation(problemObservation);
-				if (result == null) {
-					result = caseObservation(problemObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(problemObservation);
+				if (result == null) result = caseClinicalStatement(problemObservation);
+				if (result == null) result = caseAct(problemObservation);
+				if (result == null) result = caseInfrastructureRoot(problemObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROBLEM_STATUS: {
-				ProblemStatus problemStatus = (ProblemStatus) theEObject;
+				ProblemStatus problemStatus = (ProblemStatus)theEObject;
 				T result = caseProblemStatus(problemStatus);
-				if (result == null) {
-					result = caseObservation(problemStatus);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemStatus);
-				}
-				if (result == null) {
-					result = caseAct(problemStatus);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemStatus);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(problemStatus);
+				if (result == null) result = caseClinicalStatement(problemStatus);
+				if (result == null) result = caseAct(problemStatus);
+				if (result == null) result = caseInfrastructureRoot(problemStatus);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT: {
-				ContinuityOfCareDocument continuityOfCareDocument = (ContinuityOfCareDocument) theEObject;
+				ContinuityOfCareDocument continuityOfCareDocument = (ContinuityOfCareDocument)theEObject;
 				T result = caseContinuityOfCareDocument(continuityOfCareDocument);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(continuityOfCareDocument);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(continuityOfCareDocument);
-				}
-				if (result == null) {
-					result = caseAct(continuityOfCareDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(continuityOfCareDocument);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(continuityOfCareDocument);
+				if (result == null) result = caseClinicalDocument(continuityOfCareDocument);
+				if (result == null) result = caseAct(continuityOfCareDocument);
+				if (result == null) result = caseInfrastructureRoot(continuityOfCareDocument);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF: {
-				ContinuityOfCareDocument_DocumentationOf continuityOfCareDocument_DocumentationOf = (ContinuityOfCareDocument_DocumentationOf) theEObject;
+				ContinuityOfCareDocument_DocumentationOf continuityOfCareDocument_DocumentationOf = (ContinuityOfCareDocument_DocumentationOf)theEObject;
 				T result = caseContinuityOfCareDocument_DocumentationOf(continuityOfCareDocument_DocumentationOf);
-				if (result == null) {
-					result = caseDocumentationOf(continuityOfCareDocument_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(continuityOfCareDocument_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(continuityOfCareDocument_DocumentationOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDocumentationOf(continuityOfCareDocument_DocumentationOf);
+				if (result == null) result = caseActRelationship(continuityOfCareDocument_DocumentationOf);
+				if (result == null) result = caseInfrastructureRoot(continuityOfCareDocument_DocumentationOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT3: {
-				DocumentationOf_ServiceEvent3 documentationOf_ServiceEvent3 = (DocumentationOf_ServiceEvent3) theEObject;
+				DocumentationOf_ServiceEvent3 documentationOf_ServiceEvent3 = (DocumentationOf_ServiceEvent3)theEObject;
 				T result = caseDocumentationOf_ServiceEvent3(documentationOf_ServiceEvent3);
-				if (result == null) {
-					result = caseServiceEvent(documentationOf_ServiceEvent3);
-				}
-				if (result == null) {
-					result = caseAct(documentationOf_ServiceEvent3);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(documentationOf_ServiceEvent3);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseServiceEvent(documentationOf_ServiceEvent3);
+				if (result == null) result = caseAct(documentationOf_ServiceEvent3);
+				if (result == null) result = caseInfrastructureRoot(documentationOf_ServiceEvent3);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SERVICE_EVENT3_PERFORMER: {
-				ServiceEvent3_Performer serviceEvent3_Performer = (ServiceEvent3_Performer) theEObject;
+				ServiceEvent3_Performer serviceEvent3_Performer = (ServiceEvent3_Performer)theEObject;
 				T result = caseServiceEvent3_Performer(serviceEvent3_Performer);
-				if (result == null) {
-					result = casePerformer1(serviceEvent3_Performer);
-				}
-				if (result == null) {
-					result = caseParticipation(serviceEvent3_Performer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(serviceEvent3_Performer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer1(serviceEvent3_Performer);
+				if (result == null) result = caseParticipation(serviceEvent3_Performer);
+				if (result == null) result = caseInfrastructureRoot(serviceEvent3_Performer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PERFORMER_ASSIGNED_ENTITY: {
-				Performer_AssignedEntity performer_AssignedEntity = (Performer_AssignedEntity) theEObject;
+				Performer_AssignedEntity performer_AssignedEntity = (Performer_AssignedEntity)theEObject;
 				T result = casePerformer_AssignedEntity(performer_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(performer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(performer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(performer_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(performer_AssignedEntity);
+				if (result == null) result = caseRole(performer_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(performer_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR: {
-				ContinuityOfCareDocument_Author continuityOfCareDocument_Author = (ContinuityOfCareDocument_Author) theEObject;
+				ContinuityOfCareDocument_Author continuityOfCareDocument_Author = (ContinuityOfCareDocument_Author)theEObject;
 				T result = caseContinuityOfCareDocument_Author(continuityOfCareDocument_Author);
-				if (result == null) {
-					result = caseAuthor(continuityOfCareDocument_Author);
-				}
-				if (result == null) {
-					result = caseParticipation(continuityOfCareDocument_Author);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(continuityOfCareDocument_Author);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthor(continuityOfCareDocument_Author);
+				if (result == null) result = caseParticipation(continuityOfCareDocument_Author);
+				if (result == null) result = caseInfrastructureRoot(continuityOfCareDocument_Author);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR3: {
-				Author_AssignedAuthor3 author_AssignedAuthor3 = (Author_AssignedAuthor3) theEObject;
+				Author_AssignedAuthor3 author_AssignedAuthor3 = (Author_AssignedAuthor3)theEObject;
 				T result = caseAuthor_AssignedAuthor3(author_AssignedAuthor3);
-				if (result == null) {
-					result = caseAssignedAuthor(author_AssignedAuthor3);
-				}
-				if (result == null) {
-					result = caseRole(author_AssignedAuthor3);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(author_AssignedAuthor3);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedAuthor(author_AssignedAuthor3);
+				if (result == null) result = caseRole(author_AssignedAuthor3);
+				if (result == null) result = caseInfrastructureRoot(author_AssignedAuthor3);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGIES_SECTION: {
-				AllergiesSection allergiesSection = (AllergiesSection) theEObject;
+				AllergiesSection allergiesSection = (AllergiesSection)theEObject;
 				T result = caseAllergiesSection(allergiesSection);
-				if (result == null) {
-					result = caseAllergiesSectionEntriesOptional(allergiesSection);
-				}
-				if (result == null) {
-					result = caseSection(allergiesSection);
-				}
-				if (result == null) {
-					result = caseAct(allergiesSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergiesSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAllergiesSectionEntriesOptional(allergiesSection);
+				if (result == null) result = caseSection(allergiesSection);
+				if (result == null) result = caseAct(allergiesSection);
+				if (result == null) result = caseInfrastructureRoot(allergiesSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: {
-				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional) theEObject;
+				AllergiesSectionEntriesOptional allergiesSectionEntriesOptional = (AllergiesSectionEntriesOptional)theEObject;
 				T result = caseAllergiesSectionEntriesOptional(allergiesSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(allergiesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(allergiesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(allergiesSectionEntriesOptional);
+				if (result == null) result = caseAct(allergiesSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(allergiesSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATIONS_SECTION: {
-				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
+				MedicationsSection medicationsSection = (MedicationsSection)theEObject;
 				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) {
-					result = caseMedicationsSectionEntriesOptional(medicationsSection);
-				}
-				if (result == null) {
-					result = caseSection(medicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(medicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseMedicationsSectionEntriesOptional(medicationsSection);
+				if (result == null) result = caseSection(medicationsSection);
+				if (result == null) result = caseAct(medicationsSection);
+				if (result == null) result = caseInfrastructureRoot(medicationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
-				MedicationsSectionEntriesOptional medicationsSectionEntriesOptional = (MedicationsSectionEntriesOptional) theEObject;
+				MedicationsSectionEntriesOptional medicationsSectionEntriesOptional = (MedicationsSectionEntriesOptional)theEObject;
 				T result = caseMedicationsSectionEntriesOptional(medicationsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(medicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(medicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(medicationsSectionEntriesOptional);
+				if (result == null) result = caseAct(medicationsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(medicationsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROBLEM_SECTION: {
-				ProblemSection problemSection = (ProblemSection) theEObject;
+				ProblemSection problemSection = (ProblemSection)theEObject;
 				T result = caseProblemSection(problemSection);
-				if (result == null) {
-					result = caseProblemSectionEntriesOptional(problemSection);
-				}
-				if (result == null) {
-					result = caseSection(problemSection);
-				}
-				if (result == null) {
-					result = caseAct(problemSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProblemSectionEntriesOptional(problemSection);
+				if (result == null) result = caseSection(problemSection);
+				if (result == null) result = caseAct(problemSection);
+				if (result == null) result = caseInfrastructureRoot(problemSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL: {
-				ProblemSectionEntriesOptional problemSectionEntriesOptional = (ProblemSectionEntriesOptional) theEObject;
+				ProblemSectionEntriesOptional problemSectionEntriesOptional = (ProblemSectionEntriesOptional)theEObject;
 				T result = caseProblemSectionEntriesOptional(problemSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(problemSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(problemSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(problemSectionEntriesOptional);
+				if (result == null) result = caseAct(problemSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(problemSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURES_SECTION: {
-				ProceduresSection proceduresSection = (ProceduresSection) theEObject;
+				ProceduresSection proceduresSection = (ProceduresSection)theEObject;
 				T result = caseProceduresSection(proceduresSection);
-				if (result == null) {
-					result = caseProceduresSectionEntriesOptional(proceduresSection);
-				}
-				if (result == null) {
-					result = caseSection(proceduresSection);
-				}
-				if (result == null) {
-					result = caseAct(proceduresSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(proceduresSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProceduresSectionEntriesOptional(proceduresSection);
+				if (result == null) result = caseSection(proceduresSection);
+				if (result == null) result = caseAct(proceduresSection);
+				if (result == null) result = caseInfrastructureRoot(proceduresSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL: {
-				ProceduresSectionEntriesOptional proceduresSectionEntriesOptional = (ProceduresSectionEntriesOptional) theEObject;
+				ProceduresSectionEntriesOptional proceduresSectionEntriesOptional = (ProceduresSectionEntriesOptional)theEObject;
 				T result = caseProceduresSectionEntriesOptional(proceduresSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(proceduresSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(proceduresSectionEntriesOptional);
+				if (result == null) result = caseAct(proceduresSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(proceduresSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: {
-				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation) theEObject;
+				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation)theEObject;
 				T result = caseProcedureActivityObservation(procedureActivityObservation);
-				if (result == null) {
-					result = caseObservation(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(procedureActivityObservation);
+				if (result == null) result = caseClinicalStatement(procedureActivityObservation);
+				if (result == null) result = caseAct(procedureActivityObservation);
+				if (result == null) result = caseInfrastructureRoot(procedureActivityObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: {
-				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct)theEObject;
 				T result = caseProcedureActivityAct(procedureActivityAct);
-				if (result == null) {
-					result = caseCDA_Act(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseAct(procedureActivityAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureActivityAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(procedureActivityAct);
+				if (result == null) result = caseClinicalStatement(procedureActivityAct);
+				if (result == null) result = caseAct(procedureActivityAct);
+				if (result == null) result = caseInfrastructureRoot(procedureActivityAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RESULTS_SECTION: {
-				ResultsSection resultsSection = (ResultsSection) theEObject;
+				ResultsSection resultsSection = (ResultsSection)theEObject;
 				T result = caseResultsSection(resultsSection);
-				if (result == null) {
-					result = caseResultsSectionEntriesOptional(resultsSection);
-				}
-				if (result == null) {
-					result = caseSection(resultsSection);
-				}
-				if (result == null) {
-					result = caseAct(resultsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseResultsSectionEntriesOptional(resultsSection);
+				if (result == null) result = caseSection(resultsSection);
+				if (result == null) result = caseAct(resultsSection);
+				if (result == null) result = caseInfrastructureRoot(resultsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL: {
-				ResultsSectionEntriesOptional resultsSectionEntriesOptional = (ResultsSectionEntriesOptional) theEObject;
+				ResultsSectionEntriesOptional resultsSectionEntriesOptional = (ResultsSectionEntriesOptional)theEObject;
 				T result = caseResultsSectionEntriesOptional(resultsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(resultsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(resultsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(resultsSectionEntriesOptional);
+				if (result == null) result = caseAct(resultsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(resultsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RESULT_ORGANIZER: {
-				ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
+				ResultOrganizer resultOrganizer = (ResultOrganizer)theEObject;
 				T result = caseResultOrganizer(resultOrganizer);
-				if (result == null) {
-					result = caseOrganizer(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(resultOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrganizer(resultOrganizer);
+				if (result == null) result = caseClinicalStatement(resultOrganizer);
+				if (result == null) result = caseAct(resultOrganizer);
+				if (result == null) result = caseInfrastructureRoot(resultOrganizer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RESULT_OBSERVATION: {
-				ResultObservation resultObservation = (ResultObservation) theEObject;
+				ResultObservation resultObservation = (ResultObservation)theEObject;
 				T result = caseResultObservation(resultObservation);
-				if (result == null) {
-					result = caseObservation(resultObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(resultObservation);
-				}
-				if (result == null) {
-					result = caseAct(resultObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(resultObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(resultObservation);
+				if (result == null) result = caseClinicalStatement(resultObservation);
+				if (result == null) result = caseAct(resultObservation);
+				if (result == null) result = caseInfrastructureRoot(resultObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: {
-				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
+				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection)theEObject;
 				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) {
-					result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseSection(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectivesSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSection);
+				if (result == null) result = caseSection(advanceDirectivesSection);
+				if (result == null) result = caseAct(advanceDirectivesSection);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectivesSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: {
-				AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional = (AdvanceDirectivesSectionEntriesOptional) theEObject;
+				AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional = (AdvanceDirectivesSectionEntriesOptional)theEObject;
 				T result = caseAdvanceDirectivesSectionEntriesOptional(advanceDirectivesSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(advanceDirectivesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectivesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectivesSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(advanceDirectivesSectionEntriesOptional);
+				if (result == null) result = caseAct(advanceDirectivesSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectivesSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION: {
-				AdvanceDirectiveObservation advanceDirectiveObservation = (AdvanceDirectiveObservation) theEObject;
+				AdvanceDirectiveObservation advanceDirectiveObservation = (AdvanceDirectiveObservation)theEObject;
 				T result = caseAdvanceDirectiveObservation(advanceDirectiveObservation);
-				if (result == null) {
-					result = caseObservation(advanceDirectiveObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(advanceDirectiveObservation);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(advanceDirectiveObservation);
+				if (result == null) result = caseClinicalStatement(advanceDirectiveObservation);
+				if (result == null) result = caseAct(advanceDirectiveObservation);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE: {
-				AdvanceDirectiveObservation_Reference advanceDirectiveObservation_Reference = (AdvanceDirectiveObservation_Reference) theEObject;
+				AdvanceDirectiveObservation_Reference advanceDirectiveObservation_Reference = (AdvanceDirectiveObservation_Reference)theEObject;
 				T result = caseAdvanceDirectiveObservation_Reference(advanceDirectiveObservation_Reference);
-				if (result == null) {
-					result = caseReference(advanceDirectiveObservation_Reference);
-				}
-				if (result == null) {
-					result = caseActRelationship(advanceDirectiveObservation_Reference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservation_Reference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseReference(advanceDirectiveObservation_Reference);
+				if (result == null) result = caseActRelationship(advanceDirectiveObservation_Reference);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveObservation_Reference);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REFERENCE_EXTERNAL_DOCUMENT: {
-				Reference_ExternalDocument reference_ExternalDocument = (Reference_ExternalDocument) theEObject;
+				Reference_ExternalDocument reference_ExternalDocument = (Reference_ExternalDocument)theEObject;
 				T result = caseReference_ExternalDocument(reference_ExternalDocument);
-				if (result == null) {
-					result = caseExternalDocument(reference_ExternalDocument);
-				}
-				if (result == null) {
-					result = caseAct(reference_ExternalDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reference_ExternalDocument);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseExternalDocument(reference_ExternalDocument);
+				if (result == null) result = caseAct(reference_ExternalDocument);
+				if (result == null) result = caseInfrastructureRoot(reference_ExternalDocument);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN: {
-				AdvanceDirectiveObservation_Custodian advanceDirectiveObservation_Custodian = (AdvanceDirectiveObservation_Custodian) theEObject;
+				AdvanceDirectiveObservation_Custodian advanceDirectiveObservation_Custodian = (AdvanceDirectiveObservation_Custodian)theEObject;
 				T result = caseAdvanceDirectiveObservation_Custodian(advanceDirectiveObservation_Custodian);
-				if (result == null) {
-					result = caseParticipant2(advanceDirectiveObservation_Custodian);
-				}
-				if (result == null) {
-					result = caseParticipation(advanceDirectiveObservation_Custodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservation_Custodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant2(advanceDirectiveObservation_Custodian);
+				if (result == null) result = caseParticipation(advanceDirectiveObservation_Custodian);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveObservation_Custodian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CUSTODIAN_CUSTODIAN_ROLE: {
-				Custodian_CustodianRole custodian_CustodianRole = (Custodian_CustodianRole) theEObject;
+				Custodian_CustodianRole custodian_CustodianRole = (Custodian_CustodianRole)theEObject;
 				T result = caseCustodian_CustodianRole(custodian_CustodianRole);
-				if (result == null) {
-					result = caseParticipantRole(custodian_CustodianRole);
-				}
-				if (result == null) {
-					result = caseRole(custodian_CustodianRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodian_CustodianRole);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(custodian_CustodianRole);
+				if (result == null) result = caseRole(custodian_CustodianRole);
+				if (result == null) result = caseInfrastructureRoot(custodian_CustodianRole);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CUSTODIAN_ROLE_CUSTODIAN_ENTITY: {
-				CustodianRole_CustodianEntity custodianRole_CustodianEntity = (CustodianRole_CustodianEntity) theEObject;
+				CustodianRole_CustodianEntity custodianRole_CustodianEntity = (CustodianRole_CustodianEntity)theEObject;
 				T result = caseCustodianRole_CustodianEntity(custodianRole_CustodianEntity);
-				if (result == null) {
-					result = casePlayingEntity(custodianRole_CustodianEntity);
-				}
-				if (result == null) {
-					result = caseEntity(custodianRole_CustodianEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodianRole_CustodianEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePlayingEntity(custodianRole_CustodianEntity);
+				if (result == null) result = caseEntity(custodianRole_CustodianEntity);
+				if (result == null) result = caseInfrastructureRoot(custodianRole_CustodianEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER: {
-				AdvanceDirectiveObservation_Verifier advanceDirectiveObservation_Verifier = (AdvanceDirectiveObservation_Verifier) theEObject;
+				AdvanceDirectiveObservation_Verifier advanceDirectiveObservation_Verifier = (AdvanceDirectiveObservation_Verifier)theEObject;
 				T result = caseAdvanceDirectiveObservation_Verifier(advanceDirectiveObservation_Verifier);
-				if (result == null) {
-					result = caseParticipant2(advanceDirectiveObservation_Verifier);
-				}
-				if (result == null) {
-					result = caseParticipation(advanceDirectiveObservation_Verifier);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveObservation_Verifier);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant2(advanceDirectiveObservation_Verifier);
+				if (result == null) result = caseParticipation(advanceDirectiveObservation_Verifier);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveObservation_Verifier);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTERS_SECTION: {
-				EncountersSection encountersSection = (EncountersSection) theEObject;
+				EncountersSection encountersSection = (EncountersSection)theEObject;
 				T result = caseEncountersSection(encountersSection);
-				if (result == null) {
-					result = caseEncountersSectionEntriesOptional(encountersSection);
-				}
-				if (result == null) {
-					result = caseSection(encountersSection);
-				}
-				if (result == null) {
-					result = caseAct(encountersSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encountersSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncountersSectionEntriesOptional(encountersSection);
+				if (result == null) result = caseSection(encountersSection);
+				if (result == null) result = caseAct(encountersSection);
+				if (result == null) result = caseInfrastructureRoot(encountersSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: {
-				EncountersSectionEntriesOptional encountersSectionEntriesOptional = (EncountersSectionEntriesOptional) theEObject;
+				EncountersSectionEntriesOptional encountersSectionEntriesOptional = (EncountersSectionEntriesOptional)theEObject;
 				T result = caseEncountersSectionEntriesOptional(encountersSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(encountersSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(encountersSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encountersSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(encountersSectionEntriesOptional);
+				if (result == null) result = caseAct(encountersSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(encountersSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTER_ACTIVITIES: {
-				EncounterActivities encounterActivities = (EncounterActivities) theEObject;
+				EncounterActivities encounterActivities = (EncounterActivities)theEObject;
 				T result = caseEncounterActivities(encounterActivities);
-				if (result == null) {
-					result = caseCDA_Encounter(encounterActivities);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(encounterActivities);
-				}
-				if (result == null) {
-					result = caseAct(encounterActivities);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encounterActivities);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Encounter(encounterActivities);
+				if (result == null) result = caseClinicalStatement(encounterActivities);
+				if (result == null) result = caseAct(encounterActivities);
+				if (result == null) result = caseInfrastructureRoot(encounterActivities);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FAMILY_HISTORY_SECTION: {
-				FamilyHistorySection familyHistorySection = (FamilyHistorySection) theEObject;
+				FamilyHistorySection familyHistorySection = (FamilyHistorySection)theEObject;
 				T result = caseFamilyHistorySection(familyHistorySection);
-				if (result == null) {
-					result = caseSection(familyHistorySection);
-				}
-				if (result == null) {
-					result = caseAct(familyHistorySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistorySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(familyHistorySection);
+				if (result == null) result = caseAct(familyHistorySection);
+				if (result == null) result = caseInfrastructureRoot(familyHistorySection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: {
-				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
+				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer)theEObject;
 				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
-				if (result == null) {
-					result = caseOrganizer(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrganizer(familyHistoryOrganizer);
+				if (result == null) result = caseClinicalStatement(familyHistoryOrganizer);
+				if (result == null) result = caseAct(familyHistoryOrganizer);
+				if (result == null) result = caseInfrastructureRoot(familyHistoryOrganizer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
+				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation)theEObject;
 				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) {
-					result = caseObservation(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(familyHistoryObservation);
+				if (result == null) result = caseClinicalStatement(familyHistoryObservation);
+				if (result == null) result = caseAct(familyHistoryObservation);
+				if (result == null) result = caseInfrastructureRoot(familyHistoryObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION: {
-				FamilyHistoryDeathObservation familyHistoryDeathObservation = (FamilyHistoryDeathObservation) theEObject;
+				FamilyHistoryDeathObservation familyHistoryDeathObservation = (FamilyHistoryDeathObservation)theEObject;
 				T result = caseFamilyHistoryDeathObservation(familyHistoryDeathObservation);
-				if (result == null) {
-					result = caseObservation(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryDeathObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(familyHistoryDeathObservation);
+				if (result == null) result = caseClinicalStatement(familyHistoryDeathObservation);
+				if (result == null) result = caseAct(familyHistoryDeathObservation);
+				if (result == null) result = caseInfrastructureRoot(familyHistoryDeathObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
 				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) {
-					result = caseSection(functionalStatusSection);
-				}
-				if (result == null) {
-					result = caseAct(functionalStatusSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(functionalStatusSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(functionalStatusSection);
+				if (result == null) result = caseAct(functionalStatusSection);
+				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL: {
-				ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional = (ImmunizationsSectionEntriesOptional) theEObject;
+				ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional = (ImmunizationsSectionEntriesOptional)theEObject;
 				T result = caseImmunizationsSectionEntriesOptional(immunizationsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(immunizationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(immunizationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(immunizationsSectionEntriesOptional);
+				if (result == null) result = caseAct(immunizationsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(immunizationsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATION_ACTIVITY: {
-				ImmunizationActivity immunizationActivity = (ImmunizationActivity) theEObject;
+				ImmunizationActivity immunizationActivity = (ImmunizationActivity)theEObject;
 				T result = caseImmunizationActivity(immunizationActivity);
-				if (result == null) {
-					result = caseSubstanceAdministration(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseAct(immunizationActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSubstanceAdministration(immunizationActivity);
+				if (result == null) result = caseClinicalStatement(immunizationActivity);
+				if (result == null) result = caseAct(immunizationActivity);
+				if (result == null) result = caseInfrastructureRoot(immunizationActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON: {
-				ImmunizationRefusalReason immunizationRefusalReason = (ImmunizationRefusalReason) theEObject;
+				ImmunizationRefusalReason immunizationRefusalReason = (ImmunizationRefusalReason)theEObject;
 				T result = caseImmunizationRefusalReason(immunizationRefusalReason);
-				if (result == null) {
-					result = caseObservation(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseAct(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationRefusalReason);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(immunizationRefusalReason);
+				if (result == null) result = caseClinicalStatement(immunizationRefusalReason);
+				if (result == null) result = caseAct(immunizationRefusalReason);
+				if (result == null) result = caseInfrastructureRoot(immunizationRefusalReason);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION: {
-				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection) theEObject;
+				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection)theEObject;
 				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) {
-					result = caseSection(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = caseAct(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicalEquipmentSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(medicalEquipmentSection);
+				if (result == null) result = caseAct(medicalEquipmentSection);
+				if (result == null) result = caseInfrastructureRoot(medicalEquipmentSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PAYERS_SECTION: {
-				PayersSection payersSection = (PayersSection) theEObject;
+				PayersSection payersSection = (PayersSection)theEObject;
 				T result = casePayersSection(payersSection);
-				if (result == null) {
-					result = caseSection(payersSection);
-				}
-				if (result == null) {
-					result = caseAct(payersSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(payersSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(payersSection);
+				if (result == null) result = caseAct(payersSection);
+				if (result == null) result = caseInfrastructureRoot(payersSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COVERAGE_ACTIVITY: {
-				CoverageActivity coverageActivity = (CoverageActivity) theEObject;
+				CoverageActivity coverageActivity = (CoverageActivity)theEObject;
 				T result = caseCoverageActivity(coverageActivity);
-				if (result == null) {
-					result = caseCDA_Act(coverageActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(coverageActivity);
-				}
-				if (result == null) {
-					result = caseAct(coverageActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(coverageActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(coverageActivity);
+				if (result == null) result = caseClinicalStatement(coverageActivity);
+				if (result == null) result = caseAct(coverageActivity);
+				if (result == null) result = caseInfrastructureRoot(coverageActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.POLICY_ACTIVITY: {
-				PolicyActivity policyActivity = (PolicyActivity) theEObject;
+				PolicyActivity policyActivity = (PolicyActivity)theEObject;
 				T result = casePolicyActivity(policyActivity);
-				if (result == null) {
-					result = caseCDA_Act(policyActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(policyActivity);
-				}
-				if (result == null) {
-					result = caseAct(policyActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(policyActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(policyActivity);
+				if (result == null) result = caseClinicalStatement(policyActivity);
+				if (result == null) result = caseAct(policyActivity);
+				if (result == null) result = caseInfrastructureRoot(policyActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AUTHORIZATION_ACTIVITY: {
-				AuthorizationActivity authorizationActivity = (AuthorizationActivity) theEObject;
+				AuthorizationActivity authorizationActivity = (AuthorizationActivity)theEObject;
 				T result = caseAuthorizationActivity(authorizationActivity);
-				if (result == null) {
-					result = caseCDA_Act(authorizationActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(authorizationActivity);
-				}
-				if (result == null) {
-					result = caseAct(authorizationActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(authorizationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(authorizationActivity);
+				if (result == null) result = caseClinicalStatement(authorizationActivity);
+				if (result == null) result = caseAct(authorizationActivity);
+				if (result == null) result = caseInfrastructureRoot(authorizationActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_SECTION: {
-				PlanOfCareSection planOfCareSection = (PlanOfCareSection) theEObject;
+				PlanOfCareSection planOfCareSection = (PlanOfCareSection)theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
-				if (result == null) {
-					result = caseSection(planOfCareSection);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(planOfCareSection);
+				if (result == null) result = caseAct(planOfCareSection);
+				if (result == null) result = caseInfrastructureRoot(planOfCareSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT: {
-				PlanOfCareActivityAct planOfCareActivityAct = (PlanOfCareActivityAct) theEObject;
+				PlanOfCareActivityAct planOfCareActivityAct = (PlanOfCareActivityAct)theEObject;
 				T result = casePlanOfCareActivityAct(planOfCareActivityAct);
-				if (result == null) {
-					result = caseCDA_Act(planOfCareActivityAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivityAct);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivityAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivityAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(planOfCareActivityAct);
+				if (result == null) result = caseClinicalStatement(planOfCareActivityAct);
+				if (result == null) result = caseAct(planOfCareActivityAct);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivityAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: {
-				PlanOfCareActivityEncounter planOfCareActivityEncounter = (PlanOfCareActivityEncounter) theEObject;
+				PlanOfCareActivityEncounter planOfCareActivityEncounter = (PlanOfCareActivityEncounter)theEObject;
 				T result = casePlanOfCareActivityEncounter(planOfCareActivityEncounter);
-				if (result == null) {
-					result = caseCDA_Encounter(planOfCareActivityEncounter);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivityEncounter);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivityEncounter);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivityEncounter);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Encounter(planOfCareActivityEncounter);
+				if (result == null) result = caseClinicalStatement(planOfCareActivityEncounter);
+				if (result == null) result = caseAct(planOfCareActivityEncounter);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivityEncounter);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: {
-				PlanOfCareActivityObservation planOfCareActivityObservation = (PlanOfCareActivityObservation) theEObject;
+				PlanOfCareActivityObservation planOfCareActivityObservation = (PlanOfCareActivityObservation)theEObject;
 				T result = casePlanOfCareActivityObservation(planOfCareActivityObservation);
-				if (result == null) {
-					result = caseObservation(planOfCareActivityObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivityObservation);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivityObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivityObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(planOfCareActivityObservation);
+				if (result == null) result = caseClinicalStatement(planOfCareActivityObservation);
+				if (result == null) result = caseAct(planOfCareActivityObservation);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivityObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: {
-				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
+				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure)theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
-				if (result == null) {
-					result = caseProcedure(planOfCareActivityProcedure);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivityProcedure);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivityProcedure);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivityProcedure);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseProcedure(planOfCareActivityProcedure);
+				if (result == null) result = caseClinicalStatement(planOfCareActivityProcedure);
+				if (result == null) result = caseAct(planOfCareActivityProcedure);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivityProcedure);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: {
-				PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (PlanOfCareActivitySubstanceAdministration) theEObject;
+				PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (PlanOfCareActivitySubstanceAdministration)theEObject;
 				T result = casePlanOfCareActivitySubstanceAdministration(planOfCareActivitySubstanceAdministration);
-				if (result == null) {
-					result = caseSubstanceAdministration(planOfCareActivitySubstanceAdministration);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivitySubstanceAdministration);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivitySubstanceAdministration);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivitySubstanceAdministration);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSubstanceAdministration(planOfCareActivitySubstanceAdministration);
+				if (result == null) result = caseClinicalStatement(planOfCareActivitySubstanceAdministration);
+				if (result == null) result = caseAct(planOfCareActivitySubstanceAdministration);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivitySubstanceAdministration);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: {
-				PlanOfCareActivitySupply planOfCareActivitySupply = (PlanOfCareActivitySupply) theEObject;
+				PlanOfCareActivitySupply planOfCareActivitySupply = (PlanOfCareActivitySupply)theEObject;
 				T result = casePlanOfCareActivitySupply(planOfCareActivitySupply);
-				if (result == null) {
-					result = caseSupply(planOfCareActivitySupply);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(planOfCareActivitySupply);
-				}
-				if (result == null) {
-					result = caseAct(planOfCareActivitySupply);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(planOfCareActivitySupply);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupply(planOfCareActivitySupply);
+				if (result == null) result = caseClinicalStatement(planOfCareActivitySupply);
+				if (result == null) result = caseAct(planOfCareActivitySupply);
+				if (result == null) result = caseInfrastructureRoot(planOfCareActivitySupply);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SOCIAL_HISTORY_SECTION: {
-				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
+				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) {
-					result = caseSection(socialHistorySection);
-				}
-				if (result == null) {
-					result = caseAct(socialHistorySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(socialHistorySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(socialHistorySection);
+				if (result == null) result = caseAct(socialHistorySection);
+				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION: {
-				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation) theEObject;
+				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation)theEObject;
 				T result = caseSocialHistoryObservation(socialHistoryObservation);
-				if (result == null) {
-					result = caseObservation(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseAct(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(socialHistoryObservation);
+				if (result == null) result = caseClinicalStatement(socialHistoryObservation);
+				if (result == null) result = caseAct(socialHistoryObservation);
+				if (result == null) result = caseInfrastructureRoot(socialHistoryObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PREGNANCY_OBSERVATION: {
-				PregnancyObservation pregnancyObservation = (PregnancyObservation) theEObject;
+				PregnancyObservation pregnancyObservation = (PregnancyObservation)theEObject;
 				T result = casePregnancyObservation(pregnancyObservation);
-				if (result == null) {
-					result = caseObservation(pregnancyObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(pregnancyObservation);
-				}
-				if (result == null) {
-					result = caseAct(pregnancyObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(pregnancyObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(pregnancyObservation);
+				if (result == null) result = caseClinicalStatement(pregnancyObservation);
+				if (result == null) result = caseAct(pregnancyObservation);
+				if (result == null) result = caseInfrastructureRoot(pregnancyObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ESTIMATED_DATE_OF_DELIVERY: {
-				EstimatedDateOfDelivery estimatedDateOfDelivery = (EstimatedDateOfDelivery) theEObject;
+				EstimatedDateOfDelivery estimatedDateOfDelivery = (EstimatedDateOfDelivery)theEObject;
 				T result = caseEstimatedDateOfDelivery(estimatedDateOfDelivery);
-				if (result == null) {
-					result = caseObservation(estimatedDateOfDelivery);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(estimatedDateOfDelivery);
-				}
-				if (result == null) {
-					result = caseAct(estimatedDateOfDelivery);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(estimatedDateOfDelivery);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(estimatedDateOfDelivery);
+				if (result == null) result = caseClinicalStatement(estimatedDateOfDelivery);
+				if (result == null) result = caseAct(estimatedDateOfDelivery);
+				if (result == null) result = caseInfrastructureRoot(estimatedDateOfDelivery);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: {
-				VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional = (VitalSignsSectionEntriesOptional) theEObject;
+				VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional = (VitalSignsSectionEntriesOptional)theEObject;
 				T result = caseVitalSignsSectionEntriesOptional(vitalSignsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(vitalSignsSectionEntriesOptional);
+				if (result == null) result = caseAct(vitalSignsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(vitalSignsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer)theEObject;
 				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) {
-					result = caseOrganizer(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseOrganizer(vitalSignsOrganizer);
+				if (result == null) result = caseClinicalStatement(vitalSignsOrganizer);
+				if (result == null) result = caseAct(vitalSignsOrganizer);
+				if (result == null) result = caseInfrastructureRoot(vitalSignsOrganizer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.VITAL_SIGN_OBSERVATION: {
-				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
+				VitalSignObservation vitalSignObservation = (VitalSignObservation)theEObject;
 				T result = caseVitalSignObservation(vitalSignObservation);
-				if (result == null) {
-					result = caseObservation(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(vitalSignObservation);
+				if (result == null) result = caseClinicalStatement(vitalSignObservation);
+				if (result == null) result = caseAct(vitalSignObservation);
+				if (result == null) result = caseInfrastructureRoot(vitalSignObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: {
-				SocialHistoryStatusObservation socialHistoryStatusObservation = (SocialHistoryStatusObservation) theEObject;
+				SocialHistoryStatusObservation socialHistoryStatusObservation = (SocialHistoryStatusObservation)theEObject;
 				T result = caseSocialHistoryStatusObservation(socialHistoryStatusObservation);
-				if (result == null) {
-					result = caseObservation(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(socialHistoryStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(socialHistoryStatusObservation);
+				if (result == null) result = caseClinicalStatement(socialHistoryStatusObservation);
+				if (result == null) result = caseAct(socialHistoryStatusObservation);
+				if (result == null) result = caseInfrastructureRoot(socialHistoryStatusObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PURPOSE_SECTION: {
-				PurposeSection purposeSection = (PurposeSection) theEObject;
+				PurposeSection purposeSection = (PurposeSection)theEObject;
 				T result = casePurposeSection(purposeSection);
-				if (result == null) {
-					result = caseSection(purposeSection);
-				}
-				if (result == null) {
-					result = caseAct(purposeSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(purposeSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(purposeSection);
+				if (result == null) result = caseAct(purposeSection);
+				if (result == null) result = caseInfrastructureRoot(purposeSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PURPOSE_ACTIVITY: {
-				PurposeActivity purposeActivity = (PurposeActivity) theEObject;
+				PurposeActivity purposeActivity = (PurposeActivity)theEObject;
 				T result = casePurposeActivity(purposeActivity);
-				if (result == null) {
-					result = caseCDA_Act(purposeActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(purposeActivity);
-				}
-				if (result == null) {
-					result = caseAct(purposeActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(purposeActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(purposeActivity);
+				if (result == null) result = caseClinicalStatement(purposeActivity);
+				if (result == null) result = caseAct(purposeActivity);
+				if (result == null) result = caseInfrastructureRoot(purposeActivity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
-				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification) theEObject;
+				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification)theEObject;
 				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
-				if (result == null) {
-					result = caseParticipant2(advanceDirectiveVerification);
-				}
-				if (result == null) {
-					result = caseParticipation(advanceDirectiveVerification);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveVerification);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant2(advanceDirectiveVerification);
+				if (result == null) result = caseParticipation(advanceDirectiveVerification);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveVerification);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
-				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation) theEObject;
+				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation)theEObject;
 				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) {
-					result = caseObservation(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(advanceDirectiveStatusObservation);
+				if (result == null) result = caseClinicalStatement(advanceDirectiveStatusObservation);
+				if (result == null) result = caseAct(advanceDirectiveStatusObservation);
+				if (result == null) result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTER: {
-				Encounter encounter = (Encounter) theEObject;
+				Encounter encounter = (Encounter)theEObject;
 				T result = caseEncounter(encounter);
-				if (result == null) {
-					result = caseCDA_Encounter(encounter);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(encounter);
-				}
-				if (result == null) {
-					result = caseAct(encounter);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encounter);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Encounter(encounter);
+				if (result == null) result = caseClinicalStatement(encounter);
+				if (result == null) result = caseAct(encounter);
+				if (result == null) result = caseInfrastructureRoot(encounter);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATIONS_SECTION: {
-				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
+				ImmunizationsSection immunizationsSection = (ImmunizationsSection)theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
-				if (result == null) {
-					result = caseImmunizationsSectionEntriesOptional(immunizationsSection);
-				}
-				if (result == null) {
-					result = caseSection(immunizationsSection);
-				}
-				if (result == null) {
-					result = caseAct(immunizationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseImmunizationsSectionEntriesOptional(immunizationsSection);
+				if (result == null) result = caseSection(immunizationsSection);
+				if (result == null) result = caseAct(immunizationsSection);
+				if (result == null) result = caseInfrastructureRoot(immunizationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INSURANCE_PROVIDER: {
-				InsuranceProvider insuranceProvider = (InsuranceProvider) theEObject;
+				InsuranceProvider insuranceProvider = (InsuranceProvider)theEObject;
 				T result = caseInsuranceProvider(insuranceProvider);
-				if (result == null) {
-					result = caseCDA_Act(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseAct(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(insuranceProvider);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(insuranceProvider);
+				if (result == null) result = caseClinicalStatement(insuranceProvider);
+				if (result == null) result = caseAct(insuranceProvider);
+				if (result == null) result = caseInfrastructureRoot(insuranceProvider);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PAYER_ENTRY: {
-				PayerEntry payerEntry = (PayerEntry) theEObject;
+				PayerEntry payerEntry = (PayerEntry)theEObject;
 				T result = casePayerEntry(payerEntry);
-				if (result == null) {
-					result = caseCDA_Act(payerEntry);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(payerEntry);
-				}
-				if (result == null) {
-					result = caseAct(payerEntry);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(payerEntry);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(payerEntry);
+				if (result == null) result = caseClinicalStatement(payerEntry);
+				if (result == null) result = caseAct(payerEntry);
+				if (result == null) result = caseInfrastructureRoot(payerEntry);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COVERED_PARTY: {
-				CoveredParty coveredParty = (CoveredParty) theEObject;
+				CoveredParty coveredParty = (CoveredParty)theEObject;
 				T result = caseCoveredParty(coveredParty);
-				if (result == null) {
-					result = caseParticipantRole(coveredParty);
-				}
-				if (result == null) {
-					result = caseRole(coveredParty);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(coveredParty);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(coveredParty);
+				if (result == null) result = caseRole(coveredParty);
+				if (result == null) result = caseInfrastructureRoot(coveredParty);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.POLICY_SUBSCRIBER: {
-				PolicySubscriber policySubscriber = (PolicySubscriber) theEObject;
+				PolicySubscriber policySubscriber = (PolicySubscriber)theEObject;
 				T result = casePolicySubscriber(policySubscriber);
-				if (result == null) {
-					result = caseParticipantRole(policySubscriber);
-				}
-				if (result == null) {
-					result = caseRole(policySubscriber);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(policySubscriber);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(policySubscriber);
+				if (result == null) result = caseRole(policySubscriber);
+				if (result == null) result = caseInfrastructureRoot(policySubscriber);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.EXTERNAL_REFERENCE: {
-				ExternalReference externalReference = (ExternalReference) theEObject;
+				ExternalReference externalReference = (ExternalReference)theEObject;
 				T result = caseExternalReference(externalReference);
-				if (result == null) {
-					result = caseCDA_Act(externalReference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(externalReference);
-				}
-				if (result == null) {
-					result = caseAct(externalReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(externalReference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(externalReference);
+				if (result == null) result = caseClinicalStatement(externalReference);
+				if (result == null) result = caseAct(externalReference);
+				if (result == null) result = caseInfrastructureRoot(externalReference);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SUPPORT: {
-				Support support = (Support) theEObject;
+				Support support = (Support)theEObject;
 				T result = caseSupport(support);
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.VITAL_SIGNS_SECTION: {
-				VitalSignsSection vitalSignsSection = (VitalSignsSection) theEObject;
+				VitalSignsSection vitalSignsSection = (VitalSignsSection)theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) {
-					result = caseVitalSignsSectionEntriesOptional(vitalSignsSection);
-				}
-				if (result == null) {
-					result = caseSection(vitalSignsSection);
-				}
-				if (result == null) {
-					result = caseAct(vitalSignsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(vitalSignsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseVitalSignsSectionEntriesOptional(vitalSignsSection);
+				if (result == null) result = caseSection(vitalSignsSection);
+				if (result == null) result = caseAct(vitalSignsSection);
+				if (result == null) result = caseInfrastructureRoot(vitalSignsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION: {
-				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection) theEObject;
+				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection)theEObject;
 				T result = caseHistoryOfPastIllnessSection(historyOfPastIllnessSection);
-				if (result == null) {
-					result = caseSection(historyOfPastIllnessSection);
-				}
-				if (result == null) {
-					result = caseAct(historyOfPastIllnessSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(historyOfPastIllnessSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(historyOfPastIllnessSection);
+				if (result == null) result = caseAct(historyOfPastIllnessSection);
+				if (result == null) result = caseInfrastructureRoot(historyOfPastIllnessSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CHIEF_COMPLAINT_SECTION: {
-				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection) theEObject;
+				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection)theEObject;
 				T result = caseChiefComplaintSection(chiefComplaintSection);
-				if (result == null) {
-					result = caseSection(chiefComplaintSection);
-				}
-				if (result == null) {
-					result = caseAct(chiefComplaintSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(chiefComplaintSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(chiefComplaintSection);
+				if (result == null) result = caseAct(chiefComplaintSection);
+				if (result == null) result = caseInfrastructureRoot(chiefComplaintSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION: {
-				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection) theEObject;
+				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection)theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
-				if (result == null) {
-					result = caseSection(reasonForReferralSection);
-				}
-				if (result == null) {
-					result = caseAct(reasonForReferralSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reasonForReferralSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(reasonForReferralSection);
+				if (result == null) result = caseAct(reasonForReferralSection);
+				if (result == null) result = caseInfrastructureRoot(reasonForReferralSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS_SECTION: {
-				HistoryOfPresentIllnessSection historyOfPresentIllnessSection = (HistoryOfPresentIllnessSection) theEObject;
+				HistoryOfPresentIllnessSection historyOfPresentIllnessSection = (HistoryOfPresentIllnessSection)theEObject;
 				T result = caseHistoryOfPresentIllnessSection(historyOfPresentIllnessSection);
-				if (result == null) {
-					result = caseSection(historyOfPresentIllnessSection);
-				}
-				if (result == null) {
-					result = caseAct(historyOfPresentIllnessSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(historyOfPresentIllnessSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(historyOfPresentIllnessSection);
+				if (result == null) result = caseAct(historyOfPresentIllnessSection);
+				if (result == null) result = caseInfrastructureRoot(historyOfPresentIllnessSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
-				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection) theEObject;
+				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
 				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) {
-					result = caseSection(hospitalAdmissionDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalAdmissionDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseAct(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
-				HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional = (HospitalAdmissionMedicationsSectionEntriesOptional) theEObject;
+				HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional = (HospitalAdmissionMedicationsSectionEntriesOptional)theEObject;
 				T result = caseHospitalAdmissionMedicationsSectionEntriesOptional(hospitalAdmissionMedicationsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(hospitalAdmissionMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(hospitalAdmissionMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalAdmissionMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalAdmissionMedicationsSectionEntriesOptional);
+				if (result == null) result = caseAct(hospitalAdmissionMedicationsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionMedicationsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ADMISSION_MEDICATION: {
-				AdmissionMedication admissionMedication = (AdmissionMedication) theEObject;
+				AdmissionMedication admissionMedication = (AdmissionMedication)theEObject;
 				T result = caseAdmissionMedication(admissionMedication);
-				if (result == null) {
-					result = caseCDA_Act(admissionMedication);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(admissionMedication);
-				}
-				if (result == null) {
-					result = caseAct(admissionMedication);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(admissionMedication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(admissionMedication);
+				if (result == null) result = caseClinicalStatement(admissionMedication);
+				if (result == null) result = caseAct(admissionMedication);
+				if (result == null) result = caseInfrastructureRoot(admissionMedication);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection) theEObject;
+				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
 				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) {
-					result = caseSection(medicationsAdministeredSection);
-				}
-				if (result == null) {
-					result = caseAct(medicationsAdministeredSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationsAdministeredSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(medicationsAdministeredSection);
+				if (result == null) result = caseAct(medicationsAdministeredSection);
+				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PHYSICAL_EXAM_SECTION: {
-				PhysicalExamSection physicalExamSection = (PhysicalExamSection) theEObject;
+				PhysicalExamSection physicalExamSection = (PhysicalExamSection)theEObject;
 				T result = casePhysicalExamSection(physicalExamSection);
-				if (result == null) {
-					result = caseSection(physicalExamSection);
-				}
-				if (result == null) {
-					result = caseAct(physicalExamSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(physicalExamSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(physicalExamSection);
+				if (result == null) result = caseAct(physicalExamSection);
+				if (result == null) result = caseInfrastructureRoot(physicalExamSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.GENERAL_STATUS_SECTION: {
-				GeneralStatusSection generalStatusSection = (GeneralStatusSection) theEObject;
+				GeneralStatusSection generalStatusSection = (GeneralStatusSection)theEObject;
 				T result = caseGeneralStatusSection(generalStatusSection);
-				if (result == null) {
-					result = caseSection(generalStatusSection);
-				}
-				if (result == null) {
-					result = caseAct(generalStatusSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(generalStatusSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(generalStatusSection);
+				if (result == null) result = caseAct(generalStatusSection);
+				if (result == null) result = caseInfrastructureRoot(generalStatusSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REVIEW_OF_SYSTEMS_SECTION: {
-				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection) theEObject;
+				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection)theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) {
-					result = caseSection(reviewOfSystemsSection);
-				}
-				if (result == null) {
-					result = caseAct(reviewOfSystemsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reviewOfSystemsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(reviewOfSystemsSection);
+				if (result == null) result = caseAct(reviewOfSystemsSection);
+				if (result == null) result = caseInfrastructureRoot(reviewOfSystemsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION: {
-				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection) theEObject;
+				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection)theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) {
-					result = caseSection(assessmentAndPlanSection);
-				}
-				if (result == null) {
-					result = caseAct(assessmentAndPlanSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assessmentAndPlanSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(assessmentAndPlanSection);
+				if (result == null) result = caseAct(assessmentAndPlanSection);
+				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.LANGUAGE_SPOKEN: {
-				LanguageSpoken languageSpoken = (LanguageSpoken) theEObject;
+				LanguageSpoken languageSpoken = (LanguageSpoken)theEObject;
 				T result = caseLanguageSpoken(languageSpoken);
-				if (result == null) {
-					result = caseLanguageCommunication(languageSpoken);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseLanguageCommunication(languageSpoken);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HEALTHCARE_PROVIDER: {
-				HealthcareProvider healthcareProvider = (HealthcareProvider) theEObject;
+				HealthcareProvider healthcareProvider = (HealthcareProvider)theEObject;
 				T result = caseHealthcareProvider(healthcareProvider);
-				if (result == null) {
-					result = casePerformer1(healthcareProvider);
-				}
-				if (result == null) {
-					result = caseParticipation(healthcareProvider);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(healthcareProvider);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer1(healthcareProvider);
+				if (result == null) result = caseParticipation(healthcareProvider);
+				if (result == null) result = caseInfrastructureRoot(healthcareProvider);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SUPPORT_GUARDIAN: {
-				SupportGuardian supportGuardian = (SupportGuardian) theEObject;
+				SupportGuardian supportGuardian = (SupportGuardian)theEObject;
 				T result = caseSupportGuardian(supportGuardian);
-				if (result == null) {
-					result = caseSupport(supportGuardian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupport(supportGuardian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SUPPORT_PARTICIPANT: {
-				SupportParticipant supportParticipant = (SupportParticipant) theEObject;
+				SupportParticipant supportParticipant = (SupportParticipant)theEObject;
 				T result = caseSupportParticipant(supportParticipant);
-				if (result == null) {
-					result = caseSupport(supportParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSupport(supportParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SURGICAL_DRAINS_SECTION: {
-				SurgicalDrainsSection surgicalDrainsSection = (SurgicalDrainsSection) theEObject;
+				SurgicalDrainsSection surgicalDrainsSection = (SurgicalDrainsSection)theEObject;
 				T result = caseSurgicalDrainsSection(surgicalDrainsSection);
-				if (result == null) {
-					result = caseSection(surgicalDrainsSection);
-				}
-				if (result == null) {
-					result = caseAct(surgicalDrainsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(surgicalDrainsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(surgicalDrainsSection);
+				if (result == null) result = caseAct(surgicalDrainsSection);
+				if (result == null) result = caseInfrastructureRoot(surgicalDrainsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT: {
-				UnstructuredDocument unstructuredDocument = (UnstructuredDocument) theEObject;
+				UnstructuredDocument unstructuredDocument = (UnstructuredDocument)theEObject;
 				T result = caseUnstructuredDocument(unstructuredDocument);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(unstructuredDocument);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(unstructuredDocument);
-				}
-				if (result == null) {
-					result = caseAct(unstructuredDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredDocument);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(unstructuredDocument);
+				if (result == null) result = caseClinicalDocument(unstructuredDocument);
+				if (result == null) result = caseAct(unstructuredDocument);
+				if (result == null) result = caseInfrastructureRoot(unstructuredDocument);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT_RECORD_TARGET: {
-				UnstructuredDocument_RecordTarget unstructuredDocument_RecordTarget = (UnstructuredDocument_RecordTarget) theEObject;
+				UnstructuredDocument_RecordTarget unstructuredDocument_RecordTarget = (UnstructuredDocument_RecordTarget)theEObject;
 				T result = caseUnstructuredDocument_RecordTarget(unstructuredDocument_RecordTarget);
-				if (result == null) {
-					result = caseRecordTarget(unstructuredDocument_RecordTarget);
-				}
-				if (result == null) {
-					result = caseParticipation(unstructuredDocument_RecordTarget);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredDocument_RecordTarget);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseRecordTarget(unstructuredDocument_RecordTarget);
+				if (result == null) result = caseParticipation(unstructuredDocument_RecordTarget);
+				if (result == null) result = caseInfrastructureRoot(unstructuredDocument_RecordTarget);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE2: {
-				RecordTarget_PatientRole2 recordTarget_PatientRole2 = (RecordTarget_PatientRole2) theEObject;
+				RecordTarget_PatientRole2 recordTarget_PatientRole2 = (RecordTarget_PatientRole2)theEObject;
 				T result = caseRecordTarget_PatientRole2(recordTarget_PatientRole2);
-				if (result == null) {
-					result = casePatientRole(recordTarget_PatientRole2);
-				}
-				if (result == null) {
-					result = caseRole(recordTarget_PatientRole2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(recordTarget_PatientRole2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePatientRole(recordTarget_PatientRole2);
+				if (result == null) result = caseRole(recordTarget_PatientRole2);
+				if (result == null) result = caseInfrastructureRoot(recordTarget_PatientRole2);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT_AUTHOR: {
-				UnstructuredDocument_Author unstructuredDocument_Author = (UnstructuredDocument_Author) theEObject;
+				UnstructuredDocument_Author unstructuredDocument_Author = (UnstructuredDocument_Author)theEObject;
 				T result = caseUnstructuredDocument_Author(unstructuredDocument_Author);
-				if (result == null) {
-					result = caseAuthor(unstructuredDocument_Author);
-				}
-				if (result == null) {
-					result = caseParticipation(unstructuredDocument_Author);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredDocument_Author);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthor(unstructuredDocument_Author);
+				if (result == null) result = caseParticipation(unstructuredDocument_Author);
+				if (result == null) result = caseInfrastructureRoot(unstructuredDocument_Author);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR2: {
-				Author_AssignedAuthor2 author_AssignedAuthor2 = (Author_AssignedAuthor2) theEObject;
+				Author_AssignedAuthor2 author_AssignedAuthor2 = (Author_AssignedAuthor2)theEObject;
 				T result = caseAuthor_AssignedAuthor2(author_AssignedAuthor2);
-				if (result == null) {
-					result = caseAssignedAuthor(author_AssignedAuthor2);
-				}
-				if (result == null) {
-					result = caseRole(author_AssignedAuthor2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(author_AssignedAuthor2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedAuthor(author_AssignedAuthor2);
+				if (result == null) result = caseRole(author_AssignedAuthor2);
+				if (result == null) result = caseInfrastructureRoot(author_AssignedAuthor2);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT_CUSTODIAN: {
-				UnstructuredDocument_Custodian unstructuredDocument_Custodian = (UnstructuredDocument_Custodian) theEObject;
+				UnstructuredDocument_Custodian unstructuredDocument_Custodian = (UnstructuredDocument_Custodian)theEObject;
 				T result = caseUnstructuredDocument_Custodian(unstructuredDocument_Custodian);
-				if (result == null) {
-					result = caseCustodian(unstructuredDocument_Custodian);
-				}
-				if (result == null) {
-					result = caseParticipation(unstructuredDocument_Custodian);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredDocument_Custodian);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCustodian(unstructuredDocument_Custodian);
+				if (result == null) result = caseParticipation(unstructuredDocument_Custodian);
+				if (result == null) result = caseInfrastructureRoot(unstructuredDocument_Custodian);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN3: {
-				Custodian_AssignedCustodian3 custodian_AssignedCustodian3 = (Custodian_AssignedCustodian3) theEObject;
+				Custodian_AssignedCustodian3 custodian_AssignedCustodian3 = (Custodian_AssignedCustodian3)theEObject;
 				T result = caseCustodian_AssignedCustodian3(custodian_AssignedCustodian3);
-				if (result == null) {
-					result = caseAssignedCustodian(custodian_AssignedCustodian3);
-				}
-				if (result == null) {
-					result = caseRole(custodian_AssignedCustodian3);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(custodian_AssignedCustodian3);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedCustodian(custodian_AssignedCustodian3);
+				if (result == null) result = caseRole(custodian_AssignedCustodian3);
+				if (result == null) result = caseInfrastructureRoot(custodian_AssignedCustodian3);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION: {
-				AssignedCustodian3_CustodianOrganization assignedCustodian3_CustodianOrganization = (AssignedCustodian3_CustodianOrganization) theEObject;
+				AssignedCustodian3_CustodianOrganization assignedCustodian3_CustodianOrganization = (AssignedCustodian3_CustodianOrganization)theEObject;
 				T result = caseAssignedCustodian3_CustodianOrganization(assignedCustodian3_CustodianOrganization);
-				if (result == null) {
-					result = caseCustodianOrganization(assignedCustodian3_CustodianOrganization);
-				}
-				if (result == null) {
-					result = caseEntity(assignedCustodian3_CustodianOrganization);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedCustodian3_CustodianOrganization);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCustodianOrganization(assignedCustodian3_CustodianOrganization);
+				if (result == null) result = caseEntity(assignedCustodian3_CustodianOrganization);
+				if (result == null) result = caseInfrastructureRoot(assignedCustodian3_CustodianOrganization);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT_COMPONENT: {
-				UnstructuredDocument_Component unstructuredDocument_Component = (UnstructuredDocument_Component) theEObject;
+				UnstructuredDocument_Component unstructuredDocument_Component = (UnstructuredDocument_Component)theEObject;
 				T result = caseUnstructuredDocument_Component(unstructuredDocument_Component);
-				if (result == null) {
-					result = caseComponent2(unstructuredDocument_Component);
-				}
-				if (result == null) {
-					result = caseActRelationship(unstructuredDocument_Component);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredDocument_Component);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent2(unstructuredDocument_Component);
+				if (result == null) result = caseActRelationship(unstructuredDocument_Component);
+				if (result == null) result = caseInfrastructureRoot(unstructuredDocument_Component);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_NON_XML_BODY: {
-				Component_NonXMLBody component_NonXMLBody = (Component_NonXMLBody) theEObject;
+				Component_NonXMLBody component_NonXMLBody = (Component_NonXMLBody)theEObject;
 				T result = caseComponent_NonXMLBody(component_NonXMLBody);
-				if (result == null) {
-					result = caseNonXMLBody(component_NonXMLBody);
-				}
-				if (result == null) {
-					result = caseAct(component_NonXMLBody);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(component_NonXMLBody);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseNonXMLBody(component_NonXMLBody);
+				if (result == null) result = caseAct(component_NonXMLBody);
+				if (result == null) result = caseInfrastructureRoot(component_NonXMLBody);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SCAN_ORIGINAL_AUTHOR: {
-				ScanOriginalAuthor scanOriginalAuthor = (ScanOriginalAuthor) theEObject;
+				ScanOriginalAuthor scanOriginalAuthor = (ScanOriginalAuthor)theEObject;
 				T result = caseScanOriginalAuthor(scanOriginalAuthor);
-				if (result == null) {
-					result = caseAuthor(scanOriginalAuthor);
-				}
-				if (result == null) {
-					result = caseParticipation(scanOriginalAuthor);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(scanOriginalAuthor);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthor(scanOriginalAuthor);
+				if (result == null) result = caseParticipation(scanOriginalAuthor);
+				if (result == null) result = caseInfrastructureRoot(scanOriginalAuthor);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SCANNING_DEVICE: {
-				ScanningDevice scanningDevice = (ScanningDevice) theEObject;
+				ScanningDevice scanningDevice = (ScanningDevice)theEObject;
 				T result = caseScanningDevice(scanningDevice);
-				if (result == null) {
-					result = caseAuthor(scanningDevice);
-				}
-				if (result == null) {
-					result = caseParticipation(scanningDevice);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(scanningDevice);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAuthor(scanningDevice);
+				if (result == null) result = caseParticipation(scanningDevice);
+				if (result == null) result = caseInfrastructureRoot(scanningDevice);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SCAN_DATA_ENTERER: {
-				ScanDataEnterer scanDataEnterer = (ScanDataEnterer) theEObject;
+				ScanDataEnterer scanDataEnterer = (ScanDataEnterer)theEObject;
 				T result = caseScanDataEnterer(scanDataEnterer);
-				if (result == null) {
-					result = caseDataEnterer(scanDataEnterer);
-				}
-				if (result == null) {
-					result = caseParticipation(scanDataEnterer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(scanDataEnterer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDataEnterer(scanDataEnterer);
+				if (result == null) result = caseParticipation(scanDataEnterer);
+				if (result == null) result = caseInfrastructureRoot(scanDataEnterer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_INFORMATION: {
-				MedicationInformation medicationInformation = (MedicationInformation) theEObject;
+				MedicationInformation medicationInformation = (MedicationInformation)theEObject;
 				T result = caseMedicationInformation(medicationInformation);
-				if (result == null) {
-					result = caseManufacturedProduct(medicationInformation);
-				}
-				if (result == null) {
-					result = caseRole(medicationInformation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationInformation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseManufacturedProduct(medicationInformation);
+				if (result == null) result = caseRole(medicationInformation);
+				if (result == null) result = caseInfrastructureRoot(medicationInformation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT: {
-				UnstructuredOrScannedDocument unstructuredOrScannedDocument = (UnstructuredOrScannedDocument) theEObject;
+				UnstructuredOrScannedDocument unstructuredOrScannedDocument = (UnstructuredOrScannedDocument)theEObject;
 				T result = caseUnstructuredOrScannedDocument(unstructuredOrScannedDocument);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(unstructuredOrScannedDocument);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(unstructuredOrScannedDocument);
-				}
-				if (result == null) {
-					result = caseAct(unstructuredOrScannedDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(unstructuredOrScannedDocument);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(unstructuredOrScannedDocument);
+				if (result == null) result = caseClinicalDocument(unstructuredOrScannedDocument);
+				if (result == null) result = caseAct(unstructuredOrScannedDocument);
+				if (result == null) result = caseInfrastructureRoot(unstructuredOrScannedDocument);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REFERRAL_SUMMARY: {
-				ReferralSummary referralSummary = (ReferralSummary) theEObject;
+				ReferralSummary referralSummary = (ReferralSummary)theEObject;
 				T result = caseReferralSummary(referralSummary);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(referralSummary);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(referralSummary);
-				}
-				if (result == null) {
-					result = caseAct(referralSummary);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(referralSummary);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(referralSummary);
+				if (result == null) result = caseClinicalDocument(referralSummary);
+				if (result == null) result = caseAct(referralSummary);
+				if (result == null) result = caseInfrastructureRoot(referralSummary);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DISCHARGE_SUMMARY: {
-				DischargeSummary dischargeSummary = (DischargeSummary) theEObject;
+				DischargeSummary dischargeSummary = (DischargeSummary)theEObject;
 				T result = caseDischargeSummary(dischargeSummary);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseAct(dischargeSummary);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeSummary);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(dischargeSummary);
+				if (result == null) result = caseClinicalDocument(dischargeSummary);
+				if (result == null) result = caseAct(dischargeSummary);
+				if (result == null) result = caseInfrastructureRoot(dischargeSummary);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DISCHARGE_SUMMARY_COMPONENT_OF: {
-				DischargeSummary_ComponentOf dischargeSummary_ComponentOf = (DischargeSummary_ComponentOf) theEObject;
+				DischargeSummary_ComponentOf dischargeSummary_ComponentOf = (DischargeSummary_ComponentOf)theEObject;
 				T result = caseDischargeSummary_ComponentOf(dischargeSummary_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(dischargeSummary_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(dischargeSummary_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeSummary_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(dischargeSummary_ComponentOf);
+				if (result == null) result = caseActRelationship(dischargeSummary_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(dischargeSummary_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3: {
-				ComponentOf_EncompassingEncounter3 componentOf_EncompassingEncounter3 = (ComponentOf_EncompassingEncounter3) theEObject;
+				ComponentOf_EncompassingEncounter3 componentOf_EncompassingEncounter3 = (ComponentOf_EncompassingEncounter3)theEObject;
 				T result = caseComponentOf_EncompassingEncounter3(componentOf_EncompassingEncounter3);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter3);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter3);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter3);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter3);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter3);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter3);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY: {
-				EncompassingEncounter3_ResponsibleParty encompassingEncounter3_ResponsibleParty = (EncompassingEncounter3_ResponsibleParty) theEObject;
+				EncompassingEncounter3_ResponsibleParty encompassingEncounter3_ResponsibleParty = (EncompassingEncounter3_ResponsibleParty)theEObject;
 				T result = caseEncompassingEncounter3_ResponsibleParty(encompassingEncounter3_ResponsibleParty);
-				if (result == null) {
-					result = caseResponsibleParty(encompassingEncounter3_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter3_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter3_ResponsibleParty);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseResponsibleParty(encompassingEncounter3_ResponsibleParty);
+				if (result == null) result = caseParticipation(encompassingEncounter3_ResponsibleParty);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter3_ResponsibleParty);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT: {
-				EncompassingEncounter3_EncounterParticipant encompassingEncounter3_EncounterParticipant = (EncompassingEncounter3_EncounterParticipant) theEObject;
+				EncompassingEncounter3_EncounterParticipant encompassingEncounter3_EncounterParticipant = (EncompassingEncounter3_EncounterParticipant)theEObject;
 				T result = caseEncompassingEncounter3_EncounterParticipant(encompassingEncounter3_EncounterParticipant);
-				if (result == null) {
-					result = caseEncounterParticipant(encompassingEncounter3_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter3_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter3_EncounterParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncounterParticipant(encompassingEncounter3_EncounterParticipant);
+				if (result == null) result = caseParticipation(encompassingEncounter3_EncounterParticipant);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter3_EncounterParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: {
-				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection) theEObject;
+				HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection = (HospitalDischargeDiagnosisSection)theEObject;
 				T result = caseHospitalDischargeDiagnosisSection(hospitalDischargeDiagnosisSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseAct(hospitalDischargeDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS: {
-				HospitalDischargeDiagnosis hospitalDischargeDiagnosis = (HospitalDischargeDiagnosis) theEObject;
+				HospitalDischargeDiagnosis hospitalDischargeDiagnosis = (HospitalDischargeDiagnosis)theEObject;
 				T result = caseHospitalDischargeDiagnosis(hospitalDischargeDiagnosis);
-				if (result == null) {
-					result = caseCDA_Act(hospitalDischargeDiagnosis);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(hospitalDischargeDiagnosis);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeDiagnosis);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeDiagnosis);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(hospitalDischargeDiagnosis);
+				if (result == null) result = caseClinicalStatement(hospitalDischargeDiagnosis);
+				if (result == null) result = caseAct(hospitalDischargeDiagnosis);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeDiagnosis);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DISCHARGE_DIET_SECTION: {
-				DischargeDietSection dischargeDietSection = (DischargeDietSection) theEObject;
+				DischargeDietSection dischargeDietSection = (DischargeDietSection)theEObject;
 				T result = caseDischargeDietSection(dischargeDietSection);
-				if (result == null) {
-					result = caseSection(dischargeDietSection);
-				}
-				if (result == null) {
-					result = caseAct(dischargeDietSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeDietSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(dischargeDietSection);
+				if (result == null) result = caseAct(dischargeDietSection);
+				if (result == null) result = caseInfrastructureRoot(dischargeDietSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL: {
-				HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional = (HospitalDischargeMedicationsSectionEntriesOptional) theEObject;
+				HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional = (HospitalDischargeMedicationsSectionEntriesOptional)theEObject;
 				T result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSectionEntriesOptional);
-				if (result == null) {
-					result = caseSection(hospitalDischargeMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeMedicationsSectionEntriesOptional);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalDischargeMedicationsSectionEntriesOptional);
+				if (result == null) result = caseAct(hospitalDischargeMedicationsSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeMedicationsSectionEntriesOptional);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DISCHARGE_MEDICATION: {
-				DischargeMedication dischargeMedication = (DischargeMedication) theEObject;
+				DischargeMedication dischargeMedication = (DischargeMedication)theEObject;
 				T result = caseDischargeMedication(dischargeMedication);
-				if (result == null) {
-					result = caseCDA_Act(dischargeMedication);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(dischargeMedication);
-				}
-				if (result == null) {
-					result = caseAct(dischargeMedication);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dischargeMedication);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(dischargeMedication);
+				if (result == null) result = caseClinicalStatement(dischargeMedication);
+				if (result == null) result = caseAct(dischargeMedication);
+				if (result == null) result = caseInfrastructureRoot(dischargeMedication);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_COURSE_SECTION: {
-				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection) theEObject;
+				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection)theEObject;
 				T result = caseHospitalCourseSection(hospitalCourseSection);
-				if (result == null) {
-					result = caseSection(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalCourseSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalCourseSection);
+				if (result == null) result = caseAct(hospitalCourseSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalCourseSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION: {
-				ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection = (ChiefComplaintAndReasonForVisitSection) theEObject;
+				ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection = (ChiefComplaintAndReasonForVisitSection)theEObject;
 				T result = caseChiefComplaintAndReasonForVisitSection(chiefComplaintAndReasonForVisitSection);
-				if (result == null) {
-					result = caseSection(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseAct(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(chiefComplaintAndReasonForVisitSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(chiefComplaintAndReasonForVisitSection);
+				if (result == null) result = caseAct(chiefComplaintAndReasonForVisitSection);
+				if (result == null) result = caseInfrastructureRoot(chiefComplaintAndReasonForVisitSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION: {
-				HospitalConsultationsSection hospitalConsultationsSection = (HospitalConsultationsSection) theEObject;
+				HospitalConsultationsSection hospitalConsultationsSection = (HospitalConsultationsSection)theEObject;
 				T result = caseHospitalConsultationsSection(hospitalConsultationsSection);
-				if (result == null) {
-					result = caseSection(hospitalConsultationsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalConsultationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalConsultationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalConsultationsSection);
+				if (result == null) result = caseAct(hospitalConsultationsSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalConsultationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION: {
-				HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection = (HospitalDischargeInstructionsSection) theEObject;
+				HospitalDischargeInstructionsSection hospitalDischargeInstructionsSection = (HospitalDischargeInstructionsSection)theEObject;
 				T result = caseHospitalDischargeInstructionsSection(hospitalDischargeInstructionsSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeInstructionsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalDischargeInstructionsSection);
+				if (result == null) result = caseAct(hospitalDischargeInstructionsSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeInstructionsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION: {
-				HospitalDischargePhysicalSection hospitalDischargePhysicalSection = (HospitalDischargePhysicalSection) theEObject;
+				HospitalDischargePhysicalSection hospitalDischargePhysicalSection = (HospitalDischargePhysicalSection)theEObject;
 				T result = caseHospitalDischargePhysicalSection(hospitalDischargePhysicalSection);
-				if (result == null) {
-					result = caseSection(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargePhysicalSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalDischargePhysicalSection);
+				if (result == null) result = caseAct(hospitalDischargePhysicalSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargePhysicalSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
-				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection) theEObject;
+				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection)theEObject;
 				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
-				if (result == null) {
-					result = caseSection(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(hospitalDischargeStudiesSummarySection);
+				if (result == null) result = caseAct(hospitalDischargeStudiesSummarySection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REASON_FOR_VISIT_SECTION: {
-				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection) theEObject;
+				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection)theEObject;
 				T result = caseReasonForVisitSection(reasonForVisitSection);
-				if (result == null) {
-					result = caseSection(reasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseAct(reasonForVisitSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(reasonForVisitSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(reasonForVisitSection);
+				if (result == null) result = caseAct(reasonForVisitSection);
+				if (result == null) result = caseInfrastructureRoot(reasonForVisitSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION: {
-				PreconditionForSubstanceAdministration preconditionForSubstanceAdministration = (PreconditionForSubstanceAdministration) theEObject;
+				PreconditionForSubstanceAdministration preconditionForSubstanceAdministration = (PreconditionForSubstanceAdministration)theEObject;
 				T result = casePreconditionForSubstanceAdministration(preconditionForSubstanceAdministration);
-				if (result == null) {
-					result = casePrecondition(preconditionForSubstanceAdministration);
-				}
-				if (result == null) {
-					result = caseActRelationship(preconditionForSubstanceAdministration);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(preconditionForSubstanceAdministration);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePrecondition(preconditionForSubstanceAdministration);
+				if (result == null) result = caseActRelationship(preconditionForSubstanceAdministration);
+				if (result == null) result = caseInfrastructureRoot(preconditionForSubstanceAdministration);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION: {
-				ImmunizationMedicationInformation immunizationMedicationInformation = (ImmunizationMedicationInformation) theEObject;
+				ImmunizationMedicationInformation immunizationMedicationInformation = (ImmunizationMedicationInformation)theEObject;
 				T result = caseImmunizationMedicationInformation(immunizationMedicationInformation);
-				if (result == null) {
-					result = caseManufacturedProduct(immunizationMedicationInformation);
-				}
-				if (result == null) {
-					result = caseRole(immunizationMedicationInformation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationMedicationInformation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseManufacturedProduct(immunizationMedicationInformation);
+				if (result == null) result = caseRole(immunizationMedicationInformation);
+				if (result == null) result = caseInfrastructureRoot(immunizationMedicationInformation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_SPECIMEN: {
-				ProcedureSpecimen procedureSpecimen = (ProcedureSpecimen) theEObject;
+				ProcedureSpecimen procedureSpecimen = (ProcedureSpecimen)theEObject;
 				T result = caseProcedureSpecimen(procedureSpecimen);
-				if (result == null) {
-					result = caseSpecimen(procedureSpecimen);
-				}
-				if (result == null) {
-					result = caseParticipation(procedureSpecimen);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureSpecimen);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSpecimen(procedureSpecimen);
+				if (result == null) result = caseParticipation(procedureSpecimen);
+				if (result == null) result = caseInfrastructureRoot(procedureSpecimen);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_PERFORMER: {
-				ProcedurePerformer procedurePerformer = (ProcedurePerformer) theEObject;
+				ProcedurePerformer procedurePerformer = (ProcedurePerformer)theEObject;
 				T result = caseProcedurePerformer(procedurePerformer);
-				if (result == null) {
-					result = casePerformer2(procedurePerformer);
-				}
-				if (result == null) {
-					result = caseParticipation(procedurePerformer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedurePerformer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer2(procedurePerformer);
+				if (result == null) result = caseParticipation(procedurePerformer);
+				if (result == null) result = caseInfrastructureRoot(procedurePerformer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_ENCOUNTER: {
-				ProcedureEncounter procedureEncounter = (ProcedureEncounter) theEObject;
+				ProcedureEncounter procedureEncounter = (ProcedureEncounter)theEObject;
 				T result = caseProcedureEncounter(procedureEncounter);
-				if (result == null) {
-					result = caseCDA_Encounter(procedureEncounter);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureEncounter);
-				}
-				if (result == null) {
-					result = caseAct(procedureEncounter);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureEncounter);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Encounter(procedureEncounter);
+				if (result == null) result = caseClinicalStatement(procedureEncounter);
+				if (result == null) result = caseAct(procedureEncounter);
+				if (result == null) result = caseInfrastructureRoot(procedureEncounter);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: {
-				MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial = (MedicationInformationManufacturedMaterial) theEObject;
+				MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial = (MedicationInformationManufacturedMaterial)theEObject;
 				T result = caseMedicationInformationManufacturedMaterial(medicationInformationManufacturedMaterial);
-				if (result == null) {
-					result = caseMaterial(medicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = caseEntity(medicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseMaterial(medicationInformationManufacturedMaterial);
+				if (result == null) result = caseEntity(medicationInformationManufacturedMaterial);
+				if (result == null) result = caseInfrastructureRoot(medicationInformationManufacturedMaterial);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FAMILY_HISTORY_SUBJECT: {
-				FamilyHistorySubject familyHistorySubject = (FamilyHistorySubject) theEObject;
+				FamilyHistorySubject familyHistorySubject = (FamilyHistorySubject)theEObject;
 				T result = caseFamilyHistorySubject(familyHistorySubject);
-				if (result == null) {
-					result = caseSubject(familyHistorySubject);
-				}
-				if (result == null) {
-					result = caseParticipation(familyHistorySubject);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistorySubject);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSubject(familyHistorySubject);
+				if (result == null) result = caseParticipation(familyHistorySubject);
+				if (result == null) result = caseInfrastructureRoot(familyHistorySubject);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
-				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
+				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection)theEObject;
 				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) {
-					result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = caseSection(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseHospitalDischargeMedicationsSectionEntriesOptional(hospitalDischargeMedicationsSection);
+				if (result == null) result = caseSection(hospitalDischargeMedicationsSection);
+				if (result == null) result = caseAct(hospitalDischargeMedicationsSection);
+				if (result == null) result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RELATED_INFORMANT: {
-				RelatedInformant relatedInformant = (RelatedInformant) theEObject;
+				RelatedInformant relatedInformant = (RelatedInformant)theEObject;
 				T result = caseRelatedInformant(relatedInformant);
-				if (result == null) {
-					result = caseRelatedEntity(relatedInformant);
-				}
-				if (result == null) {
-					result = caseRole(relatedInformant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(relatedInformant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseRelatedEntity(relatedInformant);
+				if (result == null) result = caseRole(relatedInformant);
+				if (result == null) result = caseInfrastructureRoot(relatedInformant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTER_PERFORMER: {
-				EncounterPerformer encounterPerformer = (EncounterPerformer) theEObject;
+				EncounterPerformer encounterPerformer = (EncounterPerformer)theEObject;
 				T result = caseEncounterPerformer(encounterPerformer);
-				if (result == null) {
-					result = casePerformer2(encounterPerformer);
-				}
-				if (result == null) {
-					result = caseParticipation(encounterPerformer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encounterPerformer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer2(encounterPerformer);
+				if (result == null) result = caseParticipation(encounterPerformer);
+				if (result == null) result = caseInfrastructureRoot(encounterPerformer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY: {
-				EncounterPerformerAssignedEntity encounterPerformerAssignedEntity = (EncounterPerformerAssignedEntity) theEObject;
+				EncounterPerformerAssignedEntity encounterPerformerAssignedEntity = (EncounterPerformerAssignedEntity)theEObject;
 				T result = caseEncounterPerformerAssignedEntity(encounterPerformerAssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(encounterPerformerAssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(encounterPerformerAssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encounterPerformerAssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(encounterPerformerAssignedEntity);
+				if (result == null) result = caseRole(encounterPerformerAssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(encounterPerformerAssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT: {
-				AllergyObservationParticipant allergyObservationParticipant = (AllergyObservationParticipant) theEObject;
+				AllergyObservationParticipant allergyObservationParticipant = (AllergyObservationParticipant)theEObject;
 				T result = caseAllergyObservationParticipant(allergyObservationParticipant);
-				if (result == null) {
-					result = caseParticipant2(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant2(allergyObservationParticipant);
+				if (result == null) result = caseParticipation(allergyObservationParticipant);
+				if (result == null) result = caseInfrastructureRoot(allergyObservationParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE: {
-				AllergyObservationParticipantRole allergyObservationParticipantRole = (AllergyObservationParticipantRole) theEObject;
+				AllergyObservationParticipantRole allergyObservationParticipantRole = (AllergyObservationParticipantRole)theEObject;
 				T result = caseAllergyObservationParticipantRole(allergyObservationParticipantRole);
-				if (result == null) {
-					result = caseParticipantRole(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = caseRole(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipantRole(allergyObservationParticipantRole);
+				if (result == null) result = caseRole(allergyObservationParticipantRole);
+				if (result == null) result = caseInfrastructureRoot(allergyObservationParticipantRole);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY: {
-				AllergyObservationPlayingEntity allergyObservationPlayingEntity = (AllergyObservationPlayingEntity) theEObject;
+				AllergyObservationPlayingEntity allergyObservationPlayingEntity = (AllergyObservationPlayingEntity)theEObject;
 				T result = caseAllergyObservationPlayingEntity(allergyObservationPlayingEntity);
-				if (result == null) {
-					result = casePlayingEntity(allergyObservationPlayingEntity);
-				}
-				if (result == null) {
-					result = caseEntity(allergyObservationPlayingEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationPlayingEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePlayingEntity(allergyObservationPlayingEntity);
+				if (result == null) result = caseEntity(allergyObservationPlayingEntity);
+				if (result == null) result = caseInfrastructureRoot(allergyObservationPlayingEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ANESTHESIA_SECTION: {
-				AnesthesiaSection anesthesiaSection = (AnesthesiaSection) theEObject;
+				AnesthesiaSection anesthesiaSection = (AnesthesiaSection)theEObject;
 				T result = caseAnesthesiaSection(anesthesiaSection);
-				if (result == null) {
-					result = caseSection(anesthesiaSection);
-				}
-				if (result == null) {
-					result = caseAct(anesthesiaSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(anesthesiaSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(anesthesiaSection);
+				if (result == null) result = caseAct(anesthesiaSection);
+				if (result == null) result = caseInfrastructureRoot(anesthesiaSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPLICATIONS_SECTION: {
-				ComplicationsSection complicationsSection = (ComplicationsSection) theEObject;
+				ComplicationsSection complicationsSection = (ComplicationsSection)theEObject;
 				T result = caseComplicationsSection(complicationsSection);
-				if (result == null) {
-					result = caseSection(complicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(complicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(complicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(complicationsSection);
+				if (result == null) result = caseAct(complicationsSection);
+				if (result == null) result = caseInfrastructureRoot(complicationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DICOM_OBJECT_CATALOG_SECTION: {
-				DICOMObjectCatalogSection dicomObjectCatalogSection = (DICOMObjectCatalogSection) theEObject;
+				DICOMObjectCatalogSection dicomObjectCatalogSection = (DICOMObjectCatalogSection)theEObject;
 				T result = caseDICOMObjectCatalogSection(dicomObjectCatalogSection);
-				if (result == null) {
-					result = caseSection(dicomObjectCatalogSection);
-				}
-				if (result == null) {
-					result = caseAct(dicomObjectCatalogSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(dicomObjectCatalogSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(dicomObjectCatalogSection);
+				if (result == null) result = caseAct(dicomObjectCatalogSection);
+				if (result == null) result = caseInfrastructureRoot(dicomObjectCatalogSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.STUDY_ACT: {
-				StudyAct studyAct = (StudyAct) theEObject;
+				StudyAct studyAct = (StudyAct)theEObject;
 				T result = caseStudyAct(studyAct);
-				if (result == null) {
-					result = caseCDA_Act(studyAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(studyAct);
-				}
-				if (result == null) {
-					result = caseAct(studyAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(studyAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(studyAct);
+				if (result == null) result = caseClinicalStatement(studyAct);
+				if (result == null) result = caseAct(studyAct);
+				if (result == null) result = caseInfrastructureRoot(studyAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SERIES_ACT: {
-				SeriesAct seriesAct = (SeriesAct) theEObject;
+				SeriesAct seriesAct = (SeriesAct)theEObject;
 				T result = caseSeriesAct(seriesAct);
-				if (result == null) {
-					result = caseCDA_Act(seriesAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(seriesAct);
-				}
-				if (result == null) {
-					result = caseAct(seriesAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(seriesAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(seriesAct);
+				if (result == null) result = caseClinicalStatement(seriesAct);
+				if (result == null) result = caseAct(seriesAct);
+				if (result == null) result = caseInfrastructureRoot(seriesAct);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SOP_INSTANCE_OBSERVATION: {
-				SOPInstanceObservation sopInstanceObservation = (SOPInstanceObservation) theEObject;
+				SOPInstanceObservation sopInstanceObservation = (SOPInstanceObservation)theEObject;
 				T result = caseSOPInstanceObservation(sopInstanceObservation);
-				if (result == null) {
-					result = caseObservation(sopInstanceObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(sopInstanceObservation);
-				}
-				if (result == null) {
-					result = caseAct(sopInstanceObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(sopInstanceObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(sopInstanceObservation);
+				if (result == null) result = caseClinicalStatement(sopInstanceObservation);
+				if (result == null) result = caseAct(sopInstanceObservation);
+				if (result == null) result = caseInfrastructureRoot(sopInstanceObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PURPOSEOF_REFERENCE_OBSERVATION: {
-				PurposeofReferenceObservation purposeofReferenceObservation = (PurposeofReferenceObservation) theEObject;
+				PurposeofReferenceObservation purposeofReferenceObservation = (PurposeofReferenceObservation)theEObject;
 				T result = casePurposeofReferenceObservation(purposeofReferenceObservation);
-				if (result == null) {
-					result = caseObservation(purposeofReferenceObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(purposeofReferenceObservation);
-				}
-				if (result == null) {
-					result = caseAct(purposeofReferenceObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(purposeofReferenceObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(purposeofReferenceObservation);
+				if (result == null) result = caseClinicalStatement(purposeofReferenceObservation);
+				if (result == null) result = caseAct(purposeofReferenceObservation);
+				if (result == null) result = caseInfrastructureRoot(purposeofReferenceObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.REFERENCED_FRAMES_OBSERVATION: {
-				ReferencedFramesObservation referencedFramesObservation = (ReferencedFramesObservation) theEObject;
+				ReferencedFramesObservation referencedFramesObservation = (ReferencedFramesObservation)theEObject;
 				T result = caseReferencedFramesObservation(referencedFramesObservation);
-				if (result == null) {
-					result = caseObservation(referencedFramesObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(referencedFramesObservation);
-				}
-				if (result == null) {
-					result = caseAct(referencedFramesObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(referencedFramesObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(referencedFramesObservation);
+				if (result == null) result = caseClinicalStatement(referencedFramesObservation);
+				if (result == null) result = caseAct(referencedFramesObservation);
+				if (result == null) result = caseInfrastructureRoot(referencedFramesObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.BOUNDARY_OBSERVATION: {
-				BoundaryObservation boundaryObservation = (BoundaryObservation) theEObject;
+				BoundaryObservation boundaryObservation = (BoundaryObservation)theEObject;
 				T result = caseBoundaryObservation(boundaryObservation);
-				if (result == null) {
-					result = caseObservation(boundaryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(boundaryObservation);
-				}
-				if (result == null) {
-					result = caseAct(boundaryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(boundaryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(boundaryObservation);
+				if (result == null) result = caseClinicalStatement(boundaryObservation);
+				if (result == null) result = caseAct(boundaryObservation);
+				if (result == null) result = caseInfrastructureRoot(boundaryObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.FINDINGS_SECTION: {
-				FindingsSection findingsSection = (FindingsSection) theEObject;
+				FindingsSection findingsSection = (FindingsSection)theEObject;
 				T result = caseFindingsSection(findingsSection);
-				if (result == null) {
-					result = caseSection(findingsSection);
-				}
-				if (result == null) {
-					result = caseAct(findingsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(findingsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(findingsSection);
+				if (result == null) result = caseAct(findingsSection);
+				if (result == null) result = caseInfrastructureRoot(findingsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INTERVENTIONS_SECTION: {
-				InterventionsSection interventionsSection = (InterventionsSection) theEObject;
+				InterventionsSection interventionsSection = (InterventionsSection)theEObject;
 				T result = caseInterventionsSection(interventionsSection);
-				if (result == null) {
-					result = caseSection(interventionsSection);
-				}
-				if (result == null) {
-					result = caseAct(interventionsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(interventionsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(interventionsSection);
+				if (result == null) result = caseAct(interventionsSection);
+				if (result == null) result = caseInfrastructureRoot(interventionsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICAL_HISTORY_SECTION: {
-				MedicalHistorySection medicalHistorySection = (MedicalHistorySection) theEObject;
+				MedicalHistorySection medicalHistorySection = (MedicalHistorySection)theEObject;
 				T result = caseMedicalHistorySection(medicalHistorySection);
-				if (result == null) {
-					result = caseSection(medicalHistorySection);
-				}
-				if (result == null) {
-					result = caseAct(medicalHistorySection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicalHistorySection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(medicalHistorySection);
+				if (result == null) result = caseAct(medicalHistorySection);
+				if (result == null) result = caseInfrastructureRoot(medicalHistorySection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.OBJECTIVE_SECTION: {
-				ObjectiveSection objectiveSection = (ObjectiveSection) theEObject;
+				ObjectiveSection objectiveSection = (ObjectiveSection)theEObject;
 				T result = caseObjectiveSection(objectiveSection);
-				if (result == null) {
-					result = caseSection(objectiveSection);
-				}
-				if (result == null) {
-					result = caseAct(objectiveSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(objectiveSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(objectiveSection);
+				if (result == null) result = caseAct(objectiveSection);
+				if (result == null) result = caseInfrastructureRoot(objectiveSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.OPERATIVE_NOTE_FLUID_SECTION: {
-				OperativeNoteFluidSection operativeNoteFluidSection = (OperativeNoteFluidSection) theEObject;
+				OperativeNoteFluidSection operativeNoteFluidSection = (OperativeNoteFluidSection)theEObject;
 				T result = caseOperativeNoteFluidSection(operativeNoteFluidSection);
-				if (result == null) {
-					result = caseSection(operativeNoteFluidSection);
-				}
-				if (result == null) {
-					result = caseAct(operativeNoteFluidSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(operativeNoteFluidSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(operativeNoteFluidSection);
+				if (result == null) result = caseAct(operativeNoteFluidSection);
+				if (result == null) result = caseInfrastructureRoot(operativeNoteFluidSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION: {
-				OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection = (OperativeNoteSurgicalProcedureSection) theEObject;
+				OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection = (OperativeNoteSurgicalProcedureSection)theEObject;
 				T result = caseOperativeNoteSurgicalProcedureSection(operativeNoteSurgicalProcedureSection);
-				if (result == null) {
-					result = caseSection(operativeNoteSurgicalProcedureSection);
-				}
-				if (result == null) {
-					result = caseAct(operativeNoteSurgicalProcedureSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(operativeNoteSurgicalProcedureSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(operativeNoteSurgicalProcedureSection);
+				if (result == null) result = caseAct(operativeNoteSurgicalProcedureSection);
+				if (result == null) result = caseInfrastructureRoot(operativeNoteSurgicalProcedureSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PLANNED_PROCEDURE_SECTION: {
-				PlannedProcedureSection plannedProcedureSection = (PlannedProcedureSection) theEObject;
+				PlannedProcedureSection plannedProcedureSection = (PlannedProcedureSection)theEObject;
 				T result = casePlannedProcedureSection(plannedProcedureSection);
-				if (result == null) {
-					result = caseSection(plannedProcedureSection);
-				}
-				if (result == null) {
-					result = caseAct(plannedProcedureSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(plannedProcedureSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(plannedProcedureSection);
+				if (result == null) result = caseAct(plannedProcedureSection);
+				if (result == null) result = caseInfrastructureRoot(plannedProcedureSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION: {
-				PostoperativeDiagnosisSection postoperativeDiagnosisSection = (PostoperativeDiagnosisSection) theEObject;
+				PostoperativeDiagnosisSection postoperativeDiagnosisSection = (PostoperativeDiagnosisSection)theEObject;
 				T result = casePostoperativeDiagnosisSection(postoperativeDiagnosisSection);
-				if (result == null) {
-					result = caseSection(postoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(postoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(postoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(postoperativeDiagnosisSection);
+				if (result == null) result = caseAct(postoperativeDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(postoperativeDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION: {
-				PostprocedureDiagnosisSection postprocedureDiagnosisSection = (PostprocedureDiagnosisSection) theEObject;
+				PostprocedureDiagnosisSection postprocedureDiagnosisSection = (PostprocedureDiagnosisSection)theEObject;
 				T result = casePostprocedureDiagnosisSection(postprocedureDiagnosisSection);
-				if (result == null) {
-					result = caseSection(postprocedureDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(postprocedureDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(postprocedureDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(postprocedureDiagnosisSection);
+				if (result == null) result = caseAct(postprocedureDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(postprocedureDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS: {
-				PostprocedureDiagnosis postprocedureDiagnosis = (PostprocedureDiagnosis) theEObject;
+				PostprocedureDiagnosis postprocedureDiagnosis = (PostprocedureDiagnosis)theEObject;
 				T result = casePostprocedureDiagnosis(postprocedureDiagnosis);
-				if (result == null) {
-					result = caseCDA_Act(postprocedureDiagnosis);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(postprocedureDiagnosis);
-				}
-				if (result == null) {
-					result = caseAct(postprocedureDiagnosis);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(postprocedureDiagnosis);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(postprocedureDiagnosis);
+				if (result == null) result = caseClinicalStatement(postprocedureDiagnosis);
+				if (result == null) result = caseAct(postprocedureDiagnosis);
+				if (result == null) result = caseInfrastructureRoot(postprocedureDiagnosis);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION: {
-				PreoperativeDiagnosisSection preoperativeDiagnosisSection = (PreoperativeDiagnosisSection) theEObject;
+				PreoperativeDiagnosisSection preoperativeDiagnosisSection = (PreoperativeDiagnosisSection)theEObject;
 				T result = casePreoperativeDiagnosisSection(preoperativeDiagnosisSection);
-				if (result == null) {
-					result = caseSection(preoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseAct(preoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(preoperativeDiagnosisSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(preoperativeDiagnosisSection);
+				if (result == null) result = caseAct(preoperativeDiagnosisSection);
+				if (result == null) result = caseInfrastructureRoot(preoperativeDiagnosisSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_DESCRIPTION_SECTION: {
-				ProcedureDescriptionSection procedureDescriptionSection = (ProcedureDescriptionSection) theEObject;
+				ProcedureDescriptionSection procedureDescriptionSection = (ProcedureDescriptionSection)theEObject;
 				T result = caseProcedureDescriptionSection(procedureDescriptionSection);
-				if (result == null) {
-					result = caseSection(procedureDescriptionSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureDescriptionSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureDescriptionSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureDescriptionSection);
+				if (result == null) result = caseAct(procedureDescriptionSection);
+				if (result == null) result = caseInfrastructureRoot(procedureDescriptionSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_DISPOSITION_SECTION: {
-				ProcedureDispositionSection procedureDispositionSection = (ProcedureDispositionSection) theEObject;
+				ProcedureDispositionSection procedureDispositionSection = (ProcedureDispositionSection)theEObject;
 				T result = caseProcedureDispositionSection(procedureDispositionSection);
-				if (result == null) {
-					result = caseSection(procedureDispositionSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureDispositionSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureDispositionSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureDispositionSection);
+				if (result == null) result = caseAct(procedureDispositionSection);
+				if (result == null) result = caseInfrastructureRoot(procedureDispositionSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION: {
-				ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection = (ProcedureEstimatedBloodLossSection) theEObject;
+				ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection = (ProcedureEstimatedBloodLossSection)theEObject;
 				T result = caseProcedureEstimatedBloodLossSection(procedureEstimatedBloodLossSection);
-				if (result == null) {
-					result = caseSection(procedureEstimatedBloodLossSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureEstimatedBloodLossSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureEstimatedBloodLossSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureEstimatedBloodLossSection);
+				if (result == null) result = caseAct(procedureEstimatedBloodLossSection);
+				if (result == null) result = caseInfrastructureRoot(procedureEstimatedBloodLossSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_FINDINGS_SECTION: {
-				ProcedureFindingsSection procedureFindingsSection = (ProcedureFindingsSection) theEObject;
+				ProcedureFindingsSection procedureFindingsSection = (ProcedureFindingsSection)theEObject;
 				T result = caseProcedureFindingsSection(procedureFindingsSection);
-				if (result == null) {
-					result = caseSection(procedureFindingsSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureFindingsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureFindingsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureFindingsSection);
+				if (result == null) result = caseAct(procedureFindingsSection);
+				if (result == null) result = caseInfrastructureRoot(procedureFindingsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_IMPLANTS_SECTION: {
-				ProcedureImplantsSection procedureImplantsSection = (ProcedureImplantsSection) theEObject;
+				ProcedureImplantsSection procedureImplantsSection = (ProcedureImplantsSection)theEObject;
 				T result = caseProcedureImplantsSection(procedureImplantsSection);
-				if (result == null) {
-					result = caseSection(procedureImplantsSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureImplantsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureImplantsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureImplantsSection);
+				if (result == null) result = caseAct(procedureImplantsSection);
+				if (result == null) result = caseInfrastructureRoot(procedureImplantsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION: {
-				ProcedureIndicationsSection procedureIndicationsSection = (ProcedureIndicationsSection) theEObject;
+				ProcedureIndicationsSection procedureIndicationsSection = (ProcedureIndicationsSection)theEObject;
 				T result = caseProcedureIndicationsSection(procedureIndicationsSection);
-				if (result == null) {
-					result = caseSection(procedureIndicationsSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureIndicationsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureIndicationsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureIndicationsSection);
+				if (result == null) result = caseAct(procedureIndicationsSection);
+				if (result == null) result = caseInfrastructureRoot(procedureIndicationsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_SPECIMENS_TAKEN_SECTION: {
-				ProcedureSpecimensTakenSection procedureSpecimensTakenSection = (ProcedureSpecimensTakenSection) theEObject;
+				ProcedureSpecimensTakenSection procedureSpecimensTakenSection = (ProcedureSpecimensTakenSection)theEObject;
 				T result = caseProcedureSpecimensTakenSection(procedureSpecimensTakenSection);
-				if (result == null) {
-					result = caseSection(procedureSpecimensTakenSection);
-				}
-				if (result == null) {
-					result = caseAct(procedureSpecimensTakenSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureSpecimensTakenSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(procedureSpecimensTakenSection);
+				if (result == null) result = caseAct(procedureSpecimensTakenSection);
+				if (result == null) result = caseInfrastructureRoot(procedureSpecimensTakenSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SUBJECTIVE_SECTION: {
-				SubjectiveSection subjectiveSection = (SubjectiveSection) theEObject;
+				SubjectiveSection subjectiveSection = (SubjectiveSection)theEObject;
 				T result = caseSubjectiveSection(subjectiveSection);
-				if (result == null) {
-					result = caseSection(subjectiveSection);
-				}
-				if (result == null) {
-					result = caseAct(subjectiveSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(subjectiveSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(subjectiveSection);
+				if (result == null) result = caseAct(subjectiveSection);
+				if (result == null) result = caseInfrastructureRoot(subjectiveSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CONSULTATION_NOTE: {
-				ConsultationNote consultationNote = (ConsultationNote) theEObject;
+				ConsultationNote consultationNote = (ConsultationNote)theEObject;
 				T result = caseConsultationNote(consultationNote);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(consultationNote);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(consultationNote);
-				}
-				if (result == null) {
-					result = caseAct(consultationNote);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(consultationNote);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(consultationNote);
+				if (result == null) result = caseClinicalDocument(consultationNote);
+				if (result == null) result = caseAct(consultationNote);
+				if (result == null) result = caseInfrastructureRoot(consultationNote);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CONSULTATION_NOTE_COMPONENT_OF: {
-				ConsultationNote_ComponentOf consultationNote_ComponentOf = (ConsultationNote_ComponentOf) theEObject;
+				ConsultationNote_ComponentOf consultationNote_ComponentOf = (ConsultationNote_ComponentOf)theEObject;
 				T result = caseConsultationNote_ComponentOf(consultationNote_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(consultationNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(consultationNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(consultationNote_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(consultationNote_ComponentOf);
+				if (result == null) result = caseActRelationship(consultationNote_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(consultationNote_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER2: {
-				ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2 = (ComponentOf_EncompassingEncounter2) theEObject;
+				ComponentOf_EncompassingEncounter2 componentOf_EncompassingEncounter2 = (ComponentOf_EncompassingEncounter2)theEObject;
 				T result = caseComponentOf_EncompassingEncounter2(componentOf_EncompassingEncounter2);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter2);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter2);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter2);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter2);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY: {
-				EncompassingEncounter2_ResponsibleParty encompassingEncounter2_ResponsibleParty = (EncompassingEncounter2_ResponsibleParty) theEObject;
+				EncompassingEncounter2_ResponsibleParty encompassingEncounter2_ResponsibleParty = (EncompassingEncounter2_ResponsibleParty)theEObject;
 				T result = caseEncompassingEncounter2_ResponsibleParty(encompassingEncounter2_ResponsibleParty);
-				if (result == null) {
-					result = caseResponsibleParty(encompassingEncounter2_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter2_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter2_ResponsibleParty);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseResponsibleParty(encompassingEncounter2_ResponsibleParty);
+				if (result == null) result = caseParticipation(encompassingEncounter2_ResponsibleParty);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter2_ResponsibleParty);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT: {
-				EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant = (EncompassingEncounter2_EncounterParticipant) theEObject;
+				EncompassingEncounter2_EncounterParticipant encompassingEncounter2_EncounterParticipant = (EncompassingEncounter2_EncounterParticipant)theEObject;
 				T result = caseEncompassingEncounter2_EncounterParticipant(encompassingEncounter2_EncounterParticipant);
-				if (result == null) {
-					result = caseEncounterParticipant(encompassingEncounter2_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter2_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter2_EncounterParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncounterParticipant(encompassingEncounter2_EncounterParticipant);
+				if (result == null) result = caseParticipation(encompassingEncounter2_EncounterParticipant);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter2_EncounterParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSESSMENT_SECTION: {
-				AssessmentSection assessmentSection = (AssessmentSection) theEObject;
+				AssessmentSection assessmentSection = (AssessmentSection)theEObject;
 				T result = caseAssessmentSection(assessmentSection);
-				if (result == null) {
-					result = caseSection(assessmentSection);
-				}
-				if (result == null) {
-					result = caseAct(assessmentSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assessmentSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(assessmentSection);
+				if (result == null) result = caseAct(assessmentSection);
+				if (result == null) result = caseInfrastructureRoot(assessmentSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE: {
-				HistoryAndPhysicalNote historyAndPhysicalNote = (HistoryAndPhysicalNote) theEObject;
+				HistoryAndPhysicalNote historyAndPhysicalNote = (HistoryAndPhysicalNote)theEObject;
 				T result = caseHistoryAndPhysicalNote(historyAndPhysicalNote);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(historyAndPhysicalNote);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(historyAndPhysicalNote);
-				}
-				if (result == null) {
-					result = caseAct(historyAndPhysicalNote);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(historyAndPhysicalNote);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(historyAndPhysicalNote);
+				if (result == null) result = caseClinicalDocument(historyAndPhysicalNote);
+				if (result == null) result = caseAct(historyAndPhysicalNote);
+				if (result == null) result = caseInfrastructureRoot(historyAndPhysicalNote);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF: {
-				HistoryAndPhysicalNote_ComponentOf historyAndPhysicalNote_ComponentOf = (HistoryAndPhysicalNote_ComponentOf) theEObject;
+				HistoryAndPhysicalNote_ComponentOf historyAndPhysicalNote_ComponentOf = (HistoryAndPhysicalNote_ComponentOf)theEObject;
 				T result = caseHistoryAndPhysicalNote_ComponentOf(historyAndPhysicalNote_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(historyAndPhysicalNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(historyAndPhysicalNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(historyAndPhysicalNote_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(historyAndPhysicalNote_ComponentOf);
+				if (result == null) result = caseActRelationship(historyAndPhysicalNote_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(historyAndPhysicalNote_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER4: {
-				ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4 = (ComponentOf_EncompassingEncounter4) theEObject;
+				ComponentOf_EncompassingEncounter4 componentOf_EncompassingEncounter4 = (ComponentOf_EncompassingEncounter4)theEObject;
 				T result = caseComponentOf_EncompassingEncounter4(componentOf_EncompassingEncounter4);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter4);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter4);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter4);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter4);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter4);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter4);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY: {
-				EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty = (EncompassingEncounter4_ResponsibleParty) theEObject;
+				EncompassingEncounter4_ResponsibleParty encompassingEncounter4_ResponsibleParty = (EncompassingEncounter4_ResponsibleParty)theEObject;
 				T result = caseEncompassingEncounter4_ResponsibleParty(encompassingEncounter4_ResponsibleParty);
-				if (result == null) {
-					result = caseResponsibleParty(encompassingEncounter4_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter4_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter4_ResponsibleParty);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseResponsibleParty(encompassingEncounter4_ResponsibleParty);
+				if (result == null) result = caseParticipation(encompassingEncounter4_ResponsibleParty);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter4_ResponsibleParty);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT: {
-				EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant = (EncompassingEncounter4_EncounterParticipant) theEObject;
+				EncompassingEncounter4_EncounterParticipant encompassingEncounter4_EncounterParticipant = (EncompassingEncounter4_EncounterParticipant)theEObject;
 				T result = caseEncompassingEncounter4_EncounterParticipant(encompassingEncounter4_EncounterParticipant);
-				if (result == null) {
-					result = caseEncounterParticipant(encompassingEncounter4_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter4_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter4_EncounterParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncounterParticipant(encompassingEncounter4_EncounterParticipant);
+				if (result == null) result = caseParticipation(encompassingEncounter4_EncounterParticipant);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter4_EncounterParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.OPERATIVE_NOTE: {
-				OperativeNote operativeNote = (OperativeNote) theEObject;
+				OperativeNote operativeNote = (OperativeNote)theEObject;
 				T result = caseOperativeNote(operativeNote);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(operativeNote);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(operativeNote);
-				}
-				if (result == null) {
-					result = caseAct(operativeNote);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(operativeNote);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(operativeNote);
+				if (result == null) result = caseClinicalDocument(operativeNote);
+				if (result == null) result = caseAct(operativeNote);
+				if (result == null) result = caseInfrastructureRoot(operativeNote);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.OPERATIVE_NOTE_DOCUMENTATION_OF: {
-				OperativeNote_DocumentationOf operativeNote_DocumentationOf = (OperativeNote_DocumentationOf) theEObject;
+				OperativeNote_DocumentationOf operativeNote_DocumentationOf = (OperativeNote_DocumentationOf)theEObject;
 				T result = caseOperativeNote_DocumentationOf(operativeNote_DocumentationOf);
-				if (result == null) {
-					result = caseDocumentationOf(operativeNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(operativeNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(operativeNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDocumentationOf(operativeNote_DocumentationOf);
+				if (result == null) result = caseActRelationship(operativeNote_DocumentationOf);
+				if (result == null) result = caseInfrastructureRoot(operativeNote_DocumentationOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT: {
-				DocumentationOf_ServiceEvent documentationOf_ServiceEvent = (DocumentationOf_ServiceEvent) theEObject;
+				DocumentationOf_ServiceEvent documentationOf_ServiceEvent = (DocumentationOf_ServiceEvent)theEObject;
 				T result = caseDocumentationOf_ServiceEvent(documentationOf_ServiceEvent);
-				if (result == null) {
-					result = caseServiceEvent(documentationOf_ServiceEvent);
-				}
-				if (result == null) {
-					result = caseAct(documentationOf_ServiceEvent);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(documentationOf_ServiceEvent);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseServiceEvent(documentationOf_ServiceEvent);
+				if (result == null) result = caseAct(documentationOf_ServiceEvent);
+				if (result == null) result = caseInfrastructureRoot(documentationOf_ServiceEvent);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER: {
-				ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer = (ServiceEvent_PrimaryPerformer) theEObject;
+				ServiceEvent_PrimaryPerformer serviceEvent_PrimaryPerformer = (ServiceEvent_PrimaryPerformer)theEObject;
 				T result = caseServiceEvent_PrimaryPerformer(serviceEvent_PrimaryPerformer);
-				if (result == null) {
-					result = casePerformer1(serviceEvent_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = caseParticipation(serviceEvent_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(serviceEvent_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer1(serviceEvent_PrimaryPerformer);
+				if (result == null) result = caseParticipation(serviceEvent_PrimaryPerformer);
+				if (result == null) result = caseInfrastructureRoot(serviceEvent_PrimaryPerformer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE: {
-				ProcedureNote procedureNote = (ProcedureNote) theEObject;
+				ProcedureNote procedureNote = (ProcedureNote)theEObject;
 				T result = caseProcedureNote(procedureNote);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(procedureNote);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(procedureNote);
-				}
-				if (result == null) {
-					result = caseAct(procedureNote);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(procedureNote);
+				if (result == null) result = caseClinicalDocument(procedureNote);
+				if (result == null) result = caseAct(procedureNote);
+				if (result == null) result = caseInfrastructureRoot(procedureNote);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE_COMPONENT_OF: {
-				ProcedureNote_ComponentOf procedureNote_ComponentOf = (ProcedureNote_ComponentOf) theEObject;
+				ProcedureNote_ComponentOf procedureNote_ComponentOf = (ProcedureNote_ComponentOf)theEObject;
 				T result = caseProcedureNote_ComponentOf(procedureNote_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(procedureNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(procedureNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(procedureNote_ComponentOf);
+				if (result == null) result = caseActRelationship(procedureNote_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(procedureNote_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5: {
-				ComponentOf_EncompassingEncounter5 componentOf_EncompassingEncounter5 = (ComponentOf_EncompassingEncounter5) theEObject;
+				ComponentOf_EncompassingEncounter5 componentOf_EncompassingEncounter5 = (ComponentOf_EncompassingEncounter5)theEObject;
 				T result = caseComponentOf_EncompassingEncounter5(componentOf_EncompassingEncounter5);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter5);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter5);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter5);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter5);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter5);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter5);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_LOCATION: {
-				EncompassingEncounter5_Location encompassingEncounter5_Location = (EncompassingEncounter5_Location) theEObject;
+				EncompassingEncounter5_Location encompassingEncounter5_Location = (EncompassingEncounter5_Location)theEObject;
 				T result = caseEncompassingEncounter5_Location(encompassingEncounter5_Location);
-				if (result == null) {
-					result = caseLocation(encompassingEncounter5_Location);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter5_Location);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter5_Location);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseLocation(encompassingEncounter5_Location);
+				if (result == null) result = caseParticipation(encompassingEncounter5_Location);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter5_Location);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY: {
-				Location_HealthCareFacility location_HealthCareFacility = (Location_HealthCareFacility) theEObject;
+				Location_HealthCareFacility location_HealthCareFacility = (Location_HealthCareFacility)theEObject;
 				T result = caseLocation_HealthCareFacility(location_HealthCareFacility);
-				if (result == null) {
-					result = caseHealthCareFacility(location_HealthCareFacility);
-				}
-				if (result == null) {
-					result = caseRole(location_HealthCareFacility);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(location_HealthCareFacility);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseHealthCareFacility(location_HealthCareFacility);
+				if (result == null) result = caseRole(location_HealthCareFacility);
+				if (result == null) result = caseInfrastructureRoot(location_HealthCareFacility);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT: {
-				EncompassingEncounter5_EncounterParticipant encompassingEncounter5_EncounterParticipant = (EncompassingEncounter5_EncounterParticipant) theEObject;
+				EncompassingEncounter5_EncounterParticipant encompassingEncounter5_EncounterParticipant = (EncompassingEncounter5_EncounterParticipant)theEObject;
 				T result = caseEncompassingEncounter5_EncounterParticipant(encompassingEncounter5_EncounterParticipant);
-				if (result == null) {
-					result = caseEncounterParticipant(encompassingEncounter5_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter5_EncounterParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter5_EncounterParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncounterParticipant(encompassingEncounter5_EncounterParticipant);
+				if (result == null) result = caseParticipation(encompassingEncounter5_EncounterParticipant);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter5_EncounterParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE_INDIVIDUAL: {
-				ProcedureNote_Individual procedureNote_Individual = (ProcedureNote_Individual) theEObject;
+				ProcedureNote_Individual procedureNote_Individual = (ProcedureNote_Individual)theEObject;
 				T result = caseProcedureNote_Individual(procedureNote_Individual);
-				if (result == null) {
-					result = caseParticipant1(procedureNote_Individual);
-				}
-				if (result == null) {
-					result = caseParticipation(procedureNote_Individual);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote_Individual);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant1(procedureNote_Individual);
+				if (result == null) result = caseParticipation(procedureNote_Individual);
+				if (result == null) result = caseInfrastructureRoot(procedureNote_Individual);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN: {
-				ProcedureNote_PrimaryCarePhysician procedureNote_PrimaryCarePhysician = (ProcedureNote_PrimaryCarePhysician) theEObject;
+				ProcedureNote_PrimaryCarePhysician procedureNote_PrimaryCarePhysician = (ProcedureNote_PrimaryCarePhysician)theEObject;
 				T result = caseProcedureNote_PrimaryCarePhysician(procedureNote_PrimaryCarePhysician);
-				if (result == null) {
-					result = caseParticipant1(procedureNote_PrimaryCarePhysician);
-				}
-				if (result == null) {
-					result = caseParticipation(procedureNote_PrimaryCarePhysician);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote_PrimaryCarePhysician);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant1(procedureNote_PrimaryCarePhysician);
+				if (result == null) result = caseParticipation(procedureNote_PrimaryCarePhysician);
+				if (result == null) result = caseInfrastructureRoot(procedureNote_PrimaryCarePhysician);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE_PROVIDER: {
-				ProcedureNote_Provider procedureNote_Provider = (ProcedureNote_Provider) theEObject;
+				ProcedureNote_Provider procedureNote_Provider = (ProcedureNote_Provider)theEObject;
 				T result = caseProcedureNote_Provider(procedureNote_Provider);
-				if (result == null) {
-					result = caseParticipant1(procedureNote_Provider);
-				}
-				if (result == null) {
-					result = caseParticipation(procedureNote_Provider);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote_Provider);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant1(procedureNote_Provider);
+				if (result == null) result = caseParticipation(procedureNote_Provider);
+				if (result == null) result = caseInfrastructureRoot(procedureNote_Provider);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROVIDER_ASSOCIATED_ENTITY: {
-				Provider_AssociatedEntity provider_AssociatedEntity = (Provider_AssociatedEntity) theEObject;
+				Provider_AssociatedEntity provider_AssociatedEntity = (Provider_AssociatedEntity)theEObject;
 				T result = caseProvider_AssociatedEntity(provider_AssociatedEntity);
-				if (result == null) {
-					result = caseAssociatedEntity(provider_AssociatedEntity);
-				}
-				if (result == null) {
-					result = caseRole(provider_AssociatedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(provider_AssociatedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssociatedEntity(provider_AssociatedEntity);
+				if (result == null) result = caseRole(provider_AssociatedEntity);
+				if (result == null) result = caseInfrastructureRoot(provider_AssociatedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_NOTE_DOCUMENTATION_OF: {
-				ProcedureNote_DocumentationOf procedureNote_DocumentationOf = (ProcedureNote_DocumentationOf) theEObject;
+				ProcedureNote_DocumentationOf procedureNote_DocumentationOf = (ProcedureNote_DocumentationOf)theEObject;
 				T result = caseProcedureNote_DocumentationOf(procedureNote_DocumentationOf);
-				if (result == null) {
-					result = caseDocumentationOf(procedureNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(procedureNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDocumentationOf(procedureNote_DocumentationOf);
+				if (result == null) result = caseActRelationship(procedureNote_DocumentationOf);
+				if (result == null) result = caseInfrastructureRoot(procedureNote_DocumentationOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT1: {
-				DocumentationOf_ServiceEvent1 documentationOf_ServiceEvent1 = (DocumentationOf_ServiceEvent1) theEObject;
+				DocumentationOf_ServiceEvent1 documentationOf_ServiceEvent1 = (DocumentationOf_ServiceEvent1)theEObject;
 				T result = caseDocumentationOf_ServiceEvent1(documentationOf_ServiceEvent1);
-				if (result == null) {
-					result = caseServiceEvent(documentationOf_ServiceEvent1);
-				}
-				if (result == null) {
-					result = caseAct(documentationOf_ServiceEvent1);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(documentationOf_ServiceEvent1);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseServiceEvent(documentationOf_ServiceEvent1);
+				if (result == null) result = caseAct(documentationOf_ServiceEvent1);
+				if (result == null) result = caseInfrastructureRoot(documentationOf_ServiceEvent1);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.SERVICE_EVENT1_PRIMARY_PERFORMER: {
-				ServiceEvent1_PrimaryPerformer serviceEvent1_PrimaryPerformer = (ServiceEvent1_PrimaryPerformer) theEObject;
+				ServiceEvent1_PrimaryPerformer serviceEvent1_PrimaryPerformer = (ServiceEvent1_PrimaryPerformer)theEObject;
 				T result = caseServiceEvent1_PrimaryPerformer(serviceEvent1_PrimaryPerformer);
-				if (result == null) {
-					result = casePerformer1(serviceEvent1_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = caseParticipation(serviceEvent1_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(serviceEvent1_PrimaryPerformer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer1(serviceEvent1_PrimaryPerformer);
+				if (result == null) result = caseParticipation(serviceEvent1_PrimaryPerformer);
+				if (result == null) result = caseInfrastructureRoot(serviceEvent1_PrimaryPerformer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROGRESS_NOTE: {
-				ProgressNote progressNote = (ProgressNote) theEObject;
+				ProgressNote progressNote = (ProgressNote)theEObject;
 				T result = caseProgressNote(progressNote);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(progressNote);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(progressNote);
-				}
-				if (result == null) {
-					result = caseAct(progressNote);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(progressNote);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(progressNote);
+				if (result == null) result = caseClinicalDocument(progressNote);
+				if (result == null) result = caseAct(progressNote);
+				if (result == null) result = caseInfrastructureRoot(progressNote);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROGRESS_NOTE_DOCUMENTATION_OF: {
-				ProgressNote_DocumentationOf progressNote_DocumentationOf = (ProgressNote_DocumentationOf) theEObject;
+				ProgressNote_DocumentationOf progressNote_DocumentationOf = (ProgressNote_DocumentationOf)theEObject;
 				T result = caseProgressNote_DocumentationOf(progressNote_DocumentationOf);
-				if (result == null) {
-					result = caseDocumentationOf(progressNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(progressNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(progressNote_DocumentationOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDocumentationOf(progressNote_DocumentationOf);
+				if (result == null) result = caseActRelationship(progressNote_DocumentationOf);
+				if (result == null) result = caseInfrastructureRoot(progressNote_DocumentationOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT2: {
-				DocumentationOf_ServiceEvent2 documentationOf_ServiceEvent2 = (DocumentationOf_ServiceEvent2) theEObject;
+				DocumentationOf_ServiceEvent2 documentationOf_ServiceEvent2 = (DocumentationOf_ServiceEvent2)theEObject;
 				T result = caseDocumentationOf_ServiceEvent2(documentationOf_ServiceEvent2);
-				if (result == null) {
-					result = caseServiceEvent(documentationOf_ServiceEvent2);
-				}
-				if (result == null) {
-					result = caseAct(documentationOf_ServiceEvent2);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(documentationOf_ServiceEvent2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseServiceEvent(documentationOf_ServiceEvent2);
+				if (result == null) result = caseAct(documentationOf_ServiceEvent2);
+				if (result == null) result = caseInfrastructureRoot(documentationOf_ServiceEvent2);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROGRESS_NOTE_COMPONENT_OF: {
-				ProgressNote_ComponentOf progressNote_ComponentOf = (ProgressNote_ComponentOf) theEObject;
+				ProgressNote_ComponentOf progressNote_ComponentOf = (ProgressNote_ComponentOf)theEObject;
 				T result = caseProgressNote_ComponentOf(progressNote_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(progressNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(progressNote_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(progressNote_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(progressNote_ComponentOf);
+				if (result == null) result = caseActRelationship(progressNote_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(progressNote_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6: {
-				ComponentOf_EncompassingEncounter6 componentOf_EncompassingEncounter6 = (ComponentOf_EncompassingEncounter6) theEObject;
+				ComponentOf_EncompassingEncounter6 componentOf_EncompassingEncounter6 = (ComponentOf_EncompassingEncounter6)theEObject;
 				T result = caseComponentOf_EncompassingEncounter6(componentOf_EncompassingEncounter6);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter6);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter6);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter6);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter6);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter6);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter6);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER6_LOCATION: {
-				EncompassingEncounter6_Location encompassingEncounter6_Location = (EncompassingEncounter6_Location) theEObject;
+				EncompassingEncounter6_Location encompassingEncounter6_Location = (EncompassingEncounter6_Location)theEObject;
 				T result = caseEncompassingEncounter6_Location(encompassingEncounter6_Location);
-				if (result == null) {
-					result = caseLocation(encompassingEncounter6_Location);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter6_Location);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter6_Location);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseLocation(encompassingEncounter6_Location);
+				if (result == null) result = caseParticipation(encompassingEncounter6_Location);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter6_Location);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY1: {
-				Location_HealthCareFacility1 location_HealthCareFacility1 = (Location_HealthCareFacility1) theEObject;
+				Location_HealthCareFacility1 location_HealthCareFacility1 = (Location_HealthCareFacility1)theEObject;
 				T result = caseLocation_HealthCareFacility1(location_HealthCareFacility1);
-				if (result == null) {
-					result = caseHealthCareFacility(location_HealthCareFacility1);
-				}
-				if (result == null) {
-					result = caseRole(location_HealthCareFacility1);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(location_HealthCareFacility1);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseHealthCareFacility(location_HealthCareFacility1);
+				if (result == null) result = caseRole(location_HealthCareFacility1);
+				if (result == null) result = caseInfrastructureRoot(location_HealthCareFacility1);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS: {
-				PreoperativeDiagnosis preoperativeDiagnosis = (PreoperativeDiagnosis) theEObject;
+				PreoperativeDiagnosis preoperativeDiagnosis = (PreoperativeDiagnosis)theEObject;
 				T result = casePreoperativeDiagnosis(preoperativeDiagnosis);
-				if (result == null) {
-					result = caseCDA_Act(preoperativeDiagnosis);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(preoperativeDiagnosis);
-				}
-				if (result == null) {
-					result = caseAct(preoperativeDiagnosis);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(preoperativeDiagnosis);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(preoperativeDiagnosis);
+				if (result == null) result = caseClinicalStatement(preoperativeDiagnosis);
+				if (result == null) result = caseAct(preoperativeDiagnosis);
+				if (result == null) result = caseInfrastructureRoot(preoperativeDiagnosis);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.INSTRUCTIONS_SECTION: {
-				InstructionsSection instructionsSection = (InstructionsSection) theEObject;
+				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
 				T result = caseInstructionsSection(instructionsSection);
-				if (result == null) {
-					result = caseSection(instructionsSection);
-				}
-				if (result == null) {
-					result = caseAct(instructionsSection);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(instructionsSection);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseSection(instructionsSection);
+				if (result == null) result = caseAct(instructionsSection);
+				if (result == null) result = caseInfrastructureRoot(instructionsSection);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS: {
-				HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis = (HospitalAdmissionDiagnosis) theEObject;
+				HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis = (HospitalAdmissionDiagnosis)theEObject;
 				T result = caseHospitalAdmissionDiagnosis(hospitalAdmissionDiagnosis);
-				if (result == null) {
-					result = caseCDA_Act(hospitalAdmissionDiagnosis);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(hospitalAdmissionDiagnosis);
-				}
-				if (result == null) {
-					result = caseAct(hospitalAdmissionDiagnosis);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(hospitalAdmissionDiagnosis);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(hospitalAdmissionDiagnosis);
+				if (result == null) result = caseClinicalStatement(hospitalAdmissionDiagnosis);
+				if (result == null) result = caseAct(hospitalAdmissionDiagnosis);
+				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosis);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.MEDICATION_DISPENSE_ASSIGNED_ENTITY: {
-				MedicationDispenseAssignedEntity medicationDispenseAssignedEntity = (MedicationDispenseAssignedEntity) theEObject;
+				MedicationDispenseAssignedEntity medicationDispenseAssignedEntity = (MedicationDispenseAssignedEntity)theEObject;
 				T result = caseMedicationDispenseAssignedEntity(medicationDispenseAssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(medicationDispenseAssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(medicationDispenseAssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(medicationDispenseAssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(medicationDispenseAssignedEntity);
+				if (result == null) result = caseRole(medicationDispenseAssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(medicationDispenseAssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: {
-				ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial = (ImmunizationMedicationInformationManufacturedMaterial) theEObject;
+				ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial = (ImmunizationMedicationInformationManufacturedMaterial)theEObject;
 				T result = caseImmunizationMedicationInformationManufacturedMaterial(immunizationMedicationInformationManufacturedMaterial);
-				if (result == null) {
-					result = caseMaterial(immunizationMedicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = caseEntity(immunizationMedicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(immunizationMedicationInformationManufacturedMaterial);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseMaterial(immunizationMedicationInformationManufacturedMaterial);
+				if (result == null) result = caseEntity(immunizationMedicationInformationManufacturedMaterial);
+				if (result == null) result = caseInfrastructureRoot(immunizationMedicationInformationManufacturedMaterial);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT: {
-				DiagnosticImagingReport diagnosticImagingReport = (DiagnosticImagingReport) theEObject;
+				DiagnosticImagingReport diagnosticImagingReport = (DiagnosticImagingReport)theEObject;
 				T result = caseDiagnosticImagingReport(diagnosticImagingReport);
-				if (result == null) {
-					result = caseGeneralHeaderConstraints(diagnosticImagingReport);
-				}
-				if (result == null) {
-					result = caseClinicalDocument(diagnosticImagingReport);
-				}
-				if (result == null) {
-					result = caseAct(diagnosticImagingReport);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseGeneralHeaderConstraints(diagnosticImagingReport);
+				if (result == null) result = caseClinicalDocument(diagnosticImagingReport);
+				if (result == null) result = caseAct(diagnosticImagingReport);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT: {
-				DiagnosticImagingReport_Participant diagnosticImagingReport_Participant = (DiagnosticImagingReport_Participant) theEObject;
+				DiagnosticImagingReport_Participant diagnosticImagingReport_Participant = (DiagnosticImagingReport_Participant)theEObject;
 				T result = caseDiagnosticImagingReport_Participant(diagnosticImagingReport_Participant);
-				if (result == null) {
-					result = caseParticipant1(diagnosticImagingReport_Participant);
-				}
-				if (result == null) {
-					result = caseParticipation(diagnosticImagingReport_Participant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport_Participant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseParticipant1(diagnosticImagingReport_Participant);
+				if (result == null) result = caseParticipation(diagnosticImagingReport_Participant);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport_Participant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PARTICIPANT_ASSOCIATED_ENTITY: {
-				Participant_AssociatedEntity participant_AssociatedEntity = (Participant_AssociatedEntity) theEObject;
+				Participant_AssociatedEntity participant_AssociatedEntity = (Participant_AssociatedEntity)theEObject;
 				T result = caseParticipant_AssociatedEntity(participant_AssociatedEntity);
-				if (result == null) {
-					result = caseAssociatedEntity(participant_AssociatedEntity);
-				}
-				if (result == null) {
-					result = caseRole(participant_AssociatedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(participant_AssociatedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssociatedEntity(participant_AssociatedEntity);
+				if (result == null) result = caseRole(participant_AssociatedEntity);
+				if (result == null) result = caseInfrastructureRoot(participant_AssociatedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSOCIATED_ENTITY_PERSON: {
-				AssociatedEntity_Person associatedEntity_Person = (AssociatedEntity_Person) theEObject;
+				AssociatedEntity_Person associatedEntity_Person = (AssociatedEntity_Person)theEObject;
 				T result = caseAssociatedEntity_Person(associatedEntity_Person);
-				if (result == null) {
-					result = casePerson(associatedEntity_Person);
-				}
-				if (result == null) {
-					result = caseEntity(associatedEntity_Person);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(associatedEntity_Person);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerson(associatedEntity_Person);
+				if (result == null) result = caseEntity(associatedEntity_Person);
+				if (result == null) result = caseInfrastructureRoot(associatedEntity_Person);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF: {
-				DiagnosticImagingReport_InFulfillmentOf diagnosticImagingReport_InFulfillmentOf = (DiagnosticImagingReport_InFulfillmentOf) theEObject;
+				DiagnosticImagingReport_InFulfillmentOf diagnosticImagingReport_InFulfillmentOf = (DiagnosticImagingReport_InFulfillmentOf)theEObject;
 				T result = caseDiagnosticImagingReport_InFulfillmentOf(diagnosticImagingReport_InFulfillmentOf);
-				if (result == null) {
-					result = caseInFulfillmentOf(diagnosticImagingReport_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(diagnosticImagingReport_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport_InFulfillmentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseInFulfillmentOf(diagnosticImagingReport_InFulfillmentOf);
+				if (result == null) result = caseActRelationship(diagnosticImagingReport_InFulfillmentOf);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport_InFulfillmentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF: {
-				DiagnosticImagingReport_DocumentationOf diagnosticImagingReport_DocumentationOf = (DiagnosticImagingReport_DocumentationOf) theEObject;
+				DiagnosticImagingReport_DocumentationOf diagnosticImagingReport_DocumentationOf = (DiagnosticImagingReport_DocumentationOf)theEObject;
 				T result = caseDiagnosticImagingReport_DocumentationOf(diagnosticImagingReport_DocumentationOf);
-				if (result == null) {
-					result = caseDocumentationOf(diagnosticImagingReport_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(diagnosticImagingReport_DocumentationOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport_DocumentationOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseDocumentationOf(diagnosticImagingReport_DocumentationOf);
+				if (result == null) result = caseActRelationship(diagnosticImagingReport_DocumentationOf);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport_DocumentationOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT4: {
-				DocumentationOf_ServiceEvent4 documentationOf_ServiceEvent4 = (DocumentationOf_ServiceEvent4) theEObject;
+				DocumentationOf_ServiceEvent4 documentationOf_ServiceEvent4 = (DocumentationOf_ServiceEvent4)theEObject;
 				T result = caseDocumentationOf_ServiceEvent4(documentationOf_ServiceEvent4);
-				if (result == null) {
-					result = caseServiceEvent(documentationOf_ServiceEvent4);
-				}
-				if (result == null) {
-					result = caseAct(documentationOf_ServiceEvent4);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(documentationOf_ServiceEvent4);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseServiceEvent(documentationOf_ServiceEvent4);
+				if (result == null) result = caseAct(documentationOf_ServiceEvent4);
+				if (result == null) result = caseInfrastructureRoot(documentationOf_ServiceEvent4);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT: {
-				DiagnosticImagingReport_RelatedDocument diagnosticImagingReport_RelatedDocument = (DiagnosticImagingReport_RelatedDocument) theEObject;
+				DiagnosticImagingReport_RelatedDocument diagnosticImagingReport_RelatedDocument = (DiagnosticImagingReport_RelatedDocument)theEObject;
 				T result = caseDiagnosticImagingReport_RelatedDocument(diagnosticImagingReport_RelatedDocument);
-				if (result == null) {
-					result = caseRelatedDocument(diagnosticImagingReport_RelatedDocument);
-				}
-				if (result == null) {
-					result = caseActRelationship(diagnosticImagingReport_RelatedDocument);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport_RelatedDocument);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseRelatedDocument(diagnosticImagingReport_RelatedDocument);
+				if (result == null) result = caseActRelationship(diagnosticImagingReport_RelatedDocument);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport_RelatedDocument);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF: {
-				DiagnosticImagingReport_ComponentOf diagnosticImagingReport_ComponentOf = (DiagnosticImagingReport_ComponentOf) theEObject;
+				DiagnosticImagingReport_ComponentOf diagnosticImagingReport_ComponentOf = (DiagnosticImagingReport_ComponentOf)theEObject;
 				T result = caseDiagnosticImagingReport_ComponentOf(diagnosticImagingReport_ComponentOf);
-				if (result == null) {
-					result = caseComponent1(diagnosticImagingReport_ComponentOf);
-				}
-				if (result == null) {
-					result = caseActRelationship(diagnosticImagingReport_ComponentOf);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticImagingReport_ComponentOf);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseComponent1(diagnosticImagingReport_ComponentOf);
+				if (result == null) result = caseActRelationship(diagnosticImagingReport_ComponentOf);
+				if (result == null) result = caseInfrastructureRoot(diagnosticImagingReport_ComponentOf);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER7: {
-				ComponentOf_EncompassingEncounter7 componentOf_EncompassingEncounter7 = (ComponentOf_EncompassingEncounter7) theEObject;
+				ComponentOf_EncompassingEncounter7 componentOf_EncompassingEncounter7 = (ComponentOf_EncompassingEncounter7)theEObject;
 				T result = caseComponentOf_EncompassingEncounter7(componentOf_EncompassingEncounter7);
-				if (result == null) {
-					result = caseEncompassingEncounter(componentOf_EncompassingEncounter7);
-				}
-				if (result == null) {
-					result = caseAct(componentOf_EncompassingEncounter7);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(componentOf_EncompassingEncounter7);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncompassingEncounter(componentOf_EncompassingEncounter7);
+				if (result == null) result = caseAct(componentOf_EncompassingEncounter7);
+				if (result == null) result = caseInfrastructureRoot(componentOf_EncompassingEncounter7);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY: {
-				EncompassingEncounter7_ResponsibleParty encompassingEncounter7_ResponsibleParty = (EncompassingEncounter7_ResponsibleParty) theEObject;
+				EncompassingEncounter7_ResponsibleParty encompassingEncounter7_ResponsibleParty = (EncompassingEncounter7_ResponsibleParty)theEObject;
 				T result = caseEncompassingEncounter7_ResponsibleParty(encompassingEncounter7_ResponsibleParty);
-				if (result == null) {
-					result = caseResponsibleParty(encompassingEncounter7_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseParticipation(encompassingEncounter7_ResponsibleParty);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encompassingEncounter7_ResponsibleParty);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseResponsibleParty(encompassingEncounter7_ResponsibleParty);
+				if (result == null) result = caseParticipation(encompassingEncounter7_ResponsibleParty);
+				if (result == null) result = caseInfrastructureRoot(encompassingEncounter7_ResponsibleParty);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.RESPONSIBLE_PARTY_ASSIGNED_ENTITY: {
-				ResponsibleParty_AssignedEntity responsibleParty_AssignedEntity = (ResponsibleParty_AssignedEntity) theEObject;
+				ResponsibleParty_AssignedEntity responsibleParty_AssignedEntity = (ResponsibleParty_AssignedEntity)theEObject;
 				T result = caseResponsibleParty_AssignedEntity(responsibleParty_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(responsibleParty_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(responsibleParty_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(responsibleParty_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(responsibleParty_AssignedEntity);
+				if (result == null) result = caseRole(responsibleParty_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(responsibleParty_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER: {
-				PhysicianReadingStudyPerformer physicianReadingStudyPerformer = (PhysicianReadingStudyPerformer) theEObject;
+				PhysicianReadingStudyPerformer physicianReadingStudyPerformer = (PhysicianReadingStudyPerformer)theEObject;
 				T result = casePhysicianReadingStudyPerformer(physicianReadingStudyPerformer);
-				if (result == null) {
-					result = casePerformer1(physicianReadingStudyPerformer);
-				}
-				if (result == null) {
-					result = caseParticipation(physicianReadingStudyPerformer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(physicianReadingStudyPerformer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerformer1(physicianReadingStudyPerformer);
+				if (result == null) result = caseParticipation(physicianReadingStudyPerformer);
+				if (result == null) result = caseInfrastructureRoot(physicianReadingStudyPerformer);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY: {
-				PhysicianReadingStudyPerformer_AssignedEntity physicianReadingStudyPerformer_AssignedEntity = (PhysicianReadingStudyPerformer_AssignedEntity) theEObject;
+				PhysicianReadingStudyPerformer_AssignedEntity physicianReadingStudyPerformer_AssignedEntity = (PhysicianReadingStudyPerformer_AssignedEntity)theEObject;
 				T result = casePhysicianReadingStudyPerformer_AssignedEntity(physicianReadingStudyPerformer_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(physicianReadingStudyPerformer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(physicianReadingStudyPerformer_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(physicianReadingStudyPerformer_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(physicianReadingStudyPerformer_AssignedEntity);
+				if (result == null) result = caseRole(physicianReadingStudyPerformer_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(physicianReadingStudyPerformer_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT: {
-				PhysicianofRecordParticipant physicianofRecordParticipant = (PhysicianofRecordParticipant) theEObject;
+				PhysicianofRecordParticipant physicianofRecordParticipant = (PhysicianofRecordParticipant)theEObject;
 				T result = casePhysicianofRecordParticipant(physicianofRecordParticipant);
-				if (result == null) {
-					result = caseEncounterParticipant(physicianofRecordParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(physicianofRecordParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(physicianofRecordParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseEncounterParticipant(physicianofRecordParticipant);
+				if (result == null) result = caseParticipation(physicianofRecordParticipant);
+				if (result == null) result = caseInfrastructureRoot(physicianofRecordParticipant);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY: {
-				PhysicianofRecordParticipant_AssignedEntity physicianofRecordParticipant_AssignedEntity = (PhysicianofRecordParticipant_AssignedEntity) theEObject;
+				PhysicianofRecordParticipant_AssignedEntity physicianofRecordParticipant_AssignedEntity = (PhysicianofRecordParticipant_AssignedEntity)theEObject;
 				T result = casePhysicianofRecordParticipant_AssignedEntity(physicianofRecordParticipant_AssignedEntity);
-				if (result == null) {
-					result = caseAssignedEntity(physicianofRecordParticipant_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseRole(physicianofRecordParticipant_AssignedEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(physicianofRecordParticipant_AssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseAssignedEntity(physicianofRecordParticipant_AssignedEntity);
+				if (result == null) result = caseRole(physicianofRecordParticipant_AssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(physicianofRecordParticipant_AssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.ASSIGNED_ENTITY_ASSIGNED_PERSON: {
-				AssignedEntity_AssignedPerson assignedEntity_AssignedPerson = (AssignedEntity_AssignedPerson) theEObject;
+				AssignedEntity_AssignedPerson assignedEntity_AssignedPerson = (AssignedEntity_AssignedPerson)theEObject;
 				T result = caseAssignedEntity_AssignedPerson(assignedEntity_AssignedPerson);
-				if (result == null) {
-					result = casePerson(assignedEntity_AssignedPerson);
-				}
-				if (result == null) {
-					result = caseEntity(assignedEntity_AssignedPerson);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(assignedEntity_AssignedPerson);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = casePerson(assignedEntity_AssignedPerson);
+				if (result == null) result = caseEntity(assignedEntity_AssignedPerson);
+				if (result == null) result = caseInfrastructureRoot(assignedEntity_AssignedPerson);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.TEXT_OBSERVATION: {
-				TextObservation textObservation = (TextObservation) theEObject;
+				TextObservation textObservation = (TextObservation)theEObject;
 				T result = caseTextObservation(textObservation);
-				if (result == null) {
-					result = caseObservation(textObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(textObservation);
-				}
-				if (result == null) {
-					result = caseAct(textObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(textObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(textObservation);
+				if (result == null) result = caseClinicalStatement(textObservation);
+				if (result == null) result = caseAct(textObservation);
+				if (result == null) result = caseInfrastructureRoot(textObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.QUANTITY_MEASUREMENT_OBSERVATION: {
-				QuantityMeasurementObservation quantityMeasurementObservation = (QuantityMeasurementObservation) theEObject;
+				QuantityMeasurementObservation quantityMeasurementObservation = (QuantityMeasurementObservation)theEObject;
 				T result = caseQuantityMeasurementObservation(quantityMeasurementObservation);
-				if (result == null) {
-					result = caseObservation(quantityMeasurementObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(quantityMeasurementObservation);
-				}
-				if (result == null) {
-					result = caseAct(quantityMeasurementObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(quantityMeasurementObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(quantityMeasurementObservation);
+				if (result == null) result = caseClinicalStatement(quantityMeasurementObservation);
+				if (result == null) result = caseAct(quantityMeasurementObservation);
+				if (result == null) result = caseInfrastructureRoot(quantityMeasurementObservation);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.CODE_OBSERVATIONS: {
-				CodeObservations codeObservations = (CodeObservations) theEObject;
+				CodeObservations codeObservations = (CodeObservations)theEObject;
 				T result = caseCodeObservations(codeObservations);
-				if (result == null) {
-					result = caseObservation(codeObservations);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(codeObservations);
-				}
-				if (result == null) {
-					result = caseAct(codeObservations);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(codeObservations);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseObservation(codeObservations);
+				if (result == null) result = caseClinicalStatement(codeObservations);
+				if (result == null) result = caseAct(codeObservations);
+				if (result == null) result = caseInfrastructureRoot(codeObservations);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ConsolPackage.PROCEDURE_CONTEXT: {
-				ProcedureContext procedureContext = (ProcedureContext) theEObject;
+				ProcedureContext procedureContext = (ProcedureContext)theEObject;
 				T result = caseProcedureContext(procedureContext);
-				if (result == null) {
-					result = caseCDA_Act(procedureContext);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(procedureContext);
-				}
-				if (result == null) {
-					result = caseAct(procedureContext);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(procedureContext);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
+				if (result == null) result = caseCDA_Act(procedureContext);
+				if (result == null) result = caseClinicalStatement(procedureContext);
+				if (result == null) result = caseAct(procedureContext);
+				if (result == null) result = caseInfrastructureRoot(procedureContext);
+				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			default:
-				return defaultCase(theEObject);
+			default: return defaultCase(theEObject);
 		}
 	}
 

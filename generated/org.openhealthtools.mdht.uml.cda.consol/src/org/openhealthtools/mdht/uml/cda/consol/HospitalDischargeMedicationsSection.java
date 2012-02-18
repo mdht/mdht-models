@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.error='HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionText HospitalDischargeMedicationsSectionTitle HospitalDischargeMedicationsSectionDischargeMedication' templateId.root='2.16.840.1.113883.10.20.22.2.11.1' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10183-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' templateId.root='2.16.840.1.113883.10.20.22.2.11.1' constraints.validation.error='HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionText HospitalDischargeMedicationsSectionTitle HospitalDischargeMedicationsSectionDischargeMedication' code.codeSystemName='LOINC' code.code='10183-2'"
  * @generated
  */
 public interface HospitalDischargeMedicationsSection extends HospitalDischargeMedicationsSectionEntriesOptional {

@@ -57,8 +57,7 @@ public class DiagnosticImagingReport_ComponentOfImpl extends Component1Impl impl
 	 * @generated
 	 */
 	public boolean validateComponentOfEncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport_ComponentOfOperations.validateComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return DiagnosticImagingReport_ComponentOfOperations.validateComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class DiagnosticImagingReport_ComponentOfImpl extends Component1Impl impl
 	 * @generated
 	 */
 	public DiagnosticImagingReport_ComponentOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DiagnosticImagingReport_ComponentOfImpl

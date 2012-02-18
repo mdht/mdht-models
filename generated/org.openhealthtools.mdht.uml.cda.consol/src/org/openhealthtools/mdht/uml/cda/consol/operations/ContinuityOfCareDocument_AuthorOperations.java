@@ -88,18 +88,20 @@ public class ContinuityOfCareDocument_AuthorOperations extends AuthorOperations 
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR);
 			try {
 				VALIDATE_AUTHOR_ASSIGNED_AUTHOR3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHOR_ASSIGNED_AUTHOR3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTHOR_ASSIGNED_AUTHOR3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument_Author)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AUTHOR_ASSIGNED_AUTHOR3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(continuityOfCareDocument_Author)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR__AUTHOR_ASSIGNED_AUTHOR3,
-					ConsolPlugin.INSTANCE.getString("AuthorAssignedAuthor3"),
-					new Object[] { continuityOfCareDocument_Author }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR__AUTHOR_ASSIGNED_AUTHOR3,
+						 ConsolPlugin.INSTANCE.getString("AuthorAssignedAuthor3"),
+						 new Object [] { continuityOfCareDocument_Author }));
 			}
 			return false;
 		}

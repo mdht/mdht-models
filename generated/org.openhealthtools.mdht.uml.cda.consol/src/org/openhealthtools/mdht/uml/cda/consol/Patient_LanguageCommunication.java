@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatient_LanguageCommunication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation modeCode.codeSystemName='LanguageAbilityMode' proficiencyLevelCode.codeSystemName='LOINC' modeCode.codeSystem='2.16.840.1.113883.5.60' constraints.validation.info='LanguageCommunicationPreferenceInd' constraints.validation.error='LanguageCommunicationLanguageCode LanguageCommunicationProficiencyLevelCode LanguageCommunicationModeCode' proficiencyLevelCode.codeSystem='2.16.840.1.113883.6.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation proficiencyLevelCode.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='LanguageCommunicationLanguageCode LanguageCommunicationProficiencyLevelCode LanguageCommunicationModeCode' modeCode.codeSystem='2.16.840.1.113883.5.60' proficiencyLevelCode.codeSystemName='LOINC' constraints.validation.info='LanguageCommunicationPreferenceInd' modeCode.codeSystemName='LanguageAbilityMode'"
  * @generated
  */
 public interface Patient_LanguageCommunication extends LanguageCommunication {
@@ -57,11 +57,11 @@ public interface Patient_LanguageCommunication extends LanguageCommunication {
 	 * <!-- begin-model-doc -->
 	 * (self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'E' or value.code = 'F' or value.code = 'G' or value.code = 'P')))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.proficiencyLevelCode.oclIsUndefined() or self.proficiencyLevelCode.isNullFlavorUndefined()) implies (self.proficiencyLevelCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.proficiencyLevelCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'E\' or value.code = \'F\' or value.code = \'G\' or value.code = \'P\')))'"
 	 * @generated
 	 */
 	boolean validateLanguageCommunicationProficiencyLevelCode(DiagnosticChain diagnostics, Map<Object, Object> context);

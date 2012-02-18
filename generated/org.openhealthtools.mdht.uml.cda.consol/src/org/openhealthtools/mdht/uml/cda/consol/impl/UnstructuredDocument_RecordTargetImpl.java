@@ -51,7 +51,7 @@ public class UnstructuredDocument_RecordTargetImpl extends RecordTargetImpl impl
 	 * @generated
 	 */
 	public UnstructuredDocument_RecordTarget init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // UnstructuredDocument_RecordTargetImpl

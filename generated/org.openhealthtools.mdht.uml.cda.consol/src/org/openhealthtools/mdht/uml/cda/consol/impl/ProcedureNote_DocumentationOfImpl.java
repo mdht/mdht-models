@@ -50,7 +50,7 @@ public class ProcedureNote_DocumentationOfImpl extends DocumentationOfImpl imple
 	 * @generated
 	 */
 	public ProcedureNote_DocumentationOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureNote_DocumentationOfImpl
