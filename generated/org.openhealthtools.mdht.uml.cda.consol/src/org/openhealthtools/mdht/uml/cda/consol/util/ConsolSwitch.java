@@ -1149,6 +1149,51 @@ public class ConsolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ConsolPackage.POLICY_ACTIVITY_PAYER: {
+				PolicyActivity_Payer policyActivity_Payer = (PolicyActivity_Payer)theEObject;
+				T result = casePolicyActivity_Payer(policyActivity_Payer);
+				if (result == null) result = casePerformer2(policyActivity_Payer);
+				if (result == null) result = caseParticipation(policyActivity_Payer);
+				if (result == null) result = caseInfrastructureRoot(policyActivity_Payer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.PAYER_PAYER_ASSIGNED_ENTITY: {
+				Payer_PayerAssignedEntity payer_PayerAssignedEntity = (Payer_PayerAssignedEntity)theEObject;
+				T result = casePayer_PayerAssignedEntity(payer_PayerAssignedEntity);
+				if (result == null) result = caseAssignedEntity(payer_PayerAssignedEntity);
+				if (result == null) result = caseRole(payer_PayerAssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(payer_PayerAssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION: {
+				PayerAssignedEntity_PayerOrganization payerAssignedEntity_PayerOrganization = (PayerAssignedEntity_PayerOrganization)theEObject;
+				T result = casePayerAssignedEntity_PayerOrganization(payerAssignedEntity_PayerOrganization);
+				if (result == null) result = caseOrganization(payerAssignedEntity_PayerOrganization);
+				if (result == null) result = caseEntity(payerAssignedEntity_PayerOrganization);
+				if (result == null) result = caseInfrastructureRoot(payerAssignedEntity_PayerOrganization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.POLICY_ACTIVITY_GUARANTOR: {
+				PolicyActivity_Guarantor policyActivity_Guarantor = (PolicyActivity_Guarantor)theEObject;
+				T result = casePolicyActivity_Guarantor(policyActivity_Guarantor);
+				if (result == null) result = casePerformer2(policyActivity_Guarantor);
+				if (result == null) result = caseParticipation(policyActivity_Guarantor);
+				if (result == null) result = caseInfrastructureRoot(policyActivity_Guarantor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY: {
+				Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity = (Guarantor_GuarantorAssignedEntity)theEObject;
+				T result = caseGuarantor_GuarantorAssignedEntity(guarantor_GuarantorAssignedEntity);
+				if (result == null) result = caseAssignedEntity(guarantor_GuarantorAssignedEntity);
+				if (result == null) result = caseRole(guarantor_GuarantorAssignedEntity);
+				if (result == null) result = caseInfrastructureRoot(guarantor_GuarantorAssignedEntity);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ConsolPackage.AUTHORIZATION_ACTIVITY: {
 				AuthorizationActivity authorizationActivity = (AuthorizationActivity)theEObject;
 				T result = caseAuthorizationActivity(authorizationActivity);
@@ -3938,6 +3983,81 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePolicyActivity(PolicyActivity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity Payer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Activity Payer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicyActivity_Payer(PolicyActivity_Payer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Payer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Payer Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayer_PayerAssignedEntity(Payer_PayerAssignedEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Assigned Entity Payer Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Assigned Entity Payer Organization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayerAssignedEntity_PayerOrganization(PayerAssignedEntity_PayerOrganization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity Guarantor</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Activity Guarantor</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicyActivity_Guarantor(PolicyActivity_Guarantor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Guarantor Guarantor Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Guarantor Guarantor Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGuarantor_GuarantorAssignedEntity(Guarantor_GuarantorAssignedEntity object) {
 		return null;
 	}
 

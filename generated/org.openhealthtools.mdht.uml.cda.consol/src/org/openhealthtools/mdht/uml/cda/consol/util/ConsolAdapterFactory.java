@@ -563,6 +563,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 				return createPolicyActivityAdapter();
 			}
 			@Override
+			public Adapter casePolicyActivity_Payer(PolicyActivity_Payer object) {
+				return createPolicyActivity_PayerAdapter();
+			}
+			@Override
+			public Adapter casePayer_PayerAssignedEntity(Payer_PayerAssignedEntity object) {
+				return createPayer_PayerAssignedEntityAdapter();
+			}
+			@Override
+			public Adapter casePayerAssignedEntity_PayerOrganization(PayerAssignedEntity_PayerOrganization object) {
+				return createPayerAssignedEntity_PayerOrganizationAdapter();
+			}
+			@Override
+			public Adapter casePolicyActivity_Guarantor(PolicyActivity_Guarantor object) {
+				return createPolicyActivity_GuarantorAdapter();
+			}
+			@Override
+			public Adapter caseGuarantor_GuarantorAssignedEntity(Guarantor_GuarantorAssignedEntity object) {
+				return createGuarantor_GuarantorAssignedEntityAdapter();
+			}
+			@Override
 			public Adapter caseAuthorizationActivity(AuthorizationActivity object) {
 				return createAuthorizationActivityAdapter();
 			}
@@ -1511,6 +1531,10 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 				return createCDA_EncounterAdapter();
 			}
 			@Override
+			public Adapter casePerformer2(Performer2 object) {
+				return createPerformer2Adapter();
+			}
+			@Override
 			public Adapter caseComponent2(Component2 object) {
 				return createComponent2Adapter();
 			}
@@ -1537,10 +1561,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseSpecimen(Specimen object) {
 				return createSpecimenAdapter();
-			}
-			@Override
-			public Adapter casePerformer2(Performer2 object) {
-				return createPerformer2Adapter();
 			}
 			@Override
 			public Adapter caseMaterial(Material object) {
@@ -2618,6 +2638,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPolicyActivityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity_Payer <em>Policy Activity Payer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PolicyActivity_Payer
+	 * @generated
+	 */
+	public Adapter createPolicyActivity_PayerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Payer_PayerAssignedEntity <em>Payer Payer Assigned Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Payer_PayerAssignedEntity
+	 * @generated
+	 */
+	public Adapter createPayer_PayerAssignedEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PayerAssignedEntity_PayerOrganization <em>Payer Assigned Entity Payer Organization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PayerAssignedEntity_PayerOrganization
+	 * @generated
+	 */
+	public Adapter createPayerAssignedEntity_PayerOrganizationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity_Guarantor <em>Policy Activity Guarantor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PolicyActivity_Guarantor
+	 * @generated
+	 */
+	public Adapter createPolicyActivity_GuarantorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Guarantor_GuarantorAssignedEntity <em>Guarantor Guarantor Assigned Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Guarantor_GuarantorAssignedEntity
+	 * @generated
+	 */
+	public Adapter createGuarantor_GuarantorAssignedEntityAdapter() {
 		return null;
 	}
 
