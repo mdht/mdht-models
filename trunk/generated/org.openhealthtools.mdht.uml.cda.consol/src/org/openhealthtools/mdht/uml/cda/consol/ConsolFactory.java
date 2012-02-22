@@ -692,6 +692,51 @@ public interface ConsolFactory extends EFactory {
 	PolicyActivity createPolicyActivity();
 
 	/**
+	 * Returns a new object of class '<em>Policy Activity Payer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity Payer</em>'.
+	 * @generated
+	 */
+	PolicyActivity_Payer createPolicyActivity_Payer();
+
+	/**
+	 * Returns a new object of class '<em>Payer Payer Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payer Payer Assigned Entity</em>'.
+	 * @generated
+	 */
+	Payer_PayerAssignedEntity createPayer_PayerAssignedEntity();
+
+	/**
+	 * Returns a new object of class '<em>Payer Assigned Entity Payer Organization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payer Assigned Entity Payer Organization</em>'.
+	 * @generated
+	 */
+	PayerAssignedEntity_PayerOrganization createPayerAssignedEntity_PayerOrganization();
+
+	/**
+	 * Returns a new object of class '<em>Policy Activity Guarantor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity Guarantor</em>'.
+	 * @generated
+	 */
+	PolicyActivity_Guarantor createPolicyActivity_Guarantor();
+
+	/**
+	 * Returns a new object of class '<em>Guarantor Guarantor Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Guarantor Guarantor Assigned Entity</em>'.
+	 * @generated
+	 */
+	Guarantor_GuarantorAssignedEntity createGuarantor_GuarantorAssignedEntity();
+
+	/**
 	 * Returns a new object of class '<em>Authorization Activity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

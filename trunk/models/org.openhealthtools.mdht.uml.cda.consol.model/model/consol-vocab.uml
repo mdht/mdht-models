@@ -373,6 +373,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hJA70EUvEeGdQ4KWAmnbhw" name="DIRDocumentTypeCodes"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_TYKKYEb4EeGp67IkyTw1fg" name="DCM"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jyBH4ErhEeGJpZWiuxRVIw" name="DICOMPurposeOfReference "/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tP6g0F0YEeGt2doqSDULjA" name="HL7FinanciallyResponsiblePartyType"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -653,4 +654,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_vRMEAVoCEeGKdMKWzrgL_Q" conceptName="Poor" base_EnumerationLiteral="_vRMEAFoCEeGKdMKWzrgL_Q"/>
+  <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" fullName="Financially Responsible Party Value Set" binding="Dynamic" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
 </xmi:XMI>

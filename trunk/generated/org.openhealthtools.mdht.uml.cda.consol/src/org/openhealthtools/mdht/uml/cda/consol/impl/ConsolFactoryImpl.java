@@ -166,6 +166,11 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.PAYERS_SECTION: return createPayersSection();
 			case ConsolPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
 			case ConsolPackage.POLICY_ACTIVITY: return createPolicyActivity();
+			case ConsolPackage.POLICY_ACTIVITY_PAYER: return createPolicyActivity_Payer();
+			case ConsolPackage.PAYER_PAYER_ASSIGNED_ENTITY: return createPayer_PayerAssignedEntity();
+			case ConsolPackage.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION: return createPayerAssignedEntity_PayerOrganization();
+			case ConsolPackage.POLICY_ACTIVITY_GUARANTOR: return createPolicyActivity_Guarantor();
+			case ConsolPackage.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY: return createGuarantor_GuarantorAssignedEntity();
 			case ConsolPackage.AUTHORIZATION_ACTIVITY: return createAuthorizationActivity();
 			case ConsolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
@@ -1091,6 +1096,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicyActivity createPolicyActivity() {
 		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
 		return policyActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicyActivity_Payer createPolicyActivity_Payer() {
+		PolicyActivity_PayerImpl policyActivity_Payer = new PolicyActivity_PayerImpl();
+		return policyActivity_Payer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Payer_PayerAssignedEntity createPayer_PayerAssignedEntity() {
+		Payer_PayerAssignedEntityImpl payer_PayerAssignedEntity = new Payer_PayerAssignedEntityImpl();
+		return payer_PayerAssignedEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayerAssignedEntity_PayerOrganization createPayerAssignedEntity_PayerOrganization() {
+		PayerAssignedEntity_PayerOrganizationImpl payerAssignedEntity_PayerOrganization = new PayerAssignedEntity_PayerOrganizationImpl();
+		return payerAssignedEntity_PayerOrganization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicyActivity_Guarantor createPolicyActivity_Guarantor() {
+		PolicyActivity_GuarantorImpl policyActivity_Guarantor = new PolicyActivity_GuarantorImpl();
+		return policyActivity_Guarantor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Guarantor_GuarantorAssignedEntity createGuarantor_GuarantorAssignedEntity() {
+		Guarantor_GuarantorAssignedEntityImpl guarantor_GuarantorAssignedEntity = new Guarantor_GuarantorAssignedEntityImpl();
+		return guarantor_GuarantorAssignedEntity;
 	}
 
 	/**
