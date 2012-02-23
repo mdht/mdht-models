@@ -92,20 +92,20 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
 			try {
 				VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_ProviderOrganization)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						 ConsolPlugin.INSTANCE.getString("ProviderOrganizationHasNationalProviderIdentifier"),
-						 new Object [] { patientRole_ProviderOrganization }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationHasNationalProviderIdentifier"),
+					new Object[] { patientRole_ProviderOrganization }));
 			}
 			return false;
 		}
@@ -151,20 +151,18 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
 			try {
 				VALIDATE_PROVIDER_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_ProviderOrganization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_ADDR,
-						 ConsolPlugin.INSTANCE.getString("ProviderOrganizationAddr"),
-						 new Object [] { patientRole_ProviderOrganization }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_ADDR,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationAddr"),
+					new Object[] { patientRole_ProviderOrganization }));
 			}
 			return false;
 		}
@@ -210,20 +208,18 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
 			try {
 				VALIDATE_PROVIDER_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_ProviderOrganization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_ID,
-						 ConsolPlugin.INSTANCE.getString("ProviderOrganizationId"),
-						 new Object [] { patientRole_ProviderOrganization }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_ID,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationId"),
+					new Object[] { patientRole_ProviderOrganization }));
 			}
 			return false;
 		}
@@ -269,20 +265,18 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
 			try {
 				VALIDATE_PROVIDER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_ProviderOrganization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_NAME,
-						 ConsolPlugin.INSTANCE.getString("ProviderOrganizationName"),
-						 new Object [] { patientRole_ProviderOrganization }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_NAME,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationName"),
+					new Object[] { patientRole_ProviderOrganization }));
 			}
 			return false;
 		}
@@ -328,20 +322,18 @@ public class PatientRole_ProviderOrganizationOperations extends OrganizationOper
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PROVIDER_ORGANIZATION);
 			try {
 				VALIDATE_PROVIDER_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_ProviderOrganization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientRole_ProviderOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("ProviderOrganizationTelecom"),
-						 new Object [] { patientRole_ProviderOrganization }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_ROLE_PROVIDER_ORGANIZATION__PROVIDER_ORGANIZATION_TELECOM,
+					ConsolPlugin.INSTANCE.getString("ProviderOrganizationTelecom"),
+					new Object[] { patientRole_ProviderOrganization }));
 			}
 			return false;
 		}

@@ -54,7 +54,8 @@ public class GeneralHeaderConstraints_DataEntererImpl extends DataEntererImpl im
 	 * @generated
 	 */
 	public boolean validateDataEntererAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_DataEntererOperations.validateDataEntererAssignedEntity(this, diagnostics, context);
+		return GeneralHeaderConstraints_DataEntererOperations.validateDataEntererAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,7 +64,7 @@ public class GeneralHeaderConstraints_DataEntererImpl extends DataEntererImpl im
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_DataEnterer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_DataEntererImpl

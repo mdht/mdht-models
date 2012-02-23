@@ -89,20 +89,20 @@ public class GeneralHeaderConstraints_ParticipantSupportOperations extends Parti
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT);
 			try {
 				VALIDATE_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_ParticipantSupport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_ParticipantSupport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT__PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION,
-						 ConsolPlugin.INSTANCE.getString("ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization"),
-						 new Object [] { generalHeaderConstraints_ParticipantSupport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT__PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION,
+					ConsolPlugin.INSTANCE.getString("ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization"),
+					new Object[] { generalHeaderConstraints_ParticipantSupport }));
 			}
 			return false;
 		}
@@ -148,20 +148,18 @@ public class GeneralHeaderConstraints_ParticipantSupportOperations extends Parti
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT);
 			try {
 				VALIDATE_PARTICIPANT_SUPPORT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PARTICIPANT_SUPPORT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PARTICIPANT_SUPPORT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_ParticipantSupport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PARTICIPANT_SUPPORT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_ParticipantSupport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT__PARTICIPANT_SUPPORT_TIME,
-						 ConsolPlugin.INSTANCE.getString("ParticipantSupportTime"),
-						 new Object [] { generalHeaderConstraints_ParticipantSupport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT__PARTICIPANT_SUPPORT_TIME,
+					ConsolPlugin.INSTANCE.getString("ParticipantSupportTime"),
+					new Object[] { generalHeaderConstraints_ParticipantSupport }));
 			}
 			return false;
 		}

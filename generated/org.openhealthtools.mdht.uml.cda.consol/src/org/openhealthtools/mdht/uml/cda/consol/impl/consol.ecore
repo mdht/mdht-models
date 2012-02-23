@@ -8666,6 +8666,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="PolicyActivity_Guarantor" eSuperTypes="urn:hl7-org:v3#//Performer2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GuarantorTime GuarantorGuarantorAssignedEntity"/>
+      <details key="constraints.validation.warning" value="GuarantorGuarantorAssignedEntityCode GuarantorGuarantorAssignedEntityAddr GuarantorGuarantorAssignedEntityTelecom"/>
     </eAnnotations>
     <eOperations name="GuarantorTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -8677,6 +8678,33 @@
       </eParameters>
     </eOperations>
     <eOperations name="GuarantorGuarantorAssignedEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="GuarantorGuarantorAssignedEntityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="GuarantorGuarantorAssignedEntityAddr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="GuarantorGuarantorAssignedEntityTelecom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -10861,10 +10889,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosisSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43"/>
       <details key="code.displayName" value="HOSPITAL ADMISSION DX"/>
-      <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.43"/>
+      <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionTitle HospitalAdmissionDiagnosisSectionText"/>
       <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.warning" value="HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"/>
       <details key="code.code" value="46241-6"/>
     </eAnnotations>
     <eOperations name="HospitalAdmissionDiagnosisSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -10885,6 +10914,95 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getHospitalAdmissionDiagnosis" ordered="false" lowerBound="1"
+        eType="#//HospitalAdmissionDiagnosis"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosis" eSuperTypes="urn:hl7-org:v3#//Act">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.displayName" value="Admission diagnosis"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.34"/>
+      <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisClassCode HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisMoodCode HospitalAdmissionDiagnosisProblemObservation"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="classCode" value="ACT"/>
+      <details key="code.code" value="46241-6"/>
+      <details key="moodCode" value="EVN"/>
+    </eAnnotations>
+    <eOperations name="HospitalAdmissionDiagnosisTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="HospitalAdmissionDiagnosisProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getProblemObservations" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//ProblemObservation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionMedicationsSectionEntriesOptional"
       eSuperTypes="urn:hl7-org:v3#//Section">
@@ -10944,7 +11062,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getAdmissionMedication" ordered="false" lowerBound="1" eType="#//AdmissionMedication"/>
+    <eOperations name="getAdmissionMedications" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//AdmissionMedication"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdmissionMedication" eSuperTypes="urn:hl7-org:v3#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -11006,11 +11125,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.displayName" value="Medications Administered"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.38"/>
-      <details key="code.displayName" value="MEDICATION ADMINISTERED"/>
-      <details key="constraints.validation.error" value="MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionCode"/>
+      <details key="constraints.validation.error" value="MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionCode MedicationsAdministeredSectionText MedicationsAdministeredSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.code" value="18610-6"/>
+      <details key="code.code" value="29549-3"/>
+      <details key="constraints.validation.info" value="MedicationsAdministeredSectionMedicationActivity"/>
     </eAnnotations>
     <eOperations name="MedicationsAdministeredSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -11030,6 +11150,35 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="MedicationsAdministeredSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationsAdministeredSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationsAdministeredSectionMedicationActivity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//MedicationActivity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -13901,10 +14050,10 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.25"/>
-      <details key="constraints.validation.error" value="AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionText AnesthesiaSectionTitle AnesthesiaSectionProcedureActivityProcedure"/>
+      <details key="constraints.validation.error" value="AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionText AnesthesiaSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="59774-0"/>
-      <details key="constraints.validation.info" value="AnesthesiaSectionMedicationActivity"/>
+      <details key="constraints.validation.info" value="AnesthesiaSectionProcedureActivityProcedure AnesthesiaSectionMedicationActivity"/>
     </eAnnotations>
     <eOperations name="AnesthesiaSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -13967,8 +14116,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ComplicationsSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.displayName" value="Complications"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.37"/>
-      <details key="constraints.validation.error" value="ComplicationsSectionTemplateId"/>
+      <details key="constraints.validation.error" value="ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionTitle ComplicationsSectionText"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.code" value="55109-3"/>
+      <details key="constraints.validation.info" value="ComplicationsSectionProblemObservation"/>
     </eAnnotations>
     <eOperations name="ComplicationsSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -13979,10 +14133,49 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="ComplicationsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ComplicationsSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ComplicationsSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ComplicationsSectionProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getProblemObservations" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//ProblemObservation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DICOMObjectCatalogSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="1.2.840.10008.2.16.4"/>
+      <details key="code.displayName" value="Dicom Object Catalog"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.1.1"/>
       <details key="constraints.validation.error" value="DICOMObjectCatalogSectionTemplateId DICOMObjectCatalogSectionCode DICOMObjectCatalogSectionStudyAct"/>
       <details key="code.codeSystemName" value="DCM"/>
@@ -14192,9 +14385,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="SOPInstanceObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.8"/>
-      <details key="constraints.validation.error" value="SOPInstanceObservationTemplateId SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode"/>
-      <details key="classCode" value="DGIMG"/>
+      <details key="constraints.validation.error" value="SOPInstanceObservationTemplateId SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode"/>
       <details key="constraints.validation.warning" value="SOPInstanceObservationEffectiveTime SOPInstanceObservationText"/>
+      <details key="classCode" value="DGIMG"/>
       <details key="constraints.validation.info" value="SOPInstanceObservationSOPInstanceObservation SOPInstanceObservationPurposeofReferenceObservation SOPInstanceObservationReferencedFramesObservation"/>
       <details key="moodCode" value="EVN"/>
     </eAnnotations>
@@ -14252,6 +14445,15 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="SOPInstanceObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="SOPInstanceObservationSOPInstanceObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -14279,11 +14481,12 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getSOPInstanceObservation" ordered="false" lowerBound="1" eType="#//SOPInstanceObservation"/>
-    <eOperations name="getPurposeofReferenceObservation" ordered="false" lowerBound="1"
-        eType="#//PurposeofReferenceObservation"/>
-    <eOperations name="getReferencedFramesObservation" ordered="false" lowerBound="1"
-        eType="#//ReferencedFramesObservation"/>
+    <eOperations name="getSOPInstanceObservations" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//SOPInstanceObservation"/>
+    <eOperations name="getPurposeofReferenceObservations" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//PurposeofReferenceObservation"/>
+    <eOperations name="getReferencedFramesObservations" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//ReferencedFramesObservation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PurposeofReferenceObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -14344,6 +14547,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ReferencedFramesObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="1.2.840.10008.2.16.4"/>
+      <details key="code.displayName" value="Referenced Frames"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.10"/>
       <details key="constraints.validation.error" value="ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation"/>
       <details key="code.codeSystemName" value="DCM"/>
@@ -14401,6 +14605,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="BoundaryObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="1.2.840.10008.2.16.4"/>
+      <details key="code.displayName" value="Frames for Display"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.11"/>
       <details key="constraints.validation.error" value="BoundaryObservationTemplateId BoundaryObservationClassCode BoundaryObservationCode BoundaryObservationMoodCode BoundaryObservationValue"/>
       <details key="code.codeSystemName" value="DCM"/>
@@ -14563,6 +14768,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.1"/>
+      <details key="code.displayName" value="Objective"/>
       <details key="constraints.validation.error" value="ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="61149-1"/>
@@ -14752,13 +14958,14 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getPlanOfCareActivityProcedure" ordered="false" lowerBound="1"
-        eType="#//PlanOfCareActivityProcedure"/>
+    <eOperations name="getPlanOfCareActivityProcedures" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//PlanOfCareActivityProcedure"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PostoperativeDiagnosisSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.35"/>
+      <details key="code.displayName" value="Postoperative Diagnosis"/>
       <details key="constraints.validation.error" value="PostoperativeDiagnosisSectionTemplateId PostoperativeDiagnosisSectionCode PostoperativeDiagnosisSectionText PostoperativeDiagnosisSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="10218-6"/>
@@ -14918,8 +15125,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosisSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.displayName" value="Preoperative Diagnosis"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.34"/>
-      <details key="constraints.validation.error" value="PreoperativeDiagnosisSectionTemplateId"/>
+      <details key="constraints.validation.error" value="PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.warning" value="PreoperativeDiagnosisSectionPreoperativeDiagnosis"/>
+      <details key="code.code" value="10219-4"/>
     </eAnnotations>
     <eOperations name="PreoperativeDiagnosisSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -14930,11 +15142,106 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="PreoperativeDiagnosisSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisSectionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisSectionPreoperativeDiagnosis" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getPreoperativeDiagnosis" ordered="false" lowerBound="1" eType="#//PreoperativeDiagnosis"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosis" eSuperTypes="urn:hl7-org:v3#//Act">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.65"/>
+      <details key="constraints.validation.error" value="PreoperativeDiagnosisTemplateId PreoperativeDiagnosisClassCode PreoperativeDiagnosisCode PreoperativeDiagnosisMoodCode PreoperativeDiagnosisProblemObservation"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="classCode" value="ACT"/>
+      <details key="code.code" value="10219-4"/>
+      <details key="moodCode" value="EVN"/>
+    </eAnnotations>
+    <eOperations name="PreoperativeDiagnosisTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PreoperativeDiagnosisProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getProblemObservation" ordered="false" lowerBound="1" eType="#//ProblemObservation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureDescriptionSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.27"/>
+      <details key="code.displayName" value="Procedure Description"/>
       <details key="constraints.validation.error" value="ProcedureDescriptionSectionTemplateId ProcedureDescriptionSectionCode ProcedureDescriptionSectionText ProcedureDescriptionSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="29554-3"/>
@@ -14980,6 +15287,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.18.2.12"/>
+      <details key="code.displayName" value="Procedure Disposition"/>
       <details key="constraints.validation.error" value="ProcedureDispositionSectionTemplateId ProcedureDispositionSectionCode ProcedureDispositionSectionText ProcedureDispositionSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="59775-7"/>
@@ -15026,6 +15334,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.18.2.9"/>
+      <details key="code.displayName" value="Procedure Estimated Blood Loss"/>
       <details key="constraints.validation.error" value="ProcedureEstimatedBloodLossSectionTemplateId ProcedureEstimatedBloodLossSectionCode ProcedureEstimatedBloodLossSectionText ProcedureEstimatedBloodLossSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="59770-8"/>
@@ -15226,7 +15535,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getIndication" ordered="false" lowerBound="1" eType="#//Indication"/>
+    <eOperations name="getIndications" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//Indication"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureSpecimensTakenSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -15804,11 +16114,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="AssessmentSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.displayName" value="2.  Assessments"/>
+      <details key="code.displayName" value="Assessments"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.8"/>
       <details key="constraints.validation.error" value="AssessmentSectionTemplateId AssessmentSectionCode AssessmentSectionText"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.code" value="2. 51848-0"/>
+      <details key="code.code" value="51848-0"/>
     </eAnnotations>
     <eOperations name="AssessmentSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -17794,72 +18104,25 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosis" eSuperTypes="urn:hl7-org:v3#//Act">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.65"/>
-      <details key="constraints.validation.error" value="PreoperativeDiagnosisTemplateId PreoperativeDiagnosisClassCode PreoperativeDiagnosisCode PreoperativeDiagnosisMoodCode PreoperativeDiagnosisProblemObservation"/>
-      <details key="code.codeSystemName" value="LOINC"/>
-      <details key="classCode" value="ACT"/>
-      <details key="code.code" value="10219-4"/>
-      <details key="moodCode" value="EVN"/>
-    </eAnnotations>
-    <eOperations name="PreoperativeDiagnosisTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="PreoperativeDiagnosisClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="PreoperativeDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="PreoperativeDiagnosisMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="PreoperativeDiagnosisProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getProblemObservation" ordered="false" lowerBound="1" eType="#//ProblemObservation"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InstructionsSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.displayName" value="Instructions"/>
-      <details key="constraints.validation.error" value="InstructionsSectionCode InstructionsSectionText InstructionsSectionTitle"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.45"/>
+      <details key="constraints.validation.error" value="InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionText InstructionsSectionTitle"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.warning" value="InstructionsSectionInstructions"/>
       <details key="code.code" value="69730-0"/>
     </eAnnotations>
+    <eOperations name="InstructionsSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="InstructionsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -17896,65 +18159,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getInstructions" ordered="false" lowerBound="1" eType="#//Instructions"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosis" eSuperTypes="urn:hl7-org:v3#//Act">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.displayName" value="Admission diagnosis"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.34"/>
-      <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisClassCode HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisMoodCode HospitalAdmissionDiagnosisProblemObservation"/>
-      <details key="code.codeSystemName" value="LOINC"/>
-      <details key="classCode" value="ACT"/>
-      <details key="code.code" value="46241-6"/>
-      <details key="moodCode" value="EVN"/>
-    </eAnnotations>
-    <eOperations name="HospitalAdmissionDiagnosisTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HospitalAdmissionDiagnosisClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HospitalAdmissionDiagnosisCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HospitalAdmissionDiagnosisMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="HospitalAdmissionDiagnosisProblemObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getProblemObservation" ordered="false" lowerBound="1" eType="#//ProblemObservation"/>
+    <eOperations name="getInstructionss" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//Instructions"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationDispenseAssignedEntity" eSuperTypes="urn:hl7-org:v3#//AssignedEntity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

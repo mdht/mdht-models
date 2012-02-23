@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -56,6 +57,15 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInstructionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSectionOperations.validateInstructionsSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateInstructionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionCode(this, diagnostics, context);
 	}
@@ -92,8 +102,8 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Instructions getInstructions() {
-		return InstructionsSectionOperations.getInstructions(this);
+	public EList<Instructions> getInstructionss() {
+		return InstructionsSectionOperations.getInstructionss(this);
 	}
 
 	/**
@@ -102,7 +112,7 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * @generated
 	 */
 	public InstructionsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // InstructionsSectionImpl

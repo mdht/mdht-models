@@ -59,9 +59,9 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.111'))";
+	protected static final String VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.111'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGuarantorAssignedEntityCode(Guarantor_GuarantorAssignedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Guarantor Assigned Entity Code</em>}' invariant operation.
@@ -71,9 +71,8 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,27 +87,27 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGuarantorAssignedEntityCode(Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGuarantorAssignedEntityCode(
+			Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(guarantor_GuarantorAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			guarantor_GuarantorAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityCode"),
-						 new Object [] { guarantor_GuarantorAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityCode"),
+					new Object[] { guarantor_GuarantorAssignedEntity }));
 			}
 			return false;
 		}
@@ -133,9 +132,8 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,27 +146,27 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGuarantorAssignedEntityAddr(Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGuarantorAssignedEntityAddr(
+			Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(guarantor_GuarantorAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			guarantor_GuarantorAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_ADDR,
-						 ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityAddr"),
-						 new Object [] { guarantor_GuarantorAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_ADDR,
+					ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityAddr"),
+					new Object[] { guarantor_GuarantorAssignedEntity }));
 			}
 			return false;
 		}
@@ -193,9 +191,8 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,27 +205,27 @@ public class Guarantor_GuarantorAssignedEntityOperations extends AssignedEntityO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGuarantorAssignedEntityTelecom(Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGuarantorAssignedEntityTelecom(
+			Guarantor_GuarantorAssignedEntity guarantor_GuarantorAssignedEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(guarantor_GuarantorAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			guarantor_GuarantorAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityTelecom"),
-						 new Object [] { guarantor_GuarantorAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__GUARANTOR_ASSIGNED_ENTITY_TELECOM,
+					ConsolPlugin.INSTANCE.getString("GuarantorAssignedEntityTelecom"),
+					new Object[] { guarantor_GuarantorAssignedEntity }));
 			}
 			return false;
 		}

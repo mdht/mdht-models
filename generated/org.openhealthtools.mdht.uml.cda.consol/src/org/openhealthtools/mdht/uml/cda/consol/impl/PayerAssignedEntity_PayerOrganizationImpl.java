@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class PayerAssignedEntity_PayerOrganizationImpl extends OrganizationImpl implements PayerAssignedEntity_PayerOrganization {
+public class PayerAssignedEntity_PayerOrganizationImpl extends OrganizationImpl implements
+		PayerAssignedEntity_PayerOrganization {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,7 +66,7 @@ public class PayerAssignedEntity_PayerOrganizationImpl extends OrganizationImpl 
 	 * @generated
 	 */
 	public PayerAssignedEntity_PayerOrganization init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PayerAssignedEntity_PayerOrganizationImpl
+} // PayerAssignedEntity_PayerOrganizationImpl

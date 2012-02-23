@@ -50,7 +50,7 @@ public class MedicationDispense_ProductImpl extends ProductImpl implements Medic
 	 * @generated
 	 */
 	public MedicationDispense_Product init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationDispense_ProductImpl

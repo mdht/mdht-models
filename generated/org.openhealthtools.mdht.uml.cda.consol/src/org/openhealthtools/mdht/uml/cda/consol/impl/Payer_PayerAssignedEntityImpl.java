@@ -92,7 +92,8 @@ public class Payer_PayerAssignedEntityImpl extends AssignedEntityImpl implements
 	 * @generated
 	 */
 	public boolean validatePayerAssignedEntityPayerOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Payer_PayerAssignedEntityOperations.validatePayerAssignedEntityPayerOrganization(this, diagnostics, context);
+		return Payer_PayerAssignedEntityOperations.validatePayerAssignedEntityPayerOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +101,10 @@ public class Payer_PayerAssignedEntityImpl extends AssignedEntityImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Payer_PayerAssignedEntityOperations.validatePayerAssignedEntityPayerOrganizationName(this, diagnostics, context);
+	public boolean validatePayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return Payer_PayerAssignedEntityOperations.validatePayerAssignedEntityPayerOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +113,7 @@ public class Payer_PayerAssignedEntityImpl extends AssignedEntityImpl implements
 	 * @generated
 	 */
 	public Payer_PayerAssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //Payer_PayerAssignedEntityImpl
+} // Payer_PayerAssignedEntityImpl

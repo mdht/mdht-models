@@ -55,7 +55,8 @@ public class GeneralHeaderConstraints_InformationRecipientImpl extends Informati
 	 */
 	public boolean validateInformationRecipientIntendedRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraints_InformationRecipientOperations.validateInformationRecipientIntendedRecipient(this, diagnostics, context);
+		return GeneralHeaderConstraints_InformationRecipientOperations.validateInformationRecipientIntendedRecipient(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,7 @@ public class GeneralHeaderConstraints_InformationRecipientImpl extends Informati
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_InformationRecipient init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // GeneralHeaderConstraints_InformationRecipientImpl

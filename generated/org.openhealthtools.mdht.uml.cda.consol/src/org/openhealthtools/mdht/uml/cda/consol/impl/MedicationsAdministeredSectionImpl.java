@@ -10,9 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsAdministeredSectionOperations;
@@ -57,7 +59,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +69,48 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationsAdministeredSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionMedicationActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MedicationActivity> getMedicationActivities() {
+		return MedicationsAdministeredSectionOperations.getMedicationActivities(this);
 	}
 
 	/**
@@ -75,7 +119,7 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationsAdministeredSectionImpl

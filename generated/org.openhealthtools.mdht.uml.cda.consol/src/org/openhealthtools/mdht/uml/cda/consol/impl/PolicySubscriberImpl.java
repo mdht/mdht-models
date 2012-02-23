@@ -65,7 +65,7 @@ public class PolicySubscriberImpl extends ParticipantRoleImpl implements PolicyS
 	 * @generated
 	 */
 	public PolicySubscriber init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PolicySubscriberImpl

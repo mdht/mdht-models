@@ -87,20 +87,17 @@ public class ProcedureNote_IndividualOperations extends Participant1Operations {
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE_INDIVIDUAL);
 			try {
 				VALIDATE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNote_Individual)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureNote_Individual)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_NOTE_INDIVIDUAL__INDIVIDUAL_TYPE_ID,
-						 ConsolPlugin.INSTANCE.getString("IndividualTypeId"),
-						 new Object [] { procedureNote_Individual }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_NOTE_INDIVIDUAL__INDIVIDUAL_TYPE_ID,
+					ConsolPlugin.INSTANCE.getString("IndividualTypeId"), new Object[] { procedureNote_Individual }));
 			}
 			return false;
 		}

@@ -75,9 +75,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
+	protected static Constraint VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,27 +89,25 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerTemplateId(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerTemplateId(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PayerTemplateId"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("PayerTemplateId"), new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -135,9 +132,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,27 +146,24 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerTypeCode(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerTypeCode(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerTypeCode"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerTypeCode"), new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -195,9 +188,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,27 +202,25 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntity(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntity(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntity"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntity"), new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -255,9 +245,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
+	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,27 +259,27 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityPayerOrganizationName(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityPayerOrganizationName(
+			PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityPayerOrganizationName"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityPayerOrganizationName"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -315,9 +304,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -330,27 +318,26 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityId(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityId(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_ID,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityId"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_ID,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityId"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -365,9 +352,9 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = code.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.110' and not value.code.oclIsUndefined()))) else true endif";
+	protected static final String VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.5.110' and not value.code.oclIsUndefined()))) else true endif";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerPayerAssignedEntityCode(PolicyActivity_Payer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Payer Assigned Entity Code</em>}' invariant operation.
@@ -377,9 +364,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -394,27 +380,26 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityCode(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityCode(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityCode"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityCode"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -439,9 +424,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -454,27 +438,26 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityAddr(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityAddr(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_ADDR,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityAddr"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_ADDR,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityAddr"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -499,9 +482,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -514,27 +496,26 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityTelecom(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityTelecom(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityTelecom"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_TELECOM,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityTelecom"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}
@@ -559,9 +540,8 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
+	protected static Constraint VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -574,27 +554,27 @@ public class PolicyActivity_PayerOperations extends Performer2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerPayerAssignedEntityPayerOrganization(PolicyActivity_Payer policyActivity_Payer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerPayerAssignedEntityPayerOrganization(PolicyActivity_Payer policyActivity_Payer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_PAYER);
 			try {
 				VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Payer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			policyActivity_Payer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION,
-						 ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityPayerOrganization"),
-						 new Object [] { policyActivity_Payer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POLICY_ACTIVITY_PAYER__PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION,
+					ConsolPlugin.INSTANCE.getString("PayerPayerAssignedEntityPayerOrganization"),
+					new Object[] { policyActivity_Payer }));
 			}
 			return false;
 		}

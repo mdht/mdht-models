@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
@@ -59,7 +60,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +71,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -79,7 +82,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalText(this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +93,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +104,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +113,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdmissionMedication getAdmissionMedication() {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getAdmissionMedication(this);
+	public EList<AdmissionMedication> getAdmissionMedications() {
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getAdmissionMedications(this);
 	}
 
 	/**
@@ -117,7 +123,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 * @generated
 	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalAdmissionMedicationsSectionEntriesOptionalImpl

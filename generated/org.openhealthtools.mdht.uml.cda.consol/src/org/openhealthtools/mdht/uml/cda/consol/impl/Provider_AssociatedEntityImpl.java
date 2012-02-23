@@ -65,7 +65,7 @@ public class Provider_AssociatedEntityImpl extends AssociatedEntityImpl implemen
 	 * @generated
 	 */
 	public Provider_AssociatedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Provider_AssociatedEntityImpl

@@ -50,7 +50,7 @@ public class ProgressNote_ComponentOfImpl extends Component1Impl implements Prog
 	 * @generated
 	 */
 	public ProgressNote_ComponentOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProgressNote_ComponentOfImpl
