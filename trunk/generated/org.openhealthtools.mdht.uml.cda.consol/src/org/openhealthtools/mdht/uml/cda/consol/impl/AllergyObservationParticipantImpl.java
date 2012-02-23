@@ -57,7 +57,8 @@ public class AllergyObservationParticipantImpl extends Participant2Impl implemen
 	 */
 	public boolean validateAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationParticipantOperations.validateAllergyObservationParticipantParticipantRole(this, diagnostics, context);
+		return AllergyObservationParticipantOperations.validateAllergyObservationParticipantParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class AllergyObservationParticipantImpl extends Participant2Impl implemen
 	 * @generated
 	 */
 	public AllergyObservationParticipant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AllergyObservationParticipantImpl

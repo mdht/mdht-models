@@ -87,20 +87,18 @@ public class AssignedEntity_AssignedPersonOperations extends PersonOperations {
 			helper.setContext(ConsolPackage.Literals.ASSIGNED_ENTITY_ASSIGNED_PERSON);
 			try {
 				VALIDATE_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assignedEntity_AssignedPerson)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			assignedEntity_AssignedPerson)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ASSIGNED_ENTITY_ASSIGNED_PERSON__ASSIGNED_PERSON_NAME,
-						 ConsolPlugin.INSTANCE.getString("AssignedPersonName"),
-						 new Object [] { assignedEntity_AssignedPerson }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ASSIGNED_ENTITY_ASSIGNED_PERSON__ASSIGNED_PERSON_NAME,
+					ConsolPlugin.INSTANCE.getString("AssignedPersonName"),
+					new Object[] { assignedEntity_AssignedPerson }));
 			}
 			return false;
 		}

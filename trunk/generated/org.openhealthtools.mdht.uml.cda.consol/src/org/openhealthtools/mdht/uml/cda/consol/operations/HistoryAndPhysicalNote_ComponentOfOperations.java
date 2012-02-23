@@ -88,20 +88,18 @@ public class HistoryAndPhysicalNote_ComponentOfOperations extends Component1Oper
 			helper.setContext(ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF);
 			try {
 				VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(historyAndPhysicalNote_ComponentOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			historyAndPhysicalNote_ComponentOf)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						 ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter"),
-						 new Object [] { historyAndPhysicalNote_ComponentOf }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
+					ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter"),
+					new Object[] { historyAndPhysicalNote_ComponentOf }));
 			}
 			return false;
 		}

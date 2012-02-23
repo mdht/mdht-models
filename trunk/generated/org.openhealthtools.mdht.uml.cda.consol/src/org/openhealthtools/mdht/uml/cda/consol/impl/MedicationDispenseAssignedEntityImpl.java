@@ -57,7 +57,8 @@ public class MedicationDispenseAssignedEntityImpl extends AssignedEntityImpl imp
 	 * @generated
 	 */
 	public boolean validateMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationDispenseAssignedEntityOperations.validateMedicationDispenseAssignedEntityAddr(this, diagnostics, context);
+		return MedicationDispenseAssignedEntityOperations.validateMedicationDispenseAssignedEntityAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class MedicationDispenseAssignedEntityImpl extends AssignedEntityImpl imp
 	 * @generated
 	 */
 	public MedicationDispenseAssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationDispenseAssignedEntityImpl

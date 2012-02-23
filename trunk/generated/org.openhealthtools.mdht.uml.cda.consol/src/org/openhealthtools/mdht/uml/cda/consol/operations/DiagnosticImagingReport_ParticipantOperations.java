@@ -88,20 +88,18 @@ public class DiagnosticImagingReport_ParticipantOperations extends Participant1O
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT);
 			try {
 				VALIDATE_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport_Participant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticImagingReport_Participant)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT__PARTICIPANT_ASSOCIATED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("ParticipantAssociatedEntity"),
-						 new Object [] { diagnosticImagingReport_Participant }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT__PARTICIPANT_ASSOCIATED_ENTITY,
+					ConsolPlugin.INSTANCE.getString("ParticipantAssociatedEntity"),
+					new Object[] { diagnosticImagingReport_Participant }));
 			}
 			return false;
 		}

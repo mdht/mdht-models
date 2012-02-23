@@ -56,7 +56,8 @@ public class AssignedAuthor_AuthoringDeviceImpl extends AuthoringDeviceImpl impl
 	 * @generated
 	 */
 	public boolean validateAuthoringDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedAuthor_AuthoringDeviceOperations.validateAuthoringDeviceManufacturerModelName(this, diagnostics, context);
+		return AssignedAuthor_AuthoringDeviceOperations.validateAuthoringDeviceManufacturerModelName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +75,7 @@ public class AssignedAuthor_AuthoringDeviceImpl extends AuthoringDeviceImpl impl
 	 * @generated
 	 */
 	public AssignedAuthor_AuthoringDevice init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AssignedAuthor_AuthoringDeviceImpl

@@ -91,20 +91,20 @@ public class AllergyObservationPlayingEntityOperations extends PlayingEntityOper
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PLAYING_ENTITY);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationPlayingEntity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationPlayingEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCodeOriginalText"),
-						 new Object [] { allergyObservationPlayingEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCodeOriginalText"),
+					new Object[] { allergyObservationPlayingEntity }));
 			}
 			return false;
 		}
@@ -150,20 +150,20 @@ public class AllergyObservationPlayingEntityOperations extends PlayingEntityOper
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PLAYING_ENTITY);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationPlayingEntity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationPlayingEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCodeTranslation"),
-						 new Object [] { allergyObservationPlayingEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCodeTranslation"),
+					new Object[] { allergyObservationPlayingEntity }));
 			}
 			return false;
 		}
@@ -209,20 +209,19 @@ public class AllergyObservationPlayingEntityOperations extends PlayingEntityOper
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PLAYING_ENTITY);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationPlayingEntity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationPlayingEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityClassCode"),
-						 new Object [] { allergyObservationPlayingEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityClassCode"),
+					new Object[] { allergyObservationPlayingEntity }));
 			}
 			return false;
 		}
@@ -268,20 +267,18 @@ public class AllergyObservationPlayingEntityOperations extends PlayingEntityOper
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PLAYING_ENTITY);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationPlayingEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationPlayingEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCode"),
-						 new Object [] { allergyObservationPlayingEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PLAYING_ENTITY__ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationPlayingEntityCode"),
+					new Object[] { allergyObservationPlayingEntity }));
 			}
 			return false;
 		}

@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagnosisSectionOperations;
 
@@ -56,7 +57,8 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +68,50 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosisSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosisSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionDiagnosis getHospitalAdmissionDiagnosis() {
+		return HospitalAdmissionDiagnosisSectionOperations.getHospitalAdmissionDiagnosis(this);
 	}
 
 	/**
@@ -75,7 +120,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosisSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalAdmissionDiagnosisSectionImpl

@@ -57,7 +57,8 @@ public class EncompassingEncounter7_ResponsiblePartyImpl extends ResponsiblePart
 	 * @generated
 	 */
 	public boolean validateResponsiblePartyAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncompassingEncounter7_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntity(this, diagnostics, context);
+		return EncompassingEncounter7_ResponsiblePartyOperations.validateResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class EncompassingEncounter7_ResponsiblePartyImpl extends ResponsiblePart
 	 * @generated
 	 */
 	public EncompassingEncounter7_ResponsibleParty init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncompassingEncounter7_ResponsiblePartyImpl

@@ -102,20 +102,17 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityTemplateId"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityTemplateId"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -160,20 +157,17 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityClassCode"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityClassCode"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -188,9 +182,9 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityCode(CoverageActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' invariant operation.
@@ -222,20 +216,17 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityCode"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -280,20 +271,16 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityId"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityId"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -338,20 +325,17 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityMoodCode"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityMoodCode"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -366,9 +350,9 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityStatusCode(CoverageActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Status Code</em>}' invariant operation.
@@ -400,20 +384,17 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityStatusCode"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityStatusCode"), new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -458,20 +439,18 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
 			try {
 				VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coverageActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coverageActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivityPolicyActivity"),
-						 new Object [] { coverageActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
+					ConsolPlugin.INSTANCE.getString("CoverageActivityPolicyActivity"),
+					new Object[] { coverageActivity }));
 			}
 			return false;
 		}
@@ -510,11 +489,12 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	public static EList<PolicyActivity> getPolicyActivities(CoverageActivity coverageActivity) {
 		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.COVERAGE_ACTIVITY, ConsolPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(56));
+			helper.setOperationContext(
+				ConsolPackage.Literals.COVERAGE_ACTIVITY,
+				ConsolPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(56));
 			try {
 				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

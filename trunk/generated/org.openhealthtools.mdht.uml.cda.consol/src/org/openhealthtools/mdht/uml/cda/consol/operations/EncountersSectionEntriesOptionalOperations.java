@@ -99,20 +99,20 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
-						 new Object [] { encountersSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
+					new Object[] { encountersSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -127,9 +127,9 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncountersSectionEntriesOptionalCode(EncountersSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Code</em>}' invariant operation.
@@ -162,20 +162,18 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
-						 ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
-						 new Object [] { encountersSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
+					new Object[] { encountersSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -221,20 +219,18 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE,
-						 ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTitle"),
-						 new Object [] { encountersSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE,
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTitle"),
+					new Object[] { encountersSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -280,20 +276,18 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT,
-						 ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalText"),
-						 new Object [] { encountersSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT,
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalText"),
+					new Object[] { encountersSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -339,20 +333,20 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
 			try {
 				VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES,
-						 ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivities"),
-						 new Object [] { encountersSectionEntriesOptional }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES,
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivities"),
+					new Object[] { encountersSectionEntriesOptional }));
 			}
 			return false;
 		}
@@ -392,11 +386,12 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional) {
 		if (GET_ENCOUNTER_ACTIVITIESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL, ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(60));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL,
+				ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(60));
 			try {
 				GET_ENCOUNTER_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ACTIVITIESS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

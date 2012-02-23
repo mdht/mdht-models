@@ -72,9 +72,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,27 +86,26 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityId(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityId(Payer_PayerAssignedEntity payer_PayerAssignedEntity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_ID,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityId"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_ID,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityId"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}
@@ -122,9 +120,9 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.110' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.5.110' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayerAssignedEntityCode(Payer_PayerAssignedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payer Assigned Entity Code</em>}' invariant operation.
@@ -134,9 +132,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,27 +148,26 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityCode(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityCode(Payer_PayerAssignedEntity payer_PayerAssignedEntity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityCode"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityCode"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}
@@ -196,9 +192,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,27 +206,26 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityAddr(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityAddr(Payer_PayerAssignedEntity payer_PayerAssignedEntity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_ADDR,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityAddr"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_ADDR,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityAddr"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}
@@ -256,9 +250,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,27 +264,26 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityTelecom(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityTelecom(Payer_PayerAssignedEntity payer_PayerAssignedEntity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityTelecom"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_TELECOM,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityTelecom"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}
@@ -316,9 +308,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,27 +322,27 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityPayerOrganization(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityPayerOrganization(
+			Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityPayerOrganization"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityPayerOrganization"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}
@@ -376,9 +367,8 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -391,27 +381,28 @@ public class Payer_PayerAssignedEntityOperations extends AssignedEntityOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePayerAssignedEntityPayerOrganizationName(Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePayerAssignedEntityPayerOrganizationName(
+			Payer_PayerAssignedEntity payer_PayerAssignedEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYER_PAYER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payer_PayerAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payer_PayerAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME,
-						 ConsolPlugin.INSTANCE.getString("PayerAssignedEntityPayerOrganizationName"),
-						 new Object [] { payer_PayerAssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PAYER_PAYER_ASSIGNED_ENTITY__PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME,
+					ConsolPlugin.INSTANCE.getString("PayerAssignedEntityPayerOrganizationName"),
+					new Object[] { payer_PayerAssignedEntity }));
 			}
 			return false;
 		}

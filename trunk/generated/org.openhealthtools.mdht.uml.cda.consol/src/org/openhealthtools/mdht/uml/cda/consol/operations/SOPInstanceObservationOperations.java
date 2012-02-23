@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.ocl.ParserException;
@@ -45,12 +48,13 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation SOP Instance Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationPurposeofReferenceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Purposeof Reference Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationReferencedFramesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Referenced Frames Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getSOPInstanceObservation() <em>Get SOP Instance Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getPurposeofReferenceObservation() <em>Get Purposeof Reference Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getReferencedFramesObservation() <em>Get Referenced Frames Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getSOPInstanceObservations() <em>Get SOP Instance Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getPurposeofReferenceObservations() <em>Get Purposeof Reference Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getReferencedFramesObservations() <em>Get Referenced Frames Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -104,20 +108,18 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -162,20 +164,18 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -220,20 +220,18 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -278,20 +276,18 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_ID,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_ID,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -336,20 +332,18 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -394,20 +388,76 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
+					new Object[] { sopInstanceObservation }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSOPInstanceObservationCode(SOPInstanceObservation sopInstanceObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
+			try {
+				VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCode"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -422,7 +472,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSOPInstanceObservationSOPInstanceObservation(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation SOP Instance Observation</em>}' invariant operation.
@@ -438,7 +488,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -452,20 +502,19 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -480,7 +529,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PurposeofReferenceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
+	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PurposeofReferenceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSOPInstanceObservationPurposeofReferenceObservation(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Purposeof Reference Observation</em>}' invariant operation.
@@ -496,7 +545,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PurposeofReferenceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PurposeofReferenceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -510,20 +559,19 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -538,7 +586,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReferencedFramesObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReferencedFramesObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSOPInstanceObservationReferencedFramesObservation(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Referenced Frames Observation</em>}' invariant operation.
@@ -554,7 +602,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReferencedFramesObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReferencedFramesObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -568,20 +616,19 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
-						 new Object [] { sopInstanceObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
+					new Object[] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -589,137 +636,149 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSOPInstanceObservation(SOPInstanceObservation) <em>Get SOP Instance Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getSOPInstanceObservations(SOPInstanceObservation) <em>Get SOP Instance Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSOPInstanceObservation(SOPInstanceObservation)
+	 * @see #getSOPInstanceObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SOP_INSTANCE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)";
+	protected static final String GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSOPInstanceObservation(SOPInstanceObservation) <em>Get SOP Instance Observation</em>}' query operation.
+	 * The cached OCL query for the '{@link #getSOPInstanceObservations(SOPInstanceObservation) <em>Get SOP Instance Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSOPInstanceObservation(SOPInstanceObservation)
+	 * @see #getSOPInstanceObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static SOPInstanceObservation getSOPInstanceObservation(SOPInstanceObservation sopInstanceObservation) {
-		if (GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY == null) {
+
+	public static EList<SOPInstanceObservation> getSOPInstanceObservations(SOPInstanceObservation sopInstanceObservation) {
+		if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(59));
 			try {
-				GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY);
-		return (SOPInstanceObservation) query.evaluate(sopInstanceObservation);
+		OCL.Query query = EOCL_ENV.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<SOPInstanceObservation> result = (Collection<SOPInstanceObservation>) query.evaluate(sopInstanceObservation);
+		return new BasicEList.UnmodifiableEList<SOPInstanceObservation>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPurposeofReferenceObservation(SOPInstanceObservation) <em>Get Purposeof Reference Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPurposeofReferenceObservations(SOPInstanceObservation) <em>Get Purposeof Reference Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPurposeofReferenceObservation(SOPInstanceObservation)
+	 * @see #getPurposeofReferenceObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation))->asSequence()->first().oclAsType(consol::PurposeofReferenceObservation)";
+	protected static final String GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation)).oclAsType(consol::PurposeofReferenceObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPurposeofReferenceObservation(SOPInstanceObservation) <em>Get Purposeof Reference Observation</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPurposeofReferenceObservations(SOPInstanceObservation) <em>Get Purposeof Reference Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPurposeofReferenceObservation(SOPInstanceObservation)
+	 * @see #getPurposeofReferenceObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation))->asSequence()->first().oclAsType(consol::PurposeofReferenceObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation)).oclAsType(consol::PurposeofReferenceObservation)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static PurposeofReferenceObservation getPurposeofReferenceObservation(
+
+	public static EList<PurposeofReferenceObservation> getPurposeofReferenceObservations(
 			SOPInstanceObservation sopInstanceObservation) {
-		if (GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_QRY == null) {
+		if (GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(59));
+			helper.setOperationContext(
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(60));
 			try {
-				GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATION__EOCL_QRY);
-		return (PurposeofReferenceObservation) query.evaluate(sopInstanceObservation);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PurposeofReferenceObservation> result = (Collection<PurposeofReferenceObservation>) query.evaluate(sopInstanceObservation);
+		return new BasicEList.UnmodifiableEList<PurposeofReferenceObservation>(result.size(), result.toArray());
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getReferencedFramesObservation(SOPInstanceObservation) <em>Get Referenced Frames Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getReferencedFramesObservations(SOPInstanceObservation) <em>Get Referenced Frames Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReferencedFramesObservation(SOPInstanceObservation)
+	 * @see #getReferencedFramesObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_REFERENCED_FRAMES_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation))->asSequence()->first().oclAsType(consol::ReferencedFramesObservation)";
+	protected static final String GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation)).oclAsType(consol::ReferencedFramesObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getReferencedFramesObservation(SOPInstanceObservation) <em>Get Referenced Frames Observation</em>}' query operation.
+	 * The cached OCL query for the '{@link #getReferencedFramesObservations(SOPInstanceObservation) <em>Get Referenced Frames Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReferencedFramesObservation(SOPInstanceObservation)
+	 * @see #getReferencedFramesObservations(SOPInstanceObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_REFERENCED_FRAMES_OBSERVATION__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation))->asSequence()->first().oclAsType(consol::ReferencedFramesObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation)).oclAsType(consol::ReferencedFramesObservation)
 	 * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ReferencedFramesObservation getReferencedFramesObservation(
+
+	public static EList<ReferencedFramesObservation> getReferencedFramesObservations(
 			SOPInstanceObservation sopInstanceObservation) {
-		if (GET_REFERENCED_FRAMES_OBSERVATION__EOCL_QRY == null) {
+		if (GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(60));
+			helper.setOperationContext(
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(61));
 			try {
-				GET_REFERENCED_FRAMES_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REFERENCED_FRAMES_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REFERENCED_FRAMES_OBSERVATION__EOCL_QRY);
-		return (ReferencedFramesObservation) query.evaluate(sopInstanceObservation);
+		OCL.Query query = EOCL_ENV.createQuery(GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ReferencedFramesObservation> result = (Collection<ReferencedFramesObservation>) query.evaluate(sopInstanceObservation);
+		return new BasicEList.UnmodifiableEList<ReferencedFramesObservation>(result.size(), result.toArray());
 	}
 
 } // SOPInstanceObservationOperations

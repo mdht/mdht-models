@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -111,9 +112,19 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSOPInstanceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,7 +134,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationPurposeofReferenceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +145,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationReferencedFramesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +154,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SOPInstanceObservation getSOPInstanceObservation() {
-		return SOPInstanceObservationOperations.getSOPInstanceObservation(this);
+	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
+		return SOPInstanceObservationOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
@@ -150,8 +163,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PurposeofReferenceObservation getPurposeofReferenceObservation() {
-		return SOPInstanceObservationOperations.getPurposeofReferenceObservation(this);
+	public EList<PurposeofReferenceObservation> getPurposeofReferenceObservations() {
+		return SOPInstanceObservationOperations.getPurposeofReferenceObservations(this);
 	}
 
 	/**
@@ -159,8 +172,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferencedFramesObservation getReferencedFramesObservation() {
-		return SOPInstanceObservationOperations.getReferencedFramesObservation(this);
+	public EList<ReferencedFramesObservation> getReferencedFramesObservations() {
+		return SOPInstanceObservationOperations.getReferencedFramesObservations(this);
 	}
 
 	/**
@@ -169,7 +182,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	public SOPInstanceObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SOPInstanceObservationImpl

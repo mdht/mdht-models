@@ -91,20 +91,20 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL_SECTION);
 			try {
 				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalDischargePhysicalSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTemplateId"),
-						 new Object [] { hospitalDischargePhysicalSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTemplateId"),
+					new Object[] { hospitalDischargePhysicalSection }));
 			}
 			return false;
 		}
@@ -119,9 +119,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalDischargePhysicalSectionCode(HospitalDischargePhysicalSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Section Code</em>}' invariant operation.
@@ -154,20 +154,18 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL_SECTION);
 			try {
 				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalDischargePhysicalSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionCode"),
-						 new Object [] { hospitalDischargePhysicalSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionCode"),
+					new Object[] { hospitalDischargePhysicalSection }));
 			}
 			return false;
 		}
@@ -213,20 +211,18 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL_SECTION);
 			try {
 				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalDischargePhysicalSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE,
-						 ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTitle"),
-						 new Object [] { hospitalDischargePhysicalSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionTitle"),
+					new Object[] { hospitalDischargePhysicalSection }));
 			}
 			return false;
 		}
@@ -272,20 +268,18 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL_SECTION);
 			try {
 				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalDischargePhysicalSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			hospitalDischargePhysicalSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionText"),
-						 new Object [] { hospitalDischargePhysicalSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HOSPITAL_DISCHARGE_PHYSICAL_SECTION__HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("HospitalDischargePhysicalSectionText"),
+					new Object[] { hospitalDischargePhysicalSection }));
 			}
 			return false;
 		}

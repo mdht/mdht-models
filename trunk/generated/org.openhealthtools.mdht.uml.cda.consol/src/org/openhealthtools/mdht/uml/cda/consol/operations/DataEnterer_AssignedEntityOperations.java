@@ -93,20 +93,19 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityHasNationalProviderIdentifier"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityHasNationalProviderIdentifier"),
+					new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -151,20 +150,17 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ADDR,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityAddr"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ADDR,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityAddr"), new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -179,9 +175,9 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.101'))";
+	protected static final String VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.101'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssignedEntityCode(DataEnterer_AssignedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assigned Entity Code</em>}' invariant operation.
@@ -213,20 +209,17 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityCode"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityCode"), new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -271,20 +264,17 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityId"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityId"), new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -329,20 +319,18 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityTelecom"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_TELECOM,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityTelecom"),
+					new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}
@@ -387,20 +375,18 @@ public class DataEnterer_AssignedEntityOperations extends AssignedEntityOperatio
 			helper.setContext(ConsolPackage.Literals.DATA_ENTERER_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dataEnterer_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			dataEnterer_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityAssignedPerson"),
-						 new Object [] { dataEnterer_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DATA_ENTERER_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ASSIGNED_PERSON,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityAssignedPerson"),
+					new Object[] { dataEnterer_AssignedEntity }));
 			}
 			return false;
 		}

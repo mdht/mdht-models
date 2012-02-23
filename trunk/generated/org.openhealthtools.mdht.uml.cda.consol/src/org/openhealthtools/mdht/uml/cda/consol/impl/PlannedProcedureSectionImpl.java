@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -94,7 +95,8 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 */
 	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(this, diagnostics, context);
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +104,8 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
-		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedure(this);
+	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
+		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedures(this);
 	}
 
 	/**
@@ -112,7 +114,7 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * @generated
 	 */
 	public PlannedProcedureSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlannedProcedureSectionImpl

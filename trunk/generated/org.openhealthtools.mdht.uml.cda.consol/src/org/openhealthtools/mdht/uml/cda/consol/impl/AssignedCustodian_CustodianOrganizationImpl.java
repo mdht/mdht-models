@@ -58,7 +58,8 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 */
 	public boolean validateCustodianOrganizationHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationHasNationalProviderIdentifier(this, diagnostics, context);
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationHasNationalProviderIdentifier(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationAddr(this, diagnostics, context);
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,8 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationId(this, diagnostics, context);
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationName(this, diagnostics, context);
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +98,8 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * @generated
 	 */
 	public boolean validateCustodianOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationTelecom(this, diagnostics, context);
+		return AssignedCustodian_CustodianOrganizationOperations.validateCustodianOrganizationTelecom(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +108,7 @@ public class AssignedCustodian_CustodianOrganizationImpl extends CustodianOrgani
 	 * @generated
 	 */
 	public AssignedCustodian_CustodianOrganization init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AssignedCustodian_CustodianOrganizationImpl

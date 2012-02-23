@@ -50,7 +50,7 @@ public class ResponsibleParty_AssignedEntityImpl extends AssignedEntityImpl impl
 	 * @generated
 	 */
 	public ResponsibleParty_AssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ResponsibleParty_AssignedEntityImpl

@@ -88,20 +88,17 @@ public class Informant_RelatedEntityOperations extends RoleOperations {
 			helper.setContext(ConsolPackage.Literals.INFORMANT_RELATED_ENTITY);
 			try {
 				VALIDATE_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informant_RelatedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			informant_RelatedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INFORMANT_RELATED_ENTITY__RELATED_ENTITY_ADDR,
-						 ConsolPlugin.INSTANCE.getString("RelatedEntityAddr"),
-						 new Object [] { informant_RelatedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INFORMANT_RELATED_ENTITY__RELATED_ENTITY_ADDR,
+					ConsolPlugin.INSTANCE.getString("RelatedEntityAddr"), new Object[] { informant_RelatedEntity }));
 			}
 			return false;
 		}
@@ -146,20 +143,17 @@ public class Informant_RelatedEntityOperations extends RoleOperations {
 			helper.setContext(ConsolPackage.Literals.INFORMANT_RELATED_ENTITY);
 			try {
 				VALIDATE_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informant_RelatedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			informant_RelatedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INFORMANT_RELATED_ENTITY__RELATED_ENTITY_PERSON,
-						 ConsolPlugin.INSTANCE.getString("RelatedEntityPerson"),
-						 new Object [] { informant_RelatedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INFORMANT_RELATED_ENTITY__RELATED_ENTITY_PERSON,
+					ConsolPlugin.INSTANCE.getString("RelatedEntityPerson"), new Object[] { informant_RelatedEntity }));
 			}
 			return false;
 		}

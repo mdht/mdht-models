@@ -73,7 +73,8 @@ public interface PolicyActivity_Payer extends Performer2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.assignedEntity->exists(not oclIsUndefined()) and self.assignedEntity.representedOrganization->exists(not oclIsUndefined()) then self.assignedEntity.representedOrganization->forAll((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty())) else true endif'"
 	 * @generated
 	 */
-	boolean validatePayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,7 +99,7 @@ public interface PolicyActivity_Payer extends Performer2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.110\' and not value.code.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\nvalue.codeSystem = \'2.16.840.1.113883.5.110\' and not value.code.oclIsUndefined()))) else true endif'"
 	 * @generated
 	 */
 	boolean validatePayerPayerAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -65,7 +65,7 @@ public class ProgressNote_DocumentationOfImpl extends DocumentationOfImpl implem
 	 * @generated
 	 */
 	public ProgressNote_DocumentationOf init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProgressNote_DocumentationOfImpl

@@ -89,20 +89,18 @@ public class PhysicianofRecordParticipant_AssignedEntityOperations extends Assig
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianofRecordParticipant_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicianofRecordParticipant_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityCode"),
-						 new Object [] { physicianofRecordParticipant_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__ASSIGNED_ENTITY_CODE,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityCode"),
+					new Object[] { physicianofRecordParticipant_AssignedEntity }));
 			}
 			return false;
 		}
@@ -148,20 +146,18 @@ public class PhysicianofRecordParticipant_AssignedEntityOperations extends Assig
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianofRecordParticipant_AssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicianofRecordParticipant_AssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
-						 ConsolPlugin.INSTANCE.getString("AssignedEntityId"),
-						 new Object [] { physicianofRecordParticipant_AssignedEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__ASSIGNED_ENTITY_ID,
+					ConsolPlugin.INSTANCE.getString("AssignedEntityId"),
+					new Object[] { physicianofRecordParticipant_AssignedEntity }));
 			}
 			return false;
 		}

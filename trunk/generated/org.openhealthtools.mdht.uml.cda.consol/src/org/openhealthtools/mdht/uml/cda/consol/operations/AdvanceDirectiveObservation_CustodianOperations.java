@@ -89,20 +89,18 @@ public class AdvanceDirectiveObservation_CustodianOperations extends Participant
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN);
 			try {
 				VALIDATE_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation_Custodian)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation_Custodian)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__CUSTODIAN_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("CustodianTypeCode"),
-						 new Object [] { advanceDirectiveObservation_Custodian }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__CUSTODIAN_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("CustodianTypeCode"),
+					new Object[] { advanceDirectiveObservation_Custodian }));
 			}
 			return false;
 		}
@@ -148,20 +146,20 @@ public class AdvanceDirectiveObservation_CustodianOperations extends Participant
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN);
 			try {
 				VALIDATE_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation_Custodian)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation_Custodian)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE,
-						 ConsolPlugin.INSTANCE.getString("CustodianAdvanceDirectiveObservationCustodianRole"),
-						 new Object [] { advanceDirectiveObservation_Custodian }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE,
+					ConsolPlugin.INSTANCE.getString("CustodianAdvanceDirectiveObservationCustodianRole"),
+					new Object[] { advanceDirectiveObservation_Custodian }));
 			}
 			return false;
 		}

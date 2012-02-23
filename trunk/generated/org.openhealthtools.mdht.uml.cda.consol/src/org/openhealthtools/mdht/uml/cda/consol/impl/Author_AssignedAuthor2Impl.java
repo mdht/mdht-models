@@ -74,7 +74,7 @@ public class Author_AssignedAuthor2Impl extends AssignedAuthorImpl implements Au
 	 * @generated
 	 */
 	public Author_AssignedAuthor2 init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // Author_AssignedAuthor2Impl

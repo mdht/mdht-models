@@ -74,7 +74,7 @@ public class ServiceEvent3_PerformerImpl extends Performer1Impl implements Servi
 	 * @generated
 	 */
 	public ServiceEvent3_Performer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ServiceEvent3_PerformerImpl

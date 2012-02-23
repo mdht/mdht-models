@@ -67,9 +67,8 @@ public class GeneralHeaderConstraints_PersonOperations extends PersonOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,27 +81,25 @@ public class GeneralHeaderConstraints_PersonOperations extends PersonOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePersonName(GeneralHeaderConstraints_Person generalHeaderConstraints_Person, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePersonName(GeneralHeaderConstraints_Person generalHeaderConstraints_Person,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_PERSON);
 			try {
 				VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_Person)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			generalHeaderConstraints_Person)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PERSON__PERSON_NAME,
-						 ConsolPlugin.INSTANCE.getString("PersonName"),
-						 new Object [] { generalHeaderConstraints_Person }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_PERSON__PERSON_NAME,
+					ConsolPlugin.INSTANCE.getString("PersonName"), new Object[] { generalHeaderConstraints_Person }));
 			}
 			return false;
 		}

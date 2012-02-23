@@ -267,7 +267,7 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->forAll((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->forAll((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in (\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))) else true endif'"
 	 * @generated
 	 */
 	boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(DiagnosticChain diagnostics,
