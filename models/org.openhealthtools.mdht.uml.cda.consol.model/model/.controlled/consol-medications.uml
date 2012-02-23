@@ -676,15 +676,7 @@ of the document. The comment itself is not the act being coded, so it appears in
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2Poj_BSVEeGGzu7fmW9pXw" name="MedicationsAdministeredSection">
     <ownedComment xmi:id="_2Pxt0BSVEeGGzu7fmW9pXw" annotatedElement="_2Poj_BSVEeGGzu7fmW9pXw">
-      <body>The medications administered section shall contain a narrative description of the relevant medications administered to a&#xD;
-patient during the course of an encounter. It shall include entries for medication administration as described in the Entry&#xD;
-Content Module.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2Poj_RSVEeGGzu7fmW9pXw" annotatedElement="_2Poj_BSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Medications Administered Section contains information about the relevant medications administered to&#xD;
-    a patient during the course of an encounter. &#xD;
-&lt;/p></body>
+      <body>The Medications Administered section defines medications and fluids administered during the procedure, encounter, or other activity excluding anesthetic medications. This guide recommends anesthesia medications be documented as described in the section on Anesthesia.</body>
     </ownedComment>
     <generalization xmi:id="_2Pxt0RSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -692,10 +684,30 @@ Content Module.</body>
     <ownedAttribute xmi:id="_2PokARSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_CrfMEFmsEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAG1oFmsEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAG1oVmsEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_CrfzIFmsEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehr4sFmsEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ehr4sVmsEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KTZYoFmsEeGRqYkwoeymcA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LUqoYFmsEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LUqoYVmsEeGRqYkwoeymcA"/>
+    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2Poj_xSVEeGGzu7fmW9pXw" base_Class="_2Poj_BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.38" assigningAuthorityName="HITSP C83"/>
-  <CDA:CodeSystemConstraint xmi:id="_2PokAhSVEeGGzu7fmW9pXw" code="18610-6" displayName="MEDICATION ADMINISTERED" base_Property="_2PokARSVEeGGzu7fmW9pXw">
+  <CDA:CDATemplate xmi:id="_2Poj_xSVEeGGzu7fmW9pXw" base_Class="_2Poj_BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.38">
+    <ruleId>CONF:8152</ruleId>
+    <ruleId>CONF:10405</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2PokAhSVEeGGzu7fmW9pXw" code="29549-3" displayName="Medications Administered" base_Property="_2PokARSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8153</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_iAoXEBVdEeGQCvUGzi1kDQ" name="MedicationsSectionEntriesOptional">
     <ownedComment xmi:id="_S0qoIB-uEeGKirKJsFylGA">
@@ -1028,15 +1040,7 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="HospitalAdmissionMedicationsSectionEntriesOptional">
     <ownedComment xmi:id="_2Poj6xSVEeGGzu7fmW9pXw" annotatedElement="_2Poj5BSVEeGGzu7fmW9pXw">
-      <body>The admission medication history section shall contain a narrative description of the relevant medications administered to&#xD;
-a patient prior to admission to a facility. It shall include entries for medication administration as described in the&#xD;
-Entry Content Module.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_2Poj5RSVEeGGzu7fmW9pXw" annotatedElement="_2Poj5BSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    The Admission Medication Section contains information about the relevant medications of a patient prior&#xD;
-    to admission to a facility. &#xD;
-&lt;/p></body>
+      <body>The Hospital Admission Medications section defines the relevant medications administered prior to admission to the facility. The currently active medications must be listed.</body>
     </ownedComment>
     <generalization xmi:id="_2Poj7BSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -1057,8 +1061,8 @@ Entry Content Module.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IfrmAEFHEeGorO80f-Cppg" name="admissionMedication" type="_LNP08EFGEeGorO80f-Cppg" association="_IfrmAkFHEeGorO80f-Cppg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MdAXMEFHEeGorO80f-Cppg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MdAXMUFHEeGorO80f-Cppg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ni36gFjqEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ni36gVjqEeGRqYkwoeymcA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_IYW3oBnXEeGs5a462vYX5Q" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.44">
@@ -1548,4 +1552,16 @@ Entry Content Module.</body>
   <uml:Association xmi:id="_ikMTkEhUEeGoJ-JrsiBorA" memberEnd="_ikLsgEhUEeGoJ-JrsiBorA _ikMTkUhUEeGoJ-JrsiBorA">
     <ownedEnd xmi:id="_ikMTkUhUEeGoJ-JrsiBorA" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_ikMTkEhUEeGoJ-JrsiBorA"/>
   </uml:Association>
+  <CDA:TextValue xmi:id="_FqrhEFmsEeGRqYkwoeymcA" base_Property="_CrfzIFmsEeGRqYkwoeymcA">
+    <ruleId>CONF:8154</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_GxDTQFmsEeGRqYkwoeymcA" base_Property="_CrfMEFmsEeGRqYkwoeymcA">
+    <ruleId>CONF:8155</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_KTbN0FmsEeGRqYkwoeymcA" memberEnd="_KTZYoFmsEeGRqYkwoeymcA _KTb04FmsEeGRqYkwoeymcA">
+    <ownedEnd xmi:id="_KTb04FmsEeGRqYkwoeymcA" type="_2Poj_BSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_NJy-AFmsEeGRqYkwoeymcA" severity="INFO" base_Association="_KTbN0FmsEeGRqYkwoeymcA">
+    <ruleId>CONF:8156</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
