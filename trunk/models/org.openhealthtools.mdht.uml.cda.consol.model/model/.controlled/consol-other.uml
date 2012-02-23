@@ -411,8 +411,26 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <ownedAttribute xmi:id="_2PidTRSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_V3B-gFjpEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXGzAFjpEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZXGzAVjpEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_V3BXcFjpEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z09zsFjpEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z09zsVjpEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oCjTwFjpEeGRqYkwoeymcA" name="hospitalAdmissionDiagnosis" type="_5K6mAEFHEeGorO80f-Cppg" association="_oClwAFjpEeGRqYkwoeymcA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oCj60FjpEeGRqYkwoeymcA"/>
+    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_uFmSUBnSEeGs5a462vYX5Q" base_Class="_2PidQhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.43"/>
+  <CDA:CDATemplate xmi:id="_uFmSUBnSEeGs5a462vYX5Q" base_Class="_2PidQhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.43">
+    <ruleId>CONF:9930</ruleId>
+    <ruleId>CONF:10391</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PidThSVEeGGzu7fmW9pXw" code="46241-6" displayName="HOSPITAL ADMISSION DX" base_Property="_2PidTRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -1358,20 +1376,20 @@ attribute should be set to &quot;NA&quot;.</body>
     </generalization>
     <ownedAttribute xmi:id="__fxG8ECREeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__fxG8UCREeGELr7uj3LK_Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__fxG8kCREeGELr7uj3LK_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FHJ5IFjvEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FHJ5IVjvEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__fxG80CREeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__fxG9ECREeGELr7uj3LK_Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__fxG9UCREeGELr7uj3LK_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FhPNEFjvEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FhPNEVjvEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__fxG9kCREeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__fxG90CREeGELr7uj3LK_Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__fxG-ECREeGELr7uj3LK_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GJaAUFjvEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJaAUVjvEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1484,17 +1502,23 @@ attribute should be set to &quot;NA&quot;.</body>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xv0kcDV1EeGaW4kr-GbV8Q" base_Class="_eKFbUDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.42">
     <ruleId>CONF:9915</ruleId>
+    <ruleId>CONF:10393</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_19h7ADV1EeGaW4kr-GbV8Q" base_Class="_hqzJADVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.3">
     <ruleId>CONF:8680</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_7ssdQDV1EeGaW4kr-GbV8Q" base_Class="_mEIgwDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.39">
     <ruleId>CONF:8160</ruleId>
+    <ruleId>CONF:10403</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_-ZsPADV1EeGaW4kr-GbV8Q" base_Class="_rNJpADVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.1">
     <ruleId>CONF:7869</ruleId>
+    <ruleId>CONF:10462</ruleId>
   </CDA:CDATemplate>
-  <CDA:CDATemplate xmi:id="_lrrAoDV2EeGaW4kr-GbV8Q" base_Class="_iy8nYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.2"/>
+  <CDA:CDATemplate xmi:id="_lrrAoDV2EeGaW4kr-GbV8Q" base_Class="_iy8nYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.21.2.2">
+    <ruleId>CONF:7873</ruleId>
+    <ruleId>CONF:10470</ruleId>
+  </CDA:CDATemplate>
   <uml:Class xmi:id="_W8pI4DszEeGvzMYhXuqAEA" name="AssessmentSection">
     <ownedComment xmi:id="_SHlZkEE1EeGdmoWy_aLP0Q">
       <body>The Assessment section (also called impression or diagnoses) represents the clinician's conclusions and working assumptions that will guide treatment of the patient. The assessment formulates a specific plan or set of recommendations. The assessment may be a list of specific disease entities or a narrative block.</body>
@@ -1516,7 +1540,7 @@ attribute should be set to &quot;NA&quot;.</body>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aByU4DszEeGvzMYhXuqAEA" base_Class="_W8pI4DszEeGvzMYhXuqAEA" templateId="2.16.840.1.113883.10.20.22.2.8"/>
-  <CDA:CodeSystemConstraint xmi:id="_83CjQD32EeGYzOhiGkMbTA" code="2. 51848-0" displayName="2.  Assessments" base_Property="_8PsPYD32EeGYzOhiGkMbTA">
+  <CDA:CodeSystemConstraint xmi:id="_83CjQD32EeGYzOhiGkMbTA" code="51848-0" displayName="Assessments" base_Property="_8PsPYD32EeGYzOhiGkMbTA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10382</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1568,7 +1592,7 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:TextValue xmi:id="_1yv9IECTEeGELr7uj3LK_Q" base_Property="_z5J-RkCTEeGELr7uj3LK_Q">
     <ruleId>CONF:7871</ruleId>
   </CDA:TextValue>
-  <CDA:CodeSystemConstraint xmi:id="_22ZygECTEeGELr7uj3LK_Q" code="61149-1" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
+  <CDA:CodeSystemConstraint xmi:id="_22ZygECTEeGELr7uj3LK_Q" code="61149-1" displayName="Objective" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_dN41EEE0EeGdmoWy_aLP0Q" code="61150-9" displayName="Subjective" base_Property="_bLDaoEE0EeGdmoWy_aLP0Q">
@@ -1607,8 +1631,8 @@ attribute should be set to &quot;NA&quot;.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_O8W-QEE2EeGdmoWy_aLP0Q" name="instructions" type="_2G8h9RSVEeGGzu7fmW9pXw" association="_O8gvQUE2EeGdmoWy_aLP0Q">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SNbGYEE2EeGdmoWy_aLP0Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SNbGYUE2EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_chII4FjyEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_chII4VjyEeGRqYkwoeymcA"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_O8gvQUE2EeGdmoWy_aLP0Q" memberEnd="_O8W-QEE2EeGdmoWy_aLP0Q _O8gvQkE2EeGdmoWy_aLP0Q">
@@ -1651,7 +1675,8 @@ attribute should be set to &quot;NA&quot;.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SgUIAEFIEeGorO80f-Cppg" name="problemObservation" association="_SgUIAkFIEeGorO80f-Cppg">
       <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SgUIAUFIEeGorO80f-Cppg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ingAUFjpEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ingAUVjpEeGRqYkwoeymcA" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_SgUIAkFIEeGorO80f-Cppg" memberEnd="_SgUIAEFIEeGorO80f-Cppg _SgUIA0FIEeGorO80f-Cppg">
@@ -1671,4 +1696,21 @@ attribute should be set to &quot;NA&quot;.</body>
     <ruleId>CONF:7675</ruleId>
     <ruleId>CONF:7676</ruleId>
   </CDA:EntryRelationship>
+  <CDA:TextValue xmi:id="_aPoWcFjpEeGRqYkwoeymcA" base_Property="_V3B-gFjpEeGRqYkwoeymcA">
+    <ruleId>CONF:9932</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_bdjiIFjpEeGRqYkwoeymcA" base_Property="_V3BXcFjpEeGRqYkwoeymcA">
+    <ruleId>CONF:9933</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_oClwAFjpEeGRqYkwoeymcA" memberEnd="_oCjTwFjpEeGRqYkwoeymcA _oClwAVjpEeGRqYkwoeymcA">
+    <ownedEnd xmi:id="_oClwAVjpEeGRqYkwoeymcA" type="_2PidQhSVEeGGzu7fmW9pXw" association="_oClwAFjpEeGRqYkwoeymcA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_owKAoFjpEeGRqYkwoeymcA" severity="WARNING" base_Association="_oClwAFjpEeGRqYkwoeymcA">
+    <ruleId>CONF:9934</ruleId>
+    <ruleId>CONF:9935</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_WS1aoFjyEeGRqYkwoeymcA" base_Class="_4qKukEE1EeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.2.45">
+    <ruleId>CONF:10112</ruleId>
+    <ruleId>CONF:10402</ruleId>
+  </CDA:CDATemplate>
 </xmi:XMI>
