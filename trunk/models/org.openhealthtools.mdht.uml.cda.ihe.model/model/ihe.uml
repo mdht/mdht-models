@@ -71,7 +71,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>Related References SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
-          <body>self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)</body>
+          <body>self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference::REFR)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
