@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getPhysicalExamSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPPhysicalExamSectionTemplateId HITSPPhysicalExamSectionCondition' templateId.root='2.16.840.1.113883.3.88.11.83.118'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.118' constraints.validation.error='HITSPPhysicalExamSectionTemplateId HITSPPhysicalExamSectionCondition'"
  * @generated
  */
 public interface PhysicalExamSection extends PhysicalExaminationSection,

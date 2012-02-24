@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getLanguageSpoken()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation modeCode.codeSystemName='LanguageAbilityMode' modeCode.codeSystem='2.16.840.1.113883.5.60' constraints.validation.error='LanguageSpokenTemplateId LanguageSpokenModeCode' templateId.root='2.16.840.1.113883.3.88.11.83.2' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.2' constraints.validation.error='LanguageSpokenTemplateId LanguageSpokenModeCode' constraints.validation.warning='LanguageSpokenNoProficiencyLevelCode' modeCode.codeSystem='2.16.840.1.113883.5.60' modeCode.codeSystemName='LanguageAbilityMode'"
  * @generated
  */
 public interface LanguageSpoken extends LanguageCommunication {
