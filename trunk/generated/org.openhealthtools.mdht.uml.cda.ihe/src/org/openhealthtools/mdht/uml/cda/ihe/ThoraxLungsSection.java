@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getThoraxLungsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='ThoraxLungsSectionProblemEntry' constraints.validation.error='ThoraxLungsSectionTemplateId ThoraxLungsSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.26' code.displayName='THORAX+LUNGS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10207-9'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='THORAX+LUNGS' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.26' constraints.validation.error='ThoraxLungsSectionTemplateId ThoraxLungsSectionCode' code.codeSystemName='LOINC' code.code='10207-9' constraints.validation.info='ThoraxLungsSectionProblemEntry'"
  * @generated
  */
 public interface ThoraxLungsSection extends Section {

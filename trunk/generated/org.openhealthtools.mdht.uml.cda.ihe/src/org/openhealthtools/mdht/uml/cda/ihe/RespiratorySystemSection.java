@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getRespiratorySystemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='RespiratorySystemSectionProblemEntry' constraints.validation.error='RespiratorySystemSectionTemplateId RespiratorySystemSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.30' code.displayName='RESPIRATORY SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='11412-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='RESPIRATORY SYSTEM' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.30' constraints.validation.error='RespiratorySystemSectionTemplateId RespiratorySystemSectionCode' code.codeSystemName='LOINC' code.code='11412-4' constraints.validation.info='RespiratorySystemSectionProblemEntry'"
  * @generated
  */
 public interface RespiratorySystemSection extends Section {

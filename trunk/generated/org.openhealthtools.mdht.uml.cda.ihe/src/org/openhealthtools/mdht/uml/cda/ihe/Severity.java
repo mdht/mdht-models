@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSeverity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SeverityObservation' value.codeSystem='2.16.840.1.113883.5.1063' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityText SeverityObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SeverityObservation' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityText SeverityObservationValue' value.codeSystem='2.16.840.1.113883.5.1063'"
  * @generated
  */
 public interface Severity extends SeverityObservation {

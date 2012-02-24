@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getMedicationFullfillmentInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='IHEActCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1' constraints.validation.error='MedicationFullfillmentInstructionsTemplateId MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsStatusCode MedicationFullfillmentInstructionsText' code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' code.code='FINSTRUCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3.1' constraints.validation.error='MedicationFullfillmentInstructionsTemplateId MedicationFullfillmentInstructionsCode MedicationFullfillmentInstructionsStatusCode MedicationFullfillmentInstructionsText' code.codeSystemName='IHEActCode' code.code='FINSTRUCT'"
  * @generated
  */
 public interface MedicationFullfillmentInstructions extends FulfillmentInstruction {

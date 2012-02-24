@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getPatientContactGuardian()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' classCode='GUAR' code.codeSystemName='RoleCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.4' constraints.validation.error='PatientContactGuardianTemplateId PatientContactGuardianClassCode PatientContactGuardianCode' code.codeSystem='2.16.840.1.113883.5.111' constraints.validation.warning='PatientContactGuardianAddr PatientContactGuardianTelecom'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' code.codeSystem='2.16.840.1.113883.5.111' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.4' constraints.validation.error='PatientContactGuardianTemplateId PatientContactGuardianClassCode PatientContactGuardianCode' code.codeSystemName='RoleCode' classCode='GUAR' constraints.validation.warning='PatientContactGuardianAddr PatientContactGuardianTelecom'"
  * @generated
  */
 public interface PatientContactGuardian extends SupportGuardian, PatientContact {
