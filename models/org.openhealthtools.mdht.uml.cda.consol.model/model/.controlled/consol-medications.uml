@@ -525,57 +525,6 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <CDA:CDATemplate xmi:id="_HlZ-cBncEeGs5a462vYX5Q" base_Class="_DpoGkBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.18">
     <ruleId>CONF:7454</ruleId>
   </CDA:CDATemplate>
-  <uml:Class xmi:id="_2HWKkBSVEeGGzu7fmW9pXw" name="MedicationFullfillmentInstructions">
-    <ownedComment xmi:id="_2HbDEBSVEeGGzu7fmW9pXw" annotatedElement="_2HWKkBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    Fulfillment instructions are additional information provided to the dispensing party (e.g. &quot;label in&#xD;
-    spanish&quot;).&#xD;
-&lt;/p></body>
-    </ownedComment>
-    <generalization xmi:id="_2HbDERSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2HZ08RSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HacABSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2HacARSVEeGGzu7fmW9pXw" name="INT">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW4EDcEd6xYZuu1VKCVw"/>
-      </defaultValue>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HWKkhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2HWKkxSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;code> element indicates that this is a medication fulfillment instruction.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HWKmBSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2HWKmRSVEeGGzu7fmW9pXw">
-        <body>The &amp;lt;text> element contains a free text representation of the instruction. For CDA this SHALL&#xD;
-contain a provides a &amp;lt;reference>element to thelink text of the comment in the narrative portion&#xD;
-of the document. The comment itself is not the act being coded, so it appears in the &amp;lt;text> of the&#xD;
-&amp;lt;observation>, not as part of the &amp;lt;code>.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HWKmhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HWKmxSVEeGGzu7fmW9pXw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HWKlBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HWKlRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HWKlhSVEeGGzu7fmW9pXw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2HWKlxSVEeGGzu7fmW9pXw" value="completed"/>
-    </ownedAttribute>
-  </uml:Class>
-  <CDA:PropertyValidation xmi:id="_2HacAhSVEeGGzu7fmW9pXw" base_Property="_2HacABSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-336</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2HWxoBSVEeGGzu7fmW9pXw" base_Property="_2HWKkhSVEeGGzu7fmW9pXw"/>
-  <CDA:CodeSystemConstraint xmi:id="_2HXYsBSVEeGGzu7fmW9pXw" identifier="1.3.6.1.4.1.19376.1.5.3.2" name="IHEActCode" code="FINSTRUCT" base_Property="_2HWKkhSVEeGGzu7fmW9pXw"/>
-  <CDA:TextValue xmi:id="_2HZN4BSVEeGGzu7fmW9pXw" base_Property="_2HWKmBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2HYm0BSVEeGGzu7fmW9pXw" base_Property="_2HWKlBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2T9DQBSVEeGGzu7fmW9pXw" name="MedicationInformation">
     <ownedComment xmi:id="_RzpgUCAMEeGKirKJsFylGA">
       <body>The medication can be recorded as a precoordinated product strength, product form, or product concentration (e.g. &quot;metoprolol 25mg tablet&quot;, &quot;amoxicillin 400mg/5mL suspension&quot;); or not pre-coordinated (e.g. &quot;metoprolol product&quot;).</body>
@@ -745,29 +694,6 @@ This section requires that there be either an entry indicating the subject is no
   <CDA:CDATemplate xmi:id="_nvOcIBVeEeGQCvUGzi1kDQ" base_Class="_iAoXEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.1">
     <ruleId>CONF:7791</ruleId>
   </CDA:CDATemplate>
-  <uml:Class xmi:id="_2HCokhSVEeGGzu7fmW9pXw" name="MedicationType">
-    <ownedComment xmi:id="_2HCokxSVEeGGzu7fmW9pXw" annotatedElement="_2HCokhSVEeGGzu7fmW9pXw">
-      <body>A classification based on how the medication is&#xD;
-marketed (e.g., prescription, over the counter drug)</body>
-    </ownedComment>
-    <generalization xmi:id="_2HFr4BSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2HEdwRSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HFE0RSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2HColRSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-  </uml:Class>
-  <CDA:ValueSetConstraint xmi:id="_2HD2sBSVEeGGzu7fmW9pXw" base_Property="_2HColRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2HFr5BSVEeGGzu7fmW9pXw"/>
-    <ruleId>C83-[DE-8.19-CDA-5]</ruleId>
-    <ruleId>C154-[DE-8.19-1]</ruleId>
-  </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_2KEucBSVEeGGzu7fmW9pXw" name="MedicalEquipmentSection">
     <ownedComment xmi:id="_6K0pUDh_EeGSytqLITd2FA">
       <body>The Medical Equipment section defines a patient's implanted and external medical devices and equipment that their health status depends on, as well as any pertinent equipment or device history. This section is also used to itemize any pertinent current or historical durable medical equipment (DME) used to help maintain the patient's health status. All pertinent equipment relevant to the diagnosis, care, and treatment of a patient should be included.</body>
