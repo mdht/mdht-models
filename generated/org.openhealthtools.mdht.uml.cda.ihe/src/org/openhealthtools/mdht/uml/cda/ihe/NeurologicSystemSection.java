@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getNeurologicSystemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='NeurologicSystemSectionProblemEntry' constraints.validation.error='NeurologicSystemSectionTemplateId NeurologicSystemSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.35' code.displayName='NEUROLOGIC SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='10202-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='NEUROLOGIC SYSTEM' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.35' constraints.validation.error='NeurologicSystemSectionTemplateId NeurologicSystemSectionCode' code.codeSystemName='LOINC' code.code='10202-0' constraints.validation.info='NeurologicSystemSectionProblemEntry'"
  * @generated
  */
 public interface NeurologicSystemSection extends Section {

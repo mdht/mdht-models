@@ -38,7 +38,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getMedication()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7' constraints.validation.error='MedicationTemplateId MedicationHasDosing MedicationDosingRelationship MedicationHasDescriptionNoMedNotKnown MedicationReasonClassMood MedicationHasProductEntry MedicationHasIntructionsInversion MedicationProductName MedicationHasSupplyEntryInversion MedicationCode MedicationStatusCode MedicationEffectiveTime' constraints.validation.info='MedicationPreconditionReference MedicationApproachSiteCode' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='MedicationProductStrength MedicationHasFillNumber MedicationDoseQuantity MedicationRateQuantity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7' constraints.validation.error='MedicationTemplateId MedicationHasDosing MedicationDosingRelationship MedicationHasDescriptionNoMedNotKnown MedicationReasonClassMood MedicationHasProductEntry MedicationHasIntructionsInversion MedicationProductName MedicationHasSupplyEntryInversion MedicationCode MedicationStatusCode MedicationEffectiveTime' code.codeSystemName='SNOMEDCT' constraints.validation.warning='MedicationProductStrength MedicationHasFillNumber MedicationDoseQuantity MedicationRateQuantity' constraints.validation.info='MedicationPreconditionReference MedicationApproachSiteCode'"
  * @generated
  */
 public interface Medication extends MedicationActivity {

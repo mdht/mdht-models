@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getAdvanceDirectiveObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.7' constraints.validation.error='IHEAdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode IHEAdvanceDirectiveObservationRepeatNumber IHEAdvanceDirectiveObservationInterpretationCode IHEAdvanceDirectiveObservationTargetSiteCode' constraints.validation.info='IHEAdvanceDirectiveObservationHasExternalReference' code.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.7' constraints.validation.error='IHEAdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode IHEAdvanceDirectiveObservationRepeatNumber IHEAdvanceDirectiveObservationInterpretationCode IHEAdvanceDirectiveObservationTargetSiteCode' code.codeSystemName='SNOMEDCT' constraints.validation.info='IHEAdvanceDirectiveObservationHasExternalReference'"
  * @generated
  */
 public interface AdvanceDirectiveObservation extends org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation,

@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProblemEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue' constraints.validation.info='ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='ProblemEntryCode ProblemEntryEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemEntryCode ProblemEntryEffectiveTime' constraints.validation.info='ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment'"
  * @generated
  */
 public interface ProblemEntry extends ProblemObservation {

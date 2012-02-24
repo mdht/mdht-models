@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getFamilyHistoryOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='RoleCode' constraints.validation.info='IHEFamilyHistoryOrganizerHasParticipant' constraints.validation.error='IHEFamilyHistoryOrganizerTemplateId IHEFamilyHistoryOrganizerHasParticipantParticipantRole IHEFamilyHistoryOrganizerHasParticipantRoleCode IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity IHEFamilyHistoryOrganizerCode IHEFamilyHistoryOrganizerFamilyHistoryObservation' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.15' code.codeSystem='2.16.840.1.113883.5.111'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.111' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.15' constraints.validation.error='IHEFamilyHistoryOrganizerTemplateId IHEFamilyHistoryOrganizerHasParticipantParticipantRole IHEFamilyHistoryOrganizerHasParticipantRoleCode IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity IHEFamilyHistoryOrganizerCode IHEFamilyHistoryOrganizerFamilyHistoryObservation' code.codeSystemName='RoleCode' constraints.validation.info='IHEFamilyHistoryOrganizerHasParticipant'"
  * @generated
  */
 public interface FamilyHistoryOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryOrganizer {

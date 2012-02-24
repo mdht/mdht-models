@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getMusculoskeletalSystemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='MusculoskeletalSystemSectionProblemEntry' constraints.validation.error='MusculoskeletalSystemSectionTemplateId MusculoskeletalSystemSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.34' code.displayName='MUSCULOSKELETAL SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='11410-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='MUSCULOSKELETAL SYSTEM' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.34' constraints.validation.error='MusculoskeletalSystemSectionTemplateId MusculoskeletalSystemSectionCode' code.codeSystemName='LOINC' code.code='11410-8' constraints.validation.info='MusculoskeletalSystemSectionProblemEntry'"
  * @generated
  */
 public interface MusculoskeletalSystemSection extends Section {

@@ -231,7 +231,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONCERN_ENTRY_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)";
+	protected static final String VALIDATE_CONCERN_ENTRY_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateConcernEntryHasRelatedReferencesTypeCode(ConcernEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Concern Entry Has Related References Type Code</em>}' invariant operation.
@@ -247,7 +247,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)
+	 * self.reference->forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference::REFR)
 	 * @param concernEntry The receiving '<em><b>Concern Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

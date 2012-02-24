@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEncounterEntry()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ENC' code.codeSystemName='ActEncounterCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' constraints.validation.error='EncounterEntryTemplateId EncounterEntryClassCode EncounterEntryId EncounterEntryText' code.codeSystem='2.16.840.1.113883.5.4' constraints.validation.warning='EncounterEntryCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.4' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.14' constraints.validation.error='EncounterEntryTemplateId EncounterEntryClassCode EncounterEntryId EncounterEntryText' code.codeSystemName='ActEncounterCode' constraints.validation.warning='EncounterEntryCode' classCode='ENC'"
  * @generated
  */
 public interface EncounterEntry extends Encounter {

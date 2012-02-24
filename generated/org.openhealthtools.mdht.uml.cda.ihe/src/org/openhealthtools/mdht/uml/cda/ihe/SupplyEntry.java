@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSupplyEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3' constraints.validation.error='SupplyEntryTemplateId SupplyEntryHasAuthorTime SupplyEntryHasAssignedAuthor SupplyEntryHasAssignedAuthorPersonOrOrg SupplyEntryHasPerformerTimeEvent SupplyEntryHasPerformerAssignedEntity SupplyEntryHasPerformerEntityPersonOrOrg SupplyEntryQuantityHasValue' constraints.validation.info='SupplyEntryHasIntentAuthor SupplyEntryMedicationFullfillmentInstructions' constraints.validation.warning='SupplyEntryHasAssignedAuthorID SupplyEntryHasPerformerTimeIntent SupplyEntryHasPerformerAssignedEntityID SupplyEntryQuantity SupplyEntryRepeatNumber'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.7.3' constraints.validation.error='SupplyEntryTemplateId SupplyEntryHasAuthorTime SupplyEntryHasAssignedAuthor SupplyEntryHasAssignedAuthorPersonOrOrg SupplyEntryHasPerformerTimeEvent SupplyEntryHasPerformerAssignedEntity SupplyEntryHasPerformerEntityPersonOrOrg SupplyEntryQuantityHasValue' constraints.validation.warning='SupplyEntryHasAssignedAuthorID SupplyEntryHasPerformerTimeIntent SupplyEntryHasPerformerAssignedEntityID SupplyEntryQuantity SupplyEntryRepeatNumber' constraints.validation.info='SupplyEntryHasIntentAuthor SupplyEntryMedicationFullfillmentInstructions'"
  * @generated
  */
 public interface SupplyEntry extends SupplyActivity {

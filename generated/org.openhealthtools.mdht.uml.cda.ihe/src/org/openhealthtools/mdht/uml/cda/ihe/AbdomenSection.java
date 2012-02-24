@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getAbdomenSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='AbdomenSectionProblemEntry' constraints.validation.error='AbdomenSectionTemplateId AbdomenSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.31' code.displayName='ABDOMEN' code.codeSystem='2.16.840.1.113883.6.1' code.code='10191-5'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='ABDOMEN' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.31' constraints.validation.error='AbdomenSectionTemplateId AbdomenSectionCode' code.codeSystemName='LOINC' code.code='10191-5' constraints.validation.info='AbdomenSectionProblemEntry'"
  * @generated
  */
 public interface AbdomenSection extends Section {

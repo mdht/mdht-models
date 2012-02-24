@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getHeadSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='HeadSectionProblemEntry' constraints.validation.error='HeadSectionTemplateId HeadSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.18' code.displayName='HEAD' code.codeSystem='2.16.840.1.113883.6.1' code.code='10199-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HEAD' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.18' constraints.validation.error='HeadSectionTemplateId HeadSectionCode' code.codeSystemName='LOINC' code.code='10199-8' constraints.validation.info='HeadSectionProblemEntry'"
  * @generated
  */
 public interface HeadSection extends Section {

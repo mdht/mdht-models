@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEndocrineSystemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='EndocrineSystemSectionProblemEntry' constraints.validation.error='EndocrineSystemSectionTemplateId EndocrineSystemSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.25' code.displayName='ENDOCRINE SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='29307-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='ENDOCRINE SYSTEM' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.25' constraints.validation.error='EndocrineSystemSectionTemplateId EndocrineSystemSectionCode' code.codeSystemName='LOINC' code.code='29307-6' constraints.validation.info='EndocrineSystemSectionProblemEntry'"
  * @generated
  */
 public interface EndocrineSystemSection extends Section {

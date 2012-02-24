@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProcedureEntryPlanOfCareActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='INT' constraints.validation.error='ProcedureEntryPlanOfCareActivityProcedureMoodCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureEntryPlanOfCareActivityProcedureMoodCode' moodCode='INT'"
  * @generated
  */
 public interface ProcedureEntryPlanOfCareActivityProcedure extends PlanOfCareActivityProcedure, ProcedureEntry {

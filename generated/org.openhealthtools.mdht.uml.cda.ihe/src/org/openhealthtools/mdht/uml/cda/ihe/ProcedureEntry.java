@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProcedureEntry()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' classCode='PROC' constraints.validation.info='ProcedureEntryApproachSiteCode ProcedureEntryInternalReference ProcedureEntryInternalReferenceReason' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.19' constraints.validation.error='ProcedureEntryTemplateId ProcedureEntryMoodCode ProcedureEntryHasTextReference ProcedureEntryPriorityCode ProcedureEntryHasInversionIndForEncounter ProcedureEntryClassCode ProcedureEntryText'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.19' constraints.validation.error='ProcedureEntryTemplateId ProcedureEntryMoodCode ProcedureEntryHasTextReference ProcedureEntryPriorityCode ProcedureEntryHasInversionIndForEncounter ProcedureEntryClassCode ProcedureEntryText' classCode='PROC' constraints.validation.info='ProcedureEntryApproachSiteCode ProcedureEntryInternalReference ProcedureEntryInternalReferenceReason'"
  * @generated
  */
 public interface ProcedureEntry extends Procedure {
