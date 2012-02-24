@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getConditionEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystemName='SNOMEDCT' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='ConditionEntryAgeObservation ConditionEntryProblemStatusObservation ConditionEntryCauseOfDeathObservation' constraints.validation.error='ConditionEntryText ProblemEntryValue' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='ConditionEntryText ProblemEntryValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode' constraints.validation.info='ConditionEntryAgeObservation ConditionEntryProblemStatusObservation ConditionEntryCauseOfDeathObservation' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface ConditionEntry extends ProblemEntry {

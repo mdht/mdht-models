@@ -4673,28 +4673,28 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			new String[] {
 					"contextDependent",
 					"true",
-					"constraints.validation.error",
-					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8",
+					"constraints.validation.error",
+					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
 					"constraints.validation.info",
 					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasIndication HITSPMedicationHasPatientInstructions HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCode HITSPMedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity HITSPMedicationApproachSiteCode HITSPMedicationCode" });
 		addAnnotation(medicationTypeEClass, source, new String[] {
-				"code.codeSystemName", "SNOMEDCT", "templateId.root", "2.16.840.1.113883.3.88.11.83.8.1",
-				"constraints.validation.error", "MedicationTypeTemplateId MedicationTypeCode", "code.codeSystem",
-				"2.16.840.1.113883.6.96" });
+				"code.codeSystem", "2.16.840.1.113883.6.96", "templateId.root", "2.16.840.1.113883.3.88.11.83.8.1",
+				"constraints.validation.error", "MedicationTypeTemplateId MedicationTypeCode", "code.codeSystemName",
+				"SNOMEDCT" });
 		addAnnotation(
 			medicationOrderInformationEClass,
 			source,
 			new String[] {
-					"constraints.validation.info",
-					"MedicationOrderInformationDispensingPharmacyLocation MedicationOrderInformationRepeatNumber MedicationOrderInformationStatusCode",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8.3",
 					"constraints.validation.error",
 					"MedicationOrderInformationTemplateId MedicationOrderInformationQuantityOrdered MedicationOrderInformationQuantityUnit MedicationOrderInformationPrescriptionNumber MedicationOrderInformationDispenseDate MedicationOrderInformationQuantityDispensed",
 					"constraints.validation.warning",
-					"MedicationOrderInformationOrderNumber MedicationOrderInformationOrderExpiration MedicationOrderInformationAssigningAuthority MedicationOrderInformationHasFillNumber" });
+					"MedicationOrderInformationOrderNumber MedicationOrderInformationOrderExpiration MedicationOrderInformationAssigningAuthority MedicationOrderInformationHasFillNumber",
+					"constraints.validation.info",
+					"MedicationOrderInformationDispensingPharmacyLocation MedicationOrderInformationRepeatNumber MedicationOrderInformationStatusCode" });
 		addAnnotation(conditionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.7", "constraints.validation.error",
 				"ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionConditionEntry",
@@ -4705,95 +4705,93 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			new String[] {
 					"value.codeSystemName",
 					"SNOMEDCT",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"constraints.validation.error",
+					"ConditionEntryText ProblemEntryValue",
 					"code.codeSystemName",
 					"SNOMEDCT",
-					"value.codeSystem",
-					"2.16.840.1.113883.6.96",
+					"constraints.validation.warning",
+					"ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode",
 					"constraints.validation.info",
 					"ConditionEntryAgeObservation ConditionEntryProblemStatusObservation ConditionEntryCauseOfDeathObservation",
-					"constraints.validation.error", "ConditionEntryText ProblemEntryValue", "code.codeSystem",
-					"2.16.840.1.113883.6.96", "constraints.validation.warning",
-					"ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode" });
+					"value.codeSystem", "2.16.840.1.113883.6.96" });
 		addAnnotation(
 			patientSummaryEClass,
 			source,
 			new String[] {
+					"templateId.root",
+					"2.16.840.1.113883.3.88.11.32.1",
+					"constraints.validation.error",
+					"PatientSummaryTemplateId",
 					"constraints.validation.info",
-					"PatientSummaryHealthcareProvider PatientSummaryAdvanceDirectivesSection PatientSummaryAllergiesReactionsSection PatientSummaryProblemListSection PatientSummaryEncountersSection PatientSummaryImmunizationsSection PatientSummaryPayersSection PatientSummaryMedicationsSection PatientSummarySurgeriesSection PatientSummaryPlanOfCareSection PatientSummaryPregnancyHistorySection PatientSummaryVitalSignsSection PatientSummaryDiagnosticResultsSection",
-					"constraints.validation.error", "PatientSummaryTemplateId", "templateId.root",
-					"2.16.840.1.113883.3.88.11.32.1" });
+					"PatientSummaryHealthcareProvider PatientSummaryAdvanceDirectivesSection PatientSummaryAllergiesReactionsSection PatientSummaryProblemListSection PatientSummaryEncountersSection PatientSummaryImmunizationsSection PatientSummaryPayersSection PatientSummaryMedicationsSection PatientSummarySurgeriesSection PatientSummaryPlanOfCareSection PatientSummaryPregnancyHistorySection PatientSummaryVitalSignsSection PatientSummaryDiagnosticResultsSection" });
 		addAnnotation(problemListSectionEClass, source, new String[] {
-				"constraints.validation.error", "ProblemListSectionTemplateId ProblemListSectionCondition",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.103" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.103", "constraints.validation.error",
+				"ProblemListSectionTemplateId ProblemListSectionCondition" });
 		addAnnotation(medicationsSectionEClass, source, new String[] {
-				"constraints.validation.error", "HITSPMedicationsSectionTemplateId HITSPMedicationsSectionMedication",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.112" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.112", "constraints.validation.error",
+				"HITSPMedicationsSectionTemplateId HITSPMedicationsSectionMedication" });
 		addAnnotation(advanceDirectivesSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPAdvanceDirectivesSectionTemplateId HITSPAdvanceDirectivesSectionAdvanceDirective",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.116" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.116", "constraints.validation.error",
+				"HITSPAdvanceDirectivesSectionTemplateId HITSPAdvanceDirectivesSectionAdvanceDirective" });
 		addAnnotation(
 			advanceDirectiveEClass,
 			source,
 			new String[] {
-					"code.codeSystemName",
-					"SNOMEDCT",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"templateId.root",
+					"2.16.840.1.113883.3.88.11.83.12",
 					"constraints.validation.error",
 					"AdvanceDirectiveTemplateId AdvanceDirectiveHasStartingTime AdvanceDirectiveHasEndingTime AdvanceDirectiveHasCustodian AdvanceDirectiveParticipantTypeCode AdvanceDirectiveParticipantRoleClassCode AdvanceDirectiveHasAddress AdvanceDirectiveHasTelecom AdvanceDirectiveHasNameOfAgent AdvanceDirectiveObservationCode AdvanceDirectiveEffectiveTime",
-					"templateId.root", "2.16.840.1.113883.3.88.11.83.12", "code.codeSystem", "2.16.840.1.113883.6.96" });
+					"code.codeSystemName", "SNOMEDCT" });
 		addAnnotation(allergiesReactionsSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPAllergiesReactionsSectionTemplateId HITSPAllergiesReactionsSectionAllergyDrugSensitivity",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.102" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.102", "constraints.validation.error",
+				"HITSPAllergiesReactionsSectionTemplateId HITSPAllergiesReactionsSectionAllergyDrugSensitivity" });
 		addAnnotation(encountersSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPEncountersSectionTemplateId HITSPEncountersSectionEncounterEntry", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.127" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.127", "constraints.validation.error",
+				"HITSPEncountersSectionTemplateId HITSPEncountersSectionEncounterEntry" });
 		addAnnotation(encounterEClass, source, new String[] {
-				"code.codeSystemName", "CPT-4", "constraints.validation.error",
-				"HITSPEncounterTemplateId HITSPEncounterAdmissionSourceValueSet", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.16", "code.codeSystem", "2.16.840.1.113883.6.12",
-				"constraints.validation.warning", "HITSPEncounterCode" });
+				"code.codeSystem", "2.16.840.1.113883.6.12", "templateId.root", "2.16.840.1.113883.3.88.11.83.16",
+				"constraints.validation.error", "HITSPEncounterTemplateId HITSPEncounterAdmissionSourceValueSet",
+				"code.codeSystemName", "CPT-4", "constraints.validation.warning", "HITSPEncounterCode" });
 		addAnnotation(immunizationsSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPImmunizationsSectionTemplateId HITSPImmunizationsSectionImmunization", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.117" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.117", "constraints.validation.error",
+				"HITSPImmunizationsSectionTemplateId HITSPImmunizationsSectionImmunization" });
 		addAnnotation(immunizationEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.13", "constraints.validation.error",
 				"HITSPImmunizationTemplateId HITSPImmunizationRefusalReason HITSPImmunizationCodedProductName" });
 		addAnnotation(payersSectionEClass, source, new String[] {
-				"constraints.validation.error", "HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.101" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.101", "constraints.validation.error",
+				"HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider" });
 		addAnnotation(
 			insuranceProviderEClass,
 			source,
 			new String[] {
-					"code.codeSystemName",
-					"LOINC",
-					"constraints.validation.info",
-					"InsuranceProviderInsuranceInfoSourceID InsuranceProviderInsuranceInfoSourceAddr",
-					"constraints.validation.error",
-					"InsuranceProviderTemplateId InsuranceProviderPaymentProviders InsuranceProviderHealthInsuranceType InsuranceProviderInsuranceInformation InsuranceProviderPatientInformation InsuranceProviderMemberId InsuranceProviderRelationshipToSubscriber InsuranceProviderRelationshipToSubscriberCodeSystem InsuranceProviderPatientName InsuranceProviderSubscriberId InsuranceProviderSubscriberAddress InsuranceProviderFinancialResponsibilityPartyType InsuranceProviderFinancialResponsibilityPartyTypeCode CoverageActivityCode",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.5",
 					"code.displayName",
 					"Payment sources",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.code",
-					"48768-6",
+					"constraints.validation.error",
+					"InsuranceProviderTemplateId InsuranceProviderPaymentProviders InsuranceProviderHealthInsuranceType InsuranceProviderInsuranceInformation InsuranceProviderPatientInformation InsuranceProviderMemberId InsuranceProviderRelationshipToSubscriber InsuranceProviderRelationshipToSubscriberCodeSystem InsuranceProviderPatientName InsuranceProviderSubscriberId InsuranceProviderSubscriberAddress InsuranceProviderFinancialResponsibilityPartyType InsuranceProviderFinancialResponsibilityPartyTypeCode CoverageActivityCode",
+					"code.codeSystemName",
+					"LOINC",
 					"constraints.validation.warning",
-					"InsuranceProviderPayerEntryID InsuranceProviderHealthPlanCoverageStartTime InsuranceProviderHealthPlanCoverageStopTime InsuranceProviderMemberIdRoot InsuranceProviderSubscriberInformation InsuranceProviderSubscriberIdRoot InsuranceProviderFinancialResponsibilityPartyAddress" });
+					"InsuranceProviderPayerEntryID InsuranceProviderHealthPlanCoverageStartTime InsuranceProviderHealthPlanCoverageStopTime InsuranceProviderMemberIdRoot InsuranceProviderSubscriberInformation InsuranceProviderSubscriberIdRoot InsuranceProviderFinancialResponsibilityPartyAddress",
+					"code.code", "48768-6", "constraints.validation.info",
+					"InsuranceProviderInsuranceInfoSourceID InsuranceProviderInsuranceInfoSourceAddr" });
 		addAnnotation(surgeriesSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.108" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.108", "constraints.validation.error",
+				"HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity" });
 		addAnnotation(procedureEClass, source, new String[] {
-				"targetSiteCode.codeSystemName", "SNOMEDCT", "contextDependent", "true", "targetSiteCode.codeSystem",
-				"2.16.840.1.113883.6.96", "constraints.validation.error",
-				"HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.17", "constraints.validation.warning",
-				"HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode" });
+				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.3.88.11.83.17",
+				"constraints.validation.error", "HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText",
+				"targetSiteCode.codeSystem", "2.16.840.1.113883.6.96", "constraints.validation.warning",
+				"HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode",
+				"targetSiteCode.codeSystemName", "SNOMEDCT" });
 		addAnnotation(
 			planOfCareSectionEClass,
 			source,
@@ -4805,9 +4803,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.info",
 					"HITSPPlanOfCareSectionMedication HITSPPlanOfCareSectionImmunization HITSPPlanOfCareSectionEncounter HITSPPlanOfCareSectionProcedure" });
 		addAnnotation(vitalSignsSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.119" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.119", "constraints.validation.error",
+				"HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry" });
 		addAnnotation(
 			diagnosticResultsSectionEClass,
 			source,
@@ -4825,16 +4822,16 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addAnnotation(resultOrganizerEClass, source, new String[] {
 				"constraints.validation.error", "HITSPResultOrganizerResult" });
 		addAnnotation(vitalSignEClass, source, new String[] {
-				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.3.88.11.83.14",
-				"constraints.validation.error", "VitalSignTemplateId ResultObservationCode", "code.codeSystem",
-				"2.16.840.1.113883.6.1" });
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.3.88.11.83.14",
+				"constraints.validation.error", "VitalSignTemplateId ResultObservationCode", "code.codeSystemName",
+				"LOINC" });
 		addAnnotation(historyOfPastIllnessSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPHistoryOfPastIllnessSectionTemplateId HITSPHistoryOfPastIllnessSectionCondition",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.104" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.104", "constraints.validation.error",
+				"HITSPHistoryOfPastIllnessSectionTemplateId HITSPHistoryOfPastIllnessSectionCondition" });
 		addAnnotation(chiefComplaintSectionEClass, source, new String[] {
-				"constraints.validation.info", "HITSPChiefComplaintSectionCondition", "constraints.validation.error",
-				"HITSPChiefComplaintSectionTemplateId", "templateId.root", "2.16.840.1.113883.3.88.11.83.105" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.105", "constraints.validation.error",
+				"HITSPChiefComplaintSectionTemplateId", "constraints.validation.info",
+				"HITSPChiefComplaintSectionCondition" });
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.106", "constraints.validation.error",
 				"HITSPReasonForReferralSectionTemplateId", "constraints.validation.info",
@@ -4846,13 +4843,11 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.109", "constraints.validation.error",
 				"HITSPFunctionalStatusSectionTemplateId" });
 		addAnnotation(hospitalAdmissionDiagnosisSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPHospitalAdmissionDiagnosisSectionTemplateId HITSPHospitalAdmissionDiagnosisSectionCondition",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.110" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.110", "constraints.validation.error",
+				"HITSPHospitalAdmissionDiagnosisSectionTemplateId HITSPHospitalAdmissionDiagnosisSectionCondition" });
 		addAnnotation(dischargeDiagnosisSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPDischargeDiagnosisSectionTemplateId HITSPDischargeDiagnosisSectionCondition", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.111" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.111", "constraints.validation.error",
+				"HITSPDischargeDiagnosisSectionTemplateId HITSPDischargeDiagnosisSectionCondition" });
 		addAnnotation(admissionMedicationHistorySectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.113", "constraints.validation.error",
 				"HITSPAdmissionMedicationHistorySectionTemplateId" });
@@ -4860,15 +4855,14 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			hospitalDischargeMedicationsSectionEClass,
 			source,
 			new String[] {
-					"constraints.validation.error",
-					"HITSPHospitalDischargeMedicationsSectionTemplateId HITSPHospitalDischargeMedicationsSectionMedication",
-					"templateId.root", "2.16.840.1.113883.3.88.11.83.114" });
+					"templateId.root", "2.16.840.1.113883.3.88.11.83.114", "constraints.validation.error",
+					"HITSPHospitalDischargeMedicationsSectionTemplateId HITSPHospitalDischargeMedicationsSectionMedication" });
 		addAnnotation(medicationsAdministeredSectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.115", "constraints.validation.error",
 				"HITSPMedicationsAdministeredSectionTemplateId" });
 		addAnnotation(physicalExamSectionEClass, source, new String[] {
-				"constraints.validation.error", "HITSPPhysicalExamSectionTemplateId HITSPPhysicalExamSectionCondition",
-				"templateId.root", "2.16.840.1.113883.3.88.11.83.118" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.118", "constraints.validation.error",
+				"HITSPPhysicalExamSectionTemplateId HITSPPhysicalExamSectionCondition" });
 		addAnnotation(reviewOfSystemsSectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.120", "constraints.validation.error",
 				"HITSPReviewOfSystemsSectionTemplateId" });
@@ -4886,9 +4880,8 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.info",
 					"HITSPAssessmentAndPlanSectionMedication HITSPAssessmentAndPlanSectionImmunization HITSPAssessmentAndPlanSectionEncounterEntry HITSPAssessmentAndPlanSectionProcedureEntry" });
 		addAnnotation(familyHistorySectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"HITSPFamilyHistorySectionTemplateId HITSPFamilyHistorySectionFamilyHistory", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.125" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.125", "constraints.validation.error",
+				"HITSPFamilyHistorySectionTemplateId HITSPFamilyHistorySectionFamilyHistory" });
 		addAnnotation(
 			familyHistoryEClass,
 			source,
@@ -4900,28 +4893,27 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.warning",
 					"FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation" });
 		addAnnotation(socialHistorySectionEClass, source, new String[] {
-				"constraints.validation.info", "HITSPSocialHistorySectionSocialHistory",
-				"constraints.validation.error", "HITSPSocialHistorySectionTemplateId", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.126" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.126", "constraints.validation.error",
+				"HITSPSocialHistorySectionTemplateId", "constraints.validation.info",
+				"HITSPSocialHistorySectionSocialHistory" });
 		addAnnotation(socialHistoryEClass, source, new String[] {
-				"code.codeSystemName", "SNOMEDCT", "templateId.root", "2.16.840.1.113883.10.20.1.33",
-				"constraints.validation.error", "SocialHistoryTemplateId SocialHistoryText", "code.codeSystem",
-				"2.16.840.1.113883.6.96", "constraints.validation.warning",
-				"SocialHistoryCode SocialHistoryEffectiveTime" });
+				"code.codeSystem", "2.16.840.1.113883.6.96", "templateId.root", "2.16.840.1.113883.10.20.1.33",
+				"constraints.validation.error", "SocialHistoryTemplateId SocialHistoryText", "code.codeSystemName",
+				"SNOMEDCT", "constraints.validation.warning", "SocialHistoryCode SocialHistoryEffectiveTime" });
 		addAnnotation(medicalEquipmentSectionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.128", "constraints.validation.error",
 				"HITSPMedicalEquipmentSectionTemplateId" });
 		addAnnotation(languageSpokenEClass, source, new String[] {
-				"modeCode.codeSystemName", "LanguageAbilityMode", "modeCode.codeSystem", "2.16.840.1.113883.5.60",
-				"constraints.validation.error", "LanguageSpokenTemplateId LanguageSpokenModeCode", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.2", "constraints.validation.warning",
-				"LanguageSpokenNoProficiencyLevelCode" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.2", "constraints.validation.error",
+				"LanguageSpokenTemplateId LanguageSpokenModeCode", "constraints.validation.warning",
+				"LanguageSpokenNoProficiencyLevelCode", "modeCode.codeSystem", "2.16.840.1.113883.5.60",
+				"modeCode.codeSystemName", "LanguageAbilityMode" });
 		addAnnotation(healthcareProviderEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.4", "constraints.validation.error",
 				"HealthcareProviderTemplateId" });
 		addAnnotation(commentEClass, source, new String[] {
-				"constraints.validation.error", "HITSPCommentTemplateId HITSPCommentAuthor", "templateId.root",
-				"2.16.840.1.113883.3.88.11.83.11" });
+				"templateId.root", "2.16.840.1.113883.3.88.11.83.11", "constraints.validation.error",
+				"HITSPCommentTemplateId HITSPCommentAuthor" });
 		addAnnotation(medicationTaperedDoseEClass, source, new String[] {
 				"templateId.root", "null", "constraints.validation.error", "MedicationTaperedDoseTemplateId" });
 		addAnnotation(supportGuardianEClass, source, new String[] {
@@ -4938,11 +4930,11 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			medicationInformationEClass,
 			source,
 			new String[] {
-					"constraints.validation.info",
-					"MedicationInformationCodedIngredientVocab",
+					"templateId.root",
+					"2.16.840.1.113883.3.88.11.83.8.2",
 					"constraints.validation.error",
 					"MedicationInformationTemplateId MedicationInformationCodedProductName MedicationInformationCodedProductVocab MedicationInformationCodedBrandName MedicationInformationCodedBrandNameVocab MedicationInformationFreeTextProductName MedicationInformationFreeTextBrandName",
-					"templateId.root", "2.16.840.1.113883.3.88.11.83.8.2" });
+					"constraints.validation.info", "MedicationInformationCodedIngredientVocab" });
 		addAnnotation(referralSummaryEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.3.88.11.48.1", "constraints.validation.error",
 				"ReferralSummaryTemplateId" });
@@ -4950,14 +4942,14 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			dischargeSummaryEClass,
 			source,
 			new String[] {
-					"constraints.validation.error",
-					"DischargeSummaryTemplateId DischargeSummaryProblemListSection DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesReactionsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryHistoryOfPastIllnessSection",
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.48.2",
-					"constraints.validation.info",
-					"DischargeSummaryAdvanceDirectivesSection DischargeSummaryDischargeDiet DischargeSummaryDiagnosticResultsSection DischargeSummaryFunctionalStatusSection DischargeSummaryPhysicalExamSection DischargeSummaryReviewOfSystemsSection",
+					"constraints.validation.error",
+					"DischargeSummaryTemplateId DischargeSummaryProblemListSection DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesReactionsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryHistoryOfPastIllnessSection",
 					"constraints.validation.warning",
-					"DischargeSummaryAdmissionMedicationHistorySection DischargeSummaryHistoryOfPresentIllness DischargeSummaryMedicalEquipmentSection DischargeSummaryMedicationsAdministeredSection DischargeSummaryVitalSignsSection" });
+					"DischargeSummaryAdmissionMedicationHistorySection DischargeSummaryHistoryOfPresentIllness DischargeSummaryMedicalEquipmentSection DischargeSummaryMedicationsAdministeredSection DischargeSummaryVitalSignsSection",
+					"constraints.validation.info",
+					"DischargeSummaryAdvanceDirectivesSection DischargeSummaryDischargeDiet DischargeSummaryDiagnosticResultsSection DischargeSummaryFunctionalStatusSection DischargeSummaryPhysicalExamSection DischargeSummaryReviewOfSystemsSection" });
 	}
 
 	/**
