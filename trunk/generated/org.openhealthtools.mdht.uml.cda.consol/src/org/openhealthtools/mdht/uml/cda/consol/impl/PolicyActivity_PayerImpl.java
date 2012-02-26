@@ -84,8 +84,7 @@ public class PolicyActivity_PayerImpl extends Performer2Impl implements PolicyAc
 	 */
 	public boolean validatePayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity_PayerOperations.validatePayerPayerAssignedEntityPayerOrganizationName(
-			this, diagnostics, context);
+		return PolicyActivity_PayerOperations.validatePayerPayerAssignedEntityPayerOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +130,7 @@ public class PolicyActivity_PayerImpl extends Performer2Impl implements PolicyAc
 	 */
 	public boolean validatePayerPayerAssignedEntityPayerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity_PayerOperations.validatePayerPayerAssignedEntityPayerOrganization(
-			this, diagnostics, context);
+		return PolicyActivity_PayerOperations.validatePayerPayerAssignedEntityPayerOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -141,7 +139,7 @@ public class PolicyActivity_PayerImpl extends Performer2Impl implements PolicyAc
 	 * @generated
 	 */
 	public PolicyActivity_Payer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PolicyActivity_PayerImpl

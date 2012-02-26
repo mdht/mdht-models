@@ -65,7 +65,7 @@ public class RecordTarget_PatientRole2Impl extends PatientRoleImpl implements Re
 	 * @generated
 	 */
 	public RecordTarget_PatientRole2 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // RecordTarget_PatientRole2Impl

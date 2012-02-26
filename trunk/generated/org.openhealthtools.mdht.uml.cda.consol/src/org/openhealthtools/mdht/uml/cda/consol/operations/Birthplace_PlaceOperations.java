@@ -87,15 +87,20 @@ public class Birthplace_PlaceOperations extends PlaceOperations {
 			helper.setContext(ConsolPackage.Literals.BIRTHPLACE_PLACE);
 			try {
 				VALIDATE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthplace_Place)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.BIRTHPLACE_PLACE__PLACE_ADDR,
-					ConsolPlugin.INSTANCE.getString("PlaceAddr"), new Object[] { birthplace_Place }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTHPLACE_PLACE__PLACE_ADDR,
+						 ConsolPlugin.INSTANCE.getString("PlaceAddr"),
+						 new Object [] { birthplace_Place }));
 			}
 			return false;
 		}

@@ -88,18 +88,20 @@ public class GeneralHeaderConstraints_InFulfillmentOfOperations extends InFulfil
 			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF);
 			try {
 				VALIDATE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			generalHeaderConstraints_InFulfillmentOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(generalHeaderConstraints_InFulfillmentOf)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF__IN_FULFILLMENT_OF_ORDER,
-					ConsolPlugin.INSTANCE.getString("InFulfillmentOfOrder"),
-					new Object[] { generalHeaderConstraints_InFulfillmentOf }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF__IN_FULFILLMENT_OF_ORDER,
+						 ConsolPlugin.INSTANCE.getString("InFulfillmentOfOrder"),
+						 new Object [] { generalHeaderConstraints_InFulfillmentOf }));
 			}
 			return false;
 		}

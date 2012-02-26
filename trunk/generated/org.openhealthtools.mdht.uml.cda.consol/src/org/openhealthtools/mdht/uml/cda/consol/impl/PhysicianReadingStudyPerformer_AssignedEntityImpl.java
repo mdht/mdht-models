@@ -57,8 +57,7 @@ public class PhysicianReadingStudyPerformer_AssignedEntityImpl extends AssignedE
 	 * @generated
 	 */
 	public boolean validateAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformer_AssignedEntityOperations.validateAssignedEntityCode(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformer_AssignedEntityOperations.validateAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class PhysicianReadingStudyPerformer_AssignedEntityImpl extends AssignedE
 	 * @generated
 	 */
 	public boolean validateAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformer_AssignedEntityOperations.validateAssignedEntityId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformer_AssignedEntityOperations.validateAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +75,7 @@ public class PhysicianReadingStudyPerformer_AssignedEntityImpl extends AssignedE
 	 * @generated
 	 */
 	public PhysicianReadingStudyPerformer_AssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PhysicianReadingStudyPerformer_AssignedEntityImpl

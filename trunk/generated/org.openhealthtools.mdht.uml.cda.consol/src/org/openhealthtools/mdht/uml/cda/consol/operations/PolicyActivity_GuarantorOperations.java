@@ -93,17 +93,20 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_GUARANTOR);
 			try {
 				VALIDATE_GUARANTOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity_Guarantor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Guarantor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_TIME,
-					ConsolPlugin.INSTANCE.getString("GuarantorTime"), new Object[] { policyActivity_Guarantor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_TIME,
+						 ConsolPlugin.INSTANCE.getString("GuarantorTime"),
+						 new Object [] { policyActivity_Guarantor }));
 			}
 			return false;
 		}
@@ -150,18 +153,20 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_GUARANTOR);
 			try {
 				VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity_Guarantor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Guarantor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntity"),
-					new Object[] { policyActivity_Guarantor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntity"),
+						 new Object [] { policyActivity_Guarantor }));
 			}
 			return false;
 		}
@@ -176,9 +181,9 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in ("
-			+ "value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.111'))) else true endif";
+	protected static final String VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.assignedEntity->exists(not oclIsUndefined()) then self.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = code.oclAsType(datatypes::CE) in ("+
+"value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.111'))) else true endif";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGuarantorGuarantorAssignedEntityCode(PolicyActivity_Guarantor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Guarantor Guarantor Assigned Entity Code</em>}' invariant operation.
@@ -212,18 +217,20 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_GUARANTOR);
 			try {
 				VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity_Guarantor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Guarantor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE,
-					ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityCode"),
-					new Object[] { policyActivity_Guarantor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityCode"),
+						 new Object [] { policyActivity_Guarantor }));
 			}
 			return false;
 		}
@@ -270,18 +277,20 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_GUARANTOR);
 			try {
 				VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity_Guarantor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Guarantor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR,
-					ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityAddr"),
-					new Object[] { policyActivity_Guarantor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR,
+						 ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityAddr"),
+						 new Object [] { policyActivity_Guarantor }));
 			}
 			return false;
 		}
@@ -328,18 +337,20 @@ public class PolicyActivity_GuarantorOperations extends Performer2Operations {
 			helper.setContext(ConsolPackage.Literals.POLICY_ACTIVITY_GUARANTOR);
 			try {
 				VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity_Guarantor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity_Guarantor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM,
-					ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityTelecom"),
-					new Object[] { policyActivity_Guarantor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.POLICY_ACTIVITY_GUARANTOR__GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM,
+						 ConsolPlugin.INSTANCE.getString("GuarantorGuarantorAssignedEntityTelecom"),
+						 new Object [] { policyActivity_Guarantor }));
 			}
 			return false;
 		}

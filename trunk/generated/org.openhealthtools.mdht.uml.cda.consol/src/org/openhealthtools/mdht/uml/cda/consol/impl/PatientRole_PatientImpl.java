@@ -155,7 +155,7 @@ public class PatientRole_PatientImpl extends PatientImpl implements PatientRole_
 	 * @generated
 	 */
 	public PatientRole_Patient init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PatientRole_PatientImpl

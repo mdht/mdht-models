@@ -59,8 +59,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +69,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +79,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +89,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +117,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public MedicationsSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationsSectionEntriesOptionalImpl

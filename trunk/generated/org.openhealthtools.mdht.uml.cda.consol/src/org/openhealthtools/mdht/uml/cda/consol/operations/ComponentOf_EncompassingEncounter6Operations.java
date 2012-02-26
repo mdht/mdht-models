@@ -90,18 +90,20 @@ public class ComponentOf_EncompassingEncounter6Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter6)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter6)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter6EffectiveTime"),
-					new Object[] { componentOf_EncompassingEncounter6 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter6EffectiveTime"),
+						 new Object [] { componentOf_EncompassingEncounter6 }));
 			}
 			return false;
 		}
@@ -147,18 +149,20 @@ public class ComponentOf_EncompassingEncounter6Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter6)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter6)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_ID,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter6Id"),
-					new Object[] { componentOf_EncompassingEncounter6 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_ID,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter6Id"),
+						 new Object [] { componentOf_EncompassingEncounter6 }));
 			}
 			return false;
 		}
@@ -204,18 +208,20 @@ public class ComponentOf_EncompassingEncounter6Operations extends EncompassingEn
 			helper.setContext(ConsolPackage.Literals.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6);
 			try {
 				VALIDATE_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			componentOf_EncompassingEncounter6)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(componentOf_EncompassingEncounter6)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_LOCATION,
-					ConsolPlugin.INSTANCE.getString("EncompassingEncounter6Location"),
-					new Object[] { componentOf_EncompassingEncounter6 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__ENCOMPASSING_ENCOUNTER6_LOCATION,
+						 ConsolPlugin.INSTANCE.getString("EncompassingEncounter6Location"),
+						 new Object [] { componentOf_EncompassingEncounter6 }));
 			}
 			return false;
 		}

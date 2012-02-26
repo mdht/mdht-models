@@ -65,7 +65,7 @@ public class GeneralHeaderConstraints_AuthorImpl extends AuthorImpl implements G
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_Author init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_AuthorImpl

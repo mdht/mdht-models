@@ -87,18 +87,20 @@ public class ProductInstance_PlayingDeviceOperations extends DeviceOperations {
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE_PLAYING_DEVICE);
 			try {
 				VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			productInstance_PlayingDevice)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance_PlayingDevice)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE_PLAYING_DEVICE__PLAYING_DEVICE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlayingDeviceCode"),
-					new Object[] { productInstance_PlayingDevice }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PRODUCT_INSTANCE_PLAYING_DEVICE__PLAYING_DEVICE_CODE,
+						 ConsolPlugin.INSTANCE.getString("PlayingDeviceCode"),
+						 new Object [] { productInstance_PlayingDevice }));
 			}
 			return false;
 		}

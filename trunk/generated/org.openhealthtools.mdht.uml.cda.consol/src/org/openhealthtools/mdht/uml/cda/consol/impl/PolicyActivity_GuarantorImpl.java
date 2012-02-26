@@ -74,8 +74,7 @@ public class PolicyActivity_GuarantorImpl extends Performer2Impl implements Poli
 	 * @generated
 	 */
 	public boolean validateGuarantorGuarantorAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityCode(
-			this, diagnostics, context);
+		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +83,7 @@ public class PolicyActivity_GuarantorImpl extends Performer2Impl implements Poli
 	 * @generated
 	 */
 	public boolean validateGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityAddr(
-			this, diagnostics, context);
+		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +93,7 @@ public class PolicyActivity_GuarantorImpl extends Performer2Impl implements Poli
 	 */
 	public boolean validateGuarantorGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivity_GuarantorOperations.validateGuarantorGuarantorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +102,7 @@ public class PolicyActivity_GuarantorImpl extends Performer2Impl implements Poli
 	 * @generated
 	 */
 	public PolicyActivity_Guarantor init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PolicyActivity_GuarantorImpl

@@ -84,8 +84,7 @@ public class DocumentationOf_ServiceEvent4Impl extends ServiceEventImpl implemen
 	 */
 	public boolean validateServiceEvent4PhysicianReadingStudyPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent4Operations.validateServiceEvent4PhysicianReadingStudyPerformer(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent4Operations.validateServiceEvent4PhysicianReadingStudyPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +93,7 @@ public class DocumentationOf_ServiceEvent4Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public DocumentationOf_ServiceEvent4 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DocumentationOf_ServiceEvent4Impl

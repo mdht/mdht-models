@@ -97,18 +97,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_YEAR,
-					ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToYear"),
-					new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_YEAR,
+						 ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToYear"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -153,18 +155,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_DAY,
-					ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToDay"),
-					new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME_PRECISE_TO_DAY,
+						 ConsolPlugin.INSTANCE.getString("PatientBirthTimePreciseToDay"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -209,17 +213,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME,
-					ConsolPlugin.INSTANCE.getString("PatientBirthTime"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTH_TIME,
+						 ConsolPlugin.INSTANCE.getString("PatientBirthTime"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -264,17 +271,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_ETHNIC_GROUP_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientEthnicGroupCode"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_ETHNIC_GROUP_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientEthnicGroupCode"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -289,9 +299,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))";
+	protected static final String VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.maritalStatusCode.oclIsUndefined() or self.maritalStatusCode.isNullFlavorUndefined()) implies (self.maritalStatusCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.maritalStatusCode.oclAsType(datatypes::CE) in ("+
+"value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientMaritalStatusCode(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Marital Status Code</em>}' invariant operation.
@@ -323,17 +333,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_MARITAL_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientMaritalStatusCode"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_MARITAL_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientMaritalStatusCode"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -378,16 +391,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_NAME, ConsolPlugin.INSTANCE.getString("PatientName"),
-					new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_NAME,
+						 ConsolPlugin.INSTANCE.getString("PatientName"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -402,9 +419,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in ("
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.raceCode.oclIsUndefined() or self.raceCode.isNullFlavorUndefined()) implies (self.raceCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.raceCode.oclAsType(datatypes::CE) in ("+
+"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientRaceCode(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Race Code</em>}' invariant operation.
@@ -436,16 +453,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RACE_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientRaceCode"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RACE_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientRaceCode"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -460,9 +481,9 @@ public class PatientRole_PatientOperations extends PatientOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in ("
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.religiousAffiliationCode.oclIsUndefined() or self.religiousAffiliationCode.isNullFlavorUndefined()) implies (self.religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.religiousAffiliationCode.oclAsType(datatypes::CE) in ("+
+"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReligiousAffiliationCode(PatientRole_Patient, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Religious Affiliation Code</em>}' invariant operation.
@@ -494,18 +515,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RELIGIOUS_AFFILIATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReligiousAffiliationCode"),
-					new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_RELIGIOUS_AFFILIATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PatientReligiousAffiliationCode"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -550,16 +573,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_GUARDIAN,
-					ConsolPlugin.INSTANCE.getString("PatientGuardian"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_GUARDIAN,
+						 ConsolPlugin.INSTANCE.getString("PatientGuardian"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -604,17 +631,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTHPLACE,
-					ConsolPlugin.INSTANCE.getString("PatientBirthplace"), new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_BIRTHPLACE,
+						 ConsolPlugin.INSTANCE.getString("PatientBirthplace"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
@@ -659,18 +689,20 @@ public class PatientRole_PatientOperations extends PatientOperations {
 			helper.setContext(ConsolPackage.Literals.PATIENT_ROLE_PATIENT);
 			try {
 				VALIDATE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientRole_Patient)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientRole_Patient)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_LANGUAGE_COMMUNICATION,
-					ConsolPlugin.INSTANCE.getString("PatientLanguageCommunication"),
-					new Object[] { patientRole_Patient }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PATIENT_ROLE_PATIENT__PATIENT_LANGUAGE_COMMUNICATION,
+						 ConsolPlugin.INSTANCE.getString("PatientLanguageCommunication"),
+						 new Object [] { patientRole_Patient }));
 			}
 			return false;
 		}
