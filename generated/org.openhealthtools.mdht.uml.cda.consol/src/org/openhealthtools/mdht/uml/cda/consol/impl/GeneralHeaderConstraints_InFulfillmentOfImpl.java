@@ -57,8 +57,7 @@ public class GeneralHeaderConstraints_InFulfillmentOfImpl extends InFulfillmentO
 	 * @generated
 	 */
 	public boolean validateInFulfillmentOfOrder(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraints_InFulfillmentOfOperations.validateInFulfillmentOfOrder(
-			this, diagnostics, context);
+		return GeneralHeaderConstraints_InFulfillmentOfOperations.validateInFulfillmentOfOrder(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class GeneralHeaderConstraints_InFulfillmentOfImpl extends InFulfillmentO
 	 * @generated
 	 */
 	public GeneralHeaderConstraints_InFulfillmentOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralHeaderConstraints_InFulfillmentOfImpl

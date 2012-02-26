@@ -67,8 +67,7 @@ public class AdvanceDirectiveObservation_CustodianImpl extends Participant2Impl 
 	 */
 	public boolean validateCustodianAdvanceDirectiveObservationCustodianRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservation_CustodianOperations.validateCustodianAdvanceDirectiveObservationCustodianRole(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservation_CustodianOperations.validateCustodianAdvanceDirectiveObservationCustodianRole(this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +76,7 @@ public class AdvanceDirectiveObservation_CustodianImpl extends Participant2Impl 
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation_Custodian init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdvanceDirectiveObservation_CustodianImpl

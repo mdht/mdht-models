@@ -65,7 +65,7 @@ public class InFulfillmentOf_OrderImpl extends OrderImpl implements InFulfillmen
 	 * @generated
 	 */
 	public InFulfillmentOf_Order init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // InFulfillmentOf_OrderImpl

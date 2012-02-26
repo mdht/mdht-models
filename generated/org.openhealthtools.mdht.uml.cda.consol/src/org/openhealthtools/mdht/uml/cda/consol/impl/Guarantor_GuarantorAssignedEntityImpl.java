@@ -57,8 +57,7 @@ public class Guarantor_GuarantorAssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public boolean validateGuarantorAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityCode(
-			this, diagnostics, context);
+		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class Guarantor_GuarantorAssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public boolean validateGuarantorAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityAddr(
-			this, diagnostics, context);
+		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class Guarantor_GuarantorAssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public boolean validateGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return Guarantor_GuarantorAssignedEntityOperations.validateGuarantorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +84,7 @@ public class Guarantor_GuarantorAssignedEntityImpl extends AssignedEntityImpl im
 	 * @generated
 	 */
 	public Guarantor_GuarantorAssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Guarantor_GuarantorAssignedEntityImpl

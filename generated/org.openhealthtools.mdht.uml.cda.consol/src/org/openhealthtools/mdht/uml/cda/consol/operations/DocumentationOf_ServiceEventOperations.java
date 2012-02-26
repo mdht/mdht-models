@@ -93,18 +93,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_PROCEDURE_CODES,
-					ConsolPlugin.INSTANCE.getString("ServiceEventProcedureCodes"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_PROCEDURE_CODES,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventProcedureCodes"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -150,18 +152,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
-					ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeHasLow"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeHasLow"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -207,20 +211,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-					ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeHasHighWhenNoWidth"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeHasHighWhenNoWidth"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -266,19 +270,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-					ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeNoHighIfWidth"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTimeNoHighIfWidth"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -324,18 +329,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY,
-					ConsolPlugin.INSTANCE.getString("ServiceEventAnyAssistantsAsSecondary"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventAnyAssistantsAsSecondary"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -380,17 +387,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_CODE,
-					ConsolPlugin.INSTANCE.getString("ServiceEventCode"), new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_CODE,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventCode"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}
@@ -435,18 +445,20 @@ public class DocumentationOf_ServiceEventOperations extends ServiceEventOperatio
 			helper.setContext(ConsolPackage.Literals.DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
 				VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			documentationOf_ServiceEvent)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(documentationOf_ServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTime"),
-					new Object[] { documentationOf_ServiceEvent }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DOCUMENTATION_OF_SERVICE_EVENT__SERVICE_EVENT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ServiceEventEffectiveTime"),
+						 new Object [] { documentationOf_ServiceEvent }));
 			}
 			return false;
 		}

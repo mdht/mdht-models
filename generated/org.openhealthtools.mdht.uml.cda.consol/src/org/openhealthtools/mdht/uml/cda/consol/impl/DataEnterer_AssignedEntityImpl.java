@@ -57,8 +57,7 @@ public class DataEnterer_AssignedEntityImpl extends AssignedEntityImpl implement
 	 */
 	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DataEnterer_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return DataEnterer_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +111,7 @@ public class DataEnterer_AssignedEntityImpl extends AssignedEntityImpl implement
 	 * @generated
 	 */
 	public DataEnterer_AssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DataEnterer_AssignedEntityImpl

@@ -57,8 +57,7 @@ public class Authenticator_AssignedEntityImpl extends AssignedEntityImpl impleme
 	 */
 	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Authenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return Authenticator_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +102,7 @@ public class Authenticator_AssignedEntityImpl extends AssignedEntityImpl impleme
 	 * @generated
 	 */
 	public Authenticator_AssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Authenticator_AssignedEntityImpl

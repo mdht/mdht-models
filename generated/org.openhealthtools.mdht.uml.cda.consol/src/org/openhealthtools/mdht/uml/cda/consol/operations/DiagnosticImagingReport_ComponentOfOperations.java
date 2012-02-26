@@ -88,18 +88,20 @@ public class DiagnosticImagingReport_ComponentOfOperations extends Component1Ope
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF);
 			try {
 				VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport_ComponentOf)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport_ComponentOf)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-					ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter"),
-					new Object[] { diagnosticImagingReport_ComponentOf }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF__COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
+						 ConsolPlugin.INSTANCE.getString("ComponentOfEncompassingEncounter"),
+						 new Object [] { diagnosticImagingReport_ComponentOf }));
 			}
 			return false;
 		}

@@ -57,8 +57,7 @@ public class PatientRole_ProviderOrganizationImpl extends OrganizationImpl imple
 	 */
 	public boolean validateProviderOrganizationHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class PatientRole_ProviderOrganizationImpl extends OrganizationImpl imple
 	 * @generated
 	 */
 	public boolean validateProviderOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationTelecom(
-			this, diagnostics, context);
+		return PatientRole_ProviderOrganizationOperations.validateProviderOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +102,7 @@ public class PatientRole_ProviderOrganizationImpl extends OrganizationImpl imple
 	 * @generated
 	 */
 	public PatientRole_ProviderOrganization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PatientRole_ProviderOrganizationImpl

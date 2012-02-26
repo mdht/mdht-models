@@ -56,8 +56,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +111,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * @generated
 	 */
 	public ServiceDeliveryLocation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ServiceDeliveryLocationImpl

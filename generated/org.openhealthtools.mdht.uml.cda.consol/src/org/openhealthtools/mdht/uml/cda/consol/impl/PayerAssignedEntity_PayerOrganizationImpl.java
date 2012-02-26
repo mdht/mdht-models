@@ -66,7 +66,7 @@ public class PayerAssignedEntity_PayerOrganizationImpl extends OrganizationImpl 
 	 * @generated
 	 */
 	public PayerAssignedEntity_PayerOrganization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PayerAssignedEntity_PayerOrganizationImpl

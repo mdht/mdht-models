@@ -57,8 +57,7 @@ public class Informant_AssignedEntityImpl extends AssignedEntityImpl implements 
 	 */
 	public boolean validateAssignedEntityHasNationalProviderIdentifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return Informant_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return Informant_AssignedEntityOperations.validateAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +102,7 @@ public class Informant_AssignedEntityImpl extends AssignedEntityImpl implements 
 	 * @generated
 	 */
 	public Informant_AssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // Informant_AssignedEntityImpl

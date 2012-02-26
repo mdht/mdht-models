@@ -51,7 +51,7 @@ public class DiagnosticImagingReport_InFulfillmentOfImpl extends InFulfillmentOf
 	 * @generated
 	 */
 	public DiagnosticImagingReport_InFulfillmentOf init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DiagnosticImagingReport_InFulfillmentOfImpl

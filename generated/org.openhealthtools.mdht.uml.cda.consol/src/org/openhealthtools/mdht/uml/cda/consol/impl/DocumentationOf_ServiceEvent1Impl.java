@@ -65,8 +65,7 @@ public class DocumentationOf_ServiceEvent1Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public boolean validateServiceEvent1EffectiveTimeHasLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeHasLow(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeHasLow(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +75,7 @@ public class DocumentationOf_ServiceEvent1Impl extends ServiceEventImpl implemen
 	 */
 	public boolean validateServiceEvent1EffectiveTimeHasHighWhenNoWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeHasHighWhenNoWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +85,7 @@ public class DocumentationOf_ServiceEvent1Impl extends ServiceEventImpl implemen
 	 */
 	public boolean validateServiceEvent1EffectiveTimeNoHighIfWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1EffectiveTimeNoHighIfWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +95,7 @@ public class DocumentationOf_ServiceEvent1Impl extends ServiceEventImpl implemen
 	 */
 	public boolean validateServiceEvent1AnyAssistantsAsSecondary(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1AnyAssistantsAsSecondary(
-			this, diagnostics, context);
+		return DocumentationOf_ServiceEvent1Operations.validateServiceEvent1AnyAssistantsAsSecondary(this, diagnostics, context);
 	}
 
 	/**
@@ -126,7 +122,7 @@ public class DocumentationOf_ServiceEvent1Impl extends ServiceEventImpl implemen
 	 * @generated
 	 */
 	public DocumentationOf_ServiceEvent1 init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DocumentationOf_ServiceEvent1Impl

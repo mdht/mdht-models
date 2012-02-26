@@ -57,8 +57,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionDischargeMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +97,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +108,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -123,7 +118,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	@Override
 	public HospitalDischargeMedicationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalDischargeMedicationsSectionImpl

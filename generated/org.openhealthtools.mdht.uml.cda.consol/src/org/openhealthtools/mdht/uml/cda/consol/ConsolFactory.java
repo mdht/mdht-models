@@ -710,6 +710,51 @@ public interface ConsolFactory extends EFactory {
 	Guarantor_GuarantorAssignedEntity createGuarantor_GuarantorAssignedEntity();
 
 	/**
+	 * Returns a new object of class '<em>Policy Activity Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity Coverage</em>'.
+	 * @generated
+	 */
+	PolicyActivity_Coverage createPolicyActivity_Coverage();
+
+	/**
+	 * Returns a new object of class '<em>Coverage Coverage Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Coverage Role</em>'.
+	 * @generated
+	 */
+	Coverage_CoverageRole createCoverage_CoverageRole();
+
+	/**
+	 * Returns a new object of class '<em>Coverage Role Coverage Playing Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Role Coverage Playing Entity</em>'.
+	 * @generated
+	 */
+	CoverageRole_CoveragePlayingEntity createCoverageRole_CoveragePlayingEntity();
+
+	/**
+	 * Returns a new object of class '<em>Policy Activity Holder</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity Holder</em>'.
+	 * @generated
+	 */
+	PolicyActivity_Holder createPolicyActivity_Holder();
+
+	/**
+	 * Returns a new object of class '<em>Holder Holder Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Holder Holder Role</em>'.
+	 * @generated
+	 */
+	Holder_HolderRole createHolder_HolderRole();
+
+	/**
 	 * Returns a new object of class '<em>Authorization Activity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

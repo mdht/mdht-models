@@ -90,18 +90,20 @@ public class PayerAssignedEntity_PayerOrganizationOperations extends Organizatio
 			helper.setContext(ConsolPackage.Literals.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION);
 			try {
 				VALIDATE_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payerAssignedEntity_PayerOrganization)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerAssignedEntity_PayerOrganization)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__PAYER_ORGANIZATION_NAME,
-					ConsolPlugin.INSTANCE.getString("PayerOrganizationName"),
-					new Object[] { payerAssignedEntity_PayerOrganization }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION__PAYER_ORGANIZATION_NAME,
+						 ConsolPlugin.INSTANCE.getString("PayerOrganizationName"),
+						 new Object [] { payerAssignedEntity_PayerOrganization }));
 			}
 			return false;
 		}

@@ -138,7 +138,7 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * @generated
 	 */
 	public StudyAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // StudyActImpl

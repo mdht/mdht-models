@@ -374,6 +374,16 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_TYKKYEb4EeGp67IkyTw1fg" name="DCM"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jyBH4ErhEeGJpZWiuxRVIw" name="DICOMPurposeOfReference "/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_tP6g0F0YEeGt2doqSDULjA" name="HL7FinanciallyResponsiblePartyType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWcQEF_lEeGt2doqSDULjA" name="Coverage Type Value Set">
+      <ownedLiteral xmi:id="_KSQw4F_mEeGt2doqSDULjA" name="FAMDEP"/>
+      <ownedLiteral xmi:id="_SFsQ8F_mEeGt2doqSDULjA" name="FSTUD"/>
+      <ownedLiteral xmi:id="_UxOqIF_mEeGt2doqSDULjA" name="HANDIC"/>
+      <ownedLiteral xmi:id="_a3mygF_mEeGt2doqSDULjA" name="INJ"/>
+      <ownedLiteral xmi:id="_ekJ8wF_mEeGt2doqSDULjA" name="PSTUD"/>
+      <ownedLiteral xmi:id="_ixlmgF_mEeGt2doqSDULjA" name="SELF"/>
+      <ownedLiteral xmi:id="_mQAOIF_mEeGt2doqSDULjA" name="SPON"/>
+      <ownedLiteral xmi:id="_remZ8F_mEeGt2doqSDULjA" name="STUD"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -657,4 +667,15 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" fullName="Financially Responsible Party Value Set" binding="Dynamic" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_pWlaAF_lEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.18877" version="1.0" fullName="Coverage Type Value Set" binding="Dynamic" base_Enumeration="_pWcQEF_lEeGt2doqSDULjA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KSQw4V_mEeGt2doqSDULjA" conceptName="Family dependent" base_EnumerationLiteral="_KSQw4F_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_SFsQ8V_mEeGt2doqSDULjA" conceptName="Full-time student" base_EnumerationLiteral="_SFsQ8F_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_UxOqIV_mEeGt2doqSDULjA" conceptName="Handicapped dependent" base_EnumerationLiteral="_UxOqIF_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_a3mygV_mEeGt2doqSDULjA" conceptName="Injured plaintiff" base_EnumerationLiteral="_a3mygF_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_ekJ8wV_mEeGt2doqSDULjA" conceptName="Part-time student" base_EnumerationLiteral="_ekJ8wF_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_ixlmgV_mEeGt2doqSDULjA" conceptName="Self" base_EnumerationLiteral="_ixlmgF_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_mQAOIV_mEeGt2doqSDULjA" base_EnumerationLiteral="_mQAOIF_mEeGt2doqSDULjA"/>
+  <term:ValueSetCode xmi:id="_remZ8V_mEeGt2doqSDULjA" conceptName="Student" base_EnumerationLiteral="_remZ8F_mEeGt2doqSDULjA"/>
 </xmi:XMI>
