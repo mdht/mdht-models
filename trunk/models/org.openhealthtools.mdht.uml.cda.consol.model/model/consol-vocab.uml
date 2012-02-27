@@ -34,7 +34,7 @@
       <ownedLiteral xmi:id="_2Fw2NhSVEeGGzu7fmW9pXw" name="418799008"/>
       <ownedLiteral xmi:id="_2Fw2NxSVEeGGzu7fmW9pXw" name="55607006"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2GDxIBSVEeGGzu7fmW9pXw" name="ProblemAct statusCode">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2GDxIBSVEeGGzu7fmW9pXw" name="ProblemActStatusCode">
       <ownedComment xmi:id="_2GDxIRSVEeGGzu7fmW9pXw">
         <body>This value set indicates the status of the problem concern act.</body>
       </ownedComment>
@@ -429,7 +429,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_2Fz5gBSVEeGGzu7fmW9pXw" conceptName="Functional limitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Fz5gRSVEeGGzu7fmW9pXw" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2F0gkBSVEeGGzu7fmW9pXw" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NxSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2GDxJhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.11.20.9.19" version="2011-09-09" base_Enumeration="_2GDxIBSVEeGGzu7fmW9pXw"/>
+  <term:ValueSetVersion xmi:id="_2GDxJhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.11.20.9.19" version="2011-09-09" base_Enumeration="_2GDxIBSVEeGGzu7fmW9pXw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2GEYMBSVEeGGzu7fmW9pXw" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_2GDxIhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GE_QBSVEeGGzu7fmW9pXw" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_2GDxIxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GE_QRSVEeGGzu7fmW9pXw" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_2GDxJBSVEeGGzu7fmW9pXw"/>
