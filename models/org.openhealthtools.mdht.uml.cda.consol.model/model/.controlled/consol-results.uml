@@ -58,48 +58,48 @@ An appropriate nullFlavor can be used when a single result observation is contai
     <ownedEnd xmi:id="_2JxziBSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2KC5QBSVEeGGzu7fmW9pXw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.1">
-    <ruleId>CONF-7126</ruleId>
-    <ruleId>CONF-9134</ruleId>
+    <ruleId>CONF:7126</ruleId>
+    <ruleId>CONF:9134</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2J_O4hSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J_O4BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7164</ruleId>
+    <ruleId>CONF:7164</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J_18BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-400</ruleId>
+    <ruleId>CONF:400</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J_19BSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-401</ruleId>
+    <ruleId>CONF:401</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KAdAhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-402</ruleId>
+    <ruleId>CONF:402</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KBEExSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-403</ruleId>
+    <ruleId>CONF:403</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KBrIxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-404</ruleId>
+    <ruleId>CONF:404</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KCSMhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-406</ruleId>
+    <ruleId>CONF:406</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2JzBohSVEeGGzu7fmW9pXw" base_Property="_2JzBoBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7122</ruleId>
+    <ruleId>CONF:7122</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JzBphSVEeGGzu7fmW9pXw" base_Property="_2JzBoxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7127</ruleId>
+    <ruleId>CONF:7127</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2JzosRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7128</ruleId>
+    <ruleId>CONF:7128</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J0PwBSVEeGGzu7fmW9pXw" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7123</ruleId>
+    <ruleId>CONF:7123</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2J020BSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-399</ruleId>
+    <ruleId>CONF:399</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2JxziRSVEeGGzu7fmW9pXw" base_Association="_2JxzhxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7124</ruleId>
-    <ruleId>CONF-7125</ruleId>
+    <ruleId>CONF:7124</ruleId>
+    <ruleId>CONF:7125</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2J1d4BSVEeGGzu7fmW9pXw" name="ResultObservation">
     <ownedComment xmi:id="_JIcp4CXiEeGmGonM_wRfcQ">
@@ -204,22 +204,22 @@ An appropriate nullFlavor can be used when a single result observation is contai
     </ownedAttribute>
   </uml:Class>
   <CDA:ConstraintValidation xmi:id="_2J69chSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J69cBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7166</ruleId>
+    <ruleId>CONF:7166</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J7kgxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-415</ruleId>
+    <ruleId>CONF:415</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J8LkxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-417</ruleId>
+    <ruleId>CONF:417</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J8LlhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-419</ruleId>
+    <ruleId>CONF:419</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J8yohSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-420</ruleId>
+    <ruleId>CONF:420</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J9ZshSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-421</ruleId>
+    <ruleId>CONF:421</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2J2sARSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>C154-[DE-15.03-1]</ruleId>
@@ -231,32 +231,32 @@ An appropriate nullFlavor can be used when a single result observation is contai
     <ruleId>C83-[DE-15.05-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2J4hNRSVEeGGzu7fmW9pXw" base_Property="_2J4hMxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7131</ruleId>
+    <ruleId>CONF:7131</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J5IQxSVEeGGzu7fmW9pXw" base_Property="_2J5IQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7137</ruleId>
+    <ruleId>CONF:7137</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J2E8BSVEeGGzu7fmW9pXw" base_Property="_2J1d6hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7133</ruleId>
+    <ruleId>CONF:7133</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J5vURSVEeGGzu7fmW9pXw" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7134</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J2E8RSVEeGGzu7fmW9pXw" base_Property="_2J1d6xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7140</ruleId>
-    <ruleId>CONF-7141</ruleId>
+    <ruleId>CONF:7140</ruleId>
+    <ruleId>CONF:7141</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J2sABSVEeGGzu7fmW9pXw" base_Property="_2J1d7xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7143</ruleId>
+    <ruleId>CONF:7143</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J6WZBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2J6WYBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7147</ruleId>
+    <ruleId>CONF:7147</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2J6WaRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2J6WZRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7148</ruleId>
+    <ruleId>CONF:7148</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_TIHhwBneEeGs5a462vYX5Q" base_Class="_2J1d4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.2">
-    <ruleId>CONF-9138</ruleId>
+    <ruleId>CONF:9138</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2Js7AxSVEeGGzu7fmW9pXw" name="ResultsSection">
     <ownedComment xmi:id="_XjcvMDr8EeGVevaNZNc6DA">
@@ -294,21 +294,21 @@ Procedure results are typically generated by a clinician to provide more granula
     <ruleId>CONF:9137</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2Jv-URSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-392</ruleId>
+    <ruleId>CONF:392</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2JuJIBSVEeGGzu7fmW9pXw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-389</ruleId>
-    <ruleId>CONF-390</ruleId>
+    <ruleId>CONF:389</ruleId>
+    <ruleId>CONF:390</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2JvXQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-391</ruleId>
+    <ruleId>CONF:391</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2Jv-UBSVEeGGzu7fmW9pXw" base_Property="_2Js7DhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7111</ruleId>
+    <ruleId>CONF:7111</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2JwlYxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-388</ruleId>
+    <ruleId>CONF:388</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_xGqiEBVdEeGQCvUGzi1kDQ" name="ResultsSectionEntriesOptional">
     <ownedComment xmi:id="_xGqiERVdEeGQCvUGzi1kDQ" annotatedElement="_xGqiEBVdEeGQCvUGzi1kDQ">
@@ -354,33 +354,33 @@ Procedure results are typically generated by a clinician to provide more granula
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_sMASkBrGEeGZ46SdiDZtPQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_xGqiFhVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-7117</ruleId>
+    <ruleId>CONF:7117</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_niTuIBrHEeGZ46SdiDZtPQ" base_Property="_xGqiFxVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF-8891</ruleId>
+    <ruleId>CONF:8891</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_ulYIQBrHEeGZ46SdiDZtPQ" base_Property="_xGqiGBVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF-7118</ruleId>
+    <ruleId>CONF:7118</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_c-nMABtuEeG4C_iCHrZZ9w" code="" base_Property="_2JyakBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
-    <ruleId>CONF-7121</ruleId>
-    <ruleId>CONF-7165</ruleId>
+    <ruleId>CONF:7121</ruleId>
+    <ruleId>CONF:7165</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_fbWpUBtwEeG4C_iCHrZZ9w" identifier="" code="completed" displayName="Completed" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_76siUBtxEeG4C_iCHrZZ9w" severity="WARNING" base_Constraint="_1dxCgBtuEeG4C_iCHrZZ9w">
-    <ruleId>CONF-7165</ruleId>
+    <ruleId>CONF:7165</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_FP0eoBtyEeG4C_iCHrZZ9w" name="" code="EVN" displayName="Event" base_Property="_2JzBoBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_eaFnUBt1EeG4C_iCHrZZ9w" severity="WARNING">
-    <ruleId>CONF-9108</ruleId>
+    <ruleId>CONF:9108</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_JwWb0Bt4EeG4C_iCHrZZ9w" base_Property="_2J4hMRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-7130</ruleId>
+    <ruleId>CONF:7130</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_SFhXABt4EeG4C_iCHrZZ9w" identifier="" code="OBS" displayName="Observation" base_Property="_2J4hMRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
@@ -389,39 +389,39 @@ Procedure results are typically generated by a clinician to provide more granula
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_s1du8Bt5EeG4C_iCHrZZ9w" severity="WARNING">
-    <ruleId>CONF-9109</ruleId>
+    <ruleId>CONF:9109</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_rQFaoBt7EeG4C_iCHrZZ9w" code="completed" displayName="Completed" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_h3mWYBt9EeG4C_iCHrZZ9w" severity="INFO" base_Property="_Wwv9wBt9EeG4C_iCHrZZ9w">
-    <ruleId>CONF-7153</ruleId>
+    <ruleId>CONF:7153</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_B0fw0Bt-EeG4C_iCHrZZ9w" severity="INFO">
-    <ruleId>CONF-7149</ruleId>
+    <ruleId>CONF:7149</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_KgrSkByWEeGaOZtrEokzNQ" severity="WARNING" base_Property="_JTUuoByWEeGaOZtrEokzNQ">
-    <ruleId>CONF-7138</ruleId>
+    <ruleId>CONF:7138</ruleId>
   </CDA:TextValue>
   <CDA:TextValue xmi:id="_ojp5cB7EEeGaOZtrEokzNQ" base_Property="_gwkXoB7EEeGaOZtrEokzNQ">
-    <ruleId>CONF-8891</ruleId>
+    <ruleId>CONF:8891</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_7vV1wB7FEeGaOZtrEokzNQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_7vUnoB7FEeGaOZtrEokzNQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-7110</ruleId>
+    <ruleId>CONF:7110</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_7vY5EB7FEeGaOZtrEokzNQ" base_Property="_7vYSAB7FEeGaOZtrEokzNQ">
-    <ruleId>CONF-8892</ruleId>
+    <ruleId>CONF:8892</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_1-sa4B7HEeGaOZtrEokzNQ"/>
   <CDA:ConstraintValidation xmi:id="_1-YHcB7rEeGaOZtrEokzNQ" severity="WARNING" base_Constraint="_tjUmsB7rEeGaOZtrEokzNQ">
-    <ruleId>CONF-7138</ruleId>
+    <ruleId>CONF:7138</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_4nrIIB7vEeGDhvvzMMgVgQ" base_Constraint="_jXJw0B7vEeGDhvvzMMgVgQ">
-    <ruleId>CONF-7152</ruleId>
+    <ruleId>CONF:7152</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_VKBKYB-4EeGZsIzHpWxp_Q" severity="INFO" base_Constraint="_OYDHUB-4EeGZsIzHpWxp_Q">
-    <ruleId>CONF-7149</ruleId>
+    <ruleId>CONF:7149</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_GXXWwBrIEeGZ46SdiDZtPQ" memberEnd="_GXWIoBrIEeGZ46SdiDZtPQ _GXX90BrIEeGZ46SdiDZtPQ">
     <ownedEnd xmi:id="_GXX90BrIEeGZ46SdiDZtPQ" type="_xGqiEBVdEeGQCvUGzi1kDQ" association="_GXXWwBrIEeGZ46SdiDZtPQ"/>
@@ -433,6 +433,6 @@ Procedure results are typically generated by a clinician to provide more granula
     <ruleId>CONF:7128</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_yL4hMDsOEeGVevaNZNc6DA" base_Constraint="_sq16gDsOEeGVevaNZNc6DA">
-    <ruleId>CONF-7139</ruleId>
+    <ruleId>CONF:7139</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

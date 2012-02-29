@@ -423,7 +423,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19"/>
-  <CDA:AssociationValidation xmi:id="_XcS_gDY0EeGUovy31cP2ng" base_Association="_eyK8AhUmEeGvPruliC3crg">
+  <CDA:AssociationValidation xmi:id="_XcS_gDY0EeGUovy31cP2ng" severity="WARNING" base_Association="_eyK8AhUmEeGvPruliC3crg">
     <ruleId>CONF:7959</ruleId>
     <ruleId>CONF:8905</ruleId>
   </CDA:AssociationValidation>
