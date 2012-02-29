@@ -345,7 +345,7 @@ public class PayersSectionOperations extends SectionOperations {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.ERROR,
+						(Diagnostic.WARNING,
 						 ConsolValidator.DIAGNOSTIC_SOURCE,
 						 ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_COVERAGE_ACTIVITY,
 						 ConsolPlugin.INSTANCE.getString("PayersSectionCoverageActivity"),
