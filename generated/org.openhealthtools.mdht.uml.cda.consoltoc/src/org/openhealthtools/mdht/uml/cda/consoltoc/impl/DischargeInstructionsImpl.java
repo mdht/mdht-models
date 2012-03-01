@@ -134,16 +134,6 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  public boolean validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-		return DischargeInstructionsOperations.validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(this, diagnostics, context);
-	}
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @generated
-	 */
   public PlanOfCareSection getPlanOfCareSection()
   {
 		return DischargeInstructionsOperations.getPlanOfCareSection(this);
@@ -207,16 +197,6 @@ public class DischargeInstructionsImpl extends GeneralHeaderConstraintsImpl impl
   public MedicalEquipmentSection getMedicalEquipmentSection()
   {
 		return DischargeInstructionsOperations.getMedicalEquipmentSection(this);
-	}
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional2()
-  {
-		return DischargeInstructionsOperations.getAdvanceDirectivesSectionEntriesOptional2(this);
 	}
 
   /**

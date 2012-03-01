@@ -353,10 +353,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consoltoc.ecore#//DischargeInstructions/DischargeInstructionsMedicalEquipmentSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consoltoc.ecore#//DischargeInstructions/DischargeInstructionsMedicalEquipmentSection/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consoltoc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consoltoc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getPlanOfCareSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAllergiesSectionEntriesOptional"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getProblemSectionEntriesOptional"/>
@@ -364,7 +360,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAdvanceDirectivesSectionEntriesOptional"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getImmunizationsSectionEntriesOptional"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getMedicalEquipmentSection"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consoltoc.ecore#//DischargeInstructions/getAdvanceDirectivesSectionEntriesOptional2"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

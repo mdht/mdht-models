@@ -957,15 +957,6 @@ public class ConsoltocPackageImpl extends EPackageImpl implements ConsoltocPacka
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(dischargeInstructionsEClass, ecorePackage.getEBoolean(), "validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(dischargeInstructionsEClass, theConsolPackage.getPlanOfCareSection(), "getPlanOfCareSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(dischargeInstructionsEClass, theConsolPackage.getAllergiesSectionEntriesOptional(), "getAllergiesSectionEntriesOptional", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -979,8 +970,6 @@ public class ConsoltocPackageImpl extends EPackageImpl implements ConsoltocPacka
 		addEOperation(dischargeInstructionsEClass, theConsolPackage.getImmunizationsSectionEntriesOptional(), "getImmunizationsSectionEntriesOptional", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(dischargeInstructionsEClass, theConsolPackage.getMedicalEquipmentSection(), "getMedicalEquipmentSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(dischargeInstructionsEClass, theConsolPackage.getAdvanceDirectivesSectionEntriesOptional(), "getAdvanceDirectivesSectionEntriesOptional2", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1030,8 +1019,8 @@ public class ConsoltocPackageImpl extends EPackageImpl implements ConsoltocPacka
 		   source, 
 		   new String[] {
 			 "templateId.root", "2.16.840.1.113883.3.1275.1.1.2.1",
-			 "constraints.validation.error", "DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesSectionEntriesOptional DischargeInstructionsProblemSectionEntriesOptional DischargeInstructionsHospitalDischargeMedicationsSectionEntriesOptional DischargeInstructionsAdvanceDirectivesSectionEntriesOptional DischargeInstructionsImmunizationsSectionEntriesOptional DischargeInstructionsMedicalEquipmentSection DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2"
-		   });																																																	
+			 "constraints.validation.error", "DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesSectionEntriesOptional DischargeInstructionsProblemSectionEntriesOptional DischargeInstructionsHospitalDischargeMedicationsSectionEntriesOptional DischargeInstructionsAdvanceDirectivesSectionEntriesOptional DischargeInstructionsImmunizationsSectionEntriesOptional DischargeInstructionsMedicalEquipmentSection"
+		   });																																											
 	}
 
   /**
@@ -1062,7 +1051,7 @@ public class ConsoltocPackageImpl extends EPackageImpl implements ConsoltocPacka
 		  (dischargeInstructionsEClass, 
 		   source, 
 		   new String[] {
-		   });																																																
+		   });																																										
 	}
 
 } //ConsoltocPackageImpl

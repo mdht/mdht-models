@@ -479,11 +479,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SNOWkD_MEeGIl9z9SjyqRw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SNOWkT_MEeGIl9z9SjyqRw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_KiRdED_MEeGIl9z9SjyqRw" name="advanceDirectivesSectionEntriesOptional2" association="_KiRdEj_MEeGIl9z9SjyqRw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-advancedirectives.uml#_1RZdIBVdEeGQCvUGzi1kDQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SnQnMD_MEeGIl9z9SjyqRw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SnQnMT_MEeGIl9z9SjyqRw" value="1"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jdGYYj_LEeGIl9z9SjyqRw" memberEnd="_jdGYYD_LEeGIl9z9SjyqRw _jdGYYz_LEeGIl9z9SjyqRw">
       <ownedEnd xmi:id="_jdGYYz_LEeGIl9z9SjyqRw" type="_g6MWwD_LEeGIl9z9SjyqRw" association="_jdGYYj_LEeGIl9z9SjyqRw"/>
@@ -505,9 +500,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_6Br_oj_LEeGIl9z9SjyqRw" memberEnd="_6Br_oD_LEeGIl9z9SjyqRw _6Br_oz_LEeGIl9z9SjyqRw">
       <ownedEnd xmi:id="_6Br_oz_LEeGIl9z9SjyqRw" type="_g6MWwD_LEeGIl9z9SjyqRw" association="_6Br_oj_LEeGIl9z9SjyqRw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KiRdEj_MEeGIl9z9SjyqRw" memberEnd="_KiRdED_MEeGIl9z9SjyqRw _KiRdEz_MEeGIl9z9SjyqRw">
-      <ownedEnd xmi:id="_KiRdEz_MEeGIl9z9SjyqRw" type="_g6MWwD_LEeGIl9z9SjyqRw" association="_KiRdEj_MEeGIl9z9SjyqRw"/>
     </packagedElement>
     <profileApplication xmi:id="_NtY7DsqHEeC8XvPcqnB3eA">
       <eAnnotations xmi:id="_NtY7D8qHEeC8XvPcqnB3eA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -592,5 +584,4 @@
   <CDA:AssociationValidation xmi:id="_aveUcE3CEeGug8Lotu3QeQ" base_Association="_0d94Yj_LEeGIl9z9SjyqRw"/>
   <CDA:AssociationValidation xmi:id="_bTx7YE3CEeGug8Lotu3QeQ" base_Association="_3CXHwj_LEeGIl9z9SjyqRw"/>
   <CDA:AssociationValidation xmi:id="_bya_ME3CEeGug8Lotu3QeQ" base_Association="_6Br_oj_LEeGIl9z9SjyqRw"/>
-  <CDA:AssociationValidation xmi:id="_cTmZoE3CEeGug8Lotu3QeQ" base_Association="_KiRdEj_MEeGIl9z9SjyqRw"/>
 </xmi:XMI>

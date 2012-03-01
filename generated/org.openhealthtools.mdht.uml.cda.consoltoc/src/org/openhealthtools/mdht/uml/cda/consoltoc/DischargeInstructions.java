@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consoltoc.ConsoltocPackage#getDischargeInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.1275.1.1.2.1' constraints.validation.error='DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesSectionEntriesOptional DischargeInstructionsProblemSectionEntriesOptional DischargeInstructionsHospitalDischargeMedicationsSectionEntriesOptional DischargeInstructionsAdvanceDirectivesSectionEntriesOptional DischargeInstructionsImmunizationsSectionEntriesOptional DischargeInstructionsMedicalEquipmentSection DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.1275.1.1.2.1' constraints.validation.error='DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesSectionEntriesOptional DischargeInstructionsProblemSectionEntriesOptional DischargeInstructionsHospitalDischargeMedicationsSectionEntriesOptional DischargeInstructionsAdvanceDirectivesSectionEntriesOptional DischargeInstructionsImmunizationsSectionEntriesOptional DischargeInstructionsMedicalEquipmentSection'"
  * @generated
  */
 public interface DischargeInstructions extends GeneralHeaderConstraints
@@ -124,19 +124,6 @@ public interface DischargeInstructions extends GeneralHeaderConstraints
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))'"
-	 * @generated
-	 */
-  boolean validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
@@ -216,18 +203,6 @@ public interface DischargeInstructions extends GeneralHeaderConstraints
 	 * @generated
 	 */
   MedicalEquipmentSection getMedicalEquipmentSection();
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)'"
-	 * @generated
-	 */
-  AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional2();
 
   /**
 	 * <!-- begin-user-doc -->
