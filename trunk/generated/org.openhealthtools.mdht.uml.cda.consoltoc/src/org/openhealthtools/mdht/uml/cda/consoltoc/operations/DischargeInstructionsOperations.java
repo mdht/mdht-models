@@ -49,7 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consoltoc.util.ConsoltocValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Advance Directives Section Entries Optional</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#validateDischargeInstructionsImmunizationsSectionEntriesOptional(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Immunizations Section Entries Optional</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#validateDischargeInstructionsMedicalEquipmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Medical Equipment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Advance Directives Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getPlanOfCareSection() <em>Get Plan Of Care Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getAllergiesSectionEntriesOptional() <em>Get Allergies Section Entries Optional</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getProblemSectionEntriesOptional() <em>Get Problem Section Entries Optional</em>}</li>
@@ -57,7 +56,6 @@ import org.openhealthtools.mdht.uml.cda.consoltoc.util.ConsoltocValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getAdvanceDirectivesSectionEntriesOptional() <em>Get Advance Directives Section Entries Optional</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getImmunizationsSectionEntriesOptional() <em>Get Immunizations Section Entries Optional</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getMedicalEquipmentSection() <em>Get Medical Equipment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#getAdvanceDirectivesSectionEntriesOptional2() <em>Get Advance Directives Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consoltoc.DischargeInstructions#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -496,66 +494,6 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 	}
 
   /**
-	 * The cached OCL expression body for the '{@link #validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Advance Directives Section Entries Optional2</em>}' operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @see #validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-  protected static final String VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))";
-
-  /**
-	 * The cached OCL invariant for the '{@link #validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Instructions Advance Directives Section Entries Optional2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @see #validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-  
-  protected static Constraint VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))
-	 * @param dischargeInstructions The receiving '<em><b>Discharge Instructions</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-  
-  public static  boolean validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions dischargeInstructions, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-		if (VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS);
-			try {
-				VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeInstructions)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsoltocValidator.DIAGNOSTIC_SOURCE,
-						 ConsoltocValidator.DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-						 ConsoltocPlugin.INSTANCE.getString("DischargeInstructionsAdvanceDirectivesSectionEntriesOptional2"),
-						 new Object [] { dischargeInstructions }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-  /**
 	 * The cached OCL expression body for the '{@link #getPlanOfCareSection(DischargeInstructions) <em>Get Plan Of Care Section</em>}' operation.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -588,7 +526,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(158));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(157));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -633,7 +571,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(159));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(158));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -678,7 +616,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(160));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(159));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -723,7 +661,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(161));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(160));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -768,7 +706,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(162));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(161));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -813,7 +751,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(163));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(162));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -858,7 +796,7 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
   {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(164));
+			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(163));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			}
@@ -868,51 +806,6 @@ public class DischargeInstructionsOperations extends GeneralHeaderConstraintsOpe
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY);
 		return (MedicalEquipmentSection) query.evaluate(dischargeInstructions);
-	}
-
-  /**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions) <em>Get Advance Directives Section Entries Optional2</em>}' operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions)
-	 * @generated
-	 * @ordered
-	 */
-  protected static final String GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)";
-
-  /**
-	 * The cached OCL query for the '{@link #getAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions) <em>Get Advance Directives Section Entries Optional2</em>}' query operation.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions)
-	 * @generated
-	 * @ordered
-	 */
-  protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY;
-
-  /**
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)
-	 * @param dischargeInstructions The receiving '<em><b>Discharge Instructions</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-  public static  AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions dischargeInstructions)
-  {
-		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS, ConsoltocPackage.Literals.DISCHARGE_INSTRUCTIONS.getEAllOperations().get(165));
-			try {
-				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY);
-		return (AdvanceDirectivesSectionEntriesOptional) query.evaluate(dischargeInstructions);
 	}
 
   /**

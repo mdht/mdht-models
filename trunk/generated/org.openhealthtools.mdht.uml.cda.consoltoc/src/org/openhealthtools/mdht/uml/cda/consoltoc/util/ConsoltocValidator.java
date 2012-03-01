@@ -593,20 +593,12 @@ public class ConsoltocValidator extends EObjectValidator
   public static final int DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_MEDICAL_EQUIPMENT_SECTION = 68;
 
   /**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Instructions Advance Directives Section Entries Optional2' of 'Discharge Instructions'.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public static final int DISCHARGE_INSTRUCTIONS__DISCHARGE_INSTRUCTIONS_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2 = 69;
-
-  /**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Discharge Instructions'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  public static final int DISCHARGE_INSTRUCTIONS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 70;
+  public static final int DISCHARGE_INSTRUCTIONS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 69;
 
   /**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -614,7 +606,7 @@ public class ConsoltocValidator extends EObjectValidator
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 70;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 69;
 
   /**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1985,7 +1977,6 @@ public class ConsoltocValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional(dischargeInstructions, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsImmunizationsSectionEntriesOptional(dischargeInstructions, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsMedicalEquipmentSection(dischargeInstructions, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDischargeInstructions_validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(dischargeInstructions, diagnostics, context);
 		return result;
 	}
 
@@ -2064,17 +2055,6 @@ public class ConsoltocValidator extends EObjectValidator
   public boolean validateDischargeInstructions_validateDischargeInstructionsMedicalEquipmentSection(DischargeInstructions dischargeInstructions, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
 		return dischargeInstructions.validateDischargeInstructionsMedicalEquipmentSection(diagnostics, context);
-	}
-
-  /**
-	 * Validates the validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2 constraint of '<em>Discharge Instructions</em>'.
-	 * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-	 * @generated
-	 */
-  public boolean validateDischargeInstructions_validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(DischargeInstructions dischargeInstructions, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-		return dischargeInstructions.validateDischargeInstructionsAdvanceDirectivesSectionEntriesOptional2(diagnostics, context);
 	}
 
   /**
