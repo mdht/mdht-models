@@ -48,9 +48,6 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ruleId>CONF:7924</ruleId>
     <ruleId>CONF:10434</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NHbYxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-34</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2MX0gBSVEeGGzu7fmW9pXw" code="48768-6" displayName="Payers" base_Property="_2MXNcRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7925</ruleId>
@@ -81,8 +78,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpMBUlEeGvPruliC3crg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vS_KMF14EeGt2doqSDULjA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vS_KMV14EeGt2doqSDULjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WRxj0GPsEeGskvPNzg7rUw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WRxj0WPsEeGskvPNzg7rUw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpMhUlEeGvPruliC3crg" name="id" visibility="private" aggregation="composite">
@@ -101,8 +98,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpOBUlEeGvPruliC3crg" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UdHpORUlEeGvPruliC3crg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UdHpOhUlEeGvPruliC3crg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZseJEGPsEeGskvPNzg7rUw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZseJEWPsEeGskvPNzg7rUw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fqsDwBnZEeGs5a462vYX5Q" name="authorizationActivity" type="_XUoXwBnZEeGs5a462vYX5Q" association="_fqsDwhnZEeGs5a462vYX5Q">

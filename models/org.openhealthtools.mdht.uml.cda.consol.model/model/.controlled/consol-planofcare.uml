@@ -61,16 +61,11 @@
   <CDA:CDATemplate xmi:id="_jeR44BnTEeGs5a462vYX5Q" base_Class="_2NP-QxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.10">
     <ruleId>CONF:10435</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2N0mCBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-484</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:CodeSystemConstraint xmi:id="_2NP-XhSVEeGGzu7fmW9pXw" code="18776-5" displayName="Treatment plan" base_Property="_2NP-XRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7724</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:TextValue xmi:id="_2NP-YBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-483</ruleId>
-  </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2NWE4xSVEeGGzu7fmW9pXw" base_Property="_2NWE4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7725</ruleId>
   </CDA:PropertyValidation>
@@ -118,12 +113,7 @@
   <CDA:CDATemplate xmi:id="_2NWE8xSVEeGGzu7fmW9pXw" base_Class="_2NWE5xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.39">
     <ruleId>CONF:8544.CONF:10510</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NWE9hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-488</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NWE9xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-491</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:PropertyValidation xmi:id="_2NWE9RSVEeGGzu7fmW9pXw" base_Property="_2NWE8hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8539</ruleId>
   </CDA:PropertyValidation>
@@ -155,12 +145,6 @@
     <ruleId>CONF:8566</ruleId>
     <ruleId>CONF:10511</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NcLghSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-488</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NcLgxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-491</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2NcLgRSVEeGGzu7fmW9pXw" base_Property="_2NWFDxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8565</ruleId>
   </CDA:PropertyValidation>
@@ -189,12 +173,7 @@
     <ruleId>CONF:8583</ruleId>
     <ruleId>CONF:10512</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NcLnRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-490</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NcLnhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-491</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:PropertyValidation xmi:id="_2NcLnBSVEeGGzu7fmW9pXw" base_Property="_2NcLmRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8582</ruleId>
   </CDA:PropertyValidation>
@@ -223,12 +202,6 @@
     <ruleId>CONF:8570</ruleId>
     <ruleId>CONF:10513</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NiSORSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-488</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NiSOhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-491</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2NiSOBSVEeGGzu7fmW9pXw" base_Property="_2NiSNRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8569</ruleId>
   </CDA:PropertyValidation>
@@ -261,9 +234,7 @@
     <ruleId>CONF:8574</ruleId>
     <ruleId>CONF:10514</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NoY0hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-489</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:PropertyValidation xmi:id="_2NoY0RSVEeGGzu7fmW9pXw" base_Property="_2NoYzhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8573</ruleId>
   </CDA:PropertyValidation>
@@ -295,12 +266,7 @@
     <ruleId>CONF:8579</ruleId>
     <ruleId>CONF:10515</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NufYBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-489</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NufYRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-491</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:PropertyValidation xmi:id="_2NoY8hSVEeGGzu7fmW9pXw" base_Property="_2NoY7xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8578</ruleId>
   </CDA:PropertyValidation>
@@ -313,7 +279,9 @@
   <CDA:CodeSystemConstraint xmi:id="_oLp3wCoKEeGHF88-qhhUMA" name="" code="" displayName="" base_Property="_2NWE-RSVEeGGzu7fmW9pXw" message="">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.23" name="Plan of Care moodCode (Act/Encounter/Procedure)" base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message=""/>
+  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message="">
+    <reference href="../consol-vocab.uml#_G6u94WMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__Lp9wCoMEeGHF88-qhhUMA">
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>
@@ -324,29 +292,39 @@
   <CDA:CodeSystemConstraint xmi:id="_dSzXgCoNEeGHF88-qhhUMA" code="" base_Property="_WZy4UCoNEeGHF88-qhhUMA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_2UU7QCoNEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.23" name="Plan of Care moodCode (Act/Encounter/Procedure)" base_Property="_2NWFDxSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_2UU7QCoNEeGHF88-qhhUMA" base_Property="_2NWFDxSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_G6u94WMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_adNYgCoPEeGHF88-qhhUMA" code="" displayName="" base_Property="_2NcLoBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
     <ruleId>CONF:8581</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_rHQT8CoPEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.25" name="Plan of Care moodCode" base_Property="_2NcLmRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_rHQT8CoPEeGHF88-qhhUMA" base_Property="_2NcLmRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_Km1cMWMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_E_JCgCoREeGHF88-qhhUMA" code="" base_Property="_2NiSPBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
     <ruleId>CONF:8568</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Mzl2QCoREeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.23" name="Plan of Care moodCode (Act/Encounter/Procedure)" base_Property="_2NiSNRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_Mzl2QCoREeGHF88-qhhUMA" base_Property="_2NiSNRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_G6u94WMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_FEZggCoSEeGHF88-qhhUMA" base_Property="_2NoY1BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8572</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_G_FrkCoSEeGHF88-qhhUMA" code="" displayName="" base_Property="_2NoY1BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_9ZB60CoSEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.24" name="Plan of Care moodCode (SubstanceAdministration/Supply)" base_Property="_2NoYzhSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_9ZB60CoSEeGHF88-qhhUMA" base_Property="_2NoYzhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_Nz_7wWMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_GJ4P8CoUEeGHF88-qhhUMA" base_Property="_2NufYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8577</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_RvzxQCoUEeGHF88-qhhUMA" base_Property="_2NufYxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_cICwYCoUEeGHF88-qhhUMA" identifier="2.16.840.1.113883.11.20.9.24" name="Plan of Care moodCode (SubstanceAdministration/Supply)" base_Property="_2NoY7xSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_cICwYCoUEeGHF88-qhhUMA" base_Property="_2NoY7xSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_Nz_7wWMnEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

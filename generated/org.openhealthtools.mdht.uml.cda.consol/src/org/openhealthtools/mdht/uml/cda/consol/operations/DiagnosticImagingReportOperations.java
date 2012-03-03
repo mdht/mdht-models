@@ -675,7 +675,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	public static FindingsSection getFindingsSection(DiagnosticImagingReport diagnosticImagingReport) {
 		if (GET_FINDINGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT, ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(160));
+			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT, ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(158));
 			try {
 				GET_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_FINDINGS_SECTION__EOCL_EXP);
 			}

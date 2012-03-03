@@ -119,16 +119,6 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EstimatedDateOfDelivery getEstimatedDateOfDelivery() {
 		return PregnancyObservationOperations.getEstimatedDateOfDelivery(this);
 	}

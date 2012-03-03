@@ -221,15 +221,6 @@ An appropriate nullFlavor can be used when a single result observation is contai
   <CDA:ConstraintValidation xmi:id="_2J9ZshSVEeGGzu7fmW9pXw">
     <ruleId>CONF:421</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J2sARSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>C154-[DE-15.03-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J3TEBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>C154-[DE-15.03-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2J36IBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-15.05-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2J4hNRSVEeGGzu7fmW9pXw" base_Property="_2J4hMxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7131</ruleId>
   </CDA:PropertyValidation>

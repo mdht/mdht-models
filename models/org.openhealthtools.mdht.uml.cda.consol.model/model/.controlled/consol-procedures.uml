@@ -32,17 +32,11 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
   <CDA:ConstraintValidation xmi:id="_2OfUaRSVEeGGzu7fmW9pXw" base_Constraint="_2OfUZxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8021</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2OAzTBSVEeGGzu7fmW9pXw" code="47519-4" displayName="History of procedures">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-423</ruleId>
-    <ruleId>CONF-424</ruleId>
-  </CDA:CodeSystemConstraint>
+  
   <CDA:PropertyValidation xmi:id="_2OAzThSVEeGGzu7fmW9pXw" base_Property="_2OAzTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7893</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OAzUhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-422</ruleId>
-  </CDA:PropertyValidation>
+  
   <uml:Class xmi:id="_s9Ig4BVdEeGQCvUGzi1kDQ" name="ProceduresSectionEntriesOptional">
     <ownedComment xmi:id="_s9Ig4RVdEeGQCvUGzi1kDQ" annotatedElement="_s9Ig4BVdEeGQCvUGzi1kDQ">
       <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
@@ -550,21 +544,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:CDATemplate xmi:id="_2ONAgBSVEeGGzu7fmW9pXw" base_Class="_2OG58RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="IHE PCC">
     <ruleId>CONF:7654</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2OZN2BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-442</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN3BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-447</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN4BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-435</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN5BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-436</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2OZN6BSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-444</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2ONAhhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2ONAhxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2ONAiBSVEeGGzu7fmW9pXw"/>
@@ -1896,4 +1876,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_mrBocFwQEeG0y_7i0ygc4g" base_Constraint="_L5NdsEEzEeGdmoWy_aLP0Q">
     <ruleId>CONF:8769</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="__QcZYGPvEeGskvPNzg7rUw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_MKyqoGMZEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_Y8_QEGPwEeGskvPNzg7rUw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_MKyqoGMZEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_kNDPEGPwEeGskvPNzg7rUw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_MKyqoGMZEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

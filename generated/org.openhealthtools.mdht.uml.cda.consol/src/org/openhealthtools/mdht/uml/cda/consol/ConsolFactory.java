@@ -35,294 +35,6 @@ public interface ConsolFactory extends EFactory {
 	GeneralHeaderConstraints createGeneralHeaderConstraints();
 
 	/**
-	 * Returns a new object of class '<em>General Header Constraints Record Target</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Record Target</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_RecordTarget createGeneralHeaderConstraints_RecordTarget();
-
-	/**
-	 * Returns a new object of class '<em>Record Target Patient Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Record Target Patient Role</em>'.
-	 * @generated
-	 */
-	RecordTarget_PatientRole createRecordTarget_PatientRole();
-
-	/**
-	 * Returns a new object of class '<em>Patient Role Patient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Role Patient</em>'.
-	 * @generated
-	 */
-	PatientRole_Patient createPatientRole_Patient();
-
-	/**
-	 * Returns a new object of class '<em>Patient Guardian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Guardian</em>'.
-	 * @generated
-	 */
-	Patient_Guardian createPatient_Guardian();
-
-	/**
-	 * Returns a new object of class '<em>Patient Language Communication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Language Communication</em>'.
-	 * @generated
-	 */
-	Patient_LanguageCommunication createPatient_LanguageCommunication();
-
-	/**
-	 * Returns a new object of class '<em>Patient Birthplace</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Birthplace</em>'.
-	 * @generated
-	 */
-	Patient_Birthplace createPatient_Birthplace();
-
-	/**
-	 * Returns a new object of class '<em>Birthplace Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Birthplace Place</em>'.
-	 * @generated
-	 */
-	Birthplace_Place createBirthplace_Place();
-
-	/**
-	 * Returns a new object of class '<em>Patient Role Provider Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Role Provider Organization</em>'.
-	 * @generated
-	 */
-	PatientRole_ProviderOrganization createPatientRole_ProviderOrganization();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Component Of</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_ComponentOf createGeneralHeaderConstraints_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter createComponentOf_EncompassingEncounter();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Author</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_Author createGeneralHeaderConstraints_Author();
-
-	/**
-	 * Returns a new object of class '<em>Author Assigned Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Author Assigned Author</em>'.
-	 * @generated
-	 */
-	Author_AssignedAuthor createAuthor_AssignedAuthor();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Author Authoring Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Author Authoring Device</em>'.
-	 * @generated
-	 */
-	AssignedAuthor_AuthoringDevice createAssignedAuthor_AuthoringDevice();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Person</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_Person createGeneralHeaderConstraints_Person();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Data Enterer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Data Enterer</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_DataEnterer createGeneralHeaderConstraints_DataEnterer();
-
-	/**
-	 * Returns a new object of class '<em>Data Enterer Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Data Enterer Assigned Entity</em>'.
-	 * @generated
-	 */
-	DataEnterer_AssignedEntity createDataEnterer_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Custodian</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_Custodian createGeneralHeaderConstraints_Custodian();
-
-	/**
-	 * Returns a new object of class '<em>Custodian Assigned Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian Assigned Custodian</em>'.
-	 * @generated
-	 */
-	Custodian_AssignedCustodian createCustodian_AssignedCustodian();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Custodian Custodian Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Custodian Custodian Organization</em>'.
-	 * @generated
-	 */
-	AssignedCustodian_CustodianOrganization createAssignedCustodian_CustodianOrganization();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Information Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Information Recipient</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_InformationRecipient createGeneralHeaderConstraints_InformationRecipient();
-
-	/**
-	 * Returns a new object of class '<em>Information Recipient Intended Recipient</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Information Recipient Intended Recipient</em>'.
-	 * @generated
-	 */
-	InformationRecipient_IntendedRecipient createInformationRecipient_IntendedRecipient();
-
-	/**
-	 * Returns a new object of class '<em>Intended Recipient Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Intended Recipient Organization</em>'.
-	 * @generated
-	 */
-	IntendedRecipient_Organization createIntendedRecipient_Organization();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Legal Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Legal Authenticator</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_LegalAuthenticator createGeneralHeaderConstraints_LegalAuthenticator();
-
-	/**
-	 * Returns a new object of class '<em>Legal Authenticator Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Legal Authenticator Assigned Entity</em>'.
-	 * @generated
-	 */
-	LegalAuthenticator_AssignedEntity createLegalAuthenticator_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Authenticator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Authenticator</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_Authenticator createGeneralHeaderConstraints_Authenticator();
-
-	/**
-	 * Returns a new object of class '<em>Authenticator Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Authenticator Assigned Entity</em>'.
-	 * @generated
-	 */
-	Authenticator_AssignedEntity createAuthenticator_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Informant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Informant</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_Informant createGeneralHeaderConstraints_Informant();
-
-	/**
-	 * Returns a new object of class '<em>Informant Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Informant Assigned Entity</em>'.
-	 * @generated
-	 */
-	Informant_AssignedEntity createInformant_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Informant Related Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Informant Related Entity</em>'.
-	 * @generated
-	 */
-	Informant_RelatedEntity createInformant_RelatedEntity();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints Participant Support</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints Participant Support</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_ParticipantSupport createGeneralHeaderConstraints_ParticipantSupport();
-
-	/**
-	 * Returns a new object of class '<em>General Header Constraints In Fulfillment Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>General Header Constraints In Fulfillment Of</em>'.
-	 * @generated
-	 */
-	GeneralHeaderConstraints_InFulfillmentOf createGeneralHeaderConstraints_InFulfillmentOf();
-
-	/**
-	 * Returns a new object of class '<em>In Fulfillment Of Order</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>In Fulfillment Of Order</em>'.
-	 * @generated
-	 */
-	InFulfillmentOf_Order createInFulfillmentOf_Order();
-
-	/**
 	 * Returns a new object of class '<em>Allergy Problem Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -422,24 +134,6 @@ public interface ConsolFactory extends EFactory {
 	ProductInstance createProductInstance();
 
 	/**
-	 * Returns a new object of class '<em>Product Instance Scoping Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Product Instance Scoping Entity</em>'.
-	 * @generated
-	 */
-	ProductInstance_ScopingEntity createProductInstance_ScopingEntity();
-
-	/**
-	 * Returns a new object of class '<em>Product Instance Playing Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Product Instance Playing Device</em>'.
-	 * @generated
-	 */
-	ProductInstance_PlayingDevice createProductInstance_PlayingDevice();
-
-	/**
 	 * Returns a new object of class '<em>Instructions</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -467,15 +161,6 @@ public interface ConsolFactory extends EFactory {
 	MedicationDispense createMedicationDispense();
 
 	/**
-	 * Returns a new object of class '<em>Medication Dispense Product</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Dispense Product</em>'.
-	 * @generated
-	 */
-	MedicationDispense_Product createMedicationDispense_Product();
-
-	/**
 	 * Returns a new object of class '<em>Medication Supply Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -483,15 +168,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	MedicationSupplyOrder createMedicationSupplyOrder();
-
-	/**
-	 * Returns a new object of class '<em>Medication Supply Order Product</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Supply Order Product</em>'.
-	 * @generated
-	 */
-	MedicationSupplyOrder_Product createMedicationSupplyOrder_Product();
 
 	/**
 	 * Returns a new object of class '<em>Drug Vehicle</em>'.
@@ -537,60 +213,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ContinuityOfCareDocument createContinuityOfCareDocument();
-
-	/**
-	 * Returns a new object of class '<em>Continuity Of Care Document Documentation Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Continuity Of Care Document Documentation Of</em>'.
-	 * @generated
-	 */
-	ContinuityOfCareDocument_DocumentationOf createContinuityOfCareDocument_DocumentationOf();
-
-	/**
-	 * Returns a new object of class '<em>Documentation Of Service Event3</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Documentation Of Service Event3</em>'.
-	 * @generated
-	 */
-	DocumentationOf_ServiceEvent3 createDocumentationOf_ServiceEvent3();
-
-	/**
-	 * Returns a new object of class '<em>Service Event3 Performer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Event3 Performer</em>'.
-	 * @generated
-	 */
-	ServiceEvent3_Performer createServiceEvent3_Performer();
-
-	/**
-	 * Returns a new object of class '<em>Performer Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Performer Assigned Entity</em>'.
-	 * @generated
-	 */
-	Performer_AssignedEntity createPerformer_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Continuity Of Care Document Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Continuity Of Care Document Author</em>'.
-	 * @generated
-	 */
-	ContinuityOfCareDocument_Author createContinuityOfCareDocument_Author();
-
-	/**
-	 * Returns a new object of class '<em>Author Assigned Author3</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Author Assigned Author3</em>'.
-	 * @generated
-	 */
-	Author_AssignedAuthor3 createAuthor_AssignedAuthor3();
 
 	/**
 	 * Returns a new object of class '<em>Advance Directives Section Entries Optional</em>'.
@@ -663,96 +285,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PolicyActivity createPolicyActivity();
-
-	/**
-	 * Returns a new object of class '<em>Policy Activity Payer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Activity Payer</em>'.
-	 * @generated
-	 */
-	PolicyActivity_Payer createPolicyActivity_Payer();
-
-	/**
-	 * Returns a new object of class '<em>Payer Payer Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Payer Payer Assigned Entity</em>'.
-	 * @generated
-	 */
-	Payer_PayerAssignedEntity createPayer_PayerAssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Payer Assigned Entity Payer Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Payer Assigned Entity Payer Organization</em>'.
-	 * @generated
-	 */
-	PayerAssignedEntity_PayerOrganization createPayerAssignedEntity_PayerOrganization();
-
-	/**
-	 * Returns a new object of class '<em>Policy Activity Guarantor</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Activity Guarantor</em>'.
-	 * @generated
-	 */
-	PolicyActivity_Guarantor createPolicyActivity_Guarantor();
-
-	/**
-	 * Returns a new object of class '<em>Guarantor Guarantor Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Guarantor Guarantor Assigned Entity</em>'.
-	 * @generated
-	 */
-	Guarantor_GuarantorAssignedEntity createGuarantor_GuarantorAssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Policy Activity Coverage</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Activity Coverage</em>'.
-	 * @generated
-	 */
-	PolicyActivity_Coverage createPolicyActivity_Coverage();
-
-	/**
-	 * Returns a new object of class '<em>Coverage Coverage Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Coverage Coverage Role</em>'.
-	 * @generated
-	 */
-	Coverage_CoverageRole createCoverage_CoverageRole();
-
-	/**
-	 * Returns a new object of class '<em>Coverage Role Coverage Playing Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Coverage Role Coverage Playing Entity</em>'.
-	 * @generated
-	 */
-	CoverageRole_CoveragePlayingEntity createCoverageRole_CoveragePlayingEntity();
-
-	/**
-	 * Returns a new object of class '<em>Policy Activity Holder</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Activity Holder</em>'.
-	 * @generated
-	 */
-	PolicyActivity_Holder createPolicyActivity_Holder();
-
-	/**
-	 * Returns a new object of class '<em>Holder Holder Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Holder Holder Role</em>'.
-	 * @generated
-	 */
-	Holder_HolderRole createHolder_HolderRole();
 
 	/**
 	 * Returns a new object of class '<em>Authorization Activity</em>'.
@@ -1059,60 +591,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Reference</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Reference</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservation_Reference createAdvanceDirectiveObservation_Reference();
-
-	/**
-	 * Returns a new object of class '<em>Reference External Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reference External Document</em>'.
-	 * @generated
-	 */
-	Reference_ExternalDocument createReference_ExternalDocument();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Custodian</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservation_Custodian createAdvanceDirectiveObservation_Custodian();
-
-	/**
-	 * Returns a new object of class '<em>Custodian Custodian Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian Custodian Role</em>'.
-	 * @generated
-	 */
-	Custodian_CustodianRole createCustodian_CustodianRole();
-
-	/**
-	 * Returns a new object of class '<em>Custodian Role Custodian Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian Role Custodian Entity</em>'.
-	 * @generated
-	 */
-	CustodianRole_CustodianEntity createCustodianRole_CustodianEntity();
-
-	/**
-	 * Returns a new object of class '<em>Advance Directive Observation Verifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Advance Directive Observation Verifier</em>'.
-	 * @generated
-	 */
-	AdvanceDirectiveObservation_Verifier createAdvanceDirectiveObservation_Verifier();
 
 	/**
 	 * Returns a new object of class '<em>Encounters Section</em>'.
@@ -1619,42 +1097,6 @@ public interface ConsolFactory extends EFactory {
 	ConsultationNote createConsultationNote();
 
 	/**
-	 * Returns a new object of class '<em>Consultation Note Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Consultation Note Component Of</em>'.
-	 * @generated
-	 */
-	ConsultationNote_ComponentOf createConsultationNote_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter2</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter2 createComponentOf_EncompassingEncounter2();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter2 Responsible Party</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter2 Responsible Party</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter2_ResponsibleParty createEncompassingEncounter2_ResponsibleParty();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter2 Encounter Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter2 Encounter Participant</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter2_EncounterParticipant createEncompassingEncounter2_EncounterParticipant();
-
-	/**
 	 * Returns a new object of class '<em>Assessment Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1673,42 +1115,6 @@ public interface ConsolFactory extends EFactory {
 	HistoryAndPhysicalNote createHistoryAndPhysicalNote();
 
 	/**
-	 * Returns a new object of class '<em>History And Physical Note Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>History And Physical Note Component Of</em>'.
-	 * @generated
-	 */
-	HistoryAndPhysicalNote_ComponentOf createHistoryAndPhysicalNote_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter4</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter4</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter4 createComponentOf_EncompassingEncounter4();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter4 Responsible Party</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter4 Responsible Party</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter4_ResponsibleParty createEncompassingEncounter4_ResponsibleParty();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter4 Encounter Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter4 Encounter Participant</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant();
-
-	/**
 	 * Returns a new object of class '<em>Operative Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1716,33 +1122,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	OperativeNote createOperativeNote();
-
-	/**
-	 * Returns a new object of class '<em>Operative Note Documentation Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operative Note Documentation Of</em>'.
-	 * @generated
-	 */
-	OperativeNote_DocumentationOf createOperativeNote_DocumentationOf();
-
-	/**
-	 * Returns a new object of class '<em>Documentation Of Service Event</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Documentation Of Service Event</em>'.
-	 * @generated
-	 */
-	DocumentationOf_ServiceEvent createDocumentationOf_ServiceEvent();
-
-	/**
-	 * Returns a new object of class '<em>Service Event Primary Performer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Event Primary Performer</em>'.
-	 * @generated
-	 */
-	ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer();
 
 	/**
 	 * Returns a new object of class '<em>Procedure Note</em>'.
@@ -1754,114 +1133,6 @@ public interface ConsolFactory extends EFactory {
 	ProcedureNote createProcedureNote();
 
 	/**
-	 * Returns a new object of class '<em>Procedure Note Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Note Component Of</em>'.
-	 * @generated
-	 */
-	ProcedureNote_ComponentOf createProcedureNote_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter5</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter5</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter5 createComponentOf_EncompassingEncounter5();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter5 Location</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter5 Location</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter5_Location createEncompassingEncounter5_Location();
-
-	/**
-	 * Returns a new object of class '<em>Location Health Care Facility</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Location Health Care Facility</em>'.
-	 * @generated
-	 */
-	Location_HealthCareFacility createLocation_HealthCareFacility();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter5 Encounter Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter5 Encounter Participant</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter5_EncounterParticipant createEncompassingEncounter5_EncounterParticipant();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Note Individual</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Note Individual</em>'.
-	 * @generated
-	 */
-	ProcedureNote_Individual createProcedureNote_Individual();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Note Primary Care Physician</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Note Primary Care Physician</em>'.
-	 * @generated
-	 */
-	ProcedureNote_PrimaryCarePhysician createProcedureNote_PrimaryCarePhysician();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Note Provider</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Note Provider</em>'.
-	 * @generated
-	 */
-	ProcedureNote_Provider createProcedureNote_Provider();
-
-	/**
-	 * Returns a new object of class '<em>Provider Associated Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Provider Associated Entity</em>'.
-	 * @generated
-	 */
-	Provider_AssociatedEntity createProvider_AssociatedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Note Documentation Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Note Documentation Of</em>'.
-	 * @generated
-	 */
-	ProcedureNote_DocumentationOf createProcedureNote_DocumentationOf();
-
-	/**
-	 * Returns a new object of class '<em>Documentation Of Service Event1</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Documentation Of Service Event1</em>'.
-	 * @generated
-	 */
-	DocumentationOf_ServiceEvent1 createDocumentationOf_ServiceEvent1();
-
-	/**
-	 * Returns a new object of class '<em>Service Event1 Primary Performer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Event1 Primary Performer</em>'.
-	 * @generated
-	 */
-	ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer();
-
-	/**
 	 * Returns a new object of class '<em>Progress Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1869,60 +1140,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ProgressNote createProgressNote();
-
-	/**
-	 * Returns a new object of class '<em>Progress Note Documentation Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Progress Note Documentation Of</em>'.
-	 * @generated
-	 */
-	ProgressNote_DocumentationOf createProgressNote_DocumentationOf();
-
-	/**
-	 * Returns a new object of class '<em>Documentation Of Service Event2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Documentation Of Service Event2</em>'.
-	 * @generated
-	 */
-	DocumentationOf_ServiceEvent2 createDocumentationOf_ServiceEvent2();
-
-	/**
-	 * Returns a new object of class '<em>Progress Note Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Progress Note Component Of</em>'.
-	 * @generated
-	 */
-	ProgressNote_ComponentOf createProgressNote_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter6</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter6</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter6 createComponentOf_EncompassingEncounter6();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter6 Location</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter6 Location</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter6_Location createEncompassingEncounter6_Location();
-
-	/**
-	 * Returns a new object of class '<em>Location Health Care Facility1</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Location Health Care Facility1</em>'.
-	 * @generated
-	 */
-	Location_HealthCareFacility1 createLocation_HealthCareFacility1();
 
 	/**
 	 * Returns a new object of class '<em>Preoperative Diagnosis</em>'.
@@ -1979,105 +1196,6 @@ public interface ConsolFactory extends EFactory {
 	DiagnosticImagingReport createDiagnosticImagingReport();
 
 	/**
-	 * Returns a new object of class '<em>Diagnostic Imaging Report Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Imaging Report Participant</em>'.
-	 * @generated
-	 */
-	DiagnosticImagingReport_Participant createDiagnosticImagingReport_Participant();
-
-	/**
-	 * Returns a new object of class '<em>Participant Associated Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Participant Associated Entity</em>'.
-	 * @generated
-	 */
-	Participant_AssociatedEntity createParticipant_AssociatedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Associated Entity Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Associated Entity Person</em>'.
-	 * @generated
-	 */
-	AssociatedEntity_Person createAssociatedEntity_Person();
-
-	/**
-	 * Returns a new object of class '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Imaging Report In Fulfillment Of</em>'.
-	 * @generated
-	 */
-	DiagnosticImagingReport_InFulfillmentOf createDiagnosticImagingReport_InFulfillmentOf();
-
-	/**
-	 * Returns a new object of class '<em>Diagnostic Imaging Report Documentation Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Imaging Report Documentation Of</em>'.
-	 * @generated
-	 */
-	DiagnosticImagingReport_DocumentationOf createDiagnosticImagingReport_DocumentationOf();
-
-	/**
-	 * Returns a new object of class '<em>Documentation Of Service Event4</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Documentation Of Service Event4</em>'.
-	 * @generated
-	 */
-	DocumentationOf_ServiceEvent4 createDocumentationOf_ServiceEvent4();
-
-	/**
-	 * Returns a new object of class '<em>Diagnostic Imaging Report Related Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Imaging Report Related Document</em>'.
-	 * @generated
-	 */
-	DiagnosticImagingReport_RelatedDocument createDiagnosticImagingReport_RelatedDocument();
-
-	/**
-	 * Returns a new object of class '<em>Diagnostic Imaging Report Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Diagnostic Imaging Report Component Of</em>'.
-	 * @generated
-	 */
-	DiagnosticImagingReport_ComponentOf createDiagnosticImagingReport_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter7</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter7</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter7 createComponentOf_EncompassingEncounter7();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter7 Responsible Party</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter7 Responsible Party</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter7_ResponsibleParty createEncompassingEncounter7_ResponsibleParty();
-
-	/**
-	 * Returns a new object of class '<em>Responsible Party Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Responsible Party Assigned Entity</em>'.
-	 * @generated
-	 */
-	ResponsibleParty_AssignedEntity createResponsibleParty_AssignedEntity();
-
-	/**
 	 * Returns a new object of class '<em>Physician Reading Study Performer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2087,15 +1205,6 @@ public interface ConsolFactory extends EFactory {
 	PhysicianReadingStudyPerformer createPhysicianReadingStudyPerformer();
 
 	/**
-	 * Returns a new object of class '<em>Physician Reading Study Performer Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Physician Reading Study Performer Assigned Entity</em>'.
-	 * @generated
-	 */
-	PhysicianReadingStudyPerformer_AssignedEntity createPhysicianReadingStudyPerformer_AssignedEntity();
-
-	/**
 	 * Returns a new object of class '<em>Physicianof Record Participant</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2103,24 +1212,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	PhysicianofRecordParticipant createPhysicianofRecordParticipant();
-
-	/**
-	 * Returns a new object of class '<em>Physicianof Record Participant Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Physicianof Record Participant Assigned Entity</em>'.
-	 * @generated
-	 */
-	PhysicianofRecordParticipant_AssignedEntity createPhysicianofRecordParticipant_AssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Entity Assigned Person</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Entity Assigned Person</em>'.
-	 * @generated
-	 */
-	AssignedEntity_AssignedPerson createAssignedEntity_AssignedPerson();
 
 	/**
 	 * Returns a new object of class '<em>Text Observation</em>'.
@@ -2231,87 +1322,6 @@ public interface ConsolFactory extends EFactory {
 	UnstructuredDocument createUnstructuredDocument();
 
 	/**
-	 * Returns a new object of class '<em>Unstructured Document Record Target</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Unstructured Document Record Target</em>'.
-	 * @generated
-	 */
-	UnstructuredDocument_RecordTarget createUnstructuredDocument_RecordTarget();
-
-	/**
-	 * Returns a new object of class '<em>Record Target Patient Role2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Record Target Patient Role2</em>'.
-	 * @generated
-	 */
-	RecordTarget_PatientRole2 createRecordTarget_PatientRole2();
-
-	/**
-	 * Returns a new object of class '<em>Unstructured Document Author</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Unstructured Document Author</em>'.
-	 * @generated
-	 */
-	UnstructuredDocument_Author createUnstructuredDocument_Author();
-
-	/**
-	 * Returns a new object of class '<em>Author Assigned Author2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Author Assigned Author2</em>'.
-	 * @generated
-	 */
-	Author_AssignedAuthor2 createAuthor_AssignedAuthor2();
-
-	/**
-	 * Returns a new object of class '<em>Unstructured Document Custodian</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Unstructured Document Custodian</em>'.
-	 * @generated
-	 */
-	UnstructuredDocument_Custodian createUnstructuredDocument_Custodian();
-
-	/**
-	 * Returns a new object of class '<em>Custodian Assigned Custodian3</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Custodian Assigned Custodian3</em>'.
-	 * @generated
-	 */
-	Custodian_AssignedCustodian3 createCustodian_AssignedCustodian3();
-
-	/**
-	 * Returns a new object of class '<em>Assigned Custodian3 Custodian Organization</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assigned Custodian3 Custodian Organization</em>'.
-	 * @generated
-	 */
-	AssignedCustodian3_CustodianOrganization createAssignedCustodian3_CustodianOrganization();
-
-	/**
-	 * Returns a new object of class '<em>Unstructured Document Component</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Unstructured Document Component</em>'.
-	 * @generated
-	 */
-	UnstructuredDocument_Component createUnstructuredDocument_Component();
-
-	/**
-	 * Returns a new object of class '<em>Component Non XML Body</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Non XML Body</em>'.
-	 * @generated
-	 */
-	Component_NonXMLBody createComponent_NonXMLBody();
-
-	/**
 	 * Returns a new object of class '<em>Medication Information</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2328,42 +1338,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DischargeSummary createDischargeSummary();
-
-	/**
-	 * Returns a new object of class '<em>Discharge Summary Component Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Discharge Summary Component Of</em>'.
-	 * @generated
-	 */
-	DischargeSummary_ComponentOf createDischargeSummary_ComponentOf();
-
-	/**
-	 * Returns a new object of class '<em>Component Of Encompassing Encounter3</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Of Encompassing Encounter3</em>'.
-	 * @generated
-	 */
-	ComponentOf_EncompassingEncounter3 createComponentOf_EncompassingEncounter3();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter3 Responsible Party</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter3 Responsible Party</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter3_ResponsibleParty createEncompassingEncounter3_ResponsibleParty();
-
-	/**
-	 * Returns a new object of class '<em>Encompassing Encounter3 Encounter Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encompassing Encounter3 Encounter Participant</em>'.
-	 * @generated
-	 */
-	EncompassingEncounter3_EncounterParticipant createEncompassingEncounter3_EncounterParticipant();
 
 	/**
 	 * Returns a new object of class '<em>Discharge Diet Section</em>'.

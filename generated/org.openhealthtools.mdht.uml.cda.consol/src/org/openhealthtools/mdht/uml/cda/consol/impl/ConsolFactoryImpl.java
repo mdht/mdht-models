@@ -61,38 +61,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET: return createGeneralHeaderConstraints_RecordTarget();
-			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE: return createRecordTarget_PatientRole();
-			case ConsolPackage.PATIENT_ROLE_PATIENT: return createPatientRole_Patient();
-			case ConsolPackage.PATIENT_GUARDIAN: return createPatient_Guardian();
-			case ConsolPackage.PATIENT_LANGUAGE_COMMUNICATION: return createPatient_LanguageCommunication();
-			case ConsolPackage.PATIENT_BIRTHPLACE: return createPatient_Birthplace();
-			case ConsolPackage.BIRTHPLACE_PLACE: return createBirthplace_Place();
-			case ConsolPackage.PATIENT_ROLE_PROVIDER_ORGANIZATION: return createPatientRole_ProviderOrganization();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF: return createGeneralHeaderConstraints_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER: return createComponentOf_EncompassingEncounter();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHOR: return createGeneralHeaderConstraints_Author();
-			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR: return createAuthor_AssignedAuthor();
-			case ConsolPackage.ASSIGNED_AUTHOR_AUTHORING_DEVICE: return createAssignedAuthor_AuthoringDevice();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PERSON: return createGeneralHeaderConstraints_Person();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER: return createGeneralHeaderConstraints_DataEnterer();
-			case ConsolPackage.DATA_ENTERER_ASSIGNED_ENTITY: return createDataEnterer_AssignedEntity();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_CUSTODIAN: return createGeneralHeaderConstraints_Custodian();
-			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN: return createCustodian_AssignedCustodian();
-			case ConsolPackage.ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION: return createAssignedCustodian_CustodianOrganization();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT: return createGeneralHeaderConstraints_InformationRecipient();
-			case ConsolPackage.INFORMATION_RECIPIENT_INTENDED_RECIPIENT: return createInformationRecipient_IntendedRecipient();
-			case ConsolPackage.INTENDED_RECIPIENT_ORGANIZATION: return createIntendedRecipient_Organization();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR: return createGeneralHeaderConstraints_LegalAuthenticator();
-			case ConsolPackage.LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY: return createLegalAuthenticator_AssignedEntity();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR: return createGeneralHeaderConstraints_Authenticator();
-			case ConsolPackage.AUTHENTICATOR_ASSIGNED_ENTITY: return createAuthenticator_AssignedEntity();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_INFORMANT: return createGeneralHeaderConstraints_Informant();
-			case ConsolPackage.INFORMANT_ASSIGNED_ENTITY: return createInformant_AssignedEntity();
-			case ConsolPackage.INFORMANT_RELATED_ENTITY: return createInformant_RelatedEntity();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT: return createGeneralHeaderConstraints_ParticipantSupport();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF: return createGeneralHeaderConstraints_InFulfillmentOf();
-			case ConsolPackage.IN_FULFILLMENT_OF_ORDER: return createInFulfillmentOf_Order();
 			case ConsolPackage.ALLERGY_PROBLEM_ACT: return createAllergyProblemAct();
 			case ConsolPackage.ALLERGY_OBSERVATION: return createAllergyObservation();
 			case ConsolPackage.REACTION_OBSERVATION: return createReactionObservation();
@@ -102,14 +70,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.SERVICE_DELIVERY_LOCATION: return createServiceDeliveryLocation();
 			case ConsolPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
 			case ConsolPackage.MEDICATION_SUPPLY_ORDER: return createMedicationSupplyOrder();
-			case ConsolPackage.MEDICATION_SUPPLY_ORDER_PRODUCT: return createMedicationSupplyOrder_Product();
 			case ConsolPackage.INSTRUCTIONS: return createInstructions();
 			case ConsolPackage.MEDICATION_DISPENSE: return createMedicationDispense();
-			case ConsolPackage.MEDICATION_DISPENSE_PRODUCT: return createMedicationDispense_Product();
 			case ConsolPackage.DRUG_VEHICLE: return createDrugVehicle();
 			case ConsolPackage.PRODUCT_INSTANCE: return createProductInstance();
-			case ConsolPackage.PRODUCT_INSTANCE_SCOPING_ENTITY: return createProductInstance_ScopingEntity();
-			case ConsolPackage.PRODUCT_INSTANCE_PLAYING_DEVICE: return createProductInstance_PlayingDevice();
 			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: return createAllergyStatusObservation();
 			case ConsolPackage.AGE_OBSERVATION: return createAgeObservation();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
@@ -119,12 +83,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.PROBLEM_OBSERVATION: return createProblemObservation();
 			case ConsolPackage.PROBLEM_STATUS: return createProblemStatus();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
-			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF: return createContinuityOfCareDocument_DocumentationOf();
-			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT3: return createDocumentationOf_ServiceEvent3();
-			case ConsolPackage.SERVICE_EVENT3_PERFORMER: return createServiceEvent3_Performer();
-			case ConsolPackage.PERFORMER_ASSIGNED_ENTITY: return createPerformer_AssignedEntity();
-			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT_AUTHOR: return createContinuityOfCareDocument_Author();
-			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR3: return createAuthor_AssignedAuthor3();
 			case ConsolPackage.ALLERGIES_SECTION: return createAllergiesSection();
 			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL: return createAllergiesSectionEntriesOptional();
 			case ConsolPackage.MEDICATIONS_SECTION: return createMedicationsSection();
@@ -142,12 +100,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: return createAdvanceDirectivesSectionEntriesOptional();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE: return createAdvanceDirectiveObservation_Reference();
-			case ConsolPackage.REFERENCE_EXTERNAL_DOCUMENT: return createReference_ExternalDocument();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN: return createAdvanceDirectiveObservation_Custodian();
-			case ConsolPackage.CUSTODIAN_CUSTODIAN_ROLE: return createCustodian_CustodianRole();
-			case ConsolPackage.CUSTODIAN_ROLE_CUSTODIAN_ENTITY: return createCustodianRole_CustodianEntity();
-			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER: return createAdvanceDirectiveObservation_Verifier();
 			case ConsolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: return createEncountersSectionEntriesOptional();
 			case ConsolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
@@ -163,16 +115,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.PAYERS_SECTION: return createPayersSection();
 			case ConsolPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
 			case ConsolPackage.POLICY_ACTIVITY: return createPolicyActivity();
-			case ConsolPackage.POLICY_ACTIVITY_PAYER: return createPolicyActivity_Payer();
-			case ConsolPackage.PAYER_PAYER_ASSIGNED_ENTITY: return createPayer_PayerAssignedEntity();
-			case ConsolPackage.PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION: return createPayerAssignedEntity_PayerOrganization();
-			case ConsolPackage.POLICY_ACTIVITY_GUARANTOR: return createPolicyActivity_Guarantor();
-			case ConsolPackage.GUARANTOR_GUARANTOR_ASSIGNED_ENTITY: return createGuarantor_GuarantorAssignedEntity();
-			case ConsolPackage.POLICY_ACTIVITY_COVERAGE: return createPolicyActivity_Coverage();
-			case ConsolPackage.COVERAGE_COVERAGE_ROLE: return createCoverage_CoverageRole();
-			case ConsolPackage.COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY: return createCoverageRole_CoveragePlayingEntity();
-			case ConsolPackage.POLICY_ACTIVITY_HOLDER: return createPolicyActivity_Holder();
-			case ConsolPackage.HOLDER_HOLDER_ROLE: return createHolder_HolderRole();
 			case ConsolPackage.AUTHORIZATION_ACTIVITY: return createAuthorizationActivity();
 			case ConsolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
@@ -205,21 +147,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case ConsolPackage.SURGICAL_DRAINS_SECTION: return createSurgicalDrainsSection();
 			case ConsolPackage.UNSTRUCTURED_DOCUMENT: return createUnstructuredDocument();
-			case ConsolPackage.UNSTRUCTURED_DOCUMENT_RECORD_TARGET: return createUnstructuredDocument_RecordTarget();
-			case ConsolPackage.RECORD_TARGET_PATIENT_ROLE2: return createRecordTarget_PatientRole2();
-			case ConsolPackage.UNSTRUCTURED_DOCUMENT_AUTHOR: return createUnstructuredDocument_Author();
-			case ConsolPackage.AUTHOR_ASSIGNED_AUTHOR2: return createAuthor_AssignedAuthor2();
-			case ConsolPackage.UNSTRUCTURED_DOCUMENT_CUSTODIAN: return createUnstructuredDocument_Custodian();
-			case ConsolPackage.CUSTODIAN_ASSIGNED_CUSTODIAN3: return createCustodian_AssignedCustodian3();
-			case ConsolPackage.ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION: return createAssignedCustodian3_CustodianOrganization();
-			case ConsolPackage.UNSTRUCTURED_DOCUMENT_COMPONENT: return createUnstructuredDocument_Component();
-			case ConsolPackage.COMPONENT_NON_XML_BODY: return createComponent_NonXMLBody();
 			case ConsolPackage.MEDICATION_INFORMATION: return createMedicationInformation();
 			case ConsolPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
-			case ConsolPackage.DISCHARGE_SUMMARY_COMPONENT_OF: return createDischargeSummary_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER3: return createComponentOf_EncompassingEncounter3();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY: return createEncompassingEncounter3_ResponsibleParty();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT: return createEncompassingEncounter3_EncounterParticipant();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION: return createHospitalDischargeDiagnosisSection();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS: return createHospitalDischargeDiagnosis();
 			case ConsolPackage.DISCHARGE_DIET_SECTION: return createDischargeDietSection();
@@ -275,60 +204,17 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.PROCEDURE_SPECIMENS_TAKEN_SECTION: return createProcedureSpecimensTakenSection();
 			case ConsolPackage.SUBJECTIVE_SECTION: return createSubjectiveSection();
 			case ConsolPackage.CONSULTATION_NOTE: return createConsultationNote();
-			case ConsolPackage.CONSULTATION_NOTE_COMPONENT_OF: return createConsultationNote_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER2: return createComponentOf_EncompassingEncounter2();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY: return createEncompassingEncounter2_ResponsibleParty();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT: return createEncompassingEncounter2_EncounterParticipant();
 			case ConsolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
 			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE: return createHistoryAndPhysicalNote();
-			case ConsolPackage.HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF: return createHistoryAndPhysicalNote_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER4: return createComponentOf_EncompassingEncounter4();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY: return createEncompassingEncounter4_ResponsibleParty();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT: return createEncompassingEncounter4_EncounterParticipant();
 			case ConsolPackage.OPERATIVE_NOTE: return createOperativeNote();
-			case ConsolPackage.OPERATIVE_NOTE_DOCUMENTATION_OF: return createOperativeNote_DocumentationOf();
-			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT: return createDocumentationOf_ServiceEvent();
-			case ConsolPackage.SERVICE_EVENT_PRIMARY_PERFORMER: return createServiceEvent_PrimaryPerformer();
 			case ConsolPackage.PROCEDURE_NOTE: return createProcedureNote();
-			case ConsolPackage.PROCEDURE_NOTE_COMPONENT_OF: return createProcedureNote_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER5: return createComponentOf_EncompassingEncounter5();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_LOCATION: return createEncompassingEncounter5_Location();
-			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY: return createLocation_HealthCareFacility();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT: return createEncompassingEncounter5_EncounterParticipant();
-			case ConsolPackage.PROCEDURE_NOTE_INDIVIDUAL: return createProcedureNote_Individual();
-			case ConsolPackage.PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN: return createProcedureNote_PrimaryCarePhysician();
-			case ConsolPackage.PROCEDURE_NOTE_PROVIDER: return createProcedureNote_Provider();
-			case ConsolPackage.PROVIDER_ASSOCIATED_ENTITY: return createProvider_AssociatedEntity();
-			case ConsolPackage.PROCEDURE_NOTE_DOCUMENTATION_OF: return createProcedureNote_DocumentationOf();
-			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT1: return createDocumentationOf_ServiceEvent1();
-			case ConsolPackage.SERVICE_EVENT1_PRIMARY_PERFORMER: return createServiceEvent1_PrimaryPerformer();
 			case ConsolPackage.PROGRESS_NOTE: return createProgressNote();
-			case ConsolPackage.PROGRESS_NOTE_DOCUMENTATION_OF: return createProgressNote_DocumentationOf();
-			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT2: return createDocumentationOf_ServiceEvent2();
-			case ConsolPackage.PROGRESS_NOTE_COMPONENT_OF: return createProgressNote_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER6: return createComponentOf_EncompassingEncounter6();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER6_LOCATION: return createEncompassingEncounter6_Location();
-			case ConsolPackage.LOCATION_HEALTH_CARE_FACILITY1: return createLocation_HealthCareFacility1();
 			case ConsolPackage.INSTRUCTIONS_SECTION: return createInstructionsSection();
 			case ConsolPackage.MEDICATION_DISPENSE_ASSIGNED_ENTITY: return createMedicationDispenseAssignedEntity();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: return createImmunizationMedicationInformationManufacturedMaterial();
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT: return createDiagnosticImagingReport();
-			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT: return createDiagnosticImagingReport_Participant();
-			case ConsolPackage.PARTICIPANT_ASSOCIATED_ENTITY: return createParticipant_AssociatedEntity();
-			case ConsolPackage.ASSOCIATED_ENTITY_PERSON: return createAssociatedEntity_Person();
-			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF: return createDiagnosticImagingReport_InFulfillmentOf();
-			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF: return createDiagnosticImagingReport_DocumentationOf();
-			case ConsolPackage.DOCUMENTATION_OF_SERVICE_EVENT4: return createDocumentationOf_ServiceEvent4();
-			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT: return createDiagnosticImagingReport_RelatedDocument();
-			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF: return createDiagnosticImagingReport_ComponentOf();
-			case ConsolPackage.COMPONENT_OF_ENCOMPASSING_ENCOUNTER7: return createComponentOf_EncompassingEncounter7();
-			case ConsolPackage.ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY: return createEncompassingEncounter7_ResponsibleParty();
-			case ConsolPackage.RESPONSIBLE_PARTY_ASSIGNED_ENTITY: return createResponsibleParty_AssignedEntity();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER: return createPhysicianReadingStudyPerformer();
-			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY: return createPhysicianReadingStudyPerformer_AssignedEntity();
 			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT: return createPhysicianofRecordParticipant();
-			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY: return createPhysicianofRecordParticipant_AssignedEntity();
-			case ConsolPackage.ASSIGNED_ENTITY_ASSIGNED_PERSON: return createAssignedEntity_AssignedPerson();
 			case ConsolPackage.TEXT_OBSERVATION: return createTextObservation();
 			case ConsolPackage.QUANTITY_MEASUREMENT_OBSERVATION: return createQuantityMeasurementObservation();
 			case ConsolPackage.CODE_OBSERVATIONS: return createCodeObservations();
@@ -346,326 +232,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
 		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
 		return generalHeaderConstraints;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_RecordTarget createGeneralHeaderConstraints_RecordTarget() {
-		GeneralHeaderConstraints_RecordTargetImpl generalHeaderConstraints_RecordTarget = new GeneralHeaderConstraints_RecordTargetImpl();
-		return generalHeaderConstraints_RecordTarget;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RecordTarget_PatientRole createRecordTarget_PatientRole() {
-		RecordTarget_PatientRoleImpl recordTarget_PatientRole = new RecordTarget_PatientRoleImpl();
-		return recordTarget_PatientRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientRole_Patient createPatientRole_Patient() {
-		PatientRole_PatientImpl patientRole_Patient = new PatientRole_PatientImpl();
-		return patientRole_Patient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Patient_Guardian createPatient_Guardian() {
-		Patient_GuardianImpl patient_Guardian = new Patient_GuardianImpl();
-		return patient_Guardian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Patient_LanguageCommunication createPatient_LanguageCommunication() {
-		Patient_LanguageCommunicationImpl patient_LanguageCommunication = new Patient_LanguageCommunicationImpl();
-		return patient_LanguageCommunication;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Patient_Birthplace createPatient_Birthplace() {
-		Patient_BirthplaceImpl patient_Birthplace = new Patient_BirthplaceImpl();
-		return patient_Birthplace;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Birthplace_Place createBirthplace_Place() {
-		Birthplace_PlaceImpl birthplace_Place = new Birthplace_PlaceImpl();
-		return birthplace_Place;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientRole_ProviderOrganization createPatientRole_ProviderOrganization() {
-		PatientRole_ProviderOrganizationImpl patientRole_ProviderOrganization = new PatientRole_ProviderOrganizationImpl();
-		return patientRole_ProviderOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_ComponentOf createGeneralHeaderConstraints_ComponentOf() {
-		GeneralHeaderConstraints_ComponentOfImpl generalHeaderConstraints_ComponentOf = new GeneralHeaderConstraints_ComponentOfImpl();
-		return generalHeaderConstraints_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter createComponentOf_EncompassingEncounter() {
-		ComponentOf_EncompassingEncounterImpl componentOf_EncompassingEncounter = new ComponentOf_EncompassingEncounterImpl();
-		return componentOf_EncompassingEncounter;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_Author createGeneralHeaderConstraints_Author() {
-		GeneralHeaderConstraints_AuthorImpl generalHeaderConstraints_Author = new GeneralHeaderConstraints_AuthorImpl();
-		return generalHeaderConstraints_Author;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Author_AssignedAuthor createAuthor_AssignedAuthor() {
-		Author_AssignedAuthorImpl author_AssignedAuthor = new Author_AssignedAuthorImpl();
-		return author_AssignedAuthor;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedAuthor_AuthoringDevice createAssignedAuthor_AuthoringDevice() {
-		AssignedAuthor_AuthoringDeviceImpl assignedAuthor_AuthoringDevice = new AssignedAuthor_AuthoringDeviceImpl();
-		return assignedAuthor_AuthoringDevice;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_Person createGeneralHeaderConstraints_Person() {
-		GeneralHeaderConstraints_PersonImpl generalHeaderConstraints_Person = new GeneralHeaderConstraints_PersonImpl();
-		return generalHeaderConstraints_Person;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_DataEnterer createGeneralHeaderConstraints_DataEnterer() {
-		GeneralHeaderConstraints_DataEntererImpl generalHeaderConstraints_DataEnterer = new GeneralHeaderConstraints_DataEntererImpl();
-		return generalHeaderConstraints_DataEnterer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DataEnterer_AssignedEntity createDataEnterer_AssignedEntity() {
-		DataEnterer_AssignedEntityImpl dataEnterer_AssignedEntity = new DataEnterer_AssignedEntityImpl();
-		return dataEnterer_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_Custodian createGeneralHeaderConstraints_Custodian() {
-		GeneralHeaderConstraints_CustodianImpl generalHeaderConstraints_Custodian = new GeneralHeaderConstraints_CustodianImpl();
-		return generalHeaderConstraints_Custodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Custodian_AssignedCustodian createCustodian_AssignedCustodian() {
-		Custodian_AssignedCustodianImpl custodian_AssignedCustodian = new Custodian_AssignedCustodianImpl();
-		return custodian_AssignedCustodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedCustodian_CustodianOrganization createAssignedCustodian_CustodianOrganization() {
-		AssignedCustodian_CustodianOrganizationImpl assignedCustodian_CustodianOrganization = new AssignedCustodian_CustodianOrganizationImpl();
-		return assignedCustodian_CustodianOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_InformationRecipient createGeneralHeaderConstraints_InformationRecipient() {
-		GeneralHeaderConstraints_InformationRecipientImpl generalHeaderConstraints_InformationRecipient = new GeneralHeaderConstraints_InformationRecipientImpl();
-		return generalHeaderConstraints_InformationRecipient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InformationRecipient_IntendedRecipient createInformationRecipient_IntendedRecipient() {
-		InformationRecipient_IntendedRecipientImpl informationRecipient_IntendedRecipient = new InformationRecipient_IntendedRecipientImpl();
-		return informationRecipient_IntendedRecipient;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IntendedRecipient_Organization createIntendedRecipient_Organization() {
-		IntendedRecipient_OrganizationImpl intendedRecipient_Organization = new IntendedRecipient_OrganizationImpl();
-		return intendedRecipient_Organization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_LegalAuthenticator createGeneralHeaderConstraints_LegalAuthenticator() {
-		GeneralHeaderConstraints_LegalAuthenticatorImpl generalHeaderConstraints_LegalAuthenticator = new GeneralHeaderConstraints_LegalAuthenticatorImpl();
-		return generalHeaderConstraints_LegalAuthenticator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LegalAuthenticator_AssignedEntity createLegalAuthenticator_AssignedEntity() {
-		LegalAuthenticator_AssignedEntityImpl legalAuthenticator_AssignedEntity = new LegalAuthenticator_AssignedEntityImpl();
-		return legalAuthenticator_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_Authenticator createGeneralHeaderConstraints_Authenticator() {
-		GeneralHeaderConstraints_AuthenticatorImpl generalHeaderConstraints_Authenticator = new GeneralHeaderConstraints_AuthenticatorImpl();
-		return generalHeaderConstraints_Authenticator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Authenticator_AssignedEntity createAuthenticator_AssignedEntity() {
-		Authenticator_AssignedEntityImpl authenticator_AssignedEntity = new Authenticator_AssignedEntityImpl();
-		return authenticator_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_Informant createGeneralHeaderConstraints_Informant() {
-		GeneralHeaderConstraints_InformantImpl generalHeaderConstraints_Informant = new GeneralHeaderConstraints_InformantImpl();
-		return generalHeaderConstraints_Informant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Informant_AssignedEntity createInformant_AssignedEntity() {
-		Informant_AssignedEntityImpl informant_AssignedEntity = new Informant_AssignedEntityImpl();
-		return informant_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Informant_RelatedEntity createInformant_RelatedEntity() {
-		Informant_RelatedEntityImpl informant_RelatedEntity = new Informant_RelatedEntityImpl();
-		return informant_RelatedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_ParticipantSupport createGeneralHeaderConstraints_ParticipantSupport() {
-		GeneralHeaderConstraints_ParticipantSupportImpl generalHeaderConstraints_ParticipantSupport = new GeneralHeaderConstraints_ParticipantSupportImpl();
-		return generalHeaderConstraints_ParticipantSupport;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GeneralHeaderConstraints_InFulfillmentOf createGeneralHeaderConstraints_InFulfillmentOf() {
-		GeneralHeaderConstraints_InFulfillmentOfImpl generalHeaderConstraints_InFulfillmentOf = new GeneralHeaderConstraints_InFulfillmentOfImpl();
-		return generalHeaderConstraints_InFulfillmentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InFulfillmentOf_Order createInFulfillmentOf_Order() {
-		InFulfillmentOf_OrderImpl inFulfillmentOf_Order = new InFulfillmentOf_OrderImpl();
-		return inFulfillmentOf_Order;
 	}
 
 	/**
@@ -783,26 +349,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProductInstance_ScopingEntity createProductInstance_ScopingEntity() {
-		ProductInstance_ScopingEntityImpl productInstance_ScopingEntity = new ProductInstance_ScopingEntityImpl();
-		return productInstance_ScopingEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProductInstance_PlayingDevice createProductInstance_PlayingDevice() {
-		ProductInstance_PlayingDeviceImpl productInstance_PlayingDevice = new ProductInstance_PlayingDeviceImpl();
-		return productInstance_PlayingDevice;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Instructions createInstructions() {
 		InstructionsImpl instructions = new InstructionsImpl();
 		return instructions;
@@ -833,29 +379,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationDispense_Product createMedicationDispense_Product() {
-		MedicationDispense_ProductImpl medicationDispense_Product = new MedicationDispense_ProductImpl();
-		return medicationDispense_Product;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationSupplyOrder createMedicationSupplyOrder() {
 		MedicationSupplyOrderImpl medicationSupplyOrder = new MedicationSupplyOrderImpl();
 		return medicationSupplyOrder;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationSupplyOrder_Product createMedicationSupplyOrder_Product() {
-		MedicationSupplyOrder_ProductImpl medicationSupplyOrder_Product = new MedicationSupplyOrder_ProductImpl();
-		return medicationSupplyOrder_Product;
 	}
 
 	/**
@@ -906,66 +432,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ContinuityOfCareDocument createContinuityOfCareDocument() {
 		ContinuityOfCareDocumentImpl continuityOfCareDocument = new ContinuityOfCareDocumentImpl();
 		return continuityOfCareDocument;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ContinuityOfCareDocument_DocumentationOf createContinuityOfCareDocument_DocumentationOf() {
-		ContinuityOfCareDocument_DocumentationOfImpl continuityOfCareDocument_DocumentationOf = new ContinuityOfCareDocument_DocumentationOfImpl();
-		return continuityOfCareDocument_DocumentationOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DocumentationOf_ServiceEvent3 createDocumentationOf_ServiceEvent3() {
-		DocumentationOf_ServiceEvent3Impl documentationOf_ServiceEvent3 = new DocumentationOf_ServiceEvent3Impl();
-		return documentationOf_ServiceEvent3;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ServiceEvent3_Performer createServiceEvent3_Performer() {
-		ServiceEvent3_PerformerImpl serviceEvent3_Performer = new ServiceEvent3_PerformerImpl();
-		return serviceEvent3_Performer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Performer_AssignedEntity createPerformer_AssignedEntity() {
-		Performer_AssignedEntityImpl performer_AssignedEntity = new Performer_AssignedEntityImpl();
-		return performer_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ContinuityOfCareDocument_Author createContinuityOfCareDocument_Author() {
-		ContinuityOfCareDocument_AuthorImpl continuityOfCareDocument_Author = new ContinuityOfCareDocument_AuthorImpl();
-		return continuityOfCareDocument_Author;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Author_AssignedAuthor3 createAuthor_AssignedAuthor3() {
-		Author_AssignedAuthor3Impl author_AssignedAuthor3 = new Author_AssignedAuthor3Impl();
-		return author_AssignedAuthor3;
 	}
 
 	/**
@@ -1046,106 +512,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PolicyActivity createPolicyActivity() {
 		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
 		return policyActivity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PolicyActivity_Payer createPolicyActivity_Payer() {
-		PolicyActivity_PayerImpl policyActivity_Payer = new PolicyActivity_PayerImpl();
-		return policyActivity_Payer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Payer_PayerAssignedEntity createPayer_PayerAssignedEntity() {
-		Payer_PayerAssignedEntityImpl payer_PayerAssignedEntity = new Payer_PayerAssignedEntityImpl();
-		return payer_PayerAssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PayerAssignedEntity_PayerOrganization createPayerAssignedEntity_PayerOrganization() {
-		PayerAssignedEntity_PayerOrganizationImpl payerAssignedEntity_PayerOrganization = new PayerAssignedEntity_PayerOrganizationImpl();
-		return payerAssignedEntity_PayerOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PolicyActivity_Guarantor createPolicyActivity_Guarantor() {
-		PolicyActivity_GuarantorImpl policyActivity_Guarantor = new PolicyActivity_GuarantorImpl();
-		return policyActivity_Guarantor;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Guarantor_GuarantorAssignedEntity createGuarantor_GuarantorAssignedEntity() {
-		Guarantor_GuarantorAssignedEntityImpl guarantor_GuarantorAssignedEntity = new Guarantor_GuarantorAssignedEntityImpl();
-		return guarantor_GuarantorAssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PolicyActivity_Coverage createPolicyActivity_Coverage() {
-		PolicyActivity_CoverageImpl policyActivity_Coverage = new PolicyActivity_CoverageImpl();
-		return policyActivity_Coverage;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Coverage_CoverageRole createCoverage_CoverageRole() {
-		Coverage_CoverageRoleImpl coverage_CoverageRole = new Coverage_CoverageRoleImpl();
-		return coverage_CoverageRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CoverageRole_CoveragePlayingEntity createCoverageRole_CoveragePlayingEntity() {
-		CoverageRole_CoveragePlayingEntityImpl coverageRole_CoveragePlayingEntity = new CoverageRole_CoveragePlayingEntityImpl();
-		return coverageRole_CoveragePlayingEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PolicyActivity_Holder createPolicyActivity_Holder() {
-		PolicyActivity_HolderImpl policyActivity_Holder = new PolicyActivity_HolderImpl();
-		return policyActivity_Holder;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Holder_HolderRole createHolder_HolderRole() {
-		Holder_HolderRoleImpl holder_HolderRole = new Holder_HolderRoleImpl();
-		return holder_HolderRole;
 	}
 
 	/**
@@ -1486,66 +852,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
 		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
 		return advanceDirectiveObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservation_Reference createAdvanceDirectiveObservation_Reference() {
-		AdvanceDirectiveObservation_ReferenceImpl advanceDirectiveObservation_Reference = new AdvanceDirectiveObservation_ReferenceImpl();
-		return advanceDirectiveObservation_Reference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Reference_ExternalDocument createReference_ExternalDocument() {
-		Reference_ExternalDocumentImpl reference_ExternalDocument = new Reference_ExternalDocumentImpl();
-		return reference_ExternalDocument;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservation_Custodian createAdvanceDirectiveObservation_Custodian() {
-		AdvanceDirectiveObservation_CustodianImpl advanceDirectiveObservation_Custodian = new AdvanceDirectiveObservation_CustodianImpl();
-		return advanceDirectiveObservation_Custodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Custodian_CustodianRole createCustodian_CustodianRole() {
-		Custodian_CustodianRoleImpl custodian_CustodianRole = new Custodian_CustodianRoleImpl();
-		return custodian_CustodianRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CustodianRole_CustodianEntity createCustodianRole_CustodianEntity() {
-		CustodianRole_CustodianEntityImpl custodianRole_CustodianEntity = new CustodianRole_CustodianEntityImpl();
-		return custodianRole_CustodianEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservation_Verifier createAdvanceDirectiveObservation_Verifier() {
-		AdvanceDirectiveObservation_VerifierImpl advanceDirectiveObservation_Verifier = new AdvanceDirectiveObservation_VerifierImpl();
-		return advanceDirectiveObservation_Verifier;
 	}
 
 	/**
@@ -2113,46 +1419,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConsultationNote_ComponentOf createConsultationNote_ComponentOf() {
-		ConsultationNote_ComponentOfImpl consultationNote_ComponentOf = new ConsultationNote_ComponentOfImpl();
-		return consultationNote_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter2 createComponentOf_EncompassingEncounter2() {
-		ComponentOf_EncompassingEncounter2Impl componentOf_EncompassingEncounter2 = new ComponentOf_EncompassingEncounter2Impl();
-		return componentOf_EncompassingEncounter2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter2_ResponsibleParty createEncompassingEncounter2_ResponsibleParty() {
-		EncompassingEncounter2_ResponsiblePartyImpl encompassingEncounter2_ResponsibleParty = new EncompassingEncounter2_ResponsiblePartyImpl();
-		return encompassingEncounter2_ResponsibleParty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter2_EncounterParticipant createEncompassingEncounter2_EncounterParticipant() {
-		EncompassingEncounter2_EncounterParticipantImpl encompassingEncounter2_EncounterParticipant = new EncompassingEncounter2_EncounterParticipantImpl();
-		return encompassingEncounter2_EncounterParticipant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
@@ -2173,79 +1439,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryAndPhysicalNote_ComponentOf createHistoryAndPhysicalNote_ComponentOf() {
-		HistoryAndPhysicalNote_ComponentOfImpl historyAndPhysicalNote_ComponentOf = new HistoryAndPhysicalNote_ComponentOfImpl();
-		return historyAndPhysicalNote_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter4 createComponentOf_EncompassingEncounter4() {
-		ComponentOf_EncompassingEncounter4Impl componentOf_EncompassingEncounter4 = new ComponentOf_EncompassingEncounter4Impl();
-		return componentOf_EncompassingEncounter4;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter4_ResponsibleParty createEncompassingEncounter4_ResponsibleParty() {
-		EncompassingEncounter4_ResponsiblePartyImpl encompassingEncounter4_ResponsibleParty = new EncompassingEncounter4_ResponsiblePartyImpl();
-		return encompassingEncounter4_ResponsibleParty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter4_EncounterParticipant createEncompassingEncounter4_EncounterParticipant() {
-		EncompassingEncounter4_EncounterParticipantImpl encompassingEncounter4_EncounterParticipant = new EncompassingEncounter4_EncounterParticipantImpl();
-		return encompassingEncounter4_EncounterParticipant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public OperativeNote createOperativeNote() {
 		OperativeNoteImpl operativeNote = new OperativeNoteImpl();
 		return operativeNote;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public OperativeNote_DocumentationOf createOperativeNote_DocumentationOf() {
-		OperativeNote_DocumentationOfImpl operativeNote_DocumentationOf = new OperativeNote_DocumentationOfImpl();
-		return operativeNote_DocumentationOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DocumentationOf_ServiceEvent createDocumentationOf_ServiceEvent() {
-		DocumentationOf_ServiceEventImpl documentationOf_ServiceEvent = new DocumentationOf_ServiceEventImpl();
-		return documentationOf_ServiceEvent;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ServiceEvent_PrimaryPerformer createServiceEvent_PrimaryPerformer() {
-		ServiceEvent_PrimaryPerformerImpl serviceEvent_PrimaryPerformer = new ServiceEvent_PrimaryPerformerImpl();
-		return serviceEvent_PrimaryPerformer;
 	}
 
 	/**
@@ -2263,189 +1459,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureNote_ComponentOf createProcedureNote_ComponentOf() {
-		ProcedureNote_ComponentOfImpl procedureNote_ComponentOf = new ProcedureNote_ComponentOfImpl();
-		return procedureNote_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter5 createComponentOf_EncompassingEncounter5() {
-		ComponentOf_EncompassingEncounter5Impl componentOf_EncompassingEncounter5 = new ComponentOf_EncompassingEncounter5Impl();
-		return componentOf_EncompassingEncounter5;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter5_Location createEncompassingEncounter5_Location() {
-		EncompassingEncounter5_LocationImpl encompassingEncounter5_Location = new EncompassingEncounter5_LocationImpl();
-		return encompassingEncounter5_Location;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Location_HealthCareFacility createLocation_HealthCareFacility() {
-		Location_HealthCareFacilityImpl location_HealthCareFacility = new Location_HealthCareFacilityImpl();
-		return location_HealthCareFacility;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter5_EncounterParticipant createEncompassingEncounter5_EncounterParticipant() {
-		EncompassingEncounter5_EncounterParticipantImpl encompassingEncounter5_EncounterParticipant = new EncompassingEncounter5_EncounterParticipantImpl();
-		return encompassingEncounter5_EncounterParticipant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNote_Individual createProcedureNote_Individual() {
-		ProcedureNote_IndividualImpl procedureNote_Individual = new ProcedureNote_IndividualImpl();
-		return procedureNote_Individual;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNote_PrimaryCarePhysician createProcedureNote_PrimaryCarePhysician() {
-		ProcedureNote_PrimaryCarePhysicianImpl procedureNote_PrimaryCarePhysician = new ProcedureNote_PrimaryCarePhysicianImpl();
-		return procedureNote_PrimaryCarePhysician;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNote_Provider createProcedureNote_Provider() {
-		ProcedureNote_ProviderImpl procedureNote_Provider = new ProcedureNote_ProviderImpl();
-		return procedureNote_Provider;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Provider_AssociatedEntity createProvider_AssociatedEntity() {
-		Provider_AssociatedEntityImpl provider_AssociatedEntity = new Provider_AssociatedEntityImpl();
-		return provider_AssociatedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNote_DocumentationOf createProcedureNote_DocumentationOf() {
-		ProcedureNote_DocumentationOfImpl procedureNote_DocumentationOf = new ProcedureNote_DocumentationOfImpl();
-		return procedureNote_DocumentationOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DocumentationOf_ServiceEvent1 createDocumentationOf_ServiceEvent1() {
-		DocumentationOf_ServiceEvent1Impl documentationOf_ServiceEvent1 = new DocumentationOf_ServiceEvent1Impl();
-		return documentationOf_ServiceEvent1;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ServiceEvent1_PrimaryPerformer createServiceEvent1_PrimaryPerformer() {
-		ServiceEvent1_PrimaryPerformerImpl serviceEvent1_PrimaryPerformer = new ServiceEvent1_PrimaryPerformerImpl();
-		return serviceEvent1_PrimaryPerformer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ProgressNote createProgressNote() {
 		ProgressNoteImpl progressNote = new ProgressNoteImpl();
 		return progressNote;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProgressNote_DocumentationOf createProgressNote_DocumentationOf() {
-		ProgressNote_DocumentationOfImpl progressNote_DocumentationOf = new ProgressNote_DocumentationOfImpl();
-		return progressNote_DocumentationOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DocumentationOf_ServiceEvent2 createDocumentationOf_ServiceEvent2() {
-		DocumentationOf_ServiceEvent2Impl documentationOf_ServiceEvent2 = new DocumentationOf_ServiceEvent2Impl();
-		return documentationOf_ServiceEvent2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProgressNote_ComponentOf createProgressNote_ComponentOf() {
-		ProgressNote_ComponentOfImpl progressNote_ComponentOf = new ProgressNote_ComponentOfImpl();
-		return progressNote_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter6 createComponentOf_EncompassingEncounter6() {
-		ComponentOf_EncompassingEncounter6Impl componentOf_EncompassingEncounter6 = new ComponentOf_EncompassingEncounter6Impl();
-		return componentOf_EncompassingEncounter6;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter6_Location createEncompassingEncounter6_Location() {
-		EncompassingEncounter6_LocationImpl encompassingEncounter6_Location = new EncompassingEncounter6_LocationImpl();
-		return encompassingEncounter6_Location;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Location_HealthCareFacility1 createLocation_HealthCareFacility1() {
-		Location_HealthCareFacility1Impl location_HealthCareFacility1 = new Location_HealthCareFacility1Impl();
-		return location_HealthCareFacility1;
 	}
 
 	/**
@@ -2513,116 +1529,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiagnosticImagingReport_Participant createDiagnosticImagingReport_Participant() {
-		DiagnosticImagingReport_ParticipantImpl diagnosticImagingReport_Participant = new DiagnosticImagingReport_ParticipantImpl();
-		return diagnosticImagingReport_Participant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Participant_AssociatedEntity createParticipant_AssociatedEntity() {
-		Participant_AssociatedEntityImpl participant_AssociatedEntity = new Participant_AssociatedEntityImpl();
-		return participant_AssociatedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssociatedEntity_Person createAssociatedEntity_Person() {
-		AssociatedEntity_PersonImpl associatedEntity_Person = new AssociatedEntity_PersonImpl();
-		return associatedEntity_Person;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DiagnosticImagingReport_InFulfillmentOf createDiagnosticImagingReport_InFulfillmentOf() {
-		DiagnosticImagingReport_InFulfillmentOfImpl diagnosticImagingReport_InFulfillmentOf = new DiagnosticImagingReport_InFulfillmentOfImpl();
-		return diagnosticImagingReport_InFulfillmentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DiagnosticImagingReport_DocumentationOf createDiagnosticImagingReport_DocumentationOf() {
-		DiagnosticImagingReport_DocumentationOfImpl diagnosticImagingReport_DocumentationOf = new DiagnosticImagingReport_DocumentationOfImpl();
-		return diagnosticImagingReport_DocumentationOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DocumentationOf_ServiceEvent4 createDocumentationOf_ServiceEvent4() {
-		DocumentationOf_ServiceEvent4Impl documentationOf_ServiceEvent4 = new DocumentationOf_ServiceEvent4Impl();
-		return documentationOf_ServiceEvent4;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DiagnosticImagingReport_RelatedDocument createDiagnosticImagingReport_RelatedDocument() {
-		DiagnosticImagingReport_RelatedDocumentImpl diagnosticImagingReport_RelatedDocument = new DiagnosticImagingReport_RelatedDocumentImpl();
-		return diagnosticImagingReport_RelatedDocument;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DiagnosticImagingReport_ComponentOf createDiagnosticImagingReport_ComponentOf() {
-		DiagnosticImagingReport_ComponentOfImpl diagnosticImagingReport_ComponentOf = new DiagnosticImagingReport_ComponentOfImpl();
-		return diagnosticImagingReport_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter7 createComponentOf_EncompassingEncounter7() {
-		ComponentOf_EncompassingEncounter7Impl componentOf_EncompassingEncounter7 = new ComponentOf_EncompassingEncounter7Impl();
-		return componentOf_EncompassingEncounter7;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter7_ResponsibleParty createEncompassingEncounter7_ResponsibleParty() {
-		EncompassingEncounter7_ResponsiblePartyImpl encompassingEncounter7_ResponsibleParty = new EncompassingEncounter7_ResponsiblePartyImpl();
-		return encompassingEncounter7_ResponsibleParty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponsibleParty_AssignedEntity createResponsibleParty_AssignedEntity() {
-		ResponsibleParty_AssignedEntityImpl responsibleParty_AssignedEntity = new ResponsibleParty_AssignedEntityImpl();
-		return responsibleParty_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PhysicianReadingStudyPerformer createPhysicianReadingStudyPerformer() {
 		PhysicianReadingStudyPerformerImpl physicianReadingStudyPerformer = new PhysicianReadingStudyPerformerImpl();
 		return physicianReadingStudyPerformer;
@@ -2633,39 +1539,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PhysicianReadingStudyPerformer_AssignedEntity createPhysicianReadingStudyPerformer_AssignedEntity() {
-		PhysicianReadingStudyPerformer_AssignedEntityImpl physicianReadingStudyPerformer_AssignedEntity = new PhysicianReadingStudyPerformer_AssignedEntityImpl();
-		return physicianReadingStudyPerformer_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PhysicianofRecordParticipant createPhysicianofRecordParticipant() {
 		PhysicianofRecordParticipantImpl physicianofRecordParticipant = new PhysicianofRecordParticipantImpl();
 		return physicianofRecordParticipant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PhysicianofRecordParticipant_AssignedEntity createPhysicianofRecordParticipant_AssignedEntity() {
-		PhysicianofRecordParticipant_AssignedEntityImpl physicianofRecordParticipant_AssignedEntity = new PhysicianofRecordParticipant_AssignedEntityImpl();
-		return physicianofRecordParticipant_AssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedEntity_AssignedPerson createAssignedEntity_AssignedPerson() {
-		AssignedEntity_AssignedPersonImpl assignedEntity_AssignedPerson = new AssignedEntity_AssignedPersonImpl();
-		return assignedEntity_AssignedPerson;
 	}
 
 	/**
@@ -2793,96 +1669,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnstructuredDocument_RecordTarget createUnstructuredDocument_RecordTarget() {
-		UnstructuredDocument_RecordTargetImpl unstructuredDocument_RecordTarget = new UnstructuredDocument_RecordTargetImpl();
-		return unstructuredDocument_RecordTarget;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RecordTarget_PatientRole2 createRecordTarget_PatientRole2() {
-		RecordTarget_PatientRole2Impl recordTarget_PatientRole2 = new RecordTarget_PatientRole2Impl();
-		return recordTarget_PatientRole2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UnstructuredDocument_Author createUnstructuredDocument_Author() {
-		UnstructuredDocument_AuthorImpl unstructuredDocument_Author = new UnstructuredDocument_AuthorImpl();
-		return unstructuredDocument_Author;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Author_AssignedAuthor2 createAuthor_AssignedAuthor2() {
-		Author_AssignedAuthor2Impl author_AssignedAuthor2 = new Author_AssignedAuthor2Impl();
-		return author_AssignedAuthor2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UnstructuredDocument_Custodian createUnstructuredDocument_Custodian() {
-		UnstructuredDocument_CustodianImpl unstructuredDocument_Custodian = new UnstructuredDocument_CustodianImpl();
-		return unstructuredDocument_Custodian;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Custodian_AssignedCustodian3 createCustodian_AssignedCustodian3() {
-		Custodian_AssignedCustodian3Impl custodian_AssignedCustodian3 = new Custodian_AssignedCustodian3Impl();
-		return custodian_AssignedCustodian3;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedCustodian3_CustodianOrganization createAssignedCustodian3_CustodianOrganization() {
-		AssignedCustodian3_CustodianOrganizationImpl assignedCustodian3_CustodianOrganization = new AssignedCustodian3_CustodianOrganizationImpl();
-		return assignedCustodian3_CustodianOrganization;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UnstructuredDocument_Component createUnstructuredDocument_Component() {
-		UnstructuredDocument_ComponentImpl unstructuredDocument_Component = new UnstructuredDocument_ComponentImpl();
-		return unstructuredDocument_Component;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Component_NonXMLBody createComponent_NonXMLBody() {
-		Component_NonXMLBodyImpl component_NonXMLBody = new Component_NonXMLBodyImpl();
-		return component_NonXMLBody;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationInformation createMedicationInformation() {
 		MedicationInformationImpl medicationInformation = new MedicationInformationImpl();
 		return medicationInformation;
@@ -2896,46 +1682,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DischargeSummary_ComponentOf createDischargeSummary_ComponentOf() {
-		DischargeSummary_ComponentOfImpl dischargeSummary_ComponentOf = new DischargeSummary_ComponentOfImpl();
-		return dischargeSummary_ComponentOf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComponentOf_EncompassingEncounter3 createComponentOf_EncompassingEncounter3() {
-		ComponentOf_EncompassingEncounter3Impl componentOf_EncompassingEncounter3 = new ComponentOf_EncompassingEncounter3Impl();
-		return componentOf_EncompassingEncounter3;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter3_ResponsibleParty createEncompassingEncounter3_ResponsibleParty() {
-		EncompassingEncounter3_ResponsiblePartyImpl encompassingEncounter3_ResponsibleParty = new EncompassingEncounter3_ResponsiblePartyImpl();
-		return encompassingEncounter3_ResponsibleParty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncompassingEncounter3_EncounterParticipant createEncompassingEncounter3_EncounterParticipant() {
-		EncompassingEncounter3_EncounterParticipantImpl encompassingEncounter3_EncounterParticipant = new EncompassingEncounter3_EncounterParticipantImpl();
-		return encompassingEncounter3_EncounterParticipant;
 	}
 
 	/**

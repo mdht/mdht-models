@@ -24,20 +24,6 @@
   <CDA:CDATemplate xmi:id="_2LXH4BSVEeGGzu7fmW9pXw" base_Class="_2LWg0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.22.1">
     <ruleId>CONF:10387</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2L6hhBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-457</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2LYWARSVEeGGzu7fmW9pXw" code="46240-8" displayName="History of encounters">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-454</ruleId>
-    <ruleId>CONF-455</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2LZkIRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-456</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2LaLMBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-453</ruleId>
-  </CDA:PropertyValidation>
   <uml:Class xmi:id="_4yj2wBVdEeGQCvUGzi1kDQ" name="EncountersSectionEntriesOptional">
     <ownedComment xmi:id="_4yj2wRVdEeGQCvUGzi1kDQ" annotatedElement="_4yj2wBVdEeGQCvUGzi1kDQ">
       <body>This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</body>
@@ -165,9 +151,6 @@
   <CDA:ConstraintValidation xmi:id="_2Ld1kBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2LecoBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2LecoRSVEeGGzu7fmW9pXw" severity="INFO"/>
-  <CDA:ConstraintValidation xmi:id="_2LfDsBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-470</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2LbZUBSVEeGGzu7fmW9pXw" base_Property="_2LaySxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8710</ruleId>
   </CDA:PropertyValidation>

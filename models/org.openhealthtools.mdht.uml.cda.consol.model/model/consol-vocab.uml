@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FPRwBSVEeGGzu7fmW9pXw" name="SeverityObservation">
-      <ownedLiteral xmi:id="_2FPRwRSVEeGGzu7fmW9pXw" name="H"/>
-      <ownedLiteral xmi:id="_2FPRwhSVEeGGzu7fmW9pXw" name="M"/>
-      <ownedLiteral xmi:id="_2FPRwxSVEeGGzu7fmW9pXw" name="L"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="HITSP Problem Status">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="HITSPProblemStatus">
       <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
       <ownedLiteral xmi:id="_2FcGEhSVEeGGzu7fmW9pXw" name="73425007">
         <ownedComment xmi:id="_ySSfoCA9EeG9GZYpu7WBOQ">
@@ -20,9 +15,7 @@
       </ownedLiteral>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Fw2MBSVEeGGzu7fmW9pXw" name="Problem Type">
-      <eAnnotations xmi:id="_2F0gkRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_RS-wgCvBEd-LFp1hgdmc1w"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_2F0gkRSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedComment xmi:id="_zlLhUCAxEeGetMjKLkqR8g">
         <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
       </ownedComment>
@@ -43,39 +36,22 @@
       <ownedLiteral xmi:id="_2GDxJBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2GDxJRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HFr4RSVEeGGzu7fmW9pXw" name="Medication Type">
-      <eAnnotations xmi:id="_2HHhERSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWV44KDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
-      <ownedLiteral xmi:id="_2HFr4hSVEeGGzu7fmW9pXw" name="329505003"/>
-      <ownedLiteral xmi:id="_2HFr4xSVEeGGzu7fmW9pXw" name="73639000"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HnQUxSVEeGGzu7fmW9pXw" name="Medication Fill Status">
-      <eAnnotations xmi:id="_2HpskBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dV8QQKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_2HpskBSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA">
-      <eAnnotations xmi:id="_2H3H8BSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWOkIKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA Value Set">
+      <eAnnotations xmi:id="_2H3H8BSVEeGGzu7fmW9pXw" source="sourceClass"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site">
-      <eAnnotations xmi:id="_2H4WEBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c215cKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site Value Set">
+      <eAnnotations xmi:id="_2H4WEBSVEeGGzu7fmW9pXw" source="sourceClass"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form">
-      <eAnnotations xmi:id="_2H6LQBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWEMEKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_2H6LQBSVEeGGzu7fmW9pXw" source="sourceClass"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type">
-      <eAnnotations xmi:id="_2JnbcRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dj_6YKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type Set Definition">
+      <eAnnotations xmi:id="_2JnbcRSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedLiteral xmi:id="_2JjKARSVEeGGzu7fmW9pXw" name="160573003"/>
       <ownedLiteral xmi:id="_2JjKAhSVEeGGzu7fmW9pXw" name="363908000"/>
       <ownedLiteral xmi:id="_2JjKAxSVEeGGzu7fmW9pXw" name="364703007"/>
@@ -85,10 +61,8 @@
       <ownedLiteral xmi:id="_2JjKBxSVEeGGzu7fmW9pXw" name="229819007"/>
       <ownedLiteral xmi:id="_2JjKCBSVEeGGzu7fmW9pXw" name="425400000"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="Advance Directive Type">
-      <eAnnotations xmi:id="_2LKTkRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c2q6UKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="AdvanceDirectiveTypeCode">
+      <eAnnotations xmi:id="_2LKTkRSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedLiteral xmi:id="_2LHQQRSVEeGGzu7fmW9pXw" name="281789004"/>
       <ownedLiteral xmi:id="_2LHQQhSVEeGGzu7fmW9pXw" name="89666000"/>
       <ownedLiteral xmi:id="_2LHQQxSVEeGGzu7fmW9pXw" name="225204009"/>
@@ -96,59 +70,29 @@
       <ownedLiteral xmi:id="_2LHQRRSVEeGGzu7fmW9pXw" name="78823007"/>
       <ownedLiteral xmi:id="_2LHQRhSVEeGGzu7fmW9pXw" name="304251008"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterType">
-      <eAnnotations xmi:id="_2L4sUBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_3kRpAKypEd-9I53ewETPWA"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterTypeCode">
+      <eAnnotations xmi:id="_2L4sUBSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedComment xmi:id="_2L3eMRSVEeGGzu7fmW9pXw">
         <body>This is used to identify medical services and procedures furnished by physicians and other healthcare professionals.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L5TYBSVEeGGzu7fmW9pXw" name="Admission Type (NUBC)">
-      <eAnnotations xmi:id="_2L6hgBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_iXnBgKyqEd-9I53ewETPWA"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L5TYBSVEeGGzu7fmW9pXw" name="NUBC UB-04 FL17-Patient Status">
+      <eAnnotations xmi:id="_2L6hgBSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedComment xmi:id="_2L5TYRSVEeGGzu7fmW9pXw">
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
-      <eAnnotations xmi:id="_2MRt4BSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="Vital Sign Result">
-      <eAnnotations xmi:id="_2O91ghSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_UvVE0DISEd-saqiXO4OYhQ"/>
-      </eAnnotations>
-      <ownedLiteral xmi:id="_2O3u6hSVEeGGzu7fmW9pXw" name="8310-5"/>
-      <ownedLiteral xmi:id="_2O3u6xSVEeGGzu7fmW9pXw" name="8462-4"/>
-      <ownedLiteral xmi:id="_2O3u7BSVEeGGzu7fmW9pXw" name="8480-6"/>
-      <ownedLiteral xmi:id="_2O3u7RSVEeGGzu7fmW9pXw" name="8287-5"/>
-      <ownedLiteral xmi:id="_2O3u7hSVEeGGzu7fmW9pXw" name="8867-4"/>
-      <ownedLiteral xmi:id="_2O3u7xSVEeGGzu7fmW9pXw" name="8302-2"/>
-      <ownedLiteral xmi:id="_2O3u8BSVEeGGzu7fmW9pXw" name="8306-3"/>
-      <ownedLiteral xmi:id="_2O3u8RSVEeGGzu7fmW9pXw" name="2710-2"/>
-      <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
-      <ownedLiteral xmi:id="_2O3u8xSVEeGGzu7fmW9pXw" name="3141-9"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SVSkBSVEeGGzu7fmW9pXw" name="Problem">
-      <eAnnotations xmi:id="_2SVSkhSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_1-coUCvAEd-LFp1hgdmc1w"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_2SVSkhSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedComment xmi:id="_w0gJcCAxEeGetMjKLkqR8g">
         <body>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language">
-      <eAnnotations xmi:id="_2SbZNhSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_yh8VUKrtEd-yFfcbpgNFIA"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_2SbZNhSVEeGGzu7fmW9pXw" source="sourceClass"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNxSVEeGGzu7fmW9pXw" name="LanguageAbilityMode">
-      <eAnnotations xmi:id="_2Shf0hSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dLqS4KDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNxSVEeGGzu7fmW9pXw" name="HL7LanguageAbilityMode">
+      <eAnnotations xmi:id="_2Shf0hSVEeGGzu7fmW9pXw" source="sourceClass"/>
       <ownedLiteral xmi:id="_2SbZOBSVEeGGzu7fmW9pXw" name="ESGN"/>
       <ownedLiteral xmi:id="_2SbZORSVEeGGzu7fmW9pXw" name="ESP"/>
       <ownedLiteral xmi:id="_2SbZOhSVEeGGzu7fmW9pXw" name="EWR"/>
@@ -160,7 +104,7 @@
       <ownedLiteral xmi:id="_tnQrcBrNEeGxIZCGAXKxsQ" name="EVN"/>
       <ownedLiteral xmi:id="_u1rmYBrNEeGxIZCGAXKxsQ" name="INT"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-hMgMBrREeGxIZCGAXKxsQ" name="ProcedureActStatusCode">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-hMgMBrREeGxIZCGAXKxsQ" name="ProcedureAct statusCode">
       <ownedLiteral xmi:id="_IcwKYBrSEeGxIZCGAXKxsQ" name="completed"/>
       <ownedLiteral xmi:id="_J7q_cBrSEeGxIZCGAXKxsQ" name="active"/>
       <ownedLiteral xmi:id="_LxDMsBrSEeGxIZCGAXKxsQ" name="aborted"/>
@@ -230,20 +174,14 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015
 http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523.htm</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vNtCQDVPEeGIw7CntkyPQw" name="ConfidentialityCode"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8K870DVPEeGIw7CntkyPQw" name="BasicConfidentialityKind"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="__Nb_8DVQEeGIw7CntkyPQw" name="AdministrativeGenderCode">
-      <ownedComment xmi:id="__Nb_8TVQEeGIw7CntkyPQw">
-        <body>The gender of a person used for administrative purposes (as opposed to clinical gender)</body>
-      </ownedComment>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8K870DVPEeGIw7CntkyPQw" name="HL7BasicConfidentialityKind"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_DMi50DVREeGIw7CntkyPQw" name="Administrative Gender (HL7 V3)">
       <ownedLiteral xmi:id="_DMi50TVREeGIw7CntkyPQw" name="F"/>
       <ownedLiteral xmi:id="_DMi50jVREeGIw7CntkyPQw" name="M"/>
       <ownedLiteral xmi:id="_DMi50zVREeGIw7CntkyPQw" name="UN"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfhqEKDqEd-dVeaMP0XXQw" name="Religious Affiliation"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRMTIKDqEd-dVeaMP0XXQw" name="Marital Status">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfhqEKDqEd-dVeaMP0XXQw" name="HL7ReligiousAffiliation"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRMTIKDqEd-dVeaMP0XXQw" name="HL7MaritalStatus">
       <ownedLiteral xmi:id="_dRRLoKDqEd-dVeaMP0XXQw" name="A"/>
       <ownedLiteral xmi:id="_dRRLoqDqEd-dVeaMP0XXQw" name="D"/>
       <ownedLiteral xmi:id="_dRRLpKDqEd-dVeaMP0XXQw" name="T"/>
@@ -254,64 +192,14 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_dRRyt6DqEd-dVeaMP0XXQw" name="P"/>
       <ownedLiteral xmi:id="_dRSZwaDqEd-dVeaMP0XXQw" name="W"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfcxkKDqEd-dVeaMP0XXQw" name="RaceandEthnicityCDC"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="RoleCode">
-      <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
-        <body>Specific classification codes for further qualifying RoleClass codes.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ddN88KDqEd-dVeaMP0XXQw" name="Personal Relationship Role Type">
-      <ownedLiteral xmi:id="_ddRnUKDqEd-dVeaMP0XXQw" name="ADOPT"/>
-      <ownedLiteral xmi:id="_ddRnUqDqEd-dVeaMP0XXQw" name="AUNT"/>
-      <ownedLiteral xmi:id="_ddSOYKDqEd-dVeaMP0XXQw" name="CHILD"/>
-      <ownedLiteral xmi:id="_ddSOYqDqEd-dVeaMP0XXQw" name="CHLDINLAW"/>
-      <ownedLiteral xmi:id="_ddSOZKDqEd-dVeaMP0XXQw" name="COUSN"/>
-      <ownedLiteral xmi:id="_ddSOZqDqEd-dVeaMP0XXQw" name="DOMPART"/>
-      <ownedLiteral xmi:id="_ddS1caDqEd-dVeaMP0XXQw" name="FAMMEMB"/>
-      <ownedLiteral xmi:id="_ddS1c6DqEd-dVeaMP0XXQw" name="CHLDFOST"/>
-      <ownedLiteral xmi:id="_ddS1daDqEd-dVeaMP0XXQw" name="GRNDCHILD"/>
-      <ownedLiteral xmi:id="_ddTcgKDqEd-dVeaMP0XXQw" name="GPARNT"/>
-      <ownedLiteral xmi:id="_ddTcgqDqEd-dVeaMP0XXQw" name="GRPRN"/>
-      <ownedLiteral xmi:id="_ddTchKDqEd-dVeaMP0XXQw" name="GGRPRN"/>
-      <ownedLiteral xmi:id="_ddTchqDqEd-dVeaMP0XXQw" name="HSIB"/>
-      <ownedLiteral xmi:id="_ddUDkaDqEd-dVeaMP0XXQw" name="MAUNT"/>
-      <ownedLiteral xmi:id="_ddUDk6DqEd-dVeaMP0XXQw" name="MCOUSN"/>
-      <ownedLiteral xmi:id="_ddUDlaDqEd-dVeaMP0XXQw" name="MGRPRN"/>
-      <ownedLiteral xmi:id="_ddUqoKDqEd-dVeaMP0XXQw" name="MGGRPRN"/>
-      <ownedLiteral xmi:id="_ddUqoqDqEd-dVeaMP0XXQw" name="MUNCLE"/>
-      <ownedLiteral xmi:id="_ddUqpKDqEd-dVeaMP0XXQw" name="NCHILD"/>
-      <ownedLiteral xmi:id="_ddUqpqDqEd-dVeaMP0XXQw" name="NPRN"/>
-      <ownedLiteral xmi:id="_ddVRsKDqEd-dVeaMP0XXQw" name="NSIB"/>
-      <ownedLiteral xmi:id="_ddVRsqDqEd-dVeaMP0XXQw" name="NBOR"/>
-      <ownedLiteral xmi:id="_ddVRtKDqEd-dVeaMP0XXQw" name="NIENEPH"/>
-      <ownedLiteral xmi:id="_ddVRtqDqEd-dVeaMP0XXQw" name="PRN"/>
-      <ownedLiteral xmi:id="_ddV4waDqEd-dVeaMP0XXQw" name="PRNINLAW"/>
-      <ownedLiteral xmi:id="_ddV4w6DqEd-dVeaMP0XXQw" name="PAUNT"/>
-      <ownedLiteral xmi:id="_ddV4xaDqEd-dVeaMP0XXQw" name="PCOUSN"/>
-      <ownedLiteral xmi:id="_ddWf0KDqEd-dVeaMP0XXQw" name="PGRPRN"/>
-      <ownedLiteral xmi:id="_ddWf0qDqEd-dVeaMP0XXQw" name="PGGRPRN"/>
-      <ownedLiteral xmi:id="_ddWf1KDqEd-dVeaMP0XXQw" name="PUNCLE"/>
-      <ownedLiteral xmi:id="_ddWf1qDqEd-dVeaMP0XXQw" name="ROOM"/>
-      <ownedLiteral xmi:id="_ddXG4KDqEd-dVeaMP0XXQw" name="SIB"/>
-      <ownedLiteral xmi:id="_ddXG4qDqEd-dVeaMP0XXQw" name="SIBINLAW"/>
-      <ownedLiteral xmi:id="_ddXG5KDqEd-dVeaMP0XXQw" name="SIGOTHR"/>
-      <ownedLiteral xmi:id="_ddXt8KDqEd-dVeaMP0XXQw" name="SPS"/>
-      <ownedLiteral xmi:id="_ddXt8qDqEd-dVeaMP0XXQw" name="STEP"/>
-      <ownedLiteral xmi:id="_ddXt9KDqEd-dVeaMP0XXQw" name="STPPRN"/>
-      <ownedLiteral xmi:id="_ddXt9qDqEd-dVeaMP0XXQw" name="STPSIB"/>
-      <ownedLiteral xmi:id="_ddYVAKDqEd-dVeaMP0XXQw" name="UNCLE"/>
-      <ownedLiteral xmi:id="_ddYVAqDqEd-dVeaMP0XXQw" name="FRND"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency">
       <ownedLiteral xmi:id="_gzUsQFoCEeGKdMKWzrgL_Q" name="E"/>
       <ownedLiteral xmi:id="_mLUEoFoCEeGKdMKWzrgL_Q" name="F"/>
       <ownedLiteral xmi:id="_qlnFsFoCEeGKdMKWzrgL_Q" name="G"/>
       <ownedLiteral xmi:id="_vRMEAFoCEeGKdMKWzrgL_Q" name="P"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_svo1oDVVEeGIw7CntkyPQw" name="NUCCHealthCareProviderTaxonomy"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZhyZUDVYEeGIw7CntkyPQw" name="Participationsignature"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type Value Set">
       <ownedLiteral xmi:id="_oBbiYDrtEeG-aJb2h_4S8w" name="12"/>
       <ownedLiteral xmi:id="_ru4EgDrtEeG-aJb2h_4S8w" name="13"/>
       <ownedLiteral xmi:id="_wqPyUDrtEeG-aJb2h_4S8w" name="14"/>
@@ -402,12 +290,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_2E9k8RSVEeGGzu7fmW9pXw" conceptName="Disabled"/>
   <term:ValueSetCode xmi:id="_2E-MABSVEeGGzu7fmW9pXw" conceptName="Severely disabled"/>
   <term:ValueSetCode xmi:id="_2E-MARSVEeGGzu7fmW9pXw" conceptName="Deceased"/>
-  <term:ValueSetVersion xmi:id="_2FPRxBSVEeGGzu7fmW9pXw" base_Enumeration="_2FPRwBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_hSRvwSQMEeCxCon8a79rfA"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_2FP40BSVEeGGzu7fmW9pXw" conceptName="High" base_EnumerationLiteral="_2FPRwRSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2FQf4BSVEeGGzu7fmW9pXw" conceptName="Moderate" base_EnumerationLiteral="_2FPRwhSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2FQf4RSVEeGGzu7fmW9pXw" conceptName="Low" base_EnumerationLiteral="_2FPRwxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2FctIBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.68" base_Enumeration="_2FcGEBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -479,22 +361,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="3" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_2O3u9RSVEeGGzu7fmW9pXw" conceptName="Body temperature:Temp:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u6hSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u9hSVEeGGzu7fmW9pXw" conceptName="Intravascular diastolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u6xSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u9xSVEeGGzu7fmW9pXw" conceptName="Intravascular systolic:Pres:Pt:Arterial system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7BSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u-BSVEeGGzu7fmW9pXw" conceptName="Circumference.occipital-frontal:Len:Pt:Head:Qn:Tape measure" usageNote="LOINC" base_EnumerationLiteral="_2O3u7RSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u-RSVEeGGzu7fmW9pXw" conceptName="Heart beat:NRat:Pt:XXX:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7hSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u-hSVEeGGzu7fmW9pXw" conceptName="Body height:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u7xSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u-xSVEeGGzu7fmW9pXw" conceptName="Body height^lying:Len:Pt:^Patient:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u8BSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O3u_BSVEeGGzu7fmW9pXw" conceptName="Oxygen saturation:SFr:Pt:BldC:Qn:Oximetry" usageNote="LOINC" base_EnumerationLiteral="_2O3u8RSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O91gBSVEeGGzu7fmW9pXw" conceptName="Breaths:NRat:Pt:Respiratory system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_2O3u8hSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2O91gRSVEeGGzu7fmW9pXw" conceptName="Body weight:Mass:Pt:^Patient:Qn:Measured" usageNote="LOINC" base_EnumerationLiteral="_2O3u8xSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="DYNAMIC" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -523,7 +389,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_J7q_cRrSEeGxIZCGAXKxsQ" conceptName="Active" base_EnumerationLiteral="_J7q_cBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_LxDMsRrSEeGxIZCGAXKxsQ" conceptName="Aborted" base_EnumerationLiteral="_LxDMsBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_M-QmsRrSEeGxIZCGAXKxsQ" conceptName="Cancelled" base_EnumerationLiteral="_M-QmsBrSEeGxIZCGAXKxsQ"/>
-  <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="4. 2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw"/>
+  <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="4. 2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Aq2j0CBCEeG938evaWkvcA" identifier="2.16.840.1.113883.11.20.9.21" binding="Dynamic" base_Enumeration="_Aqy5cCBCEeG938evaWkvcA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dkiF4KDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -534,7 +402,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
   <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Bro-kWPyEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" binding="Dynamic" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag"/>
   <term:ValueSetVersion xmi:id="_cOR30CXNEeGnSfJ2zNllag" identifier="2.16.840.1.113883.3.88.12.3221.6.8" binding="Dynamic" base_Enumeration="_Zpfm4CXNEeGnSfJ2zNllag">
@@ -626,7 +494,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_fW6dwTr3EeG-aJb2h_4S8w" conceptName="Tax Equity Fiscal Responsibility Act (TEFRA)" base_EnumerationLiteral="_fW6dwDr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_kUB4ADr3EeG-aJb2h_4S8w" conceptName="Workers Compensation" base_EnumerationLiteral="_kUBQ8Dr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
-  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
+  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
@@ -635,7 +503,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
+  <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>

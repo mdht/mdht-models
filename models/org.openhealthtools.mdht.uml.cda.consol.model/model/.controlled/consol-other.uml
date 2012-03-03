@@ -73,64 +73,26 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:AssociationValidation xmi:id="_2PWQEhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PWQEBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2FhloBSVEeGGzu7fmW9pXw" name="CommentActivity">
     <ownedComment xmi:id="_2FrWoBSVEeGGzu7fmW9pXw" annotatedElement="_2FhloBSVEeGGzu7fmW9pXw">
-      <body>Used to contain comments associated with any of the data within the document.</body>
+      <body>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment.</body>
     </ownedComment>
-    <ownedComment xmi:id="_2FrWoRSVEeGGzu7fmW9pXw" annotatedElement="_2FhloBSVEeGGzu7fmW9pXw">
-      <body>&lt;p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &amp;lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &amp;lt;component> element when the comment appears within an &amp;lt;organizer>.&lt;/p>&#xD;
-&#xD;
-&lt;p>Any condition or allergy may be the subject of a comment.&lt;/p></body>
-    </ownedComment>
-    <ownedComment xmi:id="_2FhloRSVEeGGzu7fmW9pXw" annotatedElement="_2FhloBSVEeGGzu7fmW9pXw">
-      <body>This module contains a comment to be supplied for any other entry Content Modules.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2FoTUBSVEeGGzu7fmW9pXw" name="useInversionInd">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FoTURSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship> element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'.</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_2Fo6YRSVEeGGzu7fmW9pXw" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Fo6YhSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity.</body>
+        <body>text SHALL contain exactly one [1..1] reference/@value</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2FphcRSVEeGGzu7fmW9pXw" name="effectiveTimeWhenAuthorPresent">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FphchSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_HOQOIGSYEeGmvuQO3I9szg" name="hasTextReferenceValue" constrainedElement="_2Fo6YRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_N6k8MGSYEeGmvuQO3I9szg">
         <language>Analysis</language>
-        <language>OCL</language>
-        <body>The time of the comment creation is recorded in the 'time' element when the 'author' element is present.</body>
-        <body>not self.author->isEmpty() implies not self.effectiveTime.oclIsUndefined()</body>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2FqIgBSVEeGGzu7fmW9pXw" name="hasAuthorId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FqIgRSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_whg7AGSYEeGmvuQO3I9szg" name="appropriateUse" constrainedElement="_2FhloBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ybQq4GSYEeGmvuQO3I9szg">
         <language>Analysis</language>
-        <language>OCL</language>
-        <body>The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present.</body>
-        <body>not self.author->isEmpty() implies (  self.author.assignedAuthor.id ->size() > 0 and self.author.assignedAuthor.addr ->size() > 0 and self.author.assignedAuthor.telecom ->size() > 0)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FqvkBSVEeGGzu7fmW9pXw" name="hasAuthorOrganization">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FqvkRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The author's and/or the organization's name must be present when the 'author' element is present.</body>
-        <body>not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2FhlohSVEeGGzu7fmW9pXw" name="appropriateUse" constrainedElement="_2FhloBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2FhloxSVEeGGzu7fmW9pXw">
-        <body>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</body>
-      </ownedComment>
-      <ownedComment xmi:id="_2FhlpBSVEeGGzu7fmW9pXw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FhlpRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <body>Data elements defined elsewhere in the specification SHALL NOT be recorded using the Comments Module.</body>
+        <body>Data elements defined elsewhere in the specification SHALL NOT be recorded using the Comment Activity</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FrWohSVEeGGzu7fmW9pXw">
@@ -159,55 +121,68 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FnFMRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FnFMhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FhlpxSVEeGGzu7fmW9pXw" name="author" association="_2FizwRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FhlqBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FhlqRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_WfWZoGSYEeGmvuQO3I9szg" name="Author">
+      <generalization xmi:id="_ZJwKYGSYEeGmvuQO3I9szg">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_nyYAoGSYEeGmvuQO3I9szg" name="time" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_0vUYMGSYEeGmvuQO3I9szg" name="AssignedAuthor">
+        <ownedRule xmi:id="_gTCPUGSaEeGmvuQO3I9szg" name="name" constrainedElement="_0vUYMGSYEeGmvuQO3I9szg">
+          <ownedComment xmi:id="_mBJBoGSaEeGmvuQO3I9szg">
+            <body>assignedPerson/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:9439)</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ilR-wGSaEeGmvuQO3I9szg">
+            <language>Analysis</language>
+            <body>SHALL include assignedPerson/name or representedOrganization/name</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_3FFVsGSYEeGmvuQO3I9szg">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_pgEcEGSZEeGmvuQO3I9szg" name="addr" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_eA50oGSaEeGmvuQO3I9szg">
+            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10480).</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IwTk0GSaEeGmvuQO3I9szg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IwTk0WSaEeGmvuQO3I9szg" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NYNVAEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pgEcE2SZEeGmvuQO3I9szg" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JwRNAGSaEeGmvuQO3I9szg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JwRNAWSaEeGmvuQO3I9szg" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_IccloEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2FizwRSVEeGGzu7fmW9pXw" memberEnd="_2FhlpxSVEeGGzu7fmW9pXw _2FizwhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2FizwhSVEeGGzu7fmW9pXw" type="_2FhloBSVEeGGzu7fmW9pXw" association="_2FizwRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64"/>
-  <CDA:ConstraintValidation xmi:id="_2Fo6YBSVEeGGzu7fmW9pXw" base_Constraint="_2FoTUBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-6.3.4.6.3</ruleId>
-  </CDA:ConstraintValidation>
+  <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64">
+    <ruleId>CONF:9427</ruleId>
+    <ruleId>CONF:10491</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2FphcBSVEeGGzu7fmW9pXw" base_Constraint="_2Fo6YRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-6.3.4.6.7</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FphcxSVEeGGzu7fmW9pXw" base_Constraint="_2FphcRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-6.3.4.6.10</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FqIghSVEeGGzu7fmW9pXw" base_Constraint="_2FqIgBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-6.3.4.6.11</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FqvkhSVEeGGzu7fmW9pXw" base_Constraint="_2FqvkBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-6.3.4.6.12</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FiMsBSVEeGGzu7fmW9pXw" base_Constraint="_2FhlohSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-10-CDA-1]</ruleId>
+    <ruleId>CONF:9431</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2Fja0hSVEeGGzu7fmW9pXw" base_Property="_2Fja0BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-504</ruleId>
+    <ruleId>CONF:9425</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FkB4hSVEeGGzu7fmW9pXw" base_Property="_2FkB4BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-505</ruleId>
+    <ruleId>CONF:9426</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2Fko8BSVEeGGzu7fmW9pXw" base_Property="_2FkB4xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-506</ruleId>
-    <ruleId>CONF-507</ruleId>
+    <ruleId>CONF:9428</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2Fko8RSVEeGGzu7fmW9pXw" code="48767-8" displayName="Annotation comment" base_Property="_2FkB4xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:TextValue xmi:id="_2FmeIxSVEeGGzu7fmW9pXw" base_Property="_2FmeIBSVEeGGzu7fmW9pXw"/>
-  <CDA:CodeSystemConstraint xmi:id="_2FnFMxSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FnFMBSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-6.3.4.6.8</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2FizwxSVEeGGzu7fmW9pXw" base_Association="_2FizwRSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-10-CDA-4]</ruleId>
-  </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_2FmeIxSVEeGGzu7fmW9pXw" base_Property="_2FmeIBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9430</ruleId>
+  </CDA:TextValue>
+  
   <uml:Class xmi:id="_2KKOBhSVEeGGzu7fmW9pXw" name="FunctionalStatusSection">
     <ownedComment xmi:id="_2KTX8xSVEeGGzu7fmW9pXw" annotatedElement="_2KKOBhSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -272,42 +247,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:CDATemplate xmi:id="_2KK1EBSVEeGGzu7fmW9pXw" base_Class="_2KKOBhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.14" assigningAuthorityName="HL7">
     <ruleId>CONF:10389</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2KN4YhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-123</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KOfcBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-127</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KOfdBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-128</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KPGghSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-129</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KPtkxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-130</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KQUoxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-131</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KQ7sxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-132</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KRiwBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-133</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KRiwxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-134</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KSJ0hSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-135</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KSw4hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-136</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2KTX8hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-137</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:CodeSystemConstraint xmi:id="_2KLcIhSVEeGGzu7fmW9pXw" code="47420-5" displayName="Functional status assessment" base_Property="_2KLcIRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7921</ruleId>
@@ -814,27 +754,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:CDATemplate xmi:id="_2LiuEBSVEeGGzu7fmW9pXw" base_Class="_2LiHABSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.32" assigningAuthorityName="HL7">
     <ruleId>CONF:7635</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LjVIRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-474</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Lj8MBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-475</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LpbwBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-476</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LqC0BSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-477</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Lqp4BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-478</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LrQ8BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-479</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_2LjVIBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-473</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1jO68Bq2EeGo461UQq-B1g" base_Property="_2MdMQBUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7480</ruleId>
   </CDA:PropertyValidation>
@@ -1376,4 +1295,22 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <ruleId>CONF:10112</ruleId>
     <ruleId>CONF:10402</ruleId>
   </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_MeyToGSYEeGmvuQO3I9szg" base_Constraint="_HOQOIGSYEeGmvuQO3I9szg">
+    <ruleId>CONF:9432</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zbW18GSYEeGmvuQO3I9szg" base_Constraint="_whg7AGSYEeGmvuQO3I9szg">
+    <ruleId>CONF:9429</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_GFlD8GSaEeGmvuQO3I9szg" base_Property="_nyYAoGSYEeGmvuQO3I9szg">
+    <ruleId>CONF:9434</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_IIQGUGSaEeGmvuQO3I9szg" base_Property="_pgEcEGSZEeGmvuQO3I9szg">
+    <ruleId>CONF:9436</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Z2BvoGSaEeGmvuQO3I9szg" base_Property="_pgEcE2SZEeGmvuQO3I9szg">
+    <ruleId>CONF:9436</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_huAYgGSaEeGmvuQO3I9szg" base_Constraint="_gTCPUGSaEeGmvuQO3I9szg">
+    <ruleId>CONF:9438</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

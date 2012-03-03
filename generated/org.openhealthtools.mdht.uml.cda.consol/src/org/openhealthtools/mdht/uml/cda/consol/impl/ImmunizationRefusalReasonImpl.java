@@ -73,15 +73,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationRefusalReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateImmunizationRefusalReasonId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonId(this, diagnostics, context);
 	}

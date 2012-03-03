@@ -207,15 +207,6 @@
     <ruleId>CONF:8655</ruleId>
     <ruleId>CONF:10485</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LC-0BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-90</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LC-0xSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-91</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LDl4xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-97</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2LEM8hSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2LE0AhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2KnhARSVEeGGzu7fmW9pXw"/>
@@ -299,9 +290,6 @@
     <ruleId>CONF:8643</ruleId>
     <ruleId>CONF:10377</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LLhsBSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2LK6oBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-81</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2KiogBSVEeGGzu7fmW9pXw" code="42348-3" displayName="Advance directives" base_Property="_2KiBcBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8644</ruleId>

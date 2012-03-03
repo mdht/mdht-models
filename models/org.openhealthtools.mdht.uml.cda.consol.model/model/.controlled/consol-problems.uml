@@ -24,9 +24,7 @@
   <CDA:CDATemplate xmi:id="_2LSPZhSVEeGGzu7fmW9pXw" base_Class="_2LSPYBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.5.1" assigningAuthorityName="HITSP C83">
     <ruleId>CONF:9179</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LV5wBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-144</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:CodeSystemConstraint xmi:id="_2LTdgRSVEeGGzu7fmW9pXw" code="11450-4" displayName="Problem List">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:9180</ruleId>
@@ -116,24 +114,8 @@ historical purposes.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2H7ZYBSVEeGGzu7fmW9pXw" base_Class="_2H6yUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.3"/>
-  <CDA:ConstraintValidation xmi:id="_2ICuIBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-151</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2ICuJBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-152</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2IDVMhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-153</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2ID8QhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-140</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2IEjUhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-256</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2IFKYhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-179</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
   <CDA:ConstraintValidation xmi:id="_2IFxcBSVEeGGzu7fmW9pXw" base_Constraint="_2IFKYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9032</ruleId>
   </CDA:ConstraintValidation>
@@ -141,15 +123,6 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2IGYghSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2IG_lBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2IHmohSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2H8AcBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-7.05-CDA-3]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2H8AcRSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-7.05-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2H8ngBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-7.05-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2H91ohSVEeGGzu7fmW9pXw" base_Property="_2H91oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9024</ruleId>
   </CDA:PropertyValidation>
@@ -220,18 +193,7 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:ConstraintValidation xmi:id="_2E4FYhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-509</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2E4scxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-517</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2E5TghSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-518</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2E56kBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-519</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9271</ruleId>
   </CDA:ConstraintValidation>

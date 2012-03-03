@@ -2190,7 +2190,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AssessmentSection getAssessmentSection(ConsultationNote consultationNote) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(185));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(183));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			}
@@ -2234,7 +2234,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AssessmentAndPlanSection getAssessmentAndPlanSection(ConsultationNote consultationNote) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(186));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(184));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			}
@@ -2278,7 +2278,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static PlanOfCareSection getPlanOfCareSection(ConsultationNote consultationNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(187));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(185));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -2322,7 +2322,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllness(ConsultationNote consultationNote) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(188));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(186));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
 			}
@@ -2366,7 +2366,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static PhysicalExamSection getPhysicalExamSection(ConsultationNote consultationNote) {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(189));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(187));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			}
@@ -2410,7 +2410,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReasonForReferralSection getReasonForReferralSection(ConsultationNote consultationNote) {
 		if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(190));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(188));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
 			}
@@ -2454,7 +2454,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReasonForVisitSection getReasonForVisitSection(ConsultationNote consultationNote) {
 		if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(191));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(189));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			}
@@ -2498,7 +2498,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AllergiesSectionEntriesOptional getAllergiesSection(ConsultationNote consultationNote) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(192));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(190));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			}
@@ -2542,7 +2542,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ChiefComplaintSection getChiefComplaintSection(ConsultationNote consultationNote) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(193));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(191));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			}
@@ -2587,7 +2587,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			ConsultationNote consultationNote) {
 		if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(194));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(192));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			}
@@ -2631,7 +2631,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static FamilyHistorySection getFamilyHistorySection(ConsultationNote consultationNote) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(195));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(193));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -2675,7 +2675,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static GeneralStatusSection getGeneralStatusSection(ConsultationNote consultationNote) {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(196));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(194));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
 			}
@@ -2719,7 +2719,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static HistoryOfPastIllnessSection getHistoryOfPastIllnessSection(ConsultationNote consultationNote) {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(197));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(195));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			}
@@ -2763,7 +2763,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ImmunizationsSection getImmunizationsSection(ConsultationNote consultationNote) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(198));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(196));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			}
@@ -2808,7 +2808,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			ConsultationNote consultationNote) {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(199));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(197));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -2852,7 +2852,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ProblemSectionEntriesOptional getProblemSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(200));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(198));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -2896,7 +2896,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(201));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(199));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -2940,7 +2940,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ResultsSectionEntriesOptional getResultsSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(202));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(200));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -2984,7 +2984,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReviewOfSystemsSection getReviewOfSystemsSection(ConsultationNote consultationNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(203));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(201));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			}
@@ -3028,7 +3028,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static SocialHistorySection getSocialHistorySection(ConsultationNote consultationNote) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(204));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(202));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -3072,7 +3072,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(205));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(203));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}

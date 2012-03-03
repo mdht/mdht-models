@@ -24,7 +24,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_2FRG8RSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_2FRuAhSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2FhloBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2FizwRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_2F6nMBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_2GjgYxSVEeGGzu7fmW9pXw"/>
@@ -605,118 +604,39 @@
     <ruleId>CONF:7402</ruleId>
     <base_Association href=".controlled/consol-allergies.uml#_FQD_EjJDEeG6R8Pb5FT2Ow"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2EY9MhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-168</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:EntryRelationship xmi:id="_2ElKchSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2ElxghSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  <CDA:EntryRelationship xmi:id="_2EwwoRSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-160</ruleId>
-  </CDA:EntryRelationship>
+  
   <CDA:EntryRelationship xmi:id="_2E_aIBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
-  <CDA:EntryRelationship xmi:id="_2FGH1RSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-160</ruleId>
-  </CDA:EntryRelationship>
+  
   <CDA:EntryRelationship xmi:id="_2FgXgBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2Fg-kBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2Fr9shSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  <CDA:EntryRelationship xmi:id="_2GsqUhSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-338</ruleId>
-    <ruleId>CONF-339</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_2G1NMhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-350</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2G43kxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-368</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2HU8dRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-351</ruleId>
-  </CDA:AssociationValidation>
+  
+  
+  
   <CDA:EntryRelationship xmi:id="_2HbqIhSVEeGGzu7fmW9pXw" message="An entry relationship may be present to provide the fulfillment instructions. When present, this entry relationship shall contain a Medication Fulfillment Instructions entry." severity="INFO" typeCode="SUBJ"/>
   <CDA:ConstraintValidation xmi:id="_2IezABSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Ik5oxSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:AssociationValidation xmi:id="_2Iwf0hSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-207</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:ConstraintValidation xmi:id="_2I9UIxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-215</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_2JeRghSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-246</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Je4lBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-249</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:AssociationValidation xmi:id="_2KIY1RSVEeGGzu7fmW9pXw" severity="INFO"/>
-  <CDA:AssociationValidation xmi:id="_2KzuQhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-93</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2K8RIhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-98</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:ActRelationship xmi:id="_2K84MBSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2LBwsxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-102</ruleId>
-    <ruleId>CONF-103</ruleId>
-  </CDA:AssociationValidation>
+  
   <CDA:ActRelationship xmi:id="_2LCXwBSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2LXu8xSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2LfqwxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:EntryRelationship xmi:id="_2LgR0hSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  <CDA:AssociationValidation xmi:id="_2MABERSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-298</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_2MIj9xSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-338</ruleId>
-    <ruleId>CONF-339</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_2MJLBRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-350</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_2MJyFRSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-330</ruleId>
-    <ruleId>CONF-333</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_2MKZJRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-313</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_2MLANRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-348</ruleId>
-    <ruleId>CONF-349</ruleId>
-  </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_2MLnRRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-368</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2MXNcBSVEeGGzu7fmW9pXw" message="This section SHALL include entries from the Insurance Provider module when this information is known.">
-    <ruleId>C83-[CT-101-2]</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_2M3jxRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-57</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2NJ3sRSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-298</ruleId>
-  </CDA:AssociationValidation>
+  
+  
+  
   <CDA:AssociationValidation xmi:id="_2NP-UxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-VhSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-WRSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-XBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2OG57RSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2OfUZhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-426</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_2OrhpxSVEeGGzu7fmW9pXw">
-    <ruleId>6.3.4.21.8</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2OrhsBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-399</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:ConstraintValidation xmi:id="_2O91mxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-406</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:EntryRelationship xmi:id="_2SC-yRSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ">
-    <ruleId>CONF-224</ruleId>
-  </CDA:EntryRelationship>
+  
   <CDA:AssociationValidation xmi:id="_sGVWMBUlEeGvPruliC3crg" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_vAJFABVeEeGQCvUGzi1kDQ" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_FBOT8BqsEeGo461UQq-B1g" severity="WARNING">
@@ -760,14 +680,7 @@
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_qzhEUBuEEeGnMahsPjlwOw" templateId="11111"/>
   <CDA:PropertyValidation xmi:id="_r4qugBuEEeGnMahsPjlwOw"/>
-  <CDA:AssociationValidation xmi:id="_4Kb30BrkEeGJ_KU17uNyeA">
-    <ruleId>CONF-458</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_JSrJsBtqEeGT89b80j3MTg" typeCode="REFR">
-    <ruleId>CONF-459</ruleId>
-    <ruleId>CONF-460</ruleId>
-    <base_Association href=".controlled/consol-socialhistory.uml#_5LuUQBtpEeGT89b80j3MTg"/>
-  </CDA:EntryRelationship>
+ 
   <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING">
     <ruleId>CONF:7119</ruleId>
     <ruleId>CONF:7120</ruleId>
@@ -857,14 +770,6 @@
     <ruleId>CONF:8281</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_odu8ABxxEeGXP8PxDYviDg"/>
   </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_4Kb30BrkEeGJ_KU17uNyeA">
-    <ruleId>CONF-458</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_JSrJsBtqEeGT89b80j3MTg" typeCode="REFR">
-    <ruleId>CONF-459</ruleId>
-    <ruleId>CONF-460</ruleId>
-    <base_Association href=".controlled/consol-socialhistory.uml#_5LuUQBtpEeGT89b80j3MTg"/>
-  </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_GIZw4B-uEeGKirKJsFylGA" severity="WARNING">
     <ruleId>CONF:7795</ruleId>
     <ruleId>CONF:7573</ruleId>
@@ -875,10 +780,10 @@
     <base_Association href=".controlled/consol-medications.uml#_f6p3QiAMEeGKirKJsFylGA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AFd2wB7tEeGaOZtrEokzNQ" severity="INFO">
-    <ruleId>CONF-9139</ruleId>
+    <ruleId>CONF:9139</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_RRrrIB7tEeGaOZtrEokzNQ" severity="WARNING">
-    <ruleId>CONF-7150</ruleId>
+    <ruleId>CONF:7150</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_R5VEECHZEeGFLIX-2_sWzA">
     <ruleId>CONF:8609</ruleId>
@@ -1173,7 +1078,6 @@
     <base_Property href=".controlled/consol-documents.uml#_Cm0V4CymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_BbDeoCysEeGMXrZ0DiQwGg">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_ddN88aDqEd-dVeaMP0XXQw"/>
     <base_Property href=".controlled/consol-documents.uml#_Cm0V4CymEeGMXrZ0DiQwGg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_GD6gICysEeGMXrZ0DiQwGg" severity="INFO">
@@ -1222,6 +1126,7 @@
     <base_Property href=".controlled/consol-documents.uml#_UiX1ICypEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Lqn54CzAEeGMXrZ0DiQwGg">
+    <ruleId>CONF:5430</ruleId>
     <base_Constraint href=".controlled/consol-documents.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_F-MU0Cy7EeGMXrZ0DiQwGg">
