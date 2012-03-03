@@ -120,6 +120,15 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemConcernActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemConcernActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTime(this, diagnostics, context);
 	}

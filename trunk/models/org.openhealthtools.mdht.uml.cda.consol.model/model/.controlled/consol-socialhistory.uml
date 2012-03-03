@@ -38,27 +38,6 @@
   <CDA:CDATemplate xmi:id="_2JKvhhSVEeGGzu7fmW9pXw" base_Class="_2JKvgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.17">
     <ruleId>CONF:7936</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2JoCgxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-236</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JopkhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-250</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JpQohSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-251</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Jp3shSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-252</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JqewhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-253</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JrF0BSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-254</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JrF0xSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-255</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2JL9oRSVEeGGzu7fmW9pXw" code="29762-2" displayName="Social history" base_Property="_2JL9oBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7937</ruleId>
@@ -140,15 +119,6 @@
   <CDA:CDATemplate xmi:id="_2JOZ6xSVEeGGzu7fmW9pXw" base_Class="_2JOZ4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.38">
     <ruleId>CONF:8550</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2JffohSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-243</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JgGsBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-244</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JgGtBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-245</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2JgtwhSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2JhU0hSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Jh74hSVEeGGzu7fmW9pXw" severity="WARNING"/>

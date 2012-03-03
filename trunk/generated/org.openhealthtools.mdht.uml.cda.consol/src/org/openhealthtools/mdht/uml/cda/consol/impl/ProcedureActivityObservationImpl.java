@@ -199,16 +199,6 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservationPriorityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPriorityCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProcedureActivityObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMethodCode(this, diagnostics, context);

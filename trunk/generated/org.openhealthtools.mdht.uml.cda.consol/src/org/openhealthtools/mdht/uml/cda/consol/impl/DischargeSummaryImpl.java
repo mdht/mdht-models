@@ -101,16 +101,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryAdvanceDirectivesSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDischargeSummaryAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryAllergiesSection(this, diagnostics, context);
 	}
@@ -172,25 +162,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	public boolean validateDischargeSummaryHospitalCourseSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalCourseSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDischargeSummaryMedicalEquipmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryMedicalEquipmentSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDischargeSummaryPhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryPhysicalExamSection(this, diagnostics, context);
 	}
 
 	/**

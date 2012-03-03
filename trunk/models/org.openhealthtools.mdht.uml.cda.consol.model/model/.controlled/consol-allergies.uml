@@ -28,12 +28,7 @@
     <ruleId>CONF:7527</ruleId>
     <ruleId>CONF:10379</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2LQaMxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-261</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2LRBQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-257</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7528</ruleId>
@@ -207,12 +202,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ruleId>CONF:7381</ruleId>
     <ruleId>CONF:10488</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2F1usxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-161</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F2VwhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-180</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2F280hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2F3j4hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EdOoRSVEeGGzu7fmW9pXw" severity="INFO"/>
@@ -378,18 +368,6 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2F71UBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7915</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F8cYBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-153</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F8cYxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-140</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F9DchSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-256</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2F9qghSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-179</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2F-RkhSVEeGGzu7fmW9pXw" base_Constraint="_2F-RkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:10085</ruleId>
   </CDA:ConstraintValidation>
@@ -399,9 +377,6 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2GAGwhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EBw0BSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2ECX4BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2EC-8BSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.02-1]</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2EC-8RSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2EDmABSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EENEBSVEeGGzu7fmW9pXw"/>
@@ -410,25 +385,13 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2EFbMBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EGCQBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EGpUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2EGpURSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.04-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EHQYBSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.04-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2EH3cBSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.04-3]</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2EIegBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2EJFkBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2EJFkRSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.06-1]</ruleId>
-  </CDA:ConstraintValidation>
+ 
   <CDA:ConstraintValidation xmi:id="_2EJsoBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2EK6wBSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-6.08-1]</ruleId>
-  </CDA:ConstraintValidation>
+
   <CDA:PropertyValidation xmi:id="_2ELh0xSVEeGGzu7fmW9pXw" base_Property="_2ELh0RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7469</ruleId>
   </CDA:PropertyValidation>
@@ -658,21 +621,6 @@ historical purposes.&#xD;
     <ruleId>CONF:7323</ruleId>
     <ruleId>CONF:10523</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2FskwhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-280</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FtL0hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-296</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Fty4hSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-297</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FuZ8hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-161</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FvBABSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-180</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FAoRBSVEeGGzu7fmW9pXw" base_Property="_2FAoQhSVEeGGzu7fmW9pXw">
@@ -768,18 +716,6 @@ historical purposes.&#xD;
     <ruleId>CONF:7317</ruleId>
     <ruleId>CONF:10490</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2FZp0hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-509</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FaQ4BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-517</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2FaQ4xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-518</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Fa38hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-519</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7318</ruleId>

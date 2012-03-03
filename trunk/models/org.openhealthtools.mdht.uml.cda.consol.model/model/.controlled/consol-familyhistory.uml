@@ -33,59 +33,28 @@
   <CDA:CDATemplate xmi:id="_2SC-shSVEeGGzu7fmW9pXw" base_Class="_2SC-sBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.47" assigningAuthorityName="HL7">
     <ruleId>CONF:8623</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2SC-0hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-209</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SJFUxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-210</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SJFVxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-211</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2SJFWhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2SJFXRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2SJFYBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-214</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2SJFYxSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2SJFZxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2SJFahSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2SJFbRSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2SJFcRSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-219</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SJFdRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-220</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SJFeRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-221</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SPL8xSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-222</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SPL9xSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-223</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2SPL-xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-199</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
+  
   <CDA:ConstraintValidation xmi:id="_2SPL_xSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2SC-uBSVEeGGzu7fmW9pXw" base_Property="_2SC-thSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8622</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2SC-vBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-192</ruleId>
-  </CDA:PropertyValidation>
+  
   <CDA:CodeSystemConstraint xmi:id="_2SC-wBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2SC-vxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8625</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2SC-xBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-195</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2SC-zhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2SC-zBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-207</ruleId>
-  </CDA:AssociationValidation>
+  
+  
   <uml:Class xmi:id="_2IpyIxSVEeGGzu7fmW9pXw" name="FamilyHistoryObservation">
     <ownedComment xmi:id="_nCE7QCHgEeGFLIX-2_sWzA">
       <body>Family History Observations related to a particular family member are contained within a Family History Organizer. The effectiveTime in the Family History Observation is the biologically or clinically relevant time of the observation. The biologically or clinically relevant time is the time at which the observation holds (is effective) for the family member (the subject of the observation).</body>
@@ -148,42 +117,17 @@
   <CDA:CDATemplate xmi:id="_hWyHQBnbEeGs5a462vYX5Q" base_Class="_2IpyIxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.46" assigningAuthorityName="HL7">
     <ruleId>CONF:10496</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2Iwf1hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-209</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2IxG4xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-210</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Ixt8xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-211</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
+  
   <CDA:ConstraintValidation xmi:id="_2IyVAhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Iy8EBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Iy8ExSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-214</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2IzjIhSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2I0KMxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2I0xQhSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2I1YUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2I1YVBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-219</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I1_YxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-220</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I2mcxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-221</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I3NgxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-222</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I30kxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-223</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I4boxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-199</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2I4bpxSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2ItchBSVEeGGzu7fmW9pXw" base_Property="_2ItcgRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8592</ruleId>
@@ -241,32 +185,10 @@
   <CDA:CDATemplate xmi:id="_kKyf8BnbEeGs5a462vYX5Q" base_Class="_2IbIoBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.45" assigningAuthorityName="HL7">
     <ruleId>CONF:10497</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2I634BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-205</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I634xSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2I7e8hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-208</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I8GAhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-212</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I8tEhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-213</ruleId>
-  </CDA:ConstraintValidation>
+  
+  <CDA:ConstraintValidation xmi:id="_2I634xSVEeGGzu7fmW9pXw" severity="WARNING"/>  
   <CDA:ConstraintValidation xmi:id="_2I9UIBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2I97MxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-216</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I-iQhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-217</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I_JUhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-218</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2I_wYBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-219</ruleId>
-  </CDA:ConstraintValidation>
+
   <CDA:ConstraintValidation xmi:id="_2I_wZBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2JAXcxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2JA-gxSVEeGGzu7fmW9pXw" severity="WARNING"/>
@@ -306,11 +228,7 @@
   <CDA:CodeSystemConstraint xmi:id="_2Imu1BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_2IokARSVEeGGzu7fmW9pXw" code="completed" base_Property="_2IokABSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF-203</ruleId>
-    <ruleId>CONF-204</ruleId>
-  </CDA:CodeSystemConstraint>
+ 
   <CDA:AssociationValidation xmi:id="_2I6Q0hSVEeGGzu7fmW9pXw" base_Association="_2I6Q0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8607</ruleId>
   </CDA:AssociationValidation>
@@ -343,15 +261,9 @@
   <CDA:CDATemplate xmi:id="_2IWQLRSVEeGGzu7fmW9pXw" base_Class="_2IWQIxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.15" assigningAuthorityName="HL7">
     <ruleId>CONF:10388</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2JHsMxSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-188</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JITQhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-184</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2JI6UhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-189</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
+  
   <CDA:ConstraintValidation xmi:id="_2IW3MBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2IXeQBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2IYsYRSVEeGGzu7fmW9pXw" code="10157-6" displayName="Family History" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">

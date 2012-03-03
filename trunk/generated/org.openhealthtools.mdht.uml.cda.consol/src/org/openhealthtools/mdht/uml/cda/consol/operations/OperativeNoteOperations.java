@@ -1765,7 +1765,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static AnesthesiaSection getAnesthesiaSection(OperativeNote operativeNote) {
 		if (GET_ANESTHESIA_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(178));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(176));
 			try {
 				GET_ANESTHESIA_SECTION__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION__EOCL_EXP);
 			}
@@ -1809,7 +1809,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ComplicationsSection getComplicationsSection(OperativeNote operativeNote) {
 		if (GET_COMPLICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(179));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(177));
 			try {
 				GET_COMPLICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION__EOCL_EXP);
 			}
@@ -1853,7 +1853,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PostoperativeDiagnosisSection getPostoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(180));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(178));
 			try {
 				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -1897,7 +1897,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PreoperativeDiagnosisSection getPreoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(181));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(179));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -1941,7 +1941,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(182));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(180));
 			try {
 				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
 			}
@@ -1985,7 +1985,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureFindingsSection getProcedureFindingsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(183));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(181));
 			try {
 				GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_FINDINGS_SECTION__EOCL_EXP);
 			}
@@ -2029,7 +2029,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(184));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(182));
 			try {
 				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
 			}
@@ -2073,7 +2073,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureDescriptionSection getProcedureDescriptionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(185));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(183));
 			try {
 				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
 			}
@@ -2117,7 +2117,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureImplantsSection getProcedureImplantsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(186));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(184));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
 			}
@@ -2161,7 +2161,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static OperativeNoteFluidSection getOperativeNoteFluidSection(OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(187));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(185));
 			try {
 				GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_EXP);
 			}
@@ -2206,7 +2206,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(188));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(186));
 			try {
 				GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_EXP);
 			}
@@ -2250,7 +2250,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PlanOfCareSection getPlanOfCareSection(OperativeNote operativeNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(189));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(187));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -2294,7 +2294,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PlannedProcedureSection getPlannedProcedureSection(OperativeNote operativeNote) {
 		if (GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(190));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(188));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION__EOCL_EXP);
 			}
@@ -2338,7 +2338,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureDispositionSection getProcedureDispositionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(191));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(189));
 			try {
 				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
 			}
@@ -2382,7 +2382,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureIndicationsSection getProcedureIndicationsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(192));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(190));
 			try {
 				GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_INDICATIONS_SECTION__EOCL_EXP);
 			}
@@ -2426,7 +2426,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static SurgicalDrainsSection getSurgicalDrainsSection(OperativeNote operativeNote) {
 		if (GET_SURGICAL_DRAINS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(193));
+			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(191));
 			try {
 				GET_SURGICAL_DRAINS_SECTION__EOCL_QRY = helper.createQuery(GET_SURGICAL_DRAINS_SECTION__EOCL_EXP);
 			}

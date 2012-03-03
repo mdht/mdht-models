@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPregnancyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.15.3.8' code.displayName='Assertion' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationValue PregnancyObservationEstimatedDateOfDelivery' code.code='ASSERTION' value.displayName='Pregnant' statusCode.code='completed' value.code='77386006' code.codeSystemName='HL7ActCode' constraints.validation.warning='PregnancyObservationEffectiveTime' classCode='OBS' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.15.3.8' code.displayName='Assertion' constraints.validation.error='PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationValue' code.code='ASSERTION' value.displayName='Pregnant' statusCode.code='completed' value.code='77386006' code.codeSystemName='HL7ActCode' constraints.validation.warning='PregnancyObservationEffectiveTime' classCode='OBS' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface PregnancyObservation extends Observation {
@@ -119,19 +119,6 @@ public interface PregnancyObservation extends Observation {
 	 * @generated
 	 */
 	boolean validatePregnancyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EstimatedDateOfDelivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::EstimatedDateOfDelivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -34,15 +34,6 @@
     <ruleId>CONF:7568</ruleId>
     <ruleId>CONF:10433</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2NJ3tBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-298</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NJ3uBSVEeGGzu7fmW9pXw" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-299</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2NJ3vBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-303</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2NJ3wBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2NJ3xBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:PropertyValidation xmi:id="_2NJ3pxSVEeGGzu7fmW9pXw" base_Property="_2NJ3phSVEeGGzu7fmW9pXw">
@@ -295,34 +286,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
     <ruleId>CONF:7499</ruleId>
     <ruleId>CONF:10504</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2HqToRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-305</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2HqTpBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-311</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Hq6shSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-314</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2HrhwhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-315</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2HsI0xSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-327</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Hsv4xSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-328</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2HtW8BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-329</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2HtW8xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-354</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2HulEBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2HulFRSVEeGGzu7fmW9pXw">
-    <ruleId>6.3.4.16.22</ruleId>
-  </CDA:ConstraintValidation>
+
   <CDA:ConstraintValidation xmi:id="_2HvMIhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HvzMxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HwaQhSVEeGGzu7fmW9pXw" severity="WARNING"/>
@@ -330,70 +295,11 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <CDA:ConstraintValidation xmi:id="_2HxBUxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2HxoYhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HyPcxSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2GZvYBSVEeGGzu7fmW9pXw">
-    <ruleId>2.2.2.8.3</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GZvYRSVEeGGzu7fmW9pXw">
-    <ruleId>2.2.2.8.4</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GaWcBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8-CDA-3]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Ga9gBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.03-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GbkkBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.04-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GbkkRSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.05-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GcLoBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C154-[DE-8.08-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GcysBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>C154-[DE-8.08-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GcysRSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.12-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
   <CDA:ConstraintValidation xmi:id="_2GdZwBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2GeA0BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C154-[DE-8.20-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Gen4BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.20-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Gen4RSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.20-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GfO8BSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-8.20-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Gf2ABSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.22-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GgdEBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.24-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GgdERSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.24-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GhEIBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.24-CDA-3]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GhrMBSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.24-CDA-4]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GhrMRSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.24-CDA-5]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2GiSQBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.24-CDA-6]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2Gi5UBSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-8.24-1]</ruleId>
-  </CDA:ConstraintValidation>
+  
+  
   <CDA:PropertyValidation xmi:id="_2GkuhhSVEeGGzu7fmW9pXw" base_Property="_2GkugxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7500</ruleId>
   </CDA:PropertyValidation>
@@ -563,63 +469,6 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <CDA:CDATemplate xmi:id="_LKvGYBncEeGs5a462vYX5Q" base_Class="_2T9DQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.23">
     <ruleId>CONF:7409</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2UDJ3BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-357</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ3xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-358</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ4hSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-359</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ5hSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-360</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ6hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-361</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ7hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-362</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ8RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-363</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ9BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-364</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UJQchSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-365</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UJQdRSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-367</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2T9DWhSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.13-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2T9DWxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C83-[DE-8.13-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2T9DXBSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-8.13-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2T9DXRSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-8.13-2]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2T9DXhSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>C154-[DE-8.13-3]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ0BSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.14-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ0RSVEeGGzu7fmW9pXw">
-    <ruleId>C154-[DE-8.14-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ0hSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.15-CDA-1]</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2UDJ0xSVEeGGzu7fmW9pXw">
-    <ruleId>C83-[DE-8.14-CDA-2]</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2UDJ2RSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2UDJ1RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7410</ruleId>
   </CDA:PropertyValidation>
@@ -1264,7 +1113,7 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
   </uml:Class>
   <CDA:ValueSetConstraint xmi:id="_KhRCYCANEeGKirKJsFylGA" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dSQDEaDqEd-dVeaMP0XXQw"/>
+    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_oCgAwCAPEeGKirKJsFylGA" base_Property="_2GlVkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7507</ruleId>

@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCode VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' code.codeSystemName='LOINC' classCode='OBS' constraints.validation.warning='VitalSignObservationText' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue' classCode='OBS' constraints.validation.warning='VitalSignObservationText' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor' moodCode='EVN'"
  * @generated
  */
 public interface VitalSignObservation extends Observation {
@@ -74,21 +74,6 @@ public interface VitalSignObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateVitalSignObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '8310-5' or value.code = '8462-4' or value.code = '8480-6' or value.code = '8287-5' or value.code = '8867-4' or value.code = '8302-2' or value.code = '8306-3' or value.code = '2710-2' or value.code = '9279-1' or value.code = '3141-9')))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'8310-5\' or value.code = \'8462-4\' or value.code = \'8480-6\' or value.code = \'8287-5\' or value.code = \'8867-4\' or value.code = \'8302-2\' or value.code = \'8306-3\' or value.code = \'2710-2\' or value.code = \'9279-1\' or value.code = \'3141-9\')))'"
-	 * @generated
-	 */
-	boolean validateVitalSignObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

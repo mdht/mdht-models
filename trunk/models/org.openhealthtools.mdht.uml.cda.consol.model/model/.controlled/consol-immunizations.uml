@@ -219,30 +219,7 @@
   <CDA:CDATemplate xmi:id="_zh-FUBnbEeGs5a462vYX5Q" base_Class="_2MAoIBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.52">
     <ruleId>CONF:10498</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_2MMOUhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-305</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MM1YhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-311</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MNccBSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-314</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MNccxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-315</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MODgxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-327</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MOqkxSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-328</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MPRohSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-329</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MP4shSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-354</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2MB2QBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2MDEZRSVEeGGzu7fmW9pXw" base_Property="_2MDEYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8827</ruleId>
@@ -258,9 +235,6 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2ME5lBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8839</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2MHV4BSVEeGGzu7fmW9pXw" severity="INFO">
-    <ruleId>CONF-312</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_amz3YBU9EeGbmN_W114JUw" severity="INFO" base_Association="_ZljOshU9EeGbmN_W114JUw">
     <ruleId>CONF:8850</ruleId>
@@ -363,15 +337,7 @@
   <uml:Association xmi:id="_2L89wBSVEeGGzu7fmW9pXw" memberEnd="_2L7voxSVEeGGzu7fmW9pXw _2L89wRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2L89wRSVEeGGzu7fmW9pXw" type="_2L7voBSVEeGGzu7fmW9pXw" association="_2L89wBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:ConstraintValidation xmi:id="_2MS8AhSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-298</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MTjExSVEeGGzu7fmW9pXw">
-    <ruleId>CONF-299</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_2MUKIBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <ruleId>CONF-303</ruleId>
-  </CDA:ConstraintValidation>
+  
   <CDA:ConstraintValidation xmi:id="_2MUxMBSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>3.</ruleId>
     <ruleId>CONF:7967</ruleId>
@@ -495,7 +461,7 @@
     <ruleId>CONF:8992</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_m_dk8Bq1EeGo461UQq-B1g" base_Property="_DruzARVOEeGbmN_W114JUw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWoz0aDqEd-dVeaMP0XXQw"/>
+    <reference href="../consol-vocab.uml#_bjcZMWMlEeGskvPNzg7rUw"/>
     <ruleId>CONF:8995</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_q2zp8Bq1EeGo461UQq-B1g" base_Property="_Dr389hVOEeGbmN_W114JUw">
@@ -639,7 +605,9 @@
   <CDA:PropertyValidation xmi:id="_-lG3QEX8EeG6e5lG0YsSyQ" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ">
     <ruleId>CONF:9007</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="__zeu4EX8EeG6e5lG0YsSyQ" identifier="2.16.840.1.113883.3.88.12.80.22" name="Vaccine Administered Value Set" binding="Dynamic" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ"/>
+  <CDA:ValueSetConstraint xmi:id="__zeu4EX8EeG6e5lG0YsSyQ" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ">
+    <reference href="../consol-vocab.uml#_NLdYQWMrEeGskvPNzg7rUw"/>
+  </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_IuilYEX9EeG6e5lG0YsSyQ" severity="WARNING" base_Property="_xgWngEX8EeG6e5lG0YsSyQ">
     <ruleId>CONF:9014</ruleId>
   </CDA:TextValue>
