@@ -318,11 +318,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_2GE_QBSVEeGGzu7fmW9pXw" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_2GDxIxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GE_QRSVEeGGzu7fmW9pXw" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_2GDxJBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GFmUBSVEeGGzu7fmW9pXw" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_2GDxJRSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2HFr5BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.19" version="1" fullName="Medication Type Value Set" definition="This is a classification based on how the medication is marketed (e.g., prescription, over the counter drug)" revisionDate="07/23/2009" base_Enumeration="_2HFr4RSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_2HG6ABSVEeGGzu7fmW9pXw" conceptName="Over the counter products" usageNote="SNOMED-CT" base_EnumerationLiteral="_2HFr4hSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetCode xmi:id="_2HHhEBSVEeGGzu7fmW9pXw" conceptName="Prescription Drug" usageNote="SNOMED-CT" base_EnumerationLiteral="_2HFr4xSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2Hn3YBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" base_Enumeration="_2HnQUxSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -437,15 +432,10 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
-  <term:CodeSystemVersion xmi:id="_vNtCQTVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.25" fullName="Confidentiality Code" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_vNtCQDVPEeGIw7CntkyPQw"/>
-  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" codeSystem="_vNtCQTVPEeGIw7CntkyPQw" base_Enumeration="_8K870DVPEeGIw7CntkyPQw"/>
-  <term:CodeSystemVersion xmi:id="_KAjkQDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.1" base_Enumeration="__Nb_8DVQEeGIw7CntkyPQw"/>
-  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
+   <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:CodeSystemVersion xmi:id="_svo1oTVVEeGIw7CntkyPQw" identifier="2.16.840.1.113883.6.101" fullName="NUCC Health Care Provider Taxonomy" base_Enumeration="_svo1oDVVEeGIw7CntkyPQw"/>
-  <term:CodeSystemVersion xmi:id="_ZhyZUTVYEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.89" fullName="Participationsignature" base_Enumeration="_ZhyZUDVYEeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -506,22 +496,19 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>
+
   <term:ValueSetVersion xmi:id="_oDanoD7YEeGvOdejHZ7dYg" identifier="2.16.840.1.113883.11.20.6.1" fullName="Procedure Note LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_oDaAkD7YEeGvOdejHZ7dYg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_-bWMgT-UEeGvOdejHZ7dYg" identifier="2.16.840.1.114222.4.11.1066" fullName="NUCC - HIPAA Health Care Provider Taxonomy" binding="Dynamic" codeSystem="_svo1oTVVEeGIw7CntkyPQw" base_Enumeration="_-bWMgD-UEeGvOdejHZ7dYg"/>
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_1VJ6wEFaEeGFqszUdHc61Q" base_Enumeration="_dfcxkKDqEd-dVeaMP0XXQw"/>
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA"/>
   <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
