@@ -192,7 +192,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_7_6DcD9VEeGyQNOMdKXkfQ" name="proceduresSectionEntriesOptional" association="_7_6Dcj9VEeGyQNOMdKXkfQ">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7_6DcT9VEeGyQNOMdKXkfQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vGPqgGdDEeGkeaezs0FtvA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vGPqgWdDEeGkeaezs0FtvA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_996oQD9VEeGyQNOMdKXkfQ" name="resultsSectionEntriesOptional" association="_996oQj9VEeGyQNOMdKXkfQ">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_xGqiEBVdEeGQCvUGzi1kDQ"/>
@@ -372,7 +373,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_2aUFwD_KEeGIl9z9SjyqRw" name="proceduresSectionEntriesOptional" association="_2aUFwj_KEeGIl9z9SjyqRw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_s9Ig4BVdEeGQCvUGzi1kDQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2aUFwT_KEeGIl9z9SjyqRw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weZJMGdDEeGkeaezs0FtvA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weZJMWdDEeGkeaezs0FtvA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EF2BoD_LEeGIl9z9SjyqRw" name="medicalEquipmentSection" association="_EF2Boj_LEeGIl9z9SjyqRw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2KEucBSVEeGGzu7fmW9pXw"/>
