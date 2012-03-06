@@ -593,15 +593,6 @@ public interface ConsolFactory extends EFactory {
 	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
 
 	/**
-	 * Returns a new object of class '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounters Section</em>'.
-	 * @generated
-	 */
-	EncountersSection createEncountersSection();
-
-	/**
 	 * Returns a new object of class '<em>Encounter Activities</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

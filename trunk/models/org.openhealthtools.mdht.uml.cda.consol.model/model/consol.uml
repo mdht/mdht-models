@@ -59,7 +59,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_2LMIwBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_2LNW4RSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_2Lg44BSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
@@ -604,39 +603,26 @@
     <ruleId>CONF:7402</ruleId>
     <base_Association href=".controlled/consol-allergies.uml#_FQD_EjJDEeG6R8Pb5FT2Ow"/>
   </CDA:AssociationValidation>
-  
   <CDA:EntryRelationship xmi:id="_2ElKchSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2ElxghSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  
   <CDA:EntryRelationship xmi:id="_2E_aIBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
-  
   <CDA:EntryRelationship xmi:id="_2FgXgBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2Fg-kBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_2Fr9shSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  
-  
-  
   <CDA:EntryRelationship xmi:id="_2HbqIhSVEeGGzu7fmW9pXw" message="An entry relationship may be present to provide the fulfillment instructions. When present, this entry relationship shall contain a Medication Fulfillment Instructions entry." severity="INFO" typeCode="SUBJ"/>
   <CDA:ConstraintValidation xmi:id="_2IezABSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2Ik5oxSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  
   <CDA:AssociationValidation xmi:id="_2KIY1RSVEeGGzu7fmW9pXw" severity="INFO"/>
-  
   <CDA:ActRelationship xmi:id="_2K84MBSVEeGGzu7fmW9pXw"/>
-  
   <CDA:ActRelationship xmi:id="_2LCXwBSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2LXu8xSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2LfqwxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:EntryRelationship xmi:id="_2LgR0hSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
-  
-  
-  
   <CDA:AssociationValidation xmi:id="_2NP-UxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-VhSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-WRSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2NP-XBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_2OG57RSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  
   <CDA:AssociationValidation xmi:id="_sGVWMBUlEeGvPruliC3crg" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_vAJFABVeEeGQCvUGzi1kDQ" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_FBOT8BqsEeGo461UQq-B1g" severity="WARNING">
@@ -680,7 +666,6 @@
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_qzhEUBuEEeGnMahsPjlwOw" templateId="11111"/>
   <CDA:PropertyValidation xmi:id="_r4qugBuEEeGnMahsPjlwOw"/>
- 
   <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING">
     <ruleId>CONF:7119</ruleId>
     <ruleId>CONF:7120</ruleId>
@@ -984,7 +969,7 @@
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="S">
-    <reference href="consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mRLTACzGEeGMXrZ0DiQwGg">

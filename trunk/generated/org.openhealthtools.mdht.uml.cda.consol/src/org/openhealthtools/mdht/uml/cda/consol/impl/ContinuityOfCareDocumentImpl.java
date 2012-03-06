@@ -197,16 +197,6 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId(this, diagnostics, context);
@@ -375,8 +365,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EncountersSection getEncountersSection() {
-		return ContinuityOfCareDocumentOperations.getEncountersSection(this);
+	public void getEncountersSection() {
+		ContinuityOfCareDocumentOperations.getEncountersSection(this);
 	}
 
 	/**

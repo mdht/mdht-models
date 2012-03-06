@@ -546,35 +546,6 @@ public class ConsolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ConsolPackage.ENCOUNTERS_SECTION: {
-				EncountersSection encountersSection = (EncountersSection)theEObject;
-				T result = caseEncountersSection(encountersSection);
-				if (result == null) result = caseEncountersSectionEntriesOptional(encountersSection);
-				if (result == null) result = caseSection(encountersSection);
-				if (result == null) result = caseAct(encountersSection);
-				if (result == null) result = caseInfrastructureRoot(encountersSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: {
-				EncountersSectionEntriesOptional encountersSectionEntriesOptional = (EncountersSectionEntriesOptional)theEObject;
-				T result = caseEncountersSectionEntriesOptional(encountersSectionEntriesOptional);
-				if (result == null) result = caseSection(encountersSectionEntriesOptional);
-				if (result == null) result = caseAct(encountersSectionEntriesOptional);
-				if (result == null) result = caseInfrastructureRoot(encountersSectionEntriesOptional);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ConsolPackage.ENCOUNTER_ACTIVITIES: {
-				EncounterActivities encounterActivities = (EncounterActivities)theEObject;
-				T result = caseEncounterActivities(encounterActivities);
-				if (result == null) result = caseEncounter(encounterActivities);
-				if (result == null) result = caseClinicalStatement(encounterActivities);
-				if (result == null) result = caseAct(encounterActivities);
-				if (result == null) result = caseInfrastructureRoot(encounterActivities);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ConsolPackage.FAMILY_HISTORY_SECTION: {
 				FamilyHistorySection familyHistorySection = (FamilyHistorySection)theEObject;
 				T result = caseFamilyHistorySection(familyHistorySection);
@@ -834,6 +805,16 @@ public class ConsolSwitch<T> {
 				if (result == null) result = caseClinicalStatement(vitalSignObservation);
 				if (result == null) result = caseAct(vitalSignObservation);
 				if (result == null) result = caseInfrastructureRoot(vitalSignObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.ENCOUNTER_ACTIVITIES: {
+				EncounterActivities encounterActivities = (EncounterActivities)theEObject;
+				T result = caseEncounterActivities(encounterActivities);
+				if (result == null) result = caseEncounter(encounterActivities);
+				if (result == null) result = caseClinicalStatement(encounterActivities);
+				if (result == null) result = caseAct(encounterActivities);
+				if (result == null) result = caseInfrastructureRoot(encounterActivities);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1139,6 +1120,15 @@ public class ConsolSwitch<T> {
 				if (result == null) result = caseManufacturedProduct(immunizationMedicationInformation);
 				if (result == null) result = caseRole(immunizationMedicationInformation);
 				if (result == null) result = caseInfrastructureRoot(immunizationMedicationInformation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: {
+				EncountersSectionEntriesOptional encountersSectionEntriesOptional = (EncountersSectionEntriesOptional)theEObject;
+				T result = caseEncountersSectionEntriesOptional(encountersSectionEntriesOptional);
+				if (result == null) result = caseSection(encountersSectionEntriesOptional);
+				if (result == null) result = caseAct(encountersSectionEntriesOptional);
+				if (result == null) result = caseInfrastructureRoot(encountersSectionEntriesOptional);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -2612,21 +2602,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAdvanceDirectiveObservation(AdvanceDirectiveObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Encounters Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEncountersSection(EncountersSection object) {
 		return null;
 	}
 

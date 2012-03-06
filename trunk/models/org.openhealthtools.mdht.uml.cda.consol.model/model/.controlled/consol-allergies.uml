@@ -28,7 +28,6 @@
     <ruleId>CONF:7527</ruleId>
     <ruleId>CONF:10379</ruleId>
   </CDA:CDATemplate>
-  
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7528</ruleId>
@@ -202,7 +201,6 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ruleId>CONF:7381</ruleId>
     <ruleId>CONF:10488</ruleId>
   </CDA:CDATemplate>
-  
   <CDA:ConstraintValidation xmi:id="_2F280hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2F3j4hSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EdOoRSVEeGGzu7fmW9pXw" severity="INFO"/>
@@ -385,13 +383,10 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_2EFbMBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EGCQBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2EGpUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  
   <CDA:ConstraintValidation xmi:id="_2EIegBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2EJFkBSVEeGGzu7fmW9pXw" severity="WARNING"/>
- 
   <CDA:ConstraintValidation xmi:id="_2EJsoBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-
   <CDA:PropertyValidation xmi:id="_2ELh0xSVEeGGzu7fmW9pXw" base_Property="_2ELh0RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7469</ruleId>
   </CDA:PropertyValidation>

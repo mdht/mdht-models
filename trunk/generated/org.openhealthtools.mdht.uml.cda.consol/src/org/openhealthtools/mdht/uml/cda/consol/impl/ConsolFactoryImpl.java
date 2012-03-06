@@ -100,9 +100,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL: return createAdvanceDirectivesSectionEntriesOptional();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
-			case ConsolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: return createEncountersSectionEntriesOptional();
-			case ConsolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
 			case ConsolPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
 			case ConsolPackage.FAMILY_HISTORY_ORGANIZER: return createFamilyHistoryOrganizer();
 			case ConsolPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
@@ -130,6 +127,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL: return createVitalSignsSectionEntriesOptional();
 			case ConsolPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
 			case ConsolPackage.VITAL_SIGN_OBSERVATION: return createVitalSignObservation();
+			case ConsolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
 			case ConsolPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
 			case ConsolPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
 			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return createHistoryOfPastIllnessSection();
@@ -163,6 +161,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 			case ConsolPackage.REASON_FOR_VISIT_SECTION: return createReasonForVisitSection();
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION: return createPreconditionForSubstanceAdministration();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION: return createImmunizationMedicationInformation();
+			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL: return createEncountersSectionEntriesOptional();
 			case ConsolPackage.PROCEDURE_SPECIMEN: return createProcedureSpecimen();
 			case ConsolPackage.PROCEDURE_PERFORMER: return createProcedurePerformer();
 			case ConsolPackage.PROCEDURE_ENCOUNTER: return createProcedureEncounter();
@@ -852,16 +851,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
 		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
 		return advanceDirectiveObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncountersSection createEncountersSection() {
-		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
-		return encountersSection;
 	}
 
 	/**

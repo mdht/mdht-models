@@ -46,6 +46,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7o2J4DFVEeGbx9xBxK_Upg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7o2J4TFVEeGbx9xBxK_Upg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" href="#_2LWg0BSVEeGGzu7fmW9pXw"/>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aJLnwBVfEeGQCvUGzi1kDQ" base_Class="_4yj2wBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="HL7">
     <ruleId>CONF:10386</ruleId>
