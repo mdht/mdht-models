@@ -58,7 +58,8 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -175,7 +176,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * @generated
 	 */
 	public MedicationSupplyOrder init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationSupplyOrderImpl

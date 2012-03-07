@@ -58,7 +58,8 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 */
 	public boolean validateHospitalDischargeInstructionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(this, diagnostics, context);
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 */
 	public boolean validateHospitalDischargeInstructionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(this, diagnostics, context);
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 */
 	public boolean validateHospitalDischargeInstructionsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(this, diagnostics, context);
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 */
 	public boolean validateHospitalDischargeInstructionsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(this, diagnostics, context);
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,7 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	 * @generated
 	 */
 	public HospitalDischargeInstructionsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalDischargeInstructionsSectionImpl

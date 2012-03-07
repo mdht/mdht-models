@@ -81,7 +81,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +111,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +122,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActInstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -182,6 +185,15 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityActPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActPriorityCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActPerformer(this, diagnostics, context);
 	}
@@ -193,7 +205,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -285,7 +298,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	public ProcedureActivityAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureActivityActImpl
