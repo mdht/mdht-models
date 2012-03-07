@@ -32,6 +32,15 @@
   <CDA:CDATemplate xmi:id="_2OfUeBSVEeGGzu7fmW9pXw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.4.1">
     <ruleId>CONF:7273</ruleId>
   </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2PD8JhSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-385</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OfUeRSVEeGGzu7fmW9pXw">
+    <ruleId>C83-[CT-119-2]</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:TextValue xmi:id="_2OlbARSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-384</ruleId>
+  </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2OlbBRSVEeGGzu7fmW9pXw" base_Property="_2OlbAhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7275</ruleId>
   </CDA:PropertyValidation>
@@ -152,6 +161,24 @@
   <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27">
     <ruleId>CONF:10527</ruleId>
   </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2OxoZRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-413</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxoaRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-415</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxobRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-417</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxocBSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-419</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O3u4hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-420</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O3u5RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-421</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2OxoQBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2OxoRhSVEeGGzu7fmW9pXw" base_Property="_2OxoRBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7298</ruleId>
@@ -163,7 +190,7 @@
     <ruleId>CONF:7301</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_z3iMAWMhEeGskvPNzg7rUw"/>
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoTBSVEeGGzu7fmW9pXw" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7303</ruleId>
@@ -245,6 +272,30 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26">
     <ruleId>CONF:10528</ruleId>
   </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2O91hRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-398</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91iRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-400</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91jRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-401</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91kBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-402</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91lBSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-403</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91mBSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-404</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91nxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-387</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OrhoBSVEeGGzu7fmW9pXw">
+    <ruleId>6.3.4.21.3</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2OlbJBSVEeGGzu7fmW9pXw" code="46680005" displayName="Vital signs" base_Property="_2OlbERSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7283</ruleId>

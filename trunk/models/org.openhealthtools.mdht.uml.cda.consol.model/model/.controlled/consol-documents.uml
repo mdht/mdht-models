@@ -1237,6 +1237,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:AssociationValidation xmi:id="_2Unx0BSVEeGGzu7fmW9pXw" base_Association="_2UnxzhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9928</ruleId>
   </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2Unx0xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Unx0RSVEeGGzu7fmW9pXw">
+    <ruleId>C48-[CT2-4]</ruleId>
+  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Unx1hSVEeGGzu7fmW9pXw" base_Association="_2Unx1BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9542</ruleId>
   </CDA:AssociationValidation>
@@ -1258,11 +1261,20 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:AssociationValidation xmi:id="_2Ut4QxSVEeGGzu7fmW9pXw" base_Association="_2Ut4QRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9544</ruleId>
   </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2Ut4RhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4RBSVEeGGzu7fmW9pXw">
+    <ruleId>C48-[CT2-13]</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2Ut4SRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Ut4RxSVEeGGzu7fmW9pXw">
+    <ruleId>C48-[CT2-15]</ruleId>
+  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-0hSVEeGGzu7fmW9pXw" base_Association="_2Uz-0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9550</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-1RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-0xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9564</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2Uz-2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-1hSVEeGGzu7fmW9pXw">
+    <ruleId>C48-[CT2-18]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-3hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-3BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9584</ruleId>
@@ -1478,10 +1490,19 @@ The CCD is a core data set of the most relevant administrative, demographic, and
     </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2IRXoxSVEeGGzu7fmW9pXw"/>
+  <CDA:CDATemplate xmi:id="_2IKC4BSVEeGGzu7fmW9pXw" base_Class="_2IJb0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.2" assigningAuthorityName="HITSP C32">
+    <ruleId>C32-[CT1-19]</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2IUa8RSVEeGGzu7fmW9pXw" code="34133-9" displayName="Summarization of Episode Note" base_Property="_2IUa8BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8451</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2IVpExSVEeGGzu7fmW9pXw" base_Property="_2IVpEBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-5</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2IR-sRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IRXoxSVEeGGzu7fmW9pXw">
+    <ruleId>C32-[CT1-16]</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="_2TeiIRSVEeGGzu7fmW9pXw" name="UnstructuredDocument">
     <ownedComment xmi:id="_2T9DPhSVEeGGzu7fmW9pXw" annotatedElement="_2TeiIRSVEeGGzu7fmW9pXw">
       <body>An unstructured document is a document which is used when the patient record is captured in an unstructured format that is encapsulated within an image file or as unstructured text in an electronic file such as a word processing or Portable Document Format (PDF) document. &#xD;
@@ -1692,7 +1713,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <ownedEnd xmi:id="_C-fawSzBEeGMXrZ0DiQwGg" type="_2DNRcBSVEeGGzu7fmW9pXw" association="_C-fawCzBEeGMXrZ0DiQwGg"/>
   </uml:Association>
   <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_eRm5kGdMEeGkeaezs0FtvA"/>
+    <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_J18sMDVQEeGIw7CntkyPQw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
@@ -1731,8 +1752,8 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
     <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
+  <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="s" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
+    <reference href="../consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="__eO7YjVYEeGIw7CntkyPQw" memberEnd="__eO7YDVYEeGIw7CntkyPQw __eO7YzVYEeGIw7CntkyPQw">
     <ownedEnd xmi:id="__eO7YzVYEeGIw7CntkyPQw" type="_nlqjwDVYEeGIw7CntkyPQw" association="__eO7YjVYEeGIw7CntkyPQw"/>
@@ -4347,7 +4368,4 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_bCo2IFn5EeGKdMKWzrgL_Q" base_Property="_IfG-8CymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5470</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_ekr7UGSTEeGmvuQO3I9szg" base_Property="_7Os41CylEeGMXrZ0DiQwGg">
-    <reference href="../consol-vocab.uml#_uxIS4WMhEeGskvPNzg7rUw"/>
-  </CDA:ValueSetConstraint>
 </xmi:XMI>
