@@ -495,7 +495,7 @@
     <ruleId>CONF:8992</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_m_dk8Bq1EeGo461UQq-B1g" base_Property="_DruzARVOEeGbmN_W114JUw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWoz0aDqEd-dVeaMP0XXQw"/>
+    <reference href="../consol-vocab.uml#_7bYRUGiaEeGYO5jeo5rr2w"/>
     <ruleId>CONF:8995</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_q2zp8Bq1EeGo461UQq-B1g" base_Property="_Dr389hVOEeGbmN_W114JUw">

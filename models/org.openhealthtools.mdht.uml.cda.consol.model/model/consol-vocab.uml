@@ -20,9 +20,7 @@
       </ownedLiteral>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Fw2MBSVEeGGzu7fmW9pXw" name="Problem Type">
-      <eAnnotations xmi:id="_2F0gkRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_RS-wgCvBEd-LFp1hgdmc1w"/>
-      </eAnnotations>
+     
       <ownedComment xmi:id="_zlLhUCAxEeGetMjKLkqR8g">
         <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
       </ownedComment>
@@ -44,38 +42,26 @@
       <ownedLiteral xmi:id="_2GDxJRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HFr4RSVEeGGzu7fmW9pXw" name="Medication Type">
-      <eAnnotations xmi:id="_2HHhERSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWV44KDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
       <ownedLiteral xmi:id="_2HFr4hSVEeGGzu7fmW9pXw" name="329505003"/>
       <ownedLiteral xmi:id="_2HFr4xSVEeGGzu7fmW9pXw" name="73639000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HnQUxSVEeGGzu7fmW9pXw" name="Medication Fill Status">
-      <eAnnotations xmi:id="_2HpskBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dV8QQKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+    
       <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA">
-      <eAnnotations xmi:id="_2H3H8BSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWOkIKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site">
-      <eAnnotations xmi:id="_2H4WEBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c215cKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+      
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form">
-      <eAnnotations xmi:id="_2H6LQBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWEMEKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type">
-      <eAnnotations xmi:id="_2JnbcRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dj_6YKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+      
       <ownedLiteral xmi:id="_2JjKARSVEeGGzu7fmW9pXw" name="160573003"/>
       <ownedLiteral xmi:id="_2JjKAhSVEeGGzu7fmW9pXw" name="363908000"/>
       <ownedLiteral xmi:id="_2JjKAxSVEeGGzu7fmW9pXw" name="364703007"/>
@@ -86,9 +72,7 @@
       <ownedLiteral xmi:id="_2JjKCBSVEeGGzu7fmW9pXw" name="425400000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="Advance Directive Type">
-      <eAnnotations xmi:id="_2LKTkRSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c2q6UKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
       <ownedLiteral xmi:id="_2LHQQRSVEeGGzu7fmW9pXw" name="281789004"/>
       <ownedLiteral xmi:id="_2LHQQhSVEeGGzu7fmW9pXw" name="89666000"/>
       <ownedLiteral xmi:id="_2LHQQxSVEeGGzu7fmW9pXw" name="225204009"/>
@@ -97,30 +81,22 @@
       <ownedLiteral xmi:id="_2LHQRhSVEeGGzu7fmW9pXw" name="304251008"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterType">
-      <eAnnotations xmi:id="_2L4sUBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_3kRpAKypEd-9I53ewETPWA"/>
-      </eAnnotations>
+      
       <ownedComment xmi:id="_2L3eMRSVEeGGzu7fmW9pXw">
         <body>This is used to identify medical services and procedures furnished by physicians and other healthcare professionals.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L5TYBSVEeGGzu7fmW9pXw" name="Admission Type (NUBC)">
-      <eAnnotations xmi:id="_2L6hgBSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_iXnBgKyqEd-9I53ewETPWA"/>
-      </eAnnotations>
+     
       <ownedComment xmi:id="_2L5TYRSVEeGGzu7fmW9pXw">
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
-      <eAnnotations xmi:id="_2MRt4BSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkKDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="Vital Sign Result">
-      <eAnnotations xmi:id="_2O91ghSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_UvVE0DISEd-saqiXO4OYhQ"/>
-      </eAnnotations>
+     
       <ownedLiteral xmi:id="_2O3u6hSVEeGGzu7fmW9pXw" name="8310-5"/>
       <ownedLiteral xmi:id="_2O3u6xSVEeGGzu7fmW9pXw" name="8462-4"/>
       <ownedLiteral xmi:id="_2O3u7BSVEeGGzu7fmW9pXw" name="8480-6"/>
@@ -133,22 +109,16 @@
       <ownedLiteral xmi:id="_2O3u8xSVEeGGzu7fmW9pXw" name="3141-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SVSkBSVEeGGzu7fmW9pXw" name="Problem">
-      <eAnnotations xmi:id="_2SVSkhSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_1-coUCvAEd-LFp1hgdmc1w"/>
-      </eAnnotations>
+     
       <ownedComment xmi:id="_w0gJcCAxEeGetMjKLkqR8g">
         <body>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language">
-      <eAnnotations xmi:id="_2SbZNhSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_yh8VUKrtEd-yFfcbpgNFIA"/>
-      </eAnnotations>
+      
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNxSVEeGGzu7fmW9pXw" name="LanguageAbilityMode">
-      <eAnnotations xmi:id="_2Shf0hSVEeGGzu7fmW9pXw" source="sourceClass">
-        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dLqS4KDqEd-dVeaMP0XXQw"/>
-      </eAnnotations>
+     
       <ownedLiteral xmi:id="_2SbZOBSVEeGGzu7fmW9pXw" name="ESGN"/>
       <ownedLiteral xmi:id="_2SbZORSVEeGGzu7fmW9pXw" name="ESP"/>
       <ownedLiteral xmi:id="_2SbZOhSVEeGGzu7fmW9pXw" name="EWR"/>
@@ -261,48 +231,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
         <body>Specific classification codes for further qualifying RoleClass codes.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ddN88KDqEd-dVeaMP0XXQw" name="Personal Relationship Role Type">
-      <ownedLiteral xmi:id="_ddRnUKDqEd-dVeaMP0XXQw" name="ADOPT"/>
-      <ownedLiteral xmi:id="_ddRnUqDqEd-dVeaMP0XXQw" name="AUNT"/>
-      <ownedLiteral xmi:id="_ddSOYKDqEd-dVeaMP0XXQw" name="CHILD"/>
-      <ownedLiteral xmi:id="_ddSOYqDqEd-dVeaMP0XXQw" name="CHLDINLAW"/>
-      <ownedLiteral xmi:id="_ddSOZKDqEd-dVeaMP0XXQw" name="COUSN"/>
-      <ownedLiteral xmi:id="_ddSOZqDqEd-dVeaMP0XXQw" name="DOMPART"/>
-      <ownedLiteral xmi:id="_ddS1caDqEd-dVeaMP0XXQw" name="FAMMEMB"/>
-      <ownedLiteral xmi:id="_ddS1c6DqEd-dVeaMP0XXQw" name="CHLDFOST"/>
-      <ownedLiteral xmi:id="_ddS1daDqEd-dVeaMP0XXQw" name="GRNDCHILD"/>
-      <ownedLiteral xmi:id="_ddTcgKDqEd-dVeaMP0XXQw" name="GPARNT"/>
-      <ownedLiteral xmi:id="_ddTcgqDqEd-dVeaMP0XXQw" name="GRPRN"/>
-      <ownedLiteral xmi:id="_ddTchKDqEd-dVeaMP0XXQw" name="GGRPRN"/>
-      <ownedLiteral xmi:id="_ddTchqDqEd-dVeaMP0XXQw" name="HSIB"/>
-      <ownedLiteral xmi:id="_ddUDkaDqEd-dVeaMP0XXQw" name="MAUNT"/>
-      <ownedLiteral xmi:id="_ddUDk6DqEd-dVeaMP0XXQw" name="MCOUSN"/>
-      <ownedLiteral xmi:id="_ddUDlaDqEd-dVeaMP0XXQw" name="MGRPRN"/>
-      <ownedLiteral xmi:id="_ddUqoKDqEd-dVeaMP0XXQw" name="MGGRPRN"/>
-      <ownedLiteral xmi:id="_ddUqoqDqEd-dVeaMP0XXQw" name="MUNCLE"/>
-      <ownedLiteral xmi:id="_ddUqpKDqEd-dVeaMP0XXQw" name="NCHILD"/>
-      <ownedLiteral xmi:id="_ddUqpqDqEd-dVeaMP0XXQw" name="NPRN"/>
-      <ownedLiteral xmi:id="_ddVRsKDqEd-dVeaMP0XXQw" name="NSIB"/>
-      <ownedLiteral xmi:id="_ddVRsqDqEd-dVeaMP0XXQw" name="NBOR"/>
-      <ownedLiteral xmi:id="_ddVRtKDqEd-dVeaMP0XXQw" name="NIENEPH"/>
-      <ownedLiteral xmi:id="_ddVRtqDqEd-dVeaMP0XXQw" name="PRN"/>
-      <ownedLiteral xmi:id="_ddV4waDqEd-dVeaMP0XXQw" name="PRNINLAW"/>
-      <ownedLiteral xmi:id="_ddV4w6DqEd-dVeaMP0XXQw" name="PAUNT"/>
-      <ownedLiteral xmi:id="_ddV4xaDqEd-dVeaMP0XXQw" name="PCOUSN"/>
-      <ownedLiteral xmi:id="_ddWf0KDqEd-dVeaMP0XXQw" name="PGRPRN"/>
-      <ownedLiteral xmi:id="_ddWf0qDqEd-dVeaMP0XXQw" name="PGGRPRN"/>
-      <ownedLiteral xmi:id="_ddWf1KDqEd-dVeaMP0XXQw" name="PUNCLE"/>
-      <ownedLiteral xmi:id="_ddWf1qDqEd-dVeaMP0XXQw" name="ROOM"/>
-      <ownedLiteral xmi:id="_ddXG4KDqEd-dVeaMP0XXQw" name="SIB"/>
-      <ownedLiteral xmi:id="_ddXG4qDqEd-dVeaMP0XXQw" name="SIBINLAW"/>
-      <ownedLiteral xmi:id="_ddXG5KDqEd-dVeaMP0XXQw" name="SIGOTHR"/>
-      <ownedLiteral xmi:id="_ddXt8KDqEd-dVeaMP0XXQw" name="SPS"/>
-      <ownedLiteral xmi:id="_ddXt8qDqEd-dVeaMP0XXQw" name="STEP"/>
-      <ownedLiteral xmi:id="_ddXt9KDqEd-dVeaMP0XXQw" name="STPPRN"/>
-      <ownedLiteral xmi:id="_ddXt9qDqEd-dVeaMP0XXQw" name="STPSIB"/>
-      <ownedLiteral xmi:id="_ddYVAKDqEd-dVeaMP0XXQw" name="UNCLE"/>
-      <ownedLiteral xmi:id="_ddYVAqDqEd-dVeaMP0XXQw" name="FRND"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_SLh6QDVUEeGIw7CntkyPQw" name="LanguageAbilityProficiency">
       <ownedLiteral xmi:id="_gzUsQFoCEeGKdMKWzrgL_Q" name="E"/>
       <ownedLiteral xmi:id="_mLUEoFoCEeGKdMKWzrgL_Q" name="F"/>
@@ -383,6 +311,58 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_ixlmgF_mEeGt2doqSDULjA" name="SELF"/>
       <ownedLiteral xmi:id="_mQAOIF_mEeGt2doqSDULjA" name="SPON"/>
       <ownedLiteral xmi:id="_remZ8F_mEeGt2doqSDULjA" name="STUD"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MrdXMGiJEeGjoNbQEEZQtw" name="Personal Relationship Role Type">
+      <ownedLiteral xmi:id="_MrdXMWiJEeGjoNbQEEZQtw" name="ADOPT"/>
+      <ownedLiteral xmi:id="_MrdXMmiJEeGjoNbQEEZQtw" name="AUNT"/>
+      <ownedLiteral xmi:id="_MrdXM2iJEeGjoNbQEEZQtw" name="CHILD"/>
+      <ownedLiteral xmi:id="_MrdXNGiJEeGjoNbQEEZQtw" name="CHLDINLAW"/>
+      <ownedLiteral xmi:id="_Mrd-QGiJEeGjoNbQEEZQtw" name="COUSN"/>
+      <ownedLiteral xmi:id="_Mrd-QWiJEeGjoNbQEEZQtw" name="DOMPART"/>
+      <ownedLiteral xmi:id="_Mrd-QmiJEeGjoNbQEEZQtw" name="FAMMEMB"/>
+      <ownedLiteral xmi:id="_Mrd-Q2iJEeGjoNbQEEZQtw" name="CHLDFOST"/>
+      <ownedLiteral xmi:id="_Mrd-RGiJEeGjoNbQEEZQtw" name="GRNDCHILD"/>
+      <ownedLiteral xmi:id="_Mrd-RWiJEeGjoNbQEEZQtw" name="GPARNT"/>
+      <ownedLiteral xmi:id="_Mrd-RmiJEeGjoNbQEEZQtw" name="GRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-R2iJEeGjoNbQEEZQtw" name="GGRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-SGiJEeGjoNbQEEZQtw" name="HSIB"/>
+      <ownedLiteral xmi:id="_Mrd-SWiJEeGjoNbQEEZQtw" name="MAUNT"/>
+      <ownedLiteral xmi:id="_Mrd-SmiJEeGjoNbQEEZQtw" name="MCOUSN"/>
+      <ownedLiteral xmi:id="_Mrd-S2iJEeGjoNbQEEZQtw" name="MGRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-TGiJEeGjoNbQEEZQtw" name="MGGRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-TWiJEeGjoNbQEEZQtw" name="MUNCLE"/>
+      <ownedLiteral xmi:id="_Mrd-TmiJEeGjoNbQEEZQtw" name="NCHILD"/>
+      <ownedLiteral xmi:id="_Mrd-T2iJEeGjoNbQEEZQtw" name="NPRN"/>
+      <ownedLiteral xmi:id="_Mrd-UGiJEeGjoNbQEEZQtw" name="NSIB"/>
+      <ownedLiteral xmi:id="_Mrd-UWiJEeGjoNbQEEZQtw" name="NBOR"/>
+      <ownedLiteral xmi:id="_Mrd-UmiJEeGjoNbQEEZQtw" name="NIENEPH"/>
+      <ownedLiteral xmi:id="_Mrd-U2iJEeGjoNbQEEZQtw" name="PRN"/>
+      <ownedLiteral xmi:id="_Mrd-VGiJEeGjoNbQEEZQtw" name="PRNINLAW"/>
+      <ownedLiteral xmi:id="_Mrd-VWiJEeGjoNbQEEZQtw" name="PAUNT"/>
+      <ownedLiteral xmi:id="_Mrd-VmiJEeGjoNbQEEZQtw" name="PCOUSN"/>
+      <ownedLiteral xmi:id="_Mrd-V2iJEeGjoNbQEEZQtw" name="PGRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-WGiJEeGjoNbQEEZQtw" name="PGGRPRN"/>
+      <ownedLiteral xmi:id="_Mrd-WWiJEeGjoNbQEEZQtw" name="PUNCLE"/>
+      <ownedLiteral xmi:id="_Mrd-WmiJEeGjoNbQEEZQtw" name="ROOM"/>
+      <ownedLiteral xmi:id="_Mrd-W2iJEeGjoNbQEEZQtw" name="SIB"/>
+      <ownedLiteral xmi:id="_Mrd-XGiJEeGjoNbQEEZQtw" name="SIBINLAW"/>
+      <ownedLiteral xmi:id="_Mrd-XWiJEeGjoNbQEEZQtw" name="SIGOTHR"/>
+      <ownedLiteral xmi:id="_Mrd-XmiJEeGjoNbQEEZQtw" name="SPS"/>
+      <ownedLiteral xmi:id="_Mrd-X2iJEeGjoNbQEEZQtw" name="STEP"/>
+      <ownedLiteral xmi:id="_Mrd-YGiJEeGjoNbQEEZQtw" name="STPPRN"/>
+      <ownedLiteral xmi:id="_Mrd-YWiJEeGjoNbQEEZQtw" name="STPSIB"/>
+      <ownedLiteral xmi:id="_Mrd-YmiJEeGjoNbQEEZQtw" name="UNCLE"/>
+      <ownedLiteral xmi:id="_Mrd-Y2iJEeGjoNbQEEZQtw" name="FRND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4WPsYGiaEeGYO5jeo5rr2w" name="No Immunization Reason">
+      <ownedLiteral xmi:id="_4WPsYWiaEeGYO5jeo5rr2w" name="IMMUNE"/>
+      <ownedLiteral xmi:id="_4WPsYmiaEeGYO5jeo5rr2w" name="MEDPREC"/>
+      <ownedLiteral xmi:id="_4WPsY2iaEeGYO5jeo5rr2w" name="OSTOCK"/>
+      <ownedLiteral xmi:id="_4WPsZGiaEeGYO5jeo5rr2w" name="PATOBJ"/>
+      <ownedLiteral xmi:id="_4WPsZWiaEeGYO5jeo5rr2w" name="PHILISOP"/>
+      <ownedLiteral xmi:id="_4WPsZmiaEeGYO5jeo5rr2w" name="RELIG"/>
+      <ownedLiteral xmi:id="_4WPsZ2iaEeGYO5jeo5rr2w" name="VACEFF"/>
+      <ownedLiteral xmi:id="_4WPsaGiaEeGYO5jeo5rr2w" name="VACSAF"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -680,4 +660,58 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_ixlmgV_mEeGt2doqSDULjA" conceptName="Self" base_EnumerationLiteral="_ixlmgF_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_mQAOIV_mEeGt2doqSDULjA" base_EnumerationLiteral="_mQAOIF_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_remZ8V_mEeGt2doqSDULjA" conceptName="Student" base_EnumerationLiteral="_remZ8F_mEeGt2doqSDULjA"/>
+  <term:ValueSetVersion xmi:id="_X7aBcGiJEeGjoNbQEEZQtw" identifier="2.16.840.1.113883.1.11.19563" version="1" fullName="Personal Relationship Role Type Value Set" definition="A Personal Relationship records the role of a person in relation to another person. This value set is to be used when recording the relationships between different people who are not necessarily related by family ties, but also includes family relationships" revisionDate="07/23/2009" base_Enumeration="_MrdXMGiJEeGjoNbQEEZQtw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_K7fHAGiMEeGjoNbQEEZQtw" conceptName="adopted child" base_EnumerationLiteral="_MrdXMWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_UIELUGiMEeGjoNbQEEZQtw" conceptName="aunt" usageNote="RoleCode" base_EnumerationLiteral="_MrdXMmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_VM2CEGiMEeGjoNbQEEZQtw" conceptName="Child" usageNote="RoleCode" base_EnumerationLiteral="_MrdXM2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_XgW80GiMEeGjoNbQEEZQtw" conceptName="child in-law" usageNote="RoleCode" base_EnumerationLiteral="_MrdXNGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_Y8zFoGiMEeGjoNbQEEZQtw" conceptName="cousin" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-QGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_cIx5cGiMEeGjoNbQEEZQtw" conceptName="domestic partner" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-QWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_dRTAsGiMEeGjoNbQEEZQtw" conceptName="Family Member" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-QmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_eqBuMGiMEeGjoNbQEEZQtw" conceptName="foster child" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-Q2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_hJpyUGiMEeGjoNbQEEZQtw" conceptName="grandchild" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-RGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_jw6vgGiMEeGjoNbQEEZQtw" conceptName="grandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-RWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_k-bEcGiMEeGjoNbQEEZQtw" conceptName="Grandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-RmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_nBlPAGiMEeGjoNbQEEZQtw" conceptName="great grandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-R2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_n_7toGiMEeGjoNbQEEZQtw" conceptName="half-sibling" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-SGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_pAOtAGiMEeGjoNbQEEZQtw" conceptName="MaternalAunt" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-SWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_p-2RYGiMEeGjoNbQEEZQtw" conceptName="MaternalCousin" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-SmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_rCL9sGiMEeGjoNbQEEZQtw" conceptName="MaternalGrandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-S2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_sE5X4GiMEeGjoNbQEEZQtw" conceptName="MaternalGreatgrandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-TGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_uD8egGiMEeGjoNbQEEZQtw" conceptName="MaternalUncle" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-TWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_vaI1YGiMEeGjoNbQEEZQtw" conceptName="natural child" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-TmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_4D-ZAGiMEeGjoNbQEEZQtw" conceptName="natural parent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-T2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_ejRekGiPEeGYO5jeo5rr2w" conceptName="natural sibling" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-UGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_fws7AGiPEeGYO5jeo5rr2w" conceptName="neighbor" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-UWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_g6-80GiPEeGYO5jeo5rr2w" conceptName="niece/nephew" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-UmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_h-7GEGiPEeGYO5jeo5rr2w" conceptName="Parent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-U2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_jWmDoGiPEeGYO5jeo5rr2w" conceptName="parent in-law" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-VGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_kw_lEGiPEeGYO5jeo5rr2w" conceptName="PaternalAunt" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-VWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_mQaJYGiPEeGYO5jeo5rr2w" conceptName="PaternalCousin" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-VmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_nRVa4GiPEeGYO5jeo5rr2w" conceptName="PaternalGrandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-V2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_oLLM8GiPEeGYO5jeo5rr2w" conceptName="PaternalGreatgrandparent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-WGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_pIrXAGiPEeGYO5jeo5rr2w" conceptName="PaternalUncle" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-WWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_qIktwGiPEeGYO5jeo5rr2w" conceptName="Roommate" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-WmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_rDgE8GiPEeGYO5jeo5rr2w" conceptName="Sibling" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-W2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_sksx8GiPEeGYO5jeo5rr2w" conceptName="sibling in-law" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-XGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_tx490GiPEeGYO5jeo5rr2w" conceptName="significant other" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-XWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_vOxykGiPEeGYO5jeo5rr2w" conceptName="spouse" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-XmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_x49g4GiPEeGYO5jeo5rr2w" conceptName="step child" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-X2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_yzPX0GiPEeGYO5jeo5rr2w" conceptName="step parent" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YGiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_zx-Q8GiPEeGYO5jeo5rr2w" conceptName="step sibling" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YWiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_0q-VgGiPEeGYO5jeo5rr2w" conceptName="uncle" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YmiJEeGjoNbQEEZQtw"/>
+  <term:ValueSetCode xmi:id="_1u9iEGiPEeGYO5jeo5rr2w" conceptName="unrelated friend" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-Y2iJEeGjoNbQEEZQtw"/>
+  <term:ValueSetVersion xmi:id="_7bYRUGiaEeGYO5jeo5rr2w" identifier="2.16.840.1.113883.1.11.19717" version="1" fullName="No Immunization Reason Value Set" source="" definition="This identifies the reason why the immunization did not occur" revisionDate="07/23/2009" base_Enumeration="_4WPsYGiaEeGYO5jeo5rr2w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_94NgIGiaEeGYO5jeo5rr2w" conceptName="Immunity" base_EnumerationLiteral="_4WPsYWiaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="__1dP8GiaEeGYO5jeo5rr2w" conceptName="medical precaution" base_EnumerationLiteral="_4WPsYmiaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_ELSnwGibEeGYO5jeo5rr2w" conceptName="Out of stock" base_EnumerationLiteral="_4WPsY2iaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_FS7lQGibEeGYO5jeo5rr2w" conceptName="patient objection" base_EnumerationLiteral="_4WPsZGiaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_GMnmUGibEeGYO5jeo5rr2w" conceptName="philosophical objection" base_EnumerationLiteral="_4WPsZWiaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_HJGcsGibEeGYO5jeo5rr2w" conceptName="religious objection" base_EnumerationLiteral="_4WPsZmiaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_IYx74GibEeGYO5jeo5rr2w" conceptName="vaccine efficacy concerns" base_EnumerationLiteral="_4WPsZ2iaEeGYO5jeo5rr2w"/>
+  <term:ValueSetCode xmi:id="_JOteUGibEeGYO5jeo5rr2w" conceptName="vaccine safety concerns" base_EnumerationLiteral="_4WPsaGiaEeGYO5jeo5rr2w"/>
 </xmi:XMI>
