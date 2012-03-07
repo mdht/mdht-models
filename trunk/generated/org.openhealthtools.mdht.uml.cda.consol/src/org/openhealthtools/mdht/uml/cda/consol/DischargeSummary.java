@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDischargeSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.8' constraints.validation.error='DischargeSummaryTemplateId GeneralHeaderConstraintsCode DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesSection DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter' code.codeSystemName='LOINC' constraints.validation.info='DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional DischargeSummaryDischargeDietSection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllnessSection DischargeSummaryHistoryOfPastIllnessSection DischargeSummaryVitalSignsSection DischargeSummaryChiefComplaintAndReasonForVisitSection DischargeSummaryChiefComplaintSection DischargeSummaryFamilyHistorySection DischargeSummaryHospitalConsultationsSection DischargeSummaryHospitalDischargeInstructionsSection DischargeSummaryHospitalDischargePhysicalSection DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSectionEntriesOptional DischargeSummaryProblemSectionEntriesOptional DischargeSummaryProceduresSectionEntriesOptional DischargeSummaryReasonForVisitSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.8' constraints.validation.error='DischargeSummaryTemplateId GeneralHeaderConstraintsCode DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryAllergiesSection DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter' code.codeSystemName='LOINC' constraints.validation.info='DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional DischargeSummaryAdvanceDirectivesSection DischargeSummaryDischargeDietSection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllnessSection DischargeSummaryMedicalEquipmentSection DischargeSummaryPhysicalExamSection DischargeSummaryHistoryOfPastIllnessSection DischargeSummaryVitalSignsSection DischargeSummaryChiefComplaintAndReasonForVisitSection DischargeSummaryChiefComplaintSection DischargeSummaryFamilyHistorySection DischargeSummaryHospitalConsultationsSection DischargeSummaryHospitalDischargeInstructionsSection DischargeSummaryHospitalDischargePhysicalSection DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSectionEntriesOptional DischargeSummaryProblemSectionEntriesOptional DischargeSummaryProceduresSectionEntriesOptional DischargeSummaryReasonForVisitSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummaryComponentOf constraints.validation.error='ComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummaryComponentOfEncompassingEncounter3 constraints.validation.error='EncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow EncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh EncompassingEncounter3EffectiveTime' constraints.validation.info='EncompassingEncounter3ResponsibleParty EncompassingEncounter3EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty constraints.validation.error='ResponsiblePartyAssignedEntityHasPersonOrOrganization ResponsiblePartyAssignedEntity'"
@@ -52,6 +52,19 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 */
 	boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))'"
+	 * @generated
+	 */
+	boolean validateDischargeSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,6 +159,32 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateDischargeSummaryHospitalCourseSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))'"
+	 * @generated
+	 */
+	boolean validateDischargeSummaryMedicalEquipmentSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))'"
+	 * @generated
+	 */
+	boolean validateDischargeSummaryPhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

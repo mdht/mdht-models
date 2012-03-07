@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.20' constraints.validation.error='InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsCode InstructionsStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' constraints.validation.warning='InstructionsTextReference InstructionsText' moodCode='INT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.20' constraints.validation.error='InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsStatusCode' classCode='ACT' constraints.validation.warning='InstructionsTextReference InstructionsText' moodCode='INT'"
  * @generated
  */
 public interface Instructions extends Act {
@@ -92,21 +92,6 @@ public interface Instructions extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -126,7 +111,7 @@ public interface Instructions extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\nvalue.code = \'completed\'))'"
 	 * @generated
 	 */
 	boolean validateInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

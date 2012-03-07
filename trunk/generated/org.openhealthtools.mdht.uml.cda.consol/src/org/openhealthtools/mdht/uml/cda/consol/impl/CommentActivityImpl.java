@@ -64,6 +64,35 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCommentActivityEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityEffectiveTimeWhenAuthorPresent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityHasAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityHasAuthorId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityHasAuthorOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityHasAuthorOrganization(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCommentActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityTemplateId(this, diagnostics, context);
 	}
@@ -109,8 +138,26 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCommentActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CommentActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // CommentActivityImpl

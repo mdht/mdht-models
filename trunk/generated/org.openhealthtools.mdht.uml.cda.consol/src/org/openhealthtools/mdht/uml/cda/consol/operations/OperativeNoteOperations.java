@@ -63,6 +63,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureDispositionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Disposition Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureIndicationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Indications Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteSurgicalDrainsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Surgical Drains Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Function Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteDocumentationOfServiceEventProcedureCodes(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Procedure Codes</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has Low</em>}</li>
@@ -142,20 +143,17 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteTemplateId"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteTemplateId"), new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -200,20 +198,17 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOf"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOf"), new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -258,20 +253,17 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteAnesthesiaSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteAnesthesiaSection"), new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -316,20 +308,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteComplicationsSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteComplicationsSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -374,20 +364,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNotePostoperativeDiagnosisSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNotePostoperativeDiagnosisSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -432,20 +421,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNotePreoperativeDiagnosisSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNotePreoperativeDiagnosisSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -490,20 +477,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureEstimatedBloodLossSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureEstimatedBloodLossSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -548,20 +534,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureFindingsSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureFindingsSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -606,20 +590,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureSpecimensTakenSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureSpecimensTakenSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -664,20 +647,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDescriptionSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDescriptionSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -722,20 +703,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureImplantsSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureImplantsSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -780,20 +759,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteFluidSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteFluidSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -838,20 +815,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteSurgicalProcedureSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteSurgicalProcedureSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -896,20 +872,17 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNotePlanOfCareSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNotePlanOfCareSection"), new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -954,20 +927,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNotePlannedProcedureSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNotePlannedProcedureSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1012,20 +983,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDispositionSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureDispositionSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1070,20 +1039,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureIndicationsSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteProcedureIndicationsSection"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1128,20 +1095,82 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalDrainsSection"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalDrainsSection"),
+					new Object[] { operativeNote }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Function Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->forAll((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))) else true endif";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Function Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->forAll((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in (
+	 * value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))) else true endif
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
+			try {
+				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_FUNCTION_CODE,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1186,20 +1215,20 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1244,20 +1273,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventProcedureCodes"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventProcedureCodes"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1302,20 +1330,20 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1360,20 +1388,20 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1418,20 +1446,20 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1476,20 +1504,20 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_ANY_ASSISTANTS_AS_SECONDARY,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1534,20 +1562,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventCode"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventCode"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1592,20 +1619,19 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTime"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEventEffectiveTime"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1650,20 +1676,18 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT,
-						 ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEvent"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT,
+					ConsolPlugin.INSTANCE.getString("OperativeNoteDocumentationOfServiceEvent"),
+					new Object[] { operativeNote }));
 			}
 			return false;
 		}
@@ -1702,11 +1726,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static AnesthesiaSection getAnesthesiaSection(OperativeNote operativeNote) {
 		if (GET_ANESTHESIA_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(172));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(178));
 			try {
 				GET_ANESTHESIA_SECTION__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1746,11 +1771,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ComplicationsSection getComplicationsSection(OperativeNote operativeNote) {
 		if (GET_COMPLICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(173));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(179));
 			try {
 				GET_COMPLICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1790,11 +1816,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PostoperativeDiagnosisSection getPostoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(174));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(180));
 			try {
 				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1834,11 +1861,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PreoperativeDiagnosisSection getPreoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(175));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(181));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1878,11 +1906,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(176));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(182));
 			try {
 				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1922,11 +1951,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureFindingsSection getProcedureFindingsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(177));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(183));
 			try {
 				GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_FINDINGS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1966,11 +1996,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(178));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(184));
 			try {
 				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2010,11 +2041,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureDescriptionSection getProcedureDescriptionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(179));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(185));
 			try {
 				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2054,11 +2086,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureImplantsSection getProcedureImplantsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(180));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(186));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2098,11 +2131,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static OperativeNoteFluidSection getOperativeNoteFluidSection(OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(181));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(187));
 			try {
 				GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2143,11 +2177,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(182));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(188));
 			try {
 				GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2187,11 +2222,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PlanOfCareSection getPlanOfCareSection(OperativeNote operativeNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(183));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(189));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2231,11 +2267,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static PlannedProcedureSection getPlannedProcedureSection(OperativeNote operativeNote) {
 		if (GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(184));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(190));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2275,11 +2312,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureDispositionSection getProcedureDispositionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(185));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(191));
 			try {
 				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2319,11 +2357,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static ProcedureIndicationsSection getProcedureIndicationsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(186));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(192));
 			try {
 				GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_INDICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2363,11 +2402,12 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static SurgicalDrainsSection getSurgicalDrainsSection(OperativeNote operativeNote) {
 		if (GET_SURGICAL_DRAINS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE, ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(187));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE,
+				ConsolPackage.Literals.OPERATIVE_NOTE.getEAllOperations().get(193));
 			try {
 				GET_SURGICAL_DRAINS_SECTION__EOCL_QRY = helper.createQuery(GET_SURGICAL_DRAINS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2383,9 +2423,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
@@ -2417,20 +2457,17 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(operativeNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			operativeNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
-						 new Object [] { operativeNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { operativeNote }));
 			}
 			return false;
 		}
