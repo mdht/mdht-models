@@ -16,14 +16,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LPzIRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LPzIhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2LMIwxSVEeGGzu7fmW9pXw" name="allergyDrugSensitivity" type="_2EAisBSVEeGGzu7fmW9pXw" association="_2LNW4RSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2LMIwxSVEeGGzu7fmW9pXw" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_2LNW4RSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LMIxBSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LMIxRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_0EqtAGibEeGyhrWHUkhe6g" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0EqtAWibEeGyhrWHUkhe6g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0EqtAmibEeGyhrWHUkhe6g"/>
-      <association href="../consol.uml#_0ErUEGibEeGyhrWHUkhe6g"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2LNW4RSVEeGGzu7fmW9pXw" memberEnd="_2LMIwxSVEeGGzu7fmW9pXw _2LNW4hSVEeGGzu7fmW9pXw">
