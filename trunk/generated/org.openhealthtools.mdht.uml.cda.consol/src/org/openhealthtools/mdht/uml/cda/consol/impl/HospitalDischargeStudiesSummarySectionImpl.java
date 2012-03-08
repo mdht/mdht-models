@@ -58,8 +58,7 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(
-			this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(
-			this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(
-			this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +97,7 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public HospitalDischargeStudiesSummarySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalDischargeStudiesSummarySectionImpl

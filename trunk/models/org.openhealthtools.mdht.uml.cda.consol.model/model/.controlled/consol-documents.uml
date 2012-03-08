@@ -1760,7 +1760,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
     <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="s" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
+  <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="__eO7YjVYEeGIw7CntkyPQw" memberEnd="__eO7YDVYEeGIw7CntkyPQw __eO7YzVYEeGIw7CntkyPQw">
