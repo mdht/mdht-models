@@ -84,7 +84,8 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterial(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterial(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +95,8 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +105,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * @generated
 	 */
 	public MedicationInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationInformationImpl

@@ -58,7 +58,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +106,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,7 +117,7 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 */
 	@Override
 	public ImmunizationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationsSectionImpl

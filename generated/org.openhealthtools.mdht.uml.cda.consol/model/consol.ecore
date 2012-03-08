@@ -9616,7 +9616,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.displayName" value="Allergies, adverse reactions, alerts"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.1"/>
-      <details key="constraints.validation.error" value="AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyDrugSensitivity"/>
+      <details key="constraints.validation.error" value="AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="48765-2"/>
     </eAnnotations>
@@ -9714,7 +9714,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergiesSectionAllergyDrugSensitivity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergiesSectionAllergyProblemAct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AllergyProblemAct))"/>
       </eAnnotations>
@@ -9736,7 +9736,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getAllergyDrugSensitivities" ordered="false" lowerBound="1"
+    <eOperations name="getConsolAllergyProblemActs" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AllergyProblemAct">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)"/>
@@ -9745,8 +9745,6 @@
         <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)"/>
       </eAnnotations>
     </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allergyProblemAct" ordered="false"
-        upperBound="-1" eType="#//AllergyProblemAct"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
