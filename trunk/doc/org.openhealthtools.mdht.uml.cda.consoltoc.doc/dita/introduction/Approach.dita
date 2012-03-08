@@ -4,7 +4,7 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Approach</title>
 	<body>
-		<p>Working with specifications generated from formal UML models provides the
+		<p>Working with an initial portion of the data provides the
 			opportunity to work with the data from the perspective of the
 			underlying model and electronic format and to explore many design
 			issues thoroughly. Taking this as an initial step ensures that the
@@ -19,5 +19,26 @@
 		<p>This implementation guide (IG) specifies a standard for electronic
 			submission of NCRs in a Clinical Document Architecture (CDA), Release
 			2 format.</p>
+
+		<p>In the development of this specification, the Transition of Care team reviewed 
+			the requirements set forth in the ToC Use Case, identified and reviewed 
+			artifacts relevant to those requirements and performed an analysis to 
+			determine the data elements, metadata and vocabularies needed to support 
+			those requirements.  As a result of that analysis, it was determined that 
+			the HL7 Implementation Guide for CDA Release 2.0 Consolidated CDA Templates 
+			(US Realm) most closely reflected the ToC requirements.</p>
+		<p>The ToC team members then layered the additional ToC constraints upon the HL7 
+			Implementation Guide for CDA Release 2.0 Consolidated CDA Templates (US Realm).</p>
+		<p>The major document template additions for ToC which have been created by the ONC S&amp;I 
+			Framework are defined by document.  All of the remaining section and entry templates 
+			are to be used from the existing  HL7 Implementation Guide for CDA Release 2.0 
+			Consolidated CDA Templates (US Realm) and may be found in that document.</p>
+		<p>All of the Conformance requirements and value set tables used by the ToC CDA Documents 
+			are those specified by the Consolidated CDA Templates as published by the 
+			Implementation Guide for CDA Release 2.0 Consolidated CDA Templates (US Realm), 
+			with the exception of the document level CDA templates published within this document.</p>
+		<p>Both the Implemenation Guide for ToC CDA Consolidation and the Implementation Guide for CDA 
+			Release 2.0 Consolidated CDA Templates (US Realm) are currently released for Trial 
+			Implementation.</p>
 	</body>
 </topic>
