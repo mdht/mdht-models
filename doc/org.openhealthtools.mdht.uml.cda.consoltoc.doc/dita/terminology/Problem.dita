@@ -14,9 +14,10 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Problem - 2.16.840.1.113883.3.88.12.3221.7.4</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
-<row><entry>Source</entry><entry>Veterans Administration/Kaiser Permanente (VA/KP)</entry></row>
-<row><entry>Source URL</entry><entry>http://evs.nci.nih.gov/ftp1/FDA/ProblemList/</entry></row>
-<row><entry>Definition</entry><entry>This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions)</entry></row>
+<row><entry>Version</entry><entry>DYNAMIC</entry></row>
+<row><entry>Source</entry><entry>http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785</entry></row>
+<row><entry>Description</entry><entry>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.
+</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

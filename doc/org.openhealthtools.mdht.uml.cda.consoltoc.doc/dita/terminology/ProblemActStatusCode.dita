@@ -13,7 +13,9 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ProblemActStatusCode - 2.16.840.1.113883.11.20.9.19</entry></row>
-<row><entry>Description</entry><entry>A concern in the "active" state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.
+<row><entry>Code System</entry><entry>ActStatus - 2.16.840.1.113883.5.14</entry></row>
+<row><entry>Version</entry><entry>2011-09-09</entry></row>
+<row><entry>Description</entry><entry>This value set indicates the status of the problem concern act.
 </entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="4">
@@ -24,10 +26,10 @@
 <thead><row>
 <entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>active</entry><entry></entry><entry></entry><entry></entry></row>
-<row><entry>suspended</entry><entry></entry><entry></entry><entry></entry></row>
-<row><entry>aborted</entry><entry></entry><entry></entry><entry></entry></row>
-<row><entry>completed</entry><entry></entry><entry></entry><entry></entry></row>
+<row><entry>active</entry><entry></entry><entry>ActStatus</entry><entry></entry></row>
+<row><entry>suspended</entry><entry></entry><entry>ActStatus</entry><entry></entry></row>
+<row><entry>aborted</entry><entry></entry><entry>ActStatus</entry><entry></entry></row>
+<row><entry>completed</entry><entry></entry><entry>ActStatus</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

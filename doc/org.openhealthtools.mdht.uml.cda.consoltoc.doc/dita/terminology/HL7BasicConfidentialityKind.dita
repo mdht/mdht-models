@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>HL7 Basic Confidentiality Kind</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.1.11.16926"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>HL7BasicConfidentialityKind - 2.16.840.1.113883.1.11.16926</entry></row>
+<row><entry>Code System</entry><entry>ConfidentialityCode - 2.16.840.1.113883.5.25</entry></row>
+<row><entry>Version</entry><entry>2010-04-21</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>N</entry><entry>Normal</entry><entry>ConfidentialityCode</entry><entry></entry></row>
+<row><entry>R</entry><entry>Restricted</entry><entry>ConfidentialityCode</entry><entry></entry></row>
+<row><entry>V</entry><entry>Very Restricted</entry><entry>ConfidentialityCode</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

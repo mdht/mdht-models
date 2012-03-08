@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 	<booktitle>
 		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
-		<mainbooktitle>CDA IG Consolidation</mainbooktitle>
+		<mainbooktitle>ToC Consolidated CDA IG </mainbooktitle>
 		<booktitlealt>Working Group Draft</booktitlealt>
 		<booktitlealt><image href="images/ONC_logo.png"/></booktitlealt>
 		<booktitlealt>PROTOTYPE: FOR DISCUSSION AND DEMONSTRATION USE ONLY</booktitlealt>
@@ -15,7 +15,7 @@
 		</bookid>
 		<bookrights>
 			<copyrfirst><year>2005</year></copyrfirst>
-			<copyrlast><year>2011</year></copyrlast>
+			<copyrlast><year>2012</year></copyrlast>
 			<bookowner>
 				<organization></organization>
 			</bookowner>
@@ -24,14 +24,14 @@
 	<frontmatter>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-			<!-- <topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/> -->
+			<topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
 		</preface>
 		<booklists>
 			<toc/><figurelist/><tablelist/>
 		</booklists> 
 	</frontmatter>
 	
-	<!-- <chapter format="ditamap" href="introduction/introduction.ditamap"/> -->
+	 <chapter format="ditamap" href="introduction/introduction.ditamap"/> 
 	
 	<chapter format="ditamap" href="content/content.ditamap"/>
 

@@ -10,14 +10,20 @@
 		<!-- section.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../classes/section.ditamap" navtitle="Section Templates"/>
 	</chapter>
+	
+	<!-- clinicalstatement.ditamap is generated from the model -->
+	<!-- No Clinical templates for ToC
 	<chapter href="ClinicalStatementTemplates.dita" navtitle="CLINICAL STATEMENT TEMPLATES" type="topic">
-		<!-- clinicalstatement.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../classes/clinicalstatement.ditamap" navtitle="Clinical Statement Templates"/>
 	</chapter>
+	-->
+	
+	<!-- classes.ditamap is generated from the model -->
+	<!-- 
 	<chapter href="OtherClasses.dita" navtitle="OTHER CLASSES" type="topic">
-		<!-- classes.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../classes/classes.ditamap" navtitle="Other Classes"/>
 	</chapter>
+    -->
 	<chapter href="ValueSets.dita" navtitle="VALUE SETS" type="topic">
 		<!-- valueset.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../terminology/valueset.ditamap" navtitle="Value Sets"/>
