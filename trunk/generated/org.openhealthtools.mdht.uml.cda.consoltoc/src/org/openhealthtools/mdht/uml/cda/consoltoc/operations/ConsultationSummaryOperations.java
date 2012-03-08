@@ -1030,7 +1030,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(160));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(165));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1075,7 +1075,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(161));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(166));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1120,7 +1120,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(162));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(167));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1165,7 +1165,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(163));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(168));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1210,7 +1210,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(164));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(169));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1255,7 +1255,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(165));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(170));
 			try {
 				GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1300,7 +1300,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(166));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(171));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -1345,7 +1345,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(167));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(172));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			}
@@ -1390,7 +1390,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(168));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(173));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1435,7 +1435,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(169));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(174));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
@@ -1480,7 +1480,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(170));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(175));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			}
@@ -1525,7 +1525,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(171));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(176));
 			try {
 				GET_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION__EOCL_EXP);
 			}
@@ -1570,7 +1570,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(172));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(177));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			}
@@ -1615,7 +1615,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(173));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(178));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -1660,7 +1660,7 @@ public class ConsultationSummaryOperations extends GeneralHeaderConstraintsOpera
   {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(174));
+			helper.setOperationContext(ConsoltocPackage.Literals.CONSULTATION_SUMMARY, ConsoltocPackage.Literals.CONSULTATION_SUMMARY.getEAllOperations().get(179));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			}
