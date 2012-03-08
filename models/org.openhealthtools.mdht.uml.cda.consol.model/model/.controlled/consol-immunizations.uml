@@ -200,7 +200,6 @@
   <uml:Association xmi:id="_fhFZAhU9EeGbmN_W114JUw" memberEnd="_fhFZABU9EeGbmN_W114JUw _fhFZAxU9EeGbmN_W114JUw">
     <ownedEnd xmi:id="_fhFZAxU9EeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_fhFZAhU9EeGbmN_W114JUw"/>
   </uml:Association>
-  <uml:Association xmi:id="_i7iGohU9EeGbmN_W114JUw"/>
   <uml:Association xmi:id="_m131QhU9EeGbmN_W114JUw" memberEnd="_m131QBU9EeGbmN_W114JUw _m131QxU9EeGbmN_W114JUw">
     <ownedEnd xmi:id="_m131QxU9EeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_m131QhU9EeGbmN_W114JUw"/>
   </uml:Association>
@@ -467,7 +466,6 @@
     <ruleId>CONF:8857</ruleId>
     <ruleId>CONF:8858</ruleId>
   </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_LhcR8BqnEeGo461UQq-B1g" severity="INFO" base_Association="_i7iGohU9EeGbmN_W114JUw" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_N0Yk8BqnEeGo461UQq-B1g" severity="INFO" base_Association="_m131QhU9EeGbmN_W114JUw" typeCode="REFR">
     <ruleId>CONF:8863</ruleId>
     <ruleId>CONF:8864</ruleId>
@@ -507,16 +505,12 @@
   <uml:Association xmi:id="_CtfWwRqsEeGo461UQq-B1g" memberEnd="_CtevsBqsEeGo461UQq-B1g _CtfWwhqsEeGo461UQq-B1g">
     <ownedEnd xmi:id="_CtfWwhqsEeGo461UQq-B1g" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_CtfWwRqsEeGo461UQq-B1g"/>
   </uml:Association>
-  <uml:Association xmi:id="_NdMEkRq1EeGo461UQq-B1g"/>
   <uml:Association xmi:id="_A3suQRq2EeGo461UQq-B1g">
     <ownedEnd xmi:id="_A3suQhq2EeGo461UQq-B1g" association="_A3suQRq2EeGo461UQq-B1g">
       <type xmi:type="uml:Class" href="consol-medications.uml#_VBXq8BUTEeG6PvUxSTZnaw"/>
     </ownedEnd>
     <memberEnd href="consol-medications.uml#_A3sHMBq2EeGo461UQq-B1g"/>
     <memberEnd href="#_A3suQhq2EeGo461UQq-B1g"/>
-  </uml:Association>
-  <uml:Association xmi:id="_eLHCUhrUEeGo461UQq-B1g" memberEnd="_eLHCUxrUEeGo461UQq-B1g">
-    <ownedEnd xmi:id="_eLHCUxrUEeGo461UQq-B1g" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_eLHCUhrUEeGo461UQq-B1g"/>
   </uml:Association>
   <uml:Association xmi:id="_fePZ8BrbEeGo461UQq-B1g">
     <ownedComment xmi:id="_-i8RsCYLEeGWfpmyutaqOA">

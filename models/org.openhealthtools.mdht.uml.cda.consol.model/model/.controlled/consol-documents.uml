@@ -1229,9 +1229,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <uml:Association xmi:id="_2Uz-0xSVEeGGzu7fmW9pXw" memberEnd="_2UnxuxSVEeGGzu7fmW9pXw _2Uz-1BSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Uz-1BSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-0xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2Uz-1hSVEeGGzu7fmW9pXw" memberEnd="_2Uz-1xSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2Uz-1xSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-1hSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
   <uml:Association xmi:id="_2Uz-3BSVEeGGzu7fmW9pXw" memberEnd="_2UnxwxSVEeGGzu7fmW9pXw _2Uz-3RSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Uz-3RSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-3BSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -1280,9 +1277,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-1RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-0xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9564</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_2Uz-2BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-1hSVEeGGzu7fmW9pXw">
-    <ruleId>C48-[CT2-18]</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2Uz-3hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Uz-3BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9584</ruleId>
@@ -1386,7 +1380,7 @@ The CCD is a core data set of the most relevant administrative, demographic, and
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__1jfsEIQEeGfG6GbxF_VQQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__1jfsUIQEeGfG6GbxF_VQQ" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_tY10IEINEeGfG6GbxF_VQQ" name="ServiceEvent3">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_tY10IEINEeGfG6GbxF_VQQ" name="ServiceEvent">
         <ownedRule xmi:id="_Bt7MAEIQEeGfG6GbxF_VQQ" name="effectiveTimeLow">
           <constrainedElement xmi:type="uml:Class" href="consol-allergies.uml#_2EAisBSVEeGGzu7fmW9pXw"/>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Bt7MAUIQEeGfG6GbxF_VQQ">
@@ -1474,11 +1468,11 @@ The CCD is a core data set of the most relevant administrative, demographic, and
       <generalization xmi:id="_POhNwEIREeGfG6GbxF_VQQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_WpAM4EISEeGfG6GbxF_VQQ" name="assignedAuthor3" type="_Q-uAEEIREeGfG6GbxF_VQQ" association="_WpAM4kISEeGfG6GbxF_VQQ">
+      <ownedAttribute xmi:id="_WpAM4EISEeGfG6GbxF_VQQ" name="assignedAuthor" type="_Q-uAEEIREeGfG6GbxF_VQQ" association="_WpAM4kISEeGfG6GbxF_VQQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yv2koEISEeGfG6GbxF_VQQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yv2koUISEeGfG6GbxF_VQQ" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Q-uAEEIREeGfG6GbxF_VQQ" name="AssignedAuthor3">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Q-uAEEIREeGfG6GbxF_VQQ" name="AssignedAuthor">
         <ownedRule xmi:id="_ZnQjMEIREeGfG6GbxF_VQQ" name="hasAssignedPersonOrRepresentedOrganization" constrainedElement="_Q-uAEEIREeGfG6GbxF_VQQ">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_be6oYEIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
@@ -1497,7 +1491,6 @@ The CCD is a core data set of the most relevant administrative, demographic, and
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2IRXoxSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_2IKC4BSVEeGGzu7fmW9pXw" base_Class="_2IJb0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.2" assigningAuthorityName="HITSP C32">
     <ruleId>C32-[CT1-19]</ruleId>
   </CDA:CDATemplate>
@@ -1508,9 +1501,6 @@ The CCD is a core data set of the most relevant administrative, demographic, and
   <CDA:PropertyValidation xmi:id="_2IVpExSVEeGGzu7fmW9pXw" base_Property="_2IVpEBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-5</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_2IR-sRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IRXoxSVEeGGzu7fmW9pXw">
-    <ruleId>C32-[CT1-16]</ruleId>
-  </CDA:AssociationValidation>
   <uml:Class xmi:id="_2TeiIRSVEeGGzu7fmW9pXw" name="UnstructuredDocument">
     <ownedComment xmi:id="_2T9DPhSVEeGGzu7fmW9pXw" annotatedElement="_2TeiIRSVEeGGzu7fmW9pXw">
       <body>An unstructured document is a document which is used when the patient record is captured in an unstructured format that is encapsulated within an image file or as unstructured text in an electronic file such as a word processing or Portable Document Format (PDF) document. &#xD;
@@ -4442,5 +4432,74 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_LnhPUGjIEeGNoZ3kEkcY2A" base_Constraint="_KkMxIGjIEeGNoZ3kEkcY2A">
     <ruleId>CONF:10065</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:AssociationValidation xmi:id="_ELYuIGk6EeGCCOsAP2C6Nw" base_Association="_1pCBUkIQEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8452</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_OkNjIGk6EeGCCOsAP2C6Nw" base_Association="_OUupkEISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9442</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_SDqskGk6EeGCCOsAP2C6Nw" base_Association="_ifn1kkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9445</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_S758IGk6EeGCCOsAP2C6Nw" base_Association="_li0g0kISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9447</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_TTFtEGk6EeGCCOsAP2C6Nw" base_Association="_odilgkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9449</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_UKU3EGk6EeGCCOsAP2C6Nw" base_Association="_q9INYEISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9451</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Uni-kGk6EeGCCOsAP2C6Nw" base_Association="_tK1bEkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9453</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_gf9-EGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_vtaFgEISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9455</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_g4J0kGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_yWY58kISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9457</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_hTKVkGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_07pE8kISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9459</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_htpSIGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_3MoQIkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9461</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_iFEToGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_52DwgkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9463</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_isRdkGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_-yGzwkISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9466</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_jFrcEGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_AM26gkITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9468</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_jePtEGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_CL0hkkITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9470</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_kF6xEGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_D86rwkITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9472</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_kl9jEGk6EeGCCOsAP2C6Nw" severity="INFO" base_Association="_FhDYAkITEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9474</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_GH9TEGk7EeGCCOsAP2C6Nw" base_Association="_81oK4kIQEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8480</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ODe_MGk7EeGCCOsAP2C6Nw" severity="WARNING" base_Association="_h3HA4kIOEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8482</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_S7cMoGk7EeGCCOsAP2C6Nw" severity="INFO" base_Association="_5hqxskIOEeGfG6GbxF_VQQ">
+    <ruleId>CONF:8459</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_YDGqAGk7EeGCCOsAP2C6Nw" base_Association="_WpAM4kISEeGfG6GbxF_VQQ">
+    <ruleId>CONF:9443</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_eOeAEGk7EeGCCOsAP2C6Nw" base_Constraint="_ZnQjMEIREeGfG6GbxF_VQQ">
+    <ruleId>CONF:8456</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_hX9gkGk7EeGCCOsAP2C6Nw" base_Constraint="_iAmMsEIREeGfG6GbxF_VQQ">
+    <ruleId>CONF:8457</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

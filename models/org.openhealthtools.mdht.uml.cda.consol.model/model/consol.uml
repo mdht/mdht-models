@@ -723,9 +723,7 @@
     <ruleId>CONF:8849</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_CtfWwRqsEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_UCT-cBq1EeGo461UQq-B1g">
-    <base_Association href=".controlled/consol-immunizations.uml#_NdMEkRq1EeGo461UQq-B1g"/>
-  </CDA:AssociationValidation>
+  
   <CDA:AssociationValidation xmi:id="_ChoggBq2EeGo461UQq-B1g">
     <ruleId>CONF:7492</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_A3suQRq2EeGo461UQq-B1g"/>

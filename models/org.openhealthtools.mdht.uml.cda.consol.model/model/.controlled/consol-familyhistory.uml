@@ -29,16 +29,15 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2SC-zBSVEeGGzu7fmW9pXw"/>
+ 
   <CDA:CDATemplate xmi:id="_2SC-shSVEeGGzu7fmW9pXw" base_Class="_2SC-sBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.47" assigningAuthorityName="HL7">
     <ruleId>CONF:8623</ruleId>
   </CDA:CDATemplate>
   
-  <CDA:ConstraintValidation xmi:id="_2SJFWhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2SJFXRSVEeGGzu7fmW9pXw"/>
+  
   
   <CDA:ConstraintValidation xmi:id="_2SJFYxSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2SJFZxSVEeGGzu7fmW9pXw"/>
+ 
   <CDA:ConstraintValidation xmi:id="_2SJFahSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2SJFbRSVEeGGzu7fmW9pXw" severity="WARNING"/>
   
@@ -187,7 +186,7 @@
   </CDA:CDATemplate>
   
   <CDA:ConstraintValidation xmi:id="_2I634xSVEeGGzu7fmW9pXw" severity="WARNING"/>  
-  <CDA:ConstraintValidation xmi:id="_2I9UIBSVEeGGzu7fmW9pXw"/>
+ 
 
   <CDA:ConstraintValidation xmi:id="_2I_wZBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2JAXcxSVEeGGzu7fmW9pXw" severity="INFO"/>
@@ -195,21 +194,14 @@
   <CDA:ConstraintValidation xmi:id="_2JBlkxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2JCMohSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2JCzshSVEeGGzu7fmW9pXw" severity="INFO"/>
-  <CDA:ConstraintValidation xmi:id="_2JDawBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2JDawxSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2JEB0hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2JEo4hSVEeGGzu7fmW9pXw"/>
+ 
   <CDA:ConstraintValidation xmi:id="_2IcWwBSVEeGGzu7fmW9pXw" severity="INFO"/>
-  <CDA:ConstraintValidation xmi:id="_2IcWwRSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Ic90BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Idk4BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Idk4RSVEeGGzu7fmW9pXw"/>
+ 
   <CDA:ConstraintValidation xmi:id="_2IeL8BSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2IezARSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2IfaEBSVEeGGzu7fmW9pXw"/>
+
   <CDA:ConstraintValidation xmi:id="_2IgBIBSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  <CDA:ConstraintValidation xmi:id="_2IgoMBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2IgoMRSVEeGGzu7fmW9pXw"/>
+ 
   <CDA:ConstraintValidation xmi:id="_2IhPQBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Ih2UBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2Ih2URSVEeGGzu7fmW9pXw" severity="INFO"/>
@@ -217,7 +209,7 @@
   <CDA:ConstraintValidation xmi:id="_2IjEcBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2IjrgBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2IkSkBSVEeGGzu7fmW9pXw" severity="INFO"/>
-  <CDA:ConstraintValidation xmi:id="_2IkSkRSVEeGGzu7fmW9pXw"/>
+
   <CDA:PropertyValidation xmi:id="_2IlgshSVEeGGzu7fmW9pXw" base_Property="_2IlgsBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8600</ruleId>
   </CDA:PropertyValidation>
@@ -263,9 +255,7 @@
   </CDA:CDATemplate>
   
   
-  
-  <CDA:ConstraintValidation xmi:id="_2IW3MBSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2IXeQBSVEeGGzu7fmW9pXw"/>
+
   <CDA:CodeSystemConstraint xmi:id="_2IYsYRSVEeGGzu7fmW9pXw" code="10157-6" displayName="Family History" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7933</ruleId>
