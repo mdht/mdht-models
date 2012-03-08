@@ -534,16 +534,12 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_2OTHPxSVEeGGzu7fmW9pXw" memberEnd="_2OTHPBSVEeGGzu7fmW9pXw _2OTHQBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OTHQBSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHPxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2OTHRBSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2OZNwhSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2OZNxxSVEeGGzu7fmW9pXw"/>
   <uml:Association xmi:id="_2OZNzRSVEeGGzu7fmW9pXw" memberEnd="_2OZNyhSVEeGGzu7fmW9pXw _2OZNzhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OZNzhSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZNzRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2OZN0xSVEeGGzu7fmW9pXw" memberEnd="_2OZN0BSVEeGGzu7fmW9pXw _2OZN1BSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OZN1BSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZN0xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2ONAjBSVEeGGzu7fmW9pXw"/>
   <uml:Association xmi:id="_2OTHIBSVEeGGzu7fmW9pXw" memberEnd="_2OG6BRSVEeGGzu7fmW9pXw _2OTHIRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OTHIRSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHIBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
@@ -599,13 +595,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:AssociationValidation xmi:id="_2OTHQRSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2OTHPxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7718</ruleId>
   </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_2OTHRhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHRBSVEeGGzu7fmW9pXw" typeCode="RSON"/>
-  <CDA:EntryRelationship xmi:id="_2OZNxBSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNwhSVEeGGzu7fmW9pXw" typeCode="RSON"/>
-  <CDA:EntryRelationship xmi:id="_2OZNyRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNxxSVEeGGzu7fmW9pXw" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_2OTHRhSVEeGGzu7fmW9pXw" severity="INFO" typeCode="RSON"/>
+  <CDA:EntryRelationship xmi:id="_2OZNxBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="RSON"/>
+  <CDA:EntryRelationship xmi:id="_2OZNyRSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
   <CDA:EntryRelationship xmi:id="_2OZNzxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNzRSVEeGGzu7fmW9pXw" typeCode="COMP">
     <ruleId>CONF:7888</ruleId>
   </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_2ONAjhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2ONAjBSVEeGGzu7fmW9pXw" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_2ONAjhSVEeGGzu7fmW9pXw" severity="INFO" typeCode="COMP"/>
   <CDA:EntryRelationship xmi:id="_2OTHIhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHIBSVEeGGzu7fmW9pXw" typeCode="RSON">
     <ruleId>CONF:7781</ruleId>
   </CDA:EntryRelationship>
@@ -1119,7 +1115,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedComment xmi:id="_rxk2EEE2EeGdmoWy_aLP0Q">
       <body>The Operative Note Surgical Procedure section can be used to restate the procedures performed if appropriate for an enterprise workflow.  The procedure(s) performed associated with the Operative Note are formally modeled in the header using serviceEvent.</body>
     </ownedComment>
-    <ownedRule xmi:id="_MAXA0EEuEeGdmoWy_aLP0Q" constrainedElement="_zel6wDVyEeGaW4kr-GbV8Q">
+    <ownedRule xmi:id="_MAXA0EEuEeGdmoWy_aLP0Q" name="hasProcedureText" constrainedElement="_zel6wDVyEeGaW4kr-GbV8Q">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_O6eBgEEuEeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>If the surgical procedure section is present there SHALL be text indicating the procedure performed.</body>

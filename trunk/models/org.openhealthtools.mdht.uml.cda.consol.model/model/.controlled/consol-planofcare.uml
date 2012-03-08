@@ -256,7 +256,6 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NoYzRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2NoY2xSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_2NoYzxSVEeGGzu7fmW9pXw" base_Class="_2NoYwxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.1.25">
     <ruleId>CONF:8574</ruleId>
     <ruleId>CONF:10514</ruleId>

@@ -287,7 +287,6 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
     <ruleId>CONF:10504</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2HulEBSVEeGGzu7fmW9pXw"/>
-
   <CDA:ConstraintValidation xmi:id="_2HvMIhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HvzMxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HwaQhSVEeGGzu7fmW9pXw" severity="WARNING"/>
@@ -295,11 +294,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <CDA:ConstraintValidation xmi:id="_2HxBUxSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2HxoYhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2HyPcxSVEeGGzu7fmW9pXw" severity="WARNING"/>
-  
-  
   <CDA:ConstraintValidation xmi:id="_2GdZwBSVEeGGzu7fmW9pXw"/>
-  
-  
   <CDA:PropertyValidation xmi:id="_2GkuhhSVEeGGzu7fmW9pXw" base_Property="_2GkugxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7500</ruleId>
   </CDA:PropertyValidation>

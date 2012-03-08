@@ -23,10 +23,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lYYhcCzUEeGanY0p4MnU2w"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2Rwq4hSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2Rwq5RSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2Rwq6BSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2Rwq6xSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_r3b7QBkaEeGs5a462vYX5Q" base_Class="_2Rwq0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.9" assigningAuthorityName="HL7">
     <ruleId>CONF:10381</ruleId>
   </CDA:CDATemplate>
@@ -34,10 +30,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7706</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2Rwq5BSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq4hSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2Rwq5xSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq5RSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2Rwq6hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq6BSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2Rwq7RSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Rwq6xSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2PWQCBSVEeGGzu7fmW9pXw" name="ChiefComplaintSection">
     <ownedComment xmi:id="_2PWQFRSVEeGGzu7fmW9pXw" annotatedElement="_2PWQCBSVEeGGzu7fmW9pXw">
       <body>This section records the patient's chief complaint (the patient's own description).</body>
@@ -61,7 +53,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2PWQEBSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_JcLykBkbEeGs5a462vYX5Q" base_Class="_2PWQCBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1">
     <ruleId>CONF:7832</ruleId>
     <ruleId>CONF:10453</ruleId>
@@ -70,7 +61,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7833</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2PWQEhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PWQEBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2FhloBSVEeGGzu7fmW9pXw" name="CommentActivity">
     <ownedComment xmi:id="_2FrWoBSVEeGGzu7fmW9pXw" annotatedElement="_2FhloBSVEeGGzu7fmW9pXw">
       <body>Used to contain comments associated with any of the data within the document.</body>
@@ -346,7 +336,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WSuPQCznEeGanY0p4MnU2w"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2PQJfBSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_g8kmkBnSEeGs5a462vYX5Q" base_Class="_2PQJcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.20" assigningAuthorityName="HL7">
     <ruleId>CONF:10390</ruleId>
   </CDA:CDATemplate>
@@ -354,7 +343,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:CodeSystemConstraint xmi:id="_2PWQARSVEeGGzu7fmW9pXw" code="11348-0" displayName="HISTORY OF PAST ILLNESS" base_Property="_2PWQABSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2PQJfhSVEeGGzu7fmW9pXw" base_Association="_2PQJfBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2PcWsRSVEeGGzu7fmW9pXw" name="HistoryOfPresentIllnessSection">
     <ownedComment xmi:id="_2PidQBSVEeGGzu7fmW9pXw" annotatedElement="_2PcWsRSVEeGGzu7fmW9pXw">
       <body>The History of Present Illness section describes the history related to the reason for the encounter.  It contains the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</body>
@@ -580,9 +568,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2PcWrBSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2PcWoRSVEeGGzu7fmW9pXw"/>
-  <uml:Association xmi:id="_2PcWpBSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_LeTcQBnUEeGs5a462vYX5Q" base_Class="_2PWQFxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.1">
     <ruleId>CONF:10468</ruleId>
   </CDA:CDATemplate>
@@ -590,174 +575,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7845</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2PcWrhSVEeGGzu7fmW9pXw" base_Association="_2PcWrBSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2PcWoxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PcWoRSVEeGGzu7fmW9pXw"/>
-  <CDA:AssociationValidation xmi:id="_2PcWphSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2PcWpBSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2TqvZBSVEeGGzu7fmW9pXw" name="ScanDataEnterer">
-    <ownedComment xmi:id="_2TqvZRSVEeGGzu7fmW9pXw" annotatedElement="_2TqvZBSVEeGGzu7fmW9pXw">
-      <body>Represents the scanner operator who produced the scanned content.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2TqvZhSVEeGGzu7fmW9pXw" name="timeEqualsDocumentEffectiveTime">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2TqvZxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</body>
-        <body>self.time.value = self.getClinicalDocument().effectiveTime.value</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2TqvaBSVEeGGzu7fmW9pXw" name="hasAssignedEntityId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2TqvaRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedEntity/id element has both the root and the extension attributes. The root shall be the oid of the scanning facility and the extension shall be an appropriately assigned, facility unique id of the operator.</body>
-        <body>self.assignedEntity.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_2Tw1-hSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2TqvaxSVEeGGzu7fmW9pXw" name="time" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2TqvbBSVEeGGzu7fmW9pXw">
-        <body>Denotes the time at which the original content was scanned.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TqvbRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TqvbhSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2Tw19BSVEeGGzu7fmW9pXw" name="assignedEntity" visibility="private" aggregation="composite" association="_2Tw1-BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Tw19RSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Tw19hSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2Tw1-BSVEeGGzu7fmW9pXw" memberEnd="_2Tw19BSVEeGGzu7fmW9pXw _2Tw1-RSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2Tw1-RSVEeGGzu7fmW9pXw" type="_2TqvZBSVEeGGzu7fmW9pXw" association="_2Tw1-BSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:ConstraintValidation xmi:id="_2Tw18RSVEeGGzu7fmW9pXw" base_Constraint="_2TqvZhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2Tw18hSVEeGGzu7fmW9pXw" base_Constraint="_2TqvaBSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2Tw18BSVEeGGzu7fmW9pXw" base_Property="_2TqvaxSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2Tko1hSVEeGGzu7fmW9pXw" name="ScanningDevice">
-    <ownedComment xmi:id="_2Tko1xSVEeGGzu7fmW9pXw" annotatedElement="_2Tko1hSVEeGGzu7fmW9pXw">
-      <body>Represents the scanning device and software used to produce the scanned content.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2Tko2BSVEeGGzu7fmW9pXw" name="timeEqualsDocumentEffectiveTime">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko2RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</body>
-        <body>self.time.value = self.getClinicalDocument().effectiveTime.value</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Tko2hSVEeGGzu7fmW9pXw" name="hasAssignedAuthorId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko2xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/id element shall be at least the root oid of the scanning device.</body>
-        <body>self.assignedAuthor.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Tko3BSVEeGGzu7fmW9pXw" name="hasAssignedAuthoringDeviceCode" constrainedElement="_2Tko1hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko3RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/assignedAuthoringDevice/code element is present. The values set here are taken from appropriate DICOM vocabulary. The value of code@codeSystem shall be set to &quot;1.2.840.10008.2.16.4&quot;. The value of code@code shall be set to &quot;CAPTURE&quot; for PDF scanned content and &quot;WSD&quot; for plaintext. The value of code@displayName shall be set to &quot;Image Capture&quot; for PDF scanned content and &quot;Workstation&quot; for plaintext.</body>
-        <body>self.assignedAuthor.assignedAuthoringDevice.code.codeSystem = '1.2.840.10008.2.16.4'&#xD;&#xA;   and not self.assignedAuthor.assignedAuthoringDevice.code.code.oclIsUndefined()&#xD;&#xA;   and not self.assignedAuthor.assignedAuthoringDevice.code.displayName.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Tko3hSVEeGGzu7fmW9pXw" name="hasDeviceManufacturerModelName" constrainedElement="_2Tko1hSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2Tko3xSVEeGGzu7fmW9pXw">
-        <body>The mixed content shall contain string information that specifies the scanner product name and model number. From this information, features like bit depth and resolution can be inferred. In the case of virtually scanned documents (for example, print to PDF), the manufactureModelName referenced here refers to the makers of the technology that was used to produce the embedded content.</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko4BSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/assignedAuthoringDevice/manufacturerModelName element is present.</body>
-        <body>not self.assignedAuthor.assignedAuthoringDevice.manufacturerModelName.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Tko4RSVEeGGzu7fmW9pXw" name="hasDeviceSoftwareName" constrainedElement="_2Tko1hSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_2Tko4hSVEeGGzu7fmW9pXw">
-        <body>The mixed content shall contain string information that specifies the scanning software name and version. In the case of virtually scanned documents, the softwareName referenced here refers to the technology that was used to produce the embedded content.</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko4xSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/assignedAuthoringDevice/softwareName element is present.</body>
-        <body>not self.assignedAuthor.assignedAuthoringDevice.softwareName.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2Tko5BSVEeGGzu7fmW9pXw" name="hasAssignedAuthorRepresentedOrganizationId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Tko5RSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/representedOrganization/id element is present. The root attribute shall be set to the oid of the scanning facility.</body>
-        <body>self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_2TqvXRSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2Tko5xSVEeGGzu7fmW9pXw" name="time" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2Tko6BSVEeGGzu7fmW9pXw">
-        <body>Denotes the time at which the original content was scanned.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2TqvVxSVEeGGzu7fmW9pXw" name="assignedAuthor" visibility="private" aggregation="composite" association="_2TqvWxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TqvWBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TqvWRSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2TqvWxSVEeGGzu7fmW9pXw" memberEnd="_2TqvVxSVEeGGzu7fmW9pXw _2TqvXBSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2TqvXBSVEeGGzu7fmW9pXw" type="_2Tko1hSVEeGGzu7fmW9pXw" association="_2TqvWxSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:ConstraintValidation xmi:id="_2TqvUBSVEeGGzu7fmW9pXw" base_Constraint="_2Tko2BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TqvURSVEeGGzu7fmW9pXw" base_Constraint="_2Tko2hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TqvUhSVEeGGzu7fmW9pXw" base_Constraint="_2Tko3BSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TqvUxSVEeGGzu7fmW9pXw" base_Constraint="_2Tko3hSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TqvVBSVEeGGzu7fmW9pXw" base_Constraint="_2Tko4RSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TqvVRSVEeGGzu7fmW9pXw" base_Constraint="_2Tko5BSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_2TkovBSVEeGGzu7fmW9pXw" name="ScanOriginalAuthor">
-    <ownedComment xmi:id="_2TkovRSVEeGGzu7fmW9pXw" annotatedElement="_2TkovBSVEeGGzu7fmW9pXw">
-      <body>Represents the author of the original content. It additionally can encode the original author‟s institution in the subelement representedOrganization. Information regarding the original author and his/her institution shall be included, if it is known. In many cases this will have to be supplied by the operator.</body>
-    </ownedComment>
-    <ownedRule xmi:id="_2TkovhSVEeGGzu7fmW9pXw" name="hasAssignedAuthorId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2TkovxSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</body>
-        <body>self.assignedAuthor.id->forAll(ident : datatypes::II |&#xD;&#xA;   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_2TkowBSVEeGGzu7fmW9pXw" name="hasAssignedAuthorRepresentedOrganizationId">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2TkowRSVEeGGzu7fmW9pXw">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>The assignedAuthor/representedOrganization/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</body>
-        <body>self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |&#xD;&#xA;   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_2TkozxSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_2TkowxSVEeGGzu7fmW9pXw" name="time" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_2TkoxBSVEeGGzu7fmW9pXw">
-        <body>Represents the day and time of the authoring of the original content. This value is not restricted beyond statements made in the HL7 CDA R2 documentation.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2TkoyRSVEeGGzu7fmW9pXw" name="assignedAuthor" visibility="private" aggregation="composite" association="_2TkozRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TkoyhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TkoyxSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Association xmi:id="_2TkozRSVEeGGzu7fmW9pXw" memberEnd="_2TkoyRSVEeGGzu7fmW9pXw _2TkozhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2TkozhSVEeGGzu7fmW9pXw" type="_2TkovBSVEeGGzu7fmW9pXw" association="_2TkozRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
-  <CDA:ConstraintValidation xmi:id="_2TkoxhSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkovhSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_2TkoxxSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2TkowBSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2LiHABSVEeGGzu7fmW9pXw" name="ServiceDeliveryLocation">
     <ownedRule xmi:id="_U1PlUB-ZEeGtfPlBCjHWkw" name="hasPlayingEntity" constrainedElement="_2LiHABSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_aYMQgB-ZEeGtfPlBCjHWkw">
@@ -810,7 +627,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VObxsEreEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_2Lr4BBSVEeGGzu7fmW9pXw"/>
   <CDA:CDATemplate xmi:id="_2LiuEBSVEeGGzu7fmW9pXw" base_Class="_2LiHABSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.32" assigningAuthorityName="HL7">
     <ruleId>CONF:7635</ruleId>
   </CDA:CDATemplate>

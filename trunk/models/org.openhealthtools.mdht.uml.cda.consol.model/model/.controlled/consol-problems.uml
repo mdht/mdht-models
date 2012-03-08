@@ -24,7 +24,6 @@
   <CDA:CDATemplate xmi:id="_2LSPZhSVEeGGzu7fmW9pXw" base_Class="_2LSPYBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.5.1" assigningAuthorityName="HITSP C83">
     <ruleId>CONF:9179</ruleId>
   </CDA:CDATemplate>
-  
   <CDA:CodeSystemConstraint xmi:id="_2LTdgRSVEeGGzu7fmW9pXw" code="11450-4" displayName="Problem List">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:9180</ruleId>
@@ -114,8 +113,6 @@ historical purposes.&#xD;
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2H7ZYBSVEeGGzu7fmW9pXw" base_Class="_2H6yUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.3"/>
-  
-  
   <CDA:ConstraintValidation xmi:id="_2IFxcBSVEeGGzu7fmW9pXw" base_Constraint="_2IFKYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9032</ruleId>
   </CDA:ConstraintValidation>
@@ -193,7 +190,6 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  
   <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9271</ruleId>
   </CDA:ConstraintValidation>
@@ -355,7 +351,7 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_p2pDMCf3EeGO5_JBy9h6BA" name="valueNullFlavorUnknown" constrainedElement="_jlZuoCf3EeGO5_JBy9h6BA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_tRojYCf3EeGO5_JBy9h6BA">
         <language>Analysis</language>
-        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”.  If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element</body>
+        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be �UNK�.  If the code is something other than SNOMED, @nullFlavor SHOULD be �OTH� and the other code SHOULD be placed in the translation element</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1fQFECf3EeGO5_JBy9h6BA" name="ageObservationInversion" constrainedElement="_p2pDMCf3EeGO5_JBy9h6BA">
@@ -623,16 +619,6 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_uvodUyf1EeGO5_JBy9h6BA" memberEnd="_uvodUCf1EeGO5_JBy9h6BA _uvodVCf1EeGO5_JBy9h6BA">
     <ownedEnd xmi:id="_uvodVCf1EeGO5_JBy9h6BA" type="_2LSPYBSVEeGGzu7fmW9pXw" association="_uvodUyf1EeGO5_JBy9h6BA"/>
-  </uml:Association>
-  <uml:Association xmi:id="_zQuJgCdeEeGcTOgEa70Vzg">
-    <ownedEnd xmi:id="_zQuwkCdeEeGcTOgEa70Vzg" type="_2LSPYBSVEeGGzu7fmW9pXw" association="_zQuJgCdeEeGcTOgEa70Vzg"/>
-    <memberEnd href="#_zQs7YCdeEeGcTOgEa70Vzg"/>
-    <memberEnd href="#_zQuwkCdeEeGcTOgEa70Vzg"/>
-  </uml:Association>
-  <uml:Association xmi:id="_p1BrICdeEeGcTOgEa70Vzg">
-    <ownedEnd xmi:id="_p1BrISdeEeGcTOgEa70Vzg" type="_naxrkBVdEeGQCvUGzi1kDQ" association="_p1BrICdeEeGcTOgEa70Vzg"/>
-    <memberEnd href="#_p1AdACdeEeGcTOgEa70Vzg"/>
-    <memberEnd href="#_p1BrISdeEeGcTOgEa70Vzg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1c7ZwCp8EeGiFpKeZIy4Pg" base_Association="_uvodUyf1EeGO5_JBy9h6BA">
     <ruleId>CONF:9183</ruleId>
