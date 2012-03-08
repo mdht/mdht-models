@@ -3094,84 +3094,84 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 381;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer Assigned Entity Has National Provider Identifier' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Has National Provider Identifier' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER = 382;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER = 382;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer Assigned Entity Code' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Code' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY_CODE = 383;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE = 383;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer Assigned Entity Id' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Id' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY_ID = 384;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID = 384;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer Type Code' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Type Code' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_TYPE_CODE = 385;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE = 385;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer Assigned Entity' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER_ASSIGNED_ENTITY = 386;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY = 386;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Effective Time Low' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time Low' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_EFFECTIVE_TIME_LOW = 387;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW = 387;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Effective Time High' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time High' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_EFFECTIVE_TIME_HIGH = 388;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH = 388;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Class Code' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Class Code' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_CLASS_CODE = 389;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE = 389;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Effective Time' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_EFFECTIVE_TIME = 390;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 390;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event3 Performer' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT3_PERFORMER = 391;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 391;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event' of 'Continuity Of Care Document'.
@@ -3182,12 +3182,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT = 392;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author Assigned Author3' of 'Continuity Of Care Document'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author Assigned Author' of 'Continuity Of Care Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR3 = 393;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR = 393;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Continuity Of Care Document'.
@@ -18174,43 +18174,43 @@ public class ConsolValidator extends EObjectValidator {
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3Performer(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -18218,7 +18218,7 @@ public class ConsolValidator extends EObjectValidator {
 				continuityOfCareDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentAuthorAssignedAuthor3(
+			result &= validateContinuityOfCareDocument_validateContinuityOfCareDocumentAuthorAssignedAuthor(
 				continuityOfCareDocument, diagnostics, context);
 		}
 		return result;
@@ -18425,122 +18425,122 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEvent3Performer constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEvent3Performer(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEvent3Performer(
+		return continuityOfCareDocument.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(
 			diagnostics, context);
 	}
 
@@ -18557,14 +18557,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateContinuityOfCareDocumentAuthorAssignedAuthor3 constraint of '<em>Continuity Of Care Document</em>'.
+	 * Validates the validateContinuityOfCareDocumentAuthorAssignedAuthor constraint of '<em>Continuity Of Care Document</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentAuthorAssignedAuthor3(
+	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentAuthorAssignedAuthor(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return continuityOfCareDocument.validateContinuityOfCareDocumentAuthorAssignedAuthor3(diagnostics, context);
+		return continuityOfCareDocument.validateContinuityOfCareDocumentAuthorAssignedAuthor(diagnostics, context);
 	}
 
 	/**

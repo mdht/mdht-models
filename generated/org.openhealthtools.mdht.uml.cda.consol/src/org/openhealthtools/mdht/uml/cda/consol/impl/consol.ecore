@@ -3797,32 +3797,32 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.2"/>
       <details key="code.displayName" value="Summarization of Episode Note"/>
-      <details key="constraints.validation.error" value="ContinuityOfCareDocumentTemplateId GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor3"/>
+      <details key="constraints.validation.error" value="ContinuityOfCareDocumentTemplateId GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="constraints.validation.warning" value="ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEvent3Performer"/>
+      <details key="constraints.validation.warning" value="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer"/>
       <details key="code.code" value="34133-9"/>
-      <details key="constraints.validation.info" value="ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity"/>
+      <details key="constraints.validation.info" value="ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOf">
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent3">
-      <details key="constraints.validation.error" value="ServiceEvent3EffectiveTimeLow ServiceEvent3EffectiveTimeHigh ServiceEvent3ClassCode ServiceEvent3EffectiveTime"/>
-      <details key="constraints.validation.warning" value="ServiceEvent3Performer"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent">
+      <details key="constraints.validation.error" value="ServiceEventEffectiveTimeLow ServiceEventEffectiveTimeHigh ServiceEventClassCode ServiceEventEffectiveTime"/>
+      <details key="constraints.validation.warning" value="ServiceEventPerformer"/>
       <details key="classCode" value="PCPR"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent3Performer">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer">
       <details key="constraints.validation.error" value="PerformerTypeCode"/>
       <details key="typeCode" value="PRF"/>
       <details key="constraints.validation.info" value="PerformerAssignedEntity"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity">
       <details key="constraints.validation.error" value="AssignedEntityId"/>
       <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier"/>
       <details key="constraints.validation.info" value="AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthor">
-      <details key="constraints.validation.error" value="AuthorAssignedAuthor3"/>
+      <details key="constraints.validation.error" value="AuthorAssignedAuthor"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
@@ -4010,7 +4010,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityHasNationalProviderIdentifier"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4020,7 +4020,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityCode"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4030,7 +4030,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntityId"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4040,7 +4040,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerTypeCode"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4050,7 +4050,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3PerformerAssignedEntity"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4060,7 +4060,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeLow"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4070,7 +4070,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTimeHigh"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4080,7 +4080,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3ClassCode"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventClassCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4090,7 +4090,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3EffectiveTime"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4100,7 +4100,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEvent3Performer"
+    <eOperations name="ContinuityOfCareDocumentDocumentationOfServiceEventPerformer"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4119,7 +4119,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ContinuityOfCareDocumentAuthorAssignedAuthor3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ContinuityOfCareDocumentAuthorAssignedAuthor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
