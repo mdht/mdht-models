@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_xpzscGeQEeGtXKebdWh3hg" name="emspcr-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2fQVgGleEeG4boS-IbG8Zw" name="EMSBillingCondition"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pg4m8GlfEeG4boS-IbG8Zw" name="EMSLevelOfService"/>
+    <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
+      <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_2fQ8kGleEeG4boS-IbG8Zw" identifier="2.16.840.1.113883.17.3.5.71" base_Enumeration="_2fQVgGleEeG4boS-IbG8Zw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_Pg4m8WlfEeG4boS-IbG8Zw" identifier="2.16.840.1.113883.17.3.5.70" base_Enumeration="_Pg4m8GlfEeG4boS-IbG8Zw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+</xmi:XMI>
