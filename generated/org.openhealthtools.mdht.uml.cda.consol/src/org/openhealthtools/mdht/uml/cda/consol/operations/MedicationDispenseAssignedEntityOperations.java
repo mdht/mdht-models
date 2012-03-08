@@ -88,18 +88,20 @@ public class MedicationDispenseAssignedEntityOperations extends AssignedEntityOp
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE_ASSIGNED_ENTITY);
 			try {
 				VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationDispenseAssignedEntity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationDispenseAssignedEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE_ASSIGNED_ENTITY__MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseAssignedEntityAddr"),
-					new Object[] { medicationDispenseAssignedEntity }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_DISPENSE_ASSIGNED_ENTITY__MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR,
+						 ConsolPlugin.INSTANCE.getString("MedicationDispenseAssignedEntityAddr"),
+						 new Object [] { medicationDispenseAssignedEntity }));
 			}
 			return false;
 		}

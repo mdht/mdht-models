@@ -91,20 +91,20 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationMedicationInformationManufacturedMaterial)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationMedicationInformationManufacturedMaterial)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"),
-					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"),
+						 new Object [] { immunizationMedicationInformationManufacturedMaterial }));
 			}
 			return false;
 		}
@@ -150,20 +150,20 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationMedicationInformationManufacturedMaterial)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationMedicationInformationManufacturedMaterial)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"),
-					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"),
+						 new Object [] { immunizationMedicationInformationManufacturedMaterial }));
 			}
 			return false;
 		}
@@ -209,20 +209,20 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationMedicationInformationManufacturedMaterial)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationMedicationInformationManufacturedMaterial)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"),
-					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"),
+						 new Object [] { immunizationMedicationInformationManufacturedMaterial }));
 			}
 			return false;
 		}
@@ -268,20 +268,20 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
 			try {
 				VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationMedicationInformationManufacturedMaterial)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationMedicationInformationManufacturedMaterial)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialLotNumberText"),
-					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialLotNumberText"),
+						 new Object [] { immunizationMedicationInformationManufacturedMaterial }));
 			}
 			return false;
 		}

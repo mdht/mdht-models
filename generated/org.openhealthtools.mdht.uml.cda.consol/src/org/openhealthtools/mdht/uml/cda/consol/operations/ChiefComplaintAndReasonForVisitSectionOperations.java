@@ -91,20 +91,20 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintAndReasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chiefComplaintAndReasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTemplateId"),
-					new Object[] { chiefComplaintAndReasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTemplateId"),
+						 new Object [] { chiefComplaintAndReasonForVisitSection }));
 			}
 			return false;
 		}
@@ -119,9 +119,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '46239-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
+"value.code = '46239-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChiefComplaintAndReasonForVisitSectionCode(ChiefComplaintAndReasonForVisitSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chief Complaint And Reason For Visit Section Code</em>}' invariant operation.
@@ -154,20 +154,20 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintAndReasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chiefComplaintAndReasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionCode"),
-					new Object[] { chiefComplaintAndReasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionCode"),
+						 new Object [] { chiefComplaintAndReasonForVisitSection }));
 			}
 			return false;
 		}
@@ -213,20 +213,20 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintAndReasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chiefComplaintAndReasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionText"),
-					new Object[] { chiefComplaintAndReasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionText"),
+						 new Object [] { chiefComplaintAndReasonForVisitSection }));
 			}
 			return false;
 		}
@@ -272,20 +272,20 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintAndReasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(chiefComplaintAndReasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTitle"),
-					new Object[] { chiefComplaintAndReasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTitle"),
+						 new Object [] { chiefComplaintAndReasonForVisitSection }));
 			}
 			return false;
 		}

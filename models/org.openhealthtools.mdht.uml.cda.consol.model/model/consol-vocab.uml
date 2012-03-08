@@ -20,7 +20,6 @@
       </ownedLiteral>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Fw2MBSVEeGGzu7fmW9pXw" name="Problem Type">
-     
       <ownedComment xmi:id="_zlLhUCAxEeGetMjKLkqR8g">
         <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
       </ownedComment>
@@ -42,26 +41,17 @@
       <ownedLiteral xmi:id="_2GDxJRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HFr4RSVEeGGzu7fmW9pXw" name="Medication Type">
-     
       <ownedLiteral xmi:id="_2HFr4hSVEeGGzu7fmW9pXw" name="329505003"/>
       <ownedLiteral xmi:id="_2HFr4xSVEeGGzu7fmW9pXw" name="73639000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2HnQUxSVEeGGzu7fmW9pXw" name="Medication Fill Status">
-    
       <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA">
-     
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site">
-      
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form">
-     
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type">
-      
       <ownedLiteral xmi:id="_2JjKARSVEeGGzu7fmW9pXw" name="160573003"/>
       <ownedLiteral xmi:id="_2JjKAhSVEeGGzu7fmW9pXw" name="363908000"/>
       <ownedLiteral xmi:id="_2JjKAxSVEeGGzu7fmW9pXw" name="364703007"/>
@@ -72,7 +62,6 @@
       <ownedLiteral xmi:id="_2JjKCBSVEeGGzu7fmW9pXw" name="425400000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="Advance Directive Type">
-     
       <ownedLiteral xmi:id="_2LHQQRSVEeGGzu7fmW9pXw" name="281789004"/>
       <ownedLiteral xmi:id="_2LHQQhSVEeGGzu7fmW9pXw" name="89666000"/>
       <ownedLiteral xmi:id="_2LHQQxSVEeGGzu7fmW9pXw" name="225204009"/>
@@ -81,22 +70,17 @@
       <ownedLiteral xmi:id="_2LHQRhSVEeGGzu7fmW9pXw" name="304251008"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L3eMBSVEeGGzu7fmW9pXw" name="EncounterType">
-      
       <ownedComment xmi:id="_2L3eMRSVEeGGzu7fmW9pXw">
         <body>This is used to identify medical services and procedures furnished by physicians and other healthcare professionals.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2L5TYBSVEeGGzu7fmW9pXw" name="Admission Type (NUBC)">
-     
       <ownedComment xmi:id="_2L5TYRSVEeGGzu7fmW9pXw">
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
-     
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="Vital Sign Result">
-     
       <ownedLiteral xmi:id="_2O3u6hSVEeGGzu7fmW9pXw" name="8310-5"/>
       <ownedLiteral xmi:id="_2O3u6xSVEeGGzu7fmW9pXw" name="8462-4"/>
       <ownedLiteral xmi:id="_2O3u7BSVEeGGzu7fmW9pXw" name="8480-6"/>
@@ -109,16 +93,12 @@
       <ownedLiteral xmi:id="_2O3u8xSVEeGGzu7fmW9pXw" name="3141-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SVSkBSVEeGGzu7fmW9pXw" name="Problem">
-     
       <ownedComment xmi:id="_w0gJcCAxEeGetMjKLkqR8g">
         <body>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language">
-      
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNBSVEeGGzu7fmW9pXw" name="Language"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2SbZNxSVEeGGzu7fmW9pXw" name="LanguageAbilityMode">
-     
       <ownedLiteral xmi:id="_2SbZOBSVEeGGzu7fmW9pXw" name="ESGN"/>
       <ownedLiteral xmi:id="_2SbZORSVEeGGzu7fmW9pXw" name="ESP"/>
       <ownedLiteral xmi:id="_2SbZOhSVEeGGzu7fmW9pXw" name="EWR"/>
@@ -224,7 +204,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_dRRyt6DqEd-dVeaMP0XXQw" name="P"/>
       <ownedLiteral xmi:id="_dRSZwaDqEd-dVeaMP0XXQw" name="W"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfcxkKDqEd-dVeaMP0XXQw" name="RaceandEthnicityCDC"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="RoleCode">
       <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
@@ -554,7 +533,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:CodeSystemVersion xmi:id="_KAjkQDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.1" base_Enumeration="__Nb_8DVQEeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_svo1oTVVEeGIw7CntkyPQw" identifier="2.16.840.1.113883.6.101" fullName="NUCC Health Care Provider Taxonomy" base_Enumeration="_svo1oDVVEeGIw7CntkyPQw"/>
   <term:CodeSystemVersion xmi:id="_ZhyZUTVYEeGIw7CntkyPQw" identifier="2.16.840.1.113883.5.89" fullName="Participationsignature" base_Enumeration="_ZhyZUDVYEeGIw7CntkyPQw"/>
@@ -629,7 +608,6 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_1VJ6wEFaEeGFqszUdHc61Q" base_Enumeration="_dfcxkKDqEd-dVeaMP0XXQw"/>
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>

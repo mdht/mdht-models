@@ -59,8 +59,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -119,7 +114,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public ResultsSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultsSectionEntriesOptionalImpl

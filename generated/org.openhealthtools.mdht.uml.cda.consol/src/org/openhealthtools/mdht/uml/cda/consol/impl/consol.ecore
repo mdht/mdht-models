@@ -35,10 +35,10 @@
       <details key="constraints.validation.info" value="GuardianTelecom"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication">
-      <details key="proficiencyLevelCode.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="proficiencyLevelCode.codeSystem" value="2.16.840.1.113883.5.61"/>
       <details key="constraints.validation.error" value="LanguageCommunicationLanguageCode LanguageCommunicationProficiencyLevelCode LanguageCommunicationModeCode"/>
       <details key="modeCode.codeSystem" value="2.16.840.1.113883.5.60"/>
-      <details key="proficiencyLevelCode.codeSystemName" value="LOINC"/>
+      <details key="proficiencyLevelCode.codeSystemName" value="LanguageAbilityProficiency"/>
       <details key="constraints.validation.info" value="LanguageCommunicationPreferenceInd"/>
       <details key="modeCode.codeSystemName" value="LanguageAbilityMode"/>
     </eAnnotations>
@@ -110,7 +110,7 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticator">
       <details key="constraints.validation.error" value="AuthenticatorTime AuthenticatorSignatureCode AuthenticatorAssignedEntity"/>
-      <details key="signatureCode.code" value="s"/>
+      <details key="signatureCode.code" value="S"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity">
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom"/>
@@ -4210,6 +4210,8 @@
       </eParameters>
     </eOperations>
     <eOperations name="getAllergyDrugSensitivities" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//AllergyProblemAct"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allergyProblemAct" ordered="false"
         upperBound="-1" eType="#//AllergyProblemAct"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional" eSuperTypes="urn:hl7-org:v3#//Section">
