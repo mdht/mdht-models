@@ -959,6 +959,14 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ruleId>CONF:5372</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2UnxkRSVEeGGzu7fmW9pXw" name="DischargeSummary">
+    <ownedRule xmi:id="_43rsEGjHEeGNoZ3kEkcY2A" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_43rsEWjHEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2U6FfBSVEeGGzu7fmW9pXw" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_2Uz-3xSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -1877,6 +1885,30 @@ A Consultation Note must be provided to the referring physician or NPP and must 
 An NPP is defined as any licensed medical professional as recognized by the state in which the professional practices, including, but not limited to, physician assistants, nurse practitioners, clinical nurse specialists, social workers, registered dietitians, physical therapists, and speech therapists.&#xD;
 Reports on visits requested by a patient, family member, or other third party are not covered by this specification. Second opinions, sometimes called &quot;confirmatory consultations,&quot; also are not covered here. Any question on use of the Consultation Note defined here should be resolved by reference to CMS or American Medical Association (AMA) guidelines.</body>
     </ownedComment>
+    <ownedRule xmi:id="_8h6-oGjGEeGNoZ3kEkcY2A" name="hasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8h6-oWjGEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL include an Assessment and Plan Section, or an Assessment Section and a Plan Section</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_90KpoGjGEeGNoZ3kEkcY2A" name="doesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_90KpoWjGEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_AUOyoGjHEeGNoZ3kEkcY2A" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_AUOyoWjHEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_R_oggDssEeGvzMYhXuqAEA" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_X-4tMDssEeGvzMYhXuqAEA" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_lO8YkDstEeGvzMYhXuqAEA">
@@ -2328,6 +2360,22 @@ A History and Physical Examination is required upon hospital admission as well a
         <language>OCL</language>
         <body>SHALL NOT include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_6fCIkGjAEeGNoZ3kEkcY2A" name="hasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6fCIkWjAEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL include a Chief Complaint and Reason for Visit Section, Chief Complaint Section, or a Reason for Visit Section</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_96mQgGjAEeGNoZ3kEkcY2A" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_96mQgWjAEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_-QelMD1jEeG3tde5scYNWA" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
@@ -2980,6 +3028,14 @@ A History and Physical Examination is required upon hospital admission as well a
         <language>OCL</language>
         <body>SHALL NOT include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</body>
         <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_KkMxIGjIEeGNoZ3kEkcY2A" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_KkMxIWjIEeGNoZ3kEkcY2A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL NOT include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</body>
+        <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Luag8D7YEeGvOdejHZ7dYg" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
@@ -4368,4 +4424,23 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_bCo2IFn5EeGKdMKWzrgL_Q" base_Property="_IfG-8CymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5470</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_nhJFwGjBEeGNoZ3kEkcY2A" base_Constraint="_6fCIkGjAEeGNoZ3kEkcY2A">
+    <ruleId>CONF:9642</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_vMmDoGjDEeGNoZ3kEkcY2A" base_Constraint="_96mQgGjAEeGNoZ3kEkcY2A">
+    <ruleId>CONF:10057</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_DEqS4GjHEeGNoZ3kEkcY2A" base_Constraint="_8h6-oGjGEeGNoZ3kEkcY2A">
+    <ruleId>CONF:9501</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_DbxyYGjHEeGNoZ3kEkcY2A" base_Constraint="_90KpoGjGEeGNoZ3kEkcY2A">
+    <ruleId>CONF:10028</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_EJAEwGjHEeGNoZ3kEkcY2A" base_Constraint="_AUOyoGjHEeGNoZ3kEkcY2A"/>
+  <CDA:ConstraintValidation xmi:id="_5k4JQGjHEeGNoZ3kEkcY2A" base_Constraint="_43rsEGjHEeGNoZ3kEkcY2A">
+    <ruleId>CONF:10055</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_LnhPUGjIEeGNoZ3kEkcY2A" base_Constraint="_KkMxIGjIEeGNoZ3kEkcY2A">
+    <ruleId>CONF:10065</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
