@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
-import org.eclipse.emf.ecore.EReference;
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
 
 /**
@@ -6979,22 +6978,13 @@ public interface ConsolPackage extends EPackage {
 	int ALLERGIES_SECTION__MOOD_CODE = ALLERGIES_SECTION_ENTRIES_OPTIONAL__MOOD_CODE;
 
 	/**
-	 * The feature id for the '<em><b>Allergy Problem Act</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALLERGIES_SECTION__ALLERGY_PROBLEM_ACT = ALLERGIES_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Allergies Section</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ALLERGIES_SECTION_FEATURE_COUNT = ALLERGIES_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 1;
+	int ALLERGIES_SECTION_FEATURE_COUNT = ALLERGIES_SECTION_ENTRIES_OPTIONAL_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -33282,17 +33272,6 @@ public interface ConsolPackage extends EPackage {
 	EClass getAllergiesSection();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getAllergyProblemAct <em>Allergy Problem Act</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Allergy Problem Act</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getAllergyProblemAct()
-	 * @see #getAllergiesSection()
-	 * @generated
-	 */
-	EReference getAllergiesSection_AllergyProblemAct();
-
-	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional <em>Allergies Section Entries Optional</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34903,14 +34882,6 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ALLERGIES_SECTION = eINSTANCE.getAllergiesSection();
-
-		/**
-		 * The meta object literal for the '<em><b>Allergy Problem Act</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ALLERGIES_SECTION__ALLERGY_PROBLEM_ACT = eINSTANCE.getAllergiesSection_AllergyProblemAct();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AllergiesSectionEntriesOptionalImpl <em>Allergies Section Entries Optional</em>}' class.

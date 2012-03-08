@@ -4154,7 +4154,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.displayName" value="Allergies, adverse reactions, alerts"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.1"/>
-      <details key="constraints.validation.error" value="AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyDrugSensitivity"/>
+      <details key="constraints.validation.error" value="AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.code" value="48765-2"/>
     </eAnnotations>
@@ -4200,7 +4200,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergiesSectionAllergyDrugSensitivity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergiesSectionAllergyProblemAct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4209,9 +4209,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getAllergyDrugSensitivities" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//AllergyProblemAct"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allergyProblemAct" ordered="false"
+    <eOperations name="getConsolAllergyProblemActs" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AllergyProblemAct"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional" eSuperTypes="urn:hl7-org:v3#//Section">

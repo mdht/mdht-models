@@ -92,7 +92,7 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	public ProcedureImplantsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureImplantsSectionImpl

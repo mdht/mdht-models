@@ -137,7 +137,7 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 * @generated
 	 */
 	public Indication init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // IndicationImpl
