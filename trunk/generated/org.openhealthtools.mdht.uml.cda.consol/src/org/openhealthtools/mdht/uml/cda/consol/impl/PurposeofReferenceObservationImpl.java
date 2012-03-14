@@ -98,16 +98,6 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PurposeofReferenceObservation init() {
 		CDAUtil.init(this);
 		return this;
