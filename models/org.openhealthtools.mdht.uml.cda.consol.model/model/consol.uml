@@ -723,7 +723,6 @@
     <ruleId>CONF:8849</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_CtfWwRqsEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
-  
   <CDA:AssociationValidation xmi:id="_ChoggBq2EeGo461UQq-B1g">
     <ruleId>CONF:7492</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_A3suQRq2EeGo461UQq-B1g"/>
@@ -1077,7 +1076,7 @@
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="S">
-    <reference href="consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mRLTACzGEeGMXrZ0DiQwGg">

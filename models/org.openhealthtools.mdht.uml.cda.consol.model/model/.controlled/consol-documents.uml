@@ -1233,9 +1233,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ownedEnd xmi:id="_2Uz-3RSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Uz-3BSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2UnxxhSVEeGGzu7fmW9pXw" base_Class="_2UnxkRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.1.8"/>
-  <CDA:CodeSystemConstraint xmi:id="_2Uz-4hSVEeGGzu7fmW9pXw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2UnxzRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2UnxyxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:10111</ruleId>
   </CDA:AssociationValidation>
@@ -1731,11 +1728,11 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <ruleId>CONF:9996</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_1diZ4DVVEeGIw7CntkyPQw" base_Property="_NIuY8CynEeGMXrZ0DiQwGg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
     <ruleId>CONF:9944</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_LwnaYDVWEeGIw7CntkyPQw" base_Property="_NmVGtSzCEeGMXrZ0DiQwGg">
-    <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_ADa-ADVXEeGIw7CntkyPQw" base_Constraint="_72wJQDVWEeGIw7CntkyPQw">
     <ruleId>CONF:8002</ruleId>
@@ -1748,10 +1745,10 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:PropertyValidation xmi:id="_wQSxkDVYEeGIw7CntkyPQw" base_Property="_nlqjxDVYEeGIw7CntkyPQw"/>
   <CDA:PropertyValidation xmi:id="_yu_BkDVYEeGIw7CntkyPQw" base_Property="_nlqjzTVYEeGIw7CntkyPQw"/>
   <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
-    <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
-    <reference href="../consol-vocab.uml#_ZhyZUTVYEeGIw7CntkyPQw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="__eO7YjVYEeGIw7CntkyPQw" memberEnd="__eO7YDVYEeGIw7CntkyPQw __eO7YzVYEeGIw7CntkyPQw">
     <ownedEnd xmi:id="__eO7YzVYEeGIw7CntkyPQw" type="_nlqjwDVYEeGIw7CntkyPQw" association="__eO7YjVYEeGIw7CntkyPQw"/>
@@ -3966,8 +3963,8 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:PropertyValidation xmi:id="_EzoOIEIPEeGfG6GbxF_VQQ" severity="INFO" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ">
     <ruleId>CONF:8461</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_LxxE8EIPEeGfG6GbxF_VQQ" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ">
-    <reference href="../consol-vocab.uml#_svo1oTVVEeGIw7CntkyPQw"/>
+  <CDA:CodeSystemConstraint xmi:id="_LxxE8EIPEeGfG6GbxF_VQQ" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ" severity="INFO">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_jU3i4EIPEeGfG6GbxF_VQQ" severity="WARNING" base_Constraint="_f4CPoEIPEeGfG6GbxF_VQQ">
     <ruleId>CONF:10027</ruleId>
@@ -4502,4 +4499,13 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_hX9gkGk7EeGCCOsAP2C6Nw" base_Constraint="_iAmMsEIREeGfG6GbxF_VQQ">
     <ruleId>CONF:8457</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_3hZQMG1JEeGCevFpokwODw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_R_D60TzDEeGMk58Mp9-wVA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_K_GwoG1LEeGCevFpokwODw" base_Property="_7Os41CylEeGMXrZ0DiQwGg">
+    <reference href="../consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_xWGhcG3fEeGKP5KxpnP4iw" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg" severity="WARNING">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
