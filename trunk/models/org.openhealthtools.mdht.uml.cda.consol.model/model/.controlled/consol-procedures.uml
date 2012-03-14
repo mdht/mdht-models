@@ -1892,4 +1892,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_mrBocFwQEeG0y_7i0ygc4g" base_Constraint="_L5NdsEEzEeGdmoWy_aLP0Q">
     <ruleId>CONF:8769</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_je4HoG1KEeGCevFpokwODw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_lYCBoG1KEeGCevFpokwODw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_m6mnoG1KEeGCevFpokwODw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
