@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivitySupply()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.43' constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.43' constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.codeSystemName='HL7ActMood'"
  * @generated
  */
 public interface PlanOfCareActivitySupply extends Supply {
