@@ -1872,7 +1872,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(184));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(186));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1917,7 +1917,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(179));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(181));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1942,7 +1942,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(185));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(187));
 			try {
 				GET_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1967,7 +1967,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(190));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(192));
 			try {
 				GET_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2012,7 +2012,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(180));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(182));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2037,7 +2037,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(191));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(193));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2062,7 +2062,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(182));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(184));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2087,7 +2087,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(186));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(188));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2112,7 +2112,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(192));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(194));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2138,7 +2138,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(193));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(195));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2204,7 +2204,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(183));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(185));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2229,7 +2229,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(189));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(191));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2254,7 +2254,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(187));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(189));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2280,7 +2280,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(188));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(190));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2586,7 +2586,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT,
-				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(181));
+				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT.getEAllOperations().get(183));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteIndividual constraints.validation.error='IndividualTypeId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteProviderAssociatedEntity constraints.validation.error='AssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1 constraints.validation.error='ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1AnyAssistantsAsSecondary ServiceEvent1Code ServiceEvent1EffectiveTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer constraints.validation.error='PrimaryPerformerFunctionCode' functionCode.codeSystem='2.16.840.1.113883.6.101' functionCode.codeSystemName='NUCC HealthCare Provider Taxonomy'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer constraints.validation.error='PrimaryPerformerFunctionCode' functionCode.codeSystem='2.16.840.1.113883.6.101' functionCode.codeSystemName='NUCCHealthCareProviderTaxonomy'"
  * @generated
  */
 public interface ProcedureNote extends GeneralHeaderConstraints {

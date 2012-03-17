@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterActivities()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' templateId.root='2.16.840.1.113883.10.20.22.4.49' constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime' code.codeSystemName='CPT-4' constraints.validation.warning='EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesCode' classCode='ENC' moodCode='EVN' constraints.validation.info='EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' templateId.root='2.16.840.1.113883.10.20.22.4.49' constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' code.codeSystemName='CPT-4' classCode='ENC' constraints.validation.warning='EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesCode' constraints.validation.info='EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' moodCode='EVN'"
  * @generated
  */
 public interface EncounterActivities extends Encounter {
@@ -183,6 +183,47 @@ public interface EncounterActivities extends Encounter {
 	 * @generated
 	 */
 	boolean validateEncounterActivitiesIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))'"
+	 * @generated
+	 */
+	boolean validateEncounterActivitiesEncounterPerformer(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * if self.performer->exists(not oclIsUndefined()) and self.performer.assignedEntity->exists(not oclIsUndefined()) then self.performer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())) else true endif
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.performer->exists(not oclIsUndefined()) and self.performer.assignedEntity->exists(not oclIsUndefined()) then self.performer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())) else true endif'"
+	 * @generated
+	 */
+	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * if self.performer->exists(not oclIsUndefined()) then self.performer->forAll(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))) else true endif
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.performer->exists(not oclIsUndefined()) then self.performer->forAll(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))) else true endif'"
+	 * @generated
+	 */
+	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

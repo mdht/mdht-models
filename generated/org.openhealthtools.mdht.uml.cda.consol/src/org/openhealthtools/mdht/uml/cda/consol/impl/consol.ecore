@@ -6,10 +6,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="urn:hl7-org:v3#//ClinicalDocument">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.1"/>
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsUSRealmAddress GeneralHeaderConstraintsUSRealmPatientName GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTypeId GeneralHeaderConstraintsId GeneralHeaderConstraintsCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsAuthor GeneralHeaderConstraintsCustodian GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName GeneralHeaderConstraintsAuthorAssignedAuthorPersonName GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier GeneralHeaderConstraintsAuthorAssignedAuthorAddr GeneralHeaderConstraintsAuthorAssignedAuthorId GeneralHeaderConstraintsAuthorAssignedAuthorTelecom GeneralHeaderConstraintsAuthorAssignedAuthor GeneralHeaderConstraintsDataEntererAssignedEntityPersonName GeneralHeaderConstraintsDataEntererAssignedEntityAddr GeneralHeaderConstraintsDataEntererAssignedEntityId GeneralHeaderConstraintsDataEntererAssignedEntityTelecom GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson GeneralHeaderConstraintsDataEntererAssignedEntity GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom GeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization GeneralHeaderConstraintsCustodianAssignedCustodian GeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName GeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName GeneralHeaderConstraintsInformationRecipientIntendedRecipient GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson GeneralHeaderConstraintsLegalAuthenticatorTime GeneralHeaderConstraintsLegalAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsAuthenticatorAssignedEntityId GeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsAuthenticatorTime GeneralHeaderConstraintsAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRoleAddr GeneralHeaderConstraintsRecordTargetPatientRoleId GeneralHeaderConstraintsRecordTargetPatientRoleTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime GeneralHeaderConstraintsComponentOfEncompassingEncounterId GeneralHeaderConstraintsComponentOfEncompassingEncounter GeneralHeaderConstraintsInformantRelatedEntityPersonName GeneralHeaderConstraintsInformantRelatedEntityPerson GeneralHeaderConstraintsInformantAssignedEntityPersonName GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsInformantAssignedEntityCode GeneralHeaderConstraintsInformantAssignedEntityPerson GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization GeneralHeaderConstraintsInFulfillmentOfOrderId GeneralHeaderConstraintsInFulfillmentOfOrder"/>
-      <details key="constraints.validation.warning" value="GeneralHeaderConstraintsLegalAuthenticator GeneralHeaderConstraintsAuthorAssignedAuthorCode GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsDataEntererAssignedEntityCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode GeneralHeaderConstraintsAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsInformantRelatedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityId"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsUSRealmAddress GeneralHeaderConstraintsUSRealmPatientName GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTypeId GeneralHeaderConstraintsId GeneralHeaderConstraintsCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsConfidentialityCode GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsAuthor GeneralHeaderConstraintsCustodian GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName GeneralHeaderConstraintsAuthorAssignedAuthorPersonName GeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier GeneralHeaderConstraintsAuthorAssignedAuthorAddr GeneralHeaderConstraintsAuthorAssignedAuthorCode GeneralHeaderConstraintsAuthorAssignedAuthorId GeneralHeaderConstraintsAuthorAssignedAuthorTelecom GeneralHeaderConstraintsAuthorAssignedAuthor GeneralHeaderConstraintsDataEntererAssignedEntityPersonName GeneralHeaderConstraintsDataEntererAssignedEntityAddr GeneralHeaderConstraintsDataEntererAssignedEntityId GeneralHeaderConstraintsDataEntererAssignedEntityTelecom GeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson GeneralHeaderConstraintsDataEntererAssignedEntity GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom GeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization GeneralHeaderConstraintsCustodianAssignedCustodian GeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName GeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName GeneralHeaderConstraintsInformationRecipientIntendedRecipient GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson GeneralHeaderConstraintsLegalAuthenticatorTime GeneralHeaderConstraintsLegalAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName GeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsAuthenticatorAssignedEntityAddr GeneralHeaderConstraintsAuthenticatorAssignedEntityId GeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom GeneralHeaderConstraintsAuthenticatorTime GeneralHeaderConstraintsAuthenticatorSignatureCode GeneralHeaderConstraintsAuthenticatorAssignedEntity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRoleAddr GeneralHeaderConstraintsRecordTargetPatientRoleId GeneralHeaderConstraintsRecordTargetPatientRoleTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime GeneralHeaderConstraintsComponentOfEncompassingEncounterId GeneralHeaderConstraintsComponentOfEncompassingEncounter GeneralHeaderConstraintsInformantRelatedEntityPersonName GeneralHeaderConstraintsInformantRelatedEntityPerson GeneralHeaderConstraintsInformantAssignedEntityPersonName GeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsInformantAssignedEntityCode GeneralHeaderConstraintsInformantAssignedEntityPerson GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization GeneralHeaderConstraintsInFulfillmentOfOrderId GeneralHeaderConstraintsInFulfillmentOfOrder"/>
+      <details key="constraints.validation.warning" value="GeneralHeaderConstraintsLegalAuthenticator GeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier GeneralHeaderConstraintsDataEntererAssignedEntityCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode GeneralHeaderConstraintsAuthenticatorAssignedEntityCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsInformantRelatedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityAddr GeneralHeaderConstraintsInformantAssignedEntityId"/>
+      <details key="confidentialityCode.codeSystemName" value="ConfidentialityCode"/>
       <details key="realmCode.code" value="US"/>
       <details key="constraints.validation.query" value="GeneralHeaderConstraintsUSRealmAddress GeneralHeaderConstraintsUSRealmPatientName"/>
+      <details key="confidentialityCode.codeSystem" value="2.16.840.1.113883.5.25"/>
       <details key="constraints.validation.info" value="GeneralHeaderConstraintsSetId GeneralHeaderConstraintsVersionNumber GeneralHeaderConstraintsDataEnterer GeneralHeaderConstraintsInformationRecipient GeneralHeaderConstraintsAuthenticator GeneralHeaderConstraintsComponentOf GeneralHeaderConstraintsInformant GeneralHeaderConstraintsSupportParticipant GeneralHeaderConstraintsInFulfillmentOf GeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace GeneralHeaderConstraintsParticipantSupportTime"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTarget">
@@ -19,10 +21,12 @@
       <details key="constraints.validation.error" value="PatientRoleAddr PatientRoleId PatientRoleTelecom PatientRolePatient"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRolePatient">
+      <details key="administrativeGenderCode.codeSystemName" value="AdministrativeGenderCode"/>
       <details key="ethnicGroupCode.codeSystemName" value="Race and Ethnicity - CDC"/>
       <details key="maritalStatusCode.codeSystemName" value="MaritalStatus"/>
-      <details key="constraints.validation.error" value="PatientBirthTimePreciseToYear PatientBirthTime PatientEthnicGroupCode PatientName"/>
+      <details key="constraints.validation.error" value="PatientBirthTimePreciseToYear PatientAdministrativeGenderCode PatientBirthTime PatientEthnicGroupCode PatientName"/>
       <details key="constraints.validation.warning" value="PatientBirthTimePreciseToDay PatientMaritalStatusCode PatientLanguageCommunication"/>
+      <details key="administrativeGenderCode.codeSystem" value="2.16.840.1.113883.5.1"/>
       <details key="ethnicGroupCode.codeSystem" value="2.16.840.1.113883.6.238"/>
       <details key="maritalStatusCode.codeSystem" value="2.16.840.1.113883.5.2"/>
       <details key="constraints.validation.info" value="PatientRaceCode PatientReligiousAffiliationCode PatientGuardian PatientBirthplace"/>
@@ -62,8 +66,9 @@
       <details key="constraints.validation.error" value="AuthorAssignedAuthor"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthor">
-      <details key="constraints.validation.error" value="AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorId AssignedAuthorTelecom"/>
-      <details key="constraints.validation.warning" value="AssignedAuthorCode"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
+      <details key="constraints.validation.error" value="AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorCode AssignedAuthorId AssignedAuthorTelecom"/>
+      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDevice">
       <details key="constraints.validation.error" value="AuthoringDeviceManufacturerModelName AuthoringDeviceSoftwareName"/>
@@ -77,7 +82,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson"/>
-      <details key="code.codeSystemName" value="NUCC HealthCare Provider Taxonomy"/>
+      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodian">
@@ -105,7 +110,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson"/>
-      <details key="code.codeSystemName" value="NUCC HealthCare Provider Taxonomy"/>
+      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticator">
@@ -115,7 +120,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom"/>
-      <details key="code.codeSystemName" value="NUCC HealthCare Provider Taxonomy"/>
+      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformant">
@@ -124,7 +129,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityPerson"/>
-      <details key="code.codeSystemName" value="NUCC HealthCare Provider Taxonomy"/>
+      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityAddr AssignedEntityId"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantRelatedEntity">
@@ -214,6 +219,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="GeneralHeaderConstraintsEffectiveTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="GeneralHeaderConstraintsConfidentialityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -979,6 +993,16 @@
       </eParameters>
     </eOperations>
     <eOperations name="GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="GeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -2661,8 +2685,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="Instructions" eSuperTypes="urn:hl7-org:v3#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="statusCode.code" value="completed"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.20"/>
-      <details key="constraints.validation.error" value="InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsStatusCode"/>
+      <details key="constraints.validation.error" value="InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsCode InstructionsStatusCode"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="classCode" value="ACT"/>
       <details key="constraints.validation.warning" value="InstructionsTextReference InstructionsText"/>
       <details key="moodCode" value="INT"/>
@@ -2704,6 +2730,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="InstructionsMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="InstructionsCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5939,12 +5974,12 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.12"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.49"/>
-      <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime"/>
+      <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"/>
       <details key="code.codeSystemName" value="CPT-4"/>
-      <details key="constraints.validation.warning" value="EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesCode"/>
       <details key="classCode" value="ENC"/>
+      <details key="constraints.validation.warning" value="EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesCode"/>
+      <details key="constraints.validation.info" value="EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"/>
       <details key="moodCode" value="EVN"/>
-      <details key="constraints.validation.info" value="EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication"/>
     </eAnnotations>
     <eOperations name="EncounterActivitiesCodeOriginalText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -6046,6 +6081,35 @@
       </eParameters>
     </eOperations>
     <eOperations name="EncounterActivitiesIndication" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="EncounterActivitiesEncounterPerformer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -6497,6 +6561,9 @@
       <details key="constraints.validation.info" value="ImmunizationActivityCode ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityPrecondition ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder"/>
       <details key="negationInd" value="false"/>
       <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivityConsumable">
+      <details key="constraints.validation.error" value="ConsumableImmunizationMedicationInformation"/>
     </eAnnotations>
     <eOperations name="ImmunizationActivityTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -10893,7 +10960,30 @@
     <eOperations name="getConsolDischargeMedications" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//DischargeMedication"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EncounterPerformer" eSuperTypes="urn:hl7-org:v3#//Performer2"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EncounterPerformer" eSuperTypes="urn:hl7-org:v3#//Performer2">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="EncounterPerformerEncounterPerformerAssignedEntity"/>
+      <details key="constraints.validation.info" value="EncounterPerformerEncounterPerformerAssignedEntityCode"/>
+    </eAnnotations>
+    <eOperations name="EncounterPerformerEncounterPerformerAssignedEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="EncounterPerformerEncounterPerformerAssignedEntityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EncounterPerformerAssignedEntity" eSuperTypes="urn:hl7-org:v3#//AssignedEntity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.info" value="EncounterPerformerAssignedEntityCode"/>
@@ -11432,10 +11522,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PurposeofReferenceObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="value.codeSystemName" value="DCM"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.9"/>
       <details key="constraints.validation.error" value="PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode"/>
+      <details key="constraints.validation.warning" value="PurposeofReferenceObservationValue"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
+      <details key="value.codeSystem" value="1.2.840.10008.2.16.4"/>
     </eAnnotations>
     <eOperations name="PurposeofReferenceObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -11465,6 +11558,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="PurposeofReferenceObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PurposeofReferenceObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -13432,7 +13534,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.7"/>
-      <details key="constraints.validation.error" value="OperativeNoteTemplateId GeneralHeaderConstraintsCode OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent"/>
+      <details key="constraints.validation.error" value="OperativeNoteTemplateId GeneralHeaderConstraintsCode OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.info" value="OperativeNoteProcedureImplantsSection OperativeNoteOperativeNoteFluidSection OperativeNoteOperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection"/>
     </eAnnotations>
@@ -13443,7 +13545,9 @@
       <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventAnyAssistantsAsSecondary ServiceEventCode ServiceEventEffectiveTime"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer">
-      <details key="constraints.validation.error" value="PrimaryPerformerTypeCode"/>
+      <details key="functionCode.codeSystem" value="2.16.840.1.113883.6.101"/>
+      <details key="constraints.validation.error" value="PrimaryPerformerFunctionCode PrimaryPerformerTypeCode"/>
+      <details key="functionCode.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -13619,6 +13723,16 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -13772,7 +13886,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer">
       <details key="constraints.validation.error" value="PrimaryPerformerFunctionCode"/>
       <details key="functionCode.codeSystem" value="2.16.840.1.113883.6.101"/>
-      <details key="functionCode.codeSystemName" value="NUCC HealthCare Provider Taxonomy"/>
+      <details key="functionCode.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
