@@ -253,10 +253,19 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gGEIh-yEeGKirKJsFylGA"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6z6c4ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_abT0MEOvEeG2teg5w9C5Rg" name="consumable" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_abVpYEOvEeG2teg5w9C5Rg">
+    <ownedAttribute xmi:id="_abT0MEOvEeG2teg5w9C5Rg" name="consumable" type="_ou3j0G65EeGeVrQbtyMiPg" association="_abVpYEOvEeG2teg5w9C5Rg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bb9_8EOvEeG2teg5w9C5Rg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-nAEOvEeG2teg5w9C5Rg" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ou3j0G65EeGeVrQbtyMiPg" name="Consumable">
+      <generalization xmi:id="_rMAUoG65EeGeVrQbtyMiPg">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_s37D4G65EeGeVrQbtyMiPg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_s38SAG65EeGeVrQbtyMiPg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uBUU4G65EeGeVrQbtyMiPg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uBUU4W65EeGeVrQbtyMiPg" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2G10QxSVEeGGzu7fmW9pXw" memberEnd="_2G10QBSVEeGGzu7fmW9pXw _2G10RBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2G10RBSVEeGGzu7fmW9pXw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2G10QxSVEeGGzu7fmW9pXw"/>
@@ -1333,5 +1342,11 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_NJy-AFmsEeGRqYkwoeymcA" severity="INFO" base_Association="_KTbN0FmsEeGRqYkwoeymcA">
     <ruleId>CONF:8156</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_s38SAG65EeGeVrQbtyMiPg" memberEnd="_s37D4G65EeGeVrQbtyMiPg _s385EG65EeGeVrQbtyMiPg">
+    <ownedEnd xmi:id="_s385EG65EeGeVrQbtyMiPg" type="_ou3j0G65EeGeVrQbtyMiPg" association="_s38SAG65EeGeVrQbtyMiPg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_v4B-4G65EeGeVrQbtyMiPg" base_Association="_s38SAG65EeGeVrQbtyMiPg">
+    <ruleId>CONF:7521</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

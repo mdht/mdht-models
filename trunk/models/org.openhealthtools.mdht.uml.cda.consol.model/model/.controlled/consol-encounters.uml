@@ -148,9 +148,9 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hFfwACwQEeGKLc4ckmfDag" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hFfwASwQEeGKLc4ckmfDag"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Q5BdMCwXEeGKLc4ckmfDag" name="performer" type="_D5azMCwXEeGKLc4ckmfDag">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I1960CwZEeGKLc4ckmfDag" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I1960SwZEeGKLc4ckmfDag"/>
+    <ownedAttribute xmi:id="_62c0QG65EeGeVrQbtyMiPg" name="encounterPerformer" type="_D5azMCwXEeGKLc4ckmfDag" association="_62epcG65EeGeVrQbtyMiPg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LD-y0G66EeGeVrQbtyMiPg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LD-y0W66EeGeVrQbtyMiPg"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2Lg44BSVEeGGzu7fmW9pXw" memberEnd="_2LayWxSVEeGGzu7fmW9pXw _2Lg44RSVEeGGzu7fmW9pXw">
@@ -209,9 +209,9 @@
     <generalization xmi:id="_D5azMSwXEeGKLc4ckmfDag">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
     </generalization>
-    <ownedAttribute xmi:id="_S-LL0CwXEeGKLc4ckmfDag" name="assignedEntity" type="_I1LikCwXEeGKLc4ckmfDag">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WlwWgCwXEeGKLc4ckmfDag" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wlw9kCwXEeGKLc4ckmfDag" value="1"/>
+    <ownedAttribute xmi:id="_-WBScG65EeGeVrQbtyMiPg" name="encounterPerformerAssignedEntity" type="_I1LikCwXEeGKLc4ckmfDag" association="_-WDHoG65EeGeVrQbtyMiPg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7UP4G66EeGeVrQbtyMiPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F7UP4W66EeGeVrQbtyMiPg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_I1LikCwXEeGKLc4ckmfDag" name="EncounterPerformerAssignedEntity">
@@ -264,4 +264,16 @@
   <CDA:TextValue xmi:id="_mUbSJVGjEeG3H6xvuD7Z0Q" base_Property="_mUbSJFGjEeG3H6xvuD7Z0Q">
     <ruleId>CONF:8707</ruleId>
   </CDA:TextValue>
+  <uml:Association xmi:id="_62epcG65EeGeVrQbtyMiPg" memberEnd="_62c0QG65EeGeVrQbtyMiPg _62fQgG65EeGeVrQbtyMiPg">
+    <ownedEnd xmi:id="_62fQgG65EeGeVrQbtyMiPg" type="_2LayQBSVEeGGzu7fmW9pXw" association="_62epcG65EeGeVrQbtyMiPg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_-WDHoG65EeGeVrQbtyMiPg" memberEnd="_-WBScG65EeGeVrQbtyMiPg _-WDHoW65EeGeVrQbtyMiPg">
+    <ownedEnd xmi:id="_-WDHoW65EeGeVrQbtyMiPg" type="_D5azMCwXEeGKLc4ckmfDag" association="_-WDHoG65EeGeVrQbtyMiPg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_GRAzEG66EeGeVrQbtyMiPg" base_Association="_-WDHoG65EeGeVrQbtyMiPg">
+    <ruleId>CONF:8726</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_LbJVoG66EeGeVrQbtyMiPg" severity="INFO" base_Association="_62epcG65EeGeVrQbtyMiPg">
+    <ruleId>CONF:8725</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
