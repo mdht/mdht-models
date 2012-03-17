@@ -470,7 +470,9 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_J7q_cRrSEeGxIZCGAXKxsQ" conceptName="Active" base_EnumerationLiteral="_J7q_cBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_LxDMsRrSEeGxIZCGAXKxsQ" conceptName="Aborted" base_EnumerationLiteral="_LxDMsBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_M-QmsRrSEeGxIZCGAXKxsQ" conceptName="Cancelled" base_EnumerationLiteral="_M-QmsBrSEeGxIZCGAXKxsQ"/>
-  <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="4. 2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw"/>
+  <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="4. 2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Aq2j0CBCEeG938evaWkvcA" identifier="2.16.840.1.113883.11.20.9.21" binding="Dynamic" base_Enumeration="_Aqy5cCBCEeG938evaWkvcA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dkiF4KDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -511,13 +513,19 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_uPu0oCXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.17" binding="Dynamic" base_Enumeration="_dSQDEKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_vin_4CXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.18" binding="Dynamic" base_Enumeration="_dU_1EKDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_vin_4CXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.18" binding="Dynamic" base_Enumeration="_dU_1EKDqEd-dVeaMP0XXQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dV4l4aDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_e1-m8SXaEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.20" base_Enumeration="_e1-m8CXaEeGD8_EQPvfzIQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
-  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw"/>
-  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw"/>
+  <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
@@ -581,12 +589,14 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q"/>
+  <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_oDanoD7YEeGvOdejHZ7dYg" identifier="2.16.840.1.113883.11.20.6.1" fullName="Procedure Note LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_oDaAkD7YEeGvOdejHZ7dYg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_-bWMgT-UEeGvOdejHZ7dYg" identifier="2.16.840.1.114222.4.11.1066" fullName="NUCC - HIPAA Health Care Provider Taxonomy" binding="Dynamic" base_Enumeration="_-bWMgD-UEeGvOdejHZ7dYg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -597,14 +607,18 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA"/>
+  <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_hJA70UUvEeGdQ4KWAmnbhw" identifier="2.16.840.1.113883.11.20.9.32" fullName="DIR LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_hJA70EUvEeGdQ4KWAmnbhw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_jyBH4UrhEeGJpZWiuxRVIw" identifier="2.16.840.1.113883.11.20.9.28" fullName="DICOMPurposeOfReference" binding="Dynamic" base_Enumeration="_jyBH4ErhEeGJpZWiuxRVIw"/>
+  <term:ValueSetVersion xmi:id="_jyBH4UrhEeGJpZWiuxRVIw" identifier="2.16.840.1.113883.11.20.9.28" fullName="DICOMPurposeOfReference" binding="Dynamic" base_Enumeration="_jyBH4ErhEeGJpZWiuxRVIw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_gzUsQVoCEeGKdMKWzrgL_Q" conceptName="Excellent" base_EnumerationLiteral="_gzUsQFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
@@ -683,8 +697,12 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_9yUqcW1DEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.30" base_Enumeration="_9yUqcG1DEeGCevFpokwODw"/>
-  <term:ValueSetVersion xmi:id="_DCx3cG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.29" base_Enumeration="_DCxQYG1EEeGCevFpokwODw"/>
+  <term:ValueSetVersion xmi:id="_9yUqcW1DEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.30" base_Enumeration="_9yUqcG1DEeGCevFpokwODw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_DCx3cG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.29" base_Enumeration="_DCxQYG1EEeGCevFpokwODw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_RSgFgW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.15913" base_Enumeration="_RSgFgG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_jpGvEGShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>

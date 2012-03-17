@@ -1728,11 +1728,11 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <ruleId>CONF:9996</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_1diZ4DVVEeGIw7CntkyPQw" base_Property="_NIuY8CynEeGMXrZ0DiQwGg" severity="WARNING">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
     <ruleId>CONF:9944</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_LwnaYDVWEeGIw7CntkyPQw" base_Property="_NmVGtSzCEeGMXrZ0DiQwGg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_ADa-ADVXEeGIw7CntkyPQw" base_Constraint="_72wJQDVWEeGIw7CntkyPQw">
     <ruleId>CONF:8002</ruleId>
@@ -1745,7 +1745,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:PropertyValidation xmi:id="_wQSxkDVYEeGIw7CntkyPQw" base_Property="_nlqjxDVYEeGIw7CntkyPQw"/>
   <CDA:PropertyValidation xmi:id="_yu_BkDVYEeGIw7CntkyPQw" base_Property="_nlqjzTVYEeGIw7CntkyPQw"/>
   <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
@@ -3964,7 +3964,7 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ruleId>CONF:8461</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_LxxE8EIPEeGfG6GbxF_VQQ" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ" severity="INFO">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_jU3i4EIPEeGfG6GbxF_VQQ" severity="WARNING" base_Constraint="_f4CPoEIPEeGfG6GbxF_VQQ">
     <ruleId>CONF:10027</ruleId>
@@ -4506,6 +4506,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <reference href="../consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_xWGhcG3fEeGKP5KxpnP4iw" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg" severity="WARNING">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWeJgG1LEeGCevFpokwODw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_6c9LwG-hEeG_IMhuXZR2Eg" base_Property="_93hfwCymEeGMXrZ0DiQwGg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_qnOpMW-hEeG_IMhuXZR2Eg"/>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>

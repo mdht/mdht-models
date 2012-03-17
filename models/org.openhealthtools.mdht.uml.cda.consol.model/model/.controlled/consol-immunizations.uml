@@ -147,7 +147,7 @@
     <ownedAttribute xmi:id="_JEY5wBVOEeGbmN_W114JUw" name="immunizationRefusalReason" type="__qYdcBVNEeGbmN_W114JUw" association="_JEY5whVOEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JEY5wRVOEeGbmN_W114JUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_o-v9kBVOEeGbmN_W114JUw" name="consumable" type="_daTqABVOEeGbmN_W114JUw" association="_o-v9khVOEeGbmN_W114JUw">
+    <ownedAttribute xmi:id="_o-v9kBVOEeGbmN_W114JUw" name="consumable" type="_VboYkG65EeGeVrQbtyMiPg" association="_o-v9khVOEeGbmN_W114JUw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YCsK8FOdEeG3yrl4EsoEVQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YCsK8VOdEeG3yrl4EsoEVQ" value="1"/>
     </ownedAttribute>
@@ -190,6 +190,15 @@
       <type xmi:type="uml:Class" href="consol-medications.uml#_j3aTQBrTEeGo461UQq-B1g"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYX0IBt5EeGnMahsPjlwOw"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_VboYkG65EeGeVrQbtyMiPg" name="Consumable">
+      <generalization xmi:id="_c8MnAG65EeGeVrQbtyMiPg">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_efdJgG65EeGeVrQbtyMiPg" name="immunizationMedicationInformation" type="_daTqABVOEeGbmN_W114JUw" association="_efdwkG65EeGeVrQbtyMiPg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f-FDoG65EeGeVrQbtyMiPg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f-FDoW65EeGeVrQbtyMiPg" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_ZljOshU9EeGbmN_W114JUw" memberEnd="_ZljOsBU9EeGbmN_W114JUw _ZljOsxU9EeGbmN_W114JUw">
     <ownedEnd xmi:id="_ZljOsxU9EeGbmN_W114JUw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_ZljOshU9EeGbmN_W114JUw"/>
@@ -481,7 +490,6 @@
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_OEcn8BqsEeGo461UQq-B1g" base_Association="_o-v9khVOEeGbmN_W114JUw">
     <ruleId>CONF:8847</ruleId>
-    <ruleId>CONF:8848</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_KnNycBq0EeGo461UQq-B1g" base_Property="_jQ64EBVOEeGbmN_W114JUw">
     <ruleId>CONF:9002</ruleId>
@@ -649,4 +657,10 @@
   <CDA:ConstraintValidation xmi:id="_ipymcEX9EeG6e5lG0YsSyQ" severity="INFO" base_Constraint="_g1un0EX9EeG6e5lG0YsSyQ">
     <ruleId>CONF:9011</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_efdwkG65EeGeVrQbtyMiPg" memberEnd="_efdJgG65EeGeVrQbtyMiPg _efeXoG65EeGeVrQbtyMiPg">
+    <ownedEnd xmi:id="_efeXoG65EeGeVrQbtyMiPg" type="_VboYkG65EeGeVrQbtyMiPg" association="_efdwkG65EeGeVrQbtyMiPg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ghAxkG65EeGeVrQbtyMiPg" base_Association="_efdwkG65EeGeVrQbtyMiPg">
+    <ruleId>CONF:8848</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
