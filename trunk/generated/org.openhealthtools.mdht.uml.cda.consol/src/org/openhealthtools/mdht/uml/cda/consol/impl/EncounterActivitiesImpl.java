@@ -174,6 +174,38 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterActivitiesEncounterPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
 		return EncounterActivitiesOperations.getServiceDeliveryLocations(this);
 	}

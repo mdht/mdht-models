@@ -244,6 +244,17 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
