@@ -90,7 +90,7 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public ReasonForReferralSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReasonForReferralSectionImpl

@@ -66,8 +66,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityEffectiveTimeWhenAuthorPresent(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityEffectiveTimeWhenAuthorPresent(this, diagnostics, context);
 	}
 
 	/**
@@ -157,7 +156,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * @generated
 	 */
 	public CommentActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CommentActivityImpl

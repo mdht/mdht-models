@@ -125,7 +125,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ddyK0FzWEeGt2doqSDULjA" name="Payer">
       <ownedComment xmi:id="_vEDd8FzWEeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity.code &lt;> 'GUAR'</body>
+        <body>INLINE&amp;assignedEntity.code.code &lt;> 'GUAR'</body>
       </ownedComment>
       <ownedComment xmi:id="_5DImUF0PEeGt2doqSDULjA">
         <body>This performer represents the Payer (CONF:9078)</body>
@@ -145,6 +145,12 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         <ownedComment xmi:id="_l7vMwF0REeGt2doqSDULjA">
           <body>INLINE</body>
         </ownedComment>
+        <ownedRule xmi:id="_bk4HkG7hEeGO5JJTinolhw" name="usRealmAddress" constrainedElement="_deYl8F0REeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dIxjQG7hEeGO5JJTinolhw">
+            <language>Analysis</language>
+            <body>1.&#x9;The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_hzOfQF0REeGt2doqSDULjA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
         </generalization>
@@ -188,7 +194,10 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_GX8lgF13EeGt2doqSDULjA" name="Guarantor">
       <ownedComment xmi:id="_KLyDgF13EeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity.code = 'GUAR'</body>
+        <body>INLINE&amp;assignedEntity.code.code = 'GUAR'</body>
+      </ownedComment>
+      <ownedComment xmi:id="_y3qjgG7fEeGO5JJTinolhw">
+        <body>This performer represents the Guarantor (CONF:9079)</body>
       </ownedComment>
       <generalization xmi:id="_Iw4LwF13EeGt2doqSDULjA">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
@@ -200,14 +209,26 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ji5x4F15EeGt2doqSDULjA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ji5x4V15EeGt2doqSDULjA" value="1"/>
       </ownedAttribute>
+            <ownedAttribute xmi:id="_Wg5iQG7fEeGO5JJTinolhw" name="typeCode" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_orts4G7fEeGO5JJTinolhw" value="PRF"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_NgEewF13EeGt2doqSDULjA" name="GuarantorAssignedEntity">
         <ownedComment xmi:id="_ZpqvAF2REeGt2doqSDULjA">
           <body>INLINE</body>
         </ownedComment>
-        <ownedRule xmi:id="_p4NRoF16EeGt2doqSDULjA" name="personNameOrOrgName" constrainedElement="_NgEewF13EeGt2doqSDULjA">
+        <ownedRule xmi:id="_p4NRoF16EeGt2doqSDULjA" name="personNameAndOrOrgName" constrainedElement="_NgEewF13EeGt2doqSDULjA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_v8gWYF16EeGt2doqSDULjA">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>SHOULD include assignedEntity/assignedPerson/name AND/OR assignedEntity/representedOrganization/name</body>
+            <body>(performer.assignedEntity.assignedPerson->exists(not oclIsUndefined()) and performer.assignedEntity.assignedPerson.name->size() >0) or (performer.assignedEntity.representedOrganization->exists(not oclIsUndefined()) and performer.assignedEntity.representedOrganization.name->size() >0 )</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_HFsGkG7hEeGO5JJTinolhw" name="usRealmAddress" constrainedElement="_NgEewF13EeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_KeJ3MG7hEeGO5JJTinolhw">
+            <language>Analysis</language>
+            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_RRYNMF13EeGt2doqSDULjA">
@@ -219,6 +240,10 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FffMIF16EeGt2doqSDULjA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NIzG4F16EeGt2doqSDULjA" name="addr">
+        <ownedComment xmi:id="_mQ0iUG7gEeGO5JJTinolhw">
+            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</body>
+        </ownedComment>
+        
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLNzcF16EeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLNzcV16EeGt2doqSDULjA"/>
@@ -509,6 +534,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_zCqtIF0ZEeGt2doqSDULjA" severity="INFO" base_Property="_s4EMEF0ZEeGt2doqSDULjA">
     <ruleId>CONF:8910</ruleId>
+    <ruleId>CONF:10481</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DASncF0aEeGt2doqSDULjA" severity="INFO" base_Property="_87mhIF0ZEeGt2doqSDULjA">
     <ruleId>CONF:8910</ruleId>
@@ -520,7 +546,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ownedEnd xmi:id="_e-00oV13EeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" association="_e-00oF13EeGt2doqSDULjA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_jaiK8F13EeGt2doqSDULjA" base_Association="_e-00oF13EeGt2doqSDULjA"/>
-  <CDA:PropertyValidation xmi:id="_RN_3IF15EeGt2doqSDULjA" base_Property="_HMWMAF15EeGt2doqSDULjA">
+  <CDA:PropertyValidation xmi:id="_RN_3IF15EeGt2doqSDULjA" severity="WARNING" base_Property="_HMWMAF15EeGt2doqSDULjA">
     <ruleId>CONF:8963</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_hHSrEl15EeGt2doqSDULjA" memberEnd="_hHSrEF15EeGt2doqSDULjA _hHSrE115EeGt2doqSDULjA">
@@ -533,11 +559,12 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ruleId>CONF:8968</ruleId>
     <ruleId>CONF:10566</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_1HQZcF15EeGt2doqSDULjA" code="GUAR" base_Property="_pRByUF15EeGt2doqSDULjA">
+  <CDA:CodeSystemConstraint xmi:id="_1HQZcF15EeGt2doqSDULjA" code="GUAR" base_Property="_pRByUF15EeGt2doqSDULjA" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_R1eRYF16EeGt2doqSDULjA" severity="WARNING" base_Property="_NIzG4F16EeGt2doqSDULjA">
     <ruleId>CONF:8964</ruleId>
+    <ruleId>CONF:10482</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bBHhkF16EeGt2doqSDULjA" severity="WARNING" base_Property="_XTYEgF16EeGt2doqSDULjA">
     <ruleId>CONF:8965</ruleId>
@@ -622,4 +649,13 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   <CDA:PropertyValidation xmi:id="_T04McGAvEeGt2doqSDULjA" severity="WARNING" base_Property="_Qtp80GAvEeGt2doqSDULjA">
     <ruleId>CONF:8925</ruleId>
   </CDA:PropertyValidation>
+    <CDA:PropertyValidation xmi:id="_mSJNcG7fEeGO5JJTinolhw" severity="WARNING" base_Property="_Wg5iQG7fEeGO5JJTinolhw">
+    <ruleId>CONF:8961</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_O2bfAG7hEeGO5JJTinolhw" base_Constraint="_HFsGkG7hEeGO5JJTinolhw">
+    <ruleId>CONF:10482</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_hiPd4G7hEeGO5JJTinolhw" base_Constraint="_bk4HkG7hEeGO5JJTinolhw">
+    <ruleId>CONF:10481</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

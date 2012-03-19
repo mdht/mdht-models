@@ -59,8 +59,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateVitalSignsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +106,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateVitalSignsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptionalOperations.validateVitalSignsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +115,7 @@ public class VitalSignsSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public VitalSignsSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // VitalSignsSectionEntriesOptionalImpl

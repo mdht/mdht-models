@@ -92,17 +92,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			drugVehicle)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityCode"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityCode"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}
@@ -147,17 +150,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			drugVehicle)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityName"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME,
+						 ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityName"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}
@@ -202,16 +208,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}
@@ -256,16 +266,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}
@@ -280,9 +294,9 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDrugVehicleCode(DrugVehicle, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Code</em>}' invariant operation.
@@ -299,8 +313,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -314,16 +328,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleCode"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
+						 ConsolPlugin.INSTANCE.getString("DrugVehicleCode"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}
@@ -368,17 +386,20 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
 			try {
 				VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			drugVehicle)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugVehicle)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntity"), new Object[] { drugVehicle }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntity"),
+						 new Object [] { drugVehicle }));
 			}
 			return false;
 		}

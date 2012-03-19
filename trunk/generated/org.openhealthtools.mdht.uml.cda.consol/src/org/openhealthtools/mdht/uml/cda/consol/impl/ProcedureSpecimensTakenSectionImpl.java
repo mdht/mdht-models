@@ -57,8 +57,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	public boolean validateProcedureSpecimensTakenSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * @generated
 	 */
 	public boolean validateProcedureSpecimensTakenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * @generated
 	 */
 	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +84,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * @generated
 	 */
 	public boolean validateProcedureSpecimensTakenSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +93,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * @generated
 	 */
 	public ProcedureSpecimensTakenSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureSpecimensTakenSectionImpl

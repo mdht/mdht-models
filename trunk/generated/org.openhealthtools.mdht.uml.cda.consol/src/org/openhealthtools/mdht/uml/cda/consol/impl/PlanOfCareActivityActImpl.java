@@ -64,6 +64,24 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfCareActivityActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlanOfCareActivityActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActId(this, diagnostics, context);
 	}
@@ -74,7 +92,7 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * @generated
 	 */
 	public PlanOfCareActivityAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PlanOfCareActivityActImpl

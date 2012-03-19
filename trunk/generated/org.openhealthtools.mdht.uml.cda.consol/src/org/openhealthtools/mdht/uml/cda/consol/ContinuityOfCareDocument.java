@@ -224,16 +224,15 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer.assignedEntity->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer.assignedEntity->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.documentationOf->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer->exists(not oclIsUndefined()) and self.documentationOf.serviceEvent.performer.assignedEntity->exists(not oclIsUndefined()) then self.documentationOf.serviceEvent.performer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

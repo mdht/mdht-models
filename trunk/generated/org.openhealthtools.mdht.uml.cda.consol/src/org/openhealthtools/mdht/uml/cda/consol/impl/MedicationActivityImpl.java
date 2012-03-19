@@ -64,8 +64,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +121,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -133,8 +131,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityPreconditionSubstanceAdmTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -153,6 +150,15 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -398,7 +404,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationActivityImpl

@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.14' constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureReferenceValue ProcedureActivityProcedureEncounterInversion ProcedureActivityProcedureProductInstanceTypeCode ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureClassCode ProcedureActivityProcedureId ProcedureActivityProcedureCode ProcedureActivityProcedureStatusCode' classCode='PROC' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureCodeOriginalText ProcedureActivityProcedureOriginalTextReferenceValue ProcedureActivityProcedureEffectiveTime ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedurePerformer' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' moodCode.codeSystem='2.16.840.1.113883.5.1001' constraints.validation.info='ProcedureActivityProcedurePriorityCode ProcedureActivityProcedureMethodCode ProcedureActivityProcedureIndication ProcedureActivityProcedureSpecimen ProcedureActivityProcedureServiceDeliveryLocation ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureProcedureEncounter ProcedureActivityProcedureProductInstance' moodCode.codeSystemName='HL7ActMood' targetSiteCode.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.14' constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureReferenceValue ProcedureActivityProcedureEncounterInversion ProcedureActivityProcedureProductInstanceTypeCode ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureClassCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureId ProcedureActivityProcedureCode ProcedureActivityProcedureStatusCode' classCode='PROC' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureCodeOriginalText ProcedureActivityProcedureOriginalTextReferenceValue ProcedureActivityProcedureEffectiveTime ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedurePerformer' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='ProcedureActivityProcedurePriorityCode ProcedureActivityProcedureMethodCode ProcedureActivityProcedureIndication ProcedureActivityProcedureSpecimen ProcedureActivityProcedureServiceDeliveryLocation ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureProcedureEncounter ProcedureActivityProcedureProductInstance' targetSiteCode.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends Procedure {
@@ -245,6 +245,21 @@ public interface ProcedureActivityProcedure extends Procedure {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentProcedureMood) and 
+	 * let value : vocab::x_DocumentProcedureMood = self.moodCode.oclAsType(vocab::x_DocumentProcedureMood) in 
+	 * value = vocab::x_DocumentProcedureMood::EVN or value = vocab::x_DocumentProcedureMood::INT
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentProcedureMood) and \r\nlet value : vocab::x_DocumentProcedureMood = self.moodCode.oclAsType(vocab::x_DocumentProcedureMood) in \r\nvalue = vocab::x_DocumentProcedureMood::EVN or value = vocab::x_DocumentProcedureMood::INT'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -272,12 +287,12 @@ public interface ProcedureActivityProcedure extends Procedure {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed' or value.code = 'active' or value.code = 'aborted' or value.code = 'cancelled'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed' or value.code = 'active' or value.code = 'aborted' or value.code = 'cancelled')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\' or value.code = \'active\' or value.code = \'aborted\' or value.code = \'cancelled\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\' or value.code = \'active\' or value.code = \'aborted\' or value.code = \'cancelled\')'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -300,12 +315,12 @@ public interface ProcedureActivityProcedure extends Procedure {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedurePriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);

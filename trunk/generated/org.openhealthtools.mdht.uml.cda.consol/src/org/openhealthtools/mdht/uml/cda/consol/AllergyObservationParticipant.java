@@ -19,10 +19,25 @@ import org.openhealthtools.mdht.uml.cda.Participant2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservationParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode.displayName='Consumable' typeCode.codeSystemName='HL7ParticipationType' constraints.validation.error='AllergyObservationParticipantParticipantRole' typeCode.codeSystem='2.16.840.1.113883.5.90' typeCode.code='CSM'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole' typeCode='CSM'"
  * @generated
  */
 public interface AllergyObservationParticipant extends Participant2 {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and 
+	 * let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in 
+	 * value = vocab::ParticipationType::CSM
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and \r\nlet value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in \r\nvalue = vocab::ParticipationType::CSM'"
+	 * @generated
+	 */
+	boolean validateAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
