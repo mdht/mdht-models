@@ -65,7 +65,7 @@ public class FindingsSectionImpl extends SectionImpl implements FindingsSection 
 	 * @generated
 	 */
 	public FindingsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FindingsSectionImpl

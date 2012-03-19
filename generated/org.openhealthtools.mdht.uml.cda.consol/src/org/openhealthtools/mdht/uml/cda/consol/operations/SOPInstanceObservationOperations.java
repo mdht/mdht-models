@@ -108,18 +108,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -164,18 +166,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -220,18 +224,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -276,18 +282,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -332,18 +340,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -388,18 +398,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -446,18 +458,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCode"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCode"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -502,19 +516,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -559,19 +574,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -616,19 +632,20 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
 			try {
 				VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sopInstanceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
-					new Object[] { sopInstanceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
+						 new Object [] { sopInstanceObservation }));
 			}
 			return false;
 		}
@@ -668,12 +685,11 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static EList<SOPInstanceObservation> getSOPInstanceObservations(SOPInstanceObservation sopInstanceObservation) {
 		if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(59));
+			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -717,12 +733,11 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			SOPInstanceObservation sopInstanceObservation) {
 		if (GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(60));
+			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(60));
 			try {
 				GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -766,12 +781,11 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			SOPInstanceObservation sopInstanceObservation) {
 		if (GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(61));
+			helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(61));
 			try {
 				GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

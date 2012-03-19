@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.16' constraints.validation.error='MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityId MedicationActivityStatusCode MedicationActivityConsumable' classCode='SBADM' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText' moodCode.codeSystem='2.16.840.1.113883.5.1001' constraints.validation.info='MedicationActivityCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityPrecondition MedicationActivityDrugVehicle' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.16' constraints.validation.error='MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityConsumable' classCode='SBADM' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText' constraints.validation.info='MedicationActivityCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityPrecondition MedicationActivityDrugVehicle'"
  * @generated
  */
 public interface MedicationActivity extends SubstanceAdministration {
@@ -160,6 +160,21 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and 
+	 * let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in 
+	 * value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and \r\nlet value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in \r\nvalue = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT'"
+	 * @generated
+	 */
+	boolean validateMedicationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -200,12 +215,12 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -269,12 +284,12 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context);

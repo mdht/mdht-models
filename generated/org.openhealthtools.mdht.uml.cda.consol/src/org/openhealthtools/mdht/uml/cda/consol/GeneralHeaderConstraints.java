@@ -38,11 +38,11 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsComponentOf constraints.validation.error='ComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsComponentOfEncompassingEncounter constraints.validation.error='EncompassingEncounterEffectiveTime EncompassingEncounterId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthor constraints.validation.error='AuthorAssignedAuthor'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthor code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorCode AssignedAuthorId AssignedAuthorTelecom' code.codeSystemName='NUCCHealthCareProviderTaxonomy'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthor code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorCode AssignedAuthorId AssignedAuthorTelecom' code.codeSystemName='NUCC Health Care Provider Taxonomy'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDevice constraints.validation.error='AuthoringDeviceManufacturerModelName AuthoringDeviceSoftwareName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsPerson constraints.validation.error='PersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEnterer constraints.validation.error='DataEntererAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier AssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier AssignedEntityCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodian constraints.validation.error='CustodianAssignedCustodian'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodianAssignedCustodian constraints.validation.error='AssignedCustodianRepresentedCustodianOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganization constraints.validation.error='CustodianOrganizationHasNationalProviderIdentifier CustodianOrganizationAddr CustodianOrganizationId CustodianOrganizationName CustodianOrganizationTelecom'"
@@ -50,11 +50,11 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformationRecipientIntendedRecipient constraints.validation.info='IntendedRecipientInformationRecipient IntendedRecipientRecievedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganization constraints.validation.error='OrganizationName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticator constraints.validation.error='LegalAuthenticatorTime LegalAuthenticatorSignatureCode' signatureCode.code='S'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='AssignedEntityCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticator constraints.validation.error='AuthenticatorTime AuthenticatorSignatureCode AuthenticatorAssignedEntity' signatureCode.code='S'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='AssignedEntityCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformant constraints.validation.error='InformantHasAssignedEntityOrRelatedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityPerson' code.codeSystemName='NUCCHealthCareProviderTaxonomy' constraints.validation.warning='AssignedEntityAddr AssignedEntityId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityPerson' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='AssignedEntityAddr AssignedEntityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantRelatedEntity constraints.validation.error='RelatedEntityPerson' constraints.validation.warning='RelatedEntityAddr'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsParticipantSupport constraints.validation.error='ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization' constraints.validation.info='ParticipantSupportTime'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInFulfillmentOf constraints.validation.error='InFulfillmentOfOrder'"
@@ -299,12 +299,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.25' and not value.code.oclIsUndefined()))
+	 * let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.25' and not value.code.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.25\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.25\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -314,12 +314,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in (
-	 * not value.code.oclIsUndefined()))
+	 * let value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in 
+	 * not value.code.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in (\r\nnot value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined() and self.languageCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.languageCode.oclAsType(datatypes::CS) in \r\nnot value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -583,16 +583,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.101'))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.101')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\')) else true endif'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -683,16 +682,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.dataEnterer->exists(not oclIsUndefined()) and self.dataEnterer.assignedEntity->exists(not oclIsUndefined()) then self.dataEnterer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.101'))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.101')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.dataEnterer->exists(not oclIsUndefined()) and self.dataEnterer.assignedEntity->exists(not oclIsUndefined()) then self.dataEnterer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.dataEnterer->exists(not oclIsUndefined()) and self.dataEnterer.assignedEntity->exists(not oclIsUndefined()) then self.dataEnterer.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\')) else true endif'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -965,16 +963,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.legalAuthenticator->exists(not oclIsUndefined()) and self.legalAuthenticator.assignedEntity->exists(not oclIsUndefined()) then self.legalAuthenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.101'))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.101')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.legalAuthenticator->exists(not oclIsUndefined()) and self.legalAuthenticator.assignedEntity->exists(not oclIsUndefined()) then self.legalAuthenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.legalAuthenticator->exists(not oclIsUndefined()) and self.legalAuthenticator.assignedEntity->exists(not oclIsUndefined()) then self.legalAuthenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\')) else true endif'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1037,12 +1034,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.legalAuthenticator->exists(not oclIsUndefined()) then self.legalAuthenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'S'))) else true endif
+	 * let value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'S')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.legalAuthenticator->exists(not oclIsUndefined()) then self.legalAuthenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'S\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.legalAuthenticator->exists(not oclIsUndefined()) then self.legalAuthenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'S\')) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(DiagnosticChain diagnostics,
@@ -1095,16 +1092,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.authenticator->exists(not oclIsUndefined()) and self.authenticator.assignedEntity->exists(not oclIsUndefined()) then self.authenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.101'))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.101')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.authenticator->exists(not oclIsUndefined()) and self.authenticator.assignedEntity->exists(not oclIsUndefined()) then self.authenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.authenticator->exists(not oclIsUndefined()) and self.authenticator.assignedEntity->exists(not oclIsUndefined()) then self.authenticator.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\')) else true endif'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1152,12 +1148,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.authenticator->exists(not oclIsUndefined()) then self.authenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'S'))) else true endif
+	 * let value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'S')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.authenticator->exists(not oclIsUndefined()) then self.authenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'S\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.authenticator->exists(not oclIsUndefined()) then self.authenticator->forAll((signatureCode.oclIsUndefined() or signatureCode.isNullFlavorUndefined()) implies (not signatureCode.oclIsUndefined() and signatureCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = signatureCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'S\')) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsAuthenticatorSignatureCode(DiagnosticChain diagnostics,
@@ -1210,12 +1206,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.guardian->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.guardian->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.guardian->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.guardian->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.111\' and not value.code.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.guardian->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.guardian->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.111\' and not value.code.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(DiagnosticChain diagnostics,
@@ -1282,12 +1278,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UN')))) else true endif
+	 * let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UN'))) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.1\' and (value.code = \'F\' or value.code = \'M\' or value.code = \'UN\')))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.1\' and (value.code = \'F\' or value.code = \'M\' or value.code = \'UN\'))) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
@@ -1354,12 +1350,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((proficiencyLevelCode.oclIsUndefined() or proficiencyLevelCode.isNullFlavorUndefined()) implies (proficiencyLevelCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = proficiencyLevelCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.61' and (value.code = 'E' or value.code = 'F' or value.code = 'G' or value.code = 'P')))) else true endif
+	 * let value : datatypes::CE = proficiencyLevelCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.61' and (value.code = 'E' or value.code = 'F' or value.code = 'G' or value.code = 'P'))) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((proficiencyLevelCode.oclIsUndefined() or proficiencyLevelCode.isNullFlavorUndefined()) implies (proficiencyLevelCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = proficiencyLevelCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.61\' and (value.code = \'E\' or value.code = \'F\' or value.code = \'G\' or value.code = \'P\')))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((proficiencyLevelCode.oclIsUndefined() or proficiencyLevelCode.isNullFlavorUndefined()) implies (proficiencyLevelCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = proficiencyLevelCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.61\' and (value.code = \'E\' or value.code = \'F\' or value.code = \'G\' or value.code = \'P\'))) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
@@ -1370,12 +1366,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((modeCode.oclIsUndefined() or modeCode.isNullFlavorUndefined()) implies (modeCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))) else true endif
+	 * let value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR'))) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((modeCode.oclIsUndefined() or modeCode.isNullFlavorUndefined()) implies (modeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.60\' and (value.code = \'ESGN\' or value.code = \'ESP\' or value.code = \'EWR\' or value.code = \'RSGN\' or value.code = \'RSP\' or value.code = \'RWR\')))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((modeCode.oclIsUndefined() or modeCode.isNullFlavorUndefined()) implies (modeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.60\' and (value.code = \'ESGN\' or value.code = \'ESP\' or value.code = \'EWR\' or value.code = \'RSGN\' or value.code = \'RSP\' or value.code = \'RWR\'))) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
@@ -1400,12 +1396,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (ethnicGroupCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (ethnicGroupCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.238\' and not value.code.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (ethnicGroupCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.238\' and not value.code.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(DiagnosticChain diagnostics,
@@ -1416,12 +1412,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((maritalStatusCode.oclIsUndefined() or maritalStatusCode.isNullFlavorUndefined()) implies (maritalStatusCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = maritalStatusCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))) else true endif
+	 * let value : datatypes::CE = maritalStatusCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W'))) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((maritalStatusCode.oclIsUndefined() or maritalStatusCode.isNullFlavorUndefined()) implies (maritalStatusCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = maritalStatusCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.5.2\' and (value.code = \'A\' or value.code = \'D\' or value.code = \'T\' or value.code = \'I\' or value.code = \'L\' or value.code = \'M\' or value.code = \'S\' or value.code = \'P\' or value.code = \'W\')))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((maritalStatusCode.oclIsUndefined() or maritalStatusCode.isNullFlavorUndefined()) implies (maritalStatusCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = maritalStatusCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.2\' and (value.code = \'A\' or value.code = \'D\' or value.code = \'T\' or value.code = \'I\' or value.code = \'L\' or value.code = \'M\' or value.code = \'S\' or value.code = \'P\' or value.code = \'W\'))) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
@@ -1446,12 +1442,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (raceCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (raceCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (raceCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(DiagnosticChain diagnostics,
@@ -1462,12 +1458,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((religiousAffiliationCode.oclIsUndefined() or religiousAffiliationCode.isNullFlavorUndefined()) implies (religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((religiousAffiliationCode.oclIsUndefined() or religiousAffiliationCode.isNullFlavorUndefined()) implies (religiousAffiliationCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in (\r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient->forAll((religiousAffiliationCode.oclIsUndefined() or religiousAffiliationCode.isNullFlavorUndefined()) implies (religiousAffiliationCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
@@ -1576,12 +1572,12 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined() and languageCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in (
-	 * not value.code.oclIsUndefined()))) else true endif
+	 * let value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in 
+	 * not value.code.oclIsUndefined())) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined() and languageCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in (\r\nnot value.code.oclIsUndefined()))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient->exists(not oclIsUndefined()) and self.recordTarget.patientRole.patient.languageCommunication->exists(not oclIsUndefined()) then self.recordTarget.patientRole.patient.languageCommunication->forAll((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined() and languageCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in \r\nnot value.code.oclIsUndefined())) else true endif'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
@@ -1732,16 +1728,15 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * if self.informant->exists(not oclIsUndefined()) and self.informant.assignedEntity->exists(not oclIsUndefined()) then self.informant.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.101'))) else true endif
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.101')) else true endif
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.informant->exists(not oclIsUndefined()) and self.informant.assignedEntity->exists(not oclIsUndefined()) then self.informant.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\'))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.informant->exists(not oclIsUndefined()) and self.informant.assignedEntity->exists(not oclIsUndefined()) then self.informant.assignedEntity->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\')) else true endif'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

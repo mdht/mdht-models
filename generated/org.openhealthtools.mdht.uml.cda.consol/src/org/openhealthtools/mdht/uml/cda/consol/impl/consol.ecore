@@ -68,7 +68,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthor">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorCode AssignedAuthorId AssignedAuthorTelecom"/>
-      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDevice">
       <details key="constraints.validation.error" value="AuthoringDeviceManufacturerModelName AuthoringDeviceSoftwareName"/>
@@ -82,7 +82,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson"/>
-      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodian">
@@ -110,7 +110,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson"/>
-      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticator">
@@ -120,7 +120,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityId AssignedEntityTelecom"/>
-      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformant">
@@ -129,7 +129,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityPerson"/>
-      <details key="code.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.warning" value="AssignedEntityAddr AssignedEntityId"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantRelatedEntity">
@@ -1865,13 +1865,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="urn:hl7-org:v3#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14"/>
-      <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId ProcedureActivityProcedureReferenceValue ProcedureActivityProcedureEncounterInversion ProcedureActivityProcedureProductInstanceTypeCode ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureClassCode ProcedureActivityProcedureId ProcedureActivityProcedureCode ProcedureActivityProcedureStatusCode"/>
+      <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId ProcedureActivityProcedureReferenceValue ProcedureActivityProcedureEncounterInversion ProcedureActivityProcedureProductInstanceTypeCode ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureClassCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureId ProcedureActivityProcedureCode ProcedureActivityProcedureStatusCode"/>
       <details key="classCode" value="PROC"/>
       <details key="constraints.validation.warning" value="ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureCodeOriginalText ProcedureActivityProcedureOriginalTextReferenceValue ProcedureActivityProcedureEffectiveTime ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedurePerformer"/>
       <details key="targetSiteCode.codeSystem" value="2.16.840.1.113883.6.96"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="constraints.validation.info" value="ProcedureActivityProcedurePriorityCode ProcedureActivityProcedureMethodCode ProcedureActivityProcedureIndication ProcedureActivityProcedureSpecimen ProcedureActivityProcedureServiceDeliveryLocation ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureProcedureEncounter ProcedureActivityProcedureProductInstance"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
     </eAnnotations>
     <eOperations name="ProcedureActivityProcedureCodeCodeSystems" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -1957,6 +1955,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureActivityProcedureClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureActivityProcedureMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -2211,11 +2218,10 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.32"/>
-      <details key="constraints.validation.error" value="ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationCode"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="constraints.validation.error" value="ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationClassCode ServiceDeliveryLocationCode"/>
       <details key="code.codeSystemName" value="LOINC"/>
+      <details key="classCode" value="SDLOC"/>
       <details key="constraints.validation.warning" value="ServiceDeliveryLocationAddr ServiceDeliveryLocationTelecom"/>
-      <details key="classCode.codeSystemName" value="RoleCode"/>
       <details key="constraints.validation.info" value="ServiceDeliveryLocationHasPlayingEntity"/>
     </eAnnotations>
     <eOperations name="ServiceDeliveryLocationHasPlayingEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -2237,6 +2243,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="ServiceDeliveryLocationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ServiceDeliveryLocationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -2276,12 +2291,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="urn:hl7-org:v3#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16"/>
-      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityId MedicationActivityStatusCode MedicationActivityConsumable"/>
+      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityConsumable"/>
       <details key="classCode" value="SBADM"/>
       <details key="constraints.validation.warning" value="MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="constraints.validation.info" value="MedicationActivityCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityPrecondition MedicationActivityDrugVehicle"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
     <eOperations name="MedicationActivityDoseQuantityorrateQuantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -2365,6 +2378,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationActivityClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationActivityMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3376,11 +3398,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="NonMedicinalSupplyActivity" eSuperTypes="urn:hl7-org:v3#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.50"/>
-      <details key="constraints.validation.error" value="NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance"/>
+      <details key="constraints.validation.error" value="NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityMoodCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance"/>
       <details key="constraints.validation.warning" value="NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity"/>
       <details key="classCode" value="SPLY"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
     <eOperations name="NonMedicinalSupplyActivityProductInstanceTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -3401,6 +3421,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="NonMedicinalSupplyActivityClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="NonMedicinalSupplyActivityMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4680,13 +4709,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.13"/>
-      <details key="constraints.validation.error" value="ProcedureActivityObservationTemplateId ProcedureActivityObservationReferenceValue ProcedureActivityObservationEncounterInversion ProcedureActivityObservationServiceDeliveryLocationTypeCode ProcedureActivityObservationInstructionsInversion ProcedureActivityObservationClassCode ProcedureActivityObservationId ProcedureActivityObservationCode ProcedureActivityObservationStatusCode ProcedureActivityObservationValue"/>
+      <details key="constraints.validation.error" value="ProcedureActivityObservationTemplateId ProcedureActivityObservationReferenceValue ProcedureActivityObservationEncounterInversion ProcedureActivityObservationServiceDeliveryLocationTypeCode ProcedureActivityObservationInstructionsInversion ProcedureActivityObservationClassCode ProcedureActivityObservationMoodCode ProcedureActivityObservationId ProcedureActivityObservationCode ProcedureActivityObservationStatusCode ProcedureActivityObservationValue"/>
       <details key="constraints.validation.warning" value="ProcedureActivityObservationCodeCodeSystems ProcedureActivityObservationCodeOriginalText ProcedureActivityObservationOriginalTextReferenceValue ProcedureActivityObservationEffectiveTime ProcedureActivityObservationTargetSiteCode ProcedureActivityObservationPerformer"/>
       <details key="classCode" value="OBS"/>
       <details key="targetSiteCode.codeSystem" value="2.16.840.1.113883.6.96"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="constraints.validation.info" value="ProcedureActivityObservationPriorityCode ProcedureActivityObservationMethodCode ProcedureActivityObservationServiceDeliveryLocation ProcedureActivityObservationProcedureEncounter ProcedureActivityObservationInstructions ProcedureActivityObservationIndication ProcedureActivityObservationMedicationActivity"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
     </eAnnotations>
     <eOperations name="ProcedureActivityObservationCodeCodeSystems" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -4763,6 +4790,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureActivityObservationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureActivityObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4909,12 +4945,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityAct" eSuperTypes="urn:hl7-org:v3#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.12"/>
-      <details key="constraints.validation.error" value="ProcedureActivityActTemplateId ProcedureActivityActReferenceValue ProcedureActivityActEncounterInversion ProcedureActivityActServiceDeliveryLocationTypeCode ProcedureActivityActInstructionsInversion ProcedureActivityActClassCode ProcedureActivityActId ProcedureActivityActCode ProcedureActivityActStatusCode"/>
+      <details key="constraints.validation.error" value="ProcedureActivityActTemplateId ProcedureActivityActReferenceValue ProcedureActivityActEncounterInversion ProcedureActivityActServiceDeliveryLocationTypeCode ProcedureActivityActInstructionsInversion ProcedureActivityActClassCode ProcedureActivityActMoodCode ProcedureActivityActId ProcedureActivityActCode ProcedureActivityActStatusCode"/>
       <details key="constraints.validation.warning" value="ProcedureActivityActCodeCodeSystems ProcedureActivityActCodeOriginalText ProcedureActivityActOriginalTextReferenceValue ProcedureActivityActEffectiveTime ProcedureActivityActPerformer"/>
       <details key="classCode" value="ACT"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="constraints.validation.info" value="ProcedureActivityActPriorityCode ProcedureActivityActServiceDeliveryLocation ProcedureActivityActProcedureEncounter ProcedureActivityActInstructions ProcedureActivityActIndication ProcedureActivityActMedicationActivity"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
     <eOperations name="ProcedureActivityActCodeCodeSystems" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -4989,6 +5023,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureActivityActClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ProcedureActivityActMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5228,17 +5271,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="urn:hl7-org:v3#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="moodCode.displayName" value="Event"/>
       <details key="statusCode.code" value="completed"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1"/>
-      <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation"/>
-      <details key="moodCode.code" value="EVN"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation"/>
       <details key="constraints.validation.warning" value="ResultOrganizerCodeValue ResultOrganizerClassCodeValue"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="ResultOrganizerCodeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -5259,6 +5296,24 @@
       </eParameters>
     </eOperations>
     <eOperations name="ResultOrganizerTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultOrganizerClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultOrganizerMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5308,19 +5363,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="moodCode.displayName" value="Event"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
-      <details key="classCode.displayName" value="Observation"/>
-      <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="constraints.validation.info" value="ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode"/>
       <details key="statusCode.code" value="completed"/>
-      <details key="moodCode.code" value="EVN"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue"/>
       <details key="constraints.validation.warning" value="ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value="OBS"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="classCode" value="OBS"/>
+      <details key="constraints.validation.info" value="ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode"/>
+      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="ResultObservationTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -5368,6 +5417,24 @@
       </eParameters>
     </eOperations>
     <eOperations name="ResultObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultObservationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ResultObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5586,18 +5653,16 @@
       <details key="statusCode.code" value="completed"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.48"/>
-      <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceExternalDocument"/>
+      <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceExternalDocument"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
-      <details key="classCode" value="OBS"/>
       <details key="constraints.validation.warning" value="AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleTelecom"/>
-      <details key="moodCode" value="EVN"/>
+      <details key="classCode" value="OBS"/>
       <details key="constraints.validation.info" value="AdvanceDirectiveObservationReferenceExternalDocumentText"/>
+      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationReference">
-      <details key="typeCode.codeSystemName" value="HL7ActRelationshipType"/>
-      <details key="constraints.validation.error" value="ReferenceExternalDocument"/>
-      <details key="typeCode.codeSystem" value="2.16.840.1.113883.5.1002"/>
-      <details key="typeCode.code" value="REFR"/>
+      <details key="constraints.validation.error" value="ReferenceTypeCode ReferenceExternalDocument"/>
+      <details key="typeCode" value="REFR"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationReferenceExternalDocument">
       <details key="constraints.validation.error" value="ExternalDocumentId"/>
@@ -5831,6 +5896,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="AdvanceDirectiveObservationReferenceExternalDocumentText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AdvanceDirectiveObservationReferenceTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -6554,13 +6628,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationActivity" eSuperTypes="urn:hl7-org:v3#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.52"/>
-      <details key="constraints.validation.error" value="ImmunizationActivityTemplateId ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityPreconditionTypeCode ImmunizationActivityClassCode ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd ImmunizationActivityConsumable"/>
+      <details key="constraints.validation.error" value="ImmunizationActivityTemplateId ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityPreconditionTypeCode ImmunizationActivityClassCode ImmunizationActivityMoodCode ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityNegationInd ImmunizationActivityConsumable"/>
       <details key="classCode" value="SBADM"/>
       <details key="constraints.validation.warning" value="ImmunizationActivityTextReference ImmunizationActivityDoseQuantityUnit ImmunizationActivityDoseQuantity ImmunizationActivityText ImmunizationActivityPerformer"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
       <details key="constraints.validation.info" value="ImmunizationActivityCode ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCode ImmunizationActivityDrugVehicle ImmunizationActivityIndication ImmunizationActivityInstructions ImmunizationActivityMedicationDispense ImmunizationActivityReactionObservation ImmunizationActivityPrecondition ImmunizationActivityImmunizationRefusalReason ImmunizationActivityMedicationSupplyOrder"/>
       <details key="negationInd" value="false"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivityConsumable">
       <details key="constraints.validation.error" value="ConsumableImmunizationMedicationInformation"/>
@@ -6620,6 +6692,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="ImmunizationActivityClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ImmunizationActivityMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7090,10 +7171,10 @@
       <details key="statusCode.code" value="completed"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.61"/>
-      <details key="constraints.validation.error" value="PolicyActivityTemplateId PolicyActivityClassCode PolicyActivityId PolicyActivityMoodCode PolicyActivityStatusCode PolicyActivityAuthorizationActivity PolicyActivityPayer PolicyActivityGuarantor PolicyActivityCoverage PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerTemplateId PolicyActivityPayerTypeCode PolicyActivityPayerPayerAssignedEntity PolicyActivityGuarantorTime PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageTypeCode PolicyActivityCoverageCoverageRole PolicyActivityHolderHolderRoleId PolicyActivityHolderTypeCode PolicyActivityHolderHolderRole"/>
+      <details key="constraints.validation.error" value="PolicyActivityTemplateId PolicyActivityClassCode PolicyActivityId PolicyActivityMoodCode PolicyActivityStatusCode PolicyActivityAuthorizationActivity PolicyActivityPayer PolicyActivityGuarantor PolicyActivityCoverage PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerTemplateId PolicyActivityPayerTypeCode PolicyActivityPayerPayerAssignedEntity PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageTypeCode PolicyActivityCoverageCoverageRole PolicyActivityHolderHolderRoleId PolicyActivityHolderTypeCode PolicyActivityHolderHolderRole"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="classCode" value="ACT"/>
-      <details key="constraints.validation.warning" value="PolicyActivityCode PolicyActivityHolder PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityPayerOrganization PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivityCoverageTime PolicyActivityHolderHolderRoleAddr"/>
+      <details key="constraints.validation.warning" value="PolicyActivityCode PolicyActivityHolder PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityPayerOrganization PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom PolicyActivityGuarantorTime PolicyActivityGuarantorTypeCode PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity PolicyActivityCoverageTime PolicyActivityHolderHolderRoleAddr"/>
       <details key="moodCode" value="EVN"/>
       <details key="constraints.validation.info" value="PolicyActivityPayerPayerAssignedEntityAddr PolicyActivityPayerPayerAssignedEntityTelecom PolicyActivityHolderTime"/>
     </eAnnotations>
@@ -7115,13 +7196,14 @@
       <details key="constraints.validation.warning" value="PayerOrganizationName"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityGuarantor">
-      <details key="constraints.validation.error" value="GuarantorTime GuarantorGuarantorAssignedEntity"/>
-      <details key="constraints.validation.warning" value="GuarantorGuarantorAssignedEntityCode GuarantorGuarantorAssignedEntityAddr GuarantorGuarantorAssignedEntityTelecom"/>
+      <details key="constraints.validation.error" value="GuarantorGuarantorAssignedEntity"/>
+      <details key="constraints.validation.warning" value="GuarantorTime GuarantorTypeCode GuarantorGuarantorAssignedEntityPersonNameAndOrOrgName GuarantorGuarantorAssignedEntityCode GuarantorGuarantorAssignedEntityAddr GuarantorGuarantorAssignedEntityTelecom"/>
+      <details key="typeCode" value="PRF"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityGuarantorGuarantorAssignedEntity">
       <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
       <details key="code.codeSystemName" value="RoleCode"/>
-      <details key="constraints.validation.warning" value="GuarantorAssignedEntityCode GuarantorAssignedEntityAddr GuarantorAssignedEntityTelecom"/>
+      <details key="constraints.validation.warning" value="GuarantorAssignedEntityPersonNameAndOrOrgName GuarantorAssignedEntityCode GuarantorAssignedEntityAddr GuarantorAssignedEntityTelecom"/>
       <details key="code.code" value="GUAR"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityCoverage">
@@ -7329,6 +7411,16 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="PolicyActivityGuarantorGuarantorAssignedEntityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -7357,6 +7449,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="PolicyActivityGuarantorTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PolicyActivityGuarantorTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7617,15 +7718,28 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityAct" eSuperTypes="urn:hl7-org:v3#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.39"/>
-      <details key="classCode.displayName" value=""/>
-      <details key="constraints.validation.error" value="PlanOfCareActivityActTemplateId PlanOfCareActivityActId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivityActTemplateId PlanOfCareActivityActClassCode PlanOfCareActivityActMoodCode PlanOfCareActivityActId"/>
+      <details key="classCode" value="ACT"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivityActTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityActClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityActMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7647,14 +7761,28 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityEncounter" eSuperTypes="urn:hl7-org:v3#//Encounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.40"/>
-      <details key="constraints.validation.error" value="PlanOfCareActivityEncounterTemplateId PlanOfCareActivityEncounterId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivityEncounterTemplateId PlanOfCareActivityEncounterClassCode PlanOfCareActivityEncounterMoodCode PlanOfCareActivityEncounterId"/>
+      <details key="classCode" value="ENC"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivityEncounterTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityEncounterClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityEncounterMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7676,15 +7804,28 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.1.25"/>
-      <details key="classCode.displayName" value=""/>
-      <details key="constraints.validation.error" value="PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationClassCode PlanOfCareActivityObservationMoodCode PlanOfCareActivityObservationId"/>
+      <details key="classCode" value="OBS"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivityObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityObservationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7706,14 +7847,28 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityProcedure" eSuperTypes="urn:hl7-org:v3#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.41"/>
-      <details key="constraints.validation.error" value="PlanOfCareActivityProcedureTemplateId PlanOfCareActivityProcedureId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivityProcedureTemplateId PlanOfCareActivityProcedureClassCode PlanOfCareActivityProcedureMoodCode PlanOfCareActivityProcedureId"/>
+      <details key="classCode" value="PROC"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivityProcedureTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityProcedureClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivityProcedureMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7736,15 +7891,28 @@
       eSuperTypes="urn:hl7-org:v3#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.1.25"/>
-      <details key="classCode.displayName" value=""/>
-      <details key="constraints.validation.error" value="PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="classCode.code" value=""/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationClassCode PlanOfCareActivitySubstanceAdministrationMoodCode PlanOfCareActivitySubstanceAdministrationId"/>
+      <details key="classCode" value="SBADM"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivitySubstanceAdministrationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivitySubstanceAdministrationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivitySubstanceAdministrationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -7766,13 +7934,28 @@
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivitySupply" eSuperTypes="urn:hl7-org:v3#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.43"/>
-      <details key="constraints.validation.error" value="PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyId"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.6"/>
-      <details key="classCode.codeSystemName" value="HL7ActClass"/>
-      <details key="moodCode.codeSystem" value="2.16.840.1.113883.5.1001"/>
-      <details key="moodCode.codeSystemName" value="HL7ActMood"/>
+      <details key="constraints.validation.error" value="PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyClassCode PlanOfCareActivitySupplyMoodCode PlanOfCareActivitySupplyId"/>
+      <details key="classCode" value="SPLY"/>
     </eAnnotations>
     <eOperations name="PlanOfCareActivitySupplyTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivitySupplyClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="PlanOfCareActivitySupplyMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -11000,12 +11183,18 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservationParticipant" eSuperTypes="urn:hl7-org:v3#//Participant2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="typeCode.displayName" value="Consumable"/>
-      <details key="typeCode.codeSystemName" value="HL7ParticipationType"/>
-      <details key="constraints.validation.error" value="AllergyObservationParticipantParticipantRole"/>
-      <details key="typeCode.codeSystem" value="2.16.840.1.113883.5.90"/>
-      <details key="typeCode.code" value="CSM"/>
+      <details key="constraints.validation.error" value="AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
+      <details key="typeCode" value="CSM"/>
     </eAnnotations>
+    <eOperations name="AllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="AllergyObservationParticipantParticipantRole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -11018,12 +11207,18 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservationParticipantRole" eSuperTypes="urn:hl7-org:v3#//ParticipantRole">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="classCode.displayName" value="Manufactured Product"/>
-      <details key="constraints.validation.error" value="AllergyObservationParticipantRolePlayingEntity"/>
-      <details key="classCode.codeSystem" value="2.16.840.1.113883.5.110"/>
-      <details key="classCode.codeSystemName" value="HL7RoleClass"/>
-      <details key="classCode.code" value="MANU"/>
+      <details key="constraints.validation.error" value="AllergyObservationParticipantRoleClassCode AllergyObservationParticipantRolePlayingEntity"/>
+      <details key="classCode" value="MANU"/>
     </eAnnotations>
+    <eOperations name="AllergyObservationParticipantRoleClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="AllergyObservationParticipantRolePlayingEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -13545,9 +13740,8 @@
       <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventAnyAssistantsAsSecondary ServiceEventCode ServiceEventEffectiveTime"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer">
-      <details key="functionCode.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="constraints.validation.error" value="PrimaryPerformerFunctionCode PrimaryPerformerTypeCode"/>
-      <details key="functionCode.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="functionCode.codeSystemName" value=""/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -13885,8 +14079,7 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer">
       <details key="constraints.validation.error" value="PrimaryPerformerFunctionCode"/>
-      <details key="functionCode.codeSystem" value="2.16.840.1.113883.6.101"/>
-      <details key="functionCode.codeSystemName" value="NUCCHealthCareProviderTaxonomy"/>
+      <details key="functionCode.codeSystemName" value=""/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">

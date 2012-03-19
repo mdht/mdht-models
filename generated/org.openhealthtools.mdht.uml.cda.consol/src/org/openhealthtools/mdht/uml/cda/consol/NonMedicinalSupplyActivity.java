@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' classCode='SPLY' moodCode.codeSystem='2.16.840.1.113883.5.1001' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.50' constraints.validation.error='NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityMoodCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance' constraints.validation.warning='NonMedicinalSupplyActivityEffectiveTime NonMedicinalSupplyActivityQuantity' classCode='SPLY'"
  * @generated
  */
 public interface NonMedicinalSupplyActivity extends Supply {
@@ -61,6 +61,21 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and 
+	 * let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in 
+	 * value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and \r\nlet value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in \r\nvalue = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT'"
+	 * @generated
+	 */
+	boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

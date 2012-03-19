@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivitySubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' classCode.displayName='' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationClassCode PlanOfCareActivitySubstanceAdministrationMoodCode PlanOfCareActivitySubstanceAdministrationId' classCode='SBADM'"
  * @generated
  */
 public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdministration {
@@ -36,6 +36,32 @@ public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdmi
 	 */
 	boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClass)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClass)'"
+	 * @generated
+	 */
+	boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood)'"
+	 * @generated
+	 */
+	boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

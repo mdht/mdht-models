@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' moodCode.code='EVN' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' moodCode='EVN'"
  * @generated
  */
 public interface ResultOrganizer extends Organizer {
@@ -67,6 +67,34 @@ public interface ResultOrganizer extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::x_ActClassDocumentEntryOrganizer)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::x_ActClassDocumentEntryOrganizer)'"
+	 * @generated
+	 */
+	boolean validateResultOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::ActMood) and 
+	 * let value : vocab::ActMood = self.moodCode.oclAsType(vocab::ActMood) in 
+	 * value = vocab::ActMood::EVN
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::ActMood) and \r\nlet value : vocab::ActMood = self.moodCode.oclAsType(vocab::ActMood) in \r\nvalue = vocab::ActMood::EVN'"
+	 * @generated
+	 */
+	boolean validateResultOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -81,12 +109,12 @@ public interface ResultOrganizer extends Organizer {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

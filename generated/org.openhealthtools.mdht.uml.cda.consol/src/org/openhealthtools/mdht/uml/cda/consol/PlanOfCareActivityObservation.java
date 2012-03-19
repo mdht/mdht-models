@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' classCode.displayName='' constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationId' classCode.codeSystem='2.16.840.1.113883.5.6' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationClassCode PlanOfCareActivityObservationMoodCode PlanOfCareActivityObservationId' classCode='OBS'"
  * @generated
  */
 public interface PlanOfCareActivityObservation extends Observation {
@@ -35,6 +35,32 @@ public interface PlanOfCareActivityObservation extends Observation {
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClassObservation)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClassObservation)'"
+	 * @generated
+	 */
+	boolean validatePlanOfCareActivityObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation)'"
+	 * @generated
+	 */
+	boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

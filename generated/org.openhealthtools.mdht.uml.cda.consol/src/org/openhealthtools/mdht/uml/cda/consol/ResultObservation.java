@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode.displayName='Event' templateId.root='2.16.840.1.113883.10.20.22.4.2' classCode.displayName='Observation' constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' classCode.codeSystem='2.16.840.1.113883.5.6' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' statusCode.code='completed' moodCode.code='EVN' constraints.validation.warning='ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' classCode.codeSystemName='HL7ActClass' moodCode.codeSystem='2.16.840.1.113883.5.1001' classCode.code='OBS' moodCode.codeSystemName='HL7ActMood'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.2' constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' constraints.validation.warning='ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' classCode='OBS' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' moodCode='EVN'"
  * @generated
  */
 public interface ResultObservation extends Observation {
@@ -105,6 +105,36 @@ public interface ResultObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClassObservation) and 
+	 * let value : vocab::ActClassObservation = self.classCode.oclAsType(vocab::ActClassObservation) in 
+	 * value = vocab::ActClassObservation::OBS
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClassObservation) and \r\nlet value : vocab::ActClassObservation = self.classCode.oclAsType(vocab::ActClassObservation) in \r\nvalue = vocab::ActClassObservation::OBS'"
+	 * @generated
+	 */
+	boolean validateResultObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::ActMood) and 
+	 * let value : vocab::ActMood = self.moodCode.oclAsType(vocab::ActMood) in 
+	 * value = vocab::ActMood::EVN
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::ActMood) and \r\nlet value : vocab::ActMood = self.moodCode.oclAsType(vocab::ActMood) in \r\nvalue = vocab::ActMood::EVN'"
+	 * @generated
+	 */
+	boolean validateResultObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -145,12 +175,12 @@ public interface ResultObservation extends Observation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
