@@ -261,9 +261,9 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <generalization xmi:id="_rMAUoG65EeGeVrQbtyMiPg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_s37D4G65EeGeVrQbtyMiPg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_s38SAG65EeGeVrQbtyMiPg">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uBUU4G65EeGeVrQbtyMiPg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uBUU4W65EeGeVrQbtyMiPg" value="1"/>
+      <ownedAttribute xmi:id="_Feu6EHK2EeGig5KF4CgPyw" name="medicationInformation" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_FewvQHK2EeGig5KF4CgPyw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GvSjAHK2EeGig5KF4CgPyw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GvSjAXK2EeGig5KF4CgPyw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -1343,10 +1343,10 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_NJy-AFmsEeGRqYkwoeymcA" severity="INFO" base_Association="_KTbN0FmsEeGRqYkwoeymcA">
     <ruleId>CONF:8156</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_s38SAG65EeGeVrQbtyMiPg" memberEnd="_s37D4G65EeGeVrQbtyMiPg _s385EG65EeGeVrQbtyMiPg">
-    <ownedEnd xmi:id="_s385EG65EeGeVrQbtyMiPg" type="_ou3j0G65EeGeVrQbtyMiPg" association="_s38SAG65EeGeVrQbtyMiPg"/>
+  <uml:Association xmi:id="_FewvQHK2EeGig5KF4CgPyw" memberEnd="_Feu6EHK2EeGig5KF4CgPyw _FewvQXK2EeGig5KF4CgPyw">
+    <ownedEnd xmi:id="_FewvQXK2EeGig5KF4CgPyw" type="_ou3j0G65EeGeVrQbtyMiPg" association="_FewvQHK2EeGig5KF4CgPyw"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_v4B-4G65EeGeVrQbtyMiPg" base_Association="_s38SAG65EeGeVrQbtyMiPg">
+  <CDA:AssociationValidation xmi:id="_Hfl-kHK2EeGig5KF4CgPyw" base_Association="_FewvQHK2EeGig5KF4CgPyw">
     <ruleId>CONF:7521</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
