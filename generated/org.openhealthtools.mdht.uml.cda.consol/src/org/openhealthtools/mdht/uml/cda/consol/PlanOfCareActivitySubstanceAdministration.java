@@ -48,7 +48,8 @@ public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdmi
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::ActClass)'"
 	 * @generated
 	 */
-	boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +62,8 @@ public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdmi
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood)'"
 	 * @generated
 	 */
-	boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

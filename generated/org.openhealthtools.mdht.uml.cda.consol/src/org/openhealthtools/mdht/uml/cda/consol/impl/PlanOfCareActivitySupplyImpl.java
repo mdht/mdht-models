@@ -92,7 +92,7 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * @generated
 	 */
 	public PlanOfCareActivitySupply init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivitySupplyImpl

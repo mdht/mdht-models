@@ -93,20 +93,18 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntity"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntity"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -151,20 +149,19 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntityClassCode"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationHasPlayingEntityClassCode"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -209,20 +206,18 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTemplateId"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTemplateId"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -247,7 +242,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -261,27 +256,26 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateServiceDeliveryLocationClassCode(ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateServiceDeliveryLocationClassCode(ServiceDeliveryLocation serviceDeliveryLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationClassCode"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationClassCode"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -296,9 +290,9 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateServiceDeliveryLocationCode(ServiceDeliveryLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Code</em>}' invariant operation.
@@ -330,20 +324,18 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationCode"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationCode"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -388,20 +380,18 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationAddr"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationAddr"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}
@@ -446,20 +436,18 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 			helper.setContext(ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION);
 			try {
 				VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(serviceDeliveryLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			serviceDeliveryLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM,
-						 ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTelecom"),
-						 new Object [] { serviceDeliveryLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM,
+					ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationTelecom"),
+					new Object[] { serviceDeliveryLocation }));
 			}
 			return false;
 		}

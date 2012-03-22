@@ -57,7 +57,8 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureClassCode(this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +96,7 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * @generated
 	 */
 	public PlanOfCareActivityProcedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivityProcedureImpl

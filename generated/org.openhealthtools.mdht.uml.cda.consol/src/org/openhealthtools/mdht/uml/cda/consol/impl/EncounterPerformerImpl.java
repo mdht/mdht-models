@@ -54,7 +54,8 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	 */
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntity(this, diagnostics, context);
+		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,8 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	 */
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntityCode(this, diagnostics, context);
+		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,7 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	 * @generated
 	 */
 	public EncounterPerformer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncounterPerformerImpl

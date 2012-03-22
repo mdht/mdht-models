@@ -69,7 +69,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -79,7 +80,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -247,7 +249,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2ClassCode(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2ClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -257,7 +260,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -277,7 +281,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -287,7 +292,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -297,7 +303,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Id(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Id(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -307,7 +314,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Location(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Location(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -453,7 +461,7 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	@Override
 	public ProgressNote init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProgressNoteImpl

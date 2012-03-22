@@ -83,7 +83,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +94,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +105,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -253,7 +256,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteChiefComplaintAndReasonForVisitSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -301,7 +305,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteMedicationsSectionEntriesOptional(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteMedicationsSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -349,7 +354,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteProcedureEstimatedBloodLossSection(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteProcedureEstimatedBloodLossSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -435,7 +441,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -445,7 +452,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -455,7 +463,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -465,7 +474,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Code(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Code(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -475,7 +485,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Location(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Location(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -485,7 +496,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -495,7 +507,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -505,7 +518,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteProviderAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteProviderAssociatedEntityAssociatedPerson(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteProviderAssociatedEntityAssociatedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -777,7 +791,7 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	@Override
 	public ProcedureNote init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureNoteImpl

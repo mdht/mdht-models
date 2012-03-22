@@ -57,7 +57,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +87,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +106,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +117,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +127,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,7 +138,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -149,7 +157,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public NonMedicinalSupplyActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // NonMedicinalSupplyActivityImpl

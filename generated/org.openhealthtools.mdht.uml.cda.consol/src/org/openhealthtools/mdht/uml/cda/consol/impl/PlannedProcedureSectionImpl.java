@@ -95,7 +95,8 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 */
 	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(this, diagnostics, context);
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +114,7 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * @generated
 	 */
 	public PlannedProcedureSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlannedProcedureSectionImpl
