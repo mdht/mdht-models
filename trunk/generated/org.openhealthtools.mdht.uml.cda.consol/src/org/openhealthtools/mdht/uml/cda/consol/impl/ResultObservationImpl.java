@@ -210,7 +210,7 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * @generated
 	 */
 	public ResultObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ResultObservationImpl

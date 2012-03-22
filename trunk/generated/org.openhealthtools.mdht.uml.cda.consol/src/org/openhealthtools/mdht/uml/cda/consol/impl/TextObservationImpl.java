@@ -65,7 +65,7 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * @generated
 	 */
 	public TextObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // TextObservationImpl

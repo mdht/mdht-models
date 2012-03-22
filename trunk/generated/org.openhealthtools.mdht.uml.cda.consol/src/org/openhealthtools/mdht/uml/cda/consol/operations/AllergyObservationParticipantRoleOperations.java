@@ -58,9 +58,9 @@ public class AllergyObservationParticipantRoleOperations extends ParticipantRole
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::RoleClassRoot) and "+
-"let value : vocab::RoleClassRoot = self.classCode.oclAsType(vocab::RoleClassRoot) in "+
-"value = vocab::RoleClassRoot::MANU";
+	protected static final String VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::RoleClassRoot) and "
+			+ "let value : vocab::RoleClassRoot = self.classCode.oclAsType(vocab::RoleClassRoot) in "
+			+ "value = vocab::RoleClassRoot::MANU";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyObservationParticipantRoleClassCode(AllergyObservationParticipantRole, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Role Class Code</em>}' invariant operation.
@@ -70,7 +70,7 @@ public class AllergyObservationParticipantRoleOperations extends ParticipantRole
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -86,27 +86,29 @@ public class AllergyObservationParticipantRoleOperations extends ParticipantRole
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAllergyObservationParticipantRoleClassCode(AllergyObservationParticipantRole allergyObservationParticipantRole, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAllergyObservationParticipantRoleClassCode(
+			AllergyObservationParticipantRole allergyObservationParticipantRole, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PARTICIPANT_ROLE);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationParticipantRole)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationParticipantRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PARTICIPANT_ROLE__ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationParticipantRoleClassCode"),
-						 new Object [] { allergyObservationParticipantRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PARTICIPANT_ROLE__ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationParticipantRoleClassCode"),
+					new Object[] { allergyObservationParticipantRole }));
 			}
 			return false;
 		}
@@ -152,20 +154,20 @@ public class AllergyObservationParticipantRoleOperations extends ParticipantRole
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION_PARTICIPANT_ROLE);
 			try {
 				VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyObservationParticipantRole)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyObservationParticipantRole)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGY_OBSERVATION_PARTICIPANT_ROLE__ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("AllergyObservationParticipantRolePlayingEntity"),
-						 new Object [] { allergyObservationParticipantRole }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGY_OBSERVATION_PARTICIPANT_ROLE__ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY,
+					ConsolPlugin.INSTANCE.getString("AllergyObservationParticipantRolePlayingEntity"),
+					new Object[] { allergyObservationParticipantRole }));
 			}
 			return false;
 		}
