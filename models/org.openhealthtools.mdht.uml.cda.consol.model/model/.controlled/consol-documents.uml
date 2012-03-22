@@ -286,8 +286,8 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             </ownedAttribute>
             <ownedAttribute xmi:id="_nLKckSymEeGMXrZ0DiQwGg" name="proficiencyLevelCode" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nLKckiymEeGMXrZ0DiQwGg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nLKckyymEeGMXrZ0DiQwGg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3MYVIHK9EeGig5KF4CgPyw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3MYVIXK9EeGig5KF4CgPyw"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mYRPcEo5Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_ZGMo0CytEeGMXrZ0DiQwGg" name="modeCode" visibility="private" aggregation="composite">
@@ -4511,4 +4511,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:CodeSystemConstraint xmi:id="_6c9LwG-hEeG_IMhuXZR2Eg" base_Property="_93hfwCymEeGMXrZ0DiQwGg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
+  <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
 </xmi:XMI>
