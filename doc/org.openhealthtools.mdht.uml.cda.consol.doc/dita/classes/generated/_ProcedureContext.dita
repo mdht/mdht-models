@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Context - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.6.2.5</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.5"/>
+</prolog>
+<body>
+<section id="description">
+<p>The ServiceEvent Procedure Context of the document header may be overridden in the CDA structured body if there is a need to refer to multiple imaging procedures or acts. The selection of the Procedure or Act entry from the clinical statement choice box depends on the nature of the imaging service that has been performed. The Procedure entry shall be used for image-guided interventions and minimal invasive imaging services, whereas the Act entry shall be used for diagnostic imaging services.</p>
+</section>
+<ol id="conformance">
+<li></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is x_ActClassDocumentEntryAct
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.2.5"/>
+  <id root="1113383581"/>
+  <code code="31705601"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Context</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.6.2.5</tt>]</p>
+</body>
+</topic>

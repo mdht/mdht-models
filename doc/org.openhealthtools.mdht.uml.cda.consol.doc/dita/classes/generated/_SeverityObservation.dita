@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Severity Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.8"/>
+</prolog>
+<body>
+<section id="description">
+<p>This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy Obervation, Reaction Observation or both. When the Severity Observation is associated directly with an Allergy it characterizes the Allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a Reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7345)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7346)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="SEV" </tt><i>Severity observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:7349)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7350)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7352)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.8 <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7356)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.78 <xref href="../../terminology/ObservationInterpretationHL7.dita">Observation Interpretation (HL7)</xref></tt><b> DYNAMIC</b> (CONF:9117, CONF:9118)
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7351)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7378)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7345)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7346)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="SEV" </tt><i>Severity observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:7349)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7350)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7352)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.8 <xref href="../../terminology/ProblemSeverity.dita">Problem Severity</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7356)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.78 <xref href="../../terminology/ObservationInterpretationHL7.dita">Observation Interpretation (HL7)</xref></tt><b> DYNAMIC</b> (CONF:9117, CONF:9118)
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7351)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7378)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+  <id root="311199132"/>
+  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="84091941"/>
+  <interpretationCode code="Value"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Severity Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.8</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergy Observation Playing Entity - conformance rules</title>
+<shortdesc id="shortdesc">[PlayingEntity: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>PlayingEntity</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:7407)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7419)
+</li>
+<li>In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:7421)</li>
+<li>In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:10083)</li>
+<li>In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7424)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:7425)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li>
+<li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:7431)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:7407)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7419)
+</li>
+<li>In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:7421)</li>
+<li>In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:10083)</li>
+<li>In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7424)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:7425)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li>
+<li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:7431)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<playingentity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MMAT">
+  <code code="Value"/>
+</playingentity>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergy Observation Playing Entity</ph></p>
+<p id="shortdesc">[PlayingEntity: templateId <tt>null</tt>]</p>
+</body>
+</topic>

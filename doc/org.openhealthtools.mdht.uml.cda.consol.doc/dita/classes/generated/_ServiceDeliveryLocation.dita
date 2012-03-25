@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Service Delivery Location - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.32</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.32"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>) (CONF:7758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20275 <xref href="../../terminology/HealthcareServiceLocation.dita">HealthcareServiceLocation</xref></tt><b> DYNAMIC</b> (CONF:7759)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:7760)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt> (CONF:7761)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] playingEntity (CONF:7762)</li>
+<li>playingEntity, if present, <b>SHALL</b> contain exactly one [1..1] @classCode="PLC" (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:7763)</li>
+<li>@classCode <b>MAY</b> contain zero or one [0..1] name (CONF:7764)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>) (CONF:7758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20275 <xref href="../../terminology/HealthcareServiceLocation.dita">HealthcareServiceLocation</xref></tt><b> DYNAMIC</b> (CONF:7759)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:7760)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt> (CONF:7761)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] playingEntity (CONF:7762)</li>
+<li>playingEntity, if present, <b>SHALL</b> contain exactly one [1..1] @classCode="PLC" (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:7763)</li>
+<li>@classCode <b>MAY</b> contain zero or one [0..1] name (CONF:7764)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SDLOC">
+  <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+  <id root="643131575"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <addr/>
+  <telecom/>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Service Delivery Location</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.32</tt>]</p>
+</body>
+</topic>

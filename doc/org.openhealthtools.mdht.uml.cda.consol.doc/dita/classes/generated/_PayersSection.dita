@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Payers Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.18</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.18"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+The Payers section contains data on the patient s payers, whether a  third party  insurance, self-pay, 
+other payer or guarantor, or some combination of payers, and is used to define which entity is the
+ responsible fiduciary for the financial aspects of a patient s care.
+</p>
+<p>
+Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from
+ that payer should be included. Authorization information that can be used to define pertinent referral, 
+authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for 
+the patient or provider, or both should be included. At a minimum, the patient s pertinent current 
+payment sources should be listed.
+</p>
+<p>
+The sources of payment are represented as a Coverage Activity, which identifies all of the insurance 
+policies or government or other programs that cover some or all of the patient s healthcare expenses. 
+The policies or programs are sequenced by preference. The Coverage Activity has a sequence number 
+that represents the preference order. Each policy or program identifies the covered party 
+with respect to the payer, so that the identifiers can be recorded.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payers</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7925)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7926)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7927)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>coverageActivity</b></tt> (CONF:7959, CONF:8905)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.60</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payers</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7925)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7926)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7927)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>coverageActivity</b></tt> (CONF:7959, CONF:8905)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.60</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
+  <id root="1450106342"/>
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/>
+  <title/>
+  <text/>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
+      <id root="1890027577"/>
+      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
+          <id root="1154817878"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.1.19"/>
+              <id root="1506095268"/>
+              <code code="125908313"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Payers Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.18</tt>]</p>
+</body>
+</topic>

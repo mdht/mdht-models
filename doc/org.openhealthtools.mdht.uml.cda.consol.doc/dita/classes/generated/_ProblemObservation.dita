@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problem Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.4"/>
+</prolog>
+<body>
+<section id="description">
+<p>A problem is a clinical statement that a clinician has noted. In health care it is a condition that requires monitoring or diagnostic, therapeutic, or educational action. It also refers to any unmet or partially met basic human need.</p>
+<p>A Problem Observation is required to be wrapped in an act wrapper in locations such as the Problem Section, Allergies Section, and Hospital Discharge Diagnosis Section, where the type of problem needs to be identified or the condition tracked. A Problem Observation can be a valid "standalone" template instance in cases where a simple problem observation is to be sent.</p>
+<p>The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). NegationInd='true' is an acceptable way to make a clinical assertion that something did not occur, for example, "no diabetes".</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:9041)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9042)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10139)
+<ul><li>negationInd="true" SHALL be used to represent that the problem was not observed</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9043)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:9045)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9185)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:9049)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9050)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9058)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt> (CONF:9059)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.31</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemStatus</b></tt> (CONF:9063)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemStatus.dita">Problem Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>healthStatusObservation</b></tt> (CONF:9067)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../HealthStatusObservation.dita">Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.5</tt>)</li></ol></li>
+<li>The text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:9187)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:9188)</li>
+<li>onset date <b>SHALL</b> be recorded in the low element of the effectiveTime element when known (CONF:9051)</li>
+<li>resolution date <b>SHALL</b> be recorded in the high element of the effectiveTime element when known (CONF:9052)</li>
+<li>If the problem is known to be resolved, but the date of resolution is not known, then the high element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved (CONF:9053)</li>
+<li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:10141)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be �UNK�.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be �OTH� and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
+<li>entryRelationship with target entry Age Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9069)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:9041)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9042)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10139)
+<ul><li>negationInd="true" SHALL be used to represent that the problem was not observed</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9043)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:9045)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9185)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:9049)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9050)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9058)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt> (CONF:9059)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.31</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemStatus</b></tt> (CONF:9063)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemStatus.dita">Problem Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>healthStatusObservation</b></tt> (CONF:9067)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../HealthStatusObservation.dita">Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.5</tt>)</li></ol></li>
+<li>The text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:9187)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:9188)</li>
+<li>onset date <b>SHALL</b> be recorded in the low element of the effectiveTime element when known (CONF:9051)</li>
+<li>resolution date <b>SHALL</b> be recorded in the high element of the effectiveTime element when known (CONF:9052)</li>
+<li>If the problem is known to be resolved, but the date of resolution is not known, then the high element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved (CONF:9053)</li>
+<li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:10141)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be �UNK�.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be �OTH� and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
+<li>entryRelationship with target entry Age Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9069)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+  <id root="1187056504"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="633971586"/>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+      <id root="1256133473"/>
+      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1971305795"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+      <id root="1023947117"/>
+      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1513670651"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+      <id root="313872502"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1357883326"/>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.4</tt>]</p>
+</body>
+</topic>

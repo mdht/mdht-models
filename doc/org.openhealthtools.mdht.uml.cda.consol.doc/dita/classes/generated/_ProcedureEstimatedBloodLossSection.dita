@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Estimated Blood Loss Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.18.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.18.2.9"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Estimated Blood Loss section may be a subsection of another section such as the Procedure Description section. The Estimated Blood Loss section records the approximate amount of blood that the patient lost during the procedure or surgery. It may be an accurate quantitative amount, e.g., 250 milliliters, or it may be descriptive, e.g., "minimal" or "none".</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="59770-8" </tt><i>Procedure Estimated Blood Loss</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:8075)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8077)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8076)
+</li>
+<li>The Estimated Blood Loss section <b>SHALL</b> include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as "minimal" or "none" (CONF:8741)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="59770-8" </tt><i>Procedure Estimated Blood Loss</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:8075)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8076)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8077)
+</li>
+<li>The Estimated Blood Loss section <b>SHALL</b> include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as "minimal" or "none" (CONF:8741)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.18.2.9"/>
+  <id root="1848846314"/>
+  <code code="59770-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Estimated Blood Loss"/>
+  <title/>
+  <text/>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Estimated Blood Loss Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.18.2.9</tt>]</p>
+</body>
+</topic>

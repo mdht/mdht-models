@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History And Physical Note - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.3</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.1.3"/>
+</prolog>
+<body>
+<section id="description">
+<p>A History and Physical  Note is a medical report that documents the current and past conditions of the patient. It contains essential information that helps determine an individual's health status. 
+The first portion of the report is a current collection of organized information unique to an individual, typically supplied by the patient or their caregiver, about the current medical problem or the reason for the patient encounter. This information is followed by a description of any past or ongoing medical issues, including current medications and allergies. Information is also obtained about the patient's lifestyle, habits, and diseases among family members.
+The next portion of the report contains information obtained by physically examining the patient and gathering diagnostic information in the form of laboratory tests, imaging, or other diagnostic procedures. 
+The report ends with the clinician's assessment of the patient's situation and the intended plan to address those issues. 
+A History and Physical Examination is required upon hospital admission as well as before operative procedures. An initial evaluation in an ambulatory setting is often documented in the form of an History and Physical Note.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>) (CONF:9968)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 3. 2.16.840.1.113883.1.11.20.22 <xref href="../../terminology/HPDocumentType.dita">HPDocumentType</xref></tt><b> DYNAMIC</b> (CONF:5253)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>inFulfillmentOf</b></tt> (4., CONF:8336, CONF:8337)
+<ul><li>An inFulfillmentOf element records the prior orders that are fulfilled (in whole or part) by the service events described in this document. For example, the prior order might be a referral and this HP Note may be in partial fulfillment of that referral.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>componentOf</b></tt> (CONF:8338) <ol><li> This componentOf <b>SHALL</b> contain zero or one [0..1] <tt><b>encompassingEncounter</b></tt> (CONF:8339) <ol><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (ii., CONF:8341)</li><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (i., CONF:8340)</li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>location</b></tt>, where its type is CDA Location (CONF:8344)</li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>responsibleParty</b></tt> (iv., CONF:8345) <ol><li> This responsibleParty <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity (CONF:8348)</li><li> This responsibleParty The responsibleParty element, if present, <b>SHALL</b> contain an assignedEntity element which <b>SHALL</b> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8348)</li></ol> </li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>encounterParticipant</b></tt> (v., CONF:8342) <ol><li> This encounterParticipant <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity (CONF:8343)</li><li> This encounterParticipant The responsibleParty element, if present, <b>SHALL</b> contain an assignedEntity element which <b>SHALL</b> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8343)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>allergiesSectionEntriesOptional</b></tt> (CONF:9602)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergiesSectionEntriesOptional.dita">Allergies Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>assessmentSection</b></tt> (CONF:9605)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentSection.dita">Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>planOfCareSection</b></tt> (CONF:9607)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>assessmentAndPlanSection</b></tt> (CONF:9987)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentAndPlanSection.dita">Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>chiefComplaintSection</b></tt> (CONF:9611)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ChiefComplaintSection.dita">Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>chiefComplaintAndReasonForVisitSection</b></tt> (CONF:9613)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ChiefComplaintAndReasonForVisitSection.dita">Chief Complaint And Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.13</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>familyHistorySection</b></tt> (CONF:9615)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistorySection.dita">Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.15</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>generalStatusSection</b></tt> (CONF:9617)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../GeneralStatusSection.dita">General Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>historyOfPastIllnessSection</b></tt> (CONF:9619)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfPastIllnessSection.dita">History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>medicationsSectionEntriesOptional</b></tt> (CONF:9623)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationsSectionEntriesOptional.dita">Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>physicalExamSection</b></tt> (CONF:9625)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhysicalExamSection.dita">Physical Exam Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>reasonForVisitSection</b></tt> (CONF:9627)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonForVisitSection.dita">Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.12</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>resultsSectionEntriesOptional</b></tt> (CONF:9629)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultsSectionEntriesOptional.dita">Results Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>reviewOfSystemsSection</b></tt> (CONF:9631)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReviewOfSystemsSection.dita">Review Of Systems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>socialHistorySection</b></tt> (CONF:9633)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>historyOfPresentIllnessSection</b></tt> (CONF:9621)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfPresentIllnessSection.dita">History Of Present Illness Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>immunizationsSectionEntriesOptional</b></tt> (CONF:9637)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationsSectionEntriesOptional.dita">Immunizations Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemSectionEntriesOptional</b></tt> (CONF:9639)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>proceduresSectionEntriesOptional</b></tt> (CONF:9641)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>vitalSignsSectionEntriesOptional</b></tt> (CONF:9635)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsSectionEntriesOptional.dita">Vital Signs Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li></ol></li>
+<li><b>SHALL</b> include an Assessment and Plan Section, or an Assessment Section and a Plan Section (CONF:9986)</li>
+<li><b>SHALL NOT</b> include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</li>
+<li><b>SHALL</b> include a Chief Complaint and Reason for Visit Section, Chief Complaint Section, or a Reason for Visit Section (CONF:9642)</li>
+<li><b>SHALL NOT</b> include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section. (CONF:10057)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CONF:5249)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF:5361)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:5363)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 3. 2.16.840.1.113883.1.11.20.22 <xref href="../../terminology/HPDocumentType.dita">HPDocumentType</xref></tt><b> DYNAMIC</b> (CONF:5253)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:5254)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:5256)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.16926 <xref href="../../terminology/HL7BasicConfidentialityKind.dita">HL7 BasicConfidentialityKind</xref></tt><b> STATIC</b> (CONF:5259)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.11526 <xref href="../../terminology/Language.dita">Language</xref></tt><b> DYNAMIC</b> (CONF:5372)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>setId</b></tt> (CONF:5261)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>versionNumber</b></tt> (CONF:5264)
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>recordTarget</b></tt> (CONF:5266) <p><i>The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</i></p><ol><li> Such recordTargets <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:5268) <ol><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5271)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5268)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> (CONF:5280)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> (CONF:5283) <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.1 <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref></tt><b> DYNAMIC</b> (CONF:6394)</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt></li><li> This patient <b>SHALL</b> contain zero or one [0..1] <tt><b>ethnicGroupCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.15836 <xref href="../../terminology/HITSPEthnicityValueSet.dita">HITSP Ethnicity Value Set</xref></tt><b> STATIC</b></li><li> This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>maritalStatusCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.12212 <xref href="../../terminology/HL7MaritalStatus.dita">HL7 Marital Status</xref></tt><b> STATIC</b> 1</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:5284)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>raceCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.14914 <xref href="../../terminology/Race.dita">Race</xref></tt><b> STATIC</b> 1</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>religiousAffiliationCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.19185 <xref href="../../terminology/HL7ReligiousAffiliation.dita">HL7 Religious Affiliation</xref></tt><b> STATIC</b> 1</li><li> This patient <b>MAY</b> contain zero or more [0..*] <tt><b>guardian</b></tt> (CONF:5325) <ol><li> Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt></li><li> Such guardians <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.19563 <xref href="../../terminology/PersonalRelationshipRoleType.dita">Personal Relationship Role Type</xref></tt><b> STATIC</b> 1</li><li> Such guardians <b>MAY</b> contain zero or more [0..*] <tt><b>telecom</b></tt></li><li> Such guardians <b>SHALL</b> contain zero or one [0..1] <tt><b>guardianPerson</b></tt> (CONF:5385) <ol><li> This guardianPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li></ol> </li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>birthplace</b></tt> (CONF:5395) <ol><li> This birthplace <b>SHALL</b> contain zero or one [0..1] <tt><b>place</b></tt> (CONF:5396) <ol><li> This place <b>SHALL</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:5397)</li></ol> </li></ol> </li><li> This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>languageCommunication</b></tt> (CONF:5406) <ol><li> This languageCommunication <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.11526 <xref href="../../terminology/Language.dita">Language</xref></tt><b> DYNAMIC</b> (CONF:5407)</li><li> This languageCommunication <b>MAY</b> contain zero or one [0..1] <tt><b>preferenceInd</b></tt> (CONF:5414)</li><li> This languageCommunication <b>SHOULD</b> contain zero or one [0..1] <tt><b>proficiencyLevelCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.12199 <xref href="../../terminology/LanguageAbilityProficiency.dita">LanguageAbilityProficiency</xref></tt><b> STATIC</b></li><li> This languageCommunication <b>MAY</b> contain zero or one [0..1] <tt><b>modeCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.12249 <xref href="../../terminology/HL7LanguageAbilityMode.dita">HL7 LanguageAbilityMode</xref></tt><b> STATIC</b> 1</li></ol> </li><li> This patient <b>SHALL</b> satisfy: BirthTime precise to year</li><li> This patient <b>SHOULD</b> satisfy: BirthTime precise to day</li></ol> </li><li> This patientRole Contains zero or one [0..1] <tt><b>providerOrganization</b></tt> <ol><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5422)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5417)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5419)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> (CONF:5420)</li><li> This providerOrganization The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>componentOf</b></tt> (CONF:9955) <ol><li> This componentOf <b>SHALL</b> contain exactly one [1..1] <tt><b>encompassingEncounter</b></tt> (CONF:9956) <ol><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9958)</li><li> This encompassingEncounter <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9959)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>author</b></tt> (CONF:5444) <ol><li> Such authors Contains exactly one [1..1] <tt><b>time</b></tt></li><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:5448) <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5452)</li><li> This assignedAuthor <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5449)</li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> (CONF:5428)</li><li> This assignedAuthor Contains zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This assignedAuthor Contains zero or one [0..1] <tt><b>assignedAuthoringDevice</b></tt> <ol><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturerModelName</b></tt> (CONF:9936)</li><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>softwareName</b></tt> (CONF:9999)</li></ol> </li><li> This assignedAuthor This assignedAuthor <b>SHALL</b> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</li><li> This assignedAuthor The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>dataEnterer</b></tt> (CONF:5441) <ol><li> This dataEnterer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5442) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5460)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9944)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5443)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> (CONF:5466)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5469) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This assignedEntity id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9943)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> (iv., CONF:5519) <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedCustodian</b></tt> (CONF:5520) <ol><li> This assignedCustodian <b>SHALL</b> contain zero or one [0..1] <tt><b>representedCustodianOrganization</b></tt> (CONF:5521) <ol><li> This representedCustodianOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5559)</li><li> This representedCustodianOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5522)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:5524)</li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:5525)</li><li> This representedCustodianOrganization The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>informationRecipient</b></tt> (CONF:5565) <ol><li> Such informationRecipients <b>SHALL</b> contain zero or one [0..1] <tt><b>intendedRecipient</b></tt> (CONF:5566) <ol><li> This intendedRecipient <b>MAY</b> contain zero or one [0..1] <tt><b>informationRecipient</b></tt> (CONF:5568) <ol><li> This informationRecipient <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This intendedRecipient <b>MAY</b> contain zero or one [0..1] <tt><b>receivedOrganization</b></tt> (CONF:5577) <ol><li> This receivedOrganization <b>SHALL</b> contain zero or more [0..*] <tt><b>name</b></tt> (CONF:5578)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>legalAuthenticator</b></tt> (CONF:5579) <ol><li> This legalAuthenticator <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5580)</li><li> This legalAuthenticator <b>SHALL</b> contain exactly one [1..1] <tt><b>signatureCode</b></tt><tt><b>/@code</b>="S" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5583, CONF:5584)</li><li> This legalAuthenticator Contains zero or one [0..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt></li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt></li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5597) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>authenticator</b></tt> (CONF:5607) <ol><li> Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5608)</li><li> Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>signatureCode</b></tt><tt><b>/@code</b>="S" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.89 Participationsignature</tt>)</li><li> Such authenticators <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> (CONF:5612) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> (CONF:5616)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5613)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> (CONF:5622)</li><li> This assignedEntity Contains zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:8001) <ol><li> This informant Contains zero or one [0..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:8220)</li><li> This assignedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li><li> This assignedEntity <b>SHOULD</b> contain at least one [1..*] <tt><b>id</b></tt> (a., CONF:9945)</li><li> This assignedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> (CONF:8221) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li><li> This informant Contains zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> (CONF:8220)</li><li> This relatedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedPerson</b></tt> (CONF:8221) <ol><li> This relatedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li></ol> </li><li> This informant <b>SHALL</b> satisfy: contain exactly one [1..1] assignedEntity OR exactly one [1..1] relatedEntity (CONF:8002)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:10003) <ol><li> Such participants <b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:10004)</li><li> Such participants Such participants, if present, <b>SHALL</b> have an associatedPerson or scopingOrganization element under participant/associatedEntity.</li><li> Such participants Unless otherwise specified by the document specific header constraints, when participant/@typeCode is IND, associatedEntity/@classCode <b>SHALL</b> be selected from ValueSet INDRoleclassCodes 2.16.840.1.113883.11.20.9.33 STATIC 2011-09-30.</li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>inFulfillmentOf</b></tt> (CONF:9952) <ol><li> Such inFulfillmentOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>order</b></tt> (CONF:9953) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9954)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>componentOf</b></tt> (CONF:8338) <ol><li> This componentOf <b>SHALL</b> contain zero or one [0..1] <tt><b>encompassingEncounter</b></tt> (CONF:8339) <ol><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (ii., CONF:8341)</li><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (i., CONF:8340)</li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>location</b></tt>, where its type is CDA Location (CONF:8344)</li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>responsibleParty</b></tt> (iv., CONF:8345) <ol><li> This responsibleParty <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity (CONF:8348)</li><li> This responsibleParty The responsibleParty element, if present, <b>SHALL</b> contain an assignedEntity element which <b>SHALL</b> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8348)</li></ol> </li><li> This encompassingEncounter <b>MAY</b> contain zero or one [0..1] <tt><b>encounterParticipant</b></tt> (v., CONF:8342) <ol><li> This encounterParticipant <b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity (CONF:8343)</li><li> This encounterParticipant The responsibleParty element, if present, <b>SHALL</b> contain an assignedEntity element which <b>SHALL</b> contain an assignedPerson element, a representedOrganization element, or both. (CONF:8343)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>allergiesSectionEntriesOptional</b></tt> (CONF:9602)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergiesSectionEntriesOptional.dita">Allergies Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>assessmentSection</b></tt> (CONF:9605)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentSection.dita">Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>planOfCareSection</b></tt> (CONF:9607)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>assessmentAndPlanSection</b></tt> (CONF:9987)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssessmentAndPlanSection.dita">Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>chiefComplaintSection</b></tt> (CONF:9611)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ChiefComplaintSection.dita">Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>chiefComplaintAndReasonForVisitSection</b></tt> (CONF:9613)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ChiefComplaintAndReasonForVisitSection.dita">Chief Complaint And Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.13</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>familyHistorySection</b></tt> (CONF:9615)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistorySection.dita">Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.15</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>generalStatusSection</b></tt> (CONF:9617)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../GeneralStatusSection.dita">General Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>historyOfPastIllnessSection</b></tt> (CONF:9619)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfPastIllnessSection.dita">History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>medicationsSectionEntriesOptional</b></tt> (CONF:9623)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationsSectionEntriesOptional.dita">Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>physicalExamSection</b></tt> (CONF:9625)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhysicalExamSection.dita">Physical Exam Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>reasonForVisitSection</b></tt> (CONF:9627)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonForVisitSection.dita">Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.12</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>resultsSectionEntriesOptional</b></tt> (CONF:9629)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultsSectionEntriesOptional.dita">Results Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>reviewOfSystemsSection</b></tt> (CONF:9631)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReviewOfSystemsSection.dita">Review Of Systems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>socialHistorySection</b></tt> (CONF:9633)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>historyOfPresentIllnessSection</b></tt> (CONF:9621)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfPresentIllnessSection.dita">History Of Present Illness Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>immunizationsSectionEntriesOptional</b></tt> (CONF:9637)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationsSectionEntriesOptional.dita">Immunizations Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemSectionEntriesOptional</b></tt> (CONF:9639)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>proceduresSectionEntriesOptional</b></tt> (CONF:9641)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>vitalSignsSectionEntriesOptional</b></tt> (CONF:9635)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsSectionEntriesOptional.dita">Vital Signs Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: The US Realm Clinical Document Address datatype flavor is used by US Realm Clinical Document Header for the patient or any other person or organization mentioned within it.</li>
+<li><b>SHALL</b> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.
+This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime 
+element.</li>
+<li><b>SHALL</b> satisfy: The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other
+ person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., 
+patient with first name only) place the name part in the field required by the organization. Use the appropriate 
+nullFlavor, "Not Applicable" (NA), in the other field.</li>
+<li><b>SHALL</b> include an Assessment and Plan Section, or an Assessment Section and a Plan Section (CONF:9986)</li>
+<li><b>SHALL NOT</b> include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present</li>
+<li><b>SHALL</b> include a Chief Complaint and Reason for Visit Section, Chief Complaint Section, or a Reason for Visit Section (CONF:9642)</li>
+<li><b>SHALL NOT</b> include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section. (CONF:10057)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.3"/>
+  <id root="1361861019"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title/>
+  <effectiveTime/>
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+  <languageCode/>
+  <setId root="b1a0abde-c4bb-4ff5-854a-9fe3a4d15b3a"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <realmCode/>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <realmCode/>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <time/>
+    <assignedAuthor/>
+  </author>
+  <custodian/>
+  <inFulfillmentOf>
+    <order>
+      <id root="706456567"/>
+    </order>
+  </inFulfillmentOf>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="1103147729"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity>
+          <id root="1687522776"/>
+          <assignedPerson/>
+          <representedOrganization/>
+        </assignedEntity>
+      </responsibleParty>
+      <encounterParticipant>
+        <assignedEntity>
+          <id root="1134019586"/>
+          <assignedPerson/>
+          <representedOrganization/>
+        </assignedEntity>
+      </encounterParticipant>
+      <location>
+        <healthCareFacility>
+          <location/>
+          <serviceProviderOrganization/>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+          <id root="1751760274"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="1950842377"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="713945474"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="1041791284"/>
+                      <code code="1336787659"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <procedure/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <id root="841256845"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <id root="539037966"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.8"/>
+          <id root="379583708"/>
+          <code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <id root="1887553163"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <act classCode="ACT">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+              <id root="1530766268"/>
+              <code code="664992353"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+            </act>
+          </entry>
+          <entry>
+            <encounter classCode="ENC">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <id root="2100687182"/>
+              <code code="94818925"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation classCode="OBS">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="221696147"/>
+              <code code="1784859107"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+            </observation>
+          </entry>
+          <entry>
+            <procedure classCode="PROC">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+              <id root="1949458438"/>
+              <code code="509241110"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="342832825"/>
+              <code code="2135697271"/>
+              <effectiveTime value="20120325"/>
+              <consumable/>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
+              <id root="1487245741"/>
+              <code code="474287746"/>
+              <effectiveTime value="20120325"/>
+            </supply>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
+          <id root="1623794471"/>
+          <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <act classCode="ACT">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+              <id root="1629914251"/>
+              <code code="1700643032"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+          <id root="2109962195"/>
+          <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.13"/>
+          <id root="1518653944"/>
+          <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief Complaint and Reason for Visit"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
+          <id root="487198874"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
+              <id root="1154693249"/>
+              <code code="579725975"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+                  <id root="1232245605"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                      <id root="1958591353"/>
+                      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+                      <id root="128523081"/>
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.2.5"/>
+          <id root="1369104011"/>
+          <code code="10210-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL STATUS"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.20"/>
+          <id root="501937998"/>
+          <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <observation moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+              <id root="1731696289"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                  <id root="124346724"/>
+                  <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                  <id root="1669238916"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <id root="1634793646"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <id root="744577348"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="2038880085"/>
+              <code code="103086989"/>
+              <effectiveTime value="20120325"/>
+              <consumable/>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1734267346"/>
+                  <code code="266613188"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <id root="835991580"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="1938315792"/>
+                  <code code="941204095"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <id root="643143012"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <procedure classCode="PROC">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                      <id root="331627931"/>
+                      <code code="1246894104"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <encounter/>
+                      </entryRelationship>
+                    </procedure>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration classCode="SBADM">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                      <id root="547188007"/>
+                      <code code="775808109"/>
+                      <effectiveTime value="20120325"/>
+                      <consumable/>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                    </substanceAdministration>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1832943666"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="934339325"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="242817166"/>
+                  <code code="180825260"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                      <id root="1464451622"/>
+                      <code code="884562475"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.2.10"/>
+          <id root="1424031871"/>
+          <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
+          <id root="1837634770"/>
+          <code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for Visit"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+          <id root="56054988"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <organizer moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="81650919"/>
+              <code code="1765621964"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="994307603"/>
+                  <code code="1815192349"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+          <id root="1814117470"/>
+          <code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <id root="522743107"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+              <id root="46090126"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+              <id root="142658811"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+                  <id root="2063816479"/>
+                  <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+          <id root="1476393859"/>
+          <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PRESENT ILLNESS"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+          <id root="577910287"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <substanceAdministration classCode="SBADM" negationInd="false">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="299134256"/>
+              <code code="375808483"/>
+              <effectiveTime value="20120325"/>
+              <consumable/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="1017034591"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1333701279"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1052479360"/>
+                  <code code="1150466142"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                      <id root="1023826564"/>
+                      <code code="767720479"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="552737035"/>
+                  <code code="223867843"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <id root="1358683121"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <procedure classCode="PROC">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                      <id root="889373530"/>
+                      <code code="249244896"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <encounter/>
+                      </entryRelationship>
+                    </procedure>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration classCode="SBADM">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                      <id root="1679758329"/>
+                      <code code="180720595"/>
+                      <effectiveTime value="20120325"/>
+                      <consumable/>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                    </substanceAdministration>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+                  <id root="359213616"/>
+                  <code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1959126546"/>
+                  <code code="2031081632"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <id root="1526343865"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+          <id root="494793716"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="2045885517"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <entryRelationship>
+                <observation moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="1009572838"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                      <id root="1041898848"/>
+                      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                      <id root="742117634"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                      <id root="504050116"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+          <id root="1813306631"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <procedure classCode="PROC">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="2094861983"/>
+              <code code="394209700"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="80515924"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="2112040531"/>
+                  <code code="220256677"/>
+                  <effectiveTime value="20120325"/>
+                  <consumable/>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                      <id root="1081849374"/>
+                      <code code="9773399"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="44131700"/>
+                      <code code="1051184891"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <procedure/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <id root="773705391"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                      <id root="785358416"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                      <id root="304105449"/>
+                      <code code="563103612"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1371380285"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <encounter>
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <id root="747894398"/>
+                  <code code="628281516"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </encounter>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <observation classCode="OBS">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
+              <id root="947434950"/>
+              <code code="1628960216"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <entryRelationship>
+                <encounter>
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <id root="1935586329"/>
+                  <code code="860557912"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </encounter>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1593136826"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="1802764236"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="287857495"/>
+                  <code code="1989991348"/>
+                  <effectiveTime value="20120325"/>
+                  <consumable/>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                      <id root="1652435438"/>
+                      <code code="1289496138"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="927770596"/>
+                      <code code="1148276302"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <procedure/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <id root="1153991331"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                      <id root="459824406"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                      <id root="742762215"/>
+                      <code code="627932296"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <act classCode="ACT">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+              <id root="1438562069"/>
+              <code code="1082360508"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <entryRelationship>
+                <encounter>
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <id root="350191750"/>
+                  <code code="1826759175"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </encounter>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1426254514"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="2106983111"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="680259991"/>
+                  <code code="346647479"/>
+                  <effectiveTime value="20120325"/>
+                  <consumable/>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                      <id root="770055660"/>
+                      <code code="277324257"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <act/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="2045661372"/>
+                      <code code="1936170554"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                      <entryRelationship>
+                        <observation/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <procedure/>
+                      </entryRelationship>
+                      <entryRelationship>
+                        <substanceAdministration classCode="SBADM"/>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="INT">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <id root="566756300"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                      <id root="324460594"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <languageCode/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply classCode="SPLY" moodCode="EVN">
+                      <realmCode/>
+                      <typeId root="2.16.840.1.113883.1.3"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                      <id root="2133303345"/>
+                      <code code="517204052"/>
+                      <effectiveTime value="20120325"/>
+                      <entryRelationship>
+                        <supply classCode="SPLY"/>
+                      </entryRelationship>
+                    </supply>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+          <id root="1516300214"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <realmCode/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="190222353"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <realmCode/>
+                  <typeId root="2.16.840.1.113883.1.3"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="1597511236"/>
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <languageCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">History And Physical Note</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.3</tt>]</p>
+</body>
+</topic>

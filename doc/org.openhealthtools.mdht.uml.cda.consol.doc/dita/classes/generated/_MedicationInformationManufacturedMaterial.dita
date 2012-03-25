@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Information Manufactured Material - conformance rules</title>
+<shortdesc id="shortdesc">[Material: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Material</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.17 <xref href="../../terminology/MedicationClinicalDrug.dita">Medication Clinical Drug</xref></tt><b> DYNAMIC</b>
+</li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7413)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7417)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7418)</li>
+<li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:7414)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.17 <xref href="../../terminology/MedicationClinicalDrug.dita">Medication Clinical Drug</xref></tt><b> DYNAMIC</b>
+</li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7413)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7417)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7418)</li>
+<li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:7414)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<material xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+</material>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Information Manufactured Material</ph></p>
+<p id="shortdesc">[Material: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Assessment And Plan Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.9"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Assessment and Plan sections may be combined or separated to meet local policy requirements.
+The Assessment and Plan section represents both the clinician's conclusions and working assumptions that will guide treatment of the patient (see Assessment Section above) and pending orders, interventions, encounters, services, and procedures for the patient (see Plan of Care Section below).</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="51847-2" </tt><i>ASSESSMENT AND PLAN</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7706)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7707)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>planOfCareActivityAct</b></tt> (CONF:8798)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="51847-2" </tt><i>ASSESSMENT AND PLAN</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7706)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7707)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>planOfCareActivityAct</b></tt> (CONF:8798)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
+  <id root="1637225182"/>
+  <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
+  <title/>
+  <text/>
+  <entry>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+      <id root="1796589492"/>
+      <code code="492303026"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Assessment And Plan Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.9</tt>]</p>
+</body>
+</topic>

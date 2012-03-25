@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter navtitle="Medical Equipment Section" type="topic">
+		<topicref href="../classes/MedicalEquipmentSectionSection.dita" type="topic" />
+		<topicref href="../classes/MedicalEquipmentSectionTable.dita" type="topic" />
+		<topicref href="../classes/MedicalEquipmentSectionSample.dita" type="topic" />			                         
+	</chapter>
+
+	
+</bookmap>
+

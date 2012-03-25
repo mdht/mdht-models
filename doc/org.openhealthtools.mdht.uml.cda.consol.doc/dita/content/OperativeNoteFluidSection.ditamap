@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter navtitle="Operative Note Fluid Section" type="topic">
+		<topicref href="../classes/OperativeNoteFluidSectionSection.dita" type="topic" />
+		<topicref href="../classes/OperativeNoteFluidSectionTable.dita" type="topic" />
+		<topicref href="../classes/OperativeNoteFluidSectionSample.dita" type="topic" />			                         
+	</chapter>
+
+	
+</bookmap>
+

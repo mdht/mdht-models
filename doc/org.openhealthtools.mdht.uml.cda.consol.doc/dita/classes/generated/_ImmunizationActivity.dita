@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Immunization Activity - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.22.4.52</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.52"/>
+</prolog>
+<body>
+<section id="description">
+<p>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in "INT" mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in "EVN" mood reflect immunizations actually received.</p>
+
+<p>An Immunization Activity is very similar to a Medication Activity with some key differentiators. The drug code system is constrained to CVX codes. Administration timing is less complex. Patient refusal reasons should be captured. All vaccines administered should be fully documented in the patient's permanent medical record. Healthcare providers who administer vaccines covered by the National Childhood Vaccine Injury Act are required to ensure that the permanent medical record of the recipient indicates: </p>
+
+<ol>
+<li>Date of administration </li>
+<li>Vaccine manufacturer </li>
+<li>Vaccine lot number </li>
+<li>Name and title of the person who administered the vaccine and the address of the clinic or facility where the permanent record will reside </li>
+<li>Vaccine information statement (VIS) 
+<ol>
+<li>date printed on the VIS</li>
+<li>date VIS given to patient or parent/guardian.</li>
+</ol>
+</li>
+</ol>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8826)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.18 <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref></tt><b> STATIC</b> 2011-04-03 (CONF:8827)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b>="false" </tt> (CONF:8985)
+<ul><li>@negationInd="true" shall be used to represent the immunization was not given. (CONF:8986).</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8829)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:8830)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:8833)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8834)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.7 <xref href="../../terminology/MedicationRouteFDAValueSet.dita">Medication Route FDA Value Set</xref></tt><b> STATIC</b> 1 (CONF:8839)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref></tt><b> STATIC</b> 2 (CONF:8840)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:8841)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>drugVehicle</b></tt> (CONF:8850, CONF:8851, CONF:8852)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DrugVehicle.dita">Drug Vehicle</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.24</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>indication</b></tt> (CONF:8853, CONF:8854, CONF:8855)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:8856, CONF:8857, CONF:8858)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationDispense</b></tt> (CONF:8863, CONF:8864, CONF:8865)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationDispense.dita">Medication Dispense</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.18</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>reactionObservation</b></tt> (CONF:8866, CONF:8867, CONF:8868)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>precondition</b></tt> (CONF:8869, CONF:8870, CONF:8871)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreconditionForSubstanceAdministration.dita">Precondition For Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>immunizationRefusalReason</b></tt> (CONF:8988, CONF:8989, CONF:8990)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationRefusalReason.dita">Immunization Refusal Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:8847) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt>, where its type is <xref href="../ImmunizationMedicationInformation.dita">Immunization Medication Information</xref> (CONF:8848)<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationMedicationInformation.dita">Immunization Medication Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.54</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:8831)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:8838)
+<ul><li>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times. In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd. A repeatNumber of "3" in a substance administration event means that the current administration is the 3rd in a series. (CONF:8987).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>administrationUnitCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.11 <xref href="../../terminology/MedicationProductForm.dita">Medication Product Form</xref></tt><b> STATIC</b> 1 (CONF:8846)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:8849)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationSupplyOrder</b></tt> (CONF:8860, CONF:8861, CONF:8862)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li>This text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value. (CONF:8832)</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1. (CONF:9056)</li>
+<li>doseQuantity, if present, <b>SHOULD</b> contain zero or one [0..1] @unit, which <b>SHALL</b> be selected from ValueSet UCUM Units of Measure (case sensitive) 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:8842)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:8858)</li>
+<li>participant with target entry Drug Vehicle <b>SHALL</b> contain exactly one [1..1] @typeCode="CSM" (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) (CONF:8851)</li>
+<li>Precondition for Substance Adminstration <b>SHALL</b> contain exactly one [1..1] @typeCode="PRCN" (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002) (CONF:8870)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8826)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.18 <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref></tt><b> STATIC</b> 2011-04-03 (CONF:8827)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b>="false" </tt> (CONF:8985)
+<ul><li>@negationInd="true" shall be used to represent the immunization was not given. (CONF:8986).</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8829)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:8830)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:8831)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:8833)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8834)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:8838)
+<ul><li>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times. In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd. A repeatNumber of "3" in a substance administration event means that the current administration is the 3rd in a series. (CONF:8987).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.7 <xref href="../../terminology/MedicationRouteFDAValueSet.dita">Medication Route FDA Value Set</xref></tt><b> STATIC</b> 1 (CONF:8839)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref></tt><b> STATIC</b> 2 (CONF:8840)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:8841)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>administrationUnitCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.11 <xref href="../../terminology/MedicationProductForm.dita">Medication Product Form</xref></tt><b> STATIC</b> 1 (CONF:8846)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>drugVehicle</b></tt> (CONF:8850, CONF:8851, CONF:8852)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DrugVehicle.dita">Drug Vehicle</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.24</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>indication</b></tt> (CONF:8853, CONF:8854, CONF:8855)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:8856, CONF:8857, CONF:8858)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationDispense</b></tt> (CONF:8863, CONF:8864, CONF:8865)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationDispense.dita">Medication Dispense</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.18</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>reactionObservation</b></tt> (CONF:8866, CONF:8867, CONF:8868)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>precondition</b></tt> (CONF:8869, CONF:8870, CONF:8871)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreconditionForSubstanceAdministration.dita">Precondition For Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>immunizationRefusalReason</b></tt> (CONF:8988, CONF:8989, CONF:8990)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationRefusalReason.dita">Immunization Refusal Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.53</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:8847) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt>, where its type is <xref href="../ImmunizationMedicationInformation.dita">Immunization Medication Information</xref> (CONF:8848)<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationMedicationInformation.dita">Immunization Medication Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.54</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:8849)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationSupplyOrder</b></tt> (CONF:8860, CONF:8861, CONF:8862)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li>This text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value. (CONF:8832)</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1. (CONF:9056)</li>
+<li>doseQuantity, if present, <b>SHOULD</b> contain zero or one [0..1] @unit, which <b>SHALL</b> be selected from ValueSet UCUM Units of Measure (case sensitive) 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:8842)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:8858)</li>
+<li>participant with target entry Drug Vehicle <b>SHALL</b> contain exactly one [1..1] @typeCode="CSM" (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) (CONF:8851)</li>
+<li>Precondition for Substance Adminstration <b>SHALL</b> contain exactly one [1..1] @typeCode="PRCN" (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002) (CONF:8870)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM" negationInd="false">
+  <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+  <id root="1540940130"/>
+  <code code="579681262"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime value="20120325"/>
+  <repeatNumber value="1"/>
+  <routeCode code="Value"/>
+  <approachSiteCode code="42901237"/>
+  <doseQuantity/>
+  <administrationUnitCode code="Value"/>
+  <consumable>
+    <manufacturedProduct>
+      <id root="1608687788"/>
+      <manufacturedMaterial>
+        <code code="Value"/>
+        <lotNumberText/>
+      </manufacturedMaterial>
+      <manufacturerOrganization>
+        <asOrganizationPartOf>
+          <wholeOrganization/>
+        </asOrganizationPartOf>
+      </manufacturerOrganization>
+    </manufacturedProduct>
+  </consumable>
+  <performer>
+    <assignedEntity>
+      <id root="804408576"/>
+      <assignedPerson/>
+      <representedOrganization>
+        <asOrganizationPartOf>
+          <wholeOrganization/>
+        </asOrganizationPartOf>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+      <id root="1191251431"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <repeatNumber value="1"/>
+      <performer>
+        <assignedEntity>
+          <id root="677352783"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+      <id root="1920769807"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <performer>
+        <assignedEntity>
+          <id root="1334104355"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <supply classCode="SPLY" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+      <id root="1808904550"/>
+      <code code="1104686905"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime value="20120325"/>
+      <repeatNumber value="1"/>
+      <performer>
+        <assignedEntity>
+          <id root="1309515205"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+          <id root="1673440645"/>
+          <code code="1992831664"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime value="20120325"/>
+          <repeatNumber value="1"/>
+          <performer>
+            <assignedEntity>
+              <id root="1117953141"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="1515539233"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </act>
+          </entryRelationship>
+          <precondition>
+            <criterion/>
+          </precondition>
+        </supply>
+      </entryRelationship>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </supply>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+      <id root="1441946339"/>
+      <code code="1818230592"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <repeatNumber value="1"/>
+      <performer>
+        <assignedEntity>
+          <id root="1784146647"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+          <id root="666471350"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <repeatNumber value="1"/>
+          <performer>
+            <assignedEntity>
+              <id root="289553046"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+          <precondition>
+            <criterion/>
+          </precondition>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <procedure classCode="PROC">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+          <id root="326977359"/>
+          <code code="1404618583"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <approachSiteCode code="2055354677"/>
+          <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <performer>
+            <assignedEntity>
+              <id root="1081588577"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <id root="1576900727"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <repeatNumber value="1"/>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="1021870730"/>
+              <code code="1599007909"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120325"/>
+              <repeatNumber value="1"/>
+              <routeCode code="Value"/>
+              <approachSiteCode code="1079001170"/>
+              <doseQuantity/>
+              <administrationUnitCode code="Value"/>
+              <consumable>
+                <manufacturedProduct/>
+              </consumable>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="2033443309"/>
+                  <code code="647775261"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120325"/>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <precondition/>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="426004645"/>
+                  <code code="1548256596"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <procedure/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration/>
+                  </entryRelationship>
+                  <precondition/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="84894801"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <performer/>
+                  <precondition/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="278056396"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <precondition/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1628311987"/>
+                  <code code="2096241284"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120325"/>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                  <precondition/>
+                </supply>
+              </entryRelationship>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </substanceAdministration>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="906905785"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <encounter>
+              <id root="1880043916"/>
+              <code code="1849093799"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </encounter>
+          </entryRelationship>
+          <precondition>
+            <criterion/>
+          </precondition>
+        </procedure>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <id root="1511998522"/>
+          <code code="575469644"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime value="20120325"/>
+          <repeatNumber value="1"/>
+          <routeCode code="Value"/>
+          <approachSiteCode code="1632018724"/>
+          <doseQuantity/>
+          <administrationUnitCode code="Value"/>
+          <consumable>
+            <manufacturedProduct>
+              <id root="158481640"/>
+              <manufacturedMaterial/>
+              <manufacturerOrganization/>
+            </manufacturedProduct>
+          </consumable>
+          <performer>
+            <assignedEntity>
+              <id root="2098330050"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+              <id root="604275094"/>
+              <code code="2146909773"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120325"/>
+              <repeatNumber value="1"/>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1960453670"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <performer/>
+                  <precondition/>
+                </act>
+              </entryRelationship>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <id root="471510493"/>
+              <code code="448250521"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <repeatNumber value="1"/>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                  <id root="1377562678"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <precondition/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <procedure classCode="PROC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                  <id root="1600937862"/>
+                  <code code="893089272"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <approachSiteCode code="624309379"/>
+                  <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <performer/>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <encounter/>
+                  </entryRelationship>
+                  <precondition/>
+                </procedure>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="1554240394"/>
+                  <code code="899382725"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120325"/>
+                  <repeatNumber value="1"/>
+                  <routeCode code="Value"/>
+                  <approachSiteCode code="294030662"/>
+                  <doseQuantity/>
+                  <administrationUnitCode code="Value"/>
+                  <consumable/>
+                  <performer/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                  <precondition/>
+                </substanceAdministration>
+              </entryRelationship>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="973349154"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <id root="1842969204"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <repeatNumber value="1"/>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+              <id root="1225697723"/>
+              <code code="682062221"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120325"/>
+              <repeatNumber value="1"/>
+              <performer>
+                <assignedEntity/>
+              </performer>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="772308633"/>
+                  <code code="557691306"/>
+                  <text>Text Value</text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120325"/>
+                  <repeatNumber value="1"/>
+                  <performer/>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <precondition/>
+                </supply>
+              </entryRelationship>
+              <precondition>
+                <criterion/>
+              </precondition>
+            </supply>
+          </entryRelationship>
+          <precondition>
+            <criterion/>
+          </precondition>
+        </substanceAdministration>
+      </entryRelationship>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+      <id root="1856850215"/>
+      <code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <repeatNumber value="1"/>
+      <performer>
+        <assignedEntity>
+          <id root="1001245282"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <supply classCode="SPLY" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+      <id root="2105372813"/>
+      <code code="1282349710"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime value="20120325"/>
+      <repeatNumber value="1"/>
+      <performer>
+        <assignedEntity>
+          <id root="66107295"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <id root="1603036300"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="429426272"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+          <precondition>
+            <criterion/>
+          </precondition>
+        </act>
+      </entryRelationship>
+      <precondition>
+        <criterion/>
+      </precondition>
+    </supply>
+  </entryRelationship>
+  <precondition>
+    <criterion/>
+  </precondition>
+</substanceadministration>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Immunization Activity</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.22.4.52</tt>]</p>
+</body>
+</topic>

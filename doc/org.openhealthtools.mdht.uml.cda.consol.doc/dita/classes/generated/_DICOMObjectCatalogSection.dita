@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>DICOM Object Catalog Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.6.1.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.1.1"/>
+</prolog>
+<body>
+<section id="description">
+<p>DICOM Object Catalog lists all referenced objects and their parent Series and Studies, plus other DICOM attributes required for retrieving the objects.
+DICOM Object Catalog sections are not intended for viewing and contain empty section text.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="121181" </tt><i>Dicom Object Catalog</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:8526)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>studyAct</b></tt> (CONF:8530, CONF:10501)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyAct.dita">Study Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.6</tt>)</li></ol></li>
+<li>A DICOM Object Catalog <b>SHALL</b> be present if the document contains references to DICOM Images. If present, it <b>SHALL</b> be the first section in the document. (CONF:8527)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="121181" </tt><i>Dicom Object Catalog</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:8526)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>studyAct</b></tt> (CONF:8530, CONF:10501)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyAct.dita">Study Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.6</tt>)</li></ol></li>
+<li>A DICOM Object Catalog <b>SHALL</b> be present if the document contains references to DICOM Images. If present, it <b>SHALL</b> be the first section in the document. (CONF:8527)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.1.1"/>
+  <id root="1678082880"/>
+  <code code="121181" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Dicom Object Catalog"/>
+  <title/>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.6"/>
+      <id root="2093151967"/>
+      <code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
+          <id root="1606461577"/>
+          <code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="DGIMG" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+              <id root="1850193165"/>
+              <code code="708630158"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+                  <id root="18707746"/>
+                  <code code="1913318638"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="ROIBND" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+                  <id root="1507555108"/>
+                  <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">DICOM Object Catalog Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.6.1.1</tt>]</p>
+</body>
+</topic>

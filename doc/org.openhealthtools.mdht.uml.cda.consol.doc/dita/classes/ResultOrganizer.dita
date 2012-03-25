@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+	<title><ph
+					conref="generated/_ResultOrganizer.dita#classId/classformalname" /></title>
+	<shortdesc conref="generated/_ResultOrganizer.dita#classId/shortdesc"></shortdesc>
+	<prolog conref="generated/_ResultOrganizer.dita#classId/prolog"></prolog>
+	<body>
+		<!-- TODO: insert non-model class description markup here -->
+		<section conref="generated/_ResultOrganizer.dita#classId/description">
+		</section>
+		<!-- TODO: insert UML class diagram here -->
+
+		<ol audience="standards" conref="generated/_ResultOrganizer.dita#classId/conformance">
+			<li></li>
+		</ol>
+		<ol audience="developer" conref="generated/_ResultOrganizer.dita#classId/aggregate">
+			<li></li>
+		</ol>
+		<p>
+		</p>
+		<p>
+			<b><ph conref="generated/_ResultOrganizer.dita#classId/classformalname" /> example</b>
+		</p>		
+		<codeblock conref="generated/_ResultOrganizer.dita#classId/example">
+		</codeblock>
+	</body>
+</topic>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medical Equipment Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.23</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.23"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Medical Equipment section defines a patient's implanted and external medical devices and equipment that their health status depends on, as well as any pertinent equipment or device history. This section is also used to itemize any pertinent current or historical durable medical equipment (DME) used to help maintain the patient's health status. All pertinent equipment relevant to the diagnosis, care, and treatment of a patient should be included.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="46264-8" </tt><i>Medical Equipment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7945)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7946)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7947)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>nonMedicinalSupplyActivity</b></tt> (CONF:7948.CONF:8755)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="46264-8" </tt><i>Medical Equipment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7945)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7946)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7947)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>nonMedicinalSupplyActivity</b></tt> (CONF:7948.CONF:8755)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
+  <id root="95201131"/>
+  <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
+  <title/>
+  <text/>
+  <entry>
+    <supply classCode="SPLY">
+      <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+      <id root="1375833476"/>
+      <code code="611912055"/>
+      <text>Text Value</text>
+      <effectiveTime value="20120325"/>
+    </supply>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medical Equipment Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.23</tt>]</p>
+</body>
+</topic>

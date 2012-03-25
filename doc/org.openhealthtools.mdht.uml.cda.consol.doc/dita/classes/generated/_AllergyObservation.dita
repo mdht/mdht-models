@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergy Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.7</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.7"/>
+</prolog>
+<body>
+<section id="description">
+<p>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. "allergy to penicillin"), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7379)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7380)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7382)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:7383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7386)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7387)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.2 <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7390, CONF:9139)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>problemEntryReactionObservationContainer</b></tt> (CONF:7447, CONF:7907, CONF:7450)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>severity</b></tt> (CONF:9961, CONF:9962, CONF:9963)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>allergyStatusObservation</b></tt> (CONF:7440, CONF:7906, CONF:7441)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:7402)
+</li>
+<li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
+<li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
+<li>value <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7422)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7400)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (CONF:7401)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7446)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7379)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7380)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7382)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:7383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7386)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7387)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.2 <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7390, CONF:9139)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>problemEntryReactionObservationContainer</b></tt> (CONF:7447, CONF:7907, CONF:7450)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>severity</b></tt> (CONF:9961, CONF:9962, CONF:9963)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>allergyStatusObservation</b></tt> (CONF:7440, CONF:7906, CONF:7441)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:7402)
+</li>
+<li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
+<li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
+<li>value <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7422)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7400)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (CONF:7401)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7446)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+  <id root="2062230278"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="1569740331"/>
+  <participant>
+    <participantRole>
+      <playingEntity>
+        <code code="Value"/>
+      </playingEntity>
+    </participantRole>
+  </participant>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+      <id root="450586057"/>
+      <code code="1402948195"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="489745519"/>
+      <participant>
+        <participantRole>
+          <playingEntity>
+            <code code="Value"/>
+          </playingEntity>
+        </participantRole>
+      </participant>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+          <id root="616528885"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <value xsi:type="CD" code="743359497"/>
+          <participant>
+            <participantRole>
+              <playingEntity/>
+            </participantRole>
+          </participant>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <procedure classCode="PROC">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+          <id root="770922816"/>
+          <code code="195147204"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <participant>
+            <participantRole>
+              <playingEntity/>
+            </participantRole>
+          </participant>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <id root="1149882916"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="569560253"/>
+              <participant>
+                <participantRole/>
+              </participant>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="1761543706"/>
+              <code code="107470599"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <consumable/>
+              <participant>
+                <participantRole/>
+              </participant>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="951425816"/>
+                  <code code="1754376568"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <participant/>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="806228632"/>
+                  <code code="1371979313"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="138442686"/>
+                  <participant/>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <procedure/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration/>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1196227928"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <participant/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="1476546244"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="1773890198"/>
+                  <participant/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="45995978"/>
+                  <code code="753902508"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <participant/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="1679430203"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant>
+                <participantRole/>
+              </participant>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <encounter>
+              <id root="2135563965"/>
+              <code code="1800508888"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant>
+                <participantRole/>
+              </participant>
+            </encounter>
+          </entryRelationship>
+        </procedure>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <id root="1988517711"/>
+          <code code="114203624"/>
+          <statusCode code="completed"/>
+          <effectiveTime xsi:type="IVL_TS">
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <consumable/>
+          <participant>
+            <participantRole>
+              <playingEntity/>
+            </participantRole>
+          </participant>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+              <id root="156566394"/>
+              <code code="1400797463"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant>
+                <participantRole/>
+              </participant>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="91468854"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <participant/>
+                </act>
+              </entryRelationship>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <id root="1445911388"/>
+              <code code="1016361900"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="650418429"/>
+              <participant>
+                <participantRole/>
+              </participant>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                  <id root="373061244"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="1977912007"/>
+                  <participant/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <procedure classCode="PROC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                  <id root="1053985243"/>
+                  <code code="1951169328"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <participant/>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <encounter/>
+                  </entryRelationship>
+                </procedure>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="176256986"/>
+                  <code code="796901484"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <consumable/>
+                  <participant/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="80579611"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant>
+                <participantRole/>
+              </participant>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <id root="1565881697"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="1580371912"/>
+              <participant>
+                <participantRole/>
+              </participant>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+              <id root="514919144"/>
+              <code code="699047580"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant>
+                <participantRole/>
+              </participant>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="47323761"/>
+                  <code code="524575686"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <participant/>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+            </supply>
+          </entryRelationship>
+        </substanceAdministration>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+      <id root="1476121953"/>
+      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="302534824"/>
+      <participant>
+        <participantRole>
+          <playingEntity>
+            <code code="Value"/>
+          </playingEntity>
+        </participantRole>
+      </participant>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+      <id root="109522864"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1633943847"/>
+      <participant>
+        <participantRole>
+          <playingEntity>
+            <code code="Value"/>
+          </playingEntity>
+        </participantRole>
+      </participant>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergy Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.7</tt>]</p>
+</body>
+</topic>

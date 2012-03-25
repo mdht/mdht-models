@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+	<title>
+		<ph conref="generated/_DischargeSummary.dita#classId/classformalname" />
+	</title>
+	<shortdesc conref="generated/_DischargeSummary.dita#classId/shortdesc"></shortdesc>
+	<prolog conref="generated/_DischargeSummary.dita#classId/prolog"></prolog>
+	<body>
+		<!-- TODO: insert non-model class description markup here -->
+		<section conref="generated/_DischargeSummary.dita#classId/description">
+		</section>
+
+		<section>
+			<title><ph conref="generated/_DischargeSummary.dita#classId/classformalname" /> Header Constraints</title>
+		</section>
+
+
+		<section>
+			<title>
+				<ph conref="generated/_DischargeSummary.dita#classId/classformalname" /> Body Constraints	</title>
+				<p>
+				<ol audience="standards" conref="generated/_DischargeSummary.dita#classId/conformance">
+					<li></li>
+				</ol>
+				<ol audience="developer" conref="generated/_DischargeSummary.dita#classId/aggregate">
+					<li></li>
+				</ol>
+				</p>
+		</section>
+
+
+		<section>
+			<title><ph conref="generated/_DischargeSummary.dita#classId/classformalname" /> Example</title>
+			<p>
+			<codeblock conref="generated/_DischargeSummary.dita#classId/example" />
+			</p>
+		</section>	
+	</body>
+</topic>
+

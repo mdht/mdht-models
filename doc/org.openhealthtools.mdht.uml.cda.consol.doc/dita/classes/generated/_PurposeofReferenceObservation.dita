@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Purposeof Reference Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.9"/>
+</prolog>
+<body>
+<section id="description">
+<p>A Purpose of Reference Observation describes the purpose of the DICOM composite object reference. Appropriate codes, such as externally defined DICOM codes, may be used to specify the semantics of the purpose of reference. When this observation is absent, it implies that the reason for the reference is unknown.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9264)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9265)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9267)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.28 <xref href="../../terminology/DICOMPurposeOfReference.dita">DICOMPurposeOfReference </xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9273)
+<ul><li>The value element is a SHOULD to allow backwards compatibility with the DICOM CMET.  Note that the use of ASSERTION for the code differs from the DICOM CMET. This is intentional. The DICOM CMET was created before the Term Info guidelines describing the use of the assertion pattern were released. It was determined that this IG should follow the latest Term Info guidelines. Implementers using both this IG and the DICOM CMET will need to be aware of this difference and apply appropriate transformations</li></ul></li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code="ASSERTION" (CodeSystem: ActCode 2.16.840.1.113883.5.4) (CONF:9268)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9264)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9265)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9267)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.28 <xref href="../../terminology/DICOMPurposeOfReference.dita">DICOMPurposeOfReference </xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9273)
+<ul><li>The value element is a SHOULD to allow backwards compatibility with the DICOM CMET.  Note that the use of ASSERTION for the code differs from the DICOM CMET. This is intentional. The DICOM CMET was created before the Term Info guidelines describing the use of the assertion pattern were released. It was determined that this IG should follow the latest Term Info guidelines. Implementers using both this IG and the DICOM CMET will need to be aware of this difference and apply appropriate transformations</li></ul></li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code="ASSERTION" (CodeSystem: ActCode 2.16.840.1.113883.5.4) (CONF:9268)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+  <id root="351313457"/>
+  <code code="288346203"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="1617326725"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Purposeof Reference Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.9</tt>]</p>
+</body>
+</topic>

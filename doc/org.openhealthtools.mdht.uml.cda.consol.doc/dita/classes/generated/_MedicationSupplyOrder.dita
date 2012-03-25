@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Supply Order - conformance rules</title>
+<shortdesc id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Supply</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.17"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7427)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7428)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7433)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7436)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7434)
+<ul><li>In "INT" (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of "3" means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills)</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7432)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7430)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>product</b></tt> (CONF:7439, CONF:9334) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:7437, CONF:9335, CONF:9336)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7438)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:7442, CONF:7444)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li>This entryRelationship, if present, <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7445)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7427)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7428)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7430)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7432)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7433)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7434)
+<ul><li>In "INT" (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of "3" means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills)</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7436)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>product</b></tt> (CONF:7439, CONF:9334) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:7437, CONF:9335, CONF:9336)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7438)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:7442, CONF:7444)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li>This entryRelationship, if present, <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7445)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+  <id root="541953143"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20120325"/>
+  <repeatNumber value="1"/>
+  <quantity/>
+  <product>
+    <manufacturedProduct/>
+  </product>
+  <author>
+    <time/>
+    <assignedAuthor>
+      <id root="602437347"/>
+      <assignedPerson/>
+      <assignedAuthoringDevice>
+        <asMaintainedEntity>
+          <maintainingPerson/>
+        </asMaintainedEntity>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <asOrganizationPartOf>
+          <wholeOrganization/>
+        </asOrganizationPartOf>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+      <id root="1758339582"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <author>
+        <time/>
+        <assignedAuthor>
+          <id root="255606372"/>
+          <assignedPerson/>
+          <assignedAuthoringDevice>
+            <asMaintainedEntity/>
+          </assignedAuthoringDevice>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedAuthor>
+      </author>
+    </act>
+  </entryRelationship>
+</supply>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Supply Order</ph></p>
+<p id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.17</tt>]</p>
+</body>
+</topic>
