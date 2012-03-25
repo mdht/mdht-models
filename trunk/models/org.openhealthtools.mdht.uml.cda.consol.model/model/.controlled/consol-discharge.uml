@@ -240,7 +240,11 @@
     <ownedComment xmi:id="_jk0jcCUQEeGiOPpZVnfEJA">
       <body>The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</body>
     </ownedComment>
-    <generalization xmi:id="_TytVkSUQEeGiOPpZVnfEJA" general="_2Poj7RSVEeGGzu7fmW9pXw"/>
+    <generalization xmi:id="_TytVkSUQEeGiOPpZVnfEJA" general="_2Poj7RSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_qXZq0HavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_9F4LUCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg" association="_9GB8UCqAEeGiFpKeZIy4Pg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-dOYwCqAEeGiFpKeZIy4Pg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-dOYwSqAEeGiFpKeZIy4Pg" value="1"/>

@@ -351,7 +351,11 @@
     <ruleId>CONF:8993</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2L7voBSVEeGGzu7fmW9pXw" name="ImmunizationsSection">
-    <generalization xmi:id="_QPw2IBVgEeGQCvUGzi1kDQ" general="_EuPloBVeEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_QPw2IBVgEeGQCvUGzi1kDQ" general="_EuPloBVeEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_1T-tIHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_2L9k0BSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
