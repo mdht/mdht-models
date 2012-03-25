@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+	<title>
+		<ph conref="generated/_NARRATIVECLASSNAME.dita#classId/classformalname" />
+	</title>
+	<shortdesc conref="generated/_CLASSNAME.dita#classId/shortdesc"></shortdesc>
+	<prolog conref="generated/_CLASSNAME.dita#classId/prolog"></prolog>
+	<body>
+		<!-- TODO: insert non-model class description markup here -->
+		<section conref="generated/_CLASSNAME.dita#classId/description">
+		</section>
+
+		<section>
+			<title><ph conref="generated/_NARRATIVECLASSNAME.dita#classId/classformalname" /> Header Constraints</title>
+		</section>
+
+
+		<section>
+			<title>
+				<ph conref="generated/_NARRATIVECLASSNAME.dita#classId/classformalname" /> Body Constraints	</title>
+				<p>
+				<ol audience="standards" conref="generated/_CLASSNAME.dita#classId/conformance">
+					<li></li>
+				</ol>
+				<ol audience="developer" conref="generated/_CLASSNAME.dita#classId/aggregate">
+					<li></li>
+				</ol>
+				</p>
+		</section>
+
+
+		<section>
+			<title><ph conref="generated/_NARRATIVECLASSNAME.dita#classId/classformalname" /> Example</title>
+			<p>
+			<codeblock conref="generated/_CLASSNAME.dita#classId/example" />
+			</p>
+		</section>	
+	</body>
+</topic>
