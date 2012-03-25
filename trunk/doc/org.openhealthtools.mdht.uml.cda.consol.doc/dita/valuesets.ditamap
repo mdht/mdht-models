@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter navtitle="REFERENCES">
+	<topicref href="terminology/ActPriority.dita" type="topic" />
+<topicref href="terminology/AdministrativeGenderHL7V3.dita" type="topic" />
+<topicref href="terminology/AdvanceDirectiveTypeCode.dita" type="topic" />
+<topicref href="terminology/AgePQ_UCUM.dita" type="topic" />
+<topicref href="terminology/AllergyAdverseEventType.dita" type="topic" />
+<topicref href="terminology/BodySiteValueSet.dita" type="topic" />
+<topicref href="terminology/ConsultDocumentType.dita" type="topic" />
+<topicref href="terminology/CountryValueSet.dita" type="topic" />
+<topicref href="terminology/CoverageRoleTypeValueSet.dita" type="topic" />
+<topicref href="terminology/DICOMPurposeOfReference.dita" type="topic" />
+<topicref href="terminology/DICOMQuantityMeasurementTypeCodes.dita" type="topic" />
+<topicref href="terminology/DIRDocumentTypeCodes.dita" type="topic" />
+<topicref href="terminology/DIRQuantityMeasurementTypeCodes.dita" type="topic" />
+<topicref href="terminology/DischargeSummaryDocumentTypeCode.dita" type="topic" />
+<topicref href="terminology/EncounterTypeCode.dita" type="topic" />
+<topicref href="terminology/EntityNameUse.dita" type="topic" />
+<topicref href="terminology/EntityPersonNamePartQualifier.dita" type="topic" />
+<topicref href="terminology/FamilyHistoryRelatedSubjectCode.dita" type="topic" />
+<topicref href="terminology/FinanciallyResponsiblePartyType.dita" type="topic" />
+<topicref href="terminology/HITSPEthnicityValueSet.dita" type="topic" />
+<topicref href="terminology/HITSPProblemStatus.dita" type="topic" />
+<topicref href="terminology/HITSPVitalSignResultType.dita" type="topic" />
+<topicref href="terminology/HL7BasicConfidentialityKind.dita" type="topic" />
+<topicref href="terminology/HL7LanguageAbilityMode.dita" type="topic" />
+<topicref href="terminology/HL7MaritalStatus.dita" type="topic" />
+<topicref href="terminology/HL7ReligiousAffiliation.dita" type="topic" />
+<topicref href="terminology/HPDocumentType.dita" type="topic" />
+<topicref href="terminology/HealthInsuranceTypeValueSet.dita" type="topic" />
+<topicref href="terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita" type="topic" />
+<topicref href="terminology/HealthcareServiceLocation.dita" type="topic" />
+<topicref href="terminology/INDRoleclassCodes.dita" type="topic" />
+<topicref href="terminology/IngredientName.dita" type="topic" />
+<topicref href="terminology/Language.dita" type="topic" />
+<topicref href="terminology/LanguageAbilityProficiency.dita" type="topic" />
+<topicref href="terminology/MedicationBrandName.dita" type="topic" />
+<topicref href="terminology/MedicationClinicalDrug.dita" type="topic" />
+<topicref href="terminology/MedicationDrugClass.dita" type="topic" />
+<topicref href="terminology/MedicationFillStatus.dita" type="topic" />
+<topicref href="terminology/MedicationProductForm.dita" type="topic" />
+<topicref href="terminology/MedicationRouteFDAValueSet.dita" type="topic" />
+<topicref href="terminology/MoodCodeEvnInt.dita" type="topic" />
+<topicref href="terminology/NUBCUB04FL17PatientStatus.dita" type="topic" />
+<topicref href="terminology/NoImmunizationReasonValueSet.dita" type="topic" />
+<topicref href="terminology/ObservationInterpretationHL7.dita" type="topic" />
+<topicref href="terminology/PatientEducation.dita" type="topic" />
+<topicref href="terminology/PersonalRelationshipRoleType.dita" type="topic" />
+<topicref href="terminology/PlanOfCareMoodCodeActEncounterProcedure.dita" type="topic" />
+<topicref href="terminology/PlanOfCareMoodCodeObservation.dita" type="topic" />
+<topicref href="terminology/PlanOfCareMoodCodeSubstanceAdministrationSupply.dita" type="topic" />
+<topicref href="terminology/PostalAddressUse.dita" type="topic" />
+<topicref href="terminology/PostalCodeValueSet.dita" type="topic" />
+<topicref href="terminology/Problem.dita" type="topic" />
+<topicref href="terminology/ProblemActStatusCode.dita" type="topic" />
+<topicref href="terminology/ProblemSeverity.dita" type="topic" />
+<topicref href="terminology/ProblemType.dita" type="topic" />
+<topicref href="terminology/ProcedureActStatusCode.dita" type="topic" />
+<topicref href="terminology/ProcedureNoteDocumentTypeCodes.dita" type="topic" />
+<topicref href="terminology/ProgressNoteDocumentTypeCode.dita" type="topic" />
+<topicref href="terminology/ProviderType.dita" type="topic" />
+<topicref href="terminology/Race.dita" type="topic" />
+<topicref href="terminology/SocialHistoryTypeSetDefinition.dita" type="topic" />
+<topicref href="terminology/StateValueSet.dita" type="topic" />
+<topicref href="terminology/SupportedFileFormats.dita" type="topic" />
+<topicref href="terminology/SurgicalOperationNoteDocumentTypeCode.dita" type="topic" />
+<topicref href="terminology/TelecomUseUSRealmHeader.dita" type="topic" />
+<topicref href="terminology/UCUMUnitsOfMeasurecaseSensitive.dita" type="topic" />
+<topicref href="terminology/VaccinesAdministeredValueSet.dita" type="topic" />
+ 
+ 
+	</chapter>
+
+</bookmap>

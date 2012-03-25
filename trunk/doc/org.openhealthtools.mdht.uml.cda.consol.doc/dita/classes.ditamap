@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+	<chapter navtitle="OTHER CLASSES">
+
+<topicref href="classes/AllergyObservationParticipant.dita" type="topic" />
+<topicref href="classes/AllergyObservationParticipantRole.dita" type="topic" />
+<topicref href="classes/AllergyObservationPlayingEntity.dita" type="topic" />
+<topicref href="classes/DrugVehicle.dita" type="topic" />
+<topicref href="classes/EncounterPerformer.dita" type="topic" />
+<topicref href="classes/EncounterPerformerAssignedEntity.dita" type="topic" />
+<topicref href="classes/FamilyHistorySubject.dita" type="topic" />
+<topicref href="classes/ImmunizationMedicationInformation.dita" type="topic" />
+<topicref href="classes/ImmunizationMedicationInformationManufacturedMaterial.dita" type="topic" />
+<topicref href="classes/MedicationDispenseAssignedEntity.dita" type="topic" />
+
+</chapter>
+</bookmap>
