@@ -22,7 +22,7 @@
 		<p>
 			<b><ph conref="generated/_CLASSNAME.dita#classId/classformalname" /> example</b>
 		</p>		
-		<codeblock conref="generated/_Comment.dita#classId/example">
+		<codeblock conref="generated/_CLASSNAME.dita#classId/example">
 		</codeblock>
 	</body>
 </topic>
